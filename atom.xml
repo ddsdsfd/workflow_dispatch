@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>博採眾長</title>
+  
+  <subtitle>不怕万人阻挡，只怕自己投降。W你如何回忆，决定你是一个怎样的人。W人生当苦无妨，良人当归即可。W逝者如斯乎，不舍昼夜。W你别出现在我黎明的梦里，我怕我醒来就抱不到你。W心向大佬，披荆斩棘。W兼收并蓄，博采众长。</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://lruihao.cn/"/>
+  <updated>2018-11-12T09:35:24.179Z</updated>
+  <id>https://lruihao.cn/</id>
+  
+  <author>
+    <name>李瑞豪</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博採眾長app</title>
+    <link href="https://lruihao.cn/fas-app.html"/>
+    <id>https://lruihao.cn/fas-app.html</id>
+    <published>2018-11-12T08:04:04.000Z</published>
+    <updated>2018-11-12T09:35:24.179Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>使用fusion app对网页进行的封装。<br>功能：</p><ul><li>浏览本博客，主页</li><li>私人网盘</li><li>2048等小游戏</li><li>在线客服，QQ等</li><li>pc与移动浏览器标识切换</li><li>留言，打赏，博主日志等</li><li>分享功能，分享到QQ，微信，浏览器打开等</li><li>app内添加书签，自动记录历史记录，刷新等</li></ul><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><blockquote><p>app内也可以更新，不过就我自己用，懒得更新。</p></blockquote><ul><li><a href="http://ss.uixsj.cn/bczc_2.2.5_beta.apk" rel="external nofollow noopener noreferrer" target="_blank">直链</a></li><li><a href="https://pan.baidu.com/s/19iyxHQ6kQjj3eJ0fS3ZDXw" rel="external nofollow noopener noreferrer" target="_blank">百度云，密码:29p5</a></li><li><a href="https://github.com/Lruihao/Blog_fas_apk" rel="external nofollow noopener noreferrer" target="_blank">github下载</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;p&gt;使用fusion app对网页进行的封装。&lt;br&gt;功能：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;浏览本博客，主页&lt;/li&gt;&lt;li&gt;私人网盘&lt;/li&gt;&lt;li&gt;
+      
+    
+    </summary>
+    
+      <category term="通用" scheme="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
+    
+    
+      <category term="fusion app" scheme="https://lruihao.cn/tags/fusion-app/"/>
+    
+      <category term="app" scheme="https://lruihao.cn/tags/app/"/>
+    
+      <category term="网页封装" scheme="https://lruihao.cn/tags/%E7%BD%91%E9%A1%B5%E5%B0%81%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>caddy-两步搭建超简单云盘</title>
+    <link href="https://lruihao.cn/caddy-file.html"/>
+    <id>https://lruihao.cn/caddy-file.html</id>
+    <published>2018-11-11T05:59:27.000Z</published>
+    <updated>2018-11-11T07:09:40.157Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">curl https://getcaddy.com | bash -s personal http.filemanager</span><br></pre></td></tr></table></figure><h3 id="编写配置文件"><a href="#编写配置文件" class="headerlink" title="编写配置文件"></a>编写配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim Caddyfile</span><br></pre></td></tr></table></figure><p>内容如下:<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:80 &#123;</span><br><span class="line">filemanager / /sdcard</span><br><span class="line">timeouts none</span><br><span class="line">gzip</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p></p><p>这里的8080端口号可以随意指定, 如果在手机termux等搭建，由于手机权限比较低, 所以一般设置1024以上的端口.<code>80</code>端口可以直接通过ip访问。如<code>118.24.217.167</code></p><p>如果用域名，先在域名服务商解析ip,再配置文件如下<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">https://pan.lruihao.cn &#123;</span><br><span class="line">filemanager / /sdcard</span><br><span class="line">timeouts none</span><br><span class="line">tls admin@lruihao.cn</span><br><span class="line">gzip</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p></p><p>指定邮箱是为了申请ssl,实现https.</p><h3 id="demo"><a href="#demo" class="headerlink" title="demo"></a><a href="https://pan.lruihao.cn" rel="external nofollow noopener noreferrer" target="_blank">demo</a></h3><p>启动caddy<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">caddy</span><br></pre></td></tr></table></figure><p></p><p>账号密码默认<code>admin</code><br><img src="/caddy-file/1.png" alt=""></p><h3 id="设置定时器启动caddy（好像没用-我不会）"><a href="#设置定时器启动caddy（好像没用-我不会）" class="headerlink" title="设置定时器启动caddy（好像没用,我不会）"></a>设置定时器启动caddy（好像没用,我不会）</h3><p>为了断开xshell后caddy还在运行。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim run.sh</span><br></pre></td></tr></table></figure><p></p><p>编辑以下内容<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">caddy</span><br></pre></td></tr></table></figure><p></p><p>加权<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x run.sh</span><br></pre></td></tr></table></figure><p></p><p>设置任务<br><a href="https://www.jianshu.com/p/95d1473859d1" rel="external nofollow noopener noreferrer" target="_blank">参考</a><br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure><p></p><p>加入<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* * * * * /root/run.sh</span><br></pre></td></tr></table></figure><p></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service crond start</span><br></pre></td></tr></table></figure><h3 id="？"><a href="#？" class="headerlink" title="？"></a>？</h3><p>最后误打误撞开启了caddy<br>昨晚双十一要抢裤子，加上湘潭天气太tm冷了，就上床了，接着用termux远程连接服务器继续搞。结果连接的时候命令输错了-_-!<br>本来是<code>ssh root@118.24.217.167</code>再输入密码就可以了。这次搞错了多些了个<code>-T</code>,然后运行<code>caddy</code>,<code>ctrl+c</code>再断开，以外的发现filemanager竟然可以访问了。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh -T root@118.24.217.167</span><br><span class="line">caddy</span><br><span class="line"></span><br><span class="line">Ctrl+c</span><br></pre></td></tr></table></figure><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span c
+      
+    
+    </summary>
+    
+      <category term="server" scheme="https://lruihao.cn/categories/server/"/>
+    
+    
+      <category term="个人云盘" scheme="https://lruihao.cn/tags/%E4%B8%AA%E4%BA%BA%E4%BA%91%E7%9B%98/"/>
+    
+      <category term="server" scheme="https://lruihao.cn/tags/server/"/>
+    
+      <category term="caddy" scheme="https://lruihao.cn/tags/caddy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>next添加支持pdf</title>
+    <link href="https://lruihao.cn/next-pdf.html"/>
+    <id>https://lruihao.cn/next-pdf.html</id>
+    <published>2018-11-09T04:51:48.000Z</published>
+    <updated>2018-11-09T05:42:24.709Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>最新的next主题已经更新了支持PDF功能写法也和链接写法一样，可是我没有更新，我按github上那个readme试了一下好像不可以，所以用了另外一种插件的方法。</p></blockquote><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-pdf</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf url %&#125;</span><br></pre></td></tr></table></figure><p>比如本文<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% pdf /next-pdf/1.pdf %&#125;</span><br></pre></td></tr></table></figure><p></p><div class="row"><embed src="/next-pdf/1.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;最新的next主题已经更新了支持PDF功能写法也和链接写法一样，可是我没有更新，我按github上那个readme试了一下好像不可以，所以用了另外一种插件的方法。&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; c
+      
+    
+    </summary>
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/tags/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="pdf" scheme="https://lruihao.cn/tags/pdf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设置单篇文章不打赏</title>
+    <link href="https://lruihao.cn/noreward.html"/>
+    <id>https://lruihao.cn/noreward.html</id>
+    <published>2018-11-06T05:06:29.000Z</published>
+    <updated>2018-11-06T06:57:01.369Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。<br></p><div class="note"><p>原理：</p><p>因为默认的变量值为false,!post.noreward就是true了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成true，取反后就是false,就不会显示了打赏模块了。</p></div><p></p></blockquote><h3 id="修改post模板"><a href="#修改post模板" class="headerlink" title="修改post模板"></a>修改post模板</h3><p>打开以下路径文件<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig</span><br></pre></td></tr></table></figure><p></p><p>查找reward关键词，大概在378行，并添加内容。</p><p><img src="/noreward/1.png" alt=""></p><h3 id="文章内使用"><a href="#文章内使用" class="headerlink" title="文章内使用"></a>文章内使用</h3><p>在头部加上关键词<code>noreward: true</code>，比如本文头部。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 设置单篇文章不打赏</span><br><span class="line">date: 2018-11-06 13:06:29</span><br><span class="line">tags:</span><br><span class="line">- hexo博客</span><br><span class="line">categories: hexo博客</span><br><span class="line">noreward: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><strong>本地调试时修改完后记得重启hexo,只要是修改了布局文件就要重新<code>hexo s</code>,修改文章内容等就可以不需要重启，效果如本文</strong><br>ps: 小声bb,如果有打赏的冲动换一篇文章就是了，嘘！</p><h4 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h4><p>顺手改了一下tags的位置，知道tags那一块移到喜欢的位置就好了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。&lt;br&gt;&lt;/p&gt;&lt;div class=&quot;note&quot;&gt;&lt;p&gt;原理：&lt;/p&gt;&lt;p&gt;因为默认的变量值为false,!post.noreward就是true
+      
+    
+    </summary>
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/tags/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js判断用户设备类型及平台（转）</title>
+    <link href="https://lruihao.cn/js-device.html"/>
+    <id>https://lruihao.cn/js-device.html</id>
+    <published>2018-11-03T15:35:44.000Z</published>
+    <updated>2018-11-03T15:42:54.773Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>转自 <a href="https://www.cnblogs.com/coober/p/6594379.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.cnblogs.com/coober/p/6594379.html</a></p></blockquote><p>前端开发经常遇到需要判断用户的浏览设备，是pc端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p><a id="more"></a><h3 id="首先判断pc端还是移动端"><a href="#首先判断pc端还是移动端" class="headerlink" title="首先判断pc端还是移动端"></a>首先判断pc端还是移动端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function IsPC() &#123;</span><br><span class="line">        var userAgentInfo = navigator.userAgent;</span><br><span class="line">        var Agents = [&quot;Android&quot;, &quot;iPhone&quot;,</span><br><span class="line">                    &quot;SymbianOS&quot;, &quot;Windows Phone&quot;,</span><br><span class="line">                    &quot;iPad&quot;, &quot;iPod&quot;];</span><br><span class="line">        var flag = true;</span><br><span class="line">        for (var v = 0; v &lt; Agents.length; v++) &#123;</span><br><span class="line">            if (userAgentInfo.indexOf(Agents[v]) &gt; 0) &#123;</span><br><span class="line">                flag = false;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return flag;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h3 id="判断用户移动端使用的系统平台"><a href="#判断用户移动端使用的系统平台" class="headerlink" title="判断用户移动端使用的系统平台"></a>判断用户移动端使用的系统平台</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var u = navigator.userAgent;</span><br><span class="line">    if (u.indexOf(&apos;Android&apos;) &gt; -1 || u.indexOf(&apos;Linux&apos;) &gt; -1) &#123;</span><br><span class="line">        //安卓手机</span><br><span class="line">    &#125; else if (u.indexOf(&apos;iPhone&apos;) &gt; -1) &#123;</span><br><span class="line">        //苹果手机</span><br><span class="line">    &#125; else if (u.indexOf(&apos;Windows Phone&apos;) &gt; -1) &#123;</span><br><span class="line">        //winphone手机</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h3 id="判断用户是否在微信中打开"><a href="#判断用户是否在微信中打开" class="headerlink" title="判断用户是否在微信中打开"></a>判断用户是否在微信中打开</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function isWeiXin()&#123; </span><br><span class="line">        var ua = navigator.userAgent.toLowerCase(); </span><br><span class="line">        if(ua.indexOf(&apos;micromessenger&apos;) != -1) &#123; </span><br><span class="line">            return true; </span><br><span class="line">        &#125; else &#123; </span><br><span class="line">            return false; </span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h3 id="实际运用"><a href="#实际运用" class="headerlink" title="实际运用"></a>实际运用</h3><p>根据pc或者移动端控制飘花数目，降低cpu消耗，减少卡顿。<a href="https://www.lruihao.cn" target="_blank" rel="noopener">demo</a><br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  function sakuraInit() &#123;</span><br><span class="line">      $(document).snowfall(&apos;clear&apos;);</span><br><span class="line">      var userAgentInfo = navigator.userAgent;</span><br><span class="line">      var Agents = [&quot;Android&quot;, &quot;iPhone&quot;,</span><br><span class="line">                  &quot;SymbianOS&quot;, &quot;Windows Phone&quot;,</span><br><span class="line">                  &quot;iPad&quot;, &quot;iPod&quot;];</span><br><span class="line">      var flag = true;</span><br><span class="line">      for (var v = 0; v &lt; Agents.length; v++) &#123;</span><br><span class="line">          if (userAgentInfo.indexOf(Agents[v]) &gt; 0) &#123;</span><br><span class="line">              flag = false;</span><br><span class="line">              break;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      if (flag) &#123;</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/1.png&quot;, flakeCount:5, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/2.png&quot;, flakeCount:5, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/3.png&quot;, flakeCount:5, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/4.png&quot;, flakeCount:5, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/1.png&quot;, flakeCount:2, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/2.png&quot;, flakeCount:2, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/3.png&quot;, flakeCount:2, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">          $(document).snowfall(&#123;image:&quot;images/4.png&quot;, flakeCount:2, minSpeed:1, minSize:8, maxSize:15,&#125;);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  window.onload = sakuraInit();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;转自 &lt;a href=&quot;https://www.cnblogs.com/coober/p/6594379.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://www.cnblogs.com/coober/p/6594379.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;前端开发经常遇到需要判断用户的浏览设备，是pc端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="https://lruihao.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="他山之石" scheme="https://lruihao.cn/tags/%E4%BB%96%E5%B1%B1%E4%B9%8B%E7%9F%B3/"/>
+    
+      <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="js" scheme="https://lruihao.cn/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 博客源码备份</title>
+    <link href="https://lruihao.cn/blog-backup.html"/>
+    <id>https://lruihao.cn/blog-backup.html</id>
+    <published>2018-11-03T04:49:28.000Z</published>
+    <updated>2018-11-03T05:19:51.407Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/blog-backup/1.png" alt=""><br><a id="more"></a></p><h3 id="备份hexo博客"><a href="#备份hexo博客" class="headerlink" title="备份hexo博客"></a>备份hexo博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。</span><br><span class="line">cd hexo</span><br><span class="line">git init  //初始化本地仓库</span><br><span class="line">git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加</span><br><span class="line">git commit -m &quot;blog hexo&quot;</span><br><span class="line">git branch hexo  //新建hexo分支</span><br><span class="line">git checkout hexo  //切换到hexo分支上</span><br><span class="line">git remote add origin git@github.com:username/username.github.io.git  //将本地与Github项目对接</span><br><span class="line">git push origin hexo  //push到Github项目的hexo分支上</span><br></pre></td></tr></table></figure><h3 id="在其他终端克隆和更新hexo博客"><a href="#在其他终端克隆和更新hexo博客" class="headerlink" title="在其他终端克隆和更新hexo博客"></a>在其他终端克隆和更新hexo博客</h3><blockquote><p>nodejs,git,hexo已经安装好,即搭建完成</p></blockquote><h4 id="克隆hexo博客备份"><a href="#克隆hexo博客备份" class="headerlink" title="克隆hexo博客备份"></a>克隆hexo博客备份</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone -b hexo git@github.com:username/username.github.io.git  //将Github中hexo分支clone到本地</span><br><span class="line">cd user.github.io</span><br><span class="line">npm install  //注意，这里一定要切换到刚刚clone的文件夹内执行，安装必要的所需组件，不用再init</span><br></pre></td></tr></table></figure><p>这样我们的备份文件就会原封不动的拷贝到本地。</p><h4 id="写新文章并备份和部署（备用操作）"><a href="#写新文章并备份和部署（备用操作）" class="headerlink" title="写新文章并备份和部署（备用操作）"></a>写新文章并备份和部署（备用操作）</h4><blockquote><p>其实源码拷下来了，这步不做我们也知道怎么做了，完全没必要按照教程死搬硬套。灵活一点就行了。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//进入username.github.io文件夹,应是hexo分支</span><br><span class="line">git pull origin hexo //本地和远端的融合</span><br><span class="line">hexo new post &quot;new post name&quot;  //写新文章</span><br><span class="line">git add source</span><br><span class="line">git commit -m &quot;xxx&quot;</span><br><span class="line">git push origin hexo  //备份</span><br><span class="line">hexo d -g  //部署</span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" rel="external nofollow noopener noreferrer" target="_blank">参考</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/blog-backup/1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/tags/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="源码备份" scheme="https://lruihao.cn/tags/%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="git" scheme="https://lruihao.cn/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git删除文件方法及常用指令</title>
+    <link href="https://lruihao.cn/git-delete.html"/>
+    <id>https://lruihao.cn/git-delete.html</id>
+    <published>2018-10-30T10:59:56.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="git删除远端仓库的文件方法"><a href="#git删除远端仓库的文件方法" class="headerlink" title="git删除远端仓库的文件方法"></a>git删除远端仓库的文件方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git rm 文件名  #删除文件</span><br><span class="line">git rm –r 文件夹# 删除文件夹 –r 表示递归所有子目录</span><br><span class="line">git commit –m &quot;提交信息&quot; #提交信息</span><br><span class="line">git push origin master #推送到远程仓库 master分支</span><br></pre></td></tr></table></figure><p>比如删除photos文件，本地删除后，远程仓库还会有，所以<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm -r photos</span><br><span class="line">git commit -m &quot;删除相册&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p></p><h3 id="基本常用命令"><a href="#基本常用命令" class="headerlink" title="基本常用命令"></a>基本常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">git branch     查看当前所有的分支</span><br><span class="line">git branch –r  查看远程所有分支</span><br><span class="line">git branch –a  查看本地远程分支</span><br><span class="line">git tag        查看版本打的Tag</span><br><span class="line">git checkout [name]     切换到name分支</span><br><span class="line">git branch –d [name]    删除name分支</span><br><span class="line">git checkout –b [name]  创建name分支 并切换到name分支上</span><br><span class="line"></span><br><span class="line">git init       把当前的目录变成可以管理的git仓库，生成隐藏.git文件。</span><br><span class="line">git add XX     把xx文件添加到暂存区去。</span><br><span class="line">git add –A  （git add --all的缩写）</span><br><span class="line">git add .      监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区</span><br><span class="line">git remote add origin 仓库地址   (关联一个远程库)</span><br><span class="line">git push –u(第一次要用-u 以后不需要) origin master (把当前master分支推送到远程库)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git clone        仓库地址  (从远程库中克隆)</span><br><span class="line">git status       查看仓库状态</span><br><span class="line">git diff  XX     查看XX文件修改了那些内容</span><br><span class="line">git reflog       查看历史记录的版本号id</span><br><span class="line">git merge dev    在当前的分支上合并dev分支</span><br><span class="line">git remote       查看远程库的信息</span><br><span class="line">git remote –v    查看远程库的详细信息</span><br><span class="line">git stash        把当前的工作隐藏起来 等以后恢复现场后继续工作</span><br><span class="line">git stash list   查看所有被隐藏的文件列表</span><br><span class="line">git push origin master  Git会把master分支推送到远程库对应的远程分支上</span><br><span class="line">git reset  –hard HEAD^ 或者 git reset  –hard HEAD~ 回退到上一个版本</span><br><span class="line">                     (如果想回退到100个版本，使用git reset –hard HEAD~100 )</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;git删除远端仓库的文件方法&quot;&gt;&lt;a href=&quot;#git删除远端仓库的文件方法&quot; class=&quot;headerlink&quot; title=&quot;git删除远端仓库的文件方法&quot;&gt;&lt;/a&gt;git删除远端仓库的文件方法&lt;/h3&gt;&lt;figure class=&quot;highlight 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>网站备案之旅</title>
+    <link href="https://lruihao.cn/beian.html"/>
+    <id>https://lruihao.cn/beian.html</id>
+    <published>2018-10-29T15:16:26.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note success"><p>经过时间长达20多天的备案之旅今天终于结束了，也闭馆了20多天，也按相关要求把ICP备案号和公安备案号加载了网站和博客底部。只是今天去岳塘分局签网络安全告知书的时候不小心把身份证落在那个办公室了。亏我走之前一秒还在提醒自己，唉！不过那个办公室的大姐姐挺好的，前面跟我说好星期一来，我还今天上午提前给她打了电话，她还下楼给我开办公楼楼道的门禁，还有我身份证落在那里她说先帮我收着，有时间再去拿！总之，这个姐姐的服务态度五星好评！手动@岳塘分局B204的姐姐。<br>备案完成也算放下一块提着的石头，可以睡个好觉了！ZzZzzzz</p></div><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;经过时间长达20多天的备案之旅今天终于结束了，也闭馆了20多天，也按相关要求把ICP备案号和公安备案号加载了网站和博客底部。只是今天去岳塘分局签网络安全告知书的时候不小心把身份证落在那个办公室了。亏我走之前一秒还在提醒自己，唉！不过那个办公室的大姐姐挺好的，前面跟我说好星期一来，我还今天上午提前给她打了电话，她还下楼给我开办公楼楼道的门禁，还有我身份证落在那里她说先帮我收着，有时间再去拿！总之，这个姐姐的服务态度五星好评！手动@岳塘分局B204的姐姐。&lt;br&gt;备案完成也算放下一块提着的石头，可以睡个好觉了！ZzZzzzz&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="生活随笔" scheme="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="生活随笔" scheme="https://lruihao.cn/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="网站备案" scheme="https://lruihao.cn/tags/%E7%BD%91%E7%AB%99%E5%A4%87%E6%A1%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell脚本初体验</title>
+    <link href="https://lruihao.cn/shell.html"/>
+    <id>https://lruihao.cn/shell.html</id>
+    <published>2018-10-29T03:57:39.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天上机学了几个小命令</p><ul><li>read</li><li>echo</li><li>if</li></ul><p>然后自己写了一个小脚本觉得还挺有趣的<br><a id="more"></a></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#liruihao</span></span><br><span class="line"><span class="comment">#menu.sh</span></span><br><span class="line"><span class="comment">#sudo apt curl install nyancat sl figlet toilet cowsay </span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"-------------菜-单--------------"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"------------1-打印二维码--------"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"------------2-彩虹猫------------"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"------------3-小火切------------"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"------------4-打字机------------"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"------------5-小许牛------------"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"----------Ctrl+c暂停程序--------"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">""</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"请输入序号！"</span></span><br><span class="line"><span class="built_in">read</span> i</span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> <span class="variable">$i</span> -eq 1</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"请输入网址！"</span></span><br><span class="line"><span class="built_in">read</span> s1</span><br><span class="line">       <span class="built_in">echo</span> <span class="variable">$s1</span> |curl -F-=\&lt;- qrenco.de</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> <span class="variable">$i</span> -eq 2</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">nyancat</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> <span class="variable">$i</span> -eq 3</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">sl</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> <span class="variable">$i</span> -eq 4</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"请输入字符串！"</span></span><br><span class="line"><span class="built_in">read</span> s2</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"选择样式："</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"------样式1-----"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"------样式2-----"</span></span><br><span class="line"><span class="built_in">read</span> j</span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> <span class="variable">$j</span> -eq 1</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">figlet <span class="variable">$s2</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">toilet -f mono12 -F gay <span class="variable">$s2</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">test</span> <span class="variable">$i</span> -eq 5</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"请输入字符串！"</span></span><br><span class="line"><span class="built_in">read</span> s3</span><br><span class="line">cowsay <span class="variable">$s3</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"任意建继续！"</span></span><br><span class="line"><span class="built_in">read</span> x</span><br><span class="line">clear</span><br><span class="line">./menu.sh</span><br></pre></td></tr></table></figure><p><img src="/shell/1.png" alt=""><br><img src="/shell/2.png" alt=""><br><img src="/shell/3.png" alt=""><br><img src="/shell/4.1.png" alt=""><br><img src="/shell/4.2.png" alt=""><br><img src="/shell/5.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天上机学了几个小命令&lt;/p&gt;&lt;ul&gt;&lt;li&gt;read&lt;/li&gt;&lt;li&gt;echo&lt;/li&gt;&lt;li&gt;if&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;然后自己写了一个小脚本觉得还挺有趣的&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="https://lruihao.cn/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://lruihao.cn/tags/linux/"/>
+    
+      <category term="HelloWorld" scheme="https://lruihao.cn/tags/HelloWorld/"/>
+    
+      <category term="shell" scheme="https://lruihao.cn/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>云服务器CentOS系统搭建web服务（转）</title>
+    <link href="https://lruihao.cn/web-server-yun.html"/>
+    <id>https://lruihao.cn/web-server-yun.html</id>
+    <published>2018-10-29T01:15:58.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="搭建Apache-web服务"><a href="#搭建Apache-web服务" class="headerlink" title="搭建Apache web服务"></a>搭建Apache web服务</h3><p>1.安装Apache超文本传输协议(HTTP)服务器的主程序<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@VM_0_6_centos /]# yum install -y httpd</span><br></pre></td></tr></table></figure><p></p><p>注意安装目录，可通过cd 命令切换。</p><p>2.启动HTTP服务<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@VM_0_6_centos /]# systemctl start httpd.service</span><br></pre></td></tr></table></figure><p></p><p>如果启动失败，可通过systemctl status httpd.service查看错误原因。<br>启动成功，证明http服务已经可以使用，发现还需要把本地文件传到服务器。<br>默认根目录<code>/var/www/html/</code></p><h3 id="使用SSH连接服务器"><a href="#使用SSH连接服务器" class="headerlink" title="使用SSH连接服务器"></a>使用SSH连接服务器</h3><p>尝试了两种方式：PuTTY和Xshell（推荐）</p><h4 id="Xshell方式"><a href="#Xshell方式" class="headerlink" title="Xshell方式"></a>Xshell方式</h4><p>官网下载安装Xshell打开，输入ip账号密码连接主机。</p><p>使用lrzsz方式上传下载文件<br>步骤1：在服务器安装lrzsz<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@VM_0_6_centos /]# yum -y install lrzsz</span><br></pre></td></tr></table></figure><p></p><p>步骤2：输入命令<code>rz</code>打开上传窗口(可以选择多个文件。)<br>使用<code>sz</code>文件名命令可打开从服务器下载文件的保存窗口。</p><h3 id="修改HTTP配置"><a href="#修改HTTP配置" class="headerlink" title="修改HTTP配置"></a>修改HTTP配置</h3><p>1.VIM编辑器打开配置文件<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@VM_0_6_centos /]# vim /etc/httpd/conf/httpd.conf</span><br></pre></td></tr></table></figure><p></p><p>2.按<code>I</code>键进入编辑模式</p><p>3.找到并修改以下内容<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ServerAdmin 管理员邮箱，用于浏览器请求报错时展示</span><br><span class="line">DocumentRoot 访问根目录（默认：/var/www/html），如项目存放在其他地方，可修改为项目存放位置</span><br><span class="line">&lt;Directory &quot;/var/www/html&quot;&gt; 同DocumentRoot 配置</span><br><span class="line">ServerName 服务器IP或 域名</span><br></pre></td></tr></table></figure><p></p><p>4.按下ESC键输入<code>:wq</code>保存退出</p><p>5.重启服务<code>service httpd restart</code></p><p>6.打开浏览器，输入地址访问<br>如:我的项目索引html路径为love/index.html，输入<br><a href="http://IP地址或域名/love/index.html" rel="external nofollow noopener noreferrer" target="_blank">http://IP地址或域名/love/index.html</a></p><p>7.访问不成功，先检查网络，再查看http服务是否开启，最后检查配置；<br>访问成功，配置完成。</p><p>链接：<a href="https://www.jianshu.com/p/0b67c6c5d21d" rel="external nofollow noopener noreferrer" target="_blank">https://www.jianshu.com/p/0b67c6c5d21d</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;搭建Apache-web服务&quot;&gt;&lt;a href=&quot;#搭建Apache-web服务&quot; class=&quot;headerlink&quot; title=&quot;搭建Apache web服务&quot;&gt;&lt;/a&gt;搭建Apache web服务&lt;/h3&gt;&lt;p&gt;1.安装Apache超文本传输协议(HTTP
+      
+    
+    </summary>
+    
+      <category term="server" scheme="https://lruihao.cn/categories/server/"/>
+    
+    
+      <category term="他山之石" scheme="https://lruihao.cn/tags/%E4%BB%96%E5%B1%B1%E4%B9%8B%E7%9F%B3/"/>
+    
+      <category term="web server" scheme="https://lruihao.cn/tags/web-server/"/>
+    
+      <category term="云服务器" scheme="https://lruihao.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用js准确获取当前页面url网址信息及301重定向实战</title>
+    <link href="https://lruihao.cn/href-301.html"/>
+    <id>https://lruihao.cn/href-301.html</id>
+    <published>2018-10-28T06:22:00.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="获取链接（转）"><a href="#获取链接（转）" class="headerlink" title="获取链接（转）"></a>获取链接（转）</h3><p><a href="https://www.cnblogs.com/zhabayi/p/6419938.html" rel="external nofollow noopener noreferrer" target="_blank">传送门</a><br>在WEB开发中，时常会用到javascript来获取当前页面的url网址信息，在这里是我的一些获取url信息的小总结。</p><p>下面我们举例一个URL，然后获得它的各个组成部分：<a href="http://i.cnblogs.com/EditPosts.aspx?opt=1" rel="external nofollow noopener noreferrer" target="_blank">http://i.cnblogs.com/EditPosts.aspx?opt=1</a></p><h4 id="window-location-href-设置或获取整个-URL-为字符串"><a href="#window-location-href-设置或获取整个-URL-为字符串" class="headerlink" title="window.location.href(设置或获取整个 URL 为字符串)"></a>window.location.href(设置或获取整个 URL 为字符串)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.href;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：<a href="http://i.cnblogs.com/EditPosts.aspx?opt=1" rel="external nofollow noopener noreferrer" target="_blank">http://i.cnblogs.com/EditPosts.aspx?opt=1</a></p><h4 id="window-location-protocol-设置或获取-URL-的协议部分"><a href="#window-location-protocol-设置或获取-URL-的协议部分" class="headerlink" title="window.location.protocol(设置或获取 URL 的协议部分)"></a>window.location.protocol(设置或获取 URL 的协议部分)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.protocol;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：http:</p><h4 id="window-location-host-设置或获取-URL-的主机部分"><a href="#window-location-host-设置或获取-URL-的主机部分" class="headerlink" title="window.location.host(设置或获取 URL 的主机部分)"></a>window.location.host(设置或获取 URL 的主机部分)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.host;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：i.cnblogs.com</p><h4 id="window-location-port-设置或获取与-URL-关联的端口号码"><a href="#window-location-port-设置或获取与-URL-关联的端口号码" class="headerlink" title="window.location.port(设置或获取与 URL 关联的端口号码)"></a>window.location.port(设置或获取与 URL 关联的端口号码)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.port;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：空字符(如果采用默认的80端口(update:即使添加了:80)，那么返回值并不是默认的80而是空字符)</p><h4 id="window-location-pathname-设置或获取与-URL-的路径部分（就是文件地址）"><a href="#window-location-pathname-设置或获取与-URL-的路径部分（就是文件地址）" class="headerlink" title="window.location.pathname(设置或获取与 URL 的路径部分（就是文件地址）)"></a>window.location.pathname(设置或获取与 URL 的路径部分（就是文件地址）)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.pathname;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：/EditPosts.aspx</p><h4 id="window-location-search-设置或获取-href-属性中跟在问号后面的部分"><a href="#window-location-search-设置或获取-href-属性中跟在问号后面的部分" class="headerlink" title="window.location.search(设置或获取 href 属性中跟在问号后面的部分)"></a>window.location.search(设置或获取 href 属性中跟在问号后面的部分)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.search;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：?opt=1</p><p>PS：获得查询（参数）部分，除了给动态语言赋值以外，我们同样可以给静态页面，并使用javascript来获得相信应的参数值。</p><h4 id="window-location-hash-设置或获取-href-属性中在井号“-”后面的分段"><a href="#window-location-hash-设置或获取-href-属性中在井号“-”后面的分段" class="headerlink" title="window.location.hash(设置或获取 href 属性中在井号“#”后面的分段)"></a>window.location.hash(设置或获取 href 属性中在井号“#”后面的分段)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.hash;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：空字符(因为url中没有)</p><h4 id="js获取url中的参数值"><a href="#js获取url中的参数值" class="headerlink" title="js获取url中的参数值"></a>js获取url中的参数值</h4><h5 id="正则法"><a href="#正则法" class="headerlink" title="正则法"></a>正则法</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">getQueryString</span><span class="params">(name)</span> </span>&#123;</span><br><span class="line">  var reg = <span class="keyword">new</span> RegExp(<span class="string">'(^|&amp;)'</span> + name + <span class="string">'=([^&amp;]*)(&amp;|$)'</span>, <span class="string">'i'</span>);</span><br><span class="line">  var r = window.location.search.substr(<span class="number">1</span>).match(reg);</span><br><span class="line">  <span class="keyword">if</span> (r != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> unescape(r[<span class="number">2</span>]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 这样调用：</span></span><br><span class="line">alert(GetQueryString(<span class="string">"参数名1"</span>));</span><br><span class="line">  </span><br><span class="line">alert(GetQueryString(<span class="string">"参数名2"</span>));</span><br><span class="line">  </span><br><span class="line">alert(GetQueryString(<span class="string">"参数名3"</span>));</span><br></pre></td></tr></table></figure><h5 id="split拆分法"><a href="#split拆分法" class="headerlink" title="split拆分法"></a>split拆分法</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">GetRequest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  var url = location.search; <span class="comment">//获取url中"?"符后的字串</span></span><br><span class="line">  var theRequest = <span class="keyword">new</span> Object();</span><br><span class="line">  <span class="keyword">if</span> (url.indexOf(<span class="string">"?"</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">    var str = url.substr(<span class="number">1</span>);</span><br><span class="line">    strs = str.split(<span class="string">"&amp;"</span>);</span><br><span class="line">    <span class="keyword">for</span>(var i = <span class="number">0</span>; i &lt; strs.length; i ++) &#123;</span><br><span class="line">      theRequest[strs[i].split(<span class="string">"="</span>)[<span class="number">0</span>]] = unescape(strs[i].split(<span class="string">"="</span>)[<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> theRequest;</span><br><span class="line">&#125;</span><br><span class="line">var Request = <span class="keyword">new</span> Object();</span><br><span class="line">Request = GetRequest();&lt;br&gt;<span class="comment">// var id=Request["id"]; </span></span><br><span class="line"><span class="comment">// var 参数1,参数2,参数3,参数N;</span></span><br><span class="line"><span class="comment">// 参数1 = Request['参数1'];</span></span><br><span class="line"><span class="comment">// 参数2 = Request['参数2'];</span></span><br><span class="line"><span class="comment">// 参数3 = Request['参数3'];</span></span><br><span class="line"><span class="comment">// 参数N = Request['参数N'];</span></span><br></pre></td></tr></table></figure><h5 id="指定取"><a href="#指定取" class="headerlink" title="指定取"></a>指定取</h5><p>比如说一个url：<a href="http://i.cnblogs.com/?j=js,我们想得到参数j的值，可以通过以下函数调用。" rel="external nofollow noopener noreferrer" target="_blank">http://i.cnblogs.com/?j=js,我们想得到参数j的值，可以通过以下函数调用。</a></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">GetQueryString</span><span class="params">(name)</span> </span>&#123; </span><br><span class="line">  var reg = <span class="keyword">new</span> RegExp(<span class="string">"(^|&amp;)"</span> + name + <span class="string">"=([^&amp;]*)(&amp;|$)"</span>, <span class="string">"i"</span>); </span><br><span class="line">  var r = window.location.search.substr(<span class="number">1</span>).match(reg); <span class="comment">//获取url中"?"符后的字符串并正则匹配</span></span><br><span class="line">  var context = <span class="string">""</span>; </span><br><span class="line">  <span class="keyword">if</span> (r != <span class="keyword">null</span>) </span><br><span class="line">     context = r[<span class="number">2</span>]; </span><br><span class="line">  reg = <span class="keyword">null</span>; </span><br><span class="line">  r = <span class="keyword">null</span>; </span><br><span class="line">  <span class="keyword">return</span> context == <span class="keyword">null</span> || context == <span class="string">""</span> || context == <span class="string">"undefined"</span> ? <span class="string">""</span> : context; </span><br><span class="line">&#125;</span><br><span class="line">alert(GetQueryString(<span class="string">"j"</span>));</span><br></pre></td></tr></table></figure><h3 id="301重定向（实战）"><a href="#301重定向（实战）" class="headerlink" title="301重定向（实战）"></a>301重定向（实战）</h3><p>由于之前把blog和网站主页分开在两个仓库所以要想在blog中menu里跳转到站外链接就要做一些处理。以前一直百度不到。<br>其实想法早就有了，只要在blog首页或者网站首页检测到<a href="https://lruihao.cn/home">https://lruihao.cn/home</a>这个链接，或者检测到home字段就自动跳转。想法很简单。可是对js真的一点都不了解，以前百度也找不到实际的效果案例。所以还是自己写吧！附上蹩脚代码。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var path = window.location.href;</span><br><span class="line">    <span class="comment">//alert(path);</span></span><br><span class="line">    <span class="keyword">if</span> (path==<span class="string">'https://lruihao.cn/home/'</span>) &#123;</span><br><span class="line">      window.location.replace(<span class="string">"https://www.lruihao.cn"</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>或者<br></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var path = window.location.pathname;</span><br><span class="line">    <span class="comment">//alert(path);</span></span><br><span class="line">    <span class="keyword">if</span> (path==<span class="string">'/home/'</span>) &#123;</span><br><span class="line">      window.location.replace(<span class="string">"https://www.lruihao.cn"</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p></p><p><code>demo见菜单</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;获取链接（转）&quot;&gt;&lt;a href=&quot;#获取链接（转）&quot; class=&quot;headerlink&quot; title=&quot;获取链接（转）&quot;&gt;&lt;/a&gt;获取链接（转）&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/zhabayi/p/6419938
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://lruihao.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="js" scheme="https://lruihao.cn/tags/js/"/>
+    
+      <category term="301重定向" scheme="https://lruihao.cn/tags/301%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows上搭建web服务器</title>
+    <link href="https://lruihao.cn/web-server-win.html"/>
+    <id>https://lruihao.cn/web-server-win.html</id>
+    <published>2018-10-26T13:56:18.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>我用的 win10</p></blockquote><h3 id="打开控制面板"><a href="#打开控制面板" class="headerlink" title="打开控制面板"></a>打开控制面板</h3><p>选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所有地选项，点击确定后，开始更新服务。<br><img src="/web-server-win/1.png" alt=""></p><h3 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h3><p>更新完成后，打开浏览器，输入<code>http://localhost</code>或者<code>127.0.0.1</code>回车，如果此时出现IIS7欢迎界面，说明Web服务器已经搭建成功。<br><img src="/web-server-win/2.png" alt=""></p><h3 id="网站设置"><a href="#网站设置" class="headerlink" title="网站设置"></a>网站设置</h3><p>当web服务器搭建成功后，我们下一步所要做的就是把我们开发的网站安装到Web服务器的目录中。一般情况下，当Web服务器安装完成后，会创建路径<code>%系统根目录%inetpub/wwwroot</code>，将我们开发的网站COPY到该路径下。即可实现本地访问该网站。<br><img src="/web-server-win/3.png" alt=""><br>也可以更改根目录，搜索IIS，点击网站，Default Web Site，基本设置修改物理路径（<strong>默认站点名称不要改</strong>）<br>我这里改到了hexo的public相当于hexo部署在本地服务器<code>58.45.227.225</code><br><img src="/web-server-win/5.png" alt=""><br><img src="/web-server-win/6.png" alt=""><br><img src="/web-server-win/7.png" alt=""></p><h3 id="设置防火墙"><a href="#设置防火墙" class="headerlink" title="设置防火墙"></a>设置防火墙</h3><p>让局域网当其它计算机也能访问本地网站资源。具体方法：打开控制面板，选择“系统和安全”，点击“允许程序通过Windows防火墙”，在弹出的对话框中勾选“万维网服务HTTP”右侧的两个复选框，最后点击确定退出。<br><img src="/web-server-win/3.png" alt=""></p><p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的ip地址访问了（手机也可以）<br>本地ip可以通过cmd用ipconfig查看</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;我用的 win10&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=&quot;打开控制面板&quot;&gt;&lt;a href=&quot;#打开控制面板&quot; class=&quot;headerlink&quot; title=&quot;打开控制面板&quot;&gt;&lt;/a&gt;打开控制面板&lt;/h3&gt;&lt;p&gt;选择并进入“程序”，双击“
+      
+    
+    </summary>
+    
+      <category term="server" scheme="https://lruihao.cn/categories/server/"/>
+    
+    
+      <category term="web server" scheme="https://lruihao.cn/tags/web-server/"/>
+    
+      <category term="windows" scheme="https://lruihao.cn/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Git上传代码到github,coding等仓库</title>
+    <link href="https://lruihao.cn/gituse.html"/>
+    <id>https://lruihao.cn/gituse.html</id>
+    <published>2018-10-26T13:11:02.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h3><p>这个不多说了，很常见了，前面的文章也有分多次用到<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;admin@lruihao.cn&quot;</span><br></pre></td></tr></table></figure><p></p><h3 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h3><p>复制id_rsa.pub文件内容去github或者coding配置SSH公钥（根据自己情况）</p><h3 id="创建本地代码库"><a href="#创建本地代码库" class="headerlink" title="创建本地代码库"></a>创建本地代码库</h3><p>在本地创建一个文件夹，作为你上传代码的本地仓库，在这个文件夹内点击右键，选择Git Bash Here，首先要初始化本地仓库，输<code>git init</code>命令<br>接下来进行远程代码库克隆（事先在coding等中建立一个项目，就是你需要链接的仓库）<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/Lruihao/Lruihao.github.io.git</span><br></pre></td></tr></table></figure><p></p><p>克隆时会出现输入账号密码的环节正确输入即可。</p><h3 id="代码推送（重点）"><a href="#代码推送（重点）" class="headerlink" title="代码推送（重点）"></a>代码推送（重点）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git add *</span><br><span class="line">git commit -m &quot;代码备注随便写&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p>git status可以理解为当前本地仓库的文件情况，如果输入命令后，文件名为红色说明还没有推送云端，至少还没有进入缓存区。<br>然后使用<code>git add</code>推送你要上传的文件，也可以用通配符表示全部推送。接下来， 输入<code>git commit -m &quot;代码备注</code>命令提交。<br>然后输入<code>git push origin master</code>命令推送到云端，origin是服务器，master是分枝。一般平时都是推送到master所以不可以简化为<code>git push</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;生成ssh&quot;&gt;&lt;a href=&quot;#生成ssh&quot; class=&quot;headerlink&quot; title=&quot;生成ssh&quot;&gt;&lt;/a&gt;生成ssh&lt;/h3&gt;&lt;p&gt;这个不多说了，很常见了，前面的文章也有分多次用到&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight p
+      
+    
+    </summary>
+    
+      <category term="git" scheme="https://lruihao.cn/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://lruihao.cn/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>termux基本使用教程</title>
+    <link href="https://lruihao.cn/termux1.html"/>
+    <id>https://lruihao.cn/termux1.html</id>
+    <published>2018-10-23T14:16:02.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>前面有一篇文章写到一些<a href="https://lruihao.cn/termux.html">传送门</a></p><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>下载并初始化termux</p><h4 id="安装vim"><a href="#安装vim" class="headerlink" title="安装vim"></a>安装vim</h4><p>安装编辑器vim<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install vim</span><br></pre></td></tr></table></figure><p></p><h4 id="解决中文乱码问题"><a href="#解决中文乱码问题" class="headerlink" title="解决中文乱码问题"></a>解决中文乱码问题</h4><p>在home目录下, 新建.vimrc文件<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim .vimrc</span><br></pre></td></tr></table></figure><p></p><p>添加内容如下:<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1</span><br><span class="line">set enc=utf8</span><br><span class="line">set fencs=utf8,gbk,gb2312,gb18030</span><br></pre></td></tr></table></figure><p></p><p>然后source下变量:<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .vimrc</span><br></pre></td></tr></table></figure><p></p><h4 id="修改启动问候语"><a href="#修改启动问候语" class="headerlink" title="修改启动问候语"></a>修改启动问候语</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim $PREFIX/etc/motd</span><br></pre></td></tr></table></figure><p>按i然后编辑，比如<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">www.lruihao.cn</span><br><span class="line">    李瑞豪</span><br></pre></td></tr></table></figure><p></p><p>Esc然后：wq退出</p><h4 id="管理员权限"><a href="#管理员权限" class="headerlink" title="管理员权限"></a>管理员权限</h4><p>手机已经 root,安装tsu, 这是一个su的 termux 版本, 用来在 termux 上替代su:<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install tsu</span><br></pre></td></tr></table></figure><p></p><p>然后终端下面输入:<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsu</span><br></pre></td></tr></table></figure><p></p><p>即可切换root用户, 这个时候会弹出root授权提示。在管理员身份下，输入exit可回到普通用户身份。</p><h3 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h3><p><a href="https://github.com/Cabbagec/termux-ohmyzsh" rel="external nofollow noopener noreferrer" target="_blank">Termux-ohmyzsh</a></p><p>作用 ： 美化之外，主要使用了zsh来替代bash作为默认shell。使用一键安装脚本来安装, 一步到位, 顺便启动了外置存储, 可以直接访问 SD 卡下的目录，创建软文件夹。</p><h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&quot;</span><br></pre></td></tr></table></figure><h4 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h4><p>运行chcolor更换色彩样式，或者：<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.termux/colors.sh</span><br></pre></td></tr></table></figure><p></p><h4 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体"></a>设置字体</h4><p>运行chfont更换字体，或者：<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.termux/fonts.sh</span><br></pre></td></tr></table></figure><p></p><h4 id="需要软件包："><a href="#需要软件包：" class="headerlink" title="需要软件包："></a>需要软件包：</h4><ul><li>curl</li></ul><h3 id="访问外置存储"><a href="#访问外置存储" class="headerlink" title="访问外置存储"></a>访问外置存储</h3><p>执行过上面的zsh一键配置脚本后, 并且授予文件访问权限的话, 会在家目录生成storage目录，并且生成若干目录，软连接都指向外置存储卡的相应目录<br>可以让从外置储存复制文件进system分区</p><h4 id="创建-QQ-文件夹软连接"><a href="#创建-QQ-文件夹软连接" class="headerlink" title="创建 QQ 文件夹软连接"></a>创建 QQ 文件夹软连接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ</span><br></pre></td></tr></table></figure><h4 id="创建blog2文件夹软连接备份文件"><a href="#创建blog2文件夹软连接备份文件" class="headerlink" title="创建blog2文件夹软连接备份文件"></a>创建blog2文件夹软连接备份文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2</span><br></pre></td></tr></table></figure><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><h4 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pkg install nodejs</span><br><span class="line">pkg install git</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">pkg install openssh</span><br></pre></td></tr></table></figure><h4 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>浏览器输入<code>127.0.0.1:4000</code>查看效果</p><h4 id="链接github-coding-gitee等远程仓库"><a href="#链接github-coding-gitee等远程仓库" class="headerlink" title="链接github,coding,gitee等远程仓库"></a>链接github,coding,gitee等远程仓库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br><span class="line">#这将按照你提供的邮箱地址，创建一对密钥(个人喜欢一路回车)</span><br></pre></td></tr></table></figure><p>找到<code>~/.ssh/id_rsa.pub</code>这个文件复制里面的内容，到对应的平台生成SSH公钥</p><h4 id="设置用户信息"><a href="#设置用户信息" class="headerlink" title="设置用户信息"></a>设置用户信息</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;lruihao&quot;</span><br><span class="line">git config --global user.email  &quot;1074627678@qq.com&quot;</span><br></pre></td></tr></table></figure><h4 id="测试链接"><a href="#测试链接" class="headerlink" title="测试链接"></a>测试链接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com  #github</span><br><span class="line">ssh -T git@coding.net   #coding</span><br><span class="line">ssh -T git@gitee.com   #gitee</span><br></pre></td></tr></table></figure><p><strong>注意#注释部分不要的</strong></p><h4 id="站点配置文件"><a href="#站点配置文件" class="headerlink" title="站点配置文件"></a>站点配置文件</h4><p>打开站点配置文件填写代码库</p><p>例如我的<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- type: git</span><br><span class="line">  repository:</span><br><span class="line">    github: git@github.com:Lruihao/Lruihao.github.io.git,master</span><br><span class="line">    coding: git@git.coding.net:liruihao/liruihao.git,master</span><br><span class="line">  #message: &quot;日常更新&quot;</span><br></pre></td></tr></table></figure><p></p><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure><p>没出错就可以正常通过相应域名访问了。<br><a href="https://lruihao.github.io" target="_blank" rel="noopener">https://lruihao.github.io</a><br><a href="https://liruihao.coding.me" target="_blank" rel="noopener">https://liruihao.coding.me</a><br><a href="https://lruihao.gitee.io" rel="external nofollow noopener noreferrer" target="_blank">https://lruihao.gitee.io</a> <strong>//手机hexo效果展示</strong></p><h3 id="ssh连接电脑或者服务器"><a href="#ssh连接电脑或者服务器" class="headerlink" title="ssh连接电脑或者服务器"></a>ssh连接电脑或者服务器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@118.24.217.167</span><br></pre></td></tr></table></figure><p>会提示输入密码，linux下输入密码是看不到的，大家都知道，小心点别输入错误。<br>之后就可以手机操作服务器了。</p><h3 id="解决-npm-安装报错（未验证）"><a href="#解决-npm-安装报错（未验证）" class="headerlink" title="解决 npm 安装报错（未验证）"></a>解决 npm 安装报错（未验证）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js</span><br></pre></td></tr></table></figure><p>把里面的 length改成4，我默认的是1。</p><h3 id="nyancat-彩虹猫"><a href="#nyancat-彩虹猫" class="headerlink" title="nyancat 彩虹猫"></a>nyancat 彩虹猫</h3><p>彩虹貓（英语：Nyan Cat）是在 2011 年 4 月上传在 Youtube 的视频，并且迅速爆红于网络，並在 2011 年 YouTube 浏览量最高的视频中排名第五.<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pkg install nyancat</span><br><span class="line">nyancat</span><br></pre></td></tr></table></figure><p></p><blockquote><p>还有更多姿势这里就不写了，只写一下日常用到的，就这样OK睡觉！</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前面有一篇文章写到一些&lt;a href=&quot;https://lruihao.cn/termux.html&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;&lt;h3 id=&quot;初始化&quot;&gt;&lt;a href=&quot;#初始化&quot; class=&quot;headerlink&quot; title=&quot;初始化&quot;&gt;&lt;/a&gt;初始化&lt;/h3&gt;&lt;p&gt;
+      
+    
+    </summary>
+    
+      <category term="termux" scheme="https://lruihao.cn/categories/termux/"/>
+    
+    
+      <category term="termux" scheme="https://lruihao.cn/tags/termux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ttf字体压缩</title>
+    <link href="https://lruihao.cn/web-font.html"/>
+    <id>https://lruihao.cn/web-font.html</id>
+    <published>2018-10-17T13:38:06.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装nodeJs"><a href="#安装nodeJs" class="headerlink" title="安装nodeJs"></a>安装nodeJs</h3><p>这个不多说，都有。</p><h3 id="安装字蛛"><a href="#安装字蛛" class="headerlink" title="安装字蛛"></a>安装字蛛</h3><p>输入命令<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install font-spider -g</span><br></pre></td></tr></table></figure><p></p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>安装成功之后就开始压缩了<br><img src="/web-font/menu.png" alt=""></p><p>我的css<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">      @font-face &#123;</span><br><span class="line">        font-family: MMT;</span><br><span class="line">        src: url(&quot;font/MMT_579767_SOAJ0_0.ttf&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br></pre></td></tr></table></figure><p></p><p>生成新的字体库，命令行输入<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-spider C:\Users\李瑞豪\Desktop\love\index.html</span><br></pre></td></tr></table></figure><p></p><p><img src="/web-font/jieguo.png" alt=""></p><p>链接：<br><code>http://font-spider.org</code></p>]]></content>
+    
+    <summary type="html">
+    
+      html网页引用中文字体，文件过大，加载缓慢的解决办法
+    
+    </summary>
+    
+      <category term="前端" scheme="https://lruihao.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="字体压缩" scheme="https://lruihao.cn/tags/%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux编程初体验</title>
+    <link href="https://lruihao.cn/linux-hello-c.html"/>
+    <id>https://lruihao.cn/linux-hello-c.html</id>
+    <published>2018-10-15T13:19:27.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>在Linux上编译c语言文件。</p></blockquote><h3 id="打开vim编辑器"><a href="#打开vim编辑器" class="headerlink" title="打开vim编辑器"></a>打开vim编辑器</h3><p>(没有就用vi,或者先安装vim<code>sudo apt-get install vim</code>)<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim</span><br></pre></td></tr></table></figure><p></p><h3 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h3><p>打开文件编辑器之后编辑文件<br><img src="/linux-hello-c/ubuntu.png" alt=""></p><p>首先按<code>Esc</code>再<code>:</code>进入末行命令<br>再保存为hello.c文件后退出<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">: w hello.c</span><br><span class="line">: q</span><br></pre></td></tr></table></figure><p></p><p>打开目录看看生成的文件<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls</span><br></pre></td></tr></table></figure><p></p><h3 id="编译生成可执行文件并执行"><a href="#编译生成可执行文件并执行" class="headerlink" title="编译生成可执行文件并执行"></a>编译生成可执行文件并执行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ gcc hello.c -o hello</span><br><span class="line">$ ./hello</span><br></pre></td></tr></table></figure><p><img src="/linux-hello-c/hello.png" alt=""></p><p>若权限不够则加可执行权限<code>chmod +x hello</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;在Linux上编译c语言文件。&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=&quot;打开vim编辑器&quot;&gt;&lt;a href=&quot;#打开vim编辑器&quot; class=&quot;headerlink&quot; title=&quot;打开vim编辑器&quot;&gt;&lt;/a&gt;打开vim编辑器&lt;/h3&gt;&lt;p
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://lruihao.cn/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://lruihao.cn/tags/linux/"/>
+    
+      <category term="HelloWorld" scheme="https://lruihao.cn/tags/HelloWorld/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一款自己写的字体-沐目体</title>
+    <link href="https://lruihao.cn/font-mmt.html"/>
+    <id>https://lruihao.cn/font-mmt.html</id>
+    <published>2018-10-12T11:39:19.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note success"><ul><li>字体简介<br>#沐目体# 沐目之，湘也。（一个以gf名字命名的字体）</li><li>笔头设置<br>狼毫笔型，粗细为9，速度模式</li><li>屏写方式</li></ul><p>使用手机造字app手写制作，写了大概1年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。</p></div><h3 id="在线效果演示"><a href="#在线效果演示" class="headerlink" title="在线效果演示"></a>在线效果演示</h3><p></p><p style="font-family:MMT;font-size:30px;font-weight:700" align="center"><br>前尘硬化像石头<br>随缘地抛下便逃走<br>我绝不罕有<br>往街里绕过一周<br>我便化乌有<br>你还嫌不够<br>我把这陈年风褛<br>送赠你解咒<br></p><br><a id="more"></a><p></p><h3 id="手机及电脑word效果截图"><a href="#手机及电脑word效果截图" class="headerlink" title="手机及电脑word效果截图"></a>手机及电脑word效果截图</h3><p><img src="/font-mmt/cell.jpg" height="auto" width="500"><br><img src="/font-mmt/word1.png" height="auto" width="auto"></p><h3 id="微信，QQ效果截图"><a href="#微信，QQ效果截图" class="headerlink" title="微信，QQ效果截图"></a>微信，QQ效果截图</h3><p><img src="/font-mmt/wechat.png" height="auto" width="450"><br><img src="/font-mmt/qq.png" height="auto" width="450"></p><h3 id="手机设置截图"><a href="#手机设置截图" class="headerlink" title="手机设置截图"></a>手机设置截图</h3><p><img src="/font-mmt/setting.png" height="auto" width="450"><br><img src="/font-mmt/setting1.png" height="auto" width="450"></p><p><a href="https://github.com/Lruihao/Grocery" rel="external nofollow noopener noreferrer" target="_blank">沐目体下载</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note success&quot;&gt;&lt;ul&gt;&lt;li&gt;字体简介&lt;br&gt;#沐目体# 沐目之，湘也。（一个以gf名字命名的字体）&lt;/li&gt;&lt;li&gt;笔头设置&lt;br&gt;狼毫笔型，粗细为9，速度模式&lt;/li&gt;&lt;li&gt;屏写方式&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;使用手机造字app手写制作，写了大概1年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。&lt;/p&gt;&lt;/div&gt;&lt;h3 id=&quot;在线效果演示&quot;&gt;&lt;a href=&quot;#在线效果演示&quot; class=&quot;headerlink&quot; title=&quot;在线效果演示&quot;&gt;&lt;/a&gt;在线效果演示&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;font-family:MMT;font-size:30px;font-weight:700&quot; align=&quot;center&quot;&gt;&lt;br&gt;前尘硬化像石头&lt;br&gt;随缘地抛下便逃走&lt;br&gt;我绝不罕有&lt;br&gt;往街里绕过一周&lt;br&gt;我便化乌有&lt;br&gt;你还嫌不够&lt;br&gt;我把这陈年风褛&lt;br&gt;送赠你解咒&lt;br&gt;&lt;/p&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="通用" scheme="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
+    
+    
+      <category term="手写体" scheme="https://lruihao.cn/tags/%E6%89%8B%E5%86%99%E4%BD%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>流水线</title>
+    <link href="https://lruihao.cn/liushuixian.html"/>
+    <id>https://lruihao.cn/liushuixian.html</id>
+    <published>2018-10-09T08:21:04.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度。</p><table><thead><tr><th style="text-align:center">未使用流水线</th><th style="text-align:center">使用流水线</th></tr></thead><tbody><tr><td style="text-align:center"><img src="/liushuixian/未使用.png" alt=""></td><td style="text-align:center"><img src="/liushuixian/使用.png" alt=""></td></tr></tbody></table><p>流水线周期为执行时间最长的一段。</p><h3 id="流水线计算公式"><a href="#流水线计算公式" class="headerlink" title="流水线计算公式"></a>流水线计算公式</h3><p><img src="/liushuixian/公式.png" alt=""></p><p>首先使用理论公式，没有答案用实践公式。</p><h3 id="流水线吞吐率计算"><a href="#流水线吞吐率计算" class="headerlink" title="流水线吞吐率计算"></a>流水线吞吐率计算</h3><p>流水线吞吐率是指单位时间内处理的任务的数量。</p><table><thead><tr><th style="text-align:center">基本公式</th><th style="text-align:center">最大吞吐率</th></tr></thead><tbody><tr><td style="text-align:center"><img src="/liushuixian/1.png" alt=""></td><td style="text-align:center"><img src="/liushuixian/max.png" alt=""></td></tr></tbody></table><h3 id="流水线加速比"><a href="#流水线加速比" class="headerlink" title="流水线加速比"></a>流水线加速比</h3><p>完成一批任务,不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p><p>公式： S=不使用流水线执行时间/使用流水线执行时间</p><p>流水线加速比越高越好，说明使用流水线的效果。</p><h3 id="流水线的效率"><a href="#流水线的效率" class="headerlink" title="流水线的效率"></a>流水线的效率</h3><p><img src="/liushuixian/效率.png" alt=""></p><h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><img src="/liushuixian/例题.png" alt=""></p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="主机"><a href="#主机" class="headerlink" title="主机"></a>主机</h4><p><img src="/liushuixian/主机.png" alt=""></p><h4 id="CISC和RISC"><a href="#CISC和RISC" class="headerlink" title="CISC和RISC"></a>CISC和RISC</h4><table><thead><tr><th style="text-align:center">类型</th><th style="text-align:center">指令</th><th style="text-align:center">寻址方式</th><th style="text-align:center">实现方式</th><th style="text-align:center">其他</th></tr></thead><tbody><tr><td style="text-align:center">CISC(复杂指令集)</td><td style="text-align:center">数量多，使用频率差别大，可变长格式</td><td style="text-align:center">支持多种</td><td style="text-align:center">微程序控制技术(微码)</td><td style="text-align:center">研制周期长</td></tr><tr><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">RISC(精简指令集)</td><td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有Load/Store操作内存</td><td style="text-align:center">支持方式少</td><td style="text-align:center">增加了通用寄存器；硬布线逻辑控制为主；适合采用流水线</td><td style="text-align:center">优化编码，有效支持高级语言</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h3&gt;&lt;p&gt;流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行
+      
+    
+    </summary>
+    
+      <category term="计算机组成与体系结构" scheme="https://lruihao.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="计算机组成与体系结构" scheme="https://lruihao.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="流水线" scheme="https://lruihao.cn/tags/%E6%B5%81%E6%B0%B4%E7%BA%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机数据</title>
+    <link href="https://lruihao.cn/data.html"/>
+    <id>https://lruihao.cn/data.html</id>
+    <published>2018-10-08T15:01:10.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="数据的表示"><a href="#数据的表示" class="headerlink" title="数据的表示"></a>数据的表示</h3><p><strong>数据的表示可分为：原码，反码和补码。（二进制）</strong></p><ul><li>原码： 符号位0为正，1为负。</li><li>反码： 符号位0为正，1为负。<ul><li>正数： 反码同原码。</li><li>负数： 符号位除外其他位按位取反。</li></ul></li><li>补码：<ul><li>正数： 同原码。</li><li>负数： 符号位除外其他位按位取反再+1。</li></ul></li><li>移码： 补码符号位取反。</li></ul><h3 id="数据表示范围"><a href="#数据表示范围" class="headerlink" title="数据表示范围"></a>数据表示范围</h3><ul><li>原码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li><li>反码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li><li>补码： <code>-z^n-1 ~ 2^n-1 - 1</code> (补码正0和负0相同，少占一数位，就多一个范围)</li></ul><p>例：<br>8位二进制，除去符号位还有7位，7个1为最大数，相当于8个1减1，也就是2^7-1,所以范围就算出来了。</p><h3 id="浮点数运算"><a href="#浮点数运算" class="headerlink" title="浮点数运算"></a>浮点数运算</h3><p><strong>对阶（小阶对大阶）+ 尾数计算（科学计数法）+ 结果规格化（科学技术法）</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;数据的表示&quot;&gt;&lt;a href=&quot;#数据的表示&quot; class=&quot;headerlink&quot; title=&quot;数据的表示&quot;&gt;&lt;/a&gt;数据的表示&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;数据的表示可分为：原码，反码和补码。（二进制）&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;原码： 符号
+      
+    
+    </summary>
+    
+      <category term="计算机组成与体系结构" scheme="https://lruihao.cn/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="计算机数据" scheme="https://lruihao.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%B0%E6%8D%AE/"/>
+    
+      <category term="计算机组成与体系结构" scheme="https://lruihao.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>赞助记录</title>
+    <link href="https://lruihao.cn/donators.html"/>
+    <id>https://lruihao.cn/donators.html</id>
+    <published>2018-09-28T10:34:53.000Z</published>
+    <updated>2018-11-03T04:27:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note success"><p>首先非常感谢朋友们资助，打赏我，这不仅是对我的肯定，也让我获得了意外的零花钱，再次感谢打赏的老铁，大哥们！也希望以后看到我博客觉得还不错的的小伙伴们不嫌麻烦，小小打赏一下！😄😄😄我都会做记录的喔谢谢大家！</p></div><table><thead><tr><th style="text-align:center">赞助者</th><th style="text-align:center">时间</th><th style="text-align:center">支持方式</th><th style="text-align:center">赞助❤️</th><th style="text-align:left">记录</th></tr></thead><tbody><tr><td style="text-align:center"><a href="https://postgres.fun" rel="external nofollow noopener noreferrer" target="_blank">francs</a></td><td style="text-align:center">2018.09.28<br>2018.10.26</td><td style="text-align:center">支付宝 QQ</td><td style="text-align:center">￥50<br>￥8.8</td><td style="text-align:left">第一次收到别人的赞助，内心表示受宠若惊又非常开心。恰好这个月掉了100块钱又到了月底唉！算着钱吃饭😢，不过我还是拿这50块买了半年腾讯云服务器!真的非常感谢老哥的支持！<br>今天学校运动会没课，睡到9点多起来看到qq收到一个红包，也是很开心！感谢支持！</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;首先非常感谢朋友们资助，打赏我，这不仅是对我的肯定，也让我获得了意外的零花钱，再次感谢打赏的老铁，大哥们！也希望以后看到我博客觉得还不错的的小伙伴们不嫌麻烦，小小打赏一下！😄😄😄我都会做记录的喔谢谢大家！&lt;/p&gt;&lt;/
+      
+    
+    </summary>
+    
+      <category term="通用" scheme="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
+    
+    
+      <category term="通用" scheme="https://lruihao.cn/tags/%E9%80%9A%E7%94%A8/"/>
+    
+      <category term="赞助" scheme="https://lruihao.cn/tags/%E8%B5%9E%E5%8A%A9/"/>
+    
+  </entry>
+  
+</feed>
