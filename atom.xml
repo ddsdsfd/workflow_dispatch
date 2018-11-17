@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2018-11-17T06:51:11.549Z</updated>
+  <updated>2018-11-17T07:04:17.748Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://lruihao.cn/commit-bat.html"/>
     <id>https://lruihao.cn/commit-bat.html</id>
     <published>2018-11-17T06:25:49.000Z</published>
-    <updated>2018-11-17T06:51:11.549Z</updated>
+    <updated>2018-11-17T07:04:17.748Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p><ul><li>git add * (添加需要提交的文件，这里全选)</li><li>git commit -m “提交信息”</li><li>git push</li></ul><p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。<br>这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p></blockquote><a id="more"></a><h3 id="新建文本文档"><a href="#新建文本文档" class="headerlink" title="新建文本文档"></a>新建文本文档</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">title</span> Commit</span><br><span class="line">git add .</span><br><span class="line"><span class="built_in">set</span> /p m=Message:</span><br><span class="line">git commit -m "<span class="variable">%m%</span>"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p><ul><li>git add * (添加需要提交的文件，这里全选)</li><li>git commit -m “提交信息”</li><li>git push</li></ul><p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。<br>这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p></blockquote><a id="more"></a><h3 id="新建文本文档"><a href="#新建文本文档" class="headerlink" title="新建文本文档"></a>新建文本文档</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">title</span> Commit</span><br><span class="line">git add .</span><br><span class="line"><span class="built_in">set</span> /p m=Message:</span><br><span class="line">git commit -m "<span class="variable">%m%</span>"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p><h3 id="hexo博客"><a href="#hexo博客" class="headerlink" title="hexo博客"></a>hexo博客</h3><p>hexo提交也很麻烦，当然也要批处理一下呀<br></p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean&amp;&amp;hexo g -d</span><br></pre></td></tr></table></figure><p></p>]]></content>
     
     <summary type="html">
     
