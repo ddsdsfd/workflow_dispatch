@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2018-11-13T11:36:20.447Z</updated>
+  <updated>2018-11-17T06:51:11.549Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过bat批处理文件自动提交代码</title>
+    <link href="https://lruihao.cn/commit-bat.html"/>
+    <id>https://lruihao.cn/commit-bat.html</id>
+    <published>2018-11-17T06:25:49.000Z</published>
+    <updated>2018-11-17T06:51:11.549Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p><ul><li>git add * (添加需要提交的文件，这里全选)</li><li>git commit -m “提交信息”</li><li>git push</li></ul><p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。<br>这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p></blockquote><a id="more"></a><h3 id="新建文本文档"><a href="#新建文本文档" class="headerlink" title="新建文本文档"></a>新建文本文档</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">title</span> Commit</span><br><span class="line">git add .</span><br><span class="line"><span class="built_in">set</span> /p m=Message:</span><br><span class="line">git commit -m "<span class="variable">%m%</span>"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤&lt;/p&gt;&lt;ul&gt;&lt;li&gt;git add * (添加需要提交的文件，这里全选)&lt;/li&gt;&lt;li&gt;git commit -m “提交信息”&lt;/li&gt;&lt;li&gt;git push&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。&lt;br&gt;这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="通用" scheme="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
+    
+    
+      <category term="批处理" scheme="https://lruihao.cn/tags/%E6%89%B9%E5%A4%84%E7%90%86/"/>
+    
+      <category term="脚本" scheme="https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="bat" scheme="https://lruihao.cn/tags/bat/"/>
+    
+  </entry>
   
   <entry>
     <title>博採眾長app</title>
@@ -508,33 +534,6 @@
       <category term="计算机数据" scheme="https://lruihao.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%B0%E6%8D%AE/"/>
     
       <category term="计算机组成与体系结构" scheme="https://lruihao.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>赞助记录</title>
-    <link href="https://lruihao.cn/donators.html"/>
-    <id>https://lruihao.cn/donators.html</id>
-    <published>2018-09-28T10:34:53.000Z</published>
-    <updated>2018-11-17T01:49:13.100Z</updated>
-    
-    <content type="html"><![CDATA[<div class="note success"><p>首先非常感谢朋友们资助，打赏我，这不仅是对我的肯定，也让我获得了意外的零花钱，再次感谢打赏的老铁，大哥们！也希望以后看到我博客觉得还不错的的小伙伴们不嫌麻烦，小小打赏一下！😄😄😄我都会做记录的喔谢谢大家！</p></div><table><thead><tr><th style="text-align:center">赞助者</th><th style="text-align:center">时间</th><th style="text-align:center">支持方式</th><th style="text-align:center">赞助❤️</th><th style="text-align:left">记录</th></tr></thead><tbody><tr><td style="text-align:center"><a href="https://postgres.fun" rel="external nofollow noopener noreferrer" target="_blank">francs</a></td><td style="text-align:center">2018.09.28<br>2018.10.26<br>2018.11</td><td style="text-align:center">支付宝 QQ</td><td style="text-align:center">￥50<br>￥8.8<br>￥8.8</td><td style="text-align:left">第一次收到别人的赞助，内心表示受宠若惊又非常开心。恰好这个月掉了100块钱又到了月底唉！算着钱吃饭😢，不过我还是拿这50块买了半年腾讯云服务器!真的非常感谢老哥的支持！<br>今天学校运动会没课，睡到9点多起来看到qq收到一个红包，也是很开心！感谢支持！</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div class=&quot;note success&quot;&gt;&lt;p&gt;首先非常感谢朋友们资助，打赏我，这不仅是对我的肯定，也让我获得了意外的零花钱，再次感谢打赏的老铁，大哥们！也希望以后看到我博客觉得还不错的的小伙伴们不嫌麻烦，小小打赏一下！😄😄😄我都会做记录的喔谢谢大家！&lt;/p&gt;&lt;/
-      
-    
-    </summary>
-    
-      <category term="通用" scheme="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
-    
-    
-      <category term="通用" scheme="https://lruihao.cn/tags/%E9%80%9A%E7%94%A8/"/>
-    
-      <category term="赞助" scheme="https://lruihao.cn/tags/%E8%B5%9E%E5%8A%A9/"/>
     
   </entry>
   
