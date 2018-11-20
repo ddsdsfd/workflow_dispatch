@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/links.html</loc>
+    
+    <lastmod>2018-11-20T13:01:25.068Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/commit-bat.html</loc>
     
     <lastmod>2018-11-17T07:30:03.621Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>https://lruihao.cn/blog-backup.html</loc>
     
     <lastmod>2018-11-03T05:19:51.407Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/web-server-yun.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
   </url>
   
@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/hdu1272.html</loc>
+    <loc>https://lruihao.cn/categories/index.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -394,7 +394,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/git-delete.html</loc>
+    <loc>https://lruihao.cn/Codeforces680B.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -660,7 +660,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/links.html</loc>
+    <loc>https://lruihao.cn/git-delete.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -716,28 +716,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/beian.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/categories/index.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/shell.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/tags/index.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/beian.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -751,7 +737,21 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/Codeforces680B.html</loc>
+    <loc>https://lruihao.cn/shell.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/web-server-yun.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/hdu1272.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
