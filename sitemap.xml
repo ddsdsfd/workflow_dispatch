@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/bugs.html</loc>
+    
+    <lastmod>2018-11-23T04:04:10.371Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/links.html</loc>
     
     <lastmod>2018-11-20T13:01:25.068Z</lastmod>
@@ -96,13 +103,6 @@
     <loc>https://lruihao.cn/blog-backup.html</loc>
     
     <lastmod>2018-11-03T05:19:51.407Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/href-301.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
   </url>
   
@@ -380,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/categories/index.html</loc>
+    <loc>https://lruihao.cn/tags/index.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -450,7 +450,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/bugs.html</loc>
+    <loc>https://lruihao.cn/git-delete.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -660,7 +660,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/git-delete.html</loc>
+    <loc>https://lruihao.cn/beian.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -716,14 +716,21 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/tags/index.html</loc>
+    <loc>https://lruihao.cn/shell.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/beian.html</loc>
+    <loc>https://lruihao.cn/web-server-yun.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/categories/index.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -737,14 +744,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/shell.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/web-server-yun.html</loc>
+    <loc>https://lruihao.cn/href-301.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
