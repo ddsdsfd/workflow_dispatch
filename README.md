@@ -55,8 +55,8 @@
 
 ### 联系我
 
-* <i class="fa fa-fw fa-wechat"></i>`17352623219`
-* <i class="fa fa-fw fa-qq"></i>`1074627678`
+* wechat`17352623219`
+* QQ`1074627678`
 * [在线客服](https://chat.daovoice.io/?id=8a6701dd)
 * [在线邮我](https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin@lruihao.cn)
 * [博客留言](/guestbook)
