@@ -1,3 +1,6 @@
+<h1 align="center">博採眾長</h1>
+> 取博采众长，兼收并蓄之意。    
+
 ### 首页 via <https://www.lruihao.cn>
 > 个人博客，瞎折腾的，觉得不错可以点个star！  
 > 欢迎访问 <https://lruihao.cn> 查看详情     
