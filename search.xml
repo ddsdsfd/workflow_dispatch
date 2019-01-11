@@ -497,8 +497,8 @@
         <category>数学</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
         <tag>数学</tag>
       </tags>
   </entry>
@@ -511,8 +511,8 @@
         <category>组合数学</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
         <tag>数学</tag>
         <tag>组合数学</tag>
       </tags>
@@ -556,8 +556,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
         <tag>组合数学</tag>
       </tags>
   </entry>
@@ -629,23 +629,10 @@
   </entry>
   <entry>
     <title><![CDATA[菜鸟，大牛和教主，三者的区别(转)]]></title>
-    <url>%2Ffucking4.html</url>
+    <url>%2Ffucking3.html</url>
     <content type="text"><![CDATA[对菜鸟来说题目有三种：会算法且能AC的，会算法但不能AC的，不会做的对大牛来说题目有两种：会做的，不会做的对教主来说题目有两种：能AC的，数据有错的菜鸟提交WA了，找了N久找不出错时，在论坛大骂数据有错，但是没人理大牛提交WA了，找了N久找不出错时，写暴力程序或者求别人的AC程序对拍教主提交WA了，Judge马上修正数据菜鸟面对一道难题，直接暴搜大牛面对一道难题，算了算时间复杂度不对，或者证明出是NP难，果断放弃教主面对一道难题，说，虽然我不会做，但AC还是没有问题的菜鸟AC了一道难题，巴不得召告天下大牛AC了一道难题，会写一篇解题报告，第一句话一定是：这题其实不难教主AC了一道难题，好像什么都没发生过菜鸟切OJ，只挑简单题做大牛切OJ，成套成套地做教主早就不切OJ了菜鸟经常在论坛和QQ上求助大牛经常在论坛和QQ上灌水教主一般不露面菜鸟喜欢说自己做了几十几百道题大牛喜欢说自己把某个OJ做了百分之八九十教主一般不说话菜鸟队看到场上90%的队伍挂起了红球，开始找红球是哪道题大牛队全场第一个挂起黄球，然后发现几乎同时有另外几支大牛队也挂起了黄球教主队全场第一个挂起绿球，然后全场到最后也只有一个绿球菜鸟喜欢搜集各种模板大牛只用自己写的模板教主不用模板，但他当场写的程序会被别人用作模板菜鸟喜欢YY这种分析菜鸟、大牛和教主的区别的文章(没错就是我！- _ -)大牛看完这样的文章会笑一笑，懒得回帖教主直接无视]]></content>
       <categories>
-        <category>生活随笔</category>
-      </categories>
-      <tags>
-        <tag>他山之石</tag>
-        <tag>生活随笔</tag>
-        <tag>fun sth for acm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[你搞图论有毛用啊！！(转)]]></title>
-    <url>%2Ffucking3.html</url>
-    <content type="text"><![CDATA[你搞图论有毛用啊！！搞了你也不一定能看懂！看懂了你也不一定能深刻理解！理解了你也不一定完全敲出代码！！敲出代码考试的时候也不一定能出图论的题！！出了图论的题你也不一定能看出来！！看出来你也不一定能按要求敲出来！按要求敲出来你也不一定能跑出结果！！跑出结果你也不一定能AC！！能AC你也不一定能拿到奖！！拿到奖你也不一定能进区域赛！进了区域赛指定就是被虐！！]]></content>
-      <categories>
-        <category>生活随笔</category>
+        <category>ACM</category>
       </categories>
       <tags>
         <tag>他山之石</tag>
@@ -658,7 +645,7 @@
     <url>%2Ffucking2.html</url>
     <content type="text"><![CDATA[搞ACM最悲催的事莫过于你在写poj1475你看到这道题夏天的风分类为level2而且你level1还没做完你认为你可以做着试试因为这只不过是个推箱子而已于是就开始做了写了一遍bfs发现推箱子并没有你想象的那么简单而且这道题的数据简直太变态不仅变态还有问题代码写好以后提交果断的TLE于是剪枝半天还是TLE于是你告诉自己要面对现实只能换算法于是你又想了半天想出一个自己认为很好的算法然后啪啦啪啦的敲了150行代码马上就要敲完的时候发现自己这个算法思路有问题然后石化了晚上睡觉满脑子在想这道题第二天早上起床的时候突然灵机一动又想出一个新的算法！！需要3个bfs就能解决然后你就敲啊敲敲了200行编译通过很高兴然后开始跑数据结果发现以前1个bfs能跑出来的数据你这3个bfs居然跑不出来了！！！而且运行一会立刻就消失了！！！连结果都没见着！！有木有啊有木有！！！这才是搞ACM最悲催的事啊！！！]]></content>
       <categories>
-        <category>生活随笔</category>
+        <category>ACM</category>
       </categories>
       <tags>
         <tag>他山之石</tag>
@@ -671,7 +658,7 @@
     <url>%2Ffucking1.html</url>
     <content type="text"><![CDATA[劳资六年前开始搞ACM啊！！！！！！！！！！从此踏上了尼玛不归路啊！！！！！！！！！！！！谁特么跟劳资讲算法是程序设计的核心啊！！！！！！尼玛除了面试题就没见过用算法的地方啊！！！！！！谁再跟劳资讲算法之美算法的力量，劳资一本算法导论拍死你啊！！！！！！！！那是搞ACM的入门书啊！！！！特么的入门书就一千多页啊！！！！！！！还没有习题答案啊，学完了你特么都不知道自己到底会不会啊有木有！！！！！！然后你就得看lrj的黑书啊！！！！！！还是特么的没有习题答案啊！！！！那书难的一B啊！！！！人家一个“显然”得出的结论够你想一礼拜啊有木有！！！！一个课后题够你想几个月啊有木有！！！！然后还有一堆堆的书啊！！！！每一类算法都足够写一本书啊！！！！每本都是砖头一样啊！！！！还都特么是英文的啊！！！！也有中文翻译版啊！！！！！！翻译得跟屎一样啊！！！！你看的时候得把它再变回英文才能懂啊！！！！！！有木有！！！！！！ACM的题目类型是没有范围的啊！！！！！！动态规划有木有！！！！数据结构有木有！！！！图论有木有！！！！！！计算几何有木有！！！！！！数论有木有！！！！！！要写两三百行的模拟题有木有！！！！！！特么连物理题化学题都有啊！！！！！！还有理论上就不可做的NP难问题啊！！！！！！特么理论上不可做的题也有人能AC啊！！！！坑爹啊！！！！课本上学的东西完全不给力啊！！！！！！你以为学过一个最长公共子串就是懂动态规划了啊！！！！！！树型的有木有！！！！状态压缩的有木有！！！！插头的有木有！！！！而且特么写出来就超时啊！！！！！！你得四边形优化啊！！！！你得斜率优化啊！！！！你得队列优化啊！！！！特么恨不得把要算十年的程序优化到一秒啊！！！！你以为学过一个二叉搜索树就是懂数据结构了啊！！！！！！平衡啊旋转啊红啊黑啊有木有！！！！伸展啊随机权重啊合并啊拆分啊有木有！！！！！！你以为学过一个Dijkstra最短路就是懂图算法了啊！！！！！！特么的图里有几百万个点啊！！！！！！得用堆来优化啊！！！！而且边权要是负的就不对了啊！！！！还有环啊！！！！而且特么的你根本看不出是最短路问题啊！！！！！！为神马最短路算法可以用来解不等式啊！！！！还有网络流啊！！！！特么的课本上的算法铁定超时啊！！！！！！你得看论文去研究神马Dinic啊SAP啊！！！！！！而且你还是根本看不出是网络流啊！！！！！！网络流是在图上来求啊！！！！特么的图在哪里啊！！！！特么的八竿子打不着的问题都能变成网络流啊！！！！！！这些你都学会了啊！！！！想参加比赛了啊！！！！发现想拿个成绩非常难啊！！！！！！校内选拔赛就好几百人报名啊有木有！！！！！！最后只能剩下十几个啊！！！！人家都是竞赛保送的啊！！！！！！中学就学了好几年了有木有！！！！怎么比的过啊！！！！！！进了校队以后你就不要想寒暑假了啊！！！！！！夏天劳资全身脱光了涂满花露水半夜刷题有木有！！！！！！冬天劳资跑遍校园找不到一个开门的食堂有木有！！！！！！而且特么老外的在线比赛都在半夜啊！！！！！！！！在机房通宵是常事啊有木有！！！！！！比赛是三个人啊！！！！但是只有一台电脑啊！！！！！！特么的ACM组委会连多买几台电脑都不肯啊！！！！！！队友占着机器你就只能干着急啊！！！！！！想把他踹一边儿去啊！！！！！！没机器你就得在纸上调试啊！！！！！！你的脑子就是个CPU啊有木有！！！！你要是摊上一个啥都不会，连读题都误导你的队友，你就死定了啊！！！！！！不怕神一样的对手就怕猪一样的队友啊！！！！你终于参加区域赛了啊！！！！一百多个队啊！！！！！！还有一大堆打星号的高中生们啊！！！！！！都是全国前几名级别的有木有！！！！还有一大堆打星号的老不死们啊！！！！！！毕业了还要来诈尸啊！！！！一开场那气球呼呼地挂啊！！！！你还没读完题人家已经AC了啊！！！！而且最先过的不一定是最简单的啊！！！！人家故意在误导你啊有木有！！！！！！比赛要五个小时啊！！！！结束了以后脑子都抽筋了啊！！！！人家做七八道题，你连一半都不到啊！！！！！！拿个毛的奖啊！！！！去个毛的总决赛啊！！！！！！去了总决赛也是被虐啊！！！！！！老毛子们更尼玛不是人啊有木有！！！！！！连清华都被虐啊有木有！！！！！！你拿着一堆Honorable Mention毕业了啊！！！！想找工作啊！！！！谁说懂算法很容易找到好工作啊！！！！都特么要项目经验有木有！！！！劳资成天盯着一个黑乎乎的控制台窗口！！！！哪有时间做项目啊！！！！！！同学们都是网站啊桌面程序啊做过一堆啊！！！！人家对面试官侃侃而谈啊！！！劳资只好说劳资除了算法啥也不会啊！！而且其实算法也没学会啊！！！！！坑爹啊！！！！终于工作了啊！！！！发现算法神马的完全用不上啊！！！！稍微复杂点的算法都有现成的库可以用啊！！！！！！要懂Shell编程有木有！！！！要懂多线程有木有！！！！要懂Socket有木有！！！！要懂分布式有木有！！！！要懂J2EE有木有！！！！要懂设计模式有木有！！！！要懂以下省略三千字有木有！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！总之搞ACM的上辈子都是脑细胞死光钻到牛角尖里出不来的天使啊！！！！！！你伤不起啊！！！！！！]]></content>
       <categories>
-        <category>生活随笔</category>
+        <category>ACM</category>
       </categories>
       <tags>
         <tag>他山之石</tag>
@@ -741,8 +728,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
       </tags>
   </entry>
   <entry>
@@ -753,8 +740,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
       </tags>
   </entry>
   <entry>
@@ -807,8 +794,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
       </tags>
   </entry>
   <entry>
@@ -957,8 +944,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
       </tags>
   </entry>
   <entry>
@@ -1035,8 +1022,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>Codeforces</tag>
         <tag>ACM</tag>
+        <tag>Codeforces</tag>
       </tags>
   </entry>
   <entry>
@@ -1121,8 +1108,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>2018湘潭邀请赛</tag>
+        <tag>ACM</tag>
         <tag>总结</tag>
       </tags>
   </entry>
@@ -1135,8 +1122,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>2018湘潭邀请赛</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1148,8 +1135,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>2018湘潭邀请赛</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1161,8 +1148,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>2018湘潭邀请赛</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1174,8 +1161,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>2018湘潭邀请赛</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1256,7 +1243,7 @@
   <entry>
     <title><![CDATA[光]]></title>
     <url>%2F%E5%85%89.html</url>
-    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
+    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
       <categories>
         <category>生活随笔</category>
       </categories>
