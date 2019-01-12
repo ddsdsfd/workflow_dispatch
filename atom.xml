@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2018-12-10T14:13:37.167Z</updated>
+  <updated>2019-01-12T04:22:21.877Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>年度总结</title>
+    <link href="https://lruihao.cn/years.html"/>
+    <id>https://lruihao.cn/years.html</id>
+    <published>2019-01-12T03:09:52.000Z</published>
+    <updated>2019-01-12T04:22:21.877Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note"><p>以前每年都会在QQ空间写每年的总结，可是现在已经过了肆意在空间写说说的年纪了。所幸还有博客这一席之地。</p></div><a id="more"></a><p></p><h1 align="center">2018</h1><br>18年主要的收获，经历大概就在下面了，可还是没有学到什么硬本事，寒假还是要学习一下java和jsp。<p></p><ul><li>首先最开心的是在狗年刚开始3月底回到湘潭后，拿下了驾照（年前挂了一次很不爽），可以开共享汽车了，体验共享时代的新滋味。</li><li>然后是11月份的软考，虽然没有认真准备考试，还是过了（上午压线）。不知道是今年的容易还是怎么的，反正我考完就觉得挺容易的。</li><li>5月底搭建了现在这个hexo静态博客，还收到了一些网上朋友的打赏，感谢！</li><li>买了两个服务器一个国内的，一个国外的。搭了一个文件浏览器作为自己的<a href="https://pan.lruihao.cn" rel="external nofollow noopener noreferrer" target="_blank">网盘</a>,还搭了一个ss梯子供自己翻墙使用。</li><li>参加了2018年ACM的湘潭全国邀请赛，在湘大，虽然很遗憾没有拿奖，但就当走过这步吧，略过。</li><li>暑假结束，退出了E313ACM实验室，也就没有刷题打比赛了。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note&quot;&gt;&lt;p&gt;以前每年都会在QQ空间写每年的总结，可是现在已经过了肆意在空间写说说的年纪了。所幸还有博客这一席之地。&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="生活随笔" scheme="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="总结" scheme="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>英语语法--形式倒装</title>
@@ -507,28 +529,6 @@
       <category term="linux" scheme="https://lruihao.cn/tags/linux/"/>
     
       <category term="termux" scheme="https://lruihao.cn/tags/termux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ttf字体压缩</title>
-    <link href="https://lruihao.cn/web-font.html"/>
-    <id>https://lruihao.cn/web-font.html</id>
-    <published>2018-10-17T13:38:06.000Z</published>
-    <updated>2018-11-03T04:27:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="安装nodeJs"><a href="#安装nodeJs" class="headerlink" title="安装nodeJs"></a>安装nodeJs</h3><p>这个不多说，都有。</p><h3 id="安装字蛛"><a href="#安装字蛛" class="headerlink" title="安装字蛛"></a>安装字蛛</h3><p>输入命令<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install font-spider -g</span><br></pre></td></tr></table></figure><p></p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>安装成功之后就开始压缩了<br><img src="/web-font/menu.png" alt=""></p><p>我的css<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">      @font-face &#123;</span><br><span class="line">        font-family: MMT;</span><br><span class="line">        src: url(&quot;font/MMT_579767_SOAJ0_0.ttf&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br></pre></td></tr></table></figure><p></p><p>生成新的字体库，命令行输入<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-spider C:\Users\李瑞豪\Desktop\love\index.html</span><br></pre></td></tr></table></figure><p></p><p><img src="/web-font/jieguo.png" alt=""></p><p>链接：<br><code>http://font-spider.org</code></p>]]></content>
-    
-    <summary type="html">
-    
-      html网页引用中文字体，文件过大，加载缓慢的解决办法
-    
-    </summary>
-    
-      <category term="前端" scheme="https://lruihao.cn/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="字体压缩" scheme="https://lruihao.cn/tags/%E5%AD%97%E4%BD%93%E5%8E%8B%E7%BC%A9/"/>
     
   </entry>
   
