@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-01-12T13:56:39.958Z</updated>
+  <updated>2019-01-14T09:45:00.208Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,80 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java水仙花数（循环）</title>
+    <link href="https://lruihao.cn/xunhuan.html"/>
+    <id>https://lruihao.cn/xunhuan.html</id>
+    <published>2019-01-14T09:30:24.000Z</published>
+    <updated>2019-01-14T09:45:00.208Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>水仙花数（Narcissistic number）也被称为超完全数字不变数（pluperfect digital invariant, PPDI）、自恋数、自幂数、阿姆斯壮数或阿姆斯特朗数（Armstrong number），水仙花数是指一个 3 位数，它的每个位上的数字的 3次幂之和等于它本身（例如：1^3 + 5^3+ 3^3 = 153）。</p></blockquote><a id="more"></a><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>水仙花数只是自幂数的一种，严格来说3位数的3次幂数才称为水仙花数。<br>附：其他位数的自幂数名字<br>一位自幂数：独身数<br>两位自幂数：没有<br>三位自幂数：水仙花数<br>四位自幂数：四叶玫瑰数<br>五位自幂数：五角星数<br>六位自幂数：六合数<br>七位自幂数：北斗七星数<br>八位自幂数：八仙数<br>九位自幂数：九九重阳数<br>十位自幂数：十全十美数</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> xunhuan;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">shuixianhua</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] agrs)</span> </span>&#123;</span><br><span class="line">        System.out.print(<span class="string">"指定最大位数N:"</span>);</span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> N = input.nextInt();</span><br><span class="line">        input.close();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">3</span>; i &lt;= N; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> a[] = <span class="keyword">new</span> <span class="keyword">int</span>[i];</span><br><span class="line">            <span class="keyword">int</span> num = (<span class="keyword">int</span>) Math.pow(<span class="number">10</span>, i - <span class="number">1</span>) + <span class="number">1</span>;</span><br><span class="line">            System.out.print(i + <span class="string">"位的水仙花数有：\t"</span>);</span><br><span class="line">            <span class="keyword">while</span> (num &lt;= Math.pow(<span class="number">10</span>, i)) &#123;</span><br><span class="line">                <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)</span><br><span class="line">                    a[j] = (<span class="keyword">int</span>) (num / Math.pow(<span class="number">10</span>, j) % <span class="number">10</span>);<span class="comment">//取各个位的数</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++) </span><br><span class="line">                    sum = sum + (<span class="keyword">int</span>) Math.pow(a[j], i);</span><br><span class="line">                <span class="keyword">if</span> (num == sum)</span><br><span class="line">                    System.out.print(num + <span class="string">"\t"</span>);</span><br><span class="line">                num++;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.print(<span class="string">"\n"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>由于int精度限制，最多算到9位，而且使用常规算法，算到8，9位的时候就特别慢了。<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">指定最大位数N:10</span><br><span class="line">3位的水仙花数有：153370371407</span><br><span class="line">4位的水仙花数有：163482089474</span><br><span class="line">5位的水仙花数有：547489272793084</span><br><span class="line">6位的水仙花数有：548834</span><br><span class="line">7位的水仙花数有：1741725421081898008179926315</span><br><span class="line">8位的水仙花数有：246780502467805188593477</span><br><span class="line">9位的水仙花数有：146511208</span><br></pre></td></tr></table></figure><p></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;水仙花数（Narcissistic number）也被称为超完全数字不变数（pluperfect digital invariant, PPDI）、自恋数、自幂数、阿姆斯壮数或阿姆斯特朗数（Armstrong number），水仙花数是指一个 3 位数，它的每个位上的数字的 3次幂之和等于它本身（例如：1^3 + 5^3+ 3^3 = 153）。&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="https://lruihao.cn/categories/java/"/>
+    
+    
+      <category term="水仙花数" scheme="https://lruihao.cn/tags/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0/"/>
+    
+      <category term="循环语句" scheme="https://lruihao.cn/tags/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java录入数据</title>
+    <link href="https://lruihao.cn/input.html"/>
+    <id>https://lruihao.cn/input.html</id>
+    <published>2019-01-14T07:33:46.000Z</published>
+    <updated>2019-01-14T08:53:12.322Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="记忆格式："><a href="#记忆格式：" class="headerlink" title="记忆格式："></a>记忆格式：</h3><p>(1)导包：<br>import java.util.Scanner;<br>注意：位置在class的上面。<br>(2)创建键盘录入对象：<br>Scanner sc = new Scanner(System.in);<br>(3)获取数据<br>int i = sc.nextInt();<br>(4)练习：<br>A:求两个数据的和<br>B:获取两个数据中较大的值<br>C:获取三个数据中较大的值<br>D:比较两个数是否相等</p><h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> helloworld;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">helloworld</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"><span class="keyword">int</span> i=sc.nextInt(),j=sc.nextInt(),k=sc.nextInt();</span><br><span class="line">sc.close();</span><br><span class="line">System.out.println(i+<span class="string">"+"</span>+j+<span class="string">"="</span>+(i+j));</span><br><span class="line">System.out.println(<span class="string">"MAXij="</span>+(i&gt;j?i:j));</span><br><span class="line">System.out.println(<span class="string">"MAXijk="</span>+Max(i,j,k));</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Max</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j,<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line"><span class="keyword">if</span>(i==j)</span><br><span class="line">System.out.println(<span class="string">"i和j相等"</span>);</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(i==k)</span><br><span class="line">System.out.println(<span class="string">"i和k相等"</span>);</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(j==k)</span><br><span class="line">System.out.println(<span class="string">"j和k相等"</span>);</span><br><span class="line"><span class="keyword">return</span>  (i=i&gt;j?i:j)&gt;k?i:k;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>结果<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">5 5 6</span><br><span class="line">5+5=10</span><br><span class="line">MAXij=5</span><br><span class="line">i和j相等</span><br><span class="line">MAXijk=6</span><br></pre></td></tr></table></figure><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;记忆格式：&quot;&gt;&lt;a href=&quot;#记忆格式：&quot; class=&quot;headerlink&quot; title=&quot;记忆格式：&quot;&gt;&lt;/a&gt;记忆格式：&lt;/h3&gt;&lt;p&gt;(1)导包：&lt;br&gt;import java.util.Scanner;&lt;br&gt;注意：位置在class的上面。&lt;br&gt;
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://lruihao.cn/categories/java/"/>
+    
+    
+      <category term="输入" scheme="https://lruihao.cn/tags/%E8%BE%93%E5%85%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java标识符</title>
+    <link href="https://lruihao.cn/biaoshi.html"/>
+    <id>https://lruihao.cn/biaoshi.html</id>
+    <published>2019-01-14T07:07:57.000Z</published>
+    <updated>2019-01-14T07:19:09.511Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="标识符："><a href="#标识符：" class="headerlink" title="标识符："></a>标识符：</h3><p>给类，接口，方法或者变量起名字的符号</p><h3 id="组成规则："><a href="#组成规则：" class="headerlink" title="组成规则："></a>组成规则：</h3><p>A:英文字母大小写<br>B:数字<br>C:_和$</p><h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p>A:不能以数字开头<br>B:不能是Java中的关键字<br>C:区分大小写<br>Student,student 这是两个名称</p><h3 id="常见命名方式："><a href="#常见命名方式：" class="headerlink" title="常见命名方式："></a>常见命名方式：</h3><p>A:包 其实就是文件夹,用于解决相同类名问题<br>全部小写<br>单级：com<br>多级：cn.itcast<br>B:类或者接口<br>一个单词：首字母大写<br>Student,Person,Teacher<br>多个单词：每个单词的首字母大写<br>HelloWorld,MyName,NameDemo<br>C:方法或者变量<br>一个单词：全部小写<br>name,age,show()<br>多个单词：从第二个单词开始，每个单词首字母大写<br>myName,showAllStudentNames()<br>D:常量<br>一个单词：全部大写<br>AGE<br>多个单词：每个单词都大写，用_连接<br>STUDENT_MAX_AGE</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;标识符：&quot;&gt;&lt;a href=&quot;#标识符：&quot; class=&quot;headerlink&quot; title=&quot;标识符：&quot;&gt;&lt;/a&gt;标识符：&lt;/h3&gt;&lt;p&gt;给类，接口，方法或者变量起名字的符号&lt;/p&gt;&lt;h3 id=&quot;组成规则：&quot;&gt;&lt;a href=&quot;#组成规则：&quot; class=&quot;h
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://lruihao.cn/categories/java/"/>
+    
+    
+      <category term="java标识符" scheme="https://lruihao.cn/tags/java%E6%A0%87%E8%AF%86%E7%AC%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>英语语法--主谓一致</title>
@@ -446,87 +520,6 @@
       <category term="web server" scheme="https://lruihao.cn/tags/web-server/"/>
     
       <category term="云服务器" scheme="https://lruihao.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用js准确获取当前页面url网址信息及301重定向实战</title>
-    <link href="https://lruihao.cn/href-301.html"/>
-    <id>https://lruihao.cn/href-301.html</id>
-    <published>2018-10-28T06:22:00.000Z</published>
-    <updated>2018-11-03T04:27:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="获取链接（转）"><a href="#获取链接（转）" class="headerlink" title="获取链接（转）"></a>获取链接（转）</h3><p><a href="https://www.cnblogs.com/zhabayi/p/6419938.html" rel="external nofollow noopener noreferrer" target="_blank">传送门</a><br>在WEB开发中，时常会用到javascript来获取当前页面的url网址信息，在这里是我的一些获取url信息的小总结。</p><p>下面我们举例一个URL，然后获得它的各个组成部分：<a href="http://i.cnblogs.com/EditPosts.aspx?opt=1" rel="external nofollow noopener noreferrer" target="_blank">http://i.cnblogs.com/EditPosts.aspx?opt=1</a></p><h4 id="window-location-href-设置或获取整个-URL-为字符串"><a href="#window-location-href-设置或获取整个-URL-为字符串" class="headerlink" title="window.location.href(设置或获取整个 URL 为字符串)"></a>window.location.href(设置或获取整个 URL 为字符串)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.href;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：<a href="http://i.cnblogs.com/EditPosts.aspx?opt=1" rel="external nofollow noopener noreferrer" target="_blank">http://i.cnblogs.com/EditPosts.aspx?opt=1</a></p><h4 id="window-location-protocol-设置或获取-URL-的协议部分"><a href="#window-location-protocol-设置或获取-URL-的协议部分" class="headerlink" title="window.location.protocol(设置或获取 URL 的协议部分)"></a>window.location.protocol(设置或获取 URL 的协议部分)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.protocol;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：http:</p><h4 id="window-location-host-设置或获取-URL-的主机部分"><a href="#window-location-host-设置或获取-URL-的主机部分" class="headerlink" title="window.location.host(设置或获取 URL 的主机部分)"></a>window.location.host(设置或获取 URL 的主机部分)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.host;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：i.cnblogs.com</p><h4 id="window-location-port-设置或获取与-URL-关联的端口号码"><a href="#window-location-port-设置或获取与-URL-关联的端口号码" class="headerlink" title="window.location.port(设置或获取与 URL 关联的端口号码)"></a>window.location.port(设置或获取与 URL 关联的端口号码)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.port;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：空字符(如果采用默认的80端口(update:即使添加了:80)，那么返回值并不是默认的80而是空字符)</p><h4 id="window-location-pathname-设置或获取与-URL-的路径部分（就是文件地址）"><a href="#window-location-pathname-设置或获取与-URL-的路径部分（就是文件地址）" class="headerlink" title="window.location.pathname(设置或获取与 URL 的路径部分（就是文件地址）)"></a>window.location.pathname(设置或获取与 URL 的路径部分（就是文件地址）)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.pathname;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：/EditPosts.aspx</p><h4 id="window-location-search-设置或获取-href-属性中跟在问号后面的部分"><a href="#window-location-search-设置或获取-href-属性中跟在问号后面的部分" class="headerlink" title="window.location.search(设置或获取 href 属性中跟在问号后面的部分)"></a>window.location.search(设置或获取 href 属性中跟在问号后面的部分)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.search;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：?opt=1</p><p>PS：获得查询（参数）部分，除了给动态语言赋值以外，我们同样可以给静态页面，并使用javascript来获得相信应的参数值。</p><h4 id="window-location-hash-设置或获取-href-属性中在井号“-”后面的分段"><a href="#window-location-hash-设置或获取-href-属性中在井号“-”后面的分段" class="headerlink" title="window.location.hash(设置或获取 href 属性中在井号“#”后面的分段)"></a>window.location.hash(设置或获取 href 属性中在井号“#”后面的分段)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var test = window.location.hash;</span><br><span class="line">alert(test);</span><br></pre></td></tr></table></figure><p>返回：空字符(因为url中没有)</p><h4 id="js获取url中的参数值"><a href="#js获取url中的参数值" class="headerlink" title="js获取url中的参数值"></a>js获取url中的参数值</h4><h5 id="正则法"><a href="#正则法" class="headerlink" title="正则法"></a>正则法</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">getQueryString</span><span class="params">(name)</span> </span>&#123;</span><br><span class="line">  var reg = <span class="keyword">new</span> RegExp(<span class="string">'(^|&amp;)'</span> + name + <span class="string">'=([^&amp;]*)(&amp;|$)'</span>, <span class="string">'i'</span>);</span><br><span class="line">  var r = window.location.search.substr(<span class="number">1</span>).match(reg);</span><br><span class="line">  <span class="keyword">if</span> (r != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> unescape(r[<span class="number">2</span>]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 这样调用：</span></span><br><span class="line">alert(GetQueryString(<span class="string">"参数名1"</span>));</span><br><span class="line">  </span><br><span class="line">alert(GetQueryString(<span class="string">"参数名2"</span>));</span><br><span class="line">  </span><br><span class="line">alert(GetQueryString(<span class="string">"参数名3"</span>));</span><br></pre></td></tr></table></figure><h5 id="split拆分法"><a href="#split拆分法" class="headerlink" title="split拆分法"></a>split拆分法</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">GetRequest</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  var url = location.search; <span class="comment">//获取url中"?"符后的字串</span></span><br><span class="line">  var theRequest = <span class="keyword">new</span> Object();</span><br><span class="line">  <span class="keyword">if</span> (url.indexOf(<span class="string">"?"</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">    var str = url.substr(<span class="number">1</span>);</span><br><span class="line">    strs = str.split(<span class="string">"&amp;"</span>);</span><br><span class="line">    <span class="keyword">for</span>(var i = <span class="number">0</span>; i &lt; strs.length; i ++) &#123;</span><br><span class="line">      theRequest[strs[i].split(<span class="string">"="</span>)[<span class="number">0</span>]] = unescape(strs[i].split(<span class="string">"="</span>)[<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> theRequest;</span><br><span class="line">&#125;</span><br><span class="line">var Request = <span class="keyword">new</span> Object();</span><br><span class="line">Request = GetRequest();&lt;br&gt;<span class="comment">// var id=Request["id"]; </span></span><br><span class="line"><span class="comment">// var 参数1,参数2,参数3,参数N;</span></span><br><span class="line"><span class="comment">// 参数1 = Request['参数1'];</span></span><br><span class="line"><span class="comment">// 参数2 = Request['参数2'];</span></span><br><span class="line"><span class="comment">// 参数3 = Request['参数3'];</span></span><br><span class="line"><span class="comment">// 参数N = Request['参数N'];</span></span><br></pre></td></tr></table></figure><h5 id="指定取"><a href="#指定取" class="headerlink" title="指定取"></a>指定取</h5><p>比如说一个url：<a href="http://i.cnblogs.com/?j=js,我们想得到参数j的值，可以通过以下函数调用。" rel="external nofollow noopener noreferrer" target="_blank">http://i.cnblogs.com/?j=js,我们想得到参数j的值，可以通过以下函数调用。</a></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">GetQueryString</span><span class="params">(name)</span> </span>&#123; </span><br><span class="line">  var reg = <span class="keyword">new</span> RegExp(<span class="string">"(^|&amp;)"</span> + name + <span class="string">"=([^&amp;]*)(&amp;|$)"</span>, <span class="string">"i"</span>); </span><br><span class="line">  var r = window.location.search.substr(<span class="number">1</span>).match(reg); <span class="comment">//获取url中"?"符后的字符串并正则匹配</span></span><br><span class="line">  var context = <span class="string">""</span>; </span><br><span class="line">  <span class="keyword">if</span> (r != <span class="keyword">null</span>) </span><br><span class="line">     context = r[<span class="number">2</span>]; </span><br><span class="line">  reg = <span class="keyword">null</span>; </span><br><span class="line">  r = <span class="keyword">null</span>; </span><br><span class="line">  <span class="keyword">return</span> context == <span class="keyword">null</span> || context == <span class="string">""</span> || context == <span class="string">"undefined"</span> ? <span class="string">""</span> : context; </span><br><span class="line">&#125;</span><br><span class="line">alert(GetQueryString(<span class="string">"j"</span>));</span><br></pre></td></tr></table></figure><h3 id="301重定向（实战）"><a href="#301重定向（实战）" class="headerlink" title="301重定向（实战）"></a>301重定向（实战）</h3><p>由于之前把blog和网站主页分开在两个仓库所以要想在blog中menu里跳转到站外链接就要做一些处理。以前一直百度不到。<br>其实想法早就有了，只要在blog首页或者网站首页检测到<a href="https://lruihao.cn/home">https://lruihao.cn/home</a>这个链接，或者检测到home字段就自动跳转。想法很简单。可是对js真的一点都不了解，以前百度也找不到实际的效果案例。所以还是自己写吧！附上蹩脚代码。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var path = window.location.href;</span><br><span class="line">    <span class="comment">//alert(path);</span></span><br><span class="line">    <span class="keyword">if</span> (path==<span class="string">'https://lruihao.cn/home/'</span>) &#123;</span><br><span class="line">      window.location.replace(<span class="string">"https://www.lruihao.cn"</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>或者<br></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var path = window.location.pathname;</span><br><span class="line">    <span class="comment">//alert(path);</span></span><br><span class="line">    <span class="keyword">if</span> (path==<span class="string">'/home/'</span>) &#123;</span><br><span class="line">      window.location.replace(<span class="string">"https://www.lruihao.cn"</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p></p><p><code>demo见菜单</code></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;获取链接（转）&quot;&gt;&lt;a href=&quot;#获取链接（转）&quot; class=&quot;headerlink&quot; title=&quot;获取链接（转）&quot;&gt;&lt;/a&gt;获取链接（转）&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/zhabayi/p/6419938
-      
-    
-    </summary>
-    
-      <category term="前端" scheme="https://lruihao.cn/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="js" scheme="https://lruihao.cn/tags/js/"/>
-    
-      <category term="301重定向" scheme="https://lruihao.cn/tags/301%E9%87%8D%E5%AE%9A%E5%90%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>windows上搭建web服务器</title>
-    <link href="https://lruihao.cn/web-server-win.html"/>
-    <id>https://lruihao.cn/web-server-win.html</id>
-    <published>2018-10-26T13:56:18.000Z</published>
-    <updated>2018-11-03T04:27:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>我用的 win10</p></blockquote><h3 id="打开控制面板"><a href="#打开控制面板" class="headerlink" title="打开控制面板"></a>打开控制面板</h3><p>选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所有地选项，点击确定后，开始更新服务。<br><img src="/web-server-win/1.png" alt=""></p><h3 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h3><p>更新完成后，打开浏览器，输入<code>http://localhost</code>或者<code>127.0.0.1</code>回车，如果此时出现IIS7欢迎界面，说明Web服务器已经搭建成功。<br><img src="/web-server-win/2.png" alt=""></p><h3 id="网站设置"><a href="#网站设置" class="headerlink" title="网站设置"></a>网站设置</h3><p>当web服务器搭建成功后，我们下一步所要做的就是把我们开发的网站安装到Web服务器的目录中。一般情况下，当Web服务器安装完成后，会创建路径<code>%系统根目录%inetpub/wwwroot</code>，将我们开发的网站COPY到该路径下。即可实现本地访问该网站。<br><img src="/web-server-win/3.png" alt=""><br>也可以更改根目录，搜索IIS，点击网站，Default Web Site，基本设置修改物理路径（<strong>默认站点名称不要改</strong>）<br>我这里改到了hexo的public相当于hexo部署在本地服务器<code>58.45.227.225</code><br><img src="/web-server-win/5.png" alt=""><br><img src="/web-server-win/6.png" alt=""><br><img src="/web-server-win/7.png" alt=""></p><h3 id="设置防火墙"><a href="#设置防火墙" class="headerlink" title="设置防火墙"></a>设置防火墙</h3><p>让局域网当其它计算机也能访问本地网站资源。具体方法：打开控制面板，选择“系统和安全”，点击“允许程序通过Windows防火墙”，在弹出的对话框中勾选“万维网服务HTTP”右侧的两个复选框，最后点击确定退出。<br><img src="/web-server-win/3.png" alt=""></p><p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的ip地址访问了（手机也可以）<br>本地ip可以通过cmd用ipconfig查看</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;我用的 win10&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=&quot;打开控制面板&quot;&gt;&lt;a href=&quot;#打开控制面板&quot; class=&quot;headerlink&quot; title=&quot;打开控制面板&quot;&gt;&lt;/a&gt;打开控制面板&lt;/h3&gt;&lt;p&gt;选择并进入“程序”，双击“
-      
-    
-    </summary>
-    
-      <category term="server" scheme="https://lruihao.cn/categories/server/"/>
-    
-    
-      <category term="web server" scheme="https://lruihao.cn/tags/web-server/"/>
-    
-      <category term="windows" scheme="https://lruihao.cn/tags/windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Git上传代码到github,coding等仓库</title>
-    <link href="https://lruihao.cn/gituse.html"/>
-    <id>https://lruihao.cn/gituse.html</id>
-    <published>2018-10-26T13:11:02.000Z</published>
-    <updated>2018-11-03T04:27:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h3><p>这个不多说了，很常见了，前面的文章也有分多次用到<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;admin@lruihao.cn&quot;</span><br></pre></td></tr></table></figure><p></p><h3 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h3><p>复制id_rsa.pub文件内容去github或者coding配置SSH公钥（根据自己情况）</p><h3 id="创建本地代码库"><a href="#创建本地代码库" class="headerlink" title="创建本地代码库"></a>创建本地代码库</h3><p>在本地创建一个文件夹，作为你上传代码的本地仓库，在这个文件夹内点击右键，选择Git Bash Here，首先要初始化本地仓库，输<code>git init</code>命令<br>接下来进行远程代码库克隆（事先在coding等中建立一个项目，就是你需要链接的仓库）<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/Lruihao/Lruihao.github.io.git</span><br></pre></td></tr></table></figure><p></p><p>克隆时会出现输入账号密码的环节正确输入即可。</p><h3 id="代码推送（重点）"><a href="#代码推送（重点）" class="headerlink" title="代码推送（重点）"></a>代码推送（重点）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git add *</span><br><span class="line">git commit -m &quot;代码备注随便写&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p>git status可以理解为当前本地仓库的文件情况，如果输入命令后，文件名为红色说明还没有推送云端，至少还没有进入缓存区。<br>然后使用<code>git add</code>推送你要上传的文件，也可以用通配符表示全部推送。接下来， 输入<code>git commit -m &quot;代码备注</code>命令提交。<br>然后输入<code>git push origin master</code>命令推送到云端，origin是服务器，master是分枝。一般平时都是推送到master所以不可以简化为<code>git push</code></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;生成ssh&quot;&gt;&lt;a href=&quot;#生成ssh&quot; class=&quot;headerlink&quot; title=&quot;生成ssh&quot;&gt;&lt;/a&gt;生成ssh&lt;/h3&gt;&lt;p&gt;这个不多说了，很常见了，前面的文章也有分多次用到&lt;br&gt;&lt;/p&gt;&lt;figure class=&quot;highlight p
-      
-    
-    </summary>
-    
-      <category term="git" scheme="https://lruihao.cn/categories/git/"/>
-    
-    
-      <category term="git" scheme="https://lruihao.cn/tags/git/"/>
     
   </entry>
   
