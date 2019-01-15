@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[java猜数字小游戏（Math类）]]></title>
+    <url>%2Fmathclass.html</url>
+    <content type="text"><![CDATA[大一刚学c的时候以前写过c语言版的。Math:针对数学进行运算的类特点：没有构造方法，因为它的成员都是静态的产生随机数：public static double random(): 产生随机数，范围[0.0,1.0)产生1-100之间的随机数int number = (int)(Math.random()*100)+1;猜数字小游戏案例1234567891011121314151617181920class MathDemo &#123; public static void main(String[] args) &#123; //获取随机数 //double d = Math.random(); //System.out.println(d); /* for(int x=0; x&lt;10; x++) &#123; //System.out.println(Math.random()); System.out.println(Math.random()*100); &#125; */ //我们如何获取1-100之间的随机数呢? for(int x=0; x&lt;100; x++) &#123; int number = (int)(Math.random()*100)+1; System.out.println(number); &#125; &#125;&#125;小游戏12]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[面向对象基础知识总结]]></title>
+    <url>%2Fduixiang.html</url>
+    <content type="text"><![CDATA[面向对象思想(理解)面向对象是基于面向过程的一种编程思想思想特点：A:是一种更符合我们思考习惯的思想B:把复杂的问题简单化C:让我们从执行者变成了指挥者举例：A:洗衣服B:吃饭C:买电脑举例并代码体现把大象装进冰箱类与对象(掌握)我们学习编程是为了把现实世界的事物用编程语言描述来实现信息化。现实世界事物是如何表达的呢?属性：外在特征行为：内在行为我们学习的是java语言，它最基本的单位是类。所以我们要学会用类来体现一个事物。类：是一组相关的属性和行为的集合对象：是该类事物的具体个体。举例：学生 类张三 对象类的组成(掌握)成员变量其实就是变量，只不过定义在类中，方法外，并且可以不用初始化。成员方法其实就是方法，只不过不需要static了案例：学生类123456class Student &#123; String name; int age; public void study() &#123;&#125;&#125;类的使用(掌握)创建对象格式：类名 对象名 = new 类名();使用成员成员变量：对象名.变量名;成员方法：对象名.方法名(…);成员变量和局部变量的区别(理解)在类中的位置不同A:成员变量 类中，方法外B:局部变量 方法的形式参数，或者方法体中在内存中的位置不同A:成员变量 在堆中B:局部变量 在栈中生命周期不同A:成员变量 随着对象的存在而存在，随着对象的消失而消失B:局部变量 随着方法的调用而存在，随着方法的调用完毕而消失初始化值不同A:成员变量 有默认初始化值B:局部变量 没有默认值，必须先声明，赋值，最后才能使用形式参数问题(理解)基本类型基本类型作为形式参数，需要的是该基本类型的值。引用类型引用类型作为形式参数，需要的是该引用类型的地址值。(对象)匿名对象(理解)匿名对象：没有名字的对象。是对象的简化书写方式。使用场景A:调用方法，仅仅只调用一次B:作为实际参数传递封装(掌握)隐藏实现细节，提供公共的访问方式好处：A:隐藏实现细节，提供公共的访问方式B:提高了代码的复用性C:提高了代码的安全性使用原则A:把成员变量隐藏B:给出该成员变量对应的公共访问方式private关键字(掌握)是一个权限修饰符可以修饰类的成员(成员变量和成员方法)仅仅在本类中可以访问,对外提供对应的GetXXX()，SetXXX()等方法标准代码：12345678910111213141516171819202122class Student &#123; private String name; private int age; public void setName(String n) &#123; name = n; &#125; public String getName() &#123; return name; &#125; public void setAge(int a) &#123; age = a; &#125; public int getAge() &#123; return age; &#125; public void study() &#123;&#125;&#125;this关键字(掌握)this：代表本类的对象应用场景：解决了局部变量隐藏成员变量的问题。其他用法和super一起讲。标准代码：1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253class Student &#123; private String name; private int age; public void setName(String name) &#123;//局部变量 this.name = name; &#125; public String getName() &#123; return name; &#125; public void setAge(int age) &#123; this.age = age; &#125; public int getAge() &#123; return age; &#125; public void show() &#123; System.out.println("姓名是："+name+",年龄是："+age); &#125; public void study() &#123; System.out.println("学生爱学习"); &#125; public void eat() &#123; System.out.println("学生要吃饭"); &#125; public void sleep() &#123; System.out.println("学生想睡觉"); &#125;&#125;class StudentTest &#123; public static void main(String[] args) &#123; Student s = new Student(); s.setName("林青霞"); s.setAge(28); s.show(); s.study(); s.eat(); s.sleep(); System.out.println("姓名是："+s.getName()); System.out.println("年龄是："+s.getAge()); &#125;&#125;构造方法(掌握)作用：对对象的数据进行初始化。特点：A:方法名和类名相同B:没有返回值类型C:没有返回值注意事项A:如果我们没写构造方法，系统将默认给出无参构造方法B:如果我们写了构造方法，系统将不再给出默认无参构造方法建议：我们自己手动给出无参构造方法给成员变量赋值：A:无参+setXxx()B:带参一个标准的代码：123456789101112131415161718192021222324252627282930313233343536373839404142434445class Student &#123; private String name; private int age; public Student() &#123;&#125; public Student(String name,int age) &#123;//构造方法 this.name = name; this.age = age; &#125; public void setName(String name) &#123; this.name = name; &#125; public String getName() &#123; return name; &#125; public void setAge(int age) &#123; this.age = age; &#125; public int getAge() &#123; return age; &#125; public void show() &#123; System.out.println("姓名是："+name+",年龄是："+age); &#125;&#125;class StudentTest &#123; public static void main(String[] args) &#123; //无参+setXxx() Student s = new Student(); s.setName("林青霞"); s.setAge(28); s.show(); //带参 Student ss = new Student("张曼玉",20); ss.show(); &#125;&#125;对象的初始化过程(理解)Student s = new Student();做了哪些事情A:加载Student.class文件进内存B:在栈中为s开辟空间C:在堆中为学生对象开辟空间D:为学生对象的成员变量赋默认值E:为学生对象的成员变量赋显示值F:通过构造方法给成员变量赋值G:对象构造完毕，把地址赋值给s变量static关键字(掌握)是一个状态修饰符。静态的意思它可以修饰成员变量和成员方法特点：A:随着类的加载而加载B:优先于对象存在C:被所有对象共享这也是判断我们是不是该使用静态的条件举例：饮水机(可共享static)和水杯例子。D:可以通过类名调用静态修饰的内容，可以通过类名调用，也可以通过对象名调用方法访问特点A:普通成员方法可以访问静态成员变量，非静态成员变量，静态成员方法，非静态成员方法B:静态成员方法只能访问静态成员变量，静态成员方法简记：静态只能访问静态注意：静态中是不能有this的。先进内存的不能访问后进内存的。反之可以。123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051/* 班级编号应该是被班级每个人都共享的，所以定义一个就应该可以了。 而姓名和年龄，每个人应该是不一样的，所以，每个对象，都应该定义自己的。 在java中，用什么来表示成员变量是被共享的呢? static*/class Student &#123; //姓名 String name; //年龄 int age; //班级编号 //String classNumber; static String classNumber; public Student(String name,int age) &#123; this.name = name; this.age = age; &#125; public Student(String name,int age,String classNumber) &#123; this.name = name; this.age = age; this.classNumber = classNumber; &#125; public void show() &#123; System.out.println(name+"---"+age+"---"+classNumber); &#125;&#125;class StudentDemo &#123; public static void main(String[] args) &#123; //创建学生对象 Student s1 = new Student("林青霞",28,"20150306"); s1.show(); /* Student s2 = new Student("马云",35,"20150306"); s2.show(); Student s3 = new Student("马化腾",33,"20150306"); s3.show(); */ Student s2 = new Student("马云",35); s2.show(); Student s3 = new Student("马化腾",33); s3.show(); &#125;&#125;12345678910111213141516171819202122232425262728293031323334353637/* static:静态关键字。 作用： 可以修饰成员变量和成员方法 特点： A:随着类的加载而加载 B:优先于对象存在 C:被类的所有对象共享 这也是我们判断是否使用静态关键字的条件 饮水机：可以被静态修饰 水杯：不可以被静态修饰 D:可以通过类名调用 我们的调用既可以是对象，还可以是类名*/class Student &#123; public void show() &#123; System.out.println("show"); &#125; public static void show2() &#123; System.out.println("show2"); &#125;&#125;class StudentDemo2 &#123; public static void main(String[] args) &#123; Student s = new Student(); s.show(); s.show2(); Student.show2(); //Student.show();× &#125;&#125;123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354/* static的注意事项： A:在静态方法中是没有this关键字的 因为静态是随着类的加载而加载，优先于对象而存在。而this是随着对象的创建而存在。 先进内存的， 不能访问后进内存的；而后进内存的，可以访问先进内存的。 B:静态只能访问静态。 非静态的成员方法： 可以访问静态成员变量，非静态成员变量，静态成员方法，非静态成员方法 静态的成员方法： 只能访问静态的成员变量，静态的成员方法*//*class Student &#123; private String name; public static void setName(String name) &#123;//×静态方法不能用this this.name = name; &#125; public void show() &#123; System.out.println(name); &#125;&#125;*/class Demo &#123; int x = 10; static int y = 20; public void show() &#123; System.out.println(x); System.out.println(y); &#125; public static void show2() &#123; //System.out.println(x);× System.out.println(y);//√ &#125; public void show3() &#123; show(); show2(); &#125; public static void show4() &#123; //show();只能访问静态的成员方法 show2(); &#125;&#125;class StudentDemo3 &#123; public static void main(String[] args) &#123; //Student.setName("林青霞"); &#125;&#125;静态成员变量和普通成员变量的区别(理解)所属不同静态属于类的，称为类变量非静态属于对象的，称为对象变量，实例变量内存空间不同静态在方法区的静态区非静态在堆内存生命周期不同静态随着类的加载而加载，随着类的消失而消失非静态随着对象的创建而存在，随着对象的消失而消失调用不同静态可以通过类名调用，也可以通过对象名调用。建议通过类名调用非静态只能通过对象名调用main方法是静态的(理解)1public static void main(String[] args)public:访问权限修饰符，表示最大的访问权限，被jvm调用，所有权限要够大。static:被jvm调用，不用创建对象，直接类名访问void:被jvm调用，不需要给jvm返回值main:一个通用的名称，虽然不是关键字，但是被jvm识别String[] args:早期出现是为了接收键盘录入数据的。实例12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849/*求和*/class Demo &#123; private int x; private int y; public Demo() &#123;&#125; public Demo(int x,int y) &#123; this.x = x; this.y = y; &#125; public void setX(int x) &#123; this.x = x; &#125; public int getX() &#123; return x; &#125; public void setY(int y) &#123; this.y = y; &#125; public int getY() &#123; return y; &#125; //成员变量已经有x,y了。这里就没有必要在定义了 /* public int sum(int x,int y) &#123; return x + y; &#125; */ public int sum() &#123; return x + y; &#125;&#125;class Test &#123; public static void main(String[] args) &#123; Demo d = new Demo(); d.setX(10); d.setY(20); int result = d.sum(); System.out.println(result); &#125;&#125;1234567891011121314/*求和*/class Demo &#123; public int sum(int x,int y) &#123; return x + y; &#125;&#125;class Test2 &#123; public static void main(String[] args) &#123; Demo d = new Demo(); int result = d.sum(10,20); System.out.println(result); &#125;&#125;123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566/* 定义一个员工类,自己分析出几个成员， 然后给出成员变量，构造方法，getXxx()/setXxx()方法， 以及一个显示所有成员信息的方法。并测试。 Employee： 成员变量：员工编号,姓名,职位 构造方法：无参，带参 成员方法：getXxx()/setXxx()方法，show()*/class Employee &#123; private String eid; private String name; private String job; public Employee() &#123;&#125; public Employee(String eid,String name,String job) &#123; this.eid = eid; this.name = name; this.job = job; &#125; public void setEid(String eid) &#123; this.eid = eid; &#125; public String getEid() &#123; return eid; &#125; public void setName(String name) &#123; this.name = name; &#125; public String getName() &#123; return name; &#125; public void setJob(String job) &#123; this.job = job; &#125; public String getJob() &#123; return job; &#125; public void show() &#123; System.out.println("员工编号是："+eid+",姓名是："+name+",职位是："+job); &#125;&#125;class EmployeeDemo &#123; public static void main(String[] args) &#123; //无参 Employee e = new Employee(); e.setEid("itcast007"); e.setName("周星驰"); e.setJob("高级工程师"); e.show(); //带参 Employee e2 = new Employee("itcast003","刘德华","挖掘机工程师"); e2.show(); &#125;&#125;]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>面向对象</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[java水仙花数（循环）]]></title>
     <url>%2Fxunhuan.html</url>
     <content type="text"><![CDATA[水仙花数（Narcissistic number）也被称为超完全数字不变数（pluperfect digital invariant, PPDI）、自恋数、自幂数、阿姆斯壮数或阿姆斯特朗数（Armstrong number），水仙花数是指一个 3 位数，它的每个位上的数字的 3次幂之和等于它本身（例如：1^3 + 5^3+ 3^3 = 153）。定义水仙花数只是自幂数的一种，严格来说3位数的3次幂数才称为水仙花数。附：其他位数的自幂数名字一位自幂数：独身数两位自幂数：没有三位自幂数：水仙花数四位自幂数：四叶玫瑰数五位自幂数：五角星数六位自幂数：六合数七位自幂数：北斗七星数八位自幂数：八仙数九位自幂数：九九重阳数十位自幂数：十全十美数123456789101112131415161718192021222324252627282930package xunhuan;import java.util.Scanner;public class shuixianhua &#123; public static void main(String[] agrs) &#123; System.out.print("指定最大位数N:"); Scanner input = new Scanner(System.in); int N = input.nextInt(); input.close(); for (int i = 3; i &lt;= N; i++) &#123; int a[] = new int[i]; int num = (int) Math.pow(10, i - 1) + 1; System.out.print(i + "位的水仙花数有：\t"); while (num &lt;= Math.pow(10, i)) &#123; int sum = 0; for (int j = 0; j &lt; i; j++) a[j] = (int) (num / Math.pow(10, j) % 10);//取各个位的数 for (int j = 0; j &lt; i; j++) sum = sum + (int) Math.pow(a[j], i); if (num == sum) System.out.print(num + "\t"); num++; &#125; System.out.print("\n"); &#125; &#125;&#125;由于int精度限制，最多算到9位，而且使用常规算法，算到8，9位的时候就特别慢了。12345678指定最大位数N:103位的水仙花数有： 153 370 371 407 4位的水仙花数有： 1634 8208 9474 5位的水仙花数有： 54748 92727 93084 6位的水仙花数有： 548834 7位的水仙花数有： 1741725 4210818 9800817 9926315 8位的水仙花数有： 24678050 24678051 88593477 9位的水仙花数有： 146511208]]></content>
@@ -15,7 +31,7 @@
   <entry>
     <title><![CDATA[java录入数据]]></title>
     <url>%2Finput.html</url>
-    <content type="text"><![CDATA[记忆格式：(1)导包：import java.util.Scanner;注意：位置在class的上面。(2)创建键盘录入对象：Scanner sc = new Scanner(System.in);(3)获取数据int i = sc.nextInt();(4)练习：A:求两个数据的和B:获取两个数据中较大的值C:获取三个数据中较大的值D:比较两个数是否相等实例1234567891011121314151617181920212223242526package helloworld;import java.util.Scanner;public class helloworld &#123; public static void main(String[] args) &#123; Scanner sc = new Scanner(System.in); int i=sc.nextInt(),j=sc.nextInt(),k=sc.nextInt(); sc.close(); System.out.println(i+"+"+j+"="+(i+j)); System.out.println("MAXij="+(i&gt;j?i:j)); System.out.println("MAXijk="+Max(i,j,k)); &#125; static int Max(int i,int j,int k) &#123; if(i==j) System.out.println("i和j相等"); else if(i==k) System.out.println("i和k相等"); else if(j==k) System.out.println("j和k相等"); return (i=i&gt;j?i:j)&gt;k?i:k; &#125;&#125;结果123455 5 65+5=10MAXij=5i和j相等MAXijk=6]]></content>
+    <content type="text"><![CDATA[记忆格式：(1)导包：import java.util.Scanner;注意：位置在class的上面。(2)创建键盘录入对象：Scanner sc = new Scanner(System.in);(3)获取数据int i = sc.nextInt();(4)练习：A:求两个数据的和B:获取两个数据中较大的值C:获取三个数据中较大的值D:比较两个数是否相等实例123456789101112131415161718192021222324252627282930package helloworld;import java.util.Scanner;public class helloworld &#123; public static void main(String[] args) &#123; Scanner sc = new Scanner(System.in); int i=sc.nextInt(),j=sc.nextInt(),k=sc.nextInt(); sc.close(); System.out.println(i+"+"+j+"="+(i+j)); System.out.println("MAXij="+Max(i,j)); System.out.println("MAXijk="+Max(i,j,k)); &#125; //Max()方法重载 static int Max(int i,int j) &#123; return i&gt;j?i:j; &#125; static int Max(int i,int j,int k) &#123; if(i==j) System.out.println("i和j相等"); else if(i==k) System.out.println("i和k相等"); else if(j==k) System.out.println("j和k相等"); return (i=i&gt;j?i:j)&gt;k?i:k; &#125;&#125;结果123455 5 65+5=10MAXij=5i和j相等MAXijk=6]]></content>
       <categories>
         <category>java</category>
       </categories>
@@ -215,8 +231,8 @@
         <category>linux</category>
       </categories>
       <tags>
-        <tag>HelloWorld</tag>
         <tag>linux</tag>
+        <tag>HelloWorld</tag>
         <tag>shell</tag>
       </tags>
   </entry>
@@ -300,8 +316,8 @@
         <category>linux</category>
       </categories>
       <tags>
-        <tag>HelloWorld</tag>
         <tag>linux</tag>
+        <tag>HelloWorld</tag>
       </tags>
   </entry>
   <entry>
@@ -530,8 +546,8 @@
       <tags>
         <tag>ACM</tag>
         <tag>数学</tag>
-        <tag>组合数学</tag>
         <tag>Nowcoder</tag>
+        <tag>组合数学</tag>
       </tags>
   </entry>
   <entry>
@@ -733,8 +749,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>并查集</tag>
         <tag>POJ</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
@@ -747,8 +763,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>并查集</tag>
         <tag>HDU</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
@@ -761,8 +777,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>并查集</tag>
         <tag>HDU</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
@@ -799,8 +815,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>并查集</tag>
         <tag>HDU</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
@@ -813,8 +829,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>并查集</tag>
         <tag>POJ</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
@@ -827,8 +843,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>并查集</tag>
         <tag>POJ</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
@@ -853,8 +869,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>并查集</tag>
         <tag>HDU</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
@@ -1095,8 +1111,8 @@
         <category>背包问题</category>
       </categories>
       <tags>
-        <tag>Nowcoder</tag>
         <tag>背包问题</tag>
+        <tag>Nowcoder</tag>
       </tags>
   </entry>
   <entry>
@@ -1108,8 +1124,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>组合数学</tag>
         <tag>Nowcoder</tag>
+        <tag>组合数学</tag>
       </tags>
   </entry>
   <entry>
@@ -1288,7 +1304,7 @@
   <entry>
     <title><![CDATA[光]]></title>
     <url>%2F%E5%85%89.html</url>
-    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
+    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
       <categories>
         <category>生活随笔</category>
       </categories>
