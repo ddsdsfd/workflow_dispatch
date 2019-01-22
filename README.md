@@ -43,7 +43,7 @@
 ---
 **[RUI豪小栈](https://me.lruihao.cn)**
 
-为了区别于博客，我重新在coding上面新开了仓库用来放一些实验性尝试，里面放了一些小游戏，自己搭的平时用来上机用的网盘，还有自己写的字体等等。通过301重定向`lruihao.cn/me`到`www.lruihao.cn`(最后搬到了腾讯云cos桶，也还是改了域名`me.lruihao.cn`)
+为了区别于博客，我重新在coding上面新开了仓库用来放一些实验性尝试，里面放了一些小游戏，自己搭的平时用来上机用的网盘，还有自己写的字体等等。通过301重定向`lruihao.cn/lab`到`www.lruihao.cn`，是不是想说通常www指向主域，那就对了，通常来说！
 * [博採眾長app](/fas-app.html)
 * [caddy网盘](https://pan.lruihao.cn)
 * [游戏馆](https://me.lruihao.cn/games)
