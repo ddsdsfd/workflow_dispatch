@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/cos-hexo.html</loc>
+    
+    <lastmod>2019-01-22T07:38:48.295Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/about/index.html</loc>
+    
+    <lastmod>2019-01-22T06:53:21.787Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/crash-cheat.html</loc>
     
     <lastmod>2019-01-21T06:48:34.779Z</lastmod>
@@ -226,13 +240,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/about/index.html</loc>
-    
-    <lastmod>2018-11-26T03:54:44.751Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/categories/index.html</loc>
     
     <lastmod>2018-11-25T03:31:38.638Z</lastmod>
@@ -303,7 +310,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B23.html</loc>
+    <loc>https://lruihao.cn/hexo-wordcount.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -317,7 +324,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/gituse.html</loc>
+    <loc>https://lruihao.cn/zuiduanlu.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -415,14 +422,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/beian.html</loc>
+    <loc>https://lruihao.cn/shell.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/web-font.html</loc>
+    <loc>https://lruihao.cn/beian.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -520,14 +527,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/data.html</loc>
+    <loc>https://lruihao.cn/web-font.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/web-server-win.html</loc>
+    <loc>https://lruihao.cn/data.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -639,7 +646,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/web-server-yun.html</loc>
+    <loc>https://lruihao.cn/gituse.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -737,7 +744,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/linux-git.html</loc>
+    <loc>https://lruihao.cn/web-server-win.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -751,7 +758,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/shadowsocks.html</loc>
+    <loc>https://lruihao.cn/linux-git.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -793,6 +800,13 @@
   </url>
   
   <url>
+    <loc>https://lruihao.cn/shadowsocks.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/mood.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
@@ -800,14 +814,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/love/heart.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/shell.html</loc>
+    <loc>https://lruihao.cn/web-server-yun.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -821,14 +828,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/hexo-wordcount.html</loc>
+    <loc>https://lruihao.cn/love/heart.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/zuiduanlu.html</loc>
+    <loc>https://lruihao.cn/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B23.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     

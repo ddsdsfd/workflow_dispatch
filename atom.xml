@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-01-18T05:45:11.485Z</updated>
+  <updated>2019-01-22T07:38:48.295Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用腾讯云对象存储COS桶托管hexo博客</title>
+    <link href="https://lruihao.cn/cos-hexo.html"/>
+    <id>https://lruihao.cn/cos-hexo.html</id>
+    <published>2019-01-22T06:57:08.000Z</published>
+    <updated>2019-01-22T07:38:48.295Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note info"><p>本以为coding pages与腾讯云合作后会更好，没想到正是这种初期bug不断，速度也是非常慢。比gitee,甚至github都要慢很多了。所以决定放弃coding了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的cos桶XMl制作动态相册的文章，知道了对象存储这个玩意，腾讯云COS提供免费50G的存储空间，还有CDN加速服务，我觉得是个不错的选择，部署后发现速度还挺好。</p></div><a id="more"></a><h3 id="创建存储桶"><a href="#创建存储桶" class="headerlink" title="创建存储桶"></a>创建存储桶</h3><p>打开腾讯云控制台–云产品–存储–对象存储，然后创建存储桶。<br><img src="/cos-hexo/1.png" alt=""></p><h3 id="开启静态网站设置"><a href="#开启静态网站设置" class="headerlink" title="开启静态网站设置"></a>开启静态网站设置</h3><p>在基础配置打开静态网站<br><img src="/cos-hexo/2.png" alt=""></p><h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><p><img src="/cos-hexo/3.png" alt=""></p><p>SSL设置<br><img src="/cos-hexo/4.png" alt=""></p><h3 id="域名解析，添加记录"><a href="#域名解析，添加记录" class="headerlink" title="域名解析，添加记录"></a>域名解析，添加记录</h3><p>去dns服务商添加域名解析记录CNAME指向上面的域名</p><h3 id="hexo设置"><a href="#hexo设置" class="headerlink" title="hexo设置"></a>hexo设置</h3><ul><li><p>安装插件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-cos --save</span><br></pre></td></tr></table></figure></li><li><p>站点配置文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: cos</span><br><span class="line">  bucket: yourBucketName #cos桶名称</span><br><span class="line">  appId: yourAppId #cos桶名称后数字</span><br><span class="line">  secretId: yourSecretId  #云API密钥</span><br><span class="line">  secretKey: yourSecretKey #云API密钥</span><br><span class="line">  region: yourRegion #所属地域</span><br></pre></td></tr></table></figure></li><li><p>发布还是一样的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;本以为coding pages与腾讯云合作后会更好，没想到正是这种初期bug不断，速度也是非常慢。比gitee,甚至github都要慢很多了。所以决定放弃coding了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的cos桶XMl制作动态相册的文章，知道了对象存储这个玩意，腾讯云COS提供免费50G的存储空间，还有CDN加速服务，我觉得是个不错的选择，部署后发现速度还挺好。&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo博客" scheme="https://lruihao.cn/tags/hexo%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="腾讯云cos桶" scheme="https://lruihao.cn/tags/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E6%A1%B6/"/>
+    
+      <category term="对象存储" scheme="https://lruihao.cn/tags/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>Arrays类及基本使用</title>
@@ -507,32 +533,6 @@
       <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo 博客源码备份</title>
-    <link href="https://lruihao.cn/blog-backup.html"/>
-    <id>https://lruihao.cn/blog-backup.html</id>
-    <published>2018-11-03T04:49:28.000Z</published>
-    <updated>2018-11-03T05:19:51.407Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/blog-backup/1.png" alt=""><br><a id="more"></a></p><h3 id="备份hexo博客"><a href="#备份hexo博客" class="headerlink" title="备份hexo博客"></a>备份hexo博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。</span><br><span class="line">cd hexo</span><br><span class="line">git init  //初始化本地仓库</span><br><span class="line">git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加</span><br><span class="line">git commit -m &quot;blog hexo&quot;</span><br><span class="line">git branch hexo  //新建hexo分支</span><br><span class="line">git checkout hexo  //切换到hexo分支上</span><br><span class="line">git remote add origin git@github.com:username/username.github.io.git  //将本地与Github项目对接</span><br><span class="line">git push origin hexo  //push到Github项目的hexo分支上</span><br></pre></td></tr></table></figure><h3 id="在其他终端克隆和更新hexo博客"><a href="#在其他终端克隆和更新hexo博客" class="headerlink" title="在其他终端克隆和更新hexo博客"></a>在其他终端克隆和更新hexo博客</h3><blockquote><p>nodejs,git,hexo已经安装好,即搭建完成</p></blockquote><h4 id="克隆hexo博客备份"><a href="#克隆hexo博客备份" class="headerlink" title="克隆hexo博客备份"></a>克隆hexo博客备份</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone -b hexo git@github.com:username/username.github.io.git  //将Github中hexo分支clone到本地</span><br><span class="line">cd user.github.io</span><br><span class="line">npm install  //注意，这里一定要切换到刚刚clone的文件夹内执行，安装必要的所需组件，不用再init</span><br></pre></td></tr></table></figure><p>这样我们的备份文件就会原封不动的拷贝到本地。</p><h4 id="写新文章并备份和部署（备用操作）"><a href="#写新文章并备份和部署（备用操作）" class="headerlink" title="写新文章并备份和部署（备用操作）"></a>写新文章并备份和部署（备用操作）</h4><blockquote><p>其实源码拷下来了，这步不做我们也知道怎么做了，完全没必要按照教程死搬硬套。灵活一点就行了。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//进入username.github.io文件夹,应是hexo分支</span><br><span class="line">git pull origin hexo //本地和远端的融合</span><br><span class="line">hexo new post &quot;new post name&quot;  //写新文章</span><br><span class="line">git add source</span><br><span class="line">git commit -m &quot;xxx&quot;</span><br><span class="line">git push origin hexo  //备份</span><br><span class="line">hexo d -g  //部署</span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" rel="external nofollow noopener noreferrer" target="_blank">参考</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/blog-backup/1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="hexo博客" scheme="https://lruihao.cn/categories/hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="hexo博客" scheme="https://lruihao.cn/tags/hexo%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="源码备份" scheme="https://lruihao.cn/tags/%E6%BA%90%E7%A0%81%E5%A4%87%E4%BB%BD/"/>
-    
-      <category term="git" scheme="https://lruihao.cn/tags/git/"/>
     
   </entry>
   
