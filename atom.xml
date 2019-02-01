@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-01-24T08:24:24.707Z</updated>
+  <updated>2019-02-01T12:54:33.258Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>还乡</title>
+    <link href="https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/renative.html"/>
+    <id>https://lruihao.cn/生活随笔/renative.html</id>
+    <published>2019-02-01T12:44:40.000Z</published>
+    <updated>2019-02-01T12:54:33.258Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>这不是英国作家哈代的《The Return of Native》,而是我们这辈的父母所经历的常态。<br>以下文章由好友<strong>杨灿</strong>所写</p></blockquote><a id="more"></a><p>逢近年关，邻居家的王婶又在等她的儿子了。</p><p>她的儿子大抵有五年未曾回家了。记得去年，他同王婶说好了回家过年，王婶便从腊月二十直直地等到腊月三十，准备好一桌的年夜饭，最后却只是她一个人随便地扒拉了几口。</p><p>我尚且还记得那日，王婶与我母亲一同去河边处理鸡鸭，我也随了去。母亲同王婶说：“源子怎地还不回来？”王婶道：“许是买的车票晚了些，他早前和我说回家过年的，想来还在回来的路上。”</p><p>到晚上，万家灯火渐起，都说热热闹闹团圆饭，王婶家却格外冷清。王婶嫁过来时，家中便只有王叔一人，早些年，王叔随人去炸山取石，人也不幸被石头砸死，家中便只有王婶和她儿子二人。王源也知家中境况，自大学毕业后在外工作，至今，除了前年我暑假时回来过一次，其中便从未回来过。<br>人倒是挺奋进，这些年，王婶家从小木屋变成了三层小洋房，家里也添置了许多家具和电器。王婶倒像一个门卫，守着这栋房子，看着这个家。</p><p>不过别家事总归别家事。</p><p>王婶是个十分随和的人，也常常和村里人打趣逗乐，常见她笑眼眯眯。一年到头，也唯有这“头”让她难展笑颜。<br>“王婶子，源哥还没回来吗？”<br>“快了，快了……”<br>王婶又坐在门口，纳着新鞋，常常一纳就是一天。</p><p>我们常听到一个词——衣锦还乡，其实，于父母而言，他们所看重的从来都只是还乡。而所谓衣锦，不过是死要面子者拿来的托辞。衣锦若无，无便无罢，衣锦若有，有便有罢。<br>衣锦随意，还乡就好。</p><p><em>戊戌年腊月廿七于家中。</em></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;这不是英国作家哈代的《The Return of Native》,而是我们这辈的父母所经历的常态。&lt;br&gt;以下文章由好友&lt;strong&gt;杨灿&lt;/strong&gt;所写&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="生活随笔" scheme="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="他山之石" scheme="https://lruihao.cn/tags/%E4%BB%96%E5%B1%B1%E4%B9%8B%E7%9F%B3/"/>
+    
+      <category term="生活随笔" scheme="https://lruihao.cn/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>java继承test</title>
@@ -506,31 +530,6 @@
       <category term="hexo" scheme="https://lruihao.cn/tags/hexo/"/>
     
       <category term="pdf" scheme="https://lruihao.cn/tags/pdf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>设置单篇文章不打赏、首页不显示文章</title>
-    <link href="https://lruihao.cn/hexo/noreward.html"/>
-    <id>https://lruihao.cn/hexo/noreward.html</id>
-    <published>2018-11-06T05:06:29.000Z</published>
-    <updated>2019-02-01T04:07:54.389Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="不打赏"><a href="#不打赏" class="headerlink" title="不打赏"></a>不打赏</h2><blockquote><p>出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。<br></p><div class="note"><p>原理：</p><p>因为默认的变量值为false,!post.noreward就是true了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成true，取反后就是false,就不会显示了打赏模块了。</p></div><p></p></blockquote><h3 id="修改post模板"><a href="#修改post模板" class="headerlink" title="修改post模板"></a>修改post模板</h3><p>打开以下路径文件<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig</span><br></pre></td></tr></table></figure><p></p><p>查找reward关键词，大概在378行，并添加内容。</p><p><img src="noreward/1.png" alt="图片"></p><h3 id="文章内使用"><a href="#文章内使用" class="headerlink" title="文章内使用"></a>文章内使用</h3><p>在头部加上关键词<code>noreward: true</code>，比如本文头部。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 设置单篇文章不打赏</span><br><span class="line">date: 2018-11-06 13:06:29</span><br><span class="line">tags:</span><br><span class="line">- hexo博客</span><br><span class="line">categories: hexo博客</span><br><span class="line">noreward: true</span><br><span class="line">notshow: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><strong>本地调试时修改完后记得重启hexo,只要是修改了布局文件就要重新<code>hexo s</code>,修改文章内容等就可以不需要重启，效果如本文</strong><br>ps: 小声bb,如果有打赏的冲动换一篇文章就是了，嘘！</p><h4 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h4><p>顺手改了一下tags的位置，知道tags那一块移到喜欢的位置就好了。</p><h2 id="首页不显示文章"><a href="#首页不显示文章" class="headerlink" title="首页不显示文章"></a>首页不显示文章</h2><p>同理可得找到主题布局文件layout/index.swig</p><p>找到一个for循环，在for循环里面加一个判断就行了。<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for post in page.posts %&#125;</span><br><span class="line">&#123;% if !post.notshow %&#125;</span><br><span class="line">&#123;&#123; post_template.render(post, true) &#125;&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure><p></p><p>使用同理，<code>notshow: true</code><br>在归档可以看到文章。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;不打赏&quot;&gt;&lt;a href=&quot;#不打赏&quot; class=&quot;headerlink&quot; title=&quot;不打赏&quot;&gt;&lt;/a&gt;不打赏&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。&lt;br
-      
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://lruihao.cn/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://lruihao.cn/tags/hexo/"/>
     
   </entry>
   
