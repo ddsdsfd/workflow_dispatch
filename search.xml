@@ -656,8 +656,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
         <tag>数学</tag>
       </tags>
   </entry>
@@ -670,8 +670,8 @@
         <category>组合数学</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
         <tag>数学</tag>
         <tag>组合数学</tag>
       </tags>
@@ -715,8 +715,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
         <tag>组合数学</tag>
       </tags>
   </entry>
@@ -788,10 +788,10 @@
   </entry>
   <entry>
     <title><![CDATA[菜鸟，大牛和教主，三者的区别(转)]]></title>
-    <url>%2F%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94%2Ffucking4.html</url>
+    <url>%2FACM%2Ffucking3.html</url>
     <content type="text"><![CDATA[对菜鸟来说题目有三种：会算法且能AC的，会算法但不能AC的，不会做的对大牛来说题目有两种：会做的，不会做的对教主来说题目有两种：能AC的，数据有错的菜鸟提交WA了，找了N久找不出错时，在论坛大骂数据有错，但是没人理大牛提交WA了，找了N久找不出错时，写暴力程序或者求别人的AC程序对拍教主提交WA了，Judge马上修正数据菜鸟面对一道难题，直接暴搜大牛面对一道难题，算了算时间复杂度不对，或者证明出是NP难，果断放弃教主面对一道难题，说，虽然我不会做，但AC还是没有问题的菜鸟AC了一道难题，巴不得召告天下大牛AC了一道难题，会写一篇解题报告，第一句话一定是：这题其实不难教主AC了一道难题，好像什么都没发生过菜鸟切OJ，只挑简单题做大牛切OJ，成套成套地做教主早就不切OJ了菜鸟经常在论坛和QQ上求助大牛经常在论坛和QQ上灌水教主一般不露面菜鸟喜欢说自己做了几十几百道题大牛喜欢说自己把某个OJ做了百分之八九十教主一般不说话菜鸟队看到场上90%的队伍挂起了红球，开始找红球是哪道题大牛队全场第一个挂起黄球，然后发现几乎同时有另外几支大牛队也挂起了黄球教主队全场第一个挂起绿球，然后全场到最后也只有一个绿球菜鸟喜欢搜集各种模板大牛只用自己写的模板教主不用模板，但他当场写的程序会被别人用作模板菜鸟喜欢YY这种分析菜鸟、大牛和教主的区别的文章(没错就是我！- _ -)大牛看完这样的文章会笑一笑，懒得回帖教主直接无视]]></content>
       <categories>
-        <category>生活随笔</category>
+        <category>ACM</category>
       </categories>
       <tags>
         <tag>他山之石</tag>
@@ -801,10 +801,10 @@
   </entry>
   <entry>
     <title><![CDATA[菜鸟，大牛和教主，三者的区别(转)]]></title>
-    <url>%2FACM%2Ffucking3.html</url>
+    <url>%2F%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94%2Ffucking4.html</url>
     <content type="text"><![CDATA[对菜鸟来说题目有三种：会算法且能AC的，会算法但不能AC的，不会做的对大牛来说题目有两种：会做的，不会做的对教主来说题目有两种：能AC的，数据有错的菜鸟提交WA了，找了N久找不出错时，在论坛大骂数据有错，但是没人理大牛提交WA了，找了N久找不出错时，写暴力程序或者求别人的AC程序对拍教主提交WA了，Judge马上修正数据菜鸟面对一道难题，直接暴搜大牛面对一道难题，算了算时间复杂度不对，或者证明出是NP难，果断放弃教主面对一道难题，说，虽然我不会做，但AC还是没有问题的菜鸟AC了一道难题，巴不得召告天下大牛AC了一道难题，会写一篇解题报告，第一句话一定是：这题其实不难教主AC了一道难题，好像什么都没发生过菜鸟切OJ，只挑简单题做大牛切OJ，成套成套地做教主早就不切OJ了菜鸟经常在论坛和QQ上求助大牛经常在论坛和QQ上灌水教主一般不露面菜鸟喜欢说自己做了几十几百道题大牛喜欢说自己把某个OJ做了百分之八九十教主一般不说话菜鸟队看到场上90%的队伍挂起了红球，开始找红球是哪道题大牛队全场第一个挂起黄球，然后发现几乎同时有另外几支大牛队也挂起了黄球教主队全场第一个挂起绿球，然后全场到最后也只有一个绿球菜鸟喜欢搜集各种模板大牛只用自己写的模板教主不用模板，但他当场写的程序会被别人用作模板菜鸟喜欢YY这种分析菜鸟、大牛和教主的区别的文章(没错就是我！- _ -)大牛看完这样的文章会笑一笑，懒得回帖教主直接无视]]></content>
       <categories>
-        <category>ACM</category>
+        <category>生活随笔</category>
       </categories>
       <tags>
         <tag>他山之石</tag>
@@ -866,7 +866,7 @@
   </entry>
   <entry>
     <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
-    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2F%2Fhdu1272.html</url>
+    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2Fhdu1272.html</url>
     <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
       <categories>
         <category>ACM</category>
@@ -880,7 +880,7 @@
   </entry>
   <entry>
     <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
-    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2Fhdu1272.html</url>
+    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2F%2Fhdu1272.html</url>
     <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
       <categories>
         <category>ACM</category>
@@ -914,8 +914,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -926,8 +926,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -980,8 +980,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1130,8 +1130,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1208,8 +1208,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1294,8 +1294,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
         <tag>总结</tag>
       </tags>
   </entry>
@@ -1308,8 +1308,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1321,21 +1321,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[B.Higher h-index]]></title>
-    <url>%2FACM%2F2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%2FB-Higher-h-index.html</url>
-    <content type="text"><![CDATA[B. Higher h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has no papers and he is going to publish some subsequently. If he works on a paper for x hours, thepaper will get (a·x) citations, where a is a known constant. It’s clear that x should be a positive integer.There is also a trick – one can cite his own papers published earlier.Given Bobo has n working hours, ﬁnd the maximum h-index of him.InputThe input consists of several test cases and is terminated by end-of-ﬁle.Each test case contains two integers n and a.OutputFor each test case, print an integer which denotes the maximum h-index.Constraint• 1≤ n ≤109• 0≤ a ≤ n• The number of test cases does not exceed 104.Sample Input3 03 11000000000 1000000000Sample Output121000000000NoteFor the ﬁrst sample, Bobo can work 3 papers for 1 hour each. With the trick mentioned,he will get papers with citations 2,1,0. Thus, his h-index is 1.For the second sample, Bobo can work 2 papers for 1 and 2 hours respectively.He will get papers with citations 1+1,2+0. Thus, his h-index is 2.题意：给定n个小时，可以用其中x(1&lt;=x&lt;=n)个小时写一篇论文，那么这篇论文的”既定”引用数将会是x*a(a为给定正整数)；此外，已经写好的论文将会被其后写成的论文所引用，也就是说，这篇论文的总引用数将会是”既定”引用数+其后论文篇数；问在所有的写论文方案中(例如一种方案就是用n个小时写n篇论文，每篇论文各花1小时(可以得到这n篇论文的引用数))，h最大为多少(h的含义同上题)(每一种方案都对应着一个h，求这些h中的最大者)思路：最优方案(即对应h值最大的方案)是平摊n小时写成n篇论文(证明未知)；此时n篇论文的引用数为a,a+1,a+2,…,a+n-1，引用数为a+i时，引用数大于等于它的论文有n-i篇，令a+i=n-i得i=(n-a)/2,所以h=a+(n-a)/2;后AC代码123456789#include&lt;cstdio&gt;int main()&#123; int n,a; while(scanf("%d%d",&amp;n,&amp;a)!=EOF)&#123; printf("%d\n",a+(n-a)/2); &#125; return 0;&#125;]]></content>
-      <categories>
-        <category>ACM</category>
-        <category>2018湘潭邀请赛</category>
-      </categories>
-      <tags>
         <tag>2018湘潭邀请赛</tag>
-        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1347,21 +1334,21 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[A.Easy h-index]]></title>
-    <url>%2FACM%2F2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%2FA-Easy-h-index.html</url>
-    <content type="text"><![CDATA[A. Easy h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has published many papers. Given a0,a1,a2,…,an which means Bobo has published ai papers withitations exactly i, ﬁnd the h-index of Bobo.InputThe input consists of several test cases and is terminated by end-of-ﬁle.The ﬁrst line of each test case contains an integer n. The second line contains (n+1) integers a0,a1,…,an.OutputFor each test case, print an integer which denotes the result.Constraint• 1≤ n ≤2·105• 0≤ ai ≤109• The sum of n does not exceed 250,000.Sample Input11 221 2 330 0 0 0Sample Output120题意：给定被引用次数为0~n的论文分别有几张，找到最大的h，满足被引用次数大于等于h的论文至少有h张思路：在区间[0,n]内二分答案；或直接从n~0遍历找到第一个满足条件的h后AC代码12345678910111213141516171819202122#include "bits/stdc++.h"using namespace std;int main()&#123; int a[200005]; int n; int i; while(cin&gt;&gt;n)&#123; for(i=0;i&lt;=n;i++) cin&gt;&gt;a[i]; int sum=a[n]; for(i=n;i&gt;=0;)&#123; if(sum&gt;=i)&#123; cout&lt;&lt;i&lt;&lt;endl; break; &#125; else sum+=a[--i]; &#125; if(i&lt;0) cout&lt;&lt;"0"&lt;&lt;endl; &#125; return 0;&#125;]]></content>
+    <title><![CDATA[B.Higher h-index]]></title>
+    <url>%2FACM%2F2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%2FB-Higher-h-index.html</url>
+    <content type="text"><![CDATA[B. Higher h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has no papers and he is going to publish some subsequently. If he works on a paper for x hours, thepaper will get (a·x) citations, where a is a known constant. It’s clear that x should be a positive integer.There is also a trick – one can cite his own papers published earlier.Given Bobo has n working hours, ﬁnd the maximum h-index of him.InputThe input consists of several test cases and is terminated by end-of-ﬁle.Each test case contains two integers n and a.OutputFor each test case, print an integer which denotes the maximum h-index.Constraint• 1≤ n ≤109• 0≤ a ≤ n• The number of test cases does not exceed 104.Sample Input3 03 11000000000 1000000000Sample Output121000000000NoteFor the ﬁrst sample, Bobo can work 3 papers for 1 hour each. With the trick mentioned,he will get papers with citations 2,1,0. Thus, his h-index is 1.For the second sample, Bobo can work 2 papers for 1 and 2 hours respectively.He will get papers with citations 1+1,2+0. Thus, his h-index is 2.题意：给定n个小时，可以用其中x(1&lt;=x&lt;=n)个小时写一篇论文，那么这篇论文的”既定”引用数将会是x*a(a为给定正整数)；此外，已经写好的论文将会被其后写成的论文所引用，也就是说，这篇论文的总引用数将会是”既定”引用数+其后论文篇数；问在所有的写论文方案中(例如一种方案就是用n个小时写n篇论文，每篇论文各花1小时(可以得到这n篇论文的引用数))，h最大为多少(h的含义同上题)(每一种方案都对应着一个h，求这些h中的最大者)思路：最优方案(即对应h值最大的方案)是平摊n小时写成n篇论文(证明未知)；此时n篇论文的引用数为a,a+1,a+2,…,a+n-1，引用数为a+i时，引用数大于等于它的论文有n-i篇，令a+i=n-i得i=(n-a)/2,所以h=a+(n-a)/2;后AC代码123456789#include&lt;cstdio&gt;int main()&#123; int n,a; while(scanf("%d%d",&amp;n,&amp;a)!=EOF)&#123; printf("%d\n",a+(n-a)/2); &#125; return 0;&#125;]]></content>
       <categories>
         <category>ACM</category>
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1373,8 +1360,21 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[A.Easy h-index]]></title>
+    <url>%2FACM%2F2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%2FA-Easy-h-index.html</url>
+    <content type="text"><![CDATA[A. Easy h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has published many papers. Given a0,a1,a2,…,an which means Bobo has published ai papers withitations exactly i, ﬁnd the h-index of Bobo.InputThe input consists of several test cases and is terminated by end-of-ﬁle.The ﬁrst line of each test case contains an integer n. The second line contains (n+1) integers a0,a1,…,an.OutputFor each test case, print an integer which denotes the result.Constraint• 1≤ n ≤2·105• 0≤ ai ≤109• The sum of n does not exceed 250,000.Sample Input11 221 2 330 0 0 0Sample Output120题意：给定被引用次数为0~n的论文分别有几张，找到最大的h，满足被引用次数大于等于h的论文至少有h张思路：在区间[0,n]内二分答案；或直接从n~0遍历找到第一个满足条件的h后AC代码12345678910111213141516171819202122#include "bits/stdc++.h"using namespace std;int main()&#123; int a[200005]; int n; int i; while(cin&gt;&gt;n)&#123; for(i=0;i&lt;=n;i++) cin&gt;&gt;a[i]; int sum=a[n]; for(i=n;i&gt;=0;)&#123; if(sum&gt;=i)&#123; cout&lt;&lt;i&lt;&lt;endl; break; &#125; else sum+=a[--i]; &#125; if(i&lt;0) cout&lt;&lt;"0"&lt;&lt;endl; &#125; return 0;&#125;]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>2018湘潭邀请赛</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1455,7 +1455,7 @@
   <entry>
     <title><![CDATA[光]]></title>
     <url>%2F%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94%2F%E5%85%89.html</url>
-    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
+    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
       <categories>
         <category>生活随笔</category>
       </categories>
