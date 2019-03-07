@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>https://lruihao.cn/hexo/nextplugin.html</loc>
+    <lastmod>2019-03-07T06:41:53.499Z</lastmod>
+    <data>
+        <display>
+        <title>next插件样式</title>
+        <pubTime>2018-11-24T08:54:09.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
     
@@ -114,28 +136,6 @@
 
     
     
-    
-  <url>
-    <loc>https://lruihao.cn/hexo/nextplugin.html</loc>
-    <lastmod>2019-02-19T06:58:18.815Z</lastmod>
-    <data>
-        <display>
-        <title>next插件样式</title>
-        <pubTime>2018-11-24T08:54:09.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
   <url>
@@ -1243,9 +1243,9 @@
         <title>Arrays类及基本使用</title>
         <pubTime>2019-01-18T05:13:10.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>Arrays类</tag>
+         
+        <tag>java</tag>
          
         <tag>Collator</tag>
          
@@ -1453,9 +1453,9 @@
         <title>java标识符</title>
         <pubTime>2019-01-14T07:07:57.000Z</pubTime>
         
-        <tag>java标识符</tag>
-         
         <tag>java</tag>
+         
+        <tag>java标识符</tag>
          
          
            
@@ -1713,26 +1713,21 @@
     
     
   <url>
-    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/hdu-2612-Find-a-way%EF%BC%88%E5%8F%8Cbfs%EF%BC%89.html</loc>
+    <loc>https://lruihao.cn/ACM/Adjacent-Replacements.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>hdu-2612-Find a way（双bfs）</title>
-        <pubTime>2018-07-23T04:34:42.000Z</pubTime>
+        <title>Adjacent Replacements</title>
+        <pubTime>2018-07-22T03:54:14.000Z</pubTime>
         
         <tag>ACM</tag>
          
-        <tag>搜索</tag>
-         
-        <tag>HDU</tag>
+        <tag>Codeforces</tag>
          
          
            
              
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
           
         </display>
     </data>
@@ -1825,20 +1820,28 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E9%98%9F%E5%91%98%E4%BB%A3%E8%A1%A8%E5%8F%91%E8%A8%80.html</loc>
+    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/poj-2251-Dungeon%20Master%EF%BC%88%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF%EF%BC%89.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>18湘潭邀请赛参赛队员代表发言</title>
-        <pubTime>2018-06-14T23:51:21.000Z</pubTime>
+        <title>poj-2251-Dungeon Master（三维bfs最短路）</title>
+        <pubTime>2018-07-22T04:02:32.000Z</pubTime>
         
+        <tag>ACM</tag>
+         
+        <tag>BFS</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>POJ</tag>
+         
          
            
              
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="2018湘潭邀请赛" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/"/>
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
           
         </display>
     </data>
@@ -1846,21 +1849,26 @@
 
     
   <url>
-    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/mood.html</loc>
+    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/poj-3984-%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98(bfs%E8%B7%AF%E5%BE%84).html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>每一个优秀的人，都有一段沉默的时光</title>
-        <pubTime>2018-09-21T13:11:25.000Z</pubTime>
+        <title>poj-3984-迷宫问题(bfs路径)</title>
+        <pubTime>2018-07-22T03:50:20.000Z</pubTime>
         
-        <tag>生活随笔</tag>
+        <tag>ACM</tag>
          
-        <tag>心灵鸡汤</tag>
+        <tag>BFS</tag>
+         
+        <tag>POJ</tag>
          
          
            
              
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
           
         </display>
     </data>
@@ -1915,18 +1923,16 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/STL/sort%E6%8E%92%E5%BA%8F.html</loc>
+    <loc>https://lruihao.cn/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/poj2387.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>sort排序</title>
-        <pubTime>2018-06-14T12:23:03.000Z</pubTime>
+        <title>Til the Cows Come Home-poj2387(dijkstra判断重边)</title>
+        <pubTime>2018-08-03T13:40:33.000Z</pubTime>
         
-        <tag>STL</tag>
+        <tag>ACM</tag>
          
-        <tag>C++</tag>
-         
-        <tag>排序</tag>
+        <tag>最短路</tag>
          
          
            
@@ -1934,7 +1940,27 @@
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="STL" url="https://lruihao.cn/categories/ACM/STL/"/>
+              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/%E9%80%9A%E7%94%A8/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>在线离线算法</title>
+        <pubTime>2018-07-26T01:57:32.000Z</pubTime>
+        
+        <tag>通用</tag>
+         
+         
+           
+             
+              <breadCrumb title="通用" url="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
           
         </display>
     </data>
@@ -1989,26 +2015,6 @@
 
     
   <url>
-    <loc>https://lruihao.cn/%E9%80%9A%E7%94%A8/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>在线离线算法</title>
-        <pubTime>2018-07-26T01:57:32.000Z</pubTime>
-        
-        <tag>通用</tag>
-         
-         
-           
-             
-              <breadCrumb title="通用" url="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
@@ -2029,24 +2035,19 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/poj2387.html</loc>
+    <loc>https://lruihao.cn/git/gituse.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>Til the Cows Come Home-poj2387(dijkstra判断重边)</title>
-        <pubTime>2018-08-03T13:40:33.000Z</pubTime>
+        <title>使用Git上传代码到github,coding等仓库</title>
+        <pubTime>2018-10-26T13:11:02.000Z</pubTime>
         
-        <tag>ACM</tag>
-         
-        <tag>最短路</tag>
+        <tag>git</tag>
          
          
            
              
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
           
         </display>
     </data>
@@ -2054,18 +2055,18 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/poj-3984-%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98(bfs%E8%B7%AF%E5%BE%84).html</loc>
+    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/hdu-2612-Find-a-way%EF%BC%88%E5%8F%8Cbfs%EF%BC%89.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>poj-3984-迷宫问题(bfs路径)</title>
-        <pubTime>2018-07-22T03:50:20.000Z</pubTime>
+        <title>hdu-2612-Find a way（双bfs）</title>
+        <pubTime>2018-07-23T04:34:42.000Z</pubTime>
         
         <tag>ACM</tag>
          
-        <tag>BFS</tag>
+        <tag>搜索</tag>
          
-        <tag>POJ</tag>
+        <tag>HDU</tag>
          
          
            
@@ -2110,35 +2111,6 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/hud-1241-Oil%20Deposits%20(dfs).html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>hud-1241-Oil Deposits (dfs)</title>
-        <pubTime>2018-07-22T03:37:20.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>DFS</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/ACM/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B23.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
@@ -2155,6 +2127,44 @@
              
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/%E7%AE%80%E5%8D%95%E8%83%8C%E5%8C%85.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>简单背包</title>
+        <pubTime>2018-06-16T05:18:43.000Z</pubTime>
+        
+        <tag>背包问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="背包问题" url="https://lruihao.cn/categories/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/null/hello-world.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-05-28T12:01:01.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>
@@ -2187,15 +2197,20 @@
     </url>
 
     
+    
   <url>
-    <loc>https://lruihao.cn/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/%E7%AE%80%E5%8D%95%E8%83%8C%E5%8C%85.html</loc>
+    <loc>https://lruihao.cn/ACM/STL/sort%E6%8E%92%E5%BA%8F.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>简单背包</title>
-        <pubTime>2018-06-16T05:18:43.000Z</pubTime>
+        <title>sort排序</title>
+        <pubTime>2018-06-14T12:23:03.000Z</pubTime>
         
-        <tag>背包问题</tag>
+        <tag>STL</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>排序</tag>
          
          
            
@@ -2203,35 +2218,29 @@
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="背包问题" url="https://lruihao.cn/categories/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+              <breadCrumb title="STL" url="https://lruihao.cn/categories/ACM/STL/"/>
           
         </display>
     </data>
     </url>
 
     
-    
   <url>
-    <loc>https://lruihao.cn/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/how-tables.html</loc>
+    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/mood.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>how many tables-HDU-1213(并查集求连通域数目)</title>
-        <pubTime>2018-07-31T03:12:10.000Z</pubTime>
+        <title>每一个优秀的人，都有一段沉默的时光</title>
+        <pubTime>2018-09-21T13:11:25.000Z</pubTime>
         
-        <tag>ACM</tag>
+        <tag>生活随笔</tag>
          
-        <tag>HDU</tag>
-         
-        <tag>并查集</tag>
+        <tag>心灵鸡汤</tag>
          
          
            
              
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -2263,54 +2272,16 @@
 
     
   <url>
-    <loc>https://lruihao.cn/termux/termux.html</loc>
+    <loc>https://lruihao.cn/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/hdu3038.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>在Android上搭建hexo博客</title>
-        <pubTime>2018-08-11T08:59:05.000Z</pubTime>
-        
-        <tag>termux</tag>
-         
-        <tag>hexo博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="termux" url="https://lruihao.cn/categories/termux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://lruihao.cn/null/hello-world.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-05-28T12:01:01.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/The-suspects.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>The-suspects-POJ-1611(并查集)</title>
-        <pubTime>2018-07-31T03:11:31.000Z</pubTime>
+        <title>How Many Answers Are Wrong-hdu3038(带权并查集)</title>
+        <pubTime>2018-08-01T03:45:53.000Z</pubTime>
         
         <tag>ACM</tag>
          
-        <tag>POJ</tag>
+        <tag>HDU</tag>
          
         <tag>并查集</tag>
          
@@ -2327,35 +2298,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/poj-2251-Dungeon%20Master%EF%BC%88%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF%EF%BC%89.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>poj-2251-Dungeon Master（三维bfs最短路）</title>
-        <pubTime>2018-07-22T04:02:32.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>BFS</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>POJ</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/beian.html</loc>
@@ -2378,6 +2320,29 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://lruihao.cn/termux/termux.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>在Android上搭建hexo博客</title>
+        <pubTime>2018-08-11T08:59:05.000Z</pubTime>
+        
+        <tag>termux</tag>
+         
+        <tag>hexo博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="termux" url="https://lruihao.cn/categories/termux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://lruihao.cn/ACM/Wannafly%E6%8C%91%E6%88%98%E8%B5%9B20-%E6%9F%93%E8%89%B2.html</loc>
@@ -2426,19 +2391,53 @@
 
     
   <url>
-    <loc>https://lruihao.cn/git/gituse.html</loc>
+    <loc>https://lruihao.cn/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/The-suspects.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>使用Git上传代码到github,coding等仓库</title>
-        <pubTime>2018-10-26T13:11:02.000Z</pubTime>
+        <title>The-suspects-POJ-1611(并查集)</title>
+        <pubTime>2018-07-31T03:11:31.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>ACM</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>并查集</tag>
          
          
            
              
-              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/how-tables.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>how many tables-HDU-1213(并查集求连通域数目)</title>
+        <pubTime>2018-07-31T03:12:10.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
           
         </display>
     </data>
@@ -2468,33 +2467,6 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/HDU%20-%201495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90%20%EF%BC%88bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4%20%20or%20%E6%95%B0%E8%AE%BA%EF%BC%89.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>HDU-1495-非常可乐（bfs模拟倒水or数论）</title>
-        <pubTime>2018-07-24T07:34:00.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>HDU</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/POJ%20-%203278%20-Catch%20That%20Cow%20%20(bfs).html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
@@ -2517,33 +2489,6 @@
           
              
               <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/hdu3038.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>How Many Answers Are Wrong-hdu3038(带权并查集)</title>
-        <pubTime>2018-08-01T03:45:53.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
           
         </display>
     </data>
@@ -2601,38 +2546,18 @@
 
     
   <url>
-    <loc>https://lruihao.cn/git/git-index-lock.html</loc>
+    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/HDU%20-%201495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90%20%EF%BC%88bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4%20%20or%20%E6%95%B0%E8%AE%BA%EF%BC%89.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>git index.lock</title>
-        <pubTime>2018-08-14T11:21:23.000Z</pubTime>
+        <title>HDU-1495-非常可乐（bfs模拟倒水or数论）</title>
+        <pubTime>2018-07-24T07:34:00.000Z</pubTime>
         
-        <tag>git</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/B-Higher.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>B.Higher h-index</title>
-        <pubTime>2018-06-14T14:47:28.000Z</pubTime>
-        
-        <tag>2018湘潭邀请赛</tag>
-         
         <tag>ACM</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>HDU</tag>
          
          
            
@@ -2640,7 +2565,7 @@
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="2018湘潭邀请赛" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/"/>
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
           
         </display>
     </data>
@@ -2663,6 +2588,28 @@
            
              
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/git/git-index-lock.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>git index.lock</title>
+        <pubTime>2018-08-14T11:21:23.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
           
         </display>
     </data>
@@ -2714,6 +2661,31 @@
 
     
   <url>
+    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/BFS%E6%B1%82%E6%9C%80%E7%9F%AD%E8%B7%AF.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>BFS求最短路</title>
+        <pubTime>2018-07-22T03:31:05.000Z</pubTime>
+        
+        <tag>BFS</tag>
+         
+        <tag>搜索</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/ACM/STL/C++%20with%20STL.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
@@ -2741,16 +2713,45 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/BFS%E6%B1%82%E6%9C%80%E7%9F%AD%E8%B7%AF.html</loc>
+    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/B-Higher.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>BFS求最短路</title>
-        <pubTime>2018-07-22T03:31:05.000Z</pubTime>
+        <title>B.Higher h-index</title>
+        <pubTime>2018-06-14T14:47:28.000Z</pubTime>
         
-        <tag>BFS</tag>
+        <tag>2018湘潭邀请赛</tag>
+         
+        <tag>ACM</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="2018湘潭邀请赛" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/ACM/%E6%90%9C%E7%B4%A2/hud-1241-Oil%20Deposits%20(dfs).html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>hud-1241-Oil Deposits (dfs)</title>
+        <pubTime>2018-07-22T03:37:20.000Z</pubTime>
+        
+        <tag>ACM</tag>
          
         <tag>搜索</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>DFS</tag>
          
          
            
@@ -2759,6 +2760,31 @@
           
              
               <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/A-Easy.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>A.Easy h-index</title>
+        <pubTime>2018-06-14T14:36:58.000Z</pubTime>
+        
+        <tag>2018湘潭邀请赛</tag>
+         
+        <tag>ACM</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="2018湘潭邀请赛" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/"/>
           
         </display>
     </data>
@@ -2816,39 +2842,13 @@
 
     
   <url>
-    <loc>https://lruihao.cn/ACM/Adjacent-Replacements.html</loc>
+    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E9%98%9F%E5%91%98%E4%BB%A3%E8%A1%A8%E5%8F%91%E8%A8%80.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>Adjacent Replacements</title>
-        <pubTime>2018-07-22T03:54:14.000Z</pubTime>
+        <title>18湘潭邀请赛参赛队员代表发言</title>
+        <pubTime>2018-06-14T23:51:21.000Z</pubTime>
         
-        <tag>ACM</tag>
-         
-        <tag>Codeforces</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/A-Easy.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>A.Easy h-index</title>
-        <pubTime>2018-06-14T14:36:58.000Z</pubTime>
-        
-        <tag>2018湘潭邀请赛</tag>
-         
-        <tag>ACM</tag>
-         
          
            
              
