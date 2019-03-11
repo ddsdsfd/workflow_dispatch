@@ -263,10 +263,10 @@
         <category>通用</category>
       </categories>
       <tags>
-        <tag>通用</tag>
         <tag>个人云盘</tag>
         <tag>server</tag>
         <tag>caddy</tag>
+        <tag>通用</tag>
       </tags>
   </entry>
   <entry>
@@ -681,8 +681,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
         <tag>数学</tag>
       </tags>
   </entry>
@@ -695,8 +695,8 @@
         <category>组合数学</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
         <tag>数学</tag>
         <tag>组合数学</tag>
       </tags>
@@ -740,8 +740,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
         <tag>组合数学</tag>
       </tags>
   </entry>
@@ -891,7 +891,7 @@
   </entry>
   <entry>
     <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
-    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2Fhdu1272.html</url>
+    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2F%2Fhdu1272.html</url>
     <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
       <categories>
         <category>ACM</category>
@@ -905,7 +905,7 @@
   </entry>
   <entry>
     <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
-    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2F%2Fhdu1272.html</url>
+    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2Fhdu1272.html</url>
     <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
       <categories>
         <category>ACM</category>
@@ -939,8 +939,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -951,8 +951,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1005,8 +1005,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1043,8 +1043,8 @@
         <category>通用</category>
       </categories>
       <tags>
-        <tag>BUG</tag>
         <tag>通用</tag>
+        <tag>BUG</tag>
         <tag>博客日志</tag>
       </tags>
   </entry>
@@ -1155,8 +1155,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1233,8 +1233,8 @@
         <category>ACM</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Codeforces</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1319,8 +1319,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
         <tag>总结</tag>
       </tags>
   </entry>
@@ -1333,8 +1333,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1346,8 +1346,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1359,8 +1359,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1372,8 +1372,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1385,8 +1385,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1398,8 +1398,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1480,7 +1480,7 @@
   <entry>
     <title><![CDATA[光]]></title>
     <url>%2F%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94%2F%E5%85%89.html</url>
-    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
+    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
       <categories>
         <category>生活随笔</category>
       </categories>
