@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-03-08T09:23:13.367Z</updated>
+  <updated>2019-03-15T06:57:00.819Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10,ubuntu双系统时间不一致</title>
+    <link href="https://lruihao.cn/linux/ubuntutime.html"/>
+    <id>https://lruihao.cn/linux/ubuntutime.html</id>
+    <published>2019-03-15T06:28:10.000Z</published>
+    <updated>2019-03-15T06:57:00.819Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>我的Ubuntu和Windows双系统是Ubuntu是第一启动项，所以总是开机忘记点下键，一进Ubuntu系统时间就不对了（总是少了8小时），回到Windows时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说git版本控制提交会遇到问题种种等。</p></blockquote><a id="more"></a><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在安装Ubuntu和Windows双系统的情况下，Ubuntu的时间总会和Windows的时间相差8小时，原因在于widows认为BIOS时间是本地时间，Ubuntu认为BIOS时间是UTC时间，即协调世界时，(Universal Time Coordinated)英文缩写，是由国际无线电咨询委员会规定和推荐,并由国际时间局(BIH)负责保持的以秒为基础的时间标度。UTC相当于本初子午线(即经度0度)上的平均太阳时，过去曾用格林威治平均时(GMT)来表示。北京时间比UTC时间早8小时，以1999年1月1日00:00 UTC为例，UTC时间是零点，北京时间为1999年1月1日早上8点整。)，所以我们在时间上面相隔了8个小时。这个时候bios的时间和系统的时间当然是不一致，一个代表 utc 时间，一个代表cst（＋8时区），即我们常用的时间。</p><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>在Windows下进行如下修改：（博主win10,win7自测）<br>以管理员身份运行CMD（<code>win+x后选择Windows Powershell(管理员)</code><br></p><figure class="highlight plain"><figcaption><span>windows cmd命令</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1</span><br></pre></td></tr></table></figure><p></p><p>重启看看时间发现ok了。</p><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>老版Ubuntu（Ubuntu10左右）：<br>修改/etc/default/rcS文件<br>编辑/etc/default/rcS 将UTC=yes改成UTC=no 。</p><p>新版Ubuntu（Ubuntu16.04）：<br>新版本的Ubuntu使用systemd启动之后，时间也改成了由timedatectl来管理，此方法就不适用了。<br></p><figure class="highlight plain"><figcaption><span>重启完成将硬件时间UTC改为CST，双系统时间保持一致。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure><p></p><p>先在ubuntu下更新一下时间，确保时间无误：<br></p><figure class="highlight plain"><figcaption><span>ubuntu命令</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install ntpdate</span><br><span class="line">$sudo ntpdate time.windows.com</span><br></pre></td></tr></table></figure><p></p><p>然后将时间更新到硬件上：<br></p><figure class="highlight plain"><figcaption><span>ubuntu命令</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo hwclock --localtime --systohc</span><br></pre></td></tr></table></figure><p></p><p>重新进入windows10，发现时间恢复正常了！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;我的Ubuntu和Windows双系统是Ubuntu是第一启动项，所以总是开机忘记点下键，一进Ubuntu系统时间就不对了（总是少了8小时），回到Windows时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说git版本控制提交会遇到问题种种等。&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="https://lruihao.cn/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://lruihao.cn/tags/linux/"/>
+    
+      <category term="windows" scheme="https://lruihao.cn/tags/windows/"/>
+    
+  </entry>
   
   <entry>
     <title>QQ强制生成卡片式链接</title>
@@ -489,34 +513,6 @@
       <category term="hexo" scheme="https://lruihao.cn/tags/hexo/"/>
     
       <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过bat批处理文件自动提交博客代码</title>
-    <link href="https://lruihao.cn/%E9%80%9A%E7%94%A8/commit-bat.html"/>
-    <id>https://lruihao.cn/通用/commit-bat.html</id>
-    <published>2018-11-17T06:25:49.000Z</published>
-    <updated>2019-01-28T06:25:19.210Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p><ul><li>git add * (添加需要提交的文件，这里全选)</li><li>git commit -m “提交信息”</li><li>git push</li></ul><p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。<br>这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p></blockquote><a id="more"></a><h3 id="新建文本文档"><a href="#新建文本文档" class="headerlink" title="新建文本文档"></a>新建文本文档</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">title</span> Commit</span><br><span class="line">git add .</span><br><span class="line"><span class="built_in">set</span> /p m=Message:</span><br><span class="line">git commit -m "<span class="variable">%m%</span>"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p><h3 id="hexo博客新姿势"><a href="#hexo博客新姿势" class="headerlink" title="hexo博客新姿势"></a>hexo博客新姿势</h3><p>hexo提交也很麻烦，当然也要批处理一下呀<br></p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean&amp;&amp;hexo g -d</span><br></pre></td></tr></table></figure><p></p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="死机脚本"><a href="#死机脚本" class="headerlink" title="死机脚本"></a>死机脚本</h4><p>(<strong>友情提醒千万不要在真机实验，请在虚拟机运行</strong>)<br></p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span> ifconfig</span><br></pre></td></tr></table></figure><p></p><p>另外也说一下linux死机命令。fork炸弹。<br>死机无非是耗尽系统资源<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_()&#123; _ | _ &amp; &#125;; _</span><br></pre></td></tr></table></figure><p></p><p>这个&amp;指后台运行的意思。</p><h4 id="统计文件名"><a href="#统计文件名" class="headerlink" title="统计文件名"></a>统计文件名</h4><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">dir</span> \\?\%<span class="number">1</span> /a:-d /b /o /p /w &gt;Filelist.txt</span><br></pre></td></tr></table></figure><p>将需要统计的文件夹拖到bat文件上。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;&lt;p&gt;前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤&lt;/p&gt;&lt;ul&gt;&lt;li&gt;git add * (添加需要提交的文件，这里全选)&lt;/li&gt;&lt;li&gt;git commit -m “提交信息”&lt;/li&gt;&lt;li&gt;git push&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。&lt;br&gt;这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!&lt;/p&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="通用" scheme="https://lruihao.cn/categories/%E9%80%9A%E7%94%A8/"/>
-    
-    
-      <category term="通用" scheme="https://lruihao.cn/tags/%E9%80%9A%E7%94%A8/"/>
-    
-      <category term="批处理" scheme="https://lruihao.cn/tags/%E6%89%B9%E5%A4%84%E7%90%86/"/>
-    
-      <category term="脚本" scheme="https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/"/>
-    
-      <category term="bat" scheme="https://lruihao.cn/tags/bat/"/>
     
   </entry>
   
