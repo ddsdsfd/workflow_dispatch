@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-03-15T15:13:54.305Z</updated>
+  <updated>2019-03-15T15:57:17.321Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eclipse的基本使用</title>
+    <link href="https://lruihao.cn/java/eclipseuse.html"/>
+    <id>https://lruihao.cn/java/eclipseuse.html</id>
+    <published>2019-03-15T15:47:24.000Z</published>
+    <updated>2019-03-15T15:57:17.321Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><figure class="highlight diff"><figcaption><span>基本使用</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">A:选择一个工作空间</span><br><span class="line">D:\develop\eclipse-SDK-3.7.2-win64\workspace</span><br><span class="line">B:如何写一个HelloWorld案例(代码以项目为基本单位)</span><br><span class="line">a:创建项目(工程)</span><br><span class="line">*File -- New -- Java Project</span><br><span class="line">*在左边空白处，直接右键 -- New -- Java Project</span><br><span class="line"></span><br><span class="line">键入项目名称后直接Finish。</span><br><span class="line">b:所有的java文件必须写到src下面才有效</span><br><span class="line">c:创建一个包</span><br><span class="line">cn.lruihao   </span><br><span class="line">d:在包下创建一个类</span><br><span class="line">HelloWorld</span><br><span class="line"></span><br><span class="line">同时让它帮我们写好了main方法。</span><br><span class="line">e:在main方法中写内容即可</span><br><span class="line">f:编译程序</span><br><span class="line">自动编译，在保存的那一刻帮你做好了</span><br><span class="line">g:运行程序</span><br><span class="line">选择要运行的文件或者在要运行的文件内容中</span><br><span class="line">右键 -- Run as - Java Application即可</span><br><span class="line">h:内容显示</span><br><span class="line">在Console控制台显示内容</span><br></pre></td></tr></table></figure><h1 id="Eclipse的基本设置"><a href="#Eclipse的基本设置" class="headerlink" title="Eclipse的基本设置"></a>Eclipse的基本设置</h1><figure class="highlight java"><figcaption><span>基本设置</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">A:程序的编译和运行的环境配置(如果你的Eclipse启动没有问题，就不要配置了)</span><br><span class="line">B:去掉默认注释(可以不用改)</span><br><span class="line">C:行号的显示和隐藏</span><br><span class="line">显示：在代码区域的最左边的空白区域，右键 -- Show Line Numbers即可。</span><br><span class="line">隐藏：把上面的动作再做一次。</span><br><span class="line">D:字体大小及颜色</span><br><span class="line">a:Java代码区域的字体大小和颜色：</span><br><span class="line">window -- Preferences -- General -- Appearance -- Colors And Fonts -- Java修改 -- Java Edit Text Font</span><br><span class="line">b:控制台</span><br><span class="line">window -- Preferences -- General -- Appearance -- Colors And Fonts -- Debug -- Console font</span><br><span class="line">c:其他文件</span><br><span class="line">window -- Preferences -- General -- Appearance -- Colors And Fonts -- Basic -- Text Font</span><br><span class="line">E:窗体给弄乱了，怎么办</span><br><span class="line">window -- Reset Perspective</span><br><span class="line">F:控制台找不到了</span><br><span class="line">Window--Show View—Console</span><br></pre></td></tr></table></figure><h1 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h1><figure class="highlight java"><figcaption><span>快捷键</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">A:内容辅助键</span><br><span class="line">Alt+/ 起提示作用</span><br><span class="line">main+alt+/,syso+alt+/,给出其他提示</span><br><span class="line">B:快捷键</span><br><span class="line">格式化  ctrl+shift+f</span><br><span class="line">导入包  ctrl+shift+o</span><br><span class="line">注释ctrl+/</span><br><span class="line">ctrl+shift+/,ctrl+shift+\</span><br><span class="line">代码上下移动 选中代码alt+上/下箭头</span><br><span class="line">查看源码  选中类名(F3或者Ctrl+鼠标点击)</span><br></pre></td></tr></table></figure><h1 id="Eclipse中如何提高开发效率"><a href="#Eclipse中如何提高开发效率" class="headerlink" title="Eclipse中如何提高开发效率"></a>Eclipse中如何提高开发效率</h1><figure class="highlight java"><figcaption><span>提高开发效率</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A:自动生成构造方法</span><br><span class="line">a:无参构造方法 在代码区域右键--source--Generate Constructors from Superclass</span><br><span class="line">b:带参构造方法 在代码区域右键--source--Generate Constructors using fields.. -- finish</span><br><span class="line">B:自动生成get/set方法</span><br><span class="line">在代码区域右键--source--Generate Getters and Setters...</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;基本使用&quot;&gt;&lt;a href=&quot;#基本使用&quot; class=&quot;headerlink&quot; title=&quot;基本使用&quot;&gt;&lt;/a&gt;基本使用&lt;/h1&gt;&lt;figure class=&quot;highlight diff&quot;&gt;&lt;figcaption&gt;&lt;span&gt;基本使用&lt;/span&gt;&lt;/fig
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://lruihao.cn/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://lruihao.cn/tags/java/"/>
+    
+      <category term="eclipse" scheme="https://lruihao.cn/tags/eclipse/"/>
+    
+  </entry>
   
   <entry>
     <title>匿名类在可视化界面中的应用</title>
@@ -47,13 +74,13 @@
     <link href="https://lruihao.cn/javascript/linkcard.html"/>
     <id>https://lruihao.cn/javascript/linkcard.html</id>
     <published>2019-03-15T07:21:39.000Z</published>
-    <updated>2019-03-15T07:39:38.269Z</updated>
+    <updated>2019-03-15T15:17:15.657Z</updated>
     
-    <content type="html"><![CDATA[<div class="note info"><p>模仿知乎的卡片式链接。改至<a href="https://me.idealli.com/post/a714f04b.html" rel="external nofollow noopener noreferrer" target="_blank">兰州小红鸡</a><br>我为了每次少写一行js引用略作修改。</p></div><a id="more"></a><p>这是一种后加载，创建<code>linkcard.js</code>放到<code>source/js/src/</code>，然后在<code>next\layout\_macro\post.swig</code>中引用</p><figure class="highlight"><figcaption><span>知乎卡片链接</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--知乎卡片链接--&gt;</span><br><span class="line">&lt;script type="text/javascript" src="/js/src/linkcard.js"&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>html链接写法,a标签加上<code>class=&quot;LinkCard&quot;</code><br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://github.com/Lruihao/lruihao.github.io&quot; target=&quot;_blank&quot; class=&quot;LinkCard&quot;&gt;Lruihao博客&lt;/a&gt;</span><br></pre></td></tr></table></figure><p></p><p><a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" class="LinkCard" rel="external nofollow noopener noreferrer">Lruihao博客</a></p>]]></content>
+    <content type="html"><![CDATA[<div class="note info"><p>模仿知乎的卡片式链接。改自<a href="https://me.idealli.com/post/a714f04b.html" rel="external nofollow noopener noreferrer" target="_blank">兰州小红鸡</a><br>我为了每次少写一行js引用略作修改。</p></div><a id="more"></a><p>这是一种后加载，创建<code>linkcard.js</code>放到<code>source/js/src/</code>，然后在<code>next\layout\_macro\post.swig</code>中引用</p><figure class="highlight"><figcaption><span>知乎卡片链接</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--知乎卡片链接--&gt;</span><br><span class="line">&lt;script type="text/javascript" src="/js/src/linkcard.js"&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>html链接写法,a标签加上<code>class=&quot;LinkCard&quot;</code><br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://github.com/Lruihao/lruihao.github.io&quot; target=&quot;_blank&quot; class=&quot;LinkCard&quot;&gt;Lruihao博客&lt;/a&gt;</span><br></pre></td></tr></table></figure><p></p><p><a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" class="LinkCard" rel="external nofollow noopener noreferrer">Lruihao博客</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;模仿知乎的卡片式链接。改至&lt;a href=&quot;https://me.idealli.com/post/a714f04b.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;兰州小红鸡&lt;/a&gt;&lt;br&gt;我为了每次少写一行js引用略作修改。&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;模仿知乎的卡片式链接。改自&lt;a href=&quot;https://me.idealli.com/post/a714f04b.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;兰州小红鸡&lt;/a&gt;&lt;br&gt;我为了每次少写一行js引用略作修改。&lt;/p&gt;&lt;/div&gt;
     
     </summary>
     
@@ -484,31 +511,6 @@
       
       
         &lt;blockquote&gt;&lt;p&gt;形式倒装，句子本不是本来的语序。&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=&quot;may位于句首，标祝愿&quot;&gt;&lt;a href=&quot;#may位于句首，标祝愿&quot; class=&quot;headerlink&quot; title=&quot;may位于句首，标祝愿&quot;&gt;&lt;/a&gt;may位于
-      
-    
-    </summary>
-    
-      <category term="English" scheme="https://lruihao.cn/categories/English/"/>
-    
-    
-      <category term="English" scheme="https://lruihao.cn/tags/English/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语语法--完全倒装</title>
-    <link href="https://lruihao.cn/English/inversion-2.html"/>
-    <id>https://lruihao.cn/English/inversion-2.html</id>
-    <published>2018-12-10T13:14:51.000Z</published>
-    <updated>2018-12-10T13:50:52.458Z</updated>
-    
-    <content type="html"><![CDATA[<div class="note info"><p>完全倒装： 把整个谓语动词放到主语前。</p></div><h3 id="表方位或时间的副词-adv-、表地点的介词短语位于句首时"><a href="#表方位或时间的副词-adv-、表地点的介词短语位于句首时" class="headerlink" title="表方位或时间的副词(adv)、表地点的介词短语位于句首时"></a>表方位或时间的副词(adv)、表地点的介词短语位于句首时</h3><p><strong>例句</strong></p><ol><li>Here comes the bus.</li><li>In the lecture hall of a university sits a professor.</li><li>Out rushed the children.</li><li>Now comes your turn.</li><li>Up jumped the cat and caught the mouse.</li><li><u>Down</u> came the rain and <u>up</u> went the umbrellas.</li><li>Among the people stood his friend,Jim.</li><li>(To be) South of the river lies a small factory.</li></ol><p>但主语为表示人称的代词时无需倒装</p><ol start="9"><li>Here are you.&emsp;&emsp;&emsp;&emsp;Away it flew.</li></ol><h3 id="表语-词-短语-位于句首时，adj-doing-done"><a href="#表语-词-短语-位于句首时，adj-doing-done" class="headerlink" title="表语(词/短语)位于句首时，adj/doing/done"></a>表语(词/短语)位于句首时，adj/doing/done</h3><p><strong>例句</strong></p><ol><li>Written on the blackboard are the name of these who were late.</li><li>Gone are the days when we worked together.</li><li>Standing at the tree is a shy girl with two big eges.</li><li>Present(adj) at the conference were all leaders of this city.</li><li>Lying on the grassland is the boy who was injured in the fire.</li></ol><h3 id="存在句there-be中，其中be-gt-exist-arise-follow-enter-appear-live等表状态vi"><a href="#存在句there-be中，其中be-gt-exist-arise-follow-enter-appear-live等表状态vi" class="headerlink" title="存在句there be中，其中be -&gt;exist/arise/follow/enter/appear/live等表状态vi"></a>存在句there be中，其中be -&gt;exist/arise/follow/enter/appear/live等表状态vi</h3><p><strong>例句</strong></p><ol><li>There come shows for help from the river.</li><li>There seems something wrong with machine.</li><li>There remains nothing to be done.</li><li>There happened an event last week.</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;完全倒装： 把整个谓语动词放到主语前。&lt;/p&gt;&lt;/div&gt;&lt;h3 id=&quot;表方位或时间的副词-adv-、表地点的介词短语位于句首时&quot;&gt;&lt;a href=&quot;#表方位或时间的副词-adv-、表地点的介词短语位于句首时&quot; class=&quot;
       
     
     </summary>
