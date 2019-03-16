@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-03-15T15:57:17.321Z</updated>
+  <updated>2019-03-16T06:03:30.904Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java泛型test</title>
+    <link href="https://lruihao.cn/java/fanxing.html"/>
+    <id>https://lruihao.cn/java/fanxing.html</id>
+    <published>2019-03-16T05:56:01.000Z</published>
+    <updated>2019-03-16T06:03:30.904Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note warning"><ul><li>泛型方法，它在修饰符后，返回值类型前增加了类型参数(&lt;&gt;)</li><li>类型通配符一般使用问号<code>?</code>代替具体的类型<code>实</code>参，注意不是类型形参。</li></ul></div><a id="more"></a><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> code0507;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WildCardTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Box&lt;String&gt;name=<span class="keyword">new</span> Box&lt;String&gt;(<span class="string">"hello"</span>);</span><br><span class="line">Box&lt;Integer&gt;age=<span class="keyword">new</span> Box&lt;Integer&gt;(<span class="number">12</span>);</span><br><span class="line">Box&lt;Double&gt;number=<span class="keyword">new</span> Box&lt;Double&gt;(<span class="number">210.50</span>);</span><br><span class="line">Box&lt;Integer&gt;point=<span class="keyword">new</span> Box&lt;Integer&gt;();</span><br><span class="line">getData(name);</span><br><span class="line">getData(age);</span><br><span class="line">getData(number);</span><br><span class="line">point.printpoint(<span class="number">520</span>, <span class="number">1314</span>);</span><br><span class="line">point.printpoint(<span class="string">"me"</span>, <span class="string">"too"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">getData</span><span class="params">(Box&lt;?&gt;data)</span></span>&#123;<span class="comment">//类型通配符</span></span><br><span class="line">System.out.println(<span class="string">"data:"</span>+data.getData());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Box</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line"><span class="keyword">private</span> T data;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Box</span><span class="params">()</span> </span>&#123;&#125;<span class="comment">//构造方法重载</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Box</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">setData(data);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> T <span class="title">getData</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="keyword">return</span> data;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setData</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line"><span class="keyword">this</span>.data = data;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//定义泛型方法</span></span><br><span class="line"><span class="keyword">public</span>&lt;T1,T2&gt;<span class="function"><span class="keyword">void</span> <span class="title">printpoint</span><span class="params">(T1 x,T2 y)</span></span>&#123;</span><br><span class="line">T1 m=x;</span><br><span class="line">T2 n=y;</span><br><span class="line">System.out.println(<span class="string">"This point is:"</span>+m+<span class="string">","</span>+n);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data:hello</span><br><span class="line">data:<span class="number">12</span></span><br><span class="line">data:<span class="number">210.5</span></span><br><span class="line">This point is:<span class="number">520</span>,<span class="number">1314</span></span><br><span class="line">This point is:me,too</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note warning&quot;&gt;&lt;ul&gt;&lt;li&gt;泛型方法，它在修饰符后，返回值类型前增加了类型参数(&amp;lt;&amp;gt;)&lt;/li&gt;&lt;li&gt;类型通配符一般使用问号&lt;code&gt;?&lt;/code&gt;代替具体的类型&lt;code&gt;实&lt;/code&gt;参，注意不是类型形参。&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="https://lruihao.cn/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://lruihao.cn/tags/java/"/>
+    
+      <category term="泛型" scheme="https://lruihao.cn/tags/%E6%B3%9B%E5%9E%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>eclipse的基本使用</title>
@@ -494,31 +518,6 @@
     
     
       <category term="总结" scheme="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语语法--形式倒装</title>
-    <link href="https://lruihao.cn/English/inversion-3.html"/>
-    <id>https://lruihao.cn/English/inversion-3.html</id>
-    <published>2018-12-10T13:52:30.000Z</published>
-    <updated>2018-12-10T14:13:37.167Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>形式倒装，句子本不是本来的语序。</p></blockquote><h3 id="may位于句首，标祝愿"><a href="#may位于句首，标祝愿" class="headerlink" title="may位于句首，标祝愿"></a>may位于句首，标祝愿</h3><p><strong>例句</strong></p><ol><li>May you succeed.</li><li>May you have a happy holiday.</li><li>Long live chairman Mao.(毛主席万古长青)</li></ol><h3 id="whatever直接做成分或放在名词之前，however-放在adv-adj之前或many-much等词之前"><a href="#whatever直接做成分或放在名词之前，however-放在adv-adj之前或many-much等词之前" class="headerlink" title="whatever直接做成分或放在名词之前，however 放在adv,adj之前或many,much等词之前"></a>whatever直接做成分或放在名词之前，however 放在adv,adj之前或many,much等词之前</h3><p><strong>例句</strong></p><ol><li>Whatever the weather is,he sticks out(坚持) walking outside.</li><li>Go to stamp sales and buy whatever you can offord.</li><li>Whatever reasons you have,you should carry out your promise.</li><li>However <u>many difficulties(n.)</u> you meet with,you should try to overcome them.<br>Whatever <u>difficulties(n.)</u> you meet with,you should try to overcome them.<br>However <u>difficult(adj.)</u> the problem is,we must work it out today.</li></ol><h3 id="the-比较级，the-比较级-gt-“越…越…”"><a href="#the-比较级，the-比较级-gt-“越…越…”" class="headerlink" title="the + 比较级，the + 比较级  --&gt;“越…越…”"></a>the + 比较级，the + 比较级 --&gt;“越…越…”</h3><p><strong>例句</strong></p><ol><li>The hander you study,the greater progress you will make.</li><li>The more you listen to English,the easier it becomes.</li><li>The older you grow,the more challenges you will meet.</li></ol><h3 id="感叹句"><a href="#感叹句" class="headerlink" title="感叹句"></a>感叹句</h3><p><strong>例句</strong></p><ol><li>What an interesting talk they had!</li><li>How interesting the talk was!</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;形式倒装，句子本不是本来的语序。&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=&quot;may位于句首，标祝愿&quot;&gt;&lt;a href=&quot;#may位于句首，标祝愿&quot; class=&quot;headerlink&quot; title=&quot;may位于句首，标祝愿&quot;&gt;&lt;/a&gt;may位于
-      
-    
-    </summary>
-    
-      <category term="English" scheme="https://lruihao.cn/categories/English/"/>
-    
-    
-      <category term="English" scheme="https://lruihao.cn/tags/English/"/>
     
   </entry>
   
