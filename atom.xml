@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-03-16T06:03:30.904Z</updated>
+  <updated>2019-03-18T13:52:38.087Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>宝塔面板安装</title>
+    <link href="https://lruihao.cn/linux/bt.html"/>
+    <id>https://lruihao.cn/linux/bt.html</id>
+    <published>2019-03-18T13:31:43.000Z</published>
+    <updated>2019-03-18T13:52:38.087Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/linux/bt/1.png" title="宝塔面板后台"><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" rel="external nofollow noopener noreferrer" target="_blank">宝塔官网介绍</a><br><a id="more"></a></p><h1 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h1><blockquote><p>操作系统：全新系统(支持CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>确保是干净的操作系统，没有安装过其它环境带的Apache/Nginx/php/MySQL<br>宝塔Linux6.0版本是基于centos7开发的，强烈建议使用centos7.x 系统<br>内存要求：内存要求最低512MB，推荐768MB以上，纯面板约占系统60MB内存</p></blockquote><h1 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h1><p>官方号称2分钟装好面板，一键管理服务器。</p><blockquote><p>使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，挂载磁盘，根据系统执行相应命令开始安装（大约2分钟完成面板安装）：</p></blockquote><figure class="highlight shell"><figcaption><span>Centos安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure><figure class="highlight shell"><figcaption><span>Ubuntu/Deepin安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</span><br></pre></td></tr></table></figure><figure class="highlight shell"><figcaption><span>Debian安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure><figure class="highlight shell"><figcaption><span>Fedora安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure><img src="/linux/bt/2.png" title="宝塔软件管理页面">]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/linux/bt/1.png&quot; title=&quot;宝塔面板后台&quot;&gt;&lt;p&gt;极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。&lt;a href=&quot;https://www.bt.cn/?invite_code=MV9sYXJnZHI=&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;宝塔官网介绍&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="https://lruihao.cn/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://lruihao.cn/tags/linux/"/>
+    
+      <category term="html/css" scheme="https://lruihao.cn/tags/html-css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web笔记</title>
+    <link href="https://lruihao.cn/html-css/webbiji.html"/>
+    <id>https://lruihao.cn/html-css/webbiji.html</id>
+    <published>2019-03-18T12:40:55.000Z</published>
+    <updated>2019-03-18T13:04:13.646Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note info"><p>下面一些web设计等常用到的代码，脚本等！</p></div><a id="more"></a><h1 id="图标使用"><a href="#图标使用" class="headerlink" title="图标使用"></a>图标使用</h1><figure class="highlight java"><figcaption><span>font-waesome</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"</span>&gt;</span><br></pre></td></tr></table></figure><h1 id="响应式（自适应）"><a href="#响应式（自适应）" class="headerlink" title="响应式（自适应）"></a>响应式（自适应）</h1><figure class="highlight java"><figcaption><span>bootstrap</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"</span>&gt;</span><br></pre></td></tr></table></figure><figure class="highlight java"><figcaption><span>不引入js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"</span>&gt;</span><br></pre></td></tr></table></figure><h1 id="jquery源"><a href="#jquery源" class="headerlink" title="jquery源"></a>jquery源</h1><figure class="highlight java"><figcaption><span>jquery</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"&gt;&lt;/script&gt;</span><br><span class="line"><span class="comment">//还有其他的源...</span></span><br></pre></td></tr></table></figure><h1 id="QQ推广链接"><a href="#QQ推广链接" class="headerlink" title="QQ推广链接"></a>QQ推广链接</h1><blockquote><p><a href="https://shang.qq.com/v3/widget.html" rel="external nofollow noopener noreferrer" target="_blank">QQ推广</a> <a href="https://qun.qq.com/join.html" rel="external nofollow noopener noreferrer" target="_blank">QQ群</a></p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a target=&quot;_blank&quot; href=&quot;https://wpa.qq.com/msgrd?v=3&amp;uin=1074627678&amp;site=qq&amp;menu=yes&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=2:1074627678:51&quot; alt=&quot;点击这里给我发消息&quot; title=&quot;点击这里给我发消息&quot;/&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure><p><a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin=1074627678&site=qq&menu=yes" rel="external nofollow noopener noreferrer"><img border="0" src="https://wpa.qq.com/pa?p=2:1074627678:51" alt="点击这里给我发消息" title="点击这里给我发消息"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;下面一些web设计等常用到的代码，脚本等！&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="html/css" scheme="https://lruihao.cn/categories/html-css/"/>
+    
+    
+      <category term="html/css" scheme="https://lruihao.cn/tags/html-css/"/>
+    
+      <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>java泛型test</title>
@@ -471,53 +519,6 @@
       <category term="java" scheme="https://lruihao.cn/tags/java/"/>
     
       <category term="java标识符" scheme="https://lruihao.cn/tags/java%E6%A0%87%E8%AF%86%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语语法--主谓一致</title>
-    <link href="https://lruihao.cn/English/subject-verb.html"/>
-    <id>https://lruihao.cn/English/subject-verb.html</id>
-    <published>2019-01-12T05:02:49.000Z</published>
-    <updated>2019-01-12T13:56:39.958Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="常见情况"><a href="#常见情况" class="headerlink" title="常见情况"></a>常见情况</h2><h3 id="由and或both-and连接的并列主语，谓语动词一般用复数"><a href="#由and或both-and连接的并列主语，谓语动词一般用复数" class="headerlink" title="由and或both and连接的并列主语，谓语动词一般用复数"></a>由and或both and连接的并列主语，谓语动词一般用复数</h3><ol><li>English <u>and</u> chinese are two quite different languages.</li><li><u>Both</u> brother <u>and</u> sister tire of city life.</li></ol><h3 id="一但主语前被no-every-each所修饰时，谓语动词用单数"><a href="#一但主语前被no-every-each所修饰时，谓语动词用单数" class="headerlink" title="一但主语前被no,every,each所修饰时，谓语动词用单数"></a>一但主语前被no,every,each所修饰时，谓语动词用单数</h3><ol><li><u>No</u> desk <u>and</u> (no) chair is seen in the hall.</li><li>All work <u>and</u> <u>no</u> play makes Jack a dull boy.</li><li>They each have been to the Forbidden city.<br>each位于主语后，所以谓语动词用复数</li></ol><h3 id="当主语表示同一事物的两个部分，同一个人的两个身份（第二个名词前无冠词），谓语动词用单数"><a href="#当主语表示同一事物的两个部分，同一个人的两个身份（第二个名词前无冠词），谓语动词用单数" class="headerlink" title="当主语表示同一事物的两个部分，同一个人的两个身份（第二个名词前无冠词），谓语动词用单数"></a>当主语表示同一事物的两个部分，同一个人的两个身份（第二个名词前无冠词），谓语动词用单数</h3><p>比如the（a）horse and cart a watch and chain a knife and fork a cup and soucer the butter and bread</p><ol><li>The horse and cart has fallen down the cliff(悬崖).</li><li>Butter and bread is his favourate.</li><li>The poet(诗人) and writer has been sentenced(判决) to death.</li><li>The poet and the writer have been sentenced(判决) to death.</li></ol><h3 id="两数相加或相乘，单复皆可，相减或相除，只能用单数，量词做主语，用单数"><a href="#两数相加或相乘，单复皆可，相减或相除，只能用单数，量词做主语，用单数" class="headerlink" title="两数相加或相乘，单复皆可，相减或相除，只能用单数，量词做主语，用单数"></a>两数相加或相乘，单复皆可，相减或相除，只能用单数，量词做主语，用单数</h3><p>等于： be,equal,be equal to,make<br>相加： and,plus<br>相减： minus<br>相乘： multily,time<br>相除： divided by</p><p>One and one make(makes) two.</p><h2 id="就近原则"><a href="#就近原则" class="headerlink" title="就近原则"></a>就近原则</h2><blockquote><p>not only…but also<br>there/here be<br>or,nor,either…or,neither…nor,not…but</p></blockquote><ol><li>There is a desk and two chairs in the room.</li><li>Are you or your sister fond of classical music?</li><li>An apple or two lies on the desk.(数量词后用单数)</li><li>One or two apples lie on the desk.</li><li>Not he but you have come.</li></ol><h2 id="就远原则"><a href="#就远原则" class="headerlink" title="就远原则"></a>就远原则</h2><blockquote><p>两单体两结构三with四除外<br>like,including<br>rather than,as well as<br>with,together with,along with<br>except,besides,but,in addition to</p></blockquote><ol><li>The couple in addition to their child are mean.</li><li>Lauren,rather than anyone else was chose his partener.</li><li>A library together with 3000 books was destroyed in the fire.</li></ol><h2 id="时间，金钱，距离，温度，天气，重量等不可数名词，to-do-doing-从句做主语时，谓v用单数"><a href="#时间，金钱，距离，温度，天气，重量等不可数名词，to-do-doing-从句做主语时，谓v用单数" class="headerlink" title="时间，金钱，距离，温度，天气，重量等不可数名词，to do,doing,从句做主语时，谓v用单数"></a>时间，金钱，距离，温度，天气，重量等不可数名词，to do,doing,从句做主语时，谓v用单数</h2><ol><li>To go to bed early and rise early is a good habit.</li><li>What he says and behaives doesn’t concern me.</li></ol><h2 id="分数，百分数，the-rest-of-n-做主语，用单数"><a href="#分数，百分数，the-rest-of-n-做主语，用单数" class="headerlink" title="分数，百分数，the rest(+of+n)做主语，用单数"></a>分数，百分数，the rest(+of+n)做主语，用单数</h2><p>谓语动词由of后面的名词决定，一般用单数。<br>分数用法： 通常分子读基数，分母读序数，分子超过1时，分母加s。即 基+序(s)+of+n+谓</p><ol><li>Most students are in favaour of the contract(契约) but the rest disagree.<br>be favaour of: be for,approve of,support,agree with</li><li>About two thirds of the earth’s surface is covered by water.</li></ol><h2 id="一些短语"><a href="#一些短语" class="headerlink" title="一些短语"></a>一些短语</h2><blockquote><p>one of+n或the only one of+n,一般用单数（定从根据中心词在of前后）<br>a number of+n（用复数） &amp; the number of+n（用单数）<br>one in 或 one out of+n (用单数)<br>a large quantity of &amp; large quantity of + 可\不可数n<br>a large amount of &amp; large amounts of + 不可数n</p></blockquote><ol><li>He is one of the students who were awarded the other day.</li><li>He is the only one of the students who was awarded the other day.</li><li>One of his family was a traitor(卖国贼，叛徒) during the world war two.</li><li>A number of teenagers are addicted to the Internet.</li><li>The number of students who are addicted to the Internet is up to(接近于) 15.</li><li>Large amounts of power are foused on him alone.==a large amount of power is foused on him alone.</li></ol><h2 id="不定代词做主语，谓语动词用单数"><a href="#不定代词做主语，谓语动词用单数" class="headerlink" title="不定代词做主语，谓语动词用单数"></a>不定代词做主语，谓语动词用单数</h2><blockquote><p>all修饰人，谓语动词用复数，修饰物，谓语动词用单数</p></blockquote><ol><li>All are present besides the professor.</li><li>All that glitters(发光体) is not gold.<br>not与all/both等连用表部分否定</li></ol><h2 id="the-adj表一类人做主语时，谓语动词用复数"><a href="#the-adj表一类人做主语时，谓语动词用复数" class="headerlink" title="the +adj表一类人做主语时，谓语动词用复数"></a>the +adj表一类人做主语时，谓语动词用复数</h2><ul><li>The injured are taken good care of in hospital.</li><li>The agreeable is not always the useful.(不表人)</li></ul><h2 id="成双成对的词做主语，用复数"><a href="#成双成对的词做主语，用复数" class="headerlink" title="成双成对的词做主语，用复数"></a>成双成对的词做主语，用复数</h2><blockquote><p>trousers(裤子),chopsticks,scissors(剪刀),glasses</p></blockquote><ol><li>Pants are what I want.</li><li>The pair of glasses seems expensive.(谓语动词与表示计量单位的名词形式一致)</li><li>Three set of fashionable socks are shown in today’s evening proper(恰当地).</li></ol><p>一系列： a piece/pair/set/suit/series of</p><h2 id="以s结尾特殊专用名词，用单数"><a href="#以s结尾特殊专用名词，用单数" class="headerlink" title="以s结尾特殊专用名词，用单数"></a>以s结尾特殊专用名词，用单数</h2><blockquote><p>表学科，疾病，山脉，河流，书名，歌名，格言等<br>maths,physicsa(物理),politics(政治),classics,economics,Aids,SARs,diabetes(糖尿病),arthritis(关节炎),bronchitis(支气管炎),Himalayas,Arabian Night</p></blockquote><p>Arabian Night sounds beautiful.</p><h2 id="many-a-单n-单谓：-“许多”-more-than-one-单n-单谓：-“不止一个”"><a href="#many-a-单n-单谓：-“许多”-more-than-one-单n-单谓：-“不止一个”" class="headerlink" title="many a +单n+单谓： “许多”   more than one +单n+单谓： “不止一个”"></a>many a +单n+单谓： “许多” more than one +单n+单谓： “不止一个”</h2><ol><li>Many a man thinks life is meaningless without a purpose/an aim.</li><li>More than one student has put forward the suggestion.</li><li>More students than one are against the proposal.</li><li>More than 20% students were absent at the meeting yesterday.(不止)</li></ol><h2 id="police-people-cattle做主语，用复数"><a href="#police-people-cattle做主语，用复数" class="headerlink" title="police,people,cattle做主语，用复数"></a>police,people,cattle做主语，用复数</h2><p>It is reported that police are trying their best to capture the murder.</p><h2 id="the-Olympics-amp-the-Olympic-games"><a href="#the-Olympics-amp-the-Olympic-games" class="headerlink" title="the Olympics &amp; the Olympic games"></a>the Olympics &amp; the Olympic games</h2><p>The Olympices is hold every four years. == The Olympic games are hold every four year.</p><h2 id="集体名词做主语，表整体用单数，表成员用复数"><a href="#集体名词做主语，表整体用单数，表成员用复数" class="headerlink" title="集体名词做主语，表整体用单数，表成员用复数"></a>集体名词做主语，表整体用单数，表成员用复数</h2><blockquote><p>family,class,group,team,army,public,crew,population</p></blockquote><ol><li>The innovation experiment(革新实验) class consists of 24 students and enjoy chinese.</li><li>Population in China is 1.4 billion <u>or so</u>(about) 20% (Population) have no access to clean water.</li></ol><h2 id="单复同形，sheep-deer-means-Chinese等谓语动词依据情况而定"><a href="#单复同形，sheep-deer-means-Chinese等谓语动词依据情况而定" class="headerlink" title="单复同形，sheep,deer,means,Chinese等谓语动词依据情况而定"></a>单复同形，sheep,deer,means,Chinese等谓语动词依据情况而定</h2><p>Many deer live on the African grassland.</p><h2 id="地点状语位于句首"><a href="#地点状语位于句首" class="headerlink" title="地点状语位于句首"></a>地点状语位于句首</h2><ol><li>Among the crow stand his parents.</li><li>On the wall hangs an alarm clock.</li></ol><h2 id="“of”-of表所属时，中心词在of之前，谓语动词由中心词决定，特例除外。"><a href="#“of”-of表所属时，中心词在of之前，谓语动词由中心词决定，特例除外。" class="headerlink" title="“of”: of表所属时，中心词在of之前，谓语动词由中心词决定，特例除外。"></a>“of”: of表所属时，中心词在of之前，谓语动词由中心词决定，特例除外。</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;常见情况&quot;&gt;&lt;a href=&quot;#常见情况&quot; class=&quot;headerlink&quot; title=&quot;常见情况&quot;&gt;&lt;/a&gt;常见情况&lt;/h2&gt;&lt;h3 id=&quot;由and或both-and连接的并列主语，谓语动词一般用复数&quot;&gt;&lt;a href=&quot;#由and或both-and连接
-      
-    
-    </summary>
-    
-      <category term="English" scheme="https://lruihao.cn/categories/English/"/>
-    
-    
-      <category term="English" scheme="https://lruihao.cn/tags/English/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>年度总结</title>
-    <link href="https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/years.html"/>
-    <id>https://lruihao.cn/生活随笔/years.html</id>
-    <published>2019-01-12T03:09:52.000Z</published>
-    <updated>2019-01-19T06:54:11.591Z</updated>
-    
-    <content type="html"><![CDATA[<div class="note"><p>以前每年都会在QQ空间写每年的总结，可是现在已经过了肆意在空间写说说的年纪了。所幸还有博客这一席之地。</p></div><a id="more"></a><p></p><h1 align="center">2018</h1><br>18年主要的收获，经历大概就在下面了，可还是没有学到什么硬本事，寒假还是要学习一下java和jsp。<p></p><ul><li>首先最开心的是在狗年刚开始3月底回到湘潭后，拿下了驾照（年前挂了一次很不爽），可以开共享汽车了，体验共享时代的新滋味。</li><li>然后是11月份的软考，虽然没有认真准备考试，还是过了（上午压线）。不知道是今年的容易还是怎么的，反正我考完就觉得挺容易的。</li><li>5月底搭建了现在这个hexo静态博客，还收到了一些网上朋友的打赏，感谢！</li><li>用打赏的钱买了两个服务器一个国内的，一个国外的。搭了一个文件浏览器作为自己的<a href="https://pan.lruihao.cn" target="_blank" rel="noopener">网盘</a>,还搭了一个ss梯子供自己翻墙使用。</li><li>参加了2018年ACM的湘潭全国邀请赛，在湘大，虽然很遗憾没有拿奖，但就当走过这步吧，略过。</li><li>暑假结束，退出了E313ACM实验室，也就没有刷题打比赛了。</li><li>大二获得了个国家励志，还不错。hhhh有奖金!</li><li>真的很菜但是退实验之前，学院的编程比赛还是运气好拿了个三等奖。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note&quot;&gt;&lt;p&gt;以前每年都会在QQ空间写每年的总结，可是现在已经过了肆意在空间写说说的年纪了。所幸还有博客这一席之地。&lt;/p&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="生活随笔" scheme="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="总结" scheme="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
