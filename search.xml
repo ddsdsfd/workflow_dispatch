@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[大数乘法]]></title>
+    <url>%2FACM%2F%E7%AE%97%E6%B3%95%2Fdacheng.html</url>
+    <content type="text"><![CDATA[大数乘法c版(基础写法)123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105#include&lt;stdio.h&gt;#include&lt;string.h&gt;#define N 202int main() &#123; int a[N] = &#123;0&#125;, b[N] = &#123;0&#125;, c[404] = &#123;0&#125;, la, lb, i, j,k, d = 0, n1, n2; int get(int *p); void change(int *a, int *b, int n); la = get(a); lb = get(b); n1 = la &gt; lb ? la : lb; n2 = la &lt; lb ? la : lb; if (la &lt; lb) change(a, b, lb); for (i = 0; i &lt; n2; i++) &#123; for (j = 0; j &lt; n1; j++) &#123; c[j + i] += (b[i] * a[j] + d)%10; d = (b[i] * a[j] + d) / 10; if (c[j+i]&gt;9)&#123; d++; c[j+i]%=10; &#125; if (a[j+1]==0&amp;&amp;d!=0)&#123; k=j+i+1; c[k]=d; &#125; &#125; d=0; &#125; k=k&gt;(j+i-2)?k:j+i-2; for (i = k; i &gt;= 0; i--) printf("%d", c[i]); return 0;&#125;int get(int *p) &#123; char x[N]; int l, i, ex = 0; scanf("%s", x); l = strlen(x); while (x[ex] == '0') ex++; for (i = ex; i &lt; l; i++) *(p + l - i - 1) = x[i] - '0'; return l - ex;&#125;void change(int *a, int *b, int n) &#123; int i, t; for (i = 0; i &lt; n; i++) &#123; t = a[i]; a[i] = b[i]; b[i] = t; &#125;&#125;程序运行结果12345123456789012345678998765432109876543210121932631124517831023715309991126352690Process returned 0 (0x0) execution time : 25.318 sPress any key to continue.]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>C</tag>
+        <tag>数学</tag>
+        <tag>大数运算</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vps配置ssl及https重定向]]></title>
     <url>%2FWeb%2Fhttp2https.html</url>
     <content type="text"><![CDATA[记录自己在配置vps及博客SSL证书时遇到的问题。强制重定向https有一种情况相信很多人都遇到过，就是虽然我们配置了ssl证书，但是https和http地址都是各自都可以单独访问。我们应该也见过类似于github的代码托管网站有强制https的开关。如果是这种情况我们还可以通过js进行301定向。http2https12345678&lt;script&gt; var targetProtocol = "https:"; var host = "lruihao.cn"; if (window.location.host == host &amp;&amp; window.location.protocol != targetProtocol)&#123; window.location.href = targetProtocol + window.location.href.substring(window.location.protocol.length); &#125;&lt;/script&gt;腾讯云CDN配置这个博客后来是转到了腾讯云的cos桶存储。当时在桶内静态网站设置的时候，设置强制https发现会出错。而且还接入了CDN，所以今天在CDN设置那里也看到了https的设置，打开强制https就OK了。这天在三丰云撸了一个免费的主机，搭了一个WordPress（想试试wp的感觉），然后vps的SSL问题现在也很简单了，第一步，到腾讯云申请免费证书；第二步，配置CDN，按步骤来，其中接入方式选择自有源站；第三步，强制https(可选)。]]></content>
@@ -586,6 +602,7 @@
         <category>linux</category>
       </categories>
       <tags>
+        <tag>C</tag>
         <tag>linux</tag>
         <tag>HelloWorld</tag>
       </tags>
@@ -780,6 +797,8 @@
         <category>生活随笔</category>
       </categories>
       <tags>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>生活随笔</tag>
       </tags>
   </entry>
@@ -817,6 +836,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>数学</tag>
         <tag>Nowcoder</tag>
         <tag>组合数学</tag>
@@ -831,7 +852,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
+        <tag>C</tag>
         <tag>数学</tag>
       </tags>
   </entry>
@@ -845,7 +868,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
+        <tag>C</tag>
         <tag>数学</tag>
         <tag>组合数学</tag>
       </tags>
@@ -860,6 +885,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>数学</tag>
         <tag>数论</tag>
         <tag>欧几里得</tag>
@@ -876,6 +903,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C</tag>
         <tag>数学</tag>
         <tag>数论</tag>
         <tag>快速幂</tag>
@@ -890,6 +918,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
         <tag>组合数学</tag>
       </tags>
@@ -903,6 +932,7 @@
         <category>数论</category>
       </categories>
       <tags>
+        <tag>C</tag>
         <tag>数学</tag>
         <tag>数论</tag>
         <tag>euler</tag>
@@ -918,6 +948,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>POJ</tag>
         <tag>最短路</tag>
       </tags>
@@ -932,6 +964,7 @@
       <tags>
         <tag>hexo</tag>
         <tag>前端</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -944,6 +977,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>最短路</tag>
       </tags>
   </entry>
@@ -1021,6 +1056,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>Nowcoder</tag>
       </tags>
   </entry>
@@ -1034,21 +1071,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>POJ</tag>
-        <tag>并查集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
-    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2Fhdu1272.html</url>
-    <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
-      <categories>
-        <category>ACM</category>
-        <category>并查集</category>
-      </categories>
-      <tags>
-        <tag>ACM</tag>
-        <tag>HDU</tag>
         <tag>并查集</tag>
       </tags>
   </entry>
@@ -1062,6 +1087,23 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
+        <tag>HDU</tag>
+        <tag>并查集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
+    <url>%2FACM%2F%E5%B9%B6%E6%9F%A5%E9%9B%86%2Fhdu1272.html</url>
+    <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>并查集</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>HDU</tag>
         <tag>并查集</tag>
       </tags>
@@ -1076,6 +1118,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>HDU</tag>
         <tag>并查集</tag>
       </tags>
@@ -1089,7 +1132,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1101,7 +1146,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1114,6 +1161,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>HDU</tag>
         <tag>并查集</tag>
       </tags>
@@ -1128,6 +1176,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>POJ</tag>
         <tag>并查集</tag>
       </tags>
@@ -1142,6 +1192,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>POJ</tag>
         <tag>并查集</tag>
       </tags>
@@ -1155,7 +1207,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1168,6 +1222,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>HDU</tag>
         <tag>并查集</tag>
       </tags>
@@ -1181,6 +1237,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>Nowcoder</tag>
       </tags>
   </entry>
@@ -1218,6 +1276,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>搜索</tag>
         <tag>HDU</tag>
       </tags>
@@ -1232,6 +1291,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>搜索</tag>
         <tag>HDU</tag>
       </tags>
@@ -1239,13 +1299,14 @@
   <entry>
     <title><![CDATA[POJ-3278-Catch That Cow(bfs)]]></title>
     <url>%2FACM%2F%E6%90%9C%E7%B4%A2%2FPOJ%20-%203278%20-Catch%20That%20Cow%20%20(bfs).html</url>
-    <content type="text"><![CDATA[Farmer John has been informed of the location of a fugitive cow and wants to catch her immediately. He starts at a point N (0 ≤ N ≤ 100,000) on a number line and the cow is at a point K (0 ≤ K ≤ 100,000) on the same number line. Farmer John has two modes of transportation: walking and teleporting.Walking: FJ can move from any point X to the points X - 1 or X + 1 in a single minuteTeleporting: FJ can move from any point X to the point 2 × X in a single minute.If the cow, unaware of its pursuit, does not move at all, how long does it take for Farmer John to retrieve it?###InputLine 1: Two space-separated integers: N and K###OutputLine 1: The least amount of time, in minutes, it takes for Farmer John to catch the fugitive cow.###Sample Input5 17###Sample Output4###HintThe fastest way for Farmer John to reach the fugitive cow is to move along the following path: 5-10-9-18-17, which takes 4 minutes.###题意：农场主的牛不见了，主人和牛在一条直线上，且牛没有新的目标，它不会走动，主人的位置是你n，牛的位置是k，主人可以有三种走路的方法，右左（距离+-1），闪现（距离+x,x为当前位置），每走一步，一分钟，问几分钟主人能找到牛。bfs搜索方向即为三个“方向”。搜索所有走法；123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869#include&quot;iostream&quot;#include&lt;queue&gt;#include&quot;string.h&quot;using namespace std;int n,k;bool sign[200007];struct node&#123; int x,step;&#125;;bool check(int a)&#123; if(!sign[a]&amp;&amp;a&gt;=0&amp;&amp;a&lt;110000) return true; return false;&#125;void bfs()&#123; node u,v; queue&lt;node&gt; q; v.x=n;//初始化起点 v.step=0; q.push(v); sign[v.x]=true; while(!q.empty())&#123; u=q.front(); q.pop(); if(u.x==k)&#123; cout&lt;&lt;u.step&lt;&lt;endl; return ; &#125; //三种前进方向，左右和闪现 v=u; v.x++; v.step++; if(check(v.x))&#123; sign[v.x]=true; q.push(v); &#125; v=u; v.x--; v.step++; if(check(v.x))&#123; sign[v.x]=true; q.push(v); &#125; v=u; v.x=2*v.x; v.step++; if(check(v.x))&#123; sign[v.x]=true; q.push(v); &#125; &#125;&#125;int main()&#123; cin&gt;&gt;n&gt;&gt;k; memset(sign,0,sizeof(sign)); bfs(); return 0;&#125;]]></content>
+    <content type="text"><![CDATA[Farmer John has been informed of the location of a fugitive cow and wants to catch her immediately. He starts at a point N (0 ≤ N ≤ 100,000) on a number line and the cow is at a point K (0 ≤ K ≤ 100,000) on the same number line. Farmer John has two modes of transportation: walking and teleporting.Walking: FJ can move from any point X to the points X - 1 or X + 1 in a single minuteTeleporting: FJ can move from any point X to the point 2 × X in a single minute.If the cow, unaware of its pursuit, does not move at all, how long does it take for Farmer John to retrieve it?###InputLine 1: Two space-separated integers: N and K###OutputLine 1: The least amount of time, in minutes, it takes for Farmer John to catch the fugitive cow.###Sample Input5 17###Sample Output4###HintThe fastest way for Farmer John to reach the fugitive cow is to move along the following path: 5-10-9-18-17, which takes 4 minutes.###题意：农场主的牛不见了，主人和牛在一条直线上，且牛没有新的目标，它不会走动，主人的位置是你n，牛的位置是k，主人可以有三种走路的方法，右左（距离+-1），闪现（距离+x,x为当前位置），每走一步，一分钟，问几分钟主人能找到牛。bfs搜索方向即为三个“方向”。搜索所有走法；123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869#include"iostream"#include&lt;queue&gt;#include"string.h"using namespace std;int n,k;bool sign[200007];struct node&#123; int x,step;&#125;;bool check(int a)&#123; if(!sign[a]&amp;&amp;a&gt;=0&amp;&amp;a&lt;110000) return true; return false;&#125;void bfs()&#123; node u,v; queue&lt;node&gt; q; v.x=n;//初始化起点 v.step=0; q.push(v); sign[v.x]=true; while(!q.empty())&#123; u=q.front(); q.pop(); if(u.x==k)&#123; cout&lt;&lt;u.step&lt;&lt;endl; return ; &#125; //三种前进方向，左右和闪现 v=u; v.x++; v.step++; if(check(v.x))&#123; sign[v.x]=true; q.push(v); &#125; v=u; v.x--; v.step++; if(check(v.x))&#123; sign[v.x]=true; q.push(v); &#125; v=u; v.x=2*v.x; v.step++; if(check(v.x))&#123; sign[v.x]=true; q.push(v); &#125; &#125;&#125;int main()&#123; cin&gt;&gt;n&gt;&gt;k; memset(sign,0,sizeof(sign)); bfs(); return 0;&#125;]]></content>
       <categories>
         <category>ACM</category>
         <category>搜索</category>
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>BFS</tag>
         <tag>搜索</tag>
         <tag>POJ</tag>
@@ -1261,6 +1322,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>BFS</tag>
         <tag>搜索</tag>
         <tag>POJ</tag>
@@ -1276,6 +1339,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>搜索</tag>
         <tag>POJ</tag>
         <tag>DFS</tag>
@@ -1291,6 +1355,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>搜索</tag>
         <tag>POJ</tag>
         <tag>DFS</tag>
@@ -1305,6 +1370,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
       </tags>
   </entry>
@@ -1318,6 +1384,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>BFS</tag>
         <tag>POJ</tag>
       </tags>
@@ -1331,6 +1399,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>Nowcoder</tag>
       </tags>
   </entry>
@@ -1356,6 +1426,7 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>搜索</tag>
         <tag>HDU</tag>
         <tag>DFS</tag>
@@ -1370,6 +1441,7 @@
         <category>搜索</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>BFS</tag>
         <tag>搜索</tag>
       </tags>
@@ -1383,7 +1455,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
         <tag>Codeforces</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1396,6 +1470,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>BFS</tag>
         <tag>搜索</tag>
         <tag>DFS</tag>
@@ -1410,6 +1486,7 @@
         <category>背包问题</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>背包问题</tag>
         <tag>Nowcoder</tag>
       </tags>
@@ -1423,6 +1500,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
         <tag>Nowcoder</tag>
         <tag>组合数学</tag>
       </tags>
@@ -1447,6 +1526,7 @@
         <category>背包问题</category>
       </categories>
       <tags>
+        <tag>C</tag>
         <tag>背包问题</tag>
       </tags>
   </entry>
@@ -1497,6 +1577,7 @@
       <tags>
         <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -1510,6 +1591,8 @@
       <tags>
         <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1523,6 +1606,8 @@
       <tags>
         <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1536,6 +1621,7 @@
       <tags>
         <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -1549,6 +1635,7 @@
       <tags>
         <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
@@ -1560,8 +1647,8 @@
         <category>STL</category>
       </categories>
       <tags>
-        <tag>STL</tag>
         <tag>C++</tag>
+        <tag>STL</tag>
         <tag>排序</tag>
       </tags>
   </entry>
@@ -1587,8 +1674,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>STL</tag>
         <tag>C++</tag>
+        <tag>STL</tag>
       </tags>
   </entry>
   <entry>
@@ -1629,7 +1716,7 @@
   <entry>
     <title><![CDATA[光]]></title>
     <url>%2F%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94%2F%E5%85%89.html</url>
-    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! U2FsdGVkX19wAtFWSRpmjvzLjNpz2GlENhYsuv7rwveJ+FqOKNpaf3xRlirZ4jC0XJL5a/ayZaqg80xkNyCpwNs73GB6DtCL1E1q1zN5Kb7UNuLQVpZY7hSFwaGxR4XPfngnkfE8PMIQemp4aT17+RVyF9cvJbMPjdpv3AAMwOtv6sBDMjdgqj7Q2ujVEDEAJ1JKfccRv7t0+EPMdutsXzZ44TNOGkVlUentDDYXF8zNK+WeACPp06t0MNPOlpxXosQiA/2jduJyRp1c07hi7mQ8NsNkNdeQHkxX5gSGc6mGsCHPuC2nHlqE71LrdQaV9rD2PeyT1gmJNGbsSNz8Ab2pLTE/NjQxyHKwB6M6Wf76SzqKCF9fwbbWXtqj8dYPHZUu2Pu5KGL9mMzvTAHMGJXZoBQmqO5hWpN0KLDdGPvXhOJ62rqMKgr+9/NX7RFUjo72k4ohbyPDd11T5jVlQePvptpoJ2ljbz8zGQayVMTnMM6tMiaDS6GsUsoa9pwYkIlOZITz1YWT0JweYBpeV9K/uVUn48QhmML4MQhIgLAjMI6SJh9pp0ZXKjW85uDtOrjqYjEZr23t3vd+UicGGmQAZR0PxeVNJze0ELZ4bMt9s2aHfxP1to73EqVf/1JmvlSNANZrBMB8D32zkv7ed0xPNeRtL8DUOopcHe1AgQ4x0evqg82aA3Q/evVeDPXOAxWGj1VhdI+y56wvr/avdG9PDiNhGNLolA4vfEUPkCHReKVA8DsO6dx9WZBbmhfoaZwJmzTZ2tuA+MKcfbEl/RpSf/Xxyz5M8107Y+eaJMnESZGpDzmB2rRcJ7xDKy8lc4quwJ9+/3flLBxoOg6AT8yY8U657fNWlQMOlK8CmHG7wiAWYzV88iLY6PVn64wuT/1BBOsm+3kwHGQMG5SdXLTHY1tQXczCj5vyJd2PDXQ93AxGloX0EA/8VAqhX0dTtaKGURt6W6lxkwMjSOYAkXy5rp3w2Nz28X8Y9L+jY97QFiE3iVdvKLAUFxflX9tM+TENc3yOedDMRxsq91z3cYei9IjsErTJuAa2zH2RklV54Fe42tFConW8HsprZEf/mINdIktcNCbDV0TbN9mlk8g7mlMvJcvG+EhRdthIqEQoFl9SZYil1fYM4zrwvpYInepm7NUtdO3tj7qUAslHUV0hUbjIznWpiZjF5AJfSYL27WEnevV3uaQ1b/Nn0rGGL1HOkXTIgWMQeG9HEGeWzw1cnZyP1MehYI5ilURQtABYBWKgPKdvNFS2moKCpYvYlu+4ZDeosJX/Duoe9F6PkG/DWH6AAk5O+SsrMjaBdghHDGMWbuQU/3TFW6dlWnA72vMr6hhFaQuKJycS8b37ATxn3EgQ63dZbF/wgc3ZeXEvf6IAXshzRQxHBTvrkvYYq/sYbcmP1yjocGc8QFXmWTPhT4yLsuhSTR9bXjMNHh5bQGXF+EiWtpsBRJlkxPYd5AgSdfzMfSgbyHAcC6c7OjJiVy7WW0pDoOVwHCltY1JcuegT9/foCLkrK1WEWyLvsqSkxd2+ZCnn4gKkMJ//ipVNQMtrzNTOF2b5V1kPF53kGLyzB9M+ZFsxv9utQZRviQMkUhamPmm31GcjBKGsOJ764TI7r2367Kq+1b4zcXeB3v2eypo/SKjpBhNYiZtW0kOOQbOnlX2oRjur7q/EF2Py2gSxnRyI2WBz4hGGmuRRfy2ndecOjukfTmw6uT2KLbcSVyvsUruHBlTGZBjyHQGriqI0rqnzkF7zFKHAMnTCdZlTg4T8srnbixKK9/Vai3gUy3+i55YTxPdC9BRU7OIzVvD4d/XzWcmcKr8tuMxC7xLKhFnP4j8iWRXZMHbxBsijeGksHyyqgqrbBo4pxOIEebr/dj8LT4E6jgQjjnNJLb4AnEk3C8VcEEqQMiMRpkGxJZy+MFxiPhEoWlcWkvZA7jaiuGhsgmXj0Uy1HVw1DnTRlxpFHk0PckBV5BoOstgftWzH/G3oOqrqZQFN+vdxgn9Yaq0zctcuOZ5283Toen2myLwmxsEz3BWi9v2eqFgQ80sVbkyhEvYAdHKRP3sJpxgDY4sQaaV3nAquvTtFEknJ75lDqO4fd1tKdvIWJNg+X5WS87LUiXmlSiW31iWjr5MknyebbIoVsAQxANFKnFmNQHzT/csd+gK/fapGMYcEHilv3uNBHjoxpGf21rAlEzAr/QdO/gD7nKu+J6b7ay2kTptd2WZTjnUojY3PEGWtCGM4sDsbIL51r6PoMoRDbWTVvXgm7yAqXMiKalO8VJkTcOY5XrpEuCgMKzdqqqpsUwO0Sq13FDjfupaEyB/l9zQWwkXIIa6y/qi4RCbpgn52H+vvX7sNjwx190/7cngX+aort6rdQLWRxYNJnKmEM3LrNDJyxJbc6Va+Oaw4CeXQiAeXgdZbg8waz2KOEvLfB1t82U52MuKnd6ARI2dVmkmLEOS7QPXB2zW0hOAYqYjTk/qQKdPNcFXn7Luzan2214TIkGvMscYsWAfnoiA3EYwZ/8A4C/nAGBvNlI0UzjDEGZ6so5PcEQ81+Syrvk1Hcnrhj3+c4XEvFoFF95KqA2Xv7i1N1gukYelg5MFOEaVTQWWmOHKmSE8xpEG3bEEcs+G1lc3BkcJ1ntTU03PmZNsi4Zsk1Wz5/PIQpXHAiZjBp2qv6g1KT5l6tvp3J7yWMMtTX5b0n7Ojjd2Kf8JhJOLW+YNDsVMNucmQz1nrx29WfToy2ZGem20yGplZ8ooCCRbChW/3m4wjkV70L8llZj0y9Rtxkluo7MJcIJqDWLNZwUMkIxPgFXD0Uh8YYgbe4C/QLxTnV2wSrxhM2W791LiIqRhqWi3nvr55pNpa8VYJMVakMftTvS34TZSMcCnHhcxu7/Rb3SKZluz6AlvoXKDN914Li/pfTkEx2q3vj1Wf2aZ20QjzdEwtlt9F5wChBO5zAjyqWFX+LDx4wxd02t7p/TBOqM07t8lPrkrEi9wPpnj/emmZDRK2H3kWbRDqvnv9Rr/3bPQjJz3r4hvaJ8Y0pfHcLw6TEn8a+M3xxb2gL6zOQkKvS914gShjFscI9oSYxJ8F5/4lOO/QtBPv6is+Au0W4IPskueqDaYQAQuf+iV+Bz7lQmp4X8KKGMPTvwzflFK7CHRiNMlZxPCxG1fvJVmKQCPR4RbrEeFl+jEJ3mXyJ/UV4+Ra+EPaPhBxG6+cfgPkpu+6MFLflYqTv82uzAfOFhECI7fCQIcU5iRz1Ukte3bEMCtdJRRnFF1WbDkRrIBQJys0Am+Yjni6Qx9VfbBl8o6+BPLEiRQINu72I9/BkCBXzpJbeg3pI9t8iOIaY/W2+yW1/wr7GszfI7Lwa/gpTUDaLQ8cmtbf8GPwVnby8miSbIhgOu9jO/WzESzuoUxHjTr/RinWa0uxIbJqBVtiBFSs0W2Zo6IDtlKlUh1o60lKZe5Ic2rpOgE/WXE0rDSLwzqcjtFCfSMzKPNlWk7ZKZkX0JsGm0PAk+lceqQWpcL0m7ZqsJFLzxWI66OcZYqYAlgObflTXkcL1ZRLRL+DaY6vsOXmxc8lrZElyC0OIDSESRwa6DSp7Khmjj9hUYl/2w17SkjQCP/CoA7jeIWOY4KmoUCuHlFei3yqfVnpsTf37wTwMmgXUWMlQaxVyGZNV8Nqr63b9vyn9Hwg5SmPLrpXROeHSLXz8hSv+dezhk2dGjY0xOceGpxGqT1qIEZi3tYbk9sLtHuPvEe+WSAbesLPNMc+dEz2qS8fmArtLIc/MUpoHI/DWuydZEncekc7wrCklFyeNy2mxmsFEthTocRcBiRDx1iF6P0kEGG8F+jVmsXaQLLW4w6C1E2nGQEpPor/YoklWcPyOE3lPpwNoYpAAo1NdLxbGSShGNPxOmTS3zwt6j9NhO/J+r3ef+v4i45ltkH6ME1ZtZ64EHKhlqZt4B7C7ZuAGSE9WjdZldY5cFWvhjYBaqQFYuMDDXlBjiKYXcKGsNc84IIRHAynONubR/VKVCOnlrkMdsTv1QmU2VCuLrSGy6bIBXu42gbcOqvR51MzaQURwNitWhlvwVkFAntYe35dx0cTn1p7ilB644+5kVspr5NnlVDa2U1YQKFT9xTos+9cuEl89GTEXsDt7o+HA4jPUMF5pcD9klzm8fY52LzSrxmouUiO0C8eF0gg2w6ej510ZqMHqo9hOz4sg7TJEUsiJGP3ci5sysbADAtfXh+1HyZs8n0y9B8pNjzMqlmeq4xspX2Vz1iZdxH9MysaCRx/pmkdwCBySSHoGowtYsv5SmEsr3JMGS+lpVF4+DxRIRqw4PtWNaw43wZSrD1NQh9VqrSnq3m08PKIkEN0i+6Eschhn8u/WZnECIHSyenmetiNeYPBqzhsdIN+qXPfJR5/USCUGRS8wNLVvs73lcJ2JUbaVhUtOLay+W7pwFeKP2c8DQ5QwpPiq43NPzid6FjhpUxf0UjxFodT+/NqXP4FdSv+24nRk7Vfb6W1zaoyKKADUKF8eeDyiCkykJUWyd96jP1X4biMVZ8e4YhTPME7+wkgtMognUyYX0PinbACp6w3+K5ahMpWBKKGrChExeCdbIoeeyVTJzFywuvAs9kJQ4KuBP36XaEw/9niR85hh1Uu4KJNAk/iDbdZELQuB1l3k8s3gufVelWwHYp/FlJ4LYPeexloStql719GvyOxoThWylv7r9QczzYJ93HUDoQI8ZOzLd7ea1SrzUAczOqhBDrHkYn+nSjVHeEMcB6YTxtx2x88pepdCvMJQlsBeAGpdiB+59JY1s1i1ceOR5XyMhMFiHQKrgl7bLuuKV4epptirPERgaj6XoZ6oLmDxs/ocyouAntnGIz8wK2nPx9uNjwKL53dcCRirY/ulRcn2dyATaZVeylPZ4+bDUGh6vtkkqj2O4GU4cx5LBY7cbYxIgSkC5d3cmKVh9pVWPJYt3jL5GIYmSKCivA7jMNS+0EEB9fxv47vISoX/mYzgUim+bdohYoHifoeFqyMiLj8sSfeEGWDx9ku9qkXJpHsun53g6y+/zs63IcDAEhKcg51bmS/U3Ak4UN/QJzGthZsaopQbkoviaqDNWAYfi0hCrkVc7DZPGoqSw8dtD9Ei89qRAHtlPC+cJpxrHGLUOjzNM9VMau76TnsOX9tB83KlgDYBCH+k/zlZjFxOGNJgLfvd/mLJn392AtwmgWAEcTugNIu3jcIaBhV94xh+eucjQMNFvZmByiRjgJKT4zI2C0cn/f8Us8ALP6lVmf+OoQKjhrJy001aA6J/HonM//pHMIFM1+MNV1/rXpKF/lnmKuMpmIKXBhLc0mvgXFYKOvRA9pmhzifwx1E7UxavIFwhVu+qsnVhywJp53xVdbAEktINCdiZLEBlk1IFvj/x/9jLNd1anYspP1/RBszo91n3ubnVysf6GMtf2PsibjaWePbxBM0NZwx3HtjziXiY7COibnXkOHGiVRDZ9ZfRVBSEqDFxWOw8E5D1RHadVW55Bq7f2WyqrzaWrbJihtOf7/jF4RanSzao9UsDA/mrGQvrPsjXDuCS/KFmA89MMxQN2yFwx4uLwTvz0ejj+kUs091FwVKFw2PipT43AOpk5dMPXYr+xmf8tmyy9bAFrgsTSaS4db5QmvgXX4l8a4xdy4M8Um3JdGKXK0Aqa78TjUtnGY+CNtIvZeMWfbpXYANtbNH4tTV+AZlRndoikOyJ8qMgulfmdNvfFwGQd78zc8UcjeygPIFLx6zIxuzI/64EyxL3MlN3e2gTEl5OXIqFIN4P25EII0z+xUvwoDBQ8nSdpp/CzkbkzdKA5rdnfnH7paodC6GaPijsT2gumNtz2NIxHlJR3N7MZbifu1w6ymTL9Wl2tyGcyJ0odx+bR2jS+8yyMQJLSc1BHMe/UdITNEtNroAV7m9jBlvUZJ9jC9EVgCbzMmU+Mv2/a9Cj4lkZybukEOau25v6rGUPhSUAkzPRvDMwjbD6KRFbuyfLW/OM81wtHXXB075P4QzLBkU31UzNKL4rq6rVl2Zy19rt+4DBnD3PCdi3fDaL5nv2EHn+gsHvwFxpA7HYlg6VJOyRuDY30l5D0AppWXyPwKNGK7hu50VvKD/g9JgpKgEFvC2wRNMlJbEh7C8dl0BYaHPVI5w11zI5lh3FeX2H0Py95pf48ZUaNZVCUSRAz1IJm6hevfZ80VK/J5ZAaOeu7TrAB+8lm0eqvf+0Lt7gRsCXwuYPIjnhmblAoH7iHYgVPqwEuYpYat55tOKA39L7QeVCqYCJlXA61yv0mu7fJJeX+HdoTnE0JH2R0OrHrx+lxV/uU3yvf5hjaTNw1MjTKbVdoj3ZgMWc5rpRgqZ6Jtnwdm73BdfcdtJWaAFNODsGNARwINskZ5P1NCZbCTP7TxEXdiVrZGm4YDm4NJ+4e7ngE/GHoMtYzONwbuVR8YgRvgWf8wNFHHH0PjpYJ6A3WbGPG7o7rjar+M4FS531GZqVAlr++IOBSwJ2Rj4yryRV4mVCHouSpXZ81/w9v9dpdRcSny1OAQGho1q3x87KWYyQ61LFAzzRu9xVmoNBA9eluZMyqDjjQuevchteF5kBlgDVmO5czeDNX4rfH8TjtVe1s2CjfGSgiCpuKjS02KSPXop6OEjTDJW0T/Zd2p9JhVpna1i1XvIidC4K2TrQqOTSCUYzE0zUfJNRmlINu2qXnJRhILqNC8acLzanBI2lctoCLP6XQOaK3M2dYwgCUrNTOS3/hSOl5F22Ftzm6TXLtNJZ/KG6jRMWZemvjsd1EEBt/dmPtfyO1UmyoHDWq2vh8HJDhOouZL5QjuTNJ5dYdYhi0VxAhCoCZH3K/DsumPbWCq5RdmVS0slBgGqsPNnpjqvIYOwb2RUJBfpBDa/UuxaPdOpfniZ7C8Zefy0VbAn83NJw7V0LKoaySXvld0KuQF/j/V8LL7cbalRl/+HRJblAz/IYKj6vQ9iyv05FkPC5547CvUWBeo+/NLOjAnz4zgx27Q1EL3iz+dYArhS5ZjGBx/82crqwFvnmhDlfKChOD0SjLx/tWnsylHQjzpVfEmLfmd8t9vcaOv10jEDP7mPzI1DiMtpAXeJpFoq64tCJ98GrZQx/UaJ8QVyEC7Q75xsBDi6bxvPBYzeAiiArpVTb/slexsD+btKe4PhOFlyRto4senZOmYd7R6sn/tM7uSfUCVJJIHY+FBBGlGCKOBRxmNY8kncPiJT1w69E+pqgG3FhrXiKs584r7dAY7NwIThJV2LX9xpYvkNntL+GUW1zmAJKG3CsPfnh8h2XO8dnVNGSZO9zhR7S1QQ7XsE0qgsVci8IqtlSooQJzZa1mLxejfkDf2vejArgG7QPms7dhYOVL2Dg/vgwDC2IUCsJfzJWXjf/x7IuLgm/x2LVUqFzpr/q9JcdgxxpMebvPNJD0IQdfFspvCXrn7TD3CLrSpSAXAuO6yz8cgXSAZaI2rLtFfFBcpTMDxVlFRunhpuvqSPo+xMBmSOp/FBrst875ydXvJ4Uj4l4merRLIlSQDm874msQ4RAmZ4B8sinFme2FXgoqoL6k5qju4bqW+hHg+YSg9FByEZ72SfjCymrvqAqwli/e+gt+kZ6oRpM9b7aU7N1bZW4c4DeDLpdaPA8k1gw4VwWB6A9SpP3Qhd1cxYZo8=]]></content>
+    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! U2FsdGVkX1+TMS+FkSqBJmUPGP67ENkNnfUHG6yyxyt2zBmrHCjp7I+yB/SF+wn4d7KQT5vDa1YzgT4SWadoJRKli019HBPaJ8dHKH5ze/pAE2RxX0u045Jn8sySdORf8wKSFr7dHAxVLDPa1wJyuaZCMEHhtcU3xW17YSH2/8booWjdpLzX/2MA3jaJuSMi3t+wtSp6qaDaH8eZPh5oY4r0a3BQ5TGKYZlw2F2hGiZKIiMhDSYWLSTPY0DFcpu4vBlwo9W6lsrRWjHYGod82SGMRBVoDgrg1x7piPG4SRsfibd1/f4ors1FKG8JnAd808PYtfeStu4qICGcW7u5FhbUxm+Rby1oDDgfmX1ByeFGZQSTGVA+L3hkiG+bHHbASZVyfYpRXpXr8nZIVakBx22a1MEZuLrVHA5EKnpc3qXDecLFhpT/Jo16Ej8Cf3wRuTc1VsFINPgaa8WzGkM+RWlMeo27qCcQe8DFWYjHu7w893v5gloTtXa57rv/bCtSIm3ZxBQzGlVbunMpXefD9KM+WwcnZVEZQlzY3rQ4kSFiDTJvXypF76LgKt8QFngp81lghc3Fg1bz+XXcq7zMrQ3M3OOkLCHkDGefgDUIrZ2HQ6EidiECUZPLuLt95uo+HXIl8oP4NlewJTLkgPw5jtjlpF4NoSq6LgMqWECJGOMqv6UBM+LfThi0a8TOtf0lRHGvBOoWPKGlCkVUwlfebXou6WfPO2G9SS0jK3shoL7BkI/0D909Iy4zEPJTt7/NsvS9Xhef7dgCq7tcqzWilMsfbZwUB03g0URmmBI4RFGeW05yEFDeARYcoET/mFg5sHqtOq6/ivTVNkLrxMZskwBjxVwmAgmwPP3q0b4GFv+431rjwq5Sl9XfiHh+LO3rc23duxRfuyN6nny7qNgdCAXan4O9BuLFBEL/MyIRXAOg1ewxN2BM3KQQzVqJZDsSgwKTSOfnc9JM0LjgAJZmM8ZcdGhaImRm3VrndSWCurED+Plj0RtM7c1jZIN6HdwuKS1pCfcohjIt7E1xPVTQsbAPW1eyjzhfizaJ+1sUtHmEZR0JbBKcW2WssmkBKrpKfpCxVcxiHy+O39AGhvSDbifmTOeEEHm1sufn68OoFcveAaSkbeHn5kK9UTqdph9xNdHE7wCAufqPRqua3OfvF+ca9tZeoYwwOXt6Txm+6g1LEXXY63nx0N+rp22cLrsAs0aWqrknjacdh6yVn/1uv58PSNiSvR+OLG1VtRFTWeQOKliPeBMNSF1qliqQWo/ctPmecspY7w7zEynAS1rYB8y0y2sm/ntzoOfK9EvSztXOgLljPrB0O2AVyjfBwW+QOapN5nQXHlALakTnA15TnAtBZQSoLPzg8CoXO9y64gNOax2MbttNu21KySCilHLS7xJqc01LLQkWQ0/58P4WhF0EeU3AvZ6bo0ruTv2jCehtUmw2f9HM9WC0GK1addFjOTGAX4MoRx7V5XtDp15Y/yxwKVHVsK7AkjehThGxdzCFT+y6Jo5QrCxdfpRktYyjew6+EHDubsO1gv7VIMVjl6WeDo31uPoyuj2XOnUw8cy7p36HeSBVNDR63sEpsV61lwbrAjeTn+Ndv2L4MID83sLlNBwr9hSi71WKwlpOoo1vIvtnv7B93A/jAAKWfmARyeRrAVJv7JmnjqjMIm4ZbfqXrZb1OlPLPZRWg8qtOo/W4g9E80ofHVFB9QT/KSTDwY+7BDKXBzU7fxP842EhTcO+zBY3KJy9TSCvRYW//yTcmixvxGYqDamrQ6aDSlGb9kfEiIKet3z5rlfs0+nNrPxU7ueHe5cb1hYcAaP0oBWx6WNK9lWOVbZXuV1lTxnmNn3BtBT/ACDa9IRbbWLeFoOpSf5YUJQJeCWFJL+QdPyb08dJeVzme+sjKN/I+p5J7RbjlN72ILiCf6JeI+bfZmrUYSK+faVaxoplx9//nla/eP3oFQmfchHF1EHymGhfd8tq06I9L4z3eXaGhNLkoQ0nj81K+4XRPn0VaHpJ5JJlwU4bHiAfBy0BByZvcrqC9U3/KdhKDeeH1tl3Oq/+x0SG0eKBlJJ3faCLOm7VxaBWRE2hgBqTqREWPFpXFMIu5UUNFqglivkwC5Xs05tDimhLL1L9Hs4/3qvSpj6FjbTuDIllMEu39PyKqLX5fzZDWIiKYHbKYrxiUEUHT36C4ZZtOf73Lzfm1PUt519pvElov4yNsm0tltHV4gVD/BmealdZ+H/WueoakynCRijUVpKkgdcWMJt06UI9uL28guATY9Mi8XL1xg04BTBecd1/dDy5YOyAyYIISymGah/mAFBBNjn4WxHIn96nbStPA6wLYP1Tv7q1PKm/aCxblWRQ33rj9K5J4aI+P+KmWKyk8+xFCN14I9wmE/iAyIfDGX8Y95Jm3ij3iqBLtjl2mYy+x+qkidIQweHjnWLcYUaXkEQS/A9Ca1+GmEFPA6Kr5jhEQmG7DcR1YGILOdLkUV5OTMLuxxGx1xrwoQNK397uukip0Newe9WlfLfpiukVe43bkjWx5+bdgZHsANFEdndW6+yDDG3QrHXobBr1etGuGPCIO3GsRSeeXp2X+W2c+YMtIowVsJxZZzKlqKSgb3hljSPVRHj104QQgbios7byDnIhH2Pr7Y8o5DNew1fdM5V6QQYhDhhu0eaCFz4m0ZjkzPB0KnwDb6IO+bBuUkxU9FRTcgnZyznbor9aUPsGRduSE85BGZLPSQcc7lpVjdOhXUBqSeaXFY393eSzA+rAObkCcY+RcWRchQ7w64Sa0R5gnrUOlZuvx/d/z+WAOt6MgrvDB4pysv2blOh/md1IvwS9wc1yYCfp2xm/S2m+/ukYv7/0pvkpTSjtAkDUI20qBRBq1FVY8x8qWwPsNhljyAn+4mgNTmssG6eVlIKOEeMCiP7OopkMFQJYhZGol0jSyes9xxwG6VI9tLckrMzIgzaqgDmLYH6IL4S1FPz+vm0y1kzRd5iECzNrBIdPI6MWrupCg5naZSmPk/D4iuCCO+xq0qae1zLinxyFtc1cmqsoP0Tr4Y9Lrrh02uT5cCI5YDcsIA9F1Xp9nUjYfECVih9aVvUfg5RA5uHxf+3dHe21hnMXbGwqdpkYmd4OYwrbGz5Cj/e+mJaezbbswrLdX89rQTgpKcGKmA3A6qT5NqW8TE0kffi17rs+qtePhWIPUYQC6BA4lN8c44ZsoTaW0PpXcre3JozN21/UEMx/EPYA/0A1TfpHq1VJVKdsrHhwllZ7j483vBo2pOgMH2Pvs68/rkqvrrGreUMv6LlaZzyC5S8/ROETHA3MlYd2XgaxKLoNLEWB9S68soiwi9PMva1lAkZpkTW/fepzQQq1/5ZyW9HO5mYPN4xDf7nv6C2ZjLZdzACjn0Omn4FgA9AtgXZ5hnjR0IYH0eOkFyd6wWwo8GRhR/RLebqe5Gw+1GUtWqWiUQK4VwJHRvx49cI12I0CT7c7MazOMVRxJcuo/2JkyagVPoJBCfBMSiJioIVeVw/UUBRVeqFNbHfxhAOVGLX/maEga5TTZVESBRZWTI2TxfdGgfCd5p0FMSYHx1ZGOomjjaa6KprWU/pkRtU6YeuAkl9MMcQkSQwdQ8EFg2iQBv0YEJYxdJ9FSgRS7JHcRnHtLVqaC0r9JKgkviF4CZLWMqDWSCiGVAhiGeVjX0Y8hWTvJF+gURnWMqbBp/Cvkpn+A/MQIZX5xoEBfNgp8+9EJ74BFayvTlHxZuDAUBgi2j2NkmHKL+li23B79k113QtD4AFoxEHm0sZLZ1U+Zjx4hXbTmmbbBtPoIevjS8qudEVc/wiMx/n7YWAVo5waoTNlsgxCPvLLsj0p2scYfVgH/tWuKPrsNheFZic7HpsRadkgDPBd6vFnEjZ5tNE95UGlMH/G+koQd0aIV2H/0uXaFvT/moMoABahVu3mDSbPnz68jW62liBD+c3KpSsZaIkOPg2WC8jbPfE0uHyfEmfnSZivwUSoLYSUnLTDPhT2bXFiUJxJhd98K7d2y/kuBM7rHXCSHl1RN9NwMEisCZYYUhdg33rZrvk+Uy94WBHCD327VnQ3GqOTEhUFqWxp+UZbXIY+6Mwn6Cc1gjP/W9PE9XRneyGTym9Hg4OX3Klub5wEdw3dIlLOpxzzxjhcYsagDFJy1m3PYK0ENeBGG+NGQ+fk+vnRhiru14ejoW/v3QmVNkdGldR0XwkvNuXm0llUqB03rezw6I0XguDBndMEScJxp+AgEZT8j76Ny2s3YR7XLaanrdh6lfbssYO57DpmwzpIoK2n+4Rsp3gRTK4zdrH5qnAGdNcHZKFSS0WGxg4Yo0BcaT4xWzdrXSKkRDui75Zg8Vy+WDqLAOWoDcX9mYQBXyA1Ev71M30r2s1CpaCoJKLZg5jbZkA41na47C1FPLtQyF4w4/2t0FmTn/BcwDJibdQuAcyb9htTCc/aSF2AMt0UZBJu8r6ikxtiZcWwMdITL2cb5VkiTsoAUbPReNbVgZJRMlU4Im0rpBY30Ohl0bcBmGqVKSTLfl7V1sk96Klhi426Ld8U441Sg/LS2XCEB5g/yOcSQXwTUw49Tui4c4HNMB6yiW0c24FnDErK2EuiR0DS+nTn7YArnuKQvZq/ICobyisOFuSbUCILvyNWv7yKJGnkZ0N0EvHY2hvw07dnYYm2S2UMdFyVjsWAfRFo5mMjJhV9OYNytl9RXiPPpKPrFKjXDhXwWGmiNuiJw/yEvY/yI5HREuwVCPlfNYMWQDZhW9GupZjaWwHj+i0ZN6ZO93+pPDJo+F8Aw4CykqQHNmPmIpPhJas5g4BPECr1YgBd5Y44+MNsaW4aV9Sy8Lz2oZVPKCEYbLCdArbrP9DkNnY/kneb43kTOcy7wmxeJUa2KCcqBdTzEUqpM/g5G/iTEIJTKXZfAqh18xlKp9Ie49guUJgf1X/rcJoclzkgA3roUPaF5SfU8FTLc8kNvMRVor9TUt70MFzVTDc7dAGh0MuGFuVwkmhVYR2WY7gA7R0HhC8plTZWErhMW8dY/Cy7ZG8zOWv+XynddSvxh0/NfhTshMZpaAQCGCXfZkmhOTvoEWNfMImrLZk+ZGbfd4nu5r/PS86Mp2HhXKUCmEr2DgCFB6fJGQiJBnzLHRhaFUlcSafm9JMpuU/fPkx70bpqFegebzHwyK+Ekgq83RUkDzJc5GB8vnurSgnl1ULwwl9sZJF5S15B9OJkiilJ2jZMWEdaLjOtMlnuUwxVxhRd6i+i3HvBKgSQdVmVT9hgcliG2Uxxx7OCtxkCU9a49dvAcBdqhdmIx1Gh1nrz+C0j1QqnwXSMHmaQTGKSN/ASxtrxsQlyXWqqLOWrECO8vF1au4MR8K7mfA2ymgkIolrA/p7HwpjFsCoyXauqwrxRlFt2LWiVBePuf/VoJnotox0eSKhix2A7Nn1IzZbi0fHykUHrrMLfkQqnDmmV2LRFQ0fac9TgV9W+3t/saHpvGCewbP1PVO1Nopgwgf2yWv2sAfpZCjabZS3a9EWyCIw7afwOlmpagjAaxmEG+Fuu62dWiTw5d+3QP+YAY+VfcIJALeXE38mgagxhXfpci2Bf8c9f412WOCGmCmZTAyK+51H+gJfnbG3gCObklzv6LWPGYjCq5WZaWismuQaMi9NmDumLv407A654FJ0D9/H2eT4Z1b2AlbOYAfXpWzOQz4qz5kuwCDbohNvAy/uZTJhRmLngO8/C4II8GKbU1uCJk/8qJg2etZHg86JMVOyQgxdj6NM0yS6wbkdADytxt+gkb574VLvlPj4Wsaec+wxmggN+wNMYxrge+HjoRiL5VZO4/HveIhxQ1tOucQkLXvfRniHlFltDveCMJCLGQ2vIhyruQF6MEwYKfOq1Uj0zyc/HOhtqwUZjJRJURStwjgnvVTljmkaRMeV5yNpf2tVOG9JuQzjTg5dVwDMGj26uHfDX4ZTxCf84sBv1UD4i6n3dJN42zMsOfwH228/okZjPhXkBRZm4fp/DfTbfKRdeXQBoWJlRXGhY96f7aKr8ATIyFud8WyGnlg4qY0FUIEAQ1hyszlwxqWK63LJ6bSHafaeIHRmWT0OtlWjV8J2se+wAjzLIgx+oCPxp+U7TE+Ca797ptBD8Q0VDdwbHxBtQKWA7yhd5NJjEzxRUKT1MWdopxlwu1aDu90Qln/9SjA+Z6cE3U9OmTKd/UAtxcIX3wwF5VxZ6hatoIk+7fdHi8eREPUtATURSmUjSHyYOATqBvArOdI69huiwa8+9C3yfDN69DpSD7ut/SRU37DBB2/nkYGzah8bAjQqwks739RmMFdOv9SzyYogqzrptdkVUPB+A1ujn3O13O0SMdJA1cTYWbZJrxl3pbM90D12uJGj8VaaLLCZ2E5sz84G9b8GUIOtQwc++v+FJH9E+2Ge9OIsY2fOpmaWxnDy0B9V3VC5dXV9Uv6CcBPtn4fts1TA8m52f4hukbqzXMAKn88zDlHDM2n5O8UaofpYTNbBGTjIFOHaYyAcr4AOAMLqMnMQgp7KMLJ4et/ooMJe3sCxnEzCdeH1FC7ZBfE6pqLvcRXIhyTUomJgLjxrxf6ql1IhFZVc0enTMqosqOi6He4R6cRovKh+nA+t27+XPhGgOTUXTPs0vKdvzTV4l8WlyJHDEfNUzC15pwS4FMlodFaz46F+ZTjy7LstCaf+qPm9M7gpjYFKFI6sZWLWZPFp/OI9EvSxlOKqQiOUJbjEb760ZNk3J1AqbNz2jUdab+R7qBY2mKts143OgSD0xIXX1NSk6PeKbOKe4/PMbxhS6A+gOQSsl0cWJR2nXK2gTtFRAJ3I8juccZZjjknGpQjYQJcUXmi+dxC4pVa75YCg1vTUuP8oxycCEkQXYZVwEfiO85SUGDxBdhPEGoeYCwnGaP6zkc7jcST6jXiKXrJKQsQrUxCSGrhN9XUEbhrkIA1MaHhJcEGIvVdLkBmmN6AtT9myxEC0EIT9W/z5Ow10OMiBSdlNcrpF9Dlf60ANfwV7CvhPyjTtr80j9AujwxJdKe4np34prLlvk2vJp9qBaXI6EB+WKfcQQR15BAY0531EJ4Ulp4u0k4IbE9XCIAwf7tZnRuQPOd3FbYxQSSPrzDYxxlrStZclA3bUEVvpoAvnKweb1TUOEYleUoHoiUf/L9wKhb0Q2sQ81owZNFUWBY/h1VrnVGDFWeCkq3p/iJJI9MMAayeBuogLNVvzvO/vPeyM7lRi5E013M/yFojexJTWeP7MhP3egvm2uYgknkCQC/GcfwfwyEIaGE9kQNBo9qdlf7WpAqUkuC6WgmeJgQXyyENEU9tm8wFdVnssWF64v+1yqe2pntNFQe8wVOr2BICNyEXUaEtZghb5HOI2v1AdkGBUcwO0LaFwE+r9mNb7vSnOur97fe+K9thDxPhuCspxfRFZ0PF5OhW56bJwJk0lBgnjpA4SkM/akD5aWSKs0oVYeHpYDxEaAyTicd6MZuxpnwO7Ngo66/BqeMi9GEqd3lRrC00wYbhSHBUh+A7kDJUT2R4jGqJFA3whf4UOyS7YZYCfKWX3anJaE8UOjWy7RcP30oAmlzomsfS87qRmhmyHJ2/AhaeUWNWA+DMELCT5IEyI6Y+KImncvI6AwNwIqdZWkWlEsJE3Ui0/41p4=]]></content>
       <categories>
         <category>生活随笔</category>
       </categories>
