@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/docs/other/index.html</loc>
+    
+    <lastmod>2019-04-05T12:26:53.738Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/guestbook/index.html</loc>
+    
+    <lastmod>2019-04-05T12:20:20.732Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/docs/index.html</loc>
+    
+    <lastmod>2019-04-05T11:53:32.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/about/index.html</loc>
+    
+    <lastmod>2019-04-05T04:09:06.401Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/Web/gitbookuse.html</loc>
     
     <lastmod>2019-04-04T15:18:26.232Z</lastmod>
@@ -65,21 +93,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/guestbook/index.html</loc>
-    
-    <lastmod>2019-04-04T08:30:12.748Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/about/index.html</loc>
-    
-    <lastmod>2019-04-04T08:28:22.622Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/about/top/index.html</loc>
+    <loc>https://lruihao.cn/docs/top/index.html</loc>
     
     <lastmod>2019-04-04T07:25:22.997Z</lastmod>
     
@@ -667,14 +681,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/about/tags/index.html</loc>
+    <loc>https://lruihao.cn/docs/tags/index.html</loc>
     
     <lastmod>2019-03-26T04:17:02.115Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/about/categories/index.html</loc>
+    <loc>https://lruihao.cn/docs/categories/index.html</loc>
     
     <lastmod>2019-03-26T02:34:11.048Z</lastmod>
     
@@ -1360,84 +1374,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/F-sorting.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/beian.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/git/git-index-lock.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/null/hello-world.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/ACM/STL/C++%20with%20STL.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/ACM/STL/sort%E6%8E%92%E5%BA%8F.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/zuiduanlu.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E9%98%9F%E5%91%98%E4%BB%A3%E8%A1%A8%E5%8F%91%E8%A8%80.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/git/gituse.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1451,7 +1388,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/git/linux-git.html</loc>
+    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E9%98%9F%E5%91%98%E4%BB%A3%E8%A1%A8%E5%8F%91%E8%A8%80.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1459,6 +1396,83 @@
   
   <url>
     <loc>https://lruihao.cn/%E9%80%9A%E7%94%A8/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/beian.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/F-sorting.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/git/git-index-lock.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/git/gituse.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/ACM/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/zuiduanlu.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/ACM/STL/sort%E6%8E%92%E5%BA%8F.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/git/linux-git.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/ACM/STL/C++%20with%20STL.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
