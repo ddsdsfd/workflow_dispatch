@@ -22,8 +22,8 @@
       </categories>
       <tags>
         <tag>总结</tag>
-        <tag>linux</tag>
         <tag>server</tag>
+        <tag>linux</tag>
         <tag>宝塔面板</tag>
         <tag>ngrok</tag>
       </tags>
@@ -78,9 +78,9 @@
       </categories>
       <tags>
         <tag>javascript</tag>
-        <tag>301重定向</tag>
         <tag>VPS</tag>
         <tag>SSL</tag>
+        <tag>301重定向</tag>
         <tag>CDN</tag>
       </tags>
   </entry>
@@ -142,9 +142,9 @@
         <category>linux</category>
       </categories>
       <tags>
+        <tag>server</tag>
         <tag>linux</tag>
         <tag>html/css</tag>
-        <tag>server</tag>
         <tag>宝塔面板</tag>
       </tags>
   </entry>
@@ -439,7 +439,7 @@
   <entry>
     <title><![CDATA[hexo插件及next内置样式集]]></title>
     <url>%2Fposts%2Fnextplugin.html</url>
-    <content type="text"><![CDATA[&#x8BA9;&#x6587;&#x7AE0;&#x5199;&#x7684;&#x597D;&#x770B;&#x53C8;&#x7B80;&#x6D01;&#x53C8;&#x597D;&#x7528;&#x7684;&#x63D2;&#x4EF6;&#xFF01;hexo&#x63D2;&#x4EF6;hexo-tag-dplayermorenpm install1npm install hexo-tag-dplayer --saveUsage1{% dplayer key=value ... %}key can be12345678dplayer options: &apos;autoplay&apos;, &apos;loop&apos;, &apos;screenshot&apos;, &apos;hotkey&apos;, &apos;mutex&apos;, &apos;dmunlimited&apos; : bool options, use &quot;yes&quot; &quot;y&quot; &quot;true&quot; &quot;1&quot; &quot;on&quot; or just without value to enable &apos;preload&apos;, &apos;theme&apos;, &apos;lang&apos;, &apos;logo&apos;, &apos;url&apos;, &apos;pic&apos;, &apos;thumbnails&apos;, &apos;vidtype&apos;, &apos;suburl&apos;, &apos;subtype&apos;, &apos;subbottom&apos;, &apos;subcolor&apos;, &apos;subcolor&apos;, &apos;id&apos;, &apos;api&apos;, &apos;token&apos;, &apos;addition&apos;, &apos;dmuser&apos; : string arguments &apos;volume&apos;, &apos;maximum&apos; : number argumentscontainer options: &apos;width&apos;, &apos;height&apos; : string, used in container element styleother: &apos;code&apos; : value of this key will be append to script tagexample1{% dplayer &quot;url=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4&quot; &quot;addition=https://dplayer.daoapp.io/bilibili?aid=4157142&quot; &quot;api=https://api.prprpr.me/dplayer/&quot; &quot;pic=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg&quot; &quot;id=9E2E3368B56CDBB4&quot; &quot;loop=yes&quot; &quot;theme=#FADFA3&quot; &quot;autoplay=false&quot; &quot;token=tokendemo&quot; %}!function(){var e=new DPlayer({container:document.getElementById("dplayer0"),theme:"#FADFA3",loop:!0,video:{url:"https://player.youku.com/embed/XMzY0MzgxNDMyOA==",pic:"https://ziyuan.lruihao.cn/images/site-meta.jpg"},danmaku:{id:"9E2E3368B56CDBB4",api:"https://api.prprpr.me/dplayer/",token:"tokendemo",addition:["https://dplayer.daoapp.io/bilibili?aid=4157142"]}});window.dplayers||(window.dplayers=[]),window.dplayers.push(e)}()hexo-tag-aplayermore&#x5B89;&#x88C5;1npm install --save hexo-tag-aplayer&#x4F7F;&#x7528;1{% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}&#x6807;&#x7B7E;&#x53C2;&#x6570;title : &#x66F2;&#x76EE;&#x6807;&#x9898;author: &#x66F2;&#x76EE;&#x4F5C;&#x8005;url: &#x97F3;&#x4E50;&#x6587;&#x4EF6; URL &#x5730;&#x5740;picture_url: (&#x53EF;&#x9009;) &#x97F3;&#x4E50;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x5730;&#x5740;narrow: &#xFF08;&#x53EF;&#x9009;&#xFF09;&#x64AD;&#x653E;&#x5668;&#x8896;&#x73CD;&#x98CE;&#x683C;autoplay: (&#x53EF;&#x9009;) &#x81EA;&#x52A8;&#x64AD;&#x653E;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x6682;&#x65F6;&#x4E0D;&#x652F;&#x6301;&#x6B64;&#x529F;&#x80FD;width:xxx: (&#x53EF;&#x9009;) &#x64AD;&#x653E;&#x5668;&#x5BBD;&#x5EA6; (&#x9ED8;&#x8BA4;: 100%)lrc:xxx: &#xFF08;&#x53EF;&#x9009;&#xFF09;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6; URL &#x5730;&#x5740;&#x5F53;&#x5F00;&#x542F; Hexo &#x7684; &#x6587;&#x7AE0;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x5939; &#x529F;&#x80FD;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x56FE;&#x7247;&#x3001;&#x97F3;&#x4E50;&#x6587;&#x4EF6;&#x3001;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#x653E;&#x5165;&#x4E0E;&#x6587;&#x7AE0;&#x5BF9;&#x5E94;&#x7684;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#xFF1A;123{% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;caffeine.mp3&quot; &quot;picture.jpg&quot; &quot;lrc:caffeine.txt&quot; %}{% aplayer &quot;&#x4F60;&#x79BB;&#x5F00;&#x4E86;&#x5357;&#x4EAC;&#xFF0C;&#x4ECE;&#x6B64;&#x6CA1;&#x4EBA;&#x548C;&#x6211;&#x8BF4;&#x8BDD;&quot; &quot;&#x674E;&#x5FD7;&quot; &quot;https://ziyuan.lruihao.cn/public/nanjing.mp3&quot; &quot;https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300&quot; %}var ap=new APlayer({element:document.getElementById("aplayer-ngfCuiaa"),narrow:!1,autoplay:!1,showlrc:!1,music:{title:"你离开了南京，从此没人和我说话",author:"李志",url:"https://ziyuan.lruihao.cn/public/nanjing.mp3",pic:"https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300",lrc:""}});window.aplayers||(window.aplayers=[]),window.aplayers.push(ap)hexo-pdfpdf&#x4F20;&#x9001;&#x95E8;hexo-filter-flowchart(&#x6D41;&#x7A0B;&#x56FE;)&#x8BED;&#x6CD5;install1npm install --save hexo-filter-flowchartUsage1234567891011121314151617```%flow #&#x53BB;&#x6389;%&#x53F7;st=&gt;start: Start|past:&gt;https://lruihao.cn[blank]e=&gt;end: End:&gt;https://www.lruihao.cn[blank]op1=&gt;operation: My Operation|pastop2=&gt;operation: Stuff|currentsub1=&gt;subroutine: My Subroutine|invalidcond=&gt;condition: Yesor No?|approved:&gt;/hexo/nextplugin.htmlc2=&gt;condition: Good idea|rejectedio=&gt;inputoutput: catch something...|requestst-&gt;op1(right)-&gt;condcond(yes, right)-&gt;c2cond(no)-&gt;sub1(left)-&gt;op1c2(yes)-&gt;io-&gt;ec2(no)-&gt;op2-&gt;e```hexo-spoilerInstall1npm install hexo-spoiler --saveIf hexo can&#x2019;t detect this plugin automatically, you need to modify the plugins section of [path_to_your_site]/_config.yml manually, like:12plugins: - hexo-spoilerSyntax1{% spoiler [text] %}It will pixelate your text, and click to reveal. Click again to hide your text again.But you need to add &lt;br&gt; manually if you want line breaks after/before it.PreviewWhen you writes:12345{% spoiler text %}{% spoiler ~~text~~ %}{% spoiler *text* %}{% spoiler **text** %}&lt;br&gt;{% spoiler **hello welcome to &#x535A;&#x63A1;&#x773E;&#x9577;&#xFF01;** %}text text text texthello welcome to &#x535A;&#x63A1;&#x773E;&#x9577;&#xFF01;&#x5B85;&#x97F3;&#x4E50;&#x4FA7;&#x680F;&#x64AD;&#x653E;&#x5668;&#x63D2;&#x4EF6;&#x4F53;&#x9A8C;&#x76EE;&#x524D;&#x5728;next&#x4E2D;&#x53EF;&#x80FD;&#x5F15;&#x8D77;&#x90E8;&#x5206;css&#x51B2;&#x7A81;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;next&#x4E2D;&#x4F7F;&#x7528;&#x5728;&#x5355;&#x4E2A;&#x9875;&#x9762;&#x4E2D;&#x3002;&#x4F9D;&#x8D56;&#x4E8E;jQuery&#xFF0C;&#x4E00;&#x884C;js&#x53EF;&#x4EE5;&#x5F15;&#x5165;&#x64AD;&#x653E;&#x5668;&#x63D2;&#x4EF6;&#x3002;Mermaidmore infoexample1234567891011121314151617{% mermaid gitGraph: %}options{ &quot;nodeSpacing&quot;: 150, &quot;nodeRadius&quot;: 10}endcommitbranch newbranchcheckout newbranchcommitcommitcheckout mastercommitcommitmerge newbranch{% endmermaid %} gitGraph: options { &quot;nodeSpacing&quot;: 150, &quot;nodeRadius&quot;: 10 } end commit branch newbranch checkout newbranch commit commit checkout master commit commit merge newbranch videoUsagevideo.js1{% video url %}Examples12{% video https://example.com/sample.mp4 %}{% video /path/to/your/video.mp4 %}&#x9009;&#x9879;&#x5361;&#x201C;tab&#x201D;&#x4E3A;&#x9009;&#x9879;&#x5361;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x6570;&#x5B57;&#x662F;&#x51E0;&#x8868;&#x793A;&#x4ECE;&#x7B2C;&#x51E0;&#x4E2A;&#x9009;&#x9879;&#x5361;&#x5F00;&#x59CB;&#x3002;&#x975E;&#x5FC5;&#x987B;&#xFF0C;&#x82E5;&#x6570;&#x503C;&#x4E3A;-1&#x5219;&#x9690;&#x85CF;&#x9009;&#x9879;&#x5361;&#x5185;&#x5BB9;&#x3002;&#x67E5;&#x770B;&#x66F4;&#x591A;1234567891011{% tabs tab,2 %}&lt;!-- tab --&gt;this is tab1&lt;!-- endtab --&gt;&lt;!-- tab --&gt;this is tab2&lt;!-- endtab --&gt;&lt;!-- tab --&gt;this is tab3&lt;!-- endtab --&gt;{% endtabs %}tab 1tab 2tab 3this is tab1this is tab2this is tab3&#x6570;&#x503C;&#x4E3A;-1&#x9009;&#x9879; 1&#x9009;&#x9879; 2&#x9009;&#x9879; 3&#x9009;&#x9879;1&#x9009;&#x9879;2&#x9009;&#x9879;3&#x540D;&#x5B57;&#x5199;&#x5728;&#x9009;&#x9879;&#x91CC;&#x9762;1234567891011{% tabs Fourth unique name %}&lt;!-- tab Solution 1 --&gt;**This is Tab 1.**&lt;!-- endtab --&gt;&lt;!-- tab Solution 2 --&gt;**This is Tab 2.**&lt;!-- endtab --&gt;&lt;!-- tab Solution 3 --&gt;**This is Tab 3.**&lt;!-- endtab --&gt;{% endtabs %}Solution 1Solution 2Solution 3This is Tab 1.This is Tab 2.This is Tab 3.note&#x4FBF;&#x7B7E;&#x4E3B;&#x9898;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x641C;&#x7D22;note,&#x53EF;&#x8BBE;&#x7F6E;&#x98CE;&#x683C;&#x548C;&#x56FE;&#x6807;&#x662F;&#x5426;&#x663E;&#x793A;&#x3002;12345678910111213# Note tag (bs-callout).note: # Note tag style values: # - simple bs-callout old alert style. Default. # - modern bs-callout new (v2-v3) alert style. # - flat flat callout style with background, like on Mozilla or StackOverflow. # - disabled disable all CSS styles import of note tag. style: flat icons: true border_radius: 15 # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6). # Offset also applied to label tag variables. This option can work with disabled note tag. light_bg_offset: 0&#x5199;&#x6CD5;1{% note default %}default&#x662F;&#x7C7B;&#x578B;&#x8FD8;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;{% endnote %}default&#x662F;&#x7C7B;&#x578B;&#x8FD8;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;defaultprimarysuccessinfowarningdanger&#x4E0D;&#x586B;danger no-icon&#x5F15;&#x7528;(&#x6587;&#x672C;&#x5C45;&#x4E2D;)123{% cq %}**there are test words**{% endcq %}there are test wordsFont Awesome&#x56FE;&#x6807;Font Awesome &#x662F;&#x4E00;&#x5957;&#x7EDD;&#x4F73;&#x7684;&#x56FE;&#x6807;&#x5B57;&#x4F53;&#x5E93;&#x548C;CSS&#x6846;&#x67B6;&#x3002;Font Awesome &#x5B57;&#x4F53;&#x4E3A;&#x60A8;&#x63D0;&#x4F9B;&#x53EF;&#x7F29;&#x653E;&#x77E2;&#x91CF;&#x56FE;&#x6807;,&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x5B9A;&#x5236;&#x5927;&#x5C0F;&#x3001;&#x989C;&#x8272;&#x3001;&#x9634;&#x5F71;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x7528;CSS&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8981;&#x4F7F;&#x7528;Font Awesome&#x56FE;&#x6807;&#xFF0C;&#x8BF7;&#x5728;HTML&#x9875;&#x9762;&#x7684; &#x90E8;&#x5206;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x884C;&#xFF1A;1&#x3001;&#x56FD;&#x5185;&#x63A8;&#x8350; CDN1&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&quot;&gt;2&#x3001;&#x6D77;&#x5916;&#x63A8;&#x8350; CDN1&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;next&#x5DF2;&#x7ECF;&#x5F15;&#x7528;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;12345678&lt;i class=&quot;fa fa-car&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car&quot; style=&quot;font-size:48px;&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car&quot; style=&quot;font-size:60px;color:red;&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-lg&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-2x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-3x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-4x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-5x&quot;&gt;&lt;/i&gt; &#x52A8;&#x6001;&#x56FE;&#x6807;12345&lt;i class=&quot;fa fa-spinner fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-circle-o-notch fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-refresh fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-cog fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-spinner fa-pulse&quot;&gt;&lt;/i&gt; &#x4EE3;&#x7801;&#x5757;&#x7B49;&#x4E09;&#x4E2A;&#x70B9;&#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;lruihao.cn123[language] [title] [url] [link text]code snippetdiff12- printf(&quot;Hello World!&quot;);+ printf(&quot;Hello_World!&quot;);iframe&#x5728;&#x6587;&#x7AE0;&#x4E2D;&#x63D2;&#x5165; iframe&#x3002;iframe1{% iframe url [width] [height] %}Todo list &#x5DF2;&#x5B8C;&#x6210; &#x672A;&#x5B8C;&#x6210;Todo list123456789&lt;ul&gt;&lt;li&gt;&lt;i class=&quot;fa fa-check-square&quot;&gt;&lt;/i&gt; &#x5DF2;&#x5B8C;&#x6210;&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;fa fa-square&quot;&gt;&lt;/i&gt; &#x672A;&#x5B8C;&#x6210;&lt;/li&gt;&lt;/ul&gt;&lt;!--&#x6216;&#x8005;--&gt;- &lt;i class=&quot;fa fa-check-square&quot;&gt;&lt;/i&gt; &#x5DF2;&#x5B8C;&#x6210;- &lt;i class=&quot;fa fa-square&quot;&gt;&lt;/i&gt; &#x672A;&#x5B8C;&#x6210;Label&#x4E3B;&#x9898;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6253;&#x5F00;12# Label tag.label: true@&#x524D;&#x9762;&#x7684;&#x662F;label&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x662F;&#x8981;&#x663E;&#x793A;&#x7684;&#x6587;&#x5B57;default primary success info warning danger123{% label default@default %}primary success info warning danger&#x5176;&#x4ED6;&#x5305;&#x62EC;&#x5C0F;&#x8272;&#x5757;&#x3001;&#x5DE6;&#x4FA7;&#x8272;&#x6761;&#x3001;&#x53F3;&#x4FA7;&#x8272;&#x6761;&#x3001;&#x4E0A;&#x65B9;&#x8272;&#x6761;&#x3001;&#x6570;&#x5B57;&#x8272;&#x5757;&#xFF08;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;&#xFF09;st=&gt;start: Start|past:&gt;https://lruihao.cn[blank] e=&gt;end: End:&gt;https://www.lruihao.cn[blank] op1=&gt;operation: My Operation|past op2=&gt;operation: Stuff|current sub1=&gt;subroutine: My Subroutine|invalid cond=&gt;condition: Yes or No?|approved:&gt;/hexo/nextplugin.html c2=&gt;condition: Good idea|rejected io=&gt;inputoutput: catch something...|request st-&gt;op1(right)-&gt;cond cond(yes, right)-&gt;c2 cond(no)-&gt;sub1(left)-&gt;op1 c2(yes)-&gt;io-&gt;e c2(no)-&gt;op2-&gt;e{&quot;scale&quot;:1,&quot;line-width&quot;:2,&quot;line-length&quot;:50,&quot;text-margin&quot;:10,&quot;font-size&quot;:12}var code=document.getElementById("flowchart-0-code").value,options=JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)),diagram=flowchart.parse(code);diagram.drawSVG("flowchart-0",options)]]></content>
+    <content type="text"><![CDATA[&#x8BA9;&#x6587;&#x7AE0;&#x5199;&#x7684;&#x597D;&#x770B;&#x53C8;&#x7B80;&#x6D01;&#x53C8;&#x597D;&#x7528;&#x7684;&#x63D2;&#x4EF6;&#xFF01;hexo&#x63D2;&#x4EF6;hexo-tag-dplayermorenpm install1npm install hexo-tag-dplayer --saveUsage1{% dplayer key=value ... %}key can be12345678dplayer options: &apos;autoplay&apos;, &apos;loop&apos;, &apos;screenshot&apos;, &apos;hotkey&apos;, &apos;mutex&apos;, &apos;dmunlimited&apos; : bool options, use &quot;yes&quot; &quot;y&quot; &quot;true&quot; &quot;1&quot; &quot;on&quot; or just without value to enable &apos;preload&apos;, &apos;theme&apos;, &apos;lang&apos;, &apos;logo&apos;, &apos;url&apos;, &apos;pic&apos;, &apos;thumbnails&apos;, &apos;vidtype&apos;, &apos;suburl&apos;, &apos;subtype&apos;, &apos;subbottom&apos;, &apos;subcolor&apos;, &apos;subcolor&apos;, &apos;id&apos;, &apos;api&apos;, &apos;token&apos;, &apos;addition&apos;, &apos;dmuser&apos; : string arguments &apos;volume&apos;, &apos;maximum&apos; : number argumentscontainer options: &apos;width&apos;, &apos;height&apos; : string, used in container element styleother: &apos;code&apos; : value of this key will be append to script tagexample1{% dplayer &quot;url=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4&quot; &quot;addition=https://dplayer.daoapp.io/bilibili?aid=4157142&quot; &quot;api=https://api.prprpr.me/dplayer/&quot; &quot;pic=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg&quot; &quot;id=9E2E3368B56CDBB4&quot; &quot;loop=yes&quot; &quot;theme=#FADFA3&quot; &quot;autoplay=false&quot; &quot;token=tokendemo&quot; %}!function(){var e=new DPlayer({container:document.getElementById("dplayer0"),theme:"#FADFA3",loop:!0,video:{url:"https://player.youku.com/embed/XMzY0MzgxNDMyOA==",pic:"https://ziyuan.lruihao.cn/images/site-meta.jpg"},danmaku:{id:"9E2E3368B56CDBB4",api:"https://api.prprpr.me/dplayer/",token:"tokendemo",addition:["https://dplayer.daoapp.io/bilibili?aid=4157142"]}});window.dplayers||(window.dplayers=[]),window.dplayers.push(e)}()hexo-tag-aplayermore&#x5B89;&#x88C5;1npm install --save hexo-tag-aplayer&#x4F7F;&#x7528;1{% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}&#x6807;&#x7B7E;&#x53C2;&#x6570;title : &#x66F2;&#x76EE;&#x6807;&#x9898;author: &#x66F2;&#x76EE;&#x4F5C;&#x8005;url: &#x97F3;&#x4E50;&#x6587;&#x4EF6; URL &#x5730;&#x5740;picture_url: (&#x53EF;&#x9009;) &#x97F3;&#x4E50;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x5730;&#x5740;narrow: &#xFF08;&#x53EF;&#x9009;&#xFF09;&#x64AD;&#x653E;&#x5668;&#x8896;&#x73CD;&#x98CE;&#x683C;autoplay: (&#x53EF;&#x9009;) &#x81EA;&#x52A8;&#x64AD;&#x653E;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x6682;&#x65F6;&#x4E0D;&#x652F;&#x6301;&#x6B64;&#x529F;&#x80FD;width:xxx: (&#x53EF;&#x9009;) &#x64AD;&#x653E;&#x5668;&#x5BBD;&#x5EA6; (&#x9ED8;&#x8BA4;: 100%)lrc:xxx: &#xFF08;&#x53EF;&#x9009;&#xFF09;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6; URL &#x5730;&#x5740;&#x5F53;&#x5F00;&#x542F; Hexo &#x7684; &#x6587;&#x7AE0;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x5939; &#x529F;&#x80FD;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x56FE;&#x7247;&#x3001;&#x97F3;&#x4E50;&#x6587;&#x4EF6;&#x3001;&#x6B4C;&#x8BCD;&#x6587;&#x4EF6;&#x653E;&#x5165;&#x4E0E;&#x6587;&#x7AE0;&#x5BF9;&#x5E94;&#x7684;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#xFF1A;123{% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;caffeine.mp3&quot; &quot;picture.jpg&quot; &quot;lrc:caffeine.txt&quot; %}{% aplayer &quot;&#x4F60;&#x79BB;&#x5F00;&#x4E86;&#x5357;&#x4EAC;&#xFF0C;&#x4ECE;&#x6B64;&#x6CA1;&#x4EBA;&#x548C;&#x6211;&#x8BF4;&#x8BDD;&quot; &quot;&#x674E;&#x5FD7;&quot; &quot;https://ziyuan.lruihao.cn/public/nanjing.mp3&quot; &quot;https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300&quot; %}var ap=new APlayer({element:document.getElementById("aplayer-FwzWnipY"),narrow:!1,autoplay:!1,showlrc:!1,music:{title:"你离开了南京，从此没人和我说话",author:"李志",url:"https://ziyuan.lruihao.cn/public/nanjing.mp3",pic:"https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300",lrc:""}});window.aplayers||(window.aplayers=[]),window.aplayers.push(ap)hexo-pdfpdf&#x4F20;&#x9001;&#x95E8;hexo-filter-flowchart(&#x6D41;&#x7A0B;&#x56FE;)&#x8BED;&#x6CD5;install1npm install --save hexo-filter-flowchartUsage1234567891011121314151617```%flow #&#x53BB;&#x6389;%&#x53F7;st=&gt;start: Start|past:&gt;https://lruihao.cn[blank]e=&gt;end: End:&gt;https://www.lruihao.cn[blank]op1=&gt;operation: My Operation|pastop2=&gt;operation: Stuff|currentsub1=&gt;subroutine: My Subroutine|invalidcond=&gt;condition: Yesor No?|approved:&gt;/hexo/nextplugin.htmlc2=&gt;condition: Good idea|rejectedio=&gt;inputoutput: catch something...|requestst-&gt;op1(right)-&gt;condcond(yes, right)-&gt;c2cond(no)-&gt;sub1(left)-&gt;op1c2(yes)-&gt;io-&gt;ec2(no)-&gt;op2-&gt;e```hexo-spoilerInstall1npm install hexo-spoiler --saveIf hexo can&#x2019;t detect this plugin automatically, you need to modify the plugins section of [path_to_your_site]/_config.yml manually, like:12plugins: - hexo-spoilerSyntax1{% spoiler [text] %}It will pixelate your text, and click to reveal. Click again to hide your text again.But you need to add &lt;br&gt; manually if you want line breaks after/before it.PreviewWhen you writes:12345{% spoiler text %}{% spoiler ~~text~~ %}{% spoiler *text* %}{% spoiler **text** %}&lt;br&gt;{% spoiler **hello welcome to &#x535A;&#x63A1;&#x773E;&#x9577;&#xFF01;** %}text text text texthello welcome to &#x535A;&#x63A1;&#x773E;&#x9577;&#xFF01;&#x5B85;&#x97F3;&#x4E50;&#x4FA7;&#x680F;&#x64AD;&#x653E;&#x5668;&#x63D2;&#x4EF6;&#x4F53;&#x9A8C;&#x76EE;&#x524D;&#x5728;next&#x4E2D;&#x53EF;&#x80FD;&#x5F15;&#x8D77;&#x90E8;&#x5206;css&#x51B2;&#x7A81;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728;next&#x4E2D;&#x4F7F;&#x7528;&#x5728;&#x5355;&#x4E2A;&#x9875;&#x9762;&#x4E2D;&#x3002;&#x4F9D;&#x8D56;&#x4E8E;jQuery&#xFF0C;&#x4E00;&#x884C;js&#x53EF;&#x4EE5;&#x5F15;&#x5165;&#x64AD;&#x653E;&#x5668;&#x63D2;&#x4EF6;&#x3002;Mermaidmore infoexample1234567891011121314151617{% mermaid gitGraph: %}options{ &quot;nodeSpacing&quot;: 150, &quot;nodeRadius&quot;: 10}endcommitbranch newbranchcheckout newbranchcommitcommitcheckout mastercommitcommitmerge newbranch{% endmermaid %} gitGraph: options { &quot;nodeSpacing&quot;: 150, &quot;nodeRadius&quot;: 10 } end commit branch newbranch checkout newbranch commit commit checkout master commit commit merge newbranch videoUsagevideo.js1{% video url %}Examples12{% video https://example.com/sample.mp4 %}{% video /path/to/your/video.mp4 %}&#x9009;&#x9879;&#x5361;&#x201C;tab&#x201D;&#x4E3A;&#x9009;&#x9879;&#x5361;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x6570;&#x5B57;&#x662F;&#x51E0;&#x8868;&#x793A;&#x4ECE;&#x7B2C;&#x51E0;&#x4E2A;&#x9009;&#x9879;&#x5361;&#x5F00;&#x59CB;&#x3002;&#x975E;&#x5FC5;&#x987B;&#xFF0C;&#x82E5;&#x6570;&#x503C;&#x4E3A;-1&#x5219;&#x9690;&#x85CF;&#x9009;&#x9879;&#x5361;&#x5185;&#x5BB9;&#x3002;&#x67E5;&#x770B;&#x66F4;&#x591A;1234567891011{% tabs tab,2 %}&lt;!-- tab --&gt;this is tab1&lt;!-- endtab --&gt;&lt;!-- tab --&gt;this is tab2&lt;!-- endtab --&gt;&lt;!-- tab --&gt;this is tab3&lt;!-- endtab --&gt;{% endtabs %}tab 1tab 2tab 3this is tab1this is tab2this is tab3&#x6570;&#x503C;&#x4E3A;-1&#x9009;&#x9879; 1&#x9009;&#x9879; 2&#x9009;&#x9879; 3&#x9009;&#x9879;1&#x9009;&#x9879;2&#x9009;&#x9879;3&#x540D;&#x5B57;&#x5199;&#x5728;&#x9009;&#x9879;&#x91CC;&#x9762;1234567891011{% tabs Fourth unique name %}&lt;!-- tab Solution 1 --&gt;**This is Tab 1.**&lt;!-- endtab --&gt;&lt;!-- tab Solution 2 --&gt;**This is Tab 2.**&lt;!-- endtab --&gt;&lt;!-- tab Solution 3 --&gt;**This is Tab 3.**&lt;!-- endtab --&gt;{% endtabs %}Solution 1Solution 2Solution 3This is Tab 1.This is Tab 2.This is Tab 3.note&#x4FBF;&#x7B7E;&#x4E3B;&#x9898;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x641C;&#x7D22;note,&#x53EF;&#x8BBE;&#x7F6E;&#x98CE;&#x683C;&#x548C;&#x56FE;&#x6807;&#x662F;&#x5426;&#x663E;&#x793A;&#x3002;12345678910111213# Note tag (bs-callout).note: # Note tag style values: # - simple bs-callout old alert style. Default. # - modern bs-callout new (v2-v3) alert style. # - flat flat callout style with background, like on Mozilla or StackOverflow. # - disabled disable all CSS styles import of note tag. style: flat icons: true border_radius: 15 # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6). # Offset also applied to label tag variables. This option can work with disabled note tag. light_bg_offset: 0&#x5199;&#x6CD5;1{% note default %}default&#x662F;&#x7C7B;&#x578B;&#x8FD8;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;{% endnote %}default&#x662F;&#x7C7B;&#x578B;&#x8FD8;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;defaultprimarysuccessinfowarningdanger&#x4E0D;&#x586B;danger no-icon&#x5F15;&#x7528;(&#x6587;&#x672C;&#x5C45;&#x4E2D;)123{% cq %}**there are test words**{% endcq %}there are test wordsFont Awesome&#x56FE;&#x6807;Font Awesome &#x662F;&#x4E00;&#x5957;&#x7EDD;&#x4F73;&#x7684;&#x56FE;&#x6807;&#x5B57;&#x4F53;&#x5E93;&#x548C;CSS&#x6846;&#x67B6;&#x3002;Font Awesome &#x5B57;&#x4F53;&#x4E3A;&#x60A8;&#x63D0;&#x4F9B;&#x53EF;&#x7F29;&#x653E;&#x77E2;&#x91CF;&#x56FE;&#x6807;,&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x5B9A;&#x5236;&#x5927;&#x5C0F;&#x3001;&#x989C;&#x8272;&#x3001;&#x9634;&#x5F71;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x7528;CSS&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8981;&#x4F7F;&#x7528;Font Awesome&#x56FE;&#x6807;&#xFF0C;&#x8BF7;&#x5728;HTML&#x9875;&#x9762;&#x7684; &#x90E8;&#x5206;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x884C;&#xFF1A;1&#x3001;&#x56FD;&#x5185;&#x63A8;&#x8350; CDN1&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&quot;&gt;2&#x3001;&#x6D77;&#x5916;&#x63A8;&#x8350; CDN1&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;next&#x5DF2;&#x7ECF;&#x5F15;&#x7528;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;12345678&lt;i class=&quot;fa fa-car&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car&quot; style=&quot;font-size:48px;&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car&quot; style=&quot;font-size:60px;color:red;&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-lg&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-2x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-3x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-4x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-car fa-5x&quot;&gt;&lt;/i&gt; &#x52A8;&#x6001;&#x56FE;&#x6807;12345&lt;i class=&quot;fa fa-spinner fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-circle-o-notch fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-refresh fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-cog fa-spin&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-spinner fa-pulse&quot;&gt;&lt;/i&gt; &#x4EE3;&#x7801;&#x5757;&#x7B49;&#x4E09;&#x4E2A;&#x70B9;&#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;lruihao.cn123[language] [title] [url] [link text]code snippetdiff12- printf(&quot;Hello World!&quot;);+ printf(&quot;Hello_World!&quot;);iframe&#x5728;&#x6587;&#x7AE0;&#x4E2D;&#x63D2;&#x5165; iframe&#x3002;iframe1{% iframe url [width] [height] %}Todo list &#x5DF2;&#x5B8C;&#x6210; &#x672A;&#x5B8C;&#x6210;Todo list123456789&lt;ul&gt;&lt;li&gt;&lt;i class=&quot;fa fa-check-square&quot;&gt;&lt;/i&gt; &#x5DF2;&#x5B8C;&#x6210;&lt;/li&gt;&lt;li&gt;&lt;i class=&quot;fa fa-square&quot;&gt;&lt;/i&gt; &#x672A;&#x5B8C;&#x6210;&lt;/li&gt;&lt;/ul&gt;&lt;!--&#x6216;&#x8005;--&gt;- &lt;i class=&quot;fa fa-check-square&quot;&gt;&lt;/i&gt; &#x5DF2;&#x5B8C;&#x6210;- &lt;i class=&quot;fa fa-square&quot;&gt;&lt;/i&gt; &#x672A;&#x5B8C;&#x6210;Label&#x4E3B;&#x9898;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6253;&#x5F00;12# Label tag.label: true@&#x524D;&#x9762;&#x7684;&#x662F;label&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x662F;&#x8981;&#x663E;&#x793A;&#x7684;&#x6587;&#x5B57;default primary success info warning danger123{% label default@default %}primary success info warning danger&#x5176;&#x4ED6;&#x5305;&#x62EC;&#x5C0F;&#x8272;&#x5757;&#x3001;&#x5DE6;&#x4FA7;&#x8272;&#x6761;&#x3001;&#x53F3;&#x4FA7;&#x8272;&#x6761;&#x3001;&#x4E0A;&#x65B9;&#x8272;&#x6761;&#x3001;&#x6570;&#x5B57;&#x8272;&#x5757;&#xFF08;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;&#xFF09;st=&gt;start: Start|past:&gt;https://lruihao.cn[blank] e=&gt;end: End:&gt;https://www.lruihao.cn[blank] op1=&gt;operation: My Operation|past op2=&gt;operation: Stuff|current sub1=&gt;subroutine: My Subroutine|invalid cond=&gt;condition: Yes or No?|approved:&gt;/hexo/nextplugin.html c2=&gt;condition: Good idea|rejected io=&gt;inputoutput: catch something...|request st-&gt;op1(right)-&gt;cond cond(yes, right)-&gt;c2 cond(no)-&gt;sub1(left)-&gt;op1 c2(yes)-&gt;io-&gt;e c2(no)-&gt;op2-&gt;e{&quot;scale&quot;:1,&quot;line-width&quot;:2,&quot;line-length&quot;:50,&quot;text-margin&quot;:10,&quot;font-size&quot;:12}var code=document.getElementById("flowchart-0-code").value,options=JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)),diagram=flowchart.parse(code);diagram.drawSVG("flowchart-0",options)]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -486,8 +486,8 @@
         <category>通用</category>
       </categories>
       <tags>
-        <tag>server</tag>
         <tag>个人云盘</tag>
+        <tag>server</tag>
         <tag>caddy</tag>
         <tag>通用</tag>
       </tags>
@@ -912,9 +912,9 @@
         <category>ACM</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
         <tag>C</tag>
         <tag>数学</tag>
       </tags>
@@ -928,9 +928,9 @@
         <category>组合数学</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
         <tag>C</tag>
         <tag>数学</tag>
         <tag>组合数学</tag>
@@ -978,9 +978,9 @@
         <category>ACM</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
         <tag>组合数学</tag>
       </tags>
   </entry>
@@ -1058,10 +1058,10 @@
   </entry>
   <entry>
     <title><![CDATA[菜鸟，大牛和教主，三者的区别]]></title>
-    <url>%2Fposts%2Ffucking3.html</url>
+    <url>%2Fposts%2Ffucking4.html</url>
     <content type="text"><![CDATA[对菜鸟来说题目有三种：会算法且能AC的，会算法但不能AC的，不会做的对大牛来说题目有两种：会做的，不会做的对教主来说题目有两种：能AC的，数据有错的菜鸟提交WA了，找了N久找不出错时，在论坛大骂数据有错，但是没人理大牛提交WA了，找了N久找不出错时，写暴力程序或者求别人的AC程序对拍教主提交WA了，Judge马上修正数据菜鸟面对一道难题，直接暴搜大牛面对一道难题，算了算时间复杂度不对，或者证明出是NP难，果断放弃教主面对一道难题，说，虽然我不会做，但AC还是没有问题的菜鸟AC了一道难题，巴不得召告天下大牛AC了一道难题，会写一篇解题报告，第一句话一定是：这题其实不难教主AC了一道难题，好像什么都没发生过菜鸟切OJ，只挑简单题做大牛切OJ，成套成套地做教主早就不切OJ了菜鸟经常在论坛和QQ上求助大牛经常在论坛和QQ上灌水教主一般不露面菜鸟喜欢说自己做了几十几百道题大牛喜欢说自己把某个OJ做了百分之八九十教主一般不说话菜鸟队看到场上90%的队伍挂起了红球，开始找红球是哪道题大牛队全场第一个挂起黄球，然后发现几乎同时有另外几支大牛队也挂起了黄球教主队全场第一个挂起绿球，然后全场到最后也只有一个绿球菜鸟喜欢搜集各种模板大牛只用自己写的模板教主不用模板，但他当场写的程序会被别人用作模板菜鸟喜欢YY这种分析菜鸟、大牛和教主的区别的文章(没错就是我！- _ -)大牛看完这样的文章会笑一笑，懒得回帖教主直接无视]]></content>
       <categories>
-        <category>ACM</category>
+        <category>生活随笔</category>
       </categories>
       <tags>
         <tag>他山之石</tag>
@@ -1071,10 +1071,10 @@
   </entry>
   <entry>
     <title><![CDATA[菜鸟，大牛和教主，三者的区别]]></title>
-    <url>%2Fposts%2Ffucking4.html</url>
+    <url>%2Fposts%2Ffucking3.html</url>
     <content type="text"><![CDATA[对菜鸟来说题目有三种：会算法且能AC的，会算法但不能AC的，不会做的对大牛来说题目有两种：会做的，不会做的对教主来说题目有两种：能AC的，数据有错的菜鸟提交WA了，找了N久找不出错时，在论坛大骂数据有错，但是没人理大牛提交WA了，找了N久找不出错时，写暴力程序或者求别人的AC程序对拍教主提交WA了，Judge马上修正数据菜鸟面对一道难题，直接暴搜大牛面对一道难题，算了算时间复杂度不对，或者证明出是NP难，果断放弃教主面对一道难题，说，虽然我不会做，但AC还是没有问题的菜鸟AC了一道难题，巴不得召告天下大牛AC了一道难题，会写一篇解题报告，第一句话一定是：这题其实不难教主AC了一道难题，好像什么都没发生过菜鸟切OJ，只挑简单题做大牛切OJ，成套成套地做教主早就不切OJ了菜鸟经常在论坛和QQ上求助大牛经常在论坛和QQ上灌水教主一般不露面菜鸟喜欢说自己做了几十几百道题大牛喜欢说自己把某个OJ做了百分之八九十教主一般不说话菜鸟队看到场上90%的队伍挂起了红球，开始找红球是哪道题大牛队全场第一个挂起黄球，然后发现几乎同时有另外几支大牛队也挂起了黄球教主队全场第一个挂起绿球，然后全场到最后也只有一个绿球菜鸟喜欢搜集各种模板大牛只用自己写的模板教主不用模板，但他当场写的程序会被别人用作模板菜鸟喜欢YY这种分析菜鸟、大牛和教主的区别的文章(没错就是我！- _ -)大牛看完这样的文章会笑一笑，懒得回帖教主直接无视]]></content>
       <categories>
-        <category>生活随笔</category>
+        <category>ACM</category>
       </categories>
       <tags>
         <tag>他山之石</tag>
@@ -1140,6 +1140,21 @@
   </entry>
   <entry>
     <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
+    <url>%2Fposts%2Fhdu1272.html</url>
+    <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>并查集</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>HDU</tag>
+        <tag>并查集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
     <url>%2Fposts%2F%2Fhdu1272.html</url>
     <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
       <categories>
@@ -1150,21 +1165,6 @@
         <tag>ACM</tag>
         <tag>C++</tag>
         <tag>C</tag>
-        <tag>HDU</tag>
-        <tag>并查集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[小希的迷宫-HDU-1272(并查集or树性质)]]></title>
-    <url>%2Fposts%2Fhdu1272.html</url>
-    <content type="text"><![CDATA[题目链接：小希的迷宫并查集：无回路单连通并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成回路，则可以判定No，交了一发错了。想了一下没有考虑到多个连通域的情况，该题必须只有一个连通域树的性质：既然单连通无回路，则这肯定是一棵树；那么edge=v-1;最后注意空树的情况，至于自环我这里No也过了，没有去验证自环Yes的情况了123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//并查集#include&lt;bits/stdc++.h&gt;using namespace std;int pre[100001];int find(int root)&#123; int son,t; son=root; while(root!=pre[root]) root=pre[root]; while(son!=root)&#123; t=pre[son]; pre[son]=root; son=t; &#125; return root;&#125;void join(int a,int b)&#123; int x=find(a),y=find(b); if(x!=y) pre[y]=x;&#125;int main()&#123; int a,b,flag,i,sum; while(1) &#123; flag = 0; while(~scanf("%d%d",&amp;a,&amp;b) &amp;&amp; a!=0 &amp;&amp; b!=0)&#123; if(a==-1 &amp;&amp; b==-1) return 0; if(pre[a]==0)pre[a]=a; if(pre[b]==0)pre[b]=b; if(find(a)==find(b))flag = 1; else if(flag!=1) join(a,b); &#125; for(sum = 0,i=1;i&lt;100001;i++)&#123; if(pre[i]==i)sum++; pre[i] = 0; &#125; if(sum&gt;1 || flag == 1) printf("No\n"); else printf("Yes\n"); &#125;&#125;//1 2 3 4 0 0 No 没有连通//0 0 Yes//1 1 0 0 No(该代码)12345678910111213141516171819202122232425262728293031//树性质#include &lt;stdio.h&gt;bool s[100001];int main()&#123; int a,b,i,len,num,v; for(i=0;i&lt;100001;++i) s[i]=false; len=0,num=0,v=0; while(1) &#123; scanf("%d%d",&amp;a,&amp;b); if(a==-1&amp;&amp;b==-1) break; if(a==0&amp;&amp;b==0) &#123; if(v==0) &#123; printf("Yes\n"); continue; &#125; if(num==len-1) //划重点！！ printf("Yes\n"); else printf("No\n"); num=len=v=0; for(i=0;i&lt;100001;++i) s[i]=false; continue; &#125; v=1; if(s[a]==false) len++;//点数 if(s[b]==false) len++; s[a]=s[b]=true; num++;//边数 &#125; return 0;]]></content>
-      <categories>
-        <category>ACM</category>
-        <category>并查集</category>
-      </categories>
-      <tags>
-        <tag>ACM</tag>
-        <tag>C++</tag>
         <tag>HDU</tag>
         <tag>并查集</tag>
       </tags>
@@ -1192,9 +1192,9 @@
         <category>ACM</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
         <tag>C</tag>
       </tags>
   </entry>
@@ -1206,9 +1206,9 @@
         <category>ACM</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
         <tag>C</tag>
       </tags>
   </entry>
@@ -1267,9 +1267,9 @@
         <category>ACM</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
         <tag>C</tag>
       </tags>
   </entry>
@@ -1417,9 +1417,9 @@
         <category>ACM</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
       </tags>
   </entry>
   <entry>
@@ -1502,9 +1502,9 @@
         <category>ACM</category>
       </categories>
       <tags>
+        <tag>Codeforces</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-        <tag>Codeforces</tag>
         <tag>C</tag>
       </tags>
   </entry>
@@ -1596,8 +1596,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
         <tag>总结</tag>
       </tags>
   </entry>
@@ -1610,8 +1610,8 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1623,24 +1623,9 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[B.Higher h-index]]></title>
-    <url>%2Fposts%2FB-Higher.html</url>
-    <content type="text"><![CDATA[B. Higher h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has no papers and he is going to publish some subsequently. If he works on a paper for x hours, thepaper will get (a·x) citations, where a is a known constant. It’s clear that x should be a positive integer.There is also a trick – one can cite his own papers published earlier.Given Bobo has n working hours, ﬁnd the maximum h-index of him.InputThe input consists of several test cases and is terminated by end-of-ﬁle.Each test case contains two integers n and a.OutputFor each test case, print an integer which denotes the maximum h-index.Constraint• 1≤ n ≤109• 0≤ a ≤ n• The number of test cases does not exceed 104.Sample Input3 03 11000000000 1000000000Sample Output121000000000NoteFor the ﬁrst sample, Bobo can work 3 papers for 1 hour each. With the trick mentioned,he will get papers with citations 2,1,0. Thus, his h-index is 1.For the second sample, Bobo can work 2 papers for 1 and 2 hours respectively.He will get papers with citations 1+1,2+0. Thus, his h-index is 2.题意：给定n个小时，可以用其中x(1&lt;=x&lt;=n)个小时写一篇论文，那么这篇论文的”既定”引用数将会是x*a(a为给定正整数)；此外，已经写好的论文将会被其后写成的论文所引用，也就是说，这篇论文的总引用数将会是”既定”引用数+其后论文篇数；问在所有的写论文方案中(例如一种方案就是用n个小时写n篇论文，每篇论文各花1小时(可以得到这n篇论文的引用数))，h最大为多少(h的含义同上题)(每一种方案都对应着一个h，求这些h中的最大者)思路：最优方案(即对应h值最大的方案)是平摊n小时写成n篇论文(证明未知)；此时n篇论文的引用数为a,a+1,a+2,…,a+n-1，引用数为a+i时，引用数大于等于它的论文有n-i篇，令a+i=n-i得i=(n-a)/2,所以h=a+(n-a)/2;后AC代码123456789#include&lt;cstdio&gt;int main()&#123; int n,a; while(scanf("%d%d",&amp;n,&amp;a)!=EOF)&#123; printf("%d\n",a+(n-a)/2); &#125; return 0;&#125;]]></content>
-      <categories>
-        <category>ACM</category>
-        <category>2018湘潭邀请赛</category>
-      </categories>
-      <tags>
         <tag>2018湘潭邀请赛</tag>
-        <tag>ACM</tag>
-        <tag>C++</tag>
-        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1652,24 +1637,25 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
+        <tag>2018湘潭邀请赛</tag>
         <tag>C</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[A.Easy h-index]]></title>
-    <url>%2Fposts%2FA-Easy-h-index.html</url>
-    <content type="text"><![CDATA[A. Easy h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has published many papers. Given a0,a1,a2,…,an which means Bobo has published ai papers withitations exactly i, ﬁnd the h-index of Bobo.InputThe input consists of several test cases and is terminated by end-of-ﬁle.The ﬁrst line of each test case contains an integer n. The second line contains (n+1) integers a0,a1,…,an.OutputFor each test case, print an integer which denotes the result.Constraint• 1≤ n ≤2·105• 0≤ ai ≤109• The sum of n does not exceed 250,000.Sample Input11 221 2 330 0 0 0Sample Output120题意：给定被引用次数为0~n的论文分别有几张，找到最大的h，满足被引用次数大于等于h的论文至少有h张思路：在区间[0,n]内二分答案；或直接从n~0遍历找到第一个满足条件的h后AC代码12345678910111213141516171819202122#include "bits/stdc++.h"using namespace std;int main()&#123; int a[200005]; int n; int i; while(cin&gt;&gt;n)&#123; for(i=0;i&lt;=n;i++) cin&gt;&gt;a[i]; int sum=a[n]; for(i=n;i&gt;=0;)&#123; if(sum&gt;=i)&#123; cout&lt;&lt;i&lt;&lt;endl; break; &#125; else sum+=a[--i]; &#125; if(i&lt;0) cout&lt;&lt;"0"&lt;&lt;endl; &#125; return 0;&#125;]]></content>
+    <title><![CDATA[B.Higher h-index]]></title>
+    <url>%2Fposts%2FB-Higher.html</url>
+    <content type="text"><![CDATA[B. Higher h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has no papers and he is going to publish some subsequently. If he works on a paper for x hours, thepaper will get (a·x) citations, where a is a known constant. It’s clear that x should be a positive integer.There is also a trick – one can cite his own papers published earlier.Given Bobo has n working hours, ﬁnd the maximum h-index of him.InputThe input consists of several test cases and is terminated by end-of-ﬁle.Each test case contains two integers n and a.OutputFor each test case, print an integer which denotes the maximum h-index.Constraint• 1≤ n ≤109• 0≤ a ≤ n• The number of test cases does not exceed 104.Sample Input3 03 11000000000 1000000000Sample Output121000000000NoteFor the ﬁrst sample, Bobo can work 3 papers for 1 hour each. With the trick mentioned,he will get papers with citations 2,1,0. Thus, his h-index is 1.For the second sample, Bobo can work 2 papers for 1 and 2 hours respectively.He will get papers with citations 1+1,2+0. Thus, his h-index is 2.题意：给定n个小时，可以用其中x(1&lt;=x&lt;=n)个小时写一篇论文，那么这篇论文的”既定”引用数将会是x*a(a为给定正整数)；此外，已经写好的论文将会被其后写成的论文所引用，也就是说，这篇论文的总引用数将会是”既定”引用数+其后论文篇数；问在所有的写论文方案中(例如一种方案就是用n个小时写n篇论文，每篇论文各花1小时(可以得到这n篇论文的引用数))，h最大为多少(h的含义同上题)(每一种方案都对应着一个h，求这些h中的最大者)思路：最优方案(即对应h值最大的方案)是平摊n小时写成n篇论文(证明未知)；此时n篇论文的引用数为a,a+1,a+2,…,a+n-1，引用数为a+i时，引用数大于等于它的论文有n-i篇，令a+i=n-i得i=(n-a)/2,所以h=a+(n-a)/2;后AC代码123456789#include&lt;cstdio&gt;int main()&#123; int n,a; while(scanf("%d%d",&amp;n,&amp;a)!=EOF)&#123; printf("%d\n",a+(n-a)/2); &#125; return 0;&#125;]]></content>
       <categories>
         <category>ACM</category>
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
+        <tag>2018湘潭邀请赛</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -1681,9 +1667,23 @@
         <category>2018湘潭邀请赛</category>
       </categories>
       <tags>
-        <tag>2018湘潭邀请赛</tag>
         <tag>ACM</tag>
         <tag>C++</tag>
+        <tag>2018湘潭邀请赛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[A.Easy h-index]]></title>
+    <url>%2Fposts%2FA-Easy-h-index.html</url>
+    <content type="text"><![CDATA[A. Easy h-indexThe h-index of an author is the largest h where he has at least h papers with citations not less than h.Bobo has published many papers. Given a0,a1,a2,…,an which means Bobo has published ai papers withitations exactly i, ﬁnd the h-index of Bobo.InputThe input consists of several test cases and is terminated by end-of-ﬁle.The ﬁrst line of each test case contains an integer n. The second line contains (n+1) integers a0,a1,…,an.OutputFor each test case, print an integer which denotes the result.Constraint• 1≤ n ≤2·105• 0≤ ai ≤109• The sum of n does not exceed 250,000.Sample Input11 221 2 330 0 0 0Sample Output120题意：给定被引用次数为0~n的论文分别有几张，找到最大的h，满足被引用次数大于等于h的论文至少有h张思路：在区间[0,n]内二分答案；或直接从n~0遍历找到第一个满足条件的h后AC代码12345678910111213141516171819202122#include "bits/stdc++.h"using namespace std;int main()&#123; int a[200005]; int n; int i; while(cin&gt;&gt;n)&#123; for(i=0;i&lt;=n;i++) cin&gt;&gt;a[i]; int sum=a[n]; for(i=n;i&gt;=0;)&#123; if(sum&gt;=i)&#123; cout&lt;&lt;i&lt;&lt;endl; break; &#125; else sum+=a[--i]; &#125; if(i&lt;0) cout&lt;&lt;"0"&lt;&lt;endl; &#125; return 0;&#125;]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>2018湘潭邀请赛</category>
+      </categories>
+      <tags>
+        <tag>ACM</tag>
+        <tag>C++</tag>
+        <tag>2018湘潭邀请赛</tag>
       </tags>
   </entry>
   <entry>
@@ -1764,7 +1764,7 @@
   <entry>
     <title><![CDATA[光]]></title>
     <url>%2Fposts%2F%E5%85%89.html</url>
-    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
+    <content type="text"><![CDATA[我们的光明！ Incorrect Password! No content to display! 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]]></content>
       <categories>
         <category>生活随笔</category>
       </categories>
