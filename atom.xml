@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-04-14T03:38:42.924Z</updated>
+  <updated>2019-04-18T14:15:35.682Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java正则表达式练习</title>
+    <link href="https://lruihao.cn/posts/RegexDemo.html"/>
+    <id>https://lruihao.cn/posts/RegexDemo.html</id>
+    <published>2019-04-18T14:04:21.000Z</published>
+    <updated>2019-04-18T14:15:35.682Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.regex.Matcher;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Pattern;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RegexDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="comment">//       Pattern类 正则表达式的编译表示。</span></span><br><span class="line">        Pattern pattern = Pattern.compile(<span class="string">"^[a-zA-Z0-9_!#$%&amp;'*+/=?`&#123;|&#125;~^.-]+@[a-zA-Z0-9.-]+$"</span>);</span><br><span class="line">        String[] emails = &#123;<span class="string">"admin@lruihao.cn"</span>, <span class="string">"lruihao.cn"</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span> (String email :</span><br><span class="line">                emails) &#123;</span><br><span class="line"><span class="comment">//Matcher 通过解释Pattern对字符序列执行匹配操作的引擎</span></span><br><span class="line">            Matcher matcher = pattern.matcher(email);</span><br><span class="line">            System.out.println(email + <span class="string">"匹配结果："</span> + matcher.matches());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><figcaption><span>结果</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">admin<span class="meta">@lruihao</span>.cn匹配结果：<span class="keyword">true</span></span><br><span class="line">lruihao.cn匹配结果：<span class="keyword">false</span></span><br></pre></td></tr></table></figure><h1 id="电话"><a href="#电话" class="headerlink" title="电话"></a>电话</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> base;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Matcher;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Pattern;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RegexTest</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">Pattern patter=Pattern.compile(<span class="string">"^[1][3,4,5,7,8][0-9]&#123;9&#125;$"</span>);</span><br><span class="line">Scanner sc=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String telnum=sc.nextLine();</span><br><span class="line">sc.close();</span><br><span class="line">Matcher matcher=patter.matcher(telnum);</span><br><span class="line">System.out.println(telnum+<span class="string">"匹配结果： "</span>+matcher.matches());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取当前的httpSession</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> HttpSession <span class="title">getSession</span><span class="params">()</span> </span>&#123;</span><br><span class="line"> <span class="keyword">return</span> getRequest().getSession();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 手机号验证</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> str</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> 验证通过返回true</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isMobile</span><span class="params">(<span class="keyword">final</span> String str)</span> </span>&#123;</span><br><span class="line">  Pattern p = <span class="keyword">null</span>;</span><br><span class="line">  Matcher m = <span class="keyword">null</span>;</span><br><span class="line">  <span class="keyword">boolean</span> b = <span class="keyword">false</span>;</span><br><span class="line">  p = Pattern.compile(<span class="string">"^[1][3,4,5,7,8][0-9]&#123;9&#125;$"</span>); <span class="comment">// 验证手机号</span></span><br><span class="line">  m = p.matcher(str);</span><br><span class="line">  b = m.matches();</span><br><span class="line">  <span class="keyword">return</span> b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 电话号码验证</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> str</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> 验证通过返回true</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isPhone</span><span class="params">(<span class="keyword">final</span> String str)</span> </span>&#123;</span><br><span class="line">  Pattern p1 = <span class="keyword">null</span>, p2 = <span class="keyword">null</span>;</span><br><span class="line">  Matcher m = <span class="keyword">null</span>;</span><br><span class="line">  <span class="keyword">boolean</span> b = <span class="keyword">false</span>;</span><br><span class="line">  p1 = Pattern.compile(<span class="string">"^[0][1-9]&#123;2,3&#125;-[0-9]&#123;5,10&#125;$"</span>); <span class="comment">// 验证带区号的</span></span><br><span class="line">  p2 = Pattern.compile(<span class="string">"^[1-9]&#123;1&#125;[0-9]&#123;5,8&#125;$"</span>);     <span class="comment">// 验证没有区号的</span></span><br><span class="line">  <span class="keyword">if</span> (str.length() &gt; <span class="number">9</span>) &#123;</span><br><span class="line">    m = p1.matcher(str);</span><br><span class="line">    b = m.matches();</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    m = p2.matcher(str);</span><br><span class="line">    b = m.matches();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="身份证"><a href="#身份证" class="headerlink" title="身份证"></a>身份证</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 身份证正则表达式16或18 */</span></span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String IDCARD=<span class="string">"((11|12|13|14|15|21|22|23|31|32|33|34|35|36|37|41|42|43|44|45|46|50|51|52|53|54|61|62|63|64|65)[0-9]&#123;4&#125;)"</span> +</span><br><span class="line">           <span class="string">"(([1|2][0-9]&#123;3&#125;[0|1][0-9][0-3][0-9][0-9]&#123;3&#125;"</span> +</span><br><span class="line">           <span class="string">"[Xx0-9])|([0-9]&#123;2&#125;[0|1][0-9][0-3][0-9][0-9]&#123;3&#125;))"</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://lruihao.cn/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://lruihao.cn/tags/java/"/>
+    
+      <category term="正则表达式" scheme="https://lruihao.cn/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>java常用类</title>
@@ -257,11 +284,11 @@
     
       <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
     
+      <category term="301重定向" scheme="https://lruihao.cn/tags/301%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    
       <category term="VPS" scheme="https://lruihao.cn/tags/VPS/"/>
     
       <category term="SSL" scheme="https://lruihao.cn/tags/SSL/"/>
-    
-      <category term="301重定向" scheme="https://lruihao.cn/tags/301%E9%87%8D%E5%AE%9A%E5%90%91/"/>
     
       <category term="CDN" scheme="https://lruihao.cn/tags/CDN/"/>
     
@@ -517,30 +544,6 @@
       <category term="hexo" scheme="https://lruihao.cn/tags/hexo/"/>
     
       <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win10,ubuntu双系统时间不一致</title>
-    <link href="https://lruihao.cn/posts/ubuntutime.html"/>
-    <id>https://lruihao.cn/posts/ubuntutime.html</id>
-    <published>2019-03-15T06:28:10.000Z</published>
-    <updated>2019-03-15T06:57:00.819Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>我的Ubuntu和Windows双系统是Ubuntu是第一启动项，所以总是开机忘记点下键，一进Ubuntu系统时间就不对了（总是少了8小时），回到Windows时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说git版本控制提交会遇到问题种种等。</p></blockquote><a id="more"></a><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在安装Ubuntu和Windows双系统的情况下，Ubuntu的时间总会和Windows的时间相差8小时，原因在于widows认为BIOS时间是本地时间，Ubuntu认为BIOS时间是UTC时间，即协调世界时，(Universal Time Coordinated)英文缩写，是由国际无线电咨询委员会规定和推荐,并由国际时间局(BIH)负责保持的以秒为基础的时间标度。UTC相当于本初子午线(即经度0度)上的平均太阳时，过去曾用格林威治平均时(GMT)来表示。北京时间比UTC时间早8小时，以1999年1月1日00:00 UTC为例，UTC时间是零点，北京时间为1999年1月1日早上8点整。)，所以我们在时间上面相隔了8个小时。这个时候bios的时间和系统的时间当然是不一致，一个代表 utc 时间，一个代表cst（＋8时区），即我们常用的时间。</p><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>在Windows下进行如下修改：（博主win10,win7自测）<br>以管理员身份运行CMD（<code>win+x后选择Windows Powershell(管理员)</code><br></p><figure class="highlight plain"><figcaption><span>windows cmd命令</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1</span><br></pre></td></tr></table></figure><p></p><p>重启看看时间发现ok了。</p><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>老版Ubuntu（Ubuntu10左右）：<br>修改/etc/default/rcS文件<br>编辑/etc/default/rcS 将UTC=yes改成UTC=no 。</p><p>新版Ubuntu（Ubuntu16.04）：<br>新版本的Ubuntu使用systemd启动之后，时间也改成了由timedatectl来管理，此方法就不适用了。<br></p><figure class="highlight plain"><figcaption><span>重启完成将硬件时间UTC改为CST，双系统时间保持一致。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure><p></p><p>先在ubuntu下更新一下时间，确保时间无误：<br></p><figure class="highlight plain"><figcaption><span>ubuntu命令</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$sudo apt-get install ntpdate</span><br><span class="line">$sudo ntpdate time.windows.com</span><br></pre></td></tr></table></figure><p></p><p>然后将时间更新到硬件上：<br></p><figure class="highlight plain"><figcaption><span>ubuntu命令</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo hwclock --localtime --systohc</span><br></pre></td></tr></table></figure><p></p><p>重新进入windows10，发现时间恢复正常了！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;&lt;p&gt;我的Ubuntu和Windows双系统是Ubuntu是第一启动项，所以总是开机忘记点下键，一进Ubuntu系统时间就不对了（总是少了8小时），回到Windows时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说git版本控制提交会遇到问题种种等。&lt;/p&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="linux" scheme="https://lruihao.cn/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://lruihao.cn/tags/linux/"/>
-    
-      <category term="windows" scheme="https://lruihao.cn/tags/windows/"/>
     
   </entry>
   
