@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-04-18T14:15:35.682Z</updated>
+  <updated>2019-04-19T12:18:40.322Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用记事本编写第一个java程序</title>
+    <link href="https://lruihao.cn/posts/HelloJava.html"/>
+    <id>https://lruihao.cn/posts/HelloJava.html</id>
+    <published>2019-04-19T11:49:54.000Z</published>
+    <updated>2019-04-19T12:18:40.322Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>之所以用记事本来写不是为了装X或者什么的。反而恰恰是返璞归真，因为在用java语言进行程序开发时，首先是以纯文本的方式编写所有的java源程序，并保存成以<code>.java</code>为后缀的文件；然后将这些源程序用<code>javac</code>编译成<code>.class</code>后缀名的字节代码文件；字节代码不是被本地处理器执行的代码，而是能够被java虚拟机（JVM）执行的代码。最后用java运行工具在JVM执行java应用程序。<br>由于JVM可以运行在不同的操作系统上，因此同一个字节代码文件可以跨平台运行。</p><ul><li>javac</li><li>java</li></ul></div><a id="more"></a> <img src="/posts/HelloJava/2.jpg"><h1 id="编写java"><a href="#编写java" class="headerlink" title="编写java"></a>编写java</h1><p>用记事本编辑java文件，并且把后缀改成<code>.java</code>，文件名和类名要一样。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="打开cmd"><a href="#打开cmd" class="headerlink" title="打开cmd"></a>打开cmd</h1><img src="/posts/HelloJava/1.png">]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;之所以用记事本来写不是为了装X或者什么的。反而恰恰是返璞归真，因为在用java语言进行程序开发时，首先是以纯文本的方式编写所有的java源程序，并保存成以&lt;code&gt;.java&lt;/code&gt;为后缀的文件；然后将这些源程序用&lt;code&gt;javac&lt;/code&gt;编译成&lt;code&gt;.class&lt;/code&gt;后缀名的字节代码文件；字节代码不是被本地处理器执行的代码，而是能够被java虚拟机（JVM）执行的代码。最后用java运行工具在JVM执行java应用程序。&lt;br&gt;由于JVM可以运行在不同的操作系统上，因此同一个字节代码文件可以跨平台运行。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;javac&lt;/li&gt;&lt;li&gt;java&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="https://lruihao.cn/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://lruihao.cn/tags/java/"/>
+    
+      <category term="HelloWorld" scheme="https://lruihao.cn/tags/HelloWorld/"/>
+    
+  </entry>
   
   <entry>
     <title>java正则表达式练习</title>
@@ -520,30 +544,6 @@
       <category term="匿名类" scheme="https://lruihao.cn/tags/%E5%8C%BF%E5%90%8D%E7%B1%BB/"/>
     
       <category term="GUI" scheme="https://lruihao.cn/tags/GUI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模仿知乎卡片式链接</title>
-    <link href="https://lruihao.cn/posts/linkcard.html"/>
-    <id>https://lruihao.cn/posts/linkcard.html</id>
-    <published>2019-03-15T07:21:39.000Z</published>
-    <updated>2019-03-15T15:17:15.657Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>模仿知乎的卡片式链接。改自<a href="https://me.idealli.com/post/a714f04b.html" rel="external nofollow noopener noreferrer" target="_blank">兰州小红鸡</a><br>我为了每次少写一行js引用略作修改。</p></div><a id="more"></a><p>这是一种后加载，创建<code>linkcard.js</code>放到<code>source/js/src/</code>，然后在<code>next\layout\_macro\post.swig</code>中引用</p><figure class="highlight"><figcaption><span>知乎卡片链接</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--知乎卡片链接--&gt;</span><br><span class="line">&lt;script type="text/javascript" src="/js/src/linkcard.js"&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>html链接写法,a标签加上<code>class=&quot;LinkCard&quot;</code><br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://github.com/Lruihao/lruihao.github.io&quot; target=&quot;_blank&quot; class=&quot;LinkCard&quot;&gt;Lruihao博客&lt;/a&gt;</span><br></pre></td></tr></table></figure><p></p><p><a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" class="LinkCard" rel="external nofollow noopener noreferrer">Lruihao博客</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;模仿知乎的卡片式链接。改自&lt;a href=&quot;https://me.idealli.com/post/a714f04b.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;兰州小红鸡&lt;/a&gt;&lt;br&gt;我为了每次少写一行js引用略作修改。&lt;/p&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="javascript" scheme="https://lruihao.cn/categories/javascript/"/>
-    
-    
-      <category term="hexo" scheme="https://lruihao.cn/tags/hexo/"/>
-    
-      <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
     
   </entry>
   
