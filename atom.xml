@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-04-24T14:21:48.972Z</updated>
+  <updated>2019-04-24T14:52:22.128Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://lruihao.cn/posts/1thintervivew.html"/>
     <id>https://lruihao.cn/posts/1thintervivew.html</id>
     <published>2019-04-24T13:23:22.000Z</published>
-    <updated>2019-04-24T14:21:48.972Z</updated>
+    <updated>2019-04-24T14:52:22.128Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center"><p>时间过得真快，一下从大一到了大三，马上就要实习毕业等等了。</p></blockquote><a id="more"></a><div class="note info"><p>富士康在学校有一个春招的机会，我和朋友抱着侥幸的心理去试了试。<br>虽然深知自己还身有很多缺点，但是不面试不知道，一面试都暴露出来了，以下记录一下自己的不足之处：</p><ul><li>php和sql的经典组合虽然有所接触了解，但是确实什么都会，得花时间学</li><li>html/css等虽然平时折腾博客这些应用的比较多，但是今天竟然紧张地忘记了margin和padding都不会写了</li><li>如上一条，公众表现能力有待加强。正如当今“酒香也怕巷子深”</li></ul><p>惊喜的事说来就来，本来知道自己这么多缺点，这么菜后，觉得这个实习的offer是没戏了，没想到下午技术主管微信发来消息，说录用了。当场懵逼，受宠若惊的感觉！非常谢谢面试官老师！<br>无论生活还是学习，希望以后的自己一定要保持一颗谦逊爱学的心，早日实现全栈工程师的梦想。</p></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center"><p>时间过得真快，一下从大一到了大三，马上就要实习毕业等等了。</p></blockquote><a id="more"></a><div class="note info"><p>富士康在学校有一个春招的机会，我和朋友抱着侥幸的心理去试了试。<br>虽然深知自己还身有很多缺点，但是不面试不知道，一面试都暴露出来了，以下记录一下自己的不足之处：</p><ul><li>php和sql的经典组合虽然有所接触了解，但是确实什么都会，得花时间学</li><li>html/css等虽然平时折腾博客这些应用的比较多，但是今天竟然紧张地忘记了margin和padding都不会写了</li><li>如上一条，公众表现能力有待加强。正如当今“酒香也怕巷子深”</li></ul><p>惊喜的事说来就来，本来知道自己这么多缺点，这么菜后，觉得这个实习的offer是没戏了，没想到下午技术主管微信发来消息，说录用了。当场懵逼，受宠若惊的感觉！非常谢谢面试官老师！<br>无论生活还是学习，希望以后的自己一定要保持一颗谦逊爱学的心，早日实现全栈工程师的梦想，还有早点存钱把大学学费的贷款还掉！</p></div>]]></content>
     
     <summary type="html">
     
@@ -212,11 +212,11 @@
     
       <category term="java" scheme="https://lruihao.cn/tags/java/"/>
     
-      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
-    
       <category term="StringBuffer" scheme="https://lruihao.cn/tags/StringBuffer/"/>
     
       <category term="Arrays工具类" scheme="https://lruihao.cn/tags/Arrays%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    
+      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
