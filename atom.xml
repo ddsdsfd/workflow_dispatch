@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-04-24T05:26:43.168Z</updated>
+  <updated>2019-04-24T14:14:04.635Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>第一次面试经历</title>
+    <link href="https://lruihao.cn/posts/1thintervivew.html"/>
+    <id>https://lruihao.cn/posts/1thintervivew.html</id>
+    <published>2019-04-24T13:23:22.000Z</published>
+    <updated>2019-04-24T14:14:04.635Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote class="blockquote-center"><p>时间过得真快，一下从大一到了大三，马上就要实习毕业等等了。</p></blockquote><a id="more"></a><div class="note info"><p>富士康在学校有一个春招的机会，我和朋友抱着侥幸的心理去试了试。<br>虽然深知自己还身有很多缺点，但是不面试不知道，一面试都暴露出来了，以下记录一下自己的不足之处：</p><ul><li>php和sql的经典组合虽然有所接触了解，但是确实什么都会，得花时间学</li><li>html/css等虽然平时折腾博客这些应用的比较多，但是今天尽然紧张地忘记了margin和padding都不会写了</li><li>如上一条，公众表现能力有待加强。正如当今“酒香也怕巷子深”</li></ul><p>惊喜的事说来就来，本来知道自己这么多缺点，这么菜后，觉得这个实习的offer是没戏了，没想到下午技术主管微信发来消息，说录用了。当场懵逼，受宠若惊的感觉！非常谢谢面试官老师！<br>无论生活还是学习，希望以后的自己一定要保持一颗谦逊爱学的心，早日实现全栈工程师的梦想。</p></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;时间过得真快，一下从大一到了大三，马上就要实习毕业等等了。&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="生活随笔" scheme="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="面试" scheme="https://lruihao.cn/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>个人简历</title>
     <link href="https://lruihao.cn/posts/me.html"/>
     <id>https://lruihao.cn/posts/me.html</id>
     <published>2019-04-24T05:21:49.000Z</published>
-    <updated>2019-04-24T05:26:43.168Z</updated>
+    <updated>2019-04-24T11:13:13.590Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="row"><embed src="/posts/me/lrh.pdf" width="100%" height="550" type="application/pdf"></div><a id="more"></a>]]></content>
     
@@ -190,11 +212,11 @@
     
       <category term="java" scheme="https://lruihao.cn/tags/java/"/>
     
-      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
-    
       <category term="StringBuffer" scheme="https://lruihao.cn/tags/StringBuffer/"/>
     
       <category term="Arrays工具类" scheme="https://lruihao.cn/tags/Arrays%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    
+      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
@@ -408,11 +430,11 @@
     
       <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
     
+      <category term="301重定向" scheme="https://lruihao.cn/tags/301%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    
       <category term="VPS" scheme="https://lruihao.cn/tags/VPS/"/>
     
       <category term="SSL" scheme="https://lruihao.cn/tags/SSL/"/>
-    
-      <category term="301重定向" scheme="https://lruihao.cn/tags/301%E9%87%8D%E5%AE%9A%E5%90%91/"/>
     
       <category term="CDN" scheme="https://lruihao.cn/tags/CDN/"/>
     
@@ -515,34 +537,6 @@
       <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="php" scheme="https://lruihao.cn/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>宝塔面板安装</title>
-    <link href="https://lruihao.cn/posts/bt.html"/>
-    <id>https://lruihao.cn/posts/bt.html</id>
-    <published>2019-03-18T13:31:43.000Z</published>
-    <updated>2019-04-04T09:59:28.959Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><img src="/posts/bt/1.png" title="宝塔面板后台"><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" rel="external nofollow noopener noreferrer" target="_blank">宝塔官网介绍</a><br><a id="more"></a></p><h1 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h1><blockquote><p>操作系统：全新系统(支持CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>确保是干净的操作系统，没有安装过其它环境带的Apache/Nginx/php/MySQL<br>宝塔Linux6.0版本是基于centos7开发的，强烈建议使用centos7.x 系统<br>内存要求：内存要求最低512MB，推荐768MB以上，纯面板约占系统60MB内存</p></blockquote><h1 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h1><p>官方号称2分钟装好面板，一键管理服务器。</p><blockquote><p>使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，挂载磁盘，根据系统执行相应命令开始安装（大约2分钟完成面板安装）：</p></blockquote><figure class="highlight shell"><figcaption><span>Centos安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure><figure class="highlight shell"><figcaption><span>Ubuntu/Deepin安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</span><br></pre></td></tr></table></figure><figure class="highlight shell"><figcaption><span>Debian安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure><figure class="highlight shell"><figcaption><span>Fedora安装脚本</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure><img src="/posts/bt/2.png" title="宝塔软件管理页面"><h1 id="搭建ftp和云盘服务器"><a href="#搭建ftp和云盘服务器" class="headerlink" title="搭建ftp和云盘服务器"></a>搭建ftp和云盘服务器</h1><p>可以很傻瓜式的搭建自己的云盘，和平时用的比较多的ftp服务器。搭建静态网站也可以用ftp来上传文件。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;img src=&quot;/posts/bt/1.png&quot; title=&quot;宝塔面板后台&quot;&gt;&lt;p&gt;极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。&lt;a href=&quot;https://www.bt.cn/?invite_code=MV9sYXJnZHI=&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;宝塔官网介绍&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="linux" scheme="https://lruihao.cn/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://lruihao.cn/tags/linux/"/>
-    
-      <category term="html/css" scheme="https://lruihao.cn/tags/html-css/"/>
-    
-      <category term="server" scheme="https://lruihao.cn/tags/server/"/>
-    
-      <category term="宝塔面板" scheme="https://lruihao.cn/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
     
   </entry>
   
