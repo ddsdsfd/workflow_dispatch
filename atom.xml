@@ -71,13 +71,13 @@
     <link href="https://lruihao.cn/posts/me.html"/>
     <id>https://lruihao.cn/posts/me.html</id>
     <published>2019-04-24T05:21:49.000Z</published>
-    <updated>2019-04-27T09:49:30.055Z</updated>
+    <updated>2019-04-27T10:01:08.126Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>请用电脑浏览<br><a id="more"></a><br></p><div class="row"><embed src="/posts/me/lrh.pdf" width="100%" height="550" type="application/pdf"></div><p></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note danger"><p>请用电脑浏览!</p></div><a id="more"></a><div class="row"><embed src="/posts/me/lrh.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;请用电脑浏览&lt;br&gt;
+      &lt;div class=&quot;note danger&quot;&gt;&lt;p&gt;请用电脑浏览!&lt;/p&gt;&lt;/div&gt;
     
     </summary>
     
