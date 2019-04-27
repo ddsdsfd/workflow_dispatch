@@ -143,9 +143,9 @@
     <link href="https://lruihao.cn/posts/HelloJava.html"/>
     <id>https://lruihao.cn/posts/HelloJava.html</id>
     <published>2019-04-19T11:49:54.000Z</published>
-    <updated>2019-04-19T12:18:40.322Z</updated>
+    <updated>2019-04-27T02:23:01.939Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>之所以用记事本来写不是为了装X或者什么的。反而恰恰是返璞归真，因为在用java语言进行程序开发时，首先是以纯文本的方式编写所有的java源程序，并保存成以<code>.java</code>为后缀的文件；然后将这些源程序用<code>javac</code>编译成<code>.class</code>后缀名的字节代码文件；字节代码不是被本地处理器执行的代码，而是能够被java虚拟机（JVM）执行的代码。最后用java运行工具在JVM执行java应用程序。<br>由于JVM可以运行在不同的操作系统上，因此同一个字节代码文件可以跨平台运行。</p><ul><li>javac</li><li>java</li></ul></div><a id="more"></a> <img src="/posts/HelloJava/2.jpg"><h1 id="编写java"><a href="#编写java" class="headerlink" title="编写java"></a>编写java</h1><p>用记事本编辑java文件，并且把后缀改成<code>.java</code>，文件名和类名要一样。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="打开cmd"><a href="#打开cmd" class="headerlink" title="打开cmd"></a>打开cmd</h1><img src="/posts/HelloJava/1.png">]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>之所以用记事本来写不是为了装X或者什么的。反而恰恰是返璞归真，因为在用java语言进行程序开发时，首先是以纯文本的方式编写所有的java源程序，并保存成以<code>.java</code>为后缀的文件；然后将这些源程序用<code>javac</code>编译成<code>.class</code>后缀名的字节代码文件；字节代码不是被本地处理器执行的代码，而是能够被java虚拟机（JVM）执行的代码。最后用java运行工具在JVM执行java应用程序。<br>由于JVM可以运行在不同的操作系统上，因此同一个字节代码文件可以跨平台运行。</p><ul><li>javac</li><li>java</li></ul></div><a id="more"></a> <img src="/posts/HelloJava/2.png"><h1 id="编写java"><a href="#编写java" class="headerlink" title="编写java"></a>编写java</h1><p>用记事本编辑java文件，并且把后缀改成<code>.java</code>，文件名和类名要一样。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">System.out.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="打开cmd"><a href="#打开cmd" class="headerlink" title="打开cmd"></a>打开cmd</h1><img src="/posts/HelloJava/1.png">]]></content>
     
     <summary type="html">
     
@@ -212,11 +212,11 @@
     
       <category term="java" scheme="https://lruihao.cn/tags/java/"/>
     
+      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
+    
       <category term="StringBuffer" scheme="https://lruihao.cn/tags/StringBuffer/"/>
     
       <category term="Arrays工具类" scheme="https://lruihao.cn/tags/Arrays%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    
-      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
