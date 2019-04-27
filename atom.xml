@@ -71,13 +71,13 @@
     <link href="https://lruihao.cn/posts/me.html"/>
     <id>https://lruihao.cn/posts/me.html</id>
     <published>2019-04-24T05:21:49.000Z</published>
-    <updated>2019-04-24T11:13:13.590Z</updated>
+    <updated>2019-04-27T09:49:30.055Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="row"><embed src="/posts/me/lrh.pdf" width="100%" height="550" type="application/pdf"></div><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>请用电脑浏览<br><a id="more"></a><br></p><div class="row"><embed src="/posts/me/lrh.pdf" width="100%" height="550" type="application/pdf"></div><p></p>]]></content>
     
     <summary type="html">
     
-      &lt;div class=&quot;row&quot;&gt;&lt;embed src=&quot;/posts/me/lrh.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;&lt;/div&gt;
+      &lt;p&gt;请用电脑浏览&lt;br&gt;
     
     </summary>
     
@@ -240,11 +240,11 @@
     
       <category term="java" scheme="https://lruihao.cn/tags/java/"/>
     
+      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
+    
       <category term="StringBuffer" scheme="https://lruihao.cn/tags/StringBuffer/"/>
     
       <category term="Arrays工具类" scheme="https://lruihao.cn/tags/Arrays%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    
-      <category term="排序" scheme="https://lruihao.cn/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
