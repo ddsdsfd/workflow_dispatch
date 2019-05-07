@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-05-07T10:29:02.908Z</updated>
+  <updated>2019-05-07T10:52:10.802Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python如何操作Json？</title>
+    <link href="https://lruihao.cn/posts/jsoninfo.html"/>
+    <id>https://lruihao.cn/posts/jsoninfo.html</id>
+    <published>2019-05-07T10:42:47.000Z</published>
+    <updated>2019-05-07T10:52:10.802Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note"><p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" rel="external nofollow noopener noreferrer" target="_blank">阅读原文</a></p></div><a id="more"></a><h1 id="json的数据格式"><a href="#json的数据格式" class="headerlink" title="json的数据格式"></a>json的数据格式</h1><p>在json中，遵循“键值对”的这样一种方式，比如：“{“name”:”tom”}”,就是一个json格式的数据，json的格式归纳下来，一般有以下几点：</p><ul><li>对象通过键值对表现；</li><li>键通过双引号包裹，后面跟冒号“:”，然后跟该键的值；</li><li>值可以是字符串、数字、数组等数据类型；</li><li>对象与对象之间用逗号隔开；</li><li>“{}”用来表达对象；</li><li>“[]”用来表达数组；</li></ul><p>我们看一个略为复杂一点的例子：<br><img src="/posts/jsoninfo/2.jpg"><br>上例则是一个典型的json格式的数据，强大的Python提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个json格式的数据，也可以将一个json格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p><h1 id="json-dumps"><a href="#json-dumps" class="headerlink" title="json.dumps()"></a>json.dumps()</h1><p>json模块里的dumps函数是对数据进行编码，形成json格式的数据，我们看一下下面的例子：<br><img src="/posts/jsoninfo/3.jpg"><br>通过输出的结果很容易看出，通过dumps方法使字典转换成为了json格式，虽然它们非常相似。其中，在dumps里的参数“sort_keys=True”，使得输出json后对key和value进行0~9、a~z的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较json中的数据，因此，适当的排序是很有必要的。</p><p>此外，“Indent”参数表示缩进的意思，它可以使得输出的Json看起来更加整齐好看，可读性更强，例如：<br><img src="/posts/jsoninfo/4.jpg"><br>下面列举一下dumps（）的可填参数：</p><ul><li>skipkey：默认为False，当dict对象里的数据不是Python的基本数据类型；（str,unicode,int,long,float,bool,None）时，当skipkey为False，就会报错，如果skipkey为True，则可以跳过这类key；</li><li>indent：如果填0或者不填，则按照一行进行打印，否则按照indent的数值显示前面的空格（正整数形式）；</li><li>separators：分隔符，默认为“(‘,’,’:’)”，它表示key之间用“,”隔开，key和value之间用“:”隔开；</li><li>encoding：编码格式，默认值是UTF-8；</li><li>sort_keys：对key、value进行排序，默认值是False，即不排序；</li><li>ensure_ascii：默认为True，如果dict对象里含有none-ASCII的字符，则显示\uXX的格式，如果为False，则能正常显示出来；</li></ul><h1 id="json-loads"><a href="#json-loads" class="headerlink" title="json.loads()"></a>json.loads()</h1><p>和dumps相反，loads函数则是将json格式的数据解码，转换为Python字典，我们看一下下面的例子：<br><img src="/posts/jsoninfo/5.jpg"><br>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为Unicode的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=’utf-8’)即可。</p><h1 id="json-dump-和-json-load"><a href="#json-dump-和-json-load" class="headerlink" title="json.dump() 和 json.load()"></a>json.dump() 和 json.load()</h1><p>相对于上面所讲的dumps和loads来说，dump和load函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：<br><img src="/posts/jsoninfo/6.jpg"><br>上例列举出了json的四个方法：dumps（）和dump（）、loads（）和load（）的简单使用方法，可见，Python对于json的处理相当方便，不像c++那样（谁用谁知道）。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note&quot;&gt;&lt;p&gt;Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。&lt;a href=&quot;https://baijiahao.baidu.com/s?id=1608659655547720220&amp;amp;wfr=spider&amp;amp;for=pc&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://lruihao.cn/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://lruihao.cn/tags/python/"/>
+    
+      <category term="json" scheme="https://lruihao.cn/tags/json/"/>
+    
+  </entry>
   
   <entry>
     <title>python发送post请求进行简单的接口测试</title>
@@ -505,34 +529,6 @@
     
     
       <category term="ACM" scheme="https://lruihao.cn/tags/ACM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大数乘法</title>
-    <link href="https://lruihao.cn/posts/dacheng.html"/>
-    <id>https://lruihao.cn/posts/dacheng.html</id>
-    <published>2019-03-28T14:50:43.000Z</published>
-    <updated>2019-04-14T09:38:41.729Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>大数乘法c版(基础写法)</p></blockquote><a id="more"></a><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 202</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a[N] = &#123;<span class="number">0</span>&#125;, b[N] = &#123;<span class="number">0</span>&#125;, c[<span class="number">404</span>] = &#123;<span class="number">0</span>&#125;, la, lb, i, j,k, d = <span class="number">0</span>, n1, n2;<span class="comment">//202位数相乘，最长404位数</span></span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> *p)</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span> *a, <span class="keyword">int</span> *b, <span class="keyword">int</span> n)</span></span>;</span><br><span class="line"></span><br><span class="line">  la = get(a);</span><br><span class="line">  lb = get(b);</span><br><span class="line">  n1 = la &gt; lb ? la : lb;<span class="comment">//较长的数长</span></span><br><span class="line">  n2 = la &lt; lb ? la : lb;<span class="comment">//较短的数长</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (la &lt; lb)</span><br><span class="line">    change(a, b, lb);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//模拟乘法运算过程（进位等考虑）</span></span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n2; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; n1; j++) &#123;</span><br><span class="line">      c[j + i] += (b[i] * a[j] + d)%<span class="number">10</span>;</span><br><span class="line">      d = (b[i] * a[j] + d) / <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (c[j+i]&gt;<span class="number">9</span>)&#123;</span><br><span class="line">        d++;</span><br><span class="line">        c[j+i]%=<span class="number">10</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (a[j+<span class="number">1</span>]==<span class="number">0</span>&amp;&amp;d!=<span class="number">0</span>)&#123;</span><br><span class="line">        k=j+i+<span class="number">1</span>;</span><br><span class="line">        c[k]=d;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    d=<span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  k=k&gt;(j+i<span class="number">-2</span>)?k:j+i<span class="number">-2</span>;</span><br><span class="line">  <span class="keyword">for</span> (i = k; i &gt;= <span class="number">0</span>; i--)<span class="comment">//将倒序装入的结果打印</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, c[i]);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//输入字符串作为数字，并返回数字去除前导0后的长度</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> *p)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">char</span> x[N];</span><br><span class="line">  <span class="keyword">int</span> l, i, ex = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">"%s"</span>, x);</span><br><span class="line">  l = <span class="built_in">strlen</span>(x);</span><br><span class="line">  <span class="keyword">while</span> (x[ex] == <span class="string">'0'</span>)</span><br><span class="line">    ex++;</span><br><span class="line">  <span class="keyword">for</span> (i = ex; i &lt; l; i++) <span class="comment">//提取字符串数字到int数组，倒序排列</span></span><br><span class="line">    *(p + l - i - <span class="number">1</span>) = x[i] - <span class="string">'0'</span>;</span><br><span class="line">  <span class="keyword">return</span> l - ex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span> *a, <span class="keyword">int</span> *b, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i, t;</span><br><span class="line">  <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">    t = a[i];</span><br><span class="line">    a[i] = b[i];</span><br><span class="line">    b[i] = t;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>程序运行结果<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1234567890123456789</span><br><span class="line">98765432109876543210</span><br><span class="line">121932631124517831023715309991126352690</span><br></pre></td></tr></table></figure><p></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;&lt;p&gt;大数乘法c版(基础写法)&lt;/p&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="https://lruihao.cn/categories/ACM/"/>
-    
-    
-      <category term="ACM" scheme="https://lruihao.cn/tags/ACM/"/>
-    
-      <category term="C" scheme="https://lruihao.cn/tags/C/"/>
-    
-      <category term="数学" scheme="https://lruihao.cn/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="大数运算" scheme="https://lruihao.cn/tags/%E5%A4%A7%E6%95%B0%E8%BF%90%E7%AE%97/"/>
     
   </entry>
   
