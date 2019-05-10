@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-05-10T01:09:43.749Z</updated>
+  <updated>2019-05-10T05:30:48.842Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>条件注释判断浏览器版本&amp;lt;!--[if lt IE 9]&amp;gt;</title>
+    <link href="https://lruihao.cn/posts/ifzhushi.html"/>
+    <id>https://lruihao.cn/posts/ifzhushi.html</id>
+    <published>2019-05-10T05:08:27.000Z</published>
+    <updated>2019-05-10T05:30:48.842Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note"><p><span>&lt;!–[if !IE]&gt;&lt;!–&gt; 除IE外都可识别 &lt;!–&lt;![endif]–&gt;</span><br><span>&lt;!–[if IE]&gt; 所有的IE可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if IE 6]&gt; 仅IE6可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if lt IE 6]&gt; IE6以及IE6以下版本可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if gte IE 6]&gt; IE6以及IE6以上版本可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if IE 7]&gt; 仅IE7可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if lt IE 7]&gt; IE7以及IE7以下版本可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if gte IE 7]&gt; IE7以及IE7以上版本可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if IE 8]&gt; 仅IE8可识别 &lt;![endif]–&gt;</span><br><span>&lt;!–[if IE 9]&gt; 仅IE9可识别 &lt;![endif]–&gt;</span></p></div><a id="more"></a><table border="2" align="center"><tbody><tr><th width="50">项目</th><th width="150">范例</th><th>说明</th></tr><tr><td align="middle">!</td><td>[if !IE]</td><td>The NOT operator. This is placed immediately in front of the&nbsp;<em>feature</em>,&nbsp;<em>operator</em>, or&nbsp;<em>subexpression</em>&nbsp;to reverse the Boolean meaning of the expression.<br>NOT运算符。这是摆立即在前面的<em>功能</em>，<em>操作员</em>，或<em>子表达式</em>扭转布尔表达式的意义。</td></tr><tr><td align="middle">lt</td><td>[if lt IE 5.5]</td><td>The less-than operator. Returns true if the first argument is less than the second argument.<br>小于运算符。如果第一个参数小于第二个参数，则返回true。</td></tr><tr><td align="middle">lte</td><td>[if lte IE 6]</td><td>The less-than or equal operator. Returns true if the first argument is less than or equal to the second argument.<br>小于或等于运算。如果第一个参数是小于或等于第二个参数，则返回true。</td></tr><tr><td align="middle">gt</td><td>[if gt IE 5]</td><td>The greater-than operator. Returns true if the first argument is greater than the second argument.<br>大于运算符。如果第一个参数大于第二个参数，则返回true。</td></tr><tr><td align="middle">gte</td><td>[if gte IE 7]</td><td>The greater-than or equal operator. Returns true if the first argument is greater than or equal to the second argument.<br>大于或等于运算。如果第一个参数是大于或等于第二个参数，则返回true。</td></tr><tr><td align="middle">( )</td><td>[if !(IE 7)]</td><td>Subexpression operators. Used in conjunction with boolean operators to create more complex expressions.<br>子表达式运营商。在与布尔运算符用于创建更复杂的表达式。</td></tr><tr><td align="middle">&amp;</td><td>[if (gt IE 5)&amp;(lt IE 7)]</td><td>The AND operator. Returns true if all subexpressions evaluate to true<br>AND运算符。如果所有的子表达式计算结果为true，返回true</td></tr><tr><td align="middle">|</td><td>[if (IE 6)|(IE 7)]</td><td>The OR operator. Returns true if any of the subexpressions evaluates to true.<br>OR运算符。返回true，如果子表达式计算结果为true。</td></tr></tbody></table><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--[if lt IE 9]&gt;</span></span><br><span class="line"><span class="comment">加载CSS1</span></span><br><span class="line"><span class="comment">&lt;!--[else]&gt;</span></span><br><span class="line"><span class="comment">加载CSS2</span></span><br><span class="line"><span class="comment">&lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure><p>这样有效是有效,但是用HTML VALIDATOR里,报错,因为这个不符合XHTML 1.1的规范,<br>如果把ELSE语句去掉,则正确.</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">加载CSS2</span><br><span class="line"><span class="comment">&lt;!--[if lt IE 9]&gt;</span></span><br><span class="line"><span class="comment">加载CSS1(可以把要重写的写在这里).</span></span><br><span class="line"><span class="comment">&lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note&quot;&gt;&lt;p&gt;&lt;span&gt;&amp;lt;!–[if !IE]&amp;gt;&amp;lt;!–&amp;gt; 除IE外都可识别 &amp;lt;!–&amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if IE]&amp;gt; 所有的IE可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if IE 6]&amp;gt; 仅IE6可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if lt IE 6]&amp;gt; IE6以及IE6以下版本可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if gte IE 6]&amp;gt; IE6以及IE6以上版本可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if IE 7]&amp;gt; 仅IE7可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if lt IE 7]&amp;gt; IE7以及IE7以下版本可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if gte IE 7]&amp;gt; IE7以及IE7以上版本可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if IE 8]&amp;gt; 仅IE8可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;lt;!–[if IE 9]&amp;gt; 仅IE9可识别 &amp;lt;![endif]–&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="Web" scheme="https://lruihao.cn/categories/Web/"/>
+    
+    
+      <category term="他山之石" scheme="https://lruihao.cn/tags/%E4%BB%96%E5%B1%B1%E4%B9%8B%E7%9F%B3/"/>
+    
+      <category term="html/css" scheme="https://lruihao.cn/tags/html-css/"/>
+    
+  </entry>
   
   <entry>
     <title>python设置程序每天8点定时执行任务</title>
@@ -99,7 +123,7 @@
     <link href="https://lruihao.cn/posts/jsoninfo.html"/>
     <id>https://lruihao.cn/posts/jsoninfo.html</id>
     <published>2019-05-07T10:42:47.000Z</published>
-    <updated>2019-05-07T10:52:10.802Z</updated>
+    <updated>2019-05-10T05:10:44.004Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note"><p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" rel="external nofollow noopener noreferrer" target="_blank">阅读原文</a></p></div><a id="more"></a><h1 id="json的数据格式"><a href="#json的数据格式" class="headerlink" title="json的数据格式"></a>json的数据格式</h1><p>在json中，遵循“键值对”的这样一种方式，比如：“{“name”:”tom”}”,就是一个json格式的数据，json的格式归纳下来，一般有以下几点：</p><ul><li>对象通过键值对表现；</li><li>键通过双引号包裹，后面跟冒号“:”，然后跟该键的值；</li><li>值可以是字符串、数字、数组等数据类型；</li><li>对象与对象之间用逗号隔开；</li><li>“{}”用来表达对象；</li><li>“[]”用来表达数组；</li></ul><p>我们看一个略为复杂一点的例子：<br><img src="/posts/jsoninfo/2.jpg"><br>上例则是一个典型的json格式的数据，强大的Python提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个json格式的数据，也可以将一个json格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p><h1 id="json-dumps"><a href="#json-dumps" class="headerlink" title="json.dumps()"></a>json.dumps()</h1><p>json模块里的dumps函数是对数据进行编码，形成json格式的数据，我们看一下下面的例子：<br><img src="/posts/jsoninfo/3.jpg"><br>通过输出的结果很容易看出，通过dumps方法使字典转换成为了json格式，虽然它们非常相似。其中，在dumps里的参数“sort_keys=True”，使得输出json后对key和value进行0~9、a~z的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较json中的数据，因此，适当的排序是很有必要的。</p><p>此外，“Indent”参数表示缩进的意思，它可以使得输出的Json看起来更加整齐好看，可读性更强，例如：<br><img src="/posts/jsoninfo/4.jpg"><br>下面列举一下dumps（）的可填参数：</p><ul><li>skipkey：默认为False，当dict对象里的数据不是Python的基本数据类型；（str,unicode,int,long,float,bool,None）时，当skipkey为False，就会报错，如果skipkey为True，则可以跳过这类key；</li><li>indent：如果填0或者不填，则按照一行进行打印，否则按照indent的数值显示前面的空格（正整数形式）；</li><li>separators：分隔符，默认为“(‘,’,’:’)”，它表示key之间用“,”隔开，key和value之间用“:”隔开；</li><li>encoding：编码格式，默认值是UTF-8；</li><li>sort_keys：对key、value进行排序，默认值是False，即不排序；</li><li>ensure_ascii：默认为True，如果dict对象里含有none-ASCII的字符，则显示\uXX的格式，如果为False，则能正常显示出来；</li></ul><h1 id="json-loads"><a href="#json-loads" class="headerlink" title="json.loads()"></a>json.loads()</h1><p>和dumps相反，loads函数则是将json格式的数据解码，转换为Python字典，我们看一下下面的例子：<br><img src="/posts/jsoninfo/5.jpg"><br>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为Unicode的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=’utf-8’)即可。</p><h1 id="json-dump-和-json-load"><a href="#json-dump-和-json-load" class="headerlink" title="json.dump() 和 json.load()"></a>json.dump() 和 json.load()</h1><p>相对于上面所讲的dumps和loads来说，dump和load函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：<br><img src="/posts/jsoninfo/6.jpg"><br>上例列举出了json的四个方法：dumps（）和dump（）、loads（）和load（）的简单使用方法，可见，Python对于json的处理相当方便，不像c++那样（谁用谁知道）。</p>]]></content>
     
@@ -111,6 +135,8 @@
     
       <category term="python" scheme="https://lruihao.cn/categories/python/"/>
     
+    
+      <category term="他山之石" scheme="https://lruihao.cn/tags/%E4%BB%96%E5%B1%B1%E4%B9%8B%E7%9F%B3/"/>
     
       <category term="python" scheme="https://lruihao.cn/tags/python/"/>
     
@@ -505,32 +531,6 @@
       <category term="HDU" scheme="https://lruihao.cn/tags/HDU/"/>
     
       <category term="贪心" scheme="https://lruihao.cn/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitBook使用教程</title>
-    <link href="https://lruihao.cn/posts/gitbookuse.html"/>
-    <id>https://lruihao.cn/posts/gitbookuse.html</id>
-    <published>2019-04-04T14:09:44.000Z</published>
-    <updated>2019-04-04T15:18:26.232Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info"><p>想趴几本金庸小说的做成电子书自己阅读，在博客上尝试了一下整理了6本中短篇小说就开始感觉博客臃肿，于是找到gitbook前来一试。<br>写完这篇文章开始实际操作，我发现还不如用hexo来写小说，遂放弃！Gitbook用来写相关文档介绍还差不多。</p></div><a id="more"></a><h1 id="GitBook简介"><a href="#GitBook简介" class="headerlink" title="GitBook简介"></a>GitBook简介</h1><ul><li><a href="https://www.gitbook.com" rel="external nofollow noopener noreferrer" target="_blank">GitBook官网</a></li><li><a href="https://github.com/GitbookIO/gitbook" rel="external nofollow noopener noreferrer" target="_blank">GitBook文档</a></li></ul><div class="note default"><p>Gitbook的作用和Hexo有点像，也是把md渲染成html,也见到有人用这个来写博客的。<br>GitBook是一个基于 Node.js 的命令行工具，可使用 Github/Git 和 Markdown 来制作精美的电子书，GitBook 并非关于 Git 的教程。<br>GitBook支持输出多种文档格式：</p><ul><li>静态站点：GitBook默认输出该种格式，生成的静态站点可直接托管搭载Github Pages服务上；</li><li>PDF：需要安装gitbook-pdf依赖；</li><li>eBook：需要安装ebook-convert；</li><li>单HTML网页：支持将内容输出为单页的HTML，不过一般用在将电子书格式转换为PDF或eBook的中间过程；</li><li>JSON：一般用于电子书的调试或元数据提取。<br>使用GitBook制作电子书，必备两个文件：<code>README.md</code>和<code>SUMMARY.md</code></li></ul></div><h1 id="GitBook安装步骤"><a href="#GitBook安装步骤" class="headerlink" title="GitBook安装步骤"></a>GitBook安装步骤</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>GitBook是一个基于Node.js的命令行工具，下载安装<a href="https://nodejs.org" rel="external nofollow noopener noreferrer" target="_blank">Node.js</a>(我以前搭建hexo的文章里也有介绍)，安装完成之后，你可以使用下面的命令来检验是否安装成功。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><p></p><h2 id="安装GitBook"><a href="#安装GitBook" class="headerlink" title="安装GitBook"></a>安装GitBook</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gitbook-cli -g</span><br></pre></td></tr></table></figure><p>检验是否安装成功<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook -V</span><br></pre></td></tr></table></figure><p></p><p><a href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md" rel="external nofollow noopener noreferrer" target="_blank">参照GitBook安装文档</a></p><h2 id="gitbook初始化"><a href="#gitbook初始化" class="headerlink" title="gitbook初始化"></a>gitbook初始化</h2><p>和<code>hexo init</code>类似，GitBook准备工作做好之后，我们进入一个你要写书的目录（比如新建mybook文件夹），输入如下命令初始化<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook init</span><br></pre></td></tr></table></figure><p></p><p>初始化后可以看到他会创建<code>README.md</code>和<code>SUMMARY.md</code>这两个文件，README.md应该不陌生，就是说明文档，而SUMMARY.md其实就是书的章节目录，其默认内容如下所示：<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Summary</span><br><span class="line"></span><br><span class="line">* [Introduction](README.md)</span><br></pre></td></tr></table></figure><p></p><h2 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h2><p>和<code>hexo serve</code>类似，我们使用<code>gitbook serve</code>命令，然后在浏览器地址栏中输入侧<a href="http://localhost:4000便可预览书籍。" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:4000便可预览书籍。</a><br>运行该命令后会在书籍的文件夹中生成一个_book文件夹，里面的内容即为生成的html文件。<br>也可以修改端口<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook serve --port 5000</span><br></pre></td></tr></table></figure><p></p><img src="/posts/gitbookuse/1.jpg"><p>我们可以使用<code>gitbook build</code>命令来生成网页而不开启服务器。这个类似于hexo的<code>hexo g</code>命令。<br>当然，build 命令可以指定路径：<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitbook build [书籍路径] [输出路径]</span><br></pre></td></tr></table></figure><p></p><p>你还可以生成 PDF,epub,mobi 格式的电子书：<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gitbook pdf ./ ./mybook.pdf</span><br><span class="line">gitbook epub ./ ./mybook.epub</span><br><span class="line">gitbook mobi ./ ./mybook.mobi</span><br></pre></td></tr></table></figure><p></p><p>如果生成不了，你可能还需要安装一些工具，比如 ebook-convert。或者在 Typora 中安装 Pandoc 进行导出。</p><h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── book.json</span><br><span class="line">├── README.md</span><br><span class="line">├── SUMMARY.md</span><br><span class="line">├── chapter-1/</span><br><span class="line">|   ├── README.md</span><br><span class="line">|   └── something.md</span><br><span class="line">└── chapter-2/</span><br><span class="line">    ├── README.md</span><br><span class="line">    └── something.md</span><br></pre></td></tr></table></figure><h2 id="book-json"><a href="#book-json" class="headerlink" title="book.json"></a>book.json</h2><p>该文件主要用来存放配置信息。</p><h2 id="SUMMARY-md"><a href="#SUMMARY-md" class="headerlink" title="SUMMARY.md"></a>SUMMARY.md</h2><p>这个文件主要决定GitBook的章节目录，它通过Markdown中的列表语法来表示文件的父子关系。</p><h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://www.jianshu.com/p/421cc442f06c" rel="external nofollow noopener noreferrer" target="_blank">更多详情介绍</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;想趴几本金庸小说的做成电子书自己阅读，在博客上尝试了一下整理了6本中短篇小说就开始感觉博客臃肿，于是找到gitbook前来一试。&lt;br&gt;写完这篇文章开始实际操作，我发现还不如用hexo来写小说，遂放弃！Gitbook用来写相关文档介绍还差不多。&lt;/p&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="Web" scheme="https://lruihao.cn/categories/Web/"/>
-    
-    
-      <category term="nodejs" scheme="https://lruihao.cn/tags/nodejs/"/>
-    
-      <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="gitbook" scheme="https://lruihao.cn/tags/gitbook/"/>
     
   </entry>
   
