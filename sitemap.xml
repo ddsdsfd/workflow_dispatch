@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/posts/B-Higher.html</loc>
+    
+    <lastmod>2019-05-15T06:32:30.290Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/docs/index.html</loc>
     
     <lastmod>2019-05-15T05:01:11.069Z</lastmod>
@@ -793,30 +800,9 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/B-Higher.html</loc>
-    
-    <lastmod>2019-03-28T15:06:17.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/B-Higher-h-index.html</loc>
-    
-    <lastmod>2019-03-28T15:06:05.573Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/BFS%E6%B1%82%E6%9C%80%E7%9F%AD%E8%B7%AF.html</loc>
     
     <lastmod>2019-03-28T15:05:16.749Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/A-Easy-h-index.html</loc>
-    
-    <lastmod>2019-03-28T15:04:56.621Z</lastmod>
     
   </url>
   
@@ -1521,6 +1507,62 @@
   </url>
   
   <url>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/linux-git.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/hello-world.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/mood.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/F-sorting.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
@@ -1535,48 +1577,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/mood.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/linux-git.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/F-sorting.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
@@ -1584,14 +1584,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/hello-world.html</loc>
+    <loc>https://lruihao.cn/posts/beian.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1599,13 +1592,6 @@
   
   <url>
     <loc>https://lruihao.cn/posts/gituse.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/beian.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
