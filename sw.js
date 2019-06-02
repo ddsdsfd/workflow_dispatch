@@ -26,7 +26,7 @@ var precacheUrls = [];
 
   precacheUrls.push('/posts/liushuixian.html');
 
-  precacheUrls.push('/posts/me.html');
+  precacheUrls.push('/posts/hexo-theme-next.html');
 
   precacheUrls.push('/posts/hustoj.html');
 
