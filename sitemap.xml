@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/posts/termux1.html</loc>
+    
+    <lastmod>2019-06-09T03:00:56.793Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/termux.html</loc>
+    
+    <lastmod>2019-06-09T02:54:32.032Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/hexo-theme-next.html</loc>
     
     <lastmod>2019-06-02T03:22:00.915Z</lastmod>
@@ -460,20 +474,6 @@
     <loc>https://lruihao.cn/posts/blog-backup.html</loc>
     
     <lastmod>2019-04-04T14:16:32.490Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/termux1.html</loc>
-    
-    <lastmod>2019-04-04T14:15:34.505Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/termux.html</loc>
-    
-    <lastmod>2019-04-04T14:14:58.354Z</lastmod>
     
   </url>
   
@@ -1101,13 +1101,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/F-sorting.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
@@ -1129,6 +1122,13 @@
   </url>
   
   <url>
+    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
@@ -1136,7 +1136,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
