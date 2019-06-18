@@ -26,13 +26,13 @@ var precacheUrls = [];
 
   precacheUrls.push('/posts/liushuixian.html');
 
-  precacheUrls.push('/posts/hexo-theme-next.html');
+  precacheUrls.push('/posts/pysx1.html');
+
+  precacheUrls.push('/posts/data.html');
 
   precacheUrls.push('/posts/hustoj.html');
 
-  precacheUrls.push('/posts/imgurl.html');
-
-  precacheUrls.push('/posts/mx2wx.html');
+  precacheUrls.push('/posts/judgetriangle.html');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
