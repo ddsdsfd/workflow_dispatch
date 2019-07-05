@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/about/index.html</loc>
+    
+    <lastmod>2019-07-05T12:35:46.189Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/resume.html</loc>
     
     <lastmod>2019-07-04T17:05:09.570Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://lruihao.cn/docs/index.html</loc>
     
     <lastmod>2019-06-25T05:30:48.846Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/about/index.html</loc>
-    
-    <lastmod>2019-06-22T05:55:29.604Z</lastmod>
     
   </url>
   
@@ -1122,7 +1122,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/linux-git.html</loc>
+    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1143,7 +1143,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/gituse.html</loc>
+    <loc>https://lruihao.cn/posts/linux-git.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1178,14 +1178,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
+    <loc>https://lruihao.cn/posts/gituse.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
+    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
