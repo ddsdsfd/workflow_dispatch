@@ -34,11 +34,11 @@
       <category term="others" scheme="https://lruihao.cn/categories/others/"/>
     
     
+      <category term="总结" scheme="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/"/>
+    
       <category term="他山之石" scheme="https://lruihao.cn/tags/%E4%BB%96%E5%B1%B1%E4%B9%8B%E7%9F%B3/"/>
     
       <category term="Sublime Text3" scheme="https://lruihao.cn/tags/Sublime-Text3/"/>
-    
-      <category term="总结" scheme="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
@@ -91,13 +91,13 @@
     
       <category term="总结" scheme="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
+      <category term="git" scheme="https://lruihao.cn/tags/git/"/>
+    
       <category term="html/css" scheme="https://lruihao.cn/tags/html-css/"/>
     
       <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
     
       <category term="php" scheme="https://lruihao.cn/tags/php/"/>
-    
-      <category term="git" scheme="https://lruihao.cn/tags/git/"/>
     
   </entry>
   
@@ -278,7 +278,7 @@
     <link href="https://lruihao.cn/posts/gcd-bit.html"/>
     <id>https://lruihao.cn/posts/gcd-bit.html</id>
     <published>2019-05-17T01:14:16.000Z</published>
-    <updated>2019-09-01T02:34:15.463Z</updated>
+    <updated>2019-09-01T03:34:01.970Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info no-icon"><p>二进制最大公约数算法避免了欧几里得算法（辗转相除法）的大量取模操作，有效减少了时间消耗，且更为方便。</p></div><a id="more"></a><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>本算法基于以下事实：</p><blockquote><p>对于两个数的最大公约数gcd(m, n)，有<br>m&lt;n时，gcd(m, n)=gcd(n, m)<br>m偶n偶时，gcd(m, n)=2*gcd(m/2, n/2)<br>m偶n奇时，gcd(m, n)=gcd(m/2, n)<br>m奇n偶时，gcd(m, n)=gcd(m, n/2)<br>m奇n奇时，gcd(m, n)=gcd(n, m-n)</p></blockquote><p>采用递归即可。</p><h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><figure class="highlight cpp"><figcaption><span>最大公约数</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">GCD</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span>   </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i,j;</span><br><span class="line">        <span class="keyword">if</span>(x==<span class="number">0</span>) <span class="keyword">return</span> y;</span><br><span class="line">        <span class="keyword">if</span>(y==<span class="number">0</span>) <span class="keyword">return</span> x;</span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>;<span class="number">0</span>==(x&amp;<span class="number">1</span>);++i)x&gt;&gt;=<span class="number">1</span>;   <span class="comment">// 去掉所有的2</span></span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">0</span>;<span class="number">0</span>==(y&amp;<span class="number">1</span>);++j)y&gt;&gt;=<span class="number">1</span>;   <span class="comment">// 去掉所有的2</span></span><br><span class="line">        <span class="keyword">if</span>(j&lt;i) i=j;</span><br><span class="line">        <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span>(x&lt;y)x^=y,y^=x,x^=y;   <span class="comment">// 若 x &lt; y 交换 x, y</span></span><br><span class="line">                <span class="keyword">if</span>(<span class="number">0</span>==(x-=y)) <span class="keyword">return</span> y&lt;&lt;i;  <span class="comment">// 若x == y， gcd == x == y (就是在辗转减，while(1)控制)</span></span><br><span class="line">                <span class="keyword">while</span>(<span class="number">0</span>==(x&amp;<span class="number">1</span>))x&gt;&gt;=<span class="number">1</span>; <span class="comment">// 去掉所有的2</span></span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight cpp"><figcaption><span>最小公倍数</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">get_lcm</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span><span class="comment">///获得最小公倍数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=a;</span><br><span class="line">    <span class="keyword">int</span> y=b;</span><br><span class="line">    <span class="keyword">while</span>(b)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> t=a;</span><br><span class="line">        a=b;</span><br><span class="line">        b=t%b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> x/a*y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
