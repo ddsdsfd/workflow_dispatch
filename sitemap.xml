@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lruihao.cn/posts/hexowrite.html</loc>
+    <loc>https://lruihao.cn/posts/git.html</loc>
     
-    <lastmod>2019-09-14T05:06:06.501Z</lastmod>
+    <lastmod>2019-09-14T09:56:40.539Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lruihao.cn/posts/nextplugin.html</loc>
     
-    <lastmod>2019-09-14T05:00:49.719Z</lastmod>
+    <lastmod>2019-09-14T09:44:14.517Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/hexowrite.html</loc>
+    
+    <lastmod>2019-09-14T09:44:14.515Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lruihao.cn/posts/hexo-theme-next.html</loc>
     
-    <lastmod>2019-09-13T07:35:34.974Z</lastmod>
+    <lastmod>2019-09-14T09:44:14.514Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://lruihao.cn/posts/Euclid.html</loc>
     
     <lastmod>2019-09-13T07:13:50.898Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/git.html</loc>
-    
-    <lastmod>2019-09-13T03:49:18.423Z</lastmod>
     
   </url>
   
@@ -1185,7 +1185,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/linux-git.html</loc>
+    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1241,7 +1241,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
+    <loc>https://lruihao.cn/posts/linux-git.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
