@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/docs/index.html</loc>
+    
+    <lastmod>2019-09-15T07:52:09.510Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/about/index.html</loc>
+    
+    <lastmod>2019-09-15T06:44:00.063Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/git.html</loc>
     
     <lastmod>2019-09-14T12:45:02.786Z</lastmod>
@@ -222,20 +236,6 @@
     <loc>https://lruihao.cn/docs/top/index.html</loc>
     
     <lastmod>2019-09-07T08:52:12.211Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/docs/index.html</loc>
-    
-    <lastmod>2019-09-04T12:17:50.599Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/about/index.html</loc>
-    
-    <lastmod>2019-09-03T11:49:31.390Z</lastmod>
     
   </url>
   
@@ -1185,7 +1185,28 @@
   </url>
   
   <url>
+    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1213,13 +1234,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/beian.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
@@ -1228,20 +1242,6 @@
   
   <url>
     <loc>https://lruihao.cn/posts/linux-git.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
