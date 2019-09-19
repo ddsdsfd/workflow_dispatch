@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lruihao.cn/"/>
-  <updated>2019-09-08T05:43:58.758Z</updated>
+  <updated>2019-09-19T14:10:00.622Z</updated>
   <id>https://lruihao.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设置网站运行时间</title>
+    <link href="https://lruihao.cn/posts/site-time.html"/>
+    <id>https://lruihao.cn/posts/site-time.html</id>
+    <published>2019-09-19T14:03:29.000Z</published>
+    <updated>2019-09-19T14:10:00.622Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note"><p>使用<code>javascript</code>计算博客等网站的运行时间。</p></div><a id="more"></a><blockquote><p>话不多说，直接贴码！</p></blockquote><figure class="highlight js"><figcaption><span>网站运行时间计算JS和HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createTime</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">  <span class="keyword">var</span> run = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">"05/28/2018 20:01:01"</span>);</span><br><span class="line">  <span class="comment">//總的秒數</span></span><br><span class="line">  <span class="keyword">var</span> runTime = (now - run) / <span class="number">1000</span>;</span><br><span class="line">  days = <span class="built_in">Math</span>.floor(runTime / <span class="number">60</span> / <span class="number">60</span> / <span class="number">24</span>);</span><br><span class="line">  hours = <span class="built_in">Math</span>.floor(runTime / <span class="number">60</span> / <span class="number">60</span> - (<span class="number">24</span> * days));</span><br><span class="line">  minutes = <span class="built_in">Math</span>.floor(runTime / <span class="number">60</span> - (<span class="number">24</span> * <span class="number">60</span> * days) - (<span class="number">60</span> * hours));</span><br><span class="line">  seconds = <span class="built_in">Math</span>.floor((now - run) / <span class="number">1000</span> - (<span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * days) - (<span class="number">60</span> * <span class="number">60</span> * hours) - (<span class="number">60</span> * minutes));</span><br><span class="line">  <span class="comment">//前置零</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">String</span>(hours).length === <span class="number">1</span>) &#123;</span><br><span class="line">    hours = <span class="string">"0"</span> + hours;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">String</span>(minutes).length === <span class="number">1</span>) &#123;</span><br><span class="line">    minutes = <span class="string">"0"</span> + minutes;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">String</span>(seconds).length === <span class="number">1</span>) &#123;</span><br><span class="line">    seconds = <span class="string">"0"</span> + seconds;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/*document.querySelector(".run-times").innerHTML = days + "&amp;thinsp;天&amp;thinsp;" + hours</span></span><br><span class="line"><span class="comment">          + "&amp;thinsp;时&amp;thinsp;" + minutes + "&amp;thinsp;分&amp;thinsp;" + seconds + "&amp;thinsp;秒";</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">".run-times"</span>).innerHTML = <span class="string">"RunTime: "</span> + days + <span class="string">","</span> + hours</span><br><span class="line">          + <span class="string">":"</span> + minutes + <span class="string">":"</span> + seconds + <span class="string">""</span>;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//setInterval("createTime()", 500);</span></span><br><span class="line"><span class="keyword">if</span> (!<span class="built_in">document</span>.hidden) &#123;</span><br><span class="line">  <span class="keyword">var</span> siteTime = setInterval(<span class="string">"createTime()"</span>, <span class="number">500</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  clearInterval(siteTime);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * HTML写法</span></span><br><span class="line"><span class="comment">&lt;span class="run-times" title="网站运行时间"&gt;载入时分秒...&lt;/span&gt;</span></span><br><span class="line"><span class="comment">&lt;p class="run-times" title="主頁运行时间"&gt;RunTime Loading...&lt;/p&gt;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note&quot;&gt;&lt;p&gt;使用&lt;code&gt;javascript&lt;/code&gt;计算博客等网站的运行时间。&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://lruihao.cn/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
+    
+      <category term="前端" scheme="https://lruihao.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>script的三种加载方式（async、defer）</title>
@@ -117,11 +141,11 @@
     
       <category term="总结" scheme="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="html/css" scheme="https://lruihao.cn/tags/html-css/"/>
+      <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
     
       <category term="git" scheme="https://lruihao.cn/tags/git/"/>
     
-      <category term="javascript" scheme="https://lruihao.cn/tags/javascript/"/>
+      <category term="html/css" scheme="https://lruihao.cn/tags/html-css/"/>
     
       <category term="php" scheme="https://lruihao.cn/tags/php/"/>
     
@@ -487,11 +511,11 @@
     
       <category term="java" scheme="https://lruihao.cn/tags/java/"/>
     
+      <category term="GUI" scheme="https://lruihao.cn/tags/GUI/"/>
+    
       <category term="URL" scheme="https://lruihao.cn/tags/URL/"/>
     
       <category term="URLConnection" scheme="https://lruihao.cn/tags/URLConnection/"/>
-    
-      <category term="GUI" scheme="https://lruihao.cn/tags/GUI/"/>
     
   </entry>
   
@@ -518,32 +542,6 @@
       <category term="python" scheme="https://lruihao.cn/tags/python/"/>
     
       <category term="json" scheme="https://lruihao.cn/tags/json/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python发送post请求进行简单的接口测试</title>
-    <link href="https://lruihao.cn/posts/posttest.html"/>
-    <id>https://lruihao.cn/posts/posttest.html</id>
-    <published>2019-05-07T10:17:05.000Z</published>
-    <updated>2019-05-07T10:29:02.908Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note"><p>通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p><ul><li>requests.get()</li><li>requests.post()<br>最近帮朋友的项目做一个小需求，需要把后台数据定期打包发送到微信群，麻小科技涛哥给了我一个接口，post访问。</li></ul></div><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">通过requests可以向某个地址发送请求requests.post(url,json date)</span></span><br><span class="line"><span class="string">post方法还有其他参数，如header等</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># post发送的数据</span></span><br><span class="line">postData = &#123;</span><br><span class="line">    <span class="comment"># 'username':'test',</span></span><br><span class="line">    <span class="comment"># 'password':'123456',</span></span><br><span class="line">    <span class="comment"># 'salary':2000,</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 接口这里不便公开</span></span><br><span class="line">r = requests.post(<span class="string">'http://demo.maxiaokeji.com/xx/xxxxx/xxxx'</span>,data=postData)</span><br><span class="line"><span class="comment"># print(r.text)</span></span><br><span class="line">response=r.json()</span><br><span class="line">print(response)</span><br></pre></td></tr></table></figure><p>运行后会在屏幕打印出返回的json数据<br><img src="/images/loading_img.gif" data-original="/posts/posttest/1.png" title="返回数据"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;note&quot;&gt;&lt;p&gt;通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;requests.get()&lt;/li&gt;&lt;li&gt;requests.post()&lt;br&gt;最近帮朋友的项目做一个小需求，需要把后台数据定期打包发送到微信群，麻小科技涛哥给了我一个接口，post访问。&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://lruihao.cn/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://lruihao.cn/tags/python/"/>
-    
-      <category term="post请求" scheme="https://lruihao.cn/tags/post%E8%AF%B7%E6%B1%82/"/>
-    
-      <category term="接口测试" scheme="https://lruihao.cn/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
