@@ -1,0 +1,1 @@
+var str=document.querySelector(".loveTyping").innerHTML;var i=0;var typeSet;function typing(){var e=document.querySelector(".loveTyping");if(i<=str.length){e.innerHTML=str.slice(0,i++)+"_";typeSet=setTimeout("typing()",100)}else{e.innerHTML=str;clearTimeout(typeSet)}}typing();
