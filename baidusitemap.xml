@@ -3,6 +3,8 @@
 
 
     
+    
+    
   <url>
     <loc>https://lruihao.cn/posts/phpfile.html</loc>
     <lastmod>2019-09-28T11:16:29.582Z</lastmod>
@@ -152,8 +154,6 @@
     </data>
     </url>
 
-    
-    
     
   <url>
     <loc>https://lruihao.cn/posts/cos-hexo.html</loc>
@@ -473,9 +473,9 @@
         <title>termux基本使用教程</title>
         <pubTime>2018-10-23T14:16:02.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>nodejs</tag>
+         
+        <tag>linux</tag>
          
         <tag>termux</tag>
          
@@ -569,9 +569,9 @@
          
         <tag>javascript</tag>
          
-        <tag>html/css</tag>
-         
         <tag>git</tag>
+         
+        <tag>html/css</tag>
          
         <tag>php</tag>
          
@@ -3352,11 +3352,11 @@
         
         <tag>javascript</tag>
          
+        <tag>301重定向</tag>
+         
         <tag>VPS</tag>
          
         <tag>SSL</tag>
-         
-        <tag>301重定向</tag>
          
         <tag>CDN</tag>
          
@@ -3733,9 +3733,9 @@
         <title>Arrays类及基本使用</title>
         <pubTime>2019-01-18T05:13:10.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>Arrays类</tag>
+         
+        <tag>java</tag>
          
         <tag>Collator</tag>
          
@@ -3964,105 +3964,6 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>git index.lock</title>
-        <pubTime>2018-08-14T11:21:23.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/beian.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>网站备案之旅</title>
-        <pubTime>2018-10-29T15:16:26.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-        <tag>网站备案</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hello-world.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-05-28T12:01:01.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>戏子春秋</title>
-        <pubTime>2018-06-03T11:41:32.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>四六级考试</title>
-        <pubTime>2018-06-16T07:23:15.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
@@ -4088,21 +3989,21 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/linux-git.html</loc>
+    <loc>https://lruihao.cn/posts/beian.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
         <display>
-        <title>linux/centos 下的安装git</title>
-        <pubTime>2018-09-22T14:28:45.000Z</pubTime>
+        <title>网站备案之旅</title>
+        <pubTime>2018-10-29T15:16:26.000Z</pubTime>
         
-        <tag>linux</tag>
+        <tag>生活随笔</tag>
          
-        <tag>git</tag>
+        <tag>网站备案</tag>
          
          
            
              
-              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -4137,6 +4038,21 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/hello-world.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-05-28T12:01:01.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/posts/mood.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
@@ -4147,6 +4063,90 @@
         <tag>生活随笔</tag>
          
         <tag>心灵鸡汤</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/linux-git.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>linux/centos 下的安装git</title>
+        <pubTime>2018-09-22T14:28:45.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>戏子春秋</title>
+        <pubTime>2018-06-03T11:41:32.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>git index.lock</title>
+        <pubTime>2018-08-14T11:21:23.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://lruihao.cn/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>四六级考试</title>
+        <pubTime>2018-06-16T07:23:15.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
          
          
            

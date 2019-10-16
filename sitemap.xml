@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/love/index.html</loc>
+    
+    <lastmod>2019-10-16T14:44:15.971Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/phpfile.html</loc>
     
     <lastmod>2019-09-28T11:16:29.582Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://lruihao.cn/posts/webbiji.html</loc>
     
     <lastmod>2019-09-22T10:10:09.485Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/love/index.html</loc>
-    
-    <lastmod>2019-09-22T09:35:22.346Z</lastmod>
     
   </url>
   
@@ -1206,42 +1206,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/linux-git.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/hello-world.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/mood.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    <loc>https://lruihao.cn/posts/beian.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1255,7 +1220,42 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/beian.html</loc>
+    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/hello-world.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/mood.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/linux-git.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
