@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/about/index.html</loc>
+    
+    <lastmod>2019-12-06T12:46:24.944Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/docs/friends/index.html</loc>
+    
+    <lastmod>2019-12-06T12:37:02.166Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/git.html</loc>
     
     <lastmod>2019-12-02T12:09:12.476Z</lastmod>
@@ -590,13 +604,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/about/index.html</loc>
-    
-    <lastmod>2019-09-22T03:51:25.778Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/Euclid.html</loc>
     
     <lastmod>2019-09-13T07:13:50.898Z</lastmod>
@@ -635,13 +642,6 @@
     <loc>https://lruihao.cn/posts/recent-posts.html</loc>
     
     <lastmod>2019-09-13T02:55:41.831Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/docs/friends/index.html</loc>
-    
-    <lastmod>2019-09-10T10:36:08.294Z</lastmod>
     
   </url>
   
@@ -1241,7 +1241,35 @@
   </url>
   
   <url>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/beian.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/hello-world.html</loc>
+    
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
@@ -1256,34 +1284,6 @@
   
   <url>
     <loc>https://lruihao.cn/posts/mood.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/hello-world.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/beian.html</loc>
-    
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
     
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     
