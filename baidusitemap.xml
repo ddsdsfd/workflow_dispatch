@@ -4,6 +4,53 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/resume.html</loc>
+    <lastmod>2020-06-06T11:56:00.754Z</lastmod>
+    <data>
+        <display>
+        <title>个人简历</title>
+        <pubTime>2019-04-24T05:21:49.000Z</pubTime>
+        
+        <tag>简历</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/dev-rules.html</loc>
+    <lastmod>2020-06-06T11:46:11.603Z</lastmod>
+    <data>
+        <display>
+        <title>web开发规则，代码规范</title>
+        <pubTime>2019-08-15T10:30:31.000Z</pubTime>
+        
+        <tag>总结</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>Git</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
     <loc>https://lruihao.cn/posts/csdnvisiter.html</loc>
     <lastmod>2020-03-26T03:26:25.486Z</lastmod>
     <data>
@@ -133,7 +180,6 @@
     
     
     
-    
   <url>
     <loc>https://lruihao.cn/posts/sql.html</loc>
     <lastmod>2020-01-17T11:39:13.474Z</lastmod>
@@ -209,34 +255,6 @@
         <tag>JavaScript</tag>
          
         <tag>Fullstack</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/dev-rules.html</loc>
-    <lastmod>2019-12-07T11:38:33.812Z</lastmod>
-    <data>
-        <display>
-        <title>web开发规则，代码规范</title>
-        <pubTime>2019-08-15T10:30:31.000Z</pubTime>
-        
-        <tag>总结</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-        <tag>Git</tag>
-         
-        <tag>PHP</tag>
          
          
            
@@ -387,23 +405,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://lruihao.cn/posts/resume.html</loc>
-    <lastmod>2019-10-24T14:37:08.177Z</lastmod>
-    <data>
-        <display>
-        <title>个人简历</title>
-        <pubTime>2019-04-24T05:21:49.000Z</pubTime>
-        
-        <tag>简历</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://lruihao.cn/posts/web-font.html</loc>
@@ -2106,7 +2107,6 @@
     </url>
 
     
-    
   <url>
     <loc>https://lruihao.cn/posts/font-mmt.html</loc>
     <lastmod>2019-09-26T13:21:52.584Z</lastmod>
@@ -3094,11 +3094,11 @@
          
         <tag>C++</tag>
          
-        <tag>C</tag>
-         
         <tag>BFS</tag>
          
         <tag>搜索</tag>
+         
+        <tag>C</tag>
          
         <tag>DFS</tag>
          
@@ -3326,9 +3326,9 @@
          
         <tag>C++</tag>
          
-        <tag>C</tag>
-         
         <tag>BFS</tag>
+         
+        <tag>C</tag>
          
         <tag>POJ</tag>
          
@@ -3386,11 +3386,11 @@
          
         <tag>C++</tag>
          
-        <tag>C</tag>
-         
         <tag>BFS</tag>
          
         <tag>搜索</tag>
+         
+        <tag>C</tag>
          
         <tag>POJ</tag>
          
@@ -4336,71 +4336,6 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>最短路入门</title>
-        <pubTime>2018-08-03T08:27:16.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>最短路</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>戏子春秋</title>
-        <pubTime>2018-06-03T11:41:32.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>四六级考试</title>
-        <pubTime>2018-06-16T07:23:15.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
     <lastmod>2018-11-03T04:27:43.000Z</lastmod>
     <data>
@@ -4438,6 +4373,71 @@
         <tag>生活随笔</tag>
          
         <tag>心灵鸡汤</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>戏子春秋</title>
+        <pubTime>2018-06-03T11:41:32.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>最短路入门</title>
+        <pubTime>2018-08-03T08:27:16.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>最短路</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>四六级考试</title>
+        <pubTime>2018-06-16T07:23:15.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
          
          
            
