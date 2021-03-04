@@ -4,140 +4,14 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/webbiji.html</loc>
-    <lastmod>2020-07-25T13:23:56.657Z</lastmod>
+    <loc>https://lruihao.cn/posts/codereview.html</loc>
+    <lastmod>2021-03-04T13:33:31.754Z</lastmod>
     <data>
         <display>
-        <title>web汇总</title>
-        <pubTime>2019-03-18T12:40:55.000Z</pubTime>
+        <title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title>
+        <pubTime>2021-03-04T13:04:18.000Z</pubTime>
         
-        <tag>Backend</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-        <tag>Fullstack</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/git.html</loc>
-    <lastmod>2020-07-25T13:23:02.625Z</lastmod>
-    <data>
-        <display>
-        <title>Git常用指令汇总</title>
-        <pubTime>2018-10-30T10:59:56.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://lruihao.cn/posts/cell-blog-install.html</loc>
-    <lastmod>2020-07-25T13:17:45.889Z</lastmod>
-    <data>
-        <display>
-        <title>cell-blog 功能介绍与安装</title>
-        <pubTime>2020-07-25T12:51:11.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-        <tag>PHP</tag>
-         
-        <tag>Laravel</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/resume.html</loc>
-    <lastmod>2020-07-25T13:10:36.105Z</lastmod>
-    <data>
-        <display>
-        <title>个人简历</title>
-        <pubTime>2019-04-24T05:21:49.000Z</pubTime>
-        
-        <tag>简历</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/cell-blog-dev.html</loc>
-    <lastmod>2020-07-25T12:50:11.153Z</lastmod>
-    <data>
-        <display>
-        <title>cell-blog 开发记录</title>
-        <pubTime>2020-07-25T12:42:42.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-        <tag>PHP</tag>
-         
-        <tag>Laravel</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/dev-rules.html</loc>
-    <lastmod>2020-06-06T11:46:11.603Z</lastmod>
-    <data>
-        <display>
-        <title>web开发规则，代码规范</title>
-        <pubTime>2019-08-15T10:30:31.000Z</pubTime>
-        
-        <tag>总结</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-        <tag>Git</tag>
-         
-        <tag>PHP</tag>
+        <tag>codereview</tag>
          
          
            
@@ -151,25 +25,35 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   <url>
-    <loc>https://lruihao.cn/posts/csdnvisiter.html</loc>
-    <lastmod>2020-03-26T03:26:25.486Z</lastmod>
+    <loc>https://lruihao.cn/posts/%E7%AE%80%E5%8D%95%E8%83%8C%E5%8C%85.html</loc>
+    <lastmod>2021-03-04T12:52:33.406Z</lastmod>
     <data>
         <display>
-        <title>使用Python刷csdn访问量</title>
-        <pubTime>2020-03-26T03:08:38.000Z</pubTime>
+        <title>简单背包</title>
+        <pubTime>2018-06-16T05:18:43.000Z</pubTime>
         
-        <tag>脚本</tag>
+        <tag>C</tag>
          
-        <tag>Python</tag>
+        <tag>背包问题</tag>
          
          
            
              
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+              <breadCrumb title="背包问题" url="https://lruihao.cn/categories/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
           
         </display>
     </data>
@@ -177,26 +61,30 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/pyinstallererror.html</loc>
-    <lastmod>2020-03-26T03:22:06.632Z</lastmod>
+    <loc>https://lruihao.cn/posts/%E7%95%85%E9%80%9A%E5%B7%A5%E7%A8%8B.html</loc>
+    <lastmod>2021-03-04T12:52:33.392Z</lastmod>
     <data>
         <display>
-        <title>安装pyinstaller出错的解决办法及csdn工具实例打包</title>
-        <pubTime>2019-05-09T11:05:01.000Z</pubTime>
+        <title>畅通工程-HDU-1232(并查集经典模板)</title>
+        <pubTime>2018-07-31T03:08:43.000Z</pubTime>
         
-        <tag>脚本</tag>
+        <tag>ACM</tag>
          
-        <tag>Python</tag>
+        <tag>C++</tag>
          
-        <tag>pyinstaller</tag>
+        <tag>C</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>并查集</tag>
          
          
            
              
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
           
         </display>
     </data>
@@ -204,26 +92,25 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/daka.html</loc>
-    <lastmod>2020-03-25T04:51:31.395Z</lastmod>
+    <loc>https://lruihao.cn/posts/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B23.html</loc>
+    <lastmod>2021-03-04T12:52:33.391Z</lastmod>
     <data>
         <display>
-        <title>新冠疫情未返校未返工第N天之“自动打卡”</title>
-        <pubTime>2020-03-25T00:22:42.000Z</pubTime>
+        <title>牛客练习赛23</title>
+        <pubTime>2018-07-27T13:56:08.000Z</pubTime>
         
-        <tag>脚本</tag>
+        <tag>ACM</tag>
          
-        <tag>Python</tag>
+        <tag>C++</tag>
          
-        <tag>POST</tag>
+        <tag>C</tag>
+         
+        <tag>Nowcoder</tag>
          
          
            
              
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
         </display>
     </data>
@@ -231,23 +118,19 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/cron.html</loc>
-    <lastmod>2020-03-25T04:49:38.749Z</lastmod>
+    <loc>https://lruihao.cn/posts/%E7%8C%B4%E5%AD%90%E4%B8%8E%E5%93%AA%E5%90%92.html</loc>
+    <lastmod>2021-03-04T12:52:33.391Z</lastmod>
     <data>
         <display>
-        <title>CRON表达式的基本语法</title>
-        <pubTime>2020-03-25T01:19:44.000Z</pubTime>
+        <title>猴子与哪吒</title>
+        <pubTime>2018-05-31T02:09:15.000Z</pubTime>
         
-        <tag>linux</tag>
-         
-        <tag>shell</tag>
-         
-        <tag>定时任务</tag>
+        <tag>生活随笔</tag>
          
          
            
              
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -255,46 +138,210 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/cos-album.html</loc>
-    <lastmod>2020-03-25T00:41:17.687Z</lastmod>
+    <loc>https://lruihao.cn/posts/%E6%B7%B1%E6%90%9C%E5%B9%BF%E6%90%9C.html</loc>
+    <lastmod>2021-03-04T12:52:33.390Z</lastmod>
     <data>
         <display>
-        <title>利用腾讯云为静态页面添加“动态”相册</title>
-        <pubTime>2019-11-24T02:52:34.000Z</pubTime>
+        <title>深搜广搜</title>
+        <pubTime>2018-07-22T03:25:14.000Z</pubTime>
         
-        <tag>Frontend</tag>
+        <tag>ACM</tag>
          
-        <tag>腾讯云cos桶</tag>
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>BFS</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>DFS</tag>
          
          
            
              
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
           
         </display>
     </data>
     </url>
 
     
-    
-    
   <url>
-    <loc>https://lruihao.cn/posts/sql.html</loc>
-    <lastmod>2020-01-17T11:39:13.474Z</lastmod>
+    <loc>https://lruihao.cn/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92.html</loc>
+    <lastmod>2021-03-04T12:52:33.373Z</lastmod>
     <data>
         <display>
-        <title>SQL总结</title>
-        <pubTime>2020-01-16T11:28:05.000Z</pubTime>
+        <title>杨辉三角</title>
+        <pubTime>2018-07-22T03:41:15.000Z</pubTime>
         
-        <tag>SQL</tag>
+        <tag>数学</tag>
+         
+        <tag>杨辉三角</tag>
          
          
            
              
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    <lastmod>2021-03-04T12:52:33.372Z</lastmod>
+    <data>
+        <display>
+        <title>戏子春秋</title>
+        <pubTime>2018-06-03T11:41:32.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts//hdu1272.html</loc>
+    <lastmod>2021-03-04T12:52:33.372Z</lastmod>
+    <data>
+        <display>
+        <title>小希的迷宫-HDU-1272(并查集or树性质)</title>
+        <pubTime>2018-08-01T13:45:50.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95.html</loc>
+    <lastmod>2021-03-04T12:52:33.371Z</lastmod>
+    <data>
+        <display>
+        <title>在线离线算法</title>
+        <pubTime>2018-07-26T01:57:32.000Z</pubTime>
+        
+        <tag>在线离线算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
+    <lastmod>2021-03-04T12:52:33.363Z</lastmod>
+    <data>
+        <display>
+        <title>四六级考试</title>
+        <pubTime>2018-06-16T07:23:15.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E5%85%89.html</loc>
+    <lastmod>2021-03-04T12:52:33.353Z</lastmod>
+    <data>
+        <display>
+        <title>光</title>
+        <pubTime>2018-06-03T04:54:47.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97.html</loc>
+    <lastmod>2021-03-04T12:52:33.353Z</lastmod>
+    <data>
+        <display>
+        <title>位运算</title>
+        <pubTime>2018-06-14T12:22:21.000Z</pubTime>
+        
+        <tag>位运算</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
+    <lastmod>2021-03-04T12:52:33.352Z</lastmod>
+    <data>
+        <display>
+        <title>最短路入门</title>
+        <pubTime>2018-08-03T08:27:16.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>最短路</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
           
         </display>
     </data>
@@ -303,7 +350,7 @@
     
   <url>
     <loc>https://lruihao.cn/posts/year-2019.html</loc>
-    <lastmod>2020-01-17T11:37:49.151Z</lastmod>
+    <lastmod>2021-03-04T12:52:33.339Z</lastmod>
     <data>
         <display>
         <title>2019年度总结</title>
@@ -323,7 +370,7 @@
     
   <url>
     <loc>https://lruihao.cn/posts/year-2018.html</loc>
-    <lastmod>2020-01-16T12:05:26.585Z</lastmod>
+    <lastmod>2021-03-04T12:52:33.324Z</lastmod>
     <data>
         <display>
         <title>2018年度总结</title>
@@ -342,231 +389,8 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/links.html</loc>
-    <lastmod>2019-12-02T12:07:29.164Z</lastmod>
-    <data>
-        <display>
-        <title>各种Links汇总与分享</title>
-        <pubTime>2018-06-06T16:06:05.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>Backend</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>链接集合</tag>
-         
-        <tag>Fullstack</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://lruihao.cn/posts/nextplugin.html</loc>
-    <lastmod>2019-11-23T12:00:38.532Z</lastmod>
-    <data>
-        <display>
-        <title>hexo插件及next内置样式集</title>
-        <pubTime>2018-11-24T08:54:09.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Frontend</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hexowrite.html</loc>
-    <lastmod>2019-11-23T11:59:46.006Z</lastmod>
-    <data>
-        <display>
-        <title>hexo 添加图片，音乐，链接，视频</title>
-        <pubTime>2018-05-31T15:19:22.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/heart.html</loc>
-    <lastmod>2019-11-23T11:30:28.447Z</lastmod>
-    <data>
-        <display>
-        <title>高逼格c语言画心</title>
-        <pubTime>2018-08-15T08:33:12.000Z</pubTime>
-        
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://lruihao.cn/posts/restful.html</loc>
-    <lastmod>2019-11-14T11:17:21.338Z</lastmod>
-    <data>
-        <display>
-        <title>RESTful</title>
-        <pubTime>2019-11-14T11:06:05.000Z</pubTime>
-        
-        <tag>Fullstack</tag>
-         
-        <tag>REST</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://lruihao.cn/posts/web-font.html</loc>
-    <lastmod>2019-10-19T04:27:18.891Z</lastmod>
-    <data>
-        <display>
-        <title>ttf字体压缩</title>
-        <pubTime>2018-10-17T13:38:06.000Z</pubTime>
-        
-        <tag>Frontend</tag>
-         
-        <tag>Nodejs</tag>
-         
-        <tag>字体压缩</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="Nodejs" url="https://lruihao.cn/categories/Backend/Nodejs/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/termux1.html</loc>
-    <lastmod>2019-10-19T03:27:36.487Z</lastmod>
-    <data>
-        <display>
-        <title>termux基本使用教程</title>
-        <pubTime>2018-10-23T14:16:02.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>Nodejs</tag>
-         
-        <tag>termux</tag>
-         
-         
-           
-             
-              <breadCrumb title="termux" url="https://lruihao.cn/categories/termux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/termux.html</loc>
-    <lastmod>2019-10-19T03:27:31.542Z</lastmod>
-    <data>
-        <display>
-        <title>在Android上搭建hexo博客</title>
-        <pubTime>2018-08-11T08:59:05.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Nodejs</tag>
-         
-        <tag>termux</tag>
-         
-         
-           
-             
-              <breadCrumb title="termux" url="https://lruihao.cn/categories/termux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Arrays.html</loc>
-    <lastmod>2019-10-19T03:17:52.088Z</lastmod>
-    <data>
-        <display>
-        <title>Arrays类及基本使用</title>
-        <pubTime>2019-01-18T05:13:10.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>Collator</tag>
-         
-        <tag>Comparator</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/posts/xunhuan.html</loc>
-    <lastmod>2019-10-19T03:09:25.872Z</lastmod>
+    <lastmod>2021-03-04T12:52:33.312Z</lastmod>
     <data>
         <display>
         <title>java水仙花数（循环）</title>
@@ -594,872 +418,8 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/biaoshi.html</loc>
-    <lastmod>2019-10-19T03:09:02.607Z</lastmod>
-    <data>
-        <display>
-        <title>java标识符</title>
-        <pubTime>2019-01-14T07:07:57.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/urlreader.html</loc>
-    <lastmod>2019-10-19T03:08:57.855Z</lastmod>
-    <data>
-        <display>
-        <title>java通过URL和URLConnection访问网页资源</title>
-        <pubTime>2019-05-06T09:41:35.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>URL</tag>
-         
-        <tag>URLConnection</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/SingleThreadDown.html</loc>
-    <lastmod>2019-10-19T03:08:33.832Z</lastmod>
-    <data>
-        <display>
-        <title>java实现一个单线程的资源下载器</title>
-        <pubTime>2019-05-08T12:55:02.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>GUI</tag>
-         
-        <tag>URL</tag>
-         
-        <tag>URLConnection</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Sublime-Text3.html</loc>
-    <lastmod>2019-10-19T03:07:49.048Z</lastmod>
-    <data>
-        <display>
-        <title>Sublime Text3快捷键大全</title>
-        <pubTime>2019-08-15T12:59:10.000Z</pubTime>
-        
-        <tag>总结</tag>
-         
-        <tag>他山之石</tag>
-         
-        <tag>Sublime Text3</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/substatus.html</loc>
-    <lastmod>2019-10-19T03:07:31.608Z</lastmod>
-    <data>
-        <display>
-        <title>Java父类子类的对象初始化过程</title>
-        <pubTime>2019-03-21T05:36:25.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/stringbuffer.html</loc>
-    <lastmod>2019-10-19T03:07:12.528Z</lastmod>
-    <data>
-        <display>
-        <title>java常用类</title>
-        <pubTime>2019-04-14T02:12:44.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>排序</tag>
-         
-        <tag>StringBuffer</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/RegexDemo.html</loc>
-    <lastmod>2019-10-19T03:06:27.666Z</lastmod>
-    <data>
-        <display>
-        <title>java正则表达式练习</title>
-        <pubTime>2019-04-18T14:04:21.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>regex</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/QFrame.html</loc>
-    <lastmod>2019-10-19T03:05:07.608Z</lastmod>
-    <data>
-        <display>
-        <title>匿名类在可视化界面中的应用</title>
-        <pubTime>2019-03-15T14:31:28.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>GUI</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/next-pdf.html</loc>
-    <lastmod>2019-10-19T03:04:20.632Z</lastmod>
-    <data>
-        <display>
-        <title>next添加支持pdf</title>
-        <pubTime>2018-11-09T04:51:48.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/mathclass.html</loc>
-    <lastmod>2019-10-19T03:04:05.704Z</lastmod>
-    <data>
-        <display>
-        <title>java猜数字小游戏（Math类）</title>
-        <pubTime>2019-01-15T09:33:28.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/JavaException.html</loc>
-    <lastmod>2019-10-19T03:03:31.521Z</lastmod>
-    <data>
-        <display>
-        <title>模拟借书系统（java异常练习）</title>
-        <pubTime>2019-05-01T08:52:21.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/jicheng.html</loc>
-    <lastmod>2019-10-19T03:03:17.079Z</lastmod>
-    <data>
-        <display>
-        <title>java继承test</title>
-        <pubTime>2019-01-24T07:07:50.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>extends</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/input.html</loc>
-    <lastmod>2019-10-19T03:02:53.079Z</lastmod>
-    <data>
-        <display>
-        <title>java录入数据</title>
-        <pubTime>2019-01-14T07:33:46.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hustoj.html</loc>
-    <lastmod>2019-10-19T03:02:43.272Z</lastmod>
-    <data>
-        <display>
-        <title>HustOJ 基础搭建教程</title>
-        <pubTime>2019-05-17T15:08:04.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>linux</tag>
-         
-        <tag>hustoj</tag>
-         
-        <tag>ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hexobuild.html</loc>
-    <lastmod>2019-10-19T03:01:54.760Z</lastmod>
-    <data>
-        <display>
-        <title>hexo+github搭建个人博客及美化</title>
-        <pubTime>2018-06-01T06:34:23.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>Nodejs</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hexo-theme-next.html</loc>
-    <lastmod>2019-10-19T03:01:31.544Z</lastmod>
-    <data>
-        <display>
-        <title>hexo-theme-next @modified LRH</title>
-        <pubTime>2019-03-21T08:43:19.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>博客日志</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/HelloJava.html</loc>
-    <lastmod>2019-10-19T03:01:17.112Z</lastmod>
-    <data>
-        <display>
-        <title>用记事本编写第一个java程序</title>
-        <pubTime>2019-04-19T11:49:54.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-        <tag>HelloWorld</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hexo-d-error.html</loc>
-    <lastmod>2019-10-19T03:01:04.624Z</lastmod>
-    <data>
-        <display>
-        <title>hexo d 出错</title>
-        <pubTime>2018-08-21T14:15:01.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/fanxing.html</loc>
-    <lastmod>2019-10-19T03:00:28.176Z</lastmod>
-    <data>
-        <display>
-        <title>java泛型test</title>
-        <pubTime>2019-03-16T05:56:01.000Z</pubTime>
-        
-        <tag>JAVA</tag>
-         
-        <tag>泛型</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/eclipseuse.html</loc>
-    <lastmod>2019-10-19T02:59:48.704Z</lastmod>
-    <data>
-        <display>
-        <title>eclipse的基本使用</title>
-        <pubTime>2019-03-15T15:47:24.000Z</pubTime>
-        
-        <tag>JAVA</tag>
-         
-        <tag>eclipse</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/dongtaisub.html</loc>
-    <lastmod>2019-10-19T02:58:56.657Z</lastmod>
-    <data>
-        <display>
-        <title>hexo个性化-next主题动态显示subtitle</title>
-        <pubTime>2018-08-20T08:16:40.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/console-log.html</loc>
-    <lastmod>2019-10-19T02:58:03.648Z</lastmod>
-    <data>
-        <display>
-        <title>hexo博客自定义console log</title>
-        <pubTime>2018-08-04T08:19:06.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/byteio.html</loc>
-    <lastmod>2019-10-19T02:56:37.736Z</lastmod>
-    <data>
-        <display>
-        <title>文件加密解密（字节流）</title>
-        <pubTime>2019-05-02T15:04:32.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>JAVA</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/bt.html</loc>
-    <lastmod>2019-10-19T02:56:18.184Z</lastmod>
-    <data>
-        <display>
-        <title>宝塔面板安装</title>
-        <pubTime>2019-03-18T13:31:43.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>server</tag>
-         
-        <tag>宝塔面板</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/blog-backup.html</loc>
-    <lastmod>2019-10-19T02:55:56.368Z</lastmod>
-    <data>
-        <display>
-        <title>hexo 博客源码备份</title>
-        <pubTime>2018-11-03T04:49:28.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Git</tag>
-         
-        <tag>Nodejs</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/duixiang.html</loc>
-    <lastmod>2019-10-19T02:54:56.864Z</lastmod>
-    <data>
-        <display>
-        <title>面向对象基础知识总结</title>
-        <pubTime>2019-01-15T08:07:31.000Z</pubTime>
-        
-        <tag>JAVA</tag>
-         
-        <tag>面向对象</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/linux-git.html</loc>
-    <lastmod>2019-10-19T02:53:41.073Z</lastmod>
-    <data>
-        <display>
-        <title>linux/centos 下的安装git</title>
-        <pubTime>2018-09-22T14:28:45.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
-    <lastmod>2019-10-19T02:52:57.488Z</lastmod>
-    <data>
-        <display>
-        <title>git index.lock</title>
-        <pubTime>2018-08-14T11:21:23.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/gituse.html</loc>
-    <lastmod>2019-10-19T02:52:37.832Z</lastmod>
-    <data>
-        <display>
-        <title>使用Git上传代码到github,coding等仓库</title>
-        <pubTime>2018-10-26T13:11:02.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/gitbookuse.html</loc>
-    <lastmod>2019-10-19T02:52:25.513Z</lastmod>
-    <data>
-        <display>
-        <title>GitBook使用教程</title>
-        <pubTime>2019-04-04T14:09:44.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>Git</tag>
-         
-        <tag>Nodejs</tag>
-         
-        <tag>gitbook</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="Nodejs" url="https://lruihao.cn/categories/Backend/Nodejs/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/mmtimgpy.html</loc>
-    <lastmod>2019-10-19T02:50:30.609Z</lastmod>
-    <data>
-        <display>
-        <title>python爬取网站图片（图片链接相似）</title>
-        <pubTime>2019-04-22T04:46:34.000Z</pubTime>
-        
-        <tag>脚本</tag>
-         
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/jsoninfo.html</loc>
-    <lastmod>2019-10-19T02:50:07.809Z</lastmod>
-    <data>
-        <display>
-        <title>Python如何操作Json？</title>
-        <pubTime>2019-05-07T10:42:47.000Z</pubTime>
-        
-        <tag>他山之石</tag>
-         
-        <tag>Python</tag>
-         
-        <tag>JSON</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/mx2wx.html</loc>
-    <lastmod>2019-10-19T02:49:42.609Z</lastmod>
-    <data>
-        <display>
-        <title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title>
-        <pubTime>2019-05-11T09:02:31.000Z</pubTime>
-        
-        <tag>定时任务</tag>
-         
-        <tag>Python</tag>
-         
-        <tag>POST</tag>
-         
-        <tag>JSON</tag>
-         
-        <tag>wxpy</tag>
-         
-        <tag>pyinstaller</tag>
-         
-        <tag>requests</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/wximgpy.html</loc>
-    <lastmod>2019-10-19T02:48:49.241Z</lastmod>
-    <data>
-        <display>
-        <title>基本python实现的爬取微信好友头像，并拼接成大图</title>
-        <pubTime>2019-04-20T05:32:58.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>wxpy</tag>
-         
-        <tag>pillow</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/posts/wxpy1.html</loc>
-    <lastmod>2019-10-19T02:48:34.609Z</lastmod>
+    <lastmod>2021-03-04T12:52:33.284Z</lastmod>
     <data>
         <display>
         <title>python玩微信：初探wxpy</title>
@@ -1489,18 +449,18 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/posttest.html</loc>
-    <lastmod>2019-10-19T02:47:34.329Z</lastmod>
+    <loc>https://lruihao.cn/posts/wximgpy.html</loc>
+    <lastmod>2021-03-04T12:52:33.257Z</lastmod>
     <data>
         <display>
-        <title>python发送post请求进行简单的接口测试</title>
-        <pubTime>2019-05-07T10:17:05.000Z</pubTime>
+        <title>基本python实现的爬取微信好友头像，并拼接成大图</title>
+        <pubTime>2019-04-20T05:32:58.000Z</pubTime>
         
         <tag>Python</tag>
          
-        <tag>POST</tag>
+        <tag>wxpy</tag>
          
-        <tag>接口测试</tag>
+        <tag>pillow</tag>
          
          
            
@@ -1516,8 +476,615 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/wireless-network.html</loc>
+    <lastmod>2021-03-04T12:52:33.245Z</lastmod>
+    <data>
+        <display>
+        <title>wireless network-POJ-2236(并查集)</title>
+        <pubTime>2018-07-31T03:10:54.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/wex5.html</loc>
+    <lastmod>2021-03-04T12:52:33.221Z</lastmod>
+    <data>
+        <display>
+        <title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title>
+        <pubTime>2019-04-13T03:15:20.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>app</tag>
+         
+        <tag>Wex5</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/windefault.html</loc>
+    <lastmod>2021-03-04T12:52:33.221Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu + windows双系统默认启动项设置</title>
+        <pubTime>2019-03-21T04:48:30.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>ubuntu</tag>
+         
+        <tag>windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/webbiji.html</loc>
+    <lastmod>2021-03-04T12:52:33.213Z</lastmod>
+    <data>
+        <display>
+        <title>web汇总</title>
+        <pubTime>2019-03-18T12:40:55.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>Fullstack</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/web-server-yun.html</loc>
+    <lastmod>2021-03-04T12:52:33.182Z</lastmod>
+    <data>
+        <display>
+        <title>云服务器CentOS系统搭建web服务</title>
+        <pubTime>2018-10-29T01:15:58.000Z</pubTime>
+        
+        <tag>他山之石</tag>
+         
+        <tag>server</tag>
+         
+        <tag>云服务器</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/web-server-win.html</loc>
+    <lastmod>2021-03-04T12:52:33.170Z</lastmod>
+    <data>
+        <display>
+        <title>windows上搭建web服务器</title>
+        <pubTime>2018-10-26T13:56:18.000Z</pubTime>
+        
+        <tag>server</tag>
+         
+        <tag>windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/web-font.html</loc>
+    <lastmod>2021-03-04T12:52:33.168Z</lastmod>
+    <data>
+        <display>
+        <title>ttf字体压缩</title>
+        <pubTime>2018-10-17T13:38:06.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>Nodejs</tag>
+         
+        <tag>字体压缩</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="Nodejs" url="https://lruihao.cn/categories/Backend/Nodejs/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/wamproot.html</loc>
+    <lastmod>2021-03-04T12:52:33.159Z</lastmod>
+    <data>
+        <display>
+        <title>WAMPServer自定义网站根目录等设置</title>
+        <pubTime>2019-07-12T10:44:36.000Z</pubTime>
+        
+        <tag>server</tag>
+         
+        <tag>PHP</tag>
+         
+        <tag>windows</tag>
+         
+        <tag>WAMPServer</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/vim.html</loc>
+    <lastmod>2021-03-04T12:52:33.153Z</lastmod>
+    <data>
+        <display>
+        <title>linux系统进入退出vim编辑器及termux修改问候语</title>
+        <pubTime>2018-08-31T03:46:39.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>termux</tag>
+         
+        <tag>vim</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/vcode.html</loc>
+    <lastmod>2021-03-04T12:52:33.152Z</lastmod>
+    <data>
+        <display>
+        <title>js验证码</title>
+        <pubTime>2019-03-04T12:53:09.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/urlreader.html</loc>
+    <lastmod>2021-03-04T12:52:33.146Z</lastmod>
+    <data>
+        <display>
+        <title>java通过URL和URLConnection访问网页资源</title>
+        <pubTime>2019-05-06T09:41:35.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>URL</tag>
+         
+        <tag>URLConnection</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/ubuntutime.html</loc>
+    <lastmod>2021-03-04T12:52:33.134Z</lastmod>
+    <data>
+        <display>
+        <title>win10,ubuntu双系统时间不一致</title>
+        <pubTime>2019-03-15T06:28:10.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>ubuntu</tag>
+         
+        <tag>windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/termux1.html</loc>
+    <lastmod>2021-03-04T12:52:33.098Z</lastmod>
+    <data>
+        <display>
+        <title>termux基本使用教程</title>
+        <pubTime>2018-10-23T14:16:02.000Z</pubTime>
+        
+        <tag>Nodejs</tag>
+         
+        <tag>linux</tag>
+         
+        <tag>termux</tag>
+         
+         
+           
+             
+              <breadCrumb title="termux" url="https://lruihao.cn/categories/termux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/termux.html</loc>
+    <lastmod>2021-03-04T12:52:32.928Z</lastmod>
+    <data>
+        <display>
+        <title>在Android上搭建hexo博客</title>
+        <pubTime>2018-08-11T08:59:05.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Nodejs</tag>
+         
+        <tag>termux</tag>
+         
+         
+           
+             
+              <breadCrumb title="termux" url="https://lruihao.cn/categories/termux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/substatus.html</loc>
+    <lastmod>2021-03-04T12:52:32.910Z</lastmod>
+    <data>
+        <display>
+        <title>Java父类子类的对象初始化过程</title>
+        <pubTime>2019-03-21T05:36:25.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/subject-verb.html</loc>
+    <lastmod>2021-03-04T12:52:32.897Z</lastmod>
+    <data>
+        <display>
+        <title>英语语法--主谓一致</title>
+        <pubTime>2019-01-12T05:02:49.000Z</pubTime>
+        
+        <tag>English</tag>
+         
+         
+           
+             
+              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/stringbuffer.html</loc>
+    <lastmod>2021-03-04T12:52:32.873Z</lastmod>
+    <data>
+        <display>
+        <title>java常用类</title>
+        <pubTime>2019-04-14T02:12:44.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>StringBuffer</tag>
+         
+        <tag>排序</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/sql.html</loc>
+    <lastmod>2021-03-04T12:52:32.858Z</lastmod>
+    <data>
+        <display>
+        <title>SQL总结</title>
+        <pubTime>2020-01-16T11:28:05.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F.html</loc>
+    <lastmod>2021-03-04T12:52:32.846Z</lastmod>
+    <data>
+        <display>
+        <title>sort排序</title>
+        <pubTime>2018-06-14T12:23:03.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>STL</tag>
+         
+        <tag>排序</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="STL" url="https://lruihao.cn/categories/ACM/STL/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/site-time.html</loc>
+    <lastmod>2021-03-04T12:52:32.845Z</lastmod>
+    <data>
+        <display>
+        <title>设置网站运行时间</title>
+        <pubTime>2019-09-19T14:03:29.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/shell.html</loc>
+    <lastmod>2021-03-04T12:52:32.825Z</lastmod>
+    <data>
+        <display>
+        <title>shell脚本初体验</title>
+        <pubTime>2018-10-29T03:57:39.000Z</pubTime>
+        
+        <tag>HelloWorld</tag>
+         
+        <tag>linux</tag>
+         
+        <tag>shell</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/resume.html</loc>
+    <lastmod>2021-03-04T12:52:32.814Z</lastmod>
+    <data>
+        <display>
+        <title>个人简历</title>
+        <pubTime>2019-04-24T05:21:49.000Z</pubTime>
+        
+        <tag>简历</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/restful.html</loc>
+    <lastmod>2021-03-04T12:52:32.808Z</lastmod>
+    <data>
+        <display>
+        <title>RESTful</title>
+        <pubTime>2019-11-14T11:06:05.000Z</pubTime>
+        
+        <tag>Fullstack</tag>
+         
+        <tag>REST</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/renative.html</loc>
+    <lastmod>2021-03-04T12:52:32.792Z</lastmod>
+    <data>
+        <display>
+        <title>还乡</title>
+        <pubTime>2019-02-01T12:44:40.000Z</pubTime>
+        
+        <tag>他山之石</tag>
+         
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/recent-posts.html</loc>
+    <lastmod>2021-03-04T12:52:32.792Z</lastmod>
+    <data>
+        <display>
+        <title>在搜索.文章底部.侧栏添加最近文章模块</title>
+        <pubTime>2019-01-16T09:50:52.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/posts/qrcode.html</loc>
-    <lastmod>2019-10-19T02:46:51.608Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.790Z</lastmod>
     <data>
         <display>
         <title>用MyQR制作专属动态二维码(py和exe版本)</title>
@@ -1545,8 +1112,35 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/qqxml.html</loc>
+    <lastmod>2021-03-04T12:52:32.770Z</lastmod>
+    <data>
+        <display>
+        <title>QQ强制生成卡片式链接</title>
+        <pubTime>2019-03-08T08:52:13.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>脚本</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/posts/pysx2.html</loc>
-    <lastmod>2019-10-19T02:46:42.761Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.755Z</lastmod>
     <data>
         <display>
         <title>python实训总结Ⅱ</title>
@@ -1569,7 +1163,7 @@
     
   <url>
     <loc>https://lruihao.cn/posts/pysx1.html</loc>
-    <lastmod>2019-10-19T02:46:32.856Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.737Z</lastmod>
     <data>
         <display>
         <title>python实训总结Ⅰ</title>
@@ -1594,15 +1188,15 @@
     
   <url>
     <loc>https://lruihao.cn/posts/pysettime.html</loc>
-    <lastmod>2019-10-19T02:46:11.321Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.729Z</lastmod>
     <data>
         <display>
         <title>python设置程序每天8点定时执行任务</title>
         <pubTime>2019-05-09T15:26:54.000Z</pubTime>
         
-        <tag>定时任务</tag>
-         
         <tag>Python</tag>
+         
+        <tag>定时任务</tag>
          
          
            
@@ -1618,64 +1212,18 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/netBeans.html</loc>
-    <lastmod>2019-10-19T02:44:11.153Z</lastmod>
+    <loc>https://lruihao.cn/posts/pyinstallererror.html</loc>
+    <lastmod>2021-03-04T12:52:32.710Z</lastmod>
     <data>
         <display>
-        <title>netBeans IDE开发设置</title>
-        <pubTime>2019-08-15T10:36:15.000Z</pubTime>
+        <title>安装pyinstaller出错的解决办法及csdn工具实例打包</title>
+        <pubTime>2019-05-09T11:05:01.000Z</pubTime>
         
-        <tag>PHP</tag>
+        <tag>脚本</tag>
          
-        <tag>netBeans</tag>
+        <tag>Python</tag>
          
-         
-           
-             
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/wamproot.html</loc>
-    <lastmod>2019-10-19T02:43:18.289Z</lastmod>
-    <data>
-        <display>
-        <title>WAMPServer自定义网站根目录等设置</title>
-        <pubTime>2019-07-12T10:44:36.000Z</pubTime>
-        
-        <tag>server</tag>
-         
-        <tag>PHP</tag>
-         
-        <tag>windows</tag>
-         
-        <tag>WAMPServer</tag>
-         
-         
-           
-             
-              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/phpPushUrl.html</loc>
-    <lastmod>2019-10-19T02:42:10.209Z</lastmod>
-    <data>
-        <display>
-        <title>php同时主动推送链接到百度，神马等站长平台</title>
-        <pubTime>2019-09-28T10:32:42.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>PHP</tag>
+        <tag>pyinstaller</tag>
          
          
            
@@ -1683,7 +1231,7 @@
               <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
           
              
-              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
+              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
           
         </display>
     </data>
@@ -1691,16 +1239,18 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/phpfile.html</loc>
-    <lastmod>2019-10-19T02:42:02.251Z</lastmod>
+    <loc>https://lruihao.cn/posts/posttest.html</loc>
+    <lastmod>2021-03-04T12:52:32.691Z</lastmod>
     <data>
         <display>
-        <title>php按行读取文件信息</title>
-        <pubTime>2019-09-28T09:11:17.000Z</pubTime>
+        <title>python发送post请求进行简单的接口测试</title>
+        <pubTime>2019-05-07T10:17:05.000Z</pubTime>
         
-        <tag>Backend</tag>
+        <tag>Python</tag>
          
-        <tag>PHP</tag>
+        <tag>POST</tag>
+         
+        <tag>接口测试</tag>
          
          
            
@@ -1708,7 +1258,7 @@
               <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
           
              
-              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
+              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
           
         </display>
     </data>
@@ -1716,14 +1266,233 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/phpform.html</loc>
-    <lastmod>2019-10-19T02:41:56.681Z</lastmod>
+    <loc>https://lruihao.cn/posts/poj2387.html</loc>
+    <lastmod>2021-03-04T12:52:32.676Z</lastmod>
     <data>
         <display>
-        <title>简单评论模块--php表单练习</title>
-        <pubTime>2019-07-19T03:38:59.000Z</pubTime>
+        <title>Til the Cows Come Home-poj2387(dijkstra判断重边)</title>
+        <pubTime>2018-08-03T13:40:33.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>最短路</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/poj1797.html</loc>
+    <lastmod>2021-03-04T12:52:32.672Z</lastmod>
+    <data>
+        <display>
+        <title>Heavy Transportation-poj1797(dijkstra或最大生成树)</title>
+        <pubTime>2018-08-06T01:42:11.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>最短路</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/poj1182.html</loc>
+    <lastmod>2021-03-04T12:52:32.670Z</lastmod>
+    <data>
+        <display>
+        <title>食物链-poj1182（带权并查集经典模板）</title>
+        <pubTime>2018-08-02T03:10:37.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/poj-3984-%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98(bfs%E8%B7%AF%E5%BE%84).html</loc>
+    <lastmod>2021-03-04T12:52:32.670Z</lastmod>
+    <data>
+        <display>
+        <title>poj-3984-迷宫问题(bfs路径)</title>
+        <pubTime>2018-07-22T03:50:20.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>BFS</tag>
+         
+        <tag>POJ</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/poj-2251-Dungeon%20Master%EF%BC%88%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF%EF%BC%89.html</loc>
+    <lastmod>2021-03-04T12:52:32.669Z</lastmod>
+    <data>
+        <display>
+        <title>poj-2251-Dungeon Master（三维bfs最短路）</title>
+        <pubTime>2018-07-22T04:02:32.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>BFS</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>POJ</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/poj-1321%20%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98%EF%BC%88dfs%EF%BC%89.html</loc>
+    <lastmod>2021-03-04T12:52:32.668Z</lastmod>
+    <data>
+        <display>
+        <title>poj-1321 棋盘问题（dfs）</title>
+        <pubTime>2018-07-22T03:58:14.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>DFS</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/poj%20-%201426%20-Find%20The%20Multiple(dfs).html</loc>
+    <lastmod>2021-03-04T12:52:32.665Z</lastmod>
+    <data>
+        <display>
+        <title>poj-1426-Find The Multiple(dfs)</title>
+        <pubTime>2018-07-22T03:57:13.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>DFS</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/player.html</loc>
+    <lastmod>2021-03-04T12:52:32.651Z</lastmod>
+    <data>
+        <display>
+        <title>宅音乐播放器</title>
+        <pubTime>2019-03-19T15:32:56.000Z</pubTime>
         
         <tag>Backend</tag>
+         
+        <tag>宝塔面板</tag>
          
         <tag>PHP</tag>
          
@@ -1742,7 +1511,7 @@
     
   <url>
     <loc>https://lruihao.cn/posts/phpfunc.html</loc>
-    <lastmod>2019-10-19T02:41:31.043Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.632Z</lastmod>
     <data>
         <display>
         <title>php函数学习</title>
@@ -1766,8 +1535,770 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/phpform.html</loc>
+    <lastmod>2021-03-04T12:52:32.626Z</lastmod>
+    <data>
+        <display>
+        <title>简单评论模块--php表单练习</title>
+        <pubTime>2019-07-19T03:38:59.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/phpfile.html</loc>
+    <lastmod>2021-03-04T12:52:32.615Z</lastmod>
+    <data>
+        <display>
+        <title>php按行读取文件信息</title>
+        <pubTime>2019-09-28T09:11:17.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/phpPushUrl.html</loc>
+    <lastmod>2021-03-04T12:52:32.598Z</lastmod>
+    <data>
+        <display>
+        <title>php同时主动推送链接到百度，神马等站长平台</title>
+        <pubTime>2019-09-28T10:32:42.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/nowcodersummer-5th.html</loc>
+    <lastmod>2021-03-04T12:52:32.581Z</lastmod>
+    <data>
+        <display>
+        <title>牛客暑假多校第五场</title>
+        <pubTime>2018-08-02T13:27:02.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>Nowcoder</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/nowcoder157a.html</loc>
+    <lastmod>2021-03-04T12:52:32.581Z</lastmod>
+    <data>
+        <display>
+        <title>石子阵列(组合数学)</title>
+        <pubTime>2018-08-10T14:11:00.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>数学</tag>
+         
+        <tag>Nowcoder</tag>
+         
+        <tag>组合数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="https://lruihao.cn/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/only-you.html</loc>
+    <lastmod>2021-03-04T12:52:32.581Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2018-08-31T14:17:04.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/noreward.html</loc>
+    <lastmod>2021-03-04T12:52:32.580Z</lastmod>
+    <data>
+        <display>
+        <title>设置单篇文章不打赏、首页不显示文章</title>
+        <pubTime>2018-11-06T05:06:29.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/night.html</loc>
+    <lastmod>2021-03-04T12:52:32.579Z</lastmod>
+    <data>
+        <display>
+        <title>网页夜间效果</title>
+        <pubTime>2018-09-27T05:13:31.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/ngrok.html</loc>
+    <lastmod>2021-03-04T12:52:32.565Z</lastmod>
+    <data>
+        <display>
+        <title>本地搭建网站服务器并穿透内网</title>
+        <pubTime>2019-04-03T11:29:43.000Z</pubTime>
+        
+        <tag>总结</tag>
+         
+        <tag>linux</tag>
+         
+        <tag>server</tag>
+         
+        <tag>宝塔面板</tag>
+         
+        <tag>ubuntu</tag>
+         
+        <tag>ngrok</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/nextplugin.html</loc>
+    <lastmod>2021-03-04T12:52:32.554Z</lastmod>
+    <data>
+        <display>
+        <title>hexo插件及next内置样式集</title>
+        <pubTime>2018-11-24T08:54:09.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Frontend</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/next-pdf.html</loc>
+    <lastmod>2021-03-04T12:52:32.532Z</lastmod>
+    <data>
+        <display>
+        <title>next添加支持pdf</title>
+        <pubTime>2018-11-09T04:51:48.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/netBeans.html</loc>
+    <lastmod>2021-03-04T12:52:32.510Z</lastmod>
+    <data>
+        <display>
+        <title>netBeans IDE开发设置</title>
+        <pubTime>2019-08-15T10:36:15.000Z</pubTime>
+        
+        <tag>PHP</tag>
+         
+        <tag>netBeans</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/mx2wx.html</loc>
+    <lastmod>2021-03-04T12:52:32.488Z</lastmod>
+    <data>
+        <display>
+        <title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title>
+        <pubTime>2019-05-11T09:02:31.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>定时任务</tag>
+         
+        <tag>POST</tag>
+         
+        <tag>JSON</tag>
+         
+        <tag>wxpy</tag>
+         
+        <tag>pyinstaller</tag>
+         
+        <tag>requests</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/ms-html-css.html</loc>
+    <lastmod>2021-03-04T12:52:32.381Z</lastmod>
+    <data>
+        <display>
+        <title>前端面试题-HTML+CSS</title>
+        <pubTime>2019-03-30T14:58:39.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/mood.html</loc>
+    <lastmod>2021-03-04T12:52:32.374Z</lastmod>
+    <data>
+        <display>
+        <title>每一个优秀的人，都有一段沉默的时光</title>
+        <pubTime>2018-09-21T13:11:25.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+        <tag>心灵鸡汤</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/mmtimgpy.html</loc>
+    <lastmod>2021-03-04T12:52:32.366Z</lastmod>
+    <data>
+        <display>
+        <title>python爬取网站图片（图片链接相似）</title>
+        <pubTime>2019-04-22T04:46:34.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/mathclass.html</loc>
+    <lastmod>2021-03-04T12:52:32.349Z</lastmod>
+    <data>
+        <display>
+        <title>java猜数字小游戏（Math类）</title>
+        <pubTime>2019-01-15T09:33:28.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/liushuixian.html</loc>
+    <lastmod>2021-03-04T12:52:32.316Z</lastmod>
+    <data>
+        <display>
+        <title>流水线</title>
+        <pubTime>2018-10-09T08:21:04.000Z</pubTime>
+        
+        <tag>计算机组成与体系结构</tag>
+         
+        <tag>流水线</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/linux-hello-c.html</loc>
+    <lastmod>2021-03-04T12:52:32.313Z</lastmod>
+    <data>
+        <display>
+        <title>linux编程初体验</title>
+        <pubTime>2018-10-15T13:19:27.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+        <tag>HelloWorld</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/linux-git.html</loc>
+    <lastmod>2021-03-04T12:52:32.312Z</lastmod>
+    <data>
+        <display>
+        <title>linux/centos 下的安装git</title>
+        <pubTime>2018-09-22T14:28:45.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/links.html</loc>
+    <lastmod>2021-03-04T12:52:32.307Z</lastmod>
+    <data>
+        <display>
+        <title>各种Links汇总与分享</title>
+        <pubTime>2018-06-06T16:06:05.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>Backend</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>链接集合</tag>
+         
+        <tag>Fullstack</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/linkcard.html</loc>
+    <lastmod>2021-03-04T12:52:32.285Z</lastmod>
+    <data>
+        <display>
+        <title>模仿知乎卡片式链接</title>
+        <pubTime>2019-03-15T07:21:39.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/lightoj1282.html</loc>
+    <lastmod>2021-03-04T12:52:32.280Z</lastmod>
+    <data>
+        <display>
+        <title>Leading and Trailing-lightoj1282(快速幂+对数运算)</title>
+        <pubTime>2018-08-09T12:55:26.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C</tag>
+         
+        <tag>数学</tag>
+         
+        <tag>数论</tag>
+         
+        <tag>快速幂</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="数论" url="https://lruihao.cn/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/judgetriangle.html</loc>
+    <lastmod>2021-03-04T12:52:32.277Z</lastmod>
+    <data>
+        <display>
+        <title>判断三角形的黑盒测试</title>
+        <pubTime>2019-05-26T10:50:53.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+        <tag>黑盒测试</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/jsoninfo.html</loc>
+    <lastmod>2021-03-04T12:52:32.274Z</lastmod>
+    <data>
+        <display>
+        <title>Python如何操作Json？</title>
+        <pubTime>2019-05-07T10:42:47.000Z</pubTime>
+        
+        <tag>他山之石</tag>
+         
+        <tag>Python</tag>
+         
+        <tag>JSON</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/js-device.html</loc>
+    <lastmod>2021-03-04T12:52:32.241Z</lastmod>
+    <data>
+        <display>
+        <title>js判断用户设备类型及平台</title>
+        <pubTime>2018-11-03T15:35:44.000Z</pubTime>
+        
+        <tag>他山之石</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/jicheng.html</loc>
+    <lastmod>2021-03-04T12:52:32.216Z</lastmod>
+    <data>
+        <display>
+        <title>java继承test</title>
+        <pubTime>2019-01-24T07:07:50.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>extends</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/inversion-2.html</loc>
+    <lastmod>2021-03-04T12:52:32.210Z</lastmod>
+    <data>
+        <display>
+        <title>英语语法--完全倒装</title>
+        <pubTime>2018-12-10T13:14:51.000Z</pubTime>
+        
+        <tag>English</tag>
+         
+         
+           
+             
+              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/inversion-3.html</loc>
+    <lastmod>2021-03-04T12:52:32.210Z</lastmod>
+    <data>
+        <display>
+        <title>英语语法--形式倒装</title>
+        <pubTime>2018-12-10T13:52:30.000Z</pubTime>
+        
+        <tag>English</tag>
+         
+         
+           
+             
+              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/inversion-1.html</loc>
+    <lastmod>2021-03-04T12:52:32.209Z</lastmod>
+    <data>
+        <display>
+        <title>英语语法--部分倒装</title>
+        <pubTime>2018-12-08T09:52:39.000Z</pubTime>
+        
+        <tag>English</tag>
+         
+         
+           
+             
+              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/input.html</loc>
+    <lastmod>2021-03-04T12:52:32.156Z</lastmod>
+    <data>
+        <display>
+        <title>java录入数据</title>
+        <pubTime>2019-01-14T07:33:46.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/posts/imgurl.html</loc>
-    <lastmod>2019-10-19T02:39:01.993Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.129Z</lastmod>
     <data>
         <display>
         <title>宝塔面板安装ImgURL图床</title>
@@ -1797,183 +2328,8 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/player.html</loc>
-    <lastmod>2019-10-19T02:38:38.545Z</lastmod>
-    <data>
-        <display>
-        <title>宅音乐播放器</title>
-        <pubTime>2019-03-19T15:32:56.000Z</pubTime>
-        
-        <tag>Backend</tag>
-         
-        <tag>宝塔面板</tag>
-         
-        <tag>PHP</tag>
-         
-         
-           
-             
-              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
-          
-             
-              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/ms-html-css.html</loc>
-    <lastmod>2019-10-19T02:35:50.410Z</lastmod>
-    <data>
-        <display>
-        <title>前端面试题-HTML+CSS</title>
-        <pubTime>2019-03-30T14:58:39.000Z</pubTime>
-        
-        <tag>Frontend</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/wex5.html</loc>
-    <lastmod>2019-10-19T02:29:38.706Z</lastmod>
-    <data>
-        <display>
-        <title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title>
-        <pubTime>2019-04-13T03:15:20.000Z</pubTime>
-        
-        <tag>Frontend</tag>
-         
-        <tag>app</tag>
-         
-        <tag>Wex5</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/crash-cheat.html</loc>
-    <lastmod>2019-10-19T02:27:53.130Z</lastmod>
-    <data>
-        <display>
-        <title>网页离开时改变标题“崩溃欺骗”</title>
-        <pubTime>2018-09-26T08:36:08.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/night.html</loc>
-    <lastmod>2019-10-19T02:27:28.042Z</lastmod>
-    <data>
-        <display>
-        <title>网页夜间效果</title>
-        <pubTime>2018-09-27T05:13:31.000Z</pubTime>
-        
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/linkcard.html</loc>
-    <lastmod>2019-10-19T02:19:52.634Z</lastmod>
-    <data>
-        <display>
-        <title>模仿知乎卡片式链接</title>
-        <pubTime>2019-03-15T07:21:39.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/vcode.html</loc>
-    <lastmod>2019-10-19T02:19:44.290Z</lastmod>
-    <data>
-        <display>
-        <title>js验证码</title>
-        <pubTime>2019-03-04T12:53:09.000Z</pubTime>
-        
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://lruihao.cn/posts/ifzhushi.html</loc>
-    <lastmod>2019-10-19T02:19:18.274Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.118Z</lastmod>
     <data>
         <display>
         <title>条件注释判断浏览器版本&lt;!--[if lt IE 9]&gt;</title>
@@ -1994,28 +2350,25 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/async-defer.html</loc>
-    <lastmod>2019-10-19T02:18:27.970Z</lastmod>
+    <loc>https://lruihao.cn/posts/hustoj.html</loc>
+    <lastmod>2021-03-04T12:52:32.108Z</lastmod>
     <data>
         <display>
-        <title>script的三种加载方式（async、defer）</title>
-        <pubTime>2019-09-08T03:47:50.000Z</pubTime>
+        <title>HustOJ 基础搭建教程</title>
+        <pubTime>2019-05-17T15:08:04.000Z</pubTime>
         
-        <tag>async</tag>
+        <tag>ACM</tag>
          
-        <tag>defer</tag>
+        <tag>linux</tag>
          
-        <tag>Frontend</tag>
+        <tag>hustoj</tag>
          
-        <tag>JavaScript</tag>
+        <tag>ubuntu</tag>
          
          
            
              
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
           
         </display>
     </data>
@@ -2023,78 +2376,30 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/site-time.html</loc>
-    <lastmod>2019-10-19T02:18:16.658Z</lastmod>
+    <loc>https://lruihao.cn/posts/hud-1241-Oil%20Deposits%20(dfs).html</loc>
+    <lastmod>2021-03-04T12:52:32.091Z</lastmod>
     <data>
         <display>
-        <title>设置网站运行时间</title>
-        <pubTime>2019-09-19T14:03:29.000Z</pubTime>
+        <title>hud-1241-Oil Deposits (dfs)</title>
+        <pubTime>2018-07-22T03:37:20.000Z</pubTime>
         
-        <tag>Frontend</tag>
+        <tag>ACM</tag>
          
-        <tag>JavaScript</tag>
+        <tag>C++</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>DFS</tag>
          
          
            
              
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/qqxml.html</loc>
-    <lastmod>2019-10-19T02:18:09.362Z</lastmod>
-    <data>
-        <display>
-        <title>QQ强制生成卡片式链接</title>
-        <pubTime>2019-03-08T08:52:13.000Z</pubTime>
-        
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-        <tag>脚本</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/js-device.html</loc>
-    <lastmod>2019-10-19T02:17:59.290Z</lastmod>
-    <data>
-        <display>
-        <title>js判断用户设备类型及平台</title>
-        <pubTime>2018-11-03T15:35:44.000Z</pubTime>
-        
-        <tag>他山之石</tag>
-         
-        <tag>Frontend</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
-          
-             
-              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
           
         </display>
     </data>
@@ -2103,7 +2408,7 @@
     
   <url>
     <loc>https://lruihao.cn/posts/http2https.html</loc>
-    <lastmod>2019-10-19T02:16:34.395Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.080Z</lastmod>
     <data>
         <display>
         <title>vps配置ssl及https重定向</title>
@@ -2136,7 +2441,7 @@
     
   <url>
     <loc>https://lruihao.cn/posts/href-301.html</loc>
-    <lastmod>2019-10-19T02:16:19.586Z</lastmod>
+    <lastmod>2021-03-04T12:52:32.074Z</lastmod>
     <data>
         <display>
         <title>使用js准确获取当前页面url网址信息及301重定向实战</title>
@@ -2162,8 +2467,490 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/how-tables.html</loc>
+    <lastmod>2021-03-04T12:52:32.053Z</lastmod>
+    <data>
+        <display>
+        <title>how many tables-HDU-1213(并查集求连通域数目)</title>
+        <pubTime>2018-07-31T03:12:10.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hexowrite.html</loc>
+    <lastmod>2021-03-04T12:52:32.047Z</lastmod>
+    <data>
+        <display>
+        <title>hexo 添加图片，音乐，链接，视频</title>
+        <pubTime>2018-05-31T15:19:22.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hexobuild.html</loc>
+    <lastmod>2021-03-04T12:52:32.030Z</lastmod>
+    <data>
+        <display>
+        <title>hexo+github搭建个人博客及美化</title>
+        <pubTime>2018-06-01T06:34:23.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>Nodejs</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hexo-wordcount.html</loc>
+    <lastmod>2021-03-04T12:52:31.910Z</lastmod>
+    <data>
+        <display>
+        <title>hexo next主题添加字数统计（2018）</title>
+        <pubTime>2018-08-30T05:15:50.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>网页字数统计</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hexo-theme-next.html</loc>
+    <lastmod>2021-03-04T12:52:31.901Z</lastmod>
+    <data>
+        <display>
+        <title>hexo-theme-next @modified LRH</title>
+        <pubTime>2019-03-21T08:43:19.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>博客日志</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hexo-d-error.html</loc>
+    <lastmod>2021-03-04T12:52:31.895Z</lastmod>
+    <data>
+        <display>
+        <title>hexo d 出错</title>
+        <pubTime>2018-08-21T14:15:01.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hello-world.html</loc>
+    <lastmod>2021-03-04T12:52:31.887Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-05-28T12:01:01.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/heart.html</loc>
+    <lastmod>2021-03-04T12:52:31.883Z</lastmod>
+    <data>
+        <display>
+        <title>高逼格c语言画心</title>
+        <pubTime>2018-08-15T08:33:12.000Z</pubTime>
+        
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hdu1272.html</loc>
+    <lastmod>2021-03-04T12:52:31.865Z</lastmod>
+    <data>
+        <display>
+        <title>小希的迷宫-HDU-1272(并查集or树性质)</title>
+        <pubTime>2018-08-01T13:45:50.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hdu3038.html</loc>
+    <lastmod>2021-03-04T12:52:31.865Z</lastmod>
+    <data>
+        <display>
+        <title>How Many Answers Are Wrong-hdu3038(带权并查集)</title>
+        <pubTime>2018-08-01T03:45:53.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hdu1009.html</loc>
+    <lastmod>2021-03-04T12:52:31.864Z</lastmod>
+    <data>
+        <display>
+        <title>HDU 1009 FatMouse' Trade(贪心)</title>
+        <pubTime>2019-04-12T08:43:19.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>贪心</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="贪心" url="https://lruihao.cn/categories/ACM/%E8%B4%AA%E5%BF%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/hdu-2612-Find-a-way%EF%BC%88%E5%8F%8Cbfs%EF%BC%89.html</loc>
+    <lastmod>2021-03-04T12:52:31.864Z</lastmod>
+    <data>
+        <display>
+        <title>hdu-2612-Find a way（双bfs）</title>
+        <pubTime>2018-07-23T04:34:42.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>HDU</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/gituse.html</loc>
+    <lastmod>2021-03-04T12:52:31.852Z</lastmod>
+    <data>
+        <display>
+        <title>使用Git上传代码到github,coding等仓库</title>
+        <pubTime>2018-10-26T13:11:02.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/gitbookuse.html</loc>
+    <lastmod>2021-03-04T12:52:31.845Z</lastmod>
+    <data>
+        <display>
+        <title>GitBook使用教程</title>
+        <pubTime>2019-04-04T14:09:44.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>Git</tag>
+         
+        <tag>Nodejs</tag>
+         
+        <tag>gitbook</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="Nodejs" url="https://lruihao.cn/categories/Backend/Nodejs/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/git.html</loc>
+    <lastmod>2021-03-04T12:52:31.822Z</lastmod>
+    <data>
+        <display>
+        <title>Git常用指令汇总</title>
+        <pubTime>2018-10-30T10:59:56.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/git-index-lock.html</loc>
+    <lastmod>2021-03-04T12:52:31.808Z</lastmod>
+    <data>
+        <display>
+        <title>git index.lock</title>
+        <pubTime>2018-08-14T11:21:23.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="https://lruihao.cn/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/gcd-bit.html</loc>
+    <lastmod>2021-03-04T12:52:31.790Z</lastmod>
+    <data>
+        <display>
+        <title>最大公约数(二进制算法)</title>
+        <pubTime>2019-05-17T01:14:16.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+        <tag>数学</tag>
+         
+        <tag>数论</tag>
+         
+        <tag>欧几里得</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="数论" url="https://lruihao.cn/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/fucking3.html</loc>
+    <lastmod>2021-03-04T12:52:31.789Z</lastmod>
+    <data>
+        <display>
+        <title>菜鸟，大牛和教主，三者的区别</title>
+        <pubTime>2018-08-03T03:39:57.000Z</pubTime>
+        
+        <tag>他山之石</tag>
+         
+        <tag>生活随笔</tag>
+         
+        <tag>fun sth for acm</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/fucking2.html</loc>
+    <lastmod>2021-03-04T12:52:31.788Z</lastmod>
+    <data>
+        <display>
+        <title>搞ACM最悲催的事。。。</title>
+        <pubTime>2018-08-03T03:38:25.000Z</pubTime>
+        
+        <tag>他山之石</tag>
+         
+        <tag>生活随笔</tag>
+         
+        <tag>fun sth for acm</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/fucking1.html</loc>
+    <lastmod>2021-03-04T12:52:31.788Z</lastmod>
+    <data>
+        <display>
+        <title>搞ACM的你伤不起</title>
+        <pubTime>2018-08-03T03:29:10.000Z</pubTime>
+        
+        <tag>他山之石</tag>
+         
+        <tag>生活随笔</tag>
+         
+        <tag>fun sth for acm</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/posts/font-mmt.html</loc>
-    <lastmod>2019-09-26T13:21:52.584Z</lastmod>
+    <lastmod>2021-03-04T12:52:31.766Z</lastmod>
     <data>
         <display>
         <title>一款自己写的字体-沐目体</title>
@@ -2181,10 +2968,362 @@
     </url>
 
     
+  <url>
+    <loc>https://lruihao.cn/posts/fas-app.html</loc>
+    <lastmod>2021-03-04T12:52:31.765Z</lastmod>
+    <data>
+        <display>
+        <title>博採眾長app</title>
+        <pubTime>2018-11-12T08:04:04.000Z</pubTime>
+        
+        <tag>lua</tag>
+         
+        <tag>fusion app</tag>
+         
+        <tag>app</tag>
+         
+        <tag>网页封装</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/fanxing.html</loc>
+    <lastmod>2021-03-04T12:52:31.765Z</lastmod>
+    <data>
+        <display>
+        <title>java泛型test</title>
+        <pubTime>2019-03-16T05:56:01.000Z</pubTime>
+        
+        <tag>JAVA</tag>
+         
+        <tag>泛型</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/euler.html</loc>
+    <lastmod>2021-03-04T12:52:31.753Z</lastmod>
+    <data>
+        <display>
+        <title>欧拉函数</title>
+        <pubTime>2018-08-08T09:10:07.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+        <tag>数学</tag>
+         
+        <tag>数论</tag>
+         
+        <tag>euler</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="数论" url="https://lruihao.cn/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/eclipseuse.html</loc>
+    <lastmod>2021-03-04T12:52:31.741Z</lastmod>
+    <data>
+        <display>
+        <title>eclipse的基本使用</title>
+        <pubTime>2019-03-15T15:47:24.000Z</pubTime>
+        
+        <tag>JAVA</tag>
+         
+        <tag>eclipse</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/duixiang.html</loc>
+    <lastmod>2021-03-04T12:52:31.727Z</lastmod>
+    <data>
+        <display>
+        <title>面向对象基础知识总结</title>
+        <pubTime>2019-01-15T08:07:31.000Z</pubTime>
+        
+        <tag>JAVA</tag>
+         
+        <tag>面向对象</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/dongtaisub.html</loc>
+    <lastmod>2021-03-04T12:52:31.710Z</lastmod>
+    <data>
+        <display>
+        <title>hexo个性化-next主题动态显示subtitle</title>
+        <pubTime>2018-08-20T08:16:40.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/dev-rules.html</loc>
+    <lastmod>2021-03-04T12:52:31.690Z</lastmod>
+    <data>
+        <display>
+        <title>web开发规则，代码规范</title>
+        <pubTime>2019-08-15T10:30:31.000Z</pubTime>
+        
+        <tag>总结</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>Git</tag>
+         
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/day-100.html</loc>
+    <lastmod>2021-03-04T12:52:31.671Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2018-09-05T15:32:52.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/data.html</loc>
+    <lastmod>2021-03-04T12:52:31.671Z</lastmod>
+    <data>
+        <display>
+        <title>计算机数据</title>
+        <pubTime>2018-10-08T15:01:10.000Z</pubTime>
+        
+        <tag>计算机数据</tag>
+         
+        <tag>计算机组成与体系结构</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/daka.html</loc>
+    <lastmod>2021-03-04T12:52:31.664Z</lastmod>
+    <data>
+        <display>
+        <title>新冠疫情未返校未返工第N天之“自动打卡”</title>
+        <pubTime>2020-03-25T00:22:42.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>Python</tag>
+         
+        <tag>POST</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/dacheng.html</loc>
+    <lastmod>2021-03-04T12:52:31.646Z</lastmod>
+    <data>
+        <display>
+        <title>大数乘法</title>
+        <pubTime>2019-03-28T14:50:43.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C</tag>
+         
+        <tag>数学</tag>
+         
+        <tag>大数运算</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/csdnvisiter.html</loc>
+    <lastmod>2021-03-04T12:52:31.646Z</lastmod>
+    <data>
+        <display>
+        <title>使用Python刷csdn访问量</title>
+        <pubTime>2020-03-26T03:08:38.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="Python" url="https://lruihao.cn/categories/Backend/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/cron.html</loc>
+    <lastmod>2021-03-04T12:52:31.629Z</lastmod>
+    <data>
+        <display>
+        <title>CRON表达式的基本语法</title>
+        <pubTime>2020-03-25T01:19:44.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>shell</tag>
+         
+        <tag>定时任务</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/crash-cheat.html</loc>
+    <lastmod>2021-03-04T12:52:31.616Z</lastmod>
+    <data>
+        <display>
+        <title>网页离开时改变标题“崩溃欺骗”</title>
+        <pubTime>2018-09-26T08:36:08.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>https://lruihao.cn/posts/cos-hexo.html</loc>
-    <lastmod>2019-09-22T09:16:35.173Z</lastmod>
+    <lastmod>2021-03-04T12:52:31.601Z</lastmod>
     <data>
         <display>
         <title>利用腾讯云对象存储COS桶托管hexo博客</title>
@@ -2207,8 +3346,902 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/cos-album.html</loc>
+    <lastmod>2021-03-04T12:52:31.590Z</lastmod>
+    <data>
+        <display>
+        <title>利用腾讯云为静态页面添加“动态”相册</title>
+        <pubTime>2019-11-24T02:52:34.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>腾讯云cos桶</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/console-log.html</loc>
+    <lastmod>2021-03-04T12:52:31.564Z</lastmod>
+    <data>
+        <display>
+        <title>hexo博客自定义console log</title>
+        <pubTime>2018-08-04T08:19:06.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/commit-bat.html</loc>
+    <lastmod>2021-03-04T12:52:31.559Z</lastmod>
+    <data>
+        <display>
+        <title>通过bat批处理文件自动提交博客代码</title>
+        <pubTime>2018-11-17T06:25:49.000Z</pubTime>
+        
+        <tag>批处理</tag>
+         
+        <tag>脚本</tag>
+         
+        <tag>bat</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/codeforces476b.html</loc>
+    <lastmod>2021-03-04T12:52:31.558Z</lastmod>
+    <data>
+        <display>
+        <title>Dreamoon and WiFi(组合数学)</title>
+        <pubTime>2018-08-10T09:44:47.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>Codeforces</tag>
+         
+        <tag>C</tag>
+         
+        <tag>数学</tag>
+         
+        <tag>组合数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="https://lruihao.cn/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/codeforces476a.html</loc>
+    <lastmod>2021-03-04T12:52:31.558Z</lastmod>
+    <data>
+        <display>
+        <title>Dreamoon and Stairs</title>
+        <pubTime>2018-08-10T12:13:08.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>Codeforces</tag>
+         
+        <tag>C</tag>
+         
+        <tag>数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/cipanadmin.html</loc>
+    <lastmod>2021-03-04T12:52:31.557Z</lastmod>
+    <data>
+        <display>
+        <title>磁盘存储器的管理</title>
+        <pubTime>2019-03-04T15:08:32.000Z</pubTime>
+        
+        <tag>操作系统</tag>
+         
+        <tag>磁盘</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/cfcontest1017.html</loc>
+    <lastmod>2021-03-04T12:52:31.557Z</lastmod>
+    <data>
+        <display>
+        <title>Codeforces Round 502(Div.1 + Div.2)</title>
+        <pubTime>2018-08-09T02:48:00.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>Codeforces</tag>
+         
+        <tag>组合数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/cell-blog-install.html</loc>
+    <lastmod>2021-03-04T12:52:31.548Z</lastmod>
+    <data>
+        <display>
+        <title>cell-blog 功能介绍与安装</title>
+        <pubTime>2020-07-25T12:51:11.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>PHP</tag>
+         
+        <tag>Laravel</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/cell-blog-dev.html</loc>
+    <lastmod>2021-03-04T12:52:31.524Z</lastmod>
+    <data>
+        <display>
+        <title>cell-blog 开发记录</title>
+        <pubTime>2020-07-25T12:42:42.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>PHP</tag>
+         
+        <tag>Laravel</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="PHP" url="https://lruihao.cn/categories/Backend/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/caddy-file.html</loc>
+    <lastmod>2021-03-04T12:52:31.499Z</lastmod>
+    <data>
+        <display>
+        <title>caddy-两步搭建超简单云盘</title>
+        <pubTime>2018-11-11T05:59:27.000Z</pubTime>
+        
+        <tag>server</tag>
+         
+        <tag>个人云盘</tag>
+         
+        <tag>caddy</tag>
+         
+         
+           
+             
+              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/byteio.html</loc>
+    <lastmod>2021-03-04T12:52:31.499Z</lastmod>
+    <data>
+        <display>
+        <title>文件加密解密（字节流）</title>
+        <pubTime>2019-05-02T15:04:32.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/bt.html</loc>
+    <lastmod>2021-03-04T12:52:31.476Z</lastmod>
+    <data>
+        <display>
+        <title>宝塔面板安装</title>
+        <pubTime>2019-03-18T13:31:43.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>server</tag>
+         
+        <tag>宝塔面板</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/bqbj.html</loc>
+    <lastmod>2021-03-04T12:52:31.452Z</lastmod>
+    <data>
+        <display>
+        <title>百钱百鸡（枚举法）</title>
+        <pubTime>2019-03-30T02:13:33.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/blog-backup.html</loc>
+    <lastmod>2021-03-04T12:52:31.450Z</lastmod>
+    <data>
+        <display>
+        <title>hexo 博客源码备份</title>
+        <pubTime>2018-11-03T04:49:28.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Git</tag>
+         
+        <tag>Nodejs</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/bill-note.html</loc>
+    <lastmod>2021-03-04T12:52:31.231Z</lastmod>
+    <data>
+        <display>
+        <title>基于 leancloud-storage 实现的无后端记账本</title>
+        <pubTime>2021-03-02T13:46:40.000Z</pubTime>
+        
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>leancloud</tag>
+         
+        <tag>VueJS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/biaoshi.html</loc>
+    <lastmod>2021-03-04T12:52:31.209Z</lastmod>
+    <data>
+        <display>
+        <title>java标识符</title>
+        <pubTime>2019-01-14T07:07:57.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/beian.html</loc>
+    <lastmod>2021-03-04T12:52:31.198Z</lastmod>
+    <data>
+        <display>
+        <title>网站备案之旅</title>
+        <pubTime>2018-10-29T15:16:26.000Z</pubTime>
+        
+        <tag>生活随笔</tag>
+         
+        <tag>网站备案</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/async-defer.html</loc>
+    <lastmod>2021-03-04T12:52:31.197Z</lastmod>
+    <data>
+        <display>
+        <title>script的三种加载方式（async、defer）</title>
+        <pubTime>2019-09-08T03:47:50.000Z</pubTime>
+        
+        <tag>async</tag>
+         
+        <tag>defer</tag>
+         
+        <tag>Frontend</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Frontend" url="https://lruihao.cn/categories/Frontend/"/>
+          
+             
+              <breadCrumb title="JavaScript" url="https://lruihao.cn/categories/Frontend/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Wannafly%E6%8C%91%E6%88%98%E8%B5%9B20-%E6%9F%93%E8%89%B2.html</loc>
+    <lastmod>2021-03-04T12:52:31.177Z</lastmod>
+    <data>
+        <display>
+        <title>Wannafly挑战赛20-染色</title>
+        <pubTime>2018-07-22T03:46:25.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>Nowcoder</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Wannafly%E6%8C%91%E6%88%98%E8%B5%9B18-%E5%BA%8F%E5%88%97.html</loc>
+    <lastmod>2021-03-04T12:52:31.177Z</lastmod>
+    <data>
+        <display>
+        <title>Wannafly挑战赛18-序列</title>
+        <pubTime>2018-07-18T00:40:21.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>Nowcoder</tag>
+         
+        <tag>组合数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/The-suspects.html</loc>
+    <lastmod>2021-03-04T12:52:31.176Z</lastmod>
+    <data>
+        <display>
+        <title>The-suspects-POJ-1611(并查集)</title>
+        <pubTime>2018-07-31T03:11:31.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>C</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/TaoTao%E8%A6%81%E5%90%83%E9%B8%A1.html</loc>
+    <lastmod>2021-03-04T12:52:31.176Z</lastmod>
+    <data>
+        <display>
+        <title>TaoTao要吃鸡</title>
+        <pubTime>2018-07-22T02:55:21.000Z</pubTime>
+        
+        <tag>C++</tag>
+         
+        <tag>背包问题</tag>
+         
+        <tag>Nowcoder</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="背包问题" url="https://lruihao.cn/categories/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Sublime-Text3.html</loc>
+    <lastmod>2021-03-04T12:52:31.175Z</lastmod>
+    <data>
+        <display>
+        <title>Sublime Text3快捷键大全</title>
+        <pubTime>2019-08-15T12:59:10.000Z</pubTime>
+        
+        <tag>总结</tag>
+         
+        <tag>他山之石</tag>
+         
+        <tag>Sublime Text3</tag>
+         
+         
+           
+             
+              <breadCrumb title="Fullstack" url="https://lruihao.cn/categories/Fullstack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/SingleThreadDown.html</loc>
+    <lastmod>2021-03-04T12:52:31.152Z</lastmod>
+    <data>
+        <display>
+        <title>java实现一个单线程的资源下载器</title>
+        <pubTime>2019-05-08T12:55:02.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>GUI</tag>
+         
+        <tag>URL</tag>
+         
+        <tag>URLConnection</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/RegexDemo.html</loc>
+    <lastmod>2021-03-04T12:52:31.134Z</lastmod>
+    <data>
+        <display>
+        <title>java正则表达式练习</title>
+        <pubTime>2019-04-18T14:04:21.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>regex</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/QFrame.html</loc>
+    <lastmod>2021-03-04T12:52:31.119Z</lastmod>
+    <data>
+        <display>
+        <title>匿名类在可视化界面中的应用</title>
+        <pubTime>2019-03-15T14:31:28.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>GUI</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Piles-with-stones.html</loc>
+    <lastmod>2021-03-04T12:52:31.098Z</lastmod>
+    <data>
+        <display>
+        <title>Piles-with-stones</title>
+        <pubTime>2018-07-31T03:09:31.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>Codeforces</tag>
+         
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/POJ%20-%203278%20-Catch%20That%20Cow%20%20(bfs).html</loc>
+    <lastmod>2021-03-04T12:52:31.097Z</lastmod>
+    <data>
+        <display>
+        <title>POJ-3278-Catch That Cow(bfs)</title>
+        <pubTime>2018-07-22T04:10:32.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>BFS</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>POJ</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html</loc>
+    <lastmod>2021-03-04T12:52:31.097Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown基础教程</title>
+        <pubTime>2018-06-09T16:05:10.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>Markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/K-2018.html</loc>
+    <lastmod>2021-03-04T12:52:31.096Z</lastmod>
+    <data>
+        <display>
+        <title>K.2018</title>
+        <pubTime>2018-06-14T14:48:16.000Z</pubTime>
+        
+        <tag>2018湘潭邀请赛</tag>
+         
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/JavaException.html</loc>
+    <lastmod>2021-03-04T12:52:31.094Z</lastmod>
+    <data>
+        <display>
+        <title>模拟借书系统（java异常练习）</title>
+        <pubTime>2019-05-01T08:52:21.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/HelloJava.html</loc>
+    <lastmod>2021-03-04T12:52:31.074Z</lastmod>
+    <data>
+        <display>
+        <title>用记事本编写第一个java程序</title>
+        <pubTime>2019-04-19T11:49:54.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>HelloWorld</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/HDU%20-%201495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90%20%EF%BC%88bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4%20%20or%20%E6%95%B0%E8%AE%BA%EF%BC%89.html</loc>
+    <lastmod>2021-03-04T12:52:31.051Z</lastmod>
+    <data>
+        <display>
+        <title>HDU-1495-非常可乐（bfs模拟倒水or数论）</title>
+        <pubTime>2018-07-24T07:34:00.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>HDU</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/F-sorting.html</loc>
+    <lastmod>2021-03-04T12:52:31.051Z</lastmod>
+    <data>
+        <display>
+        <title>F.sorting</title>
+        <pubTime>2018-06-14T14:49:27.000Z</pubTime>
+        
+        <tag>2018湘潭邀请赛</tag>
+         
+        <tag>ACM</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/posts/Euclid.html</loc>
-    <lastmod>2019-09-13T07:13:50.898Z</lastmod>
+    <lastmod>2021-03-04T12:52:31.050Z</lastmod>
     <data>
         <display>
         <title>The equation-SGU106(扩展欧几里得)</title>
@@ -2242,211 +4275,131 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/day-100.html</loc>
-    <lastmod>2019-09-13T03:46:37.719Z</lastmod>
+    <loc>https://lruihao.cn/posts/Educational%20Codeforces%20Round%2047%20(Rated%20for%20Div.%202).html</loc>
+    <lastmod>2021-03-04T12:52:31.050Z</lastmod>
     <data>
         <display>
-        <title></title>
-        <pubTime>2018-09-05T15:32:52.000Z</pubTime>
+        <title>Educational Codeforces Round 47 (Rated for Div. 2)</title>
+        <pubTime>2018-07-22T03:25:56.000Z</pubTime>
         
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/only-you.html</loc>
-    <lastmod>2019-09-13T03:45:33.800Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2018-08-31T14:17:04.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92.html</loc>
-    <lastmod>2019-09-13T03:08:50.517Z</lastmod>
-    <data>
-        <display>
-        <title>杨辉三角</title>
-        <pubTime>2018-07-22T03:41:15.000Z</pubTime>
-        
-        <tag>数学</tag>
-         
-        <tag>杨辉三角</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/fas-app.html</loc>
-    <lastmod>2019-09-13T02:58:13.303Z</lastmod>
-    <data>
-        <display>
-        <title>博採眾長app</title>
-        <pubTime>2018-11-12T08:04:04.000Z</pubTime>
-        
-        <tag>lua</tag>
-         
-        <tag>fusion app</tag>
-         
-        <tag>app</tag>
-         
-        <tag>网页封装</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/recent-posts.html</loc>
-    <lastmod>2019-09-13T02:55:41.831Z</lastmod>
-    <data>
-        <display>
-        <title>在搜索.文章底部.侧栏添加最近文章模块</title>
-        <pubTime>2019-01-16T09:50:52.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93.html</loc>
-    <lastmod>2019-09-08T11:32:04.344Z</lastmod>
-    <data>
-        <display>
-        <title>18湘潭邀请赛总结</title>
-        <pubTime>2018-06-14T15:32:47.000Z</pubTime>
-        
-        <tag>2018湘潭邀请赛</tag>
-         
-        <tag>ACM</tag>
-         
-        <tag>总结</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E9%98%9F%E5%91%98%E4%BB%A3%E8%A1%A8%E5%8F%91%E8%A8%80.html</loc>
-    <lastmod>2019-09-08T11:31:58.401Z</lastmod>
-    <data>
-        <display>
-        <title>18湘潭邀请赛参赛队员代表发言</title>
-        <pubTime>2018-06-14T23:51:21.000Z</pubTime>
-        
-        <tag>2018湘潭邀请赛</tag>
-         
-        <tag>ACM</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/F-sorting.html</loc>
-    <lastmod>2019-09-08T11:31:00.216Z</lastmod>
-    <data>
-        <display>
-        <title>F.sorting</title>
-        <pubTime>2018-06-14T14:49:27.000Z</pubTime>
-        
-        <tag>2018湘潭邀请赛</tag>
-         
-        <tag>ACM</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/K-2018.html</loc>
-    <lastmod>2019-09-08T11:30:39.672Z</lastmod>
-    <data>
-        <display>
-        <title>K.2018</title>
-        <pubTime>2018-06-14T14:48:16.000Z</pubTime>
-        
-        <tag>2018湘潭邀请赛</tag>
-         
         <tag>ACM</tag>
          
         <tag>C++</tag>
          
+        <tag>Codeforces</tag>
+         
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Codeforces680B.html</loc>
+    <lastmod>2021-03-04T12:52:31.049Z</lastmod>
+    <data>
+        <display>
+        <title>Bear and Finding Criminals-Codeforces680B</title>
+        <pubTime>2018-07-31T11:32:21.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>Codeforces</tag>
+         
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
+    <lastmod>2021-03-04T12:52:31.049Z</lastmod>
+    <data>
+        <display>
+        <title>C++ with STL</title>
+        <pubTime>2018-06-14T12:22:06.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>STL</tag>
+         
          
            
              
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
+              <breadCrumb title="STL" url="https://lruihao.cn/categories/ACM/STL/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Codeforces680A.html</loc>
+    <lastmod>2021-03-04T12:52:31.049Z</lastmod>
+    <data>
+        <display>
+        <title>Bear and Five Cards-Codeforces680A</title>
+        <pubTime>2018-07-31T11:22:36.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>Codeforces</tag>
+         
+        <tag>C</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/BFS%E6%B1%82%E6%9C%80%E7%9F%AD%E8%B7%AF.html</loc>
+    <lastmod>2021-03-04T12:52:31.048Z</lastmod>
+    <data>
+        <display>
+        <title>BFS求最短路</title>
+        <pubTime>2018-07-22T03:31:05.000Z</pubTime>
+        
+        <tag>C++</tag>
+         
+        <tag>BFS</tag>
+         
+        <tag>搜索</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
           
         </display>
     </data>
@@ -2455,7 +4408,7 @@
     
   <url>
     <loc>https://lruihao.cn/posts/B-Higher.html</loc>
-    <lastmod>2019-09-08T11:30:01.321Z</lastmod>
+    <lastmod>2021-03-04T12:52:31.048Z</lastmod>
     <data>
         <display>
         <title>B.Higher h-index</title>
@@ -2483,8 +4436,61 @@
 
     
   <url>
+    <loc>https://lruihao.cn/posts/Arrays.html</loc>
+    <lastmod>2021-03-04T12:52:31.047Z</lastmod>
+    <data>
+        <display>
+        <title>Arrays类及基本使用</title>
+        <pubTime>2019-01-18T05:13:10.000Z</pubTime>
+        
+        <tag>Backend</tag>
+         
+        <tag>JAVA</tag>
+         
+        <tag>Collator</tag>
+         
+        <tag>Comparator</tag>
+         
+         
+           
+             
+              <breadCrumb title="Backend" url="https://lruihao.cn/categories/Backend/"/>
+          
+             
+              <breadCrumb title="JAVA" url="https://lruihao.cn/categories/Backend/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lruihao.cn/posts/Adjacent-Replacements.html</loc>
+    <lastmod>2021-03-04T12:52:31.029Z</lastmod>
+    <data>
+        <display>
+        <title>Adjacent Replacements</title>
+        <pubTime>2018-07-22T03:54:14.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>C++</tag>
+         
+        <tag>Codeforces</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://lruihao.cn/posts/A-Easy.html</loc>
-    <lastmod>2019-09-08T11:28:59.793Z</lastmod>
+    <lastmod>2021-03-04T12:52:31.028Z</lastmod>
     <data>
         <display>
         <title>A.Easy h-index</title>
@@ -2509,383 +4515,9 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://lruihao.cn/posts/gcd-bit.html</loc>
-    <lastmod>2019-09-01T03:34:01.970Z</lastmod>
-    <data>
-        <display>
-        <title>最大公约数(二进制算法)</title>
-        <pubTime>2019-05-17T01:14:16.000Z</pubTime>
-        
-        <tag>C</tag>
-         
-        <tag>数学</tag>
-         
-        <tag>数论</tag>
-         
-        <tag>欧几里得</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="数论" url="https://lruihao.cn/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B.html</loc>
-    <lastmod>2019-08-14T12:59:54.424Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown基础教程</title>
-        <pubTime>2018-06-09T16:05:10.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>Markdown</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://lruihao.cn/posts/judgetriangle.html</loc>
-    <lastmod>2019-05-26T11:10:08.430Z</lastmod>
-    <data>
-        <display>
-        <title>判断三角形的黑盒测试</title>
-        <pubTime>2019-05-26T10:50:53.000Z</pubTime>
-        
-        <tag>C</tag>
-         
-        <tag>黑盒测试</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95.html</loc>
-    <lastmod>2019-05-26T11:07:02.846Z</lastmod>
-    <data>
-        <display>
-        <title>在线离线算法</title>
-        <pubTime>2018-07-26T01:57:32.000Z</pubTime>
-        
-        <tag>在线离线算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97.html</loc>
-    <lastmod>2019-05-26T11:06:48.278Z</lastmod>
-    <data>
-        <display>
-        <title>位运算</title>
-        <pubTime>2018-06-14T12:22:21.000Z</pubTime>
-        
-        <tag>位运算</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/caddy-file.html</loc>
-    <lastmod>2019-05-26T11:06:41.704Z</lastmod>
-    <data>
-        <display>
-        <title>caddy-两步搭建超简单云盘</title>
-        <pubTime>2018-11-11T05:59:27.000Z</pubTime>
-        
-        <tag>server</tag>
-         
-        <tag>个人云盘</tag>
-         
-        <tag>caddy</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/data.html</loc>
-    <lastmod>2019-05-26T11:05:53.207Z</lastmod>
-    <data>
-        <display>
-        <title>计算机数据</title>
-        <pubTime>2018-10-08T15:01:10.000Z</pubTime>
-        
-        <tag>计算机数据</tag>
-         
-        <tag>计算机组成与体系结构</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/liushuixian.html</loc>
-    <lastmod>2019-05-26T11:05:34.446Z</lastmod>
-    <data>
-        <display>
-        <title>流水线</title>
-        <pubTime>2018-10-09T08:21:04.000Z</pubTime>
-        
-        <tag>计算机组成与体系结构</tag>
-         
-        <tag>流水线</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/web-server-yun.html</loc>
-    <lastmod>2019-05-26T11:05:00.165Z</lastmod>
-    <data>
-        <display>
-        <title>云服务器CentOS系统搭建web服务</title>
-        <pubTime>2018-10-29T01:15:58.000Z</pubTime>
-        
-        <tag>他山之石</tag>
-         
-        <tag>server</tag>
-         
-        <tag>云服务器</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/web-server-win.html</loc>
-    <lastmod>2019-05-26T11:04:53.008Z</lastmod>
-    <data>
-        <display>
-        <title>windows上搭建web服务器</title>
-        <pubTime>2018-10-26T13:56:18.000Z</pubTime>
-        
-        <tag>server</tag>
-         
-        <tag>windows</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/commit-bat.html</loc>
-    <lastmod>2019-05-26T10:59:44.878Z</lastmod>
-    <data>
-        <display>
-        <title>通过bat批处理文件自动提交博客代码</title>
-        <pubTime>2018-11-17T06:25:49.000Z</pubTime>
-        
-        <tag>批处理</tag>
-         
-        <tag>脚本</tag>
-         
-        <tag>bat</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/cipanadmin.html</loc>
-    <lastmod>2019-05-26T10:58:23.607Z</lastmod>
-    <data>
-        <display>
-        <title>磁盘存储器的管理</title>
-        <pubTime>2019-03-04T15:08:32.000Z</pubTime>
-        
-        <tag>操作系统</tag>
-         
-        <tag>磁盘</tag>
-         
-         
-           
-             
-              <breadCrumb title="others" url="https://lruihao.cn/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E5%85%89.html</loc>
-    <lastmod>2019-05-25T06:01:46.483Z</lastmod>
-    <data>
-        <display>
-        <title>光</title>
-        <pubTime>2018-06-03T04:54:47.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/ngrok.html</loc>
-    <lastmod>2019-05-17T17:03:47.854Z</lastmod>
-    <data>
-        <display>
-        <title>本地搭建网站服务器并穿透内网</title>
-        <pubTime>2019-04-03T11:29:43.000Z</pubTime>
-        
-        <tag>总结</tag>
-         
-        <tag>linux</tag>
-         
-        <tag>server</tag>
-         
-        <tag>宝塔面板</tag>
-         
-        <tag>ubuntu</tag>
-         
-        <tag>ngrok</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/ubuntutime.html</loc>
-    <lastmod>2019-05-17T17:02:56.149Z</lastmod>
-    <data>
-        <display>
-        <title>win10,ubuntu双系统时间不一致</title>
-        <pubTime>2019-03-15T06:28:10.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>ubuntu</tag>
-         
-        <tag>windows</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/windefault.html</loc>
-    <lastmod>2019-05-17T17:01:48.694Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu + windows双系统默认启动项设置</title>
-        <pubTime>2019-03-21T04:48:30.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>ubuntu</tag>
-         
-        <tag>windows</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>https://lruihao.cn/posts/1thintervivew.html</loc>
-    <lastmod>2019-04-26T12:58:06.404Z</lastmod>
+    <lastmod>2021-03-04T12:52:31.028Z</lastmod>
     <data>
         <display>
         <title>第一次面试经历</title>
@@ -2904,66 +4536,15 @@
 
     
   <url>
-    <loc>https://lruihao.cn/posts/dacheng.html</loc>
-    <lastmod>2019-04-14T09:38:41.729Z</lastmod>
+    <loc>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E9%98%9F%E5%91%98%E4%BB%A3%E8%A1%A8%E5%8F%91%E8%A8%80.html</loc>
+    <lastmod>2021-03-04T12:52:31.028Z</lastmod>
     <data>
         <display>
-        <title>大数乘法</title>
-        <pubTime>2019-03-28T14:50:43.000Z</pubTime>
+        <title>18湘潭邀请赛参赛队员代表发言</title>
+        <pubTime>2018-06-14T23:51:21.000Z</pubTime>
         
-        <tag>ACM</tag>
+        <tag>2018湘潭邀请赛</tag>
          
-        <tag>C</tag>
-         
-        <tag>数学</tag>
-         
-        <tag>大数运算</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hdu1009.html</loc>
-    <lastmod>2019-04-13T01:59:11.332Z</lastmod>
-    <data>
-        <display>
-        <title>HDU 1009 FatMouse' Trade(贪心)</title>
-        <pubTime>2019-04-12T08:43:19.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>贪心</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="贪心" url="https://lruihao.cn/categories/ACM/%E8%B4%AA%E5%BF%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/bqbj.html</loc>
-    <lastmod>2019-04-13T01:39:11.144Z</lastmod>
-    <data>
-        <display>
-        <title>百钱百鸡（枚举法）</title>
-        <pubTime>2019-03-30T02:13:33.000Z</pubTime>
-        
         <tag>ACM</tag>
          
          
@@ -2971,26 +4552,27 @@
              
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
+             
+              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F.html</loc>
-    <lastmod>2019-04-13T01:36:55.349Z</lastmod>
+    <loc>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93.html</loc>
+    <lastmod>2021-03-04T12:52:31.027Z</lastmod>
     <data>
         <display>
-        <title>sort排序</title>
-        <pubTime>2018-06-14T12:23:03.000Z</pubTime>
+        <title>18湘潭邀请赛总结</title>
+        <pubTime>2018-06-14T15:32:47.000Z</pubTime>
         
+        <tag>2018湘潭邀请赛</tag>
+         
         <tag>ACM</tag>
          
-        <tag>C++</tag>
-         
-        <tag>STL</tag>
-         
-        <tag>排序</tag>
+        <tag>总结</tag>
          
          
            
@@ -2998,7 +4580,7 @@
               <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
           
              
-              <breadCrumb title="STL" url="https://lruihao.cn/categories/ACM/STL/"/>
+              <breadCrumb title="2018湘潭" url="https://lruihao.cn/categories/ACM/2018%E6%B9%98%E6%BD%AD/"/>
           
         </display>
     </data>
@@ -3006,1537 +4588,4 @@
 
     
     
-    
-  <url>
-    <loc>https://lruihao.cn/posts/fucking3.html</loc>
-    <lastmod>2019-03-30T14:28:58.846Z</lastmod>
-    <data>
-        <display>
-        <title>菜鸟，大牛和教主，三者的区别</title>
-        <pubTime>2018-08-03T03:39:57.000Z</pubTime>
-        
-        <tag>他山之石</tag>
-         
-        <tag>生活随笔</tag>
-         
-        <tag>fun sth for acm</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/fucking1.html</loc>
-    <lastmod>2019-03-30T14:28:50.911Z</lastmod>
-    <data>
-        <display>
-        <title>搞ACM的你伤不起</title>
-        <pubTime>2018-08-03T03:29:10.000Z</pubTime>
-        
-        <tag>他山之石</tag>
-         
-        <tag>生活随笔</tag>
-         
-        <tag>fun sth for acm</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/fucking2.html</loc>
-    <lastmod>2019-03-30T14:28:45.647Z</lastmod>
-    <data>
-        <display>
-        <title>搞ACM最悲催的事。。。</title>
-        <pubTime>2018-08-03T03:38:25.000Z</pubTime>
-        
-        <tag>他山之石</tag>
-         
-        <tag>生活随笔</tag>
-         
-        <tag>fun sth for acm</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts//hdu1272.html</loc>
-    <lastmod>2019-03-28T15:19:38.356Z</lastmod>
-    <data>
-        <display>
-        <title>小希的迷宫-HDU-1272(并查集or树性质)</title>
-        <pubTime>2018-08-01T13:45:50.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B23.html</loc>
-    <lastmod>2019-03-28T15:19:16.960Z</lastmod>
-    <data>
-        <display>
-        <title>牛客练习赛23</title>
-        <pubTime>2018-07-27T13:56:08.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>Nowcoder</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E6%B7%B1%E6%90%9C%E5%B9%BF%E6%90%9C.html</loc>
-    <lastmod>2019-03-28T15:19:01.313Z</lastmod>
-    <data>
-        <display>
-        <title>深搜广搜</title>
-        <pubTime>2018-07-22T03:25:14.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>BFS</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>DFS</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E7%AE%80%E5%8D%95%E8%83%8C%E5%8C%85.html</loc>
-    <lastmod>2019-03-28T15:18:46.803Z</lastmod>
-    <data>
-        <display>
-        <title>简单背包</title>
-        <pubTime>2018-06-16T05:18:43.000Z</pubTime>
-        
-        <tag>C</tag>
-         
-        <tag>背包问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="背包问题" url="https://lruihao.cn/categories/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E7%95%85%E9%80%9A%E5%B7%A5%E7%A8%8B.html</loc>
-    <lastmod>2019-03-28T15:18:23.884Z</lastmod>
-    <data>
-        <display>
-        <title>畅通工程-HDU-1232(并查集经典模板)</title>
-        <pubTime>2018-07-31T03:08:43.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/wireless-network.html</loc>
-    <lastmod>2019-03-28T15:17:39.734Z</lastmod>
-    <data>
-        <display>
-        <title>wireless network-POJ-2236(并查集)</title>
-        <pubTime>2018-07-31T03:10:54.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>POJ</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Wannafly%E6%8C%91%E6%88%98%E8%B5%9B20-%E6%9F%93%E8%89%B2.html</loc>
-    <lastmod>2019-03-28T15:17:27.416Z</lastmod>
-    <data>
-        <display>
-        <title>Wannafly挑战赛20-染色</title>
-        <pubTime>2018-07-22T03:46:25.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>Nowcoder</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Wannafly%E6%8C%91%E6%88%98%E8%B5%9B18-%E5%BA%8F%E5%88%97.html</loc>
-    <lastmod>2019-03-28T15:17:22.453Z</lastmod>
-    <data>
-        <display>
-        <title>Wannafly挑战赛18-序列</title>
-        <pubTime>2018-07-18T00:40:21.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>Nowcoder</tag>
-         
-        <tag>组合数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/The-suspects.html</loc>
-    <lastmod>2019-03-28T15:16:58.134Z</lastmod>
-    <data>
-        <display>
-        <title>The-suspects-POJ-1611(并查集)</title>
-        <pubTime>2018-07-31T03:11:31.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>POJ</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/TaoTao%E8%A6%81%E5%90%83%E9%B8%A1.html</loc>
-    <lastmod>2019-03-28T15:16:39.455Z</lastmod>
-    <data>
-        <display>
-        <title>TaoTao要吃鸡</title>
-        <pubTime>2018-07-22T02:55:21.000Z</pubTime>
-        
-        <tag>C++</tag>
-         
-        <tag>背包问题</tag>
-         
-        <tag>Nowcoder</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="背包问题" url="https://lruihao.cn/categories/ACM/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/poj-3984-%E8%BF%B7%E5%AE%AB%E9%97%AE%E9%A2%98(bfs%E8%B7%AF%E5%BE%84).html</loc>
-    <lastmod>2019-03-28T15:15:59.445Z</lastmod>
-    <data>
-        <display>
-        <title>poj-3984-迷宫问题(bfs路径)</title>
-        <pubTime>2018-07-22T03:50:20.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>BFS</tag>
-         
-        <tag>POJ</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/poj2387.html</loc>
-    <lastmod>2019-03-28T15:15:41.734Z</lastmod>
-    <data>
-        <display>
-        <title>Til the Cows Come Home-poj2387(dijkstra判断重边)</title>
-        <pubTime>2018-08-03T13:40:33.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>最短路</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/poj-2251-Dungeon%20Master%EF%BC%88%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF%EF%BC%89.html</loc>
-    <lastmod>2019-03-28T15:15:06.510Z</lastmod>
-    <data>
-        <display>
-        <title>poj-2251-Dungeon Master（三维bfs最短路）</title>
-        <pubTime>2018-07-22T04:02:32.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>BFS</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>POJ</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/poj1797.html</loc>
-    <lastmod>2019-03-28T15:14:48.758Z</lastmod>
-    <data>
-        <display>
-        <title>Heavy Transportation-poj1797(dijkstra或最大生成树)</title>
-        <pubTime>2018-08-06T01:42:11.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>POJ</tag>
-         
-        <tag>最短路</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/poj-1321%20%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98%EF%BC%88dfs%EF%BC%89.html</loc>
-    <lastmod>2019-03-28T15:14:37.630Z</lastmod>
-    <data>
-        <display>
-        <title>poj-1321 棋盘问题（dfs）</title>
-        <pubTime>2018-07-22T03:58:14.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>POJ</tag>
-         
-        <tag>DFS</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/poj1182.html</loc>
-    <lastmod>2019-03-28T15:14:28.095Z</lastmod>
-    <data>
-        <display>
-        <title>食物链-poj1182（带权并查集经典模板）</title>
-        <pubTime>2018-08-02T03:10:37.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>POJ</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/POJ%20-%203278%20-Catch%20That%20Cow%20%20(bfs).html</loc>
-    <lastmod>2019-03-28T15:14:10.006Z</lastmod>
-    <data>
-        <display>
-        <title>POJ-3278-Catch That Cow(bfs)</title>
-        <pubTime>2018-07-22T04:10:32.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>BFS</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>POJ</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/poj%20-%201426%20-Find%20The%20Multiple(dfs).html</loc>
-    <lastmod>2019-03-28T15:13:58.790Z</lastmod>
-    <data>
-        <display>
-        <title>poj-1426-Find The Multiple(dfs)</title>
-        <pubTime>2018-07-22T03:57:13.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>POJ</tag>
-         
-        <tag>DFS</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Piles-with-stones.html</loc>
-    <lastmod>2019-03-28T15:13:42.071Z</lastmod>
-    <data>
-        <display>
-        <title>Piles-with-stones</title>
-        <pubTime>2018-07-31T03:09:31.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-        <tag>C</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/nowcodersummer-5th.html</loc>
-    <lastmod>2019-03-28T15:13:32.406Z</lastmod>
-    <data>
-        <display>
-        <title>牛客暑假多校第五场</title>
-        <pubTime>2018-08-02T13:27:02.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>Nowcoder</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/nowcoder157a.html</loc>
-    <lastmod>2019-03-28T15:13:16.992Z</lastmod>
-    <data>
-        <display>
-        <title>石子阵列(组合数学)</title>
-        <pubTime>2018-08-10T14:11:00.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>C</tag>
-         
-        <tag>数学</tag>
-         
-        <tag>Nowcoder</tag>
-         
-        <tag>组合数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="组合数学" url="https://lruihao.cn/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/linux-hello-c.html</loc>
-    <lastmod>2019-03-28T15:12:44.757Z</lastmod>
-    <data>
-        <display>
-        <title>linux编程初体验</title>
-        <pubTime>2018-10-15T13:19:27.000Z</pubTime>
-        
-        <tag>C</tag>
-         
-        <tag>HelloWorld</tag>
-         
-        <tag>linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/lightoj1282.html</loc>
-    <lastmod>2019-03-28T15:12:30.510Z</lastmod>
-    <data>
-        <display>
-        <title>Leading and Trailing-lightoj1282(快速幂+对数运算)</title>
-        <pubTime>2018-08-09T12:55:26.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C</tag>
-         
-        <tag>数学</tag>
-         
-        <tag>数论</tag>
-         
-        <tag>快速幂</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="数论" url="https://lruihao.cn/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hud-1241-Oil%20Deposits%20(dfs).html</loc>
-    <lastmod>2019-03-28T15:11:48.270Z</lastmod>
-    <data>
-        <display>
-        <title>hud-1241-Oil Deposits (dfs)</title>
-        <pubTime>2018-07-22T03:37:20.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>DFS</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/how-tables.html</loc>
-    <lastmod>2019-03-28T15:11:36.719Z</lastmod>
-    <data>
-        <display>
-        <title>how many tables-HDU-1213(并查集求连通域数目)</title>
-        <pubTime>2018-07-31T03:12:10.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hdu3038.html</loc>
-    <lastmod>2019-03-28T15:11:05.399Z</lastmod>
-    <data>
-        <display>
-        <title>How Many Answers Are Wrong-hdu3038(带权并查集)</title>
-        <pubTime>2018-08-01T03:45:53.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hdu-2612-Find-a-way%EF%BC%88%E5%8F%8Cbfs%EF%BC%89.html</loc>
-    <lastmod>2019-03-28T15:10:58.655Z</lastmod>
-    <data>
-        <display>
-        <title>hdu-2612-Find a way（双bfs）</title>
-        <pubTime>2018-07-23T04:34:42.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>HDU</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hdu1272.html</loc>
-    <lastmod>2019-03-28T15:10:46.004Z</lastmod>
-    <data>
-        <display>
-        <title>小希的迷宫-HDU-1272(并查集or树性质)</title>
-        <pubTime>2018-08-01T13:45:50.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="并查集" url="https://lruihao.cn/categories/ACM/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/HDU%20-%201495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90%20%EF%BC%88bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4%20%20or%20%E6%95%B0%E8%AE%BA%EF%BC%89.html</loc>
-    <lastmod>2019-03-28T15:10:24.399Z</lastmod>
-    <data>
-        <display>
-        <title>HDU-1495-非常可乐（bfs模拟倒水or数论）</title>
-        <pubTime>2018-07-24T07:34:00.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>HDU</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/euler.html</loc>
-    <lastmod>2019-03-28T15:09:46.822Z</lastmod>
-    <data>
-        <display>
-        <title>欧拉函数</title>
-        <pubTime>2018-08-08T09:10:07.000Z</pubTime>
-        
-        <tag>C</tag>
-         
-        <tag>数学</tag>
-         
-        <tag>数论</tag>
-         
-        <tag>euler</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="数论" url="https://lruihao.cn/categories/ACM/%E6%95%B0%E8%AE%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Educational%20Codeforces%20Round%2047%20(Rated%20for%20Div.%202).html</loc>
-    <lastmod>2019-03-28T15:09:11.513Z</lastmod>
-    <data>
-        <display>
-        <title>Educational Codeforces Round 47 (Rated for Div. 2)</title>
-        <pubTime>2018-07-22T03:25:56.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-        <tag>C</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Codeforces680B.html</loc>
-    <lastmod>2019-03-28T15:07:41.262Z</lastmod>
-    <data>
-        <display>
-        <title>Bear and Finding Criminals-Codeforces680B</title>
-        <pubTime>2018-07-31T11:32:21.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-        <tag>C</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Codeforces680A.html</loc>
-    <lastmod>2019-03-28T15:07:35.143Z</lastmod>
-    <data>
-        <display>
-        <title>Bear and Five Cards-Codeforces680A</title>
-        <pubTime>2018-07-31T11:22:36.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-        <tag>C</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/codeforces476b.html</loc>
-    <lastmod>2019-03-28T15:07:26.751Z</lastmod>
-    <data>
-        <display>
-        <title>Dreamoon and WiFi(组合数学)</title>
-        <pubTime>2018-08-10T09:44:47.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-        <tag>C</tag>
-         
-        <tag>数学</tag>
-         
-        <tag>组合数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="组合数学" url="https://lruihao.cn/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/codeforces476a.html</loc>
-    <lastmod>2019-03-28T15:07:18.686Z</lastmod>
-    <data>
-        <display>
-        <title>Dreamoon and Stairs</title>
-        <pubTime>2018-08-10T12:13:08.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-        <tag>C</tag>
-         
-        <tag>数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/cfcontest1017.html</loc>
-    <lastmod>2019-03-28T15:07:01.846Z</lastmod>
-    <data>
-        <display>
-        <title>Codeforces Round 502(Div.1 + Div.2)</title>
-        <pubTime>2018-08-09T02:48:00.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-        <tag>组合数学</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/BFS%E6%B1%82%E6%9C%80%E7%9F%AD%E8%B7%AF.html</loc>
-    <lastmod>2019-03-28T15:05:16.749Z</lastmod>
-    <data>
-        <display>
-        <title>BFS求最短路</title>
-        <pubTime>2018-07-22T03:31:05.000Z</pubTime>
-        
-        <tag>C++</tag>
-         
-        <tag>BFS</tag>
-         
-        <tag>搜索</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="https://lruihao.cn/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/Adjacent-Replacements.html</loc>
-    <lastmod>2019-03-28T15:04:22.915Z</lastmod>
-    <data>
-        <display>
-        <title>Adjacent Replacements</title>
-        <pubTime>2018-07-22T03:54:14.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>Codeforces</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/noreward.html</loc>
-    <lastmod>2019-02-18T07:41:17.528Z</lastmod>
-    <data>
-        <display>
-        <title>设置单篇文章不打赏、首页不显示文章</title>
-        <pubTime>2018-11-06T05:06:29.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/vim.html</loc>
-    <lastmod>2019-02-18T03:31:53.459Z</lastmod>
-    <data>
-        <display>
-        <title>linux系统进入退出vim编辑器及termux修改问候语</title>
-        <pubTime>2018-08-31T03:46:39.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>termux</tag>
-         
-        <tag>vim</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/shell.html</loc>
-    <lastmod>2019-02-18T03:27:09.394Z</lastmod>
-    <data>
-        <display>
-        <title>shell脚本初体验</title>
-        <pubTime>2018-10-29T03:57:39.000Z</pubTime>
-        
-        <tag>HelloWorld</tag>
-         
-        <tag>linux</tag>
-         
-        <tag>shell</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://lruihao.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E7%8C%B4%E5%AD%90%E4%B8%8E%E5%93%AA%E5%90%92.html</loc>
-    <lastmod>2019-02-18T03:20:32.034Z</lastmod>
-    <data>
-        <display>
-        <title>猴子与哪吒</title>
-        <pubTime>2018-05-31T02:09:15.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/renative.html</loc>
-    <lastmod>2019-02-01T12:54:33.258Z</lastmod>
-    <data>
-        <display>
-        <title>还乡</title>
-        <pubTime>2019-02-01T12:44:40.000Z</pubTime>
-        
-        <tag>他山之石</tag>
-         
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hexo-wordcount.html</loc>
-    <lastmod>2019-02-01T04:05:04.141Z</lastmod>
-    <data>
-        <display>
-        <title>hexo next主题添加字数统计（2018）</title>
-        <pubTime>2018-08-30T05:15:50.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>网页字数统计</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="https://lruihao.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/subject-verb.html</loc>
-    <lastmod>2019-01-12T13:56:39.958Z</lastmod>
-    <data>
-        <display>
-        <title>英语语法--主谓一致</title>
-        <pubTime>2019-01-12T05:02:49.000Z</pubTime>
-        
-        <tag>English</tag>
-         
-         
-           
-             
-              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/inversion-3.html</loc>
-    <lastmod>2018-12-10T14:13:37.167Z</lastmod>
-    <data>
-        <display>
-        <title>英语语法--形式倒装</title>
-        <pubTime>2018-12-10T13:52:30.000Z</pubTime>
-        
-        <tag>English</tag>
-         
-         
-           
-             
-              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/inversion-2.html</loc>
-    <lastmod>2018-12-10T13:50:52.458Z</lastmod>
-    <data>
-        <display>
-        <title>英语语法--完全倒装</title>
-        <pubTime>2018-12-10T13:14:51.000Z</pubTime>
-        
-        <tag>English</tag>
-         
-         
-           
-             
-              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/inversion-1.html</loc>
-    <lastmod>2018-12-10T13:05:01.854Z</lastmod>
-    <data>
-        <display>
-        <title>英语语法--部分倒装</title>
-        <pubTime>2018-12-08T09:52:39.000Z</pubTime>
-        
-        <tag>English</tag>
-         
-         
-           
-             
-              <breadCrumb title="English" url="https://lruihao.cn/categories/English/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/beian.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>网站备案之旅</title>
-        <pubTime>2018-10-29T15:16:26.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-        <tag>网站备案</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/C++%20with%20STL.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>C++ with STL</title>
-        <pubTime>2018-06-14T12:22:06.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>C++</tag>
-         
-        <tag>STL</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="STL" url="https://lruihao.cn/categories/ACM/STL/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/mood.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>每一个优秀的人，都有一段沉默的时光</title>
-        <pubTime>2018-09-21T13:11:25.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-        <tag>心灵鸡汤</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/hello-world.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-05-28T12:01:01.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>戏子春秋</title>
-        <pubTime>2018-06-03T11:41:32.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/%E5%9B%9B%E5%85%AD%E7%BA%A7%E8%80%83%E8%AF%95.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>四六级考试</title>
-        <pubTime>2018-06-16T07:23:15.000Z</pubTime>
-        
-        <tag>生活随笔</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活随笔" url="https://lruihao.cn/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
-    <lastmod>2018-11-03T04:27:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>最短路入门</title>
-        <pubTime>2018-08-03T08:27:16.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>最短路</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="https://lruihao.cn/categories/ACM/"/>
-          
-             
-              <breadCrumb title="最短路" url="https://lruihao.cn/categories/ACM/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
 </urlset>
