@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lruihao.cn/posts/year-2020-2021.html</loc>
+    
+    <lastmod>2021-06-21T03:48:59.615Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/dev-rules.html</loc>
+    
+    <lastmod>2021-06-21T02:40:41.312Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/watermark-fixed.html</loc>
     
     <lastmod>2021-05-23T09:24:29.219Z</lastmod>
@@ -37,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/docs/top/index.html</loc>
-    
-    <lastmod>2021-03-17T14:45:04.365Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/docs/tags/index.html</loc>
     
     <lastmod>2021-03-17T14:45:04.365Z</lastmod>
@@ -51,14 +58,21 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/docs/other/index.html</loc>
+    <loc>https://lruihao.cn/docs/top/index.html</loc>
+    
+    <lastmod>2021-03-17T14:45:04.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/docs/index.html</loc>
     
     <lastmod>2021-03-17T14:45:04.364Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/docs/index.html</loc>
+    <loc>https://lruihao.cn/docs/other/index.html</loc>
     
     <lastmod>2021-03-17T14:45:04.364Z</lastmod>
     
@@ -128,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92.html</loc>
+    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
     
     <lastmod>2021-03-17T14:45:04.218Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/%E6%88%8F%E5%AD%90%E6%98%A5%E7%A7%8B.html</loc>
+    <loc>https://lruihao.cn/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92.html</loc>
     
     <lastmod>2021-03-17T14:45:04.218Z</lastmod>
     
@@ -163,7 +177,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
+    <loc>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97.html</loc>
     
     <lastmod>2021-03-17T14:45:04.205Z</lastmod>
     
@@ -177,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97.html</loc>
+    <loc>https://lruihao.cn/posts/zuiduanlu.html</loc>
     
     <lastmod>2021-03-17T14:45:04.205Z</lastmod>
     
@@ -464,14 +478,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/poj-1321%20%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98%EF%BC%88dfs%EF%BC%89.html</loc>
+    <loc>https://lruihao.cn/posts/poj-2251-Dungeon%20Master%EF%BC%88%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF%EF%BC%89.html</loc>
     
     <lastmod>2021-03-17T14:45:03.531Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/poj-2251-Dungeon%20Master%EF%BC%88%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF%EF%BC%89.html</loc>
+    <loc>https://lruihao.cn/posts/poj-1321%20%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98%EF%BC%88dfs%EF%BC%89.html</loc>
     
     <lastmod>2021-03-17T14:45:03.531Z</lastmod>
     
@@ -695,14 +709,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/inversion-3.html</loc>
+    <loc>https://lruihao.cn/posts/inversion-2.html</loc>
     
     <lastmod>2021-03-17T14:45:03.040Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/inversion-2.html</loc>
+    <loc>https://lruihao.cn/posts/inversion-3.html</loc>
     
     <lastmod>2021-03-17T14:45:03.040Z</lastmod>
     
@@ -821,14 +835,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/hdu3038.html</loc>
+    <loc>https://lruihao.cn/posts/hdu1272.html</loc>
     
     <lastmod>2021-03-17T14:45:02.730Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/hdu1272.html</loc>
+    <loc>https://lruihao.cn/posts/hdu3038.html</loc>
     
     <lastmod>2021-03-17T14:45:02.730Z</lastmod>
     
@@ -877,13 +891,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/gcd-bit.html</loc>
-    
-    <lastmod>2021-03-17T14:45:02.651Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/fucking3.html</loc>
     
     <lastmod>2021-03-17T14:45:02.651Z</lastmod>
@@ -892,6 +899,13 @@
   
   <url>
     <loc>https://lruihao.cn/posts/fucking2.html</loc>
+    
+    <lastmod>2021-03-17T14:45:02.651Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/gcd-bit.html</loc>
     
     <lastmod>2021-03-17T14:45:02.651Z</lastmod>
     
@@ -950,13 +964,6 @@
     <loc>https://lruihao.cn/posts/dongtaisub.html</loc>
     
     <lastmod>2021-03-17T14:45:02.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/dev-rules.html</loc>
-    
-    <lastmod>2021-03-17T14:45:02.536Z</lastmod>
     
   </url>
   
@@ -1080,14 +1087,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/byteio.html</loc>
+    <loc>https://lruihao.cn/posts/caddy-file.html</loc>
     
     <lastmod>2021-03-17T14:45:02.310Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/caddy-file.html</loc>
+    <loc>https://lruihao.cn/posts/byteio.html</loc>
     
     <lastmod>2021-03-17T14:45:02.310Z</lastmod>
     
@@ -1150,13 +1157,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/The-suspects.html</loc>
-    
-    <lastmod>2021-03-17T14:45:02.195Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/Wannafly%E6%8C%91%E6%88%98%E8%B5%9B18-%E5%BA%8F%E5%88%97.html</loc>
     
     <lastmod>2021-03-17T14:45:02.195Z</lastmod>
@@ -1164,14 +1164,21 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/TaoTao%E8%A6%81%E5%90%83%E9%B8%A1.html</loc>
+    <loc>https://lruihao.cn/posts/The-suspects.html</loc>
+    
+    <lastmod>2021-03-17T14:45:02.195Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/Sublime-Text3.html</loc>
     
     <lastmod>2021-03-17T14:45:02.194Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/Sublime-Text3.html</loc>
+    <loc>https://lruihao.cn/posts/TaoTao%E8%A6%81%E5%90%83%E9%B8%A1.html</loc>
     
     <lastmod>2021-03-17T14:45:02.194Z</lastmod>
     
@@ -1199,14 +1206,14 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/POJ%20-%203278%20-Catch%20That%20Cow%20%20(bfs).html</loc>
+    <loc>https://lruihao.cn/posts/Piles-with-stones.html</loc>
     
     <lastmod>2021-03-17T14:45:02.126Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/Piles-with-stones.html</loc>
+    <loc>https://lruihao.cn/posts/POJ%20-%203278%20-Catch%20That%20Cow%20%20(bfs).html</loc>
     
     <lastmod>2021-03-17T14:45:02.126Z</lastmod>
     
@@ -1255,6 +1262,13 @@
   </url>
   
   <url>
+    <loc>https://lruihao.cn/posts/Codeforces680B.html</loc>
+    
+    <lastmod>2021-03-17T14:45:02.083Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lruihao.cn/posts/Euclid.html</loc>
     
     <lastmod>2021-03-17T14:45:02.083Z</lastmod>
@@ -1263,13 +1277,6 @@
   
   <url>
     <loc>https://lruihao.cn/posts/Educational%20Codeforces%20Round%2047%20(Rated%20for%20Div.%202).html</loc>
-    
-    <lastmod>2021-03-17T14:45:02.083Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lruihao.cn/posts/Codeforces680B.html</loc>
     
     <lastmod>2021-03-17T14:45:02.083Z</lastmod>
     
@@ -1290,13 +1297,6 @@
   </url>
   
   <url>
-    <loc>https://lruihao.cn/posts/B-Higher.html</loc>
-    
-    <lastmod>2021-03-17T14:45:02.081Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lruihao.cn/posts/BFS%E6%B1%82%E6%9C%80%E7%9F%AD%E8%B7%AF.html</loc>
     
     <lastmod>2021-03-17T14:45:02.081Z</lastmod>
@@ -1305,6 +1305,13 @@
   
   <url>
     <loc>https://lruihao.cn/posts/Arrays.html</loc>
+    
+    <lastmod>2021-03-17T14:45:02.081Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lruihao.cn/posts/B-Higher.html</loc>
     
     <lastmod>2021-03-17T14:45:02.081Z</lastmod>
     
