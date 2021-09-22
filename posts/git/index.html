@@ -131,11 +131,11 @@
 <h1 id=介绍>介绍</h1>
 <p>先通过几张图片来大致了解一下 Git 的工作原理吧！<br>
 文章开头的流程图已经简单明了地说明了 Git 常用操作的工作流程，下图换种风格再展示一次：
-<img class=lazyload src=/svg/loading.min.svg data-src=./images/relation-2.jpg data-srcset="./images/relation-2.jpg, ./images/relation-2.jpg 1.5x, ./images/relation-2.jpg 2x" data-sizes=auto alt=./images/relation-2.jpg title=关系图></p>
+<img class=lazyload src=/svg/loading.min.svg data-src=images/relation-2.jpg data-srcset="/posts/git/images/relation-2.jpg, images/relation-2.jpg 1.5x, /posts/git/images/relation-2.jpg 2x" data-sizes=auto alt=/posts/git/images/relation-2.jpg title=关系图></p>
 <p>提到 Git 就会联想到 github, 下图从 Git 的角度简单说明了一些 Github 常用操作的关系：
-<img class=lazyload src=/svg/loading.min.svg data-src=./images/github.jpg data-srcset="./images/github.jpg, ./images/github.jpg 1.5x, ./images/github.jpg 2x" data-sizes=auto alt=./images/github.jpg title=github流程></p>
+<img class=lazyload src=/svg/loading.min.svg data-src=images/github.jpg data-srcset="/posts/git/images/github.jpg, images/github.jpg 1.5x, /posts/git/images/github.jpg 2x" data-sizes=auto alt=/posts/git/images/github.jpg title=github流程></p>
 <p>下面这个图则展示了工作区、版本库中的暂存区和版本库之间的关系：
-<img class=lazyload src=/svg/loading.min.svg data-src=./images/work.jpg data-srcset="./images/work.jpg, ./images/work.jpg 1.5x, ./images/work.jpg 2x" data-sizes=auto alt=./images/work.jpg title=工作区、暂存区和版本库></p>
+<img class=lazyload src=/svg/loading.min.svg data-src=images/work.jpg data-srcset="/posts/git/images/work.jpg, images/work.jpg 1.5x, /posts/git/images/work.jpg 2x" data-sizes=auto alt=/posts/git/images/work.jpg title=工作区、暂存区和版本库></p>
 <p>图中左侧为工作区，右侧为版本库。在版本库中标记为 <code>"index"</code> 的区域是暂存区（stage, index），标记为 &ldquo;master&rdquo; 的是 master分支所代表的目录树。<br>
 <strong>HEAD指针: 每个git仓库有且仅有一个HEAD指针，它通常指向當前某个活動的本地分支指针(最初本地仓库master)。也可以是某个提交记录、某个tag，但这会让其处于 detached HEAD（游离头）状态，此状态下的所有提交都无效。</strong><br>
 图中我们可以看出此时 <code>"HEAD"</code> 实际是指向 master 分支的一个"游标"。所以图示的命令中出现 HEAD 的地方可以用 master 来替换。<br>
@@ -284,7 +284,7 @@ git push origin master
 <p>分支合并也是在本地完成(<strong>从本地库到工作区</strong>)，新的分支只有在合并后才允许被删除。<br>
 如果分支合并是出现冲突需要解决了冲突才能合并，使用<code>git status</code>查看冲突文件。</p>
 </blockquote>
-<p><img class=lazyload src=/svg/loading.min.svg data-src=./images/delete-merge.png data-srcset="./images/delete-merge.png, ./images/delete-merge.png 1.5x, ./images/delete-merge.png 2x" data-sizes=auto alt=./images/delete-merge.png title=分支合并后删除></p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/delete-merge.png data-srcset="/posts/git/images/delete-merge.png, images/delete-merge.png 1.5x, /posts/git/images/delete-merge.png 2x" data-sizes=auto alt=/posts/git/images/delete-merge.png title=分支合并后删除></p>
 <h2 id=branchcheckout>branch,checkout</h2>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -591,7 +591,7 @@ gitk --all
 <li><a href=https://www.jianshu.com/p/48b935e36000 target=_blank rel="noopener noreffer">更多标签</a></li>
 </ul>
 <h1 id=license>license</h1>
-<p><img class=lazyload src=/svg/loading.min.svg data-src=./images/license.jpg data-srcset="./images/license.jpg, ./images/license.jpg 1.5x, ./images/license.jpg 2x" data-sizes=auto alt=./images/license.jpg title=license></p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/license.jpg data-srcset="/posts/git/images/license.jpg, images/license.jpg 1.5x, /posts/git/images/license.jpg 2x" data-sizes=auto alt=/posts/git/images/license.jpg title=license></p>
 <h1 id=其他>其他</h1>
 <ul>
 <li><a href=https://blog.csdn.net/qq1332479771/article/details/56087333 target=_blank rel="noopener noreffer">github上fork了别人的项目后，再同步更新别人的提交</a></li>
@@ -601,8 +601,8 @@ gitk --all
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新于 2021-09-22&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/3fa87a538aed811c0bb3bd0ff1f1574b333dd92a target=_blank title="commit by Cell(1024@lruihao.cn) 3fa87a538aed811c0bb3bd0ff1f1574b333dd92a: Feat: 更新 Git 总结文章">
-<i class="fas fa-hashtag fa-fw"></i>3fa87a5</a></span>
+<span>更新于 2021-09-22&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/b50f9ead83339da0e77858aed3e81e9a662d3a3c target=_blank title="commit by Cell(1024@lruihao.cn) b50f9ead83339da0e77858aed3e81e9a662d3a3c: Feat: 更新 Git 总结文章">
+<i class="fas fa-hashtag fa-fw"></i>b50f9ea</a></span>
 </div>
 <div class=post-info-license></div>
 </div>

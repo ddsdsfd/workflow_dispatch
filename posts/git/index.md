@@ -9,13 +9,13 @@
 # 介绍
 先通过几张图片来大致了解一下 Git 的工作原理吧！  
 文章开头的流程图已经简单明了地说明了 Git 常用操作的工作流程，下图换种风格再展示一次：
-![关系图](./images/relation-2.jpg)
+![关系图](images/relation-2.jpg)
 
 提到 Git 就会联想到 github, 下图从 Git 的角度简单说明了一些 Github 常用操作的关系：
-![github流程](./images/github.jpg)
+![github流程](images/github.jpg)
 
 下面这个图则展示了工作区、版本库中的暂存区和版本库之间的关系：
-![工作区、暂存区和版本库](./images/work.jpg)
+![工作区、暂存区和版本库](images/work.jpg)
 
 图中左侧为工作区，右侧为版本库。在版本库中标记为 `"index"` 的区域是暂存区（stage, index），标记为 "master" 的是 master分支所代表的目录树。  
 **HEAD指针: 每个git仓库有且仅有一个HEAD指针，它通常指向當前某个活動的本地分支指针(最初本地仓库master)。也可以是某个提交记录、某个tag，但这会让其处于 detached HEAD（游离头）状态，此状态下的所有提交都无效。**  
@@ -101,7 +101,7 @@ git merge dev           # 在当前的分支上合并dev分支
 > 分支合并也是在本地完成(**从本地库到工作区**)，新的分支只有在合并后才允许被删除。  
 如果分支合并是出现冲突需要解决了冲突才能合并，使用`git status`查看冲突文件。
 
-![分支合并后删除](./images/delete-merge.png)
+![分支合并后删除](images/delete-merge.png)
 
 ## branch,checkout
 ```
@@ -265,7 +265,7 @@ gitk --all
 - [更多标签](https://www.jianshu.com/p/48b935e36000)
 
 # license
-![license](./images/license.jpg)
+![license](images/license.jpg)
 
 # 其他
 * [github上fork了别人的项目后，再同步更新别人的提交](https://blog.csdn.net/qq1332479771/article/details/56087333)
