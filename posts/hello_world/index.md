@@ -1,7 +1,7 @@
 # Hello World
 
 
-![逝者如斯乎，不舍昼夜](./images/lunyu.jpg)
+![逝者如斯乎，不舍昼夜](images/lunyu.jpg)
 
 > “每天早晨叫醒你的不是鬧鐘，而是你的夢想。”
 
