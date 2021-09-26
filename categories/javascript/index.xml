@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>JavaScript - 分类 - 菠菜眾長</title><link>https://lruihao.cn/categories/javascript/</link><description>JavaScript - 分类 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 02 Mar 2021 21:46:40 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/javascript/" rel="self" type="application/rss+xml"/><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill_note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill_note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>事情是這樣，年前和朋友一起合租了一個房子，然後捏，生活嘛，除了開心，當然是乾飯最大啦！</p>
+<p>自然就會有購物，買菜等日常消費，那就要記賬，一開始是各自記在手機的便簽上，最後再算一下；<br>
+三個人，一共七种組合消費，排除各自消費的三種情況，也有四種 (<code>AB, AC, BC, ABC</code>)。好麻煩啊！！！</p>
+</div>
+        </div>
+    </div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async_defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async_defer/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/async_defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
+            </div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">JS的加载分为两个部分：下载和执行。<br>
+浏览器在执行HTML的时候如果遇到<code>&lt;script&gt;</code>时会停止页面的渲染,去下载和执行js的文件直接遇见<code>&lt;/scirpt&gt;</code>会继续渲染页面。故浏览器在执行js文件的时候浏览器表现为一片空白,为了解决这个问题ECMAScript定义了defer和async两个属性用于控制JS的下载和执行。</div>
+        </div>
+    </div>]]></description></item></channel></rss>

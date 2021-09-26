@@ -1,0 +1,11 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>async - 标签 - 菠菜眾長</title><link>https://lruihao.cn/tags/async/</link><description>async - 标签 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 08 Sep 2019 11:47:50 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/async/" rel="self" type="application/rss+xml"/><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async_defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async_defer/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/async_defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
+            </div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">JS的加载分为两个部分：下载和执行。<br>
+浏览器在执行HTML的时候如果遇到<code>&lt;script&gt;</code>时会停止页面的渲染,去下载和执行js的文件直接遇见<code>&lt;/scirpt&gt;</code>会继续渲染页面。故浏览器在执行js文件的时候浏览器表现为一片空白,为了解决这个问题ECMAScript定义了defer和async两个属性用于控制JS的下载和执行。</div>
+        </div>
+    </div>]]></description></item></channel></rss>
