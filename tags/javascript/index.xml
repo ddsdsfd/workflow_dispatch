@@ -19,4 +19,71 @@
             <div class="admonition-content">JS的加载分为两个部分：下载和执行。<br>
 浏览器在执行HTML的时候如果遇到<code>&lt;script&gt;</code>时会停止页面的渲染,去下载和执行js的文件直接遇见<code>&lt;/scirpt&gt;</code>会继续渲染页面。故浏览器在执行js文件的时候浏览器表现为一片空白,为了解决这个问题ECMAScript定义了defer和async两个属性用于控制JS的下载和执行。</div>
         </div>
-    </div>]]></description></item></channel></rss>
+    </div>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
+	#code{  
+        font-family:Arial;  
+        font-style:italic;  
+        font-weight:bold;  
+        border:2px solid #ddd;
+        letter-spacing:9px;  
+        color:blue;
+        font-size: 15px; 
+    }
+</style>
+<script type="text/javascript">
+	//设置一个全局的变量，便于保存验证码
+    var code;
+    function createCode(){
+        //首先默认code为空字符串
+        code = '';
+        //设置长度，这里看需求，我这里设置了4
+        var codeLength = 4;
+        var codeV = document.getElementById('code');
+        //设置随机字符
+        var random = new Array('人','徒','知','枯','坐','息','思','为','进','德','之','功','殊','不','知','上','达','之', '士','圆','通','定','慧','体','用','双','修','即','动','而','静','虽','撄','而','宁');
+        //循环codeLength 我设置的4就是循环4次
+        for(var i = 0; i < codeLength; i++){
+            //设置随机数范围,这设置为0 ~ 36
+             var index = Math.floor(Math.random()*35);
+             //字符串拼接 将每次随机的字符 进行拼接
+             code += random[index]; 
+        }
+        //将拼接好的字符串赋值给展示的Value
+        codeV.value = code;
+    }
+
+    //下面就是判断是否== 的代码，无需解释
+    function validate(){
+        var Input = document.getElementById('input');
+        var oValue = Input.value.toUpperCase();
+        if(oValue ==0){
+            alert('请输入验证码');
+        }else if(oValue != code){
+            Input.value = '';
+            alert('验证码不正确，请重新输入');
+            createCode();
+        }else{
+            Input.value = '';
+            alert('验证码正确！');//window.open('http://lruihao.cn','_self');
+        }
+    }
+
+
+    //设置此处的原因是每次进入界面展示一个随机的验证码，不设置则为空
+    window.onload = function (){
+
+        createCode();
+    }
+</script>
+<div align="center">  
+    <input type = "text" id = "input" value="" /> <input type = "button" id="code" onclick="createCode()"/> <input class="btn" type = "button" value = "验证" onclick = "validate()"/> 
+    <br/>请点击验证码处: ↑ 
+</div>]]></description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description>&lt;blockquote>
+&lt;p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。&lt;/p>
+&lt;/blockquote></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
+我主要用到的工具：</p>
+<ul>
+<li>console.log()</li>
+<li>Notepad++</li>
+<li><a href="http://picascii.com" target="_blank" rel="noopener noreffer">在线图片转文字工具</a></li>
+</ul>]]></description></item></channel></rss>

@@ -1,3 +1,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>hexo - 标签 - 菠菜眾長</title><link>https://lruihao.cn/tags/hexo/</link><description>hexo - 标签 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 03 Nov 2018 12:49:28 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/hexo/" rel="self" type="application/rss+xml"/><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog_backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/blog_backup/</guid><description>&lt;div class="featured-image">
 &lt;img src="/posts/blog_backup/images/1.png" referrerpolicy="no-referrer">
-&lt;/div>备份hexo博客 1 2 3 4 5 6 7 8 9 //如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。 cd hexo git init //初始化本地</description></item></channel></rss>
+&lt;/div>备份hexo博客 1 2 3 4 5 6 7 8 9 //如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。 cd hexo git init //初始化本地</description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description>&lt;blockquote>
+&lt;p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。&lt;/p>
+&lt;/blockquote></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
+我主要用到的工具：</p>
+<ul>
+<li>console.log()</li>
+<li>Notepad++</li>
+<li><a href="http://picascii.com" target="_blank" rel="noopener noreffer">在线图片转文字工具</a></li>
+</ul>]]></description></item></channel></rss>
