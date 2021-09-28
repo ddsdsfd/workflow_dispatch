@@ -15,7 +15,7 @@
         <div class="details-content">
             <div class="admonition-content">2020 已經過去半年了，由於情緒過於複杂，一直不想去回憶總結那操蛋的一年。今天疫情原因居家辦公，得空靜下來，和自己對話，不知从何說起，想到哪寫到哪吧。</div>
         </div>
-    </div>]]></description></item><item><title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title><link>https://lruihao.cn/posts/codereview/</link><pubDate>Thu, 04 Mar 2021 21:04:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/codereview/</guid><description>程式碼的持續優化 對一個入門的工程師來說，掌握程式語法與模仿範例實作是基本的能力。那有了這樣的基本能之後，要如何寫出更好的程式呢？怎樣才能夠成</description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill_note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill_note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+    </div>]]></description></item><item><title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title><link>https://lruihao.cn/posts/codereview/</link><pubDate>Thu, 04 Mar 2021 21:04:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/codereview/</guid><description>程式碼的持續優化 對一個入門的工程師來說，掌握程式語法與模仿範例實作是基本的能力。那有了這樣的基本能之後，要如何寫出更好的程式呢？怎樣才能夠成</description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -34,7 +34,7 @@
 <p><code>&lt;秒&gt; &lt;分钟&gt; &lt;小时&gt; &lt;日期 day-of-month&gt; &lt;月份&gt; &lt;星期 day-of-week&gt;</code></p>
 </blockquote>]]></description></item><item><title>2019年度总结</title><link>https://lruihao.cn/posts/year-2019/</link><pubDate>Thu, 16 Jan 2020 20:01:22 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/year-2019/</guid><description>&lt;blockquote>
 &lt;p>回顾2019，是从“迷茫”到“忙”的一年，何为“迷茫”，何为“忙”。&lt;/p>
-&lt;/blockquote></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async_defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async_defer/</guid><description><![CDATA[<div class="featured-image">
+&lt;/blockquote></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/async_defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
             </div><div class="details admonition note open">
         <div class="details-summary admonition-title">
