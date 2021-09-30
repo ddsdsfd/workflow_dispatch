@@ -6,9 +6,34 @@
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>]]></description></item><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description>&lt;blockquote>
 &lt;p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~&lt;/p>
-&lt;/blockquote></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
+&lt;/blockquote></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
+            </div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起&hellip;<br>
+算了，昨天下午3点半，我还在王者峡谷Timing,突然潇X巴哥打了个电话给我说关于自动打卡的想法&hellip;<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡&hellip;<br>
+我和潇X巴哥确定思路后兵分两路：</p>
+<ol>
+<li>他用java写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
+<li>我想的就很直接，只刷一个人的，python 模拟浏览器登录后打卡，再设置定时任务（多人则设定多个）；</li>
+</ol>
+</div>
+        </div>
+    </div>]]></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
 <p>基本功能： 给定一个密钥，读取文件内容，加密后，输出到另外一个文件。<br/><br/>
 这里使用文件输入流读取文件内容，然后每个字节和密码进行异或简单加密。加密完成，使用文件输出流写入另一个文件中。解密和加密方法一样。利用的是对同一个数异或两遍其值不变的性质。因此一个程序可以完成加密和解密功能。只需修改文件名即可。</p>
+</blockquote>]]></description></item><item><title>GitBook 使用教程</title><link>https://lruihao.cn/posts/gitbookuse/</link><pubDate>Thu, 04 Apr 2019 22:09:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/gitbookuse/</guid><description>&lt;blockquote>
+&lt;p>想趴几本金庸小说的做成电子书自己阅读，在博客上尝试了一下整理了6本中短篇小说就开始感觉博客臃肿，于是找到gitbook前来一试。
+写完这篇文章开始实际操作，我发现还不如用hexo来写小说，遂放弃！Gitbook用来写相关文档介绍还差不多。&lt;/p>
+&lt;/blockquote></description></item><item><title>java 泛型 test</title><link>https://lruihao.cn/posts/fanxing/</link><pubDate>Sat, 16 Mar 2019 13:56:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fanxing/</guid><description><![CDATA[<blockquote>
+<ul>
+<li>泛型方法，它在修饰符后，返回值类型前增加了类型参数(&lt;&gt;)</li>
+<li>类型通配符一般使用问号<code>?</code>代替具体的类型<code>实</code>参，注意不是类型形参。</li>
+</ul>
 </blockquote>]]></description></item><item><title>Arrays类及基本使用</title><link>https://lruihao.cn/posts/arrays/</link><pubDate>Fri, 18 Jan 2019 13:13:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/arrays/</guid><description><![CDATA[<h3 id="主要方法">主要方法</h3>
 <ul>
 <li>static type[] copyof(type[] original,int length)</li>

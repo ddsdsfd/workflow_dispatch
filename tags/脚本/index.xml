@@ -1,6 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>脚本 - 标签 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/</link><description>脚本 - 标签 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 26 Mar 2020 11:08:38 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/" rel="self" type="application/rss+xml"/><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description>&lt;blockquote>
 &lt;p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~&lt;/p>
-&lt;/blockquote></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+&lt;/blockquote></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
+            </div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起&hellip;<br>
+算了，昨天下午3点半，我还在王者峡谷Timing,突然潇X巴哥打了个电话给我说关于自动打卡的想法&hellip;<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡&hellip;<br>
+我和潇X巴哥确定思路后兵分两路：</p>
+<ol>
+<li>他用java写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
+<li>我想的就很直接，只刷一个人的，python 模拟浏览器登录后打卡，再设置定时任务（多人则设定多个）；</li>
+</ol>
+</div>
+        </div>
+    </div>]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
 <p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
 <ul>
 <li>git add * (添加需要提交的文件，这里全选)</li>

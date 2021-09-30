@@ -8,7 +8,18 @@
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
-</blockquote>]]></description></item><item><title>和自己對話-2020&amp;2021 總結</title><link>https://lruihao.cn/posts/year-2020-2021/</link><pubDate>Mon, 21 Jun 2021 10:17:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/year-2020-2021/</guid><description><![CDATA[<div class="details admonition quote open">
+</blockquote>]]></description></item><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/cos-album/images/view.png" referrerpolicy="no-referrer">
+            </div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">cos桶相册，终于！！终于来了！！，思路参考自<a href="https://me.idealli.com/post/73ad4183.html" target="_blank" rel="noopener noreffer">给hexo静态博客添加动态相册功能</a>，<br>
+<strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
+开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
+        </div>
+    </div>]]></description></item><item><title>和自己對話-2020&amp;2021 總結</title><link>https://lruihao.cn/posts/year-2020-2021/</link><pubDate>Mon, 21 Jun 2021 10:17:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/year-2020-2021/</guid><description><![CDATA[<div class="details admonition quote open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-quote-right fa-fw"></i>後知後覺<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -32,16 +43,21 @@
 &lt;p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~&lt;/p>
 &lt;/blockquote></description></item><item><title>CRON 表达式的基本语法</title><link>https://lruihao.cn/posts/cron/</link><pubDate>Wed, 25 Mar 2020 09:19:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cron/</guid><description><![CDATA[<blockquote>
 <p><code>&lt;秒&gt; &lt;分钟&gt; &lt;小时&gt; &lt;日期 day-of-month&gt; &lt;月份&gt; &lt;星期 day-of-week&gt;</code></p>
-</blockquote>]]></description></item><item><title>2019年度总结</title><link>https://lruihao.cn/posts/year-2019/</link><pubDate>Thu, 16 Jan 2020 20:01:22 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/year-2019/</guid><description>&lt;blockquote>
-&lt;p>回顾2019，是从“迷茫”到“忙”的一年，何为“迷茫”，何为“忙”。&lt;/p>
-&lt;/blockquote></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/async_defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
-            </div><div class="details admonition note open">
+</blockquote>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
+            </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+            <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">JS的加载分为两个部分：下载和执行。<br>
-浏览器在执行HTML的时候如果遇到<code>&lt;script&gt;</code>时会停止页面的渲染,去下载和执行js的文件直接遇见<code>&lt;/scirpt&gt;</code>会继续渲染页面。故浏览器在执行js文件的时候浏览器表现为一片空白,为了解决这个问题ECMAScript定义了defer和async两个属性用于控制JS的下载和执行。</div>
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起&hellip;<br>
+算了，昨天下午3点半，我还在王者峡谷Timing,突然潇X巴哥打了个电话给我说关于自动打卡的想法&hellip;<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡&hellip;<br>
+我和潇X巴哥确定思路后兵分两路：</p>
+<ol>
+<li>他用java写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
+<li>我想的就很直接，只刷一个人的，python 模拟浏览器登录后打卡，再设置定时任务（多人则设定多个）；</li>
+</ol>
+</div>
         </div>
     </div>]]></description></item></channel></rss>

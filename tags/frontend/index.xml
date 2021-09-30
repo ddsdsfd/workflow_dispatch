@@ -1,4 +1,15 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Frontend - 标签 - 菠菜眾長</title><link>https://lruihao.cn/tags/frontend/</link><description>Frontend - 标签 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 02 Mar 2021 21:46:40 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/frontend/" rel="self" type="application/rss+xml"/><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Frontend - 标签 - 菠菜眾長</title><link>https://lruihao.cn/tags/frontend/</link><description>Frontend - 标签 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 02 Mar 2021 21:46:40 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/frontend/" rel="self" type="application/rss+xml"/><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/cos-album/images/view.png" referrerpolicy="no-referrer">
+            </div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">cos桶相册，终于！！终于来了！！，思路参考自<a href="https://me.idealli.com/post/73ad4183.html" target="_blank" rel="noopener noreffer">给hexo静态博客添加动态相册功能</a>，<br>
+<strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
+开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
+        </div>
+    </div>]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -10,7 +21,7 @@
 </div>
         </div>
     </div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/async_defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
+                <img src="/posts/async-defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
             </div><div class="details admonition note open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -80,7 +91,11 @@
     <br/>请点击验证码处: ↑ 
 </div>]]></description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description>&lt;blockquote>
 &lt;p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。&lt;/p>
-&lt;/blockquote></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
+&lt;/blockquote></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
+<p>本文适合我这种纯小白。
+目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js,后加载）<br>
+但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
+</blockquote>]]></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
 我主要用到的工具：</p>
 <ul>
 <li>console.log()</li>

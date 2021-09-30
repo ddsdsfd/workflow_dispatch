@@ -82,76 +82,94 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=文章><img class=lazyload src=/svg/loading.min.svg data-src=/images/avatar.jpg data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" data-sizes=auto alt=/images/avatar.jpg title=/images/avatar.jpg></a></div><h1 class=home-title>Lruihao's Note</h1><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/Lruihao title=GitHub target=_blank rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://weibo.com/liahao title=微博 target=_blank rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href=mailto:1024@lruihao.cn title=Email rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/poj1182/>食物链-poj1182（带权并查集经典模板）</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-08-02>2018-08-02</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p><a href="http://poj.org/problem?id=1182" target=_blank rel="noopener noreffer">题目链接</a><br>
-<a href=https://blog.csdn.net/freezhanacmore/article/details/8767413 target=_blank rel="noopener noreffer">思路参考1</a>,<a href=https://blog.csdn.net/niushuai666/article/details/6981689 target=_blank rel="noopener noreffer">思路参考2</a>（没看懂）</p></div><div class=post-footer>
-<a href=/posts/poj1182/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/>并查集</a>,&nbsp;<a href=/tags/poj/>POJ</a>,&nbsp;<a href=/tags/c++/>C++</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/hdu1272/>小希的迷宫-HDU-1272(并查集or树性质)</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-08-01>2018-08-01</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><h2 id=题目链接小希的迷宫httpacmhdueducnshowproblemphppid1272>题目链接：<a href="http://acm.hdu.edu.cn/showproblem.php?pid=1272" target=_blank rel="noopener noreffer">小希的迷宫</a></h2>
-<h2 id=并查集>并查集：</h2>
+<a href=/posts/commit-bat/>通过bat批处理文件自动提交博客代码</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-11-17>2018-11-17</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/others/><i class="far fa-folder fa-fw"></i>others</a></span></div><div class=content><blockquote>
+<p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
 <ul>
-<li>无回路</li>
-<li>单连通</li>
+<li>git add * (添加需要提交的文件，这里全选)</li>
+<li>git commit -m &ldquo;提交信息&rdquo;</li>
+<li>git push</li>
 </ul>
-<p>并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成<strong>回路</strong>，则可以判定No，交了一发错了。<br>
-想了一下没有考虑到多个连通域的情况，该题必须只有<strong>一个连通域</strong></p>
-<h2 id=树的性质>树的性质：</h2>
-<p>既然单连通无回路，则这肯定是一棵树；那么edge=v-1;</p></div><div class=post-footer>
-<a href=/posts/hdu1272/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/>并查集</a>,&nbsp;<a href=/tags/hdu/>HDU</a>,&nbsp;<a href=/tags/c++/>C++</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
+<p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。
+这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p>
+</blockquote></div><div class=post-footer>
+<a href=/posts/commit-bat/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E6%89%B9%E5%A4%84%E7%90%86/>批处理</a>,&nbsp;<a href=/tags/%E8%84%9A%E6%9C%AC/>脚本</a>,&nbsp;<a href=/tags/bat/>bat</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/codeforces680b/>Bear and Finding Criminals-Codeforces680B</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-31>2018-07-31</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p>题目链接：<a href=https://codeforces.com/problemset/problem/680/B target=_blank rel="noopener noreffer">Bear and Finding Criminals</a></p>
-<p>大致题意就是小熊警察住在某个城市，他要抓各个城市的罪犯，现在用一个BCD可以知道那个城市里<strong>一定</strong>有罪犯。</p>
-<p>一定能确定该城市有小偷的几种情况：<br>
-1.警察所住城市有罪犯，则一定能检测到</p>
-<p>2.警察所住城市的左边和右边位置若<strong>都</strong>不为0，则说明两座城市都有罪犯（只有一边为1是不能确定到底哪个城市有罪犯的）</p>
-<p>3.警察所在城市的一边检测到有罪犯，但在另一边已经没有城市了，则说明该城市一定有罪犯</p></div><div class=post-footer>
-<a href=/posts/codeforces680b/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
+<a href=/posts/fas-app/>博採眾長app</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-11-12>2018-11-12</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/others/><i class="far fa-folder fa-fw"></i>others</a></span></div><div class=content><p><a href=https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk target=_blank class=LinkCard>博客app下载</a></p>
+<h3 id=介绍>介绍</h3>
+<p>使用fusion app对网页进行的封装。<br>
+功能：</p>
+<ul>
+<li>浏览本博客，主页</li>
+<li>私人网盘</li>
+<li>2048等小游戏</li>
+<li>在线客服，QQ等</li>
+<li>pc与移动浏览器标识切换</li>
+<li>留言，打赏，博主日志等</li>
+<li>分享功能，分享到QQ，微信，浏览器打开等</li>
+<li>app内添加书签，自动记录历史记录，刷新等</li>
+<li><strong>配合博客的<code>PWA + quicklink</code>功能可实现离线浏览</strong></li>
+</ul></div><div class=post-footer>
+<a href=/posts/fas-app/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/lua/>lua</a>,&nbsp;<a href=/tags/fusion/>fusion</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/codeforces680a/>Bear and Five Cards-Codeforces680A</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-31>2018-07-31</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p>题目链接：<a href=https://codeforces.com/problemset/problem/680/A target=_blank rel="noopener noreffer">Bear and Five Cards</a></p>
-<p>大致题意就是小熊有5张卡片，每张卡片有对应的分数，他可以选择丢弃2张相同的或者3张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。</p></div><div class=post-footer>
-<a href=/posts/codeforces680a/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
+<a href=/posts/caddy-file/>caddy-两步搭建超简单云盘</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-11-11>2018-11-11</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/others/><i class="far fa-folder fa-fw"></i>others</a></span></div><div class=content>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</div><div class=post-footer>
+<a href=/posts/caddy-file/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E4%B8%AA%E4%BA%BA%E4%BA%91%E7%9B%98/>个人云盘</a>,&nbsp;<a href=/tags/caddy/>caddy</a>,&nbsp;<a href=/tags/server/>server</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><div class=featured-image-preview>
+<a href=/posts/blog-backup/><img class=lazyload src=/svg/loading.min.svg data-src=/posts/blog-backup/images/1.png data-srcset="/posts/blog-backup/images/1.png, /posts/blog-backup/images/1.png 1.5x, /posts/blog-backup/images/1.png 2x" data-sizes=auto alt=/posts/blog-backup/images/1.png title=/posts/blog-backup/images/1.png></a>
+</div><h1 class=single-title itemprop="name headline">
+<a href=/posts/blog-backup/>hexo 博客源码备份</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-11-03>2018-11-03</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/hexo/><i class="far fa-folder fa-fw"></i>hexo</a>&nbsp;<a href=/categories/git/><i class="far fa-folder fa-fw"></i>Git</a></span></div><div class=content>备份hexo博客 1 2 3 4 5 6 7 8 9 //如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。 cd hexo git init //初始化本地</div><div class=post-footer>
+<a href=/posts/blog-backup/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hexo/>hexo</a>,&nbsp;<a href=/tags/git/>Git</a>,&nbsp;<a href=/tags/nodejs/>Nodejs</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/%E7%95%85%E9%80%9A%E5%B7%A5%E7%A8%8B/>畅通工程-HDU-1232(并查集经典模板)</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-31>2018-07-31</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><h4 id=并查集入门推荐超有爱的并查集httpsblogcsdnnetniushuai666articledetails6662911>并查集入门推荐：<a href=https://blog.csdn.net/niushuai666/article/details/6662911 target=_blank rel="noopener noreffer">超有爱的并查集~</a></h4>
-<h4 id=题目链接畅通工程httpacmhdueducnshowproblemphppid1232>题目链接：<a href="http://acm.hdu.edu.cn/showproblem.php?pid=1232" target=_blank rel="noopener noreffer">畅通工程</a></h4>
-<h4 id=题意分析>题意分析：</h4>
-<p>首先在地图上给你若干个城镇，这些城镇都可以看作点，然后告诉你哪些对城镇之间是有道路直接相连的。最后要解决的是整幅图的连通性问题。比如随意给你两个点，让你判断它们是否连通，或者问你整幅图一共有几个连通分支，也就是被分成了几个互相独立的块。像畅通工程这题，问还需要修几条路，实质就是求有几个连通分支。</p></div><div class=post-footer>
-<a href=/posts/%E7%95%85%E9%80%9A%E5%B7%A5%E7%A8%8B/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/>并查集</a>,&nbsp;<a href=/tags/hdu/>HDU</a>,&nbsp;<a href=/tags/c++/>C++</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
+<a href=/posts/beian/>网站备案之旅</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-10-29>2018-10-29</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/><i class="far fa-folder fa-fw"></i>生活随笔</a></span></div><div class=content><div class="details admonition success open">
+<div class="details-summary admonition-title">
+<i class="icon fas fa-check-circle fa-fw"></i>备案<i class="details-icon fas fa-angle-right fa-fw"></i>
+</div>
+<div class=details-content>
+<div class=admonition-content>经过时间长达20多天的备案之旅今天终于结束了，也闭馆了20多天，也按相关要求把ICP备案号和公安备案号加载了网站和博客底部。只是今天去岳塘分局签网络安全告知书的时候不小心把身份证落在那个办公室了。亏我走之前一秒还在提醒自己，唉！不过那个办公室的大姐姐挺好的，前面跟我说好星期一来，我还今天上午提前给她打了电话，她还下楼给我开办公楼楼道的门禁，还有我身份证落在那里她说先帮我收着，有时间再去拿！总之，这个姐姐的服务态度五星好评！手动@岳塘分局B204的姐姐。<br>
+备案完成也算放下一块提着的石头，可以睡个好觉了！ZzZzzzz</div>
+</div>
+</div></div><div class=post-footer>
+<a href=/posts/beian/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/>生活随笔</a>,&nbsp;<a href=/tags/%E7%BD%91%E7%AB%99%E5%A4%87%E6%A1%88/>网站备案</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B23/>牛客练习赛23</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-27>2018-07-27</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p>两题水过，暴力，找规律。。</p>
-<h2 id=托米的赌球httpswwwnowcodercomacmcontest156a><a href=https://www.nowcoder.com/acm/contest/156/A target=_blank rel="noopener noreffer">托米的赌球</a></h2>
-<h2 id=托米的划分httpswwwnowcodercomacmcontest156b><a href=https://www.nowcoder.com/acm/contest/156/B target=_blank rel="noopener noreffer">托米的划分</a></h2></div><div class=post-footer>
-<a href=/posts/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B23/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/nowcoder/>Nowcoder</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
+<a href=/posts/data/>计算机数据</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-10-08>2018-10-08</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/others/><i class="far fa-folder fa-fw"></i>others</a></span></div><div class=content>数据的表示 数据的表示可分为：原码，反码和补码。（二进制） 原码： 符号位0为正，1为负。 反码： 符号位0为正，1为负。 正数： 反码同原码。 负数： 符号</div><div class=post-footer>
+<a href=/posts/data/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%B0%E6%8D%AE/>计算机数据</a>,&nbsp;<a href=/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/>计算机组成与体系结构</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/>在线离线算法</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-26>2018-07-26</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/others/><i class="far fa-folder fa-fw"></i>others</a></span></div><div class=content>在线算法 在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。 在计算机科学中，一个在线算法是指它可以</div><div class=post-footer>
-<a href=/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/>在线离线算法</a></div></div>
+<a href=/posts/crash-cheat/>网页离开时改变标题“崩溃欺骗”</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-09-26>2018-09-26</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div><div class=content><blockquote>
+<p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。</p>
+</blockquote></div><div class=post-footer>
+<a href=/posts/crash-cheat/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/javascript/>JavaScript</a>,&nbsp;<a href=/tags/frontend/>Frontend</a>,&nbsp;<a href=/tags/hexo/>hexo</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/>HDU-1495-非常可乐（bfs模拟倒水or数论）</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-24>2018-07-24</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content>非常可乐 大家一定觉的运动以后喝可乐是一件很惬意的事情，但是seeyou却不这么认为。因为每次当seeyou买了可乐以后，阿牛就要求和seey</div><div class=post-footer>
-<a href=/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/hdu/>HDU</a>,&nbsp;<a href=/tags/%E6%90%9C%E7%B4%A2/>搜索</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
+<a href=/posts/dongtaisub/>hexo 个性化 - next 主题动态显示 subtitle</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-08-20>2018-08-20</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a>&nbsp;<a href=/categories/hexo/><i class="far fa-folder fa-fw"></i>hexo</a></span></div><div class=content><blockquote>
+<p>本文适合我这种纯小白。
+目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。<a href=https://www.jianshu.com/p/df2c844eeabf target=_blank rel="noopener noreffer">传送门</a>（关键词：js,后加载）<br>
+但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
+</blockquote></div><div class=post-footer>
+<a href=/posts/dongtaisub/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hexo/>hexo</a>,&nbsp;<a href=/tags/javascript/>JavaScript</a>,&nbsp;<a href=/tags/frontend/>Frontend</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/>hdu-2612-Find a way（双bfs）</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-23>2018-07-23</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content>Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。。</div><div class=post-footer>
-<a href=/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/hdu/>HDU</a>,&nbsp;<a href=/tags/%E6%90%9C%E7%B4%A2/>搜索</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
+<a href=/posts/codeforces476a/>Dreamoon and Stairs</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-08-10>2018-08-10</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content>题目链接 Dreamoon wants to climb up a stair of n steps. He can climb 1 or 2 steps at each move. Dreamoon wants the number of moves to be a multiple of an integer m. What is the minimal number of moves making him climb to the top of the stairs that satisfies his condition? Input The single line contains two space separated integers n, m (0</div><div class=post-footer>
+<a href=/posts/codeforces476a/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/%E6%95%B0%E5%AD%A6/>数学</a>,&nbsp;<a href=/tags/c++/>C++</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/poj-3278-catch-that-cow-bfs/>POJ-3278-Catch That Cow(bfs)</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-07-22>2018-07-22</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content>Farmer John has been informed of the location of a fugitive cow and wants to catch her immediately. He starts at a point N (0 ≤ N ≤ 100,000) on a number line and the cow is at a point K (0 ≤ K ≤ 100,000) on the same number line. Farmer John has two modes of transportation: walking and teleporting. Walking: FJ can move from any point X to</div><div class=post-footer>
-<a href=/posts/poj-3278-catch-that-cow-bfs/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/bfs/>BFS</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/%E6%90%9C%E7%B4%A2/>搜索</a>,&nbsp;<a href=/tags/poj/>POJ</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
+<a href=/posts/codeforces476b/>Dreamoon and WiFi(组合数学)</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>发布于 <time datetime=2018-08-10>2018-08-10</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content>题目链接 题目大意 就是给定两个字符串，第一个字符串由"+","-&ldquo;组成，第二个字符串由&rdquo;</div><div class=post-footer>
+<a href=/posts/codeforces476b/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/>组合数学</a>,&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/%E6%95%B0%E5%AD%A6/>数学</a>,&nbsp;<a href=/tags/c++/>C++</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
@@ -177,8 +195,10 @@
 <a href=/page/6/>6</a>
 </span>
 </li><li class=page-item>
+<span class=page-link aria-hidden=true>&mldr;</span>
+</li><li class=page-item>
 <span class=page-link>
-<a href=/page/7/>7</a>
+<a href=/page/9/>9</a>
 </span>
 </li></ul></div></div>
 </main><footer class=footer>

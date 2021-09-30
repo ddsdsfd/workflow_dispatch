@@ -1,0 +1,319 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>hexo 个性化 - next 主题动态显示 subtitle - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="hexo 个性化 - next 主题动态显示 subtitle">
+<meta property="og:description" content="
+本文适合我这种纯小白。
+目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。传送门（关键词：js,后加载）
+但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lruihao.cn/posts/dongtaisub/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2018-08-20T16:16:40+00:00">
+<meta property="article:modified_time" content="2021-09-30T19:29:53+08:00">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://lruihao.cn/logo.png">
+<meta name=twitter:title content="hexo 个性化 - next 主题动态显示 subtitle">
+<meta name=twitter:description content="
+本文适合我这种纯小白。
+目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。传送门（关键词：js,后加载）
+但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：
+">
+<meta name=application-name content="Lruihao's Note">
+<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/dongtaisub/><link rel=prev href=https://lruihao.cn/posts/codeforces476a/><link rel=next href=https://lruihao.cn/posts/day-100/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo 个性化 - next 主题动态显示 subtitle","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/dongtaisub\/"},"genre":"posts","keywords":"hexo, JavaScript, Frontend","wordcount":785,"url":"https:\/\/lruihao.cn\/posts\/dongtaisub\/","datePublished":"2018-08-20T16:16:40+00:00","dateModified":"2021-09-30T19:29:53+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+取消
+</a>
+</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>目录</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">hexo 个性化 - next 主题动态显示 subtitle</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a>&nbsp;<a href=/categories/hexo/><i class="far fa-folder fa-fw"></i>hexo</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-08-20>2018-08-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 785 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id=/posts/dongtaisub/ class=leancloud_visitors data-flag-title="hexo 个性化 - next 主题动态显示 subtitle">
+<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+</span>&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>目录</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#修改站点配置文件主要修改subtitle>修改站点配置文件，主要修改subtitle</a></li>
+<li><a href=#修改-headerindexswig>修改 header\index.swig</a></li>
+<li><a href=#修改-brandswig>修改 brand.swig</a></li>
+<li><a href=#今日诗词>今日诗词</a></li>
+<li><a href=#api-调用>api 调用</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+</div><div class=content id=content><blockquote>
+<p>本文适合我这种纯小白。
+目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。<a href=https://www.jianshu.com/p/df2c844eeabf target=_blank rel="noopener noreffer">传送门</a>（关键词：js,后加载）<br>
+但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
+</blockquote>
+<h2 id=修改站点配置文件主要修改subtitle>修改站点配置文件，主要修改subtitle</h2>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>subtitle: 不怕万人阻挡，只怕自己投降。W你如何回忆，决定你是一个怎样的人！W这是一个句子。W这是另一个句子。W这些句子你们不要搞一样的不然怎么叫个性签名-_-！。
+</code></pre></td></tr></table>
+</div>
+</div><p>句子与句子之间以W分割，后续需要根据该标志位去拆分句子组。<br>
+<strong>小伙伴们博主这里只是提供一个思路，不要和我用一模一样的啊，不然撞了多尴尬呀</strong></p>
+<h2 id=修改-headerindexswig>修改 header\index.swig</h2>
+<p>修改 <code>themes\next\layout_partials\header</code> 下面的 <code>index.swig</code> 文件<br>
+在最开头添加如下代码：<br>
+(这里用的原博的js)</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=o>&lt;</span><span class=n>script</span><span class=o>&gt;</span>
+ <span class=n>function</span> <span class=nf>GetRandomNum</span><span class=o>(</span><span class=n>Min</span><span class=o>,</span><span class=n>Max</span><span class=o>)</span>
+  <span class=o>{</span>
+    <span class=n>var</span> <span class=n>Range</span> <span class=o>=</span> <span class=n>Max</span> <span class=o>-</span> <span class=n>Min</span><span class=o>;</span>
+    <span class=n>var</span> <span class=n>Rand</span> <span class=o>=</span> <span class=n>Math</span><span class=o>.</span><span class=na>random</span><span class=o>();</span>
+    <span class=k>return</span><span class=o>(</span><span class=n>Min</span> <span class=o>+</span> <span class=n>Math</span><span class=o>.</span><span class=na>round</span><span class=o>(</span><span class=n>Rand</span> <span class=o>*</span> <span class=n>Range</span><span class=o>));</span>
+  <span class=o>}</span>
+<span class=n>function</span> <span class=nf>setSidebarMarginTop</span> <span class=o>(</span><span class=n>headerOffset</span><span class=o>)</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=n>$</span><span class=o>(</span><span class=err>&#39;#</span><span class=n>sidebar</span><span class=err>&#39;</span><span class=o>).</span><span class=na>css</span><span class=o>({</span> <span class=err>&#39;</span><span class=n>margin</span><span class=o>-</span><span class=n>top</span><span class=err>&#39;</span><span class=o>:</span> <span class=n>headerOffset</span> <span class=o>});</span>
+  <span class=o>}</span>
+ <span class=n>function</span> <span class=nf>getHeaderOffset</span> <span class=o>()</span> <span class=o>{</span>
+    <span class=k>return</span> <span class=n>$</span><span class=o>(</span><span class=err>&#39;</span><span class=o>.</span><span class=na>header</span><span class=o>-</span><span class=n>inner</span><span class=err>&#39;</span><span class=o>).</span><span class=na>height</span><span class=o>()</span> <span class=o>+</span> <span class=n>CONFIG</span><span class=o>.</span><span class=na>sidebar</span><span class=o>.</span><span class=na>offset</span><span class=o>;</span>
+  <span class=o>}</span>
+  <span class=n>window</span><span class=o>.</span><span class=na>onload</span><span class=o>=</span><span class=n>function</span><span class=o>(){</span>
+    <span class=n>var</span> <span class=n>subtitle</span> <span class=o>=</span> <span class=s>&#34;{{config.subtitle}}&#34;</span><span class=o>;</span>
+     <span class=n>var</span> <span class=n>mytitle</span> <span class=o>=</span> <span class=n>subtitle</span><span class=o>.</span><span class=na>split</span><span class=o>(</span><span class=s>&#34;W&#34;</span><span class=o>);</span>
+     <span class=n>var</span> <span class=n>max</span> <span class=o>=</span> <span class=n>mytitle</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>1</span><span class=o>;</span>
+     <span class=n>var</span> <span class=n>index</span> <span class=o>=</span> <span class=n>GetRandomNum</span><span class=o>(</span><span class=n>0</span><span class=o>,</span><span class=n>max</span><span class=o>);</span>
+     <span class=n>var</span> <span class=n>text</span> <span class=o>=</span> <span class=n>mytitle</span><span class=o>[</span><span class=n>index</span><span class=o>];</span>
+     <span class=n>$</span><span class=o>(</span><span class=s>&#34;#helloTitle&#34;</span><span class=o>).</span><span class=na>html</span><span class=o>(</span><span class=n>text</span><span class=o>);</span>
+     <span class=n>var</span> <span class=n>headOffset</span> <span class=o>=</span> <span class=n>getHeaderOffset</span><span class=o>();</span>
+     <span class=n>setSidebarMarginTop</span><span class=o>(</span><span class=n>headOffset</span><span class=o>);</span>
+     <span class=c1>//动态subtitle设置
+</span><span class=c1></span>  <span class=o>}</span>
+<span class=o>&lt;/</span><span class=n>script</span><span class=o>&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=修改-brandswig>修改 brand.swig</h2>
+<p>找到</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>{% if subtitle %}
+  {% if theme.seo %}
+    ...
+  {% else %}
+    ...
+  {% endif %}
+{% endif %}
+</code></pre></td></tr></table>
+</div>
+</div><p>把这一段，把原来的修改成以下代码即可<br>
+ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>颜色</code>也可以在这个文件修改，即使用<code>style</code>标签，按个人爱好修改也可不要。</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>{% if subtitle %}
+  {% if theme.seo %}
+    &lt;p class=&#34;site-subtitle&#34; id=&#34;helloTitle&#34; itemprop=&#34;description&#34;&gt;&lt;/p&gt;
+  {% else %}
+    &lt;p id=&#34;helloTitle&#34; class=&#34;site-subtitle&#34;&gt;&lt;/p&gt;
+  {% endif %}
+{% endif %}
+</code></pre></td></tr></table>
+</div>
+</div><p>之后部署后每次刷新就可以看到不同的 subtitle 了，开心😀</p>
+<h2 id=今日诗词>今日诗词</h2>
+<p><a href=https://www.jinrishici.com/ target=_blank rel="noopener noreffer">今日诗词</a></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-XML data-lang=XML><span class=nt>&lt;span</span> <span class=na>id=</span><span class=s>&#34;jinrishici-sentence&#34;</span><span class=nt>&gt;</span>正在加载今日诗词....<span class=nt>&lt;/span&gt;</span>
+<span class=nt>&lt;script</span> <span class=na>src=</span><span class=s>&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34;</span> <span class=na>charset=</span><span class=s>&#34;utf-8&#34;</span><span class=nt>&gt;&lt;/script&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<div id=jinrishici-sentence style=text-align:center>正在加载今日诗词....</div>
+<script src=https://sdk.jinrishici.com/v2/browser/jinrishici.js></script>
+<hr>
+<h2 id=api-调用>api 调用</h2>
+<p>直接 js 调用 api 简单快速</p>
+<blockquote>
+<p>2021/9/30 更新<br>
+<a href=https://api.imjad.cn/hitokoto.md target=_blank rel="noopener noreffer">一言api-参数详见</a> 已经挂了</p>
+</blockquote>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>div</span><span class=p>&gt;</span>
+  <span class=p>&lt;</span><span class=nt>script</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;text/javascript&#34;</span> <span class=na>src</span><span class=o>=</span><span class=s>&#34;https://api.imjad.cn/hitokoto/?cat=&amp;charset=utf-8&amp;length=&amp;encode=js&amp;fun=sync&amp;source=&#34;</span><span class=p>&gt;&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+  <span class=p>&lt;</span><span class=nt>div</span> <span class=na>id</span><span class=o>=</span><span class=s>&#34;hitokoto&#34;</span><span class=p>&gt;</span>
+    <span class=p>&lt;</span><span class=nt>script</span><span class=p>&gt;</span><span class=nx>hitokoto</span><span class=p>()&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+  <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+<span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>更新于 2021-09-30&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/21d1f053b5cccc6e6921d2e0dfaa4cf6eecc3c00 target=_blank title="commit by Cell(1024@lruihao.cn) 21d1f053b5cccc6e6921d2e0dfaa4cf6eecc3c00: Feat: 恢復 2018、2019 年部分博客內容">
+<i class="fas fa-hashtag fa-fw"></i>21d1f05</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/posts/dongtaisub/index.md target=_blank>阅读原始文档</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/dongtaisub/ data-title="hexo 个性化 - next 主题动态显示 subtitle" data-hashtags=hexo,JavaScript,Frontend><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/dongtaisub/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/dongtaisub/ data-title="hexo 个性化 - next 主题动态显示 subtitle" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/dongtaisub/ data-title="hexo 个性化 - next 主题动态显示 subtitle"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hexo/>hexo</a>,&nbsp;<a href=/tags/javascript/>JavaScript</a>,&nbsp;<a href=/tags/frontend/>Frontend</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/codeforces476a/ class=prev rel=prev title="Dreamoon and Stairs"><i class="fas fa-angle-left fa-fw"></i>Dreamoon and Stairs</a>
+<a href=/posts/day-100/ class=next rel=next title="博客 100 天啦！">博客 100 天啦！<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id=comments><div id=valine class=comment></div><noscript>
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+</noscript></div></article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备43030402000254号</a></span><span class=icp-splitter>&nbsp;|&nbsp;</span><br class=icp-br><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘ICP备18020535号</a></span></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部>
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看评论>
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:20},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-cn",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事请留言！\n评论功能以邮件作为通知方式！\n如有必要请填写正确邮箱！",recordIP:!0,visitor:!0}},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

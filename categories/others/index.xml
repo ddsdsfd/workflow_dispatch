@@ -7,7 +7,21 @@
 </ul>
 <p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。
 这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p>
-</blockquote>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description>在线算法 在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。 在计算机科学中，一个在线算法是指它可以</description></item><item><title>位运算</title><link>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Thu, 14 Jun 2018 20:22:21 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description>1. &amp;amp;运算 &amp;amp;运算通常用于二进制取位操作，例如一个数 &amp;amp; 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位</description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>博採眾長app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<p><a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" class="LinkCard">博客app下载</a></p>
+<h3 id="介绍">介绍</h3>
+<p>使用fusion app对网页进行的封装。<br>
+功能：</p>
+<ul>
+<li>浏览本博客，主页</li>
+<li>私人网盘</li>
+<li>2048等小游戏</li>
+<li>在线客服，QQ等</li>
+<li>pc与移动浏览器标识切换</li>
+<li>留言，打赏，博主日志等</li>
+<li>分享功能，分享到QQ，微信，浏览器打开等</li>
+<li>app内添加书签，自动记录历史记录，刷新等</li>
+<li><strong>配合博客的<code>PWA + quicklink</code>功能可实现离线浏览</strong></li>
+</ul>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/data/</guid><description>数据的表示 数据的表示可分为：原码，反码和补码。（二进制） 原码： 符号位0为正，1为负。 反码： 符号位0为正，1为负。 正数： 反码同原码。 负数： 符号</description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description>在线算法 在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。 在计算机科学中，一个在线算法是指它可以</description></item><item><title>位运算</title><link>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Thu, 14 Jun 2018 20:22:21 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description>1. &amp;amp;运算 &amp;amp;运算通常用于二进制取位操作，例如一个数 &amp;amp; 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位</description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
 <p>本文来自kio对Markdown的基础教程
 其他推荐参考：<a href="https://segmentfault.com/markdown" target="_blank" rel="noopener noreffer">https://segmentfault.com/markdown</a></p>
 </blockquote>]]></description></item></channel></rss>
