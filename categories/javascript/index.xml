@@ -30,7 +30,9 @@
             <div class="admonition-content">JS的加载分为两个部分：下载和执行。<br>
 浏览器在执行HTML的时候如果遇到<code>&lt;script&gt;</code>时会停止页面的渲染,去下载和执行js的文件直接遇见<code>&lt;/scirpt&gt;</code>会继续渲染页面。故浏览器在执行js文件的时候浏览器表现为一片空白,为了解决这个问题ECMAScript定义了defer和async两个属性用于控制JS的下载和执行。</div>
         </div>
-    </div>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
+    </div>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/http2https/</guid><description>&lt;blockquote>
+&lt;p>记录自己在配置vps及博客SSL证书时遇到的问题。&lt;/p>
+&lt;/blockquote></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
 	#code{  
         font-family:Arial;  
         font-style:italic;  
@@ -89,7 +91,7 @@
 <div align="center">  
     <input type = "text" id = "input" value="" /> <input type = "button" id="code" onclick="createCode()"/> <input class="btn" type = "button" value = "验证" onclick = "validate()"/> 
     <br/>请点击验证码处: ↑ 
-</div>]]></description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description>&lt;blockquote>
+</div>]]></description></item><item><title>使用js准确获取当前页面url网址信息及301重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/href-301/</guid><description>获取链接（转） 传送门 在WEB开发中，时常会用到javascript来获取当前页面的url网址信息，在这里是我的一些获取url信息的小总结。 下</description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description>&lt;blockquote>
 &lt;p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。&lt;/p>
 &lt;/blockquote></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
 <p>本文适合我这种纯小白。

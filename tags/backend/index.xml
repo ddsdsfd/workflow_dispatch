@@ -23,10 +23,19 @@
 </ol>
 </div>
         </div>
-    </div>]]></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
+    </div>]]></description></item><item><title>java 通过 URL 和 URLConnection 访问网页资源</title><link>https://lruihao.cn/posts/urlreader/</link><pubDate>Mon, 06 May 2019 17:41:35 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/urlreader/</guid><description>&lt;blockquote>
+&lt;p>该例中首先生成一个URL对象lrh，指向RUI豪小栈，然后再调用lrh.openStream()方法生成该URL的一个输入流，这是一个字节流，在此基础上进一步通过InputStreamReader和BufferedReader构造一个带缓冲功能的字符流，并通过这个字符流对象读取该URL的html内容，进而输出到桌面文件和控制台屏幕。URLConnection类也可以用来对由URL引用的资源进行读写操作，前提是先通过connect()方法建立连接，然后再去获取响应头信息或响应内容。&lt;/p>
+&lt;/blockquote></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
 <p>基本功能： 给定一个密钥，读取文件内容，加密后，输出到另外一个文件。<br/><br/>
 这里使用文件输入流读取文件内容，然后每个字节和密码进行异或简单加密。加密完成，使用文件输出流写入另一个文件中。解密和加密方法一样。利用的是对同一个数异或两遍其值不变的性质。因此一个程序可以完成加密和解密功能。只需修改文件名即可。</p>
-</blockquote>]]></description></item><item><title>GitBook 使用教程</title><link>https://lruihao.cn/posts/gitbookuse/</link><pubDate>Thu, 04 Apr 2019 22:09:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/gitbookuse/</guid><description>&lt;blockquote>
+</blockquote>]]></description></item><item><title>用记事本编写第一个java程序</title><link>https://lruihao.cn/posts/hellojava/</link><pubDate>Fri, 19 Apr 2019 19:49:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hellojava/</guid><description><![CDATA[<blockquote>
+<p>之所以用记事本来写不是为了装X或者什么的。反而恰恰是返璞归真，因为在用java语言进行程序开发时，首先是以纯文本的方式编写所有的java源程序，并保存成以<code>.java</code>为后缀的文件；然后将这些源程序用<code>javac</code>编译成<code>.class</code>后缀名的字节代码文件；字节代码不是被本地处理器执行的代码，而是能够被java虚拟机（JVM）执行的代码。最后用java运行工具在JVM执行java应用程序。<br>
+由于JVM可以运行在不同的操作系统上，因此同一个字节代码文件可以跨平台运行。</p>
+</blockquote>
+<ul>
+<li>javac</li>
+<li>java</li>
+</ul>]]></description></item><item><title>GitBook 使用教程</title><link>https://lruihao.cn/posts/gitbookuse/</link><pubDate>Thu, 04 Apr 2019 22:09:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/gitbookuse/</guid><description>&lt;blockquote>
 &lt;p>想趴几本金庸小说的做成电子书自己阅读，在博客上尝试了一下整理了6本中短篇小说就开始感觉博客臃肿，于是找到gitbook前来一试。
 写完这篇文章开始实际操作，我发现还不如用hexo来写小说，遂放弃！Gitbook用来写相关文档介绍还差不多。&lt;/p>
 &lt;/blockquote></description></item><item><title>java 泛型 test</title><link>https://lruihao.cn/posts/fanxing/</link><pubDate>Sat, 16 Mar 2019 13:56:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fanxing/</guid><description><![CDATA[<blockquote>
@@ -42,6 +51,4 @@
 <li>static void fill(type[] a,type val)</li>
 <li>static void fill(type[] a,int fromindex,int toindex,type val)</li>
 <li>static void sort(type[] a)</li>
-</ul>]]></description></item><item><title>java水仙花数（循环）</title><link>https://lruihao.cn/posts/xunhuan/</link><pubDate>Mon, 14 Jan 2019 17:30:24 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/xunhuan/</guid><description>&lt;blockquote>
-&lt;p>水仙花数（Narcissistic number）也被称为超完全数字不变数（pluperfect digital invariant, PPDI）、自恋数、自幂数、阿姆斯壮数或阿姆斯特朗数（Armstrong number），水仙花数是指一个 3 位数，它的每个位上的数字的 3次幂之和等于它本身（例如：1^3 + 5^3+ 3^3 = 153）。&lt;/p>
-&lt;/blockquote></description></item><item><title>java 标识符</title><link>https://lruihao.cn/posts/biaoshi/</link><pubDate>Mon, 14 Jan 2019 15:07:57 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/biaoshi/</guid><description>标识符： 给类，接口，方法或者变量起名字的符号 组成规则： A:英文字母大小写 B:数字 C:_和$ 注意事项： A:不能以数字开头 B:不能是Java中的</description></item></channel></rss>
+</ul>]]></description></item></channel></rss>

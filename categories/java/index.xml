@@ -1,7 +1,16 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Java - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/java/</link><description>Java - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 02 May 2019 23:04:32 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/java/" rel="self" type="application/rss+xml"/><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Java - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/java/</link><description>Java - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 06 May 2019 17:41:35 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/java/" rel="self" type="application/rss+xml"/><item><title>java 通过 URL 和 URLConnection 访问网页资源</title><link>https://lruihao.cn/posts/urlreader/</link><pubDate>Mon, 06 May 2019 17:41:35 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/urlreader/</guid><description>&lt;blockquote>
+&lt;p>该例中首先生成一个URL对象lrh，指向RUI豪小栈，然后再调用lrh.openStream()方法生成该URL的一个输入流，这是一个字节流，在此基础上进一步通过InputStreamReader和BufferedReader构造一个带缓冲功能的字符流，并通过这个字符流对象读取该URL的html内容，进而输出到桌面文件和控制台屏幕。URLConnection类也可以用来对由URL引用的资源进行读写操作，前提是先通过connect()方法建立连接，然后再去获取响应头信息或响应内容。&lt;/p>
+&lt;/blockquote></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
 <p>基本功能： 给定一个密钥，读取文件内容，加密后，输出到另外一个文件。<br/><br/>
 这里使用文件输入流读取文件内容，然后每个字节和密码进行异或简单加密。加密完成，使用文件输出流写入另一个文件中。解密和加密方法一样。利用的是对同一个数异或两遍其值不变的性质。因此一个程序可以完成加密和解密功能。只需修改文件名即可。</p>
-</blockquote>]]></description></item><item><title>java 泛型 test</title><link>https://lruihao.cn/posts/fanxing/</link><pubDate>Sat, 16 Mar 2019 13:56:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fanxing/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>用记事本编写第一个java程序</title><link>https://lruihao.cn/posts/hellojava/</link><pubDate>Fri, 19 Apr 2019 19:49:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hellojava/</guid><description><![CDATA[<blockquote>
+<p>之所以用记事本来写不是为了装X或者什么的。反而恰恰是返璞归真，因为在用java语言进行程序开发时，首先是以纯文本的方式编写所有的java源程序，并保存成以<code>.java</code>为后缀的文件；然后将这些源程序用<code>javac</code>编译成<code>.class</code>后缀名的字节代码文件；字节代码不是被本地处理器执行的代码，而是能够被java虚拟机（JVM）执行的代码。最后用java运行工具在JVM执行java应用程序。<br>
+由于JVM可以运行在不同的操作系统上，因此同一个字节代码文件可以跨平台运行。</p>
+</blockquote>
+<ul>
+<li>javac</li>
+<li>java</li>
+</ul>]]></description></item><item><title>java 泛型 test</title><link>https://lruihao.cn/posts/fanxing/</link><pubDate>Sat, 16 Mar 2019 13:56:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fanxing/</guid><description><![CDATA[<blockquote>
 <ul>
 <li>泛型方法，它在修饰符后，返回值类型前增加了类型参数(&lt;&gt;)</li>
 <li>类型通配符一般使用问号<code>?</code>代替具体的类型<code>实</code>参，注意不是类型形参。</li>

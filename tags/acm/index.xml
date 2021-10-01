@@ -1,4 +1,8 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>ACM - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/acm/</link><description>ACM - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 30 Mar 2019 10:13:33 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/acm/" rel="self" type="application/rss+xml"/><item><title>百钱百鸡（枚举法）</title><link>https://lruihao.cn/posts/bqbj/</link><pubDate>Sat, 30 Mar 2019 10:13:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bqbj/</guid><description>&lt;blockquote>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>ACM - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/acm/</link><description>ACM - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Fri, 17 May 2019 23:08:04 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/acm/" rel="self" type="application/rss+xml"/><item><title>HustOJ 基础搭建教程</title><link>https://lruihao.cn/posts/hustoj/</link><pubDate>Fri, 17 May 2019 23:08:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hustoj/</guid><description><![CDATA[<blockquote>
+<p>目前 HustOj 在 GitHUb 地址是：<a href="https://github.com/zhblue/hustoj" target="_blank" rel="noopener noreffer">https://github.com/zhblue/hustoj</a><br>
+<strong>安装时注意ubuntu版本</strong>，没条件的可以在自己ubuntu上尝试，或者虚拟机上（关注公众号回复<code>ubuntu16.04</code>获取iso镜像文件），也可以在云实验室的云服务器上做做实验。<br>
+更多说明及ACM/NOIP题库下载见官网博客<a href="http://www.hustoj.com/" target="_blank" rel="noopener noreffer">代码的那些事|程序员回忆录</a></p>
+</blockquote>]]></description></item><item><title>HDU 1009 FatMouse' Trade(贪心)</title><link>https://lruihao.cn/posts/hdu1009/</link><pubDate>Fri, 12 Apr 2019 16:43:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hdu1009/</guid><description>题目大意： 题目链接 老鼠有M磅猫食 ,有N个房间 ,每个房间前有一只猫 ,房间里有老鼠最喜欢的食品 J[i] ,若要得到房间的食物 ,必须付出相应的猫食F[i]</description></item><item><title>百钱百鸡（枚举法）</title><link>https://lruihao.cn/posts/bqbj/</link><pubDate>Sat, 30 Mar 2019 10:13:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bqbj/</guid><description>&lt;blockquote>
 &lt;p>我国古代数学家张丘建在《算经》一书中提出的数学问题：鸡翁一值钱五，鸡母一值钱三，鸡雏三值钱一。百钱买百鸡，问鸡翁、鸡母、鸡雏各几何？&lt;/p>
 &lt;/blockquote></description></item><item><title>大数乘法</title><link>https://lruihao.cn/posts/dacheng/</link><pubDate>Thu, 28 Mar 2019 22:50:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dacheng/</guid><description>&lt;blockquote>
 &lt;p>大数乘法c版(基础写法)&lt;/p>
@@ -6,18 +10,4 @@
 <p>题目大意：<br>
 给出n个学生的成绩，Thomas Smith的成绩是第一行，然后要按总成绩进行排序，总分相同的按编号从小到大排；<br>
 开始看还以为要写sort的cmp函数进行多条件排序，敲完才发现其实只要按总分就可以了，因为托马斯的id是一，必然会排在前面。</p>]]></description></item><item><title>最短路入门</title><link>https://lruihao.cn/posts/zuiduanlu/</link><pubDate>Fri, 03 Aug 2018 16:27:16 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/zuiduanlu/</guid><description>Dijkstra算法 1.定义概览 Dijkstra(迪杰斯特拉)算法是典型的单源最短路径算法，用于计算一个节点到其他所有节点的最短路径。主要特</description></item><item><title>食物链-poj1182（带权并查集经典模板）</title><link>https://lruihao.cn/posts/poj1182/</link><pubDate>Thu, 02 Aug 2018 11:10:37 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/poj1182/</guid><description><![CDATA[<p><a href="http://poj.org/problem?id=1182" target="_blank" rel="noopener noreffer">题目链接</a><br>
-<a href="https://blog.csdn.net/freezhanacmore/article/details/8767413" target="_blank" rel="noopener noreffer">思路参考1</a>,<a href="https://blog.csdn.net/niushuai666/article/details/6981689" target="_blank" rel="noopener noreffer">思路参考2</a>（没看懂）</p>]]></description></item><item><title>小希的迷宫-HDU-1272(并查集or树性质)</title><link>https://lruihao.cn/posts/hdu1272/</link><pubDate>Wed, 01 Aug 2018 21:45:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hdu1272/</guid><description><![CDATA[<h2 id="题目链接小希的迷宫httpacmhdueducnshowproblemphppid1272">题目链接：<a href="http://acm.hdu.edu.cn/showproblem.php?pid=1272" target="_blank" rel="noopener noreffer">小希的迷宫</a></h2>
-<h2 id="并查集">并查集：</h2>
-<ul>
-<li>无回路</li>
-<li>单连通</li>
-</ul>
-<p>并查集做，首先想到的是判断两个点是否连通，不连通就合并，已连通的话说明会形成<strong>回路</strong>，则可以判定No，交了一发错了。<br>
-想了一下没有考虑到多个连通域的情况，该题必须只有<strong>一个连通域</strong></p>
-<h2 id="树的性质">树的性质：</h2>
-<p>既然单连通无回路，则这肯定是一棵树；那么edge=v-1;</p>]]></description></item><item><title>Bear and Finding Criminals-Codeforces680B</title><link>https://lruihao.cn/posts/codeforces680b/</link><pubDate>Tue, 31 Jul 2018 19:32:21 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/codeforces680b/</guid><description><![CDATA[<p>题目链接：<a href="https://codeforces.com/problemset/problem/680/B" target="_blank" rel="noopener noreffer">Bear and Finding Criminals</a></p>
-<p>大致题意就是小熊警察住在某个城市，他要抓各个城市的罪犯，现在用一个BCD可以知道那个城市里<strong>一定</strong>有罪犯。</p>
-<p>一定能确定该城市有小偷的几种情况：<br>
-1.警察所住城市有罪犯，则一定能检测到</p>
-<p>2.警察所住城市的左边和右边位置若<strong>都</strong>不为0，则说明两座城市都有罪犯（只有一边为1是不能确定到底哪个城市有罪犯的）</p>
-<p>3.警察所在城市的一边检测到有罪犯，但在另一边已经没有城市了，则说明该城市一定有罪犯</p>]]></description></item></channel></rss>
+<a href="https://blog.csdn.net/freezhanacmore/article/details/8767413" target="_blank" rel="noopener noreffer">思路参考1</a>,<a href="https://blog.csdn.net/niushuai666/article/details/6981689" target="_blank" rel="noopener noreffer">思路参考2</a>（没看懂）</p>]]></description></item></channel></rss>

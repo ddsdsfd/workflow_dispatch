@@ -22,6 +22,8 @@
 - **2020.01.17 * 喜洲 QQ ￥20.20**  
   时隔一年再次因为这个博客收到打赏，谢谢大家看得起！有关博客的问题，我能解答的都会帮助你们。`101****073` 
 
+---
+
 {{< style "text-align: center;" div >}}
   ![WechatPay](/images/wechatpay.gif)
   ![AliPay](/images/alipay.gif)
