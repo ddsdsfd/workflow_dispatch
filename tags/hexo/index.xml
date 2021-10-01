@@ -10,7 +10,9 @@
 我这也算是上古版本了，版本差距实在过大，所以我也将放弃博客使用主题的更新。<br>
 以下仍为当前博客使用主题，lib资源已打包github。</div>
         </div>
-    </div>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
+    </div>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linkcard/</guid><description>&lt;blockquote>
+&lt;p>模仿知乎的卡片式链接，idea 来自[兰州小红鸡]&lt;/p>
+&lt;/blockquote></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
 <p>本以为 coding pages 与腾讯云合作后会更好，没想到正是这种初期 bug 不断，速度也是非常慢。比 gitee, 甚至 github 都要慢很多了。所以决定放弃 coding 了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的 cos 桶 xml 制作动态相册的文章，知道了对象存储这个玩意，腾讯云 COS 提供免费 50G 的存储空间，还有 CDN 加速服务，我觉得是个不错的选择，部署后发现速度还挺好。<br>
 适用于 hexo, hugo 等静态博客的部署。</p>
 </blockquote>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description>&lt;div class="featured-image">
@@ -41,4 +43,4 @@ next主题好像更新了，现在自带的可以用了，如果可以用了，�
 <li>console.log()</li>
 <li>Notepad++</li>
 <li><a href="http://picascii.com" target="_blank" rel="noopener noreffer">在线图片转文字工具</a></li>
-</ul>]]></description></item><item><title>hexo+github搭建个人博客及美化</title><link>https://lruihao.cn/posts/hexobuild/</link><pubDate>Fri, 01 Jun 2018 14:34:23 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexobuild/</guid><description>更多关于hexo 首先 官方文档是我们的第一手资料，也是最好的。 安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序： Node.js Git hex</description></item></channel></rss>
+</ul>]]></description></item></channel></rss>

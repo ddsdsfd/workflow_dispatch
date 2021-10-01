@@ -1,0 +1,300 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>Leading and Trailing-lightoj1282(快速幂+对数运算) - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Leading and Trailing-lightoj1282(快速幂+对数运算)">
+<meta property="og:description" content="题目链接
+题目大意：
+给定两个数n,k 求n^k的前三位和最后三位。
+分析
+求后三位的话：直接快速幂，对1000取模就好了。
+求前三位，对于给定的一个数n,它可以写成n=10^a,其中这个a为浮点数,则t=n^k=(10^a)^k=10^a*k=(10^x)*(10^y);其中x,y分别是a*k的整数部分和小数部分，对于t=n^k这个数，它的位数由(10^x)决定，它的位数上的值则有(10^y)决定，因此我们要求t的前三位，只需要将10^y求出，在乘以100，就得到了它的前三位。
+分析完，我们再整体看，设n^k=10^z;那么z=k*log10(n)
+fmod(z,1)可以求出x的小数部分。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lruihao.cn/posts/lightoj1282/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2018-08-09T20:55:26+00:00">
+<meta property="article:modified_time" content="2021-10-02T02:59:35+08:00">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://lruihao.cn/logo.png">
+<meta name=twitter:title content="Leading and Trailing-lightoj1282(快速幂+对数运算)">
+<meta name=twitter:description content="题目链接
+题目大意：
+给定两个数n,k 求n^k的前三位和最后三位。
+分析
+求后三位的话：直接快速幂，对1000取模就好了。
+求前三位，对于给定的一个数n,它可以写成n=10^a,其中这个a为浮点数,则t=n^k=(10^a)^k=10^a*k=(10^x)*(10^y);其中x,y分别是a*k的整数部分和小数部分，对于t=n^k这个数，它的位数由(10^x)决定，它的位数上的值则有(10^y)决定，因此我们要求t的前三位，只需要将10^y求出，在乘以100，就得到了它的前三位。
+分析完，我们再整体看，设n^k=10^z;那么z=k*log10(n)
+fmod(z,1)可以求出x的小数部分。">
+<meta name=application-name content="Lruihao's Note">
+<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/lightoj1282/><link rel=prev href=https://lruihao.cn/posts/cfcontest1017/><link rel=next href=https://lruihao.cn/posts/euclid/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Leading and Trailing-lightoj1282(快速幂+对数运算)","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/lightoj1282\/"},"genre":"posts","keywords":"数论, 数学, 快速幂, ACM, C","wordcount":628,"url":"https:\/\/lruihao.cn\/posts\/lightoj1282\/","datePublished":"2018-08-09T20:55:26+00:00","dateModified":"2021-10-02T02:59:35+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+取消
+</a>
+</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>目錄</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">Leading and Trailing-lightoj1282(快速幂+对数运算)</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-08-09>2018-08-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 628 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/lightoj1282/ class=leancloud_visitors data-flag-title="Leading and Trailing-lightoj1282(快速幂+对数运算)">
+<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
+</span>&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>目錄</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#题目链接httpsvjudgenetcontest238979probleme><a href=https://vjudge.net/contest/238979#problem/E>题目链接</a></a></li>
+<li><a href=#题目大意>题目大意：</a></li>
+<li><a href=#分析>分析</a></li>
+<li><a href=#注>注：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav></div>
+</div><div class=content id=content><h3 id=题目链接httpsvjudgenetcontest238979probleme><a href=https://vjudge.net/contest/238979#problem/E target=_blank rel="noopener noreffer">题目链接</a></h3>
+<h3 id=题目大意>题目大意：</h3>
+<p>给定两个数n,k 求n^k的前三位和最后三位。</p>
+<h3 id=分析>分析</h3>
+<p>求后三位的话：直接快速幂，对1000取模就好了。<br>
+求前三位，对于给定的一个数n,它可以写成n=10^a,其中这个a为浮点数,则<code>t=n^k=(10^a)^k=10^a*k=(10^x)*(10^y);</code>其中x,y分别是<code>a*k</code>的整数部分和小数部分，对于t=n^k这个数，它的位数由(10^x)决定，它的位数上的值则有(10^y)决定，因此我们要求t的前三位，只需要将10^y求出，在乘以100，就得到了它的前三位。<br>
+分析完，我们再整体看，设n^k=10^z;那么<code>z=k*log10(n)</code><br>
+<code>fmod(z,1)</code>可以求出x的小数部分。</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=c1>//再一次吐槽lightoj的头文件，让我不能用万能头&lt;bits/stdc++.h&gt;
+</span><span class=c1></span><span class=cp>#include</span><span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span><span class=cp>#include</span><span class=cpf>&lt;math.h&gt;</span><span class=cp>
+</span><span class=cp></span>
+<span class=k>typedef</span> <span class=kt>long</span> <span class=kt>long</span> <span class=n>LL</span><span class=p>;</span>
+
+<span class=kt>int</span> <span class=nf>quickpow</span> <span class=p>(</span><span class=kt>int</span> <span class=n>m</span><span class=p>,</span> <span class=kt>int</span> <span class=n>n</span><span class=p>,</span> <span class=kt>int</span> <span class=n>k</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=kt>int</span> <span class=n>b</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+    <span class=k>while</span> <span class=p>(</span><span class=n>n</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span>
+    <span class=p>{</span>
+        <span class=k>if</span> <span class=p>(</span><span class=n>n</span> <span class=o>&amp;</span> <span class=mi>1</span><span class=p>)</span>
+            <span class=n>b</span> <span class=o>=</span> <span class=p>(</span><span class=n>b</span> <span class=o>*</span> <span class=n>m</span><span class=p>)</span> <span class=o>%</span> <span class=n>k</span><span class=p>;</span>
+        <span class=n>n</span> <span class=o>&gt;&gt;=</span> <span class=mi>1</span><span class=p>;</span>
+        <span class=n>m</span> <span class=o>=</span> <span class=p>(</span><span class=n>m</span> <span class=o>*</span> <span class=n>m</span><span class=p>)</span> <span class=o>%</span> <span class=n>k</span><span class=p>;</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=n>b</span><span class=o>%</span><span class=n>k</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=kt>int</span> <span class=nf>main</span> <span class=p>()</span>
+<span class=p>{</span>
+    <span class=kt>int</span> <span class=n>t</span><span class=p>,</span> <span class=n>flag</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+    <span class=n>scanf</span> <span class=p>(</span><span class=s>&#34;%d&#34;</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>t</span><span class=p>);</span>
+
+    <span class=k>while</span> <span class=p>(</span><span class=n>t</span><span class=o>--</span><span class=p>)</span>
+    <span class=p>{</span>
+        <span class=n>LL</span> <span class=n>n</span><span class=p>,</span> <span class=n>k</span><span class=p>;</span>
+        <span class=n>scanf</span> <span class=p>(</span><span class=s>&#34;%lld %lld&#34;</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>n</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>k</span><span class=p>);</span>
+
+        <span class=kt>int</span> <span class=n>first</span> <span class=o>=</span> <span class=n>pow</span> <span class=p>(</span><span class=mf>10.0</span><span class=p>,</span> <span class=mf>2.0</span> <span class=o>+</span> <span class=n>fmod</span> <span class=p>(</span><span class=n>k</span><span class=o>*</span><span class=n>log10</span><span class=p>(</span><span class=n>n</span><span class=o>*</span><span class=mf>1.0</span><span class=p>),</span> <span class=mi>1</span><span class=p>));</span>
+        <span class=kt>int</span> <span class=n>last</span> <span class=o>=</span> <span class=n>quickpow</span> <span class=p>(</span><span class=n>n</span><span class=o>%</span><span class=mi>1000</span><span class=p>,</span> <span class=n>k</span><span class=p>,</span> <span class=mi>1000</span><span class=p>);</span>
+
+        <span class=n>printf</span> <span class=p>(</span><span class=s>&#34;Case %d: %d %03d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>flag</span><span class=o>++</span><span class=p>,</span> <span class=n>first</span><span class=p>,</span> <span class=n>last</span><span class=p>);</span>
+    <span class=p>}</span>
+    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=注>注：</h3>
+<p>C库函数 - fmod()<br>
+C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
+<ul>
+<li>x &ndash; 代表分子的浮点值。</li>
+<li>y &ndash; 代表分母的浮点值。
+该函数返回 x/y 的余数。</li>
+</ul>
+<p>下面的实例演示了 fmod() 函数的用法。</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span><span class=cp>#include</span> <span class=cpf>&lt;math.h&gt;</span><span class=cp>
+</span><span class=cp></span>
+<span class=kt>int</span> <span class=nf>main</span> <span class=p>()</span>
+<span class=p>{</span>
+   <span class=kt>float</span> <span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>;</span>
+   <span class=kt>int</span> <span class=n>c</span><span class=p>;</span>
+   <span class=n>a</span> <span class=o>=</span> <span class=mf>9.2</span><span class=p>;</span>
+   <span class=n>b</span> <span class=o>=</span> <span class=mf>3.7</span><span class=p>;</span>
+   <span class=n>c</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+   <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%f / %d 的余数是 %lf</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>a</span><span class=p>,</span> <span class=n>c</span><span class=p>,</span> <span class=n>fmod</span><span class=p>(</span><span class=n>a</span><span class=p>,</span><span class=n>c</span><span class=p>));</span>
+   <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%f / %f 的余数是 %lf</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>,</span> <span class=n>fmod</span><span class=p>(</span><span class=n>a</span><span class=p>,</span><span class=n>b</span><span class=p>));</span>
+   
+   <span class=k>return</span><span class=p>(</span><span class=mi>0</span><span class=p>);</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>结果：</p>
+<pre><code>9.200000 / 2 的余数是 1.200000
+9.200000 / 3.700000 的余数是 1.800000</code></pre></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/68ec861e74bbfab691dfb538d8ed583ea56687a4 target=_blank title="commit by Cell(1024@lruihao.cn) 68ec861e74bbfab691dfb538d8ed583ea56687a4: Feat: 恢復 2018、2019 年部分博客內容">
+<i class="fas fa-hashtag fa-fw"></i>68ec861</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/posts/lightoj1282/index.md target=_blank>閱讀原始文檔</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/lightoj1282/ data-title="Leading and Trailing-lightoj1282(快速幂+对数运算)" data-hashtags=数论,数学,快速幂,ACM,C><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/lightoj1282/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/lightoj1282/ data-title="Leading and Trailing-lightoj1282(快速幂+对数运算)" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/lightoj1282/ data-title="Leading and Trailing-lightoj1282(快速幂+对数运算)"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E6%95%B0%E8%AE%BA/>数论</a>,&nbsp;<a href=/tags/%E6%95%B0%E5%AD%A6/>数学</a>,&nbsp;<a href=/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/>快速幂</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c/>C</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/cfcontest1017/ class=prev rel=prev title="Codeforces Round 502(Div.1 + Div.2)"><i class="fas fa-angle-left fa-fw"></i>Codeforces Round 502(Div.1 + Div.2)</a>
+<a href=/posts/euclid/ class=next rel=next title="The equation-SGU106(扩展欧几里得)">The equation-SGU106(扩展欧几里得)<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id=comments><div id=valine class=comment></div><noscript>
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+</noscript></div></article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备43030402000254号</a></span><span class=icp-splitter>&nbsp;|&nbsp;</span><br class=icp-br><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘ICP备18020535号</a></span></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看評論>
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:20},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱！",recordIP:!0,visitor:!0}},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

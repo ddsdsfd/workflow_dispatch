@@ -1,7 +1,7 @@
 # 博採眾長app
 
 
-<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" class="LinkCard">博客app下载</a>
+{{< cardlink href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" content="博客app下载" >}}
 
 ### 介绍
 使用fusion app对网页进行的封装。  

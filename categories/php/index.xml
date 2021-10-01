@@ -4,4 +4,9 @@
 <p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
 </blockquote>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
+</blockquote>]]></description></item><item><title>宝塔面板安装ImgURL图床</title><link>https://lruihao.cn/posts/imgurl/</link><pubDate>Thu, 16 May 2019 20:31:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/imgurl/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
+            </div><blockquote>
+<p>ImgURL是一个开源、免费的图床程序，ImgURL 2.x之后对环境要求更高，尤其是ImageMagick组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装ImgURL 2.x图床的过程（包括ImgURL 2.x需要的各种组件）
+<a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
 </blockquote>]]></description></item></channel></rss>
