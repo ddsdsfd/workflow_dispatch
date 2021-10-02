@@ -15,7 +15,7 @@
 &lt;/blockquote></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
 <p>本以为 coding pages 与腾讯云合作后会更好，没想到正是这种初期 bug 不断，速度也是非常慢。比 gitee, 甚至 github 都要慢很多了。所以决定放弃 coding 了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的 cos 桶 xml 制作动态相册的文章，知道了对象存储这个玩意，腾讯云 COS 提供免费 50G 的存储空间，还有 CDN 加速服务，我觉得是个不错的选择，部署后发现速度还挺好。<br>
 适用于 hexo, hugo 等静态博客的部署。</p>
-</blockquote>]]></description></item><item><title>hexo插件及next内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>在搜索.文章底部.侧栏添加最近文章模块</title><link>https://lruihao.cn/posts/recent-posts/</link><pubDate>Wed, 16 Jan 2019 17:50:52 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/recent-posts/</guid><description>首先在主题配置文件添加以下关键字 1 2 3 4 5 6 7 8 recent_posts: enable: true search: true post: false sidebar: false icon: history title: 近期文章 layout: block 侧栏 在 next/layout/_macro/sidebar.swig 中的 if theme.links 对应的 endif 后面。 1 2 3 4 5 6 7 8 9 10 11 12 13</description></item><item><title>hexo插件及next内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
 <p>2021/10/2 更新<br>
 博客已迁移至 Hugo, 插件演示不适用，已删除。<br>
 让文章写的好看又简洁又好用的插件！<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener noreffer">hexo完整的标签列表</a>，<a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener noreffer">next插件列表</a></p>
@@ -33,6 +33,4 @@ next主题好像更新了，现在自带的可以用了，如果可以用了，�
 <p>最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照github上wordcount的readme操作后，并没有什么用，我打开post相关配置文件并没有发现发现wordcount这个关键词，next本身似乎也并没有在主题配置文件提供选项(或许是个人原因)，所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是RTFSC大法好！(Read the fucking source code)</p>
 </div>
         </div>
-    </div>]]></description></item><item><title>hexo d 出错</title><link>https://lruihao.cn/posts/hexo-d-error/</link><pubDate>Tue, 21 Aug 2018 22:15:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-d-error/</guid><description>&lt;p>搭建这个博客以来，隔一段时间就出现一次部署失败的错误，每次都差不多，莫名其妙地出现的。。。前几次不知道怎么瞎搞就好了。&lt;br>
-现在做一下记录，防止以后出错用。&lt;br>
-错误如下&lt;/p></description></item></channel></rss>
+    </div>]]></description></item></channel></rss>

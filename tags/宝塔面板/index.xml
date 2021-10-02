@@ -5,6 +5,12 @@
 <a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
 </blockquote>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ngrok/</guid><description>&lt;blockquote>
 &lt;p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。&lt;/p>
-&lt;/blockquote></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
+&lt;/blockquote></description></item><item><title>宅音乐播放器</title><link>https://lruihao.cn/posts/player/</link><pubDate>Tue, 19 Mar 2019 23:32:56 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/player/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/player/images/index.png" referrerpolicy="no-referrer">
+            </div><blockquote>
+<p>宅音乐播放器，HTML5网页播放器，集成后台管理及API调用，目前正在开发中，敬请关注~<br>
+<a href="https://github.com/lzx8589561/zhai-music" target="_blank" rel="noopener noreffer">原项目</a>由<a href="https://www.ilt.me" target="_blank" rel="noopener noreffer">IT技术宅</a>开源，使用thinkPHP开发后台。 <a href="https://github.com/Lruihao/zhai-music" target="_blank" rel="noopener noreffer">fork地址</a>是我个人学习模仿的库，也是相当于备份源码。<br>
+<em>注： 插件修改于明月浩空免费版，仅用于学习交流，无商业价值，如发现商业传播，将禁止软件的免费使用。</em></p>
+</blockquote>]]></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/bt/images/1.png" referrerpolicy="no-referrer">
             </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>]]></description></item></channel></rss>

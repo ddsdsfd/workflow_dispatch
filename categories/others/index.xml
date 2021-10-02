@@ -1,7 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>others - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/others/</link><description>others - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 26 May 2019 18:50:53 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/others/" rel="self" type="application/rss+xml"/><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
 <p>黑盒测试着重测试软件功能，它并不涉及程序的内部结构和内容特性，主要根据规格说明，只依靠被测试程序的输入和输出之间关系或程序的功能来设计测试用例。<br>
 白盒测试则清楚程序内部的结构以及是如何运作的，因此白盒测试需要对系统内部的结构和工作原理有一个清楚的了解。</p>
-</blockquote>]]></description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description>外存的组织方式 连续组织方式 连续组织方式的优点 顺序访问容易 顺序访问速度快 连续组织方式的缺点 分配连续的存储空间 必须知道文件长度 删除与插入数据不灵</description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wex5/</guid><description>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法</description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description>外存的组织方式 连续组织方式 连续组织方式的优点 顺序访问容易 顺序访问速度快 连续组织方式的缺点 分配连续的存储空间 必须知道文件长度 删除与插入数据不灵</description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
 <p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
 <ul>
 <li>git add * (添加需要提交的文件，这里全选)</li>
@@ -42,7 +42,36 @@
 <li>分享功能，分享到QQ，微信，浏览器打开等</li>
 <li>app内添加书签，自动记录历史记录，刷新等</li>
 <li><strong>配合博客的<code>PWA + quicklink</code>功能可实现离线浏览</strong></li>
-</ul>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description>概念 流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分</description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/data/</guid><description>数据的表示 数据的表示可分为：原码，反码和补码。（二进制） 原码： 符号位0为正，1为负。 反码： 符号位0为正，1为负。 正数： 反码同原码。 负数： 符号</description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description>在线算法 在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。 在计算机科学中，一个在线算法是指它可以</description></item><item><title>位运算</title><link>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Thu, 14 Jun 2018 20:22:21 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description>1. &amp;amp;运算 &amp;amp;运算通常用于二进制取位操作，例如一个数 &amp;amp; 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位</description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
-<p>本文来自kio对Markdown的基础教程
-其他推荐参考：<a href="https://segmentfault.com/markdown" target="_blank" rel="noopener noreffer">https://segmentfault.com/markdown</a></p>
-</blockquote>]]></description></item></channel></rss>
+</ul>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description>我用的 win10 打开控制面板 选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所</description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/posts/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/font-mmt/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/font-mmt/images/word1.png" referrerpolicy="no-referrer">
+            </div><div id="id-4"><span id="id-1"></span>
+<span id="id-2"></span>
+<span id="id-3"></span></div>
+<hr>
+<h2 id="介绍">介绍</h2>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw"></i>沐目体<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>
+<p>字体简介<br>
+#沐目体# 沐目之，湘也。（以<del>女盆友</del>前女友名字命名的字体）</p>
+</li>
+<li>
+<p>笔头设置<br>
+狼毫笔型，粗细为9，速度模式</p>
+</li>
+<li>
+<p>屏写方式</p>
+</li>
+<li>
+<p><a href="https://github.com/Lruihao/MMT/raw/master/mmt@last.ttf" target="_blank" rel="noopener noreffer">最新版下载</a> · <a href="https://github.com/Lruihao/MMT/releases" target="_blank" rel="noopener noreffer">沐目体下载</a><br>
+使用手机造字app手写制作，写了大概1年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。</p>
+</li>
+</ul>
+<p><em><strong>注：仅用于个人非商用！</strong></em></p>
+</div>
+        </div>
+    </div>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description>概念 流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分</description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/data/</guid><description>数据的表示 数据的表示可分为：原码，反码和补码。（二进制） 原码： 符号位0为正，1为负。 反码： 符号位0为正，1为负。 正数： 反码同原码。 负数： 符号</description></item></channel></rss>

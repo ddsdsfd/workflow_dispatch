@@ -3,4 +3,8 @@
 </blockquote>]]></description></item><item><title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
 <p>用python模拟post请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
 要求每天早上8点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
+</blockquote>]]></description></item><item><title>python 设置程序每天 8 点定时执行任务</title><link>https://lruihao.cn/posts/pysettime/</link><pubDate>Thu, 09 May 2019 23:26:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/pysettime/</guid><description><![CDATA[<blockquote>
+<p>第一次运行根据程序执行时间，判断程序休眠的时间，尽最大可能休眠，节省系统资源。<br>
+第二次运行后直接休眠一天，到每天早上8点执行任务。<br>
+（该程序需要一直挂着，保持网络不断）</p>
 </blockquote>]]></description></item></channel></rss>

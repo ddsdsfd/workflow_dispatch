@@ -4,6 +4,10 @@
 更多说明及ACM/NOIP题库下载见官网博客<a href="http://www.hustoj.com/" target="_blank" rel="noopener noreffer">代码的那些事|程序员回忆录</a></p>
 </blockquote>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ngrok/</guid><description>&lt;blockquote>
 &lt;p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。&lt;/p>
-&lt;/blockquote></description></item><item><title>win10,ubuntu双系统时间不一致</title><link>https://lruihao.cn/posts/ubuntutime/</link><pubDate>Fri, 15 Mar 2019 14:28:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ubuntutime/</guid><description>&lt;blockquote>
+&lt;/blockquote></description></item><item><title>ubuntu + windows双系统默认启动项设置</title><link>https://lruihao.cn/posts/windefault/</link><pubDate>Thu, 21 Mar 2019 12:48:30 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/windefault/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/windefault/images/1.png" referrerpolicy="no-referrer">
+            </div><blockquote>
+<p>双系统默认启动项是Ubuntu，而日常使用最多的还是Windows，所以说很不方便，一不小心就开机到Ubuntu去了。今天来设置一下。</p>
+</blockquote>]]></description></item><item><title>win10,ubuntu双系统时间不一致</title><link>https://lruihao.cn/posts/ubuntutime/</link><pubDate>Fri, 15 Mar 2019 14:28:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ubuntutime/</guid><description>&lt;blockquote>
 &lt;p>我的 Ubuntu 和 Windows 双系统是 Ubuntu 是第一启动项，所以总是开机忘记点下键，一进 Ubuntu 系统时间就不对了（总是少了8小时），回到 Windows 时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说 git 版本控制提交会遇到问题种种等。&lt;/p>
 &lt;/blockquote></description></item></channel></rss>

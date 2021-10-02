@@ -23,27 +23,23 @@
 </ol>
 </div>
         </div>
-    </div>]]></description></item><item><title>宝塔面板安装ImgURL图床</title><link>https://lruihao.cn/posts/imgurl/</link><pubDate>Thu, 16 May 2019 20:31:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/imgurl/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
-            </div><blockquote>
-<p>ImgURL是一个开源、免费的图床程序，ImgURL 2.x之后对环境要求更高，尤其是ImageMagick组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装ImgURL 2.x图床的过程（包括ImgURL 2.x需要的各种组件）
-<a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
-</blockquote>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
-            </div><blockquote>
-<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
-</blockquote>]]></description></item><item><title>java 通过 URL 和 URLConnection 访问网页资源</title><link>https://lruihao.cn/posts/urlreader/</link><pubDate>Mon, 06 May 2019 17:41:35 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/urlreader/</guid><description>&lt;blockquote>
-&lt;p>该例中首先生成一个URL对象lrh，指向RUI豪小栈，然后再调用lrh.openStream()方法生成该URL的一个输入流，这是一个字节流，在此基础上进一步通过InputStreamReader和BufferedReader构造一个带缓冲功能的字符流，并通过这个字符流对象读取该URL的html内容，进而输出到桌面文件和控制台屏幕。URLConnection类也可以用来对由URL引用的资源进行读写操作，前提是先通过connect()方法建立连接，然后再去获取响应头信息或响应内容。&lt;/p>
-&lt;/blockquote></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
-<p>基本功能： 给定一个密钥，读取文件内容，加密后，输出到另外一个文件。<br/><br/>
-这里使用文件输入流读取文件内容，然后每个字节和密码进行异或简单加密。加密完成，使用文件输出流写入另一个文件中。解密和加密方法一样。利用的是对同一个数异或两遍其值不变的性质。因此一个程序可以完成加密和解密功能。只需修改文件名即可。</p>
-</blockquote>]]></description></item><item><title>模拟借书系统（java异常练习）</title><link>https://lruihao.cn/posts/javaexception/</link><pubDate>Wed, 01 May 2019 16:52:21 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/javaexception/</guid><description>&lt;div class="featured-image">
-&lt;img src="/posts/JavaException/images/1.png" referrerpolicy="no-referrer">
-&lt;/div></description></item><item><title>用记事本编写第一个java程序</title><link>https://lruihao.cn/posts/hellojava/</link><pubDate>Fri, 19 Apr 2019 19:49:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hellojava/</guid><description><![CDATA[<blockquote>
-<p>之所以用记事本来写不是为了装X或者什么的。反而恰恰是返璞归真，因为在用java语言进行程序开发时，首先是以纯文本的方式编写所有的java源程序，并保存成以<code>.java</code>为后缀的文件；然后将这些源程序用<code>javac</code>编译成<code>.class</code>后缀名的字节代码文件；字节代码不是被本地处理器执行的代码，而是能够被java虚拟机（JVM）执行的代码。最后用java运行工具在JVM执行java应用程序。<br>
-由于JVM可以运行在不同的操作系统上，因此同一个字节代码文件可以跨平台运行。</p>
-</blockquote>
-<ul>
-<li>javac</li>
-<li>java</li>
-</ul>]]></description></item></channel></rss>
+    </div>]]></description></item><item><title>SQL总结</title><link>https://lruihao.cn/posts/sql/</link><pubDate>Thu, 16 Jan 2020 19:28:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/sql/</guid><description>&lt;blockquote>
+&lt;p>SQL增删改查(CRUD)语句与常用函数总结。&lt;/p>
+&lt;/blockquote></description></item><item><title>php同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description>&lt;blockquote>
+&lt;p>php 主动推送站点链接到百度站长，神马站长进行 SEO。&lt;/p>
+&lt;/blockquote></description></item><item><title>php按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
+<p>首先采用<code>fopen()</code>函数打开文件，得到返回值的就是资源类型。接着采用while循环一行行地读取文件，然后输出每行的文字。<code>feof()</code>判断是否到最后一行,<code>fgets()</code>读取一行文本。</p>]]></description></item><item><title>简单评论模块--php表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
+<p>简单模仿了一个评论模板，当然肯定是没有博客的valine这么强大的hhhh，<br>
+<strong>PHP表单安全性的重要提示</strong><br>
+<code>$_SERVER[&quot;PHP_SELF&quot;]</code>变量能够被黑客利用！<br>
+如果页面中使用了<code>PHP_SELF</code>，用户能够输入下划线然后执行跨站点脚本（XSS）。<br>
+比如说注入js脚本等，valine以前的版本也有过这样的漏洞。</p>
+<p><code>跨站点脚本（Cross-site scripting，XSS）</code>是一种计算机安全漏洞类型，常见于 Web 应用程序。XSS 能够使攻击者向其他用户浏览的网页中输入客户端脚本。</p>
+</blockquote>]]></description></item><item><title>php 函数学习</title><link>https://lruihao.cn/posts/phpfunc/</link><pubDate>Mon, 15 Jul 2019 11:37:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpfunc/</guid><description><![CDATA[<blockquote>
+<p>练习php函数的基本使用。<br>
+注：<br>
+必选参数在可选参数的前面。<br>
+可在函数中定义函数，需要先调用外层函数才能调用内层函数。</p>
+</blockquote>]]></description></item><item><title>python 实训总结Ⅱ</title><link>https://lruihao.cn/posts/pysx2/</link><pubDate>Fri, 21 Jun 2019 18:46:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/pysx2/</guid><description>&lt;blockquote>
+&lt;p>后面几天讲的有点杂，简单记录一下知识点。&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

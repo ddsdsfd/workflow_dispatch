@@ -12,7 +12,7 @@
     </div>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
 <p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行CSS的編碼工作。<br>
 轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
-</blockquote>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/lightbox/</guid><description>簡介 Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。 一般的網頁，圖片</description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+</blockquote>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/lightbox/</guid><description>簡介 Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。 一般的網頁，圖片</description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description>&lt;p>just for backup of watermark.&lt;/p></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -23,7 +23,9 @@
 三個人，一共七种組合消費，排除各自消費的三種情況，也有四種 (<code>AB, AC, BC, ABC</code>)。好麻煩啊！！！</p>
 </div>
         </div>
-    </div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
+    </div>]]></description></item><item><title>设置网站运行时间</title><link>https://lruihao.cn/posts/site-time/</link><pubDate>Thu, 19 Sep 2019 22:03:29 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/site-time/</guid><description><![CDATA[<blockquote>
+<p>使用<code>javascript</code>计算博客等网站的运行时间。</p>
+</blockquote>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/async-defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
             </div><div class="details admonition note open">
         <div class="details-summary admonition-title">
@@ -35,24 +37,8 @@
         </div>
     </div>]]></description></item><item><title>条件注释判断浏览器版本&lt;!--[if lt IE 9]>;</title><link>https://lruihao.cn/posts/ifzhushi/</link><pubDate>Fri, 10 May 2019 13:08:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ifzhushi/</guid><description><![CDATA[<blockquote>
 <p><span>&lt;!--[if !IE]&gt;&lt;!--&gt; 除IE外都可识别 &lt;!--&lt;![endif]--&gt;</span><br><span>&lt;!--[if IE]&gt; 所有的IE可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 6]&gt; 仅IE6可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 6]&gt; IE6以及IE6以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 6]&gt; IE6以及IE6以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 7]&gt; 仅IE7可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 7]&gt; IE7以及IE7以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 7]&gt; IE7以及IE7以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 8]&gt; 仅IE8可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 9]&gt; 仅IE9可识别 &lt;![endif]--&gt;</span></p>
-</blockquote>]]></description></item><item><title>前端面试题-HTML+CSS</title><link>https://lruihao.cn/posts/ms-html-css/</link><pubDate>Sat, 30 Mar 2019 22:58:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ms-html-css/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wex5/</guid><description>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法</description></item><item><title>前端面试题-HTML+CSS</title><link>https://lruihao.cn/posts/ms-html-css/</link><pubDate>Sat, 30 Mar 2019 22:58:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ms-html-css/</guid><description><![CDATA[<blockquote>
 <p><a href="https://github.com/ltadpoles/web-document/tree/master/Other" target="_blank" rel="noopener noreffer">原文链接</a><br>
 “卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学java和web相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
 </blockquote>
-<p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/http2https/</guid><description>&lt;blockquote>
-&lt;p>记录自己在配置vps及博客SSL证书时遇到的问题。&lt;/p>
-&lt;/blockquote></description></item><item><title>hexo-theme-next @modified LRH</title><link>https://lruihao.cn/posts/hexo-theme-next/</link><pubDate>Thu, 21 Mar 2019 16:43:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-theme-next/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/hexo-theme-next/images/next.png" referrerpolicy="no-referrer">
-            </div><div class="details admonition danger open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-skull-crossbones fa-fw"></i>危險<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><span style="color: #d9534f;font-size: 1.2em;"><strong>如无必要，不再更新！（2019.09.13）</strong></span><br>
-今晚我做出了一个慎重的决定，由于博主时间精力有限，需要更多的时间来工作和学习。所以我将<strong>放弃对next的主题的自定义修改</strong>，next主题官方已经更新到了7.0+的版本，喜欢next主题风格的朋友可以在github更新。<br>
-我这也算是上古版本了，版本差距实在过大，所以我也将放弃博客使用主题的更新。<br>
-以下仍为当前博客使用主题，lib资源已打包github。</div>
-        </div>
-    </div>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linkcard/</guid><description>&lt;blockquote>
-&lt;p>模仿知乎的卡片式链接，idea 来自[兰州小红鸡]&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+<p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>]]></description></item></channel></rss>

@@ -1,0 +1,321 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>python 爬取网站图片（图片链接相似） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="python 爬取网站图片（图片链接相似）">
+<meta property="og:description" content="
+以下程序对该网址内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app书写的，大概6886个字符，历时两年多，目前仍在修改中。字体效果查看
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lruihao.cn/posts/mmtimgpy/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2019-04-22T12:46:34+00:00">
+<meta property="article:modified_time" content="2021-10-02T19:01:49+08:00">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://lruihao.cn/logo.png">
+<meta name=twitter:title content="python 爬取网站图片（图片链接相似）">
+<meta name=twitter:description content="
+以下程序对该网址内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app书写的，大概6886个字符，历时两年多，目前仍在修改中。字体效果查看
+">
+<meta name=application-name content="Lruihao's Note">
+<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/mmtimgpy/><link rel=prev href=https://lruihao.cn/posts/wxpy1/><link rel=next href=https://lruihao.cn/posts/1thintervivew/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"python 爬取网站图片（图片链接相似）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/mmtimgpy\/"},"genre":"posts","keywords":"Python, 脚本, Backend","wordcount":1532,"url":"https:\/\/lruihao.cn\/posts\/mmtimgpy\/","datePublished":"2019-04-22T12:46:34+00:00","dateModified":"2021-10-02T19:01:49+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+取消
+</a>
+</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>目錄</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">python 爬取网站图片（图片链接相似）</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-04-22>2019-04-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1532 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 4 分鐘&nbsp;<span id=/posts/mmtimgpy/ class=leancloud_visitors data-flag-title="python 爬取网站图片（图片链接相似）">
+<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
+</span>&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>目錄</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#思路设计>思路设计</a></li>
+<li><a href=#源码设计>源码设计</a></li>
+<li><a href=#爬取过程及结果>爬取过程及结果</a></li>
+<li><a href=#其他思路>其他思路</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><blockquote>
+<p>以下程序对<a href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-&share=1&from=singlemessage" target=_blank rel="noopener noreffer">该网址</a>内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app书写的，大概6886个字符，历时两年多，目前仍在修改中。<a href=https://lruihao.cn/posts/font-mmt/ target=_blank rel="noopener noreffer">字体效果查看</a></p>
+</blockquote>
+<h1 id=思路设计>思路设计</h1>
+<blockquote>
+<p>通过观察目标网页中字符图片的链接，很容易发现每个字符图片的直链是由两部分组成。</p>
+</blockquote>
+<ul>
+<li>固定链接</li>
+<li>图片文件编号</li>
+</ul>
+<blockquote>
+<p>其中固定连接为<code>https://image.xiezixiansheng.com/users/2010/700/unzip/579767/</code>,图片文件为<code>xxxxx.png@50q</code>，如果去掉@50q，获取到的图片就是透明背景的不然就是白色背景。然后发现编号大多是5位数的形式，但是还有一些是4位的，甚至还有2-3位的数字。仔细看看127前的编号都是一些国际符号诸如英文和数字等。比对一下发现正是ASCII码对应的命名方式。可想而知中文自然也是通过编码来命名的。一个标准的字库文件至少包含6763个汉字，也就是我书写的这个<code>GB2312-80</code>,范围： <code>0xA1A1 - 0xFEFE</code>，其中汉字范围： <code>0xB0A1 - 0xF7FE</code>。两个16进制位对应一个字节，一个汉字至少由两个字节组成，这样理解，范围自然是4个16进制位。所以转换成10进制，范围大致在65278以下。要了解更加具体一点的范围还需要去查一下汉字编码的分区等。这里暂时不必了解，因为本来就打算暴力下载。</p>
+</blockquote>
+<blockquote>
+<p><strong>说了这么多，既然图片链接这么简单，所以我是想暴力遍历，搜索图片，判断链接状态码，然后下载图片。</strong></p>
+</blockquote>
+<h1 id=源码设计>源码设计</h1>
+<p>大致分为三个范围吧</p>
+<ul>
+<li>英文字符</li>
+<li>中文符号</li>
+<li>汉字范围</li>
+</ul>
+<blockquote>
+<p>我主要分这几个区间查找</p>
+</blockquote>
+<ul>
+<li>33 ~ 126</li>
+<li>8212 ~ 8243</li>
+<li>12289 ~ 12305</li>
+<li>19968 ~ 40864</li>
+<li>65281 ~ 65509</li>
+</ul>
+<p>磨刀不误砍柴工，分析观察了这么久，终于可以运行程序了，F5 后就静静等待吧，可以去看看 java，或者打一把王者hhhhh!</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=kn>import</span> <span class=nn>os</span>
+<span class=kn>import</span> <span class=nn>requests</span>
+
+<span class=n>path</span><span class=o>=</span><span class=s2>&#34;C:</span><span class=se>\\</span><span class=s2>Users</span><span class=se>\\</span><span class=s2>李瑞豪</span><span class=se>\\</span><span class=s2>Desktop</span><span class=se>\\</span><span class=s2>MMT_images</span><span class=se>\\</span><span class=s2>&#34;</span> <span class=c1>#下载路径： 绝对或者相对路径比如./image/</span>
+<span class=n>os</span><span class=o>.</span><span class=n>makedirs</span><span class=p>(</span><span class=n>path</span><span class=o>+</span><span class=s2>&#34;0</span><span class=se>\\</span><span class=s2>&#34;</span><span class=p>,</span> <span class=n>exist_ok</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span> <span class=c1># 创建文件夹</span>
+<span class=n>os</span><span class=o>.</span><span class=n>makedirs</span><span class=p>(</span><span class=n>path</span><span class=o>+</span><span class=s2>&#34;1</span><span class=se>\\</span><span class=s2>&#34;</span><span class=p>,</span> <span class=n>exist_ok</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+
+<span class=c1># 下载图片</span>
+<span class=k>def</span> <span class=nf>urllib_download</span><span class=p>(</span><span class=n>url</span><span class=p>,</span><span class=n>num</span><span class=p>):</span>  <span class=c1># (下载链接,图片编号)</span>
+    <span class=kn>from</span> <span class=nn>urllib.request</span> <span class=kn>import</span> <span class=n>urlretrieve</span>
+    <span class=n>urlretrieve</span><span class=p>(</span><span class=n>url</span><span class=p>,</span><span class=n>path</span><span class=o>+</span><span class=n>num</span><span class=o>+</span><span class=s2>&#34;.png&#34;</span><span class=p>)</span>     
+
+<span class=c1># 判断状态码</span>
+<span class=k>def</span> <span class=nf>get_status</span><span class=p>(</span><span class=n>url</span><span class=p>):</span>  
+    <span class=n>r</span> <span class=o>=</span> <span class=n>requests</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>,</span> <span class=n>allow_redirects</span> <span class=o>=</span> <span class=kc>False</span><span class=p>)</span>  
+    <span class=k>return</span> <span class=n>r</span><span class=o>.</span><span class=n>status_code</span>
+
+<span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
+	<span class=n>BASE_URL</span> <span class=o>=</span> <span class=s2>&#34;https://image.xiezixiansheng.com/users/2010/700/unzip/579767/&#34;</span>
+	<span class=n>n</span><span class=o>=</span><span class=mi>33</span>
+	<span class=n>total</span><span class=o>=</span><span class=mi>0</span>
+	<span class=nb>print</span><span class=p>(</span><span class=s2>&#34;正在爬取第1张图片!&#34;</span><span class=p>)</span>
+
+	<span class=k>while</span> <span class=n>n</span> <span class=o>&lt;</span> <span class=mi>65510</span><span class=p>:</span>
+		<span class=c1>#分段爬取，不然会超时！！！# 33 ~ 126 # 8212 ~ 8243 # 12289 ~ 12305 # 19968 ~ 40864 # 65281 ~ 65509</span>
+		<span class=k>if</span> <span class=n>n</span> <span class=o>==</span> <span class=mi>127</span><span class=p>:</span>
+			<span class=n>n</span> <span class=o>=</span> <span class=mi>8212</span>
+			<span class=k>continue</span>
+		<span class=k>elif</span> <span class=n>n</span> <span class=o>==</span> <span class=mi>8244</span><span class=p>:</span>
+			<span class=n>n</span> <span class=o>=</span> <span class=mi>12289</span>
+			<span class=k>continue</span>
+		<span class=k>elif</span> <span class=n>n</span> <span class=o>==</span><span class=mi>12306</span><span class=p>:</span>
+			<span class=n>n</span> <span class=o>=</span> <span class=mi>19968</span>
+			<span class=k>continue</span>
+		<span class=k>elif</span> <span class=n>n</span> <span class=o>==</span> <span class=mi>40865</span><span class=p>:</span>
+			<span class=n>n</span> <span class=o>=</span> <span class=mi>65281</span>
+			<span class=k>continue</span>
+
+	<span class=c1># for n in range(37341,40865):</span>
+		<span class=n>num</span> <span class=o>=</span> <span class=nb>str</span><span class=p>(</span><span class=n>n</span><span class=p>)</span>
+		<span class=n>IMAGE_URL</span> <span class=o>=</span> <span class=n>BASE_URL</span><span class=o>+</span><span class=n>num</span><span class=o>+</span><span class=s2>&#34;.png&#34;</span> <span class=c1># xxx.png是透明背景，xxx.png@50q是白色背景，分别存放在0，1文件夹 p是中小 w是小图</span>
+		<span class=k>if</span><span class=p>(</span><span class=n>get_status</span><span class=p>(</span><span class=n>IMAGE_URL</span><span class=p>)</span><span class=o>==</span><span class=mi>200</span><span class=p>):</span> <span class=c1># 同时下载透明和白色背景的图片</span>
+			<span class=n>total</span><span class=o>+=</span><span class=mi>1</span>
+			<span class=n>urllib_download</span><span class=p>(</span><span class=n>IMAGE_URL</span><span class=p>,</span><span class=s2>&#34;0</span><span class=se>\\</span><span class=s2>&#34;</span><span class=o>+</span><span class=n>num</span><span class=p>)</span>
+			<span class=n>IMAGE_URL</span> <span class=o>+=</span> <span class=s2>&#34;@50q&#34;</span>
+			<span class=n>urllib_download</span><span class=p>(</span><span class=n>IMAGE_URL</span><span class=p>,</span><span class=s2>&#34;1</span><span class=se>\\</span><span class=s2>&#34;</span><span class=o>+</span><span class=n>num</span><span class=p>)</span>
+			<span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Downloaded &#34;</span><span class=o>+</span><span class=n>num</span><span class=o>+</span><span class=s2>&#34;.png&#34;</span><span class=p>)</span>
+			<span class=nb>print</span><span class=p>(</span><span class=s2>&#34;正在爬取第&#34;</span><span class=p>,</span><span class=n>total</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span><span class=s2>&#34;张图片!&#34;</span><span class=p>)</span>
+		<span class=n>n</span><span class=o>+=</span><span class=mi>1</span>
+
+	<span class=nb>print</span><span class=p>(</span><span class=s2>&#34;</span><span class=se>\n</span><span class=s2>爬取完毕！共爬取&#34;</span><span class=p>,</span><span class=n>total</span><span class=p>,</span><span class=s2>&#34;张图片!&#34;</span><span class=p>)</span>		
+	<span class=nb>print</span><span class=p>(</span><span class=s2>&#34;图片存放路径：&#34;</span><span class=o>+</span><span class=n>path</span><span class=p>)</span>
+	<span class=nb>print</span><span class=p>(</span><span class=s2>&#34;作者博客：lruihao.cn&#34;</span><span class=p>)</span>
+
+<span class=k>if</span> <span class=vm>__name__</span><span class=o>==</span><span class=s2>&#34;__main__&#34;</span><span class=p>:</span>  
+    <span class=n>main</span><span class=p>();</span> 
+</code></pre></td></tr></table>
+</div>
+</div><h1 id=爬取过程及结果>爬取过程及结果</h1>
+<blockquote>
+<p>文件夹左下角数目变化</p>
+</blockquote>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/mmtpy.gif data-srcset="/posts/mmtimgpy/images/mmtpy.gif, images/mmtpy.gif 1.5x, /posts/mmtimgpy/images/mmtpy.gif 2x" data-sizes=auto alt=/posts/mmtimgpy/images/mmtpy.gif title=爬取过程></p>
+<div class="details admonition danger open">
+<div class="details-summary admonition-title">
+<i class="icon fas fa-skull-crossbones fa-fw"></i>危險<i class="details-icon fas fa-angle-right fa-fw"></i>
+</div>
+<div class=details-content>
+<div class=admonition-content>说实话看着控制台不停地输出提示信息有没有很爽，对于强迫症来说真的是很治愈了！但是爬取第6042张图片的时候，我打开了一下目标网页发现无法加载图片了，就想这应该也算是一次Dos攻击了吧！打开控制台果然停了，相当于访问了近两万次！唉，还是太暴力了！！还差800多张，只好又重新接着写上次的位置爬!不慎造成目标网站服务器压力，实在对不起！</div>
+</div>
+</div>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/error.png data-srcset="/posts/mmtimgpy/images/error.png, images/error.png 1.5x, /posts/mmtimgpy/images/error.png 2x" data-sizes=auto alt=/posts/mmtimgpy/images/error.png title=错误提示></p>
+<blockquote>
+<p>一个半小时左右后终于下载完了，一共是6886张；程序是同时下载了透明和白色背景的图片的！分别在0,1子文件夹！</p>
+</blockquote>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/jieguo.png data-srcset="/posts/mmtimgpy/images/jieguo.png, images/jieguo.png 1.5x, /posts/mmtimgpy/images/jieguo.png 2x" data-sizes=auto alt=/posts/mmtimgpy/images/jieguo.png title=爬取完毕></p>
+<h1 id=其他思路>其他思路</h1>
+<p>模拟浏览器载入 html 文件，获取源码，查找到所有<code>&lt;img></code>标签内链接，必要时配合正则表达式，然后下载图片。</p></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/d5a152d3502ffeceb83f55c643aa04aeeb03352f target=_blank title="commit by Cell(1024@lruihao.cn) d5a152d3502ffeceb83f55c643aa04aeeb03352f: Feat: 迁移 hexo 所有博客内容到 hugo">
+<i class="fas fa-hashtag fa-fw"></i>d5a152d</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/posts/mmtimgpy/index.md target=_blank>閱讀原始文檔</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/mmtimgpy/ data-title="python 爬取网站图片（图片链接相似）" data-hashtags=Python,脚本,Backend><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/mmtimgpy/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/mmtimgpy/ data-title="python 爬取网站图片（图片链接相似）" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/mmtimgpy/ data-title="python 爬取网站图片（图片链接相似）"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/python/>Python</a>,&nbsp;<a href=/tags/%E8%84%9A%E6%9C%AC/>脚本</a>,&nbsp;<a href=/tags/backend/>Backend</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/wxpy1/ class=prev rel=prev title=python玩微信：初探wxpy><i class="fas fa-angle-left fa-fw"></i>python玩微信：初探wxpy</a>
+<a href=/posts/1thintervivew/ class=next rel=next title=第一次面试经历>第一次面试经历<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id=comments><div id=valine class=comment></div><noscript>
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+</noscript></div></article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备43030402000254号</a></span><span class=icp-splitter>&nbsp;|&nbsp;</span><br class=icp-br><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘ICP备18020535号</a></span></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看評論>
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:20},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱！",recordIP:!0,visitor:!0}},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

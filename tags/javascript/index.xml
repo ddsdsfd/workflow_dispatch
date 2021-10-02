@@ -9,7 +9,7 @@
 <strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
 开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
         </div>
-    </div>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/lightbox/</guid><description>簡介 Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。 一般的網頁，圖片</description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+    </div>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/lightbox/</guid><description>簡介 Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。 一般的網頁，圖片</description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description>&lt;p>just for backup of watermark.&lt;/p></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -20,7 +20,9 @@
 三個人，一共七种組合消費，排除各自消費的三種情況，也有四種 (<code>AB, AC, BC, ABC</code>)。好麻煩啊！！！</p>
 </div>
         </div>
-    </div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
+    </div>]]></description></item><item><title>设置网站运行时间</title><link>https://lruihao.cn/posts/site-time/</link><pubDate>Thu, 19 Sep 2019 22:03:29 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/site-time/</guid><description><![CDATA[<blockquote>
+<p>使用<code>javascript</code>计算博客等网站的运行时间。</p>
+</blockquote>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/async-defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
             </div><div class="details admonition note open">
         <div class="details-summary admonition-title">
@@ -36,68 +38,8 @@
 <li>不留不要用的、垃圾程式碼</li>
 </ul>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/http2https/</guid><description>&lt;blockquote>
 &lt;p>记录自己在配置vps及博客SSL证书时遇到的问题。&lt;/p>
+&lt;/blockquote></description></item><item><title>web汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/webbiji/</guid><description>&lt;blockquote>
+&lt;p>下面一些web开发的一些总结，还有一些常用到的代码，脚本等！&lt;/p>
 &lt;/blockquote></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linkcard/</guid><description>&lt;blockquote>
 &lt;p>模仿知乎的卡片式链接，idea 来自[兰州小红鸡]&lt;/p>
-&lt;/blockquote></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
-	#code{  
-        font-family:Arial;  
-        font-style:italic;  
-        font-weight:bold;  
-        border:2px solid #ddd;
-        letter-spacing:9px;  
-        color:blue;
-        font-size: 15px; 
-    }
-</style>
-<script type="text/javascript">
-	//设置一个全局的变量，便于保存验证码
-    var code;
-    function createCode(){
-        //首先默认code为空字符串
-        code = '';
-        //设置长度，这里看需求，我这里设置了4
-        var codeLength = 4;
-        var codeV = document.getElementById('code');
-        //设置随机字符
-        var random = new Array('人','徒','知','枯','坐','息','思','为','进','德','之','功','殊','不','知','上','达','之', '士','圆','通','定','慧','体','用','双','修','即','动','而','静','虽','撄','而','宁');
-        //循环codeLength 我设置的4就是循环4次
-        for(var i = 0; i < codeLength; i++){
-            //设置随机数范围,这设置为0 ~ 36
-             var index = Math.floor(Math.random()*35);
-             //字符串拼接 将每次随机的字符 进行拼接
-             code += random[index]; 
-        }
-        //将拼接好的字符串赋值给展示的Value
-        codeV.value = code;
-    }
-
-    //下面就是判断是否== 的代码，无需解释
-    function validate(){
-        var Input = document.getElementById('input');
-        var oValue = Input.value.toUpperCase();
-        if(oValue ==0){
-            alert('请输入验证码');
-        }else if(oValue != code){
-            Input.value = '';
-            alert('验证码不正确，请重新输入');
-            createCode();
-        }else{
-            Input.value = '';
-            alert('验证码正确！');//window.open('http://lruihao.cn','_self');
-        }
-    }
-
-
-    //设置此处的原因是每次进入界面展示一个随机的验证码，不设置则为空
-    window.onload = function (){
-
-        createCode();
-    }
-</script>
-<div align="center">  
-    <input type = "text" id = "input" value="" /> <input type = "button" id="code" onclick="createCode()"/> <input class="btn" type = "button" value = "验证" onclick = "validate()"/> 
-    <br/>请点击验证码处: ↑ 
-</div>]]></description></item><item><title>js判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
-<p>转自 <a href="https://www.cnblogs.com/coober/p/6594379.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/coober/p/6594379.html</a></p>
-</blockquote>
-<p>前端开发经常遇到需要判断用户的浏览设备，是pc端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>]]></description></item><item><title>使用js准确获取当前页面url网址信息及301重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/href-301/</guid><description>获取链接（转） 传送门 在WEB开发中，时常会用到javascript来获取当前页面的url网址信息，在这里是我的一些获取url信息的小总结。 下</description></item></channel></rss>
+&lt;/blockquote></description></item></channel></rss>

@@ -1,0 +1,488 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>java 常用类 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="java 常用类">
+<meta property="og:description" content="StringBuffer/StringBuilder(掌握) StringBuffer是线程安全的可变字符串。 StringBuilder是线程">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lruihao.cn/posts/stringbuffer/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2019-04-14T10:12:44+00:00">
+<meta property="article:modified_time" content="2021-10-02T19:01:49+08:00">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://lruihao.cn/logo.png">
+<meta name=twitter:title content="java 常用类">
+<meta name=twitter:description content="StringBuffer/StringBuilder(掌握) StringBuffer是线程安全的可变字符串。 StringBuilder是线程">
+<meta name=application-name content="Lruihao's Note">
+<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/stringbuffer/><link rel=prev href=https://lruihao.cn/posts/wex5/><link rel=next href=https://lruihao.cn/posts/regexdemo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"java 常用类","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/stringbuffer\/"},"genre":"posts","keywords":"StringBuffer, sort, Java, Backend","wordcount":1248,"url":"https:\/\/lruihao.cn\/posts\/stringbuffer\/","datePublished":"2019-04-14T10:12:44+00:00","dateModified":"2021-10-02T19:01:49+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+取消
+</a>
+</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>目錄</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">java 常用类</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/java/><i class="far fa-folder fa-fw"></i>Java</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-04-14>2019-04-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1248 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/posts/stringbuffer/ class=leancloud_visitors data-flag-title="java 常用类">
+<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
+</span>&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>目錄</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#stringbufferstringbuilder掌握>StringBuffer/StringBuilder(掌握)</a>
+<ul>
+<li><a href=#stringbuffer是线程安全的可变字符串>StringBuffer是线程安全的可变字符串。</a></li>
+<li><a href=#构造方法>构造方法：</a></li>
+<li><a href=#成员方法自己补齐方法和意思>成员方法：(自己补齐方法和意思)</a></li>
+<li><a href=#案例>案例：</a></li>
+</ul>
+</li>
+<li><a href=#数组高级部分理解>数组高级部分(理解)</a>
+<ul>
+<li><a href=#排序>排序</a></li>
+<li><a href=#查找>查找</a></li>
+</ul>
+</li>
+<li><a href=#arrays工具类掌握>Arrays工具类(掌握)</a>
+<ul>
+<li><a href=#arrays是针对数组进行操作的工具类提供了排序和查找等功能>Arrays是针对数组进行操作的工具类，提供了排序和查找等功能</a></li>
+<li><a href=#成员方法自己补齐方法和意思-1>成员方法：(自己补齐方法和意思)</a></li>
+<li><a href=#案例-1>案例：</a></li>
+</ul>
+</li>
+<li><a href=#基本类型包装类掌握>基本类型包装类(掌握)</a>
+<ul>
+<li><a href=#为了让我们对基本类型进行更多的操作java针对每种基本类型提供了对应的包装类类型>为了让我们对基本类型进行更多的操作，java针对每种基本类型提供了对应的包装类类型。</a></li>
+<li><a href=#分别是哪些呢>分别是哪些呢?</a></li>
+<li><a href=#integer>Integer</a></li>
+<li><a href=#character>Character</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+</div><div class=content id=content><h1 id=stringbufferstringbuilder掌握>StringBuffer/StringBuilder(掌握)</h1>
+<h2 id=stringbuffer是线程安全的可变字符串>StringBuffer是线程安全的可变字符串。</h2>
+<p>StringBuilder是线程不安全的可变字符串。<br>
+和StringBuffer的功能一样。就是效率高一些，但是不安全。</p>
+<h2 id=构造方法>构造方法：</h2>
+<ul>
+<li>StringBuffer sb = new StringBuffer();</li>
+<li>StringBuffer sb = new StringBuffer(50);</li>
+<li>StringBuffer sb = new StringBuffer(&ldquo;hello&rdquo;);</li>
+</ul>
+<h2 id=成员方法自己补齐方法和意思>成员方法：(自己补齐方法和意思)</h2>
+<ul>
+<li>添加功能<br>
+public StringBuffer append(String str):追加字符串<br>
+public StringBuffer insert(int offset,String str):在指定位置插入字符串</li>
+<li>删除功能<br>
+public StringBuffer deleteCharAt(int index):删除指定位置字符<br>
+public StringBuffer delete(int start,int end):删除从指定开始到结束的字符，左闭右开</li>
+<li>替换功能<br>
+public StringBuffer replace(int start,int end,String str):以字符串替代从指定开始到结束的字符</li>
+<li>反转功能<br>
+public StringBuffer reverse():反转</li>
+<li>截取功能<br>
+public String substring(int start):从指定索引到末尾的字符串<br>
+public String substring(int start,int end):从指定索引开始到指定索引结束的字符串</li>
+</ul>
+<h2 id=案例>案例：</h2>
+<ul>
+<li>String和StringBuffer的相互转换,通过构造即可。</li>
+<li>把数组转成指定的字符串格式</li>
+<li>把字符串反转</li>
+<li>判断一个字符串是否是对称字符串</li>
+</ul>
+<h1 id=数组高级部分理解>数组高级部分(理解)</h1>
+<h2 id=排序>排序</h2>
+<ul>
+<li>冒泡排序</li>
+</ul>
+<blockquote>
+<p>相邻元素，两两比较，大的往后放。</p>
+</blockquote>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/bubble.gif data-srcset="/posts/stringbuffer/images/bubble.gif, images/bubble.gif 1.5x, /posts/stringbuffer/images/bubble.gif 2x" data-sizes=auto alt=/posts/stringbuffer/images/bubble.gif title=冒泡排序></p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/1.png data-srcset="/posts/stringbuffer/images/1.png, images/1.png 1.5x, /posts/stringbuffer/images/1.png 2x" data-sizes=auto alt=/posts/stringbuffer/images/1.png title=冒泡排序></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-java data-lang=java>	<span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>bubbleSort</span><span class=o>(</span><span class=kt>int</span><span class=o>[]</span> <span class=n>arr</span><span class=o>)</span> <span class=o>{</span>
+		<span class=k>for</span><span class=o>(</span><span class=kt>int</span> <span class=n>x</span><span class=o>=</span><span class=n>0</span><span class=o>;</span> <span class=n>x</span><span class=o>&lt;</span><span class=n>arr</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>1</span><span class=o>;</span> <span class=n>x</span><span class=o>++)</span> <span class=o>{</span>
+			<span class=k>for</span><span class=o>(</span><span class=kt>int</span> <span class=n>y</span><span class=o>=</span><span class=n>0</span><span class=o>;</span> <span class=n>y</span><span class=o>&lt;</span><span class=n>arr</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>1</span><span class=o>-</span><span class=n>x</span><span class=o>;</span> <span class=n>y</span><span class=o>++)</span> <span class=o>{</span>
+				<span class=k>if</span><span class=o>(</span><span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>]&gt;</span><span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>+</span><span class=n>1</span><span class=o>])</span> <span class=o>{</span>
+					<span class=kt>int</span> <span class=n>temp</span> <span class=o>=</span> <span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>];</span>
+					<span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>]</span> <span class=o>=</span> <span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>+</span><span class=n>1</span><span class=o>];</span>
+					<span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>+</span><span class=n>1</span><span class=o>]</span> <span class=o>=</span> <span class=n>temp</span><span class=o>;</span>
+				<span class=o>}</span>
+			<span class=o>}</span>
+		<span class=o>}</span>
+	<span class=o>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>选择排序</li>
+</ul>
+<blockquote>
+<p>从0开始，依次和后面的比较，小的往前放。</p>
+</blockquote>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/2.png data-srcset="/posts/stringbuffer/images/2.png, images/2.png 1.5x, /posts/stringbuffer/images/2.png 2x" data-sizes=auto alt=/posts/stringbuffer/images/2.png title=选择排序1></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-java data-lang=java>	<span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>selectSort</span><span class=o>(</span><span class=kt>int</span><span class=o>[]</span> <span class=n>arr</span><span class=o>)</span> <span class=o>{</span>
+		<span class=k>for</span><span class=o>(</span><span class=kt>int</span> <span class=n>x</span><span class=o>=</span><span class=n>0</span><span class=o>;</span> <span class=n>x</span><span class=o>&lt;</span><span class=n>arr</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>1</span><span class=o>;</span> <span class=n>x</span><span class=o>++)</span> <span class=o>{</span>
+			<span class=k>for</span><span class=o>(</span><span class=kt>int</span> <span class=n>y</span><span class=o>=</span><span class=n>x</span><span class=o>+</span><span class=n>1</span><span class=o>;</span> <span class=n>y</span><span class=o>&lt;</span><span class=n>arr</span><span class=o>.</span><span class=na>length</span><span class=o>;</span> <span class=n>y</span><span class=o>++)</span> <span class=o>{</span>
+				<span class=k>if</span><span class=o>(</span><span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>]</span> <span class=o>&lt;</span> <span class=n>arr</span><span class=o>[</span><span class=n>x</span><span class=o>])</span> <span class=o>{</span>
+					<span class=kt>int</span> <span class=n>temp</span> <span class=o>=</span> <span class=n>arr</span><span class=o>[</span><span class=n>x</span><span class=o>];</span>
+					<span class=n>arr</span><span class=o>[</span><span class=n>x</span><span class=o>]</span> <span class=o>=</span> <span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>];</span>
+					<span class=n>arr</span><span class=o>[</span><span class=n>y</span><span class=o>]</span> <span class=o>=</span> <span class=n>temp</span><span class=o>;</span>
+				<span class=o>}</span>
+			<span class=o>}</span>
+		<span class=o>}</span>
+	<span class=o>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/select.gif data-srcset="/posts/stringbuffer/images/select.gif, images/select.gif 1.5x, /posts/stringbuffer/images/select.gif 2x" data-sizes=auto alt=/posts/stringbuffer/images/select.gif title=选择排序2></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>selectSort</span><span class=o>(</span><span class=kt>int</span><span class=o>[]</span> <span class=n>a</span><span class=o>)</span>
+<span class=o>{</span>
+    <span class=kt>int</span> <span class=n>min</span><span class=o>=</span><span class=n>0</span><span class=o>;</span>
+    <span class=kt>int</span> <span class=n>temp</span><span class=o>=</span><span class=n>0</span><span class=o>;</span>
+    <span class=k>if</span><span class=o>((</span><span class=n>a</span><span class=o>==</span><span class=kc>null</span><span class=o>)||(</span><span class=n>a</span><span class=o>.</span><span class=na>length</span><span class=o>==</span><span class=n>0</span><span class=o>))</span>
+        <span class=k>return</span><span class=o>;</span>
+    <span class=k>for</span><span class=o>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>=</span><span class=n>0</span><span class=o>;</span><span class=n>i</span><span class=o>&lt;</span><span class=n>a</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>1</span><span class=o>;</span><span class=n>i</span><span class=o>++)</span>
+    <span class=o>{</span>
+        <span class=n>min</span><span class=o>=</span><span class=n>i</span><span class=o>;</span><span class=c1>//无序区的最小数据数组下标
+</span><span class=c1></span>        <span class=k>for</span><span class=o>(</span><span class=kt>int</span>  <span class=n>j</span><span class=o>=</span><span class=n>i</span><span class=o>+</span><span class=n>1</span><span class=o>;</span><span class=n>j</span><span class=o>&lt;</span><span class=n>a</span><span class=o>.</span><span class=na>length</span><span class=o>;</span><span class=n>j</span><span class=o>++)</span>
+        <span class=o>{</span>
+            <span class=c1>//在无序区中找到最小数据并保存其数组下标
+</span><span class=c1></span>            <span class=k>if</span><span class=o>(</span><span class=n>a</span><span class=o>[</span><span class=n>j</span><span class=o>]&lt;</span><span class=n>a</span><span class=o>[</span><span class=n>min</span><span class=o>])</span>
+            <span class=o>{</span>
+                <span class=n>min</span><span class=o>=</span><span class=n>j</span><span class=o>;</span>
+            <span class=o>}</span>
+        <span class=o>}</span>
+        <span class=c1>//将最小元素放到本次循环的前端
+</span><span class=c1></span>        <span class=n>temp</span><span class=o>=</span><span class=n>a</span><span class=o>[</span><span class=n>i</span><span class=o>];</span>
+        <span class=n>a</span><span class=o>[</span><span class=n>i</span><span class=o>]=</span><span class=n>a</span><span class=o>[</span><span class=n>min</span><span class=o>];</span>
+        <span class=n>a</span><span class=o>[</span><span class=n>min</span><span class=o>]=</span><span class=n>temp</span><span class=o>;</span>
+    <span class=o>}</span>
+<span class=o>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=查找>查找</h2>
+<ul>
+<li>基本查找<br>
+数组无序</li>
+<li>二分查找<br>
+数组有序</li>
+</ul>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kd>static</span> <span class=kt>int</span> <span class=nf>getIndex</span><span class=o>(</span><span class=kt>int</span><span class=o>[]</span> <span class=n>arr</span><span class=o>,</span><span class=kt>int</span> <span class=n>value</span><span class=o>)</span> <span class=o>{</span>
+	<span class=kt>int</span> <span class=n>max</span> <span class=o>=</span> <span class=n>arr</span><span class=o>.</span><span class=na>length</span><span class=o>-</span><span class=n>1</span><span class=o>;</span>
+	<span class=kt>int</span> <span class=n>min</span> <span class=o>=</span> <span class=n>0</span><span class=o>;</span>
+	<span class=kt>int</span> <span class=n>mid</span> <span class=o>=</span> <span class=o>(</span><span class=n>max</span><span class=o>+</span><span class=n>min</span><span class=o>)/</span><span class=n>2</span><span class=o>;</span>
+
+	<span class=k>while</span><span class=o>(</span><span class=n>arr</span><span class=o>[</span><span class=n>mid</span><span class=o>]</span> <span class=o>!=</span> <span class=n>value</span><span class=o>)</span> <span class=o>{</span>
+		<span class=k>if</span><span class=o>(</span><span class=n>arr</span><span class=o>[</span><span class=n>mid</span><span class=o>]</span> <span class=o>&gt;</span> <span class=n>value</span><span class=o>)</span> <span class=o>{</span>
+			<span class=n>max</span> <span class=o>=</span> <span class=n>mid</span> <span class=o>-</span> <span class=n>1</span><span class=o>;</span>
+		<span class=o>}</span><span class=k>else</span> <span class=k>if</span><span class=o>(</span><span class=n>arr</span><span class=o>[</span><span class=n>mid</span><span class=o>]</span> <span class=o>&lt;</span> <span class=n>value</span><span class=o>)</span> <span class=o>{</span>
+			<span class=n>min</span> <span class=o>=</span> <span class=n>mid</span> <span class=o>+</span> <span class=n>1</span><span class=o>;</span>
+		<span class=o>}</span>
+
+		<span class=k>if</span><span class=o>(</span><span class=n>max</span> <span class=o>&lt;</span> <span class=n>min</span><span class=o>)</span> <span class=o>{</span>
+			<span class=k>return</span> <span class=o>-</span><span class=n>1</span><span class=o>;</span>
+		<span class=o>}</span>
+
+		<span class=n>mid</span> <span class=o>=</span> <span class=o>(</span><span class=n>max</span><span class=o>+</span><span class=n>min</span><span class=o>)/</span><span class=n>2</span><span class=o>;</span>
+	<span class=o>}</span>
+
+	<span class=k>return</span> <span class=n>mid</span><span class=o>;</span>
+<span class=o>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id=arrays工具类掌握>Arrays工具类(掌握)</h1>
+<h2 id=arrays是针对数组进行操作的工具类提供了排序和查找等功能>Arrays是针对数组进行操作的工具类，提供了排序和查找等功能</h2>
+<h2 id=成员方法自己补齐方法和意思-1>成员方法：(自己补齐方法和意思)</h2>
+<ul>
+<li>把数组转成字符串
+public static String toString():将任意类型数据转换成字符串</li>
+<li>排序
+public static void sort()：</li>
+<li>二分查找
+public static int binarySearch(int[] arr,int key)</li>
+</ul>
+<h2 id=案例-1>案例：</h2>
+<p>把字符串中的字符进行排序</p>
+<h1 id=基本类型包装类掌握>基本类型包装类(掌握)</h1>
+<h2 id=为了让我们对基本类型进行更多的操作java针对每种基本类型提供了对应的包装类类型>为了让我们对基本类型进行更多的操作，java针对每种基本类型提供了对应的包装类类型。</h2>
+<h2 id=分别是哪些呢>分别是哪些呢?</h2>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>	byte		Byte
+	short		Short
+	int		Integer
+	long		Long
+	float		Float
+	double		Double
+	char		Character
+	boolean		Boolean
+特殊：  void		Void
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=integer>Integer</h2>
+<ul>
+<li>构造方法
+<ul>
+<li>Integer i = new Integer(100);</li>
+<li>Integer i = new Integer(&ldquo;100&rdquo;);</li>
+</ul>
+</li>
+<li>成员方法(自己补齐方法和意思)
+<ul>
+<li>把字符串转成int类型<br>
+String->int: Integer.parseInt()<br>
+int->String: String.valueOf()或Integer.toString()</li>
+</ul>
+</li>
+<li>JDK5的新特性</li>
+</ul>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>自动装箱：
+	int --&gt; Integer		//Integer.valueOf()
+自动拆箱：
+	Integer --&gt; int		//Integer.intValue()
+
+请解释：
+	Integer i = 100;
+	i+=200;
+	System.out.println(i);
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>byte缓存池面试题<br>
+byte,short,char&mdash;>小于127，否则报-6的错误(查看JDK)</li>
+</ul>
+<h2 id=character>Character</h2>
+<ul>
+<li>构造方法<br>
+Character ch = new Character(&lsquo;a&rsquo;);</li>
+<li>成员方法(自己补齐方法和意思)
+<ul>
+<li>判断字符是否是大写字母
+public boolean isUpperCase(char ch)</li>
+<li>判断字符是否是小写字母
+public boolean isLowerCase(Char ch)</li>
+<li>判断字符是否是数字字符
+public boolean isDigit(Char ch)</li>
+<li>把字符转成大写
+public Char toUpperCase(Char ch)</li>
+<li>把字符转成小写
+public Char toLowerCase(Char ch)</li>
+</ul>
+</li>
+</ul>
+</div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/d5a152d3502ffeceb83f55c643aa04aeeb03352f target=_blank title="commit by Cell(1024@lruihao.cn) d5a152d3502ffeceb83f55c643aa04aeeb03352f: Feat: 迁移 hexo 所有博客内容到 hugo">
+<i class="fas fa-hashtag fa-fw"></i>d5a152d</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/posts/stringbuffer/index.md target=_blank>閱讀原始文檔</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/stringbuffer/ data-title="java 常用类" data-hashtags=StringBuffer,sort,Java,Backend><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/stringbuffer/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/stringbuffer/ data-title="java 常用类" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/stringbuffer/ data-title="java 常用类"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/stringbuffer/>StringBuffer</a>,&nbsp;<a href=/tags/sort/>sort</a>,&nbsp;<a href=/tags/java/>Java</a>,&nbsp;<a href=/tags/backend/>Backend</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/wex5/ class=prev rel=prev title=WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题><i class="fas fa-angle-left fa-fw"></i>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</a>
+<a href=/posts/regexdemo/ class=next rel=next title=java正则表达式练习>java正则表达式练习<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id=comments><div id=valine class=comment></div><noscript>
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+</noscript></div></article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备43030402000254号</a></span><span class=icp-splitter>&nbsp;|&nbsp;</span><br class=icp-br><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘ICP备18020535号</a></span></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看評論>
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:20},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱！",recordIP:!0,visitor:!0}},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

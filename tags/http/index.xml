@@ -18,4 +18,15 @@
     </div>]]></description></item><item><title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
 <p>用python模拟post请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
 要求每天早上8点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
-</blockquote>]]></description></item></channel></rss>
+</blockquote>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/SingleThreadDown/images/1.png" referrerpolicy="no-referrer">
+            </div><blockquote>
+<p>实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。</p>
+</blockquote>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
+<p>通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
+</blockquote>
+<ul>
+<li>requests.get()</li>
+<li>requests.post()<br>
+最近帮朋友的项目做一个小需求，需要把后台数据定期打包发送到微信群，麻小科技涛哥给了我一个接口，post 访问。</li>
+</ul>]]></description></item></channel></rss>

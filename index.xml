@@ -29,7 +29,7 @@
         <div class="details-content">
             <div class="admonition-content">2020 已經過去半年了，由於情緒過於複杂，一直不想去回憶總結那操蛋的一年。今天疫情原因居家辦公，得空靜下來，和自己對話，不知从何說起，想到哪寫到哪吧。</div>
         </div>
-    </div>]]></description></item><item><title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title><link>https://lruihao.cn/posts/codereview/</link><pubDate>Thu, 04 Mar 2021 21:04:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/codereview/</guid><description>程式碼的持續優化 對一個入門的工程師來說，掌握程式語法與模仿範例實作是基本的能力。那有了這樣的基本能之後，要如何寫出更好的程式呢？怎樣才能夠成</description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+    </div>]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description>&lt;p>just for backup of watermark.&lt;/p></description></item><item><title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title><link>https://lruihao.cn/posts/codereview/</link><pubDate>Thu, 04 Mar 2021 21:04:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/codereview/</guid><description>程式碼的持續優化 對一個入門的工程師來說，掌握程式語法與模仿範例實作是基本的能力。那有了這樣的基本能之後，要如何寫出更好的程式呢？怎樣才能夠成</description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -42,6 +42,4 @@
         </div>
     </div>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
-</blockquote>]]></description></item><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description>&lt;blockquote>
-&lt;p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+</blockquote>]]></description></item></channel></rss>
