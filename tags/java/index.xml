@@ -44,6 +44,15 @@
 <li>static void fill(type[] a,type val)</li>
 <li>static void fill(type[] a,int fromindex,int toindex,type val)</li>
 <li>static void sort(type[] a)</li>
-</ul>]]></description></item><item><title>面向对象基础知识总结</title><link>https://lruihao.cn/posts/duixiang/</link><pubDate>Tue, 15 Jan 2019 16:07:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/duixiang/</guid><description>面向对象思想(理解) 面向对象是基于面向过程的一种编程思想 思想特点： A:是一种更符合我们思考习惯的思想 B:把复杂的问题简单化 C:让我们从执行者</description></item><item><title>java水仙花数（循环）</title><link>https://lruihao.cn/posts/xunhuan/</link><pubDate>Mon, 14 Jan 2019 17:30:24 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/xunhuan/</guid><description>&lt;blockquote>
-&lt;p>水仙花数（Narcissistic number）也被称为超完全数字不变数（pluperfect digital invariant, PPDI）、自恋数、自幂数、阿姆斯壮数或阿姆斯特朗数（Armstrong number），水仙花数是指一个 3 位数，它的每个位上的数字的 3次幂之和等于它本身（例如：1^3 + 5^3+ 3^3 = 153）。&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+</ul>]]></description></item><item><title>java猜数字小游戏（Math类）</title><link>https://lruihao.cn/posts/mathclass/</link><pubDate>Tue, 15 Jan 2019 17:33:28 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/mathclass/</guid><description><![CDATA[<blockquote>
+<p>大一刚学c的时候以前写过<a href="https://github.com/Lruihao/Grocery/tree/master/C%26C%2B%2B" target="_blank" rel="noopener noreffer">c语言版</a>的。</p>
+</blockquote>
+<ol>
+<li>Math:针对数学进行运算的类</li>
+<li>特点：没有构造方法，因为它的成员都是静态的</li>
+<li>产生随机数：
+public static double random(): 产生随机数，范围[0.0,1.0)</li>
+<li>产生1-100之间的随机数
+int number = (int)(Math.random()*100)+1;</li>
+<li>猜数字小游戏案例</li>
+</ol>]]></description></item><item><title>面向对象基础知识总结</title><link>https://lruihao.cn/posts/duixiang/</link><pubDate>Tue, 15 Jan 2019 16:07:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/duixiang/</guid><description>面向对象思想(理解) 面向对象是基于面向过程的一种编程思想 思想特点： A:是一种更符合我们思考习惯的思想 B:把复杂的问题简单化 C:让我们从执行者</description></item></channel></rss>

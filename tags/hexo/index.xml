@@ -15,7 +15,11 @@
 &lt;/blockquote></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
 <p>本以为 coding pages 与腾讯云合作后会更好，没想到正是这种初期 bug 不断，速度也是非常慢。比 gitee, 甚至 github 都要慢很多了。所以决定放弃 coding 了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的 cos 桶 xml 制作动态相册的文章，知道了对象存储这个玩意，腾讯云 COS 提供免费 50G 的存储空间，还有 CDN 加速服务，我觉得是个不错的选择，部署后发现速度还挺好。<br>
 适用于 hexo, hugo 等静态博客的部署。</p>
-</blockquote>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description>&lt;div class="featured-image">
+</blockquote>]]></description></item><item><title>hexo插件及next内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
+<p>2021/10/2 更新<br>
+博客已迁移至 Hugo, 插件演示不适用，已删除。<br>
+让文章写的好看又简洁又好用的插件！<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener noreffer">hexo完整的标签列表</a>，<a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener noreffer">next插件列表</a></p>
+</blockquote>]]></description></item><item><title>next添加支持pdf</title><link>https://lruihao.cn/posts/next-pdf/</link><pubDate>Fri, 09 Nov 2018 12:51:48 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/next-pdf/</guid><description>最新的next主题已经更新了支持PDF功能，写法也和链接写法一样，可是我没有更新，我按github上那个readme试了一下好像不可以，所以</description></item><item><title>设置单篇文章不打赏、首页不显示文章</title><link>https://lruihao.cn/posts/noreward/</link><pubDate>Tue, 06 Nov 2018 13:06:29 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/noreward/</guid><description>不打赏 出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。 原理： 因为默认的变量值为fals</description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description>&lt;div class="featured-image">
 &lt;img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
 &lt;/div>备份hexo博客 1 2 3 4 5 6 7 8 9 //如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。 cd hexo git init //初始化本地</description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description>&lt;blockquote>
 &lt;p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。&lt;/p>
@@ -31,16 +35,4 @@ next主题好像更新了，现在自带的可以用了，如果可以用了，�
         </div>
     </div>]]></description></item><item><title>hexo d 出错</title><link>https://lruihao.cn/posts/hexo-d-error/</link><pubDate>Tue, 21 Aug 2018 22:15:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-d-error/</guid><description>&lt;p>搭建这个博客以来，隔一段时间就出现一次部署失败的错误，每次都差不多，莫名其妙地出现的。。。前几次不知道怎么瞎搞就好了。&lt;br>
 现在做一下记录，防止以后出错用。&lt;br>
-错误如下&lt;/p></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
-<p>本文适合我这种纯小白。
-目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js,后加载）<br>
-但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
-</blockquote>]]></description></item><item><title>在Android上搭建hexo博客</title><link>https://lruihao.cn/posts/termux/</link><pubDate>Sat, 11 Aug 2018 16:59:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/termux/</guid><description><![CDATA[<blockquote>
-<p>暑假刚开始的时候放假回家没带电脑，只能玩手机，想折腾一下博客都没有条件，在一个发现一个app,卧槽😱，termux真的强大！(初始化需要科学上网)安卓手机上的linux简直了，在手机就可以搭了一个hexo博客，只要在github上实现分支管理就可以多终端同步更新了。恕我学疏才浅，还只想到这些！一开始想回校后，折腾一下hexo-admin实现类似动态博客一样的多终端管理(手动滑稽)，现在发现termux这样子的操作也不错嘛，挺装哔hhhhhh**<a href="https://lruihao.gitee.io" target="_blank" rel="noopener noreffer">部署后的效果</a>**</p>
-</blockquote>]]></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
-我主要用到的工具：</p>
-<ul>
-<li>console.log()</li>
-<li>Notepad++</li>
-<li><a href="http://picascii.com" target="_blank" rel="noopener noreffer">在线图片转文字工具</a></li>
-</ul>]]></description></item></channel></rss>
+错误如下&lt;/p></description></item></channel></rss>

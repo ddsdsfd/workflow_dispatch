@@ -1,4 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>CSS - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/css/</link><description>CSS - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 22 Jun 2021 16:39:47 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/css/" rel="self" type="application/rss+xml"/><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
 <p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行CSS的編碼工作。<br>
 轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
-</blockquote>]]></description></item></channel></rss>
+</blockquote>]]></description></item><item><title>前端面试题-HTML+CSS</title><link>https://lruihao.cn/posts/ms-html-css/</link><pubDate>Sat, 30 Mar 2019 22:58:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ms-html-css/</guid><description><![CDATA[<blockquote>
+<p><a href="https://github.com/ltadpoles/web-document/tree/master/Other" target="_blank" rel="noopener noreffer">原文链接</a><br>
+“卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学java和web相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
+</blockquote>
+<p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>]]></description></item></channel></rss>

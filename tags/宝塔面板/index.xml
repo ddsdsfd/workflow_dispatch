@@ -3,6 +3,8 @@
             </div><blockquote>
 <p>ImgURL是一个开源、免费的图床程序，ImgURL 2.x之后对环境要求更高，尤其是ImageMagick组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装ImgURL 2.x图床的过程（包括ImgURL 2.x需要的各种组件）
 <a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
-</blockquote>]]></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
+</blockquote>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ngrok/</guid><description>&lt;blockquote>
+&lt;p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。&lt;/p>
+&lt;/blockquote></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/bt/images/1.png" referrerpolicy="no-referrer">
             </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>]]></description></item></channel></rss>

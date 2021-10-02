@@ -1,4 +1,4 @@
-# 条件注释判断浏览器版本&lt;!--[if lt IE 9]&gt;
+# 条件注释判断浏览器版本<!--[if lt IE 9]>;
 
 
 > <p><span>&lt;!--[if !IE]&gt;&lt;!--&gt; 除IE外都可识别 &lt;!--&lt;![endif]--&gt;</span><br><span>&lt;!--[if IE]&gt; 所有的IE可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 6]&gt; 仅IE6可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 6]&gt; IE6以及IE6以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 6]&gt; IE6以及IE6以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 7]&gt; 仅IE7可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 7]&gt; IE7以及IE7以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 7]&gt; IE7以及IE7以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 8]&gt; 仅IE8可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 9]&gt; 仅IE9可识别 &lt;![endif]--&gt;</span></p>
