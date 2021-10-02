@@ -1,0 +1,12 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>CosAlbum - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/cosalbum/</link><description>CosAlbum - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 24 Nov 2019 10:52:34 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/cosalbum/" rel="self" type="application/rss+xml"/><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/cos-album/images/view.png" referrerpolicy="no-referrer">
+            </div><div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，<br>
+<strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
+开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
+        </div>
+    </div>]]></description></item></channel></rss>

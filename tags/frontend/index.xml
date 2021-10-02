@@ -5,7 +5,7 @@
             <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">cos桶相册，终于！！终于来了！！，思路参考自<a href="https://me.idealli.com/post/73ad4183.html" target="_blank" rel="noopener noreffer">给hexo静态博客添加动态相册功能</a>，<br>
+            <div class="admonition-content">cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，<br>
 <strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
 开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
         </div>
