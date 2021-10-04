@@ -9,7 +9,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hugo-admin/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-04T23:49:00+08:00">
-<meta property="article:modified_time" content="2021-10-05T01:54:30+08:00">
+<meta property="article:modified_time" content="2021-10-05T03:13:30+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="Hugo 本地管理 Shell 腳本">
@@ -17,7 +17,7 @@
 <meta name=application-name content="Lruihao's Note">
 <meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-admin/><link rel=prev href=https://lruihao.cn/posts/github-actions/><link rel=next href=https://lruihao.cn/posts/cos-album/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 本地管理 Shell 腳本","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-admin\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"shell, hugo","wordcount":743,"url":"https:\/\/lruihao.cn\/posts\/hugo-admin\/","datePublished":"2021-10-04T23:49:00+08:00","dateModified":"2021-10-05T01:54:30+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":"使用 Shell 腳本管理 Hugo 本地博客"}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-admin/><link rel=prev href=https://lruihao.cn/posts/github-actions/><link rel=next href=https://lruihao.cn/posts/cos-album/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 本地管理 Shell 腳本","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-admin\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"shell, hugo","wordcount":743,"url":"https:\/\/lruihao.cn\/posts\/hugo-admin\/","datePublished":"2021-10-04T23:49:00+08:00","dateModified":"2021-10-05T03:13:30+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":"使用 Shell 腳本管理 Hugo 本地博客"}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -156,7 +156,7 @@
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
-</span><span class=cp></span><span class=c1>#autour: Lruihao</span>
+</span><span class=cp></span><span class=c1>#author: Lruihao</span>
 <span class=nb>cd</span> ..
 <span class=nb>read</span> -p <span class=s2>&#34;Please enter the article name: &#34;</span> postName
 <span class=k>if</span> <span class=o>[</span> -z <span class=nv>$postName</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
@@ -228,7 +228,7 @@ git commit -m <span class=s2>&#34;Feat: Update public module commit id&#34;</spa
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
-</span><span class=cp></span><span class=c1>#autour: Lruihao</span>
+</span><span class=cp></span><span class=c1>#author: Lruihao</span>
 <span class=nb>cd</span> ..
 git submodule update --remote 
 git add public
@@ -289,7 +289,7 @@ git push
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
-</span><span class=cp></span><span class=c1>#autour: Lruihao</span>
+</span><span class=cp></span><span class=c1>#author: Lruihao</span>
 <span class=nb>echo</span> <span class=s2>&#34;Please enter the serial number to work&#34;</span>
 <span class=nb>echo</span> <span class=s2>&#34;--------------------------------------&#34;</span>
 <span class=nb>echo</span> <span class=s2>&#34;1. post generator&#34;</span>
@@ -347,8 +347,8 @@ sh hugo_main.sh
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/f325c5e72ef42acdfa803e117b3cfe97fcd43b42 target=_blank title="commit by Cell(1024@lruihao.cn) f325c5e72ef42acdfa803e117b3cfe97fcd43b42: Docs: 『菠菜眾長』内容更新 2021-10-05 Tue 01:54:29">
-<i class="fas fa-hashtag fa-fw"></i>f325c5e</a></span>
+<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/9b5a112af449fba8962d2904993404acd61739d9 target=_blank title="commit by Cell(1024@lruihao.cn) 9b5a112af449fba8962d2904993404acd61739d9: Fix: 修正單詞拼寫錯誤">
+<i class="fas fa-hashtag fa-fw"></i>9b5a112</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
