@@ -88,5 +88,5 @@ jobs:
 5. 選擇 存储桶目录
 6. 同步类型：單次同步、自動同步、定時同步
 
-> 同步前先執行 hugo 構建命令，eg. `hugo --minify`
+> 同步前先執行 hugo 構建命令，eg. `hugo --minify`  
 > 有 Github actions 選單次同步就好，在 Github 不好用時可用。
