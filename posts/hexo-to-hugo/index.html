@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hexo-to-hugo/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-03T15:27:58+08:00">
-<meta property="article:modified_time" content="2021-10-04T18:41:59+08:00">
+<meta property="article:modified_time" content="2021-10-04T21:39:39+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="个人博客从 Hexo 迁移至 Hugo">
@@ -21,7 +21,7 @@
 <meta name=application-name content="Lruihao's Note">
 <meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=prev href=https://lruihao.cn/posts/less-sass-scss/><link rel=next href=https://lruihao.cn/posts/cos-album/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"个人博客从 Hexo 迁移至 Hugo","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, hexo","wordcount":1159,"url":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/","datePublished":"2021-10-03T15:27:58+08:00","dateModified":"2021-10-04T18:41:59+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=prev href=https://lruihao.cn/posts/less-sass-scss/><link rel=next href=https://lruihao.cn/posts/cos-album/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"个人博客从 Hexo 迁移至 Hugo","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, hexo","wordcount":1287,"url":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/","datePublished":"2021-10-03T15:27:58+08:00","dateModified":"2021-10-04T21:39:39+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -89,7 +89,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">个人博客从 Hexo 迁移至 Hugo</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-03>2021-10-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1159 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-03>2021-10-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1287 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/posts/hexo-to-hugo/ class=leancloud_visitors data-flag-title="个人博客从 Hexo 迁移至 Hugo">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -113,8 +113,13 @@
 <li><a href=#hugo-build>hugo build</a></li>
 </ul>
 </li>
-<li><a href=#hugo-使用>Hugo 使用</a></li>
-<li><a href=#迁移待办>迁移待办</a></li>
+<li><a href=#hugoloveit-使用>Hugo&LoveIt 使用</a></li>
+<li><a href=#todo-list>Todo list</a>
+<ul>
+<li><a href=#base>Base</a></li>
+<li><a href=#theme-loveit>Theme LoveIt</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -198,7 +203,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>hugo --minify
 </code></pre></td></tr></table>
 </div>
-</div><h2 id=hugo-使用>Hugo 使用</h2>
+</div><h2 id=hugoloveit-使用>Hugo&LoveIt 使用</h2>
 <ul>
 <li><a href=https://hugoloveit.com/zh-cn/theme-documentation-basics target=_blank rel="noopener noreffer">LoveIt 主题文档 - 基本概念</a></li>
 </ul>
@@ -208,10 +213,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <li><a href=https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/ target=_blank rel="noopener noreffer">LoveIt 主题文档 - 内置 Shortcodes</a></li>
 <li><a href=https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/ target=_blank rel="noopener noreffer">LoveIt 主题文档 - 扩展 Shortcodes</a></li>
 </ul>
-<h2 id=迁移待办>迁移待办</h2>
-<blockquote>
-<p>原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。</p>
-</blockquote>
+<h2 id=todo-list>Todo list</h2>
 <a href=https://github.com/Lruihao/hugo-blog target=_blank rel="noopener noreffer" class=card-link>
 <span class=card-link-backdrop></span>
 <span class=card-link-content>
@@ -228,6 +230,10 @@ https://github.com/Lruihao/hugo-blog
 </span>
 </span>
 </a>
+<blockquote>
+<p>原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。</p>
+</blockquote>
+<h3 id=base>Base</h3>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> 迁移 hexo 所有文章内容</li>
 <li><i class="far fa-square fa-fw"></i> 迁移 hexo 所有页面内容
@@ -254,17 +260,8 @@ https://github.com/Lruihao/hugo-blog
 <li><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)</li>
 <li><i class="far fa-square fa-fw"></i> 博客 SEO 优化迁移</li>
 <li><i class="far fa-check-square fa-fw"></i> <code>Github actions</code> 自动部署到 <strong>Github pages</strong> 和 <strong>COS</strong> 脚本编写</li>
-<li><i class="far fa-square fa-fw"></i> hugo 本地管理 shell 脚本工具编写</li>
+<li><i class="far fa-check-square fa-fw"></i> hugo 本地管理 shell 脚本工具编写</li>
 <li><i class="far fa-check-square fa-fw"></i> 知乎卡片式链接 改成 hugo shortcodes, 取名 <code>cardlink</code></li>
-<li><i class="far fa-square fa-fw"></i> hugo LoveIt 主题整体优化
-<ul>
-<li><i class="far fa-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对其等</li>
-<li><i class="far fa-square fa-fw"></i> 沐目体引入</li>
-<li><i class="far fa-square fa-fw"></i> TOC 序号生成，必要时建 PR 或 issue 到 LoveIt 仓库</li>
-<li><i class="far fa-square fa-fw"></i> subtitle 等细节优化</li>
-<li><i class="far fa-square fa-fw"></i> Code Review</li>
-</ul>
-</li>
 <li><i class="far fa-square fa-fw"></i> zxm/沐目体 归档 :(
 <ul>
 <li><i class="far fa-square fa-fw"></i> 安装 沐目体</li>
@@ -280,21 +277,29 @@ https://github.com/Lruihao/hugo-blog
 <li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-square fa-fw"></i> 更换 gravatar 头像</li>
 <li><i class="far fa-square fa-fw"></i> 博客在线编辑器研究 github1s 等</li>
-<li><i class="far fa-square fa-fw"></i> COS Ablum todo
-<ul>
-<li><i class="far fa-square fa-fw"></i> Code Review</li>
-<li><i class="far fa-square fa-fw"></i> Feature: lightbox</li>
-<li><i class="far fa-square fa-fw"></i> Feature: scheme -> range img 2 show</li>
-<li><i class="far fa-square fa-fw"></i> Feature: i18n</li>
 </ul>
-</li>
-<li><i class="far fa-square fa-fw"></i> valine-admin 重构</li>
+<h3 id=theme-loveit>Theme LoveIt</h3>
+<blockquote>
+<p>hugo LoveIt 主题整体优化，<del>必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多)<br>
+先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，<br>
+唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。<br>
+之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</p>
+</blockquote>
+<ul>
+<li><i class="far fa-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对其等</li>
+<li><i class="far fa-square fa-fw"></i> 沐目体引入</li>
+<li><i class="far fa-square fa-fw"></i> TOC 序号生成</li>
+<li><i class="far fa-square fa-fw"></i> Fix: 无标题时也会生成目录的 BUG</li>
+<li><i class="far fa-square fa-fw"></i> subtitle 等细节优化</li>
+<li><i class="far fa-square fa-fw"></i> Fix: typeit 打印代码时跑版的问题</li>
+<li><i class="far fa-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
+<li><i class="far fa-square fa-fw"></i> Code Review</li>
 </ul></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-04&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/32998f67d8b73369d0be8d5a6603446875a1f824 target=_blank title="commit by Cell(1024@lruihao.cn) 32998f67d8b73369d0be8d5a6603446875a1f824: Post: 更新博客迁移进度">
-<i class="fas fa-hashtag fa-fw"></i>32998f6</a></span>
+<span>更新於 2021-10-04&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/d418fdd0fd7acaafa4280f01149b75bab905213d target=_blank title="commit by Cell(1024@lruihao.cn) d418fdd0fd7acaafa4280f01149b75bab905213d: Docs: 總結最近工作學習生活各類待辦事項">
+<i class="fas fa-hashtag fa-fw"></i>d418fdd</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
