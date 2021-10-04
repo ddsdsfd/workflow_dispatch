@@ -4,20 +4,20 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>poj-1321 棋盘问题（dfs） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="poj-1321 棋盘问题（dfs）">
-<meta property="og:description" content="Time Limit: 1000MS Memory Limit: 10000K Total Submissions: 63659 Accepted: 30423 Description 在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行">
+<title>Hugo 本地管理 Shell 腳本 - 菠菜眾長</title><meta name=Description content="使用 Shell 腳本管理 Hugo 本地博客"><meta property="og:title" content="Hugo 本地管理 Shell 腳本">
+<meta property="og:description" content="使用 Shell 腳本管理 Hugo 本地博客">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2018-07-22T11:58:14+00:00">
-<meta property="article:modified_time" content="2021-10-04T17:54:53+00:00">
+<meta property="og:url" content="https://lruihao.cn/posts/hugo-admin/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-10-04T23:49:00+08:00">
+<meta property="article:modified_time" content="2021-10-05T01:54:30+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="poj-1321 棋盘问题（dfs）">
-<meta name=twitter:description content="Time Limit: 1000MS Memory Limit: 10000K Total Submissions: 63659 Accepted: 30423 Description 在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行">
+<meta name=twitter:title content="Hugo 本地管理 Shell 腳本">
+<meta name=twitter:description content="使用 Shell 腳本管理 Hugo 本地博客">
 <meta name=application-name content="Lruihao's Note">
 <meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/><link rel=prev href=https://lruihao.cn/posts/poj-1426-find-the-multipledfs/><link rel=next href=https://lruihao.cn/posts/poj-2251-dungeon-master%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"poj-1321 棋盘问题（dfs）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"DFS, ACM, 搜索, POJ, C\u002b\u002b","wordcount":543,"url":"https:\/\/lruihao.cn\/posts\/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs\/","datePublished":"2018-07-22T11:58:14+00:00","dateModified":"2021-10-04T17:54:53+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-admin/><link rel=prev href=https://lruihao.cn/posts/github-actions/><link rel=next href=https://lruihao.cn/posts/cos-album/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 本地管理 Shell 腳本","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-admin\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"shell, hugo","wordcount":743,"url":"https:\/\/lruihao.cn\/posts\/hugo-admin\/","datePublished":"2021-10-04T23:49:00+08:00","dateModified":"2021-10-05T01:54:30+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":"使用 Shell 腳本管理 Hugo 本地博客"}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -83,10 +83,10 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">poj-1321 棋盘问题（dfs）</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-22>2018-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 543 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/ class=leancloud_visitors data-flag-title="poj-1321 棋盘问题（dfs）">
+</div><article class="page single"><h1 class="single-title animated flipInX">Hugo 本地管理 Shell 腳本</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-04>2021-10-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 743 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/hugo-admin/ class=leancloud_visitors data-flag-title="Hugo 本地管理 Shell 腳本">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -98,68 +98,154 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href=#實現>實現</a>
 <ul>
-<li><a href=#description>Description</a></li>
-<li><a href=#input>Input</a></li>
-<li><a href=#output>Output</a></li>
-<li><a href=#sample-input>Sample Input</a></li>
-<li><a href=#sample-output>Sample Output</a></li>
-<li><a href=#source>Source</a></li>
-<li><a href=#思路>思路</a></li>
-<li><a href=#ac代码>AC代码</a></li>
+<li><a href=#post_generatorsh>post_generator.sh</a></li>
+<li><a href=#hugo_serversh>hugo_server.sh</a></li>
+<li><a href=#hugo_buildersh>hugo_builder.sh</a></li>
+<li><a href=#public_asyncsh>public_async.sh</a></li>
+<li><a href=#auto_pushsh>auto_push.sh</a></li>
+<li><a href=#hugo_mainsh>hugo_main.sh</a></li>
 </ul>
 </li>
+<li><a href=#使用>使用</a></li>
 </ul>
 </li>
 </ul>
 </nav></div>
-</div><div class=content id=content><p>Time Limit: 1000MS<br>
-Memory Limit: 10000K<br>
-Total Submissions: 63659<br>
-Accepted: 30423</p>
-<h3 id=description>Description</h3>
-<p>在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放k个棋子的所有可行的摆放方案C。</p>
-<h3 id=input>Input</h3>
-<p>输入含有多组测试数据。<br>
-每组数据的第一行是两个正整数，n k，用一个空格隔开，表示了将在一个n * n的矩阵内描述棋盘，以及摆放棋子的数目。 n &lt;= 8 , k &lt;= n<br>
-当为-1 -1时表示输入结束。<br>
-随后的n行描述了棋盘的形状：每行有n个字符，其中 # 表示棋盘区域， . 表示空白区域（数据保证不出现多余的空白行或者空白列）。</p>
-<h3 id=output>Output</h3>
-<p>对于每一组数据，给出一行输出，输出摆放的方案数目C （数据保证C&lt;2^31）。</p>
-<h3 id=sample-input>Sample Input</h3>
-<pre><code>2 1
-#.
-.#
-4 4
-...#
-..#.
-.#..
-#...
--1 -1
+</div><div class=content id=content><div class="details admonition abstract open">
+<div class="details-summary admonition-title">
+<i class="icon fas fa-list-ul fa-fw"></i>摘要<i class="details-icon fas fa-angle-right fa-fw"></i>
+</div>
+<div class=details-content>
+<div class=admonition-content>在使用 hugo 寫博客的過程中會使用到一些命令，包括 Git 的使用也會用到 Git 命令，但是這些命令我感覺知道就好，沒必要因輸入命令儿增加寫博客和部署博客的額外工作。<br>
+自然要想辦法簡化這些過程，Git 還好有 SourceTree 等工具，Hugo 卻沒有，也懶得去網絡上找類似以前 hexo 有 hexo-admin 的插件可以讓大家在瀏覽器寫博客，因為我覺得這和靜態博客初衷背道而馳，於是我就折中方案，寫了一個滿足日常需求的 Shell 腳本，生成管理本地博客。</div>
+</div>
+</div>
+<h2 id=實現>實現</h2>
+<p>一共六個腳本，防止 <code>hugo-site/_localadmin/</code> 下</p>
+<pre><code>_localadmin/
+  ├── auto_push.sh       # 自動化提交源碼
+  ├── hugo_builder.sh    # 構建 hugo 命令
+  ├── hugo_main.sh       # 主介面入口
+  ├── hugo_server.sh     # 啟動本地服務
+  ├── post_generator.sh  # 創建文章
+  └── public_async.sh    # 同步 public 子模組
 </code></pre>
-<h3 id=sample-output>Sample Output</h3>
-<pre><code>2
-1
-</code></pre>
-<h3 id=source>Source</h3>
-<p>蔡错@pku</p>
-<h3 id=思路>思路</h3>
-<ul>
-<li>下子方案数就相当于遍历图的不同遍历数，用dfs变形。</li>
-<li>理解以下数据还有样例应该差不多了</li>
-</ul>
-<p><code>3 2</code>
-<code>#..</code>
-<code>.#.</code>
-<code>..#</code>
-<code>3</code></p>
-<p><code>3 2</code>
-<code>#..</code>
-<code>.##</code>
-<code>..#</code>
-<code>4</code></p>
-<h3 id=ac代码>AC代码</h3>
+<h3 id=post_generatorsh>post_generator.sh</h3>
+<ol>
+<li>輸入文章名稱 (建議使用英文)</li>
+<li>文章是否會插入圖片等資源 (默認：否)</li>
+</ol>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
+</span><span class=cp></span><span class=c1>#autour: Lruihao</span>
+<span class=nb>cd</span> ..
+<span class=nb>read</span> -p <span class=s2>&#34;Please enter the article name: &#34;</span> postName
+<span class=k>if</span> <span class=o>[</span> -z <span class=nv>$postName</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
+  <span class=nb>echo</span> <span class=s2>&#34;The article name is required!&#34;</span>
+<span class=k>else</span>
+  <span class=nb>read</span> -p <span class=s2>&#34;Will there be pictures in this article? [y/n]...&#34;</span> choice
+  <span class=k>if</span> <span class=o>[</span> <span class=nv>$choice</span> <span class=o>=</span> <span class=s2>&#34;y&#34;</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
+    hugo new posts/<span class=nv>$postName</span>/index.md
+  <span class=k>else</span>
+    hugo new posts/<span class=nv>$postName</span>.md
+  <span class=k>fi</span>
+<span class=k>fi</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=hugo_serversh>hugo_server.sh</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>cd</span> ..
+hugo server --disableFastRender
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=hugo_buildersh>hugo_builder.sh</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>cd</span> ..
+hugo --minify
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=public_asyncsh>public_async.sh</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>cd</span> ..
+git submodule update --remote 
+git add public
+git commit -m <span class=s2>&#34;Feat: Update public module commit id&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=auto_pushsh>auto_push.sh</h3>
+<p>不輸入 Git 提交訊息會使用腳本中默認訊息 <code>Docs: 『菠菜眾長』内容更新 YYYY-MM-DD week hh:mm::ss</code></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
+</span><span class=cp></span><span class=c1>#autour: Lruihao</span>
+<span class=nb>cd</span> ..
+git submodule update --remote 
+git add public
+git commit -m <span class=s2>&#34;Feat: Update public module commit id&#34;</span>
+git add .
+<span class=nb>read</span> -p <span class=s2>&#34;Please enter commit message: &#34;</span> commitMsg
+<span class=k>if</span> <span class=o>[</span> -z <span class=nv>$commitMsg</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
+  <span class=nv>commitMsg</span><span class=o>=</span><span class=s2>&#34;Docs: 『菠菜眾長』内容更新 </span><span class=k>$(</span>date +<span class=s1>&#39;%F %a %T&#39;</span><span class=k>)</span><span class=s2>&#34;</span>
+<span class=k>fi</span>
+git commit -m <span class=s2>&#34;</span><span class=nv>$commitMsg</span><span class=s2>&#34;</span>
+git push
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=hugo_mainsh>hugo_main.sh</h3>
+<blockquote>
+<p>可單獨執行子腳本也可以通過主介面來選擇序號執行</p>
+</blockquote>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -200,88 +286,89 @@ Accepted: 30423</p>
 </span><span class=lnt>36
 </span><span class=lnt>37
 </span><span class=lnt>38
-</span><span class=lnt>39
-</span><span class=lnt>40
-</span><span class=lnt>41
-</span><span class=lnt>42
-</span><span class=lnt>43
-</span><span class=lnt>44
-</span><span class=lnt>45
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=cp>#include</span><span class=cpf>&lt;iostream&gt;</span><span class=cp>
-</span><span class=cp>#include</span><span class=cpf>&lt;cstdio&gt;</span><span class=cp>
-</span><span class=cp>#include</span><span class=cpf>&lt;cstring&gt;</span><span class=cp>
-</span><span class=cp>#include</span><span class=cpf>&lt;algorithm&gt;</span><span class=cp>
-</span><span class=cp></span><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
-<span class=kt>char</span> <span class=n>mp</span><span class=p>[</span><span class=mi>8</span><span class=p>][</span><span class=mi>8</span><span class=p>];</span>
-<span class=kt>int</span> <span class=n>v</span><span class=p>[</span><span class=mi>8</span><span class=p>];</span>
-<span class=kt>int</span> <span class=n>n</span><span class=p>,</span><span class=n>k</span><span class=p>,</span><span class=n>w</span><span class=p>,</span><span class=n>r</span><span class=p>;</span><span class=c1>//状态计数器r
-</span><span class=c1></span><span class=kt>void</span> <span class=nf>dfs</span><span class=p>(</span><span class=kt>int</span> <span class=n>x</span><span class=p>)</span><span class=c1>//逐行深搜，x为当前搜索行
-</span><span class=c1></span><span class=p>{</span>
-    <span class=k>if</span><span class=p>(</span><span class=n>w</span><span class=o>==</span><span class=n>k</span><span class=p>)</span><span class=c1>//下子数w
-</span><span class=c1></span>    <span class=p>{</span>
-        <span class=n>r</span><span class=o>++</span><span class=p>;</span><span class=k>return</span><span class=p>;</span>
-    <span class=p>}</span>
-    <span class=k>if</span><span class=p>(</span><span class=n>x</span><span class=o>==</span><span class=n>n</span><span class=p>)</span><span class=k>return</span><span class=p>;</span>
-    <span class=k>for</span><span class=p>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=n>i</span><span class=o>&lt;</span><span class=n>n</span><span class=p>;</span><span class=n>i</span><span class=o>++</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=k>if</span><span class=p>(</span><span class=n>v</span><span class=p>[</span><span class=n>i</span><span class=p>]</span><span class=o>!=</span><span class=mi>1</span><span class=o>&amp;&amp;</span><span class=n>mp</span><span class=p>[</span><span class=n>x</span><span class=p>][</span><span class=n>i</span><span class=p>]</span><span class=o>==</span><span class=sc>&#39;#&#39;</span><span class=p>)</span>
-        <span class=p>{</span>
-            <span class=n>v</span><span class=p>[</span><span class=n>i</span><span class=p>]</span><span class=o>=</span><span class=mi>1</span><span class=p>;</span>
-            <span class=n>w</span><span class=o>++</span><span class=p>;</span>
-            <span class=n>dfs</span><span class=p>(</span><span class=n>x</span><span class=o>+</span><span class=mi>1</span><span class=p>);</span>
-            <span class=n>w</span><span class=o>--</span><span class=p>;</span>
-            <span class=n>v</span><span class=p>[</span><span class=n>i</span><span class=p>]</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span>
-        <span class=p>}</span>
-    <span class=p>}</span>
-    <span class=n>dfs</span><span class=p>(</span><span class=n>x</span><span class=o>+</span><span class=mi>1</span><span class=p>);</span><span class=c1>//搜索下一行
-</span><span class=c1></span><span class=p>}</span>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
+</span><span class=cp></span><span class=c1>#autour: Lruihao</span>
+<span class=nb>echo</span> <span class=s2>&#34;Please enter the serial number to work&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;--------------------------------------&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;1. post generator&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;2. hugo server&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;3. hugo build&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;4. public async&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;5. auto push&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;--------------------------------------&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;Press Ctrl+C to stop&#34;</span>
 
-<span class=kt>int</span> <span class=nf>main</span><span class=p>()</span>
-<span class=p>{</span>
-    <span class=k>while</span><span class=p>(</span><span class=n>cin</span><span class=o>&gt;&gt;</span><span class=n>n</span><span class=o>&gt;&gt;</span><span class=n>k</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=k>if</span><span class=p>(</span><span class=n>n</span><span class=o>==-</span><span class=mi>1</span><span class=o>&amp;&amp;</span><span class=n>k</span><span class=o>==-</span><span class=mi>1</span><span class=p>)</span>
-            <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
-        <span class=n>memset</span><span class=p>(</span><span class=n>mp</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=k>sizeof</span><span class=p>(</span><span class=n>mp</span><span class=p>));</span>
-        <span class=n>memset</span><span class=p>(</span><span class=n>v</span><span class=p>,</span><span class=mi>0</span><span class=p>,</span><span class=k>sizeof</span><span class=p>(</span><span class=n>v</span><span class=p>));</span>
-        <span class=k>for</span><span class=p>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=n>i</span><span class=o>&lt;</span><span class=n>n</span><span class=p>;</span><span class=n>i</span><span class=o>++</span><span class=p>)</span>
-            <span class=n>cin</span><span class=o>&gt;&gt;</span><span class=n>mp</span><span class=p>[</span><span class=n>i</span><span class=p>];</span>
-        <span class=n>w</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=n>r</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span>
-        <span class=n>dfs</span><span class=p>(</span><span class=mi>0</span><span class=p>);</span>
-        <span class=n>cout</span><span class=o>&lt;&lt;</span><span class=n>r</span><span class=o>&lt;&lt;</span><span class=n>endl</span><span class=p>;</span>
-    <span class=p>}</span>
-<span class=p>}</span>
+<span class=nb>read</span> num
+<span class=k>case</span> <span class=nv>$num</span> in
+  1<span class=o>)</span> 
+    sh post_generator.sh
+    <span class=p>;;</span>
+  2<span class=o>)</span>
+    sh hugo_server.sh
+    <span class=p>;;</span>
+  3<span class=o>)</span>
+    sh hugo_builder.sh
+    <span class=p>;;</span>
+  4<span class=o>)</span>
+    sh public_async.sh
+    <span class=p>;;</span>
+  5<span class=o>)</span>
+    sh auto_push.sh
+    <span class=p>;;</span>
+  *<span class=o>)</span>
+    <span class=nb>echo</span> <span class=s2>&#34;There is no such serial number&#34;</span>
+    <span class=p>;;</span>
+<span class=k>esac</span>
 
+<span class=nb>echo</span> <span class=s2>&#34;Press any key to continue...&#34;</span>
+<span class=nb>read</span> x
+clear
+sh hugo_main.sh
 </code></pre></td></tr></table>
 </div>
-</div><p><a href=https://blog.csdn.net/hurmishine/article/details/49835913 target=_blank rel="noopener noreffer">传送门</a></p>
-</div><div class=post-footer id=post-footer>
+</div><h2 id=使用>使用</h2>
+<ol>
+<li>將 <code>hugo_main.sh</code> 建立桌面快捷鍵</li>
+<li>雙擊 <code>hugo_main.sh</code> 進入根據提示使用即可</li>
+</ol>
+<p>由於一般寫博客會便邊寫邊預覽，所以一般開兩個主介面窗口，如下圖：</p>
+<blockquote>
+<ul>
+<li>一個選擇 <code>2</code> 啟動本地服務</li>
+<li>一個用於生成文章，部署文章等</li>
+</ul>
+</blockquote>
+<p><figure><a class=lightgallery href=/posts/hugo-admin/images/hugo-admin1.png title="Hugo Admin" data-thumbnail=/posts/hugo-admin/images/hugo-admin1.png data-sub-html="<h2>Hugo Admin</h2><p>Hugo Admin</p>">
+<img class=lazyload src=/svg/loading.min.svg data-src=images/hugo-admin1.png data-srcset="/posts/hugo-admin/images/hugo-admin1.png, images/hugo-admin1.png 1.5x, /posts/hugo-admin/images/hugo-admin1.png 2x" data-sizes=auto alt=/posts/hugo-admin/images/hugo-admin1.png>
+</a><figcaption class=image-caption>Hugo Admin</figcaption>
+</figure></p></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-04</span>
+<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/c27eca2dd1427a44a8c38042a797fd54643608de target=_blank title="commit by Cell(1024@lruihao.cn) c27eca2dd1427a44a8c38042a797fd54643608de: Docs: 『菠菜眾長』内容更新 2021-10-05 Tue 01:54:29">
+<i class="fas fa-hashtag fa-fw"></i>c27eca2</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
 <div class=post-info-line>
 <div class=post-info-md><span>
-<a class=link-to-markdown href=/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/index.md target=_blank>閱讀原始文檔</a>
+<a class=link-to-markdown href=/posts/hugo-admin/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/ data-title="poj-1321 棋盘问题（dfs）" data-hashtags=DFS,ACM,搜索,POJ,C++><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/ data-title="poj-1321 棋盘问题（dfs）" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/ data-title="poj-1321 棋盘问题（dfs）"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hugo-admin/ data-title="Hugo 本地管理 Shell 腳本" data-hashtags=shell,hugo><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hugo-admin/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hugo-admin/ data-title="Hugo 本地管理 Shell 腳本" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hugo-admin/ data-title="Hugo 本地管理 Shell 腳本"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/dfs/>DFS</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/%E6%90%9C%E7%B4%A2/>搜索</a>,&nbsp;<a href=/tags/poj/>POJ</a>,&nbsp;<a href=/tags/c++/>C++</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/shell/>shell</a>,&nbsp;<a href=/tags/hugo/>hugo</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/poj-1426-find-the-multipledfs/ class=prev rel=prev title="poj-1426-Find The Multiple(dfs)"><i class="fas fa-angle-left fa-fw"></i>poj-1426-Find The Multiple(dfs)</a>
-<a href=/posts/poj-2251-dungeon-master%E4%B8%89%E7%BB%B4bfs%E6%9C%80%E7%9F%AD%E8%B7%AF/ class=next rel=next title="poj-2251-Dungeon Master（三维bfs最短路）">poj-2251-Dungeon Master（三维bfs最短路）<i class="fas fa-angle-right fa-fw"></i></a></div>
+<div class=post-nav><a href=/posts/github-actions/ class=prev rel=prev title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶"><i class="fas fa-angle-left fa-fw"></i>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</a>
+<a href=/posts/cos-album/ class=next rel=next title=利用腾讯云为静态页面添加“动态”相册>利用腾讯云为静态页面添加“动态”相册<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

@@ -1,10 +1,18 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Git - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/git/</link><description>Git - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 15 Aug 2019 18:30:31 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/git/" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Git - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/git/</link><description>Git - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/git/" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
             </div><ul>
 <li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
 <li><strong>暂存区</strong>：英文叫stage, 或index。一般存放在 &ldquo;.git目录下&rdquo; 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
 <li><strong>版本库</strong>：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。</li>
-</ul>]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
+</ul>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。<br>
+也就是説實現了在線寫靜態博客的需求。</div>
+        </div>
+    </div>]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
 <ul>
 <li>絕對不寫死程式</li>
 <li>不留不要用的、垃圾程式碼</li>

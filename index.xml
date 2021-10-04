@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>菠菜眾長</title><link>https://lruihao.cn/</link><description>Lruihao's Note</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 03 Oct 2021 15:27:58 +0800</lastBuildDate><atom:link href="https://lruihao.cn/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>菠菜眾長</title><link>https://lruihao.cn/</link><description>Lruihao's Note</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:49:00 +0800</lastBuildDate><atom:link href="https://lruihao.cn/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
             </div><ul>
 <li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
@@ -19,6 +19,22 @@
 <strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
 开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
         </div>
+    </div>]]></description></item><item><title>Hugo 本地管理 Shell 腳本</title><link>https://lruihao.cn/posts/hugo-admin/</link><pubDate>Mon, 04 Oct 2021 23:49:00 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-admin/</guid><description><![CDATA[<div class="details admonition abstract open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw"></i>摘要<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">在使用 hugo 寫博客的過程中會使用到一些命令，包括 Git 的使用也會用到 Git 命令，但是這些命令我感覺知道就好，沒必要因輸入命令儿增加寫博客和部署博客的額外工作。<br>
+自然要想辦法簡化這些過程，Git 還好有 SourceTree 等工具，Hugo 卻沒有，也懶得去網絡上找類似以前 hexo 有 hexo-admin 的插件可以讓大家在瀏覽器寫博客，因為我覺得這和靜態博客初衷背道而馳，於是我就折中方案，寫了一個滿足日常需求的 Shell 腳本，生成管理本地博客。</div>
+        </div>
+    </div>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。<br>
+也就是説實現了在線寫靜態博客的需求。</div>
+        </div>
     </div>]]></description></item><item><title>个人博客从 Hexo 迁移至 Hugo</title><link>https://lruihao.cn/posts/hexo-to-hugo/</link><pubDate>Sun, 03 Oct 2021 15:27:58 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-to-hugo/</guid><description>&lt;blockquote>
 &lt;p>电脑升级 win 11 后，分盘操作存在 bug, 然后又不小心把装代码的盘格式化了，虽然都有备份到 github, 但是当时为了省事，hexo Node 安装的很多以来插件都没有备份，现在又现在不到了，所以 hexo 博客没办法完整复原，另外，早就觉得基于 Node 的 hexo 实在有些臃肿，且博客内容多了以后部署太慢，就干脆乘机换了好了，经过一段时间寻找，最终选择了基于 Go 的 hugo, 记录一下迁移过程及待办事项。&lt;/p>
 &lt;/blockquote></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
@@ -31,15 +47,4 @@
         <div class="details-content">
             <div class="admonition-content">2020 已經過去半年了，由於情緒過於複杂，一直不想去回憶總結那操蛋的一年。今天疫情原因居家辦公，得空靜下來，和自己對話，不知从何說起，想到哪寫到哪吧。</div>
         </div>
-    </div>]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description>&lt;p>just for backup of watermark.&lt;/p></description></item><item><title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title><link>https://lruihao.cn/posts/codereview/</link><pubDate>Thu, 04 Mar 2021 21:04:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/codereview/</guid><description>程式碼的持續優化 對一個入門的工程師來說，掌握程式語法與模仿範例實作是基本的能力。那有了這樣的基本能之後，要如何寫出更好的程式呢？怎樣才能夠成</description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
-<div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>事情是這樣，年前和朋友一起合租了一個房子，然後捏，生活嘛，除了開心，當然是乾飯最大啦！</p>
-<p>自然就會有購物，買菜等日常消費，那就要記賬，一開始是各自記在手機的便簽上，最後再算一下；<br>
-三個人，一共七种組合消費，排除各自消費的三種情況，也有四種 (<code>AB, AC, BC, ABC</code>)。好麻煩啊！！！</p>
-</div>
-        </div>
-    </div>]]></description></item></channel></rss>
+    </div>]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description>&lt;p>just for backup of watermark.&lt;/p></description></item></channel></rss>
