@@ -80,8 +80,23 @@
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=文章><img class=lazyload src=/svg/loading.min.svg data-src=/images/avatar.jpg data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" data-sizes=auto alt=/images/avatar.jpg title=/images/avatar.jpg></a></div><h1 class=home-title>Lruihao's Note</h1><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/Lruihao title=GitHub target=_blank rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://twitter.com/xxxx title=Twitter target=_blank rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href=https://www.instagram.com/xxxx title=Instagram target=_blank rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href=https://facebook.com/xxxx title=facebook target=_blank rel="noopener noreffer me"><i class="fab fa-facebook fa-fw"></i></a><a href=https://t.me/xxxx title=Telegram target=_blank rel="noopener noreffer me"><i class="fab fa-telegram-plane fa-fw"></i></a><a href=https://weibo.com/liahao title=微博 target=_blank rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href=mailto:1024@lruihao.cn title=Email rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
-<article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=文章><img class=lazyload src=/svg/loading.min.svg data-src=/images/avatar.jpg data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" data-sizes=auto alt=/images/avatar.jpg title=/images/avatar.jpg></a></div><h1 class=home-title>Lruihao's Note</h1><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/Lruihao title=GitHub target=_blank rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://weibo.com/liahao title=微博 target=_blank rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href=mailto:1024@lruihao.cn title=Email rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
+<article class="single summary" itemscope itemtype=http://schema.org/Article><div class=featured-image-preview>
+<a href=/posts/async-defer/><img class=lazyload src=/svg/loading.min.svg data-src=/posts/async-defer/images/async_vs_defer.svg data-srcset="/posts/async-defer/images/async_vs_defer.svg, /posts/async-defer/images/async_vs_defer.svg 1.5x, /posts/async-defer/images/async_vs_defer.svg 2x" data-sizes=auto alt=/posts/async-defer/images/async_vs_defer.svg title=/posts/async-defer/images/async_vs_defer.svg></a>
+</div><h1 class=single-title itemprop="name headline">
+<a href=/posts/async-defer/>script 的三种加载方式 (async, defer)</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2019-09-08>2019-09-08</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div><div class=content><div class="details admonition note open">
+<div class="details-summary admonition-title">
+<i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+</div>
+<div class=details-content>
+<div class=admonition-content>JS的加载分为两个部分：下载和执行。<br>
+浏览器在执行HTML的时候如果遇到<code>&lt;script></code>时会停止页面的渲染,去下载和执行js的文件直接遇见<code>&lt;/scirpt></code>会继续渲染页面。故浏览器在执行js文件的时候浏览器表现为一片空白,为了解决这个问题ECMAScript定义了defer和async两个属性用于控制JS的下载和执行。</div>
+</div>
+</div></div><div class=post-footer>
+<a href=/posts/async-defer/>閱讀全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/javascript/>JavaScript</a>,&nbsp;<a href=/tags/defer/>defer</a>,&nbsp;<a href=/tags/async/>async</a>,&nbsp;<a href=/tags/frontend/>Frontend</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/sublime-text3/>Sublime Text3 快捷键大全</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2019-08-15>2019-08-15</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/fullstack/><i class="far fa-folder fa-fw"></i>Fullstack</a></span></div><div class=content><blockquote>
 <p><a href=https://www.cnblogs.com/rudong/p/7889114.html target=_blank rel="noopener noreffer">转自--入冬</a><br>
@@ -156,15 +171,6 @@
 </blockquote></div><div class=post-footer>
 <a href=/posts/judgetriangle/>閱讀全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/>黑盒测试</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/hustoj/>HustOJ 基础搭建教程</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2019-05-17>2019-05-17</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/linux/><i class="far fa-folder fa-fw"></i>linux</a></span></div><div class=content><blockquote>
-<p>目前 HustOj 在 GitHUb 地址是：<a href=https://github.com/zhblue/hustoj target=_blank rel="noopener noreffer">https://github.com/zhblue/hustoj</a><br>
-<strong>安装时注意ubuntu版本</strong>，没条件的可以在自己ubuntu上尝试，或者虚拟机上（关注公众号回复<code>ubuntu16.04</code>获取iso镜像文件），也可以在云实验室的云服务器上做做实验。<br>
-更多说明及ACM/NOIP题库下载见官网博客<a href=http://www.hustoj.com/ target=_blank rel="noopener noreffer">代码的那些事|程序员回忆录</a></p>
-</blockquote></div><div class=post-footer>
-<a href=/posts/hustoj/>閱讀全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hustoj/>hustoj</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/ubuntu/>ubuntu</a>,&nbsp;<a href=/tags/linux/>linux</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
