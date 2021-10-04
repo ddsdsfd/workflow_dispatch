@@ -78,7 +78,7 @@ fo.write(",".join(ls))
 fi.close()
 fo.close()
 ```
-![文件读取及字符统计结果](images/tj.jpg)
+![文件读取及字符统计结果](images/tj.png)
 
 ## numpy模块
 **...**
