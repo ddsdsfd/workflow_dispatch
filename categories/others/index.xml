@@ -1,4 +1,22 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>others - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/others/</link><description>others - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 26 May 2019 18:50:53 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/others/" rel="self" type="application/rss+xml"/><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>others - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/others/</link><description>others - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/others/" rel="self" type="application/rss+xml"/><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
+    <span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+        <span class="card-link-text">
+            <span class="card-link-title">插件地址</span>
+            <span class="card-link-meta">
+                <span class="card-link-url">
+                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+                https://github.com/robinchenyu/imagepaste
+            </span>
+        </span>
+        <span class="card-link-imageCell">
+            
+        </span>
+    </span>
+</a>]]></description></item><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
 <p>黑盒测试着重测试软件功能，它并不涉及程序的内部结构和内容特性，主要根据规格说明，只依靠被测试程序的输入和输出之间关系或程序的功能来设计测试用例。<br>
 白盒测试则清楚程序内部的结构以及是如何运作的，因此白盒测试需要对系统内部的结构和工作原理有一个清楚的了解。</p>
 </blockquote>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wex5/</guid><description>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法</description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description>外存的组织方式 连续组织方式 连续组织方式的优点 顺序访问容易 顺序访问速度快 连续组织方式的缺点 分配连续的存储空间 必须知道文件长度 删除与插入数据不灵</description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
@@ -74,4 +92,4 @@
 <p><em><strong>注：仅用于个人非商用！</strong></em></p>
 </div>
         </div>
-    </div>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description>概念 流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分</description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/data/</guid><description>数据的表示 数据的表示可分为：原码，反码和补码。（二进制） 原码： 符号位0为正，1为负。 反码： 符号位0为正，1为负。 正数： 反码同原码。 负数： 符号</description></item></channel></rss>
+    </div>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description>概念 流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分</description></item></channel></rss>

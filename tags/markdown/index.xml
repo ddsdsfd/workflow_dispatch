@@ -1,8 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Markdown - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/markdown/</link><description>Markdown - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/markdown/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Markdown - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/markdown/</link><description>Markdown - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/markdown/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
-</blockquote>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
+    <span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+        <span class="card-link-text">
+            <span class="card-link-title">插件地址</span>
+            <span class="card-link-meta">
+                <span class="card-link-url">
+                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+                https://github.com/robinchenyu/imagepaste
+            </span>
+        </span>
+        <span class="card-link-imageCell">
+            
+        </span>
+    </span>
+</a>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>]]></description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
 <p>本文来自kio对Markdown的基础教程

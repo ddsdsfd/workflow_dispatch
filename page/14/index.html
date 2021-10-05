@@ -82,6 +82,14 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=文章><img class=lazyload src=/svg/loading.min.svg data-src=/images/avatar.jpg data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" data-sizes=auto alt=/images/avatar.jpg title=/images/avatar.jpg></a></div><h1 class=home-title>Lruihao's Note</h1><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/Lruihao title=GitHub target=_blank rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://weibo.com/liahao title=微博 target=_blank rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href=mailto:1024@lruihao.cn title=Email rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/cfcontest1017/>Codeforces Round 502(Div.1 + Div.2)</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-08-09>2018-08-09</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><h3 id=a-the-rankhttpscodeforcescomcontest1017problema><a href=https://codeforces.com/contest/1017/problem/A target=_blank rel="noopener noreffer">A. The Rank</a></h3>
+<p>题目大意：<br>
+给出n个学生的成绩，Thomas Smith的成绩是第一行，然后要按总成绩进行排序，总分相同的按编号从小到大排；<br>
+开始看还以为要写sort的cmp函数进行多条件排序，敲完才发现其实只要按总分就可以了，因为托马斯的id是一，必然会排在前面。</p></div><div class=post-footer>
+<a href=/posts/cfcontest1017/>閱讀全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/>组合数学</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/euler/>欧拉函数</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-08-08>2018-08-08</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><h3 id=欧拉函数是求小于x并且和x互质httpsbaikebaiducomiteme4ba92e8b4a8577412fraladdin的数的个数><em><strong>欧拉函数是求小于x并且和x<a href="https://baike.baidu.com/item/%E4%BA%92%E8%B4%A8/577412?fr=aladdin" target=_blank rel="noopener noreffer">互质</a>的数的个数</strong></em></h3>
 <p>通式：φ(x)=x(1-1/p1)(1-1/p2)(1-1/p3)(1-1/p4)…..(1-1/pn)<br>
@@ -162,16 +170,6 @@
 思路参考：<a href=https://blog.csdn.net/duan_1998/article/details/70196576 target=_blank rel="noopener noreffer">本题直接参考</a>,<a href=https://blog.csdn.net/dextrad_ihacker/article/details/51016017 target=_blank rel="noopener noreffer">图文解释</a></p></div><div class=post-footer>
 <a href=/posts/hdu3038/>閱讀全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/>并查集</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/hdu/>HDU</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/codeforces680b/>Bear and Finding Criminals-Codeforces680B</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-07-31>2018-07-31</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p>题目链接：<a href=https://codeforces.com/problemset/problem/680/B target=_blank rel="noopener noreffer">Bear and Finding Criminals</a></p>
-<p>大致题意就是小熊警察住在某个城市，他要抓各个城市的罪犯，现在用一个BCD可以知道那个城市里<strong>一定</strong>有罪犯。</p>
-<p>一定能确定该城市有小偷的几种情况：<br>
-1.警察所住城市有罪犯，则一定能检测到</p>
-<p>2.警察所住城市的左边和右边位置若<strong>都</strong>不为0，则说明两座城市都有罪犯（只有一边为1是不能确定到底哪个城市有罪犯的）</p>
-<p>3.警察所在城市的一边检测到有罪犯，但在另一边已经没有城市了，则说明该城市一定有罪犯</p></div><div class=post-footer>
-<a href=/posts/codeforces680b/>閱讀全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>

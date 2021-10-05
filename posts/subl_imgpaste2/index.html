@@ -4,20 +4,56 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>位运算 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="位运算">
-<meta property="og:description" content="1. &运算 &运算通常用于二进制取位操作，例如一个数 & 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位">
+<title>Sublime 剪贴板图片粘贴插件——Markdown 必备 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Sublime 剪贴板图片粘贴插件——Markdown 必备">
+<meta property="og:description" content="
+    
+    
+        
+            插件地址
+            
+                
+                    
+                        
+                    
+                
+                https://github.com/robinchenyu/imagepaste
+            
+        
+        
+            
+        
+    
+">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2018-06-14T20:22:21+08:00">
-<meta property="article:modified_time" content="2021-10-05T15:17:39+00:00">
+<meta property="og:url" content="https://lruihao.cn/posts/subl_imgpaste2/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-10-05T21:54:06+08:00">
+<meta property="article:modified_time" content="2021-10-05T22:51:16+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="位运算">
-<meta name=twitter:description content="1. &运算 &运算通常用于二进制取位操作，例如一个数 & 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位">
+<meta name=twitter:title content="Sublime 剪贴板图片粘贴插件——Markdown 必备">
+<meta name=twitter:description content="
+    
+    
+        
+            插件地址
+            
+                
+                    
+                        
+                    
+                
+                https://github.com/robinchenyu/imagepaste
+            
+        
+        
+            
+        
+    
+">
 <meta name=application-name content="Lruihao's Note">
 <meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/><link rel=prev href=https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/><link rel=next href=https://lruihao.cn/posts/c-with-stl/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"位运算","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/%E4%BD%8D%E8%BF%90%E7%AE%97\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"位运算","wordcount":1088,"url":"https:\/\/lruihao.cn\/posts\/%E4%BD%8D%E8%BF%90%E7%AE%97\/","datePublished":"2018-06-14T20:22:21+08:00","dateModified":"2021-10-05T15:17:39+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/subl_imgpaste2/><link rel=prev href=https://lruihao.cn/posts/hugo-cardlink/><link rel=next href=https://lruihao.cn/posts/cos-album/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Sublime 剪贴板图片粘贴插件——Markdown 必备","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/subl_imgpaste2\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Markdown, Sublime","wordcount":252,"url":"https:\/\/lruihao.cn\/posts\/subl_imgpaste2\/","datePublished":"2021-10-05T21:54:06+08:00","dateModified":"2021-10-05T22:51:16+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -83,10 +119,10 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">位运算</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animated flipInX">Sublime 剪贴板图片粘贴插件——Markdown 必备</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/others/><i class="far fa-folder fa-fw"></i>others</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-06-14>2018-06-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1088 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/ class=leancloud_visitors data-flag-title=位运算>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-05>2021-10-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 252 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/subl_imgpaste2/ class=leancloud_visitors data-flag-title="Sublime 剪贴板图片粘贴插件——Markdown 必备">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -98,65 +134,87 @@
 <ul>
 <li>
 <ul>
-<li><a href=#1-运算>1. &运算</a></li>
-<li><a href=#2-运算>2. |运算</a></li>
-<li><a href=#3-运算>3. ^运算</a></li>
-<li><a href=#4--运算>4. ~ 运算</a></li>
-<li><a href=#5-运算>5. &#171;运算</a></li>
-<li><a href=#6-运算>6. &#187;运算</a></li>
+<li><a href=#功能>功能</a></li>
+<li><a href=#食用说明>食用说明</a></li>
 </ul>
 </li>
 </ul>
 </nav></div>
-</div><div class=content id=content><h2 id=1-运算>1. &运算</h2>
-<p>&运算通常用于二进制取位操作，例如一个数 & 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位为0表示该数为偶数，最末位为1表示该数为奇数.</p>
-<h2 id=2-运算>2. |运算</h2>
-<p>|运算通常用于二进制特定位上的无条件赋值，例如一个数or 1的结果就是把二进制最末位强行变成1。如果需要把二进制最末位变成0，对这个数| 1之后再减一就可以了，其实际意义就是把这个数强行变成最接近的偶数。</p>
-<h2 id=3-运算>3. ^运算</h2>
-<p>^运算通常用于对二进制的特定一位进行取反操作，因为异或可以这样定义：异或0都不变，异或1则取反。 ^运算的逆运算是它本身，也就是说两次异或同一个数最后结果不变，即a ^ b ^ b = a。^运算可以用于简单的加密，比如你想对你MM说1314520，但怕别人知道，于是双方约定拿你的生日19880516作为密钥。1314520^19880516 = 20665500，你就把20665500告诉MM。MM再次计算20665500 ^ 19880516的值，得到1314520，于是她就明白了你的企图。</p>
-<p>还可以用异或来进行快速地交换数据，</p>
-<p>a=2;b=3;//先转化成二进制</p>
-<p>a=a^b;</p>
-<p>b=a^b;</p>
-<p>a=a^b;</p>
-<p>操作后a=3;b=2;</p>
-<h2 id=4--运算>4. ~ 运算</h2>
-<p>~运算的定义是把内存中的0和1全部取反。使用~运算时要格外小心，你需要注意整数类型有没有符号。如果~的对象是无符号整数（不能表示负数），那么得到的值就是它与该类型上界的差，因为无符号类型的数是用$0000到$FFFF依次表示的。</p>
-<h2 id=5-运算>5. &#171;运算</h2>
-<p>a &#171; b就表示把a转为二进制后左移b位（在后面添b个0）。例如100的二进制为1100100，而110010000转成十进制是400，那么100 &#171;2 = 400。可以看出，a &#171; b的值实际上就是a乘以2的b次方，因为在二进制数后添一个0就相当于该数乘以2。</p>
-<p>通常认为a &#171; 1比a * 2更快，因为前者是更底层一些的操作。因此程序中乘以2的操作请尽量用左移一位来代替。</p>
-<p>定义一些常量可能会用到&#171;运算。你可以方便地用1 &#171;16 – 1来表示65535。很多算法和数据结构要求数据规模必须是2的幂，此时可以用&#171;来定义Max_N等常量。</p>
-<h2 id=6-运算>6. &#187;运算</h2>
-<p>和&#171;相似，a &#187; b表示二进制右移b位（去掉末b位），相当于a除以2的b次方（取整）。我们也经常用&#187; 1来代替div 2，比如二分查找、堆的插入操作等等。想办法用&#187;代替除法运算可以使程序效率大大提高。最大公约数的二进制算法用除以2操作来代替慢得出奇的mod运算，效率可以提高60%</p>
-<p><a href="https://weibo.com/ttarticle/p/show?id=2309404238259097064884&mod=zwenzhang" target=_blank rel="noopener noreffer">传送门</a></p>
-<blockquote>
-<p>原文:<code>http://www.matrix67.com/blog/archives/263</code></p>
-</blockquote>
-</div><div class=post-footer id=post-footer>
+</div><div class=content id=content><a href=https://github.com/robinchenyu/imagepaste title=插件地址 target=_blank rel="noopener noreffer" class=card-link>
+<span class=card-link-backdrop></span>
+<span class=card-link-content>
+<span class=card-link-text>
+<span class=card-link-title>插件地址</span>
+<span class=card-link-meta>
+<span class=card-link-url><svg class="Zi Zi--InsertLink" fill="currentcolor" viewbox="0 0 24 24" width="17" height="17"><path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673 1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176s-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"/></svg>
+</span>
+https://github.com/robinchenyu/imagepaste
+</span>
+</span>
+<span class=card-link-imageCell>
+<img class=card-link-image alt="card-link icon" src=/images/linkicon.png>
+</span>
+</span>
+</a>
+<h2 id=功能>功能</h2>
+<p>支持 Windows/Linux 系统下，实现对剪切板图像的处理调用 (Ctrl+Shift+V)<br>
+默认使用 JPG 的方式保存，可以显著减小图片的存储体积。</p>
+<ul>
+<li>对剪切板图像保存到本地并在 Markdown 文本中插入链接地址</li>
+<li>对剪切板中的图像地址，直接插入到 Markdown 文本中</li>
+</ul>
+<h2 id=食用说明>食用说明</h2>
+<ol>
+<li>首先下载 zip 到本地，放到 sublime 安装目录的 <code>xxx\sublime\Data\Packages</code> 中，注意不是 <code>xxx\sublime\Packages</code> 下哦。</li>
+<li>记得要把 subl_imgpaste2-master 的 <code>-master</code> 删除掉。接着重新打开 sublime, 选择 <code>Preferences->Package Settings->ImaPaste2->settings-Default</code> 输入如下内容：
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>{
+  &#34;caption&#34;: &#34;ImagePaste: Paste Image From Clipboard&#34;,
+  &#34;command&#34;: &#34;image_paste&#34;,
+  &#34;image_dir_name&#34;: &#34;images/&#34; # 图片保存目录
+}
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>然后就可以愉快的使用截图，然后在 sublime 里使用 <code>ctrl+shift+v</code> 粘贴 Markdown 格式的图片。默认会自动根据 md 文件名在同级目录下新建文件夹，图片就默认保存在那。如图：<br>
+<figure><a class=lightgallery href=https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif title=https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif data-thumbnail=https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif data-sub-html="<h2>演示</h2>">
+<img class=lazyload src=/svg/loading.min.svg data-src=https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif data-srcset="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif, https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif 1.5x, https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif 2x" data-sizes=auto alt=https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif>
+</a><figcaption class=image-caption>演示</figcaption>
+</figure></li>
+</ol></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-05</span>
+<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/9963955ca9dadcd1495285b8573a8aa2c698b715 target=_blank title="commit by Cell(1024@lruihao.cn) 9963955ca9dadcd1495285b8573a8aa2c698b715: Docs: 『菠菜眾長』内容更新 2021-10-05 Tue 22:51:16">
+<i class="fas fa-hashtag fa-fw"></i>9963955</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
 <div class=post-info-line>
 <div class=post-info-md><span>
-<a class=link-to-markdown href=/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/index.md target=_blank>閱讀原始文檔</a>
+<a class=link-to-markdown href=/posts/subl_imgpaste2/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/ data-title=位运算 data-hashtags=位运算><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/ data-title=位运算 data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/ data-title=位运算><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/subl_imgpaste2/ data-title="Sublime 剪贴板图片粘贴插件——Markdown 必备" data-hashtags=Markdown,Sublime><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/subl_imgpaste2/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/subl_imgpaste2/ data-title="Sublime 剪贴板图片粘贴插件——Markdown 必备" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/subl_imgpaste2/ data-title="Sublime 剪贴板图片粘贴插件——Markdown 必备"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/>位运算</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/markdown/>Markdown</a>,&nbsp;<a href=/tags/sublime/>Sublime</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/ class=prev rel=prev title=Markdown基础教程><i class="fas fa-angle-left fa-fw"></i>Markdown基础教程</a>
-<a href=/posts/c-with-stl/ class=next rel=next title="C++ with STL">C++ with STL<i class="fas fa-angle-right fa-fw"></i></a></div>
+<div class=post-nav><a href=/posts/hugo-cardlink/ class=prev rel=prev title="Hugo 添加知乎卡片式链接 Shortcodes"><i class="fas fa-angle-left fa-fw"></i>Hugo 添加知乎卡片式链接 Shortcodes</a>
+<a href=/posts/cos-album/ class=next rel=next title=利用腾讯云为静态页面添加“动态”相册>利用腾讯云为静态页面添加“动态”相册<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
