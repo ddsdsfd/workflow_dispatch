@@ -1,0 +1,579 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>Hugo i18n 添加中文繁體翻譯 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Hugo i18n 添加中文繁體翻譯">
+<meta property="og:description" content="
+工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lruihao.cn/posts/hugo-i18n-zh-tw/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-10-05T19:14:45+08:00">
+<meta property="article:modified_time" content="2021-10-05T20:01:45+08:00">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://lruihao.cn/logo.png">
+<meta name=twitter:title content="Hugo i18n 添加中文繁體翻譯">
+<meta name=twitter:description content="
+工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。
+">
+<meta name=application-name content="Lruihao's Note">
+<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-i18n-zh-tw/><link rel=prev href=https://lruihao.cn/posts/hugo-friends/><link rel=next href=https://lruihao.cn/posts/hugo-cardlink/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo i18n 添加中文繁體翻譯","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-i18n-zh-tw\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, i18n","wordcount":1320,"url":"https:\/\/lruihao.cn\/posts\/hugo-i18n-zh-tw\/","datePublished":"2021-10-05T19:14:45+08:00","dateModified":"2021-10-05T20:01:45+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=菠菜眾長>菠菜眾長</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+取消
+</a>
+</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>目錄</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">Hugo i18n 添加中文繁體翻譯</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-05>2021-10-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1320 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/posts/hugo-i18n-zh-tw/ class=leancloud_visitors data-flag-title="Hugo i18n 添加中文繁體翻譯">
+<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
+</span>&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>目錄</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#翻譯>翻譯</a></li>
+<li><a href=#配置>配置</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+</div><div class=content id=content><blockquote>
+<p>工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。</p>
+</blockquote>
+<h2 id=翻譯>翻譯</h2>
+<p>屬於直譯，有些詞語可能並不符合現在臺灣或者香港那邊的說法。比如，<code>分類</code>好像臺灣常說<code>歸類</code>吧</p>
+<p>新建 <code>i18n/zh-TW.toml</code></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span><span class=lnt>165
+</span><span class=lnt>166
+</span><span class=lnt>167
+</span><span class=lnt>168
+</span><span class=lnt>169
+</span><span class=lnt>170
+</span><span class=lnt>171
+</span><span class=lnt>172
+</span><span class=lnt>173
+</span><span class=lnt>174
+</span><span class=lnt>175
+</span><span class=lnt>176
+</span><span class=lnt>177
+</span><span class=lnt>178
+</span><span class=lnt>179
+</span><span class=lnt>180
+</span><span class=lnt>181
+</span><span class=lnt>182
+</span><span class=lnt>183
+</span><span class=lnt>184
+</span><span class=lnt>185
+</span><span class=lnt>186
+</span><span class=lnt>187
+</span><span class=lnt>188
+</span><span class=lnt>189
+</span><span class=lnt>190
+</span><span class=lnt>191
+</span><span class=lnt>192
+</span><span class=lnt>193
+</span><span class=lnt>194
+</span><span class=lnt>195
+</span><span class=lnt>196
+</span><span class=lnt>197
+</span><span class=lnt>198
+</span><span class=lnt>199
+</span><span class=lnt>200
+</span><span class=lnt>201
+</span><span class=lnt>202
+</span><span class=lnt>203
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=c># Translations for Traditional Chinese</span>
+<span class=c># 簡體中文的翻譯</span>
+<span class=c># https://gohugo.io/content-management/multilingual/#translation-of-strings</span>
+
+<span class=c># === baseof ==</span>
+<span class=p>[</span><span class=nx>backToTop</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;回到頂部&#34;</span>
+
+<span class=p>[</span><span class=nx>viewComments</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;查看評論&#34;</span>
+<span class=c># === baseof ==</span>
+
+<span class=c># === Post ===</span>
+<span class=p>[</span><span class=nx>posts</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;文章&#34;</span>
+<span class=c># === Post ===</span>
+
+<span class=c># === Taxonomy ===</span>
+<span class=p>[</span><span class=nx>allSome</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;所有{{ .Some }}&#34;</span>
+
+<span class=p>[</span><span class=nx>tag</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;標籤&#34;</span>
+
+<span class=p>[</span><span class=nx>tags</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;標籤&#34;</span>
+
+<span class=p>[</span><span class=nx>category</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;分類&#34;</span>
+
+<span class=p>[</span><span class=nx>categories</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;分類&#34;</span>
+
+<span class=p>[</span><span class=nx>years</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;年度總結&#34;</span>
+<span class=c># === Taxonomy ===</span>
+
+<span class=c># === Pagination ===</span>
+<span class=p>[</span><span class=nx>more</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;更多&#34;</span>
+<span class=c># === Pagination ===</span>
+
+<span class=c># === partials/header.html ===</span>
+<span class=p>[</span><span class=nx>selectLanguage</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;選擇語言&#34;</span>
+
+<span class=p>[</span><span class=nx>switchTheme</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;切換主題&#34;</span>
+<span class=c># === partials/header.html ===</span>
+
+<span class=c># === partials/footer.html ===</span>
+<span class=p>[</span><span class=nx>poweredBySome</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;由 {{ .Hugo }} 強力驅動 | 主題 - {{ .Theme }}&#34;</span>
+<span class=c># === partials/footer.html ===</span>
+
+<span class=c># === partials/comment.html ===</span>
+<span class=p>[</span><span class=nx>valineLang</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;zh-TW&#34;</span>
+
+<span class=p>[</span><span class=nx>valinePlaceholder</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;你的評論 ...&#34;</span>
+
+<span class=p>[</span><span class=nx>facebookLanguageCode</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;zh-TW&#34;</span>
+<span class=c># === partials/comment.html ===</span>
+
+<span class=c># === partials/assets.html ===</span>
+<span class=p>[</span><span class=nx>search</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;搜索&#34;</span>
+
+<span class=p>[</span><span class=nx>searchPlaceholder</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;搜索文章標題或內容...&#34;</span>
+
+<span class=p>[</span><span class=nx>clear</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;清空&#34;</span>
+
+<span class=p>[</span><span class=nx>cancel</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;取消&#34;</span>
+
+<span class=p>[</span><span class=nx>noResultsFound</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;沒有找到結果&#34;</span>
+
+<span class=p>[</span><span class=nx>lunrLanguageCode</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;zh&#34;</span>
+
+<span class=p>[</span><span class=nx>lunrLanguageLib</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;lib/lunr/lunr.zh.js&#34;</span>
+
+<span class=p>[</span><span class=nx>lunrSegmentitLib</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;lib/lunr/lunr.segmentit.js&#34;</span>
+
+<span class=p>[</span><span class=nx>copyToClipboard</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;複製到剪貼板&#34;</span>
+
+<span class=p>[</span><span class=nx>cookieconsentMessage</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;本網站使用 Cookies 來改善您的流覽體驗.&#34;</span>
+
+<span class=p>[</span><span class=nx>cookieconsentDismiss</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;同意&#34;</span>
+
+<span class=p>[</span><span class=nx>cookieconsentLink</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;瞭解更多&#34;</span>
+<span class=c># === partials/assets.html ===</span>
+
+<span class=c># === partials/plugin/share.html ===</span>
+<span class=p>[</span><span class=nx>shareOn</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;分享到&#34;</span>
+<span class=c># === partials/plugin/share.html ===</span>
+
+<span class=c># === posts/single.html ===</span>
+<span class=p>[</span><span class=nx>contents</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;目錄&#34;</span>
+
+<span class=p>[</span><span class=nx>publishedOnDate</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;發佈於 {{ .Date }}&#34;</span>
+
+<span class=p>[</span><span class=nx>includedInCategories</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;收錄於 {{ .Categories }}&#34;</span>
+
+<span class=p>[</span><span class=nx>wordCount</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;約 {{ .Count }} 字&#34;</span>
+
+<span class=p>[</span><span class=nx>readingTime</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;預計閱讀 {{ .Count }} 分鐘&#34;</span>
+
+<span class=p>[</span><span class=nx>views</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;次閱讀&#34;</span>
+
+<span class=p>[</span><span class=nx>author</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;作者&#34;</span>
+
+<span class=p>[</span><span class=nx>updatedOnDate</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;更新於 {{ .Date }}&#34;</span>
+
+<span class=p>[</span><span class=nx>readMarkdown</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;閱讀原始文檔&#34;</span>
+
+<span class=p>[</span><span class=nx>back</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;返回&#34;</span>
+
+<span class=p>[</span><span class=nx>home</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;主頁&#34;</span>
+
+<span class=p>[</span><span class=nx>readMore</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;閱讀全文&#34;</span>
+<span class=c># === posts/single.html ===</span>
+
+<span class=c># === 404.html ===</span>
+<span class=p>[</span><span class=nx>pageNotFound</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;頁面沒找到&#34;</span>
+
+<span class=p>[</span><span class=nx>pageNotFoundText</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;抱歉，您要查找的頁面不存在。&#34;</span>
+<span class=c># === 404.html ===</span>
+
+<span class=c># === shortcodes/admonition.html ===</span>
+<span class=p>[</span><span class=nx>note</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;注意&#34;</span>
+
+<span class=p>[</span><span class=nx>abstract</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;摘要&#34;</span>
+
+<span class=p>[</span><span class=nx>info</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;信息&#34;</span>
+
+<span class=p>[</span><span class=nx>tip</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;技巧&#34;</span>
+
+<span class=p>[</span><span class=nx>success</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;成功&#34;</span>
+
+<span class=p>[</span><span class=nx>question</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;問題&#34;</span>
+
+<span class=p>[</span><span class=nx>warning</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;警告&#34;</span>
+
+<span class=p>[</span><span class=nx>failure</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;失敗&#34;</span>
+
+<span class=p>[</span><span class=nx>danger</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;危險&#34;</span>
+
+<span class=p>[</span><span class=nx>bug</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;Bug&#34;</span>
+
+<span class=p>[</span><span class=nx>example</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;示例&#34;</span>
+
+<span class=p>[</span><span class=nx>quote</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;引用&#34;</span>
+<span class=c># === shortcodes/admonition.html ===</span>
+
+<span class=c># === shortcodes/version.html ===</span>
+<span class=p>[</span><span class=nx>new</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;新增&#34;</span>
+
+<span class=p>[</span><span class=nx>changed</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;更改&#34;</span>
+
+<span class=p>[</span><span class=nx>deleted</span><span class=p>]</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;刪除&#34;</span>
+<span class=c># === shortcodes/version.html ===</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=配置>配置</h2>
+<p>打開 <code>config.toml</code></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=nx>defaultContentLanguage</span> <span class=p>=</span> <span class=s2>&#34;zh-tw&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/5110ca3a0fb13d591d115946535119c937197421 target=_blank title="commit by Cell(1024@lruihao.cn) 5110ca3a0fb13d591d115946535119c937197421: Docs: 『菠菜眾長』内容更新 2021-10-05 Tue 20:01:45">
+<i class="fas fa-hashtag fa-fw"></i>5110ca3</a></span>
+</div>
+<div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/posts/hugo-i18n-zh-tw/index.md target=_blank>閱讀原始文檔</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hugo-i18n-zh-tw/ data-title="Hugo i18n 添加中文繁體翻譯" data-hashtags=hugo,i18n><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hugo-i18n-zh-tw/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hugo-i18n-zh-tw/ data-title="Hugo i18n 添加中文繁體翻譯" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hugo-i18n-zh-tw/ data-title="Hugo i18n 添加中文繁體翻譯"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hugo/>hugo</a>,&nbsp;<a href=/tags/i18n/>i18n</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/hugo-friends/ class=prev rel=prev title="Hugo 友情連結模板"><i class="fas fa-angle-left fa-fw"></i>Hugo 友情連結模板</a>
+<a href=/posts/hugo-cardlink/ class=next rel=next title="Hugo 添加知乎卡片式链接 Shortcodes">Hugo 添加知乎卡片式链接 Shortcodes<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id=comments><div id=valine class=comment></div><noscript>
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+</noscript></div></article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备43030402000254号</a></span><span class=icp-splitter>&nbsp;|&nbsp;</span><br class=icp-br><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘ICP备18020535号</a></span></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看評論>
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lunr/lunr.stemmer.support.min.js></script><script type=text/javascript src=/lib/lunr/lunr.zh.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:50},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!0,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"瞭解更多",message:"本網站使用 Cookies 來改善您的流覽體驗."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",lunrLanguageCode:"zh",lunrSegmentitURL:"/lib/lunr/lunr.segmentit.js",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"lunr"},twemoji:!0}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

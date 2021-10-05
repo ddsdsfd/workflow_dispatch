@@ -82,6 +82,34 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=文章><img class=lazyload src=/svg/loading.min.svg data-src=/images/avatar.jpg data-srcset="/images/avatar.jpg, /images/avatar.jpg 1.5x, /images/avatar.jpg 2x" data-sizes=auto alt=/images/avatar.jpg title=/images/avatar.jpg></a></div><h1 class=home-title>Lruihao's Note</h1><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/Lruihao title=GitHub target=_blank rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://weibo.com/liahao title=微博 target=_blank rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href=mailto:1024@lruihao.cn title=Email rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/euler/>欧拉函数</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-08-08>2018-08-08</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><h3 id=欧拉函数是求小于x并且和x互质httpsbaikebaiducomiteme4ba92e8b4a8577412fraladdin的数的个数><em><strong>欧拉函数是求小于x并且和x<a href="https://baike.baidu.com/item/%E4%BA%92%E8%B4%A8/577412?fr=aladdin" target=_blank rel="noopener noreffer">互质</a>的数的个数</strong></em></h3>
+<p>通式：φ(x)=x(1-1/p1)(1-1/p2)(1-1/p3)(1-1/p4)…..(1-1/pn)<br>
+<strong>其中p1, p2……pn为x的所有质因数，x是不为0的整数</strong><br>
+φ(1)=1（唯一和1互质的数就是1本身）【注意：每种质因数只一个。比如12=2<em>2</em>3】</p>
+<h3 id=定理>定理：</h3>
+<ol>
+<li>若n是素数p的k次幂，φ(n)=p^k-p^(k-1)=(p-1)p^(k-1)，因为除了p的倍数外，其他数都跟n互质 <img class=lazyload src=/svg/loading.min.svg data-src=https://i.loli.net/2018/08/08/5b6ab31239225.jpg data-srcset="https://i.loli.net/2018/08/08/5b6ab31239225.jpg, https://i.loli.net/2018/08/08/5b6ab31239225.jpg 1.5x, https://i.loli.net/2018/08/08/5b6ab31239225.jpg 2x" data-sizes=auto alt=https://i.loli.net/2018/08/08/5b6ab31239225.jpg title=IMG_20180808_170807.jpg></li>
+<li>欧拉函数是积性函数——若m,n互质，φ(mn)=φ(m)φ(n)</li>
+</ol>
+<h3 id=特殊性质>特殊性质：</h3>
+<ol>
+<li>当n为奇数时，φ(2n)=φ(n)</li>
+<li>p是素数，φ(p) = p - 1，φ(p)称为p的欧拉值</li>
+<li>若a为素数,b mod a=0,<code>φ(a*b)=φ(b)*a</code></li>
+</ol></div><div class=post-footer>
+<a href=/posts/euler/>閱讀全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E6%95%B0%E5%AD%A6/>数学</a>,&nbsp;<a href=/tags/%E6%95%B0%E8%AE%BA/>数论</a>,&nbsp;<a href=/tags/euler/>euler</a>,&nbsp;<a href=/tags/c/>C</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/poj1797/>Heavy Transportation-poj1797(dijkstra或最大生成树)</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-08-06>2018-08-06</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p>题目链接](<a href="http://poj.org/problem?id=1797" target=_blank rel="noopener noreffer">http://poj.org/problem?id=1797</a>)<br>
+大意：<br>
+要从城市1到城市N运送货物，有M条道路，每条道路都有它的最大载重量，问从城市1到城市N运送最多的重量是多少。<br>
+其实题意很简单，就是找一条1&ndash;>N的路径，在不超过每条路径的最大载重量的情况下，使得运送的货物最多。一条路径上的最大载重量为这个路径上权值最小的边;</p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/%e6%9b%b4%e6%96%b0.jpg data-srcset="images/%e6%9b%b4%e6%96%b0.jpg, images/%e6%9b%b4%e6%96%b0.jpg 1.5x, images/%e6%9b%b4%e6%96%b0.jpg 2x" data-sizes=auto alt=images/更新.jpg title=images/更新.jpg></p></div><div class=post-footer>
+<a href=/posts/poj1797/>閱讀全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/poj/>POJ</a>,&nbsp;<a href=/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/>最短路</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/console-log/>hexo 博客自定义 console log</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-08-04>2018-08-04</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div><div class=content><p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
 我主要用到的工具：</p>
@@ -144,18 +172,6 @@
 <p>3.警察所在城市的一边检测到有罪犯，但在另一边已经没有城市了，则说明该城市一定有罪犯</p></div><div class=post-footer>
 <a href=/posts/codeforces680b/>閱讀全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/codeforces680a/>Bear and Five Cards-Codeforces680A</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-07-31>2018-07-31</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p>题目链接：<a href=https://codeforces.com/problemset/problem/680/A target=_blank rel="noopener noreffer">Bear and Five Cards</a></p>
-<p>大致题意就是小熊有5张卡片，每张卡片有对应的分数，他可以选择丢弃2张相同的或者3张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。</p></div><div class=post-footer>
-<a href=/posts/codeforces680a/>閱讀全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/codeforces/>Codeforces</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/how-tables/>how many tables-HDU-1213(并查集求连通域数目)</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish>發佈於 <time datetime=2018-07-31>2018-07-31</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div><div class=content><p>并查集求连通域数目，初始化sum=n；
-题目链接： <a href="http://acm.hdu.edu.cn/showproblem.php?pid=1213" target=_blank rel="noopener noreffer">how many tables</a></p></div><div class=post-footer>
-<a href=/posts/how-tables/>閱讀全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/>并查集</a>,&nbsp;<a href=/tags/hdu/>HDU</a>,&nbsp;<a href=/tags/c++/>C++</a>,&nbsp;<a href=/tags/acm/>ACM</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
@@ -186,7 +202,7 @@
 <span class=page-link aria-hidden=true>&mldr;</span>
 </li><li class=page-item>
 <span class=page-link>
-<a href=/page/18/>18</a>
+<a href=/page/19/>19</a>
 </span>
 </li></ul></div></div>
 </main><footer class=footer>
