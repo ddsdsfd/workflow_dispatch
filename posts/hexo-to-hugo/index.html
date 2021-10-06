@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hexo-to-hugo/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-03T15:27:58+08:00">
-<meta property="article:modified_time" content="2021-10-05T22:51:16+08:00">
+<meta property="article:modified_time" content="2021-10-06T21:41:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="个人博客从 Hexo 迁移至 Hugo">
@@ -21,7 +21,7 @@
 <meta name=application-name content="Lruihao's Note">
 <meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=prev href=https://lruihao.cn/posts/less-sass-scss/><link rel=next href=https://lruihao.cn/posts/github-actions/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"个人博客从 Hexo 迁移至 Hugo","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, hexo","wordcount":1287,"url":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/","datePublished":"2021-10-03T15:27:58+08:00","dateModified":"2021-10-05T22:51:16+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=prev href=https://lruihao.cn/posts/less-sass-scss/><link rel=next href=https://lruihao.cn/posts/github-actions/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"个人博客从 Hexo 迁移至 Hugo","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, hexo","wordcount":1273,"url":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/","datePublished":"2021-10-03T15:27:58+08:00","dateModified":"2021-10-06T21:41:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -89,7 +89,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">个人博客从 Hexo 迁移至 Hugo</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-03>2021-10-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1287 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-03>2021-10-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1273 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/posts/hexo-to-hugo/ class=leancloud_visitors data-flag-title="个人博客从 Hexo 迁移至 Hugo">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -235,34 +235,51 @@ https://github.com/Lruihao/hugo-blog
 </blockquote>
 <h3 id=base>Base</h3>
 <ul>
-<li><i class="far fa-check-square fa-fw"></i> 迁移 hexo 所有文章内容</li>
-<li><i class="far fa-square fa-fw"></i> 迁移 hexo 所有页面内容
+<li>
+<p><i class="far fa-check-square fa-fw"></i> 迁移 hexo 所有文章内容</p>
+</li>
+<li>
+<details>
+<summary><i class="far fa-check-square fa-fw"></i>迁移 hexo 所有页面内容</summary>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> 留言页面</li>
 <li><i class="far fa-check-square fa-fw"></i> 网友打赏支持页面，整合到留言页面</li>
 <li><i class="far fa-check-square fa-fw"></i> 重写关于页面，一切从简</li>
 <li><i class="far fa-check-square fa-fw"></i> 友情链接页面</li>
-<li><i class="far fa-square fa-fw"></i> 重写 404 页面</li>
-<li><i class="far fa-square fa-fw"></i> 热度页面整合到 404 页面</li>
+<li><i class="far fa-square fa-fw"></i> <del>重写 404 页面</del></li>
 <li><i class="far fa-check-square fa-fw"></i> 站点时间和不蒜子计数改到 hello-world 页面</li>
 </ul>
 </li>
-<li><i class="far fa-square fa-fw"></i> 新增页面
+</ul>
+</details>
 <ul>
-<li><i class="far fa-square fa-fw"></i> <a href=https://img.lruihao.cn target=_blank rel="noopener noreffer">cos-album</a> 和 <a href=https://sz.journey.lruihao.cn target=_blank rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 <code>cos-album/</code></li>
-<li><i class="far fa-square fa-fw"></i> 新增 <code>demo/</code>, 以子模组的形式存放前端 demo
+<li>
+<p><i class="far fa-square fa-fw"></i> <a href=https://img.lruihao.cn target=_blank rel="noopener noreffer">cos-album</a> 和 <a href=https://sz.journey.lruihao.cn target=_blank rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 <code>cos-album/</code></p>
+</li>
+<li>
+<p><i class="far fa-square fa-fw"></i> 新增 <code>demo/</code>, 以子模组的形式存放前端 demo</p>
 <ul>
 <li><i class="far fa-square fa-fw"></i> serverless 记账本</li>
 </ul>
 </li>
-</ul>
+<li>
+<p><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)</p>
 </li>
-<li><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)</li>
-<li><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移</li>
-<li><i class="far fa-check-square fa-fw"></i> <code>Github actions</code> 自动部署到 <strong>Github pages</strong> 和 <strong>COS</strong> 脚本编写</li>
-<li><i class="far fa-check-square fa-fw"></i> hugo 本地管理 shell 脚本工具编写</li>
-<li><i class="far fa-check-square fa-fw"></i> 知乎卡片式链接 改成 hugo shortcodes, 取名 <code>cardlink</code></li>
-<li><i class="far fa-square fa-fw"></i> zxm/沐目体 归档 :(
+<li>
+<p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移</p>
+</li>
+<li>
+<p><i class="far fa-check-square fa-fw"></i> <code>Github actions</code> 自动部署到 <strong>Github pages</strong> 和 <strong>COS</strong> 脚本编写</p>
+</li>
+<li>
+<p><i class="far fa-check-square fa-fw"></i> hugo 本地管理 shell 脚本工具编写</p>
+</li>
+<li>
+<p><i class="far fa-check-square fa-fw"></i> 知乎卡片式链接 改成 hugo shortcodes, 取名 <code>cardlink</code></p>
+</li>
+<li>
+<details>
+<summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :(</summary>
 <ul>
 <li><i class="far fa-square fa-fw"></i> 安装 沐目体</li>
 <li><i class="far fa-square fa-fw"></i> 压缩 沐目体 fontspider</li>
@@ -273,6 +290,9 @@ https://github.com/Lruihao/hugo-blog
 <li><i class="far fa-square fa-fw"></i> [光] 归档</li>
 </ul>
 </li>
+</ul>
+</details>
+<ul>
 <li><i class="far fa-square fa-fw"></i> hugo 内容加密研究</li>
 <li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-square fa-fw"></i> 更换 gravatar 头像</li>
@@ -298,8 +318,8 @@ https://github.com/Lruihao/hugo-blog
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/9963955ca9dadcd1495285b8573a8aa2c698b715 target=_blank title="commit by Cell(1024@lruihao.cn) 9963955ca9dadcd1495285b8573a8aa2c698b715: Docs: 『菠菜眾長』内容更新 2021-10-05 Tue 22:51:16">
-<i class="fas fa-hashtag fa-fw"></i>9963955</a></span>
+<span>更新於 2021-10-06&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/9c325beca136bb569fcdac8a8850b2ac1e5dc8dd target=_blank title="commit by Cell(1024@lruihao.cn) 9c325beca136bb569fcdac8a8850b2ac1e5dc8dd: Feat: 更新待办">
+<i class="fas fa-hashtag fa-fw"></i>9c325be</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
