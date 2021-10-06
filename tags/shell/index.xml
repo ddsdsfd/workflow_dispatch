@@ -6,12 +6,361 @@
             <div class="admonition-content">在使用 hugo 寫博客的過程中會使用到一些命令，包括 Git 的使用也會用到 Git 命令，但是這些命令我感覺知道就好，沒必要因輸入命令儿增加寫博客和部署博客的額外工作。<br>
 自然要想辦法簡化這些過程，Git 還好有 SourceTree 等工具，Hugo 卻沒有，也懶得去網絡上找類似以前 hexo 有 hexo-admin 的插件可以讓大家在瀏覽器寫博客，因為我覺得這和靜態博客初衷背道而馳，於是我就折中方案，寫了一個滿足日常需求的 Shell 腳本，生成管理本地博客。</div>
         </div>
-    </div>]]></description></item><item><title>CRON 表达式的基本语法</title><link>https://lruihao.cn/posts/cron/</link><pubDate>Wed, 25 Mar 2020 09:19:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cron/</guid><description><![CDATA[<blockquote>
+    </div>
+<h2 id="實現">實現</h2>
+<p>一共六個腳本，防止 <code>hugo-site/_localadmin/</code> 下</p>
+<pre><code>_localadmin/
+  ├── auto_push.sh       # 自動化提交源碼
+  ├── hugo_builder.sh    # 構建 hugo 命令
+  ├── hugo_main.sh       # 主介面入口
+  ├── hugo_server.sh     # 啟動本地服務
+  ├── post_generator.sh  # 創建文章
+  └── public_async.sh    # 同步 public 子模組
+</code></pre>
+<h3 id="post_generatorsh">post_generator.sh</h3>
+<ol>
+<li>輸入文章名稱 (建議使用英文)</li>
+<li>文章是否會插入圖片等資源 (默認：否)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="c1">#author: Lruihao</span>
+<span class="nb">cd</span> ..
+<span class="nb">read</span> -p <span class="s2">&#34;Please enter the article name: &#34;</span> postName
+<span class="k">if</span> <span class="o">[</span> -z <span class="nv">$postName</span> <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+  <span class="nb">echo</span> <span class="s2">&#34;The article name is required!&#34;</span>
+<span class="k">else</span>
+  <span class="nb">read</span> -p <span class="s2">&#34;Will there be pictures in this article? [y/n]...&#34;</span> choice
+  <span class="k">if</span> <span class="o">[</span> <span class="nv">$choice</span> <span class="o">=</span> <span class="s2">&#34;y&#34;</span> <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+    hugo new posts/<span class="nv">$postName</span>/index.md
+  <span class="k">else</span>
+    hugo new posts/<span class="nv">$postName</span>.md
+  <span class="k">fi</span>
+<span class="k">fi</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="hugo_serversh">hugo_server.sh</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..
+hugo server --disableFastRender
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="hugo_buildersh">hugo_builder.sh</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..
+hugo --minify
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="public_asyncsh">public_async.sh</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..
+git submodule update --remote 
+git add public
+git commit -m <span class="s2">&#34;Feat: Update public module commit id&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="auto_pushsh">auto_push.sh</h3>
+<p>不輸入 Git 提交訊息會使用腳本中默認訊息 <code>Docs: 『菠菜眾長』内容更新 YYYY-MM-DD week hh:mm::ss</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="c1">#author: Lruihao</span>
+<span class="nb">cd</span> ..
+<span class="c1"># 是否需要每次提交自動更新子模組</span>
+<span class="c1"># git submodule update --remote </span>
+<span class="c1"># git add public</span>
+<span class="c1"># git commit -m &#34;Feat: Update public module commit id&#34;</span>
+git add .
+<span class="nb">read</span> -p <span class="s2">&#34;Please enter commit message: &#34;</span> commitMsg
+<span class="k">if</span> <span class="o">[</span> -z <span class="nv">$commitMsg</span> <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+  <span class="nv">commitMsg</span><span class="o">=</span><span class="s2">&#34;Docs: 『菠菜眾長』内容更新 </span><span class="k">$(</span>date +<span class="s1">&#39;%F %a %T&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+<span class="k">fi</span>
+git commit -m <span class="s2">&#34;</span><span class="nv">$commitMsg</span><span class="s2">&#34;</span>
+git push
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="hugo_mainsh">hugo_main.sh</h3>
+<blockquote>
+<p>可單獨執行子腳本也可以通過主介面來選擇序號執行</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="c1">#author: Lruihao</span>
+<span class="nb">echo</span> <span class="s2">&#34;Please enter the serial number to work&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;--------------------------------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;1. post generator&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;2. hugo server&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;3. hugo build&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;4. public async&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;5. auto push&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;--------------------------------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;Press Ctrl+C to stop&#34;</span>
+
+<span class="nb">read</span> num
+<span class="k">case</span> <span class="nv">$num</span> in
+  1<span class="o">)</span> 
+    sh post_generator.sh
+    <span class="p">;;</span>
+  2<span class="o">)</span>
+    sh hugo_server.sh
+    <span class="p">;;</span>
+  3<span class="o">)</span>
+    sh hugo_builder.sh
+    <span class="p">;;</span>
+  4<span class="o">)</span>
+    sh public_async.sh
+    <span class="p">;;</span>
+  5<span class="o">)</span>
+    sh auto_push.sh
+    <span class="p">;;</span>
+  *<span class="o">)</span>
+    <span class="nb">echo</span> <span class="s2">&#34;There is no such serial number&#34;</span>
+    <span class="p">;;</span>
+<span class="k">esac</span>
+
+<span class="nb">echo</span> <span class="s2">&#34;Press any key to continue...&#34;</span>
+<span class="nb">read</span> x
+clear
+sh hugo_main.sh
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="使用">使用</h2>
+<ol>
+<li>將 <code>hugo_main.sh</code> 建立桌面快捷鍵</li>
+<li>雙擊 <code>hugo_main.sh</code> 進入根據提示使用即可</li>
+</ol>
+<p>由於一般寫博客會便邊寫邊預覽，所以一般開兩個主介面窗口，如下圖：</p>
+<blockquote>
+<ul>
+<li>一個選擇 <code>2</code> 啟動本地服務</li>
+<li>一個用於生成文章，部署文章等</li>
+</ul>
+</blockquote>
+<p><figure><a class="lightgallery" href="/posts/hugo-admin/images/hugo-admin1.png" title="Hugo Admin" data-thumbnail="/posts/hugo-admin/images/hugo-admin1.png" data-sub-html="<h2>Hugo Admin</h2><p>Hugo Admin</p>">
+        
+    </a><figcaption class="image-caption">Hugo Admin</figcaption>
+    </figure></p>]]></description></item><item><title>CRON 表达式的基本语法</title><link>https://lruihao.cn/posts/cron/</link><pubDate>Wed, 25 Mar 2020 09:19:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cron/</guid><description><![CDATA[<blockquote>
 <p><code>&lt;秒&gt; &lt;分钟&gt; &lt;小时&gt; &lt;日期 day-of-month&gt; &lt;月份&gt; &lt;星期 day-of-week&gt;</code></p>
-</blockquote>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
+</blockquote>
+<h1 id="基本语法">基本语法</h1>
+<table><thead><tr><th>位置</th><th>字段</th><th>约束</th><th>取值</th><th>可使用的特殊符号</th></tr></thead><tbody><tr><td>1</td><td>秒</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>2</td><td>分钟</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>3</td><td>小时</td><td>必须</td><td>0-23（0 为午夜）</td><td><code>, - \* /</code></td></tr><tr><td>4</td><td>日期</td><td>必须</td><td>1-31</td><td><code>, - \* ? /</code></td></tr><tr><td>5</td><td>月份</td><td>必须</td><td>1-12、JAN-DEC</td><td><code>, - \* /</code></td></tr><tr><td>6</td><td>星期</td><td>必须</td><td>1-7、SUN-SAT</td><td><code>, - ? /</code></td></tr></tbody></table>
+<h1 id="特殊符号的用法">特殊符号的用法</h1>
+<table><thead><tr><th>符号</th><th>含义</th><th>用法</th></tr></thead><tbody><tr><td><code>\*</code></td><td>所有值</td><td>代表一个字段的所有可能取值。如将<code>&lt;分钟&gt;</code> 设为<strong>\*</strong>，表示每一分钟。</td></tr><tr><td><code>?</code></td><td>不指定值</td><td>用于可以使用该符号的两个字段中的一个，在一个表达式中只能出现一次。如任务执行时间为每月 10 号，星期几无所谓，那么表达式中<code>&lt;日期&gt;</code> 设为<strong>10</strong>，<code>&lt;星期&gt;</code> 设为<strong>?</strong>。</td></tr><tr><td><code>-</code></td><td>范围</td><td>如<code>&lt;小时&gt;</code> 为<strong>10-12</strong>，即10 点、11 点、12 点。</td></tr><tr><td><code>,</code></td><td><span class="text-nowrap">分隔多个值</span></td><td>如<code>&lt;星期&gt;</code> 为<strong>MON,WED,FRI</strong>，即周一、周三、周五。</td></tr><tr><td><code>/</code></td><td>增量</td><td>如<code>&lt;秒&gt;</code> 设为<strong>0/15</strong>，即从 0 秒开始，以 15 秒为增量，包括 0、15、30、45 秒；<strong>5/15</strong> 即 5、20、35、50 秒。<strong>\*/</strong> 与<strong>0/</strong> 等效，如<code>&lt;日期&gt;</code> 设为<strong>1/3</strong>，即从每个月的第一天开始，每 3 天（即每隔 2 天）执行一次任务。</td></tr></tbody></table>各字段以空格或空白隔开。JAN-DEC、SUN-SAT 这些值不区分大小写，比如 MON 和 mon 效果一样。
+<h1 id="举例如下">举例如下</h1><table><thead><tr><th>表达式</th><th>说明</th></tr></thead><tbody><tr><td><code>0  0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次</td></tr><tr><td><code>10 0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次，每次执行都在分钟开始的 10 秒，例如 10:00:10、10:05:10 等等。</td></tr><tr><td><code style="white-space:nowrap;">0 30 10-13 ? \* WED,FRI</code></td><td>每周三和每周五的 10:30、11:30、12:30、13:30 执行。</td></tr><tr><td><code>0 0/30 8-9 5,20 \* ?</code></td><td>每个月的 5 号和 20 号的 8 点和 10 点之间每隔 30 分钟执行一次，也就是 8:00、8:30、9:00 和 9:30。</td></tr></tbody></table>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
 <ul>
 <li>read</li>
 <li>echo</li>
 <li>if</li>
 </ul>
-<p>然后自己写了一个小脚本觉得还挺有趣的</p>]]></description></item></channel></rss>
+<p>然后自己写了一个小脚本觉得还挺有趣的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="c1">#liruihao</span>
+<span class="c1">#menu.sh</span>
+<span class="c1">#sudo apt curl install nyancat sl figlet toilet cowsay </span>
+<span class="nb">echo</span> <span class="s2">&#34;-------------菜-单--------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------1-打印二维码--------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------2-彩虹猫------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------3-小火切------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------4-打字机------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------5-小许牛------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c暂停程序--------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;请输入序号！&#34;</span>
+<span class="nb">read</span> i
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">1</span>
+<span class="k">then</span>
+	<span class="nb">echo</span> <span class="s2">&#34;请输入网址！&#34;</span>
+	<span class="nb">read</span> s1
+       	<span class="nb">echo</span> <span class="nv">$s1</span> <span class="p">|</span>curl -F-<span class="o">=</span><span class="se">\&lt;</span>- qrenco.de
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">2</span>
+<span class="k">then</span>
+	nyancat
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">3</span>
+<span class="k">then</span>
+	sl
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">4</span>
+<span class="k">then</span>
+	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+	<span class="nb">read</span> s2
+	<span class="nb">echo</span> <span class="s2">&#34;选择样式：&#34;</span>
+	<span class="nb">echo</span> <span class="s2">&#34;------样式1-----&#34;</span>
+	<span class="nb">echo</span> <span class="s2">&#34;------样式2-----&#34;</span>
+	<span class="nb">read</span> j
+	<span class="k">if</span> <span class="nb">test</span> <span class="nv">$j</span> -eq <span class="m">1</span>
+	<span class="k">then</span>
+		figlet <span class="nv">$s2</span>
+	<span class="k">else</span>
+		toilet -f mono12 -F gay <span class="nv">$s2</span>
+	<span class="k">fi</span>
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">5</span>
+<span class="k">then</span>
+	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+	<span class="nb">read</span> s3
+	cowsay <span class="nv">$s3</span>
+<span class="k">fi</span>
+<span class="nb">echo</span> <span class="s2">&#34;任意建继续！&#34;</span>
+<span class="nb">read</span> x
+clear
+./menu.sh
+
+</code></pre></td></tr></table>
+</div>
+</div><p>
+
+
+
+
+</p>]]></description></item></channel></rss>

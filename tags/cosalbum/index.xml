@@ -9,4 +9,198 @@
 <strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
 开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
         </div>
-    </div>]]></description></item></channel></rss>
+    </div>
+<h1 id="创建腾讯云-cos-存储桶">创建腾讯云 cos 存储桶</h1>
+<p>就创建一个 COS 就好了！有几点注意事项：</p>
+<ol>
+<li>权限设置为共有读私有写</li>
+<li>policy 权限设置整个桶的读操作</li>
+<li>跨域访问 CORS 设置，自己随意</li>
+</ol>
+<h1 id="上传照片">上传照片</h1>
+<p>首先我这个 cos 相册，相册分类就是文件夹分类，所以cos桶里面先新建不同的文件夹，<strong>文件夹名称就是相册名称</strong>，
+每个相册里面需要放置一张名称为**“封面.jpg”**的图片作为该相册的封面。</p>
+<h2 id="上传工具">上传工具</h2>
+<ul>
+<li><strong>COSBrowser</strong> GUI工具,桌面/移动版 【官方、推荐】</li>
+<li><strong>COSCMD</strong> 命令行工具 【官方】</li>
+<li><strong>PicGo</strong> 图床上传工具 【第三方、推荐】</li>
+</ul>
+<h1 id="食用方式">食用方式</h1>
+<a href="http://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer"  class="card-link">
+    <span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+        <span class="card-link-text">
+            <span class="card-link-title">下载地址，别忘点赞哈</span>
+            <span class="card-link-meta">
+                <span class="card-link-url">
+                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+                http://github.com/Lruihao/cos-album
+            </span>
+        </span>
+        <span class="card-link-imageCell">
+            
+        </span>
+    </span>
+</a>
+<ol>
+<li>首先，下载源码，引入 <code>cos-album.css</code> 和 <code>cos-album.js</code></li>
+<li>然后，在你的 js 中 new 一个 Cosalbum 对象( xmlLink 后不需要添加<code>/</code>)</li>
+</ol>
+<h2 id="step1">Step1</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;cos-album.min.css?v=1.1.2&#34;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;cos-album.min.js?v=1.1.2&#34;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="step2">Step2</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
+  <span class="k">new</span> <span class="nx">Cosalbum</span><span class="p">({</span>
+    <span class="s1">&#39;xmlLink&#39;</span><span class="o">:</span> <span class="s1">&#39;https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;prependTo&#39;</span><span class="o">:</span> <span class="s1">&#39;.cos-album&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;viewNum&#39;</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="s1">&#39;imgUrl&#39;</span><span class="o">:</span> <span class="s1">&#39;//img.lruihao.cn&#39;</span>
+  <span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="params">Params</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">param</th>
+<th style="text-align:left">type</th>
+<th style="text-align:left">default</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">xmlLink</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">需要解析的騰訊云COS桶XML鏈接</td>
+</tr>
+<tr>
+<td style="text-align:left">prependTo</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">&lsquo;body&rsquo;</td>
+<td style="text-align:left">可選解析相冊到某個節點</td>
+</tr>
+<tr>
+<td style="text-align:left">viewNum</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">每個相冊顯示的照片數目</td>
+</tr>
+<tr>
+<td style="text-align:left">copyUrl</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">href</td>
+<td style="text-align:left">CDN 链接,雙擊複製 URL Since: 1.1.6</td>
+</tr>
+<tr>
+<td style="text-align:left">imgType</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">[&lsquo;jpg&rsquo;, &lsquo;jpeg&rsquo;, &lsquo;png&rsquo;, &lsquo;gif&rsquo;, &lsquo;svg&rsquo;]</td>
+<td style="text-align:left">图片類型 Since: 1.1.6</td>
+</tr>
+<tr>
+<td style="text-align:left">videoType</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">[&lsquo;mp4&rsquo;, &lsquo;mp3&rsquo;, &lsquo;avi&rsquo;, &lsquo;mov&rsquo;, &lsquo;qt&rsquo;]</td>
+<td style="text-align:left">視頻類型 Since: 1.1.6</td>
+</tr>
+</tbody>
+</table>
+<p><code>viewport</code> 视个人情况添加。<br>
+hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用等等，这里不再展开。<br>
+<em><strong>注：代码设定不加载根目录文件，所以可以利用静态服务把源码部署在根目录，配合 PicGo、COSBrowser 上传来搭建个人图床。</strong></em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>cos-album<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt; --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;cos-album.css&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;cos-album.js&#34;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
+      <span class="k">new</span> <span class="nx">Cosalbum</span><span class="p">({</span>
+        <span class="s1">&#39;xmlLink&#39;</span><span class="o">:</span> <span class="s1">&#39;https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;prependTo&#39;</span><span class="o">:</span> <span class="s1">&#39;.cos-album&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;viewNum&#39;</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="s1">&#39;copyUrl&#39;</span><span class="o">:</span> <span class="s1">&#39;//img.lruihao.cn&#39;</span>
+      <span class="p">});</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- 你的其他内容，如评论等 --&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://img.lruihao.cn" target="_blank" class="LinkCard">cos-album demo</a>
+
+<div id="id-1"></div></p>
+<h1 id="changelog">changelog</h1>
+<ul>
+<li>2020-9-28 22:46
+<ol>
+<li>升級：相冊封裝成類，可以更方便new出來</li>
+<li>優化：相冊圖片樣式優化</li>
+</ol>
+</li>
+<li>2019-11-24 10:52:34
+修改整理了一下代码，分割功能为函数，并写了注释，更加方便<a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">伸手党</a>!</li>
+</ul>
+<h1 id="未实现">未实现</h1>
+<ul>
+<li>fancybox</li>
+<li>加密功能</li>
+<li>分页显示</li>
+</ul>]]></description></item></channel></rss>

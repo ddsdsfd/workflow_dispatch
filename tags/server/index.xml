@@ -1,9 +1,479 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>server - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/server/</link><description>server - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Fri, 12 Jul 2019 18:44:36 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/server/" rel="self" type="application/rss+xml"/><item><title>WAMPServer 自定义网站根目录等设置</title><link>https://lruihao.cn/posts/wamproot/</link><pubDate>Fri, 12 Jul 2019 18:44:36 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wamproot/</guid><description>&lt;blockquote>
-&lt;p>使用 WAMPServer 时自定义网站根目录。&lt;/p>
-&lt;/blockquote></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ngrok/</guid><description>&lt;blockquote>
-&lt;p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。&lt;/p>
-&lt;/blockquote></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/http2https/</guid><description>&lt;blockquote>
-&lt;p>记录自己在配置vps及博客SSL证书时遇到的问题。&lt;/p>
-&lt;/blockquote></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>server - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/server/</link><description>server - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Fri, 12 Jul 2019 18:44:36 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/server/" rel="self" type="application/rss+xml"/><item><title>WAMPServer 自定义网站根目录等设置</title><link>https://lruihao.cn/posts/wamproot/</link><pubDate>Fri, 12 Jul 2019 18:44:36 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wamproot/</guid><description><![CDATA[<blockquote>
+<p>使用 WAMPServer 时自定义网站根目录。</p>
+</blockquote>
+<h1 id="wampserver自定义网站根目录">WAMPServer自定义网站根目录</h1>
+<h2 id="修改apache配置文件">修改apache配置文件</h2>
+<p>打开<code>httpd.conf</code>文件搜索<code>documentroot</code>后，找到路径修改为自定义的。<br>
+</p>
+<p>再打开<code>httpd-vhost.conf</code>文件修改对应的路径。<br>
+<code>修改完配置文件需要重启所有服务！</code></p>
+<h2 id="修改wampmanager文件">修改wampmanager文件</h2>
+<p>在wampserver安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>,然后也修改为自定义的路径。
+<code>然后退出，重启软件！</code></p>
+<p><br>
+</p>
+<h2 id="编写php文件测试">编写php文件测试</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
+	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
+<span class="cp">?&gt;</span><span class="err">
+</span></code></pre></td></tr></table>
+</div>
+</div><p></p>
+<h1 id="wampserver多站点配置">WAMPServer多站点配置</h1>
+<p>打开<code>httpd-vhost.conf</code>文件，复制原有的几行配置文件，粘贴修改路径和域名等配置。比如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Virtual Hosts
+#
+&lt;VirtualHost *:80&gt;
+  ServerName localhost
+  ServerAlias localhost
+  DocumentRoot &#34;g:/Demo&#34;
+  &lt;Directory &#34;g:/Demo&#34;&gt;
+    Options +Indexes +Includes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require local
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *:80&gt;
+  ServerName test01.com
+  DocumentRoot &#34;g:/Demo/test01&#34;
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *:80&gt;
+  ServerName test02.com
+  DocumentRoot &#34;g:/Demo/test02&#34;
+&lt;/VirtualHost&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件,在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">...
+
+# For example:
+#
+# 102.54.94.97 rhino.acme.com # source server
+# 38.25.63.10 x.acme.com # x client host
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1 localhost
+#	::1 localhost
+127.0.0.1 steamcommunity.com
+192.168.28.1 windows10.microdone.cn
+127.0.0.1 localhost
+::1 localhost
+127.0.0.1 test01.com
+127.0.0.1 test02.com
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="wampserver自拟定端口">WAMPServer自拟定端口</h1>
+<p>WAMP服务我安装了好几次，每次因为修改配置文件搞崩了。。第一次装的时候发现80端口被占用了，因为以前玩了一下Windows的IIS，暂停IIS的网站，再使用命令或者直接在控制面板关掉就好了。</p>
+<ol>
+<li>如果不使用80多为默认端口，比如修改为8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S保存，重新启动WampServer<br>
+在浏览器地址栏输入<code>localhost:8000</code></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#监听端口
+Listen 0.0.0.0:8080
+Listen [::0]:8080
+ServerName localhost:8080
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>使用Notepad++打开 C:\wamp 目录下的wampmanager.ini和wampmanager.tpl<br>
+Ctrl+F查找 <code>localhost</code><br>
+将其全部替换为<code>localhost:8000</code><br>
+然后，Ctrl+S保存，重新启动WampServer</li>
+</ol>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ngrok/</guid><description><![CDATA[<blockquote>
+<p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。</p>
+</blockquote>
+<h1 id="搭建环境">搭建环境</h1>
+<p>我的电脑是<code>ubuntu+windows</code>双系统的，所以我先在ubuntu上面装了一个宝塔面板，方便通过web管理电脑，宝塔安装好后安装相关的环境<code>mysql,php,nginx</code>等。我们现在只能通过本地ip<code>127.0.0.1:8888</code>访问面板。</p>
+<h1 id="ngrok穿透">ngrok穿透</h1>
+<p>去ngrok注册登录，购买隧道（有免费的），然后绑定端口，绑定域名，这里我们拿端口<code>8888</code>和域名<code>test.lruihao.cn</code>做实验，也就是宝塔面板的端口，这样我们就可以透过域名远程访问本地服务器，这样是不是开始有云服务器的感觉了。然后宝塔面板设置也绑定好域名<code>test.lruihao.cn</code>,dns服务商那里做好相应的解析。<br>
+然后在ngrok那里下载sunny客户端文件，我们是ubuntu选择<code>linux-64bits</code>版本。解压后在ubuntu打开终端进入sunny文件目录，权限给到755，运行命令<code>./sunny clientid xxxxxxx</code> 后面的你的隧道订单的id。</p>
+<p>现在就可以通过互联网访问我的ubuntu服务器了。</p>
+<h1 id="搭建网站">搭建网站</h1>
+<p>前面两步搞定，搭建网站就没问题了。<br>
+我们只要把网站的端口按第二步的在ngrok设置好就可以穿透了。</p>
+<h1 id="注意">注意</h1>
+<p>访问本地网站的必要条件是你的电脑得是开机状态而且有网络。</p>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
+<p>记录自己在配置vps及博客SSL证书时遇到的问题。</p>
+</blockquote>
+<h1 id="强制重定向https">强制重定向https</h1>
+<blockquote>
+<p>有一种情况相信很多人都遇到过，就是虽然我们配置了ssl证书，但是https和http地址都是各自都可以单独访问。我们应该也见过类似于github的代码托管网站有强制https的开关。如果是这种情况我们还可以通过js进行301定向。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+	<span class="n">var</span> <span class="n">targetProtocol</span> <span class="o">=</span> <span class="s">&#34;https:&#34;</span><span class="o">;</span>
+	<span class="n">var</span> <span class="n">host</span> <span class="o">=</span> <span class="s">&#34;lruihao.cn&#34;</span><span class="o">;</span>
+	<span class="k">if</span> <span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">host</span> <span class="o">==</span> <span class="n">host</span> <span class="o">&amp;&amp;</span> <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span> <span class="o">!=</span> <span class="n">targetProtocol</span><span class="o">){</span>
+ 		<span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span> <span class="o">=</span> <span class="n">targetProtocol</span> <span class="o">+</span>
+  		<span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="腾讯云cdn配置">腾讯云CDN配置</h1>
+<blockquote>
+<p>这个博客后来是转到了腾讯云的cos桶存储。当时在桶内静态网站设置的时候，设置强制https发现会出错。而且还接入了CDN，所以今天在CDN设置那里也看到了https的设置，打开强制https就OK了。这天在三丰云撸了一个免费的主机，搭了一个WordPress（想试试wp的感觉），然后vps的SSL问题现在也很简单了，第一步，到腾讯云申请免费证书；第二步，配置CDN，按步骤来，其中接入方式选择自有源站；第三步，强制https(可选)。</p>
+</blockquote>
+<p></p>
+<p></p>]]></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/bt/images/1.png" referrerpolicy="no-referrer">
-            </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</description></item><item><title>云服务器 CentOS 系统搭建 web 服务</title><link>https://lruihao.cn/posts/web-server-yun/</link><pubDate>Mon, 29 Oct 2018 09:15:58 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-yun/</guid><description>搭建Apache web服务 1.安装Apache超文本传输协议(HTTP)服务器的主程序 1 [root@VM_0_6_centos /]# yum install -y httpd 注意安装目录，可通过cd 命令切换。 2.启</description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description>我用的 win10 打开控制面板 选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所</description></item></channel></rss>
+            </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>
+<h1 id="系统要求">系统要求</h1>
+<blockquote>
+<p>操作系统：全新系统(支持CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>
+确保是干净的操作系统，没有安装过其它环境带的Apache/Nginx/php/MySQL<br>
+宝塔Linux6.0版本是基于centos7开发的，强烈建议使用centos7.x 系统<br>
+内存要求：内存要求最低512MB，推荐768MB以上，纯面板约占系统60MB内存</p>
+</blockquote>
+<h1 id="安装方法">安装方法</h1>
+<p>官方号称2分钟装好面板，一键管理服务器。</p>
+<blockquote>
+<p>使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，挂载磁盘，根据系统执行相应命令开始安装（大约2分钟完成面板安装）：</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">yum install -y wget <span class="o">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> sh install.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> sudo bash install.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</code></pre></td></tr></table>
+</div>
+</div><p></p>
+<h1 id="搭建ftp和云盘服务器">搭建ftp和云盘服务器</h1>
+<p>可以很傻瓜式的搭建自己的云盘，和平时用的比较多的ftp服务器。搭建静态网站也可以用ftp来上传文件。</p>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description><![CDATA[<h3 id="安装">安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~
+curl https://getcaddy.com <span class="p">|</span> bash -s personal http.filemanager
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编写配置文件">编写配置文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim Caddyfile
+</code></pre></td></tr></table>
+</div>
+</div><p>内容如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">:80 {
+filemanager / /sdcard
+timeouts none
+gzip
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>这里的8080端口号可以随意指定, 如果在手机termux等搭建，由于手机权限比较低, 所以一般设置1024以上的端口.<code>80</code>端口可以直接通过ip访问。如<code>118.24.217.167</code></p>
+<p>如果用域名，先在域名服务商解析ip,再配置文件如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">https://pan.lruihao.cn <span class="o">{</span>
+filemanager / /sdcard
+timeouts none
+tls admin@lruihao.cn
+gzip
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>指定邮箱是为了申请ssl,实现https.</p>
+<h3 id="demohttpspanlruihaocn"><a href="https://pan.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></h3>
+<p>启动caddy</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">caddy
+</code></pre></td></tr></table>
+</div>
+</div><p>账号密码默认<code>admin</code>
+</p>
+<h3 id="设置定时器启动caddy好像没用我不会">设置定时器启动caddy（好像没用,我不会）</h3>
+<p>为了断开xshell后caddy还在运行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim run.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>编辑以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>caddy
+</code></pre></td></tr></table>
+</div>
+</div><p>加权</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">chmod +x run.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>设置任务
+<a href="https://www.jianshu.com/p/95d1473859d1" target="_blank" rel="noopener noreffer">参考</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">crontab -e
+</code></pre></td></tr></table>
+</div>
+</div><p>加入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">* * * * * /root/run.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">service crond start 
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="heading">？？？</h3>
+<p>最后误打误撞开启了caddy<br>
+昨晚双十一要抢裤子，加上湘潭天气太tm冷了，就上床了，接着用termux远程连接服务器继续搞。结果连接的时候命令输错了-_-!<br>
+本来是<code>ssh root@118.24.217.167</code>再输入密码就可以了。这次搞错了多写了个<code>-T</code>,然后运行<code>caddy</code>,<code>ctrl+c</code>  再断开，意外地发现filemanager竟然可以访问了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -T root@118.24.217.167
+caddy
+
+Ctrl+c
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>云服务器 CentOS 系统搭建 web 服务</title><link>https://lruihao.cn/posts/web-server-yun/</link><pubDate>Mon, 29 Oct 2018 09:15:58 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-yun/</guid><description><![CDATA[<h3 id="搭建apache-web服务">搭建Apache web服务</h3>
+<p>1.安装Apache超文本传输协议(HTTP)服务器的主程序</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum install -y httpd
+</code></pre></td></tr></table>
+</div>
+</div><p>注意安装目录，可通过cd 命令切换。</p>
+<p>2.启动HTTP服务</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# systemctl start httpd.service 
+</code></pre></td></tr></table>
+</div>
+</div><p>如果启动失败，可通过systemctl status httpd.service查看错误原因。<br>
+启动成功，证明http服务已经可以使用，发现还需要把本地文件传到服务器。<br>
+默认根目录<code>/var/www/html/</code></p>
+<h3 id="使用ssh连接服务器">使用SSH连接服务器</h3>
+<p>尝试了两种方式：PuTTY和Xshell（推荐）</p>
+<h4 id="xshell方式">Xshell方式</h4>
+<p>官网下载安装Xshell打开，输入ip账号密码连接主机。</p>
+<p>使用lrzsz方式上传下载文件<br>
+步骤1：在服务器安装lrzsz</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum -y install lrzsz
+</code></pre></td></tr></table>
+</div>
+</div><p>步骤2：输入命令<code>rz</code>打开上传窗口(可以选择多个文件。)<br>
+使用<code>sz</code>文件名命令可打开从服务器下载文件的保存窗口。</p>
+<h3 id="修改http配置">修改HTTP配置</h3>
+<p>1.VIM编辑器打开配置文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# vim /etc/httpd/conf/httpd.conf
+</code></pre></td></tr></table>
+</div>
+</div><p>2.按<code>I</code>键进入编辑模式</p>
+<p>3.找到并修改以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ServerAdmin 管理员邮箱，用于浏览器请求报错时展示
+DocumentRoot 访问根目录（默认：/var/www/html），如项目存放在其他地方，可修改为项目存放位置
+&lt;Directory &#34;/var/www/html&#34;&gt; 同DocumentRoot 配置
+ServerName 服务器IP或 域名 
+</code></pre></td></tr></table>
+</div>
+</div><p>4.按下ESC键输入<code>:wq</code>保存退出</p>
+<p>5.重启服务<code>service httpd restart</code></p>
+<p>6.打开浏览器，输入地址访问<br>
+如:我的项目索引html路径为 <code>love/index.html</code>，输入<br>
+<code>http://IP地址或域名/love/index.html</code></p>
+<p>7.访问不成功，先检查网络，再查看http服务是否开启，最后检查配置；<br>
+访问成功，配置完成。</p>
+<p>链接：https://www.jianshu.com/p/0b67c6c5d21d</p>
+]]></description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description><![CDATA[<blockquote>
+<p>我用的 win10</p>
+</blockquote>
+<h3 id="打开控制面板">打开控制面板</h3>
+<p>选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所有地选项，点击确定后，开始更新服务。<br>
+</p>
+<h3 id="查看">查看</h3>
+<p>更新完成后，打开浏览器，输入<code>http://localhost</code>或者<code>127.0.0.1</code>回车，如果此时出现IIS7欢迎界面，说明Web服务器已经搭建成功。<br>
+</p>
+<h3 id="网站设置">网站设置</h3>
+<p>当web服务器搭建成功后，我们下一步所要做的就是把我们开发的网站安装到Web服务器的目录中。一般情况下，当Web服务器安装完成后，会创建路径<code>%系统根目录%inetpub/wwwroot</code>，将我们开发的网站COPY到该路径下。即可实现本地访问该网站。<br>
+</p>
+<p>也可以更改根目录，搜索IIS，点击网站，Default Web Site，基本设置修改物理路径（<strong>默认站点名称不要改</strong>）<br>
+我这里改到了hexo的public相当于hexo部署在本地服务器<code>58.45.227.225</code><br>
+
+
+</p>
+<h3 id="设置防火墙">设置防火墙</h3>
+<p>让局域网当其它计算机也能访问本地网站资源。具体方法：打开控制面板，选择“系统和安全”，点击“允许程序通过Windows防火墙”，在弹出的对话框中勾选“万维网服务HTTP”右侧的两个复选框，最后点击确定退出。<br>
+</p>
+<p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的ip地址访问了（手机也可以）<br>
+本地ip可以通过cmd用ipconfig查看</p>
+]]></description></item></channel></rss>

@@ -1,1 +1,146 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>云盘 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E4%BA%91%E7%9B%98/</link><description>云盘 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 11 Nov 2018 13:59:27 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E4%BA%91%E7%9B%98/" rel="self" type="application/rss+xml"/><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>云盘 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E4%BA%91%E7%9B%98/</link><description>云盘 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 11 Nov 2018 13:59:27 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E4%BA%91%E7%9B%98/" rel="self" type="application/rss+xml"/><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description><![CDATA[<h3 id="安装">安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~
+curl https://getcaddy.com <span class="p">|</span> bash -s personal http.filemanager
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编写配置文件">编写配置文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim Caddyfile
+</code></pre></td></tr></table>
+</div>
+</div><p>内容如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">:80 {
+filemanager / /sdcard
+timeouts none
+gzip
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>这里的8080端口号可以随意指定, 如果在手机termux等搭建，由于手机权限比较低, 所以一般设置1024以上的端口.<code>80</code>端口可以直接通过ip访问。如<code>118.24.217.167</code></p>
+<p>如果用域名，先在域名服务商解析ip,再配置文件如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">https://pan.lruihao.cn <span class="o">{</span>
+filemanager / /sdcard
+timeouts none
+tls admin@lruihao.cn
+gzip
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>指定邮箱是为了申请ssl,实现https.</p>
+<h3 id="demohttpspanlruihaocn"><a href="https://pan.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></h3>
+<p>启动caddy</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">caddy
+</code></pre></td></tr></table>
+</div>
+</div><p>账号密码默认<code>admin</code>
+</p>
+<h3 id="设置定时器启动caddy好像没用我不会">设置定时器启动caddy（好像没用,我不会）</h3>
+<p>为了断开xshell后caddy还在运行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim run.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>编辑以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>caddy
+</code></pre></td></tr></table>
+</div>
+</div><p>加权</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">chmod +x run.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>设置任务
+<a href="https://www.jianshu.com/p/95d1473859d1" target="_blank" rel="noopener noreffer">参考</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">crontab -e
+</code></pre></td></tr></table>
+</div>
+</div><p>加入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">* * * * * /root/run.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">service crond start 
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="heading">？？？</h3>
+<p>最后误打误撞开启了caddy<br>
+昨晚双十一要抢裤子，加上湘潭天气太tm冷了，就上床了，接着用termux远程连接服务器继续搞。结果连接的时候命令输错了-_-!<br>
+本来是<code>ssh root@118.24.217.167</code>再输入密码就可以了。这次搞错了多写了个<code>-T</code>,然后运行<code>caddy</code>,<code>ctrl+c</code>  再断开，意外地发现filemanager竟然可以访问了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -T root@118.24.217.167
+caddy
+
+Ctrl+c
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item></channel></rss>

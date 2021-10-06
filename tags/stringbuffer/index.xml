@@ -1,1 +1,319 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>StringBuffer - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/stringbuffer/</link><description>StringBuffer - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 14 Apr 2019 10:12:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/stringbuffer/" rel="self" type="application/rss+xml"/><item><title>java 常用类</title><link>https://lruihao.cn/posts/stringbuffer/</link><pubDate>Sun, 14 Apr 2019 10:12:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/stringbuffer/</guid><description>StringBuffer/StringBuilder(掌握) StringBuffer是线程安全的可变字符串。 StringBuilder是线程</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>StringBuffer - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/stringbuffer/</link><description>StringBuffer - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 14 Apr 2019 10:12:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/stringbuffer/" rel="self" type="application/rss+xml"/><item><title>java 常用类</title><link>https://lruihao.cn/posts/stringbuffer/</link><pubDate>Sun, 14 Apr 2019 10:12:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/stringbuffer/</guid><description><![CDATA[<h1 id="stringbufferstringbuilder掌握">StringBuffer/StringBuilder(掌握)</h1>
+<h2 id="stringbuffer是线程安全的可变字符串">StringBuffer是线程安全的可变字符串。</h2>
+<p>StringBuilder是线程不安全的可变字符串。<br>
+和StringBuffer的功能一样。就是效率高一些，但是不安全。</p>
+<h2 id="构造方法">构造方法：</h2>
+<ul>
+<li>StringBuffer sb = new StringBuffer();</li>
+<li>StringBuffer sb = new StringBuffer(50);</li>
+<li>StringBuffer sb = new StringBuffer(&ldquo;hello&rdquo;);</li>
+</ul>
+<h2 id="成员方法自己补齐方法和意思">成员方法：(自己补齐方法和意思)</h2>
+<ul>
+<li>添加功能<br>
+public StringBuffer append(String str):追加字符串<br>
+public StringBuffer insert(int offset,String str):在指定位置插入字符串</li>
+<li>删除功能<br>
+public StringBuffer deleteCharAt(int index):删除指定位置字符<br>
+public StringBuffer delete(int start,int end):删除从指定开始到结束的字符，左闭右开</li>
+<li>替换功能<br>
+public StringBuffer replace(int start,int end,String str):以字符串替代从指定开始到结束的字符</li>
+<li>反转功能<br>
+public StringBuffer reverse():反转</li>
+<li>截取功能<br>
+public String substring(int start):从指定索引到末尾的字符串<br>
+public String substring(int start,int end):从指定索引开始到指定索引结束的字符串</li>
+</ul>
+<h2 id="案例">案例：</h2>
+<ul>
+<li>String和StringBuffer的相互转换,通过构造即可。</li>
+<li>把数组转成指定的字符串格式</li>
+<li>把字符串反转</li>
+<li>判断一个字符串是否是对称字符串</li>
+</ul>
+<h1 id="数组高级部分理解">数组高级部分(理解)</h1>
+<h2 id="排序">排序</h2>
+<ul>
+<li>冒泡排序</li>
+</ul>
+<blockquote>
+<p>相邻元素，两两比较，大的往后放。</p>
+</blockquote>
+<p></p>
+<p></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java">	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">bubbleSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">x</span><span class="o">++)</span> <span class="o">{</span>
+			<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">-</span><span class="n">x</span><span class="o">;</span> <span class="n">y</span><span class="o">++)</span> <span class="o">{</span>
+				<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]&gt;</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">])</span> <span class="o">{</span>
+					<span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
+					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">];</span>
+					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+				<span class="o">}</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>选择排序</li>
+</ul>
+<blockquote>
+<p>从0开始，依次和后面的比较，小的往前放。</p>
+</blockquote>
+<p></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java">	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">selectSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">x</span><span class="o">++)</span> <span class="o">{</span>
+			<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">1</span><span class="o">;</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">y</span><span class="o">++)</span> <span class="o">{</span>
+				<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">])</span> <span class="o">{</span>
+					<span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">];</span>
+					<span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
+					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+				<span class="o">}</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+	<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">selectSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">)</span>
+<span class="o">{</span>
+    <span class="kt">int</span> <span class="n">min</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">temp</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+    <span class="k">if</span><span class="o">((</span><span class="n">a</span><span class="o">==</span><span class="kc">null</span><span class="o">)||(</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">==</span><span class="n">0</span><span class="o">))</span>
+        <span class="k">return</span><span class="o">;</span>
+    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span><span class="n">i</span><span class="o">++)</span>
+    <span class="o">{</span>
+        <span class="n">min</span><span class="o">=</span><span class="n">i</span><span class="o">;</span><span class="c1">//无序区的最小数据数组下标
+</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span>  <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="n">1</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">j</span><span class="o">++)</span>
+        <span class="o">{</span>
+            <span class="c1">//在无序区中找到最小数据并保存其数组下标
+</span><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">]&lt;</span><span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">])</span>
+            <span class="o">{</span>
+                <span class="n">min</span><span class="o">=</span><span class="n">j</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="c1">//将最小元素放到本次循环的前端
+</span><span class="c1"></span>        <span class="n">temp</span><span class="o">=</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+        <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">];</span>
+        <span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">]=</span><span class="n">temp</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="查找">查找</h2>
+<ul>
+<li>基本查找<br>
+数组无序</li>
+<li>二分查找<br>
+数组有序</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getIndex</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span><span class="kt">int</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+	<span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span>
+	<span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+	<span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">max</span><span class="o">+</span><span class="n">min</span><span class="o">)/</span><span class="n">2</span><span class="o">;</span>
+
+	<span class="k">while</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">!=</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">max</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="n">1</span><span class="o">;</span>
+		<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+			<span class="n">min</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="n">1</span><span class="o">;</span>
+		<span class="o">}</span>
+
+		<span class="k">if</span><span class="o">(</span><span class="n">max</span> <span class="o">&lt;</span> <span class="n">min</span><span class="o">)</span> <span class="o">{</span>
+			<span class="k">return</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
+		<span class="o">}</span>
+
+		<span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">max</span><span class="o">+</span><span class="n">min</span><span class="o">)/</span><span class="n">2</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="k">return</span> <span class="n">mid</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="arrays工具类掌握">Arrays工具类(掌握)</h1>
+<h2 id="arrays是针对数组进行操作的工具类提供了排序和查找等功能">Arrays是针对数组进行操作的工具类，提供了排序和查找等功能</h2>
+<h2 id="成员方法自己补齐方法和意思-1">成员方法：(自己补齐方法和意思)</h2>
+<ul>
+<li>把数组转成字符串
+public static String toString():将任意类型数据转换成字符串</li>
+<li>排序
+public static void sort()：</li>
+<li>二分查找
+public static int binarySearch(int[] arr,int key)</li>
+</ul>
+<h2 id="案例-1">案例：</h2>
+<p>把字符串中的字符进行排序</p>
+<h1 id="基本类型包装类掌握">基本类型包装类(掌握)</h1>
+<h2 id="为了让我们对基本类型进行更多的操作java针对每种基本类型提供了对应的包装类类型">为了让我们对基本类型进行更多的操作，java针对每种基本类型提供了对应的包装类类型。</h2>
+<h2 id="分别是哪些呢">分别是哪些呢?</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">	byte		Byte
+	short		Short
+	int		Integer
+	long		Long
+	float		Float
+	double		Double
+	char		Character
+	boolean		Boolean
+特殊：  void		Void
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="integer">Integer</h2>
+<ul>
+<li>构造方法
+<ul>
+<li>Integer i = new Integer(100);</li>
+<li>Integer i = new Integer(&ldquo;100&rdquo;);</li>
+</ul>
+</li>
+<li>成员方法(自己补齐方法和意思)
+<ul>
+<li>把字符串转成int类型<br>
+String-&gt;int: Integer.parseInt()<br>
+int-&gt;String: String.valueOf()或Integer.toString()</li>
+</ul>
+</li>
+<li>JDK5的新特性</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">自动装箱：
+	int --&gt; Integer		//Integer.valueOf()
+自动拆箱：
+	Integer --&gt; int		//Integer.intValue()
+
+请解释：
+	Integer i = 100;
+	i+=200;
+	System.out.println(i);
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>byte缓存池面试题<br>
+byte,short,char&mdash;&gt;小于127，否则报-6的错误(查看JDK)</li>
+</ul>
+<h2 id="character">Character</h2>
+<ul>
+<li>构造方法<br>
+Character ch = new Character(&lsquo;a&rsquo;);</li>
+<li>成员方法(自己补齐方法和意思)
+<ul>
+<li>判断字符是否是大写字母
+public boolean isUpperCase(char ch)</li>
+<li>判断字符是否是小写字母
+public boolean isLowerCase(Char ch)</li>
+<li>判断字符是否是数字字符
+public boolean isDigit(Char ch)</li>
+<li>把字符转成大写
+public Char toUpperCase(Char ch)</li>
+<li>把字符转成小写
+public Char toLowerCase(Char ch)</li>
+</ul>
+</li>
+</ul>
+]]></description></item></channel></rss>

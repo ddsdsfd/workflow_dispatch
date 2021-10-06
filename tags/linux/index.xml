@@ -1,23 +1,953 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>linux - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/linux/</link><description>linux - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Wed, 25 Mar 2020 09:19:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/linux/" rel="self" type="application/rss+xml"/><item><title>CRON 表达式的基本语法</title><link>https://lruihao.cn/posts/cron/</link><pubDate>Wed, 25 Mar 2020 09:19:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cron/</guid><description><![CDATA[<blockquote>
 <p><code>&lt;秒&gt; &lt;分钟&gt; &lt;小时&gt; &lt;日期 day-of-month&gt; &lt;月份&gt; &lt;星期 day-of-week&gt;</code></p>
-</blockquote>]]></description></item><item><title>HustOJ 基础搭建教程</title><link>https://lruihao.cn/posts/hustoj/</link><pubDate>Fri, 17 May 2019 23:08:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hustoj/</guid><description><![CDATA[<blockquote>
+</blockquote>
+<h1 id="基本语法">基本语法</h1>
+<table><thead><tr><th>位置</th><th>字段</th><th>约束</th><th>取值</th><th>可使用的特殊符号</th></tr></thead><tbody><tr><td>1</td><td>秒</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>2</td><td>分钟</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>3</td><td>小时</td><td>必须</td><td>0-23（0 为午夜）</td><td><code>, - \* /</code></td></tr><tr><td>4</td><td>日期</td><td>必须</td><td>1-31</td><td><code>, - \* ? /</code></td></tr><tr><td>5</td><td>月份</td><td>必须</td><td>1-12、JAN-DEC</td><td><code>, - \* /</code></td></tr><tr><td>6</td><td>星期</td><td>必须</td><td>1-7、SUN-SAT</td><td><code>, - ? /</code></td></tr></tbody></table>
+<h1 id="特殊符号的用法">特殊符号的用法</h1>
+<table><thead><tr><th>符号</th><th>含义</th><th>用法</th></tr></thead><tbody><tr><td><code>\*</code></td><td>所有值</td><td>代表一个字段的所有可能取值。如将<code>&lt;分钟&gt;</code> 设为<strong>\*</strong>，表示每一分钟。</td></tr><tr><td><code>?</code></td><td>不指定值</td><td>用于可以使用该符号的两个字段中的一个，在一个表达式中只能出现一次。如任务执行时间为每月 10 号，星期几无所谓，那么表达式中<code>&lt;日期&gt;</code> 设为<strong>10</strong>，<code>&lt;星期&gt;</code> 设为<strong>?</strong>。</td></tr><tr><td><code>-</code></td><td>范围</td><td>如<code>&lt;小时&gt;</code> 为<strong>10-12</strong>，即10 点、11 点、12 点。</td></tr><tr><td><code>,</code></td><td><span class="text-nowrap">分隔多个值</span></td><td>如<code>&lt;星期&gt;</code> 为<strong>MON,WED,FRI</strong>，即周一、周三、周五。</td></tr><tr><td><code>/</code></td><td>增量</td><td>如<code>&lt;秒&gt;</code> 设为<strong>0/15</strong>，即从 0 秒开始，以 15 秒为增量，包括 0、15、30、45 秒；<strong>5/15</strong> 即 5、20、35、50 秒。<strong>\*/</strong> 与<strong>0/</strong> 等效，如<code>&lt;日期&gt;</code> 设为<strong>1/3</strong>，即从每个月的第一天开始，每 3 天（即每隔 2 天）执行一次任务。</td></tr></tbody></table>各字段以空格或空白隔开。JAN-DEC、SUN-SAT 这些值不区分大小写，比如 MON 和 mon 效果一样。
+<h1 id="举例如下">举例如下</h1><table><thead><tr><th>表达式</th><th>说明</th></tr></thead><tbody><tr><td><code>0  0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次</td></tr><tr><td><code>10 0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次，每次执行都在分钟开始的 10 秒，例如 10:00:10、10:05:10 等等。</td></tr><tr><td><code style="white-space:nowrap;">0 30 10-13 ? \* WED,FRI</code></td><td>每周三和每周五的 10:30、11:30、12:30、13:30 执行。</td></tr><tr><td><code>0 0/30 8-9 5,20 \* ?</code></td><td>每个月的 5 号和 20 号的 8 点和 10 点之间每隔 30 分钟执行一次，也就是 8:00、8:30、9:00 和 9:30。</td></tr></tbody></table>]]></description></item><item><title>HustOJ 基础搭建教程</title><link>https://lruihao.cn/posts/hustoj/</link><pubDate>Fri, 17 May 2019 23:08:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hustoj/</guid><description><![CDATA[<blockquote>
 <p>目前 HustOj 在 GitHUb 地址是：<a href="https://github.com/zhblue/hustoj" target="_blank" rel="noopener noreffer">https://github.com/zhblue/hustoj</a><br>
 <strong>安装时注意ubuntu版本</strong>，没条件的可以在自己ubuntu上尝试，或者虚拟机上（关注公众号回复<code>ubuntu16.04</code>获取iso镜像文件），也可以在云实验室的云服务器上做做实验。<br>
 更多说明及ACM/NOIP题库下载见官网博客<a href="http://www.hustoj.com/" target="_blank" rel="noopener noreffer">代码的那些事|程序员回忆录</a></p>
-</blockquote>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ngrok/</guid><description>&lt;blockquote>
-&lt;p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。&lt;/p>
-&lt;/blockquote></description></item><item><title>ubuntu + windows双系统默认启动项设置</title><link>https://lruihao.cn/posts/windefault/</link><pubDate>Thu, 21 Mar 2019 12:48:30 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/windefault/</guid><description><![CDATA[<div class="featured-image">
+</blockquote>
+<h1 id="快速安装-oj">快速安装 OJ</h1>
+<p>下载</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo bash install-ubuntu16+.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>等待中一路回车，当提示 done！ 则表示安装成功：
+</p>
+<h1 id="使用-hustoj">使用 HustOJ</h1>
+<p>打开网页/IP地址<br>
+注册admin<br>
+用 admin 作为用户名注册一个用户，将会自动成为管理员。<br>
+<br>
+注册成功，会提示：<br>
+<br>
+登录后台<br>
+登录账号，并点击右上角的管理：<br>
+<br>
+添加测试题目<br>
+在后台选择添加题目，添加成功：<br>
+<br>
+然后再提交代码测试判题机。</p>
+<h1 id="说明">说明</h1>
+<p>安装后几个重要配置文件的位置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/home/judge/etc/judge.conf
+/home/judge/src/web/include/db_info.inc.php
+/etc/php5/fpm/php.ini 或 /etc/php7.0/fpm/php.ini
+/etc/nginx/sites-enabled/default
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ngrok/</guid><description><![CDATA[<blockquote>
+<p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。</p>
+</blockquote>
+<h1 id="搭建环境">搭建环境</h1>
+<p>我的电脑是<code>ubuntu+windows</code>双系统的，所以我先在ubuntu上面装了一个宝塔面板，方便通过web管理电脑，宝塔安装好后安装相关的环境<code>mysql,php,nginx</code>等。我们现在只能通过本地ip<code>127.0.0.1:8888</code>访问面板。</p>
+<h1 id="ngrok穿透">ngrok穿透</h1>
+<p>去ngrok注册登录，购买隧道（有免费的），然后绑定端口，绑定域名，这里我们拿端口<code>8888</code>和域名<code>test.lruihao.cn</code>做实验，也就是宝塔面板的端口，这样我们就可以透过域名远程访问本地服务器，这样是不是开始有云服务器的感觉了。然后宝塔面板设置也绑定好域名<code>test.lruihao.cn</code>,dns服务商那里做好相应的解析。<br>
+然后在ngrok那里下载sunny客户端文件，我们是ubuntu选择<code>linux-64bits</code>版本。解压后在ubuntu打开终端进入sunny文件目录，权限给到755，运行命令<code>./sunny clientid xxxxxxx</code> 后面的你的隧道订单的id。</p>
+<p>现在就可以通过互联网访问我的ubuntu服务器了。</p>
+<h1 id="搭建网站">搭建网站</h1>
+<p>前面两步搞定，搭建网站就没问题了。<br>
+我们只要把网站的端口按第二步的在ngrok设置好就可以穿透了。</p>
+<h1 id="注意">注意</h1>
+<p>访问本地网站的必要条件是你的电脑得是开机状态而且有网络。</p>]]></description></item><item><title>ubuntu + windows双系统默认启动项设置</title><link>https://lruihao.cn/posts/windefault/</link><pubDate>Thu, 21 Mar 2019 12:48:30 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/windefault/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/windefault/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>双系统默认启动项是Ubuntu，而日常使用最多的还是Windows，所以说很不方便，一不小心就开机到Ubuntu去了。今天来设置一下。</p>
-</blockquote>]]></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
+</blockquote>
+<h1 id="修改etcdefaultgrub文件">修改<code>/etc/default/grub</code>文件</h1>
+<blockquote>
+<p>同时按住键盘上的“Ctrl Alt T”三个键（即快捷键“Ctrl+Alt+T”），打开终端窗口。在终端内输入 sudo gedit /etc/default/grub  按 Enter 键确认，提示输入用户密码，输入的用户密码是看不见的，不要管它，输入完成确认即可打开grub文件。</p>
+</blockquote>
+<p></p>
+<blockquote>
+<p>把grub文件中的 <code>GRUB_DEFAULT=0</code> 中的 0 改为 <code>saved</code>,把 <code>GRUB_TIMEOUT=10</code> 中的 10 改为 5。（这里的5表示开机时等待选择操作系统是时间是5秒）<br>
+在文件末尾添加 <code>GRUB_SAVEDEFAULT=true</code>后保存文件并退出。</p>
+</blockquote>
+<p></p>
+<h1 id="更新启动配置文件">更新启动配置文件</h1>
+<blockquote>
+<p>在终端输入 sudo update-grub 按 Enter 键确认</p>
+</blockquote>
+<p></p>
+<h1 id="重启">重启</h1>
+<p><code>sudo reboot</code>或者点击重启，重启到启动菜单时，选择你要更改为默认启动项的系统，按 Enter 键确认启动即可，下次启动时刚刚选择的系统即为默认启动系统，直到你手动选择启动其他的系统为止。以后可以轻松的来回切换默认系统了。</p>]]></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/bt/images/1.png" referrerpolicy="no-referrer">
-            </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>]]></description></item><item><title>win10,ubuntu双系统时间不一致</title><link>https://lruihao.cn/posts/ubuntutime/</link><pubDate>Fri, 15 Mar 2019 14:28:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ubuntutime/</guid><description>&lt;blockquote>
-&lt;p>我的 Ubuntu 和 Windows 双系统是 Ubuntu 是第一启动项，所以总是开机忘记点下键，一进 Ubuntu 系统时间就不对了（总是少了8小时），回到 Windows 时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说 git 版本控制提交会遇到问题种种等。&lt;/p>
-&lt;/blockquote></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
+            </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过Web面板一键即可操作实现。可选择安装lamp或者lnmp环境，可创建及管理网站，可创建及管理数据库，可创建及管理FTP等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>
+<h1 id="系统要求">系统要求</h1>
+<blockquote>
+<p>操作系统：全新系统(支持CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>
+确保是干净的操作系统，没有安装过其它环境带的Apache/Nginx/php/MySQL<br>
+宝塔Linux6.0版本是基于centos7开发的，强烈建议使用centos7.x 系统<br>
+内存要求：内存要求最低512MB，推荐768MB以上，纯面板约占系统60MB内存</p>
+</blockquote>
+<h1 id="安装方法">安装方法</h1>
+<p>官方号称2分钟装好面板，一键管理服务器。</p>
+<blockquote>
+<p>使用 SSH 连接工具，如宝塔远程桌面助手连接到您的 Linux 服务器后，挂载磁盘，根据系统执行相应命令开始安装（大约2分钟完成面板安装）：</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">yum install -y wget <span class="o">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> sh install.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> sudo bash install.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</code></pre></td></tr></table>
+</div>
+</div><p></p>
+<h1 id="搭建ftp和云盘服务器">搭建ftp和云盘服务器</h1>
+<p>可以很傻瓜式的搭建自己的云盘，和平时用的比较多的ftp服务器。搭建静态网站也可以用ftp来上传文件。</p>]]></description></item><item><title>win10,ubuntu双系统时间不一致</title><link>https://lruihao.cn/posts/ubuntutime/</link><pubDate>Fri, 15 Mar 2019 14:28:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ubuntutime/</guid><description><![CDATA[<blockquote>
+<p>我的 Ubuntu 和 Windows 双系统是 Ubuntu 是第一启动项，所以总是开机忘记点下键，一进 Ubuntu 系统时间就不对了（总是少了8小时），回到 Windows 时间也是错的。知道是错的调整一下还好。忘记调了有时候真的会误事。比如说 git 版本控制提交会遇到问题种种等。</p>
+</blockquote>
+<h2 id="原因">原因</h2>
+<p>在安装 Ubuntu 和 Windows 双系统的情况下，Ubuntu 的时间总会和 Windows 的时间相差 8 小时，原因在于 widows 认为 BIOS 时间是本地时间，Ubuntu 认为 BIOS 时间是 UTC 时间，即协调世界时，(Universal Time Coordinated)英文缩写，是由国际无线电咨询委员会规定和推荐,并由国际时间局(BIH)负责保持的以秒为基础的时间标度。UTC 相当于本初子午线(即经度0度)上的平均太阳时，过去曾用格林威治平均时(GMT)来表示。北京时间比 UTC 时间早 8 小时，以 1999 年 1 月 1 日 00:00 UTC 为例，UTC 时间是零点，北京时间为 1999 年 1 月 1 日早上 8 点整。)，所以我们在时间上面相隔了 8 个小时。这个时候 bios 的时间和系统的时间当然是不一致，一个代表 utc 时间，一个代表 cst（＋8 时区），即我们常用的时间。</p>
+<h2 id="方法一">方法一</h2>
+<p>在 Windows下 进行如下修改：（博主win10,win7自测）<br>
+以管理员身份运行CMD（<code>win+x后选择Windows Powershell(管理员)</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+</code></pre></td></tr></table>
+</div>
+</div><p>重启看看时间发现ok了。</p>
+<h2 id="方法二">方法二</h2>
+<p>老版 Ubuntu（Ubuntu10 左右）：<br>
+修改 <code>/etc/default/rcS</code> 文件<br>
+编辑 <code>/etc/default/rcS</code> 将 <code>UTC=yes</code>改成 <code>UTC=no</code> 。</p>
+<p>新版 Ubuntu（Ubuntu16.04）：
+新版本的 Ubuntu 使用 systemd 启动之后，时间也改成了由 timedatectl 来管理，此方法就不适用了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo timedatectl set-local-rtc 1
+</code></pre></td></tr></table>
+</div>
+</div><p>先在 ubuntu 下更新一下时间，确保时间无误：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo apt-get install ntpdate
+$sudo ntpdate time.windows.com
+</code></pre></td></tr></table>
+</div>
+</div><p>然后将时间更新到硬件上：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo hwclock --localtime --systohc
+</code></pre></td></tr></table>
+</div>
+</div><p>重新进入windows10，发现时间恢复正常了！</p>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
 <ul>
 <li>read</li>
 <li>echo</li>
 <li>if</li>
 </ul>
-<p>然后自己写了一个小脚本觉得还挺有趣的</p>]]></description></item><item><title>云服务器 CentOS 系统搭建 web 服务</title><link>https://lruihao.cn/posts/web-server-yun/</link><pubDate>Mon, 29 Oct 2018 09:15:58 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-yun/</guid><description>搭建Apache web服务 1.安装Apache超文本传输协议(HTTP)服务器的主程序 1 [root@VM_0_6_centos /]# yum install -y httpd 注意安装目录，可通过cd 命令切换。 2.启</description></item><item><title>termux基本使用教程</title><link>https://lruihao.cn/posts/termux1/</link><pubDate>Tue, 23 Oct 2018 22:16:02 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/termux1/</guid><description>前面有一篇文章写到一些,在 Android 上搭建 hexo 博客 本文当初摘要自国光个人博客 如若作者博客IP被墙，可前往国光第三方博客诸如csdn等。备用 初始化 下载并</description></item><item><title>linux编程初体验</title><link>https://lruihao.cn/posts/linux-hello-c/</link><pubDate>Mon, 15 Oct 2018 21:19:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linux-hello-c/</guid><description>在 Linux 上编译 c 语言文件。 打开vim编辑器 (没有就用vi,或者先安装vimsudo apt-get install vim) 1 $ vim 编辑文件 打开文件编辑器之后编辑文件 首先按Esc再:</description></item></channel></rss>
+<p>然后自己写了一个小脚本觉得还挺有趣的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="c1">#liruihao</span>
+<span class="c1">#menu.sh</span>
+<span class="c1">#sudo apt curl install nyancat sl figlet toilet cowsay </span>
+<span class="nb">echo</span> <span class="s2">&#34;-------------菜-单--------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------1-打印二维码--------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------2-彩虹猫------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------3-小火切------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------4-打字机------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;------------5-小许牛------------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c暂停程序--------&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;请输入序号！&#34;</span>
+<span class="nb">read</span> i
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">1</span>
+<span class="k">then</span>
+	<span class="nb">echo</span> <span class="s2">&#34;请输入网址！&#34;</span>
+	<span class="nb">read</span> s1
+       	<span class="nb">echo</span> <span class="nv">$s1</span> <span class="p">|</span>curl -F-<span class="o">=</span><span class="se">\&lt;</span>- qrenco.de
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">2</span>
+<span class="k">then</span>
+	nyancat
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">3</span>
+<span class="k">then</span>
+	sl
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">4</span>
+<span class="k">then</span>
+	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+	<span class="nb">read</span> s2
+	<span class="nb">echo</span> <span class="s2">&#34;选择样式：&#34;</span>
+	<span class="nb">echo</span> <span class="s2">&#34;------样式1-----&#34;</span>
+	<span class="nb">echo</span> <span class="s2">&#34;------样式2-----&#34;</span>
+	<span class="nb">read</span> j
+	<span class="k">if</span> <span class="nb">test</span> <span class="nv">$j</span> -eq <span class="m">1</span>
+	<span class="k">then</span>
+		figlet <span class="nv">$s2</span>
+	<span class="k">else</span>
+		toilet -f mono12 -F gay <span class="nv">$s2</span>
+	<span class="k">fi</span>
+<span class="k">fi</span>
+<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">5</span>
+<span class="k">then</span>
+	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+	<span class="nb">read</span> s3
+	cowsay <span class="nv">$s3</span>
+<span class="k">fi</span>
+<span class="nb">echo</span> <span class="s2">&#34;任意建继续！&#34;</span>
+<span class="nb">read</span> x
+clear
+./menu.sh
+
+</code></pre></td></tr></table>
+</div>
+</div><p>
+
+
+
+
+</p>]]></description></item><item><title>云服务器 CentOS 系统搭建 web 服务</title><link>https://lruihao.cn/posts/web-server-yun/</link><pubDate>Mon, 29 Oct 2018 09:15:58 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-yun/</guid><description><![CDATA[<h3 id="搭建apache-web服务">搭建Apache web服务</h3>
+<p>1.安装Apache超文本传输协议(HTTP)服务器的主程序</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum install -y httpd
+</code></pre></td></tr></table>
+</div>
+</div><p>注意安装目录，可通过cd 命令切换。</p>
+<p>2.启动HTTP服务</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# systemctl start httpd.service 
+</code></pre></td></tr></table>
+</div>
+</div><p>如果启动失败，可通过systemctl status httpd.service查看错误原因。<br>
+启动成功，证明http服务已经可以使用，发现还需要把本地文件传到服务器。<br>
+默认根目录<code>/var/www/html/</code></p>
+<h3 id="使用ssh连接服务器">使用SSH连接服务器</h3>
+<p>尝试了两种方式：PuTTY和Xshell（推荐）</p>
+<h4 id="xshell方式">Xshell方式</h4>
+<p>官网下载安装Xshell打开，输入ip账号密码连接主机。</p>
+<p>使用lrzsz方式上传下载文件<br>
+步骤1：在服务器安装lrzsz</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum -y install lrzsz
+</code></pre></td></tr></table>
+</div>
+</div><p>步骤2：输入命令<code>rz</code>打开上传窗口(可以选择多个文件。)<br>
+使用<code>sz</code>文件名命令可打开从服务器下载文件的保存窗口。</p>
+<h3 id="修改http配置">修改HTTP配置</h3>
+<p>1.VIM编辑器打开配置文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# vim /etc/httpd/conf/httpd.conf
+</code></pre></td></tr></table>
+</div>
+</div><p>2.按<code>I</code>键进入编辑模式</p>
+<p>3.找到并修改以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ServerAdmin 管理员邮箱，用于浏览器请求报错时展示
+DocumentRoot 访问根目录（默认：/var/www/html），如项目存放在其他地方，可修改为项目存放位置
+&lt;Directory &#34;/var/www/html&#34;&gt; 同DocumentRoot 配置
+ServerName 服务器IP或 域名 
+</code></pre></td></tr></table>
+</div>
+</div><p>4.按下ESC键输入<code>:wq</code>保存退出</p>
+<p>5.重启服务<code>service httpd restart</code></p>
+<p>6.打开浏览器，输入地址访问<br>
+如:我的项目索引html路径为 <code>love/index.html</code>，输入<br>
+<code>http://IP地址或域名/love/index.html</code></p>
+<p>7.访问不成功，先检查网络，再查看http服务是否开启，最后检查配置；<br>
+访问成功，配置完成。</p>
+<p>链接：https://www.jianshu.com/p/0b67c6c5d21d</p>
+]]></description></item><item><title>termux基本使用教程</title><link>https://lruihao.cn/posts/termux1/</link><pubDate>Tue, 23 Oct 2018 22:16:02 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/termux1/</guid><description><![CDATA[<blockquote>
+<p>前面有一篇文章写到一些,<a href="https://lruihao.cn/posts/termux/" target="_blank" rel="noopener noreffer">在 Android 上搭建 hexo 博客</a>
+<strong>本文当初摘要自<a href="https://www.sqlsec.com/2018/05/termux.html?yyue=a21bo.50862.201879" target="_blank" rel="noopener noreffer">国光个人博客</a></strong>
+如若作者博客IP被墙，可前往国光第三方博客诸如csdn等。<a href="https://www.freebuf.com/geek/170510.html" target="_blank" rel="noopener noreffer">备用</a></p>
+</blockquote>
+<h3 id="初始化">初始化</h3>
+<p>下载并初始化termux</p>
+<h4 id="安装vim">安装vim</h4>
+<p>安装编辑器vim</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install vim
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="解决中文乱码问题">解决中文乱码问题</h4>
+<p>在home目录下, 新建.vimrc文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim .vimrc
+</code></pre></td></tr></table>
+</div>
+</div><p>添加内容如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set enc=utf8
+set fencs=utf8,gbk,gb2312,gb18030
+</code></pre></td></tr></table>
+</div>
+</div><p>然后source下变量:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">source .vimrc
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="修改启动问候语">修改启动问候语</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
+</code></pre></td></tr></table>
+</div>
+</div><p>按i然后编辑，比如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">		www.lruihao.cn
+		    李瑞豪
+</code></pre></td></tr></table>
+</div>
+</div><p>Esc然后：wq退出</p>
+<h4 id="管理员权限">管理员权限</h4>
+<p>手机已经 root,安装tsu, 这是一个su的 termux 版本, 用来在 termux 上替代su:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install tsu
+</code></pre></td></tr></table>
+</div>
+</div><p>然后终端下面输入:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">tsu
+</code></pre></td></tr></table>
+</div>
+</div><p>即可切换root用户, 这个时候会弹出root授权提示。在管理员身份下，输入exit可回到普通用户身份。</p>
+<h3 id="美化">美化</h3>
+<p><a href="https://github.com/Cabbagec/termux-ohmyzsh" target="_blank" rel="noopener noreffer">Termux-ohmyzsh</a></p>
+<p>作用 ： 美化之外，主要使用了zsh来替代bash作为默认shell。使用一键安装脚本来安装, 一步到位, 顺便启动了外置存储, 可以直接访问 SD 卡下的目录，创建软文件夹。</p>
+<h4 id="使用">使用</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sh -c &#34;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="设置色彩样式">设置色彩样式：</h4>
+<p>运行chcolor更换色彩样式，或者：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/colors.sh
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="设置字体">设置字体</h4>
+<p>运行chfont更换字体，或者：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/fonts.sh
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="需要软件包">需要软件包：</h4>
+<ul>
+<li>curl</li>
+</ul>
+<h3 id="访问外置存储">访问外置存储</h3>
+<p>执行过上面的zsh一键配置脚本后, 并且授予文件访问权限的话, 会在家目录生成storage目录，并且生成若干目录，软连接都指向外置存储卡的相应目录<br>
+可以让从外置储存复制文件进system分区</p>
+<h4 id="创建-qq-文件夹软连接">创建 QQ 文件夹软连接</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="创建blog2文件夹软连接备份文件">创建blog2文件夹软连接备份文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="安装hexo">安装hexo</h3>
+<h4 id="安装准备">安装准备</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nodejs
+pkg install git
+npm install hexo-cli -g
+npm install hexo-deployer-git --save
+pkg install openssh
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="初始化hexo">初始化hexo</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo init blog
+cd blog
+hexo g
+hexo s
+</code></pre></td></tr></table>
+</div>
+</div><p>浏览器输入<code>127.0.0.1:4000</code>查看效果</p>
+<h4 id="链接githubcodinggitee等远程仓库">链接github,coding,gitee等远程仓库</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh-keygen -t rsa -C &#34;your_email@example.com&#34;
+#这将按照你提供的邮箱地址，创建一对密钥(个人喜欢一路回车)
+</code></pre></td></tr></table>
+</div>
+</div><p>找到<code>~/.ssh/id_rsa.pub</code>这个文件复制里面的内容，到对应的平台生成SSH公钥</p>
+<h4 id="设置用户信息">设置用户信息</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git config --global user.name &#34;lruihao&#34;
+git config --global user.email  &#34;1074627678@qq.com&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="测试链接">测试链接</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh -T git@github.com  #github
+ssh -T git@coding.net   #coding
+ssh -T git@gitee.com   #gitee
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>注意#注释部分不要的</strong></p>
+<h4 id="站点配置文件">站点配置文件</h4>
+<p>打开站点配置文件填写代码库</p>
+<p>例如我的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">deploy:
+- type: git
+  repository:
+    github: git@github.com:Lruihao/Lruihao.github.io.git,master
+    coding: git@git.coding.net:liruihao/liruihao.git,master
+  #message: &#34;日常更新&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="部署">部署</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo clean
+hexo g -d
+</code></pre></td></tr></table>
+</div>
+</div><p>没出错就可以正常通过相应域名访问了。
+<a href="https://lruihao.github.io" target="_blank" rel="noopener noreffer">https://lruihao.github.io</a>
+<a href="https://liruihao.coding.me" target="_blank" rel="noopener noreffer">https://liruihao.coding.me</a>
+<a href="https://lruihao.gitee.io" target="_blank" rel="noopener noreffer">https://lruihao.gitee.io</a> <strong>//手机hexo效果展示</strong></p>
+<h3 id="ssh连接电脑或者服务器">ssh连接电脑或者服务器</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh root@118.24.217.167
+</code></pre></td></tr></table>
+</div>
+</div><p>会提示输入密码，linux下输入密码是看不到的，大家都知道，小心点别输入错误。<br>
+之后就可以手机操作服务器了。</p>
+<h3 id="解决-npm-安装报错未验证">解决 npm 安装报错（未验证）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js
+</code></pre></td></tr></table>
+</div>
+</div><p>把里面的 length改成4，我默认的是1。</p>
+<h3 id="nyancat-彩虹猫">nyancat 彩虹猫</h3>
+<p>彩虹貓（英语：Nyan Cat）是在 2011 年 4 月上传在 Youtube 的视频，并且迅速爆红于网络，並在 2011 年 YouTube 浏览量最高的视频中排名第五.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nyancat
+nyancat
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>还有更多姿势这里就不写了，只写一下日常用到的，就这样OK睡觉！</p>
+</blockquote>
+<h3 id="termux更多常用有趣命令适用于linux">termux更多常用有趣命令（适用于linux）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
+chcolor
+chfont
+~/.termux/colors.sh
+~/.termux/fonts.sh
+
+echo &#34;https://www.lruihao.cn&#34; |curl -F-=\&lt;- qrenco.de
+
+pkg install nyancat
+nyancat
+pkg install sl
+sl
+pkg install figlet
+figlet hello
+pkg install toilet
+toilet hello
+toilet -f mono12 -F gay &#34;hello&#34;
+pkg cowsay
+cowsay &#34;hello&#34;
+pkg install cmatrix
+cmatrix
+pkg install w3m
+w3m www.lruihao.cn
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>cmatrix常用命令如下:
+cmatrix-a :异步滚动（默认）
+cmatrix-b :随机粗体
+cmatrix-B :全部粗体
+cmatrix-o :使用旧风格滚动
+cmatrix-x :X window 模式
+cmatrix-V :显示版本信息
+cmatrix-u :刷新频率，0-9，也就是滚动的快慢
+cmatrix-C :显示的颜色，支持green(默认),red,blue,white,yellow,cyan,
+        magenta and black
+例如:使用红色
+cmatrix -b -C red
+使用蓝色
+cmatrix -b -C blue
+等等........
+主义:在运行状态下,使用0-9数字,可以改变运行速度快慢.
+</code></pre>
+<p>开启你的装逼之路把,骚年!</p>
+]]></description></item><item><title>linux编程初体验</title><link>https://lruihao.cn/posts/linux-hello-c/</link><pubDate>Mon, 15 Oct 2018 21:19:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linux-hello-c/</guid><description><![CDATA[<blockquote>
+<p>在 Linux 上编译 c 语言文件。</p>
+</blockquote>
+<h3 id="打开vim编辑器">打开vim编辑器</h3>
+<p>(没有就用vi,或者先安装vim<code>sudo apt-get install vim</code>)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ vim
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编辑文件">编辑文件</h3>
+<p>打开文件编辑器之后编辑文件
+</p>
+<p>首先按<code>Esc</code>再<code>:</code>进入末行命令<br>
+再保存为hello.c文件后退出</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">: w hello.c
+: q
+</code></pre></td></tr></table>
+</div>
+</div><p>打开目录看看生成的文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ ls
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编译生成可执行文件并执行">编译生成可执行文件并执行</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ gcc hello.c -o hello
+$ ./hello
+</code></pre></td></tr></table>
+</div>
+</div><p></p>
+<p>若权限不够则加可执行权限<code>chmod +x hello</code></p>
+]]></description></item><item><title>linux/centos 下的安装git</title><link>https://lruihao.cn/posts/linux-git/</link><pubDate>Sat, 22 Sep 2018 22:28:45 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linux-git/</guid><description><![CDATA[<h3 id="下载git">下载git</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">wget https://github.com/git/git/archive/v2.14.1.zip
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="安装依赖">安装依赖</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel curl-devel perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="解压git">解压git</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">unzip v2.14.1.zip
+</code></pre></td></tr></table>
+</div>
+</div><p>注：
+unzip命令用不了，具体步骤如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#yum list | grep zip/unzip 
+#yum install zip
+#yum install unzip
+</code></pre></td></tr></table>
+</div>
+</div><p>基本完成，如果在编译的时候出现错误：<code>gcc : error trying to exec 'cc1plus': execvp : No sunch file or directory</code><br>
+可以用<code>gcc -v/g++ -v</code> 来查看gcc 版本，会发现没有安装。安装如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#yum list | grep gcc
+#yum install gcc-c++
+#yum install unzip
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="将git安装到usrlocal上">将git安装到/usr/local上</h3>
+<p>先进入git文件夹<br>
+编译<br>
+安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cd git-2.14.1
+make prefix=/usr/local all
+make prefix=/usr/local install
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="验证是否安装完成">验证是否安装完成</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git --version
+</code></pre></td></tr></table>
+</div>
+</div><p>&hellip;</p>
+]]></description></item><item><title>linux系统进入退出vim编辑器及termux修改问候语</title><link>https://lruihao.cn/posts/vim/</link><pubDate>Fri, 31 Aug 2018 11:46:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/vim/</guid><description><![CDATA[<blockquote>
+<p>vim 编辑器是 Linux 系统自带的文本编辑器</p>
+</blockquote>
+<h2 id="进入vim编辑器">进入VIM编辑器</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim /&lt;路径&gt;/文件名.后缀名
+</code></pre></td></tr></table>
+</div>
+</div><p>如果这个文件，以前是没有的，则为新建，会有提示，否者则没有提示。</p>
+<p>进入编辑器后，按&quot;I”，即切换到“INSERT”状态。即插入状态，就可以通过上下左右移动光标，或空格、退格及回车等进行编辑内容了，和WINDOWS是一样的了。</p>
+<h2 id="退出vim编辑器的方法及区别">退出vim编辑器的方法及区别</h2>
+<p><strong>退出编辑器分为4种情况：</strong></p>
+<ul>
+<li>保存退出</li>
+<li>正常退出</li>
+<li>不保存退出</li>
+<li>强制退出</li>
+</ul>
+<h3 id="保存退出">保存退出</h3>
+<p>先按<code>Esc</code>退出插入状态，再输入英文<code>:</code>,在下方会出现冒号，等待输入命令,再输入<code>WQ</code>回车就保存了,W,Q分别对应功能，<br>
+W: write ,写入<br>
+Q: quit ,退出</p>
+<p>保存退出还有二个方法：</p>
+<ol>
+<li>在最后输入命令时，直接输入&quot;x&quot;，也是一样的，即X=WQ。</li>
+<li>最快捷的方法：按了ESC后，直接按shift+zz，或者切换到大写模式按ZZ，就可以保存退出了，即是按两下大写的Z。</li>
+</ol>
+<p>查看命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cat /&lt;路径&gt;/文件名.后缀名
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="正常退出">正常退出</h3>
+<p>正常退出有个前提条件是：打开的文本文件在内容上没有被改动过。<br>
+按了<code>ESC</code>后再输入冒号<code>:</code>，在输入命令时，直接输入<code>q</code>。</p>
+<h3 id="不保存退出">不保存退出</h3>
+<p>很多时候打开了文件，或者修改了一些地方，才发现错了，非常需要不保存退出。<br>
+先按<code>ESC</code>，再输入冒号<code>:</code>，在输入命令时，直接输入<code>q!</code>。</p>
+<h3 id="强制退出">强制退出</h3>
+<p>强制退出。这个实在是不应该做的操作，因为很操蛋！<br>
+先按<code>ESC</code>，再按冒号<code>:</code>，在输入命令时，直接输入<code>!</code>，但退出后，会有提示修改内容尚未保存，是否继续！</p>
+<h2 id="termux使用vim修改问候语">termux使用vim修改问候语</h2>
+<p>没错又是termux,就是以前一篇文章提到的“安卓上的Linux”。<br>
+先</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
+</code></pre></td></tr></table>
+</div>
+</div><p>如果报错，好像是要安装Python <code>pkg install python</code></p>
+<p>进入后先使用<code>dd</code>把以前的问候语一行一行删掉，再输入<code>i</code>，进入插入操作，修改你自定义的问候语。之后<code>ESC</code>,再<code>:WQ</code>退出保存，重启termux就可以看到修改后的效果了。如图。</p>
+<p></p>
+<p>termux美化<a href="https://github.com/Cabbagec/termux-ohmyzsh" target="_blank" rel="noopener noreffer">termux-ohmyzsh</a></p>
+]]></description></item></channel></rss>

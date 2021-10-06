@@ -16,10 +16,437 @@
             
         </span>
     </span>
-</a>]]></description></item><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
+</a>
+<h2 id="功能">功能</h2>
+<p>支持 Windows/Linux 系统下，实现对剪切板图像的处理调用 (Ctrl+Shift+V)<br>
+默认使用 JPG 的方式保存，可以显著减小图片的存储体积。</p>
+<ul>
+<li>对剪切板图像保存到本地并在 Markdown 文本中插入链接地址</li>
+<li>对剪切板中的图像地址，直接插入到 Markdown 文本中</li>
+</ul>
+<h2 id="食用说明">食用说明</h2>
+<ol>
+<li>首先下载 zip 到本地，放到 sublime 安装目录的 <code>xxx\sublime\Data\Packages</code> 中，注意不是 <code>xxx\sublime\Packages</code> 下哦。</li>
+<li>记得要把 subl_imgpaste2-master 的 <code>-master</code> 删除掉。接着重新打开 sublime, 选择 <code>Preferences-&gt;Package Settings-&gt;ImaPaste2-&gt;settings-Default</code> 输入如下内容：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{
+  &#34;caption&#34;: &#34;ImagePaste: Paste Image From Clipboard&#34;,
+  &#34;command&#34;: &#34;image_paste&#34;,
+  &#34;image_dir_name&#34;: &#34;images/&#34; # 图片保存目录
+}
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>然后就可以愉快的使用截图，然后在 sublime 里使用 <code>ctrl+shift+v</code> 粘贴 Markdown 格式的图片。默认会自动根据 md 文件名在同级目录下新建文件夹，图片就默认保存在那。如图：<br>
+<figure><a class="lightgallery" href="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" title="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" data-thumbnail="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" data-sub-html="<h2>演示</h2>">
+        
+    </a><figcaption class="image-caption">演示</figcaption>
+    </figure></li>
+</ol>]]></description></item><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
 <p>黑盒测试着重测试软件功能，它并不涉及程序的内部结构和内容特性，主要根据规格说明，只依靠被测试程序的输入和输出之间关系或程序的功能来设计测试用例。<br>
 白盒测试则清楚程序内部的结构以及是如何运作的，因此白盒测试需要对系统内部的结构和工作原理有一个清楚的了解。</p>
-</blockquote>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wex5/</guid><description>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法</description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description>外存的组织方式 连续组织方式 连续组织方式的优点 顺序访问容易 顺序访问速度快 连续组织方式的缺点 分配连续的存储空间 必须知道文件长度 删除与插入数据不灵</description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+</blockquote>
+<h1 id="程序">程序</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp">#include</span><span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span><span class="cp">#define N 2&lt;&lt;25
+</span><span class="cp"></span>
+<span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="n">N</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="n">N</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">N</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="n">N</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">shuru</span><span class="p">();</span>
+<span class="kt">void</span> <span class="nf">panduan</span><span class="p">(</span><span class="kt">int</span> <span class="n">a1</span><span class="p">,</span><span class="kt">int</span> <span class="n">b1</span><span class="p">,</span><span class="kt">int</span> <span class="n">c1</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">char</span> <span class="n">se</span><span class="p">;</span>
+    <span class="n">shuru</span><span class="p">();</span>
+    <span class="n">panduan</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">);</span>
+    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;是否要继续y or n :&#34;</span><span class="p">);</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">se</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">se</span><span class="o">==</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span> <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">se</span><span class="p">);</span>
+        <span class="k">switch</span><span class="p">(</span><span class="n">se</span><span class="p">)</span>
+        <span class="p">{</span>
+        <span class="k">case</span> <span class="sc">&#39;y&#39;</span><span class="o">:</span>
+        <span class="n">shuru</span><span class="p">();</span>
+    	  <span class="n">panduan</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="sc">&#39;n&#39;</span><span class="o">:</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">shuru</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Please enter 三角形三边 (a,b,c)</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+    <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d,%d,%d,%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="o">&amp;</span><span class="n">d</span><span class="p">)){</span><span class="c1">//判断非数字字符
+</span><span class="c1"></span>        <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span><span class="c1">//清理缓存
+</span><span class="c1"></span>        <span class="n">a</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">b</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">c</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">d</span><span class="o">=</span><span class="n">N</span><span class="p">;</span>
+    	 <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
+    <span class="k">while</span><span class="p">((</span><span class="n">a</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">||</span><span class="n">a</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">b</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">||</span><span class="n">b</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">c</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">||</span><span class="n">c</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">)</span><span class="o">||</span><span class="n">d</span><span class="o">!=</span><span class="n">N</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="o">==</span><span class="n">N</span><span class="o">||</span><span class="n">c</span><span class="o">==</span><span class="n">N</span><span class="o">||</span><span class="n">d</span><span class="o">!=</span><span class="n">N</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span><span class="c1">//边数为1、2、4条
+</span><span class="c1"></span>        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">==</span><span class="mi">0</span><span class="o">||</span><span class="n">b</span><span class="o">==</span><span class="mi">0</span><span class="o">||</span><span class="n">c</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;边长不能为0</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">||</span><span class="n">b</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">||</span><span class="n">c</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;边长不能为负</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="k">else</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Please enter 1-100之间的整数</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="n">a</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">b</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">c</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">d</span><span class="o">=</span><span class="n">N</span><span class="p">;</span>
+        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d,%d,%d,%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="o">&amp;</span><span class="n">d</span><span class="p">)){</span><span class="c1">//判断非数字字符
+</span><span class="c1"></span>            <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span><span class="c1">//清理缓存
+</span><span class="c1"></span>            <span class="n">a</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">b</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">c</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">d</span><span class="o">=</span><span class="n">N</span><span class="p">;</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">panduan</span><span class="p">(</span><span class="kt">int</span> <span class="n">a1</span><span class="p">,</span><span class="kt">int</span> <span class="n">b1</span><span class="p">,</span><span class="kt">int</span> <span class="n">c1</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">a1</span><span class="o">+</span><span class="n">b1</span><span class="o">&gt;</span><span class="n">c1</span><span class="o">&amp;&amp;</span><span class="n">b1</span><span class="o">+</span><span class="n">c1</span><span class="o">&gt;</span><span class="n">a1</span><span class="o">&amp;&amp;</span><span class="n">a1</span><span class="o">+</span><span class="n">c1</span><span class="o">&gt;</span><span class="n">b1</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">a1</span><span class="o">==</span><span class="n">b1</span><span class="o">&amp;&amp;</span><span class="n">a1</span><span class="o">==</span><span class="n">c1</span><span class="p">)</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;等边三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a1</span><span class="o">==</span><span class="n">b1</span><span class="o">||</span><span class="n">a1</span><span class="o">==</span><span class="n">c1</span><span class="o">||</span><span class="n">b1</span><span class="o">==</span><span class="n">c1</span><span class="p">)</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;等腰三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="k">else</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;一般三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;非三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="测试">测试</h1>
+<p><br>
+<br>
+</p>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
+<p>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法：</p>
+</blockquote>
+<ol>
+<li>确认是否把操作系统的字体调整为非100%了</li>
+<li>把<code>studio\dropins\studio-app2\plugins\plugin\lib\cef1\chromium.jar</code>这个jar包复制到<code>studio\dropins\studio-app2\plugins\plugin\lib</code>下，重启studio</li>
+</ol>
+]]></description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description><![CDATA[<h2 id="外存的组织方式">外存的组织方式</h2>
+<h3 id="连续组织方式">连续组织方式</h3>
+<ul>
+<li>
+<p>连续组织方式的优点</p>
+<ul>
+<li>顺序访问容易</li>
+<li>顺序访问速度快</li>
+</ul>
+</li>
+<li>
+<p>连续组织方式的缺点</p>
+<ul>
+<li>分配连续的存储空间</li>
+<li>必须知道文件长度</li>
+<li>删除与插入数据不灵活</li>
+<li>动态增长的文件分配空间问题</li>
+</ul>
+</li>
+</ul>
+<h3 id="链接组织方式">链接组织方式</h3>
+<ul>
+<li>隐式链接</li>
+<li>显式链接</li>
+</ul>
+<h3 id="fat技术">FAT技术</h3>
+<ul>
+<li>
+<p>FAT12</p>
+<ul>
+<li>早期的FAT12文件系统</li>
+<li>以簇为单位的FAT12文件系统</li>
+</ul>
+</li>
+<li>
+<p>FAT16</p>
+</li>
+<li>
+<p>FAT32</p>
+</li>
+</ul>
+<h3 id="ntfs的文件组织方式">NTFS的文件组织方式</h3>
+<ul>
+<li>NTFS新特征</li>
+<li>磁盘组织</li>
+<li>文件的组织</li>
+</ul>
+<h3 id="索引组织方式">索引组织方式</h3>
+<ul>
+<li>
+<p>单级索引组织方式</p>
+</li>
+<li>
+<p>多级索引组织方式</p>
+</li>
+<li>
+<p>增量式索引组织方式</p>
+<ul>
+<li>
+<p>增量式索引组织方式的基本思想</p>
+</li>
+<li>
+<p>UNIX System V的组织方式</p>
+<ul>
+<li>直接地址</li>
+<li>一次间接地址</li>
+<li>多次间接地址</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="文件存储空间的管理">文件存储空间的管理</h2>
+<h3 id="空闲表法和空闲链表法">空闲表法和空闲链表法</h3>
+<ul>
+<li>
+<p>空闲表法</p>
+<ul>
+<li>空闲表</li>
+<li>存储空间的分配与回收</li>
+</ul>
+</li>
+<li>
+<p>空闲链表法</p>
+<ul>
+<li>空闲盘块链</li>
+<li>空闲盘区链</li>
+</ul>
+</li>
+</ul>
+<h3 id="位示图法">位示图法</h3>
+<ul>
+<li>
+<p>位示图</p>
+</li>
+<li>
+<p>盘块的分配（步骤）</p>
+<ul>
+<li>1.顺序扫描示图</li>
+<li>2.转换盘块号</li>
+<li>3.修改位示图</li>
+</ul>
+</li>
+<li>
+<p>盘块的回收（步骤）</p>
+<ul>
+<li>1.盘块号转换成行列号</li>
+<li>2.修改位示图</li>
+</ul>
+</li>
+</ul>
+<h3 id="成组链接法">成组链接法</h3>
+<ul>
+<li>空闲盘块的组织</li>
+<li>空闲盘块的分配与回收</li>
+</ul>
+<h2 id="提高磁盘io速度的途径">提高磁盘I/O速度的途径</h2>
+<h3 id="磁盘高速缓存">磁盘高速缓存</h3>
+<ul>
+<li>
+<p>数据交付方式</p>
+<ul>
+<li>数据交付</li>
+<li>指针交付</li>
+</ul>
+</li>
+<li>
+<p>置换算法</p>
+</li>
+<li>
+<p>周期性地写回磁盘</p>
+</li>
+</ul>
+<h3 id="提高磁盘io速度的其他方法">提高磁盘I/O速度的其他方法</h3>
+<ul>
+<li>提前读</li>
+<li>延迟写</li>
+<li>优化物理块的分布</li>
+<li>虚拟盘</li>
+</ul>
+<h3 id="廉价磁盘冗余阵列raid">廉价磁盘冗余阵列(RAID)</h3>
+<ul>
+<li>
+<p>并行交叉存取</p>
+</li>
+<li>
+<p>RAID的分级</p>
+<ul>
+<li>RAID 0级</li>
+<li>RAID 1级</li>
+<li>RAID 2级</li>
+<li>RAID 3级</li>
+<li>RAID 4级</li>
+<li>RAID 5级</li>
+<li>RAID 6级和RAID 7级</li>
+</ul>
+</li>
+<li>
+<p>RAID的优点</p>
+<ul>
+<li>可靠性高</li>
+<li>磁盘I/O速度高</li>
+<li>性价比高</li>
+</ul>
+</li>
+</ul>
+<h2 id="提高磁盘可靠性的技术">提高磁盘可靠性的技术</h2>
+<h3 id="第一级容错技术sft-">第一级容错技术SFT-Ⅰ</h3>
+<ul>
+<li>
+<p>双份目录和双份文件分配表</p>
+</li>
+<li>
+<p>热修复重定向和写后读校验</p>
+<ul>
+<li>热修复重定向</li>
+<li>写后读校验方式</li>
+</ul>
+</li>
+</ul>
+<h3 id="第二级容错技术sft-">第二级容错技术SFT-Ⅱ</h3>
+<ul>
+<li>磁盘镜像</li>
+<li>磁盘双工</li>
+</ul>
+<h3 id="基于集群技术的容错功能">基于集群技术的容错功能</h3>
+<ul>
+<li>双机热备份模式</li>
+<li>双机互为备份模式</li>
+<li>公用磁盘模式</li>
+</ul>
+<h3 id="后备系统">后备系统</h3>
+<ul>
+<li>
+<p>磁带机</p>
+</li>
+<li>
+<p>硬盘</p>
+<ul>
+<li>移动磁盘</li>
+<li>固定硬盘驱动器</li>
+</ul>
+</li>
+<li>
+<p>光盘驱动器</p>
+<ul>
+<li>CD-ROM 和 DVD-ROM</li>
+<li>刻录机</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据一致性控制">数据一致性控制</h2>
+<h3 id="事务">事务</h3>
+<ul>
+<li>
+<p>事务的定义</p>
+</li>
+<li>
+<p>事务记录</p>
+</li>
+<li>
+<p>恢复算法</p>
+<ul>
+<li>undo &lt;Ti&gt;</li>
+<li>redo &lt;Ti&gt;</li>
+</ul>
+</li>
+</ul>
+<h3 id="检查点">检查点</h3>
+<ul>
+<li>检查点的作用</li>
+<li>新的恢复算法</li>
+</ul>
+<h3 id="并发控制">并发控制</h3>
+<ul>
+<li>利用互斥锁实现“顺序性”</li>
+<li>利用互斥锁和共享锁实现顺序性</li>
+</ul>
+<h3 id="重复数据的数据一致性问题">重复数据的数据一致性问题</h3>
+<ul>
+<li>重复文件的一致性</li>
+<li>链接数一致性检查</li>
+</ul>
+]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
 <p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
 <ul>
 <li>git add * (添加需要提交的文件，这里全选)</li>
@@ -28,7 +455,71 @@
 </ul>
 <p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。
 这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p>
-</blockquote>]]></description></item><item><title>博採眾長app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" rel="noopener noreffer"  class="card-link">
+</blockquote>
+<h3 id="新建文本文档">新建文本文档</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="p">@</span><span class="k">echo</span> off
+<span class="k">title</span> Commit
+git add .
+<span class="k">set</span> <span class="k">/p</span> <span class="nv">m</span><span class="p">=</span>Message:
+git commit -m <span class="s2">&#34;</span><span class="nv">%m%</span><span class="s2">&#34;</span>
+git push
+</code></pre></td></tr></table>
+</div>
+</div><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p>
+<h3 id="使用">使用</h3>
+<p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p>
+<h3 id="hexo博客新姿势">hexo博客新姿势</h3>
+<p>hexo提交也很麻烦，当然也要批处理一下呀</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat">hexo clean<span class="p">&amp;&amp;</span>hexo g -d
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="其他">其他</h3>
+<h4 id="死机脚本">死机脚本</h4>
+<p>(<strong>友情提醒千万不要在真机实验，请在虚拟机运行</strong>)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">start</span> cmd ifconfig
+</code></pre></td></tr></table>
+</div>
+</div><p>另外也说一下linux死机命令。fork炸弹。<br>
+死机无非是耗尽系统资源</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">_(){ _ | _ &amp; }; _
+</code></pre></td></tr></table>
+</div>
+</div><p>这个&amp;指后台运行的意思。</p>
+<h4 id="统计文件名">统计文件名</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
+</code></pre></td></tr></table>
+</div>
+</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item><item><title>博採眾長app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" rel="noopener noreffer"  class="card-link">
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
@@ -60,7 +551,1411 @@
 <li>分享功能，分享到QQ，微信，浏览器打开等</li>
 <li>app内添加书签，自动记录历史记录，刷新等</li>
 <li><strong>配合博客的<code>PWA + quicklink</code>功能可实现离线浏览</strong></li>
-</ul>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description>安装 1 2 cd ~ curl https://getcaddy.com | bash -s personal http.filemanager 编写配置文件 1 vim Caddyfile 内容如下: 1 2 3 4 5 :80 { filemanager / /sdcard timeouts none gzip } 这里的8080端口号可以随意指定, 如果在手机termux等</description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description>我用的 win10 打开控制面板 选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所</description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/posts/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/font-mmt/</guid><description><![CDATA[<div class="featured-image">
+</ul>
+<h3 id="下载">下载</h3>
+<blockquote>
+<p><del>app内也可以更新，不过就我自己用，懒得更新。</del></p>
+</blockquote>
+<ul>
+<li><a href="https://pan.baidu.com/s/19jOvnNhssF302Mi1GRa2Sw" target="_blank" rel="noopener noreffer">百度云，密码:479l</a></li>
+<li><a href="https://github.com/Lruihao/Blog_fas_apk" target="_blank" rel="noopener noreffer">github下载</a></li>
+</ul>
+<p><strong>PWA应用</strong></p>
+<ol>
+<li>地址栏输入: Chrome://flags</li>
+<li>搜索并启用以下项目: Desktop PWAs(桌面PWAs)、App Banners(应用横幅)、Experimental App Banners(实验性应用横幅)</li>
+<li>重启浏览器使修改的设置生效</li>
+<li>点击地址栏最右边按钮</li>
+<li>安装“博採眾長”</li>
+</ol>
+<h3 id="部分源码">部分源码</h3>
+<blockquote>
+<p>看到这些中文的函数总觉得怪怪的哈哈哈😂
+语言：<code>lua</code></p>
+</blockquote>
+<h4 id="检测更新">检测更新</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="c1">--检查测当前是否最新版本</span>
+<span class="kd">local</span> <span class="n">dl</span><span class="o">=</span><span class="n">ProgressDialog.show</span><span class="p">(</span><span class="n">activity</span><span class="p">,</span><span class="kc">nil</span><span class="p">,</span><span class="s1">&#39;更新检测中…&#39;</span><span class="p">)</span>
+<span class="n">dl.show</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">tt</span><span class="o">=</span><span class="n">Ticker</span><span class="p">()</span>
+<span class="n">tt.start</span><span class="p">()</span>
+<span class="n">packinfo</span><span class="o">=</span><span class="n">this.getPackageManager</span><span class="p">().</span><span class="n">getPackageInfo</span><span class="p">(</span><span class="n">this.getPackageName</span><span class="p">(),((</span><span class="mi">32552732</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="mi">8183</span><span class="p">)</span><span class="o">/</span><span class="mi">10000</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">231</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span>
+<span class="n">version</span><span class="o">=</span><span class="n">tostring</span><span class="p">(</span><span class="n">packinfo.versionName</span><span class="p">)</span>
+<span class="n">versioncode</span><span class="o">=</span><span class="n">tostring</span><span class="p">(</span><span class="n">packinfo.versionCode</span><span class="p">)</span>
+
+<span class="n">url</span><span class="o">=</span><span class="s2">&#34;https://share.weiyun.com/43fa66d8fc95db27141530ed2d006be2&#34;</span><span class="p">;</span>
+<span class="kr">function</span> <span class="nf">过滤</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+  <span class="err">版本名</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【版本名】(.-)【版本名】&#34;</span><span class="p">)</span>
+  <span class="err">版本</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【版本】(.-)【版本】&#34;</span><span class="p">)</span>
+  <span class="err">内容</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【内容】(.-)【内容】&#34;</span><span class="p">)</span>
+  <span class="err">链接</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【链接】(.-)【链接】&#34;</span><span class="p">)</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">版本名</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+  <span class="err">版本名</span><span class="o">=</span><span class="s2">&#34;获取失败&#34;</span>
+<span class="kr">end</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">版本</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+  <span class="err">版本</span><span class="o">=</span><span class="s2">&#34;0&#34;</span>
+<span class="kr">end</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">内容</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+  <span class="err">内容</span><span class="o">=</span><span class="s2">&#34;获取失败&#34;</span>
+<span class="kr">end</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">链接</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+  <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;服务器参数配置错误，请过段时间再次尝试&#34;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">if</span><span class="p">(</span><span class="err">版本</span> <span class="o">&gt;</span> <span class="n">versioncode</span><span class="p">)</span> <span class="kr">then</span>
+  <span class="n">dl.dismiss</span><span class="p">()</span>
+    <span class="n">tt.stop</span><span class="p">()</span> 
+<span class="err">对话框</span><span class="p">()</span>
+<span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="s2">&#34;检测到更新&#34;</span><span class="p">)</span>
+<span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;版本：&#34;</span><span class="o">..</span><span class="n">version</span><span class="o">..</span><span class="s2">&#34;→&#34;</span><span class="o">..</span><span class="err">版本名</span><span class="o">..</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">更新内容：&#34;</span><span class="o">..</span><span class="err">内容</span><span class="p">)</span>
+<span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;下载更新&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+  <span class="err">下载文件</span><span class="p">(</span><span class="err">链接</span><span class="p">)</span>
+  <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;下载更新中…&#34;</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+<span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消更新&#34;</span><span class="p">)</span>
+<span class="p">.</span><span class="err">显示</span><span class="p">()</span>
+<span class="kr">else</span>
+<span class="n">dl.dismiss</span><span class="p">()</span>
+    <span class="n">tt.stop</span><span class="p">()</span>
+<span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;当前已是最新版本！&#34;</span><span class="p">)</span>
+<span class="kr">end</span>
+<span class="kr">end</span>
+<span class="n">Http.get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="kc">nil</span><span class="p">,</span><span class="s2">&#34;UTF-8&#34;</span><span class="p">,</span><span class="kc">nil</span><span class="p">,</span><span class="kr">function</span><span class="p">(</span><span class="n">code</span><span class="p">,</span><span class="n">content</span><span class="p">,</span><span class="n">cookie</span><span class="p">,</span><span class="n">header</span><span class="p">)</span>
+  <span class="kr">if</span><span class="p">(</span><span class="n">code</span><span class="o">==</span><span class="mi">200</span> <span class="ow">and</span> <span class="n">content</span><span class="p">)</span><span class="kr">then</span>
+    <span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\&#34;</span><span class="s2">html_content</span><span class="se">\&#34;</span><span class="s2">:(.-),&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">u003C/?.-%&gt;&#34;</span><span class="p">,</span><span class="s2">&#34;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\\\\</span><span class="s2">&#34;</span><span class="p">,</span><span class="s2">&#34;&amp;revs;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">n&#34;</span><span class="p">,</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;nbsp;&#34;</span><span class="p">,</span><span class="s2">&#34; &#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;lt;&#34;</span><span class="p">,</span><span class="s2">&#34;&lt;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;gt;&#34;</span><span class="p">,</span><span class="s2">&#34;&gt;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;quot;&#34;</span><span class="p">,</span><span class="s2">&#34;</span><span class="se">\&#34;</span><span class="s2">&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;apos;&#34;</span><span class="p">,</span><span class="s2">&#34;&#39;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;revs;&#34;</span><span class="p">,</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;amp;&#34;</span><span class="p">,</span><span class="s2">&#34;&amp;&#34;</span><span class="p">);</span>
+    <span class="err">过滤</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+  <span class="kr">else</span>
+  <span class="n">dl.dismiss</span><span class="p">()</span>
+    <span class="n">tt.stop</span><span class="p">()</span> 
+     <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;本地网络或服务器异常 &#34;</span><span class="o">..</span><span class="n">code</span><span class="p">)</span>
+  <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="方向锁定">方向锁定</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="c1">--flag在程序启动事件声明的全局变量</span>
+<span class="kr">if</span> <span class="n">flag</span><span class="o">==</span><span class="mi">1</span> <span class="kr">then</span>
+  <span class="n">activity.setRequestedOrientation</span><span class="p">(</span><span class="n">ActivityInfo.SCREEN_ORIENTATION_SENSOR</span><span class="p">);</span>
+  <span class="n">SetHSP</span><span class="o">=</span><span class="s2">&#34;H&#34;</span>
+<span class="kr">else</span>
+  <span class="n">SetHSP</span><span class="o">=</span><span class="kc">nil</span>
+<span class="kr">end</span>
+
+<span class="kr">if</span> <span class="n">SetHSP</span><span class="o">==</span><span class="kc">nil</span> <span class="kr">then</span>
+  <span class="c1">--竖屏锁定</span>
+  <span class="n">activity.setRequestedOrientation</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">flag</span><span class="o">=</span><span class="mi">1</span>
+<span class="kr">else</span>
+  <span class="n">flag</span><span class="o">=</span><span class="mi">0</span>
+<span class="kr">end</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="程序启动事件">程序启动事件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span><span class="lnt">259
+</span><span class="lnt">260
+</span><span class="lnt">261
+</span><span class="lnt">262
+</span><span class="lnt">263
+</span><span class="lnt">264
+</span><span class="lnt">265
+</span><span class="lnt">266
+</span><span class="lnt">267
+</span><span class="lnt">268
+</span><span class="lnt">269
+</span><span class="lnt">270
+</span><span class="lnt">271
+</span><span class="lnt">272
+</span><span class="lnt">273
+</span><span class="lnt">274
+</span><span class="lnt">275
+</span><span class="lnt">276
+</span><span class="lnt">277
+</span><span class="lnt">278
+</span><span class="lnt">279
+</span><span class="lnt">280
+</span><span class="lnt">281
+</span><span class="lnt">282
+</span><span class="lnt">283
+</span><span class="lnt">284
+</span><span class="lnt">285
+</span><span class="lnt">286
+</span><span class="lnt">287
+</span><span class="lnt">288
+</span><span class="lnt">289
+</span><span class="lnt">290
+</span><span class="lnt">291
+</span><span class="lnt">292
+</span><span class="lnt">293
+</span><span class="lnt">294
+</span><span class="lnt">295
+</span><span class="lnt">296
+</span><span class="lnt">297
+</span><span class="lnt">298
+</span><span class="lnt">299
+</span><span class="lnt">300
+</span><span class="lnt">301
+</span><span class="lnt">302
+</span><span class="lnt">303
+</span><span class="lnt">304
+</span><span class="lnt">305
+</span><span class="lnt">306
+</span><span class="lnt">307
+</span><span class="lnt">308
+</span><span class="lnt">309
+</span><span class="lnt">310
+</span><span class="lnt">311
+</span><span class="lnt">312
+</span><span class="lnt">313
+</span><span class="lnt">314
+</span><span class="lnt">315
+</span><span class="lnt">316
+</span><span class="lnt">317
+</span><span class="lnt">318
+</span><span class="lnt">319
+</span><span class="lnt">320
+</span><span class="lnt">321
+</span><span class="lnt">322
+</span><span class="lnt">323
+</span><span class="lnt">324
+</span><span class="lnt">325
+</span><span class="lnt">326
+</span><span class="lnt">327
+</span><span class="lnt">328
+</span><span class="lnt">329
+</span><span class="lnt">330
+</span><span class="lnt">331
+</span><span class="lnt">332
+</span><span class="lnt">333
+</span><span class="lnt">334
+</span><span class="lnt">335
+</span><span class="lnt">336
+</span><span class="lnt">337
+</span><span class="lnt">338
+</span><span class="lnt">339
+</span><span class="lnt">340
+</span><span class="lnt">341
+</span><span class="lnt">342
+</span><span class="lnt">343
+</span><span class="lnt">344
+</span><span class="lnt">345
+</span><span class="lnt">346
+</span><span class="lnt">347
+</span><span class="lnt">348
+</span><span class="lnt">349
+</span><span class="lnt">350
+</span><span class="lnt">351
+</span><span class="lnt">352
+</span><span class="lnt">353
+</span><span class="lnt">354
+</span><span class="lnt">355
+</span><span class="lnt">356
+</span><span class="lnt">357
+</span><span class="lnt">358
+</span><span class="lnt">359
+</span><span class="lnt">360
+</span><span class="lnt">361
+</span><span class="lnt">362
+</span><span class="lnt">363
+</span><span class="lnt">364
+</span><span class="lnt">365
+</span><span class="lnt">366
+</span><span class="lnt">367
+</span><span class="lnt">368
+</span><span class="lnt">369
+</span><span class="lnt">370
+</span><span class="lnt">371
+</span><span class="lnt">372
+</span><span class="lnt">373
+</span><span class="lnt">374
+</span><span class="lnt">375
+</span><span class="lnt">376
+</span><span class="lnt">377
+</span><span class="lnt">378
+</span><span class="lnt">379
+</span><span class="lnt">380
+</span><span class="lnt">381
+</span><span class="lnt">382
+</span><span class="lnt">383
+</span><span class="lnt">384
+</span><span class="lnt">385
+</span><span class="lnt">386
+</span><span class="lnt">387
+</span><span class="lnt">388
+</span><span class="lnt">389
+</span><span class="lnt">390
+</span><span class="lnt">391
+</span><span class="lnt">392
+</span><span class="lnt">393
+</span><span class="lnt">394
+</span><span class="lnt">395
+</span><span class="lnt">396
+</span><span class="lnt">397
+</span><span class="lnt">398
+</span><span class="lnt">399
+</span><span class="lnt">400
+</span><span class="lnt">401
+</span><span class="lnt">402
+</span><span class="lnt">403
+</span><span class="lnt">404
+</span><span class="lnt">405
+</span><span class="lnt">406
+</span><span class="lnt">407
+</span><span class="lnt">408
+</span><span class="lnt">409
+</span><span class="lnt">410
+</span><span class="lnt">411
+</span><span class="lnt">412
+</span><span class="lnt">413
+</span><span class="lnt">414
+</span><span class="lnt">415
+</span><span class="lnt">416
+</span><span class="lnt">417
+</span><span class="lnt">418
+</span><span class="lnt">419
+</span><span class="lnt">420
+</span><span class="lnt">421
+</span><span class="lnt">422
+</span><span class="lnt">423
+</span><span class="lnt">424
+</span><span class="lnt">425
+</span><span class="lnt">426
+</span><span class="lnt">427
+</span><span class="lnt">428
+</span><span class="lnt">429
+</span><span class="lnt">430
+</span><span class="lnt">431
+</span><span class="lnt">432
+</span><span class="lnt">433
+</span><span class="lnt">434
+</span><span class="lnt">435
+</span><span class="lnt">436
+</span><span class="lnt">437
+</span><span class="lnt">438
+</span><span class="lnt">439
+</span><span class="lnt">440
+</span><span class="lnt">441
+</span><span class="lnt">442
+</span><span class="lnt">443
+</span><span class="lnt">444
+</span><span class="lnt">445
+</span><span class="lnt">446
+</span><span class="lnt">447
+</span><span class="lnt">448
+</span><span class="lnt">449
+</span><span class="lnt">450
+</span><span class="lnt">451
+</span><span class="lnt">452
+</span><span class="lnt">453
+</span><span class="lnt">454
+</span><span class="lnt">455
+</span><span class="lnt">456
+</span><span class="lnt">457
+</span><span class="lnt">458
+</span><span class="lnt">459
+</span><span class="lnt">460
+</span><span class="lnt">461
+</span><span class="lnt">462
+</span><span class="lnt">463
+</span><span class="lnt">464
+</span><span class="lnt">465
+</span><span class="lnt">466
+</span><span class="lnt">467
+</span><span class="lnt">468
+</span><span class="lnt">469
+</span><span class="lnt">470
+</span><span class="lnt">471
+</span><span class="lnt">472
+</span><span class="lnt">473
+</span><span class="lnt">474
+</span><span class="lnt">475
+</span><span class="lnt">476
+</span><span class="lnt">477
+</span><span class="lnt">478
+</span><span class="lnt">479
+</span><span class="lnt">480
+</span><span class="lnt">481
+</span><span class="lnt">482
+</span><span class="lnt">483
+</span><span class="lnt">484
+</span><span class="lnt">485
+</span><span class="lnt">486
+</span><span class="lnt">487
+</span><span class="lnt">488
+</span><span class="lnt">489
+</span><span class="lnt">490
+</span><span class="lnt">491
+</span><span class="lnt">492
+</span><span class="lnt">493
+</span><span class="lnt">494
+</span><span class="lnt">495
+</span><span class="lnt">496
+</span><span class="lnt">497
+</span><span class="lnt">498
+</span><span class="lnt">499
+</span><span class="lnt">500
+</span><span class="lnt">501
+</span><span class="lnt">502
+</span><span class="lnt">503
+</span><span class="lnt">504
+</span><span class="lnt">505
+</span><span class="lnt">506
+</span><span class="lnt">507
+</span><span class="lnt">508
+</span><span class="lnt">509
+</span><span class="lnt">510
+</span><span class="lnt">511
+</span><span class="lnt">512
+</span><span class="lnt">513
+</span><span class="lnt">514
+</span><span class="lnt">515
+</span><span class="lnt">516
+</span><span class="lnt">517
+</span><span class="lnt">518
+</span><span class="lnt">519
+</span><span class="lnt">520
+</span><span class="lnt">521
+</span><span class="lnt">522
+</span><span class="lnt">523
+</span><span class="lnt">524
+</span><span class="lnt">525
+</span><span class="lnt">526
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;©2018 李瑞豪&#34;</span><span class="p">)</span>
+
+<span class="c1">--自动，由物理感应器决定</span>
+<span class="n">import</span> <span class="s2">&#34;android.content.pm.ActivityInfo&#34;</span>
+<span class="n">flag</span><span class="o">=</span><span class="mi">1</span>
+
+
+<span class="c1">--程序退出时执行对话框</span>
+<span class="kr">function</span> <span class="nf">onKeyDown</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">event</span><span class="p">)</span>
+  <span class="kr">if</span><span class="p">(</span><span class="n">key</span><span class="o">==</span><span class="mi">4</span><span class="p">)</span><span class="kr">then</span>
+    <span class="kr">if</span><span class="p">(</span><span class="n">webView.canGoBack</span><span class="p">())</span><span class="kr">then</span>
+      <span class="n">webView.goBack</span><span class="p">()</span>
+    <span class="kr">else</span>
+      <span class="n">appinfo</span><span class="o">=</span><span class="n">this.getPackageManager</span><span class="p">().</span><span class="n">getApplicationInfo</span><span class="p">(</span><span class="n">this.getPackageName</span><span class="p">(),</span><span class="mi">0</span><span class="p">)</span>
+      <span class="n">applabel</span><span class="o">=</span><span class="n">this.getPackageManager</span><span class="p">().</span><span class="n">getApplicationLabel</span><span class="p">(</span><span class="n">appinfo</span><span class="p">)</span>
+      <span class="err">退出确认</span><span class="o">=</span><span class="err">对话框</span><span class="p">()</span>
+      <span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;您确定要退出 &#34;</span><span class="o">..</span><span class="n">applabel</span><span class="o">..</span><span class="s2">&#34; 吗?&#34;</span><span class="p">)</span>
+      <span class="err">退出按钮</span><span class="o">=</span><span class="p">{</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="kr">function</span><span class="p">()</span>
+          <span class="err">退出确认</span>
+          <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;确认&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+            <span class="err">退出程序</span><span class="p">()</span>
+            <span class="kr">end</span>
+             <span class="p">)</span>
+             <span class="p">.</span><span class="err">设置中立按钮</span><span class="p">(</span><span class="s2">&#34;清除缓存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+               <span class="err">对话框</span><span class="p">()</span>
+               <span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;清除缓存后再次运行程序将变得缓慢</span><span class="se">\n</span><span class="s2">您确定要清除 &#34;</span><span class="o">..</span><span class="n">applabel</span><span class="o">..</span><span class="s2">&#34; 的缓存吗?&#34;</span><span class="p">)</span>
+               <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;确定&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+                <span class="n">os.execute</span><span class="p">(</span><span class="s2">&#34;pm clear &#34;</span><span class="o">..</span><span class="n">this.packageName</span><span class="p">)</span>
+                <span class="err">退出程序</span><span class="p">()</span>
+                <span class="kr">end</span><span class="p">)</span>
+               <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+                <span class="kr">end</span><span class="p">)</span>
+              <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
+             <span class="kr">end</span>
+           <span class="p">)</span>
+          <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
+          <span class="kr">end</span>
+        <span class="p">}</span>      
+      <span class="n">math.randomseed</span><span class="p">(</span><span class="n">tonumber</span><span class="p">(</span><span class="n">tostring</span><span class="p">(</span><span class="n">os.time</span><span class="p">()):</span><span class="n">reverse</span><span class="p">():</span><span class="n">sub</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)))</span>
+      <span class="err">退出按钮</span><span class="p">[</span><span class="n">math.random</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)]()</span>
+      <span class="err">退出确认</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="kr">end</span>
+    <span class="kr">return</span> <span class="kc">true</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+
+
+<span class="c1">--历史记录</span>
+<span class="n">lstads</span><span class="o">=</span><span class="s2">&#34;/data/data/&#34;</span><span class="o">..</span><span class="n">activity.getPackageName</span><span class="p">()</span><span class="o">..</span><span class="s2">&#34;/lst.lua&#34;</span>
+<span class="n">lstwebads</span><span class="o">=</span><span class="s2">&#34;/data/data/&#34;</span><span class="o">..</span><span class="n">activity.getPackageName</span><span class="p">()</span><span class="o">..</span><span class="s2">&#34;/lstweb.lua&#34;</span>
+<span class="c1">--2.序列化</span>
+<span class="kr">function</span> <span class="nf">slz</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> 
+  <span class="kd">local</span> <span class="n">lua</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> 
+  <span class="kd">local</span> <span class="n">t</span> <span class="o">=</span> <span class="n">type</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> 
+  <span class="kr">if</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;number&#34;</span> <span class="kr">then</span> 
+    <span class="n">lua</span> <span class="o">=</span> <span class="n">lua</span> <span class="o">..</span> <span class="n">obj</span> 
+  <span class="kr">elseif</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;boolean&#34;</span> <span class="kr">then</span> 
+    <span class="n">lua</span> <span class="o">=</span> <span class="n">lua</span> <span class="o">..</span> <span class="n">tostring</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> 
+  <span class="kr">elseif</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;string&#34;</span> <span class="kr">then</span> 
+    <span class="n">lua</span> <span class="o">=</span> <span class="n">lua</span> <span class="o">..</span> <span class="n">string.format</span><span class="p">(</span><span class="s2">&#34;%q&#34;</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span> 
+  <span class="kr">elseif</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;table&#34;</span> <span class="kr">then</span> 
+    <span class="n">lua</span> <span class="o">=</span> <span class="n">lua</span> <span class="o">..</span> <span class="s2">&#34;{</span><span class="se">\n</span><span class="s2">&#34;</span> 
+    <span class="kr">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="kr">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="kr">do</span> 
+      <span class="n">lua</span> <span class="o">=</span> <span class="n">lua</span> <span class="o">..</span> <span class="s2">&#34;[&#34;</span> <span class="o">..</span> <span class="n">slz</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&#34;]=&#34;</span> <span class="o">..</span> <span class="n">slz</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&#34;,</span><span class="se">\n</span><span class="s2">&#34;</span> 
+    <span class="kr">end</span> 
+    <span class="kd">local</span> <span class="n">metatable</span> <span class="o">=</span> <span class="n">getmetatable</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> 
+    <span class="kr">if</span> <span class="n">metatable</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">type</span><span class="p">(</span><span class="n">metatable.__index</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&#34;table&#34;</span> <span class="kr">then</span> 
+      <span class="kr">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="kr">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">metatable.__index</span><span class="p">)</span> <span class="kr">do</span> 
+        <span class="n">lua</span> <span class="o">=</span> <span class="n">lua</span> <span class="o">..</span> <span class="s2">&#34;[&#34;</span> <span class="o">..</span> <span class="n">slz</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&#34;]=&#34;</span> <span class="o">..</span> <span class="n">slz</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&#34;,</span><span class="se">\n</span><span class="s2">&#34;</span> 
+      <span class="kr">end</span> 
+    <span class="kr">end</span> 
+    <span class="n">lua</span> <span class="o">=</span> <span class="n">lua</span> <span class="o">..</span> <span class="s2">&#34;}&#34;</span> 
+  <span class="kr">elseif</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;nil&#34;</span> <span class="kr">then</span> 
+    <span class="kr">return</span> <span class="kc">nil</span> 
+  <span class="kr">else</span> 
+    <span class="n">error</span><span class="p">(</span><span class="s2">&#34;can not serialize a &#34;</span> <span class="o">..</span> <span class="n">t</span> <span class="o">..</span> <span class="s2">&#34; type.&#34;</span><span class="p">)</span> 
+  <span class="kr">end</span> 
+  <span class="kr">return</span> <span class="n">lua</span> 
+<span class="kr">end</span> 
+<span class="kr">function</span> <span class="nf">rslz</span><span class="p">(</span><span class="n">lua</span><span class="p">)</span> 
+  <span class="kd">local</span> <span class="n">t</span> <span class="o">=</span> <span class="n">type</span><span class="p">(</span><span class="n">lua</span><span class="p">)</span> 
+  <span class="kr">if</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;nil&#34;</span> <span class="ow">or</span> <span class="n">lua</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span> <span class="kr">then</span> 
+    <span class="kr">return</span> <span class="p">{}</span>
+  <span class="kr">elseif</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;number&#34;</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;string&#34;</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">==</span> <span class="s2">&#34;boolean&#34;</span> <span class="kr">then</span> 
+    <span class="n">lua</span> <span class="o">=</span> <span class="n">tostring</span><span class="p">(</span><span class="n">lua</span><span class="p">)</span> 
+  <span class="kr">else</span> 
+    <span class="n">error</span><span class="p">(</span><span class="s2">&#34;can not unserialize a &#34;</span> <span class="o">..</span> <span class="n">t</span> <span class="o">..</span> <span class="s2">&#34; type.&#34;</span><span class="p">)</span> 
+  <span class="kr">end</span> 
+  <span class="n">lua</span> <span class="o">=</span> <span class="s2">&#34;return &#34;</span> <span class="o">..</span> <span class="n">lua</span> 
+  <span class="kd">local</span> <span class="n">func</span> <span class="o">=</span> <span class="n">loadstring</span><span class="p">(</span><span class="n">lua</span><span class="p">)</span> 
+  <span class="kr">if</span> <span class="n">func</span> <span class="o">==</span> <span class="kc">nil</span> <span class="kr">then</span> 
+    <span class="kr">return</span> <span class="kc">nil</span> 
+  <span class="kr">end</span> 
+  <span class="kr">return</span> <span class="n">func</span><span class="p">()</span> 
+<span class="kr">end</span>
+
+<span class="c1">--3.历史记录框布局</span>
+<span class="kr">function</span> <span class="nf">hstshow</span><span class="p">()</span>
+  <span class="n">hstlayout</span><span class="o">=</span><span class="p">{</span>
+    <span class="n">LinearLayout</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="o">=</span><span class="s2">&#34;1&#34;</span><span class="p">,</span>
+    <span class="n">gravity</span><span class="o">=</span><span class="s2">&#34;center&#34;</span><span class="p">,</span>
+    <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,</span>
+    <span class="n">layout_height</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,</span>
+    <span class="p">{</span>
+      <span class="n">TextView</span><span class="p">,</span>
+      <span class="n">text</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
+      <span class="n">gravity</span><span class="o">=</span><span class="s2">&#34;center&#34;</span><span class="p">,</span>
+      <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,</span>
+      <span class="n">textSize</span><span class="o">=</span><span class="s2">&#34;0sp&#34;</span><span class="p">,</span>
+      <span class="n">background</span><span class="o">=</span><span class="s2">&#34;#000000&#34;</span><span class="p">,</span>
+      <span class="n">layout_height</span><span class="o">=</span><span class="s2">&#34;15dp&#34;</span><span class="p">,},</span>
+    <span class="p">{</span>
+      <span class="n">TextView</span><span class="p">,</span>
+      <span class="n">text</span><span class="o">=</span><span class="s2">&#34;历史记录&#34;</span><span class="p">,</span>
+      <span class="n">gravity</span><span class="o">=</span><span class="s2">&#34;center&#34;</span><span class="p">,</span>
+      <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,</span>
+      <span class="n">textSize</span><span class="o">=</span><span class="s2">&#34;30sp&#34;</span><span class="p">,</span>
+      <span class="n">textStyle</span><span class="o">=</span><span class="s2">&#34;bold&#34;</span><span class="p">,</span>
+      <span class="n">layout_height</span><span class="o">=</span><span class="s2">&#34;50dp&#34;</span><span class="p">,},</span>
+    <span class="p">{</span>
+      <span class="n">ListView</span><span class="p">,</span>
+      <span class="n">id</span><span class="o">=</span><span class="s2">&#34;hlst&#34;</span><span class="p">,</span>
+      <span class="n">items</span><span class="o">=</span><span class="n">lst</span><span class="p">,</span>
+      <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;fill&#34;</span><span class="p">,</span>
+      <span class="n">layout_height</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">}</span>
+<span class="kr">end</span>
+
+
+<span class="c1">--##功能函数##</span>
+
+<span class="c1">--1.读取历史文件</span>
+<span class="kr">function</span> <span class="nf">read_hst</span><span class="p">()</span>
+  <span class="n">import</span> <span class="s2">&#34;java.io.File&#34;</span>
+  <span class="n">File</span><span class="p">(</span><span class="n">lstads</span><span class="p">).</span><span class="n">createNewFile</span><span class="p">()</span>
+  <span class="n">slst</span><span class="o">=</span><span class="n">io.open</span><span class="p">(</span><span class="n">lstads</span><span class="p">):</span><span class="n">read</span><span class="p">(</span><span class="s2">&#34;*a&#34;</span><span class="p">)</span>
+  <span class="n">File</span><span class="p">(</span><span class="n">lstwebads</span><span class="p">).</span><span class="n">createNewFile</span><span class="p">()</span>
+  <span class="n">slstweb</span><span class="o">=</span><span class="n">io.open</span><span class="p">(</span><span class="n">lstwebads</span><span class="p">):</span><span class="n">read</span><span class="p">(</span><span class="s2">&#34;*a&#34;</span><span class="p">)</span>
+  <span class="c1">--转换成table</span>
+  <span class="n">lst</span><span class="o">=</span><span class="n">rslz</span><span class="p">(</span><span class="n">slst</span><span class="p">)</span>
+  <span class="n">lstweb</span><span class="o">=</span><span class="n">rslz</span><span class="p">(</span><span class="n">slstweb</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--2.新网页加入历史记录</span>
+<span class="kr">function</span> <span class="nf">add_hst</span><span class="p">()</span>
+  <span class="kr">if</span> <span class="n">string.len</span><span class="p">(</span><span class="n">webView.getTitle</span><span class="p">())</span><span class="o">&lt;=</span><span class="mi">300</span> <span class="kr">then</span><span class="c1">--粗略过掉无效标题</span>
+    <span class="n">newtitle</span><span class="o">=</span><span class="n">webView.getTitle</span><span class="p">()</span>
+    <span class="n">newurl</span><span class="o">=</span><span class="n">webView.getUrl</span><span class="p">()</span>
+    <span class="n">table.insert</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">newtitle</span><span class="p">)</span> <span class="c1">--标题表添加新标题</span>
+    <span class="n">table.insert</span><span class="p">(</span><span class="n">lstweb</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">newurl</span><span class="p">)</span> <span class="c1">--网址表添加新网址</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="c1">--3.存储历史文件</span>
+<span class="kr">function</span> <span class="nf">save_hst</span><span class="p">()</span>
+  <span class="c1">--转换成string</span>
+  <span class="n">slst</span><span class="o">=</span><span class="n">slz</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+  <span class="n">slstweb</span><span class="o">=</span><span class="n">slz</span><span class="p">(</span><span class="n">lstweb</span><span class="p">)</span>
+  <span class="c1">--保存</span>
+  <span class="n">file</span><span class="o">=</span><span class="n">io.open</span><span class="p">(</span><span class="n">lstads</span><span class="p">,</span><span class="s2">&#34;w+&#34;</span><span class="p">)</span>
+  <span class="n">io.output</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+  <span class="n">io.write</span><span class="p">(</span><span class="n">slst</span><span class="p">)</span>
+  <span class="n">io.flush</span><span class="p">()</span>
+  <span class="n">io.close</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+  <span class="n">file</span><span class="o">=</span><span class="n">io.open</span><span class="p">(</span><span class="n">lstwebads</span><span class="p">,</span><span class="s2">&#34;w+&#34;</span><span class="p">)</span>
+  <span class="n">io.output</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+  <span class="n">io.write</span><span class="p">(</span><span class="n">slstweb</span><span class="p">)</span>
+  <span class="n">io.flush</span><span class="p">()</span>
+  <span class="n">io.close</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">--4.显示历史记录框</span>
+<span class="kr">function</span> <span class="nf">show_hst</span><span class="p">()</span> 
+  <span class="n">hstshow</span><span class="p">()</span>
+  <span class="kd">local</span> <span class="n">hl</span><span class="o">=</span><span class="n">AlertDialog.Builder</span><span class="p">(</span><span class="n">activity</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">hstlayout</span><span class="p">))</span>
+  <span class="p">.</span><span class="n">setNegativeButton</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">,</span><span class="n">DialogInterface.OnClickListener</span><span class="p">{</span>
+    <span class="n">onClick</span><span class="o">=</span><span class="kr">function</span><span class="p">()</span>
+    <span class="kr">end</span>
+  <span class="p">})</span>
+  <span class="p">.</span><span class="n">create</span><span class="p">()</span>
+  <span class="n">hl.show</span><span class="p">()</span>
+  <span class="n">hlst.onItemClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="err">加载网页</span><span class="p">(</span><span class="n">lstweb</span><span class="p">[</span><span class="n">b</span><span class="p">])</span>
+    <span class="n">hl.dismiss</span><span class="p">()</span>
+  <span class="kr">end</span>
+  <span class="n">hlst.onItemLongClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="n">hl.dismiss</span><span class="p">()</span>
+    <span class="err">对话框</span><span class="p">()</span>
+    <span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;是否删除记录？&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+      <span class="n">show_hst</span><span class="p">()</span>
+    <span class="kr">end</span><span class="p">)</span>
+    <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;确定&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+      <span class="n">table.remove</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+      <span class="n">table.remove</span><span class="p">(</span><span class="n">lstweb</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+      <span class="n">save_hst</span><span class="p">()</span>
+      <span class="n">show_hst</span><span class="p">()</span>
+    <span class="kr">end</span> <span class="p">)</span>
+    <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
+    <span class="kr">return</span> <span class="kc">true</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+<span class="c1">--5.清除缓存</span>
+<span class="kr">function</span> <span class="nf">clr</span><span class="p">()</span>
+  <span class="c1">--导入File类</span>
+  <span class="n">import</span> <span class="s2">&#34;java.io.File&#34;</span>
+  <span class="c1">--显示多选框</span>
+  <span class="n">items</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;浏览记录&#34;</span><span class="p">,</span><span class="s2">&#34;缓存文件&#34;</span><span class="p">}</span>
+  <span class="err">多选对话框</span><span class="o">=</span><span class="n">AlertDialog.Builder</span><span class="p">(</span><span class="n">this</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">setTitle</span><span class="p">(</span><span class="s2">&#34;清除记录&#34;</span><span class="p">)</span>
+  <span class="c1">--勾选后执行</span>
+  <span class="p">.</span><span class="n">setPositiveButton</span><span class="p">(</span><span class="s2">&#34;确定&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+    <span class="kr">if</span> <span class="n">clearhistory</span><span class="o">==</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">clearall</span><span class="o">==</span><span class="mi">1</span> <span class="kr">then</span>
+      <span class="n">File</span><span class="p">(</span><span class="n">lstads</span><span class="p">).</span><span class="n">delete</span><span class="p">()</span>
+      <span class="n">File</span><span class="p">(</span><span class="n">lstwebads</span><span class="p">).</span><span class="n">delete</span><span class="p">()</span>
+      <span class="n">lst</span><span class="o">=</span><span class="p">{}</span>
+      <span class="n">lstweb</span><span class="o">=</span><span class="p">{}</span>
+      <span class="n">os.execute</span><span class="p">(</span><span class="s2">&#34;pm clear &#34;</span><span class="o">..</span><span class="n">activity.getPackageName</span><span class="p">())</span>
+    <span class="kr">elseif</span> <span class="n">clearhistory</span><span class="o">==</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">clearall</span><span class="o">==</span><span class="mi">1</span> <span class="kr">then</span>
+      <span class="n">os.execute</span><span class="p">(</span><span class="s2">&#34;pm clear &#34;</span><span class="o">..</span><span class="n">activity.getPackageName</span><span class="p">())</span>
+    <span class="kr">elseif</span> <span class="n">clearhistory</span><span class="o">==</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">clearall</span><span class="o">==</span><span class="mi">0</span> <span class="kr">then</span>
+      <span class="n">File</span><span class="p">(</span><span class="n">lstads</span><span class="p">).</span><span class="n">delete</span><span class="p">()</span>
+      <span class="n">File</span><span class="p">(</span><span class="n">lstwebads</span><span class="p">).</span><span class="n">delete</span><span class="p">()</span>
+      <span class="n">lst</span><span class="o">=</span><span class="p">{}</span>
+      <span class="n">lstweb</span><span class="o">=</span><span class="p">{}</span>
+    <span class="kr">else</span> <span class="kr">return</span> <span class="kc">nil</span>
+    <span class="kr">end</span>
+  <span class="kr">end</span><span class="p">)</span>
+  <span class="c1">--选择事件</span>
+  <span class="p">.</span><span class="n">setMultiChoiceItems</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="kc">nil</span><span class="p">,{</span> <span class="n">onClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+      <span class="c1">--清除历史</span>
+      <span class="kr">if</span> <span class="n">p</span><span class="o">==</span><span class="mi">0</span> <span class="kr">then</span> <span class="n">clearhistory</span><span class="o">=</span><span class="mi">1</span>
+      <span class="kr">end</span>
+      <span class="c1">--清除缓存</span>
+      <span class="kr">if</span> <span class="n">p</span><span class="o">==</span><span class="mi">1</span> <span class="kr">then</span> <span class="n">clearall</span><span class="o">=</span><span class="mi">1</span>
+      <span class="kr">end</span>
+    <span class="kr">end</span><span class="p">})</span>
+  <span class="err">多选对话框</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
+  <span class="n">clearhistory</span><span class="o">=</span><span class="mi">0</span>
+  <span class="n">clearall</span><span class="o">=</span><span class="mi">0</span>
+<span class="kr">end</span>
+
+
+<span class="n">activity.getWindow</span><span class="p">().</span><span class="n">setSoftInputMode</span><span class="p">(</span><span class="n">WindowManager.LayoutParams</span><span class="p">.</span><span class="n">SOFT_INPUT_ADJUST_RESIZE</span><span class="p">);</span>
+<span class="c1">--11.长按弹窗</span>
+<span class="kr">function</span> <span class="nf">popwin</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">win1</span><span class="o">=</span><span class="s2">&#34;向上移动&#34;</span>
+  <span class="kd">local</span> <span class="n">win2</span><span class="o">=</span><span class="s2">&#34;编辑&#34;</span>
+  <span class="kd">local</span> <span class="n">win3</span><span class="o">=</span><span class="s2">&#34;向下移动&#34;</span>
+  <span class="kd">local</span> <span class="n">wina</span><span class="o">=</span><span class="p">{</span><span class="n">win1</span><span class="p">,</span><span class="n">win2</span><span class="p">,</span><span class="n">win3</span><span class="p">}</span>
+  <span class="kd">local</span> <span class="n">winb</span><span class="o">=</span><span class="p">{</span><span class="n">win2</span><span class="p">,</span><span class="n">win3</span><span class="p">}</span>
+  <span class="kd">local</span> <span class="n">winc</span><span class="o">=</span><span class="p">{</span><span class="n">win1</span><span class="p">,</span><span class="n">win2</span><span class="p">}</span>
+  <span class="kr">if</span> <span class="n">od</span><span class="o">==</span><span class="mi">1</span> <span class="kr">then</span>
+    <span class="n">win</span><span class="o">=</span><span class="n">winb</span>
+  <span class="kr">elseif</span> <span class="n">od</span><span class="o">==#</span><span class="n">fav</span> <span class="kr">then</span>
+    <span class="n">win</span><span class="o">=</span><span class="n">winc</span>
+  <span class="kr">else</span>
+    <span class="n">win</span><span class="o">=</span><span class="n">wina</span>
+  <span class="kr">end</span>
+  <span class="n">winlayout</span><span class="o">=</span><span class="p">{</span>
+    <span class="n">LinearLayout</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="o">=</span><span class="s2">&#34;vertical&#34;</span><span class="p">,</span>
+    <span class="p">{</span><span class="n">ListView</span><span class="p">,</span>
+      <span class="n">id</span><span class="o">=</span><span class="s2">&#34;winlv&#34;</span><span class="p">,</span>
+      <span class="n">items</span><span class="o">=</span><span class="n">win</span><span class="p">,</span>
+      <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;fill_parent&#34;</span><span class="p">,</span>
+      <span class="n">layout_height</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,},</span>
+  <span class="p">}</span>
+  <span class="n">winl</span><span class="o">=</span><span class="n">AlertDialog.Builder</span><span class="p">(</span><span class="n">activity</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">winlayout</span><span class="p">))</span>
+  <span class="p">.</span><span class="n">create</span><span class="p">()</span>
+  <span class="n">winl.show</span><span class="p">()</span>
+  <span class="n">winlv.onItemClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="n">win</span><span class="p">[</span><span class="n">b</span><span class="p">]</span><span class="o">==</span><span class="n">win1</span> <span class="kr">then</span>
+      <span class="n">fl.dismiss</span><span class="p">()</span>
+      <span class="n">upfav</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
+    <span class="kr">elseif</span> <span class="n">win</span><span class="p">[</span><span class="n">b</span><span class="p">]</span><span class="o">==</span><span class="n">win2</span> <span class="kr">then</span>
+      <span class="n">fl.dismiss</span><span class="p">()</span>
+      <span class="n">show_efav</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
+    <span class="kr">elseif</span> <span class="n">win</span><span class="p">[</span><span class="n">b</span><span class="p">]</span><span class="o">==</span><span class="n">win3</span> <span class="kr">then</span>
+      <span class="n">fl.dismiss</span><span class="p">()</span>
+      <span class="n">downfav</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
+    <span class="kr">end</span>
+    <span class="n">winl.dismiss</span><span class="p">()</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+<span class="kr">function</span> <span class="nf">downfav</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+  <span class="kr">if</span> <span class="n">b</span><span class="o">~=#</span><span class="n">fav</span> <span class="kr">then</span>
+    <span class="n">dfav</span><span class="o">=</span><span class="n">fav</span><span class="p">[</span><span class="n">b</span><span class="p">]</span>
+    <span class="n">dfavweb</span><span class="o">=</span><span class="n">favweb</span><span class="p">[</span><span class="n">b</span><span class="p">]</span>
+    <span class="n">table.remove</span><span class="p">(</span><span class="n">fav</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="n">table.remove</span><span class="p">(</span><span class="n">favweb</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="n">table.insert</span><span class="p">(</span><span class="n">fav</span><span class="p">,</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">dfav</span><span class="p">)</span>
+    <span class="n">table.insert</span><span class="p">(</span><span class="n">favweb</span><span class="p">,</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">dfavweb</span><span class="p">)</span>
+  <span class="kr">end</span>
+  <span class="n">save_fav</span><span class="p">()</span>
+  <span class="n">show_fav</span><span class="p">()</span>
+<span class="kr">end</span>
+
+
+
+<span class="c1">--加入收藏</span>
+<span class="kr">function</span> <span class="nf">getAllData</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">data</span><span class="o">=</span><span class="p">{}</span>
+  <span class="kr">for</span> <span class="n">d</span> <span class="kr">in</span> <span class="n">each</span><span class="p">(</span><span class="n">this.getApplicationContext</span><span class="p">().</span><span class="n">getSharedPreferences</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="mi">0</span><span class="p">).</span><span class="n">getAll</span><span class="p">().</span><span class="n">entrySet</span><span class="p">())</span> <span class="kr">do</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">d.getKey</span><span class="p">()]</span><span class="o">=</span><span class="n">d.getValue</span><span class="p">()</span>
+  <span class="kr">end</span>
+  <span class="kr">return</span> <span class="n">data</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">getData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">key</span><span class="p">,</span><span class="n">MzI1NTI3MzI</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">data</span><span class="o">=</span><span class="n">this.getApplicationContext</span><span class="p">().</span><span class="n">getSharedPreferences</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="mi">0</span><span class="p">).</span><span class="n">getString</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="kc">nil</span><span class="p">)</span><span class="c1">--325-5273-2</span>
+  <span class="kr">return</span> <span class="n">data</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">putData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">key</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
+  <span class="n">this.getApplicationContext</span><span class="p">().</span><span class="n">getSharedPreferences</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="mi">0</span><span class="p">).</span><span class="n">edit</span><span class="p">().</span><span class="n">putString</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">value</span><span class="p">).</span><span class="n">apply</span><span class="p">()</span><span class="c1">--3255-2732</span>
+  <span class="kr">return</span> <span class="kc">true</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">removeData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">key</span><span class="p">)</span>
+  <span class="n">this.getApplicationContext</span><span class="p">().</span><span class="n">getSharedPreferences</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="mi">32552732</span><span class="o">*</span><span class="mi">0</span><span class="p">).</span><span class="n">edit</span><span class="p">().</span><span class="n">remove</span><span class="p">(</span><span class="n">key</span><span class="p">).</span><span class="n">apply</span><span class="p">()</span><span class="cm">--[[3(2)6?5{2}2[7]32]]</span>
+  <span class="kr">return</span> <span class="kc">true</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">listKeys</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+  <span class="n">keys</span><span class="o">=</span><span class="p">{}</span>
+  <span class="n">emmm</span><span class="o">=</span><span class="mi">24411107</span><span class="o">+</span><span class="mi">8236000</span><span class="o">+</span><span class="mi">236</span><span class="o">-</span><span class="mi">95463</span><span class="o">+</span><span class="mi">852</span>
+  <span class="kr">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="kr">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="kr">do</span>
+    <span class="n">keys</span><span class="p">[</span><span class="o">#</span><span class="n">keys</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">k</span>
+  <span class="kr">end</span>
+  <span class="kr">return</span> <span class="n">keys</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">listValues</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">MzI1NTI3MzI</span><span class="p">)</span>
+  <span class="n">values</span><span class="o">=</span><span class="p">{}</span>
+  <span class="kr">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="kr">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="kr">do</span>
+    <span class="n">values</span><span class="p">[</span><span class="o">#</span><span class="n">values</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">v</span>
+  <span class="kr">end</span>
+  <span class="n">q</span><span class="o">=</span><span class="s2">&#34;325 52732&#34;</span>
+  <span class="kr">return</span> <span class="n">values</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">adapterData</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">jdpuk</span><span class="p">)</span>
+  <span class="n">adpd</span><span class="o">=</span><span class="p">{}</span>
+  <span class="kr">for</span> <span class="n">d</span> <span class="kr">in</span> <span class="n">pairs</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="kr">do</span>
+    <span class="n">table.insert</span><span class="p">(</span><span class="n">adpd</span><span class="p">,{</span>
+      <span class="n">text</span><span class="o">=</span><span class="p">{</span>
+        <span class="n">Text</span><span class="o">=</span><span class="n">tostring</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">d</span><span class="p">]),</span> 
+      <span class="p">},</span> 
+    <span class="p">})</span>
+  <span class="kr">end</span>
+  <span class="kr">return</span> <span class="n">adpd</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="n">listlayout</span><span class="o">=</span><span class="p">{</span>
+  <span class="n">LinearLayout</span><span class="p">,</span>
+  <span class="n">orientation</span><span class="o">=</span><span class="s2">&#34;1&#34;</span><span class="p">,</span>
+  <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;fill&#34;</span><span class="p">,</span>
+  <span class="n">layout_height</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,</span>
+  <span class="p">{</span>
+    <span class="n">ListView</span><span class="p">,</span>
+    <span class="n">id</span><span class="o">=</span><span class="s2">&#34;list&#34;</span><span class="p">,</span>
+    <span class="n">layout_marginTop</span><span class="o">=</span><span class="s2">&#34;10dp&#34;</span><span class="p">,</span>
+    <span class="c1">--items={&#34;3&#34;,&#34;2&#34;,&#34;5&#34;,&#34;5&#34;,&#34;2&#34;,&#34;7&#34;,&#34;3&#34;,&#34;2&#34;},</span>
+    <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;fill&#34;</span><span class="p">,</span>
+    <span class="n">layout_height</span><span class="o">=</span><span class="s2">&#34;wrap_content&#34;</span><span class="p">,</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">local</span> <span class="n">inputlayout</span><span class="o">=</span><span class="p">{</span>
+  <span class="n">LinearLayout</span><span class="p">,</span>
+  <span class="n">orientation</span><span class="o">=</span><span class="s2">&#34;vertical&#34;</span><span class="p">,</span>
+  <span class="n">Focusable</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span>
+  <span class="n">FocusableInTouchMode</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span>
+  <span class="p">{</span>
+    <span class="n">EditText</span><span class="p">,</span>
+    <span class="n">id</span><span class="o">=</span><span class="s2">&#34;edit&#34;</span><span class="p">,</span>
+    <span class="n">hint</span><span class="o">=</span><span class="s2">&#34;Input here&#34;</span><span class="p">,</span>
+    <span class="n">layout_marginTop</span><span class="o">=</span><span class="s2">&#34;5dp&#34;</span><span class="p">,</span>
+    <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;80%w&#34;</span><span class="p">,</span>
+    <span class="c1">--uh=&#34;32552732&#34;,</span>
+    <span class="n">layout_gravity</span><span class="o">=</span><span class="s2">&#34;center&#34;</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="kd">local</span> <span class="n">input2layout</span><span class="o">=</span><span class="p">{</span>
+  <span class="n">LinearLayout</span><span class="p">,</span>
+  <span class="n">orientation</span><span class="o">=</span><span class="s2">&#34;vertical&#34;</span><span class="p">,</span>
+  <span class="n">Focusable</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span>
+  <span class="n">FocusableInTouchMode</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span>
+  <span class="p">{</span>
+    <span class="n">EditText</span><span class="p">,</span>
+    <span class="n">id</span><span class="o">=</span><span class="s2">&#34;edit1&#34;</span><span class="p">,</span>
+    <span class="n">hint</span><span class="o">=</span><span class="s2">&#34;Input here&#34;</span><span class="p">,</span>
+    <span class="c1">--numa=&#34;32552&#34;,</span>
+    <span class="c1">--aaa=&#34;bbb&#34;</span>
+    <span class="n">layout_marginTop</span><span class="o">=</span><span class="s2">&#34;5dp&#34;</span><span class="p">,</span>
+    <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;80%w&#34;</span><span class="p">,</span>
+    <span class="n">layout_gravity</span><span class="o">=</span><span class="s2">&#34;center&#34;</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="n">EditText</span><span class="p">,</span>
+    <span class="n">id</span><span class="o">=</span><span class="s2">&#34;edit2&#34;</span><span class="p">,</span>
+    <span class="c1">--ccc=&#34;ddd&#34;,</span>
+    <span class="c1">--numb=&#34;732&#34;,</span>
+    <span class="c1">--eee=&#34;fff&#34;,</span>
+    <span class="n">hint</span><span class="o">=</span><span class="s2">&#34;Input here&#34;</span><span class="p">,</span>
+    <span class="n">layout_margiTop</span><span class="o">=</span><span class="s2">&#34;5dp&#34;</span><span class="p">,</span>
+    <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;80%w&#34;</span><span class="p">,</span>
+    <span class="n">layout_gravity</span><span class="o">=</span><span class="s2">&#34;center&#34;</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="kr">function</span> <span class="nf">showDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">jdpuk</span><span class="p">)</span>
+
+  <span class="kd">local</span> <span class="n">data</span><span class="o">=</span><span class="n">getAllData</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">keys</span><span class="o">=</span><span class="n">listKeys</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">values</span><span class="o">=</span><span class="n">listValues</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+  <span class="n">item</span><span class="o">=</span><span class="p">{</span>
+    <span class="n">LinearLayout</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="o">=</span><span class="s2">&#34;vertical&#34;</span><span class="p">,</span>
+    <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;fill&#34;</span><span class="p">,</span>
+    <span class="p">{</span>
+      <span class="n">TextView</span><span class="p">,</span>
+      <span class="n">id</span><span class="o">=</span><span class="s2">&#34;text&#34;</span><span class="p">,</span>
+      <span class="n">textSize</span><span class="o">=</span><span class="s2">&#34;16sp&#34;</span><span class="p">,</span>
+      <span class="n">layout_margin</span><span class="o">=</span><span class="s2">&#34;10dp&#34;</span><span class="p">,</span>
+      <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;fill&#34;</span><span class="p">,</span>
+      <span class="n">layout_width</span><span class="o">=</span><span class="s2">&#34;70%w&#34;</span><span class="p">,</span>
+      <span class="n">layout_gravity</span><span class="o">=</span><span class="s2">&#34;center&#34;</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">}</span>
+
+  <span class="kd">local</span> <span class="n">adpd</span><span class="o">=</span><span class="n">adapterData</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">items</span><span class="o">=</span><span class="n">LuaAdapter</span><span class="p">(</span><span class="n">this</span><span class="p">,</span><span class="n">adpd</span><span class="p">,</span><span class="n">item</span><span class="p">)</span>
+
+  <span class="kd">local</span> <span class="n">dlb</span><span class="o">=</span><span class="err">对话框</span><span class="p">()</span>
+  <span class="n">dlb</span><span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">dl</span>
+  <span class="kr">if</span> <span class="o">#</span><span class="n">keys</span><span class="o">&gt;</span><span class="mi">0</span> <span class="kr">then</span>
+    <span class="n">dlb.setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">listlayout</span><span class="p">))</span>
+    <span class="n">list.setDividerHeight</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">list.Adapter</span><span class="o">=</span><span class="n">items</span>
+    <span class="n">list.onItemClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">adp</span><span class="p">,</span><span class="n">view</span><span class="p">,</span><span class="n">position</span><span class="p">,</span><span class="n">id</span><span class="p">)</span><span class="c1">--3255273 2</span>
+      <span class="n">webView.loadUrl</span><span class="p">(</span><span class="n">keys</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
+      <span class="kr">if</span> <span class="n">dl</span> <span class="kr">then</span>
+        <span class="n">dl.dismiss</span><span class="p">()</span>
+      <span class="kr">end</span>
+    <span class="kr">end</span>
+    <span class="n">list.onItemLongClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">adp</span><span class="p">,</span><span class="n">view</span><span class="p">,</span><span class="n">pos</span><span class="p">,</span><span class="n">id</span><span class="p">)</span><span class="c1">--325 52732</span>
+      <span class="err">对话框</span><span class="p">()</span>
+      <span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+      <span class="p">.</span><span class="n">setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">input2layout</span><span class="p">))</span>
+      <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;保存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span><span class="c1">--32552732</span>
+        <span class="kr">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit1.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit2.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">3255</span><span class="o">==</span><span class="mi">2732</span> <span class="kr">then</span>
+          <span class="n">removeData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">keys</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
+          <span class="n">putData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">)</span><span class="c1">--32552732</span>
+          <span class="kr">if</span> <span class="n">dl</span> <span class="kr">then</span>
+            <span class="n">dl.dismiss</span><span class="p">()</span>
+            <span class="n">showDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">)</span>
+          <span class="kr">end</span>
+        <span class="kr">else</span>
+          <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;请填写所有字段&#34;</span><span class="p">)</span>
+        <span class="kr">end</span>
+      <span class="kr">end</span><span class="p">)</span>
+      <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
+      <span class="p">.</span><span class="err">设置中立按钮</span><span class="p">(</span><span class="s2">&#34;删除&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+        <span class="n">removeData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">keys</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
+        <span class="n">items.remove</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+        <span class="n">table.remove</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span><span class="n">id</span><span class="p">)</span>
+        <span class="n">table.remove</span><span class="p">(</span><span class="n">values</span><span class="p">,</span><span class="n">id</span><span class="p">)</span>
+        <span class="kr">if</span> <span class="o">#</span><span class="n">adpd</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="kr">then</span>
+          <span class="kr">if</span> <span class="n">dl</span> <span class="kr">then</span>
+            <span class="n">dl.dismiss</span><span class="p">()</span>
+            <span class="n">showDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">);</span>
+          <span class="kr">end</span>
+        <span class="kr">end</span>
+      <span class="kr">end</span><span class="p">)</span>
+      <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
+      <span class="n">edit1.setHint</span><span class="p">(</span><span class="s2">&#34;标题&#34;</span><span class="p">)</span>
+      <span class="n">edit2.setHint</span><span class="p">(</span><span class="s2">&#34;链接&#34;</span><span class="p">)</span>
+      <span class="n">edit1.setText</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
+      <span class="n">edit2.setText</span><span class="p">(</span><span class="n">keys</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
+      <span class="kr">return</span> <span class="kc">true</span>
+    <span class="kr">end</span>
+  <span class="kr">else</span>
+    <span class="n">dlb</span><span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;没有收藏&#34;</span><span class="p">)</span>
+  <span class="kr">end</span>
+  <span class="n">dlb</span><span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;新建收藏&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span><span class="n">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s2">&#34;新建收藏&#34;</span><span class="p">)</span><span class="kr">end</span><span class="p">)</span>
+  <span class="n">dl</span><span class="o">=</span><span class="n">dlb.show</span><span class="p">()</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">value</span><span class="p">,</span><span class="n">key</span><span class="p">)</span><span class="c1">--32552732</span>
+  <span class="err">对话框</span><span class="p">()</span>
+  <span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">input2layout</span><span class="p">))</span>
+  <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;保存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+    <span class="kr">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit1.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit2.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">325</span><span class="o">==</span><span class="mi">52732</span> <span class="kr">then</span>
+      <span class="kr">if</span> <span class="ow">not</span> <span class="n">getData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">putData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">)</span>
+      <span class="kr">else</span>
+        <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;该链接已存在&#34;</span><span class="p">)</span>
+        <span class="n">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">)</span>
+      <span class="kr">end</span>
+    <span class="kr">else</span>
+      <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;请填写所有字段&#34;</span><span class="p">)</span>
+      <span class="n">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">)</span>
+    <span class="kr">end</span>
+  <span class="kr">end</span><span class="p">)</span>
+  <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
+  <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
+  <span class="n">edit1.setHint</span><span class="p">(</span><span class="s2">&#34;标题&#34;</span><span class="p">)</span>
+  <span class="n">edit2.setHint</span><span class="p">(</span><span class="s2">&#34;链接&#34;</span><span class="p">)</span>
+  <span class="kr">if</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="kr">then</span>
+    <span class="n">edit1.setText</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+  <span class="kr">end</span>
+  <span class="kr">if</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="kr">then</span>
+    <span class="n">edit2.setText</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description><![CDATA[<h3 id="安装">安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~
+curl https://getcaddy.com <span class="p">|</span> bash -s personal http.filemanager
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="编写配置文件">编写配置文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim Caddyfile
+</code></pre></td></tr></table>
+</div>
+</div><p>内容如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">:80 {
+filemanager / /sdcard
+timeouts none
+gzip
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>这里的8080端口号可以随意指定, 如果在手机termux等搭建，由于手机权限比较低, 所以一般设置1024以上的端口.<code>80</code>端口可以直接通过ip访问。如<code>118.24.217.167</code></p>
+<p>如果用域名，先在域名服务商解析ip,再配置文件如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">https://pan.lruihao.cn <span class="o">{</span>
+filemanager / /sdcard
+timeouts none
+tls admin@lruihao.cn
+gzip
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>指定邮箱是为了申请ssl,实现https.</p>
+<h3 id="demohttpspanlruihaocn"><a href="https://pan.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></h3>
+<p>启动caddy</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">caddy
+</code></pre></td></tr></table>
+</div>
+</div><p>账号密码默认<code>admin</code>
+</p>
+<h3 id="设置定时器启动caddy好像没用我不会">设置定时器启动caddy（好像没用,我不会）</h3>
+<p>为了断开xshell后caddy还在运行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim run.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>编辑以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>caddy
+</code></pre></td></tr></table>
+</div>
+</div><p>加权</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">chmod +x run.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>设置任务
+<a href="https://www.jianshu.com/p/95d1473859d1" target="_blank" rel="noopener noreffer">参考</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">crontab -e
+</code></pre></td></tr></table>
+</div>
+</div><p>加入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">* * * * * /root/run.sh
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">service crond start 
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="heading">？？？</h3>
+<p>最后误打误撞开启了caddy<br>
+昨晚双十一要抢裤子，加上湘潭天气太tm冷了，就上床了，接着用termux远程连接服务器继续搞。结果连接的时候命令输错了-_-!<br>
+本来是<code>ssh root@118.24.217.167</code>再输入密码就可以了。这次搞错了多写了个<code>-T</code>,然后运行<code>caddy</code>,<code>ctrl+c</code>  再断开，意外地发现filemanager竟然可以访问了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -T root@118.24.217.167
+caddy
+
+Ctrl+c
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description><![CDATA[<blockquote>
+<p>我用的 win10</p>
+</blockquote>
+<h3 id="打开控制面板">打开控制面板</h3>
+<p>选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所有地选项，点击确定后，开始更新服务。<br>
+</p>
+<h3 id="查看">查看</h3>
+<p>更新完成后，打开浏览器，输入<code>http://localhost</code>或者<code>127.0.0.1</code>回车，如果此时出现IIS7欢迎界面，说明Web服务器已经搭建成功。<br>
+</p>
+<h3 id="网站设置">网站设置</h3>
+<p>当web服务器搭建成功后，我们下一步所要做的就是把我们开发的网站安装到Web服务器的目录中。一般情况下，当Web服务器安装完成后，会创建路径<code>%系统根目录%inetpub/wwwroot</code>，将我们开发的网站COPY到该路径下。即可实现本地访问该网站。<br>
+</p>
+<p>也可以更改根目录，搜索IIS，点击网站，Default Web Site，基本设置修改物理路径（<strong>默认站点名称不要改</strong>）<br>
+我这里改到了hexo的public相当于hexo部署在本地服务器<code>58.45.227.225</code><br>
+
+
+</p>
+<h3 id="设置防火墙">设置防火墙</h3>
+<p>让局域网当其它计算机也能访问本地网站资源。具体方法：打开控制面板，选择“系统和安全”，点击“允许程序通过Windows防火墙”，在弹出的对话框中勾选“万维网服务HTTP”右侧的两个复选框，最后点击确定退出。<br>
+</p>
+<p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的ip地址访问了（手机也可以）<br>
+本地ip可以通过cmd用ipconfig查看</p>
+]]></description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/posts/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/font-mmt/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/font-mmt/images/word1.png" referrerpolicy="no-referrer">
             </div><div id="id-4"><span id="id-1"></span>
 <span id="id-2"></span>
@@ -92,4 +1987,802 @@
 <p><em><strong>注：仅用于个人非商用！</strong></em></p>
 </div>
         </div>
-    </div>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description>概念 流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分</description></item></channel></rss>
+    </div>
+<h2 id="预览">预览</h2>
+<div id="id-5">前尘硬化像石头<br>
+随缘地抛下便逃走<br>
+我绝不罕有<br>
+往街里绕过一周<br>
+我便化乌有<br>
+你还嫌不够<br>
+我把这陈年风褛<br>
+送赠你解咒</div>
+<hr>
+<h2 id="字稿">字稿</h2>
+<iframe height=800 width=100% src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-&share=1&from=singlemessage
+" frameborder=0 allowfullscreen></iframe>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
+<p>流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">未使用流水线</th>
+<th style="text-align:center">使用流水线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>流水线周期为执行时间最长的一段。</p>
+<h3 id="流水线计算公式">流水线计算公式</h3>
+<p></p>
+<p>首先使用理论公式，没有答案用实践公式。</p>
+<h3 id="流水线吞吐率计算">流水线吞吐率计算</h3>
+<p>流水线吞吐率是指单位时间内处理的任务的数量。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基本公式</th>
+<th style="text-align:center">最大吞吐率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="流水线加速比">流水线加速比</h3>
+<p>完成一批任务,不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p>
+<p>公式： S=不使用流水线执行时间/使用流水线执行时间</p>
+<p>流水线加速比越高越好，说明使用流水线的效果。</p>
+<h3 id="流水线的效率">流水线的效率</h3>
+<p></p>
+<h3 id="例题">例题</h3>
+<p></p>
+<h3 id="其他">其他</h3>
+<h4 id="主机">主机</h4>
+<p></p>
+<h4 id="cisc和risc">CISC和RISC</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">指令</th>
+<th style="text-align:center">寻址方式</th>
+<th style="text-align:center">实现方式</th>
+<th style="text-align:center">其他</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CISC(复杂指令集)</td>
+<td style="text-align:center">数量多，使用频率差别大，可变长格式</td>
+<td style="text-align:center">支持多种</td>
+<td style="text-align:center">微程序控制技术(微码)</td>
+<td style="text-align:center">研制周期长</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">RISC(精简指令集)</td>
+<td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有Load/Store操作内存</td>
+<td style="text-align:center">支持方式少</td>
+<td style="text-align:center">增加了通用寄存器；硬布线逻辑控制为主；适合采用流水线</td>
+<td style="text-align:center">优化编码，有效支持高级语言</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+]]></description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/data/</guid><description><![CDATA[<h3 id="数据的表示">数据的表示</h3>
+<p><strong>数据的表示可分为：原码，反码和补码。（二进制）</strong></p>
+<ul>
+<li>原码： 符号位0为正，1为负。</li>
+<li>反码： 符号位0为正，1为负。
+<ul>
+<li>正数： 反码同原码。</li>
+<li>负数： 符号位除外其他位按位取反。</li>
+</ul>
+</li>
+<li>补码：
+<ul>
+<li>正数： 同原码。</li>
+<li>负数： 符号位除外其他位按位取反再+1。</li>
+</ul>
+</li>
+<li>移码： 补码符号位取反。</li>
+</ul>
+<h3 id="数据表示范围">数据表示范围</h3>
+<ul>
+<li>原码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li>
+<li>反码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li>
+<li>补码： <code>-z^n-1 ~ 2^n-1 - 1</code>  (补码正0和负0相同，少占一数位，就多一个范围)</li>
+</ul>
+<p>例：
+8位二进制，除去符号位还有7位，7个1为最大数，相当于8个1减1，也就是2^7-1,所以范围就算出来了。</p>
+<h3 id="浮点数运算">浮点数运算</h3>
+<p><strong>对阶（小阶对大阶）+ 尾数计算（科学计数法）+ 结果规格化（科学技术法）</strong></p>
+]]></description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description><![CDATA[<h2 id="在线算法httpsbaikebaiducomiteme59ca8e7babfe7ae97e6b3954449947"><a href="https://baike.baidu.com/item/%E5%9C%A8%E7%BA%BF%E7%AE%97%E6%B3%95/4449947" target="_blank" rel="noopener noreffer">在线算法</a></h2>
+<p>在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。</p>
+<p>在计算机科学中，一个在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。相对的，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。例如，选择排序在排序前就需要知道所有待排序元素，然而插入排序就不必。<br>
+因为在线算法并不知道整个的输入，所以它被迫做出的选择最后可能会被证明不是最优的，对在线算法的研究主要集中在当前环境下怎么做出选择。对相同问题的在线算法和离线算法的对比分析形成了以上观点。如果想从其他角度了解在线算法可以看一下流算法（关注精确呈现过去的输入所使用的内存的量），动态算法（关注维护一个在线输入的结果所需要的时间复杂度）和在线机器学习。<br>
+一个很好的展示在线算法概念的例子是 加拿大旅行者问题，这个问题的目标是在一个有权图中以最小的代价到达一个目标节点，但这个有权图中有些边是不可靠的可能已经被剔除。然而一个旅行者只有到某个边的一个端点时才能确定该边是否已经被移除了。最坏情况下，该问题会变得简单了，即所有的不确定的边都被移除该问题将会变成通常的最短路径问题。</p>
+<h2 id="离线算法httpsbaikebaiducomiteme7a6bbe7babfe7ae97e6b395"><a href="https://baike.baidu.com/item/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95" target="_blank" rel="noopener noreffer">离线算法</a></h2>
+<p>离线算法( off line algorithms)，是指基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。</p>
+<p>设计策略  在执行算法前输入已知的基本假设<br>
+前提  具有问题完全信息<br>
+算法设计策略都是基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果，通常将这类具有问题完全信息前提下设计出的算法称为离线算法( off line algorithms)</p>
+]]></description></item><item><title>位运算</title><link>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Thu, 14 Jun 2018 20:22:21 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description><![CDATA[<h2 id="1-运算">1. &amp;运算</h2>
+<p>&amp;运算通常用于二进制取位操作，例如一个数 &amp; 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位为0表示该数为偶数，最末位为1表示该数为奇数.</p>
+<h2 id="2-运算">2. |运算</h2>
+<p>|运算通常用于二进制特定位上的无条件赋值，例如一个数or 1的结果就是把二进制最末位强行变成1。如果需要把二进制最末位变成0，对这个数| 1之后再减一就可以了，其实际意义就是把这个数强行变成最接近的偶数。</p>
+<h2 id="3-运算">3. ^运算</h2>
+<p>^运算通常用于对二进制的特定一位进行取反操作，因为异或可以这样定义：异或0都不变，异或1则取反。 ^运算的逆运算是它本身，也就是说两次异或同一个数最后结果不变，即a ^ b ^ b = a。^运算可以用于简单的加密，比如你想对你MM说1314520，但怕别人知道，于是双方约定拿你的生日19880516作为密钥。1314520^19880516 = 20665500，你就把20665500告诉MM。MM再次计算20665500 ^ 19880516的值，得到1314520，于是她就明白了你的企图。</p>
+<p>还可以用异或来进行快速地交换数据，</p>
+<p>a=2;b=3;//先转化成二进制</p>
+<p>a=a^b;</p>
+<p>b=a^b;</p>
+<p>a=a^b;</p>
+<p>操作后a=3;b=2;</p>
+<h2 id="4--运算">4. ~ 运算</h2>
+<p>~运算的定义是把内存中的0和1全部取反。使用~运算时要格外小心，你需要注意整数类型有没有符号。如果~的对象是无符号整数（不能表示负数），那么得到的值就是它与该类型上界的差，因为无符号类型的数是用$0000到$FFFF依次表示的。</p>
+<h2 id="5-运算">5. &laquo;运算</h2>
+<p>a &laquo; b就表示把a转为二进制后左移b位（在后面添b个0）。例如100的二进制为1100100，而110010000转成十进制是400，那么100 &laquo;2 = 400。可以看出，a &laquo; b的值实际上就是a乘以2的b次方，因为在二进制数后添一个0就相当于该数乘以2。</p>
+<p>通常认为a &laquo; 1比a * 2更快，因为前者是更底层一些的操作。因此程序中乘以2的操作请尽量用左移一位来代替。</p>
+<p>定义一些常量可能会用到&laquo;运算。你可以方便地用1 &laquo;16 – 1来表示65535。很多算法和数据结构要求数据规模必须是2的幂，此时可以用&laquo;来定义Max_N等常量。</p>
+<h2 id="6-运算">6. &raquo;运算</h2>
+<p>和&laquo;相似，a &raquo; b表示二进制右移b位（去掉末b位），相当于a除以2的b次方（取整）。我们也经常用&raquo; 1来代替div 2，比如二分查找、堆的插入操作等等。想办法用&raquo;代替除法运算可以使程序效率大大提高。最大公约数的二进制算法用除以2操作来代替慢得出奇的mod运算，效率可以提高60%</p>
+<p><a href="https://weibo.com/ttarticle/p/show?id=2309404238259097064884&amp;mod=zwenzhang" target="_blank" rel="noopener noreffer">传送门</a></p>
+<blockquote>
+<p>原文:<code>http://www.matrix67.com/blog/archives/263</code></p>
+</blockquote>
+]]></description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
+<p>本文来自kio对Markdown的基础教程
+其他推荐参考：<a href="https://segmentfault.com/markdown" target="_blank" rel="noopener noreffer">https://segmentfault.com/markdown</a></p>
+</blockquote>
+<p>Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性，让你可以专注在文本创作上。</p>
+<p>这篇文章旨在让你通过大约三分钟来快速掌握Markdown的基本用法。</p>
+<h2 id="在开始之前需要特别注意的点">在开始之前，需要特别注意的点</h2>
+<ol>
+<li>通常，格式控制符号与文本内容需要<strong>保留一个空格</strong></li>
+<li>段落之间需要<strong>空格一行</strong></li>
+</ol>
+<h2 id="标题">标题</h2>
+<p>在书写中，标题是最常用的格式，Markdown中，通过在文本前加上 # 即可，同时，根据#的数量可以可以划分为二级标题、三级标题、四级标题&hellip;一共六级。</p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<h2 id="列表">列表</h2>
+<p>列表分为无序列表和有序列表，无序列表在文本前面加上 - 即可：</p>
+<ul>
+<li>无序列表一</li>
+<li>无序列表二</li>
+<li>无序列表三</li>
+</ul>
+<p>而有序列表仅需要在文本前面加上 1. 即可：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">1. 有序列表一
+2. 有序列表二
+3. 有序列表三
+</code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>有序列表一</li>
+<li>有序列表二</li>
+<li>有序列表三</li>
+</ol>
+<h2 id="引用">引用</h2>
+<p>文本经常需要引入一些内容，包括他人的话等等。仅需要在文本前面加上 <code>&gt;</code> 即可：</p>
+<blockquote>
+<p>Kio•纯粹写字</p>
+</blockquote>
+<h2 id="文字修饰">文字修饰</h2>
+<p>为了表达的抑扬顿挫，需要使用到粗体、斜体、删减体等来表明重点，其中用一个 <code>*</code> 号包围起来的文字为斜体，用 <code>**</code> 包围起来的文字为粗体，而使用 <code>~~</code> 包围起来的文字为删减体：</p>
+<p><em>斜体</em> <strong>粗体</strong> <del>删减体</del></p>
+<h2 id="段落分隔符">段落分隔符</h2>
+<p>通过 <code>---</code> 即可以添加段落分割线：</p>
+<hr>
+<h2 id="链接及图片">链接及图片</h2>
+<p><a href="https://lruihao.cn/posts/hexowrite/" target="_blank" rel="noopener noreffer">另外一篇博文</a>
+链接和图片可以为文章润色不少，通过 <code>[描述](地址)</code>既可以添加链接，而在其前面添加一个 <code>!</code> 号即为添加图片， 具体为:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[百度](https://www.baidu.com)
+
+![Kio Logo](http://oss.blurme.idik.net/artemis/image/logo.png)
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="表格">表格</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">|英文|解释|备注|
+|:-:|:--|--:|
+|Book|书|   |
+|Hello|你好|   |
+|World|世界|world|
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th style="text-align:center">英文</th>
+<th style="text-align:left">解释</th>
+<th style="text-align:right">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Book</td>
+<td style="text-align:left">书</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:center">Hello</td>
+<td style="text-align:left">你好</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td style="text-align:center">World</td>
+<td style="text-align:left">世界</td>
+<td style="text-align:right">world</td>
+</tr>
+</tbody>
+</table>
+<p>这样即可自动生成表格，第二行为内容对准格式，第一格表示内容居中，第二格表示居左，第三格表示居右。</p>
+<h2 id="插入高亮代码">插入高亮代码</h2>
+<p>如果你需要插入一些代码，Markdown也可以帮你自动高亮，包括行内高亮和代码块高亮，行内高亮仅需要使用 <code>内容</code> 包围起来即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">代码块高亮
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>至此，写作中需要用到的控制符已经介绍完毕了，Kio提供的所见即所得Markdown支持和便捷的输入辅助能帮助你快速掌握这一密术 :]</p>
+<h2 id="移动端写作工具">移动端写作工具</h2>
+<p><a href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w" target="_blank" rel="noopener noreffer">Kio：密码99o4</a>可以导出PDF，md文件
+<a href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw" target="_blank" rel="noopener noreffer">markdownx：密码a5n4</a>
+<a href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg" target="_blank" rel="noopener noreffer">SM.MS图床：密码ch0v</a></p>
+<p>若链接失效还可以去酷安上下载。</p>]]></description></item><item><title>各种Links汇总与分享</title><link>https://lruihao.cn/posts/links/</link><pubDate>Thu, 07 Jun 2018 00:06:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/links/</guid><description><![CDATA[<blockquote>
+<p>2021/10/1 更新<br>
+使用 Chrome 等浏览器管理书签是更好更方便的方式，登陆 google 账号，或者导出 html 书签文件都挺方便。</p>
+</blockquote>
+<blockquote>
+<p>我们在平时学习生活总会遇到很多很多有用的网站，也许我们收藏在了浏览器书签里，可过久了，不做说明，这些链接的价值就被时间淹没了，我们自己都记不起来了，所以这篇文章因此而生。对自己收藏的链接做些简单的说明(第一次编写用了我一个下午)；也相当于我的链接收藏夹，分享一些有趣的网站，</p>
+</blockquote>
+<!-- tab ACM相关 -->
+<h1 id="acm相关">ACM相关</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">链接</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="http://www.pythontip.com/acm/problemCategory" target="_blank" rel="noopener noreffer">各大OJ题目分类</a></td>
+<td style="text-align:left">各种算法分类，对应OJ题号超链接</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://blog.csdn.net/column/details/acm--acm-acm--1.html" target="_blank" rel="noopener noreffer">ACM题目分类</a></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://codeforces.com" target="_blank" rel="noopener noreffer">codeforces</a></td>
+<td style="text-align:left">俄国CF在线编程，一般比赛在晚上9:30和11：00</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.nowcoder.com" target="_blank" rel="noopener noreffer">牛客网</a></td>
+<td style="text-align:left">国内求职学习网，有很多程序设计比赛</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://vjudge.net" target="_blank" rel="noopener noreffer">vjudge</a></td>
+<td style="text-align:left">这个不用说了吧</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://hihocoder.com" target="_blank" rel="noopener noreffer">hihocoder</a></td>
+<td style="text-align:left">打得少，感觉好多数据结构的题</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://bailian.openjudge.cn" target="_blank" rel="noopener noreffer">百练</a></td>
+<td style="text-align:left">OpenJudge的一个小组，很多题目来自POJ；也是我ACM启蒙地</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://acm.hdu.edu.cn" target="_blank" rel="noopener noreffer">HDUOJ</a></td>
+<td style="text-align:left">杭州电子科技大学OJ</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://poj.org" target="_blank" rel="noopener noreffer">POJ</a></td>
+<td style="text-align:left">北京大学OJ</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.luogu.org" target="_blank" rel="noopener noreffer">洛谷</a></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.lintcode.com/problem/" target="_blank" rel="noopener noreffer">lintcode</a></td>
+<td style="text-align:left">领扣（国外）</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://leetcode-cn.com/problemset/all/" target="_blank" rel="noopener noreffer">leedcode</a></td>
+<td style="text-align:left">力扣</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.codewars.com/kata/" target="_blank" rel="noopener noreffer">codewar</a></td>
+<td style="text-align:left">国外</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://blog.csdn.net/tigerisland45/article/details/52134189" target="_blank" rel="noopener noreffer">更多OJ，在线刷题网站&hellip;</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 编程,学习 -->
+<h1 id="编程学习">编程,学习</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">链接</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://visualgo.net" target="_blank" rel="noopener noreffer">visualgo</a></td>
+<td style="text-align:left">算法学习，数据结构和算法动态可视化</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://zh.cppreference.com" target="_blank" rel="noopener noreffer">c,c++学习</a></td>
+<td style="text-align:left">很详细的知识讲解</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://archive.apache.org/dist/tomcat/" target="_blank" rel="noopener noreffer">Tomcat下载</a></td>
+<td style="text-align:left">Tomcat各版本下载，Tomcat解压即安装；<code>\bin</code>下可以启动和关闭服务器；可手动在<code>\webapps</code>里创建web应用，也可以配合<code>Eclisp IDE for Java EE Developers</code>等Java IDE工具创建</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.w3school.com.cn" target="_blank" rel="noopener noreffer">w3school</a></td>
+<td style="text-align:left">可在线测试,Web技术教程,HTML,浏览器脚本,服务器脚本,xml教程等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.w3cschool.cn" target="_blank" rel="noopener noreffer">w3cschool</a></td>
+<td style="text-align:left">和上面不同哦，是不是和上面的很像哈哈哈！我估计是上一个网站的新版，功能更强大，内容更丰富，还有微信小程序教程等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.runoob.com" target="_blank" rel="noopener noreffer">菜鸟教程</a></td>
+<td style="text-align:left">和上面两个差不多，还有一些数据库、安卓的东西，git学习</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.pythontip.com" target="_blank" rel="noopener noreffer">python学习</a></td>
+<td style="text-align:left">Python库安装包下载,python,Django,HTML,ACM学习</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://python123.io" target="_blank" rel="noopener noreffer">python123</a></td>
+<td style="text-align:left">Python123 是专注于为中国高等院校教学 Python 语言的而开发的一款学习工具网站<a href="https://python123.io/index/notebooks/python_programming_basic_v2/%E6%BA%90%E4%BB%A3%E7%A0%81/2-1%20%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F?from=Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%28%E7%AC%AC2%E7%89%88%29" target="_blank" rel="noopener noreffer">python学习</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://pypi.org/" target="_blank" rel="noopener noreffer">pypi</a></td>
+<td style="text-align:left">Find, install and publish Python packages with the Python Package Index</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://uqer.io" target="_blank" rel="noopener noreffer">优矿</a></td>
+<td style="text-align:left">python在线测试，笔记</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener noreffer">阮一峰的网络日志</a></td>
+<td style="text-align:left">开发者手册，JavaScript等等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.liaoxuefeng.com" target="_blank" rel="noopener noreffer">廖雪峰</a></td>
+<td style="text-align:left">git,python,javascript学习</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.sioe.cn" target="_blank" rel="noopener noreffer">新晴网</a></td>
+<td style="text-align:left">PS学习，摄影教程等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.shiyanlou.com" target="_blank" rel="noopener noreffer">实验楼</a></td>
+<td style="text-align:left">在线做实验,高效学编程</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.imooc.com" target="_blank" rel="noopener noreffer">慕课网</a></td>
+<td style="text-align:left">在线学习，免费，付费视频</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://wxpy.readthedocs.io" target="_blank" rel="noopener noreffer">wxpy</a></td>
+<td style="text-align:left">一个python关于微信的库</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://so1n.me/links/" target="_blank" rel="noopener noreffer">So1n</a></td>
+<td style="text-align:left">python学习</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 云服务及站长工具享 -->
+<h1 id="云服务及站长工具">云服务及站长工具</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">链接</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://console.cloud.tencent.com" target="_blank" rel="noopener noreffer">腾讯云</a></td>
+<td style="text-align:left">dnspod解析新版入口，腾讯云控制台</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.dnspod.cn" target="_blank" rel="noopener noreffer">dnspod解析</a></td>
+<td style="text-align:left">域名解析，其他：阿里云等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.cloudflare.com" target="_blank" rel="noopener noreffer">cloudflare解析</a></td>
+<td style="text-align:left">域名解析，https解析，<a href="https://oliverqueen.cn/2018/01/25/%e5%8f%af%e8%83%bd%e6%98%af%e6%9c%80%e5%85%a8%e7%9a%84%e4%bd%bf%e7%94%a8HEXO%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%95%99%e7%a8%8b" target="_blank" rel="noopener noreffer">介绍</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://studio.dev.tencent.com/" target="_blank" rel="noopener noreffer">cloud studio</a></td>
+<td style="text-align:left">这是腾讯云和coding合作后的一个东西，简单来说就是云端开发环境。试了一下完全可以把hexo博客源码挂上面编辑。这也就不用只局限于一台电脑发布博客了。</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://cloud.tencent.com/developer/labs" target="_blank" rel="noopener noreffer">腾讯云大学开放实验室</a></td>
+<td style="text-align:left">可以在线进行一些云服务应用搭建等的实验。与之对应的还有阿里云开放实验室</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔面板</a></td>
+<td style="text-align:left">宝塔面板是一款使用方便、功能强大且终身免费的服务器管理软件，支持Linux与Windows系统。一键配置：LAMP/LNMP、网站、数据库、FTP、SSL，通过Web端轻松管理服务器。</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://leancloud.cn" target="_blank" rel="noopener noreffer">leancloud</a></td>
+<td style="text-align:left">一站式后端云服务</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.daovoice.io" target="_blank" rel="noopener noreffer">daovoice</a></td>
+<td style="text-align:left">网站在线客服</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://ziyuan.baidu.com/linksubmit/url" target="_blank" rel="noopener noreffer">百度网站收录</a></td>
+<td style="text-align:left">网站seo</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.bing.com/toolbox/webmaster" target="_blank" rel="noopener noreffer">Bing 站长</a></td>
+<td style="text-align:left">Bing 网站管理员工具</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://tool.chinaz.com" target="_blank" rel="noopener noreffer">站长工具</a></td>
+<td style="text-align:left">网站信息查询，权重，seo，网站速度查询，ping等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://tool.lusongsong.com" target="_blank" rel="noopener noreffer">站长工具大全</a></td>
+<td style="text-align:left">各种seo优化，工具等</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 前端工具 -->
+<h1 id="前端工具">前端工具</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">链接</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="http://www.jser.com/" target="_blank" rel="noopener noreffer">全栈开发者</a></td>
+<td style="text-align:left">顾名思义，有很多web开发的教程，也可以在线执行代码</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.jsfuck.com" target="_blank" rel="noopener noreffer">JSFuck</a></td>
+<td style="text-align:left">JSFuck是一种基于JavaScript原子部分的深奥教育编程风格。它只使用六个不同的字符来编写和执行代码。(代码极丑化)</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.bootcdn.cn/" target="_blank" rel="noopener noreffer">BootCDN</a></td>
+<td style="text-align:left">稳定、快速、免费的前端开源项目CDN加速服务，共收录了 3441 个前端开源项目。比如<code>vue</code>,<code>fancybox</code>等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.bootcss.com" target="_blank" rel="noopener noreffer">bootstrap中文网</a></td>
+<td style="text-align:left">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。还有一些基于bootstrap开发或扩充的项目的cdn，<code>BootCDN</code>也是在该网站旗下</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://fontawesome.com/icons?d=gallery" target="_blank" rel="noopener noreffer">Font Awesome图标库</a></td>
+<td style="text-align:left">hexo指定图标库</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.iconfont.cn" target="_blank" rel="noopener noreffer">iconfont</a></td>
+<td style="text-align:left">阿里巴巴矢量图标库</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.easyicon.net" target="_blank" rel="noopener noreffer">easyicon图标库</a></td>
+<td style="text-align:left">图标下载，格式转换，可外链</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://semantic-ui.com/elements/icon.html" target="_blank" rel="noopener noreffer">semantic-ui.com图标库</a></td>
+<td style="text-align:left">semantic-ui.com还有很多前端样式对应代码</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://colorhunt.co/" target="_blank" rel="noopener noreffer">colorhunt</a></td>
+<td style="text-align:left">配色方案推荐，调试</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.grabient.com" target="_blank" rel="noopener noreffer">grabient渐变色</a></td>
+<td style="text-align:left">渐变色调色</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://gradient.awesomes.cn" target="_blank" rel="noopener noreffer">gradient渐变色调色</a></td>
+<td style="text-align:left">渐变色调色，获取代码</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://encycolorpedia.cn" target="_blank" rel="noopener noreffer">encycolorpedia</a></td>
+<td style="text-align:left">encycolorpedia取色器</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://sc.youku.com/" target="_blank" rel="noopener noreffer">优酷视频上传</a></td>
+<td style="text-align:left">获取视频外链，其他：腾讯视频</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://sm.ms" target="_blank" rel="noopener noreffer">sm.ms</a></td>
+<td style="text-align:left">非常好用的图床</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://imgurl.org/" target="_blank" rel="noopener noreffer">imgURL</a></td>
+<td style="text-align:left">一个开源的图床，很不错，有兴趣的可以自己尝试搭建,比如<a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">img.lruihao.cn</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://wl.uixsj.cn/index.php" target="_blank" rel="noopener noreffer">现实君外链</a></td>
+<td style="text-align:left">支持多种文件外链，唯一不好的是http</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.pexels.com" target="_blank" rel="noopener noreffer">PEXELS美图</a></td>
+<td style="text-align:left">文章配图，无版权美图网，避免配图侵权</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://unsplash.com" target="_blank" rel="noopener noreffer">unsplash美图</a></td>
+<td style="text-align:left"><a href="https://source.unsplash.com/" target="_blank" rel="noopener noreffer">API</a>还可以获取<a href="https://source.unsplash.com/random/800x600" target="_blank" rel="noopener noreffer">随机图</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://icon.wuruihong.com" target="_blank" rel="noopener noreffer">图标工厂</a></td>
+<td style="text-align:left">移动应用图标生成工具，一键生成所有尺寸的应用图标</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.emojicopy.com" target="_blank" rel="noopener noreffer">emoji在线复制</a></td>
+<td style="text-align:left">Simple emoji copy and paste</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://blog.csdn.net/u013778905/article/details/53177042" target="_blank" rel="noopener noreffer">HTML字符实体</a></td>
+<td style="text-align:left">网页特殊符号大全</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.sioe.cn/yingyong" target="_blank" rel="noopener noreffer">特效字转换工具集</a></td>
+<td style="text-align:left">各种特效字转换工具,彩虹字生成器,RGB转16进制颜色等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.yasuotu.com/" target="_blank" rel="noopener noreffer">压缩图</a></td>
+<td style="text-align:left">在线ps，图片去底，证件照换底等操作很方便的web图片处理工具</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.gaitubao.com" target="_blank" rel="noopener noreffer">改图宝</a></td>
+<td style="text-align:left">在线改图压缩，加水印，生成二维码，印章制作等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://tool.gifhome.com/" target="_blank" rel="noopener noreffer">GIF之家</a></td>
+<td style="text-align:left">一个压缩效果很好且免费的gif压缩工具</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://jiema.wwei.cn" target="_blank" rel="noopener noreffer">二维码解码器</a></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://mh.cli.im" target="_blank" rel="noopener noreffer">草料二维码</a></td>
+<td style="text-align:left"><a href="https://cli.im" target="_blank" rel="noopener noreffer">https://cli.im</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.liantu.com/meihua" target="_blank" rel="noopener noreffer">联图二维码</a></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.9thws.com" target="_blank" rel="noopener noreffer">第九工厂</a></td>
+<td style="text-align:left">死磕艺术二维码</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.mobanma.com" target="_blank" rel="noopener noreffer">模板码</a></td>
+<td style="text-align:left">动态二维码等</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 实用工具 -->
+<h1 id="实用工具">实用工具</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">链接</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></td>
+<td style="text-align:left">通过游戏闯关的方式学习git！</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener noreffer">PicGo</a></td>
+<td style="text-align:left">一个很好的开源的图床管理桌面程序，图床神器支持微博图床、七牛图床、腾讯云COS、又拍云、GitHub图床、阿里云OSS、Imgur图床等等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://github.com/proxyee-down-org/proxyee-down" target="_blank" rel="noopener noreffer">Proxyee Down</a></td>
+<td style="text-align:left">百度云下载解决方案，满速下载，但不限于百度云的下载，感觉比迅雷还好用！</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.baiduwp.com/" target="_blank" rel="noopener noreffer">PanDownload</a></td>
+<td style="text-align:left">这是pandownload网页版，把需要下载的百度网盘链接<code>baidu</code>改成<code>baiduwp</code>即可加速，也有桌面版。</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://paste.ubuntu.com" target="_blank" rel="noopener noreffer">ubuntu pastebin</a></td>
+<td style="text-align:left">代码展示托管，生成分享网址，防止代码直接分享缩进消失</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://picascii.com" target="_blank" rel="noopener noreffer">图片转字符工具</a></td>
+<td style="text-align:left">Img&ndash;&gt;String</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://everyfont.enjoyfe.com" target="_blank" rel="noopener noreffer">everyfont</a></td>
+<td style="text-align:left">中文字库在线压缩</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://font-spider.org" target="_blank" rel="noopener noreffer">字蛛</a></td>
+<td style="text-align:left">font-spider中文字库压缩</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.mdtr2pdf.com/index.html" target="_blank" rel="noopener noreffer">mdtr2pdf</a></td>
+<td style="text-align:left">markdown转pdf</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://api.imjad.cn" target="_blank" rel="noopener noreffer">AD&rsquo;s API</a></td>
+<td style="text-align:left">包括动态签名，网易音乐等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://123.w3cschool.cn/webtools" target="_blank" rel="noopener noreffer">在线工具</a></td>
+<td style="text-align:left">w3cschool的在线工具集合</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://tool.oschina.net" target="_blank" rel="noopener noreffer">在线工具</a></td>
+<td style="text-align:left">开源中国社区</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://c.runoob.com" target="_blank" rel="noopener noreffer">菜鸟工具</a></td>
+<td style="text-align:left"><a href="https://www.runoob.com" target="_blank" rel="noopener noreffer">菜鸟教程</a>在线工具，编译，加密，压缩代码等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://msdn.itellyou.cn/" target="_blank" rel="noopener noreffer">msdn</a></td>
+<td style="text-align:left">windows系统上office等软件下载(备用)</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.laomoit.com/" target="_blank" rel="noopener noreffer">老殁科技</a></td>
+<td style="text-align:left">Adobe等各种绿色破解软件</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" target="_blank" rel="noopener noreffer">百度接口</a></td>
+<td style="text-align:left">百度搜索关键词接口</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.pdflibr.com/" target="_blank" rel="noopener noreffer">在线短信</a></td>
+<td style="text-align:left">不想泄露个人的电话号码，注册一些一次性网站可以用到</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.peiyinge.com/" target="_blank" rel="noopener noreffer">配音阁</a></td>
+<td style="text-align:left">文字转换语音/语音合成广告_叫卖录音_在线配音网络软件_促销宣传片配音-配音阁-配音阁,国内专业的广告配音平台</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://hacknical.com" target="_blank" rel="noopener noreffer">hacknical</a></td>
+<td style="text-align:left">在线个性简历，个人Github总结分析</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<!-- tab 其他 -->
+<h1 id="其他">其他</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">链接</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://chvin.github.io/react-tetris/" target="_blank" rel="noopener noreffer">俄罗斯方块</a></td>
+<td style="text-align:left">这是一个开源的游戏，小白的我看来简直牛逼爆了，好逼真，刷新都不会打断游戏进度！！</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://nazo.one-story.cn" target="_blank" rel="noopener noreffer">网址迷宫nazo_game</a></td>
+<td style="text-align:left">一个程序员的网页游戏，我只玩到12关。。。</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.51ape.com" target="_blank" rel="noopener noreffer">无损音乐下载</a></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.flexifont.com/flexifont-chn/login/" target="_blank" rel="noopener noreffer">手写体制作</a></td>
+<td style="text-align:left">北京大学计算机科学技术研究所的一个项目<code>59.108.48.27</code> <del>（我的字体至今还未完成）</del></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="http://www.daxiangdaili.com" target="_blank" rel="noopener noreffer">大象代理</a></td>
+<td style="text-align:left">收费，口碑不错</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.pgyer.com" target="_blank" rel="noopener noreffer">蒲公英</a></td>
+<td style="text-align:left">应用内测发布平台</td>
+</tr>
+</tbody>
+</table>
+<!-- endtab -->
+<h1 id="博客文章">博客文章</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">文章</th>
+<th style="text-align:left">概括</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="/posts/webbiji/" rel="">Web笔记</a></td>
+<td style="text-align:left">记录一下自己web相关学习的笔记</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="/posts/git/" rel="">Git常用指令汇总</a></td>
+<td style="text-align:left">可能用到按需自查</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="/posts/nextplugin/" rel="">hexo 插件及 next 内置样式集</a></td>
+<td style="text-align:left">让文章写的好看又简洁又好用的插件！<a href="https://lruihao.cn/categories/hexo/" target="_blank" rel="noopener noreffer">hexo更多请看分类</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="/posts/hexo-theme-next/" rel="">hexo-theme-next @modified LRH</a></td>
+<td style="text-align:left">对next主题的DIY设计记录日志</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="/posts/font-mmt/" rel="">一款自己写的字体 - 沐目体</a></td>
+<td style="text-align:left">沐目体&ndash;release</td>
+</tr>
+</tbody>
+</table>]]></description></item></channel></rss>

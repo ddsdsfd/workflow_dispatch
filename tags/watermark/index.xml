@@ -1,1 +1,443 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>watermark - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/watermark/</link><description>watermark - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 23 May 2021 17:15:41 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/watermark/" rel="self" type="application/rss+xml"/><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description>&lt;p>just for backup of watermark.&lt;/p></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>watermark - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/watermark/</link><description>watermark - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 23 May 2021 17:15:41 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/watermark/" rel="self" type="application/rss+xml"/><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description><![CDATA[<p>just for backup of watermark.</p>
+<h1 id="watermark-class">Watermark Class</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="cm">/* global Tiger */</span>
+
+<span class="nx">Tiger</span><span class="p">.</span><span class="nx">Watermark</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">Watermark</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span><span class="p">;</span>
+
+  <span class="cm">/**
+</span><span class="cm">   * create Dom of watermark&#39;s container 
+</span><span class="cm">   * @param {Tiger.Watermark} watermark
+</span><span class="cm">   */</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">createContainer</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s1">&#39;.tiger-main-container&#39;</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;tiger-watermark-container&#39;</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">className</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;aria-hidden&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="cm">/**
+</span><span class="cm">   * create watermark&#39;s Dom
+</span><span class="cm">   * @param {Tiger.Watermark} watermark
+</span><span class="cm">   * @param {Object} options
+</span><span class="cm">   */</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">createWatermark</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">||</span> <span class="mi">50</span><span class="p">;</span>
+    <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">||</span> <span class="mi">30</span><span class="p">;</span>
+    <span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">||</span> <span class="mi">150</span><span class="p">;</span>
+    <span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">||</span> <span class="mi">20</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">navbarHeight</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tiger-navbar&#39;</span><span class="p">).</span><span class="nx">outerHeight</span><span class="p">()</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">((</span><span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">-</span> <span class="nx">navbarHeight</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span><span class="p">));</span>
+    <span class="kd">let</span> <span class="nx">cols</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">/</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span><span class="p">));</span>
+    <span class="kd">let</span> <span class="nx">offsetLeft</span> <span class="o">=</span> <span class="p">(</span><span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">cols</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">*</span> <span class="p">(</span><span class="nx">cols</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">offsetTop</span> <span class="o">=</span>  <span class="nx">navbarHeight</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">*</span> <span class="nx">rows</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">*</span> <span class="p">(</span><span class="nx">rows</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">row</span> <span class="o">&lt;</span> <span class="nx">rows</span><span class="p">;</span> <span class="nx">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">let</span> <span class="nx">top</span> <span class="o">=</span> <span class="nx">offsetTop</span> <span class="o">+</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">height</span><span class="p">)</span> <span class="o">*</span> <span class="nx">row</span><span class="p">;</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">col</span> <span class="o">&lt;</span> <span class="nx">cols</span><span class="p">;</span> <span class="nx">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">left</span> <span class="o">=</span> <span class="nx">offsetLeft</span> <span class="o">+</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">width</span><span class="p">)</span> <span class="o">*</span> <span class="nx">col</span><span class="p">;</span>
+        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)).</span><span class="nx">appendTo</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">)</span>
+                <span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;tiger-watermark&#39;</span><span class="p">)</span>
+                <span class="p">.</span><span class="nx">css</span><span class="p">({</span>
+                  <span class="s1">&#39;left&#39;</span><span class="o">:</span> <span class="sb">`</span><span class="si">${</span><span class="nx">left</span><span class="si">}</span><span class="sb">px`</span><span class="p">,</span>
+                  <span class="s1">&#39;top&#39;</span><span class="o">:</span> <span class="sb">`</span><span class="si">${</span><span class="nx">top</span><span class="si">}</span><span class="sb">px`</span><span class="p">,</span>
+                  <span class="s1">&#39;width&#39;</span><span class="o">:</span> <span class="sb">`</span><span class="si">${</span><span class="nx">options</span><span class="p">.</span><span class="nx">width</span><span class="si">}</span><span class="sb">px`</span><span class="p">,</span>
+                  <span class="s1">&#39;height&#39;</span><span class="o">:</span> <span class="sb">`</span><span class="si">${</span><span class="nx">options</span><span class="p">.</span><span class="nx">height</span><span class="si">}</span><span class="sb">px`</span><span class="p">,</span>
+                  <span class="s1">&#39;transform&#39;</span><span class="o">:</span> <span class="sb">`rotate(</span><span class="si">${</span><span class="nx">options</span><span class="p">.</span><span class="nx">rotate</span><span class="si">}</span><span class="sb">deg)`</span><span class="p">,</span>
+                  <span class="s1">&#39;opacity&#39;</span><span class="o">:</span> <span class="sb">`</span><span class="si">${</span><span class="nx">options</span><span class="p">.</span><span class="nx">opacity</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+                  <span class="s1">&#39;font-size&#39;</span><span class="o">:</span> <span class="sb">`</span><span class="si">${</span><span class="nx">options</span><span class="p">.</span><span class="nx">fontSize</span><span class="si">}</span><span class="sb">rem`</span>
+                <span class="p">})</span>
+                <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+ 
+ <span class="cm">/**
+</span><span class="cm">  * Re render watermark
+</span><span class="cm">  * @param {Tiger.Watermark} watermark
+</span><span class="cm">  * @param {Object} options
+</span><span class="cm">  */</span>
+ <span class="kd">var</span> <span class="mi">_</span><span class="nx">render</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">){</span>
+    <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+    <span class="mi">_</span><span class="nx">createWatermark</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">attributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+      <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+      <span class="nx">characterData</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+      <span class="nx">subtree</span><span class="o">:</span><span class="kc">true</span> 
+    <span class="p">});</span>
+ <span class="p">};</span>
+
+  <span class="cm">/**
+</span><span class="cm">   * Observe watermark and watermark&#39;s parentNode mutations
+</span><span class="cm">   * @param {Tiger.Watermark} watermark
+</span><span class="cm">   */</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">addObserve</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">watermark</span><span class="p">){</span>
+    <span class="c1">//observe watermark element and its child element
+</span><span class="c1"></span>    <span class="mi">_</span><span class="nx">wmObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">mutations</span><span class="p">,</span> <span class="nx">observer</span><span class="p">)</span> <span class="p">{</span>
+      <span class="mi">_</span><span class="nx">render</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">attributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+      <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+      <span class="nx">characterData</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+      <span class="nx">subtree</span><span class="o">:</span><span class="kc">true</span> 
+    <span class="p">});</span>
+    <span class="c1">//observe parent element, recreate if the element is deleted
+</span><span class="c1"></span>    <span class="mi">_</span><span class="nx">wmParentObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">mutations</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span><span class="p">(</span><span class="nx">m</span> <span class="k">of</span> <span class="nx">mutations</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">m</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="s1">&#39;childList&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">m</span><span class="p">.</span><span class="nx">removedNodes</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span>
+          <span class="o">&amp;&amp;</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tiger-watermark-container&#39;</span><span class="p">).</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s1">&#39;.tiger-main-container&#39;</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nx">subtree</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">});</span>
+  <span class="p">};</span>
+
+  <span class="cm">/**
+</span><span class="cm">   * windows resize listener
+</span><span class="cm">   * @param {Tiger.Watermark} watermark
+</span><span class="cm">   */</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">addResizeListener</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">watermark</span><span class="p">){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="k">if</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span> <span class="o">!==</span> <span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">||</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span> <span class="o">!==</span> <span class="mi">_</span><span class="nx">windowsWidth</span><span class="p">){</span>
+        <span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span><span class="p">;</span>
+        <span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span><span class="p">;</span>
+        <span class="mi">_</span><span class="nx">render</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">};</span>
+
+  <span class="cm">/**
+</span><span class="cm">   * Tiger.Watermark.&lt;br/&gt;
+</span><span class="cm">   * create watermark for webpage and automatic adjust when windows resie.
+</span><span class="cm">   * @param {Object} options
+</span><span class="cm">   * @param {String} options.content watermark&#39;s text
+</span><span class="cm">   * @param {Number} [options.width=150] watermark&#39;s width. unit: px
+</span><span class="cm">   * @param {Number} [options.height=20] watermark&#39;s height. unit: px
+</span><span class="cm">   * @param {Number} [options.RowSpaceing=50] row spaceing of watermarks. unit: px
+</span><span class="cm">   * @param {Number} [options.colSpaceing=30] col spaceing of watermarks. unit: px
+</span><span class="cm">   * @param {Number} [options.rotate=15] watermark&#39;s tangent angle. unit: deg
+</span><span class="cm">   * @param {Number} [options.opacity=0.15] watermark&#39;s transparency
+</span><span class="cm">   * @param {Number} [options.fontSize=0.85] watermark&#39;s fontSize. unit: rem
+</span><span class="cm">   */</span>
+  <span class="kd">function</span> <span class="nx">Watermark</span><span class="p">(</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="mi">_</span><span class="nx">proto</span> <span class="o">=</span> <span class="nx">Watermark</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">options</span> <span class="o">=</span> <span class="nx">options</span><span class="p">;</span>
+    <span class="mi">_</span><span class="nx">createContainer</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">createWatermark</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">addObserve</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">addResizeListener</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * upload watermark&#39;s text content
+</span><span class="cm">     * @param {String} content watermark&#39;s text
+</span><span class="cm">     */</span>
+    <span class="mi">_</span><span class="nx">proto</span><span class="p">.</span><span class="nx">upload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">content</span><span class="p">){</span>
+       <span class="k">return</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+      <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">content</span> <span class="o">=</span> <span class="nx">content</span><span class="p">;</span>
+      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;.tiger-watermark&#39;</span><span class="p">)</span>
+                        <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+      <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">subtree</span><span class="o">:</span> <span class="kc">true</span>
+      <span class="p">});</span>
+      <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">,</span> <span class="p">{</span>
+        <span class="nx">attributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nx">characterData</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nx">subtree</span><span class="o">:</span><span class="kc">true</span> 
+      <span class="p">});</span>
+
+    <span class="p">};</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * Re render watermark
+</span><span class="cm">     * @param {Object} options
+</span><span class="cm">     */</span>
+    <span class="mi">_</span><span class="nx">proto</span><span class="p">.</span><span class="nx">render</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{}){</span>
+      <span class="mi">_</span><span class="nx">render</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">,</span> <span class="nx">options</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="cm">/**
+</span><span class="cm">     * Force remove watermark
+</span><span class="cm">     */</span>
+    <span class="mi">_</span><span class="nx">proto</span><span class="p">.</span><span class="nx">remove</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+    <span class="p">};</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">Watermark</span><span class="p">;</span>
+<span class="p">}();</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="style">Style</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* tiger-watermark */</span>
+<span class="p">.</span><span class="nc">tiger-watermark-container</span><span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span> <span class="cp">!important</span><span class="p">;</span>
+  <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">.</span><span class="nc">tiger-watermark</span><span class="p">{</span>
+  <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+  <span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="p">:</span> <span class="mi">999999</span><span class="p">;</span>
+  <span class="k">word-break</span><span class="p">:</span> <span class="n">break-all</span><span class="p">;</span>
+  <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">15</span><span class="kt">deg</span><span class="p">);</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.8</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="use">Use</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">wm</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Tiger</span><span class="p">.</span><span class="nx">Watermark</span><span class="p">({</span>
+  <span class="s1">&#39;content&#39;</span><span class="o">:</span> <span class="s1">&#39;系统管理员 (admin)&#39;</span>
+<span class="p">});</span>
+
+<span class="nx">wm</span><span class="p">.</span><span class="nx">upload</span><span class="p">(</span><span class="s1">&#39;李四啊_ (Lruihao)&#39;</span><span class="p">);</span>
+
+<span class="nx">wm</span><span class="p">.</span><span class="nx">remder</span><span class="p">({</span>
+  <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mf">0.8</span><span class="p">,</span>
+  <span class="nx">opacity</span><span class="o">:</span> <span class="mf">0.25</span>
+<span class="p">});</span>
+
+<span class="nx">wm</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item></channel></rss>

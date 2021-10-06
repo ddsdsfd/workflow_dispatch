@@ -26,4 +26,23 @@
 和之前的相比，優化之前是后加載，由 JS 在 瀏覽器處理，<br>
 使用 shortcodes 方式后，則是在 GO 構建頁面的時候處理，效能上會好很多。</div>
         </div>
-    </div>]]></description></item></channel></rss>
+    </div>
+<h2 id="源碼">源碼</h2>
+<p>基於 LoveIt 主題的 Link Shortcodes, 主要改到以下幾個文件，<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer">完整提交記錄</a></p>
+<pre><code>assets/css/custom.scss
+assets/css/partial/cardlink.scss          # 卡片式鏈接樣式
+layouts/partials/plugin/cardlink.html     # 卡片式鏈接模板
+layouts/shortcodes/cardlink.html
+static/images/card-link-bg.jpg
+</code></pre>
+<h2 id="使用">使用</h2>
+<p>使用參數同 <a href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link" target="_blank" rel="noopener noreffer">LoveIt 擴展 Shortcodes - Link</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">cardlink</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;知乎卡片式链接 Git 記錄&#34;</span> <span class="p">&gt;</span>}}
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item></channel></rss>

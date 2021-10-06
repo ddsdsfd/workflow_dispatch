@@ -1,4 +1,145 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>gitbook - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/gitbook/</link><description>gitbook - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 04 Apr 2019 22:09:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/gitbook/" rel="self" type="application/rss+xml"/><item><title>GitBook 使用教程</title><link>https://lruihao.cn/posts/gitbookuse/</link><pubDate>Thu, 04 Apr 2019 22:09:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/gitbookuse/</guid><description>&lt;blockquote>
-&lt;p>想趴几本金庸小说的做成电子书自己阅读，在博客上尝试了一下整理了6本中短篇小说就开始感觉博客臃肿，于是找到gitbook前来一试。
-写完这篇文章开始实际操作，我发现还不如用hexo来写小说，遂放弃！Gitbook用来写相关文档介绍还差不多。&lt;/p>
-&lt;/blockquote></description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>gitbook - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/gitbook/</link><description>gitbook - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 04 Apr 2019 22:09:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/gitbook/" rel="self" type="application/rss+xml"/><item><title>GitBook 使用教程</title><link>https://lruihao.cn/posts/gitbookuse/</link><pubDate>Thu, 04 Apr 2019 22:09:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/gitbookuse/</guid><description><![CDATA[<blockquote>
+<p>想趴几本金庸小说的做成电子书自己阅读，在博客上尝试了一下整理了6本中短篇小说就开始感觉博客臃肿，于是找到gitbook前来一试。
+写完这篇文章开始实际操作，我发现还不如用hexo来写小说，遂放弃！Gitbook用来写相关文档介绍还差不多。</p>
+</blockquote>
+<h1 id="gitbook简介">GitBook简介</h1>
+<ul>
+<li><a href="https://www.gitbook.com" target="_blank" rel="noopener noreffer">GitBook官网</a></li>
+<li><a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="noopener noreffer">GitBook文档</a></li>
+</ul>
+<blockquote>
+<p>Gitbook的作用和Hexo有点像，也是把md渲染成html,也见到有人用这个来写博客的。<br>
+GitBook是一个基于 Node.js 的命令行工具，可使用 Github/Git 和 Markdown 来制作精美的电子书，GitBook 并非关于 Git 的教程。<br>
+GitBook支持输出多种文档格式：</p>
+</blockquote>
+<ul>
+<li>静态站点：GitBook默认输出该种格式，生成的静态站点可直接托管搭载Github Pages服务上；</li>
+<li>PDF：需要安装gitbook-pdf依赖；</li>
+<li>eBook：需要安装ebook-convert；</li>
+<li>单HTML网页：支持将内容输出为单页的HTML，不过一般用在将电子书格式转换为PDF或eBook的中间过程；</li>
+<li>JSON：一般用于电子书的调试或元数据提取。
+使用GitBook制作电子书，必备两个文件：<code>README.md</code>和<code>SUMMARY.md</code></li>
+</ul>
+<h1 id="gitbook安装步骤">GitBook安装步骤</h1>
+<h2 id="安装nodejs">安装node.js</h2>
+<p>GitBook是一个基于Node.js的命令行工具，下载安装<a href="https://nodejs.org" target="_blank" rel="noopener noreffer">Node.js</a>(我以前搭建hexo的文章里也有介绍)，安装完成之后，你可以使用下面的命令来检验是否安装成功。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">node -v
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="安装gitbook">安装GitBook</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install gitbook-cli -g
+</code></pre></td></tr></table>
+</div>
+</div><p>检验是否安装成功</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook -V
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md" target="_blank" rel="noopener noreffer">参照GitBook安装文档</a></p>
+<h2 id="gitbook初始化">gitbook初始化</h2>
+<p>和<code>hexo init</code>类似，GitBook准备工作做好之后，我们进入一个你要写书的目录（比如新建mybook文件夹），输入如下命令初始化</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook init
+</code></pre></td></tr></table>
+</div>
+</div><p>初始化后可以看到他会创建<code>README.md</code>和<code>SUMMARY.md</code>  这两个文件，README.md应该不陌生，就是说明文档，而SUMMARY.md其实就是书的章节目录，其默认内容如下所示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Summary
+
+* [Introduction](README.md)
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="启动服务器">启动服务器</h2>
+<p>和<code>hexo serve</code>类似，我们使用<code>gitbook serve</code>命令，然后在浏览器地址栏中输入侧http://localhost:4000便可预览书籍。<br>
+运行该命令后会在书籍的文件夹中生成一个_book文件夹，里面的内容即为生成的html文件。<br>
+也可以修改端口</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook serve --port <span class="m">5000</span>
+</code></pre></td></tr></table>
+</div>
+</div><p></p>
+<p>我们可以使用<code>gitbook build</code>命令来生成网页而不开启服务器。这个类似于 hexo 的<code>hexo g</code>命令。<br>
+当然，build 命令可以指定路径：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook build <span class="o">[</span>书籍路径<span class="o">]</span> <span class="o">[</span>输出路径<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>你还可以生成 PDF,epub,mobi 格式的电子书：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook pdf ./ ./mybook.pdf
+gitbook epub ./ ./mybook.epub
+gitbook mobi ./ ./mybook.mobi
+</code></pre></td></tr></table>
+</div>
+</div><p>如果生成不了，你可能还需要安装一些工具，比如 ebook-convert。或者在 Typora 中安装 Pandoc 进行导出。</p>
+<h1 id="目录结构">目录结构</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">.
+├── book.json
+├── README.md
+├── SUMMARY.md
+├── chapter-1/
+|   ├── README.md
+|   └── something.md
+└── chapter-2/
+    ├── README.md
+    └── something.md
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="bookjson">book.json</h2>
+<p>该文件主要用来存放配置信息。</p>
+<h2 id="summarymd">SUMMARY.md</h2>
+<p>这个文件主要决定GitBook的章节目录，它通过Markdown中的列表语法来表示文件的父子关系。</p>
+<h2 id="更多">更多</h2>
+<p><a href="https://www.jianshu.com/p/421cc442f06c" target="_blank" rel="noopener noreffer">更多详情介绍</a></p>]]></description></item></channel></rss>

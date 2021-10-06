@@ -12,4 +12,257 @@
 <li>当n为奇数时，φ(2n)=φ(n)</li>
 <li>p是素数，φ(p) = p - 1，φ(p)称为p的欧拉值</li>
 <li>若a为素数,b mod a=0,<code>φ(a*b)=φ(b)*a</code></li>
-</ol>]]></description></item></channel></rss>
+</ol>
+<h3 id="模板">模板</h3>
+<p>//直接法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">int</span> <span class="nf">Euler</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">){</span>
+	<span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">n</span><span class="p">,</span><span class="n">i</span><span class="p">;</span>
+ 
+ 	<span class="c1">//由于任何一个合数都至少有一个不大于根号n的素因子，所以只要遍历到根号n即可
+</span><span class="c1"></span>	<span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>  <span class="c1">//第一次找到的必为素因子
+</span><span class="c1"></span>		<span class="n">n</span> <span class="o">/=</span><span class="n">i</span> <span class="p">;</span>
+		<span class="n">res</span> <span class="o">=</span> <span class="n">res</span> <span class="o">-</span> <span class="n">res</span><span class="o">/</span><span class="n">i</span><span class="p">;</span>	<span class="c1">//x(1-1/p1)
+</span><span class="c1"></span>		<span class="k">while</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span><span class="mi">0</span><span class="p">)</span>
+			<span class="n">n</span><span class="o">/=</span><span class="n">i</span><span class="p">;</span>  <span class="c1">//将该素因子的倍数也全部筛掉
+</span><span class="c1"></span>	<span class="p">}</span>
+ 
+	<span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>   
+        <span class="n">res</span> <span class="o">=</span> <span class="n">res</span> <span class="o">-</span> <span class="n">res</span><span class="o">/</span><span class="n">n</span><span class="p">;</span> 
+   	<span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://blog.csdn.net/wangjian8006/article/details/7833319" target="_blank" rel="noopener noreffer">以上转载注明</a></p>
+<p>//素数筛选法，先素数筛选，再求欧拉</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="cm">/*
+</span><span class="cm">特性 :
+</span><span class="cm">1.若a为质数,phi[a]=a-1;
+</span><span class="cm">2.若a为质数,b mod a=0,phi[a*b]=phi[b]*a
+</span><span class="cm">3.若a,b互质,phi[a*b]=phi[a]*phi[b](当a为质数时,if b mod a!=0 ,phi[a*b]=phi[a]*phi[b])
+</span><span class="cm">*/</span>
+<span class="kt">int</span> <span class="n">m</span><span class="p">[</span><span class="n">n</span><span class="p">],</span><span class="n">phi</span><span class="p">[</span><span class="n">n</span><span class="p">],</span><span class="n">p</span><span class="p">[</span><span class="n">n</span><span class="p">],</span><span class="n">nump</span><span class="p">;</span>
+<span class="c1">//m[i]标记i是否为素数,0为素数,1不为素数;p是存放素数的数组;nump是当前素数个数;phi[i]为欧拉函数
+</span><span class="c1"></span><span class="kt">int</span> <span class="nf">make</span><span class="p">()</span>
+<span class="p">{</span>
+        <span class="n">phi</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="c1">//i为素数，m[]初始化为0
+</span><span class="c1"></span>        <span class="p">{</span>
+            <span class="n">p</span><span class="p">[</span><span class="o">++</span><span class="n">nump</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span><span class="c1">//将i加入素数数组p中
+</span><span class="c1"></span>            <span class="n">phi</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="c1">//因为i是素数,由特性得知    
+</span><span class="c1"></span>        <span class="p">}</span>    
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">nump</span><span class="o">&amp;&amp;</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>  <span class="c1">//用当前已的到的素数数组p筛,筛去p[j]*i
+</span><span class="c1"></span>        <span class="p">{</span>
+            <span class="n">m</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="c1">//可以确定i*p[j]不是素数 
+</span><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="c1">//看p[j]是否是i的约数,因为素数p[j],等于判断i和p[j]是否互质 
+</span><span class="c1"></span>            <span class="p">{</span>
+                <span class="n">phi</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">phi</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">];</span> <span class="c1">//特性2
+</span><span class="c1"></span>                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="n">phi</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">phi</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="c1">//互质,特性3,p[j]-1就是phi[p[j]]   
+</span><span class="c1"></span>        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>附素数打表</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span>  <span class="n">p</span><span class="p">[</span><span class="n">N</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">prime</span><span class="p">(){</span>
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">N</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+		<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]){</span>
+			<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">N</span><span class="p">;</span><span class="n">j</span><span class="o">+=</span><span class="n">i</span><span class="p">)</span><span class="c1">//筛掉i的倍数
+</span><span class="c1"></span>				<span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+		<span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="例题">例题</h3>
+<p><a href="https://vjudge.net/contest/238979#problem/A" target="_blank" rel="noopener noreffer">Bi-shoe and Phi-shoe</a> LightOJ - 1370</p>
+<blockquote>
+<p>题意：<br>
+给一些数Ai（第 i 个数），Ai这些数代表的是某个数欧拉函数的值，我们要求出数 Ni 的欧拉函数值不小于Ai。而我们要求的就是这些 Ni 这些数字的和sum，而且我们想要sum最小，求出sum最小多少。</p>
+</blockquote>
+<blockquote>
+<p>解题思路：<br>
+要求和最小，我们可以让每个数都尽量小，那么我们最后得到的肯定就是一个最小值。<br>
+给定一个数的欧拉函数值ψ(N)，我们怎么样才能求得最小的N?<br>
+我们知道，一个素数P的欧拉函数值ψ(P)=P-1。所以如果我们知道ψ(N)，那么最小的N就是最接近ψ(N)，并且大于ψ(N)  的素数。我们把所有素数打表之后再判断就可以了。</p>
+</blockquote>
+<p>这个lightoj有毒，什么头文件都不支持，卡了我好久。。。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp">#define N 1000005
+</span><span class="cp">#define ll long long
+</span><span class="cp"></span>
+<span class="kt">int</span> <span class="n">m</span><span class="p">[</span><span class="n">N</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">};</span>
+<span class="kt">int</span> <span class="n">p</span><span class="p">[</span><span class="mi">100000</span><span class="p">],</span><span class="n">cnt</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">max</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="kt">int</span> <span class="n">y</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">&gt;</span><span class="n">y</span><span class="o">?</span><span class="nl">x</span><span class="p">:</span><span class="n">y</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">prime</span><span class="p">(){</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">N</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">N</span><span class="p">;</span><span class="n">j</span><span class="o">+=</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">m</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+        <span class="n">p</span><span class="p">[</span><span class="n">cnt</span><span class="o">++</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">binary_search</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">){</span><span class="c1">//二分查找
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="n">cnt</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">l</span><span class="o">&lt;=</span><span class="n">r</span><span class="p">){</span>
+        <span class="kt">int</span> <span class="n">mid</span><span class="o">=</span><span class="p">(</span><span class="n">l</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="o">&gt;</span><span class="n">x</span><span class="p">)</span>
+            <span class="n">r</span><span class="o">=</span><span class="n">mid</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="k">else</span> <span class="n">l</span><span class="o">=</span><span class="n">mid</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">max</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="mi">0</span><span class="p">);;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&gt;</span><span class="n">x</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">prime</span><span class="p">();</span>
+    <span class="kt">int</span> <span class="n">T</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">cas</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">temp</span><span class="p">;</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">T</span><span class="p">);</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">T</span><span class="o">--</span><span class="p">){</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+        <span class="n">ll</span> <span class="n">sum</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">temp</span><span class="p">);</span>
+            <span class="n">sum</span><span class="o">+=</span><span class="n">binary_search</span><span class="p">(</span><span class="n">temp</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Case %d: %lld Xukha</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">cas</span><span class="o">++</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
+    <span class="p">}</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div>]]></description></item></channel></rss>
