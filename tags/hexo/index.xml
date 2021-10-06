@@ -134,10 +134,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <p><i class="far fa-square fa-fw"></i> <a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 <code>cos-album/</code></p>
 </li>
 <li>
-<p><i class="far fa-square fa-fw"></i> 新增 <code>demo/</code>, 以子模组的形式存放前端 demo</p>
-<ul>
-<li><i class="far fa-square fa-fw"></i> serverless 记账本</li>
-</ul>
+<p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> (保持原本博客的纯粹性)</p>
 </li>
 <li>
 <p><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)</p>
