@@ -2233,7 +2233,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </details>
 <ul>
 <li>
-<p><i class="far fa-square fa-fw"></i> <a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 <code>cos-album/</code></p>
+<p><i class="far fa-square fa-fw"></i> <a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 <code>cos-album/</code> <a href="https://github.com/Lruihao/hugo-blog/issues/7" target="_blank" rel="noopener noreffer">#7</a></p>
 </li>
 <li>
 <p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> (保持原本博客的纯粹性)</p>
@@ -2255,7 +2255,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </li>
 <li>
 <details>
-<summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :(</summary>
+<summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
 <ul>
 <li><i class="far fa-square fa-fw"></i> 安装 沐目体</li>
 <li><i class="far fa-square fa-fw"></i> 压缩 沐目体 fontspider</li>
@@ -2269,10 +2269,10 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </ul>
 </details>
 <ul>
-<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究</li>
-<li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，发布 1.0.0 版本做完整备份，base on theme version</li>
-<li><i class="far fa-square fa-fw"></i> 更换 gravatar 头像</li>
-<li><i class="far fa-square fa-fw"></i> 博客在线编辑器研究 github1s 等</li>
+<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
+<li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写, MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
+<li><i class="far fa-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
+<li><i class="far fa-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
 </ul>
 <h3 id="theme-loveit">Theme LoveIt</h3>
 <blockquote>
@@ -2281,6 +2281,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。<br>
 之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</p>
 </blockquote>
+<p>进度更新至 <a href="https://github.com/Lruihao/hugo-blog/issues/8" target="_blank" rel="noopener noreffer">#8</a></p>
 <ul>
 <li><i class="far fa-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对其等</li>
 <li><i class="far fa-square fa-fw"></i> 沐目体引入</li>
