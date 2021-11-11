@@ -2517,8 +2517,8 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">· , . : ; + - * / \ ~ ! @ # $ % ^ &amp; ` &#39; = &lt; &gt; [ ] ( ) ? _ { } | and  (space)
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">· , . : ; + - * / \ ~ ! @ # $ % ^ &amp; ` &#39; = &lt; &gt; [ ] ( ) ? _ { } | and  (space)
+</span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>

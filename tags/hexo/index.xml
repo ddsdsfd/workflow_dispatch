@@ -169,7 +169,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <ul>
 <li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
 <li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写, MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
-<li><i class="far fa-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
+<li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/4" target="_blank" rel="noopener noreffer">#4</a></li>
 <li><i class="far fa-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
 </ul>
 <h3 id="theme-loveit">Theme LoveIt</h3>
