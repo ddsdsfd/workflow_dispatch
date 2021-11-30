@@ -1186,7 +1186,7 @@ sh hugo_main.sh
 <p>同步前先執行 hugo 構建命令，eg. <code>hugo --minify</code><br>
 有 Github actions 選單次同步就好，在 Github 不好用時可用。</p>
 </blockquote>]]></description></item><item><title>个人博客从 Hexo 迁移至 Hugo</title><link>https://lruihao.cn/posts/hexo-to-hugo/</link><pubDate>Sun, 03 Oct 2021 15:27:58 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-to-hugo/</guid><description><![CDATA[<blockquote>
-<p>电脑升级 win 11 后，分盘操作存在 bug, 然后又不小心把装代码的盘格式化了，虽然都有备份到 github, 但是当时为了省事，hexo Node 安装的很多以来插件都没有备份，现在又现在不到了，所以 hexo 博客没办法完整复原，另外，早就觉得基于 Node 的 hexo 实在有些臃肿，且博客内容多了以后部署太慢，就干脆乘机换了好了，经过一段时间寻找，最终选择了基于 Go 的 hugo, 记录一下迁移过程及待办事项。</p>
+<p>电脑升级 win 11 后，分盘操作存在 bug, 然后又不小心把装代码的盘格式化了，虽然都有备份到 github, 但是当时为了省事，hexo Node 安装的很多以来插件都没有备份，现在又下载不到了，所以 hexo 博客没办法完整复原，另外，早就觉得基于 Node 的 hexo 实在有些臃肿，且博客内容多了以后部署太慢，就干脆乘机换了好了，经过一段时间寻找，最终选择了基于 Go 的 hugo, 记录一下迁移过程及待办事项。</p>
 </blockquote>
 <h2 id="hugo-准备">Hugo 准备</h2>
 <h3 id="概念">概念</h3>
@@ -1318,7 +1318,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </details>
 <ul>
 <li>
-<p><i class="far fa-square fa-fw"></i> <a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 <code>cos-album/</code> <a href="https://github.com/Lruihao/hugo-blog/issues/7" target="_blank" rel="noopener noreffer">#7</a></p>
+<p><i class="far fa-square fa-fw"></i> <del><a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a href="https://github.com/Lruihao/hugo-blog/issues/7" target="_blank" rel="noopener noreffer">#7 (wontfix)</a></del></p>
 </li>
 <li>
 <p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> (保持原本博客的纯粹性)</p>
