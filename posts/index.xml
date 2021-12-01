@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - 菠菜眾長</title><link>https://lruihao.cn/posts/</link><description>所有文章 | 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/posts/" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - 菠菜眾長</title><link>https://lruihao.cn/posts/</link><description>所有文章 | 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/posts/" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
             </div><ul>
 <li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
@@ -474,7 +474,7 @@ gitk --all
 <li><a href="https://blog.csdn.net/qq1332479771/article/details/56087333" target="_blank" rel="noopener noreffer">github上fork了别人的项目后，再同步更新别人的提交</a></li>
 <li><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener noreffer">常用Git命令清单</a></li>
 <li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></li>
-</ul>]]></description></item><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
+</ul>]]></description></item><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
@@ -656,7 +656,7 @@ php artisan db:seed
 </div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>,使用用户名<code>admin</code>和密码<code>admin</code>登录.</p>
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
-<p></p>]]></description></item><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
+<p></p>]]></description></item><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/cos-album/images/view.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -861,7 +861,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <li>fancybox</li>
 <li>加密功能</li>
 <li>分页显示</li>
-</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
+</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
@@ -913,7 +913,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
         
     </a><figcaption class="image-caption">演示</figcaption>
     </figure></li>
-</ol>]]></description></item><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer"  class="card-link">
+</ol>]]></description></item><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer"  class="card-link">
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
@@ -960,7 +960,7 @@ static/images/card-link-bg.jpg
 <pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">cardlink</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;知乎卡片式链接 Git 記錄&#34;</span> <span class="p">&gt;</span>}}
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
 <p>工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。</p>
 </blockquote>
 <h2 id="翻譯">翻譯</h2>
@@ -1388,7 +1388,7 @@ static/images/card-link-bg.jpg
 <pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-tw&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>Hugo 友情連結模板</title><link>https://lruihao.cn/posts/hugo-friends/</link><pubDate>Tue, 05 Oct 2021 14:14:10 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-friends/</guid><description><![CDATA[<div class="details admonition question open">
+</div>]]></description></item><item><title>Hugo 友情連結模板</title><link>https://lruihao.cn/posts/hugo-friends/</link><pubDate>Tue, 05 Oct 2021 14:14:10 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-friends/</guid><description><![CDATA[<div class="details admonition question open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-question-circle fa-fw"></i>過程<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -1720,7 +1720,7 @@ type: &#34;friends&#34;
 <blockquote>
 <p>這樣每次添加友鏈或者刪除友鏈衹要操作數據文件 <code>friends.yml</code> 就好，乾淨又衛生！<br>
 友鏈頁面 <code>content/friends/index.md</code> 繼承了基礎頁面的功能，內容評論等</p>
-</blockquote>]]></description></item><item><title>Hugo 本地管理 Shell 腳本</title><link>https://lruihao.cn/posts/hugo-admin/</link><pubDate>Mon, 04 Oct 2021 23:49:00 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-admin/</guid><description><![CDATA[<div class="details admonition abstract open">
+</blockquote>]]></description></item><item><title>Hugo 本地管理 Shell 腳本</title><link>https://lruihao.cn/posts/hugo-admin/</link><pubDate>Mon, 04 Oct 2021 23:49:00 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-admin/</guid><description><![CDATA[<div class="details admonition abstract open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw"></i>摘要<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -1952,7 +1952,7 @@ sh hugo_main.sh
 <p><figure><a class="lightgallery" href="/posts/hugo-admin/images/hugo-admin1.png" title="Hugo Admin" data-thumbnail="/posts/hugo-admin/images/hugo-admin1.png" data-sub-html="<h2>Hugo Admin</h2><p>Hugo Admin</p>">
         
     </a><figcaption class="image-caption">Hugo Admin</figcaption>
-    </figure></p>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+    </figure></p>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -2100,7 +2100,7 @@ sh hugo_main.sh
 <blockquote>
 <p>同步前先執行 hugo 構建命令，eg. <code>hugo --minify</code><br>
 有 Github actions 選單次同步就好，在 Github 不好用時可用。</p>
-</blockquote>]]></description></item><item><title>个人博客从 Hexo 迁移至 Hugo</title><link>https://lruihao.cn/posts/hexo-to-hugo/</link><pubDate>Sun, 03 Oct 2021 15:27:58 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-to-hugo/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>个人博客从 Hexo 迁移至 Hugo</title><link>https://lruihao.cn/posts/hexo-to-hugo/</link><pubDate>Sun, 03 Oct 2021 15:27:58 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-to-hugo/</guid><description><![CDATA[<blockquote>
 <p>电脑升级 win 11 后，分盘操作存在 bug, 然后又不小心把装代码的盘格式化了，虽然都有备份到 github, 但是当时为了省事，hexo Node 安装的很多以来插件都没有备份，现在又下载不到了，所以 hexo 博客没办法完整复原，另外，早就觉得基于 Node 的 hexo 实在有些臃肿，且博客内容多了以后部署太慢，就干脆乘机换了好了，经过一段时间寻找，最终选择了基于 Go 的 hugo, 记录一下迁移过程及待办事项。</p>
 </blockquote>
 <h2 id="hugo-准备">Hugo 准备</h2>
@@ -2291,7 +2291,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <li><i class="far fa-square fa-fw"></i> Fix: typeit 打印代码时跑版的问题</li>
 <li><i class="far fa-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
 <li><i class="far fa-square fa-fw"></i> Code Review</li>
-</ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
+</ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
 <p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行CSS的編碼工作。<br>
 轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
 </blockquote>
@@ -2353,7 +2353,7 @@ Less 既可以在用戶端上運行 (支援IE 6+, Webkit, Firefox)，也可在�
 <li>語法不同，請詳見 Less、Sass 官網</li>
 </ol>
 <h1 id="選用-less-還是-sass-">選用 Less 還是 Sass ?</h1>
-<p>無論是學習資料，討論情況，以及項目使用情況 Sass/Scss 都優於 Less，比如 Bootstrap 4 就使用的 Sass, 但是 Less 的使用更加簡單，使用門檻也較低，內網開發的情況，Less 則更加適合。</p>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
+<p>無論是學習資料，討論情況，以及項目使用情況 Sass/Scss 都優於 Less，比如 Bootstrap 4 就使用的 Sass, 但是 Less 的使用更加簡單，使用門檻也較低，內網開發的情況，Less 則更加適合。</p>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
 <p>Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。</p>
 <p>一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘Esc键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。</p>
 <h1 id="實現思路">實現思路</h1>
@@ -2805,7 +2805,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 </div><ol start="3">
 <li>Enjoy!</li>
 </ol>
-]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description><![CDATA[<p>just for backup of watermark.</p>
+]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description><![CDATA[<p>just for backup of watermark.</p>
 <h1 id="watermark-class">Watermark Class</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3247,7 +3247,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 <span class="nx">wm</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title><link>https://lruihao.cn/posts/codereview/</link><pubDate>Thu, 04 Mar 2021 21:04:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/codereview/</guid><description><![CDATA[<h1 id="程式碼的持續優化">程式碼的持續優化</h1>
+</div>]]></description></item><item><title>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</title><link>https://lruihao.cn/posts/codereview/</link><pubDate>Thu, 04 Mar 2021 21:04:18 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/codereview/</guid><description><![CDATA[<h1 id="程式碼的持續優化">程式碼的持續優化</h1>
 <p>對一個入門的工程師來說，掌握程式語法與模仿範例實作是基本的能力。那有了這樣的基本能之後，要如何寫出更好的程式呢？怎樣才能夠成為一個「優秀」的新手工程師呢？事實上，寫出會動的程式不難，但想寫出好的程式其實是需要刻意練習的。大部分的人會建議要「多練習、多實作」，但我認為在大量練習之外，適時的「優化程式」也是提升「程式碼品質」重要的關鍵。而在「優化程式」可以分成兩個角度：</p>
 <ol>
 <li>程式執行效能更好</li>
@@ -3286,7 +3286,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 <li>停留在做出成果的喜悅，而停滯了優化的步調。</li>
 </ol>
 <p>因此，會建議在開發當下就「多想」兩秒鐘，感覺可優化但來不及的部分先在旁邊加個註解提醒自己。另外也養成一段時間回頭看之前的程式碼的習慣，試著刻意找出可以優化改進的部分。專案的提交可能會有期限，但程式碼的優化沒有盡頭。面對相同的專案與程式碼，唯有透過不停的迭代優化才能打造更好的程式，同時也見證了你和程式一起變得更好的過程。所以建立逐步優化的空間，養成持續提升程式碼品質的習慣，才是一個新手工程師需要修煉的心法。</p>
-]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -3558,7 +3558,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p>簡單總結一下，登录功能不做，安不安全自己说了算。删除修改功能也不做，直接上 leacloud 操作，css 美化的样式也不写，干净又卫生！<br>
 然后衍生一下，什么过年斗地主，天炸，麻将，字牌记账系统那不也是同理可得嘛！</p>
 <p>over!</p>
-<p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>
 <h1 id="搭建php环境">搭建php环境</h1>
@@ -4116,7 +4116,7 @@ php artisan make:controller PageController
 php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
 <p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
 <p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到Windows桌面上随时使用~<br>
@@ -4288,14 +4288,14 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>CRON 表达式的基本语法</title><link>https://lruihao.cn/posts/cron/</link><pubDate>Wed, 25 Mar 2020 09:19:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cron/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>CRON 表达式的基本语法</title><link>https://lruihao.cn/posts/cron/</link><pubDate>Wed, 25 Mar 2020 09:19:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cron/</guid><description><![CDATA[<blockquote>
 <p><code>&lt;秒&gt; &lt;分钟&gt; &lt;小时&gt; &lt;日期 day-of-month&gt; &lt;月份&gt; &lt;星期 day-of-week&gt;</code></p>
 </blockquote>
 <h1 id="基本语法">基本语法</h1>
 <table><thead><tr><th>位置</th><th>字段</th><th>约束</th><th>取值</th><th>可使用的特殊符号</th></tr></thead><tbody><tr><td>1</td><td>秒</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>2</td><td>分钟</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>3</td><td>小时</td><td>必须</td><td>0-23（0 为午夜）</td><td><code>, - \* /</code></td></tr><tr><td>4</td><td>日期</td><td>必须</td><td>1-31</td><td><code>, - \* ? /</code></td></tr><tr><td>5</td><td>月份</td><td>必须</td><td>1-12、JAN-DEC</td><td><code>, - \* /</code></td></tr><tr><td>6</td><td>星期</td><td>必须</td><td>1-7、SUN-SAT</td><td><code>, - ? /</code></td></tr></tbody></table>
 <h1 id="特殊符号的用法">特殊符号的用法</h1>
 <table><thead><tr><th>符号</th><th>含义</th><th>用法</th></tr></thead><tbody><tr><td><code>\*</code></td><td>所有值</td><td>代表一个字段的所有可能取值。如将<code>&lt;分钟&gt;</code> 设为<strong>\*</strong>，表示每一分钟。</td></tr><tr><td><code>?</code></td><td>不指定值</td><td>用于可以使用该符号的两个字段中的一个，在一个表达式中只能出现一次。如任务执行时间为每月 10 号，星期几无所谓，那么表达式中<code>&lt;日期&gt;</code> 设为<strong>10</strong>，<code>&lt;星期&gt;</code> 设为<strong>?</strong>。</td></tr><tr><td><code>-</code></td><td>范围</td><td>如<code>&lt;小时&gt;</code> 为<strong>10-12</strong>，即10 点、11 点、12 点。</td></tr><tr><td><code>,</code></td><td><span class="text-nowrap">分隔多个值</span></td><td>如<code>&lt;星期&gt;</code> 为<strong>MON,WED,FRI</strong>，即周一、周三、周五。</td></tr><tr><td><code>/</code></td><td>增量</td><td>如<code>&lt;秒&gt;</code> 设为<strong>0/15</strong>，即从 0 秒开始，以 15 秒为增量，包括 0、15、30、45 秒；<strong>5/15</strong> 即 5、20、35、50 秒。<strong>\*/</strong> 与<strong>0/</strong> 等效，如<code>&lt;日期&gt;</code> 设为<strong>1/3</strong>，即从每个月的第一天开始，每 3 天（即每隔 2 天）执行一次任务。</td></tr></tbody></table>各字段以空格或空白隔开。JAN-DEC、SUN-SAT 这些值不区分大小写，比如 MON 和 mon 效果一样。
-<h1 id="举例如下">举例如下</h1><table><thead><tr><th>表达式</th><th>说明</th></tr></thead><tbody><tr><td><code>0  0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次</td></tr><tr><td><code>10 0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次，每次执行都在分钟开始的 10 秒，例如 10:00:10、10:05:10 等等。</td></tr><tr><td><code style="white-space:nowrap;">0 30 10-13 ? \* WED,FRI</code></td><td>每周三和每周五的 10:30、11:30、12:30、13:30 执行。</td></tr><tr><td><code>0 0/30 8-9 5,20 \* ?</code></td><td>每个月的 5 号和 20 号的 8 点和 10 点之间每隔 30 分钟执行一次，也就是 8:00、8:30、9:00 和 9:30。</td></tr></tbody></table>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+<h1 id="举例如下">举例如下</h1><table><thead><tr><th>表达式</th><th>说明</th></tr></thead><tbody><tr><td><code>0  0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次</td></tr><tr><td><code>10 0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次，每次执行都在分钟开始的 10 秒，例如 10:00:10、10:05:10 等等。</td></tr><tr><td><code style="white-space:nowrap;">0 30 10-13 ? \* WED,FRI</code></td><td>每周三和每周五的 10:30、11:30、12:30、13:30 执行。</td></tr><tr><td><code>0 0/30 8-9 5,20 \* ?</code></td><td>每个月的 5 号和 20 号的 8 点和 10 点之间每隔 30 分钟执行一次，也就是 8:00、8:30、9:00 和 9:30。</td></tr></tbody></table>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -4440,7 +4440,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <h1 id="潇x巴哥的java-web版本">潇x巴哥的java web版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>SQL总结</title><link>https://lruihao.cn/posts/sql/</link><pubDate>Thu, 16 Jan 2020 19:28:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/sql/</guid><description><![CDATA[<blockquote>
+</p>]]></description></item><item><title>SQL总结</title><link>https://lruihao.cn/posts/sql/</link><pubDate>Thu, 16 Jan 2020 19:28:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sql/</guid><description><![CDATA[<blockquote>
 <p>SQL增删改查(CRUD)语句与常用函数总结。</p>
 </blockquote>
 <h2 id="sql-introduction">SQL Introduction</h2>

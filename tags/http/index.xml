@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>HTTP - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/http/</link><description>HTTP - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Wed, 25 Mar 2020 08:22:42 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/http/" rel="self" type="application/rss+xml"/><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>HTTP - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/http/</link><description>HTTP - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Wed, 25 Mar 2020 08:22:42 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/http/" rel="self" type="application/rss+xml"/><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -143,7 +143,7 @@
 <h1 id="潇x巴哥的java-web版本">潇x巴哥的java web版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
+</p>]]></description></item><item><title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
 <p>用python模拟post请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
 要求每天早上8点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
 </blockquote>
@@ -321,7 +321,7 @@
 <p>第一次参与实际公司的项目开发，虽然只是一个小的需求设计，但是我在这个过程中也学到了很多，比如通过实际一两周的编程对Python的熟悉度远远好过以前在实验室看的一个月视频。<br>
 还有就是在此次开发中，也感受到了实际项目开发的团队合作重要性，刚开始拿到这个需求，由于我对python和后台，以及数据接口这些基本的操作都不懂，就拿数据获取来说，我一开始一位要自己模拟登陆后台（已知密码），一顿操作、百度等等失败告终，后来涛哥给了一个数据接口，加上涛哥耐心指点，我才终于拿到了数据。<br>
 还有在多人合作的项目中，为保持代码的可读性，要尽量的多些注释，还有函数方法的命名尽量具备可读性。比如我代码中的<code>wechat_send()</code>，一开始的命名是<code>wxfs()</code>，经捷哥指正我才改过来的。</p>
-</blockquote>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
+</blockquote>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/SingleThreadDown/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。</p>
@@ -534,7 +534,7 @@
 </div>
 </div><h1 id="运行结果测试">运行结果测试</h1>
 <p>通过<code>https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf</code>下载沐目体ttf字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。</p>
-<p></p>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
 <p>通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
 </blockquote>
 <ul>

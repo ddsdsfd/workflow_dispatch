@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nodejs - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/nodejs/</link><description>Nodejs - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 04 Apr 2019 22:09:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/nodejs/" rel="self" type="application/rss+xml"/><item><title>GitBook 使用教程</title><link>https://lruihao.cn/posts/gitbookuse/</link><pubDate>Thu, 04 Apr 2019 22:09:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/gitbookuse/</guid><description><![CDATA[<blockquote>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nodejs - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/nodejs/</link><description>Nodejs - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 04 Apr 2019 22:09:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/nodejs/" rel="self" type="application/rss+xml"/><item><title>GitBook 使用教程</title><link>https://lruihao.cn/posts/gitbookuse/</link><pubDate>Thu, 04 Apr 2019 22:09:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gitbookuse/</guid><description><![CDATA[<blockquote>
 <p>想趴几本金庸小说的做成电子书自己阅读，在博客上尝试了一下整理了6本中短篇小说就开始感觉博客臃肿，于是找到gitbook前来一试。
 写完这篇文章开始实际操作，我发现还不如用hexo来写小说，遂放弃！Gitbook用来写相关文档介绍还差不多。</p>
 </blockquote>
@@ -142,7 +142,7 @@ gitbook mobi ./ ./mybook.mobi
 <h2 id="summarymd">SUMMARY.md</h2>
 <p>这个文件主要决定GitBook的章节目录，它通过Markdown中的列表语法来表示文件的父子关系。</p>
 <h2 id="更多">更多</h2>
-<p><a href="https://www.jianshu.com/p/421cc442f06c" target="_blank" rel="noopener noreffer">更多详情介绍</a></p>]]></description></item><item><title>ttf 字体压缩</title><link>https://lruihao.cn/posts/web-font/</link><pubDate>Wed, 17 Oct 2018 21:38:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-font/</guid><description><![CDATA[<h3 id="安装-nodejs">安装 nodeJs</h3>
+<p><a href="https://www.jianshu.com/p/421cc442f06c" target="_blank" rel="noopener noreffer">更多详情介绍</a></p>]]></description></item><item><title>ttf 字体压缩</title><link>https://lruihao.cn/posts/web-font/</link><pubDate>Wed, 17 Oct 2018 21:38:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-font/</guid><description><![CDATA[<h3 id="安装-nodejs">安装 nodeJs</h3>
 <p>这个不多说，都有。</p>
 <h3 id="安装字蛛">安装字蛛</h3>
 <p>输入命令</p>

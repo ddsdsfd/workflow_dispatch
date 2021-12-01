@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Git - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/git/</link><description>Git - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/git/" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Git - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/git/</link><description>Git - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/git/" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
             </div><ul>
 <li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
@@ -474,7 +474,7 @@ gitk --all
 <li><a href="https://blog.csdn.net/qq1332479771/article/details/56087333" target="_blank" rel="noopener noreffer">github上fork了别人的项目后，再同步更新别人的提交</a></li>
 <li><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener noreffer">常用Git命令清单</a></li>
 <li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></li>
-</ul>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+</ul>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -622,7 +622,7 @@ gitk --all
 <blockquote>
 <p>同步前先執行 hugo 構建命令，eg. <code>hugo --minify</code><br>
 有 Github actions 選單次同步就好，在 Github 不好用時可用。</p>
-</blockquote>]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
+</blockquote>]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
 <ul>
 <li>絕對不寫死程式</li>
 <li>不留不要用的、垃圾程式碼</li>
@@ -1093,7 +1093,7 @@ function getUser($userId, $options){
 <td style="text-align:left">查詢</td>
 </tr>
 </tbody>
-</table>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
+</table>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
             </div><h3 id="备份hexo博客">备份hexo博客</h3>
 <div class="highlight"><div class="chroma">
@@ -1163,7 +1163,7 @@ hexo d -g  //部署
 </code></pre></td></tr></table>
 </div>
 </div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
-]]></description></item><item><title>使用 Git 上传代码到 github, coding 等仓库</title><link>https://lruihao.cn/posts/gituse/</link><pubDate>Fri, 26 Oct 2018 21:11:02 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/gituse/</guid><description><![CDATA[<h3 id="config">config</h3>
+]]></description></item><item><title>使用 Git 上传代码到 github, coding 等仓库</title><link>https://lruihao.cn/posts/gituse/</link><pubDate>Fri, 26 Oct 2018 21:11:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gituse/</guid><description><![CDATA[<h3 id="config">config</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1232,7 +1232,7 @@ git push origin master
 </div><ul>
 <li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></li>
 </ul>
-]]></description></item><item><title>linux/centos 下的安装git</title><link>https://lruihao.cn/posts/linux-git/</link><pubDate>Sat, 22 Sep 2018 22:28:45 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linux-git/</guid><description><![CDATA[<h3 id="下载git">下载git</h3>
+]]></description></item><item><title>linux/centos 下的安装git</title><link>https://lruihao.cn/posts/linux-git/</link><pubDate>Sat, 22 Sep 2018 22:28:45 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linux-git/</guid><description><![CDATA[<h3 id="下载git">下载git</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1313,7 +1313,7 @@ make prefix=/usr/local install
 </code></pre></td></tr></table>
 </div>
 </div><p>&hellip;</p>
-]]></description></item><item><title>git index.lock</title><link>https://lruihao.cn/posts/git-index-lock/</link><pubDate>Tue, 14 Aug 2018 19:21:23 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/git-index-lock/</guid><description><![CDATA[<p>在git没有运行完成之前强制关闭，下次提交的时候会产以下生错误，或者类似的。</p>
+]]></description></item><item><title>git index.lock</title><link>https://lruihao.cn/posts/git-index-lock/</link><pubDate>Tue, 14 Aug 2018 19:21:23 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git-index-lock/</guid><description><![CDATA[<p>在git没有运行完成之前强制关闭，下次提交的时候会产以下生错误，或者类似的。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

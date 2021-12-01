@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Frontend - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/frontend/</link><description>Frontend - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 22 Jun 2021 16:39:47 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/frontend/" rel="self" type="application/rss+xml"/><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Frontend - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/frontend/</link><description>Frontend - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 22 Jun 2021 16:39:47 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/frontend/" rel="self" type="application/rss+xml"/><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/cos-album/images/view.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -203,7 +203,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <li>fancybox</li>
 <li>加密功能</li>
 <li>分页显示</li>
-</ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
+</ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
 <p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行CSS的編碼工作。<br>
 轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
 </blockquote>
@@ -265,7 +265,7 @@ Less 既可以在用戶端上運行 (支援IE 6+, Webkit, Firefox)，也可在�
 <li>語法不同，請詳見 Less、Sass 官網</li>
 </ol>
 <h1 id="選用-less-還是-sass-">選用 Less 還是 Sass ?</h1>
-<p>無論是學習資料，討論情況，以及項目使用情況 Sass/Scss 都優於 Less，比如 Bootstrap 4 就使用的 Sass, 但是 Less 的使用更加簡單，使用門檻也較低，內網開發的情況，Less 則更加適合。</p>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
+<p>無論是學習資料，討論情況，以及項目使用情況 Sass/Scss 都優於 Less，比如 Bootstrap 4 就使用的 Sass, 但是 Less 的使用更加簡單，使用門檻也較低，內網開發的情況，Less 則更加適合。</p>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
 <p>Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。</p>
 <p>一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘Esc键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。</p>
 <h1 id="實現思路">實現思路</h1>
@@ -717,7 +717,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 </div><ol start="3">
 <li>Enjoy!</li>
 </ol>
-]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description><![CDATA[<p>just for backup of watermark.</p>
+]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description><![CDATA[<p>just for backup of watermark.</p>
 <h1 id="watermark-class">Watermark Class</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1159,7 +1159,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 <span class="nx">wm</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+</div>]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -1431,7 +1431,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p>簡單總結一下，登录功能不做，安不安全自己说了算。删除修改功能也不做，直接上 leacloud 操作，css 美化的样式也不写，干净又卫生！<br>
 然后衍生一下，什么过年斗地主，天炸，麻将，字牌记账系统那不也是同理可得嘛！</p>
 <p>over!</p>
-<p></p>]]></description></item><item><title>设置网站运行时间</title><link>https://lruihao.cn/posts/site-time/</link><pubDate>Thu, 19 Sep 2019 22:03:29 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/site-time/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>设置网站运行时间</title><link>https://lruihao.cn/posts/site-time/</link><pubDate>Thu, 19 Sep 2019 22:03:29 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/site-time/</guid><description><![CDATA[<blockquote>
 <p>使用<code>javascript</code>计算博客等网站的运行时间。</p>
 </blockquote>
 <blockquote>
@@ -1523,7 +1523,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </span><span class="cm">*/</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/async-defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
             </div><div class="details admonition note open">
         <div class="details-summary admonition-title">
@@ -1603,7 +1603,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <ul>
 <li><a href="https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html" target="_blank" rel="noopener noreffer">https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html</a></li>
 <li><a href="https://www.jianshu.com/p/17dc82bf08f1" target="_blank" rel="noopener noreffer">https://www.jianshu.com/p/17dc82bf08f1</a></li>
-</ul>]]></description></item><item><title>条件注释判断浏览器版本&lt;!--[if lt IE 9]>;</title><link>https://lruihao.cn/posts/ifzhushi/</link><pubDate>Fri, 10 May 2019 13:08:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ifzhushi/</guid><description><![CDATA[<blockquote>
+</ul>]]></description></item><item><title>条件注释判断浏览器版本&lt;!--[if lt IE 9]>;</title><link>https://lruihao.cn/posts/ifzhushi/</link><pubDate>Fri, 10 May 2019 13:08:27 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ifzhushi/</guid><description><![CDATA[<blockquote>
 <p><span>&lt;!--[if !IE]&gt;&lt;!--&gt; 除IE外都可识别 &lt;!--&lt;![endif]--&gt;</span><br><span>&lt;!--[if IE]&gt; 所有的IE可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 6]&gt; 仅IE6可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 6]&gt; IE6以及IE6以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 6]&gt; IE6以及IE6以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 7]&gt; 仅IE7可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 7]&gt; IE7以及IE7以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 7]&gt; IE7以及IE7以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 8]&gt; 仅IE8可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 9]&gt; 仅IE9可识别 &lt;![endif]--&gt;</span></p>
 </blockquote>
 <table align="center"> <tbody> <tr><th width="50">项目</th><th width="150">范例</th><th>说明</th></tr> <tr> <td align="middle">!</td><td>[if !IE]</td><td>The NOT operator. This is placed immediately in front of the&nbsp;<em>feature</em>,&nbsp;<em>operator</em>, or&nbsp;<em>subexpression</em>&nbsp;to reverse the Boolean meaning of the expression.<br />NOT运算符。这是摆立即在前面的<em>功能</em>，<em>操作员</em>，或<em>子表达式</em>扭转布尔表达式的意义。</td></tr><tr><td align="middle">lt</td> <td>[if lt IE 5.5]</td> <td>The less-than operator. Returns true if the first argument is less than the second argument.<br />小于运算符。如果第一个参数小于第二个参数，则返回true。</td> </tr><tr><td align="middle">lte</td><td>[if lte IE 6]</td><td>The less-than or equal operator. Returns true if the first argument is less than or equal to the second argument.<br />小于或等于运算。如果第一个参数是小于或等于第二个参数，则返回true。</td> </tr><tr><td align="middle">gt</td><td>[if gt IE 5]</td><td>The greater-than operator. Returns true if the first argument is greater than the second argument.<br />大于运算符。如果第一个参数大于第二个参数，则返回true。</td> </tr><tr><td align="middle">gte</td> <td>[if gte IE 7]</td><td>The greater-than or equal operator. Returns true if the first argument is greater than or equal to the second argument.<br />大于或等于运算。如果第一个参数是大于或等于第二个参数，则返回true。</td> </tr><tr><td align="middle">( )</td><td>[if !(IE 7)]</td><td>Subexpression operators. Used in conjunction with boolean operators to create more complex expressions.<br />子表达式运营商。在与布尔运算符用于创建更复杂的表达式。</td></tr><tr><td align="middle">&amp;</td><td>[if (gt IE 5)&amp;(lt IE 7)]</td><td>The AND operator. Returns true if all subexpressions evaluate to true<br />AND运算符。如果所有的子表达式计算结果为true，返回true</td></tr><tr><td align="middle">|</td><td>[if (IE 6)|(IE 7)]</td><td>The OR operator. Returns true if any of the subexpressions evaluates to true.<br />OR运算符。返回true，如果子表达式计算结果为true。</td></tr></tbody></table>
@@ -1639,14 +1639,14 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </span><span class="c">&lt;![endif]--&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
 <p>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法：</p>
 </blockquote>
 <ol>
 <li>确认是否把操作系统的字体调整为非100%了</li>
 <li>把<code>studio\dropins\studio-app2\plugins\plugin\lib\cef1\chromium.jar</code>这个jar包复制到<code>studio\dropins\studio-app2\plugins\plugin\lib</code>下，重启studio</li>
 </ol>
-]]></description></item><item><title>前端面试题-HTML+CSS</title><link>https://lruihao.cn/posts/ms-html-css/</link><pubDate>Sat, 30 Mar 2019 22:58:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/ms-html-css/</guid><description><![CDATA[<blockquote>
+]]></description></item><item><title>前端面试题-HTML+CSS</title><link>https://lruihao.cn/posts/ms-html-css/</link><pubDate>Sat, 30 Mar 2019 22:58:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ms-html-css/</guid><description><![CDATA[<blockquote>
 <p><a href="https://github.com/ltadpoles/web-document/tree/master/Other" target="_blank" rel="noopener noreffer">原文链接</a><br>
 “卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学java和web相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
 </blockquote>
@@ -1978,7 +1978,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <h2 id="14-flex布局">14. flex布局</h2>
 <p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">flex布局教程&ndash;阮一峰</a></p>
 <h2 id="15-css预处理器">15. css预处理器</h2>
-<p>提供了一种css的书写方式，常见的就是 <a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank" rel="noopener noreffer">SAAS文档</a> 和 <a href="https://less.bootcss.com/" target="_blank" rel="noopener noreffer">LESS文档</a></p>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
+<p>提供了一种css的书写方式，常见的就是 <a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank" rel="noopener noreffer">SAAS文档</a> 和 <a href="https://less.bootcss.com/" target="_blank" rel="noopener noreffer">LESS文档</a></p>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
 <p>记录自己在配置vps及博客SSL证书时遇到的问题。</p>
 </blockquote>
 <h1 id="强制重定向https">强制重定向https</h1>
@@ -2012,7 +2012,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p>这个博客后来是转到了腾讯云的cos桶存储。当时在桶内静态网站设置的时候，设置强制https发现会出错。而且还接入了CDN，所以今天在CDN设置那里也看到了https的设置，打开强制https就OK了。这天在三丰云撸了一个免费的主机，搭了一个WordPress（想试试wp的感觉），然后vps的SSL问题现在也很简单了，第一步，到腾讯云申请免费证书；第二步，配置CDN，按步骤来，其中接入方式选择自有源站；第三步，强制https(可选)。</p>
 </blockquote>
 <p></p>
-<p></p>]]></description></item><item><title>hexo-theme-next @modified LRH</title><link>https://lruihao.cn/posts/hexo-theme-next/</link><pubDate>Thu, 21 Mar 2019 16:43:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-theme-next/</guid><description><![CDATA[<div class="featured-image">
+<p></p>]]></description></item><item><title>hexo-theme-next @modified LRH</title><link>https://lruihao.cn/posts/hexo-theme-next/</link><pubDate>Thu, 21 Mar 2019 16:43:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-theme-next/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/hexo-theme-next/images/next.png" referrerpolicy="no-referrer">
             </div><div class="details admonition danger open">
         <div class="details-summary admonition-title">
@@ -2920,7 +2920,7 @@ limit: 20
     <span class="n">style</span><span class="o">:</span> <span class="n">night</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>web汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/webbiji/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>web汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/webbiji/</guid><description><![CDATA[<blockquote>
 <p>下面一些web开发的一些总结，还有一些常用到的代码，脚本等！</p>
 </blockquote>
 <h1 id="front-end">front-end</h1>
@@ -3189,7 +3189,7 @@ limit: 20
 <blockquote>
 <p>更多学习内容见<a href="https://github.com/Lruihao/web-dev-data" target="_blank" rel="noopener noreffer">学习课件</a><br>
 练习作业<a href="https://github.com/Lruihao/hw" target="_blank" rel="noopener noreffer">源码</a>+<a href="http://hw.lruihao.cn/" target="_blank" rel="noopener noreffer">Demo</a></p>
-</blockquote>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linkcard/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linkcard/</guid><description><![CDATA[<blockquote>
 <p>模仿知乎的卡片式链接，idea 来自[兰州小红鸡]</p>
 </blockquote>
 <h2 id="源码">源码</h2>
@@ -3275,7 +3275,7 @@ limit: 20
             
         </span>
     </span>
-</a>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
+</a>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
 <p>以前在QQ里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
 查了一下百度知道了大概就是qq没有抓取到你的网站的xml。并在其他教程中得到了一个强制提交抓取的url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
 </blockquote>
@@ -3453,7 +3453,7 @@ limit: 20
 </div>
 </div><h2 id="demo">demo</h2>
 <p><br>
-</p>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
+</p>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
 	#code{  
         font-family:Arial;  
         font-style:italic;  
@@ -3611,7 +3611,7 @@ limit: 20
 <span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>js判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>js判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
 <p>转自 <a href="https://www.cnblogs.com/coober/p/6594379.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/coober/p/6594379.html</a></p>
 </blockquote>
 <p>前端开发经常遇到需要判断用户的浏览设备，是pc端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>
@@ -3760,7 +3760,7 @@ limit: 20
   &lt;/script&gt;
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>使用js准确获取当前页面url网址信息及301重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/href-301/</guid><description><![CDATA[<h3 id="获取链接转">获取链接（转）</h3>
+</div>]]></description></item><item><title>使用js准确获取当前页面url网址信息及301重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/href-301/</guid><description><![CDATA[<h3 id="获取链接转">获取链接（转）</h3>
 <p><a href="https://www.cnblogs.com/zhabayi/p/6419938.html" target="_blank" rel="noopener noreffer">传送门</a><br>
 在WEB开发中，时常会用到javascript来获取当前页面的url网址信息，在这里是我的一些获取url信息的小总结。</p>
 <p>下面我们举例一个URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
@@ -4019,7 +4019,7 @@ alert(test);
 <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>ttf 字体压缩</title><link>https://lruihao.cn/posts/web-font/</link><pubDate>Wed, 17 Oct 2018 21:38:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-font/</guid><description><![CDATA[<h3 id="安装-nodejs">安装 nodeJs</h3>
+</div>]]></description></item><item><title>ttf 字体压缩</title><link>https://lruihao.cn/posts/web-font/</link><pubDate>Wed, 17 Oct 2018 21:38:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-font/</guid><description><![CDATA[<h3 id="安装-nodejs">安装 nodeJs</h3>
 <p>这个不多说，都有。</p>
 <h3 id="安装字蛛">安装字蛛</h3>
 <p>输入命令</p>
@@ -4064,7 +4064,7 @@ alert(test);
 </div>
 </div><p></p>
 <p><a href="http://font-spider.org" target="_blank" rel="noopener noreffer">官网</a></p>
-]]></description></item><item><title>网页夜间效果</title><link>https://lruihao.cn/posts/night/</link><pubDate>Thu, 27 Sep 2018 13:13:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/night/</guid><description><![CDATA[<blockquote>
+]]></description></item><item><title>网页夜间效果</title><link>https://lruihao.cn/posts/night/</link><pubDate>Thu, 27 Sep 2018 13:13:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/night/</guid><description><![CDATA[<blockquote>
 <p>这几天看到别人的博客有开关灯效果，就想给自己的博客也加一个，其实以前就在想了。经过谷歌百度后这样实现了。<code>css+js</code></p>
 </blockquote>
 <p>如何给Web页面增加夜间模式功能? 其实所谓的夜间模式就是在页面上增加一个透明的遮罩层，但是遮罩层会挡住页面元素， 解决方法是 添加DIV，给DIV的outline属性一个很大的outline-width值，用outline的边框作为遮罩，这样既能正常点击页面元素，又能达到夜间模式的效果。</p>

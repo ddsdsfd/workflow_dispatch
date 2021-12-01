@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>JavaScript - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/javascript/</link><description>JavaScript - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 21 Jun 2021 16:18:04 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/javascript/" rel="self" type="application/rss+xml"/><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>JavaScript - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/javascript/</link><description>JavaScript - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 21 Jun 2021 16:18:04 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/javascript/" rel="self" type="application/rss+xml"/><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/posts/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-album/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/cos-album/images/view.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -203,7 +203,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <li>fancybox</li>
 <li>加密功能</li>
 <li>分页显示</li>
-</ul>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
+</ul>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
 <p>Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。</p>
 <p>一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘Esc键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。</p>
 <h1 id="實現思路">實現思路</h1>
@@ -655,7 +655,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 </div><ol start="3">
 <li>Enjoy!</li>
 </ol>
-]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description><![CDATA[<p>just for backup of watermark.</p>
+]]></description></item><item><title>watermark base on position fixed</title><link>https://lruihao.cn/posts/watermark-fixed/</link><pubDate>Sun, 23 May 2021 17:15:41 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/watermark-fixed/</guid><description><![CDATA[<p>just for backup of watermark.</p>
 <h1 id="watermark-class">Watermark Class</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1097,7 +1097,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 <span class="nx">wm</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+</div>]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -1369,7 +1369,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p>簡單總結一下，登录功能不做，安不安全自己说了算。删除修改功能也不做，直接上 leacloud 操作，css 美化的样式也不写，干净又卫生！<br>
 然后衍生一下，什么过年斗地主，天炸，麻将，字牌记账系统那不也是同理可得嘛！</p>
 <p>over!</p>
-<p></p>]]></description></item><item><title>设置网站运行时间</title><link>https://lruihao.cn/posts/site-time/</link><pubDate>Thu, 19 Sep 2019 22:03:29 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/site-time/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>设置网站运行时间</title><link>https://lruihao.cn/posts/site-time/</link><pubDate>Thu, 19 Sep 2019 22:03:29 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/site-time/</guid><description><![CDATA[<blockquote>
 <p>使用<code>javascript</code>计算博客等网站的运行时间。</p>
 </blockquote>
 <blockquote>
@@ -1461,7 +1461,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </span><span class="cm">*/</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>script 的三种加载方式 (async, defer)</title><link>https://lruihao.cn/posts/async-defer/</link><pubDate>Sun, 08 Sep 2019 11:47:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/async-defer/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/async-defer/images/async_vs_defer.svg" referrerpolicy="no-referrer">
             </div><div class="details admonition note open">
         <div class="details-summary admonition-title">
@@ -1541,7 +1541,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <ul>
 <li><a href="https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html" target="_blank" rel="noopener noreffer">https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html</a></li>
 <li><a href="https://www.jianshu.com/p/17dc82bf08f1" target="_blank" rel="noopener noreffer">https://www.jianshu.com/p/17dc82bf08f1</a></li>
-</ul>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
+</ul>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
 <p>记录自己在配置vps及博客SSL证书时遇到的问题。</p>
 </blockquote>
 <h1 id="强制重定向https">强制重定向https</h1>
@@ -1575,7 +1575,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p>这个博客后来是转到了腾讯云的cos桶存储。当时在桶内静态网站设置的时候，设置强制https发现会出错。而且还接入了CDN，所以今天在CDN设置那里也看到了https的设置，打开强制https就OK了。这天在三丰云撸了一个免费的主机，搭了一个WordPress（想试试wp的感觉），然后vps的SSL问题现在也很简单了，第一步，到腾讯云申请免费证书；第二步，配置CDN，按步骤来，其中接入方式选择自有源站；第三步，强制https(可选)。</p>
 </blockquote>
 <p></p>
-<p></p>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/linkcard/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linkcard/</guid><description><![CDATA[<blockquote>
 <p>模仿知乎的卡片式链接，idea 来自[兰州小红鸡]</p>
 </blockquote>
 <h2 id="源码">源码</h2>
@@ -1661,7 +1661,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
             
         </span>
     </span>
-</a>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
+</a>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
 <p>以前在QQ里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
 查了一下百度知道了大概就是qq没有抓取到你的网站的xml。并在其他教程中得到了一个强制提交抓取的url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
 </blockquote>
@@ -1839,7 +1839,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </div>
 </div><h2 id="demo">demo</h2>
 <p><br>
-</p>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
+</p>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
 	#code{  
         font-family:Arial;  
         font-style:italic;  
@@ -1997,7 +1997,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>js判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>js判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
 <p>转自 <a href="https://www.cnblogs.com/coober/p/6594379.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/coober/p/6594379.html</a></p>
 </blockquote>
 <p>前端开发经常遇到需要判断用户的浏览设备，是pc端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>
@@ -2146,7 +2146,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
   &lt;/script&gt;
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>使用js准确获取当前页面url网址信息及301重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/href-301/</guid><description><![CDATA[<h3 id="获取链接转">获取链接（转）</h3>
+</div>]]></description></item><item><title>使用js准确获取当前页面url网址信息及301重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/href-301/</guid><description><![CDATA[<h3 id="获取链接转">获取链接（转）</h3>
 <p><a href="https://www.cnblogs.com/zhabayi/p/6419938.html" target="_blank" rel="noopener noreffer">传送门</a><br>
 在WEB开发中，时常会用到javascript来获取当前页面的url网址信息，在这里是我的一些获取url信息的小总结。</p>
 <p>下面我们举例一个URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
@@ -2405,7 +2405,7 @@ alert(test);
 <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>网页夜间效果</title><link>https://lruihao.cn/posts/night/</link><pubDate>Thu, 27 Sep 2018 13:13:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/night/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>网页夜间效果</title><link>https://lruihao.cn/posts/night/</link><pubDate>Thu, 27 Sep 2018 13:13:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/night/</guid><description><![CDATA[<blockquote>
 <p>这几天看到别人的博客有开关灯效果，就想给自己的博客也加一个，其实以前就在想了。经过谷歌百度后这样实现了。<code>css+js</code></p>
 </blockquote>
 <p>如何给Web页面增加夜间模式功能? 其实所谓的夜间模式就是在页面上增加一个透明的遮罩层，但是遮罩层会挡住页面元素， 解决方法是 添加DIV，给DIV的outline属性一个很大的outline-width值，用outline的边框作为遮罩，这样既能正常点击页面元素，又能达到夜间模式的效果。</p>
@@ -2514,7 +2514,7 @@ alert(test);
 <li>Alt+X:关闭</li>
 <li>Alt+↑:增加亮度</li>
 <li>Alt+↓:降低亮度</li>
-</ol>]]></description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description><![CDATA[<blockquote>
+</ol>]]></description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description><![CDATA[<blockquote>
 <p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。</p>
 </blockquote>
 <h2 id="创建一个js文件">创建一个js文件</h2>
@@ -2609,7 +2609,7 @@ alert(test);
 <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/src/crash-cheat.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>重新部署博客就可以了。</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
+</div><p>重新部署博客就可以了。</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
 <p>本文适合我这种纯小白。
 目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js,后加载）<br>
 但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
@@ -2770,7 +2770,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
+</div>]]></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面F12检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
 我主要用到的工具：</p>
 <ul>
 <li>console.log()</li>

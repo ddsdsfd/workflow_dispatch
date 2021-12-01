@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>脚本 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/</link><description>脚本 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 26 Mar 2020 11:08:38 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/" rel="self" type="application/rss+xml"/><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>脚本 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/</link><description>脚本 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 26 Mar 2020 11:08:38 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/" rel="self" type="application/rss+xml"/><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
 <p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
 <p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到Windows桌面上随时使用~<br>
@@ -170,7 +170,7 @@
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -315,7 +315,7 @@
 <h1 id="潇x巴哥的java-web版本">潇x巴哥的java web版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>安装pyinstaller出错的解决办法及csdn工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
+</p>]]></description></item><item><title>安装pyinstaller出错的解决办法及csdn工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/pyinstallererror/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>用过命令<code>pip install pyinstaller</code>安装失败，此包依赖于pywin32，安装前需要先<code>pip install pywin32</code>,我安装了还是出错，稍微百度了一下也没有看到解决办法。
@@ -362,7 +362,7 @@
 </div>
 </div><p>
 </p>
-<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及exe可执行文件。</p>]]></description></item><item><title>python 爬取网站图片（图片链接相似）</title><link>https://lruihao.cn/posts/mmtimgpy/</link><pubDate>Mon, 22 Apr 2019 12:46:34 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/mmtimgpy/</guid><description><![CDATA[<blockquote>
+<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及exe可执行文件。</p>]]></description></item><item><title>python 爬取网站图片（图片链接相似）</title><link>https://lruihao.cn/posts/mmtimgpy/</link><pubDate>Mon, 22 Apr 2019 12:46:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mmtimgpy/</guid><description><![CDATA[<blockquote>
 <p>以下程序对<a href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&amp;a=fontshowPics&amp;u=qbfRl8gPF2s-&amp;z=Kqz%2FRroVGYc-&amp;share=1&amp;from=singlemessage" target="_blank" rel="noopener noreffer">该网址</a>内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app书写的，大概6886个字符，历时两年多，目前仍在修改中。<a href="https://lruihao.cn/posts/font-mmt/" target="_blank" rel="noopener noreffer">字体效果查看</a></p>
 </blockquote>
 <h1 id="思路设计">思路设计</h1>
@@ -534,7 +534,7 @@
 </blockquote>
 <p></p>
 <h1 id="其他思路">其他思路</h1>
-<p>模拟浏览器载入 html 文件，获取源码，查找到所有<code>&lt;img&gt;</code>标签内链接，必要时配合正则表达式，然后下载图片。</p>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
+<p>模拟浏览器载入 html 文件，获取源码，查找到所有<code>&lt;img&gt;</code>标签内链接，必要时配合正则表达式，然后下载图片。</p>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
 <p>以前在QQ里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
 查了一下百度知道了大概就是qq没有抓取到你的网站的xml。并在其他教程中得到了一个强制提交抓取的url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
 </blockquote>
@@ -712,7 +712,7 @@
 </div>
 </div><h2 id="demo">demo</h2>
 <p><br>
-</p>]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+</p>]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
 <p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
 <ul>
 <li>git add * (添加需要提交的文件，这里全选)</li>
@@ -785,7 +785,7 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
 </code></pre></td></tr></table>
 </div>
-</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
+</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
 <ul>
 <li>read</li>
 <li>echo</li>

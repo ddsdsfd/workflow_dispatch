@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>DFS - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/dfs/</link><description>DFS - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 22 Jul 2018 11:58:14 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/dfs/" rel="self" type="application/rss+xml"/><item><title>poj-1321 棋盘问题（dfs）</title><link>https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/</link><pubDate>Sun, 22 Jul 2018 11:58:14 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/</guid><description><![CDATA[<p>Time Limit: 1000MS<br>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>DFS - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/dfs/</link><description>DFS - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 22 Jul 2018 11:58:14 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/dfs/" rel="self" type="application/rss+xml"/><item><title>poj-1321 棋盘问题（dfs）</title><link>https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/</link><pubDate>Sun, 22 Jul 2018 11:58:14 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/</guid><description><![CDATA[<p>Time Limit: 1000MS<br>
 Memory Limit: 10000K<br>
 Total Submissions: 63659<br>
 Accepted: 30423</p>
@@ -141,7 +141,7 @@ Accepted: 30423</p>
 </code></pre></td></tr></table>
 </div>
 </div><p><a href="https://blog.csdn.net/hurmishine/article/details/49835913" target="_blank" rel="noopener noreffer">传送门</a></p>
-]]></description></item><item><title>poj-1426-Find The Multiple(dfs)</title><link>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</link><pubDate>Sun, 22 Jul 2018 11:57:13 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</guid><description><![CDATA[<h2 id="find-the-multiple">Find The Multiple</h2>
+]]></description></item><item><title>poj-1426-Find The Multiple(dfs)</title><link>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</link><pubDate>Sun, 22 Jul 2018 11:57:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</guid><description><![CDATA[<h2 id="find-the-multiple">Find The Multiple</h2>
 <p>Time Limit: 1000MS		Memory Limit: 10000K<br>
 Total Submissions: 40713		Accepted: 17088		Special Judge</p>
 <h3 id="description">Description</h3>
@@ -230,7 +230,7 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>hud-1241-Oil Deposits (dfs)</title><link>https://lruihao.cn/posts/hud-1241-oil-deposits-dfs/</link><pubDate>Sun, 22 Jul 2018 11:37:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hud-1241-oil-deposits-dfs/</guid><description><![CDATA[<h2 id="oil-depositshttpacmhdueducnshowproblemphppid1241"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1241" target="_blank" rel="noopener noreffer">Oil Deposits</a></h2>
+</div>]]></description></item><item><title>hud-1241-Oil Deposits (dfs)</title><link>https://lruihao.cn/posts/hud-1241-oil-deposits-dfs/</link><pubDate>Sun, 22 Jul 2018 11:37:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hud-1241-oil-deposits-dfs/</guid><description><![CDATA[<h2 id="oil-depositshttpacmhdueducnshowproblemphppid1241"><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1241" target="_blank" rel="noopener noreffer">Oil Deposits</a></h2>
 <p><a href="https://vjudge.net/contest/238973#problem/L" target="_blank" rel="noopener noreffer">翻译</a><br>
 Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)<br>
 Total Submission(s): 41406    Accepted Submission(s): 23977</p>
@@ -347,7 +347,7 @@ Total Submission(s): 41406    Accepted Submission(s): 23977</p>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>深搜广搜</title><link>https://lruihao.cn/posts/dfs_bfs/</link><pubDate>Sun, 22 Jul 2018 11:25:14 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dfs_bfs/</guid><description><![CDATA[<h3 id="广度优先搜索bfs">广度优先搜索（BFS）</h3>
+</div>]]></description></item><item><title>深搜广搜</title><link>https://lruihao.cn/posts/dfs_bfs/</link><pubDate>Sun, 22 Jul 2018 11:25:14 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dfs_bfs/</guid><description><![CDATA[<h3 id="广度优先搜索bfs">广度优先搜索（BFS）</h3>
 <p>广度优先搜索在进一步遍历图中顶点之前，先访问当前顶点的所有邻接结点。访问了就入队。</p>
 <h3 id="深度优先搜索dfs">深度优先搜索（DFS）</h3>
 <p>深度优先搜索在搜索过程中访问某个顶点后，需要递归地访问此顶点的所有未访问过的相邻顶点。</p>

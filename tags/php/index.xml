@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>PHP - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/php/</link><description>PHP - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/php/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>PHP - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/php/</link><description>PHP - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/php/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
@@ -180,7 +180,7 @@ php artisan db:seed
 </div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>,使用用户名<code>admin</code>和密码<code>admin</code>登录.</p>
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
-<p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>
 <h1 id="搭建php环境">搭建php环境</h1>
@@ -738,7 +738,7 @@ php artisan make:controller PageController
 php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>php同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>php同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
 <p>php 主动推送站点链接到百度站长，神马站长进行 SEO。</p>
 </blockquote>
 <h1 id="代码">代码</h1>
@@ -800,7 +800,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="提交结果">提交结果</h1>
-<p></p>]]></description></item><item><title>php按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
+<p></p>]]></description></item><item><title>php按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
 <p>首先采用<code>fopen()</code>函数打开文件，得到返回值的就是资源类型。接着采用while循环一行行地读取文件，然后输出每行的文字。<code>feof()</code>判断是否到最后一行,<code>fgets()</code>读取一行文本。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -906,7 +906,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="结果">结果</h1>
-<p></p>]]></description></item><item><title>netBeans IDE 开发设置</title><link>https://lruihao.cn/posts/netbeans/</link><pubDate>Thu, 15 Aug 2019 18:36:15 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/netbeans/</guid><description><![CDATA[<h1 id="安裝">安裝</h1>
+<p></p>]]></description></item><item><title>netBeans IDE 开发设置</title><link>https://lruihao.cn/posts/netbeans/</link><pubDate>Thu, 15 Aug 2019 18:36:15 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/netbeans/</guid><description><![CDATA[<h1 id="安裝">安裝</h1>
 <p><a href="https://netbeans.org/" target="_blank" rel="noopener noreffer">官方下載點</a></p>
 <h1 id="擴充功能">擴充功能</h1>
 <h2 id="安裝擴充功能">安裝擴充功能</h2>
@@ -1113,7 +1113,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>
 
 </p>
-]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
+]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
 <ul>
 <li>絕對不寫死程式</li>
 <li>不留不要用的、垃圾程式碼</li>
@@ -1584,7 +1584,7 @@ function getUser($userId, $options){
 <td style="text-align:left">查詢</td>
 </tr>
 </tbody>
-</table>]]></description></item><item><title>简单评论模块--php表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
+</table>]]></description></item><item><title>简单评论模块--php表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
 <p>简单模仿了一个评论模板，当然肯定是没有博客的valine这么强大的hhhh，<br>
 <strong>PHP表单安全性的重要提示</strong><br>
 <code>$_SERVER[&quot;PHP_SELF&quot;]</code>变量能够被黑客利用！<br>
@@ -1811,7 +1811,7 @@ function getUser($userId, $options){
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p></p>]]></description></item><item><title>php 函数学习</title><link>https://lruihao.cn/posts/phpfunc/</link><pubDate>Mon, 15 Jul 2019 11:37:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpfunc/</guid><description><![CDATA[<blockquote>
+</div><p></p>]]></description></item><item><title>php 函数学习</title><link>https://lruihao.cn/posts/phpfunc/</link><pubDate>Mon, 15 Jul 2019 11:37:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfunc/</guid><description><![CDATA[<blockquote>
 <p>练习php函数的基本使用。<br>
 注：<br>
 必选参数在可选参数的前面。<br>
@@ -1859,7 +1859,7 @@ function getUser($userId, $options){
 <span class="cp">?&gt;</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
-</div><p></p>]]></description></item><item><title>WAMPServer 自定义网站根目录等设置</title><link>https://lruihao.cn/posts/wamproot/</link><pubDate>Fri, 12 Jul 2019 18:44:36 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wamproot/</guid><description><![CDATA[<blockquote>
+</div><p></p>]]></description></item><item><title>WAMPServer 自定义网站根目录等设置</title><link>https://lruihao.cn/posts/wamproot/</link><pubDate>Fri, 12 Jul 2019 18:44:36 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wamproot/</guid><description><![CDATA[<blockquote>
 <p>使用 WAMPServer 时自定义网站根目录。</p>
 </blockquote>
 <h1 id="wampserver自定义网站根目录">WAMPServer自定义网站根目录</h1>
@@ -2001,7 +2001,7 @@ ServerName localhost:8080
 Ctrl+F查找 <code>localhost</code><br>
 将其全部替换为<code>localhost:8000</code><br>
 然后，Ctrl+S保存，重新启动WampServer</li>
-</ol>]]></description></item><item><title>宅音乐播放器</title><link>https://lruihao.cn/posts/player/</link><pubDate>Tue, 19 Mar 2019 23:32:56 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/player/</guid><description><![CDATA[<div class="featured-image">
+</ol>]]></description></item><item><title>宅音乐播放器</title><link>https://lruihao.cn/posts/player/</link><pubDate>Tue, 19 Mar 2019 23:32:56 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/player/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/player/images/index.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>宅音乐播放器，HTML5网页播放器，集成后台管理及API调用，目前正在开发中，敬请关注~<br>

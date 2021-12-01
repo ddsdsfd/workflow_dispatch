@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>hugo - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/hugo/</link><description>hugo - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 19:33:13 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/hugo/" rel="self" type="application/rss+xml"/><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer"  class="card-link">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>hugo - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/hugo/</link><description>hugo - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 19:33:13 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/hugo/" rel="self" type="application/rss+xml"/><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer"  class="card-link">
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
@@ -45,7 +45,7 @@ static/images/card-link-bg.jpg
 <pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">cardlink</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;知乎卡片式链接 Git 記錄&#34;</span> <span class="p">&gt;</span>}}
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
 <p>工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。</p>
 </blockquote>
 <h2 id="翻譯">翻譯</h2>
@@ -473,7 +473,7 @@ static/images/card-link-bg.jpg
 <pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-tw&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>Hugo 友情連結模板</title><link>https://lruihao.cn/posts/hugo-friends/</link><pubDate>Tue, 05 Oct 2021 14:14:10 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-friends/</guid><description><![CDATA[<div class="details admonition question open">
+</div>]]></description></item><item><title>Hugo 友情連結模板</title><link>https://lruihao.cn/posts/hugo-friends/</link><pubDate>Tue, 05 Oct 2021 14:14:10 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-friends/</guid><description><![CDATA[<div class="details admonition question open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-question-circle fa-fw"></i>過程<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -805,7 +805,7 @@ type: &#34;friends&#34;
 <blockquote>
 <p>這樣每次添加友鏈或者刪除友鏈衹要操作數據文件 <code>friends.yml</code> 就好，乾淨又衛生！<br>
 友鏈頁面 <code>content/friends/index.md</code> 繼承了基礎頁面的功能，內容評論等</p>
-</blockquote>]]></description></item><item><title>Hugo 本地管理 Shell 腳本</title><link>https://lruihao.cn/posts/hugo-admin/</link><pubDate>Mon, 04 Oct 2021 23:49:00 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hugo-admin/</guid><description><![CDATA[<div class="details admonition abstract open">
+</blockquote>]]></description></item><item><title>Hugo 本地管理 Shell 腳本</title><link>https://lruihao.cn/posts/hugo-admin/</link><pubDate>Mon, 04 Oct 2021 23:49:00 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-admin/</guid><description><![CDATA[<div class="details admonition abstract open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw"></i>摘要<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -1037,7 +1037,7 @@ sh hugo_main.sh
 <p><figure><a class="lightgallery" href="/posts/hugo-admin/images/hugo-admin1.png" title="Hugo Admin" data-thumbnail="/posts/hugo-admin/images/hugo-admin1.png" data-sub-html="<h2>Hugo Admin</h2><p>Hugo Admin</p>">
         
     </a><figcaption class="image-caption">Hugo Admin</figcaption>
-    </figure></p>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+    </figure></p>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -1185,7 +1185,7 @@ sh hugo_main.sh
 <blockquote>
 <p>同步前先執行 hugo 構建命令，eg. <code>hugo --minify</code><br>
 有 Github actions 選單次同步就好，在 Github 不好用時可用。</p>
-</blockquote>]]></description></item><item><title>个人博客从 Hexo 迁移至 Hugo</title><link>https://lruihao.cn/posts/hexo-to-hugo/</link><pubDate>Sun, 03 Oct 2021 15:27:58 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-to-hugo/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>个人博客从 Hexo 迁移至 Hugo</title><link>https://lruihao.cn/posts/hexo-to-hugo/</link><pubDate>Sun, 03 Oct 2021 15:27:58 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-to-hugo/</guid><description><![CDATA[<blockquote>
 <p>电脑升级 win 11 后，分盘操作存在 bug, 然后又不小心把装代码的盘格式化了，虽然都有备份到 github, 但是当时为了省事，hexo Node 安装的很多以来插件都没有备份，现在又下载不到了，所以 hexo 博客没办法完整复原，另外，早就觉得基于 Node 的 hexo 实在有些臃肿，且博客内容多了以后部署太慢，就干脆乘机换了好了，经过一段时间寻找，最终选择了基于 Go 的 hugo, 记录一下迁移过程及待办事项。</p>
 </blockquote>
 <h2 id="hugo-准备">Hugo 准备</h2>

@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>hexo - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/hexo/</link><description>hexo - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 21 Mar 2019 16:43:19 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/hexo/" rel="self" type="application/rss+xml"/><item><title>hexo-theme-next @modified LRH</title><link>https://lruihao.cn/posts/hexo-theme-next/</link><pubDate>Thu, 21 Mar 2019 16:43:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-theme-next/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>hexo - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/hexo/</link><description>hexo - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 21 Mar 2019 16:43:19 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/hexo/" rel="self" type="application/rss+xml"/><item><title>hexo-theme-next @modified LRH</title><link>https://lruihao.cn/posts/hexo-theme-next/</link><pubDate>Thu, 21 Mar 2019 16:43:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-theme-next/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/hexo-theme-next/images/next.png" referrerpolicy="no-referrer">
             </div><div class="details admonition danger open">
         <div class="details-summary admonition-title">
@@ -906,7 +906,7 @@ limit: 20
     <span class="n">style</span><span class="o">:</span> <span class="n">night</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
 <p>本以为 coding pages 与腾讯云合作后会更好，没想到正是这种初期 bug 不断，速度也是非常慢。比 gitee, 甚至 github 都要慢很多了。所以决定放弃 coding 了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的 cos 桶 xml 制作动态相册的文章，知道了对象存储这个玩意，腾讯云 COS 提供免费 50G 的存储空间，还有 CDN 加速服务，我觉得是个不错的选择，部署后发现速度还挺好。<br>
 适用于 hexo, hugo 等静态博客的部署。</p>
 </blockquote>
@@ -1198,7 +1198,7 @@ hexo g -d
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>在搜索.文章底部.侧栏添加最近文章模块</title><link>https://lruihao.cn/posts/recent-posts/</link><pubDate>Wed, 16 Jan 2019 17:50:52 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/recent-posts/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>在搜索.文章底部.侧栏添加最近文章模块</title><link>https://lruihao.cn/posts/recent-posts/</link><pubDate>Wed, 16 Jan 2019 17:50:52 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/recent-posts/</guid><description><![CDATA[<blockquote>
 <p>首先在主题配置文件添加以下关键字</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -1346,7 +1346,7 @@ hexo g -d
 </div>
 </div><h1 id="其他">其他</h1>
 <p>可尝试将<code>-date</code>改为<code>-update</code></p>
-]]></description></item><item><title>hexo插件及next内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
+]]></description></item><item><title>hexo插件及next内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
 <p>2021/10/2 更新<br>
 博客已迁移至 Hugo, 插件演示不适用，已删除。<br>
 让文章写的好看又简洁又好用的插件！<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener noreffer">hexo完整的标签列表</a>，<a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener noreffer">next插件列表</a></p>
@@ -2302,7 +2302,7 @@ primary success info warning danger
 </div><h3 id="其他httpwwwmykernelcnmy-hexo-next-1html"><a href="http://www.mykernel.cn/my-hexo-next-1.html" target="_blank" rel="noopener noreffer">其他</a></h3>
 <blockquote>
 <p>包括小色块、左侧色条、右侧色条、上方色条、数字色块（需要自定义样式）</p>
-</blockquote>]]></description></item><item><title>next添加支持pdf</title><link>https://lruihao.cn/posts/next-pdf/</link><pubDate>Fri, 09 Nov 2018 12:51:48 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/next-pdf/</guid><description><![CDATA[<blockquote>
+</blockquote>]]></description></item><item><title>next添加支持pdf</title><link>https://lruihao.cn/posts/next-pdf/</link><pubDate>Fri, 09 Nov 2018 12:51:48 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/next-pdf/</guid><description><![CDATA[<blockquote>
 <p>最新的next主题已经更新了支持PDF功能，<del>写法也和链接写法一样</del>，可是我没有更新，我按github上那个readme试了一下好像不可以，所以用了另外一种插件的方法。</p>
 </blockquote>
 <h2 id="iframe推荐">iframe(推荐)</h2>
@@ -2371,7 +2371,7 @@ primary success info warning danger
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% pdf /posts/next-pdf/1.pdf %}
 </code></pre></td></tr></table>
 </div>
-</div><iframe src="/posts/next-pdf/1.pdf" style="width: 100%;height: 800px;"></iframe>]]></description></item><item><title>设置单篇文章不打赏、首页不显示文章</title><link>https://lruihao.cn/posts/noreward/</link><pubDate>Tue, 06 Nov 2018 13:06:29 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/noreward/</guid><description><![CDATA[<h2 id="不打赏">不打赏</h2>
+</div><iframe src="/posts/next-pdf/1.pdf" style="width: 100%;height: 800px;"></iframe>]]></description></item><item><title>设置单篇文章不打赏、首页不显示文章</title><link>https://lruihao.cn/posts/noreward/</link><pubDate>Tue, 06 Nov 2018 13:06:29 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/noreward/</guid><description><![CDATA[<h2 id="不打赏">不打赏</h2>
 <blockquote>
 <p>出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。<br>
 <strong>原理：</strong><br>
@@ -2441,7 +2441,7 @@ notshow: false
 </div>
 </div><p>使用同理，<code>notshow: true</code><br>
 在归档可以看到文章。</p>
-]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
+]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
             </div><h3 id="备份hexo博客">备份hexo博客</h3>
 <div class="highlight"><div class="chroma">
@@ -2511,7 +2511,7 @@ hexo d -g  //部署
 </code></pre></td></tr></table>
 </div>
 </div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
-]]></description></item><item><title>hexo next主题添加字数统计（2018）</title><link>https://lruihao.cn/posts/hexo-wordcount/</link><pubDate>Thu, 30 Aug 2018 13:15:50 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-wordcount/</guid><description><![CDATA[<div class="details admonition warning open">
+]]></description></item><item><title>hexo next主题添加字数统计（2018）</title><link>https://lruihao.cn/posts/hexo-wordcount/</link><pubDate>Thu, 30 Aug 2018 13:15:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-wordcount/</guid><description><![CDATA[<div class="details admonition warning open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-exclamation-triangle fa-fw"></i>警告<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -2594,7 +2594,7 @@ npm install hexo-wordcount@2 --save
 &lt;/div&gt;
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>hexo d 出错</title><link>https://lruihao.cn/posts/hexo-d-error/</link><pubDate>Tue, 21 Aug 2018 22:15:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexo-d-error/</guid><description><![CDATA[<p>搭建这个博客以来，隔一段时间就出现一次部署失败的错误，每次都差不多，莫名其妙地出现的。。。前几次不知道怎么瞎搞就好了。<br>
+</div>]]></description></item><item><title>hexo d 出错</title><link>https://lruihao.cn/posts/hexo-d-error/</link><pubDate>Tue, 21 Aug 2018 22:15:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-d-error/</guid><description><![CDATA[<p>搭建这个博客以来，隔一段时间就出现一次部署失败的错误，每次都差不多，莫名其妙地出现的。。。前几次不知道怎么瞎搞就好了。<br>
 现在做一下记录，防止以后出错用。<br>
 错误如下</p>
 <div class="highlight"><div class="chroma">
@@ -2646,7 +2646,7 @@ at ChildProcess.&lt;anonymous&gt; <span class="o">(</span>H:<span class="se">\H<
 </code></pre></td></tr></table>
 </div>
 </div><p>确保ssh正常，hexo-deploy-git插件正常的情况下删除.deploy_git文件夹就好了。
-最后吐槽一下，这个鬼错误，搞我一晚上醉了。。。我又打算重装了的。。。。。/吐血</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
+最后吐槽一下，这个鬼错误，搞我一晚上醉了。。。我又打算重装了的。。。。。/吐血</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
 <p>本文适合我这种纯小白。
 目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js,后加载）<br>
 但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
@@ -2807,7 +2807,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>hexo+github搭建个人博客及美化</title><link>https://lruihao.cn/posts/hexobuild/</link><pubDate>Fri, 01 Jun 2018 14:34:23 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexobuild/</guid><description><![CDATA[<p><strong><a href="/categories/hexo/" rel="">更多关于hexo</a></strong></p>
+</div>]]></description></item><item><title>hexo+github搭建个人博客及美化</title><link>https://lruihao.cn/posts/hexobuild/</link><pubDate>Fri, 01 Jun 2018 14:34:23 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexobuild/</guid><description><![CDATA[<p><strong><a href="/categories/hexo/" rel="">更多关于hexo</a></strong></p>
 <h1 id="首先">首先</h1>
 <p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener noreffer">官方文档</a>是我们的第一手资料，也是最好的。
 安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
@@ -3096,7 +3096,7 @@ local_search:
 <li><a href="https://markdown.tw/" target="_blank" rel="noopener noreffer">繁体原始文件</a></li>
 <li><a href="https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md" target="_blank" rel="noopener noreffer">繁体原始文件github</a></li>
 </ul>
-]]></description></item><item><title>hexo 添加图片，音乐，链接，视频</title><link>https://lruihao.cn/posts/hexowrite/</link><pubDate>Thu, 31 May 2018 23:19:22 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/hexowrite/</guid><description><![CDATA[<blockquote>
+]]></description></item><item><title>hexo 添加图片，音乐，链接，视频</title><link>https://lruihao.cn/posts/hexowrite/</link><pubDate>Thu, 31 May 2018 23:19:22 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexowrite/</guid><description><![CDATA[<blockquote>
 <p><strong>如果实在搞得头晕直接去<a href="https://www.jianshu.com/" target="_blank" rel="noopener noreffer">简书</a>写文章，再把简书生成的md文章复制过来就好了（简书是个不错的Markdown在线编辑器），还可以去<a href="https://maxiang.io/" target="_blank" rel="noopener noreffer">马克飞象，专为印象笔记打造的 Markdown 编辑器</a>，<a href="https://www.typora.io/#" target="_blank" rel="noopener noreffer">typora 也是不错的</a>，突然发现<a href="https://www.csdn.net/" target="_blank" rel="noopener noreffer">csdn</a>也支持Markdown编译器了</strong></p>
 </blockquote>
 <h1 id="1首先">1.首先</h1>

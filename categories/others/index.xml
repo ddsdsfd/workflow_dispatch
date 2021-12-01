@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>others - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/others/</link><description>others - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/others/" rel="self" type="application/rss+xml"/><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>others - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/others/</link><description>others - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/others/" rel="self" type="application/rss+xml"/><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
@@ -50,7 +50,7 @@
         
     </a><figcaption class="image-caption">演示</figcaption>
     </figure></li>
-</ol>]]></description></item><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
+</ol>]]></description></item><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
 <p>黑盒测试着重测试软件功能，它并不涉及程序的内部结构和内容特性，主要根据规格说明，只依靠被测试程序的输入和输出之间关系或程序的功能来设计测试用例。<br>
 白盒测试则清楚程序内部的结构以及是如何运作的，因此白盒测试需要对系统内部的结构和工作原理有一个清楚的了解。</p>
 </blockquote>
@@ -196,14 +196,14 @@
 </div><h1 id="测试">测试</h1>
 <p><br>
 <br>
-</p>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
+</p>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
 <p>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法：</p>
 </blockquote>
 <ol>
 <li>确认是否把操作系统的字体调整为非100%了</li>
 <li>把<code>studio\dropins\studio-app2\plugins\plugin\lib\cef1\chromium.jar</code>这个jar包复制到<code>studio\dropins\studio-app2\plugins\plugin\lib</code>下，重启studio</li>
 </ol>
-]]></description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description><![CDATA[<h2 id="外存的组织方式">外存的组织方式</h2>
+]]></description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description><![CDATA[<h2 id="外存的组织方式">外存的组织方式</h2>
 <h3 id="连续组织方式">连续组织方式</h3>
 <ul>
 <li>
@@ -446,7 +446,7 @@
 <li>重复文件的一致性</li>
 <li>链接数一致性检查</li>
 </ul>
-]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
 <p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
 <ul>
 <li>git add * (添加需要提交的文件，这里全选)</li>
@@ -519,7 +519,7 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
 </code></pre></td></tr></table>
 </div>
-</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item><item><title>博採眾長app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" rel="noopener noreffer"  class="card-link">
+</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item><item><title>博採眾長app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" rel="noopener noreffer"  class="card-link">
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
@@ -1788,7 +1788,7 @@ git push
 <span class="kr">end</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description><![CDATA[<h3 id="安装">安装</h3>
+</div>]]></description></item><item><title>caddy-两步搭建超简单云盘</title><link>https://lruihao.cn/posts/caddy-file/</link><pubDate>Sun, 11 Nov 2018 13:59:27 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/caddy-file/</guid><description><![CDATA[<h3 id="安装">安装</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1933,7 +1933,7 @@ caddy
 Ctrl+c
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description><![CDATA[<blockquote>
 <p>我用的 win10</p>
 </blockquote>
 <h3 id="打开控制面板">打开控制面板</h3>
@@ -1955,7 +1955,7 @@ Ctrl+c
 </p>
 <p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的ip地址访问了（手机也可以）<br>
 本地ip可以通过cmd用ipconfig查看</p>
-]]></description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/posts/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/font-mmt/</guid><description><![CDATA[<div class="featured-image">
+]]></description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/posts/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/font-mmt/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/font-mmt/images/word1.png" referrerpolicy="no-referrer">
             </div><div id="id-4"><span id="id-1"></span>
 <span id="id-2"></span>
@@ -2000,7 +2000,7 @@ Ctrl+c
 <hr>
 <h2 id="字稿">字稿</h2>
 <iframe height=800 width=100% src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-&share=1&from=singlemessage
-" frameborder=0 allowfullscreen></iframe>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
+" frameborder=0 allowfullscreen></iframe>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
 <p>流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度。</p>
 <table>
 <thead>
@@ -2086,7 +2086,7 @@ Ctrl+c
 </tr>
 </tbody>
 </table>
-]]></description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/data/</guid><description><![CDATA[<h3 id="数据的表示">数据的表示</h3>
+]]></description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/data/</guid><description><![CDATA[<h3 id="数据的表示">数据的表示</h3>
 <p><strong>数据的表示可分为：原码，反码和补码。（二进制）</strong></p>
 <ul>
 <li>原码： 符号位0为正，1为负。</li>
@@ -2114,7 +2114,7 @@ Ctrl+c
 8位二进制，除去符号位还有7位，7个1为最大数，相当于8个1减1，也就是2^7-1,所以范围就算出来了。</p>
 <h3 id="浮点数运算">浮点数运算</h3>
 <p><strong>对阶（小阶对大阶）+ 尾数计算（科学计数法）+ 结果规格化（科学技术法）</strong></p>
-]]></description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description><![CDATA[<h2 id="在线算法httpsbaikebaiducomiteme59ca8e7babfe7ae97e6b3954449947"><a href="https://baike.baidu.com/item/%E5%9C%A8%E7%BA%BF%E7%AE%97%E6%B3%95/4449947" target="_blank" rel="noopener noreffer">在线算法</a></h2>
+]]></description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description><![CDATA[<h2 id="在线算法httpsbaikebaiducomiteme59ca8e7babfe7ae97e6b3954449947"><a href="https://baike.baidu.com/item/%E5%9C%A8%E7%BA%BF%E7%AE%97%E6%B3%95/4449947" target="_blank" rel="noopener noreffer">在线算法</a></h2>
 <p>在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。</p>
 <p>在计算机科学中，一个在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。相对的，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。例如，选择排序在排序前就需要知道所有待排序元素，然而插入排序就不必。<br>
 因为在线算法并不知道整个的输入，所以它被迫做出的选择最后可能会被证明不是最优的，对在线算法的研究主要集中在当前环境下怎么做出选择。对相同问题的在线算法和离线算法的对比分析形成了以上观点。如果想从其他角度了解在线算法可以看一下流算法（关注精确呈现过去的输入所使用的内存的量），动态算法（关注维护一个在线输入的结果所需要的时间复杂度）和在线机器学习。<br>
@@ -2124,7 +2124,7 @@ Ctrl+c
 <p>设计策略  在执行算法前输入已知的基本假设<br>
 前提  具有问题完全信息<br>
 算法设计策略都是基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果，通常将这类具有问题完全信息前提下设计出的算法称为离线算法( off line algorithms)</p>
-]]></description></item><item><title>位运算</title><link>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Thu, 14 Jun 2018 20:22:21 +0800</pubDate><author>作者</author><guid>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description><![CDATA[<h2 id="1-运算">1. &amp;运算</h2>
+]]></description></item><item><title>位运算</title><link>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Thu, 14 Jun 2018 20:22:21 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description><![CDATA[<h2 id="1-运算">1. &amp;运算</h2>
 <p>&amp;运算通常用于二进制取位操作，例如一个数 &amp; 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位为0表示该数为偶数，最末位为1表示该数为奇数.</p>
 <h2 id="2-运算">2. |运算</h2>
 <p>|运算通常用于二进制特定位上的无条件赋值，例如一个数or 1的结果就是把二进制最末位强行变成1。如果需要把二进制最末位变成0，对这个数| 1之后再减一就可以了，其实际意义就是把这个数强行变成最接近的偶数。</p>
@@ -2148,7 +2148,7 @@ Ctrl+c
 <blockquote>
 <p>原文:<code>http://www.matrix67.com/blog/archives/263</code></p>
 </blockquote>
-]]></description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
+]]></description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
 <p>本文来自kio对Markdown的基础教程
 其他推荐参考：<a href="https://segmentfault.com/markdown" target="_blank" rel="noopener noreffer">https://segmentfault.com/markdown</a></p>
 </blockquote>
@@ -2278,7 +2278,7 @@ Ctrl+c
 <p><a href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w" target="_blank" rel="noopener noreffer">Kio：密码99o4</a>可以导出PDF，md文件
 <a href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw" target="_blank" rel="noopener noreffer">markdownx：密码a5n4</a>
 <a href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg" target="_blank" rel="noopener noreffer">SM.MS图床：密码ch0v</a></p>
-<p>若链接失效还可以去酷安上下载。</p>]]></description></item><item><title>各种Links汇总与分享</title><link>https://lruihao.cn/posts/links/</link><pubDate>Thu, 07 Jun 2018 00:06:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/links/</guid><description><![CDATA[<blockquote>
+<p>若链接失效还可以去酷安上下载。</p>]]></description></item><item><title>各种Links汇总与分享</title><link>https://lruihao.cn/posts/links/</link><pubDate>Thu, 07 Jun 2018 00:06:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/links/</guid><description><![CDATA[<blockquote>
 <p>2021/10/1 更新<br>
 使用 Chrome 等浏览器管理书签是更好更方便的方式，登陆 google 账号，或者导出 html 书签文件都挺方便。</p>
 </blockquote>

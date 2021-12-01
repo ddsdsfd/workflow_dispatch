@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Backend - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/backend/</link><description>Backend - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/backend/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Backend - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/backend/</link><description>Backend - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/backend/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
@@ -180,7 +180,7 @@ php artisan db:seed
 </div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>,使用用户名<code>admin</code>和密码<code>admin</code>登录.</p>
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
-<p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>
 <h1 id="搭建php环境">搭建php环境</h1>
@@ -738,7 +738,7 @@ php artisan make:controller PageController
 php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
 <p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
 <p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到Windows桌面上随时使用~<br>
@@ -910,7 +910,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
@@ -1055,7 +1055,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <h1 id="潇x巴哥的java-web版本">潇x巴哥的java web版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>SQL总结</title><link>https://lruihao.cn/posts/sql/</link><pubDate>Thu, 16 Jan 2020 19:28:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/sql/</guid><description><![CDATA[<blockquote>
+</p>]]></description></item><item><title>SQL总结</title><link>https://lruihao.cn/posts/sql/</link><pubDate>Thu, 16 Jan 2020 19:28:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sql/</guid><description><![CDATA[<blockquote>
 <p>SQL增删改查(CRUD)语句与常用函数总结。</p>
 </blockquote>
 <h2 id="sql-introduction">SQL Introduction</h2>
@@ -1340,7 +1340,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 或者 <br>
 <code>SELECT &lt;col-1&gt; AS &lt;alias-a&gt;,&lt;col-2&gt; AS &lt;alias-b&gt;,&lt;col-3&gt; AS &lt;alias-c&gt;,... FROM &lt;table&gt;;</code></p>
 <h2 id="总结">总结</h2>
-<p>以上整理的内容均为基础内容，更多进阶知识还需各位自行 Google。</p>]]></description></item><item><title>php同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
+<p>以上整理的内容均为基础内容，更多进阶知识还需各位自行 Google。</p>]]></description></item><item><title>php同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
 <p>php 主动推送站点链接到百度站长，神马站长进行 SEO。</p>
 </blockquote>
 <h1 id="代码">代码</h1>
@@ -1402,7 +1402,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="提交结果">提交结果</h1>
-<p></p>]]></description></item><item><title>php按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
+<p></p>]]></description></item><item><title>php按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
 <p>首先采用<code>fopen()</code>函数打开文件，得到返回值的就是资源类型。接着采用while循环一行行地读取文件，然后输出每行的文字。<code>feof()</code>判断是否到最后一行,<code>fgets()</code>读取一行文本。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1508,7 +1508,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="结果">结果</h1>
-<p></p>]]></description></item><item><title>简单评论模块--php表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
+<p></p>]]></description></item><item><title>简单评论模块--php表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
 <p>简单模仿了一个评论模板，当然肯定是没有博客的valine这么强大的hhhh，<br>
 <strong>PHP表单安全性的重要提示</strong><br>
 <code>$_SERVER[&quot;PHP_SELF&quot;]</code>变量能够被黑客利用！<br>
@@ -1735,7 +1735,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p></p>]]></description></item><item><title>php 函数学习</title><link>https://lruihao.cn/posts/phpfunc/</link><pubDate>Mon, 15 Jul 2019 11:37:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/phpfunc/</guid><description><![CDATA[<blockquote>
+</div><p></p>]]></description></item><item><title>php 函数学习</title><link>https://lruihao.cn/posts/phpfunc/</link><pubDate>Mon, 15 Jul 2019 11:37:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfunc/</guid><description><![CDATA[<blockquote>
 <p>练习php函数的基本使用。<br>
 注：<br>
 必选参数在可选参数的前面。<br>
@@ -1783,7 +1783,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <span class="cp">?&gt;</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
-</div><p></p>]]></description></item><item><title>python 实训总结Ⅱ</title><link>https://lruihao.cn/posts/pysx2/</link><pubDate>Fri, 21 Jun 2019 18:46:41 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/pysx2/</guid><description><![CDATA[<blockquote>
+</div><p></p>]]></description></item><item><title>python 实训总结Ⅱ</title><link>https://lruihao.cn/posts/pysx2/</link><pubDate>Fri, 21 Jun 2019 18:46:41 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysx2/</guid><description><![CDATA[<blockquote>
 <p>后面几天讲的有点杂，简单记录一下知识点。</p>
 </blockquote>
 <h1 id="619">6.19</h1>
@@ -3062,7 +3062,7 @@ pip install TA-Lib
     <span class="n">app</span><span class="o">.</span><span class="n">MainLoop</span><span class="p">()</span> 
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>python 实训总结Ⅰ</title><link>https://lruihao.cn/posts/pysx1/</link><pubDate>Tue, 18 Jun 2019 18:41:00 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/pysx1/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>python 实训总结Ⅰ</title><link>https://lruihao.cn/posts/pysx1/</link><pubDate>Tue, 18 Jun 2019 18:41:00 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysx1/</guid><description><![CDATA[<blockquote>
 <p>以前和前一段时间自己也学习了一下python，也写了几个小爬虫；
 这次正好又课程安排了为期两周的综合实训，主要是**“用python做量化交易”**
 进行了两天，讲的都是一些基本的东西，以前也接触过，所以很容易理解。还讲了一些软件，pycharm，anaconda,sublime等大都也都用过。anaconda倒是第一次接触。</p>
@@ -3306,7 +3306,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <p>Google翻译意思是:
 美丽胜过丑陋。显式优于隐式。简单比复杂更好。复杂比复杂更好。Flat优于嵌套。稀疏优于密集。可读性很重要。特殊情况不足以打破规则。虽然实用性胜过纯洁。错误不应该默默地传递。除非明确沉默。面对模棱两可，拒绝猜测的诱惑。应该有一个最好只有一个明显的方法来做到这一点。虽然这种方式起初可能并不明显，除非你是荷兰人。现在比永远好。虽然现在永远不会比正确好。如果实施很难解释，这是一个坏主意。如果实现很容易解释，那可能是个好主意。命名空间是一个很棒的主意，让我们做更多的事情吧！</p>
 </blockquote>
-<h3 id="turtle绘图库内置模块">turtle绘图库（内置模块）</h3>]]></description></item><item><title>宝塔面板安装ImgURL图床</title><link>https://lruihao.cn/posts/imgurl/</link><pubDate>Thu, 16 May 2019 20:31:33 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/imgurl/</guid><description><![CDATA[<div class="featured-image">
+<h3 id="turtle绘图库内置模块">turtle绘图库（内置模块）</h3>]]></description></item><item><title>宝塔面板安装ImgURL图床</title><link>https://lruihao.cn/posts/imgurl/</link><pubDate>Thu, 16 May 2019 20:31:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/imgurl/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>ImgURL是一个开源、免费的图床程序，ImgURL 2.x之后对环境要求更高，尤其是ImageMagick组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装ImgURL 2.x图床的过程（包括ImgURL 2.x需要的各种组件）
@@ -3357,7 +3357,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <ul>
 <li>如果安装遇到任何问题，请留言反馈或到<a href="https://ttt.sh/category/6/imgurl%E5%9B%BE%E5%BA%8A" target="_blank" rel="noopener noreffer">3T官方社区</a>进行反馈</li>
 <li>ImgURL更多使用说明请参考帮助文档：<a href="https://dwz.ovh/imgurldoc" target="_blank" rel="noopener noreffer">https://dwz.ovh/imgurldoc</a></li>
-</ul>]]></description></item><item><title>python 设置程序每天 8 点定时执行任务</title><link>https://lruihao.cn/posts/pysettime/</link><pubDate>Thu, 09 May 2019 23:26:54 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/pysettime/</guid><description><![CDATA[<blockquote>
+</ul>]]></description></item><item><title>python 设置程序每天 8 点定时执行任务</title><link>https://lruihao.cn/posts/pysettime/</link><pubDate>Thu, 09 May 2019 23:26:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysettime/</guid><description><![CDATA[<blockquote>
 <p>第一次运行根据程序执行时间，判断程序休眠的时间，尽最大可能休眠，节省系统资源。<br>
 第二次运行后直接休眠一天，到每天早上8点执行任务。<br>
 （该程序需要一直挂着，保持网络不断）</p>
@@ -3406,7 +3406,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">86400</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>安装pyinstaller出错的解决办法及csdn工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>安装pyinstaller出错的解决办法及csdn工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/pyinstallererror/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>用过命令<code>pip install pyinstaller</code>安装失败，此包依赖于pywin32，安装前需要先<code>pip install pywin32</code>,我安装了还是出错，稍微百度了一下也没有看到解决办法。
@@ -3453,7 +3453,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div>
 </div><p>
 </p>
-<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及exe可执行文件。</p>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
+<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及exe可执行文件。</p>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/SingleThreadDown/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。</p>
@@ -3666,7 +3666,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div>
 </div><h1 id="运行结果测试">运行结果测试</h1>
 <p>通过<code>https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf</code>下载沐目体ttf字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。</p>
-<p></p>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
+<p></p>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
@@ -3706,7 +3706,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <h1 id="jsondump-和-jsonload">json.dump() 和 json.load()</h1>
 <p>相对于上面所讲的dumps和loads来说，dump和load函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
 <p></p>
-<p>上例列举出了json的四个方法：dumps（）和dump（）、loads（）和load（）的简单使用方法，可见，Python对于json的处理相当方便，不像c++那样（谁用谁知道）。</p>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
+<p>上例列举出了json的四个方法：dumps（）和dump（）、loads（）和load（）的简单使用方法，可见，Python对于json的处理相当方便，不像c++那样（谁用谁知道）。</p>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
 <p>通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
 </blockquote>
 <ul>
@@ -3761,7 +3761,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </code></pre></td></tr></table>
 </div>
 </div><p>运行后会在屏幕打印出返回的json数据
-</p>]]></description></item><item><title>java 通过 URL 和 URLConnection 访问网页资源</title><link>https://lruihao.cn/posts/urlreader/</link><pubDate>Mon, 06 May 2019 17:41:35 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/urlreader/</guid><description><![CDATA[<blockquote>
+</p>]]></description></item><item><title>java 通过 URL 和 URLConnection 访问网页资源</title><link>https://lruihao.cn/posts/urlreader/</link><pubDate>Mon, 06 May 2019 17:41:35 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/urlreader/</guid><description><![CDATA[<blockquote>
 <p>该例中首先生成一个URL对象lrh，指向RUI豪小栈，然后再调用lrh.openStream()方法生成该URL的一个输入流，这是一个字节流，在此基础上进一步通过InputStreamReader和BufferedReader构造一个带缓冲功能的字符流，并通过这个字符流对象读取该URL的html内容，进而输出到桌面文件和控制台屏幕。URLConnection类也可以用来对由URL引用的资源进行读写操作，前提是先通过connect()方法建立连接，然后再去获取响应头信息或响应内容。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -3862,7 +3862,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>文件加密解密（字节流）</title><link>https://lruihao.cn/posts/byteio/</link><pubDate>Thu, 02 May 2019 23:04:32 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/byteio/</guid><description><![CDATA[<blockquote>
 <p>基本功能： 给定一个密钥，读取文件内容，加密后，输出到另外一个文件。<br/><br/>
 这里使用文件输入流读取文件内容，然后每个字节和密码进行异或简单加密。加密完成，使用文件输出流写入另一个文件中。解密和加密方法一样。利用的是对同一个数异或两遍其值不变的性质。因此一个程序可以完成加密和解密功能。只需修改文件名即可。</p>
 </blockquote>
@@ -4114,7 +4114,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>模拟借书系统（java异常练习）</title><link>https://lruihao.cn/posts/javaexception/</link><pubDate>Wed, 01 May 2019 16:52:21 +0000</pubDate><author>作者</author><guid>https://lruihao.cn/posts/javaexception/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>模拟借书系统（java异常练习）</title><link>https://lruihao.cn/posts/javaexception/</link><pubDate>Wed, 01 May 2019 16:52:21 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/javaexception/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/JavaException/images/1.png" referrerpolicy="no-referrer">
             </div><h1 id="实现代码">实现代码</h1>
 <blockquote>
