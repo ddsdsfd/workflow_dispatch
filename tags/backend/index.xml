@@ -3454,7 +3454,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div><p>
 </p>
 <p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及exe可执行文件。</p>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/SingleThreadDown/images/1.png" referrerpolicy="no-referrer">
+                <img src="/posts/singlethreaddown/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。</p>
 </blockquote>
@@ -4115,7 +4115,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>模拟借书系统（java异常练习）</title><link>https://lruihao.cn/posts/javaexception/</link><pubDate>Wed, 01 May 2019 16:52:21 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/javaexception/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/JavaException/images/1.png" referrerpolicy="no-referrer">
+                <img src="/posts/javaexception/images/1.png" referrerpolicy="no-referrer">
             </div><h1 id="实现代码">实现代码</h1>
 <blockquote>
 <p>这里的异常主要是<code>InputMismatchException</code>,可以直接捕获该异常，我直接捕获了父类异常。。。</p>
