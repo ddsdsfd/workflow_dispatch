@@ -1342,7 +1342,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <details>
 <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
 <ul>
-<li><i class="far fa-square fa-fw"></i> 安装 沐目体</li>
+<li><i class="far fa-check-square fa-fw"></i> 安装 沐目体</li>
 <li><i class="far fa-square fa-fw"></i> 压缩 沐目体 fontspider</li>
 <li><i class="far fa-square fa-fw"></i> 沐目体 post 修订</li>
 <li><i class="far fa-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
@@ -1368,14 +1368,14 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </blockquote>
 <p>进度更新至 <a href="https://github.com/Lruihao/hugo-blog/issues/8" target="_blank" rel="noopener noreffer">#8</a></p>
 <ul>
-<li><i class="far fa-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对其等</li>
-<li><i class="far fa-square fa-fw"></i> 沐目体引入</li>
-<li><i class="far fa-square fa-fw"></i> TOC 序号生成</li>
-<li><i class="far fa-square fa-fw"></i> Fix: 无标题时也会生成目录的 BUG</li>
-<li><i class="far fa-square fa-fw"></i> subtitle 等细节优化</li>
-<li><i class="far fa-square fa-fw"></i> Fix: typeit 打印代码时跑版的问题</li>
-<li><i class="far fa-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
-<li><i class="far fa-square fa-fw"></i> Code Review</li>
+<li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
+<li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>
+<li><i class="far fa-square fa-fw"></i> <del>TOC 序号生成</del></li>
+<li><i class="far fa-square fa-fw"></i> <del>Fix: 无标题时也会生成目录的 BUG</del></li>
+<li><i class="far fa-check-square fa-fw"></i> subtitle 等细节优化</li>
+<li><i class="far fa-square fa-fw"></i> <del>Fix: typeit 打印代码时跑版的问题</del></li>
+<li><i class="far fa-check-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
+<li><i class="far fa-check-square fa-fw"></i> Code Review</li>
 </ul>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
 <p>本以为 coding pages 与腾讯云合作后会更好，没想到正是这种初期 bug 不断，速度也是非常慢。比 gitee, 甚至 github 都要慢很多了。所以决定放弃 coding 了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的 cos 桶 xml 制作动态相册的文章，知道了对象存储这个玩意，腾讯云 COS 提供免费 50G 的存储空间，还有 CDN 加速服务，我觉得是个不错的选择，部署后发现速度还挺好。<br>
 适用于 hexo, hugo 等静态博客的部署。</p>

@@ -1342,7 +1342,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <details>
 <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
 <ul>
-<li><i class="far fa-square fa-fw"></i> 安装 沐目体</li>
+<li><i class="far fa-check-square fa-fw"></i> 安装 沐目体</li>
 <li><i class="far fa-square fa-fw"></i> 压缩 沐目体 fontspider</li>
 <li><i class="far fa-square fa-fw"></i> 沐目体 post 修订</li>
 <li><i class="far fa-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
@@ -1368,12 +1368,12 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </blockquote>
 <p>进度更新至 <a href="https://github.com/Lruihao/hugo-blog/issues/8" target="_blank" rel="noopener noreffer">#8</a></p>
 <ul>
-<li><i class="far fa-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对其等</li>
-<li><i class="far fa-square fa-fw"></i> 沐目体引入</li>
-<li><i class="far fa-square fa-fw"></i> TOC 序号生成</li>
-<li><i class="far fa-square fa-fw"></i> Fix: 无标题时也会生成目录的 BUG</li>
-<li><i class="far fa-square fa-fw"></i> subtitle 等细节优化</li>
-<li><i class="far fa-square fa-fw"></i> Fix: typeit 打印代码时跑版的问题</li>
-<li><i class="far fa-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
-<li><i class="far fa-square fa-fw"></i> Code Review</li>
+<li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
+<li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>
+<li><i class="far fa-square fa-fw"></i> <del>TOC 序号生成</del></li>
+<li><i class="far fa-square fa-fw"></i> <del>Fix: 无标题时也会生成目录的 BUG</del></li>
+<li><i class="far fa-check-square fa-fw"></i> subtitle 等细节优化</li>
+<li><i class="far fa-square fa-fw"></i> <del>Fix: typeit 打印代码时跑版的问题</del></li>
+<li><i class="far fa-check-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
+<li><i class="far fa-check-square fa-fw"></i> Code Review</li>
 </ul>]]></description></item></channel></rss>

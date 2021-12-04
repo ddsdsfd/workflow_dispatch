@@ -36,7 +36,7 @@
 <!--more-->
 
 ## 预览
-{{< style "font-family: mmt-eg;font-size: 30px;text-align: center;" div >}}
+{{< style "font-family: mmt-eg;font-size: 30px;line-height:30px;text-align: center;" div >}}
 前尘硬化像石头  
 随缘地抛下便逃走  
 我绝不罕有  
