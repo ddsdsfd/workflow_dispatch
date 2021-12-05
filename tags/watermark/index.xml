@@ -190,18 +190,18 @@
 
 <span class="nx">Tiger</span><span class="p">.</span><span class="nx">Watermark</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">Watermark</span><span class="p">()</span> <span class="p">{</span>
 
-  <span class="kd">var</span> <span class="nx">_wmObserver</span><span class="p">;</span>
-  <span class="kd">var</span> <span class="nx">_wmParentObserver</span><span class="p">;</span>
-  <span class="kd">var</span> <span class="nx">_windowsWidth</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span><span class="p">;</span>
-  <span class="kd">var</span> <span class="nx">_windowsHeight</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span><span class="p">;</span>
 
   <span class="cm">/**
 </span><span class="cm">   * create Dom of watermark&#39;s container 
 </span><span class="cm">   * @param {Tiger.Watermark} watermark
 </span><span class="cm">   */</span>
-  <span class="kd">var</span> <span class="nx">_createContainer</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
-    <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s1">&#39;.tiger-main-container&#39;</span><span class="p">)</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">createContainer</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s1">&#39;.tiger-main-container&#39;</span><span class="p">)</span>
             <span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;tiger-watermark-container&#39;</span><span class="p">)</span>
             <span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">className</span><span class="p">)</span>
             <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;aria-hidden&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
@@ -212,21 +212,21 @@
 </span><span class="cm">   * @param {Tiger.Watermark} watermark
 </span><span class="cm">   * @param {Object} options
 </span><span class="cm">   */</span>
-  <span class="kd">var</span> <span class="nx">_createWatermark</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">createWatermark</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">||</span> <span class="mi">50</span><span class="p">;</span>
     <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">||</span> <span class="mi">30</span><span class="p">;</span>
     <span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">||</span> <span class="mi">150</span><span class="p">;</span>
     <span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">||</span> <span class="mi">20</span><span class="p">;</span>
     <span class="kd">let</span> <span class="nx">navbarHeight</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tiger-navbar&#39;</span><span class="p">).</span><span class="nx">outerHeight</span><span class="p">()</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kd">let</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">((</span><span class="nx">_windowsHeight</span> <span class="o">-</span> <span class="nx">navbarHeight</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span><span class="p">));</span>
-    <span class="kd">let</span> <span class="nx">cols</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">_windowsWidth</span> <span class="o">/</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span><span class="p">));</span>
-    <span class="kd">let</span> <span class="nx">offsetLeft</span> <span class="o">=</span> <span class="p">(</span><span class="nx">_windowsWidth</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">cols</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">*</span> <span class="p">(</span><span class="nx">cols</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="kd">let</span> <span class="nx">offsetTop</span> <span class="o">=</span>  <span class="nx">navbarHeight</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="nx">_windowsHeight</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">*</span> <span class="nx">rows</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">*</span> <span class="p">(</span><span class="nx">rows</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">((</span><span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">-</span> <span class="nx">navbarHeight</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span><span class="p">));</span>
+    <span class="kd">let</span> <span class="nx">cols</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">/</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span><span class="p">));</span>
+    <span class="kd">let</span> <span class="nx">offsetLeft</span> <span class="o">=</span> <span class="p">(</span><span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">cols</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">*</span> <span class="p">(</span><span class="nx">cols</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">offsetTop</span> <span class="o">=</span>  <span class="nx">navbarHeight</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">height</span> <span class="o">*</span> <span class="nx">rows</span> <span class="o">-</span> <span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">*</span> <span class="p">(</span><span class="nx">rows</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">row</span> <span class="o">&lt;</span> <span class="nx">rows</span><span class="p">;</span> <span class="nx">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
       <span class="kd">let</span> <span class="nx">top</span> <span class="o">=</span> <span class="nx">offsetTop</span> <span class="o">+</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">rowSpaceing</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">height</span><span class="p">)</span> <span class="o">*</span> <span class="nx">row</span><span class="p">;</span>
       <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">col</span> <span class="o">&lt;</span> <span class="nx">cols</span><span class="p">;</span> <span class="nx">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="kd">let</span> <span class="nx">left</span> <span class="o">=</span> <span class="nx">offsetLeft</span> <span class="o">+</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">colSpaceing</span> <span class="o">+</span> <span class="nx">options</span><span class="p">.</span><span class="nx">width</span><span class="p">)</span> <span class="o">*</span> <span class="nx">col</span><span class="p">;</span>
-        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)).</span><span class="nx">appendTo</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span><span class="p">)</span>
+        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)).</span><span class="nx">appendTo</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">)</span>
                 <span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;tiger-watermark&#39;</span><span class="p">)</span>
                 <span class="p">.</span><span class="nx">css</span><span class="p">({</span>
                   <span class="s1">&#39;left&#39;</span><span class="o">:</span> <span class="sb">`</span><span class="si">${</span><span class="nx">left</span><span class="si">}</span><span class="sb">px`</span><span class="p">,</span>
@@ -247,11 +247,11 @@
 </span><span class="cm">  * @param {Tiger.Watermark} watermark
 </span><span class="cm">  * @param {Object} options
 </span><span class="cm">  */</span>
- <span class="kd">var</span> <span class="nx">_render</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">){</span>
-    <span class="nx">_wmObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
-    <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
-    <span class="nx">_createWatermark</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
-    <span class="nx">_wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span><span class="p">,</span> <span class="p">{</span>
+ <span class="kd">var</span> <span class="mi">_</span><span class="nx">render</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">){</span>
+    <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">empty</span><span class="p">();</span>
+    <span class="mi">_</span><span class="nx">createWatermark</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">,</span> <span class="p">{</span>
       <span class="nx">attributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
       <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
       <span class="nx">characterData</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
@@ -263,27 +263,27 @@
 </span><span class="cm">   * Observe watermark and watermark&#39;s parentNode mutations
 </span><span class="cm">   * @param {Tiger.Watermark} watermark
 </span><span class="cm">   */</span>
-  <span class="kd">var</span> <span class="nx">_addObserve</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">watermark</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">addObserve</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">watermark</span><span class="p">){</span>
     <span class="c1">//observe watermark element and its child element
-</span><span class="c1"></span>    <span class="nx">_wmObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">mutations</span><span class="p">,</span> <span class="nx">observer</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">_render</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
+</span><span class="c1"></span>    <span class="mi">_</span><span class="nx">wmObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">mutations</span><span class="p">,</span> <span class="nx">observer</span><span class="p">)</span> <span class="p">{</span>
+      <span class="mi">_</span><span class="nx">render</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
     <span class="p">});</span>
-    <span class="nx">_wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span><span class="p">,</span> <span class="p">{</span>
+    <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">,</span> <span class="p">{</span>
       <span class="nx">attributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
       <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
       <span class="nx">characterData</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
       <span class="nx">subtree</span><span class="o">:</span><span class="kc">true</span> 
     <span class="p">});</span>
     <span class="c1">//observe parent element, recreate if the element is deleted
-</span><span class="c1"></span>    <span class="nx">_wmParentObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">mutations</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="c1"></span>    <span class="mi">_</span><span class="nx">wmParentObserver</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">mutations</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">for</span><span class="p">(</span><span class="nx">m</span> <span class="k">of</span> <span class="nx">mutations</span><span class="p">){</span>
         <span class="k">if</span><span class="p">(</span><span class="nx">m</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="s1">&#39;childList&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">m</span><span class="p">.</span><span class="nx">removedNodes</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span>
           <span class="o">&amp;&amp;</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.tiger-watermark-container&#39;</span><span class="p">).</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-          <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s1">&#39;.tiger-main-container&#39;</span><span class="p">);</span>
+          <span class="nx">$</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s1">&#39;.tiger-main-container&#39;</span><span class="p">);</span>
         <span class="p">}</span>
       <span class="p">}</span>
     <span class="p">});</span>
-    <span class="nx">_wmParentObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="nx">_container</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="p">{</span>
+    <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">watermark</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="p">{</span>
       <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
       <span class="nx">subtree</span><span class="o">:</span> <span class="kc">true</span>
     <span class="p">});</span>
@@ -293,12 +293,12 @@
 </span><span class="cm">   * windows resize listener
 </span><span class="cm">   * @param {Tiger.Watermark} watermark
 </span><span class="cm">   */</span>
-  <span class="kd">var</span> <span class="nx">_addResizeListener</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">watermark</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="mi">_</span><span class="nx">addResizeListener</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">watermark</span><span class="p">){</span>
     <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-      <span class="k">if</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span> <span class="o">!==</span> <span class="nx">_windowsHeight</span> <span class="o">||</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span> <span class="o">!==</span> <span class="nx">_windowsWidth</span><span class="p">){</span>
-        <span class="nx">_windowsHeight</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span><span class="p">;</span>
-        <span class="nx">_windowsWidth</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span><span class="p">;</span>
-        <span class="nx">_render</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
+      <span class="k">if</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span> <span class="o">!==</span> <span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">||</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span> <span class="o">!==</span> <span class="mi">_</span><span class="nx">windowsWidth</span><span class="p">){</span>
+        <span class="mi">_</span><span class="nx">windowsHeight</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerHeight</span><span class="p">;</span>
+        <span class="mi">_</span><span class="nx">windowsWidth</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">outerWidth</span><span class="p">;</span>
+        <span class="mi">_</span><span class="nx">render</span><span class="p">(</span><span class="nx">watermark</span><span class="p">,</span> <span class="nx">watermark</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
       <span class="p">}</span>
     <span class="p">});</span>
   <span class="p">};</span>
@@ -317,31 +317,31 @@
 </span><span class="cm">   * @param {Number} [options.fontSize=0.85] watermark&#39;s fontSize. unit: rem
 </span><span class="cm">   */</span>
   <span class="kd">function</span> <span class="nx">Watermark</span><span class="p">(</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">_proto</span> <span class="o">=</span> <span class="nx">Watermark</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="mi">_</span><span class="nx">proto</span> <span class="o">=</span> <span class="nx">Watermark</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">options</span> <span class="o">=</span> <span class="nx">options</span><span class="p">;</span>
-    <span class="nx">_createContainer</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-    <span class="nx">_createWatermark</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
-    <span class="nx">_addObserve</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-    <span class="nx">_addResizeListener</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">createContainer</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">createWatermark</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">addObserve</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="mi">_</span><span class="nx">addResizeListener</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
 
     <span class="cm">/**
 </span><span class="cm">     * upload watermark&#39;s text content
 </span><span class="cm">     * @param {String} content watermark&#39;s text
 </span><span class="cm">     */</span>
-    <span class="nx">_proto</span><span class="p">.</span><span class="nx">upload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+    <span class="mi">_</span><span class="nx">proto</span><span class="p">.</span><span class="nx">upload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">content</span><span class="p">){</span>
        <span class="k">return</span><span class="p">;</span>
       <span class="p">}</span>
-      <span class="nx">_wmParentObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
-      <span class="nx">_wmObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+      <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+      <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
       <span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">content</span> <span class="o">=</span> <span class="nx">content</span><span class="p">;</span>
-      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_container</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;.tiger-watermark&#39;</span><span class="p">)</span>
+      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;.tiger-watermark&#39;</span><span class="p">)</span>
                         <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
-      <span class="nx">_wmParentObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_container</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="p">{</span>
+      <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="p">{</span>
         <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nx">subtree</span><span class="o">:</span> <span class="kc">true</span>
       <span class="p">});</span>
-      <span class="nx">_wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_container</span><span class="p">,</span> <span class="p">{</span>
+      <span class="mi">_</span><span class="nx">wmObserver</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">,</span> <span class="p">{</span>
         <span class="nx">attributes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
         <span class="nx">childList</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
         <span class="nx">characterData</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> 
@@ -354,16 +354,16 @@
 </span><span class="cm">     * Re render watermark
 </span><span class="cm">     * @param {Object} options
 </span><span class="cm">     */</span>
-    <span class="nx">_proto</span><span class="p">.</span><span class="nx">render</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{}){</span>
-      <span class="nx">_render</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">,</span> <span class="nx">options</span><span class="p">));</span>
+    <span class="mi">_</span><span class="nx">proto</span><span class="p">.</span><span class="nx">render</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">options</span> <span class="o">=</span> <span class="p">{}){</span>
+      <span class="mi">_</span><span class="nx">render</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">options</span><span class="p">,</span> <span class="nx">options</span><span class="p">));</span>
     <span class="p">}</span>
 
     <span class="cm">/**
 </span><span class="cm">     * Force remove watermark
 </span><span class="cm">     */</span>
-    <span class="nx">_proto</span><span class="p">.</span><span class="nx">remove</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-      <span class="nx">_wmParentObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
-      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_container</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+    <span class="mi">_</span><span class="nx">proto</span><span class="p">.</span><span class="nx">remove</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="mi">_</span><span class="nx">wmParentObserver</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">();</span>
+      <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="mi">_</span><span class="nx">container</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
     <span class="p">};</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="nx">Watermark</span><span class="p">;</span>

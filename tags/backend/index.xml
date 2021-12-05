@@ -3429,7 +3429,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <p>打包的app里并不包含任何源码，但将脚本的.pyc文件打包了。</p>
 <p>基本语法： <code>pyinstaller options myscript.py</code></p>
 <blockquote>
-<p>常用的可选参数如下：
+<p>常用的可选参数如下： 
 <code>--onefile</code> 将结果打包成一个可执行文件
 <code>--onedir</code> 将所有结果打包到一个文件夹中，该文件夹包括一个可执行文件和可执行文件执行时需要的依赖文件（默认）
 <code>--paths=DIR</code> 设置导入路径
