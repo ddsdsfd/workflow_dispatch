@@ -1,6 +1,6 @@
 /**
  * @author LRUIHAO.CN
- * @description Custom javascript for hugo-blog
+ * @description Custom javascript for hugo-blog.
  */
 const CustomJS = new (function () {
   /**
@@ -70,7 +70,8 @@ const CustomJS = new (function () {
    * @returns CustomJS
    */
   this.init = () => {
-    this.consoleInfo();
+    this.baiduStatistics().baiduPush();
+    this.fixToc().consoleInfo();
     return this;
   };
 })();
@@ -79,15 +80,11 @@ const CustomJS = new (function () {
  * Immediate.
  */
 (() => {
-  CustomJS.baiduStatistics().baiduPush();
-  CustomJS.fixToc();
-})();
-
-/**
- * It will be executed when the DOM tree is built.
- */
-document.addEventListener('DOMContentLoaded', () => {
-  // Listen to any DOM change and automatically perform spacing via MutationObserver()
-  pangu.autoSpacingPage(); // See https://github.com/vinta/pangu.js
   CustomJS.init();
-});
+  // It will be executed when the DOM tree is built.
+  document.addEventListener('DOMContentLoaded', () => {
+    // Listen to any DOM change and automatically perform spacing via MutationObserver()
+    // See https://github.com/vinta/pangu.js
+    pangu.autoSpacingPage();
+  });
+})();
