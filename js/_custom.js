@@ -4,18 +4,6 @@
  */
 const CustomJS = new (function () {
   /**
-   * Pangu white.
-   * Listen to any DOM change and automatically perform spacing via MutationObserver()
-   * @link https://github.com/vinta/pangu.js
-   * @returns CustomJS
-   */
-  this.panguListener = () => {
-    document.addEventListener('DOMContentLoaded', () => {
-      pangu.autoSpacingPage();
-    });
-    return this;
-  };
-  /**
    * Baidu auto push.
    * @link https://ziyuan.baidu.com
    * @returns CustomJS
@@ -91,14 +79,15 @@ const CustomJS = new (function () {
  * Immediate.
  */
 (() => {
-  CustomJS.panguListener();
   CustomJS.baiduStatistics().baiduPush();
   CustomJS.fixToc();
 })();
 
 /**
- * Waiting for the page to load.
+ * It will be executed when the DOM tree is built.
  */
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
+  // Listen to any DOM change and automatically perform spacing via MutationObserver()
+  pangu.autoSpacingPage(); // See https://github.com/vinta/pangu.js
   CustomJS.init();
-};
+});
