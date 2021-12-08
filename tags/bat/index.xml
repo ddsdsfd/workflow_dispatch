@@ -1,12 +1,12 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>bat - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/bat/</link><description>bat - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 17 Nov 2018 14:25:49 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/bat/" rel="self" type="application/rss+xml"/><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
-<p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>bat - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/bat/</link><description>bat - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 17 Nov 2018 14:25:49 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/bat/" rel="self" type="application/rss+xml"/><item><title>通过 bat 批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+<p>前面我有文章提到怎么提交本地文件到 github,coding 等远程仓库。每次可以分为三个步骤</p>
 <ul>
-<li>git add * (添加需要提交的文件，这里全选)</li>
+<li>git add * （添加需要提交的文件，这里全选）</li>
 <li>git commit -m &ldquo;提交信息&rdquo;</li>
 <li>git push</li>
 </ul>
 <p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。
-这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p>
+这个时候可以用到 windows 批处理 bat 文件 (linux 的话可以用 shell 脚本）。用完发现好用到不行！</p>
 </blockquote>
 <h3 id="新建文本文档">新建文本文档</h3>
 <div class="highlight"><div class="chroma">
@@ -30,8 +30,8 @@ git push
 </div><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p>
 <h3 id="使用">使用</h3>
 <p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p>
-<h3 id="hexo博客新姿势">hexo博客新姿势</h3>
-<p>hexo提交也很麻烦，当然也要批处理一下呀</p>
+<h3 id="hexo-博客新姿势">hexo 博客新姿势</h3>
+<p>hexo 提交也很麻烦，当然也要批处理一下呀</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -51,7 +51,7 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">start</span> cmd ifconfig
 </code></pre></td></tr></table>
 </div>
-</div><p>另外也说一下linux死机命令。fork炸弹。<br>
+</div><p>另外也说一下 linux 死机命令。fork 炸弹。<br>
 死机无非是耗尽系统资源</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -71,4 +71,4 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
 </code></pre></td></tr></table>
 </div>
-</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item></channel></rss>
+</div><p>将需要统计的文件夹拖到 bat 文件上。</p>]]></description></item></channel></rss>

@@ -1,12 +1,12 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>wxpy - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/wxpy/</link><description>wxpy - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 11 May 2019 17:02:31 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/wxpy/" rel="self" type="application/rss+xml"/><item><title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
-<p>用python模拟post请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
-要求每天早上8点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>wxpy - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/wxpy/</link><description>wxpy - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 11 May 2019 17:02:31 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/wxpy/" rel="self" type="application/rss+xml"/><item><title>python 实战：模拟 post 请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
+<p>用 python 模拟 post 请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
+要求每天早上 8 点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
 </blockquote>
 <h1 id="背景">背景</h1>
 <blockquote>
 <p>麻小科技：<br>
-麻小科技全名深圳市麻小科技有限公司，成立于2017年1月。是我高一的时候参加<code>Peer夏令营</code>带我们一个玩的“老师”和他的朋友的创业公司，说老师有点奇怪，我们都是直接叫名字的，比如大家都叫我瑞豪，我也就叫他文捷哥，简称捷哥吧。他们公司主要的开发模式是，小程序前端+php后端，然后做的是酒店小程序，为每个酒店定制小程序。这些小程序可以贴在客房中给访客提供一些服务，大大节省了成本也提高了效率。<br>
-然后每个酒店小程序都有独立的后台，后台会记录一些点击需求的数据。现在他们有一个需求需要把每个酒店小程序后台的数据在每天早上9点发送至对应酒店的微信群。</p>
+麻小科技全名深圳市麻小科技有限公司，成立于 2017 年 1 月。是我高一的时候参加<code>Peer 夏令营</code>带我们一个玩的“老师”和他的朋友的创业公司，说老师有点奇怪，我们都是直接叫名字的，比如大家都叫我瑞豪，我也就叫他文捷哥，简称捷哥吧。他们公司主要的开发模式是，小程序前端+php 后端，然后做的是酒店小程序，为每个酒店定制小程序。这些小程序可以贴在客房中给访客提供一些服务，大大节省了成本也提高了效率。<br>
+然后每个酒店小程序都有独立的后台，后台会记录一些点击需求的数据。现在他们有一个需求需要把每个酒店小程序后台的数据在每天早上 9 点发送至对应酒店的微信群。</p>
 </blockquote>
 <h1 id="实现代码">实现代码</h1>
 <blockquote>
@@ -96,13 +96,13 @@
 <span class="kn">from</span> <span class="nn">wxpy</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># 基本信息填写：</span>
-<span class="c1"># 酒店id，酒店名称及群名列表数据，格式：[&#34;xxx&#34;,&#34;xxx&#34;,&#34;xxx&#34;]</span>
+<span class="c1"># 酒店 id，酒店名称及群名列表数据，格式：[&#34;xxx&#34;,&#34;xxx&#34;,&#34;xxx&#34;]</span>
 <span class="c1"># 使用时请将以下三个列表一一对应</span>
 <span class="n">hotel</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;xxxx&#34;</span><span class="p">,</span><span class="s2">&#34;xxxx&#34;</span><span class="p">]</span> <span class="c1"># 酒店后台数据接口二级域名，已匿名</span>
 <span class="n">hotel_name</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;增城宾馆&#34;</span><span class="p">,</span><span class="s2">&#34;百丽酒店&#34;</span><span class="p">]</span>
 <span class="n">grouplist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;麻小&#34;</span><span class="p">,</span><span class="s2">&#34;富强民主文明和谐自由平等公正法治&#34;</span><span class="p">]</span>
 
-<span class="c1"># post请求发送的数据</span>
+<span class="c1"># post 请求发送的数据</span>
 <span class="n">postData</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># &#39;username&#39;:&#39;test&#39;,</span>
     <span class="c1"># &#39;password&#39;:&#39;123456&#39;,</span>
@@ -116,12 +116,12 @@
 		<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">postData</span><span class="p">)</span>
 		<span class="c1"># print(r.text)</span>
 
-		<span class="c1"># 把结果转化为json字符串</span>
+		<span class="c1"># 把结果转化为 json 字符串</span>
 		<span class="n">response</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span><span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#sort_keys=True </span>
 
-		<span class="c1"># 把json转换为dict字典作为中间结果，再取出昨日数据</span>
+		<span class="c1"># 把 json 转换为 dict 字典作为中间结果，再取出昨日数据</span>
 		<span class="n">midresult</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-		<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;早上好！&#34;</span><span class="o">+</span><span class="n">hotel_name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;小程序昨日数据如下：</span><span class="se">\n</span><span class="s2">访问数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type1&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">房间数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type2&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">需求量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type3&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">商品点击量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type4&#34;</span><span class="p">]))</span>
+		<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;早上好！&#34;</span><span class="o">+</span><span class="n">hotel_name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;小程序昨日数据如下：</span><span class="se">\n</span><span class="s2"> 访问数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type1&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 房间数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type2&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 需求量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type3&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 商品点击量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type4&#34;</span><span class="p">]))</span>
 		<span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
 	<span class="c1"># print(result)</span>
 	<span class="k">return</span> <span class="n">result</span>
@@ -142,19 +142,19 @@
 	<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 		<span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
 		<span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-		<span class="c1"># 设置每天8点发送</span>
+		<span class="c1"># 设置每天 8 点发送</span>
 		<span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
 			<span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
 			<span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
 		<span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
 			<span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
 			<span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
 		<span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天8点发送数据！&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
 			<span class="n">result</span><span class="o">=</span><span class="n">get_data</span><span class="p">()</span> <span class="c1"># 获取数据</span>
 			<span class="n">wechat_send</span><span class="p">(</span><span class="n">bot</span><span class="p">,</span><span class="n">result</span><span class="p">)</span> <span class="c1"># 发送数据</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">86400</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
@@ -167,16 +167,16 @@
 </div><h1 id="测试结果">测试结果</h1>
 <p>  </p>
 <h1 id="程序打包">程序打包</h1>
-<p>使用pyinstaller工具打包成可执行文件即可。（可执行文件不可跨平台运行，分平台打包）</p>
+<p>使用 pyinstaller 工具打包成可执行文件即可。（可执行文件不可跨平台运行，分平台打包）</p>
 <blockquote>
-<p>目前该程序已经上线测试中&hellip;暂未反馈问题</p>
+<p>目前该程序已经上线测试中。.. 暂未反馈问题</p>
 </blockquote>
 <h1 id="收获">收获</h1>
 <blockquote>
-<p>第一次参与实际公司的项目开发，虽然只是一个小的需求设计，但是我在这个过程中也学到了很多，比如通过实际一两周的编程对Python的熟悉度远远好过以前在实验室看的一个月视频。<br>
-还有就是在此次开发中，也感受到了实际项目开发的团队合作重要性，刚开始拿到这个需求，由于我对python和后台，以及数据接口这些基本的操作都不懂，就拿数据获取来说，我一开始一位要自己模拟登陆后台（已知密码），一顿操作、百度等等失败告终，后来涛哥给了一个数据接口，加上涛哥耐心指点，我才终于拿到了数据。<br>
+<p>第一次参与实际公司的项目开发，虽然只是一个小的需求设计，但是我在这个过程中也学到了很多，比如通过实际一两周的编程对 Python 的熟悉度远远好过以前在实验室看的一个月视频。<br>
+还有就是在此次开发中，也感受到了实际项目开发的团队合作重要性，刚开始拿到这个需求，由于我对 python 和后台，以及数据接口这些基本的操作都不懂，就拿数据获取来说，我一开始一位要自己模拟登陆后台（已知密码），一顿操作、百度等等失败告终，后来涛哥给了一个数据接口，加上涛哥耐心指点，我才终于拿到了数据。<br>
 还有在多人合作的项目中，为保持代码的可读性，要尽量的多些注释，还有函数方法的命名尽量具备可读性。比如我代码中的<code>wechat_send()</code>，一开始的命名是<code>wxfs()</code>，经捷哥指正我才改过来的。</p>
-</blockquote>]]></description></item><item><title>python玩微信：初探wxpy</title><link>https://lruihao.cn/posts/wxpy1/</link><pubDate>Sat, 20 Apr 2019 15:44:57 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wxpy1/</guid><description><![CDATA[<div class="featured-image">
+</blockquote>]]></description></item><item><title>python 玩微信：初探 wxpy</title><link>https://lruihao.cn/posts/wxpy1/</link><pubDate>Sat, 20 Apr 2019 15:44:57 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wxpy1/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/wxpy1/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p><em><strong>文中涉及的图片涉及个人隐私，仅做举例，请勿传播</strong></em></p>
@@ -189,7 +189,7 @@
 <h1 id="前期准备">前期准备</h1>
 <ul>
 <li><a href="https://github.com/youfou/wxpy" target="_blank" rel="noopener noreffer">wxpy</a></li>
-<li><a href="https://github.com/pyecharts/pyecharts" target="_blank" rel="noopener noreffer">pyecharts</a>（百度echarts）</li>
+<li><a href="https://github.com/pyecharts/pyecharts" target="_blank" rel="noopener noreffer">pyecharts</a>（百度 echarts）</li>
 </ul>
 <h1 id="查看微信好友男女比例">查看微信好友男女比例</h1>
 <div class="highlight"><div class="chroma">
@@ -227,7 +227,7 @@
 <span class="n">friends</span> <span class="o">=</span> <span class="n">bot</span><span class="o">.</span><span class="n">friends</span><span class="p">(</span><span class="n">update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>   <span class="c1">#获取更新好友列表</span>
 <span class="n">male</span> <span class="o">=</span> <span class="n">female</span> <span class="o">=</span> <span class="n">other</span> <span class="o">=</span> <span class="mi">0</span>    
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">friends</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>     <span class="c1">#[1:]自己是第一个，排除掉</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">friends</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>     <span class="c1">#[1:] 自己是第一个，排除掉</span>
     <span class="n">sex</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">sex</span>
     <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">male</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -289,7 +289,7 @@
 <pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">wxpy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">Map</span>
 
-<span class="c1">#因为获取的列表城市都没有带市字，而pyecharts需要带个市字</span>
+<span class="c1">#因为获取的列表城市都没有带市字，而 pyecharts 需要带个市字</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;市&#39;</span>
 <span class="k">def</span> <span class="nf">s</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">b</span>
@@ -310,7 +310,7 @@
     <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">cityss</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;市&#39;</span><span class="p">)</span>
 
-<span class="c1">#把字典进行有序拆分为2个列表</span>
+<span class="c1">#把字典进行有序拆分为 2 个列表</span>
 <span class="n">attrs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">value</span><span class="p">,</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">a</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -324,7 +324,7 @@
 </div>
 </div><p></p>
 <blockquote>
-<p><strong>以上参考简书<a href="https://www.jianshu.com/p/c0baf3c6db15" target="_blank" rel="noopener noreffer">陈思煜</a></strong></p>
+<p><strong>以上参考简书 <a href="https://www.jianshu.com/p/c0baf3c6db15" target="_blank" rel="noopener noreffer">陈思煜</a></strong></p>
 </blockquote>
 <h1 id="统计所有群男女数目">统计所有群男女数目</h1>
 <blockquote>
@@ -434,7 +434,7 @@
     
     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;男的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">male</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人&#34;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;女的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">female</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人&#34;</span><span class="p">)</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;男的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">male</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">+</span> <span class="s2">&#34;女的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">female</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;男的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">male</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span> <span class="o">+</span> <span class="s2">&#34;女的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">female</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span>
     <span class="k">return</span> <span class="n">msg</span>
 
 <span class="n">bot</span> <span class="o">=</span> <span class="n">Bot</span><span class="p">()</span>
@@ -446,23 +446,23 @@
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
         <span class="k">continue</span>
     <span class="n">curr_group</span><span class="o">.</span><span class="n">update_group</span><span class="p">(</span><span class="n">members_details</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="n">stats_sex</span><span class="p">(</span><span class="n">curr_group</span><span class="p">)</span>
-    <span class="n">curr_group</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;群，一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+    <span class="n">curr_group</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;群，一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>基本python实现的爬取微信好友头像，并拼接成大图</title><link>https://lruihao.cn/posts/wximgpy/</link><pubDate>Sat, 20 Apr 2019 13:32:58 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wximgpy/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>基本 python 实现的爬取微信好友头像，并拼接成大图</title><link>https://lruihao.cn/posts/wximgpy/</link><pubDate>Sat, 20 Apr 2019 13:32:58 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wximgpy/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/wximgpy/images/1.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>Python通过wxpy登录微信网页版，爬取好友所有头像并拼接成一张大图。然后删除所有子图。(注释相关代码可以不删除)<br>
+<p>Python 通过 wxpy 登录微信网页版，爬取好友所有头像并拼接成一张大图。然后删除所有子图。（注释相关代码可以不删除）<br>
 <em><strong>文中涉及的图片涉及个人隐私，仅做举例，请勿传播</strong></em><br>
-<strong>文中编码由Sunbelife提供，来自他的同名微信公众号，本博仅用于学习，侵删</strong></p>
+<strong>文中编码由 Sunbelife 提供，来自他的同名微信公众号，本博仅用于学习，侵删</strong></p>
 </blockquote>
 <h1 id="预览">预览</h1>
 <p></p>
 <h1 id="依赖">依赖</h1>
 <ul>
-<li>wxpy（Pythone登录微信）</li>
+<li>wxpy（Pythone 登录微信）</li>
 <li>pillow（拼接头像）</li>
 <li>os（文件夹操作）</li>
 <li>math（数学计算）</li>
@@ -471,7 +471,7 @@
 <p><a href="https://github.com/youfou/wxpy" target="_blank" rel="noopener noreffer">wxpy</a>:<br>
   wxpy 在 itchat 的基础上，通过大量接口优化提升了模块的易用性，并进行丰富的功能扩展。<br>
 <a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000" target="_blank" rel="noopener noreffer">PIL</a>：<br>
-  Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。由于PIL仅支持到Python 2.7，加上年久失修，于是一群志愿者在PIL的基础上创建了兼容的版本，名字叫Pillow，支持最新Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用Pillow。</p>
+  Python Imaging Library，已经是 Python 平台事实上的图像处理标准库了。PIL 功能非常强大，但 API 却非常简单易用。由于 PIL 仅支持到 Python 2.7，加上年久失修，于是一群志愿者在 PIL 的基础上创建了兼容的版本，名字叫 Pillow，支持最新 Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用 Pillow。</p>
 </blockquote>
 <h1 id="安装">安装</h1>
 <div class="highlight"><div class="chroma">
@@ -486,7 +486,7 @@ pip install pillow
 </div>
 </div><h1 id="运行">运行</h1>
 <blockquote>
-<p>如果在Python IDE 运行出错，可能是因为微信好友的id是特殊字符，在IDE打印出错，注释掉代码36行即可。</p>
+<p>如果在 Python IDE 运行出错，可能是因为微信好友的 id 是特殊字符，在 IDE 打印出错，注释掉代码 36 行即可。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -581,7 +581,6 @@ pip install pillow
 </span><span class="lnt">89
 </span><span class="lnt">90
 </span><span class="lnt">91
-</span><span class="lnt">92
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">wxpy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -663,14 +662,13 @@ pip install pillow
 				
 <span class="n">img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">curr_dir</span> <span class="o">+</span> <span class="s2">&#34;all.jpg&#34;</span><span class="p">)</span>
 
-
 <span class="k">try</span><span class="p">:</span>
 	<span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">curr_dir</span> <span class="o">+</span> <span class="s2">&#34;group-images/&#34;</span><span class="p">)</span>
 	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;收尾，清理临时文件&#34;</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
 	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;没什么好删的&#34;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;！！！</span><span class="se">\n</span><span class="s2">生成完毕了，放在了目录&#34;</span> <span class="o">+</span> <span class="n">curr_dir</span> <span class="o">+</span> <span class="s2">&#34;，去看看吧。&#34;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;！！！</span><span class="se">\n</span><span class="s2"> 生成完毕了，放在了目录&#34;</span> <span class="o">+</span> <span class="n">curr_dir</span> <span class="o">+</span> <span class="s2">&#34;，去看看吧。&#34;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;工具作者：@Sunbelife（新浪微博）&#34;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;公众号：Sunbelife&#34;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;感谢使用&#34;</span><span class="p">)</span>
@@ -680,7 +678,7 @@ pip install pillow
 </div>
 </div><h1 id="群友全家福">群友全家福</h1>
 <blockquote>
-<p>修改11行群名称</p>
+<p>修改 11 行群名称</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -742,7 +740,7 @@ pip install pillow
 <span class="n">itchat</span><span class="o">.</span><span class="n">auto_login</span><span class="p">(</span><span class="n">hotReload</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">enableCmdQR</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">roomslist</span> <span class="o">=</span> <span class="n">itchat</span><span class="o">.</span><span class="n">get_chatrooms</span><span class="p">(</span><span class="n">update</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">:]</span>
 <span class="n">itchat</span><span class="o">.</span><span class="n">dump_login_status</span><span class="p">()</span> <span class="c1"># 显示所有的群聊信息，默认是返回保存到通讯录中的群聊</span>
-<span class="n">myroom</span><span class="o">=</span><span class="n">itchat</span><span class="o">.</span><span class="n">search_chatrooms</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;绥宁一中高396班&#39;</span><span class="p">)</span> <span class="c1">#群聊名称</span>
+<span class="n">myroom</span><span class="o">=</span><span class="n">itchat</span><span class="o">.</span><span class="n">search_chatrooms</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;绥宁一中高 396 班&#39;</span><span class="p">)</span> <span class="c1">#群聊名称</span>
 <span class="n">gsq</span><span class="o">=</span><span class="n">itchat</span><span class="o">.</span><span class="n">update_chatroom</span><span class="p">(</span><span class="n">myroom</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;UserName&#39;</span><span class="p">],</span> <span class="n">detailedMember</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>

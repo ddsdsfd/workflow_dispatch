@@ -1,11 +1,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Backend - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/backend/</link><description>Backend - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/backend/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
+<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
-<li>支持Markdown,文章实时预览效果</li>
+<li>支持 Markdown, 文章实时预览效果</li>
 <li>支持多种编程语言代码高亮</li>
 <li>编辑器图片上传</li>
 <li>后台上传文件管理</li>
@@ -14,15 +14,15 @@
 <li>文章标签</li>
 <li>热门文章</li>
 <li>随机格言</li>
-<li>文章管理(发布，评论开关，排序)</li>
-<li>自定义导航(显示开关，排序)</li>
-<li>自定义页面(发布开关)</li>
-<li>友情链接(显示开关，排序)</li>
-<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS桶相册</a></li>
-<li>丰富的博客配置(方便扩展，支持自定义JS脚本)</li>
+<li>文章管理（发布，评论开关，排序）</li>
+<li>自定义导航（显示开关，排序）</li>
+<li>自定义页面（发布开关）</li>
+<li>友情链接（显示开关，排序）</li>
+<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS 桶相册</a></li>
+<li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
 <li>不蒜子计数</li>
-<li>Leancloud计数</li>
-<li>Valine评论插件</li>
+<li>Leancloud 计数</li>
+<li>Valine 评论插件</li>
 <li>文章分享插件</li>
 </ul>
 <h1 id="截图">截图</h1>
@@ -31,7 +31,7 @@
 </p>
 <h1 id="安装">安装</h1>
 <blockquote>
-<p>注意事项：PHP取消禁用函数<code>putenv()</code>和<code>symlink()</code>，安装<code>fileinfo</code>扩展。</p>
+<p>注意事项：PHP 取消禁用函数<code>putenv()</code>和<code>symlink()</code>，安装<code>fileinfo</code>扩展。</p>
 </blockquote>
 <p>下载</p>
 <div class="highlight"><div class="chroma">
@@ -51,7 +51,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cd cell-blog
 </code></pre></td></tr></table>
 </div>
-</div><p>生成.env</p>
+</div><p>生成。env</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -60,7 +60,7 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">cp .env.example .env
 </code></pre></td></tr></table>
 </div>
-</div><p>编辑.env环境配置</p>
+</div><p>编辑。env 环境配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -81,7 +81,7 @@
 <span class="nv">DB_PASSWORD</span><span class="o">=</span> <span class="c1">#数据库密码</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>打开<code>app\Providers\AppServiceProvider.php</code>,注释<code>SystemController:load()</code> 防止后续步骤报错</p>
+</div><p>打开<code>app\Providers\AppServiceProvider.php</code>, 注释<code>SystemController:load()</code> 防止后续步骤报错</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -107,7 +107,7 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">composer install
 </code></pre></td></tr></table>
 </div>
-</div><p>生成key</p>
+</div><p>生成 key</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -137,7 +137,7 @@ php artisan admin:import media-manager
 php artisan db:seed
 </code></pre></td></tr></table>
 </div>
-</div><p>默认下使用了本地文件系统，创建storage目录在public的软链接</p>
+</div><p>默认下使用了本地文件系统，创建 storage 目录在 public 的软链接</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -146,7 +146,7 @@ php artisan db:seed
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">php artisan storage:link
 </code></pre></td></tr></table>
 </div>
-</div><p>打开<code>app\Providers\AppServiceProvider.php</code>,取消注释<code>SystemController:load()</code></p>
+</div><p>打开<code>app\Providers\AppServiceProvider.php</code>, 取消注释<code>SystemController:load()</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -163,8 +163,8 @@ php artisan db:seed
     }
 </code></pre></td></tr></table>
 </div>
-</div><p>将博客网站根目录指向入口public目录</p>
-<p>如果使用Nginx，要设置伪静态</p>
+</div><p>将博客网站根目录指向入口 public 目录</p>
+<p>如果使用 Nginx，要设置伪静态</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -177,17 +177,17 @@ php artisan db:seed
 }
 </code></pre></td></tr></table>
 </div>
-</div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>,使用用户名<code>admin</code>和密码<code>admin</code>登录.</p>
+</div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>, 使用用户名<code>admin</code>和密码<code>admin</code>登录。</p>
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
 <p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>
-<h1 id="搭建php环境">搭建php环境</h1>
+<h1 id="搭建-php-环境">搭建 php 环境</h1>
 <ol>
-<li>安装wampserver</li>
-<li>安装composer</li>
-<li>更换aliyun源</li>
+<li>安装 wampserver</li>
+<li>安装 composer</li>
+<li>更换 aliyun 源</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -197,7 +197,7 @@ php artisan db:seed
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="新建laravel项目">新建laravel项目</h1>
+</div><h1 id="新建-laravel-项目">新建 laravel 项目</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -217,7 +217,7 @@ php artisan db:seed
 laravel new blog
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载debugbar">下载debugbar</h1>
+</div><h1 id="下载-debugbar">下载 debugbar</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -227,7 +227,7 @@ laravel new blog
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="修改语言时区">修改语言时区</h1>
-<p>修改config/app.php，将local的值 en 改成 zh-CN(laravel-admin自带zh-CN)：</p>
+<p>修改 config/app.php，将 local 的值 en 改成 zh-CN(laravel-admin 自带 zh-CN)：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -243,7 +243,7 @@ laravel new blog
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="配置数据库">配置数据库</h1>
-<p>首先确保安装好了laravel，并且数据库连接设置正确。</p>
+<p>首先确保安装好了 laravel，并且数据库连接设置正确。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -266,7 +266,7 @@ DB_USERNAME=root
 DB_PASSWORD=123456
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载laravel-admin">下载laravel-admin</h1>
+</div><h1 id="下载-laravel-admin">下载 laravel-admin</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -300,9 +300,9 @@ composer require encore/laravel-admin
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>运行这个命令的时候，如果遇到了下面的错误:<br>
+<p>运行这个命令的时候，如果遇到了下面的错误：
 <code>SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))</code><br>
-参考这个issue来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
+参考这个 issue 来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -369,13 +369,13 @@ composer require encore/laravel-admin
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>启动服务后，在浏览器打开 <code>http://localhost/admin/</code> ,使用用户名 <code>admin</code> 和密码 <code>admin</code> 登录.</p>
+</div><p>启动服务后，在浏览器打开 <code>http://localhost/admin/</code> , 使用用户名 <code>admin</code> 和密码 <code>admin</code> 登录。</p>
 <blockquote>
 <p>报错<code>Disk [admin] not configured, please add a disk config in config/filesystems.php</code></p>
 </blockquote>
-<p>在<code>config/filesystems.php</code>中disks处添加以下配置后执行<code>php artisan storage:link</code>来创建软链接（windows和linux的软链接不一样不能直接复制！）</p>
+<p>在<code>config/filesystems.php</code>中 disks 处添加以下配置后执行<code>php artisan storage:link</code>来创建软链接（windows 和 linux 的软链接不一样不能直接复制！）</p>
 <blockquote>
-<p>宝塔执行时删除禁用函数putenv(),symlink()</p>
+<p>宝塔执行时删除禁用函数 putenv(),symlink()</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -413,7 +413,7 @@ composer require encore/laravel-admin
 ],
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载dcat-admin">下载dcat-admin</h1>
+</div><h1 id="下载-dcat-admin">下载 dcat-admin</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -475,7 +475,7 @@ php artisan make:migration create_mottoes_table
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">php artisan migrate
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="创建模型model">创建模型model</h1>
+</div><h1 id="创建模型-model">创建模型 model</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -545,9 +545,9 @@ $router-&gt;resource(&#39;systems&#39;, SystemController::class);
 $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="editormd安装">editormd安装</h1>
+</div><h1 id="editormd-安装">editormd 安装</h1>
 <p><a href="https://github.com/ShareManT/laravel-admin-ext-editormd" target="_blank" rel="noopener noreffer">editormd</a>
-<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github图像问题</a></p>
+<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github 图像问题</a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -557,7 +557,7 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public\vendor\laravel-admin-ext\editormd\editormd-1.5.0\images\emojis
 </code></pre></td></tr></table>
 </div>
-</div><p>修改editormd.js及editormd.min.js</p>
+</div><p>修改 editormd.js 及 editormd.min.js</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -575,9 +575,9 @@ editormd.emoji     = {
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="图片上传">图片上传</h2>
-<h3 id="csrf-419错误">csrf 419错误</h3>
-<p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加csrf验证器：</p>
-<p>修改image-dialog.js的<code>var dialogContent</code><br>
+<h3 id="csrf-419-错误">csrf 419 错误</h3>
+<p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加 csrf 验证器：</p>
+<p>修改 image-dialog.js 的<code>var dialogContent</code><br>
 <a href="https://www.jianshu.com/p/8101f7bc80f6" target="_blank" rel="noopener noreffer">参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -597,7 +597,7 @@ editormd.emoji     = {
 {
     action += &#34;&amp;callback=&#34; + settings.uploadCallbackURL + &#34;&amp;dialog_id=editormd-image-dialog-&#34; + guid;
 }
-//添加csrf验证
+//添加 csrf 验证
 var csrfToken = $(&#39;meta[name=&#34;csrf-token&#34;]&#39;).attr(&#39;content&#39;);
 var csrfField = &#34;&#34;;
 if (csrfToken) {
@@ -607,7 +607,7 @@ if (csrfToken) {
 </div>
 </div><h1 id="markdown-转-html">markdown 转 HTML</h1>
 <p><a href="https://www.zhiqiexing.com/119.html" target="_blank" rel="noopener noreffer">https://www.zhiqiexing.com/119.html</a>
-<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown安装</a></p>
+<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown 安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -644,7 +644,7 @@ php artisan vendor:publish
 <p>Eloquent 模型可以触发事件，允许你在模型生命周期中的多个时间点调用如下这些方法：retrieved, creating, created, updating, updated, saving, saved, deleting, deleted, restoring, restored。事件允许你在一个指定模型类每次保存或更新的时候执行代码。</p>
 <p>retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。</p>
 <h1 id="添加后台验证码">添加后台验证码</h1>
-<p>依赖php扩展<code>fileinfo</code><br>
+<p>依赖 php 扩展<code>fileinfo</code><br>
 <a href="https://learnku.com/articles/32842" target="_blank" rel="noopener noreffer">添加验证码</a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
@@ -657,34 +657,24 @@ php artisan vendor:publish
 php artisan admin:import media-manager
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&#39;extensions&#39; =&gt; [
-    &#39;media-manager&#39; =&gt; [
-        // Select a local disk that you configured in `config/filesystem.php`
-        &#39;disk&#39; =&gt; &#39;public&#39;
-    ],
+</div><p>&lsquo;extensions&rsquo; =&gt; [
+&lsquo;media-manager&rsquo; =&gt; [
+// Select a local disk that you configured in <code>config/filesystem.php</code>
+&lsquo;disk&rsquo; =&gt; &lsquo;public&rsquo;
 ],
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="给laravel-admin增加锁屏功能">给laravel-admin增加锁屏功能</h1>
+],</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">composer require laravel-admin-ext/lock-screen
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
+# 给 laravel-admin 增加锁屏功能
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div><p>composer require laravel-admin-ext/lock-screen</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -724,7 +714,7 @@ php artisan make:controller TagController
 php artisan make:controller PageController
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="后台img灯箱">后台img灯箱</h1>
+</div><h1 id="后台-img-灯箱">后台 img 灯箱</h1>
 <p><a href="https://github.com/laravel-admin-extensions/grid-lightbox" target="_blank" rel="noopener noreffer">https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -738,11 +728,11 @@ php artisan make:controller PageController
 php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
-<p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~</p>
+</div>]]></description></item><item><title>使用 Python 刷 csdn 访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
+<p>使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
-<p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到Windows桌面上随时使用~<br>
-<a href="/posts/pyinstallererror/" rel="">打包exe参考</a></p>
+<p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~<br>
+<a href="/posts/pyinstallererror/" rel="">打包 exe 参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -832,7 +822,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
     <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
     <span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
     <span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net/&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s2">&#34;/article/list/&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
-    <span class="c1"># 使用build_opener()是为了让python程序模仿浏览器进行访问</span>
+    <span class="c1"># 使用 build_opener() 是为了让 python 程序模仿浏览器进行访问</span>
     <span class="n">html</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
     <span class="n">allfinds</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">allfinds</span>
@@ -840,7 +830,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 
 <span class="k">def</span> <span class="nf">start_do</span><span class="p">(</span><span class="n">allfinds</span><span class="p">):</span>
     <span class="n">urlBase</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net&#34;</span>  <span class="c1"># 需要将网址合并的部分</span>
-    <span class="c1"># 页面中的网址有重复的，需要使用set进行去重复</span>
+    <span class="c1"># 页面中的网址有重复的，需要使用 set 进行去重复</span>
     <span class="n">mypages</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">allfinds</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mypages</span><span class="p">)):</span>
         <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">urlBase</span> <span class="o">+</span> <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -856,7 +846,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">brushNum</span><span class="p">):</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="n">pageContent</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
-                <span class="c1"># 使用BeautifulSoup解析每篇博客的标题</span>
+                <span class="c1"># 使用 BeautifulSoup 解析每篇博客的标题</span>
                 <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">pageContent</span><span class="p">)</span>
                 <span class="n">blogTitle</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
                 <span class="n">blogTitle</span> <span class="o">=</span> <span class="n">blogTitle</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">blogTitle</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)]</span>
@@ -876,12 +866,12 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
         <span class="n">start_do</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;输入你的csdn用户名：&#34;</span><span class="p">)</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;输入你的 csdn 用户名：&#34;</span><span class="p">)</span>
   <span class="k">if</span> <span class="n">name</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">:</span>
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;qq_39520417&#34;</span> <span class="c1">#cheung99857</span>
   <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
     <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息...&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -905,30 +895,30 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
     <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
             <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息...&#34;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
             <span class="c1"># 控制休眠时间相当于控制刷新的速度</span>
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>新冠疫情未返校未返工第 N 天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起&hellip;<br>
-算了，昨天下午3点半，我还在王者峡谷Timing,突然潇X巴哥打了个电话给我说关于自动打卡的想法&hellip;<br>
-哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡&hellip;<br>
-我和潇X巴哥确定思路后兵分两路：</p>
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起。..<br>
+算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法。..<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡。..<br>
+我和潇 X 巴哥确定思路后兵分两路：</p>
 <ol>
-<li>他用java写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
+<li>他用 java 写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
 <li>我想的就很直接，只刷一个人的，python 模拟浏览器登录后打卡，再设置定时任务（多人则设定多个）；</li>
 </ol>
 </div>
         </div>
     </div>
-<h1 id="windows运行效果">Windows运行效果</h1>
+<h1 id="windows-运行效果">Windows 运行效果</h1>
 <p><br>
 <br>
 </p>
@@ -973,7 +963,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
   <span class="k">if</span> <span class="n">r1</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y:%m:</span><span class="si">%d</span><span class="s2">:%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">login</span><span class="p">[</span><span class="s2">&#34;username&#34;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&#34; 登录成功！&#34;</span><span class="p">)</span>
-    <span class="c1"># 拿到登录后的cookie并添加到header中</span>
+    <span class="c1"># 拿到登录后的 cookie 并添加到 header 中</span>
     <span class="n">header1</span> <span class="o">=</span> <span class="n">r1</span><span class="o">.</span><span class="n">headers</span>
     <span class="n">headers</span><span class="p">[</span><span class="s2">&#34;Cookie&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">header1</span><span class="p">[</span><span class="s2">&#34;Set-Cookie&#34;</span><span class="p">]</span>
   <span class="k">else</span><span class="p">:</span>
@@ -996,7 +986,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </div>
 </div><h1 id="自动运行">自动运行</h1>
 <h2 id="windows">Windows</h2>
-<p>适用python代码控制休眠时间</p>
+<p>适用 python 代码控制休眠时间</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1024,25 +1014,25 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
   <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
     <span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-    <span class="c1"># 设置每天8点发送</span>
+    <span class="c1"># 设置每天 8 点发送</span>
     <span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
       <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
       <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
       <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
       <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天8点发送数据！&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
       <span class="n">lajaDaka</span><span class="p">()</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="linux云服务器">linux(云服务器)</h2>
-<p>搭建python环境下载依赖后，使用shell脚本定时执行。</p>
+</div><h2 id="linux云服务器">linux（云服务器）</h2>
+<p>搭建 python 环境下载依赖后，使用 shell 脚本定时执行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1051,16 +1041,16 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON表达式的基本语法</a></p>
-<h1 id="潇x巴哥的java-web版本">潇x巴哥的java web版本</h1>
+</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+<h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>SQL总结</title><link>https://lruihao.cn/posts/sql/</link><pubDate>Thu, 16 Jan 2020 19:28:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sql/</guid><description><![CDATA[<blockquote>
-<p>SQL增删改查(CRUD)语句与常用函数总结。</p>
+</p>]]></description></item><item><title>SQL 总结</title><link>https://lruihao.cn/posts/sql/</link><pubDate>Thu, 16 Jan 2020 19:28:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sql/</guid><description><![CDATA[<blockquote>
+<p>SQL 增删改查 (CRUD) 语句与常用函数总结。</p>
 </blockquote>
 <h2 id="sql-introduction">SQL Introduction</h2>
-<p>一般我们对数据库的操作主要分为四种，增<strong>C</strong>(CREATE)、删<strong>D</strong>(DELETE)、改<strong>U</strong>(UPDATE)、查<strong>R</strong>(READ)，所以，我就从<strong>CRUD</strong>这四个方面来制作查询表。</p>
-<p><strong>开发规则:</strong></p>
+<p>一般我们对数据库的操作主要分为四种，增** C**(CREATE)、删** D**(DELETE)、改** U**(UPDATE)、查** R**(READ)，所以，我就从** CRUD **这四个方面来制作查询表。</p>
+<p><strong>开发规则：</strong></p>
 <ol>
 <li>
 <p>尽量减少对数据库的访问次数，且不能查询无用的数据，浪费效能（例如：我只要男生的数据，你把所有人的数据都查询出来）。</p>
@@ -1102,11 +1092,11 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">创建数据表</td>
-<td style="text-align:left"><code>CREATE TABLE  &lt;表名&gt; (</code><br/><code>&lt;列名1&gt; &lt;数据类型&gt; &lt;约束条件&gt;,</code><br/><code>&lt;列名2&gt; &lt;数据类型&gt; &lt;约束条件&gt;,</code><br/><code>&lt;列名3&gt; &lt;数据类型&gt; &lt;约束条件&gt;,</code><br/><code>......</code><br/><code>&lt;该表的的约束条件1&gt; </code><br/><code>&lt;该表的的约束条件2&gt;...);</code></td>
+<td style="text-align:left"><code>CREATE TABLE  &lt;表名&gt; (</code><br/><code>&lt;列名 1&gt; &lt;数据类型&gt; &lt;约束条件&gt;,</code><br/><code>&lt;列名 2&gt; &lt;数据类型&gt; &lt;约束条件&gt;,</code><br/><code>&lt;列名 3&gt; &lt;数据类型&gt; &lt;约束条件&gt;,</code><br/><code>......</code><br/><code>&lt;该表的的约束条件 1&gt; </code><br/><code>&lt;该表的的约束条件 2&gt;...);</code></td>
 </tr>
 <tr>
 <td style="text-align:left">插入数据</td>
-<td style="text-align:left"><code>INSERT INTO &lt;表名&gt; (列名1,列名2,...) VALUES (值1,值2,...);</code><br/>（每列都有数据插入时，可省略列名。但是为了代码的可读性，不建议如此操作。）</td>
+<td style="text-align:left"><code>INSERT INTO &lt;表名&gt; （列名 1, 列名 2,...) VALUES （值 1, 值 2,...);</code><br/>（每列都有数据插入时，可省略列名。但是为了代码的可读性，不建议如此操作。）</td>
 </tr>
 <tr>
 <td style="text-align:left">增加列</td>
@@ -1164,7 +1154,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">修改数据</td>
-<td style="text-align:left"><code>UPDATE &lt;表名&gt; SET &lt;列名1&gt; = &lt;新值1&gt;,&lt;列名2&gt; = &lt;新值2&gt; WHERE &lt;条件&gt;;</code></td>
+<td style="text-align:left"><code>UPDATE &lt;表名&gt; SET &lt;列名 1&gt; = &lt;新值 1&gt;,&lt;列名 2&gt; = &lt;新值 2&gt; WHERE &lt;条件&gt;;</code></td>
 </tr>
 <tr>
 <td style="text-align:left">修改列名</td>
@@ -1198,7 +1188,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">查询表中所有数据</td>
-<td style="text-align:left"><code>SELECT &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,... FROM &lt;表名&gt;;</code></td>
+<td style="text-align:left"><code>SELECT &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,... FROM &lt;表名&gt;;</code></td>
 </tr>
 <tr>
 <td style="text-align:left">查询表中某个数据</td>
@@ -1206,7 +1196,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">查询表中指定多个数据</td>
-<td style="text-align:left"><code>SELECT &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,... FROM &lt;表名&gt; WHERE &lt;条件&gt;;</code></td>
+<td style="text-align:left"><code>SELECT &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,... FROM &lt;表名&gt; WHERE &lt;条件&gt;;</code></td>
 </tr>
 <tr>
 <td style="text-align:left">查询表中指定一个数据</td>
@@ -1214,27 +1204,27 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">查询指定范围数据</td>
-<td style="text-align:left"><code>SELECT &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,... FROM &lt;表名&gt; WHERE </code><br/><code>&lt;某列名&gt; BETWEEN &lt;某列名范围值-小&gt; AND &lt;某列名范围值-大&gt;;</code></td>
+<td style="text-align:left"><code>SELECT &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,... FROM &lt;表名&gt; WHERE </code><br/><code>&lt;某列名&gt; BETWEEN &lt;某列名范围值-小&gt; AND &lt;某列名范围值-大&gt;;</code></td>
 </tr>
 <tr>
 <td style="text-align:left">字符串模式匹配查询</td>
-<td style="text-align:left"><code>SELECT &lt;列名&gt; FROM &lt;表名&gt; WHERE name LIKE 'Y%';</code><br/>（查询以Y开头的，更多匹配方式自行百度哦~。）</td>
+<td style="text-align:left"><code>SELECT &lt;列名&gt; FROM &lt;表名&gt; WHERE name LIKE 'Y%';</code><br/>（查询以 Y 开头的，更多匹配方式自行百度哦~。）</td>
 </tr>
 <tr>
 <td style="text-align:left">指定多个值数据查询</td>
-<td style="text-align:left"><code>SELECT &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,... FROM &lt;表名&gt; WHERE </code><br/><code>&lt;某列名&gt; IN ('&lt;某列名值1&gt;','&lt;某列名值2&gt;','&lt;某列名值3&gt;',...);</code></td>
+<td style="text-align:left"><code>SELECT &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,... FROM &lt;表名&gt; WHERE </code><br/><code>&lt;某列名&gt; IN ('&lt;某列名值 1&gt;','&lt;某列名值 2&gt;','&lt;某列名值 3&gt;',...);</code></td>
 </tr>
 <tr>
 <td style="text-align:left">查询结果排序</td>
-<td style="text-align:left"><code>SELECT &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,... FROM &lt;表名&gt; ORDER BY &lt;某列名&gt; DESC;</code><br/>（此处为递减排列，默认为递增<code>ASC</code>）</td>
+<td style="text-align:left"><code>SELECT &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,... FROM &lt;表名&gt; ORDER BY &lt;某列名&gt; DESC;</code><br/>（此处为递减排列，默认为递增<code>ASC</code>）</td>
 </tr>
 <tr>
 <td style="text-align:left">查询指定几笔数据</td>
-<td style="text-align:left"><code>SELECT &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,... FROM &lt;表名&gt; LIMIT n,m;</code><br/>（从<code>n</code>到<code>m</code>笔数据）</td>
+<td style="text-align:left"><code>SELECT &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,... FROM &lt;表名&gt; LIMIT n,m;</code><br/>（从<code>n</code>到<code>m</code>笔数据）</td>
 </tr>
 <tr>
 <td style="text-align:left">分群查询</td>
-<td style="text-align:left"><code>SELECT &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,...,&lt;函数&gt; FROM &lt;表名&gt; GROUP BY &lt;列名1&gt;,&lt;列名2&gt;,&lt;列名3&gt;,...;</code><br/>（常搭配函数有：<code>SUM()</code>、<code>AVG()</code>、<code>COUNT()</code>、<code>MAX()</code>、<code>MIN()</code>）</td>
+<td style="text-align:left"><code>SELECT &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,...,&lt;函数&gt; FROM &lt;表名&gt; GROUP BY &lt;列名 1&gt;,&lt;列名 2&gt;,&lt;列名 3&gt;,...;</code><br/>（常搭配函数有：<code>SUM()</code>、<code>AVG()</code>、<code>COUNT()</code>、<code>MAX()</code>、<code>MIN()</code>）</td>
 </tr>
 </tbody>
 </table>
@@ -1248,68 +1238,68 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><code>ABS</code>(数值)</td>
-<td style="text-align:left">ABS函数（求绝对值）</td>
+<td style="text-align:left"><code>ABS</code>（数值）</td>
+<td style="text-align:left">ABS 函数（求绝对值）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>MOD</code>(被除数,除数)</td>
-<td style="text-align:left">MOD函数（求余）</td>
+<td style="text-align:left"><code>MOD</code>（被除数，除数）</td>
+<td style="text-align:left">MOD 函数（求余）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>ROUND</code>(对象数值,保留小数的位数)</td>
-<td style="text-align:left">ROUND函数（四舍五入）</td>
+<td style="text-align:left"><code>ROUND</code>（对象数值，保留小数的位数）</td>
+<td style="text-align:left">ROUND 函数（四舍五入）</td>
 </tr>
 <tr>
-<td style="text-align:left">字符串1 ΙΙ 字符串2</td>
+<td style="text-align:left">字符串 1 ΙΙ 字符串 2</td>
 <td style="text-align:left">ΙΙ 函数（拼接）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>LENGTH</code>(字符串)</td>
-<td style="text-align:left">LENGTH函数（求字符串长度）</td>
+<td style="text-align:left"><code>LENGTH</code>（字符串）</td>
+<td style="text-align:left">LENGTH 函数（求字符串长度）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>LOWER</code>(字符串)</td>
-<td style="text-align:left">LOWER函数（小写转换）</td>
+<td style="text-align:left"><code>LOWER</code>（字符串）</td>
+<td style="text-align:left">LOWER 函数（小写转换）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>UPPER</code>(字符串)</td>
-<td style="text-align:left">UPPER函数（大写转换）</td>
+<td style="text-align:left"><code>UPPER</code>（字符串）</td>
+<td style="text-align:left">UPPER 函数（大写转换）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>REPLACE</code>(对象字符串,替换前的字符串,替换后的字符串)</td>
-<td style="text-align:left">REPLACE函数（字符串的替换）</td>
+<td style="text-align:left"><code>REPLACE</code>（对象字符串，替换前的字符串，替换后的字符串）</td>
+<td style="text-align:left">REPLACE 函数（字符串的替换）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>SUBSTRING</code> (对象字符串,截取的起始位置,截取的字符数)</td>
-<td style="text-align:left">SUBSTRING函数（字符串的截取）</td>
+<td style="text-align:left"><code>SUBSTRING</code> （对象字符串，截取的起始位置，截取的字符数）</td>
+<td style="text-align:left">SUBSTRING 函数（字符串的截取）</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>CURRENT_DATE</code></td>
-<td style="text-align:left">CURRENT_DATE函数（当前日期）</td>
+<td style="text-align:left">CURRENT_DATE 函数（当前日期）</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>CURRENT_TIME</code></td>
-<td style="text-align:left">CURRENT_TIME函数（当前时间）</td>
+<td style="text-align:left">CURRENT_TIME 函数（当前时间）</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>CURRENT_TIMESTAMP</code></td>
-<td style="text-align:left">CURRENT_TIMESTAMP函数（当前日期和时间）</td>
+<td style="text-align:left">CURRENT_TIMESTAMP 函数（当前日期和时间）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>EXTRACT</code>(日期元素 FROM 日期)</td>
-<td style="text-align:left">EXTRACT函数（截取日期元素）</td>
+<td style="text-align:left"><code>EXTRACT</code>（日期元素 FROM 日期）</td>
+<td style="text-align:left">EXTRACT 函数（截取日期元素）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>CAST</code>(转换前的值 AS 想要转换的数据类型)</td>
-<td style="text-align:left">CAST函数（类型转换）</td>
+<td style="text-align:left"><code>CAST</code>（转换前的值 AS 想要转换的数据类型）</td>
+<td style="text-align:left">CAST 函数（类型转换）</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>COALESCE</code>(数据1,数据2,数据3&hellip;.)</td>
-<td style="text-align:left">COALESCE函数（将NULL转换为其他值）</td>
+<td style="text-align:left"><code>COALESCE</code>（数据 1, 数据 2, 数据 3&hellip;.)</td>
+<td style="text-align:left">COALESCE 函数（将 NULL 转换为其他值）</td>
 </tr>
 </tbody>
 </table>
-<p>补充：CASE表达式。</p>
+<p>补充：CASE 表达式。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1333,18 +1323,18 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>
 </p>
 <h3 id="别名">别名</h3>
-<p>给表设置别名，让SQL更简洁。例如：</p>
+<p>给表设置别名，让 SQL 更简洁。例如：</p>
 <p><code>SELECT &lt;col-1&gt;,&lt;col-2&gt;,&lt;col-3&gt;,... FROM &lt;table1&gt; &lt;alias-a&gt;,&lt;table2&gt; &lt;alias-b&gt; WHERE &lt;alias-a&gt;.&lt;id&gt; = &lt;alias-b&gt;.&lt;id&gt;;</code></p>
 <p>列名也可以设置别名。例如：</p>
 <p><code>SELECT &lt;col-1&gt; &lt;alias-a&gt;,&lt;col-2&gt; &lt;alias-b&gt;,&lt;col-3&gt; &lt;alias-c&gt;,... FROM &lt;table&gt;;</code><br>
 或者 <br>
 <code>SELECT &lt;col-1&gt; AS &lt;alias-a&gt;,&lt;col-2&gt; AS &lt;alias-b&gt;,&lt;col-3&gt; AS &lt;alias-c&gt;,... FROM &lt;table&gt;;</code></p>
 <h2 id="总结">总结</h2>
-<p>以上整理的内容均为基础内容，更多进阶知识还需各位自行 Google。</p>]]></description></item><item><title>php同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
+<p>以上整理的内容均为基础内容，更多进阶知识还需各位自行 Google。</p>]]></description></item><item><title>php 同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
 <p>php 主动推送站点链接到百度站长，神马站长进行 SEO。</p>
 </blockquote>
 <h1 id="代码">代码</h1>
-<p>把需要提交的链接和各站长 api 分别放在两个 txt 文件里面, 然后运行 php 文件进行提交，不同站长提交成功一般返回的都是 <code>200</code> 状态码。</p>
+<p>把需要提交的链接和各站长 api 分别放在两个 txt 文件里面，然后运行 php 文件进行提交，不同站长提交成功一般返回的都是 <code>200</code> 状态码。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1376,7 +1366,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
   
-  <span class="c1">//链接存放路径和站长api文件存放路径
+  <span class="c1">//链接存放路径和站长 api 文件存放路径
 </span><span class="c1"></span>  <span class="nv">$urls_path</span> <span class="o">=</span> <span class="s2">&#34;H:</span><span class="se">\\</span><span class="s2">lruihao.cn</span><span class="se">\\</span><span class="s2">public</span><span class="se">\\</span><span class="s2">baidu_urls.txt&#34;</span><span class="p">;</span>
   <span class="nv">$apis_path</span> <span class="o">=</span> <span class="s2">&#34;G:</span><span class="se">\\</span><span class="s2">Demo</span><span class="se">\\</span><span class="s2">lrh01</span><span class="se">\\</span><span class="s2">zhanzhang_api.txt&#34;</span><span class="p">;</span>
   <span class="c1">//将文件每一行读到一个数组里面去
@@ -1402,8 +1392,8 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="提交结果">提交结果</h1>
-<p></p>]]></description></item><item><title>php按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
-<p>首先采用<code>fopen()</code>函数打开文件，得到返回值的就是资源类型。接着采用while循环一行行地读取文件，然后输出每行的文字。<code>feof()</code>判断是否到最后一行,<code>fgets()</code>读取一行文本。</p>
+<p></p>]]></description></item><item><title>php 按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
+<p>首先采用<code>fopen()</code>函数打开文件，得到返回值的就是资源类型。接着采用 while 循环一行行地读取文件，然后输出每行的文字。<code>feof()</code>判断是否到最后一行，<code>fgets()</code>读取一行文本。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1426,9 +1416,9 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
 
   <span class="c1">//首先采用“fopen”函数打开文件，得到返回值的就是资源类型。
-</span><span class="c1"></span>  <span class="nv">$file_handle</span> <span class="o">=</span> <span class="nx">fopen</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪</span><span class="se">\\</span><span class="s2">Desktop</span><span class="se">\\</span><span class="s2">备忘录.txt&#34;</span><span class="p">,</span><span class="s2">&#34;r&#34;</span><span class="p">);</span>
+</span><span class="c1"></span>  <span class="nv">$file_handle</span> <span class="o">=</span> <span class="nx">fopen</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪、\Desktop</span><span class="se">\\</span><span class="s2">备忘录。txt&#34;</span><span class="p">,</span><span class="s2">&#34;r&#34;</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="nv">$file_handle</span><span class="p">){</span>
-      <span class="c1">//接着采用while循环一行行地读取文件，然后输出每行的文字
+      <span class="c1">//接着采用 while 循环一行行地读取文件，然后输出每行的文字
 </span><span class="c1"></span>      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="nx">feof</span><span class="p">(</span><span class="nv">$file_handle</span><span class="p">))</span> <span class="p">{</span> <span class="c1">//判断是否到最后一行
 </span><span class="c1"></span>          <span class="nv">$line</span> <span class="o">=</span> <span class="nx">fgets</span><span class="p">(</span><span class="nv">$file_handle</span><span class="p">);</span> <span class="c1">//读取一行文本
 </span><span class="c1"></span>          <span class="k">echo</span> <span class="nv">$line</span><span class="p">;</span> <span class="c1">//输出一行文本
@@ -1440,13 +1430,13 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <span class="cp">?&gt;</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
-</div><p><code>readfile（）</code>函数，返回一整个String</p>
+</div><p><code>readfile（）</code>函数，返回一整个 String</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">echo</span> <span class="nx">readfile</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪</span><span class="se">\\</span><span class="s2">Desktop</span><span class="se">\\</span><span class="s2">备忘录.txt&#34;</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">echo</span> <span class="nx">readfile</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪、\Desktop</span><span class="se">\\</span><span class="s2">备忘录。txt&#34;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="快速方法">快速方法</h1>
@@ -1508,15 +1498,15 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="结果">结果</h1>
-<p></p>]]></description></item><item><title>简单评论模块--php表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
-<p>简单模仿了一个评论模板，当然肯定是没有博客的valine这么强大的hhhh，<br>
-<strong>PHP表单安全性的重要提示</strong><br>
+<p></p>]]></description></item><item><title>简单评论模块--php 表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
+<p>简单模仿了一个评论模板，当然肯定是没有博客的 valine 这么强大的 hhhh，<br>
+<strong>PHP 表单安全性的重要提示</strong><br>
 <code>$_SERVER[&quot;PHP_SELF&quot;]</code>变量能够被黑客利用！<br>
 如果页面中使用了<code>PHP_SELF</code>，用户能够输入下划线然后执行跨站点脚本（XSS）。<br>
-比如说注入js脚本等，valine以前的版本也有过这样的漏洞。</p>
+比如说注入 js 脚本等，valine 以前的版本也有过这样的漏洞。</p>
 <p><code>跨站点脚本（Cross-site scripting，XSS）</code>是一种计算机安全漏洞类型，常见于 Web 应用程序。XSS 能够使攻击者向其他用户浏览的网页中输入客户端脚本。</p>
 </blockquote>
-<p>可以像valine一样在用户输入完后保留输入，还有一些正则控制输入提示等简单功能。UI就丑爆了算了。。。</p>
+<p>可以像 valine 一样在用户输入完后保留输入，还有一些正则控制输入提示等简单功能。UI 就丑爆了算了。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -1706,7 +1696,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
       姓名：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#34;text&#34;</span> <span class="na">name=</span><span class="s">&#34;name&#34;</span> <span class="na">value=</span><span class="s">&#34;&lt;?php echo $name;?&gt;&#34;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#34;error&#34;</span><span class="nt">&gt;</span>* <span class="cp">&lt;?php echo $nameErr;?&gt;</span><span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;br&gt;&lt;br&gt;</span>
-      性别:
+      性别：
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#34;radio&#34;</span> <span class="na">name=</span><span class="s">&#34;gender&#34;</span> <span class="err">&lt;?php</span> <span class="err">if</span> <span class="err">(isset($gender)</span> <span class="err">&amp;&amp;</span> <span class="err">$</span><span class="na">gender=</span><span class="s">=&#34;女性&#34;)</span> <span class="err">echo</span> <span class="err">&#34;checked&#34;;?</span><span class="nt">&gt;</span> value=&#34;女性&#34;&gt;女性
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#34;radio&#34;</span> <span class="na">name=</span><span class="s">&#34;gender&#34;</span> <span class="err">&lt;?php</span> <span class="err">if</span> <span class="err">(isset($gender)</span> <span class="err">&amp;&amp;</span> <span class="err">$</span><span class="na">gender=</span><span class="s">=&#34;男性&#34;)</span> <span class="err">echo</span> <span class="err">&#34;checked&#34;;?</span><span class="nt">&gt;</span> value=&#34;男性&#34;&gt;男性
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#34;error&#34;</span><span class="nt">&gt;</span>* <span class="cp">&lt;?php echo $genderErr;?&gt;</span><span class="nt">&lt;/span&gt;</span>
@@ -1736,7 +1726,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
 </div><p></p>]]></description></item><item><title>php 函数学习</title><link>https://lruihao.cn/posts/phpfunc/</link><pubDate>Mon, 15 Jul 2019 11:37:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfunc/</guid><description><![CDATA[<blockquote>
-<p>练习php函数的基本使用。<br>
+<p>练习 php 函数的基本使用。<br>
 注：<br>
 必选参数在可选参数的前面。<br>
 可在函数中定义函数，需要先调用外层函数才能调用内层函数。</p>
@@ -1794,7 +1784,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <h2 id="切片操作httpswwwjianshucomp15715d6f4dad"><a href="https://www.jianshu.com/p/15715d6f4dad" target="_blank" rel="noopener noreffer">切片操作</a></h2>
 <p>列表切片操作</p>
 <h2 id="字符串">字符串</h2>
-<h3 id="python原始字符串">python原始字符串</h3>
+<h3 id="python-原始字符串">python 原始字符串</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1805,8 +1795,8 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </div>
 </div><h3 id="长字符串">长字符串</h3>
 <p>用三个单引号或者双引号包裹，前后呼应，成双成对。</p>
-<h3 id="用换行字符表示字符未结束">用\换行字符表示字符未结束</h3>
-<h2 id="格式化输出format">格式化输出format</h2>
+<h3 id="用换行字符表示字符未结束">用、换行字符表示字符未结束</h3>
+<h2 id="格式化输出-format">格式化输出 format</h2>
 <p><code>&quot;=={}==&quot;</code>，<code>{}</code>表示占位符，其前后字符保持原样输出。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1823,7 +1813,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1">#TempConvert.py</span>
-<span class="n">TempStr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入带有符号的温度值: &#34;</span><span class="p">)</span>
+<span class="n">TempStr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入带有符号的温度值：&#34;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">TempStr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;F&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">]:</span>
     <span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">TempStr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span><span class="o">/</span><span class="mf">1.8</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;转换后的温度是</span><span class="si">{:.2f}</span><span class="s2">C&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">C</span><span class="p">))</span>
@@ -1835,7 +1825,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="多变量赋值与交换斐波那契数列">多变量赋值与交换（斐波那契数列）</h2>
-<p>python 3.x版本 <code>end=&quot;&quot;</code> 可使输出不换行</p>
+<p>python 3.x 版本 <code>end=&quot;&quot;</code> 可使输出不换行</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1855,17 +1845,17 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1">#斐波那契数列</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
-<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="p">:</span> <span class="c1"># 输出不大于500 的序列</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="p">:</span> <span class="c1"># 输出不大于 500 的序列</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s2">&#34;,&#34;</span><span class="p">)</span>
     <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="c1">#交换变量</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="笑傲江湖统计字符dict文件流">笑傲江湖统计字符(dict,文件流)</h2>
+</div><h2 id="笑傲江湖统计字符-dict-文件流">笑傲江湖统计字符 (dict, 文件流）</h2>
 <blockquote>
-<p>统计《笑傲江湖》小说中出现的所有中文字符及标点符号的数量，每个字符及数目间用冒号<code>:</code>隔开，例如&quot;笑:1024&quot;，将所有字符及数量的对应采用逗号分隔，以CSV文件格式保存到<code>“笑傲江湖--字符统计.txt”</code>文件中。注意，统计字符不包括空格和回车。</p>
+<p>统计《笑傲江湖》小说中出现的所有中文字符及标点符号的数量，每个字符及数目间用冒号<code>:</code>隔开，例如&quot;笑：1024&quot;，将所有字符及数量的对应采用逗号分隔，以 CSV 文件格式保存到<code>“笑傲江湖--字符统计。txt”</code>文件中。注意，统计字符不包括空格和回车。</p>
 </blockquote>
 <blockquote>
-<p>csv文件格式： ‘,’逗号连接元素</p>
+<p>csv 文件格式： ‘,’逗号连接元素</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1892,8 +1882,8 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data/笑傲江湖-网络版.txt&#34;</span><span class="p">,</span><span class="s2">&#34;r&#34;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
-<span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data/笑傲江湖-字符统计.txt&#34;</span><span class="p">,</span><span class="s2">&#34;w&#34;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">fi</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data/笑傲江湖-网络版。txt&#34;</span><span class="p">,</span><span class="s2">&#34;r&#34;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+<span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data/笑傲江湖-字符统计。txt&#34;</span><span class="p">,</span><span class="s2">&#34;w&#34;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
 
 <span class="n">txt</span> <span class="o">=</span> <span class="n">fi</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1">#打开文件</span>
 <span class="c1">#txt</span>
@@ -1916,12 +1906,12 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
 </div><p></p>
-<h2 id="numpy模块">numpy模块</h2>
+<h2 id="numpy-模块">numpy 模块</h2>
 <p><strong>&hellip;</strong></p>
-<h2 id="pandas模块">pandas模块</h2>
+<h2 id="pandas-模块">pandas 模块</h2>
 <p><strong>&hellip;</strong></p>
 <h1 id="620">6.20</h1>
-<h2 id="matplotlib绘图">matplotlib绘图</h2>
+<h2 id="matplotlib-绘图">matplotlib 绘图</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2069,14 +2059,14 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </div><p></p>
 <h1 id="621">6.21</h1>
 <h2 id="类">类</h2>
-<p>比第一天稍微仔细一点讲了一下类,有点需要注意：</p>
+<p>比第一天稍微仔细一点讲了一下类，有点需要注意：</p>
 <ul>
 <li><code>self</code>相当于<code>this</code>表示当前对象</li>
-<li>python类的所有函数的第一个参数都要写<code>self</code>参数，self也可以是其他的比如<code>lrh</code>等字符替代，但是必须保持一致。</li>
+<li>python 类的所有函数的第一个参数都要写<code>self</code>参数，self 也可以是其他的比如<code>lrh</code>等字符替代，但是必须保持一致。</li>
 <li><code>__</code>表示私有的</li>
-<li>class的定义可以不加(),()内可写继承的父类</li>
+<li>class 的定义可以不加 (),() 内可写继承的父类</li>
 </ul>
-<h2 id="gui设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548">GUI设计 <a href="https://blog.csdn.net/mist99/article/details/80742548" target="_blank" rel="noopener noreffer">wxPython</a></h2>
+<h2 id="gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548">GUI 设计 <a href="https://blog.csdn.net/mist99/article/details/80742548" target="_blank" rel="noopener noreffer">wxPython</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2134,7 +2124,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">wx</span> <span class="c1">#导入wxPython库</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">wx</span> <span class="c1">#导入 wxPython 库</span>
 
 <span class="k">class</span> <span class="nc">Panel</span><span class="p">(</span><span class="n">wx</span><span class="o">.</span><span class="n">Panel</span><span class="p">):</span>  
 
@@ -2196,8 +2186,8 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
 </div><p></p>
-<h2 id="talib库的安装">talib库的安装</h2>
-<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib" target="_blank" rel="noopener noreffer">下载whl文件</a></p>
+<h2 id="talib-库的安装">talib 库的安装</h2>
+<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib" target="_blank" rel="noopener noreffer">下载 whl 文件</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2249,7 +2239,7 @@ pip install TA-Lib
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="机房上机系统自我实践">机房上机系统(自我实践)</h2>
+</div><h2 id="机房上机系统自我实践">机房上机系统（自我实践）</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -2378,7 +2368,6 @@ pip install TA-Lib
 </span><span class="lnt">124
 </span><span class="lnt">125
 </span><span class="lnt">126
-</span><span class="lnt">127
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">time</span>
@@ -2391,7 +2380,7 @@ pip install TA-Lib
         <span class="bp">self</span><span class="o">.</span><span class="n">stu_time</span> <span class="o">=</span> <span class="n">stu_time</span>
 
     <span class="k">def</span> <span class="nf">print</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;学号：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_no</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">姓名：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_name</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">系别：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_xi</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">机时(h)：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_time</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;学号：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_no</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 姓名：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_name</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 系别：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_xi</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 机时 (h)：&#34;</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">stu_time</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">get_stu_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stu_name</span>
@@ -2403,13 +2392,13 @@ pip install TA-Lib
         <span class="bp">self</span><span class="o">.</span><span class="n">stu_time</span> <span class="o">=</span> <span class="n">add_time</span>
 
 <span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">机房上机系统V0.1&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 机房上机系统 V0.1&#34;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;********************************&#34;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;1.录入学生信息&#34;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;2.上机&#34;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;3.下机&#34;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;4.缴费&#34;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;5.退出&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;1. 录入学生信息&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;2. 上机&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;3. 下机&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;4. 缴费&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">—&gt;5. 退出&#34;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;********************************&#34;</span><span class="p">)</span>
     <span class="n">select</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入序号：&#34;</span><span class="p">))</span>
     <span class="k">while</span> <span class="n">select</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]:</span>
@@ -2436,7 +2425,7 @@ pip install TA-Lib
 
         <span class="k">if</span> <span class="n">select</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">input_flag</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;已录入，无需重复操作，缴费请输入4:&#34;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;已录入，无需重复操作，缴费请输入 4:&#34;</span><span class="p">)</span>
                 <span class="k">continue</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">input_flag</span> <span class="o">=</span> <span class="kc">True</span>
@@ -2475,8 +2464,8 @@ pip install TA-Lib
                 <span class="nb">sum</span> <span class="o">=</span> <span class="n">end_num</span> <span class="o">-</span> <span class="n">start_num</span>
                 <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="k">if</span><span class="p">(</span><span class="nb">sum</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">)</span> <span class="k">else</span> <span class="nb">sum</span><span class="o">+</span><span class="mi">24</span>
                 <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="o">+</span><span class="mi">1</span> <span class="k">if</span><span class="p">(</span><span class="nb">sum</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="k">else</span> <span class="nb">sum</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;已下机！下机时间为：&#34;</span><span class="o">+</span><span class="n">end_time</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">上机时长(h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">剩余机时(h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">people</span><span class="o">.</span><span class="n">get_stu_time</span><span class="p">()</span><span class="o">-</span><span class="nb">sum</span><span class="p">))</span>
-                <span class="n">text</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;下机时间：&#34;</span><span class="o">+</span><span class="n">end_time</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">上机时长(h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">people</span><span class="o">.</span><span class="n">get_stu_name</span><span class="p">()</span><span class="o">+</span><span class="s2">&#34;剩余机时(h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">people</span><span class="o">.</span><span class="n">get_stu_time</span><span class="p">()</span><span class="o">-</span><span class="nb">sum</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;已下机！下机时间为：&#34;</span><span class="o">+</span><span class="n">end_time</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 上机时长 (h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 剩余机时 (h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">people</span><span class="o">.</span><span class="n">get_stu_time</span><span class="p">()</span><span class="o">-</span><span class="nb">sum</span><span class="p">))</span>
+                <span class="n">text</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;下机时间：&#34;</span><span class="o">+</span><span class="n">end_time</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 上机时长 (h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">people</span><span class="o">.</span><span class="n">get_stu_name</span><span class="p">()</span><span class="o">+</span><span class="s2">&#34;剩余机时 (h)：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">people</span><span class="o">.</span><span class="n">get_stu_time</span><span class="p">()</span><span class="o">-</span><span class="nb">sum</span><span class="p">))</span>
                 <span class="n">people</span><span class="o">.</span><span class="n">set_stu_time</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">people</span><span class="o">.</span><span class="n">get_stu_time</span><span class="p">()</span><span class="o">-</span><span class="nb">sum</span><span class="p">))</span>
                 <span class="n">down_flag</span> <span class="o">=</span> <span class="kc">True</span>
                 <span class="k">continue</span>
@@ -2493,15 +2482,14 @@ pip install TA-Lib
 
         <span class="k">else</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">down_flag</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;3s后退出系统，感谢使用！&#34;</span><span class="p">)</span>
-                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># 延迟3s，显示提示文字</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;3s 后退出系统，感谢使用！&#34;</span><span class="p">)</span>
+                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># 延迟 3s，显示提示文字</span>
                 <span class="k">break</span> <span class="c1"># 退出系统 写入文件</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;请下机！&#34;</span><span class="p">)</span>
                 <span class="k">continue</span>
 
-
-    <span class="c1">#写入computer.txt文件</span>
+    <span class="c1">#写入 computer.txt 文件</span>
     <span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;D:</span><span class="se">\\</span><span class="s2">computer.txt&#34;</span><span class="p">,</span><span class="s2">&#34;w&#34;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
     <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">text</span><span class="p">))</span> 
     <span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -2511,7 +2499,7 @@ pip install TA-Lib
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="量化交易代码分析与调试">量化交易代码分析与调试</h2>
-<p>由于python的版本问题和一些库的导入问题所以还未调试成功，先挂上代码。以后改篇再论。</p>
+<p>由于 python 的版本问题和一些库的导入问题所以还未调试成功，先挂上代码。以后改篇再论。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -2824,7 +2812,7 @@ pip install TA-Lib
         
         <span class="n">pstock_Text</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">StaticText</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;选股策略筛选结果&#39;</span><span class="p">)</span> 
         <span class="n">pstock_Text</span><span class="o">.</span><span class="n">SetFont</span><span class="p">(</span><span class="n">wx</span><span class="o">.</span><span class="n">Font</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="n">wx</span><span class="o">.</span><span class="n">DEFAULT</span><span class="p">,</span><span class="n">wx</span><span class="o">.</span><span class="n">NORMAL</span><span class="p">,</span><span class="n">wx</span><span class="o">.</span><span class="n">BOLD</span><span class="p">))</span>
-        <span class="n">pstock_sure</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TextCtrl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;角度值:</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span><span class="mi">300</span><span class="p">),</span><span class="n">style</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TE_MULTILINE</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">TE_READONLY</span><span class="p">)</span><span class="c1">#多行|只读</span>
+        <span class="n">pstock_sure</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TextCtrl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;角度值：</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span><span class="mi">300</span><span class="p">),</span><span class="n">style</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TE_MULTILINE</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">TE_READONLY</span><span class="p">)</span><span class="c1">#多行|只读</span>
         <span class="n">pstock_sure</span><span class="o">.</span><span class="n">SetFont</span><span class="p">(</span><span class="n">wx</span><span class="o">.</span><span class="n">Font</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">wx</span><span class="o">.</span><span class="n">DEFAULT</span><span class="p">,</span><span class="n">wx</span><span class="o">.</span><span class="n">NORMAL</span><span class="p">,</span><span class="n">wx</span><span class="o">.</span><span class="n">BOLD</span><span class="p">))</span>
 
         <span class="n">okbtn</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">wx</span><span class="o">.</span><span class="n">ID_OK</span><span class="p">,</span><span class="sa">u</span><span class="s2">&#34;确认&#34;</span><span class="p">)</span>
@@ -2872,13 +2860,13 @@ pip install TA-Lib
         <span class="c1">#日历控件选择数据周期</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dpcEndTime</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DatePickerCtrl</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">style</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DP_DROPDOWN</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DP_SHOWCENTURY</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DP_ALLOWNONE</span><span class="p">)</span><span class="c1">#结束时间</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dpcStartTime</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DatePickerCtrl</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">style</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DP_DROPDOWN</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DP_SHOWCENTURY</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">adv</span><span class="o">.</span><span class="n">DP_ALLOWNONE</span><span class="p">)</span><span class="c1">#起始时间</span>
-        <span class="n">DateTimeNow</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">DateTime</span><span class="o">.</span><span class="n">Now</span><span class="p">()</span><span class="c1">#wx.DateTime格式&#34;03/03/18 00:00:00&#34;</span>
+        <span class="n">DateTimeNow</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">DateTime</span><span class="o">.</span><span class="n">Now</span><span class="p">()</span><span class="c1">#wx.DateTime 格式&#34;03/03/18 00:00:00&#34;</span>
        <span class="c1">#DateTimeNow = datetime.datetime.fromtimestamp(wx.DateTime.Now().GetTicks())</span>
        <span class="c1">#DateTimeNow = datetime.datetime.fromtimestamp(DateTimeNow)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dpcEndTime</span><span class="o">.</span><span class="n">SetValue</span><span class="p">(</span><span class="n">DateTimeNow</span><span class="p">)</span>
         <span class="n">DateTimeNow</span><span class="o">.</span><span class="n">SetYear</span><span class="p">(</span><span class="n">DateTimeNow</span><span class="o">.</span><span class="n">year</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dpcStartTime</span><span class="o">.</span><span class="n">SetValue</span><span class="p">(</span><span class="n">DateTimeNow</span><span class="p">)</span>
-        <span class="n">stockData_Text</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">StaticText</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;日期(Start-End)&#39;</span><span class="p">)</span>
+        <span class="n">stockData_Text</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">StaticText</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;日期 (Start-End)&#39;</span><span class="p">)</span>
         
         <span class="c1">#初始化时间变量</span>
         <span class="n">dateVal</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dpcStartTime</span><span class="o">.</span><span class="n">GetValue</span><span class="p">()</span> 
@@ -2894,23 +2882,23 @@ pip install TA-Lib
         <span class="n">paraInput_Sizer</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="n">strate_Text</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">ALL</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">CENTER</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
         <span class="n">paraInput_Sizer</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pickstrate_CMBO</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">ALL</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">CENTER</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
         
-        <span class="n">RadioList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;不显示&#34;</span><span class="p">,</span><span class="s2">&#34;跳空缺口&#34;</span><span class="p">,</span> <span class="s2">&#34;金叉/死叉&#34;</span><span class="p">,</span> <span class="s2">&#34;N日突破&#34;</span><span class="p">]</span> 
+        <span class="n">RadioList</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;不显示&#34;</span><span class="p">,</span><span class="s2">&#34;跳空缺口&#34;</span><span class="p">,</span> <span class="s2">&#34;金叉/死叉&#34;</span><span class="p">,</span> <span class="s2">&#34;N 日突破&#34;</span><span class="p">]</span> 
         <span class="bp">self</span><span class="o">.</span><span class="n">StratInputBox</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">RadioBox</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;指标提示&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">RadioList</span><span class="p">,</span><span class="n">majorDimension</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">RA_SPECIFY_ROWS</span><span class="p">)</span> 
         <span class="bp">self</span><span class="o">.</span><span class="n">StratInputBox</span><span class="o">.</span><span class="n">Bind</span><span class="p">(</span><span class="n">wx</span><span class="o">.</span><span class="n">EVT_RADIOBOX</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">OnRadioBox_Indicator</span><span class="p">)</span> 
         <span class="c1">#初始化指标变量</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">IndicatInput_Val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">StratInputBox</span><span class="o">.</span><span class="n">GetStringSelection</span><span class="p">()</span>  
         
-        <span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TextCtrl</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;交易信息提示:&#34;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TE_MULTILINE</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">TE_READONLY</span><span class="p">)</span><span class="c1">#多行|只读</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TextCtrl</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;交易信息提示：&#34;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">TE_MULTILINE</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">TE_READONLY</span><span class="p">)</span><span class="c1">#多行|只读</span>
 
-        <span class="n">vboxnetA</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">BoxSizer</span><span class="p">(</span><span class="n">wx</span><span class="o">.</span><span class="n">VERTICAL</span><span class="p">)</span><span class="c1">#纵向box </span>
-        <span class="n">vboxnetA</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="n">paraInput_Sizer</span><span class="p">,</span><span class="n">proportion</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">flag</span><span class="o">=</span><span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span><span class="n">border</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#proportion参数控制容器尺寸比例</span>
+        <span class="n">vboxnetA</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">BoxSizer</span><span class="p">(</span><span class="n">wx</span><span class="o">.</span><span class="n">VERTICAL</span><span class="p">)</span><span class="c1">#纵向 box </span>
+        <span class="n">vboxnetA</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="n">paraInput_Sizer</span><span class="p">,</span><span class="n">proportion</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">flag</span><span class="o">=</span><span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span><span class="n">border</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#proportion 参数控制容器尺寸比例</span>
         <span class="n">vboxnetA</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">StratInputBox</span><span class="p">,</span><span class="n">proportion</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">flag</span><span class="o">=</span><span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">BOTTOM</span><span class="p">,</span><span class="n">border</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>         
         <span class="n">vboxnetA</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span><span class="p">,</span><span class="n">proportion</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">flag</span><span class="o">=</span><span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="o">|</span><span class="n">wx</span><span class="o">.</span><span class="n">ALL</span><span class="p">,</span><span class="n">border</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> 
         <span class="bp">self</span><span class="o">.</span><span class="n">ParaPanel</span><span class="o">.</span><span class="n">SetSizer</span><span class="p">(</span><span class="n">vboxnetA</span><span class="p">)</span>
         
-        <span class="c1">#创建Right面板</span>
+        <span class="c1">#创建 Right 面板</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">CtrlPanel</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">Panel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> 
-        <span class="c1">#创建FlexGridSizer布局网格</span>
+        <span class="c1">#创建 FlexGridSizer 布局网格</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">FlexGridSizer</span><span class="o">=</span><span class="n">wx</span><span class="o">.</span><span class="n">FlexGridSizer</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">vgap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">hgap</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>  
         
         <span class="c1">#行情按钮</span>
@@ -2923,7 +2911,7 @@ pip install TA-Lib
         <span class="bp">self</span><span class="o">.</span><span class="n">Backtrace</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">CtrlPanel</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;回测&#34;</span><span class="p">)</span>  
         <span class="bp">self</span><span class="o">.</span><span class="n">Backtrace</span><span class="o">.</span><span class="n">Bind</span><span class="p">(</span><span class="n">wx</span><span class="o">.</span><span class="n">EVT_BUTTON</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">BackEvent</span><span class="p">)</span><span class="c1">#绑定回测按钮事件</span>
          
-        <span class="c1">#加入Sizer中  </span>
+        <span class="c1">#加入 Sizer 中  </span>
         <span class="bp">self</span><span class="o">.</span><span class="n">FlexGridSizer</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Firmoffer</span><span class="p">,</span><span class="n">proportion</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">border</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="n">flag</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">ALL</span> <span class="o">|</span> <span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="p">)</span>  
         <span class="bp">self</span><span class="o">.</span><span class="n">FlexGridSizer</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Stockpick</span><span class="p">,</span><span class="n">proportion</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">border</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="n">flag</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">ALL</span> <span class="o">|</span> <span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="p">)</span>  
         <span class="bp">self</span><span class="o">.</span><span class="n">FlexGridSizer</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Backtrace</span><span class="p">,</span><span class="n">proportion</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">border</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="n">flag</span> <span class="o">=</span> <span class="n">wx</span><span class="o">.</span><span class="n">ALL</span> <span class="o">|</span> <span class="n">wx</span><span class="o">.</span><span class="n">EXPAND</span><span class="p">)</span> 
@@ -2953,13 +2941,13 @@ pip install TA-Lib
         <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">IndicatInput_Val</span> <span class="o">==</span> <span class="sa">u</span><span class="s2">&#34;跳空缺口&#34;</span><span class="p">:</span>
             <span class="n">dispCont_pd</span><span class="p">,</span><span class="n">dispCont_List</span> <span class="o">=</span> <span class="n">examp_trade</span><span class="o">.</span><span class="n">plot_Jump_Thrd</span><span class="p">(</span><span class="n">df_stockload</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">DispPanel</span><span class="o">.</span><span class="n">draw_jumpgap</span><span class="p">(</span><span class="n">df_stockload</span><span class="p">,</span><span class="n">dispCont_pd</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">IndicatInput_Val</span> <span class="o">==</span> <span class="sa">u</span><span class="s2">&#34;N日突破&#34;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">IndicatInput_Val</span> <span class="o">==</span> <span class="sa">u</span><span class="s2">&#34;N 日突破&#34;</span><span class="p">:</span>
             <span class="n">dispCont_pd</span><span class="p">,</span><span class="n">dispCont_List</span> <span class="o">=</span> <span class="n">examp_trade</span><span class="o">.</span><span class="n">plot_Ndays_Break</span><span class="p">(</span><span class="n">df_stockload</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">DispPanel</span><span class="o">.</span><span class="n">draw_ndaysbreak</span><span class="p">(</span><span class="n">df_stockload</span><span class="p">,</span><span class="n">dispCont_pd</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">dispCont_List</span> <span class="o">=</span> <span class="n">dispCont_List</span>
             
-        <span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span><span class="o">.</span><span class="n">SetValue</span><span class="p">(</span><span class="sa">u</span><span class="s2">&#34;指标提示信息如下:&#34;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span><span class="o">.</span><span class="n">SetValue</span><span class="p">(</span><span class="sa">u</span><span class="s2">&#34;指标提示信息如下：&#34;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dispCont_List</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span><span class="o">.</span><span class="n">AppendText</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 
         <span class="n">numic</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">df_stockload</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
@@ -2979,7 +2967,7 @@ pip install TA-Lib
             <span class="c1">#执行其他策略</span>
             <span class="k">pass</span>    
             
-        <span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span><span class="o">.</span><span class="n">SetValue</span><span class="p">(</span><span class="sa">u</span><span class="s2">&#34;策略提示信息如下:&#34;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span><span class="o">.</span><span class="n">SetValue</span><span class="p">(</span><span class="sa">u</span><span class="s2">&#34;策略提示信息如下：&#34;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dispCont_List</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">TextAInput</span><span class="o">.</span><span class="n">AppendText</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">BackPanel</span><span class="o">.</span><span class="n">xylabel_tick_lim</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stockName_Val</span><span class="p">)</span>
         
@@ -3033,7 +3021,7 @@ pip install TA-Lib
         <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">stockName</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">StNameCodedict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="p">:</span> 
             <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;stockName&#34;</span><span class="p">,</span><span class="n">stockName</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">StNameCodedict</span><span class="p">[</span><span class="n">stockName</span><span class="p">])</span>
             <span class="n">df_stockload</span> <span class="o">=</span> <span class="n">GetStockDatPro</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">StNameCodedict</span><span class="p">[</span><span class="n">stockName</span><span class="p">],</span><span class="bp">self</span><span class="o">.</span><span class="n">stockSdate_Val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">stockEdate_Val</span><span class="p">)</span>
-            <span class="n">df_stockload</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;bfill&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="c1">#后一个数据填充NAN1</span>
+            <span class="n">df_stockload</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;bfill&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="c1">#后一个数据填充 NAN1</span>
             <span class="n">dispCont_List</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stockName</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">examp_trade</span><span class="o">.</span><span class="n">fit_pick</span><span class="p">(</span><span class="n">df_stockload</span><span class="o">.</span><span class="n">Close</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">dispCont_List</span><span class="p">)</span>
         <span class="s2">&#34;&#34;&#34; 选股策略执行 &#34;&#34;&#34;</span>
@@ -3063,9 +3051,9 @@ pip install TA-Lib
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>python 实训总结Ⅰ</title><link>https://lruihao.cn/posts/pysx1/</link><pubDate>Tue, 18 Jun 2019 18:41:00 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysx1/</guid><description><![CDATA[<blockquote>
-<p>以前和前一段时间自己也学习了一下python，也写了几个小爬虫；
-这次正好又课程安排了为期两周的综合实训，主要是**“用python做量化交易”**
-进行了两天，讲的都是一些基本的东西，以前也接触过，所以很容易理解。还讲了一些软件，pycharm，anaconda,sublime等大都也都用过。anaconda倒是第一次接触。</p>
+<p>以前和前一段时间自己也学习了一下 python，也写了几个小爬虫；
+这次正好又课程安排了为期两周的综合实训，主要是**“用 python 做量化交易”**
+进行了两天，讲的都是一些基本的东西，以前也接触过，所以很容易理解。还讲了一些软件，pycharm，anaconda,sublime 等大都也都用过。anaconda 倒是第一次接触。</p>
 </blockquote>
 <h2 id="617">6.17</h2>
 <div class="highlight"><div class="chroma">
@@ -3077,7 +3065,7 @@ pip install TA-Lib
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>讲了一下变量和python的特色什么的。<br>
+<p>讲了一下变量和 python 的特色什么的。<br>
 还讲了模块定义<code>def</code>和类定义</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -3129,8 +3117,8 @@ pip install TA-Lib
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">x</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入x的值：&#34;</span><span class="p">))</span>
-<span class="n">y</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入y的值：&#34;</span><span class="p">))</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">x</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入 x 的值：&#34;</span><span class="p">))</span>
+<span class="n">y</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入 y 的值：&#34;</span><span class="p">))</span>
 <span class="n">z</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -3148,7 +3136,7 @@ pip install TA-Lib
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 导入复数数学模块</span>
 <span class="kn">import</span> <span class="nn">cmath</span>
  
-<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个数字: &#34;</span><span class="p">))</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个数字：&#34;</span><span class="p">))</span>
 <span class="n">num_sqrt</span> <span class="o">=</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> 的平方根为 </span><span class="si">{1:0.3f}</span><span class="s1">+</span><span class="si">{2:0.3f}</span><span class="s1">j&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span> <span class="p">,</span><span class="n">num_sqrt</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">num_sqrt</span><span class="o">.</span><span class="n">imag</span><span class="p">))</span>
 </code></pre></td></tr></table>
@@ -3159,9 +3147,9 @@ pip install TA-Lib
 </blockquote>
 <ul>
 <li>字符串： <code>&quot;&quot;</code> <code>''</code></li>
-<li>元组tuple(2,3)</li>
-<li>列表list[2,3]</li>
-<li>字典dict{Key:Value}</li>
+<li>元组 tuple(2,3)</li>
+<li>列表 list[2,3]</li>
+<li>字典 dict{Key:Value}</li>
 <li>集合{}</li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -3190,7 +3178,7 @@ pip install TA-Lib
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># (start,stop,step)</span>
-    <span class="k">pass</span> <span class="c1"># pass不做任何事情，一般用做占位语句</span>
+    <span class="k">pass</span> <span class="c1"># pass 不做任何事情，一般用做占位语句</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -3235,7 +3223,7 @@ pip install TA-Lib
 Good bye!
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="str--import导库">str() 、 import导库</h3>
+</div><h3 id="str--import-导库">str() 、 import 导库</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3303,23 +3291,23 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>Google翻译意思是:
-美丽胜过丑陋。显式优于隐式。简单比复杂更好。复杂比复杂更好。Flat优于嵌套。稀疏优于密集。可读性很重要。特殊情况不足以打破规则。虽然实用性胜过纯洁。错误不应该默默地传递。除非明确沉默。面对模棱两可，拒绝猜测的诱惑。应该有一个最好只有一个明显的方法来做到这一点。虽然这种方式起初可能并不明显，除非你是荷兰人。现在比永远好。虽然现在永远不会比正确好。如果实施很难解释，这是一个坏主意。如果实现很容易解释，那可能是个好主意。命名空间是一个很棒的主意，让我们做更多的事情吧！</p>
+<p>Google 翻译意思是：
+美丽胜过丑陋。显式优于隐式。简单比复杂更好。复杂比复杂更好。Flat 优于嵌套。稀疏优于密集。可读性很重要。特殊情况不足以打破规则。虽然实用性胜过纯洁。错误不应该默默地传递。除非明确沉默。面对模棱两可，拒绝猜测的诱惑。应该有一个最好只有一个明显的方法来做到这一点。虽然这种方式起初可能并不明显，除非你是荷兰人。现在比永远好。虽然现在永远不会比正确好。如果实施很难解释，这是一个坏主意。如果实现很容易解释，那可能是个好主意。命名空间是一个很棒的主意，让我们做更多的事情吧！</p>
 </blockquote>
-<h3 id="turtle绘图库内置模块">turtle绘图库（内置模块）</h3>]]></description></item><item><title>宝塔面板安装ImgURL图床</title><link>https://lruihao.cn/posts/imgurl/</link><pubDate>Thu, 16 May 2019 20:31:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/imgurl/</guid><description><![CDATA[<div class="featured-image">
+<h3 id="turtle-绘图库内置模块">turtle 绘图库（内置模块）</h3>]]></description></item><item><title>宝塔面板安装 ImgURL 图床</title><link>https://lruihao.cn/posts/imgurl/</link><pubDate>Thu, 16 May 2019 20:31:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/imgurl/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>ImgURL是一个开源、免费的图床程序，ImgURL 2.x之后对环境要求更高，尤其是ImageMagick组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装ImgURL 2.x图床的过程（包括ImgURL 2.x需要的各种组件）
+<p>ImgURL 是一个开源、免费的图床程序，ImgURL 2.x 之后对环境要求更高，尤其是 ImageMagick 组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装 ImgURL 2.x 图床的过程（包括 ImgURL 2.x 需要的各种组件）
 <a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
 </blockquote>
 <h1 id="准备工作">准备工作</h1>
 <ol>
 <li>已经安装宝塔面板</li>
 <li>在宝塔后台创建一个站点</li>
-<li>下载<a href="https://github.com/helloxz/imgurl" target="_blank" rel="noopener noreffer">ImgURL 2.x</a>上传到站点根目录并解压</li>
+<li>下载 <a href="https://github.com/helloxz/imgurl" target="_blank" rel="noopener noreffer">ImgURL 2.x</a> 上传到站点根目录并解压</li>
 </ol>
 <h1 id="设置伪静态">设置伪静态</h1>
-<p>如果您宝塔面板安装的Apache则不需要再设置伪静态，直接跳过这个步骤，如果使用的Nginx环境，请继续往下看。</p>
+<p>如果您宝塔面板安装的 Apache 则不需要再设置伪静态，直接跳过这个步骤，如果使用的 Nginx 环境，请继续往下看。</p>
 <p>找到对应的站点 - 点击后面设置按钮 - 伪静态 - 添加下面的伪静态规则</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3346,20 +3334,20 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </code></pre></td></tr></table>
 </div>
 </div><p></p>
-<h1 id="安装fileinfo--imagemagick">安装fileinfo &amp; imagemagick</h1>
-<p>在宝塔后台 - 软件管理 - 找到您站点对应的PHP版本 - 设置PHP - 安装扩展 - 勾选<code>fileinfo</code>和<code>imagemagick</code>，如下截图。</p>
+<h1 id="安装-fileinfo--imagemagick">安装 fileinfo &amp; imagemagick</h1>
+<p>在宝塔后台 - 软件管理 - 找到您站点对应的 PHP 版本 - 设置 PHP - 安装扩展 - 勾选<code>fileinfo</code>和<code>imagemagick</code>，如下截图。</p>
 <p></p>
-<h1 id="安装imgurl-2x">安装ImgURL 2.x</h1>
-<p>其它所需扩展宝塔默认已经支持，重点是安装<code>fileinfo</code>和<code>imagemagick</code>，扩展安装完毕后就可以访问您自己的域名安装ImgURL了，如果正常会看到ImgURL安装界面。</p>
+<h1 id="安装-imgurl-2x">安装 ImgURL 2.x</h1>
+<p>其它所需扩展宝塔默认已经支持，重点是安装<code>fileinfo</code>和<code>imagemagick</code>，扩展安装完毕后就可以访问您自己的域名安装 ImgURL 了，如果正常会看到 ImgURL 安装界面。</p>
 <p><br>
 </p>
 <h1 id="其它说明">其它说明</h1>
 <ul>
-<li>如果安装遇到任何问题，请留言反馈或到<a href="https://ttt.sh/category/6/imgurl%E5%9B%BE%E5%BA%8A" target="_blank" rel="noopener noreffer">3T官方社区</a>进行反馈</li>
-<li>ImgURL更多使用说明请参考帮助文档：<a href="https://dwz.ovh/imgurldoc" target="_blank" rel="noopener noreffer">https://dwz.ovh/imgurldoc</a></li>
+<li>如果安装遇到任何问题，请留言反馈或到 <a href="https://ttt.sh/category/6/imgurl%E5%9B%BE%E5%BA%8A" target="_blank" rel="noopener noreffer">3T 官方社区</a> 进行反馈</li>
+<li>ImgURL 更多使用说明请参考帮助文档：<a href="https://dwz.ovh/imgurldoc" target="_blank" rel="noopener noreffer">https://dwz.ovh/imgurldoc</a></li>
 </ul>]]></description></item><item><title>python 设置程序每天 8 点定时执行任务</title><link>https://lruihao.cn/posts/pysettime/</link><pubDate>Thu, 09 May 2019 23:26:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysettime/</guid><description><![CDATA[<blockquote>
 <p>第一次运行根据程序执行时间，判断程序休眠的时间，尽最大可能休眠，节省系统资源。<br>
-第二次运行后直接休眠一天，到每天早上8点执行任务。<br>
+第二次运行后直接休眠一天，到每天早上 8 点执行任务。<br>
 （该程序需要一直挂着，保持网络不断）</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -3392,41 +3380,41 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
     <span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
         <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
         <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
         <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
         <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span> <span class="o">+</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span> <span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在每天8点发送数据！&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span> <span class="o">+</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span> <span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
         <span class="c1"># 以下为定时任务</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;数据&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">86400</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>安装pyinstaller出错的解决办法及csdn工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>安装 pyinstaller 出错的解决办法及 csdn 工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/pyinstallererror/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>用过命令<code>pip install pyinstaller</code>安装失败，此包依赖于pywin32，安装前需要先<code>pip install pywin32</code>,我安装了还是出错，稍微百度了一下也没有看到解决办法。
+<p>用过命令<code>pip install pyinstaller</code>安装失败，此包依赖于 pywin32，安装前需要先<code>pip install pywin32</code>, 我安装了还是出错，稍微百度了一下也没有看到解决办法。
 这里通过手动下载安装解决的，记录一下。</p>
 </blockquote>
 <h1 id="下载">下载</h1>
-<p>去官网下载pyinstaller安装包：<a href="https://pypi.org/project/PyInstaller/#files" target="_blank" rel="noopener noreffer">https://pypi.org/project/PyInstaller/#files</a></p>
+<p>去官网下载 pyinstaller 安装包：<a href="https://pypi.org/project/PyInstaller/#files" target="_blank" rel="noopener noreffer">https://pypi.org/project/PyInstaller/#files</a></p>
 <h1 id="解压">解压</h1>
-<p>我这里解压到<code>E:\应用\Python37\Lib\site-packages\PyInstaller-3.4</code></p>
+<p>我这里解压到<code>E:\应用、Python37\Lib\site-packages\PyInstaller-3.4</code></p>
 <h1 id="安装">安装</h1>
-<p>cmd也进入到上面的路径下，然后执行<code>Python setup.py install</code>，等待安装完毕</p>
+<p>cmd 也进入到上面的路径下，然后执行<code>Python setup.py install</code>，等待安装完毕</p>
 <p>
 
 
 </p>
-<h1 id="pyinstaller简介">pyinstaller简介</h1>
-<p>pyinstaller将Python脚本打包成可执行程序，使在没有Python环境的机器上运行。</p>
-<p>最新版是pyinstaller 3.4，可运行在Windows，Mac和Linux操作系统下。 但它不是跨编译的，也就是说在Windows下用PyInstaller生成的exe只能运行在Windows下，在Linux下生成的只能运行在Linux下。</p>
+<h1 id="pyinstaller-简介">pyinstaller 简介</h1>
+<p>pyinstaller 将 Python 脚本打包成可执行程序，使在没有 Python 环境的机器上运行。</p>
+<p>最新版是 pyinstaller 3.4，可运行在 Windows，Mac 和 Linux 操作系统下。 但它不是跨编译的，也就是说在 Windows 下用 PyInstaller 生成的 exe 只能运行在 Windows 下，在 Linux 下生成的只能运行在 Linux 下。</p>
 <h1 id="打包">打包</h1>
-<p>打包的app里并不包含任何源码，但将脚本的.pyc文件打包了。</p>
+<p>打包的 app 里并不包含任何源码，但将脚本的。pyc 文件打包了。</p>
 <p>基本语法： <code>pyinstaller options myscript.py</code></p>
 <blockquote>
 <p>常用的可选参数如下：
@@ -3434,15 +3422,15 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <code>--onedir</code> 将所有结果打包到一个文件夹中，该文件夹包括一个可执行文件和可执行文件执行时需要的依赖文件（默认）
 <code>--paths=DIR</code> 设置导入路径
 <code>--distpath=DIR</code> 设置将打包的结果文件放置的路径
-<code>--specpath=DIR</code> 设置将spec文件放置的路径
-<code>--windowed</code> 使用windows子系统执行，不会打开命令行（只对windows有效）
-<code>--nowindowed</code> 使用控制台子系统执行（默认）（只对windows有效）
-<code>--icon=&lt;FILE.ICO&gt;</code> 将file.ico添加为可执行文件的资源(只对windows有效）</p>
+<code>--specpath=DIR</code> 设置将 spec 文件放置的路径
+<code>--windowed</code> 使用 windows 子系统执行，不会打开命令行（只对 windows 有效）
+<code>--nowindowed</code> 使用控制台子系统执行（默认）（只对 windows 有效）
+<code>--icon=&lt;FILE.ICO&gt;</code> 将 file.ico 添加为可执行文件的资源（只对 windows 有效）</p>
 </blockquote>
 <p>如<code>pyinstaller --paths=&quot;D:\&quot; test.py</code></p>
-<h1 id="csdn访问量脚本实例">CSDN访问量脚本实例</h1>
-<p>比如，拿以前写的一个刷csdn访问量工具csdn.py（放在桌面上），<a href="/posts/csdnvisiter.html" rel="">代码详见</a></p>
-<p>在cmd进入桌面路径，输入如下命令</p>
+<h1 id="csdn-访问量脚本实例">CSDN 访问量脚本实例</h1>
+<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a href="/posts/csdnvisiter.html" rel="">代码详见</a></p>
+<p>在 cmd 进入桌面路径，输入如下命令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3453,19 +3441,19 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div>
 </div><p>
 </p>
-<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及exe可执行文件。</p>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
+<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及 exe 可执行文件。</p>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/singlethreaddown/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。</p>
 </blockquote>
-<h1 id="gui设计基本流程">GUI设计基本流程</h1>
-<p>先记录一下GUI设计的基本流程：</p>
+<h1 id="gui-设计基本流程">GUI 设计基本流程</h1>
+<p>先记录一下 GUI 设计的基本流程：</p>
 <ol>
-<li>根据需要从相应的顶层容器继承（如果创建窗体就继承JFrame，对话框就继承JDialog），新建一个子类。</li>
+<li>根据需要从相应的顶层容器继承（如果创建窗体就继承 JFrame，对话框就继承 JDialog），新建一个子类。</li>
 <li>然后设置顶层容器的属性，包括大小、位置、标题和关闭事件等。</li>
-<li>设置界面上GUI组件的事件响应。 <code>public void actionPerformed(ActionEvent e) {}</code></li>
-<li>向顶层容器上添加GUI组件，并设置布局。（通常利用JPanel组件先作为微型容器）</li>
-<li>创建新建子类的实例，调用setVisible(true)方法显示页面。（也可以直接在子类中设置setVisible(true)）</li>
+<li>设置界面上 GUI 组件的事件响应。 <code>public void actionPerformed(ActionEvent e) {}</code></li>
+<li>向顶层容器上添加 GUI 组件，并设置布局。（通常利用 JPanel 组件先作为微型容器）</li>
+<li>创建新建子类的实例，调用 setVisible(true) 方法显示页面。（也可以直接在子类中设置 setVisible(true)）</li>
 </ol>
 <h1 id="实现代码">实现代码</h1>
 <div class="highlight"><div class="chroma">
@@ -3563,8 +3551,6 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </span><span class="lnt">91
 </span><span class="lnt">92
 </span><span class="lnt">93
-</span><span class="lnt">94
-</span><span class="lnt">95
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">cn.lruihao.base</span><span class="o">;</span>
@@ -3595,8 +3581,6 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 	<span class="n">JButton</span> <span class="n">exitButton</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JButton</span><span class="o">(</span><span class="s">&#34;退出&#34;</span><span class="o">);</span>
 	<span class="n">JTextField</span> <span class="n">urlField</span>  <span class="o">=</span> <span class="k">new</span> <span class="n">JTextField</span><span class="o">(</span><span class="n">20</span><span class="o">);</span>
 	
-	
-	
 	<span class="kd">public</span> <span class="nf">SingleThreadDown</span><span class="o">()</span> <span class="o">{</span>
 		<span class="n">panel</span><span class="o">.</span><span class="na">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">FlowLayout</span><span class="o">());</span> <span class="c1">//布局管理器
 </span><span class="c1"></span>		<span class="n">label1</span><span class="o">.</span><span class="na">setFont</span><span class="o">(</span><span class="k">new</span> <span class="n">Font</span><span class="o">(</span><span class="s">&#34;雅黑&#34;</span><span class="o">,</span><span class="n">Font</span><span class="o">.</span><span class="na">BOLD</span><span class="o">,</span><span class="n">15</span><span class="o">));</span>
@@ -3609,9 +3593,9 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 		<span class="n">setContentPane</span><span class="o">(</span><span class="n">panel</span><span class="o">);</span>
 		<span class="n">setSize</span><span class="o">(</span><span class="n">400</span><span class="o">,</span><span class="n">200</span><span class="o">);</span>
 		<span class="n">setLocation</span><span class="o">(</span><span class="n">400</span><span class="o">,</span><span class="n">400</span><span class="o">);</span>
-		<span class="n">setVisible</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span> <span class="c1">//面板可视化，也可以在main中通过JFrame子类对象调用方法设置
+		<span class="n">setVisible</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span> <span class="c1">//面板可视化，也可以在 main 中通过 JFrame 子类对象调用方法设置
 </span><span class="c1"></span>		<span class="n">setDefaultCloseOperation</span><span class="o">(</span><span class="n">JFrame</span><span class="o">.</span><span class="na">EXIT_ON_CLOSE</span><span class="o">);</span> <span class="c1">//默认关闭事件
-</span><span class="c1"></span>		<span class="n">StartButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span><span class="c1">//添加点击事件，传入ActionListener对象，由于子类继承了ActionListener接口，所以this
+</span><span class="c1"></span>		<span class="n">StartButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span><span class="c1">//添加点击事件，传入 ActionListener 对象，由于子类继承了 ActionListener 接口，所以 this
 </span><span class="c1"></span>		<span class="n">resetButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
 		<span class="n">exitButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
 	<span class="o">}</span>
@@ -3624,7 +3608,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </span><span class="c1"></span>		<span class="n">String</span> <span class="n">filePath</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">getFile</span><span class="o">();</span>
 		<span class="kt">int</span> <span class="n">pos</span><span class="o">=</span><span class="n">filePath</span><span class="o">.</span><span class="na">lastIndexOf</span><span class="o">(</span><span class="s">&#34;/&#34;</span><span class="o">);</span> <span class="c1">//&#34;/&#34;分割的最后一个串的下标
 </span><span class="c1"></span>		<span class="n">String</span> <span class="n">fileName</span> <span class="o">=</span> <span class="n">filePath</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">pos</span><span class="o">+</span><span class="n">1</span><span class="o">);</span>
-		<span class="n">FileOutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="s">&#34;C:\\Users\\李瑞豪\\Desktop\\&#34;</span><span class="o">+</span><span class="n">fileName</span><span class="o">);</span>
+		<span class="n">FileOutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="s">&#34;C:\\Users\\李瑞豪、\Desktop\\&#34;</span><span class="o">+</span><span class="n">fileName</span><span class="o">);</span>
 		<span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">1024</span><span class="o">];</span>
 		<span class="kt">int</span> <span class="n">len</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
 		<span class="k">while</span><span class="o">((</span><span class="n">len</span><span class="o">=</span><span class="n">in</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">b</span><span class="o">,</span><span class="n">0</span><span class="o">,</span><span class="n">1024</span><span class="o">))!=-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
@@ -3665,14 +3649,14 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="运行结果测试">运行结果测试</h1>
-<p>通过<code>https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf</code>下载沐目体ttf字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。</p>
+<p>通过<code>https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf</code>下载沐目体 ttf 字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。</p>
 <p></p>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
+<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
 </blockquote>
-<h1 id="json的数据格式">json的数据格式</h1>
-<p>在json中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”,就是一个json格式的数据，json的格式归纳下来，一般有以下几点：</p>
+<h1 id="json-的数据格式">json 的数据格式</h1>
+<p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>
 <ul>
 <li>对象通过键值对表现；</li>
 <li>键通过双引号包裹，后面跟冒号“:”，然后跟该键的值；</li>
@@ -3683,31 +3667,31 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </ul>
 <p>我们看一个略为复杂一点的例子：</p>
 <p></p>
-<p>上例则是一个典型的json格式的数据，强大的Python提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个json格式的数据，也可以将一个json格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p>
+<p>上例则是一个典型的 json 格式的数据，强大的 Python 提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个 json 格式的数据，也可以将一个 json 格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p>
 <h1 id="jsondumps">json.dumps()</h1>
-<p>json模块里的dumps函数是对数据进行编码，形成json格式的数据，我们看一下下面的例子：</p>
+<p>json 模块里的 dumps 函数是对数据进行编码，形成 json 格式的数据，我们看一下下面的例子：</p>
 <p></p>
-<p>通过输出的结果很容易看出，通过dumps方法使字典转换成为了json格式，虽然它们非常相似。其中，在dumps里的参数“sort_keys=True”，使得输出json后对key和value进行0~9、a~  z的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较json中的数据，因此，适当的排序是很有必要的。</p>
-<p>此外，“Indent”参数表示缩进的意思，它可以使得输出的Json看起来更加整齐好看，可读性更强，例如：</p>
+<p>通过输出的结果很容易看出，通过 dumps 方法使字典转换成为了 json 格式，虽然它们非常相似。其中，在 dumps 里的参数“sort_keys=True”，使得输出 json 后对 key 和 value 进行 0~9、a~  z 的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较 json 中的数据，因此，适当的排序是很有必要的。</p>
+<p>此外，“Indent”参数表示缩进的意思，它可以使得输出的 Json 看起来更加整齐好看，可读性更强，例如：</p>
 <p></p>
-<p>下面列举一下dumps（）的可填参数：</p>
+<p>下面列举一下 dumps（）的可填参数：</p>
 <ul>
-<li>skipkey：默认为False，当dict对象里的数据不是Python的基本数据类型；（str,unicode,int,long,float,bool,None）时，当skipkey为False，就会报错，如果skipkey为True，则可以跳过这类key；</li>
-<li>indent：如果填0或者不填，则按照一行进行打印，否则按照indent的数值显示前面的空格（正整数形式）；</li>
-<li>separators：分隔符，默认为“(',',':')”，它表示key之间用“,”隔开，key和value之间用“:”隔开；</li>
-<li>encoding：编码格式，默认值是UTF-8；</li>
-<li>sort_keys：对key、value进行排序，默认值是False，即不排序；</li>
-<li>ensure_ascii：默认为True，如果dict对象里含有none-ASCII的字符，则显示\uXX的格式，如果为False，则能正常显示出来；</li>
+<li>skipkey：默认为 False，当 dict 对象里的数据不是 Python 的基本数据类型；（str,unicode,int,long,float,bool,None）时，当 skipkey 为 False，就会报错，如果 skipkey 为 True，则可以跳过这类 key；</li>
+<li>indent：如果填 0 或者不填，则按照一行进行打印，否则按照 indent 的数值显示前面的空格（正整数形式）；</li>
+<li>separators：分隔符，默认为“(',',':')”，它表示 key 之间用“,”隔开，key 和 value 之间用“:”隔开；</li>
+<li>encoding：编码格式，默认值是 UTF-8；</li>
+<li>sort_keys：对 key、value 进行排序，默认值是 False，即不排序；</li>
+<li>ensure_ascii：默认为 True，如果 dict 对象里含有 none-ASCII 的字符，则显示、uXX 的格式，如果为 False，则能正常显示出来；</li>
 </ul>
 <h1 id="jsonloads">json.loads()</h1>
-<p>和dumps相反，loads函数则是将json格式的数据解码，转换为Python字典，我们看一下下面的例子：</p>
+<p>和 dumps 相反，loads 函数则是将 json 格式的数据解码，转换为 Python 字典，我们看一下下面的例子：</p>
 <p></p>
-<p>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为Unicode的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=&lsquo;utf-8&rsquo;)即可。</p>
+<p>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为 Unicode 的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=&lsquo;utf-8&rsquo;) 即可。</p>
 <h1 id="jsondump-和-jsonload">json.dump() 和 json.load()</h1>
-<p>相对于上面所讲的dumps和loads来说，dump和load函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
+<p>相对于上面所讲的 dumps 和 loads 来说，dump 和 load 函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
 <p></p>
-<p>上例列举出了json的四个方法：dumps（）和dump（）、loads（）和load（）的简单使用方法，可见，Python对于json的处理相当方便，不像c++那样（谁用谁知道）。</p>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
-<p>通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
+<p>上例列举出了 json 的四个方法：dumps（）和 dump（）、loads（）和 load（）的简单使用方法，可见，Python 对于 json 的处理相当方便，不像 c++那样（谁用谁知道）。</p>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
+<p>通过 requests 可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
 </blockquote>
 <ul>
 <li>requests.get()</li>
@@ -3742,11 +3726,11 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">通过requests可以向某个地址发送请求requests.post(url,json date)
-</span><span class="s2">post方法还有其他参数，如header等
+</span><span class="s2">通过 requests 可以向某个地址发送请求 requests.post(url,json date)
+</span><span class="s2">post 方法还有其他参数，如 header 等
 </span><span class="s2">&#34;&#34;&#34;</span>
 
-<span class="c1"># post发送的数据</span>
+<span class="c1"># post 发送的数据</span>
 <span class="n">postData</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># &#39;username&#39;:&#39;test&#39;,</span>
     <span class="c1"># &#39;password&#39;:&#39;123456&#39;,</span>
@@ -3760,9 +3744,9 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>运行后会在屏幕打印出返回的json数据
+</div><p>运行后会在屏幕打印出返回的 json 数据
 </p>]]></description></item><item><title>java 通过 URL 和 URLConnection 访问网页资源</title><link>https://lruihao.cn/posts/urlreader/</link><pubDate>Mon, 06 May 2019 17:41:35 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/urlreader/</guid><description><![CDATA[<blockquote>
-<p>该例中首先生成一个URL对象lrh，指向RUI豪小栈，然后再调用lrh.openStream()方法生成该URL的一个输入流，这是一个字节流，在此基础上进一步通过InputStreamReader和BufferedReader构造一个带缓冲功能的字符流，并通过这个字符流对象读取该URL的html内容，进而输出到桌面文件和控制台屏幕。URLConnection类也可以用来对由URL引用的资源进行读写操作，前提是先通过connect()方法建立连接，然后再去获取响应头信息或响应内容。</p>
+<p>该例中首先生成一个 URL 对象 lrh，指向 RUI 豪小栈，然后再调用 lrh.openStream() 方法生成该 URL 的一个输入流，这是一个字节流，在此基础上进一步通过 InputStreamReader 和 BufferedReader 构造一个带缓冲功能的字符流，并通过这个字符流对象读取该 URL 的 html 内容，进而输出到桌面文件和控制台屏幕。URLConnection 类也可以用来对由 URL 引用的资源进行读写操作，前提是先通过 connect() 方法建立连接，然后再去获取响应头信息或响应内容。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3828,7 +3812,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span><span class="o">{</span>
 		<span class="k">try</span> <span class="o">{</span>
 			<span class="n">URL</span> <span class="n">lrh</span><span class="o">=</span><span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">&#34;https://www.lruihao.cn&#34;</span><span class="o">);</span>
-			<span class="n">File</span> <span class="n">file</span><span class="o">=</span><span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">&#34;C:\\Users\\李瑞豪\\Desktop\\lrh.html&#34;</span><span class="o">);</span>
+			<span class="n">File</span> <span class="n">file</span><span class="o">=</span><span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">&#34;C:\\Users\\李瑞豪、\Desktop\\lrh.html&#34;</span><span class="o">);</span>
 			<span class="n">FileWriter</span> <span class="n">fout</span><span class="o">=</span><span class="k">new</span> <span class="n">FileWriter</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
 			<span class="n">BufferedReader</span> <span class="n">in</span> <span class="o">=</span><span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">InputStreamReader</span><span class="o">(</span><span class="n">lrh</span><span class="o">.</span><span class="na">openStream</span><span class="o">()));</span><span class="c1">//字节流转化成字符流，再构建缓冲字符流
 </span><span class="c1"></span>			<span class="n">String</span> <span class="n">inputLine</span><span class="o">;</span>
@@ -3839,13 +3823,13 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 			<span class="n">in</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
 			<span class="n">fout</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
 			
-			<span class="c1">//获取响应header信息
+			<span class="c1">//获取响应 header 信息
 </span><span class="c1"></span>			<span class="n">URLConnection</span> <span class="n">conn</span><span class="o">=</span><span class="n">lrh</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
 			<span class="n">conn</span><span class="o">.</span><span class="na">connect</span><span class="o">();</span>
 			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;获取到的响应长度：&#34;</span><span class="o">+</span><span class="n">conn</span><span class="o">.</span><span class="na">getContentLength</span><span class="o">());</span>
 			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;响应类型：&#34;</span><span class="o">+</span><span class="n">conn</span><span class="o">.</span><span class="na">getContentType</span><span class="o">());</span>
 
-			<span class="c1">//用BufferedReader读取URL的响应
+			<span class="c1">//用 BufferedReader 读取 URL 的响应
 </span><span class="c1"></span>			<span class="n">in</span> <span class="o">=</span><span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">InputStreamReader</span><span class="o">(</span><span class="n">conn</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">()));</span>
 			<span class="n">String</span> <span class="n">line</span><span class="o">;</span>
 			<span class="n">String</span> <span class="n">result</span><span class="o">=</span><span class="kc">null</span><span class="o">;</span>
@@ -3928,7 +3912,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 		<span class="kt">byte</span> <span class="n">pwd</span><span class="o">=</span><span class="n">123</span><span class="o">;</span><span class="c1">//加密/解密密码
 </span><span class="c1"></span>		<span class="n">FileInputStream</span> <span class="n">f</span><span class="o">=</span><span class="k">new</span> <span class="n">FileInputStream</span><span class="o">(</span><span class="s">&#34;src/cn/lruihao/base/EncryptFile.java&#34;</span><span class="o">);</span><span class="c1">//待加密文件
 </span><span class="c1"></span>		<span class="n">FileOutputStream</span> <span class="n">fout</span><span class="o">=</span><span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="s">&#34;encrypted.txt&#34;</span><span class="o">);</span><span class="c1">//已加密文件
-</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;开始加密。。。&#34;</span><span class="o">);</span>
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;开始加密。&#34;</span><span class="o">);</span>
 		<span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="na">available</span><span class="o">()/</span><span class="n">5</span><span class="o">;</span>
 		<span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span><span class="o">=</span><span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">n</span><span class="o">];</span><span class="c1">//以一个字节数组的长度读取和复制
 </span><span class="c1"></span>		<span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
@@ -3944,7 +3928,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 		<span class="n">fout</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
 <span class="c1">//		f=new FileInputStream(&#34;encrypted.txt&#34;);
 </span><span class="c1">//		fout=new FileOutputStream(&#34;unencrypted.txt&#34;);
-</span><span class="c1">//		System.out.println(&#34;开始解密。。。&#34;);
+</span><span class="c1">//		System.out.println(&#34;开始解密。&#34;);
 </span><span class="c1">//		n=f.available()/5;
 </span><span class="c1">//		b=new byte[n];//以一个字节数组的长度读取和复制
 </span><span class="c1">//		count=0;
@@ -4095,7 +4079,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 		<span class="n">FileOutputStream</span> <span class="n">fout</span><span class="o">=</span><span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="s">&#34;copy-of-file.txt&#34;</span><span class="o">);</span>
 		<span class="n">BufferedInputStream</span> <span class="n">bis</span><span class="o">=</span><span class="k">new</span> <span class="n">BufferedInputStream</span><span class="o">(</span><span class="n">f</span><span class="o">);</span>
 		<span class="n">BufferedOutputStream</span> <span class="n">bos</span><span class="o">=</span><span class="k">new</span> <span class="n">BufferedOutputStream</span><span class="o">(</span><span class="n">fout</span><span class="o">);</span>
-		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;开始复制。。。&#34;</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;开始复制。&#34;</span><span class="o">);</span>
 		<span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="na">available</span><span class="o">()/</span><span class="n">5</span><span class="o">;</span>
 		<span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span><span class="o">=</span><span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">n</span><span class="o">];</span>
 		<span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
@@ -4114,11 +4098,11 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>模拟借书系统（java异常练习）</title><link>https://lruihao.cn/posts/javaexception/</link><pubDate>Wed, 01 May 2019 16:52:21 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/javaexception/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>模拟借书系统（java 异常练习）</title><link>https://lruihao.cn/posts/javaexception/</link><pubDate>Wed, 01 May 2019 16:52:21 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/javaexception/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/javaexception/images/1.png" referrerpolicy="no-referrer">
             </div><h1 id="实现代码">实现代码</h1>
 <blockquote>
-<p>这里的异常主要是<code>InputMismatchException</code>,可以直接捕获该异常，我直接捕获了父类异常。。。</p>
+<p>这里的异常主要是<code>InputMismatchException</code>, 可以直接捕获该异常，我直接捕获了父类异常。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -4227,7 +4211,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 
 <span class="cm">/**
 </span><span class="cm"> * @author 李瑞豪
-</span><span class="cm"> *	借书系统(异常练习)
+</span><span class="cm"> *	借书系统（异常练习）
 </span><span class="cm"> */</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExceptionDemo</span> <span class="o">{</span>
@@ -4245,7 +4229,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 	<span class="o">}</span>
 	
 	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">menu</span><span class="o">()</span> <span class="o">{</span>
-		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入命令：1.书名查找；\t2.序号查找；&#34;</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入命令：1. 书名查找；\t2. 序号查找；&#34;</span><span class="o">);</span>
 		 <span class="c1">//初始化并捕获用户输入
 </span><span class="c1"></span>		<span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
 <span class="c1">//		捕获异常
@@ -4254,7 +4238,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 			<span class="k">if</span><span class="o">(</span><span class="n">id</span><span class="o">==</span><span class="n">1</span><span class="o">||</span><span class="n">id</span><span class="o">==</span><span class="n">2</span><span class="o">)</span> <span class="o">{</span>
 				<span class="n">inquire</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
 			<span class="o">}</span><span class="k">else</span> <span class="o">{</span>
-				<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入错误！请根据提示输入~~&#34;</span><span class="o">);</span><span class="c1">//输入非1，2的数字情况
+				<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;输入错误！请根据提示输入~~&#34;</span><span class="o">);</span><span class="c1">//输入非 1，2 的数字情况
 </span><span class="c1"></span>				<span class="n">menu</span><span class="o">();</span>
 			<span class="o">}</span>
 		<span class="o">}</span><span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span><span class="c1">//输入字符为非数字
@@ -4274,7 +4258,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 			<span class="n">String</span> <span class="n">name</span><span class="o">=</span><span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
 			<span class="kt">int</span> <span class="n">num</span><span class="o">=</span><span class="n">FindName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
 			<span class="k">if</span><span class="o">(</span><span class="n">num</span><span class="o">==</span><span class="n">0</span><span class="o">?</span><span class="kc">false</span><span class="o">:</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span><span class="c1">//验证书名是否存在 存在则打印
-</span><span class="c1"></span>				<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;book：&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s">&#34;\t序号：&#34;</span><span class="o">+</span><span class="n">num</span><span class="o">);</span>
+</span><span class="c1"></span>				<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;book：&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s">&#34;\t 序号：&#34;</span><span class="o">+</span><span class="n">num</span><span class="o">);</span>
 				<span class="c1">//menu();//回到访问起点 也可以去掉终止程序
 </span><span class="c1"></span>			<span class="o">}</span><span class="k">else</span><span class="o">{</span>
 	            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;图书不存在&#34;</span><span class="o">);</span>

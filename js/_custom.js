@@ -1,12 +1,12 @@
 /**
- * @author @Lruihao https://lruihao.cn
+ * @author LRUIHAO.CN
  * @description Custom javascript for hugo-blog.
  */
 const CustomJS = new (function () {
   /**
    * Baidu auto push.
    * @link https://ziyuan.baidu.com
-   * @returns {CustomJS}
+   * @returns CustomJS
    */
   this.baiduPush = () => {
     var bp = document.createElement('script');
@@ -23,7 +23,7 @@ const CustomJS = new (function () {
   /**
    * Baidu statistics.
    * @link https://tongji.baidu.com
-   * @returns {CustomJS}
+   * @returns CustomJS
    */
   this.baiduStatistics = () => {
     var _hmt = _hmt || [];
@@ -35,7 +35,7 @@ const CustomJS = new (function () {
   };
   /**
    * Console some infomation
-   * @returns {CustomJS}
+   * @returns CustomJS
    */
   this.consoleInfo = () => {
     console.log(
@@ -52,7 +52,7 @@ const CustomJS = new (function () {
   /**
    * Fix the toc bug.
    * @link https://github.com/Lruihao/hugo-blog/issues/24
-   * @returns {CustomJS}
+   * @returns CustomJS
    */
   this.fixToc = () => {
     $toc = document.querySelector('#toc-auto');
@@ -64,29 +64,14 @@ const CustomJS = new (function () {
     }
     return this;
   };
-  /**
-   * Render watermark.
-   * @link https://github.com/Lruihao/watermark
-   * @returns {CustomJS}
-   */
-  this.renderWatermark = () => {
-    new Watermark({
-      content: '@Lruihao'
-    });
-    return this;
-  };
 
   /**
    * Initialize.
-   * @returns {CustomJS}
+   * @returns CustomJS
    */
   this.init = () => {
-    // SEO etc.
     this.baiduStatistics().baiduPush();
-    // Bug fixs.
-    this.fixToc();
-    // Custom infos.
-    this.consoleInfo().renderWatermark();
+    this.fixToc().consoleInfo();
     return this;
   };
 })();

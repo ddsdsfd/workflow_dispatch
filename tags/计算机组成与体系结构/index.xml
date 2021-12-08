@@ -35,7 +35,7 @@
 </tbody>
 </table>
 <h3 id="流水线加速比">流水线加速比</h3>
-<p>完成一批任务,不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p>
+<p>完成一批任务，不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p>
 <p>公式： S=不使用流水线执行时间/使用流水线执行时间</p>
 <p>流水线加速比越高越好，说明使用流水线的效果。</p>
 <h3 id="流水线的效率">流水线的效率</h3>
@@ -45,7 +45,7 @@
 <h3 id="其他">其他</h3>
 <h4 id="主机">主机</h4>
 <p></p>
-<h4 id="cisc和risc">CISC和RISC</h4>
+<h4 id="cisc-和-risc">CISC 和 RISC</h4>
 <table>
 <thead>
 <tr>
@@ -59,10 +59,10 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">CISC(复杂指令集)</td>
+<td style="text-align:center">CISC（复杂指令集）</td>
 <td style="text-align:center">数量多，使用频率差别大，可变长格式</td>
 <td style="text-align:center">支持多种</td>
-<td style="text-align:center">微程序控制技术(微码)</td>
+<td style="text-align:center">微程序控制技术（微码）</td>
 <td style="text-align:center">研制周期长</td>
 <td></td>
 </tr>
@@ -75,8 +75,8 @@
 <td></td>
 </tr>
 <tr>
-<td style="text-align:center">RISC(精简指令集)</td>
-<td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有Load/Store操作内存</td>
+<td style="text-align:center">RISC（精简指令集）</td>
+<td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有 Load/Store 操作内存</td>
 <td style="text-align:center">支持方式少</td>
 <td style="text-align:center">增加了通用寄存器；硬布线逻辑控制为主；适合采用流水线</td>
 <td style="text-align:center">优化编码，有效支持高级语言</td>
@@ -87,8 +87,8 @@
 ]]></description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/data/</guid><description><![CDATA[<h3 id="数据的表示">数据的表示</h3>
 <p><strong>数据的表示可分为：原码，反码和补码。（二进制）</strong></p>
 <ul>
-<li>原码： 符号位0为正，1为负。</li>
-<li>反码： 符号位0为正，1为负。
+<li>原码： 符号位 0 为正，1 为负。</li>
+<li>反码： 符号位 0 为正，1 为负。
 <ul>
 <li>正数： 反码同原码。</li>
 <li>负数： 符号位除外其他位按位取反。</li>
@@ -106,10 +106,10 @@
 <ul>
 <li>原码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li>
 <li>反码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li>
-<li>补码： <code>-z^n-1 ~ 2^n-1 - 1</code>  (补码正0和负0相同，少占一数位，就多一个范围)</li>
+<li>补码： <code>-z^n-1 ~ 2^n-1 - 1</code>  （补码正 0 和负 0 相同，少占一数位，就多一个范围）</li>
 </ul>
 <p>例：
-8位二进制，除去符号位还有7位，7个1为最大数，相当于8个1减1，也就是2^7-1,所以范围就算出来了。</p>
+8 位二进制，除去符号位还有 7 位，7 个 1 为最大数，相当于 8 个 1 减 1，也就是 2^7-1, 所以范围就算出来了。</p>
 <h3 id="浮点数运算">浮点数运算</h3>
 <p><strong>对阶（小阶对大阶）+ 尾数计算（科学计数法）+ 结果规格化（科学技术法）</strong></p>
 ]]></description></item></channel></rss>

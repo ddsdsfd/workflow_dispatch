@@ -5,9 +5,9 @@
             <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，<br>
+            <div class="admonition-content">cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，<br>
 <strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
-开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
+开放 API 是一个<strong>很危险</strong>的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
         </div>
     </div>
 <h1 id="创建腾讯云-cos-存储桶">创建腾讯云 cos 存储桶</h1>
@@ -18,11 +18,11 @@
 <li>跨域访问 CORS 设置，自己随意</li>
 </ol>
 <h1 id="上传照片">上传照片</h1>
-<p>首先我这个 cos 相册，相册分类就是文件夹分类，所以cos桶里面先新建不同的文件夹，<strong>文件夹名称就是相册名称</strong>，
-每个相册里面需要放置一张名称为**“封面.jpg”**的图片作为该相册的封面。</p>
+<p>首先我这个 cos 相册，相册分类就是文件夹分类，所以 cos 桶里面先新建不同的文件夹，<strong>文件夹名称就是相册名称</strong>，
+每个相册里面需要放置一张名称为**“封面。jpg”**的图片作为该相册的封面。</p>
 <h2 id="上传工具">上传工具</h2>
 <ul>
-<li><strong>COSBrowser</strong> GUI工具,桌面/移动版 【官方、推荐】</li>
+<li><strong>COSBrowser</strong> GUI 工具，桌面/移动版 【官方、推荐】</li>
 <li><strong>COSCMD</strong> 命令行工具 【官方】</li>
 <li><strong>PicGo</strong> 图床上传工具 【第三方、推荐】</li>
 </ul>
@@ -48,7 +48,7 @@
 </a>
 <ol>
 <li>首先，下载源码，引入 <code>cos-album.css</code> 和 <code>cos-album.js</code></li>
-<li>然后，在你的 js 中 new 一个 Cosalbum 对象( xmlLink 后不需要添加<code>/</code>)</li>
+<li>然后，在你的 js 中 new 一个 Cosalbum 对象 ( xmlLink 后不需要添加<code>/</code>)</li>
 </ol>
 <h2 id="step1">Step1</h2>
 <div class="highlight"><div class="chroma">
@@ -99,7 +99,7 @@
 <td style="text-align:left">xmlLink</td>
 <td style="text-align:left">String</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">需要解析的騰訊云COS桶XML鏈接</td>
+<td style="text-align:left">需要解析的騰訊云 COS 桶 XML 鏈接</td>
 </tr>
 <tr>
 <td style="text-align:left">prependTo</td>
@@ -117,7 +117,7 @@
 <td style="text-align:left">copyUrl</td>
 <td style="text-align:left">String</td>
 <td style="text-align:left">href</td>
-<td style="text-align:left">CDN 链接,雙擊複製 URL Since: 1.1.6</td>
+<td style="text-align:left">CDN 链接，雙擊複製 URL Since: 1.1.6</td>
 </tr>
 <tr>
 <td style="text-align:left">imgType</td>
@@ -191,12 +191,12 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <ul>
 <li>2020-9-28 22:46
 <ol>
-<li>升級：相冊封裝成類，可以更方便new出來</li>
+<li>升級：相冊封裝成類，可以更方便 new 出來</li>
 <li>優化：相冊圖片樣式優化</li>
 </ol>
 </li>
 <li>2019-11-24 10:52:34
-修改整理了一下代码，分割功能为函数，并写了注释，更加方便<a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">伸手党</a>!</li>
+修改整理了一下代码，分割功能为函数，并写了注释，更加方便 <a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">伸手党</a>!</li>
 </ul>
 <h1 id="未实现">未实现</h1>
 <ul>

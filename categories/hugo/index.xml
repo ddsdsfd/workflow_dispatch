@@ -329,7 +329,7 @@ static/images/card-link-bg.jpg
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索&#34;</span>
 
 <span class="p">[</span><span class="nx">searchPlaceholder</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容...&#34;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容。..&#34;</span>
 
 <span class="p">[</span><span class="nx">clear</span><span class="p">]</span>
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;清空&#34;</span>
@@ -353,7 +353,7 @@ static/images/card-link-bg.jpg
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;複製到剪貼板&#34;</span>
 
 <span class="p">[</span><span class="nx">cookieconsentMessage</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;本網站使用 Cookies 來改善您的流覽體驗.&#34;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;本網站使用 Cookies 來改善您的流覽體驗。&#34;</span>
 
 <span class="p">[</span><span class="nx">cookieconsentDismiss</span><span class="p">]</span>
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;同意&#34;</span>
@@ -826,8 +826,8 @@ type: &#34;friends&#34;
 </code></pre>
 <h3 id="post_generatorsh">post_generator.sh</h3>
 <ol>
-<li>輸入文章名稱 (建議使用英文)</li>
-<li>文章是否會插入圖片等資源 (默認：否)</li>
+<li>輸入文章名稱 （建議使用英文）</li>
+<li>文章是否會插入圖片等資源 （默認：否）</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1037,7 +1037,7 @@ sh hugo_main.sh
 <p><figure><a class="lightgallery" href="/posts/hugo-admin/images/hugo-admin1.png" title="Hugo Admin" data-thumbnail="/posts/hugo-admin/images/hugo-admin1.png" data-sub-html="<h2>Hugo Admin</h2><p>Hugo Admin</p>">
         
     </a><figcaption class="image-caption">Hugo Admin</figcaption>
-    </figure></p>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+    </figure></p>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -1169,7 +1169,7 @@ sh hugo_main.sh
 <p>至此，Github Pages 和 COS 都已經可以通過 Github Actions 自動部署了，有部署記錄后，<br>
 打開 Lruihao/hugo-blog -&gt; Actions 可以看到構建過程和結果，構建失敗也會收到 Github 發給你的郵件。</p>
 </blockquote>
-<h2 id="cos-自動同步-備用">COS 自動同步 (備用)</h2>
+<h2 id="cos-自動同步-備用">COS 自動同步 （備用）</h2>
 <p>本小節內容和 Github Actions 無關，僅作為 COS 備用上傳方式。</p>
 <ul>
 <li>COSBrowser</li>
@@ -1244,7 +1244,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </div>
 </div><p>在 <code>config.toml</code> 添加 <code>theme = &quot;LoveIt&quot;</code></p>
 <h3 id="在本地启动网站">在本地启动网站</h3>
-<p>使用以下命令启动网站:</p>
+<p>使用以下命令启动网站：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1321,10 +1321,10 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <p><i class="far fa-square fa-fw"></i> <del><a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a href="https://github.com/Lruihao/hugo-blog/issues/7" target="_blank" rel="noopener noreffer">#7 (wontfix)</a></del></p>
 </li>
 <li>
-<p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> (保持原本博客的纯粹性)</p>
+<p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> （保持原本博客的纯粹性）</p>
 </li>
 <li>
-<p><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化(但似乎没必要)</p>
+<p><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）</p>
 </li>
 <li>
 <p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移</p>
@@ -1355,13 +1355,13 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </details>
 <ul>
 <li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
-<li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写, MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
+<li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/4" target="_blank" rel="noopener noreffer">#4</a></li>
 <li><i class="far fa-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
 </ul>
 <h3 id="theme-loveit">Theme LoveIt</h3>
 <blockquote>
-<p>hugo LoveIt 主题整体优化，<del>必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多)<br>
+<p>hugo LoveIt 主题整体优化，<del>必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多）<br>
 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，<br>
 唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。<br>
 之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</p>
