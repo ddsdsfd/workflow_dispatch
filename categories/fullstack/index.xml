@@ -43,7 +43,7 @@
 <h1 id="基本语法">基本语法</h1>
 <table><thead><tr><th>位置</th><th>字段</th><th>约束</th><th>取值</th><th>可使用的特殊符号</th></tr></thead><tbody><tr><td>1</td><td>秒</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>2</td><td>分钟</td><td>必须</td><td>0-59</td><td><code>, - \* /</code></td></tr><tr><td>3</td><td>小时</td><td>必须</td><td>0-23（0 为午夜）</td><td><code>, - \* /</code></td></tr><tr><td>4</td><td>日期</td><td>必须</td><td>1-31</td><td><code>, - \* ? /</code></td></tr><tr><td>5</td><td>月份</td><td>必须</td><td>1-12、JAN-DEC</td><td><code>, - \* /</code></td></tr><tr><td>6</td><td>星期</td><td>必须</td><td>1-7、SUN-SAT</td><td><code>, - ? /</code></td></tr></tbody></table>
 <h1 id="特殊符号的用法">特殊符号的用法</h1>
-<table><thead><tr><th>符号</th><th>含义</th><th>用法</th></tr></thead><tbody><tr><td><code>\*</code></td><td>所有值</td><td>代表一个字段的所有可能取值。如将<code>&lt;分钟&gt;</code> 设为<strong>\*</strong>，表示每一分钟。</td></tr><tr><td><code>?</code></td><td>不指定值</td><td>用于可以使用该符号的两个字段中的一个，在一个表达式中只能出现一次。如任务执行时间为每月 10 号，星期几无所谓，那么表达式中<code>&lt;日期&gt;</code> 设为<strong>10</strong>，<code>&lt;星期&gt;</code> 设为<strong>?</strong>。</td></tr><tr><td><code>-</code></td><td>范围</td><td>如<code>&lt;小时&gt;</code> 为<strong>10-12</strong>，即10 点、11 点、12 点。</td></tr><tr><td><code>,</code></td><td><span class="text-nowrap">分隔多个值</span></td><td>如<code>&lt;星期&gt;</code> 为<strong>MON,WED,FRI</strong>，即周一、周三、周五。</td></tr><tr><td><code>/</code></td><td>增量</td><td>如<code>&lt;秒&gt;</code> 设为<strong>0/15</strong>，即从 0 秒开始，以 15 秒为增量，包括 0、15、30、45 秒；<strong>5/15</strong> 即 5、20、35、50 秒。<strong>\*/</strong> 与<strong>0/</strong> 等效，如<code>&lt;日期&gt;</code> 设为<strong>1/3</strong>，即从每个月的第一天开始，每 3 天（即每隔 2 天）执行一次任务。</td></tr></tbody></table>各字段以空格或空白隔开。JAN-DEC、SUN-SAT 这些值不区分大小写，比如 MON 和 mon 效果一样。
+<table><thead><tr><th>符号</th><th>含义</th><th>用法</th></tr></thead><tbody><tr><td><code>\*</code></td><td>所有值</td><td>代表一个字段的所有可能取值。如将<code>&lt; 分钟&gt;</code> 设为<strong>\*</strong>，表示每一分钟。</td></tr><tr><td><code>?</code></td><td>不指定值</td><td>用于可以使用该符号的两个字段中的一个，在一个表达式中只能出现一次。如任务执行时间为每月 10 号，星期几无所谓，那么表达式中<code>&lt; 日期&gt;</code> 设为<strong>10</strong>，<code>&lt; 星期&gt;</code> 设为<strong>?</strong>。</td></tr><tr><td><code>-</code></td><td>范围</td><td>如<code>&lt; 小时&gt;</code> 为<strong>10-12</strong>，即 10 点、11 点、12 点。</td></tr><tr><td><code>,</code></td><td><span class="text-nowrap">分隔多个值</span></td><td>如<code>&lt; 星期&gt;</code> 为<strong>MON,WED,FRI</strong>，即周一、周三、周五。</td></tr><tr><td><code>/</code></td><td>增量</td><td>如<code>&lt; 秒&gt;</code> 设为<strong>0/15</strong>，即从 0 秒开始，以 15 秒为增量，包括 0、15、30、45 秒；<strong>5/15</strong> 即 5、20、35、50 秒。<strong>\*/</strong> 与<strong>0/</strong> 等效，如<code>&lt; 日期&gt;</code> 设为<strong>1/3</strong>，即从每个月的第一天开始，每 3 天（即每隔 2 天）执行一次任务。</td></tr></tbody></table>各字段以空格或空白隔开。JAN-DEC、SUN-SAT 这些值不区分大小写，比如 MON 和 mon 效果一样。
 <h1 id="举例如下">举例如下</h1><table><thead><tr><th>表达式</th><th>说明</th></tr></thead><tbody><tr><td><code>0  0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次</td></tr><tr><td><code>10 0/5 \* \* \* ?</code></td><td>每隔 5 分钟执行一次，每次执行都在分钟开始的 10 秒，例如 10:00:10、10:05:10 等等。</td></tr><tr><td><code style="white-space:nowrap;">0 30 10-13 ? \* WED,FRI</code></td><td>每周三和每周五的 10:30、11:30、12:30、13:30 执行。</td></tr><tr><td><code>0 0/30 8-9 5,20 \* ?</code></td><td>每个月的 5 号和 20 号的 8 点和 10 点之间每隔 30 分钟执行一次，也就是 8:00、8:30、9:00 和 9:30。</td></tr></tbody></table>]]></description></item><item><title>RESTful</title><link>https://lruihao.cn/posts/restful/</link><pubDate>Thu, 14 Nov 2019 19:06:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/restful/</guid><description><![CDATA[<blockquote>
 <p>RESTful 是一種系統開發設計風格、原則。可視情況調整，以下參考來源 RFC5789 <a href="https://tools.ietf.org/html/rfc5789" target="_blank" rel="noopener noreffer">https://tools.ietf.org/html/rfc5789</a></p>
 </blockquote>
@@ -51,7 +51,7 @@
 <ul>
 <li>一般資源
 通用於一律使用複數名詞<br>
-例如：/books 或 /books/123。但有部分人認為應該使用單數名詞，因為： /book/123 看似比 /books/123 合理。但想想檔案系統的目錄命名 (例如/Users或/Documents)，其實用複數也沒問題。複數可以保持API endpoint的一致性，所以一般資源建議用複數。</li>
+例如：/books 或 /books/123。但有部分人認為應該使用單數名詞，因為： /book/123 看似比 /books/123 合理。但想想檔案系統的目錄命名 （例如/Users 或/Documents)，其實用複數也沒問題。複數可以保持 API endpoint 的一致性，所以一般資源建議用複數。</li>
 <li>唯一資源：對 client 而言只有一份的資源<br>
 通用於單數名詞<br>
 例如：user 是指目前驗證的使用者，使用者永遠只能同時登入一個使用者</li>
@@ -59,19 +59,19 @@
 <h2 id="http-method">Http Method</h2>
 <table><tbody><tr><th>Method</th><th>Idempotent</th><th>Safe</th><th>CRUD</th><th>OO</th><th>生活動詞</th><th>用途</th></tr><tr><td rowspan="2">GET</td><td rowspan="2" style="text-align: center;">Y</td><td rowspan="2" style="text-align: center;">Y</td><td rowspan="2"><b>R</b>ead</td><td rowspan="2">get</td><td>get</td><td>取得資料</td></tr><tr><td>list</td><td>列出資料</td></tr><tr><td rowspan="2">POST</td><td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"><b>C</b>reate</td><td rowspan="2">add</td><td>create</td><td>建立一個可以完全獨立存在的實體</td></tr><tr><td>add</td><td>增加一個必須依賴於某個實體的實體</td></tr><tr><td rowspan="2">PUT</td><td rowspan="2" style="text-align: center;">Y</td><td rowspan="2"></td><td rowspan="3"><b>U</b>pdate</td><td rowspan="3">set</td><td>replace</td><td>取代一個關係，已存在時先刪除後建立，不存在時直接建立</td></tr><tr><td>add</td><td>附加唯一關係，兩個關係實體可以互相獨立存在，且已經存在</td></tr><tr><td>PATCH</td><td></td><td></td><td>edit</td><td>編輯某個實體</td></tr><tr><td>DELETE</td><td></td><td></td><td><b>D</b>elete</td><td>remove</td><td>remove<br>delete</td><td>刪除某個實體</td></tr></tbody></table>
 <ul>
-<li>Safe：該操作不會改變伺服器端的資源狀態 (而且結果可以被cache)，屬於 Safe 的操作必定屬於 Idempotent</li>
-<li>Idempotent (冪等性)：該操作不管做1遍或做n遍，都會得到同樣的資源狀態結果 (但不一定得到同樣的回傳值，例如第2次DELETE請求可能回傳404)，因此client端可以放心retry。</li>
+<li>Safe：該操作不會改變伺服器端的資源狀態 （而且結果可以被 cache)，屬於 Safe 的操作必定屬於 Idempotent</li>
+<li>Idempotent （冪等性）：該操作不管做 1 遍或做 n 遍，都會得到同樣的資源狀態結果 （但不一定得到同樣的回傳值，例如第 2 次 DELETE 請求可能回傳 404)，因此 client 端可以放心 retry。</li>
 </ul>
 <h3 id="get">GET</h3>
 <ul>
-<li>SAFE：每次執行操作時，GET 只有讀取 Resource，不會改變到任何的 Resource (資源, 資料)</li>
-<li>Idempotent：每次執行操作時，GET 只有讀取 Resource，不會改變到任何的 Resource (資源, 資料)，所以任何資源的任何狀態都是一樣的</li>
+<li>SAFE：每次執行操作時，GET 只有讀取 Resource，不會改變到任何的 Resource （資源，資料）</li>
+<li>Idempotent：每次執行操作時，GET 只有讀取 Resource，不會改變到任何的 Resource （資源，資料），所以任何資源的任何狀態都是一樣的</li>
 </ul>
 <h3 id="post">POST</h3>
 <ul>
-<li>每次執行操作時，POST 都會建立一個 Resource (資源, 資料)</li>
+<li>每次執行操作時，POST 都會建立一個 Resource （資源，資料）</li>
 <li>範例：建立使用者<br>
-執行第一次時：建立一個 name = &ldquo;帥小慶&rdquo; 的 user，但其 id = 1執行第二次時：建立一個 name = &ldquo;帥小慶&rdquo; 的 user，但其 id = 2，發送同樣的請求，可每次都是不同的 Resource</li>
+執行第一次時：建立一個 name = &ldquo;帥小慶&rdquo; 的 user，但其 id = 1 執行第二次時：建立一個 name = &ldquo;帥小慶&rdquo; 的 user，但其 id = 2，發送同樣的請求，可每次都是不同的 Resource</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -112,9 +112,9 @@ Data:
 </div>
 </div><ul>
 <li>Add：增加一個必須依賴於某個實體的實體<br>
-資料結構：1對多的關係</li>
+資料結構：1 對多的關係</li>
 <li>範例：Add a public key on behalf of a user 增加一個代表使用者的公鑰 (Gitea API)<br>
-增加這個公鑰之前，使用者必須存在，公鑰必須歸屬於某個使用者之下公鑰跟姓名一樣，使用相同電腦的公鑰就會相同，但不表示是同一個使用者，故公鑰也會有自己的 ID我每次增加公鑰時，都將生成不同的公鑰 ID</li>
+增加這個公鑰之前，使用者必須存在，公鑰必須歸屬於某個使用者之下公鑰跟姓名一樣，使用相同電腦的公鑰就會相同，但不表示是同一個使用者，故公鑰也會有自己的 ID 我每次增加公鑰時，都將生成不同的公鑰 ID</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -128,11 +128,11 @@ Data:
 <ul>
 <li>Idempotent：每次執行操作時，PUT 都會取代 Resource，不管操作幾次，使用者獲取得 Resource 結果都是一樣的</li>
 <li>Replace：不論資源如何，最終的資源狀態都是一樣的
-Resource 已存在時，或許不理會、或許先刪除後建立 (取代)Resource 不存在時，直接建立</li>
+Resource 已存在時，或許不理會、或許先刪除後建立 （取代）Resource 不存在時，直接建立</li>
 <li>Add：添加唯一關係，建立這個唯一關係前，兩個關連實體都必須存在。在沒有建立關係前，兩個關連實體都可以互相獨立存在</li>
 <li>資料結構應為：多對多，且兩個關連實體的 PK，同時也是關係實體的 PK、FK</li>
 <li>範例：增加使用者與角色的關係<br>
-增加使用者跟角色的關係前，使用者跟角色都必須存在；增加使用者跟角色的關係前，使用者跟角色可以獨立存在使用者 23240，跟角色 2，的關係最多只能有一條關係 (使用者 23240 有角色 2 )，最少沒有關係 (使用者 23240 沒有角色 2 )執行第二次操作時，使用者 23240 跟角色 2 的從屬關係仍然存在，也不會跑出第二條使用者 23240 跟角色 2 的從屬關係</li>
+增加使用者跟角色的關係前，使用者跟角色都必須存在；增加使用者跟角色的關係前，使用者跟角色可以獨立存在使用者 23240，跟角色 2，的關係最多只能有一條關係 （使用者 23240 有角色 2 )，最少沒有關係 （使用者 23240 沒有角色 2 ) 執行第二次操作時，使用者 23240 跟角色 2 的從屬關係仍然存在，也不會跑出第二條使用者 23240 跟角色 2 的從屬關係</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -152,7 +152,7 @@ Data
 </div>
 </div><ul>
 <li>範例：Follow a user 關注一個使用者 (Gitea)<br>
-增加關注關係時，關注者與被關注者 (都是使用者) 都必須存在；增加關注關係時，關注者與被關注者 (都是使用者) 都必須存在關注者使用者 23240，跟被關注者使用者 F3860056，的關係最多只能有一條關係 (23240 關注 F3860056)，最少沒有關係 (23240 不關注 F3860056)執行第二次操作時，關注者 23240 跟被關注者 F3860056 的關注關係仍然存在，也不會跑出第二條關注者 23240 跟被關注者 F3860056 的關注關係</li>
+增加關注關係時，關注者與被關注者 （都是使用者） 都必須存在；增加關注關係時，關注者與被關注者 （都是使用者） 都必須存在關注者使用者 23240，跟被關注者使用者 F3860056，的關係最多只能有一條關係 (23240 關注 F3860056)，最少沒有關係 (23240 不關注 F3860056) 執行第二次操作時，關注者 23240 跟被關注者 F3860056 的關注關係仍然存在，也不會跑出第二條關注者 23240 跟被關注者 F3860056 的關注關係</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -166,8 +166,8 @@ Data
 <ul>
 <li>Edit：編輯可獨立存在、且已經存在的實體，也就是產生新版本的實體，可能會影響其他 Resource</li>
 <li>範例：編輯使用者<br>
-編輯使用者，使用者已經存在，且我們可能有紀錄編輯時間、編輯人、編輯IP，所以每次的編輯都會造成不一樣的結果
-第一次編輯使用者，更新時間變為 08:00，編輯人 23240，IP 10.151.110.165第二次編輯使用者，更新時間變為 09:00，編輯人 23241，IP 10.151.110.144</li>
+編輯使用者，使用者已經存在，且我們可能有紀錄編輯時間、編輯人、編輯 IP，所以每次的編輯都會造成不一樣的結果
+第一次編輯使用者，更新時間變為 08:00，編輯人 23240，IP 10.151.110.165 第二次編輯使用者，更新時間變為 09:00，編輯人 23241，IP 10.151.110.144</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -181,7 +181,7 @@ Data
 <ul>
 <li>Idempotent：每次執行操作時，DELETE 都會刪除相同的東西</li>
 <li>範例：刪除使用者<br>
-第一次刪除使用者23240，刪除使用者23240第二次刪除使用者23240，還是刪除使用者23240，只不過使用者 23240 不存在了。</li>
+第一次刪除使用者 23240，刪除使用者 23240 第二次刪除使用者 23240，還是刪除使用者 23240，只不過使用者 23240 不存在了。</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -192,26 +192,26 @@ Data
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="http-status-code">HTTP Status Code</h2>
-<p>HTTP状态码（HTTP Status Code）是用以表示网页服务器HTTP响应状态的3位数字代码。所有状态码的第一个数字代表了响应的五种状态之一。 除非另有说明，状态码是HTTP / 1.1标准（RFC 7231）的一部分。</p>
+<p>HTTP 状态码（HTTP Status Code）是用以表示网页服务器 HTTP 响应状态的 3 位数字代码。所有状态码的第一个数字代表了响应的五种状态之一。 除非另有说明，状态码是 HTTP / 1.1 标准（RFC 7231）的一部分。</p>
 <p>而关于 RESTful API 的请求状态，通常有以下两种设计方案：</p>
 <ul>
 <li>方案一：使用 HTTP 状态码来表示请求状态，200 时返回的内容就是数据；</li>
 <li>方案二：所有接口都返回 200 ，在响应内容里约定 错误码 或 錯誤信息；</li>
 </ul>
 <p>在實際應用中，應據具體情景及需要進行選擇與調整。</p>
-<table><tbody><tr><th>方案</th><th colspan="2">優劣比較</th></tr><tr><td rowspan="2">方案一</td><td>優點</td><td>對服務端來說較為簡單方便</td></tr><tr><td>缺點</td><td>客戶端難以根據狀態碼處理複雜問題</td></tr><tr><td rowspan="2">方案二</td><td>優點</td><td>方便對返回資料進行統一處理和細細微性的控制</td></tr><tr><td>缺點</td><td>相當於放棄了HTTP狀態碼的語義</td></tr></tbody></table>
-<h3 id="常用http狀態碼">常用HTTP狀態碼</h3>
-<table><tbody><tr><th>Code</th><th>Message</th><th>用途</th></tr><tr><th>1XX</th><th>Informational response</th><th>此類狀態碼通常代表的響應都是信息性的，告訴客戶端可以進行下一步操作。</th></tr><tr><td>100</td><td>Continue</td><td>表示服務端已接收到請求頭，客戶端可以繼續發送請求體(如POST請求)。</td></tr><tr><td>101</td><td>Switching Protocols</td><td>表示服務端支持更優協議，讓客戶端在服務端更換協議後重新訪問。</td></tr><tr><th>2XX</th><th>Successful</th><th>此類狀態碼通常代表請求已成功被服務端接收、理解并接受。</th></tr><tr><td>200</td><td>OK</td><td>表示請求成功。</td></tr><tr><td>201</td><td>Created</td><td>表示請求已被實現，通常是在成功創建了某個資源。</td></tr><tr><td>202</td><td>Accepted</td><td>表示請求已被服務端接收，但尚未進行處理。</td></tr><tr><td>204</td><td>No Content</td><td>表示請求成功，但不會返回任何內容。</td></tr><tr><td>205</td><td>Reset Content</td><td>表示請求成功，但不會返回任何內容，並且要求客戶端重置表單。</td></tr><tr><th>3XX</th><th>Redirect</th><th>此類狀態碼通常代表本次請求需要客戶端採取進一步操作才能完成。通常用於重定向。</th></tr><tr><td>300</td><td>Multiple Choices</td><td>表示請求的資源有多個供可選擇，客戶端可自行選擇一個進行請求的重定向。</td></tr><tr><td>301</td><td>Moved Permanently</td><td>表示請求的資源已經永久地移動到了新位置，並且將在Location域中攜帶該資源新的URI。</td></tr><tr><td>304</td><td>Not Modified</td><td>表示請求的資源無發生修改，將不會返回任何資源。</td></tr><tr><th>4XX</th><th>Client Error</th><th>此類狀態碼通常代表客戶端可能出現了錯誤。</th></tr><tr><td>400</td><td>Bad Request</td><td>表示客戶端發出的請求有誤(格式、大小、無效的...)，服務端不能/不會處理該請求。</td></tr><tr><td>401</td><td>Unauthorized</td><td>表示客戶端未能提供必要的驗證，服務端拒絕提供資源。</td></tr><tr><td>403</td><td>Forbidden</td><td>表示服務端理解了該請求，但客戶端沒有足夠權限以訪問，遂拒絕提供該資源。</td></tr><tr><td>404</td><td>Not Found</td><td>表示服務端無法找到請求的資源，其可能已經暫時(永久)失效。</td></tr><tr><td>408</td><td>Request Timeout</td><td>表示請求超時。</td></tr><tr><td>409</td><td>Conflict</td><td>表示請求的資源發送了衝突，通常是PUT請求。</td></tr><tr><td>410</td><td>Gone</td><td>表示請求的資源已經永久失效，客戶端不應再次請求。</td></tr><tr><td>411</td><td>Length Required</td><td>表示服務端拒絕在沒有定義Content-Length頭的情況下接收該請求。</td></tr><tr><th>5XX</th><th>Server Error</th><th>此類狀態碼通常代表由於服務端的原因，導致無法完成請求。</th></tr><tr><td>500</td><td>Internal Server Error</td><td>表示由於服務端遇到意料之外的變故，導致無法完成請求。</td></tr><tr><td>501</td><td>Not Implemented</td><td>表示服務端不支持完成請求所需的功能，導致無法完成請求。</td></tr><tr><td>502</td><td>Bad Gateway</td><td>表示作為網関或代理的服務段在執行請求時，從上游服務器獲得了無效的響應。</td></tr><tr><td>503</td><td>Service Unavailable</td><td>表示由於某些原因(服務器超載或系統維護等)，導致暫時無法完成請求。</td></tr><tr><td>504</td><td>Gatewy Timeout</td><td>表示作為網関或代理的服務段在執行請求時，未能及時從上游服務器獲得響應。</td></tr><tr><td>505</td><td>HTTP Version Not Supported</td><td>表示服務端不支持請求的HTTP協議版本，導致無法完成請求。</td></tr></tbody></table>
+<table><tbody><tr><th>方案</th><th colspan="2">優劣比較</th></tr><tr><td rowspan="2">方案一</td><td>優點</td><td>對服務端來說較為簡單方便</td></tr><tr><td>缺點</td><td>客戶端難以根據狀態碼處理複雜問題</td></tr><tr><td rowspan="2">方案二</td><td>優點</td><td>方便對返回資料進行統一處理和細細微性的控制</td></tr><tr><td>缺點</td><td>相當於放棄了 HTTP 狀態碼的語義</td></tr></tbody></table>
+<h3 id="常用-http-狀態碼">常用 HTTP 狀態碼</h3>
+<table><tbody><tr><th>Code</th><th>Message</th><th>用途</th></tr><tr><th>1XX</th><th>Informational response</th><th>此類狀態碼通常代表的響應都是信息性的，告訴客戶端可以進行下一步操作。</th></tr><tr><td>100</td><td>Continue</td><td>表示服務端已接收到請求頭，客戶端可以繼續發送請求體（如 POST 請求）。</td></tr><tr><td>101</td><td>Switching Protocols</td><td>表示服務端支持更優協議，讓客戶端在服務端更換協議後重新訪問。</td></tr><tr><th>2XX</th><th>Successful</th><th>此類狀態碼通常代表請求已成功被服務端接收、理解并接受。</th></tr><tr><td>200</td><td>OK</td><td>表示請求成功。</td></tr><tr><td>201</td><td>Created</td><td>表示請求已被實現，通常是在成功創建了某個資源。</td></tr><tr><td>202</td><td>Accepted</td><td>表示請求已被服務端接收，但尚未進行處理。</td></tr><tr><td>204</td><td>No Content</td><td>表示請求成功，但不會返回任何內容。</td></tr><tr><td>205</td><td>Reset Content</td><td>表示請求成功，但不會返回任何內容，並且要求客戶端重置表單。</td></tr><tr><th>3XX</th><th>Redirect</th><th>此類狀態碼通常代表本次請求需要客戶端採取進一步操作才能完成。通常用於重定向。</th></tr><tr><td>300</td><td>Multiple Choices</td><td>表示請求的資源有多個供可選擇，客戶端可自行選擇一個進行請求的重定向。</td></tr><tr><td>301</td><td>Moved Permanently</td><td>表示請求的資源已經永久地移動到了新位置，並且將在 Location 域中攜帶該資源新的 URI。</td></tr><tr><td>304</td><td>Not Modified</td><td>表示請求的資源無發生修改，將不會返回任何資源。</td></tr><tr><th>4XX</th><th>Client Error</th><th>此類狀態碼通常代表客戶端可能出現了錯誤。</th></tr><tr><td>400</td><td>Bad Request</td><td>表示客戶端發出的請求有誤（格式、大小、無效的。..)，服務端不能/不會處理該請求。</td></tr><tr><td>401</td><td>Unauthorized</td><td>表示客戶端未能提供必要的驗證，服務端拒絕提供資源。</td></tr><tr><td>403</td><td>Forbidden</td><td>表示服務端理解了該請求，但客戶端沒有足夠權限以訪問，遂拒絕提供該資源。</td></tr><tr><td>404</td><td>Not Found</td><td>表示服務端無法找到請求的資源，其可能已經暫時（永久）失效。</td></tr><tr><td>408</td><td>Request Timeout</td><td>表示請求超時。</td></tr><tr><td>409</td><td>Conflict</td><td>表示請求的資源發送了衝突，通常是 PUT 請求。</td></tr><tr><td>410</td><td>Gone</td><td>表示請求的資源已經永久失效，客戶端不應再次請求。</td></tr><tr><td>411</td><td>Length Required</td><td>表示服務端拒絕在沒有定義 Content-Length 頭的情況下接收該請求。</td></tr><tr><th>5XX</th><th>Server Error</th><th>此類狀態碼通常代表由於服務端的原因，導致無法完成請求。</th></tr><tr><td>500</td><td>Internal Server Error</td><td>表示由於服務端遇到意料之外的變故，導致無法完成請求。</td></tr><tr><td>501</td><td>Not Implemented</td><td>表示服務端不支持完成請求所需的功能，導致無法完成請求。</td></tr><tr><td>502</td><td>Bad Gateway</td><td>表示作為網関或代理的服務段在執行請求時，從上游服務器獲得了無效的響應。</td></tr><tr><td>503</td><td>Service Unavailable</td><td>表示由於某些原因（服務器超載或系統維護等），導致暫時無法完成請求。</td></tr><tr><td>504</td><td>Gatewy Timeout</td><td>表示作為網関或代理的服務段在執行請求時，未能及時從上游服務器獲得響應。</td></tr><tr><td>505</td><td>HTTP Version Not Supported</td><td>表示服務端不支持請求的 HTTP 協議版本，導致無法完成請求。</td></tr></tbody></table>
 <blockquote>
 <p>以上內容參考自<a href="https://zh.wikipedia.org/zh-tw/HTTP%E7%8A%B6%E6%80%81%E7%A0%81" target="_blank" rel="noopener noreffer">https://zh.wikipedia.org/zh-tw/HTTP%E7%8A%B6%E6%80%81%E7%A0%81</a>，<br>
-需要查看完整HTTP狀態碼請點擊<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank" rel="noopener noreffer">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
+需要查看完整 HTTP 狀態碼請點擊<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank" rel="noopener noreffer">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>
 </blockquote>
 ]]></description></item><item><title>Sublime Text3 快捷键大全</title><link>https://lruihao.cn/posts/sublime-text3/</link><pubDate>Thu, 15 Aug 2019 20:59:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sublime-text3/</guid><description><![CDATA[<blockquote>
-<p><a href="https://www.cnblogs.com/rudong/p/7889114.html" target="_blank" rel="noopener noreffer">转自--入冬</a><br>
-补充tab转space设置</p>
+<p><a href="https://www.cnblogs.com/rudong/p/7889114.html" target="_blank" rel="noopener noreffer">转自、--入冬</a><br>
+补充 tab 转 space 设置</p>
 </blockquote>
-<h1 id="tab转space">tab转space</h1>
-<p>打开Settings,加入几行配置</p>
+<h1 id="tab-转-space">tab 转 space</h1>
+<p>打开 Settings, 加入几行配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -272,7 +272,7 @@ Data
 </ul>
 <h1 id="编辑类">编辑类</h1>
 <ul>
-<li>Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。</li>
+<li>Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的 CSS 属性合并为一行。</li>
 <li>Ctrl+Shift+D  复制光标所在整行，插入到下一行。</li>
 <li>Tab 向右缩进。</li>
 <li>Shift+Tab 向左缩进。</li>
@@ -292,12 +292,12 @@ Data
 <h1 id="搜索类">搜索类</h1>
 <ul>
 <li>Ctrl+F 打开底部搜索框，查找关键字。</li>
-<li>Ctrl+shift+F 在文件夹内查找，与普通编辑器不同的地方是sublime允许添加多个文件夹进行查找，略高端，未研究。</li>
+<li>Ctrl+shift+F 在文件夹内查找，与普通编辑器不同的地方是 sublime 允许添加多个文件夹进行查找，略高端，未研究。</li>
 <li>Ctrl+P 打开搜索框。举个栗子：1、输入当前项目中的文件名，快速搜索文件，2、输入@和关键字，查找文件中函数名，3、输入：和数字，跳转到文件中该行代码，4、输入#和关键字，查找变量名。</li>
 <li>Ctrl+G 打开搜索框，自动带：，输入数字跳转到该行代码。举个栗子：在页面代码比较长的文件中快速定位。</li>
 <li>Ctrl+R 打开搜索框，自动带@，输入关键字，查找文件中的函数名。举个栗子：在函数较多的页面快速查找某个函数。</li>
 <li>Ctrl+： 打开搜索框，自动带#，输入关键字，查找文件中的变量名、属性名等。</li>
-<li>Ctrl+Shift+P 打开命令框。场景栗子：打开命名框，输入关键字，调用sublime text或插件的功能，例如使用package安装插件。</li>
+<li>Ctrl+Shift+P 打开命令框。场景栗子：打开命名框，输入关键字，调用 sublime text 或插件的功能，例如使用 package 安装插件。</li>
 <li>Esc 退出光标多行选择，退出搜索框，命令框等。</li>
 </ul>
 <h1 id="显示类">显示类</h1>
@@ -305,13 +305,13 @@ Data
 <li>Ctrl+Tab 按文件浏览过的顺序，切换当前窗口的标签页。</li>
 <li>Ctrl+PageDown 向左切换当前窗口的标签页。</li>
 <li>Ctrl+PageUp 向右切换当前窗口的标签页。</li>
-<li>Alt+Shift+1 窗口分屏，恢复默认1屏（非小键盘的数字）</li>
-<li>Alt+Shift+2 左右分屏-2列</li>
-<li>Alt+Shift+3 左右分屏-3列</li>
-<li>Alt+Shift+4 左右分屏-4列</li>
-<li>Alt+Shift+5 等分4屏</li>
-<li>Alt+Shift+8 垂直分屏-2屏</li>
-<li>Alt+Shift+9 垂直分屏-3屏</li>
+<li>Alt+Shift+1 窗口分屏，恢复默认 1 屏（非小键盘的数字）</li>
+<li>Alt+Shift+2 左右分屏-2 列</li>
+<li>Alt+Shift+3 左右分屏-3 列</li>
+<li>Alt+Shift+4 左右分屏-4 列</li>
+<li>Alt+Shift+5 等分 4 屏</li>
+<li>Alt+Shift+8 垂直分屏-2 屏</li>
+<li>Alt+Shift+9 垂直分屏-3 屏</li>
 <li>Ctrl+K+B 开启/关闭侧边栏。</li>
 <li>F11 全屏模式</li>
 <li>Shift+F11 免打扰模式</li>
@@ -323,7 +323,7 @@ Data
 <li>下載擴充套件包
 <ul>
 <li><a href="http://plugins.netbeans.org/PluginPortal/" target="_blank" rel="noopener noreffer">官方套件庫</a></li>
-<li>或者在netbenas IDE裏面下載插件（方便）</li>
+<li>或者在 netbenas IDE 裏面下載插件（方便）</li>
 </ul>
 </li>
 <li>開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins</li>
@@ -346,11 +346,11 @@ Data
 <blockquote>
 <p>在程式開發中，程式碼排版很重要。一個好的排版利於開發人員程式閱讀，也便於後期維護人員閱讀。</p>
 </blockquote>
-<p>在NetBeans中設置程式碼排版</p>
+<p>在 NetBeans 中設置程式碼排版</p>
 <ol>
-<li>打開NetBeans-&gt;Tools-&gt;Options-&gt;Editor-&gt;Formatting；</li>
-<li>Language選擇 All Languages，勾選&quot;Expand Tabs to Spaces&quot;,用兩個空格鍵代替Tab鍵，首行留兩個Tab鍵。</li>
-<li>點擊Apply或Ok完成設置。具體設置及效果如下圖所示：</li>
+<li>打開 NetBeans-&gt;Tools-&gt;Options-&gt;Editor-&gt;Formatting；</li>
+<li>Language 選擇 All Languages，勾選&quot;Expand Tabs to Spaces&quot;, 用兩個空格鍵代替 Tab 鍵，首行留兩個 Tab 鍵。</li>
+<li>點擊 Apply 或 Ok 完成設置。具體設置及效果如下圖所示：</li>
 </ol>
 <p>
 
@@ -359,10 +359,10 @@ Data
 <blockquote>
 <p>　程式碼樣板可以幫助你快速書寫程序，不必繁瑣地聲明函數或其他代碼塊，更專注與邏輯的書寫。</p>
 </blockquote>
-<p>在NetBeans中設置程式碼樣板</p>
+<p>在 NetBeans 中設置程式碼樣板</p>
 <ol>
-<li>打開NetBeans→Tools→Options→Editor→Code Templates；</li>
-<li>選擇你所用的語言（這裡以JavaScript為例）；</li>
+<li>打開 NetBeans→Tools→Options→Editor→Code Templates；</li>
+<li>選擇你所用的語言（這裡以 JavaScript 為例）；</li>
 <li>點擊&quot;New&quot;新建屬於你的或修改原有的程式碼樣板（例子僅為演示）；</li>
 <li>在編程中應用它。</li>
 </ol>
@@ -375,7 +375,7 @@ Data
 <ol>
 <li>開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins</li>
 <li>選擇你下載的擴充套件開啟</li>
-<li>開啟Netbeans→Tools→options</li>
+<li>開啟 Netbeans→Tools→options</li>
 </ol>
 <p>
 </p>
@@ -406,7 +406,7 @@ Data
 </tr>
 <tr>
 <td style="text-align:left">Ctrl+Shift+上下方向键</td>
-<td style="text-align:left">复制当前行(该操作并非复制到粘贴板)</td>
+<td style="text-align:left">复制当前行（该操作并非复制到粘贴板）</td>
 </tr>
 <tr>
 <td style="text-align:left">Shift+Alt+F</td>
@@ -446,7 +446,7 @@ Data
 </tr>
 <tr>
 <td style="text-align:left">Ctrl+Alt+Space</td>
-<td style="text-align:left">代码输入提示,不习惯的可以设置为(Alt+/)，超级好用！！！</td>
+<td style="text-align:left">代码输入提示，不习惯的可以设置为 (Alt+/)，超级好用！！！</td>
 </tr>
 <tr>
 <td style="text-align:left">Ctrl+Shift+F5</td>
@@ -462,21 +462,21 @@ Data
 </tr>
 <tr>
 <td style="text-align:left">Alt+Enter</td>
-<td style="text-align:left">显示程式bug建议或者警示等</td>
+<td style="text-align:left">显示程式 bug 建议或者警示等</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>NetBeans中常用的快捷鍵↑：</li>
+<li>NetBeans 中常用的快捷鍵↑：</li>
 <li>三種複製行方法</li>
 </ul>
 <ol>
-<li>复制一行: Ctrl + Shift + 上下方向键(该操作并非复制到粘贴板)；</li>
-<li>复制一行: 在该行任何地方连续三击选中一样,然后Ctrl + C即可复制一行.；</li>
-<li>复制一行(使用宏): 编辑-开始录制宏(Home,Shift + End,Ctrl + C)-停止录制宏-设置宏名称(如select-entire-line)-设置快捷键(如Ctrl + Alt + C)；</li>
+<li>复制一行：Ctrl + Shift + 上下方向键（该操作并非复制到粘贴板）；</li>
+<li>复制一行：在该行任何地方连续三击选中一样，然后 Ctrl + C 即可复制一行。；</li>
+<li>复制一行（使用宏）: 编辑-开始录制宏 (Home,Shift + End,Ctrl + C)-停止录制宏-设置宏名称（如 select-entire-line)-设置快捷键（如 Ctrl + Alt + C)；</li>
 </ol>
 <ul>
-<li>也可自己修改快捷鍵(Tools→Options→Keympa),如下圖</li>
+<li>也可自己修改快捷鍵 (Tools→Options→Keympa), 如下圖</li>
 </ul>
 <p>{% asset_img quickkey.png quickkey %}</p>
 <h2 id="遠程開發-ftp">遠程開發 (FTP)</h2>
@@ -486,38 +486,38 @@ Data
 <ol>
 <li>新建项目
 <ol>
-<li>打开软件，进入新建项目页面（File-New Project），新建php项目，选择第一个（PHP-PHP Application）</li>
+<li>打开软件，进入新建项目页面（File-New Project），新建 php 项目，选择第一个（PHP-PHP Application）</li>
 <li>项目名和地址自己选择（注意，选择地址后需在地址最后面加上&quot;/项目名&quot;）</li>
 </ol>
 </li>
-<li>FTP设置
+<li>FTP 设置
 <ol>
-<li>点击下一步，进入FTP设置，Run As选择Remote Web Site(FTP,SFTP)</li>
-<li>Project URL填写<code>http://127.0.0.1/training/工号</code></li>
+<li>点击下一步，进入 FTP 设置，Run As 选择 Remote Web Site(FTP,SFTP)</li>
+<li>Project URL 填写<code>http://127.0.0.1/training/工号</code></li>
 </ol>
 </li>
-<li>Manage设置
+<li>Manage 设置
 <ol>
-<li>点击Manage,进入页面.名字自取.Host Name填写：127.0.0.1</li>
-<li>Encryption选择Pure FTP,User Name和Password（填写工号/课务系统登录密码）</li>
-<li>Initial Directory填写_training</li>
-<li>点击Test Connection测试是否连接成功</li>
+<li>点击 Manage, 进入页面。名字自取。Host Name 填写：127.0.0.1</li>
+<li>Encryption 选择 Pure FTP,User Name 和 Password（填写工号/课务系统登录密码）</li>
+<li>Initial Directory 填写_training</li>
+<li>点击 Test Connection 测试是否连接成功</li>
 </ol>
 </li>
 <li>其他设置
 <ol>
-<li>Upload Directory,上传目录不填，直接上传至个人根目录</li>
-<li>Upload File改为保存时上传文件（On Save）</li>
+<li>Upload Directory, 上传目录不填，直接上传至个人根目录</li>
+<li>Upload File 改为保存时上传文件（On Save）</li>
 </ol>
 </li>
 </ol>
 <h2 id="chrome-with-netneans-connector">Chrome with NetNeans Connector</h2>
 <ol>
-<li>打開chrome中的應用程式商店（使用chrome瀏覽器點擊下方鏈接即可）<br>
-<a href="https://chrome.google.com/webstore/category/themes?hl=en-US/" target="_blank" rel="noopener noreffer">chrome應用程式商店</a></li>
-<li>在搜索框中輸入NetNeans Connector后搜索，然後點擊右邊的加到Chrome即可，安裝成功后右上角會顯示Netbeans圖標。</li>
-<li>開啟netbeans 選擇Run→Set Project Browser→選中Chrome with NetBeans Connector</li>
-<li>選擇default下的Customize → 選擇Browser → 選擇Browser下 Chrome with NetBeans Connector即可</li>
+<li>打開 chrome 中的應用程式商店（使用 chrome 瀏覽器點擊下方鏈接即可）<br>
+<a href="https://chrome.google.com/webstore/category/themes?hl=en-US/" target="_blank" rel="noopener noreffer">chrome 應用程式商店</a></li>
+<li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 Netbeans 圖標。</li>
+<li>開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector</li>
+<li>選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可</li>
 </ol>
 <p>
 
@@ -530,37 +530,37 @@ Data
 <h1 id="git">Git</h1>
 <ul>
 <li>Master 的 BUG 必須最少且趨近於零，为最稳定的版本</li>
-<li>每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复BUG、增加功能</li>
+<li>每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复 BUG、增加功能</li>
 <li>禁止 Commit IDE 的 project data</li>
 <li>禁止上傳垃圾程式碼</li>
-<li>Gitea編輯內容類似里程碑和版本描述時要使用Markdown格式</li>
+<li>Gitea 編輯內容類似里程碑和版本描述時要使用 Markdown 格式</li>
 </ul>
 <h2 id="分支branch">分支（Branch）</h2>
 <ul>
-<li>命名規則：應以此分支主要目的命名（修復什麼BUG，新增特定功能）<br>
-不可出現版本號，模組ID</li>
+<li>命名規則：應以此分支主要目的命名（修復什麼 BUG，新增特定功能）<br>
+不可出現版本號，模組 ID</li>
 <li>合併後的分支應刪除</li>
 </ul>
 <h2 id="commit">commit</h2>
 <ul>
-<li>遵循一個功能一個commit的原則</li>
+<li>遵循一個功能一個 commit 的原則</li>
 </ul>
 <h1 id="restful">Restful</h1>
 <ul>
-<li>資源名詞站在API的角度思考
+<li>資源名詞站在 API 的角度思考
 <ul>
-<li>複數名詞：可以複數筆資料，回傳結果為Array
+<li>複數名詞：可以複數筆資料，回傳結果為 Array
 舉例：GET/users 取得多筆使用者資料
 <ul>
-<li>刪除，放在複數名詞內，讓Router保持一致性</li>
-<li>增加，放在複數名詞內，讓Router保持一致性</li>
+<li>刪除，放在複數名詞內，讓 Router 保持一致性</li>
+<li>增加，放在複數名詞內，讓 Router 保持一致性</li>
 </ul>
 </li>
-<li>單數名詞：僅取得單筆資料，必須指定PK，兩兩一組，回傳結果為Object
-舉例：GET/user/{accont} 取得單筆使用者資料，必須指定PK</li>
+<li>單數名詞：僅取得單筆資料，必須指定 PK，兩兩一組，回傳結果為 Object
+舉例：GET/user/{accont} 取得單筆使用者資料，必須指定 PK</li>
 </ul>
 </li>
-<li>URL中一律不帶id參數</li>
+<li>URL 中一律不帶 id 參數</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -574,7 +574,7 @@ Data
 </div>
 </div><h1 id="命名">命名</h1>
 <ul>
-<li>命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義!</li>
+<li>命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義！</li>
 <li>即使不會發生錯誤，程式碼英文大小寫也需明確區分。</li>
 </ul>
 <h2 id="語意">語意</h2>
@@ -600,12 +600,12 @@ Data
 </tbody>
 </table>
 <h2 id="字母與分隔">字母與分隔</h2>
-<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
+<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL 語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
 <h1 id="通用">通用</h1>
 <ul>
 <li>程式碼撰寫</li>
 <li>每個函數應該註解，註解應包含函數工能說明、引數說明。</li>
-<li>不必要的代碼不要寫，也禁止放到註解裡面!</li>
+<li>不必要的代碼不要寫，也禁止放到註解裡面！</li>
 <li>if-else 的 {} 嚴禁省略。</li>
 <li>{} 起始一律跟在 前一個功能的尾巴，禁止分行</li>
 </ul>
@@ -659,7 +659,7 @@ Data
 </li>
 <li>函數 (Function, Methd)
 <ul>
-<li>函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 (引數型態、引數英文名稱、引數說明)、 回傳值內容 (回傳值型態、回傳值說明)</li>
+<li>函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 （引數型態、引數英文名稱、引數說明）、 回傳值內容 （回傳值型態、回傳值說明）</li>
 </ul>
 </li>
 <li>類 (Class)
@@ -670,14 +670,14 @@ Data
 </li>
 <li>其他
 <ul>
-<li>連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</li>
+<li>連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</li>
 </ul>
 </li>
 </ul>
 <h1 id="html">HTML</h1>
 <h2 id="程式碼撰寫">程式碼撰寫</h2>
 <ul>
-<li>禁止在 HTML 使用 <code>&lt;style&gt;</code>、<code>&lt;script&gt;</code>，一律使用外部檔案引用方式引用 CSS、JavaScript檔案。</li>
+<li>禁止在 HTML 使用 <code>&lt;style&gt;</code>、<code>&lt;script&gt;</code>，一律使用外部檔案引用方式引用 CSS、JavaScript 檔案。</li>
 <li>HTML 標籤需成雙成對，有頭有尾。</li>
 <li>區塊標籤：<code>&lt;tag&gt;&lt;/tag&gt;</code></li>
 <li>單標籤：<code>&lt;tag /&gt;</code></li>
@@ -723,7 +723,7 @@ color
 </blockquote>
 <h2 id="其他">其他</h2>
 <blockquote>
-<p>連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</p>
+<p>連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</p>
 </blockquote>
 <h1 id="css">CSS</h1>
 <h2 id="程式碼撰寫-1">程式碼撰寫</h2>
@@ -749,7 +749,7 @@ color
 }
 </code></pre></td></tr></table>
 </div>
-</div><p>錯誤 (這是允許的，但造成程式碼閱讀困難，故禁止)</p>
+</div><p>錯誤 （這是允許的，但造成程式碼閱讀困難，故禁止）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -795,7 +795,7 @@ color
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者ID
+ * 使用者 ID
  * @type {String}
  */
 var userId = &#39;Hello&#39;;
@@ -840,7 +840,7 @@ var userId = &#39;Hello&#39;;
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
  * 取得使用者
- * @param {Int} userId 使用者ID
+ * @param {Int} userId 使用者 ID
  * @param {Object} [options] 其他選項
  * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
  * @returns {Object} 使用者資料
@@ -885,7 +885,7 @@ var getUser = function(userId, options){
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者ID
+ * 使用者 ID
  * @type {String}
  */
 $userId = &#39;Hello&#39;;
@@ -931,10 +931,10 @@ $userId = &#39;Hello&#39;;
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
  * 取得使用者
- * @param int userId 使用者ID
+ * @param int userId 使用者 ID
  * @param object options 其他選項
  * @option string options[&#39;query&#39;] 查詢關鍵字
- * @uses $_POST[&#39;role_id&#39;] 從前端以POST取得角色ID
+ * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
  * @returns object 使用者資料
  */
 function getUser($userId, $options){
@@ -952,7 +952,7 @@ function getUser($userId, $options){
 <h2 id="sql-撰寫">SQL 撰寫</h2>
 <ul>
 <li>屬於 SQL 語法使用大寫 (SELECT, WHERE, INSERT etc..)</li>
-<li>屬於使用者自己定義的使用小寫 (表名 table name, 欄位名 column name etc..)</li>
+<li>屬於使用者自己定義的使用小寫 （表名 table name, 欄位名 column name etc..)</li>
 <li>表名、欄位名前後需加上 `</li>
 </ul>
 <p><strong>Example</strong></p>
@@ -996,18 +996,18 @@ function getUser($userId, $options){
 </table>]]></description></item><item><title>WAMPServer 自定义网站根目录等设置</title><link>https://lruihao.cn/posts/wamproot/</link><pubDate>Fri, 12 Jul 2019 18:44:36 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wamproot/</guid><description><![CDATA[<blockquote>
 <p>使用 WAMPServer 时自定义网站根目录。</p>
 </blockquote>
-<h1 id="wampserver自定义网站根目录">WAMPServer自定义网站根目录</h1>
-<h2 id="修改apache配置文件">修改apache配置文件</h2>
+<h1 id="wampserver-自定义网站根目录">WAMPServer 自定义网站根目录</h1>
+<h2 id="修改-apache-配置文件">修改 apache 配置文件</h2>
 <p>打开<code>httpd.conf</code>文件搜索<code>documentroot</code>后，找到路径修改为自定义的。<br>
 </p>
 <p>再打开<code>httpd-vhost.conf</code>文件修改对应的路径。<br>
 <code>修改完配置文件需要重启所有服务！</code></p>
-<h2 id="修改wampmanager文件">修改wampmanager文件</h2>
-<p>在wampserver安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>,然后也修改为自定义的路径。
+<h2 id="修改-wampmanager-文件">修改 wampmanager 文件</h2>
+<p>在 wampserver 安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>, 然后也修改为自定义的路径。
 <code>然后退出，重启软件！</code></p>
 <p><br>
 </p>
-<h2 id="编写php文件测试">编写php文件测试</h2>
+<h2 id="编写-php-文件测试">编写 php 文件测试</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1021,7 +1021,7 @@ function getUser($userId, $options){
 </span></code></pre></td></tr></table>
 </div>
 </div><p></p>
-<h1 id="wampserver多站点配置">WAMPServer多站点配置</h1>
+<h1 id="wampserver-多站点配置">WAMPServer 多站点配置</h1>
 <p>打开<code>httpd-vhost.conf</code>文件，复制原有的几行配置文件，粘贴修改路径和域名等配置。比如</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1073,7 +1073,7 @@ function getUser($userId, $options){
 &lt;/VirtualHost&gt;
 </code></pre></td></tr></table>
 </div>
-</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件,在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
+</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件，在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1110,10 +1110,10 @@ function getUser($userId, $options){
 127.0.0.1 test02.com
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="wampserver自拟定端口">WAMPServer自拟定端口</h1>
-<p>WAMP服务我安装了好几次，每次因为修改配置文件搞崩了。。第一次装的时候发现80端口被占用了，因为以前玩了一下Windows的IIS，暂停IIS的网站，再使用命令或者直接在控制面板关掉就好了。</p>
+</div><h1 id="wampserver-自拟定端口">WAMPServer 自拟定端口</h1>
+<p>WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第一次装的时候发现 80 端口被占用了，因为以前玩了一下 Windows 的 IIS，暂停 IIS 的网站，再使用命令或者直接在控制面板关掉就好了。</p>
 <ol>
-<li>如果不使用80多为默认端口，比如修改为8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S保存，重新启动WampServer<br>
+<li>如果不使用 80 多为默认端口，比如修改为 8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S 保存，重新启动 WampServer<br>
 在浏览器地址栏输入<code>localhost:8000</code></li>
 </ol>
 <div class="highlight"><div class="chroma">
@@ -1131,12 +1131,12 @@ ServerName localhost:8080
 </code></pre></td></tr></table>
 </div>
 </div><ol start="2">
-<li>使用Notepad++打开 C:\wamp 目录下的wampmanager.ini和wampmanager.tpl<br>
-Ctrl+F查找 <code>localhost</code><br>
+<li>使用 Notepad++打开 C:\wamp 目录下的 wampmanager.ini 和 wampmanager.tpl<br>
+Ctrl+F 查找 <code>localhost</code><br>
 将其全部替换为<code>localhost:8000</code><br>
-然后，Ctrl+S保存，重新启动WampServer</li>
-</ol>]]></description></item><item><title>web汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/webbiji/</guid><description><![CDATA[<blockquote>
-<p>下面一些web开发的一些总结，还有一些常用到的代码，脚本等！</p>
+然后，Ctrl+S 保存，重新启动 WampServer</li>
+</ol>]]></description></item><item><title>web 汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/webbiji/</guid><description><![CDATA[<blockquote>
+<p>下面一些 web 开发的一些总结，还有一些常用到的代码，脚本等！</p>
 </blockquote>
 <h1 id="front-end">front-end</h1>
 <h2 id="html">html</h2>
@@ -1145,30 +1145,30 @@ Ctrl+F查找 <code>localhost</code><br>
 <li><a href="https://lruihao.cn/posts/ms-html-css.html" target="_blank" rel="noopener noreffer">HTML+CSS</a></li>
 </ul>
 </blockquote>
-<h3 id="oblique和intalic的区别">oblique和intalic的区别</h3>
+<h3 id="oblique-和-intalic-的区别">oblique 和 intalic 的区别</h3>
 <p>这两个都是<code>font-style</code>属性的值，这两个值都能实现倾斜的效果，但是有区别的。</p>
 <ul>
 <li><code>intalic</code>: 这个是字体的倾斜，相当于<strong>斜体</strong>，字体必须有倾斜属性。</li>
 <li><code>oblique</code>: 这个准确地说是让文字倾斜。相当于<strong>斜字</strong>，字体不一定要有倾斜属性。</li>
 </ul>
-<h3 id="title显示换行">title显示换行</h3>
-<p><a href="#" title="第一行&#10;第二行&#10;第三行">使用<code>&amp;#10;</code></a>或<a href="#" title="第一排&#13;第二排&#13;第三排">使用<code>&amp;#13;</code></a></p>
+<h3 id="title-显示换行">title 显示换行</h3>
+<p><a href="#" title="第一行&#10; 第二行&#10; 第三行">使用<code>&amp;#10;</code></a>或<a href="#" title="第一排&#13; 第二排&#13; 第三排">使用<code>&amp;#13;</code></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10;第二行&amp;#10;第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
-&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13;第二排&amp;#13;第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10; 第二行&amp;#10; 第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
+&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13; 第二排&amp;#13; 第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="图片类型选择">图片类型选择</h3>
 <p></p>
 <h2 id="css">css</h2>
 <h3 id="flexbox">flexbox</h3>
-<p>Flex布局将成为未来布局的首选方案，比如说常见的bootstrap4的版本就用flex替代了float来进行排版。<br>
-我在网上看到几个很好的教程,图文并茂，一目了然。</p>
+<p>Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 的版本就用 flex 替代了 float 来进行排版。<br>
+我在网上看到几个很好的教程，图文并茂，一目了然。</p>
 <blockquote>
 <ul>
 <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreffer">A Complete Guide to Flexbox</a></li>
@@ -1177,26 +1177,26 @@ Ctrl+F查找 <code>localhost</code><br>
 <ul>
 <li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">Flex 布局教程：语法篇</a></li>
 </ul>
-<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友<a href="http://static.vgee.cn/static/index.html" target="_blank" rel="noopener noreffer">Demo</a>也写了。</p>
+<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a href="http://static.vgee.cn/static/index.html" target="_blank" rel="noopener noreffer">Demo</a> 也写了。</p>
 <h2 id="javascript">javascript</h2>
-<h3 id="keydown和keypress">keydown和keypress</h3>
+<h3 id="keydown-和-keypress">keydown 和 keypress</h3>
 <ul>
 <li><code>keydown</code>：按下键盘键</li>
 <li><code>keypress</code>：紧接着<code>keydown</code>事件触发（只有按下字符键时触发）</li>
 <li>如果用户按下了一个<strong>字符键</strong>不放，就会重复触发<code>keydown</code>和<code>keypress</code>事件，直到用户松开该键为止。</li>
 <li>如果用户按下了一个<strong>非字符键</strong>不放，就会重复触发<code>keydown</code>事件，直到用户松开该键为止。</li>
 </ul>
-<p><a href="https://www.jianshu.com/p/8f839f558319" target="_blank" rel="noopener noreffer">详解键盘事件(keydown，keypress，keyup)</a></p>
-<h3 id="textcontentinnertext和innerhtml的区别">textContent、innerText和innerHTML的区别</h3>
+<p><a href="https://www.jianshu.com/p/8f839f558319" target="_blank" rel="noopener noreffer">详解键盘事件 (keydown，keypress，keyup)</a></p>
+<h3 id="textcontentinnertext-和-innerhtml-的区别">textContent、innerText 和 innerHTML 的区别</h3>
 <blockquote>
 <ol>
-<li>设置标签中的文本内容,应该使用<code>textContent</code>或<code>innerText</code>（更老）属性,区别在于浏览器支援程度</li>
+<li>设置标签中的文本内容，应该使用<code>textContent</code>或<code>innerText</code>（更老）属性，区别在于浏览器支援程度</li>
 </ol>
 </blockquote>
 <ol start="2">
-<li><code>innerHTML</code>能够获得元素内的所有标签内容，也可以设置标签使之生效。（<strong>注意防止XSS注入</strong>）</li>
+<li><code>innerHTML</code>能够获得元素内的所有标签内容，也可以设置标签使之生效。（<strong>注意防止 XSS 注入</strong>）</li>
 </ol>
-<p>如果某个属性在浏览器中不支持,那么这个属性的类型是<code>undefined</code>，判断这个属性的类型是不是<code>undefined</code>，就知道浏览器是否支持。</p>
+<p>如果某个属性在浏览器中不支持，那么这个属性的类型是<code>undefined</code>，判断这个属性的类型是不是<code>undefined</code>，就知道浏览器是否支持。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1229,16 +1229,16 @@ Ctrl+F查找 <code>localhost</code><br>
 <blockquote>
 <ul>
 <li>自行搭建
-比如使用开源图床ImgURL搭建的<code>img.lruihao.cn</code>（<strong>需要服务器</strong>）<br>
-使用上传工具加第三方免费空间，比如<code>PicGo + 腾讯云COS</code>（<strong>无需服务器</strong>）</li>
+比如使用开源图床 ImgURL 搭建的<code>img.lruihao.cn</code>（<strong>需要服务器</strong>）<br>
+使用上传工具加第三方免费空间，比如<code>PicGo + 腾讯云 COS</code>（<strong>无需服务器</strong>）</li>
 </ul>
 </blockquote>
 <ul>
 <li>使用各大图床<br>
-诸如sm.ms，腾讯云COS，阿里云OSS，七牛云，又拍云，Github，微博图床，ImgURL图床等等</li>
+诸如 sm.ms，腾讯云 COS，阿里云 OSS，七牛云，又拍云，Github，微博图床，ImgURL 图床等等</li>
 </ul>
 <h2 id="font-awesome">font-awesome</h2>
-<p>现在使用5的版本，可以使用<code>webfont+css</code>或<code>svg+js</code></p>
+<p>现在使用 5 的版本，可以使用<code>webfont+css</code>或<code>svg+js</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1247,7 +1247,7 @@ Ctrl+F查找 <code>localhost</code><br>
 <pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&#34;</span><span class="nt">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>其他的图标js</p>
+</div><p>其他的图标 js</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1258,7 +1258,7 @@ Ctrl+F查找 <code>localhost</code><br>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;script src=&#34;//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js&#34;&gt;&lt;/script&gt;
 &lt;svg class=&#34;card-avatar&#34; aria-hidden=&#34;true&#34;&gt;
-  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n为一个数字--&gt;
+  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n 为一个数字--&gt;
 &lt;/svg&gt;
 </code></pre></td></tr></table>
 </div>
@@ -1291,7 +1291,7 @@ Ctrl+F查找 <code>localhost</code><br>
 <li>.col-md- 中等屏幕  &gt;=992px</li>
 <li>.col-lg- 大屏幕  &gt;1200px</li>
 </ul>
-<p>css3 写法 @media (宽度具体调整)</p>
+<p>css3 写法 @media （宽度具体调整）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1311,18 +1311,18 @@ Ctrl+F查找 <code>localhost</code><br>
 <pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 手机等小屏幕手持设备 */</span>
 <span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
 
-	<span class="c">/*手机端css样式表*/</span>
+	<span class="c">/*手机端 css 样式表*/</span>
 
 <span class="p">}</span>
 <span class="c">/* 平板之类的宽度 1024 以下设备 */</span>
 <span class="p">@</span><span class="k">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">321px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
 
-	<span class="c">/*电脑端css样式表*/</span>
+	<span class="c">/*电脑端 css 样式表*/</span>
 
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>link引入不同css</p>
+</div><p>link 引入不同 css</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1357,12 +1357,12 @@ Ctrl+F查找 <code>localhost</code><br>
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-//还有其他的源...
+//还有其他的源。..
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="qq推广链接">QQ推广链接</h2>
+</div><h2 id="qq-推广链接">QQ 推广链接</h2>
 <blockquote>
-<p><a href="https://shang.qq.com/v3/widget.html" target="_blank" rel="noopener noreffer">QQ推广</a> <a href="https://qun.qq.com/join.html" target="_blank" rel="noopener noreffer">QQ群</a></p>
+<p><a href="https://shang.qq.com/v3/widget.html" target="_blank" rel="noopener noreffer">QQ 推广</a> <a href="https://qun.qq.com/join.html" target="_blank" rel="noopener noreffer">QQ 群</a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1383,13 +1383,13 @@ Ctrl+F查找 <code>localhost</code><br>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">https://fonts.google.com/
-一般选用国内源镜像替代（待补充...）
+一般选用国内源镜像替代（待补充。..）
 <span class="gi">+ https://fonts.loli.net
 </span><span class="gi">+ //fonts.lug.ustc.edu.cn
 </span></code></pre></td></tr></table>
 </div>
 </div><h2 id="fancybox">fancybox</h2>
-<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">github介绍</a> <a href="https://www.bootcdn.cn/fancybox/" target="_blank" rel="noopener noreffer">fancybox源</a></p>
+<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">github 介绍</a> <a href="https://www.bootcdn.cn/fancybox/" target="_blank" rel="noopener noreffer">fancybox 源</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1402,9 +1402,9 @@ Ctrl+F查找 <code>localhost</code><br>
 </div>
 </div><h1 id="back-end">back-end</h1>
 <blockquote>
-<p>更多学习内容见<a href="https://github.com/Lruihao/web-dev-data" target="_blank" rel="noopener noreffer">学习课件</a><br>
-练习作业<a href="https://github.com/Lruihao/hw" target="_blank" rel="noopener noreffer">源码</a>+<a href="http://hw.lruihao.cn/" target="_blank" rel="noopener noreffer">Demo</a></p>
-</blockquote>]]></description></item><item><title>eclipse的基本使用</title><link>https://lruihao.cn/posts/eclipseuse/</link><pubDate>Fri, 15 Mar 2019 23:47:24 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/eclipseuse/</guid><description><![CDATA[<h1 id="基本使用">基本使用</h1>
+<p>更多学习内容见 <a href="https://github.com/Lruihao/web-dev-data" target="_blank" rel="noopener noreffer">学习课件</a><br>
+练习作业 <a href="https://github.com/Lruihao/hw" target="_blank" rel="noopener noreffer">源码</a>+<a href="http://hw.lruihao.cn/" target="_blank" rel="noopener noreffer">Demo</a></p>
+</blockquote>]]></description></item><item><title>eclipse 的基本使用</title><link>https://lruihao.cn/posts/eclipseuse/</link><pubDate>Fri, 15 Mar 2019 23:47:24 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/eclipseuse/</guid><description><![CDATA[<h1 id="基本使用">基本使用</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1432,32 +1432,32 @@ Ctrl+F查找 <code>localhost</code><br>
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">A:选择一个工作空间
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">A: 选择一个工作空间
 	D:\develop\eclipse-SDK-3.7.2-win64\workspace
-B:如何写一个HelloWorld案例(代码以项目为基本单位)
-	a:创建项目(工程)
+B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
+	a: 创建项目（工程）
 		*File -- New -- Java Project
 		*在左边空白处，直接右键 -- New -- Java Project
 
-		键入项目名称后直接Finish。
-	b:所有的java文件必须写到src下面才有效
-	c:创建一个包
+		键入项目名称后直接 Finish。
+	b: 所有的 java 文件必须写到 src 下面才有效
+	c: 创建一个包
 		cn.lruihao   
-	d:在包下创建一个类
+	d: 在包下创建一个类
 		HelloWorld
 
-		同时让它帮我们写好了main方法。
-	e:在main方法中写内容即可
-	f:编译程序
+		同时让它帮我们写好了 main 方法。
+	e: 在 main 方法中写内容即可
+	f: 编译程序
 		自动编译，在保存的那一刻帮你做好了
-	g:运行程序
+	g: 运行程序
 		选择要运行的文件或者在要运行的文件内容中
-		右键 -- Run as - Java Application即可
-	h:内容显示
-		在Console控制台显示内容
+		右键 -- Run as - Java Application 即可
+	h: 内容显示
+		在 Console 控制台显示内容
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="eclipse的基本设置">Eclipse的基本设置</h1>
+</div><h1 id="eclipse-的基本设置">Eclipse 的基本设置</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1478,21 +1478,21 @@ B:如何写一个HelloWorld案例(代码以项目为基本单位)
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span><span class="n">程序的编译和运行的环境配置</span><span class="o">(</span><span class="n">如果你的Eclipse启动没有问题</span><span class="err">，</span><span class="n">就不要配置了</span><span class="o">)</span>
-<span class="nl">B:</span><span class="n">去掉默认注释</span><span class="o">(</span><span class="n">可以不用改</span><span class="o">)</span>
-<span class="nl">C:</span><span class="n">行号的显示和隐藏</span>
-	<span class="n">显示</span><span class="err">：</span><span class="n">在代码区域的最左边的空白区域</span><span class="err">，</span><span class="n">右键</span> <span class="o">--</span> <span class="n">Show</span> <span class="n">Line</span> <span class="n">Numbers即可</span><span class="err">。</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span> <span class="n">程序的编译和运行的环境配置</span><span class="err">（</span><span class="n">如果你的</span> <span class="n">Eclipse</span> <span class="n">启动没有问题</span><span class="err">，</span><span class="n">就不要配置了</span><span class="err">）</span>
+<span class="nl">B:</span> <span class="n">去掉默认注释</span><span class="err">（</span><span class="n">可以不用改</span><span class="err">）</span>
+<span class="nl">C:</span> <span class="n">行号的显示和隐藏</span>
+	<span class="n">显示</span><span class="err">：</span><span class="n">在代码区域的最左边的空白区域</span><span class="err">，</span><span class="n">右键</span> <span class="o">--</span> <span class="n">Show</span> <span class="n">Line</span> <span class="n">Numbers</span> <span class="n">即可</span><span class="err">。</span>
 	<span class="n">隐藏</span><span class="err">：</span><span class="n">把上面的动作再做一次</span><span class="err">。</span>
-<span class="nl">D:</span><span class="n">字体大小及颜色</span>
-	<span class="n">a</span><span class="o">:</span><span class="n">Java代码区域的字体大小和颜色</span><span class="err">：</span>
-		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Java修改</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">Edit</span> <span class="n">Text</span> <span class="n">Font</span>
-	<span class="n">b</span><span class="o">:</span><span class="n">控制台</span>
+<span class="nl">D:</span> <span class="n">字体大小及颜色</span>
+	<span class="n">a</span><span class="o">:</span><span class="n">Java</span> <span class="n">代码区域的字体大小和颜色</span><span class="err">：</span>
+		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">修改</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">Edit</span> <span class="n">Text</span> <span class="n">Font</span>
+	<span class="n">b</span><span class="o">:</span> <span class="n">控制台</span>
 		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Debug</span> <span class="o">--</span> <span class="n">Console</span> <span class="n">font</span>
-	<span class="n">c</span><span class="o">:</span><span class="n">其他文件</span>
+	<span class="n">c</span><span class="o">:</span> <span class="n">其他文件</span>
 		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Basic</span> <span class="o">--</span> <span class="n">Text</span> <span class="n">Font</span>
-<span class="nl">E:</span><span class="n">窗体给弄乱了</span><span class="err">，</span><span class="n">怎么办</span>
+<span class="nl">E:</span> <span class="n">窗体给弄乱了</span><span class="err">，</span><span class="n">怎么办</span>
 	<span class="n">window</span> <span class="o">--</span> <span class="n">Reset</span> <span class="n">Perspective</span>
-<span class="nl">F:</span><span class="n">控制台找不到了</span>
+<span class="nl">F:</span> <span class="n">控制台找不到了</span>
 	<span class="n">Window</span><span class="o">--</span><span class="n">Show</span> <span class="n">View</span><span class="err">—</span><span class="n">Console</span>
 </code></pre></td></tr></table>
 </div>
@@ -1511,19 +1511,19 @@ B:如何写一个HelloWorld案例(代码以项目为基本单位)
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span><span class="n">内容辅助键</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span> <span class="n">内容辅助键</span>
 	<span class="n">Alt</span><span class="o">+/</span> <span class="n">起提示作用</span>
-	<span class="n">main</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span><span class="n">syso</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span><span class="n">给出其他提示</span>
-<span class="nl">B:</span><span class="n">快捷键</span>
+	<span class="n">main</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span><span class="n">syso</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span> <span class="n">给出其他提示</span>
+<span class="nl">B:</span> <span class="n">快捷键</span>
 	<span class="n">格式化</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">f</span>
 	<span class="n">导入包</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">o</span>
 	<span class="n">注释</span>	<span class="n">ctrl</span><span class="o">+/</span>
 		<span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+/,</span><span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="err">\</span>
-	<span class="n">代码上下移动</span> <span class="n">选中代码alt</span><span class="o">+</span><span class="n">上</span><span class="o">/</span><span class="n">下箭头</span>
-	<span class="n">查看源码</span>  <span class="nf">选中类名</span><span class="o">(</span><span class="n">F3或者Ctrl</span><span class="o">+</span><span class="n">鼠标点击</span><span class="o">)</span>
+	<span class="n">代码上下移动</span> <span class="n">选中代码</span> <span class="n">alt</span><span class="o">+</span><span class="n">上</span><span class="o">/</span><span class="n">下箭头</span>
+	<span class="n">查看源码</span>  <span class="nf">选中类名</span> <span class="o">(</span><span class="n">F3</span> <span class="n">或者</span> <span class="n">Ctrl</span><span class="o">+</span><span class="n">鼠标点击</span><span class="err">）</span>
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="eclipse中如何提高开发效率">Eclipse中如何提高开发效率</h1>
+</div><h1 id="eclipse-中如何提高开发效率">Eclipse 中如何提高开发效率</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1533,10 +1533,10 @@ B:如何写一个HelloWorld案例(代码以项目为基本单位)
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span><span class="n">自动生成构造方法</span>
-	<span class="n">a</span><span class="o">:</span><span class="n">无参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">from</span> <span class="n">Superclass</span>
-	<span class="n">b</span><span class="o">:</span><span class="n">带参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">using</span> <span class="n">fields</span><span class="o">..</span> <span class="o">--</span> <span class="n">finish</span>
-<span class="nl">B:</span><span class="n">自动生成get</span><span class="o">/</span><span class="n">set方法</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span> <span class="n">自动生成构造方法</span>
+	<span class="n">a</span><span class="o">:</span> <span class="n">无参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">from</span> <span class="n">Superclass</span>
+	<span class="n">b</span><span class="o">:</span> <span class="n">带参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">using</span> <span class="n">fields</span><span class="o">..</span> <span class="o">--</span> <span class="n">finish</span>
+<span class="nl">B:</span> <span class="n">自动生成</span> <span class="n">get</span><span class="o">/</span><span class="n">set</span> <span class="n">方法</span>
 	<span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Getters</span> <span class="n">and</span> <span class="n">Setters</span><span class="o">...</span>
 </code></pre></td></tr></table>
 </div>

@@ -9,15 +9,15 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/poj-1426-find-the-multipledfs/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-07-22T11:57:13+00:00">
-<meta property="article:modified_time" content="2021-09-27T19:47:51+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="poj-1426-Find The Multiple(dfs)">
 <meta name=twitter:description content="Find The Multiple Time Limit: 1000MS Memory Limit: 10000K Total Submissions: 40713 Accepted: 17088 Special Judge Description Given a positive integer n, write a program to find out a nonzero multiple m of n whose decimal representation contains only the digits 0 and 1. You may assume that n is not greater than 200 and there is a corresponding m containing no more than 100 decimal digits. Input The input file may contain multiple test cases. Each line contains a value of n (1 <= n <= 200). A line containing a zero terminates the input. Output For each value of n in the input print a line containing the corresponding value of m. The decimal representation of m must not contain more than 100 digits. If there are multiple solutions for a given value of n, any one of them is acceptable. Sample Input 2 6 19 0 Sample">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/poj-1426-find-the-multipledfs/><link rel=prev href=https://lruihao.cn/posts/adjacent-replacements/><link rel=next href=https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"poj-1426-Find The Multiple(dfs)","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/poj-1426-find-the-multipledfs\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"DFS, ACM, 搜索, POJ, C\u002b\u002b","wordcount":421,"url":"https:\/\/lruihao.cn\/posts\/poj-1426-find-the-multipledfs\/","datePublished":"2018-07-22T11:57:13+00:00","dateModified":"2021-09-27T19:47:51+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/poj-1426-find-the-multipledfs/><link rel=prev href=https://lruihao.cn/posts/adjacent-replacements/><link rel=next href=https://lruihao.cn/posts/poj-1321-%E6%A3%8B%E7%9B%98%E9%97%AE%E9%A2%98dfs/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"poj-1426-Find The Multiple(dfs)","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/poj-1426-find-the-multipledfs\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"DFS, ACM, 搜索, POJ, C\u002b\u002b","wordcount":394,"url":"https:\/\/lruihao.cn\/posts\/poj-1426-find-the-multipledfs\/","datePublished":"2018-07-22T11:57:13+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -85,7 +85,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">poj-1426-Find The Multiple(dfs)</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-22>2018-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 421 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-22>2018-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 394 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/poj-1426-find-the-multipledfs/ class=leancloud_visitors data-flag-title="poj-1426-Find The Multiple(dfs)">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -132,8 +132,8 @@ Total Submissions: 40713 Accepted: 17088 Special Judge</p>
 111111111111111111
 </code></pre>
 <hr>
-<p>给定一个正整数n，请编写一个程序来寻找n的一个非零的倍数m，这个m应当在十进制表示时每一位上只包含0或者1。你可以假定n不大于200且m不多于100位。<br>
-提示：本题采用Special Judge，你无需输出所有符合条件的m，你只需要输出任一符合条件的m即可。</p>
+<p>给定一个正整数 n，请编写一个程序来寻找 n 的一个非零的倍数 m，这个 m 应当在十进制表示时每一位上只包含 0 或者 1。你可以假定 n 不大于 200 且 m 不多于 100 位。<br>
+提示：本题采用 Special Judge，你无需输出所有符合条件的 m，你只需要输出任一符合条件的 m 即可。</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -183,11 +183,11 @@ Total Submissions: 40713 Accepted: 17088 Special Judge</p>
         <span class=n>cout</span><span class=o>&lt;&lt;</span><span class=n>x</span><span class=o>&lt;&lt;</span><span class=n>endl</span><span class=p>;</span>
         <span class=k>return</span> <span class=p>;</span>
     <span class=p>}</span>
-    <span class=k>if</span><span class=p>(</span><span class=n>count</span><span class=o>==</span><span class=mi>19</span><span class=p>)</span><span class=c1>//m最多200位
+    <span class=k>if</span><span class=p>(</span><span class=n>count</span><span class=o>==</span><span class=mi>19</span><span class=p>)</span><span class=c1>//m 最多 200 位
 </span><span class=c1></span>        <span class=k>return</span> <span class=p>;</span>
     <span class=n>dfs</span><span class=p>(</span><span class=n>x</span><span class=o>*</span><span class=mi>10</span><span class=p>,</span><span class=n>count</span><span class=o>+</span><span class=mi>1</span><span class=p>);</span>
     <span class=n>dfs</span><span class=p>(</span><span class=n>x</span><span class=o>*</span><span class=mi>10</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span><span class=n>count</span><span class=o>+</span><span class=mi>1</span><span class=p>);</span>
-    <span class=c1>//每两位数后两位有两种情况，10或11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
+    <span class=c1>//每两位数后两位有两种情况，10 或 11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
 </span><span class=c1></span><span class=p>}</span>
 <span class=kt>int</span> <span class=nf>main</span><span class=p>()</span>
 <span class=p>{</span>
@@ -204,8 +204,8 @@ Total Submissions: 40713 Accepted: 17088 Special Judge</p>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-09-27&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/6a70c8a40ce07f5c24c102da241c504701134ccf target=_blank title="commit by Cell(1024@lruihao.cn) 6a70c8a40ce07f5c24c102da241c504701134ccf: Feat: 恢復 2018 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>6a70c8a</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>

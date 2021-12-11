@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Lightbox - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/lightbox/</link><description>Lightbox - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 21 Jun 2021 16:18:04 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/lightbox/" rel="self" type="application/rss+xml"/><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
-<p>Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。</p>
-<p>一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘Esc键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。</p>
+<p>Lightbox （燈箱），用来放大显示图片覆盖于当前页面之上。其是用 CSS 来定义图片容器，用一幅半透明的 png 图片实现渐变阴暗的效果。</p>
+<p>一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘 Esc 键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。</p>
 <h1 id="實現思路">實現思路</h1>
 <p>大概思路就在每个图片的点击事件中添加图层与图片副本。</p>
 <div class="highlight"><div class="chroma">
@@ -201,7 +201,6 @@
 </span><span class="lnt">194
 </span><span class="lnt">195
 </span><span class="lnt">196
-</span><span class="lnt">197
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="cm">/**
@@ -220,7 +219,7 @@
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span><span class="o">=</span><span class="nx">w</span><span class="o">+</span><span class="s2">&#34;px&#34;</span><span class="p">;</span>
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">left</span><span class="o">=</span><span class="nx">x</span><span class="o">+</span><span class="s2">&#34;px&#34;</span><span class="p">;</span>
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">top</span><span class="o">=</span><span class="p">(</span><span class="nx">y</span> <span class="o">-</span> <span class="nx">container</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;px&#34;</span><span class="p">;</span>
-    <span class="c1">// 延迟移除dom
+    <span class="c1">// 延迟移除 dom
 </span><span class="c1"></span>    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
         <span class="nx">div</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
         <span class="nx">img</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
@@ -236,7 +235,7 @@
     <span class="p">}</span>
     <span class="nx">div</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">opacity</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">opacity</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-    <span class="c1">// 延迟移除dom
+    <span class="c1">// 延迟移除 dom
 </span><span class="c1"></span>    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
         <span class="nx">div</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
         <span class="nx">img</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
@@ -321,7 +320,7 @@
           <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
               <span class="nx">div</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
           <span class="p">},</span><span class="mi">0</span><span class="p">);</span>
-          <span class="c1">// (此处可以加loading)
+          <span class="c1">// （此处可以加 loading)
 </span><span class="c1"></span>
           <span class="c1">// 创建副本
 </span><span class="c1"></span>          <span class="nx">img</span><span class="o">=</span><span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
@@ -329,7 +328,6 @@
           <span class="nx">btnleft</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;button&#34;</span><span class="p">);</span>
           <span class="nx">img</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="nx">src</span><span class="p">;</span>
           <span class="nx">style</span><span class="p">();</span>
-
 
           <span class="nx">btnleft</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
             <span class="k">if</span><span class="p">(</span><span class="nx">id</span><span class="o">===</span><span class="mi">0</span><span class="p">){</span>

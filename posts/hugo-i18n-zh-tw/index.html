@@ -11,17 +11,17 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hugo-i18n-zh-tw/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-05T19:14:45+08:00">
-<meta property="article:modified_time" content="2021-10-05T20:01:45+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="Hugo i18n 添加中文繁體翻譯">
 <meta name=twitter:description content="
 工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-i18n-zh-tw/><link rel=prev href=https://lruihao.cn/posts/hugo-friends/><link rel=next href=https://lruihao.cn/posts/hugo-cardlink/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo i18n 添加中文繁體翻譯","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-i18n-zh-tw\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, i18n","wordcount":1320,"url":"https:\/\/lruihao.cn\/posts\/hugo-i18n-zh-tw\/","datePublished":"2021-10-05T19:14:45+08:00","dateModified":"2021-10-05T20:01:45+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-i18n-zh-tw/><link rel=prev href=https://lruihao.cn/posts/hugo-friends/><link rel=next href=https://lruihao.cn/posts/hugo-cardlink/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo i18n 添加中文繁體翻譯","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-i18n-zh-tw\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, i18n","wordcount":1320,"url":"https:\/\/lruihao.cn\/posts\/hugo-i18n-zh-tw\/","datePublished":"2021-10-05T19:14:45+08:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -392,7 +392,7 @@
 <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;搜索&#34;</span>
 
 <span class=p>[</span><span class=nx>searchPlaceholder</span><span class=p>]</span>
-<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;搜索文章標題或內容...&#34;</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;搜索文章標題或內容。..&#34;</span>
 
 <span class=p>[</span><span class=nx>clear</span><span class=p>]</span>
 <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;清空&#34;</span>
@@ -416,7 +416,7 @@
 <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;複製到剪貼板&#34;</span>
 
 <span class=p>[</span><span class=nx>cookieconsentMessage</span><span class=p>]</span>
-<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;本網站使用 Cookies 來改善您的流覽體驗.&#34;</span>
+<span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;本網站使用 Cookies 來改善您的流覽體驗。&#34;</span>
 
 <span class=p>[</span><span class=nx>cookieconsentDismiss</span><span class=p>]</span>
 <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;同意&#34;</span>
@@ -540,8 +540,8 @@
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/5110ca3a0fb13d591d115946535119c937197421 target=_blank title="commit by Cell(1024@lruihao.cn) 5110ca3a0fb13d591d115946535119c937197421: Docs: 『菠菜眾長』内容更新 2021-10-05 Tue 20:01:45">
-<i class="fas fa-hashtag fa-fw"></i>5110ca3</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>

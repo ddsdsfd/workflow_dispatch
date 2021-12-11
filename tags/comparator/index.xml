@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Comparator - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/comparator/</link><description>Comparator - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Fri, 18 Jan 2019 13:13:10 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/comparator/" rel="self" type="application/rss+xml"/><item><title>Arrays类及基本使用</title><link>https://lruihao.cn/posts/arrays/</link><pubDate>Fri, 18 Jan 2019 13:13:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/arrays/</guid><description><![CDATA[<h3 id="主要方法">主要方法</h3>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Comparator - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/comparator/</link><description>Comparator - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Fri, 18 Jan 2019 13:13:10 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/comparator/" rel="self" type="application/rss+xml"/><item><title>Arrays 类及基本使用</title><link>https://lruihao.cn/posts/arrays/</link><pubDate>Fri, 18 Jan 2019 13:13:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/arrays/</guid><description><![CDATA[<h3 id="主要方法">主要方法</h3>
 <ul>
 <li>static type[] copyof(type[] original,int length)</li>
 <li>static int binarysearch(type[] a,type key)</li>
@@ -87,24 +87,24 @@
 		<span class="n">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
 		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;排序后：&#34;</span><span class="o">);</span>
 		<span class="n">display</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
-		<span class="c1">//将值-1分配给数组arr中下标从0到3-1的位置
+		<span class="c1">//将值-1 分配给数组 arr 中下标从 0 到 3-1 的位置
 </span><span class="c1"></span>		<span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">0</span><span class="o">,</span><span class="n">3</span><span class="o">,-</span><span class="n">1</span><span class="o">);</span>
-		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;fill()后：&#34;</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;fill() 后：&#34;</span><span class="o">);</span>
 		<span class="n">display</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
-		<span class="c1">//搜索23
-</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;值23的位置：&#34;</span><span class="o">);</span>
+		<span class="c1">//搜索 23
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;值 23 的位置：&#34;</span><span class="o">);</span>
 		<span class="kt">int</span> <span class="n">index</span> <span class="o">=</span><span class="n">Arrays</span><span class="o">.</span><span class="na">binarySearch</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">23</span><span class="o">);</span><span class="c1">//二分查找
-</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">index</span><span class="o">);</span><span class="c1">//如果查找不到，index为负
-</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;\n插入0在3号位置：&#34;</span><span class="o">);</span>
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">index</span><span class="o">);</span><span class="c1">//如果查找不到，index 为负
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;\n 插入 0 在 3 号位置：&#34;</span><span class="o">);</span>
 		<span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span><span class="n">3</span><span class="o">,</span><span class="n">4</span><span class="o">,</span><span class="n">0</span><span class="o">);</span>
 		<span class="n">display</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
-		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;值0的位置：&#34;</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;值 0 的位置：&#34;</span><span class="o">);</span>
 		<span class="n">index</span> <span class="o">=</span><span class="n">Arrays</span><span class="o">.</span><span class="na">binarySearch</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">0</span><span class="o">);</span>
 		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
 		<span class="n">Integer</span> <span class="n">arr2</span><span class="o">[]=</span><span class="k">new</span> <span class="n">Integer</span><span class="o">[</span><span class="n">8</span><span class="o">];</span>
 		<span class="n">arr2</span><span class="o">=</span><span class="n">Arrays</span><span class="o">.</span><span class="na">copyOf</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">arr2</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
-		<span class="c1">//复制8个
-</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;\n复制后的数组：&#34;</span><span class="o">);</span>
+		<span class="c1">//复制 8 个
+</span><span class="c1"></span>		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&#34;\n 复制后的数组：&#34;</span><span class="o">);</span>
 		<span class="n">display</span><span class="o">(</span><span class="n">arr2</span><span class="o">);</span>
 		<span class="k">if</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">arr</span><span class="o">,</span> <span class="n">arr2</span><span class="o">))</span>
 			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;两数组相同！&#34;</span><span class="o">);</span>
@@ -115,8 +115,8 @@
 		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">str</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">i</span><span class="o">++)</span>
 			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">str</span><span class="o">[</span><span class="n">i</span><span class="o">]+</span><span class="s">&#34; &#34;</span><span class="o">);</span>
 		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;&#34;</span><span class="o">);</span>
-		<span class="c1">//Collator类是用来执行分语言环境的字符串比较，这里用的CHINA
-</span><span class="c1"></span>		<span class="n">Comparator</span> <span class="n">com</span><span class="o">=</span><span class="n">Collator</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Locale</span><span class="o">.</span><span class="na">CHINA</span><span class="o">);</span><span class="c1">//获取Comparator对象，参数表示按中文排序
+		<span class="c1">//Collator 类是用来执行分语言环境的字符串比较，这里用的 CHINA
+</span><span class="c1"></span>		<span class="n">Comparator</span> <span class="n">com</span><span class="o">=</span><span class="n">Collator</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Locale</span><span class="o">.</span><span class="na">CHINA</span><span class="o">);</span><span class="c1">//获取 Comparator 对象，参数表示按中文排序
 </span><span class="c1"></span>		<span class="c1">//根据指定的 &#34;比较器&#34; 产生的顺序对 &#34;指定对象数组&#34; 进行排序
 </span><span class="c1"></span>		<span class="n">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">str</span><span class="o">,</span><span class="n">com</span><span class="o">);</span><span class="c1">//sort(T[] a,Comparator&lt;?super T&gt;c)
 </span><span class="c1"></span>		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">str</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">i</span><span class="o">++)</span>
@@ -148,10 +148,10 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">原内容：41 0 44 96 49 96 30 6 87 
 排序后：0 6 30 41 44 49 87 96 96 
-fill()后：-1 -1 -1 41 44 49 87 96 96 
-值23的位置：-4
-插入0在3号位置：-1 -1 -1 0 44 49 87 96 96 
-值0的位置：3
+fill() 后：-1 -1 -1 41 44 49 87 96 96 
+值 23 的位置：-4
+插入 0 在 3 号位置：-1 -1 -1 0 44 49 87 96 96 
+值 0 的位置：3
 复制后的数组：-1 -1 -1 0 44 49 87 96 
 两数组不相同！
 ----------------------------------------

@@ -1,7 +1,7 @@
-# how many tables-HDU-1213(并查集求连通域数目)
+# how many tables-HDU-1213（并查集求连通域数目）
 
 
-并查集求连通域数目，初始化sum=n；
+并查集求连通域数目，初始化 sum=n；
 题目链接： [how many tables](http://acm.hdu.edu.cn/showproblem.php?pid=1213)
 
 <!--more-->

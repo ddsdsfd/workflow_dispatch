@@ -1,8 +1,8 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>脚本 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/</link><description>脚本 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 26 Mar 2020 11:08:38 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/" rel="self" type="application/rss+xml"/><item><title>使用Python刷csdn访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
-<p>使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>脚本 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/</link><description>脚本 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 26 Mar 2020 11:08:38 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E8%84%9A%E6%9C%AC/" rel="self" type="application/rss+xml"/><item><title>使用 Python 刷 csdn 访问量</title><link>https://lruihao.cn/posts/csdnvisiter/</link><pubDate>Thu, 26 Mar 2020 11:08:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/csdnvisiter/</guid><description><![CDATA[<blockquote>
+<p>使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
-<p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到Windows桌面上随时使用~<br>
-<a href="/posts/pyinstallererror/" rel="">打包exe参考</a></p>
+<p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~<br>
+<a href="/posts/pyinstallererror/" rel="">打包 exe 参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -92,7 +92,7 @@
     <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
     <span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
     <span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net/&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s2">&#34;/article/list/&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
-    <span class="c1"># 使用build_opener()是为了让python程序模仿浏览器进行访问</span>
+    <span class="c1"># 使用 build_opener() 是为了让 python 程序模仿浏览器进行访问</span>
     <span class="n">html</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
     <span class="n">allfinds</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">allfinds</span>
@@ -100,7 +100,7 @@
 
 <span class="k">def</span> <span class="nf">start_do</span><span class="p">(</span><span class="n">allfinds</span><span class="p">):</span>
     <span class="n">urlBase</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net&#34;</span>  <span class="c1"># 需要将网址合并的部分</span>
-    <span class="c1"># 页面中的网址有重复的，需要使用set进行去重复</span>
+    <span class="c1"># 页面中的网址有重复的，需要使用 set 进行去重复</span>
     <span class="n">mypages</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">allfinds</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mypages</span><span class="p">)):</span>
         <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">urlBase</span> <span class="o">+</span> <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -116,7 +116,7 @@
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">brushNum</span><span class="p">):</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="n">pageContent</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
-                <span class="c1"># 使用BeautifulSoup解析每篇博客的标题</span>
+                <span class="c1"># 使用 BeautifulSoup 解析每篇博客的标题</span>
                 <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">pageContent</span><span class="p">)</span>
                 <span class="n">blogTitle</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
                 <span class="n">blogTitle</span> <span class="o">=</span> <span class="n">blogTitle</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">blogTitle</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)]</span>
@@ -136,12 +136,12 @@
         <span class="n">start_do</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;输入你的csdn用户名：&#34;</span><span class="p">)</span>
+  <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;输入你的 csdn 用户名：&#34;</span><span class="p">)</span>
   <span class="k">if</span> <span class="n">name</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">:</span>
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;qq_39520417&#34;</span> <span class="c1">#cheung99857</span>
   <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
     <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息...&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -165,30 +165,30 @@
     <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
             <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息...&#34;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
             <span class="c1"># 控制休眠时间相当于控制刷新的速度</span>
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>新冠疫情未返校未返工第 N 天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起&hellip;<br>
-算了，昨天下午3点半，我还在王者峡谷Timing,突然潇X巴哥打了个电话给我说关于自动打卡的想法&hellip;<br>
-哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡&hellip;<br>
-我和潇X巴哥确定思路后兵分两路：</p>
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起。..<br>
+算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法。..<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡。..<br>
+我和潇 X 巴哥确定思路后兵分两路：</p>
 <ol>
-<li>他用java写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
+<li>他用 java 写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
 <li>我想的就很直接，只刷一个人的，python 模拟浏览器登录后打卡，再设置定时任务（多人则设定多个）；</li>
 </ol>
 </div>
         </div>
     </div>
-<h1 id="windows运行效果">Windows运行效果</h1>
+<h1 id="windows-运行效果">Windows 运行效果</h1>
 <p><br>
 <br>
 </p>
@@ -233,7 +233,7 @@
   <span class="k">if</span> <span class="n">r1</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y:%m:</span><span class="si">%d</span><span class="s2">:%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">login</span><span class="p">[</span><span class="s2">&#34;username&#34;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&#34; 登录成功！&#34;</span><span class="p">)</span>
-    <span class="c1"># 拿到登录后的cookie并添加到header中</span>
+    <span class="c1"># 拿到登录后的 cookie 并添加到 header 中</span>
     <span class="n">header1</span> <span class="o">=</span> <span class="n">r1</span><span class="o">.</span><span class="n">headers</span>
     <span class="n">headers</span><span class="p">[</span><span class="s2">&#34;Cookie&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">header1</span><span class="p">[</span><span class="s2">&#34;Set-Cookie&#34;</span><span class="p">]</span>
   <span class="k">else</span><span class="p">:</span>
@@ -256,7 +256,7 @@
 </div>
 </div><h1 id="自动运行">自动运行</h1>
 <h2 id="windows">Windows</h2>
-<p>适用python代码控制休眠时间</p>
+<p>适用 python 代码控制休眠时间</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -284,25 +284,25 @@
   <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
     <span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-    <span class="c1"># 设置每天8点发送</span>
+    <span class="c1"># 设置每天 8 点发送</span>
     <span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
       <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
       <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
       <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
       <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天8点发送数据！&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
       <span class="n">lajaDaka</span><span class="p">()</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="linux云服务器">linux(云服务器)</h2>
-<p>搭建python环境下载依赖后，使用shell脚本定时执行。</p>
+</div><h2 id="linux云服务器">linux（云服务器）</h2>
+<p>搭建 python 环境下载依赖后，使用 shell 脚本定时执行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -311,31 +311,31 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON表达式的基本语法</a></p>
-<h1 id="潇x巴哥的java-web版本">潇x巴哥的java web版本</h1>
+</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+<h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>安装pyinstaller出错的解决办法及csdn工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
+</p>]]></description></item><item><title>安装 pyinstaller 出错的解决办法及 csdn 工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/pyinstallererror/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>用过命令<code>pip install pyinstaller</code>安装失败，此包依赖于pywin32，安装前需要先<code>pip install pywin32</code>,我安装了还是出错，稍微百度了一下也没有看到解决办法。
+<p>用过命令<code>pip install pyinstaller</code>安装失败，此包依赖于 pywin32，安装前需要先<code>pip install pywin32</code>, 我安装了还是出错，稍微百度了一下也没有看到解决办法。
 这里通过手动下载安装解决的，记录一下。</p>
 </blockquote>
 <h1 id="下载">下载</h1>
-<p>去官网下载pyinstaller安装包：<a href="https://pypi.org/project/PyInstaller/#files" target="_blank" rel="noopener noreffer">https://pypi.org/project/PyInstaller/#files</a></p>
+<p>去官网下载 pyinstaller 安装包：<a href="https://pypi.org/project/PyInstaller/#files" target="_blank" rel="noopener noreffer">https://pypi.org/project/PyInstaller/#files</a></p>
 <h1 id="解压">解压</h1>
-<p>我这里解压到<code>E:\应用\Python37\Lib\site-packages\PyInstaller-3.4</code></p>
+<p>我这里解压到<code>E:\应用、Python37\Lib\site-packages\PyInstaller-3.4</code></p>
 <h1 id="安装">安装</h1>
-<p>cmd也进入到上面的路径下，然后执行<code>Python setup.py install</code>，等待安装完毕</p>
+<p>cmd 也进入到上面的路径下，然后执行<code>Python setup.py install</code>，等待安装完毕</p>
 <p>
 
 
 </p>
-<h1 id="pyinstaller简介">pyinstaller简介</h1>
-<p>pyinstaller将Python脚本打包成可执行程序，使在没有Python环境的机器上运行。</p>
-<p>最新版是pyinstaller 3.4，可运行在Windows，Mac和Linux操作系统下。 但它不是跨编译的，也就是说在Windows下用PyInstaller生成的exe只能运行在Windows下，在Linux下生成的只能运行在Linux下。</p>
+<h1 id="pyinstaller-简介">pyinstaller 简介</h1>
+<p>pyinstaller 将 Python 脚本打包成可执行程序，使在没有 Python 环境的机器上运行。</p>
+<p>最新版是 pyinstaller 3.4，可运行在 Windows，Mac 和 Linux 操作系统下。 但它不是跨编译的，也就是说在 Windows 下用 PyInstaller 生成的 exe 只能运行在 Windows 下，在 Linux 下生成的只能运行在 Linux 下。</p>
 <h1 id="打包">打包</h1>
-<p>打包的app里并不包含任何源码，但将脚本的.pyc文件打包了。</p>
+<p>打包的 app 里并不包含任何源码，但将脚本的。pyc 文件打包了。</p>
 <p>基本语法： <code>pyinstaller options myscript.py</code></p>
 <blockquote>
 <p>常用的可选参数如下：
@@ -343,15 +343,15 @@
 <code>--onedir</code> 将所有结果打包到一个文件夹中，该文件夹包括一个可执行文件和可执行文件执行时需要的依赖文件（默认）
 <code>--paths=DIR</code> 设置导入路径
 <code>--distpath=DIR</code> 设置将打包的结果文件放置的路径
-<code>--specpath=DIR</code> 设置将spec文件放置的路径
-<code>--windowed</code> 使用windows子系统执行，不会打开命令行（只对windows有效）
-<code>--nowindowed</code> 使用控制台子系统执行（默认）（只对windows有效）
-<code>--icon=&lt;FILE.ICO&gt;</code> 将file.ico添加为可执行文件的资源(只对windows有效）</p>
+<code>--specpath=DIR</code> 设置将 spec 文件放置的路径
+<code>--windowed</code> 使用 windows 子系统执行，不会打开命令行（只对 windows 有效）
+<code>--nowindowed</code> 使用控制台子系统执行（默认）（只对 windows 有效）
+<code>--icon=&lt;FILE.ICO&gt;</code> 将 file.ico 添加为可执行文件的资源（只对 windows 有效）</p>
 </blockquote>
 <p>如<code>pyinstaller --paths=&quot;D:\&quot; test.py</code></p>
-<h1 id="csdn访问量脚本实例">CSDN访问量脚本实例</h1>
-<p>比如，拿以前写的一个刷csdn访问量工具csdn.py（放在桌面上），<a href="/posts/csdnvisiter.html" rel="">代码详见</a></p>
-<p>在cmd进入桌面路径，输入如下命令</p>
+<h1 id="csdn-访问量脚本实例">CSDN 访问量脚本实例</h1>
+<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a href="/posts/csdnvisiter.html" rel="">代码详见</a></p>
+<p>在 cmd 进入桌面路径，输入如下命令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -362,8 +362,8 @@
 </div>
 </div><p>
 </p>
-<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及exe可执行文件。</p>]]></description></item><item><title>python 爬取网站图片（图片链接相似）</title><link>https://lruihao.cn/posts/mmtimgpy/</link><pubDate>Mon, 22 Apr 2019 12:46:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mmtimgpy/</guid><description><![CDATA[<blockquote>
-<p>以下程序对<a href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&amp;a=fontshowPics&amp;u=qbfRl8gPF2s-&amp;z=Kqz%2FRroVGYc-&amp;share=1&amp;from=singlemessage" target="_blank" rel="noopener noreffer">该网址</a>内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app书写的，大概6886个字符，历时两年多，目前仍在修改中。<a href="https://lruihao.cn/posts/font-mmt/" target="_blank" rel="noopener noreffer">字体效果查看</a></p>
+<p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及 exe 可执行文件。</p>]]></description></item><item><title>python 爬取网站图片（图片链接相似）</title><link>https://lruihao.cn/posts/mmtimgpy/</link><pubDate>Mon, 22 Apr 2019 12:46:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mmtimgpy/</guid><description><![CDATA[<blockquote>
+<p>以下程序对 <a href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&amp;a=fontshowPics&amp;u=qbfRl8gPF2s-&amp;z=Kqz%2FRroVGYc-&amp;share=1&amp;from=singlemessage" target="_blank" rel="noopener noreffer">该网址</a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a href="https://lruihao.cn/posts/font-mmt/" target="_blank" rel="noopener noreffer">字体效果查看</a></p>
 </blockquote>
 <h1 id="思路设计">思路设计</h1>
 <blockquote>
@@ -374,7 +374,7 @@
 <li>图片文件编号</li>
 </ul>
 <blockquote>
-<p>其中固定连接为<code>https://image.xiezixiansheng.com/users/2010/700/unzip/579767/</code>,图片文件为<code>xxxxx.png@50q</code>，如果去掉@50q，获取到的图片就是透明背景的不然就是白色背景。然后发现编号大多是5位数的形式，但是还有一些是4位的，甚至还有2-3位的数字。仔细看看127前的编号都是一些国际符号诸如英文和数字等。比对一下发现正是ASCII码对应的命名方式。可想而知中文自然也是通过编码来命名的。一个标准的字库文件至少包含6763个汉字，也就是我书写的这个<code>GB2312-80</code>,范围： <code>0xA1A1 - 0xFEFE</code>，其中汉字范围： <code>0xB0A1 - 0xF7FE</code>。两个16进制位对应一个字节，一个汉字至少由两个字节组成，这样理解，范围自然是4个16进制位。所以转换成10进制，范围大致在65278以下。要了解更加具体一点的范围还需要去查一下汉字编码的分区等。这里暂时不必了解，因为本来就打算暴力下载。</p>
+<p>其中固定连接为<code>https://image.xiezixiansheng.com/users/2010/700/unzip/579767/</code>, 图片文件为<code>xxxxx.png@50q</code>，如果去掉@50q，获取到的图片就是透明背景的不然就是白色背景。然后发现编号大多是 5 位数的形式，但是还有一些是 4 位的，甚至还有 2-3 位的数字。仔细看看 127 前的编号都是一些国际符号诸如英文和数字等。比对一下发现正是 ASCII 码对应的命名方式。可想而知中文自然也是通过编码来命名的。一个标准的字库文件至少包含 6763 个汉字，也就是我书写的这个<code>GB2312-80</code>, 范围： <code>0xA1A1 - 0xFEFE</code>，其中汉字范围： <code>0xB0A1 - 0xF7FE</code>。两个 16 进制位对应一个字节，一个汉字至少由两个字节组成，这样理解，范围自然是 4 个 16 进制位。所以转换成 10 进制，范围大致在 65278 以下。要了解更加具体一点的范围还需要去查一下汉字编码的分区等。这里暂时不必了解，因为本来就打算暴力下载。</p>
 </blockquote>
 <blockquote>
 <p><strong>说了这么多，既然图片链接这么简单，所以我是想暴力遍历，搜索图片，判断链接状态码，然后下载图片。</strong></p>
@@ -396,7 +396,7 @@
 <li>19968 ~ 40864</li>
 <li>65281 ~ 65509</li>
 </ul>
-<p>磨刀不误砍柴工，分析观察了这么久，终于可以运行程序了，F5 后就静静等待吧，可以去看看 java，或者打一把王者hhhhh!</p>
+<p>磨刀不误砍柴工，分析观察了这么久，终于可以运行程序了，F5 后就静静等待吧，可以去看看 java，或者打一把王者 hhhhh!</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -460,12 +460,12 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">path</span><span class="o">=</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪</span><span class="se">\\</span><span class="s2">Desktop</span><span class="se">\\</span><span class="s2">MMT_images</span><span class="se">\\</span><span class="s2">&#34;</span> <span class="c1">#下载路径： 绝对或者相对路径比如./image/</span>
+<span class="n">path</span><span class="o">=</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪、\Desktop</span><span class="se">\\</span><span class="s2">MMT_images</span><span class="se">\\</span><span class="s2">&#34;</span> <span class="c1">#下载路径： 绝对或者相对路径比如。/image/</span>
 <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&#34;0</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 创建文件夹</span>
 <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&#34;1</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># 下载图片</span>
-<span class="k">def</span> <span class="nf">urllib_download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>  <span class="c1"># (下载链接,图片编号)</span>
+<span class="k">def</span> <span class="nf">urllib_download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>  <span class="c1"># （下载链接，图片编号）</span>
     <span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlretrieve</span>
     <span class="n">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">path</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span><span class="p">)</span>     
 
@@ -478,7 +478,7 @@
 	<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&#34;https://image.xiezixiansheng.com/users/2010/700/unzip/579767/&#34;</span>
 	<span class="n">n</span><span class="o">=</span><span class="mi">33</span>
 	<span class="n">total</span><span class="o">=</span><span class="mi">0</span>
-	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第1张图片!&#34;</span><span class="p">)</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第 1 张图片！&#34;</span><span class="p">)</span>
 
 	<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">65510</span><span class="p">:</span>
 		<span class="c1">#分段爬取，不然会超时！！！# 33 ~ 126 # 8212 ~ 8243 # 12289 ~ 12305 # 19968 ~ 40864 # 65281 ~ 65509</span>
@@ -497,17 +497,17 @@
 
 	<span class="c1"># for n in range(37341,40865):</span>
 		<span class="n">num</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-		<span class="n">IMAGE_URL</span> <span class="o">=</span> <span class="n">BASE_URL</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span> <span class="c1"># xxx.png是透明背景，xxx.png@50q是白色背景，分别存放在0，1文件夹 p是中小 w是小图</span>
+		<span class="n">IMAGE_URL</span> <span class="o">=</span> <span class="n">BASE_URL</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span> <span class="c1"># xxx.png 是透明背景，xxx.png@50q 是白色背景，分别存放在 0，1 文件夹 p 是中小 w 是小图</span>
 		<span class="k">if</span><span class="p">(</span><span class="n">get_status</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">)</span><span class="o">==</span><span class="mi">200</span><span class="p">):</span> <span class="c1"># 同时下载透明和白色背景的图片</span>
 			<span class="n">total</span><span class="o">+=</span><span class="mi">1</span>
 			<span class="n">urllib_download</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">,</span><span class="s2">&#34;0</span><span class="se">\\</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">num</span><span class="p">)</span>
 			<span class="n">IMAGE_URL</span> <span class="o">+=</span> <span class="s2">&#34;@50q&#34;</span>
 			<span class="n">urllib_download</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">,</span><span class="s2">&#34;1</span><span class="se">\\</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">num</span><span class="p">)</span>
 			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Downloaded &#34;</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span><span class="p">)</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第&#34;</span><span class="p">,</span><span class="n">total</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;张图片!&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第&#34;</span><span class="p">,</span><span class="n">total</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;张图片！&#34;</span><span class="p">)</span>
 		<span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
 
-	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">爬取完毕！共爬取&#34;</span><span class="p">,</span><span class="n">total</span><span class="p">,</span><span class="s2">&#34;张图片!&#34;</span><span class="p">)</span>		
+	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 爬取完毕！共爬取&#34;</span><span class="p">,</span><span class="n">total</span><span class="p">,</span><span class="s2">&#34;张图片！&#34;</span><span class="p">)</span>		
 	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;图片存放路径：&#34;</span><span class="o">+</span><span class="n">path</span><span class="p">)</span>
 	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;作者博客：lruihao.cn&#34;</span><span class="p">)</span>
 
@@ -525,18 +525,18 @@
             <i class="icon fas fa-skull-crossbones fa-fw"></i>危險<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">说实话看着控制台不停地输出提示信息有没有很爽，对于强迫症来说真的是很治愈了！但是爬取第6042张图片的时候，我打开了一下目标网页发现无法加载图片了，就想这应该也算是一次Dos攻击了吧！打开控制台果然停了，相当于访问了近两万次！唉，还是太暴力了！！还差800多张，只好又重新接着写上次的位置爬!不慎造成目标网站服务器压力，实在对不起！</div>
+            <div class="admonition-content">说实话看着控制台不停地输出提示信息有没有很爽，对于强迫症来说真的是很治愈了！但是爬取第 6042 张图片的时候，我打开了一下目标网页发现无法加载图片了，就想这应该也算是一次 Dos 攻击了吧！打开控制台果然停了，相当于访问了近两万次！唉，还是太暴力了！！还差 800 多张，只好又重新接着写上次的位置爬！不慎造成目标网站服务器压力，实在对不起！</div>
         </div>
     </div>
 <p></p>
 <blockquote>
-<p>一个半小时左右后终于下载完了，一共是6886张；程序是同时下载了透明和白色背景的图片的！分别在0,1子文件夹！</p>
+<p>一个半小时左右后终于下载完了，一共是 6886 张；程序是同时下载了透明和白色背景的图片的！分别在 0,1 子文件夹！</p>
 </blockquote>
 <p></p>
 <h1 id="其他思路">其他思路</h1>
-<p>模拟浏览器载入 html 文件，获取源码，查找到所有<code>&lt;img&gt;</code>标签内链接，必要时配合正则表达式，然后下载图片。</p>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
-<p>以前在QQ里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
-查了一下百度知道了大概就是qq没有抓取到你的网站的xml。并在其他教程中得到了一个强制提交抓取的url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
+<p>模拟浏览器载入 html 文件，获取源码，查找到所有<code>&lt;img&gt;</code>标签内链接，必要时配合正则表达式，然后下载图片。</p>]]></description></item><item><title>QQ 强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
+<p>以前在 QQ 里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
+查了一下百度知道了大概就是 qq 没有抓取到你的网站的 xml。并在其他教程中得到了一个强制提交抓取的 url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
 </blockquote>
 <h2 id="批量式刷新">批量式刷新</h2>
 <div class="highlight"><div class="chroma">
@@ -587,7 +587,7 @@
 </span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀url=首页地址（最好使用https）
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=https://lruihao.cn&#34;</span><span class="p">;</span>
 	<span class="c1">//用户地址
 </span><span class="c1"></span>	<span class="c1">//var custom_src = &#34;https://lruihao.cn&#34;;
@@ -616,18 +616,18 @@
 
 	<span class="p">}</span>
 	
-	<span class="c1">//负责打开窗口,并关闭
+	<span class="c1">//负责打开窗口，并关闭
 </span><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
 		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
 		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-			<span class="c1">//开启后200ms（单页）关闭，速度自行把握数组越大时间越多
+			<span class="c1">//开启后 200ms（单页）关闭，速度自行把握数组越大时间越多
 </span><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
 		<span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
 	<span class="p">}</span>
 
 	<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
 		 <span class="nx">createArrayAndOpenWindow</span><span class="p">();</span>
-		 <span class="c1">//设置定时函数，疯狂刷新直到xml出现内容
+		 <span class="c1">//设置定时函数，疯狂刷新直到 xml 出现内容
 </span><span class="c1"></span>		 <span class="kd">var</span> <span class="nx">timer</span> <span class="o">=</span>  <span class="nx">setInterval</span><span class="p">(</span><span class="s2">&#34;createArrayAndOpenWindow()&#34;</span><span class="p">,</span> <span class="mi">2000</span><span class="p">);</span>
 		 
 	<span class="p">}</span>
@@ -680,18 +680,18 @@
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀url=首页地址（最好使用https）https://lruihao.cn
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）https://lruihao.cn
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=&#34;</span><span class="p">;</span>
 	<span class="c1">//用户地址
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">custom_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
 	<span class="c1">//初始化工作地址
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
 	
-	<span class="c1">//负责打开窗口,并关闭
+	<span class="c1">//负责打开窗口，并关闭
 </span><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
 		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
 		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-			<span class="c1">//开启后200ms关闭
+			<span class="c1">//开启后 200ms 关闭
 </span><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
 		<span class="p">},</span> <span class="mi">200</span><span class="p">);</span>
 	<span class="p">}</span>
@@ -712,15 +712,15 @@
 </div>
 </div><h2 id="demo">demo</h2>
 <p><br>
-</p>]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
-<p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
+</p>]]></description></item><item><title>通过 bat 批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+<p>前面我有文章提到怎么提交本地文件到 github,coding 等远程仓库。每次可以分为三个步骤</p>
 <ul>
-<li>git add * (添加需要提交的文件，这里全选)</li>
+<li>git add * （添加需要提交的文件，这里全选）</li>
 <li>git commit -m &ldquo;提交信息&rdquo;</li>
 <li>git push</li>
 </ul>
 <p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。
-这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p>
+这个时候可以用到 windows 批处理 bat 文件 (linux 的话可以用 shell 脚本）。用完发现好用到不行！</p>
 </blockquote>
 <h3 id="新建文本文档">新建文本文档</h3>
 <div class="highlight"><div class="chroma">
@@ -744,8 +744,8 @@ git push
 </div><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p>
 <h3 id="使用">使用</h3>
 <p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p>
-<h3 id="hexo博客新姿势">hexo博客新姿势</h3>
-<p>hexo提交也很麻烦，当然也要批处理一下呀</p>
+<h3 id="hexo-博客新姿势">hexo 博客新姿势</h3>
+<p>hexo 提交也很麻烦，当然也要批处理一下呀</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -765,7 +765,7 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">start</span> cmd ifconfig
 </code></pre></td></tr></table>
 </div>
-</div><p>另外也说一下linux死机命令。fork炸弹。<br>
+</div><p>另外也说一下 linux 死机命令。fork 炸弹。<br>
 死机无非是耗尽系统资源</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -785,7 +785,7 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
 </code></pre></td></tr></table>
 </div>
-</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
+</div><p>将需要统计的文件夹拖到 bat 文件上。</p>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
 <ul>
 <li>read</li>
 <li>echo</li>

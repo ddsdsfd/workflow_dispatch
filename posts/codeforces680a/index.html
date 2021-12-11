@@ -6,20 +6,20 @@
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
 <title>Bear and Five Cards-Codeforces680A - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Bear and Five Cards-Codeforces680A">
 <meta property="og:description" content="题目链接：Bear and Five Cards
-大致题意就是小熊有5张卡片，每张卡片有对应的分数，他可以选择丢弃2张相同的或者3张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。">
+大致题意就是小熊有 5 张卡片，每张卡片有对应的分数，他可以选择丢弃 2 张相同的或者 3 张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/codeforces680a/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-07-31T19:22:36+00:00">
-<meta property="article:modified_time" content="2021-09-28T21:00:54+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="Bear and Five Cards-Codeforces680A">
 <meta name=twitter:description content="题目链接：Bear and Five Cards
-大致题意就是小熊有5张卡片，每张卡片有对应的分数，他可以选择丢弃2张相同的或者3张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+大致题意就是小熊有 5 张卡片，每张卡片有对应的分数，他可以选择丢弃 2 张相同的或者 3 张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。">
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/codeforces680a/><link rel=prev href=https://lruihao.cn/posts/how-tables/><link rel=next href=https://lruihao.cn/posts/codeforces680b/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Bear and Five Cards-Codeforces680A","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/codeforces680a\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Codeforces, ACM, C\u002b\u002b","wordcount":163,"url":"https:\/\/lruihao.cn\/posts\/codeforces680a\/","datePublished":"2018-07-31T19:22:36+00:00","dateModified":"2021-09-28T21:00:54+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/codeforces680a/><link rel=prev href=https://lruihao.cn/posts/how-tables/><link rel=next href=https://lruihao.cn/posts/codeforces680b/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Bear and Five Cards-Codeforces680A","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/codeforces680a\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Codeforces, ACM, C\u002b\u002b","wordcount":161,"url":"https:\/\/lruihao.cn\/posts\/codeforces680a\/","datePublished":"2018-07-31T19:22:36+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -84,13 +84,13 @@
 <main class=main>
 <div class=container><article class="page single"><h1 class="single-title animated flipInX">Bear and Five Cards-Codeforces680A</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-31>2018-07-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 163 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-31>2018-07-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 161 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/codeforces680a/ class=leancloud_visitors data-flag-title="Bear and Five Cards-Codeforces680A">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class=content id=content><p>题目链接：<a href=https://codeforces.com/problemset/problem/680/A target=_blank rel="noopener noreffer">Bear and Five Cards</a></p>
-<p>大致题意就是小熊有5张卡片，每张卡片有对应的分数，他可以选择丢弃2张相同的或者3张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。</p>
-<p>没有想得那么复杂，由于分数最大才100，所以直接暴力就好了。。。</p>
+<p>大致题意就是小熊有 5 张卡片，每张卡片有对应的分数，他可以选择丢弃 2 张相同的或者 3 张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。</p>
+<p>没有想得那么复杂，由于分数最大才 100，所以直接暴力就好了。</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -143,8 +143,8 @@
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-09-28&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/7da4c6fe197a54349d00a284054137c2b849cc4f target=_blank title="commit by Cell(1024@lruihao.cn) 7da4c6fe197a54349d00a284054137c2b849cc4f: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>7da4c6f</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -163,7 +163,7 @@
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/how-tables/ class=prev rel=prev title="how many tables-HDU-1213(并查集求连通域数目)"><i class="fas fa-angle-left fa-fw"></i>how many tables-HDU-1213(并查集求连通域数目)</a>
+<div class=post-nav><a href=/posts/how-tables/ class=prev rel=prev title="how many tables-HDU-1213（并查集求连通域数目）"><i class="fas fa-angle-left fa-fw"></i>how many tables-HDU-1213（并查集求连通域数目）</a>
 <a href=/posts/codeforces680b/ class=next rel=next title="Bear and Finding Criminals-Codeforces680B">Bear and Finding Criminals-Codeforces680B<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>

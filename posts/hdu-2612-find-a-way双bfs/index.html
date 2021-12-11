@@ -4,20 +4,20 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>hdu-2612-Find a way（双bfs） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="hdu-2612-Find a way（双bfs）">
-<meta property="og:description" content="Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。。。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;..这对基佬闹矛盾了，开车">
+<title>hdu-2612-Find a way（双 bfs） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="hdu-2612-Find a way（双 bfs）">
+<meta property="og:description" content="Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;.. 这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-07-23T12:34:42+00:00">
-<meta property="article:modified_time" content="2021-12-11T14:27:43+00:00">
+<meta property="article:modified_time" content="2021-12-11T14:33:33+00:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="hdu-2612-Find a way（双bfs）">
-<meta name=twitter:description content="Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。。。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;..这对基佬闹矛盾了，开车">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=twitter:title content="hdu-2612-Find a way（双 bfs）">
+<meta name=twitter:description content="Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;.. 这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人">
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><link rel=prev href=https://lruihao.cn/posts/poj-3278-catch-that-cow-bfs/><link rel=next href=https://lruihao.cn/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"hdu-2612-Find a way（双bfs）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, HDU, 搜索, C\u002b\u002b","wordcount":913,"url":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/","datePublished":"2018-07-23T12:34:42+00:00","dateModified":"2021-12-11T14:27:43+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><link rel=prev href=https://lruihao.cn/posts/poj-3278-catch-that-cow-bfs/><link rel=next href=https://lruihao.cn/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"hdu-2612-Find a way（双 bfs）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, HDU, 搜索, C\u002b\u002b","wordcount":879,"url":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/","datePublished":"2018-07-23T12:34:42+00:00","dateModified":"2021-12-11T14:33:33+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -83,10 +83,10 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">hdu-2612-Find a way（双bfs）</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animated flipInX">hdu-2612-Find a way（双 bfs）</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-23>2018-07-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 913 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ class=leancloud_visitors data-flag-title="hdu-2612-Find a way（双bfs）">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-23>2018-07-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 879 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ class=leancloud_visitors data-flag-title="hdu-2612-Find a way（双 bfs）">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -113,11 +113,11 @@
 </ul>
 </nav></div>
 </div><div class=content id=content><h3 id=find-a-wayhttpacmhdueducnshowproblemphppid2612><a href="http://acm.hdu.edu.cn/showproblem.php?pid=2612" target=_blank rel="noopener noreffer">Find a way</a></h3>
-<p>圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。。。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;..这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人，riot决定让他们去X召唤师大峡谷，保证他俩所走的路程和最短。每走一个点需要花费11分钟，输出他们一共花费多少时间（最短时间噢）</p>
+<p>圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;.. 这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人，riot 决定让他们去 X 召唤师大峡谷，保证他俩所走的路程和最短。每走一个点需要花费 11 分钟，输出他们一共花费多少时间（最短时间噢）</p>
 <h3 id=input>Input</h3>
 <p>多组测试数据</p>
-<p>每组数据，开始一行n，m (2&lt;=n,m&lt;=200)</p>
-<p>接下来是个n x m的矩阵</p>
+<p>每组数据，开始一行 n，m (2&lt;=n,m&lt;=200)</p>
+<p>接下来是个 n x m 的矩阵</p>
 <p>&lsquo;Y&rsquo; 表示坤神所在的初始位置</p>
 <p>&lsquo;M&rsquo; 表示瑞瑞所在的初始位置</p>
 <p>&lsquo;#&rsquo; 该点禁止通行</p>
@@ -138,7 +138,6 @@ Y.#@
 @#.M
 5 5
 Y..@.
-.#...
 .#...
 @..M.
 `#...#`
@@ -242,7 +241,7 @@ Y..@.
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-c++ data-lang=c++><span class=cp>#include</span> <span class=cpf>&lt;bits/stdc++.h&gt;</span><span class=cp>
-</span><span class=cp>#define inf 0x3f3f3f3f     </span><span class=c1>//acm中“无穷大”的一般定义
+</span><span class=cp>#define inf 0x3f3f3f3f     </span><span class=c1>//acm 中“无穷大”的一般定义
 </span><span class=c1></span><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
 
 <span class=k>const</span> <span class=kt>int</span> <span class=n>M</span><span class=o>=</span><span class=mi>202</span><span class=p>;</span>
@@ -286,10 +285,10 @@ Y..@.
         <span class=k>for</span><span class=p>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=n>i</span><span class=o>&lt;</span><span class=mi>4</span><span class=p>;</span><span class=n>i</span><span class=o>++</span><span class=p>){</span>
             <span class=kt>int</span> <span class=n>tx</span><span class=o>=</span><span class=n>u</span><span class=p>.</span><span class=n>x</span><span class=o>+</span><span class=n>dir</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=mi>0</span><span class=p>];</span>
             <span class=kt>int</span> <span class=n>ty</span><span class=o>=</span><span class=n>u</span><span class=p>.</span><span class=n>y</span><span class=o>+</span><span class=n>dir</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=mi>1</span><span class=p>];</span>
-            <span class=k>if</span><span class=p>(</span><span class=n>tx</span><span class=o>&gt;=</span><span class=mi>0</span><span class=o>&amp;&amp;</span><span class=n>ty</span><span class=o>&gt;=</span><span class=mi>0</span><span class=o>&amp;&amp;</span><span class=n>tx</span><span class=o>&lt;</span><span class=n>n</span><span class=o>&amp;&amp;</span><span class=n>ty</span><span class=o>&lt;</span><span class=n>m</span><span class=o>&amp;&amp;!</span><span class=n>vis</span><span class=p>[</span><span class=n>tx</span><span class=p>][</span><span class=n>ty</span><span class=p>]</span><span class=o>&amp;&amp;</span><span class=n>mp</span><span class=p>[</span><span class=n>tx</span><span class=p>][</span><span class=n>ty</span><span class=p>]</span><span class=o>!=</span><span class=sc>&#39;#&#39;</span><span class=p>){</span><span class=c1>//注意@和M，Y也是可以走的。
-</span><span class=c1></span>                <span class=n>v</span><span class=p>.</span><span class=n>x</span><span class=o>=</span><span class=n>tx</span><span class=p>;</span>                                          <span class=c1>//每次写搜索都忘记vis!!!!
+            <span class=k>if</span><span class=p>(</span><span class=n>tx</span><span class=o>&gt;=</span><span class=mi>0</span><span class=o>&amp;&amp;</span><span class=n>ty</span><span class=o>&gt;=</span><span class=mi>0</span><span class=o>&amp;&amp;</span><span class=n>tx</span><span class=o>&lt;</span><span class=n>n</span><span class=o>&amp;&amp;</span><span class=n>ty</span><span class=o>&lt;</span><span class=n>m</span><span class=o>&amp;&amp;!</span><span class=n>vis</span><span class=p>[</span><span class=n>tx</span><span class=p>][</span><span class=n>ty</span><span class=p>]</span><span class=o>&amp;&amp;</span><span class=n>mp</span><span class=p>[</span><span class=n>tx</span><span class=p>][</span><span class=n>ty</span><span class=p>]</span><span class=o>!=</span><span class=sc>&#39;#&#39;</span><span class=p>){</span><span class=c1>//注意@和 M，Y 也是可以走的。
+</span><span class=c1></span>                <span class=n>v</span><span class=p>.</span><span class=n>x</span><span class=o>=</span><span class=n>tx</span><span class=p>;</span>                                          <span class=c1>//每次写搜索都忘记 vis!!!!
 </span><span class=c1></span>                <span class=n>v</span><span class=p>.</span><span class=n>y</span><span class=o>=</span><span class=n>ty</span><span class=p>;</span>
-                <span class=n>vis</span><span class=p>[</span><span class=n>tx</span><span class=p>][</span><span class=n>ty</span><span class=p>]</span><span class=o>=</span><span class=nb>true</span><span class=p>;</span>  <span class=c1>//我总是忘记。。。
+                <span class=n>vis</span><span class=p>[</span><span class=n>tx</span><span class=p>][</span><span class=n>ty</span><span class=p>]</span><span class=o>=</span><span class=nb>true</span><span class=p>;</span>  <span class=c1>//我总是忘记。
 </span><span class=c1></span>                <span class=n>v</span><span class=p>.</span><span class=n>step</span><span class=o>=</span><span class=n>u</span><span class=p>.</span><span class=n>step</span><span class=o>+</span><span class=mi>1</span><span class=p>;</span>
                 <span class=n>q</span><span class=p>.</span><span class=n>push</span><span class=p>(</span><span class=n>v</span><span class=p>);</span>
             <span class=p>}</span>
@@ -342,7 +341,7 @@ Y..@.
 <a class=link-to-markdown href=/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ data-title="hdu-2612-Find a way（双bfs）" data-hashtags=ACM,HDU,搜索,C++><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ data-title="hdu-2612-Find a way（双bfs）" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ data-title="hdu-2612-Find a way（双bfs）"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ data-title="hdu-2612-Find a way（双 bfs）" data-hashtags=ACM,HDU,搜索,C++><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ data-title="hdu-2612-Find a way（双 bfs）" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/ data-title="hdu-2612-Find a way（双 bfs）"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>
@@ -353,7 +352,7 @@ Y..@.
 </section>
 </div>
 <div class=post-nav><a href=/posts/poj-3278-catch-that-cow-bfs/ class=prev rel=prev title="POJ-3278-Catch That Cow(bfs)"><i class="fas fa-angle-left fa-fw"></i>POJ-3278-Catch That Cow(bfs)</a>
-<a href=/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/ class=next rel=next title=HDU-1495-非常可乐（bfs模拟倒水or数论）>HDU-1495-非常可乐（bfs模拟倒水or数论）<i class="fas fa-angle-right fa-fw"></i></a></div>
+<a href=/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/ class=next rel=next title="HDU-1495-非常可乐（bfs 模拟倒水 or 数论）">HDU-1495-非常可乐（bfs 模拟倒水 or 数论）<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

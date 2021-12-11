@@ -12,7 +12,7 @@ itations exactly i, ﬁnd the h-index of Bobo.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/a-easy/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-06-14T22:36:58+00:00">
-<meta property="article:modified_time" content="2021-09-26T20:48:12+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="A.Easy h-index">
@@ -20,10 +20,10 @@ itations exactly i, ﬁnd the h-index of Bobo.">
 The h-index of an author is the largest h where he has at least h papers with citations not less than h.
 Bobo has published many papers. Given a0,a1,a2,&mldr;,an which means Bobo has published ai papers with
 itations exactly i, ﬁnd the h-index of Bobo.">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/a-easy/><link rel=prev href=https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F/><link rel=next href=https://lruihao.cn/posts/b-higher/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"A.Easy h-index","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/a-easy\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"2018湘潭邀请赛, ACM, C\u002b\u002b","wordcount":298,"url":"https:\/\/lruihao.cn\/posts\/a-easy\/","datePublished":"2018-06-14T22:36:58+00:00","dateModified":"2021-09-26T20:48:12+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/a-easy/><link rel=prev href=https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F/><link rel=next href=https://lruihao.cn/posts/b-higher/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"A.Easy h-index","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/a-easy\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"2018 湘潭邀请赛, ACM, C\u002b\u002b","wordcount":289,"url":"https:\/\/lruihao.cn\/posts\/a-easy\/","datePublished":"2018-06-14T22:36:58+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -91,7 +91,7 @@ itations exactly i, ﬁnd the h-index of Bobo.">
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">A.Easy h-index</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-06-14>2018-06-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 298 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-06-14>2018-06-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 289 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/a-easy/ class=leancloud_visitors data-flag-title="A.Easy h-index">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -143,9 +143,9 @@ The ﬁrst line of each test case contains an integer n. The second line contain
 2
 0
 </code></pre>
-<p>题意：给定被引用次数为0~n的论文分别有几张，找到最大的h，满足被引用次数大于等于h的论文至少有h张<br>
-思路：在区间[0,n]内二分答案；或直接从n~0遍历找到第一个满足条件的h</p>
-<p>后AC代码</p>
+<p>题意：给定被引用次数为 0~n 的论文分别有几张，找到最大的 h，满足被引用次数大于等于 h 的论文至少有 h 张<br>
+思路：在区间 [0,n] 内二分答案；或直接从 n~0 遍历找到第一个满足条件的 h</p>
+<p>后 AC 代码</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -200,8 +200,8 @@ The ﬁrst line of each test case contains an integer n. The second line contain
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-09-26&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/a17dbb561bcc348f83d3b124fb6092c6ead36342 target=_blank title="commit by Cell(1024@lruihao.cn) a17dbb561bcc348f83d3b124fb6092c6ead36342: Feat: 恢復 2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>a17dbb5</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -210,17 +210,17 @@ The ﬁrst line of each test case contains an integer n. The second line contain
 <a class=link-to-markdown href=/posts/a-easy/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/a-easy/ data-title="A.Easy h-index" data-hashtags=2018湘潭邀请赛,ACM,C++><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/a-easy/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/a-easy/ data-title="A.Easy h-index" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/a-easy/ data-title="A.Easy h-index"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/a-easy/ data-title="A.Easy h-index" data-hashtags="2018 湘潭邀请赛,ACM,C++"><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/a-easy/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/a-easy/ data-title="A.Easy h-index" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/a-easy/ data-title="A.Easy h-index"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/2018%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/>2018湘潭邀请赛</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/2018-%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B/>2018 湘潭邀请赛</a>,&nbsp;<a href=/tags/acm/>ACM</a>,&nbsp;<a href=/tags/c++/>C++</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/sort%E6%8E%92%E5%BA%8F/ class=prev rel=prev title=sort排序><i class="fas fa-angle-left fa-fw"></i>sort排序</a>
+<div class=post-nav><a href=/posts/sort%E6%8E%92%E5%BA%8F/ class=prev rel=prev title="sort 排序"><i class="fas fa-angle-left fa-fw"></i>sort 排序</a>
 <a href=/posts/b-higher/ class=next rel=next title="B.Higher h-index">B.Higher h-index<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>

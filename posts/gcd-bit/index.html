@@ -4,24 +4,24 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>最大公约数(二进制算法) - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="最大公约数(二进制算法)">
+<title>最大公约数（二进制算法） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="最大公约数（二进制算法）">
 <meta property="og:description" content="
 二进制最大公约数算法避免了欧几里得算法（辗转相除法）的大量取模操作，有效减少了时间消耗，且更为方便。
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/gcd-bit/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-05-17T09:14:16+00:00">
-<meta property="article:modified_time" content="2021-09-30T19:29:53+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="最大公约数(二进制算法)">
+<meta name=twitter:title content="最大公约数（二进制算法）">
 <meta name=twitter:description content="
 二进制最大公约数算法避免了欧几里得算法（辗转相除法）的大量取模操作，有效减少了时间消耗，且更为方便。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/gcd-bit/><link rel=prev href=https://lruihao.cn/posts/imgurl/><link rel=next href=https://lruihao.cn/posts/hustoj/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"最大公约数(二进制算法)","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/gcd-bit\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"欧几里得, 数学, 数论, C","wordcount":306,"url":"https:\/\/lruihao.cn\/posts\/gcd-bit\/","datePublished":"2019-05-17T09:14:16+00:00","dateModified":"2021-09-30T19:29:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/gcd-bit/><link rel=prev href=https://lruihao.cn/posts/imgurl/><link rel=next href=https://lruihao.cn/posts/hustoj/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"最大公约数（二进制算法）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/gcd-bit\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"欧几里得, 数学, 数论, C","wordcount":296,"url":"https:\/\/lruihao.cn\/posts\/gcd-bit\/","datePublished":"2019-05-17T09:14:16+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -87,10 +87,10 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">最大公约数(二进制算法)</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animated flipInX">最大公约数（二进制算法）</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-05-17>2019-05-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 306 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/gcd-bit/ class=leancloud_visitors data-flag-title=最大公约数(二进制算法)>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-05-17>2019-05-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 296 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/gcd-bit/ class=leancloud_visitors data-flag-title=最大公约数（二进制算法）>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -110,12 +110,12 @@
 <h1 id=原理>原理</h1>
 <p>本算法基于以下事实：</p>
 <blockquote>
-<p>对于两个数的最大公约数gcd(m, n)，有
-m&lt;n时，gcd(m, n)=gcd(n, m)
-m偶n偶时，gcd(m, n)=2*gcd(m/2, n/2)
-m偶n奇时，gcd(m, n)=gcd(m/2, n)
-m奇n偶时，gcd(m, n)=gcd(m, n/2)
-m奇n奇时，gcd(m, n)=gcd(n, m-n)</p>
+<p>对于两个数的最大公约数 gcd(m, n)，有
+m&lt;n 时，gcd(m, n)=gcd(n, m)
+m 偶 n 偶时，gcd(m, n)=2*gcd(m/2, n/2)
+m 偶 n 奇时，gcd(m, n)=gcd(m/2, n)
+m 奇 n 偶时，gcd(m, n)=gcd(m, n/2)
+m 奇 n 奇时，gcd(m, n)=gcd(n, m-n)</p>
 </blockquote>
 <p>采用递归即可。</p>
 <h1 id=实现>实现</h1>
@@ -142,13 +142,13 @@ m奇n奇时，gcd(m, n)=gcd(n, m-n)</p>
         <span class=kt>int</span> <span class=n>i</span><span class=p>,</span><span class=n>j</span><span class=p>;</span>
         <span class=k>if</span><span class=p>(</span><span class=n>x</span><span class=o>==</span><span class=mi>0</span><span class=p>)</span> <span class=k>return</span> <span class=n>y</span><span class=p>;</span>
         <span class=k>if</span><span class=p>(</span><span class=n>y</span><span class=o>==</span><span class=mi>0</span><span class=p>)</span> <span class=k>return</span> <span class=n>x</span><span class=p>;</span>
-        <span class=k>for</span><span class=p>(</span><span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>x</span><span class=o>&amp;</span><span class=mi>1</span><span class=p>);</span><span class=o>++</span><span class=n>i</span><span class=p>)</span><span class=n>x</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>;</span>   <span class=c1>// 去掉所有的2
-</span><span class=c1></span>        <span class=k>for</span><span class=p>(</span><span class=n>j</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>y</span><span class=o>&amp;</span><span class=mi>1</span><span class=p>);</span><span class=o>++</span><span class=n>j</span><span class=p>)</span><span class=n>y</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>;</span>   <span class=c1>// 去掉所有的2
+        <span class=k>for</span><span class=p>(</span><span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>x</span><span class=o>&amp;</span><span class=mi>1</span><span class=p>);</span><span class=o>++</span><span class=n>i</span><span class=p>)</span><span class=n>x</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>;</span>   <span class=c1>// 去掉所有的 2
+</span><span class=c1></span>        <span class=k>for</span><span class=p>(</span><span class=n>j</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>y</span><span class=o>&amp;</span><span class=mi>1</span><span class=p>);</span><span class=o>++</span><span class=n>j</span><span class=p>)</span><span class=n>y</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>;</span>   <span class=c1>// 去掉所有的 2
 </span><span class=c1></span>        <span class=k>if</span><span class=p>(</span><span class=n>j</span><span class=o>&lt;</span><span class=n>i</span><span class=p>)</span> <span class=n>i</span><span class=o>=</span><span class=n>j</span><span class=p>;</span>
         <span class=k>while</span><span class=p>(</span><span class=mi>1</span><span class=p>){</span>
                 <span class=k>if</span><span class=p>(</span><span class=n>x</span><span class=o>&lt;</span><span class=n>y</span><span class=p>)</span><span class=n>x</span><span class=o>^=</span><span class=n>y</span><span class=p>,</span><span class=n>y</span><span class=o>^=</span><span class=n>x</span><span class=p>,</span><span class=n>x</span><span class=o>^=</span><span class=n>y</span><span class=p>;</span>   <span class=c1>// 若 x &lt; y 交换 x, y
-</span><span class=c1></span>                <span class=k>if</span><span class=p>(</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>x</span><span class=o>-=</span><span class=n>y</span><span class=p>))</span> <span class=k>return</span> <span class=n>y</span><span class=o>&lt;&lt;</span><span class=n>i</span><span class=p>;</span>  <span class=c1>// 若x == y， gcd == x == y (就是在辗转减，while(1)控制)
-</span><span class=c1></span>                <span class=k>while</span><span class=p>(</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>x</span><span class=o>&amp;</span><span class=mi>1</span><span class=p>))</span><span class=n>x</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>;</span> <span class=c1>// 去掉所有的2
+</span><span class=c1></span>                <span class=k>if</span><span class=p>(</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>x</span><span class=o>-=</span><span class=n>y</span><span class=p>))</span> <span class=k>return</span> <span class=n>y</span><span class=o>&lt;&lt;</span><span class=n>i</span><span class=p>;</span>  <span class=c1>// 若 x == y， gcd == x == y （就是在辗转减，while(1) 控制）
+</span><span class=c1></span>                <span class=k>while</span><span class=p>(</span><span class=mi>0</span><span class=o>==</span><span class=p>(</span><span class=n>x</span><span class=o>&amp;</span><span class=mi>1</span><span class=p>))</span><span class=n>x</span><span class=o>&gt;&gt;=</span><span class=mi>1</span><span class=p>;</span> <span class=c1>// 去掉所有的 2
 </span><span class=c1></span>        <span class=p>}</span>
 <span class=p>}</span>
 </code></pre></td></tr></table>
@@ -187,8 +187,8 @@ m奇n奇时，gcd(m, n)=gcd(n, m-n)</p>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-09-30&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/21d1f053b5cccc6e6921d2e0dfaa4cf6eecc3c00 target=_blank title="commit by Cell(1024@lruihao.cn) 21d1f053b5cccc6e6921d2e0dfaa4cf6eecc3c00: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>21d1f05</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -197,7 +197,7 @@ m奇n奇时，gcd(m, n)=gcd(n, m-n)</p>
 <a class=link-to-markdown href=/posts/gcd-bit/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/gcd-bit/ data-title=最大公约数(二进制算法) data-hashtags=欧几里得,数学,数论,C><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/gcd-bit/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/gcd-bit/ data-title=最大公约数(二进制算法) data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/gcd-bit/ data-title=最大公约数(二进制算法)><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/gcd-bit/ data-title=最大公约数（二进制算法） data-hashtags=欧几里得,数学,数论,C><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/gcd-bit/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/gcd-bit/ data-title=最大公约数（二进制算法） data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/gcd-bit/ data-title=最大公约数（二进制算法）><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>
@@ -207,7 +207,7 @@ m奇n奇时，gcd(m, n)=gcd(n, m-n)</p>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/imgurl/ class=prev rel=prev title=宝塔面板安装ImgURL图床><i class="fas fa-angle-left fa-fw"></i>宝塔面板安装ImgURL图床</a>
+<div class=post-nav><a href=/posts/imgurl/ class=prev rel=prev title="宝塔面板安装 ImgURL 图床"><i class="fas fa-angle-left fa-fw"></i>宝塔面板安装 ImgURL 图床</a>
 <a href=/posts/hustoj/ class=next rel=next title="HustOJ 基础搭建教程">HustOJ 基础搭建教程<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>

@@ -4,40 +4,40 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>hexo next主题添加字数统计（2018） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="hexo next主题添加字数统计（2018）">
+<title>hexo next 主题添加字数统计（2018） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="hexo next 主题添加字数统计（2018）">
 <meta property="og:description" content="
         
             警告
         
         
-            2018/11/1说明
-next主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！
-最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照github上wordcount的readme操作后，并没有什么用，我打开post相关配置文件并没有发现发现wordcount这个关键词，next本身似乎也并没有在主题配置文件提供选项(或许是个人原因)，所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是RTFSC大法好！(Read the fucking source code)
+            2018/11/1 说明
+next 主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！
+最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照 github 上 wordcount 的 readme 操作后，并没有什么用，我打开 post 相关配置文件并没有发现发现 wordcount 这个关键词，next 本身似乎也并没有在主题配置文件提供选项（或许是个人原因），所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是 RTFSC 大法好！(Read the fucking source code)
 
         
     ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hexo-wordcount/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-08-30T13:15:50+00:00">
-<meta property="article:modified_time" content="2021-10-01T15:02:15+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="hexo next主题添加字数统计（2018）">
+<meta name=twitter:title content="hexo next 主题添加字数统计（2018）">
 <meta name=twitter:description content="
         
             警告
         
         
-            2018/11/1说明
-next主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！
-最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照github上wordcount的readme操作后，并没有什么用，我打开post相关配置文件并没有发现发现wordcount这个关键词，next本身似乎也并没有在主题配置文件提供选项(或许是个人原因)，所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是RTFSC大法好！(Read the fucking source code)
+            2018/11/1 说明
+next 主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！
+最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照 github 上 wordcount 的 readme 操作后，并没有什么用，我打开 post 相关配置文件并没有发现发现 wordcount 这个关键词，next 本身似乎也并没有在主题配置文件提供选项（或许是个人原因），所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是 RTFSC 大法好！(Read the fucking source code)
 
         
     ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-wordcount/><link rel=prev href=https://lruihao.cn/posts/hexo-d-error/><link rel=next href=https://lruihao.cn/posts/vim/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo next主题添加字数统计（2018）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-wordcount\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hexo, 字数统计","wordcount":839,"url":"https:\/\/lruihao.cn\/posts\/hexo-wordcount\/","datePublished":"2018-08-30T13:15:50+00:00","dateModified":"2021-10-01T15:02:15+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-wordcount/><link rel=prev href=https://lruihao.cn/posts/hexo-d-error/><link rel=next href=https://lruihao.cn/posts/vim/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo next 主题添加字数统计（2018）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-wordcount\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hexo, 字数统计","wordcount":754,"url":"https:\/\/lruihao.cn\/posts\/hexo-wordcount\/","datePublished":"2018-08-30T13:15:50+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -103,10 +103,10 @@ next主题好像更新了，现在自带的可以用了，如果可以用了，�
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">hexo next主题添加字数统计（2018）</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animated flipInX">hexo next 主题添加字数统计（2018）</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hexo/><i class="far fa-folder fa-fw"></i>hexo</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-08-30>2018-08-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 839 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/hexo-wordcount/ class=leancloud_visitors data-flag-title="hexo next主题添加字数统计（2018）">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-08-30>2018-08-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 754 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/hexo-wordcount/ class=leancloud_visitors data-flag-title="hexo next 主题添加字数统计（2018）">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -119,7 +119,7 @@ next主题好像更新了，现在自带的可以用了，如果可以用了，�
 <li>
 <ul>
 <li><a href=#安装>安装</a></li>
-<li><a href=#post添加>post添加</a></li>
+<li><a href=#post-添加>post 添加</a></li>
 <li><a href=#全站添加>全站添加</a></li>
 </ul>
 </li>
@@ -130,9 +130,9 @@ next主题好像更新了，现在自带的可以用了，如果可以用了，�
 <i class="icon fas fa-exclamation-triangle fa-fw"></i>警告<i class="details-icon fas fa-angle-right fa-fw"></i>
 </div>
 <div class=details-content>
-<div class=admonition-content><p><strong>2018/11/1说明
-next主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！</strong></p>
-<p>最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照github上wordcount的readme操作后，并没有什么用，我打开post相关配置文件并没有发现发现wordcount这个关键词，next本身似乎也并没有在主题配置文件提供选项(或许是个人原因)，所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是RTFSC大法好！(Read the fucking source code)</p>
+<div class=admonition-content><p><strong>2018/11/1 说明
+next 主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！</strong></p>
+<p>最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照 github 上 wordcount 的 readme 操作后，并没有什么用，我打开 post 相关配置文件并没有发现发现 wordcount 这个关键词，next 本身似乎也并没有在主题配置文件提供选项（或许是个人原因），所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是 RTFSC 大法好！(Read the fucking source code)</p>
 </div>
 </div>
 </div>
@@ -149,12 +149,12 @@ next主题好像更新了，现在自带的可以用了，如果可以用了，�
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>npm i --save hexo-wordcount
 
-# Node 版本7.6.0之前,请安装 2.x 版本 (Node.js v7.6.0 and previous)
+# Node 版本 7.6.0 之前，请安装 2.x 版本 (Node.js v7.6.0 and previous)
 npm install hexo-wordcount@2 --save
 </code></pre></td></tr></table>
 </div>
-</div><h2 id=post添加>post添加</h2>
-<p>打开<code>hexo\themes\hexo-theme-next\layout\_macro</code>路径下的post.swig文件，既然没有字数统计那么我们就加一个，简单暴力地直接在阅读数后面加上一条就好了，在文件类搜索关键词<code>busuanzi</code>,我用的是不蒜子,如果用的了leancloud的搜leancloud就好了，其他类似。找到这段代码后</p>
+</div><h2 id=post-添加>post 添加</h2>
+<p>打开<code>hexo\themes\hexo-theme-next\layout\_macro</code>路径下的 post.swig 文件，既然没有字数统计那么我们就加一个，简单暴力地直接在阅读数后面加上一条就好了，在文件类搜索关键词<code>busuanzi</code>, 我用的是不蒜子，如果用的了 leancloud 的搜 leancloud 就好了，其他类似。找到这段代码后</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -193,7 +193,7 @@ npm install hexo-wordcount@2 --save
 </code></pre></td></tr></table>
 </div>
 </div><h2 id=全站添加>全站添加</h2>
-<p>打开<code>hexo\themes\hexo-theme-next\layout\_partials</code>路径下footer.swig文件，在你喜欢的位置添加以下代码</p>
+<p>打开<code>hexo\themes\hexo-theme-next\layout\_partials</code>路径下 footer.swig 文件，在你喜欢的位置添加以下代码</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -212,8 +212,8 @@ npm install hexo-wordcount@2 --save
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-01&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1 target=_blank title="commit by Cell(1024@lruihao.cn) e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>e372cc4</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -222,7 +222,7 @@ npm install hexo-wordcount@2 --save
 <a class=link-to-markdown href=/posts/hexo-wordcount/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hexo-wordcount/ data-title="hexo next主题添加字数统计（2018）" data-hashtags=hexo,字数统计><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hexo-wordcount/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hexo-wordcount/ data-title="hexo next主题添加字数统计（2018）" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hexo-wordcount/ data-title="hexo next主题添加字数统计（2018）"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hexo-wordcount/ data-title="hexo next 主题添加字数统计（2018）" data-hashtags=hexo,字数统计><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hexo-wordcount/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hexo-wordcount/ data-title="hexo next 主题添加字数统计（2018）" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hexo-wordcount/ data-title="hexo next 主题添加字数统计（2018）"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>
@@ -233,7 +233,7 @@ npm install hexo-wordcount@2 --save
 </section>
 </div>
 <div class=post-nav><a href=/posts/hexo-d-error/ class=prev rel=prev title="hexo d 出错"><i class="fas fa-angle-left fa-fw"></i>hexo d 出错</a>
-<a href=/posts/vim/ class=next rel=next title=linux系统进入退出vim编辑器及termux修改问候语>linux系统进入退出vim编辑器及termux修改问候语<i class="fas fa-angle-right fa-fw"></i></a></div>
+<a href=/posts/vim/ class=next rel=next title="linux 系统进入退出 vim 编辑器及 termux 修改问候语">linux 系统进入退出 vim 编辑器及 termux 修改问候语<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

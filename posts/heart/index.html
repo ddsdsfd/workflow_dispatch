@@ -4,22 +4,22 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>高逼格c语言画心 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="高逼格c语言画心">
-<meta property="og:description" content="七夕又快到了，分享一个曾经玩过的代码，用C语言画一个跳动的心，很有逼格有木有。
+<title>高逼格 c 语言画心 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="高逼格 c 语言画心">
+<meta property="og:description" content="七夕又快到了，分享一个曾经玩过的代码，用 C 语言画一个跳动的心，很有逼格有木有。
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/heart/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-08-15T16:33:12+00:00">
-<meta property="article:modified_time" content="2021-10-01T15:02:15+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="高逼格c语言画心">
-<meta name=twitter:description content="七夕又快到了，分享一个曾经玩过的代码，用C语言画一个跳动的心，很有逼格有木有。
+<meta name=twitter:title content="高逼格 c 语言画心">
+<meta name=twitter:description content="七夕又快到了，分享一个曾经玩过的代码，用 C 语言画一个跳动的心，很有逼格有木有。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/heart/><link rel=prev href=https://lruihao.cn/posts/git-index-lock/><link rel=next href=https://lruihao.cn/posts/dongtaisub/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"高逼格c语言画心","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/heart\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"生活随笔, C, C\u002b\u002b","wordcount":391,"url":"https:\/\/lruihao.cn\/posts\/heart\/","datePublished":"2018-08-15T16:33:12+00:00","dateModified":"2021-10-01T15:02:15+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/heart/><link rel=prev href=https://lruihao.cn/posts/git-index-lock/><link rel=next href=https://lruihao.cn/posts/dongtaisub/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"高逼格 c 语言画心","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/heart\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"生活随笔, C, C\u002b\u002b","wordcount":389,"url":"https:\/\/lruihao.cn\/posts\/heart\/","datePublished":"2018-08-15T16:33:12+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -82,13 +82,13 @@
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><article class="page single"><h1 class="single-title animated flipInX">高逼格c语言画心</h1><div class=post-meta>
+<div class=container><article class="page single"><h1 class="single-title animated flipInX">高逼格 c 语言画心</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/><i class="far fa-folder fa-fw"></i>生活随笔</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-08-15>2018-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 391 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/heart/ class=leancloud_visitors data-flag-title=高逼格c语言画心>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-08-15>2018-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 389 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/heart/ class=leancloud_visitors data-flag-title="高逼格 c 语言画心">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
-</div><div class=content id=content><p>七夕又快到了，分享一个曾经玩过的代码，用C语言画一个跳动的心，很有逼格有木有。</p>
+</div><div class=content id=content><p>七夕又快到了，分享一个曾经玩过的代码，用 C 语言画一个跳动的心，很有逼格有木有。</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=https://i.loli.net/2018/08/29/5b8680e407e09.gif data-srcset="https://i.loli.net/2018/08/29/5b8680e407e09.gif, https://i.loli.net/2018/08/29/5b8680e407e09.gif 1.5x, https://i.loli.net/2018/08/29/5b8680e407e09.gif 2x" data-sizes=auto alt=https://i.loli.net/2018/08/29/5b8680e407e09.gif title=大一的图></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -204,12 +204,12 @@
 <span class=p>}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><a href=/posts/heart/heart.zip rel>exe文件下载</a></p></div><div class=post-footer id=post-footer>
+</div><p><a href=/posts/heart/heart.zip rel>exe 文件下载</a></p></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-01&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1 target=_blank title="commit by Cell(1024@lruihao.cn) e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>e372cc4</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -218,7 +218,7 @@
 <a class=link-to-markdown href=/posts/heart/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/heart/ data-title=高逼格c语言画心 data-hashtags=生活随笔,C,C++><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/heart/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/heart/ data-title=高逼格c语言画心 data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/heart/ data-title=高逼格c语言画心><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/heart/ data-title="高逼格 c 语言画心" data-hashtags=生活随笔,C,C++><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/heart/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/heart/ data-title="高逼格 c 语言画心" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/heart/ data-title="高逼格 c 语言画心"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>

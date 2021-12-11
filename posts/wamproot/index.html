@@ -11,17 +11,17 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/wamproot/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-07-12T18:44:36+00:00">
-<meta property="article:modified_time" content="2021-10-02T19:01:49+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="WAMPServer 自定义网站根目录等设置">
 <meta name=twitter:description content="
 使用 WAMPServer 时自定义网站根目录。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/wamproot/><link rel=prev href=https://lruihao.cn/posts/pysx2/><link rel=next href=https://lruihao.cn/posts/phpfunc/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"WAMPServer 自定义网站根目录等设置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/wamproot\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"WAMP, PHP, windows, server","wordcount":859,"url":"https:\/\/lruihao.cn\/posts\/wamproot\/","datePublished":"2019-07-12T18:44:36+00:00","dateModified":"2021-10-02T19:01:49+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/wamproot/><link rel=prev href=https://lruihao.cn/posts/pysx2/><link rel=next href=https://lruihao.cn/posts/phpfunc/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"WAMPServer 自定义网站根目录等设置","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/wamproot\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"WAMP, PHP, windows, server","wordcount":741,"url":"https:\/\/lruihao.cn\/posts\/wamproot\/","datePublished":"2019-07-12T18:44:36+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -89,7 +89,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">WAMPServer 自定义网站根目录等设置</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/fullstack/><i class="far fa-folder fa-fw"></i>Fullstack</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-07-12>2019-07-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 859 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-07-12>2019-07-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 741 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/wamproot/ class=leancloud_visitors data-flag-title="WAMPServer 自定义网站根目录等设置">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -100,32 +100,32 @@
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
-<li><a href=#wampserver自定义网站根目录>WAMPServer自定义网站根目录</a>
+<li><a href=#wampserver-自定义网站根目录>WAMPServer 自定义网站根目录</a>
 <ul>
-<li><a href=#修改apache配置文件>修改apache配置文件</a></li>
-<li><a href=#修改wampmanager文件>修改wampmanager文件</a></li>
-<li><a href=#编写php文件测试>编写php文件测试</a></li>
+<li><a href=#修改-apache-配置文件>修改 apache 配置文件</a></li>
+<li><a href=#修改-wampmanager-文件>修改 wampmanager 文件</a></li>
+<li><a href=#编写-php-文件测试>编写 php 文件测试</a></li>
 </ul>
 </li>
-<li><a href=#wampserver多站点配置>WAMPServer多站点配置</a></li>
-<li><a href=#wampserver自拟定端口>WAMPServer自拟定端口</a></li>
+<li><a href=#wampserver-多站点配置>WAMPServer 多站点配置</a></li>
+<li><a href=#wampserver-自拟定端口>WAMPServer 自拟定端口</a></li>
 </ul>
 </nav></div>
 </div><div class=content id=content><blockquote>
 <p>使用 WAMPServer 时自定义网站根目录。</p>
 </blockquote>
-<h1 id=wampserver自定义网站根目录>WAMPServer自定义网站根目录</h1>
-<h2 id=修改apache配置文件>修改apache配置文件</h2>
+<h1 id=wampserver-自定义网站根目录>WAMPServer 自定义网站根目录</h1>
+<h2 id=修改-apache-配置文件>修改 apache 配置文件</h2>
 <p>打开<code>httpd.conf</code>文件搜索<code>documentroot</code>后，找到路径修改为自定义的。<br>
-<img class=lazyload src=/svg/loading.min.svg data-src=images/httpd.png data-srcset="/posts/wamproot/images/httpd.png, images/httpd.png 1.5x, /posts/wamproot/images/httpd.png 2x" data-sizes=auto alt=/posts/wamproot/images/httpd.png title=修改httpd.conf文件></p>
+<img class=lazyload src=/svg/loading.min.svg data-src=images/httpd.png data-srcset="/posts/wamproot/images/httpd.png, images/httpd.png 1.5x, /posts/wamproot/images/httpd.png 2x" data-sizes=auto alt=/posts/wamproot/images/httpd.png title="修改 httpd.conf 文件"></p>
 <p>再打开<code>httpd-vhost.conf</code>文件修改对应的路径。<br>
 <code>修改完配置文件需要重启所有服务！</code></p>
-<h2 id=修改wampmanager文件>修改wampmanager文件</h2>
-<p>在wampserver安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>,然后也修改为自定义的路径。
+<h2 id=修改-wampmanager-文件>修改 wampmanager 文件</h2>
+<p>在 wampserver 安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>, 然后也修改为自定义的路径。
 <code>然后退出，重启软件！</code></p>
-<p><img class=lazyload src=/svg/loading.min.svg data-src=images/wampmanager-ini.png data-srcset="/posts/wamproot/images/wampmanager-ini.png, images/wampmanager-ini.png 1.5x, /posts/wamproot/images/wampmanager-ini.png 2x" data-sizes=auto alt=/posts/wamproot/images/wampmanager-ini.png title=修改wampmanager.ini文件><br>
-<img class=lazyload src=/svg/loading.min.svg data-src=images/wampmanager-tpl.png data-srcset="/posts/wamproot/images/wampmanager-tpl.png, images/wampmanager-tpl.png 1.5x, /posts/wamproot/images/wampmanager-tpl.png 2x" data-sizes=auto alt=/posts/wamproot/images/wampmanager-tpl.png title=修改wampmanager.tpl文件></p>
-<h2 id=编写php文件测试>编写php文件测试</h2>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=images/wampmanager-ini.png data-srcset="/posts/wamproot/images/wampmanager-ini.png, images/wampmanager-ini.png 1.5x, /posts/wamproot/images/wampmanager-ini.png 2x" data-sizes=auto alt=/posts/wamproot/images/wampmanager-ini.png title="修改 wampmanager.ini 文件"><br>
+<img class=lazyload src=/svg/loading.min.svg data-src=images/wampmanager-tpl.png data-srcset="/posts/wamproot/images/wampmanager-tpl.png, images/wampmanager-tpl.png 1.5x, /posts/wamproot/images/wampmanager-tpl.png 2x" data-sizes=auto alt=/posts/wamproot/images/wampmanager-tpl.png title="修改 wampmanager.tpl 文件"></p>
+<h2 id=编写-php-文件测试>编写 php 文件测试</h2>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -139,7 +139,7 @@
 </span></code></pre></td></tr></table>
 </div>
 </div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/test.png data-srcset="/posts/wamproot/images/test.png, images/test.png 1.5x, /posts/wamproot/images/test.png 2x" data-sizes=auto alt=/posts/wamproot/images/test.png title=测试结果></p>
-<h1 id=wampserver多站点配置>WAMPServer多站点配置</h1>
+<h1 id=wampserver-多站点配置>WAMPServer 多站点配置</h1>
 <p>打开<code>httpd-vhost.conf</code>文件，复制原有的几行配置文件，粘贴修改路径和域名等配置。比如</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -191,7 +191,7 @@
 &lt;/VirtualHost&gt;
 </code></pre></td></tr></table>
 </div>
-</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件,在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
+</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件，在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -228,10 +228,10 @@
 127.0.0.1 test02.com
 </code></pre></td></tr></table>
 </div>
-</div><h1 id=wampserver自拟定端口>WAMPServer自拟定端口</h1>
-<p>WAMP服务我安装了好几次，每次因为修改配置文件搞崩了。。第一次装的时候发现80端口被占用了，因为以前玩了一下Windows的IIS，暂停IIS的网站，再使用命令或者直接在控制面板关掉就好了。</p>
+</div><h1 id=wampserver-自拟定端口>WAMPServer 自拟定端口</h1>
+<p>WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第一次装的时候发现 80 端口被占用了，因为以前玩了一下 Windows 的 IIS，暂停 IIS 的网站，再使用命令或者直接在控制面板关掉就好了。</p>
 <ol>
-<li>如果不使用80多为默认端口，比如修改为8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S保存，重新启动WampServer<br>
+<li>如果不使用 80 多为默认端口，比如修改为 8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S 保存，重新启动 WampServer<br>
 在浏览器地址栏输入<code>localhost:8000</code></li>
 </ol>
 <div class=highlight><div class=chroma>
@@ -249,16 +249,16 @@ ServerName localhost:8080
 </code></pre></td></tr></table>
 </div>
 </div><ol start=2>
-<li>使用Notepad++打开 C:\wamp 目录下的wampmanager.ini和wampmanager.tpl<br>
-Ctrl+F查找 <code>localhost</code><br>
+<li>使用 Notepad++打开 C:\wamp 目录下的 wampmanager.ini 和 wampmanager.tpl<br>
+Ctrl+F 查找 <code>localhost</code><br>
 将其全部替换为<code>localhost:8000</code><br>
-然后，Ctrl+S保存，重新启动WampServer</li>
+然后，Ctrl+S 保存，重新启动 WampServer</li>
 </ol></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/d5a152d3502ffeceb83f55c643aa04aeeb03352f target=_blank title="commit by Cell(1024@lruihao.cn) d5a152d3502ffeceb83f55c643aa04aeeb03352f: Feat: 迁移 hexo 所有博客内容到 hugo">
-<i class="fas fa-hashtag fa-fw"></i>d5a152d</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>

@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>jieba - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/jieba/</link><description>jieba - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 20 Apr 2019 15:44:57 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/jieba/" rel="self" type="application/rss+xml"/><item><title>python玩微信：初探wxpy</title><link>https://lruihao.cn/posts/wxpy1/</link><pubDate>Sat, 20 Apr 2019 15:44:57 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wxpy1/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>jieba - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/jieba/</link><description>jieba - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 20 Apr 2019 15:44:57 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/jieba/" rel="self" type="application/rss+xml"/><item><title>python 玩微信：初探 wxpy</title><link>https://lruihao.cn/posts/wxpy1/</link><pubDate>Sat, 20 Apr 2019 15:44:57 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wxpy1/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/wxpy1/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p><em><strong>文中涉及的图片涉及个人隐私，仅做举例，请勿传播</strong></em></p>
@@ -11,7 +11,7 @@
 <h1 id="前期准备">前期准备</h1>
 <ul>
 <li><a href="https://github.com/youfou/wxpy" target="_blank" rel="noopener noreffer">wxpy</a></li>
-<li><a href="https://github.com/pyecharts/pyecharts" target="_blank" rel="noopener noreffer">pyecharts</a>（百度echarts）</li>
+<li><a href="https://github.com/pyecharts/pyecharts" target="_blank" rel="noopener noreffer">pyecharts</a>（百度 echarts）</li>
 </ul>
 <h1 id="查看微信好友男女比例">查看微信好友男女比例</h1>
 <div class="highlight"><div class="chroma">
@@ -49,7 +49,7 @@
 <span class="n">friends</span> <span class="o">=</span> <span class="n">bot</span><span class="o">.</span><span class="n">friends</span><span class="p">(</span><span class="n">update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>   <span class="c1">#获取更新好友列表</span>
 <span class="n">male</span> <span class="o">=</span> <span class="n">female</span> <span class="o">=</span> <span class="n">other</span> <span class="o">=</span> <span class="mi">0</span>    
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">friends</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>     <span class="c1">#[1:]自己是第一个，排除掉</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">friends</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>     <span class="c1">#[1:] 自己是第一个，排除掉</span>
     <span class="n">sex</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">sex</span>
     <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">male</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -111,7 +111,7 @@
 <pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">wxpy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">Map</span>
 
-<span class="c1">#因为获取的列表城市都没有带市字，而pyecharts需要带个市字</span>
+<span class="c1">#因为获取的列表城市都没有带市字，而 pyecharts 需要带个市字</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;市&#39;</span>
 <span class="k">def</span> <span class="nf">s</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">b</span>
@@ -132,7 +132,7 @@
     <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">cityss</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;市&#39;</span><span class="p">)</span>
 
-<span class="c1">#把字典进行有序拆分为2个列表</span>
+<span class="c1">#把字典进行有序拆分为 2 个列表</span>
 <span class="n">attrs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">value</span><span class="p">,</span> <span class="n">attr</span> <span class="ow">in</span> <span class="n">a</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -146,7 +146,7 @@
 </div>
 </div><p></p>
 <blockquote>
-<p><strong>以上参考简书<a href="https://www.jianshu.com/p/c0baf3c6db15" target="_blank" rel="noopener noreffer">陈思煜</a></strong></p>
+<p><strong>以上参考简书 <a href="https://www.jianshu.com/p/c0baf3c6db15" target="_blank" rel="noopener noreffer">陈思煜</a></strong></p>
 </blockquote>
 <h1 id="统计所有群男女数目">统计所有群男女数目</h1>
 <blockquote>
@@ -256,7 +256,7 @@
     
     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;男的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">male</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人&#34;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;女的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">female</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人&#34;</span><span class="p">)</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;男的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">male</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">+</span> <span class="s2">&#34;女的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">female</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="s2">&#34;男的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">male</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span> <span class="o">+</span> <span class="s2">&#34;女的有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">female</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span>
     <span class="k">return</span> <span class="n">msg</span>
 
 <span class="n">bot</span> <span class="o">=</span> <span class="n">Bot</span><span class="p">()</span>
@@ -268,9 +268,9 @@
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
         <span class="k">continue</span>
     <span class="n">curr_group</span><span class="o">.</span><span class="n">update_group</span><span class="p">(</span><span class="n">members_details</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="n">stats_sex</span><span class="p">(</span><span class="n">curr_group</span><span class="p">)</span>
-    <span class="n">curr_group</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;群，一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+    <span class="n">curr_group</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">curr_group</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&#34;群，一共有：&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">curr_group</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;人、n&#34;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item></channel></rss>

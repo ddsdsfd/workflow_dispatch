@@ -7,25 +7,25 @@
 <title>Git 常用指令汇总 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Git 常用指令汇总">
 <meta property="og:description" content="
 工作区：就是你在电脑里能看到的目录。
-暂存区：英文叫stage, 或index。一般存放在 &ldquo;.git目录下&rdquo; 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
-版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
+暂存区：英文叫 stage, 或 index。一般存放在 &ldquo;.git 目录下&rdquo; 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
+版本库：工作区有一个隐藏目录。git，这个不算工作区，而是 Git 的版本库。
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/git/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-10-30T08:59:56+08:00">
-<meta property="article:modified_time" content="2021-10-01T15:02:15+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="Git 常用指令汇总">
 <meta name=twitter:description content="
 工作区：就是你在电脑里能看到的目录。
-暂存区：英文叫stage, 或index。一般存放在 &ldquo;.git目录下&rdquo; 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
-版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
+暂存区：英文叫 stage, 或 index。一般存放在 &ldquo;.git 目录下&rdquo; 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
+版本库：工作区有一个隐藏目录。git，这个不算工作区，而是 Git 的版本库。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/git/><link rel=prev href=https://lruihao.cn/posts/cell-blog-install/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Git 常用指令汇总","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/git\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Git","wordcount":3715,"url":"https:\/\/lruihao.cn\/posts\/git\/","datePublished":"2018-10-30T08:59:56+08:00","dateModified":"2021-10-01T15:02:15+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/git/><link rel=prev href=https://lruihao.cn/posts/cell-blog-install/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Git 常用指令汇总","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/git\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Git","wordcount":3479,"url":"https:\/\/lruihao.cn\/posts\/git\/","datePublished":"2018-10-30T08:59:56+08:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -93,8 +93,8 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">Git 常用指令汇总</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/git/><i class="far fa-folder fa-fw"></i>Git</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-10-30>2018-10-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 3715 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 8 分鐘&nbsp;<span id=/posts/git/ class=leancloud_visitors data-flag-title="Git 常用指令汇总">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-10-30>2018-10-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 3479 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 7 分鐘&nbsp;<span id=/posts/git/ class=leancloud_visitors data-flag-title="Git 常用指令汇总">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/posts/git/images/relation-1.png data-srcset="/posts/git/images/relation-1.png, /posts/git/images/relation-1.png 1.5x, /posts/git/images/relation-1.png 2x" data-sizes=auto alt=/posts/git/images/relation-1.png title=/posts/git/images/relation-1.png></div><div class="details toc" id=toc-static kept>
@@ -126,29 +126,29 @@
 <li><a href=#gitk>gitk</a></li>
 </ul>
 </li>
-<li><a href=#githubgitea等平台issue的常用标签>github,gitea等平台issue的常用标签</a></li>
+<li><a href=#githubgitea-等平台-issue-的常用标签>github,gitea 等平台 issue 的常用标签</a></li>
 <li><a href=#license>license</a></li>
 <li><a href=#其他>其他</a></li>
 </ul>
 </nav></div>
 </div><div class=content id=content><ul>
 <li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
-<li><strong>暂存区</strong>：英文叫stage, 或index。一般存放在 &ldquo;.git目录下&rdquo; 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
-<li><strong>版本库</strong>：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。</li>
+<li><strong>暂存区</strong>：英文叫 stage, 或 index。一般存放在 &ldquo;.git 目录下&rdquo; 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
+<li><strong>版本库</strong>：工作区有一个隐藏目录。git，这个不算工作区，而是 Git 的版本库。</li>
 </ul>
 <h1 id=介绍>介绍</h1>
 <p>先通过几张图片来大致了解一下 Git 的工作原理吧！<br>
 文章开头的流程图已经简单明了地说明了 Git 常用操作的工作流程，下图换种风格再展示一次：
 <img class=lazyload src=/svg/loading.min.svg data-src=images/relation-2.jpg data-srcset="/posts/git/images/relation-2.jpg, images/relation-2.jpg 1.5x, /posts/git/images/relation-2.jpg 2x" data-sizes=auto alt=/posts/git/images/relation-2.jpg title=关系图></p>
 <p>提到 Git 就会联想到 github, 下图从 Git 的角度简单说明了一些 Github 常用操作的关系：
-<img class=lazyload src=/svg/loading.min.svg data-src=images/github.jpg data-srcset="/posts/git/images/github.jpg, images/github.jpg 1.5x, /posts/git/images/github.jpg 2x" data-sizes=auto alt=/posts/git/images/github.jpg title=github流程></p>
+<img class=lazyload src=/svg/loading.min.svg data-src=images/github.jpg data-srcset="/posts/git/images/github.jpg, images/github.jpg 1.5x, /posts/git/images/github.jpg 2x" data-sizes=auto alt=/posts/git/images/github.jpg title="github 流程"></p>
 <p>下面这个图则展示了工作区、版本库中的暂存区和版本库之间的关系：
 <img class=lazyload src=/svg/loading.min.svg data-src=images/work.jpg data-srcset="/posts/git/images/work.jpg, images/work.jpg 1.5x, /posts/git/images/work.jpg 2x" data-sizes=auto alt=/posts/git/images/work.jpg title=工作区、暂存区和版本库></p>
-<p>图中左侧为工作区，右侧为版本库。在版本库中标记为 <code>"index"</code> 的区域是暂存区（stage, index），标记为 &ldquo;master&rdquo; 的是 master分支所代表的目录树。<br>
-<strong>HEAD指针: 每个git仓库有且仅有一个HEAD指针，它通常指向當前某个活動的本地分支指针(最初本地仓库master)。也可以是某个提交记录、某个tag，但这会让其处于 detached HEAD（游离头）状态，此状态下的所有提交都无效。</strong><br>
+<p>图中左侧为工作区，右侧为版本库。在版本库中标记为 <code>"index"</code> 的区域是暂存区（stage, index），标记为 &ldquo;master&rdquo; 的是 master 分支所代表的目录树。<br>
+<strong>HEAD 指针：每个 git 仓库有且仅有一个 HEAD 指针，它通常指向當前某个活動的本地分支指针（最初本地仓库 master)。也可以是某个提交记录、某个 tag，但这会让其处于 detached HEAD（游离头）状态，此状态下的所有提交都无效。</strong><br>
 图中我们可以看出此时 <code>"HEAD"</code> 实际是指向 master 分支的一个"游标"。所以图示的命令中出现 HEAD 的地方可以用 master 来替换。<br>
 图中的<code>objects</code>标识的区域为 Git 的对象库，实际位于 <code>".git/objects"</code> 目录下，里面包含了创建的各种对象及内容。<br>
-当对工作区修改（或新增）的文件执行 <code>"git add"</code>命令时，暂存区的目录树被更新，同时工作区修改（或新增）的文件内容被写入到对象库中的一个新的对象中，而该对象的ID被记录在暂存区的文件索引中。<br>
+当对工作区修改（或新增）的文件执行 <code>"git add"</code>命令时，暂存区的目录树被更新，同时工作区修改（或新增）的文件内容被写入到对象库中的一个新的对象中，而该对象的 ID 被记录在暂存区的文件索引中。<br>
 当执行提交操作（git commit）时，暂存区的目录树写到版本库（对象库）中，master 分支会做相应的更新。即 master 指向的目录树就是提交时暂存区的目录树。<br>
 当执行 <code>"git reset HEAD"</code> 命令时，暂存区的目录树会被重写，被 master 分支指向的目录树所替换，但是工作区不受影响。<br>
 当执行 <code>"git rm --cached &lt;file>"</code> 命令时，会直接从暂存区删除文件，工作区则不做出改变。<br>
@@ -156,7 +156,7 @@
 当执行 <code>"git checkout HEAD ."</code> 或者 <code>"git checkout HEAD &lt;file>"</code> 命令时，会用 <code>HEAD</code> 指向的 master 分支中的全部或者部分文件替换暂存区和以及工作区中的文件。这个命令也是极具危险性的，因为不但会清除工作区中未提交的改动，也会清除暂存区中未提交的改动。</p>
 <h1 id=基本常用命令>基本常用命令</h1>
 <blockquote>
-<p>第一次使用git的时候，需要设置用户信息和用户邮箱，用于辨识提交者身份。</p>
+<p>第一次使用 git 的时候，需要设置用户信息和用户邮箱，用于辨识提交者身份。</p>
 </blockquote>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -165,7 +165,7 @@
 </span><span class=lnt>3
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git config --global user.name &lt;git用户名&gt;
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git config --global user.name &lt;git 用户名&gt;
 git config --global user.email &lt;邮箱地址&gt;
 git config --list                           # 查看当前用户信息
 </code></pre></td></tr></table>
@@ -183,14 +183,14 @@ git config --list                           # 查看当前用户信息
 </span><span class=lnt>8
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git init                    # 把当前的目录变成可以用git进行版本控制的git仓库，生成隐藏.git文件。
-git add XX                  # 把xx文件添加到暂存区去。
-git add –A                  # git add --all的缩写，添加全部到暂存区
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git init                    # 把当前的目录变成可以用 git 进行版本控制的 git 仓库，生成隐藏。git 文件。
+git add XX                  # 把 xx 文件添加到暂存区去。
+git add –A                  # git add --all 的缩写，添加全部到暂存区
 git add –u                  # 把文件的删除和修改添加到暂存区（不包括新增）
 git add .                   # 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区
 git commit -m &#34;message&#34;     # 从暂存区提交到本地仓库
-git commit -a -m &#34;message&#34;  # 相当于省略git add，但是无法提交新增的文件
-git push origin master      # Git会把master分支推送到远程库对应的远程分支上
+git commit -a -m &#34;message&#34;  # 相当于省略 git add，但是无法提交新增的文件
+git push origin master      # Git 会把 master 分支推送到远程库对应的远程分支上
 </code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
@@ -200,7 +200,7 @@ git push origin master      # Git会把master分支推送到远程库对应的�
 <div class=details-content>
 <div class=admonition-content>&ldquo;commit message"内容尽量规范！<br>
 当某一次提交后，突然想起漏提交了文件，或不小心提交了不满意的代码时，<br>
-可以使用<code>git commit --amend -m "message"</code>指令。它可以在不增加一个新的commit-id的情况下将新修改的代码追加到前一次的commit-id中。提交之后message也将被本次的message覆盖，所以还需要再次添加上次的message。</div>
+可以使用<code>git commit --amend -m "message"</code>指令。它可以在不增加一个新的 commit-id 的情况下将新修改的代码追加到前一次的 commit-id 中。提交之后 message 也将被本次的 message 覆盖，所以还需要再次添加上次的 message。</div>
 </div>
 </div>
 <h2 id=push>push</h2>
@@ -217,7 +217,7 @@ git push origin --delete branch-name     # 删除远程分支
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>把当前master分支推送到远程库; <code>-u</code>表示记住分支和地址，下次使用<code>git push</code>即可。</p>
+<p>把当前 master 分支推送到远程库；<code>-u</code>表示记住分支和地址，下次使用<code>git push</code>即可。</p>
 </blockquote>
 <h2 id=remote>remote</h2>
 <div class=highlight><div class=chroma>
@@ -254,9 +254,9 @@ git clone -b branchName reposityUrl     # 克隆指定分支
 </div>
 </div><blockquote>
 <p>从远程仓库拉下来到本地库然后合并相当于<code>git fetch</code>+<code>git merge</code>。<br>
-一般push前先拉去最新版本，避免代码冲突，如果有冲突需要解决了冲突才能提交。</p>
+一般 push 前先拉去最新版本，避免代码冲突，如果有冲突需要解决了冲突才能提交。</p>
 </blockquote>
-<p><strong>import repositories同步更新</strong></p>
+<p><strong>import repositories 同步更新</strong></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -277,7 +277,7 @@ git push origin master
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>fetch是从远程库到本地库，但是未在工作区，需要<code>git merge</code></p>
+<p>fetch 是从远程库到本地库，但是未在工作区，需要<code>git merge</code></p>
 </blockquote>
 <h2 id=merge>merge</h2>
 <div class=highlight><div class=chroma>
@@ -285,11 +285,11 @@ git push origin master
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git merge dev           # 在当前的分支上合并dev分支
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git merge dev           # 在当前的分支上合并 dev 分支
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>分支合并也是在本地完成(<strong>从本地库到工作区</strong>)，新的分支只有在合并后才允许被删除。<br>
+<p>分支合并也是在本地完成 (<strong>从本地库到工作区</strong>)，新的分支只有在合并后才允许被删除。<br>
 如果分支合并是出现冲突需要解决了冲突才能合并，使用<code>git status</code>查看冲突文件。</p>
 </blockquote>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/delete-merge.png data-srcset="/posts/git/images/delete-merge.png, images/delete-merge.png 1.5x, /posts/git/images/delete-merge.png 2x" data-sizes=auto alt=/posts/git/images/delete-merge.png title=分支合并后删除></p>
@@ -312,7 +312,7 @@ git branch –r         # 看远程所有分支
 git branch –a         # 查看本地远程分支
 git branch –d name    # 删除分支
 git checkout name     # 切换分支
-git checkout –b name  # 创建并切换到name分支上
+git checkout –b name  # 创建并切换到 name 分支上
 git checkout -- file
 </code></pre></td></tr></table>
 </div>
@@ -327,7 +327,7 @@ git checkout -- file
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git log               # 显示所有提交过的版本信息：commit id，提交者，日期
-git reflog            # 查看历史记录的commit id
+git reflog            # 查看历史记录的 commit id
 </code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
@@ -335,11 +335,11 @@ git reflog            # 查看历史记录的commit id
 <i class="icon fas fa-lightbulb fa-fw"></i>Tips<i class="details-icon fas fa-angle-right fa-fw"></i>
 </div>
 <div class=details-content>
-<div class=admonition-content><p>想看到自己的操作记录，则可以使用log与reflog，它两个的区别如下:</p>
+<div class=admonition-content><p>想看到自己的操作记录，则可以使用 log 与 reflog，它两个的区别如下：</p>
 <ol>
 <li><code>git log</code>命令可以显示所有提交过的版本信息；
 如果感觉太繁琐，可以加上参数<code>--pretty=oneline</code>，只会显示版本号和提交时的备注信息。</li>
-<li><code>git reflog</code>可以查看所有分支的所有操作记录。（包括已经被删除的commit记录和reset的操作）</li>
+<li><code>git reflog</code>可以查看所有分支的所有操作记录。（包括已经被删除的 commit 记录和 reset 的操作）</li>
 </ol>
 </div>
 </div>
@@ -357,9 +357,9 @@ git reflog            # 查看历史记录的commit id
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git reset --hard HEAD^        
 git reset --hard HEAD~        # 回退到上一个版本
-git reset --hard HEAD~100     # 回退到100个版本
+git reset --hard HEAD~100     # 回退到 100 个版本
 
-git reset head -- file        # 不加file则全部退回  
+git reset head -- file        # 不加 file 则全部退回  
 git reset file                # 将本地仓库的当前版本退回至暂存区，相当于取消暂存
 </code></pre></td></tr></table>
 </div>
@@ -372,13 +372,13 @@ git reset file                # 将本地仓库的当前版本退回至暂存区
 <i class="icon fas fa-skull-crossbones fa-fw"></i>特别提醒<i class="details-icon fas fa-angle-right fa-fw"></i>
 </div>
 <div class=details-content>
-<div class=admonition-content><p>如果你<code>git reset --hard HEAD^</code>+<code>git push -f origin master</code>执行完，github中的记录和本地文件都会回到退回的状态。<strong>简单来说就是一修改了一天的bug,完工后，你这一套操作直接打回原形。别慌（实际内心慌的一麻皮。。。）</strong></p>
+<div class=admonition-content><p>如果你<code>git reset --hard HEAD^</code>+<code>git push -f origin master</code>执行完，github 中的记录和本地文件都会回到退回的状态。<strong>简单来说就是一修改了一天的 bug, 完工后，你这一套操作直接打回原形。别慌（实际内心慌的一麻皮。）</strong></p>
 <ol>
-<li>通过<code>git log -g</code>命令来找到需要恢复的信息对应的commitid，可以通过提交的时间和记录来辨别,
-找到执行<code>reset --hard</code>之前的那个commit对应的commit-id</li>
+<li>通过<code>git log -g</code>命令来找到需要恢复的信息对应的 commitid，可以通过提交的时间和记录来辨别，
+找到执行<code>reset --hard</code>之前的那个 commit 对应的 commit-id</li>
 <li>通过<code>git branch recover_branch commit-id </code>来建立一个新的分支</li>
 </ol>
-<p><strong>这样，就把到commitid为止的代码、各种提交记录等信息都恢复到了recover_branch分支上了。</strong></p>
+<p><strong>这样，就把到 commitid 为止的代码、各种提交记录等信息都恢复到了 recover_branch 分支上了。</strong></p>
 </div>
 </div>
 </div>
@@ -436,7 +436,7 @@ M  README.md
 </span><span class=lnt>6
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git diff XX         # 查看XX文件修改了哪些内容
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>git diff XX         # 查看 XX 文件修改了哪些内容
 
 git diff            # 工作目录和暂存区
 git diff --cached   # 暂存区和本地仓库
@@ -464,7 +464,7 @@ git mv &lt;old_path&gt; &lt;new_path&gt;
 </div><blockquote>
 <p><code>git rm</code>用来删除文件、目录。<code>git mv</code>命令用于移动或重命名一个文件、目录。</p>
 </blockquote>
-<p>比如删除photos文件，本地删除后，远程仓库还会有，所以</p>
+<p>比如删除 photos 文件，本地删除后，远程仓库还会有，所以</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -497,9 +497,9 @@ git submodule update      # 子模组更新
 <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
 </div>
 <div class=details-content>
-<div class=admonition-content>当一个远程库有子模组时，直接clone子模组只是一个空文件夹，需要进入子模组的空文件夹<code>init</code>和<code>update</code>才行。
+<div class=admonition-content>当一个远程库有子模组时，直接 clone 子模组只是一个空文件夹，需要进入子模组的空文件夹<code>init</code>和<code>update</code>才行。
 或者使用递归克隆<code>git clone --recursive 远程库</code><br>
-子模组更新后，父模组必须更新，因为需要更新commit id。</div>
+子模组更新后，父模组必须更新，因为需要更新 commit id。</div>
 </div>
 </div>
 <h2 id=tag>tag</h2>
@@ -520,11 +520,11 @@ git submodule update      # 子模组更新
 git tag -a v1.0                   # 给最新一次提交打标签
 git tag -a &lt;tagname&gt; -m &#34;标签&#34;    # 指定标签信息命令
 git show &lt;tagname&gt;                # 显示标签信息
-git tag                           # 查看版本打的Tag
+git tag                           # 查看版本打的 Tag
 git tag -d v1.0                   # 删除本地标签
 git push origin :refs/tags/v1.0   # 删除远程标签
-$ git push [remote] [tag]         # 提交指定tag
-$ git push [remote] --tags        # 提交所有tag
+$ git push [remote] [tag]         # 提交指定 tag
+$ git push [remote] --tags        # 提交所有 tag
 </code></pre></td></tr></table>
 </div>
 </div><p><div class="details admonition Success open">
@@ -536,7 +536,7 @@ $ git push [remote] --tags        # 提交所有tag
 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。</div>
 </div>
 </div>
-例如，假设我们发布了提交85fc7e7(最后一行)，但是那时候忘了给它打标签。 我们现在也可以：</p>
+例如，假设我们发布了提交 85fc7e7（最后一行），但是那时候忘了给它打标签。 我们现在也可以：</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -581,17 +581,17 @@ git stash list          # 查看所有被隐藏的文件列表
 </span><span class=lnt>2
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>gitk                    # git自带GUI
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>gitk                    # git 自带 GUI
 gitk --all
 </code></pre></td></tr></table>
 </div>
-</div><h1 id=githubgitea等平台issue的常用标签>github,gitea等平台issue的常用标签</h1>
+</div><h1 id=githubgitea-等平台-issue-的常用标签>github,gitea 等平台 issue 的常用标签</h1>
 <ul>
-<li><code>bug</code> 描述的问题是一个bug</li>
-<li><code>enhancement</code> 功能增强，没有feature也可以指 New feature or request</li>
+<li><code>bug</code> 描述的问题是一个 bug</li>
+<li><code>enhancement</code> 功能增强，没有 feature 也可以指 New feature or request</li>
 <li><code>feature</code> 新功能</li>
 <li><code>duplicate</code> 问题重复</li>
-<li><code>invalid</code> 可用的，不是bug</li>
+<li><code>invalid</code> 可用的，不是 bug</li>
 <li><code>question</code> 疑问，需要进一步的信息</li>
 <li><code>wontfix</code> 不会修复此问题</li>
 <li><code>help-wanted</code> 需要帮助</li>
@@ -602,15 +602,15 @@ gitk --all
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/license.jpg data-srcset="/posts/git/images/license.jpg, images/license.jpg 1.5x, /posts/git/images/license.jpg 2x" data-sizes=auto alt=/posts/git/images/license.jpg title=license></p>
 <h1 id=其他>其他</h1>
 <ul>
-<li><a href=https://blog.csdn.net/qq1332479771/article/details/56087333 target=_blank rel="noopener noreffer">github上fork了别人的项目后，再同步更新别人的提交</a></li>
-<li><a href=http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html target=_blank rel="noopener noreffer">常用Git命令清单</a></li>
+<li><a href=https://blog.csdn.net/qq1332479771/article/details/56087333 target=_blank rel="noopener noreffer">github 上 fork 了别人的项目后，再同步更新别人的提交</a></li>
+<li><a href=http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html target=_blank rel="noopener noreffer">常用 Git 命令清单</a></li>
 <li><a href=https://learngitbranching.js.org/ target=_blank rel="noopener noreffer">Gearn Git Branching</a></li>
 </ul></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-01&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1 target=_blank title="commit by Cell(1024@lruihao.cn) e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>e372cc4</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>

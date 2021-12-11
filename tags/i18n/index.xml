@@ -282,7 +282,7 @@
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索&#34;</span>
 
 <span class="p">[</span><span class="nx">searchPlaceholder</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容...&#34;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容。..&#34;</span>
 
 <span class="p">[</span><span class="nx">clear</span><span class="p">]</span>
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;清空&#34;</span>
@@ -306,7 +306,7 @@
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;複製到剪貼板&#34;</span>
 
 <span class="p">[</span><span class="nx">cookieconsentMessage</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;本網站使用 Cookies 來改善您的流覽體驗.&#34;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;本網站使用 Cookies 來改善您的流覽體驗。&#34;</span>
 
 <span class="p">[</span><span class="nx">cookieconsentDismiss</span><span class="p">]</span>
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;同意&#34;</span>

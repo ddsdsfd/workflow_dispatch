@@ -11,17 +11,17 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/site-time/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-09-19T22:03:29+00:00">
-<meta property="article:modified_time" content="2021-10-02T19:01:49+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="设置网站运行时间">
 <meta name=twitter:description content="
 使用javascript计算博客等网站的运行时间。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/site-time/><link rel=prev href=https://lruihao.cn/posts/async-defer/><link rel=next href=https://lruihao.cn/posts/phpfile/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"设置网站运行时间","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/site-time\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"JavaScript, Frontend","wordcount":474,"url":"https:\/\/lruihao.cn\/posts\/site-time\/","datePublished":"2019-09-19T22:03:29+00:00","dateModified":"2021-10-02T19:01:49+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/site-time/><link rel=prev href=https://lruihao.cn/posts/async-defer/><link rel=next href=https://lruihao.cn/posts/phpfile/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"设置网站运行时间","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/site-time\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"JavaScript, Frontend","wordcount":406,"url":"https:\/\/lruihao.cn\/posts\/site-time\/","datePublished":"2019-09-19T22:03:29+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -89,7 +89,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">设置网站运行时间</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-09-19>2019-09-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 474 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-09-19>2019-09-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 406 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/site-time/ class=leancloud_visitors data-flag-title=设置网站运行时间>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -146,7 +146,6 @@
 </span><span class=lnt>37
 </span><span class=lnt>38
 </span><span class=lnt>39
-</span><span class=lnt>40
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=kd>function</span> <span class=nx>createTime</span><span class=p>()</span> <span class=p>{</span>
@@ -168,8 +167,8 @@
   <span class=k>if</span> <span class=p>(</span><span class=nb>String</span><span class=p>(</span><span class=nx>seconds</span><span class=p>).</span><span class=nx>length</span> <span class=o>===</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
     <span class=nx>seconds</span> <span class=o>=</span> <span class=s2>&#34;0&#34;</span> <span class=o>+</span> <span class=nx>seconds</span><span class=p>;</span>
   <span class=p>}</span>
-  <span class=cm>/*document.querySelector(&#34;.run-times&#34;).innerHTML = days + &#34;&amp;thinsp;天&amp;thinsp;&#34; + hours
-</span><span class=cm>          + &#34;&amp;thinsp;时&amp;thinsp;&#34; + minutes + &#34;&amp;thinsp;分&amp;thinsp;&#34; + seconds + &#34;&amp;thinsp;秒&#34;;
+  <span class=cm>/*document.querySelector(&#34;.run-times&#34;).innerHTML = days + &#34;&amp;thinsp; 天&amp;thinsp;&#34; + hours
+</span><span class=cm>          + &#34;&amp;thinsp; 时&amp;thinsp;&#34; + minutes + &#34;&amp;thinsp; 分&amp;thinsp;&#34; + seconds + &#34;&amp;thinsp; 秒&#34;;
 </span><span class=cm>  */</span>
   <span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=s2>&#34;.run-times&#34;</span><span class=p>).</span><span class=nx>innerHTML</span> <span class=o>=</span> <span class=s2>&#34;RunTime: &#34;</span> <span class=o>+</span> <span class=nx>days</span> <span class=o>+</span> <span class=s2>&#34;,&#34;</span> <span class=o>+</span> <span class=nx>hours</span>
           <span class=o>+</span> <span class=s2>&#34;:&#34;</span> <span class=o>+</span> <span class=nx>minutes</span> <span class=o>+</span> <span class=s2>&#34;:&#34;</span> <span class=o>+</span> <span class=nx>seconds</span> <span class=o>+</span> <span class=s2>&#34;&#34;</span><span class=p>;</span>
@@ -183,10 +182,9 @@
   <span class=nx>clearInterval</span><span class=p>(</span><span class=nx>siteTime</span><span class=p>);</span>
 <span class=p>}</span>
 
-
 <span class=cm>/**
-</span><span class=cm> * HTML写法
-</span><span class=cm>&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒...&lt;/span&gt;
+</span><span class=cm> * HTML 写法
+</span><span class=cm>&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒。..&lt;/span&gt;
 </span><span class=cm>&lt;p class=&#34;run-times&#34; title=&#34;主頁运行时间&#34;&gt;RunTime Loading...&lt;/p&gt;
 </span><span class=cm>*/</span>
 </code></pre></td></tr></table>
@@ -195,8 +193,8 @@
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/d5a152d3502ffeceb83f55c643aa04aeeb03352f target=_blank title="commit by Cell(1024@lruihao.cn) d5a152d3502ffeceb83f55c643aa04aeeb03352f: Feat: 迁移 hexo 所有博客内容到 hugo">
-<i class="fas fa-hashtag fa-fw"></i>d5a152d</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -216,7 +214,7 @@
 </section>
 </div>
 <div class=post-nav><a href=/posts/async-defer/ class=prev rel=prev title="script 的三种加载方式 (async, defer)"><i class="fas fa-angle-left fa-fw"></i>script 的三种加载方式 (async, defer)</a>
-<a href=/posts/phpfile/ class=next rel=next title=php按行读取文件信息>php按行读取文件信息<i class="fas fa-angle-right fa-fw"></i></a></div>
+<a href=/posts/phpfile/ class=next rel=next title="php 按行读取文件信息">php 按行读取文件信息<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

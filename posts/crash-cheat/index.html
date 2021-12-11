@@ -11,17 +11,17 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/crash-cheat/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-09-26T16:36:08+00:00">
-<meta property="article:modified_time" content="2021-09-28T21:00:54+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="网页离开时改变标题“崩溃欺骗”">
 <meta name=twitter:description content="
 从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/crash-cheat/><link rel=prev href=https://lruihao.cn/posts/linux-git/><link rel=next href=https://lruihao.cn/posts/night/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"网页离开时改变标题“崩溃欺骗”","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/crash-cheat\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"JavaScript, Frontend, hexo","wordcount":533,"url":"https:\/\/lruihao.cn\/posts\/crash-cheat\/","datePublished":"2018-09-26T16:36:08+00:00","dateModified":"2021-09-28T21:00:54+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/crash-cheat/><link rel=prev href=https://lruihao.cn/posts/linux-git/><link rel=next href=https://lruihao.cn/posts/night/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"网页离开时改变标题“崩溃欺骗”","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/crash-cheat\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"JavaScript, Frontend, hexo","wordcount":512,"url":"https:\/\/lruihao.cn\/posts\/crash-cheat\/","datePublished":"2018-09-26T16:36:08+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -89,7 +89,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">网页离开时改变标题“崩溃欺骗”</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-09-26>2018-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 533 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-09-26>2018-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 512 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/crash-cheat/ class=leancloud_visitors data-flag-title=网页离开时改变标题“崩溃欺骗”>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -102,7 +102,7 @@
 <ul>
 <li>
 <ul>
-<li><a href=#创建一个js文件>创建一个js文件</a></li>
+<li><a href=#创建一个-js-文件>创建一个 js 文件</a></li>
 <li><a href=#使用>使用</a></li>
 </ul>
 </li>
@@ -111,10 +111,10 @@
 </div><div class=content id=content><blockquote>
 <p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。</p>
 </blockquote>
-<h2 id=创建一个js文件>创建一个js文件</h2>
-<p>我们先创建一个js文件，我们用记事本就好了，然后改个文件名，不妨就叫<code>crash-cheat.js</code>吧，你们可以随意！<br>
-然后把文件放到source文件夹的js文件夹的src里面。（我用的next主题，放这里统一存放，其他主题随意）</p>
-<p>崩溃欺骗(Jquery版)</p>
+<h2 id=创建一个-js-文件>创建一个 js 文件</h2>
+<p>我们先创建一个 js 文件，我们用记事本就好了，然后改个文件名，不妨就叫<code>crash-cheat.js</code>吧，你们可以随意！<br>
+然后把文件放到 source 文件夹的 js 文件夹的 src 里面。（我用的 next 主题，放这里统一存放，其他主题随意）</p>
+<p>崩溃欺骗 (Jquery 版）</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -146,7 +146,7 @@
   <span class=p>}</span>
   <span class=k>else</span> <span class=p>{</span>
     <span class=nx>$</span><span class=p>(</span><span class=s2>&#34;[rel=&#39;icon&#39;]&#34;</span><span class=p>).</span><span class=nx>attr</span><span class=p>(</span><span class=s1>&#39;href&#39;</span><span class=p>,</span> <span class=s2>&#34;https://i.loli.net/2018/09/25/5baa4f21661e7.png&#34;</span><span class=p>);</span>
-    <span class=nb>document</span><span class=p>.</span><span class=nx>title</span> <span class=o>=</span> <span class=s1>&#39;小老弟(ฅ&gt;ω&lt;*ฅ)&#39;</span><span class=p>;</span>
+    <span class=nb>document</span><span class=p>.</span><span class=nx>title</span> <span class=o>=</span> <span class=s1>&#39;小老弟 (ฅ&gt;ω&lt;*ฅ)&#39;</span><span class=p>;</span>
     <span class=nx>titleTime</span> <span class=o>=</span> <span class=nx>setTimeout</span><span class=p>(</span><span class=kd>function</span> <span class=p>()</span> <span class=p>{</span>
       <span class=nb>document</span><span class=p>.</span><span class=nx>title</span> <span class=o>=</span> <span class=nx>OriginTitle</span><span class=p>;</span>
       <span class=nx>$</span><span class=p>(</span><span class=s2>&#34;[rel=&#39;icon&#39;]&#34;</span><span class=p>).</span><span class=nx>attr</span><span class=p>(</span><span class=s1>&#39;href&#39;</span><span class=p>,</span> <span class=s2>&#34;/images/favicon-32x32-next.png&#34;</span><span class=p>);</span>
@@ -155,7 +155,7 @@
 <span class=p>});</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>崩溃欺骗(JS版)</p>
+</div><p>崩溃欺骗 (JS 版）</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -194,7 +194,7 @@
 </div>
 </div><h2 id=使用>使用</h2>
 <p>在<code>hexo\themes\hexo-theme-next\layout</code>文件路径找到<code>layout.swig</code>文件，其他有些主题用的是<code>.ejs</code>后缀，一样的。<br>
-然后打开文件，在<code>&lt;body>&lt;/body></code>之间加入调用刚刚的js。</p>
+然后打开文件，在<code>&lt;body>&lt;/body></code>之间加入调用刚刚的 js。</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -207,8 +207,8 @@
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-09-28&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/7da4c6fe197a54349d00a284054137c2b849cc4f target=_blank title="commit by Cell(1024@lruihao.cn) 7da4c6fe197a54349d00a284054137c2b849cc4f: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>7da4c6f</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -227,7 +227,7 @@
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/linux-git/ class=prev rel=prev title="linux/centos 下的安装git"><i class="fas fa-angle-left fa-fw"></i>linux/centos 下的安装git</a>
+<div class=post-nav><a href=/posts/linux-git/ class=prev rel=prev title="linux/centos 下的安装 git"><i class="fas fa-angle-left fa-fw"></i>linux/centos 下的安装 git</a>
 <a href=/posts/night/ class=next rel=next title=网页夜间效果>网页夜间效果<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>

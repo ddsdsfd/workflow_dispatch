@@ -1,7 +1,7 @@
-# 牛客练习赛23
+# 牛客练习赛 23
 
 
-两题水过，暴力，找规律。。
+两题水过，暴力，找规律。
 
 ## [托米的赌球](https://www.nowcoder.com/acm/contest/156/A)
 ## [托米的划分](https://www.nowcoder.com/acm/contest/156/B)
@@ -27,14 +27,12 @@ int main(){
             c[i]+=x;
             a-=x*d[i];
         }
-        }
         for(i=7;i<13;i++){
             int x=0;
         if(b>c[i]){
             x=b/d[i];
             c[i]+=x;
             b-=x*d[i];
-        }
         }
         cout<<c[0];
         for(i=1;i<13;i++)

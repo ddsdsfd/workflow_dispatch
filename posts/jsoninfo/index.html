@@ -6,22 +6,22 @@
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
 <title>Python 如何操作 Json？ - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Python 如何操作 Json？">
 <meta property="og:description" content="
-Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。阅读原文
+Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。阅读原文
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/jsoninfo/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-05-07T18:42:47+00:00">
-<meta property="article:modified_time" content="2021-10-02T02:59:35+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="Python 如何操作 Json？">
 <meta name=twitter:description content="
-Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。阅读原文
+Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。阅读原文
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/jsoninfo/><link rel=prev href=https://lruihao.cn/posts/posttest/><link rel=next href=https://lruihao.cn/posts/singlethreaddown/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Python 如何操作 Json？","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/jsoninfo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, JSON, 他山之石, Backend","wordcount":1557,"url":"https:\/\/lruihao.cn\/posts\/jsoninfo\/","datePublished":"2019-05-07T18:42:47+00:00","dateModified":"2021-10-02T02:59:35+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/jsoninfo/><link rel=prev href=https://lruihao.cn/posts/posttest/><link rel=next href=https://lruihao.cn/posts/singlethreaddown/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Python 如何操作 Json？","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/jsoninfo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, JSON, 他山之石, Backend","wordcount":1362,"url":"https:\/\/lruihao.cn\/posts\/jsoninfo\/","datePublished":"2019-05-07T18:42:47+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -89,8 +89,8 @@ Json（JavaScript Object Notation）它是一种轻量级的数据交换格式�
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">Python 如何操作 Json？</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-05-07>2019-05-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1557 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 4 分鐘&nbsp;<span id=/posts/jsoninfo/ class=leancloud_visitors data-flag-title="Python 如何操作 Json？">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-05-07>2019-05-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1362 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/posts/jsoninfo/ class=leancloud_visitors data-flag-title="Python 如何操作 Json？">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/posts/jsoninfo/images/1.jpg data-srcset="/posts/jsoninfo/images/1.jpg, /posts/jsoninfo/images/1.jpg 1.5x, /posts/jsoninfo/images/1.jpg 2x" data-sizes=auto alt=/posts/jsoninfo/images/1.jpg title=/posts/jsoninfo/images/1.jpg></div><div class="details toc" id=toc-static kept>
@@ -100,17 +100,17 @@ Json（JavaScript Object Notation）它是一种轻量级的数据交换格式�
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
-<li><a href=#json的数据格式>json的数据格式</a></li>
+<li><a href=#json-的数据格式>json 的数据格式</a></li>
 <li><a href=#jsondumps>json.dumps()</a></li>
 <li><a href=#jsonloads>json.loads()</a></li>
 <li><a href=#jsondump-和-jsonload>json.dump() 和 json.load()</a></li>
 </ul>
 </nav></div>
 </div><div class=content id=content><blockquote>
-<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&wfr=spider&for=pc" target=_blank rel="noopener noreffer">阅读原文</a></p>
+<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&wfr=spider&for=pc" target=_blank rel="noopener noreffer">阅读原文</a></p>
 </blockquote>
-<h1 id=json的数据格式>json的数据格式</h1>
-<p>在json中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”,就是一个json格式的数据，json的格式归纳下来，一般有以下几点：</p>
+<h1 id=json-的数据格式>json 的数据格式</h1>
+<p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>
 <ul>
 <li>对象通过键值对表现；</li>
 <li>键通过双引号包裹，后面跟冒号“:”，然后跟该键的值；</li>
@@ -121,35 +121,35 @@ Json（JavaScript Object Notation）它是一种轻量级的数据交换格式�
 </ul>
 <p>我们看一个略为复杂一点的例子：</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/2.jpg data-srcset="/posts/jsoninfo/images/2.jpg, images/2.jpg 1.5x, /posts/jsoninfo/images/2.jpg 2x" data-sizes=auto alt=/posts/jsoninfo/images/2.jpg title=/posts/jsoninfo/images/2.jpg></p>
-<p>上例则是一个典型的json格式的数据，强大的Python提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个json格式的数据，也可以将一个json格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p>
+<p>上例则是一个典型的 json 格式的数据，强大的 Python 提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个 json 格式的数据，也可以将一个 json 格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p>
 <h1 id=jsondumps>json.dumps()</h1>
-<p>json模块里的dumps函数是对数据进行编码，形成json格式的数据，我们看一下下面的例子：</p>
+<p>json 模块里的 dumps 函数是对数据进行编码，形成 json 格式的数据，我们看一下下面的例子：</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/3.jpg data-srcset="/posts/jsoninfo/images/3.jpg, images/3.jpg 1.5x, /posts/jsoninfo/images/3.jpg 2x" data-sizes=auto alt=/posts/jsoninfo/images/3.jpg title=/posts/jsoninfo/images/3.jpg></p>
-<p>通过输出的结果很容易看出，通过dumps方法使字典转换成为了json格式，虽然它们非常相似。其中，在dumps里的参数“sort_keys=True”，使得输出json后对key和value进行0~9、a~ z的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较json中的数据，因此，适当的排序是很有必要的。</p>
-<p>此外，“Indent”参数表示缩进的意思，它可以使得输出的Json看起来更加整齐好看，可读性更强，例如：</p>
+<p>通过输出的结果很容易看出，通过 dumps 方法使字典转换成为了 json 格式，虽然它们非常相似。其中，在 dumps 里的参数“sort_keys=True”，使得输出 json 后对 key 和 value 进行 0~9、a~ z 的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较 json 中的数据，因此，适当的排序是很有必要的。</p>
+<p>此外，“Indent”参数表示缩进的意思，它可以使得输出的 Json 看起来更加整齐好看，可读性更强，例如：</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/4.jpg data-srcset="/posts/jsoninfo/images/4.jpg, images/4.jpg 1.5x, /posts/jsoninfo/images/4.jpg 2x" data-sizes=auto alt=/posts/jsoninfo/images/4.jpg title=/posts/jsoninfo/images/4.jpg></p>
-<p>下面列举一下dumps（）的可填参数：</p>
+<p>下面列举一下 dumps（）的可填参数：</p>
 <ul>
-<li>skipkey：默认为False，当dict对象里的数据不是Python的基本数据类型；（str,unicode,int,long,float,bool,None）时，当skipkey为False，就会报错，如果skipkey为True，则可以跳过这类key；</li>
-<li>indent：如果填0或者不填，则按照一行进行打印，否则按照indent的数值显示前面的空格（正整数形式）；</li>
-<li>separators：分隔符，默认为“(',',':')”，它表示key之间用“,”隔开，key和value之间用“:”隔开；</li>
-<li>encoding：编码格式，默认值是UTF-8；</li>
-<li>sort_keys：对key、value进行排序，默认值是False，即不排序；</li>
-<li>ensure_ascii：默认为True，如果dict对象里含有none-ASCII的字符，则显示\uXX的格式，如果为False，则能正常显示出来；</li>
+<li>skipkey：默认为 False，当 dict 对象里的数据不是 Python 的基本数据类型；（str,unicode,int,long,float,bool,None）时，当 skipkey 为 False，就会报错，如果 skipkey 为 True，则可以跳过这类 key；</li>
+<li>indent：如果填 0 或者不填，则按照一行进行打印，否则按照 indent 的数值显示前面的空格（正整数形式）；</li>
+<li>separators：分隔符，默认为“(',',':')”，它表示 key 之间用“,”隔开，key 和 value 之间用“:”隔开；</li>
+<li>encoding：编码格式，默认值是 UTF-8；</li>
+<li>sort_keys：对 key、value 进行排序，默认值是 False，即不排序；</li>
+<li>ensure_ascii：默认为 True，如果 dict 对象里含有 none-ASCII 的字符，则显示、uXX 的格式，如果为 False，则能正常显示出来；</li>
 </ul>
 <h1 id=jsonloads>json.loads()</h1>
-<p>和dumps相反，loads函数则是将json格式的数据解码，转换为Python字典，我们看一下下面的例子：</p>
+<p>和 dumps 相反，loads 函数则是将 json 格式的数据解码，转换为 Python 字典，我们看一下下面的例子：</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/5.jpg data-srcset="/posts/jsoninfo/images/5.jpg, images/5.jpg 1.5x, /posts/jsoninfo/images/5.jpg 2x" data-sizes=auto alt=/posts/jsoninfo/images/5.jpg title=/posts/jsoninfo/images/5.jpg></p>
-<p>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为Unicode的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=&lsquo;utf-8&rsquo;)即可。</p>
+<p>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为 Unicode 的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=&lsquo;utf-8&rsquo;) 即可。</p>
 <h1 id=jsondump-和-jsonload>json.dump() 和 json.load()</h1>
-<p>相对于上面所讲的dumps和loads来说，dump和load函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
+<p>相对于上面所讲的 dumps 和 loads 来说，dump 和 load 函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/6.jpg data-srcset="/posts/jsoninfo/images/6.jpg, images/6.jpg 1.5x, /posts/jsoninfo/images/6.jpg 2x" data-sizes=auto alt=/posts/jsoninfo/images/6.jpg title=/posts/jsoninfo/images/6.jpg></p>
-<p>上例列举出了json的四个方法：dumps（）和dump（）、loads（）和load（）的简单使用方法，可见，Python对于json的处理相当方便，不像c++那样（谁用谁知道）。</p></div><div class=post-footer id=post-footer>
+<p>上例列举出了 json 的四个方法：dumps（）和 dump（）、loads（）和 load（）的简单使用方法，可见，Python 对于 json 的处理相当方便，不像 c++那样（谁用谁知道）。</p></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/68ec861e74bbfab691dfb538d8ed583ea56687a4 target=_blank title="commit by Cell(1024@lruihao.cn) 68ec861e74bbfab691dfb538d8ed583ea56687a4: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>68ec861</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>

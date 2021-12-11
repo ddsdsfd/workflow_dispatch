@@ -13,7 +13,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/dev-rules/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-08-15T18:30:31+00:00">
-<meta property="article:modified_time" content="2021-09-30T19:29:53+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="web 开发规则，代码规范">
@@ -22,10 +22,10 @@
 絕對不寫死程式
 不留不要用的、垃圾程式碼
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/dev-rules/><link rel=prev href=https://lruihao.cn/posts/phpform/><link rel=next href=https://lruihao.cn/posts/netbeans/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"web 开发规则，代码规范","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/dev-rules\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"PHP, JavaScript, Git, 总结, Fullstack","wordcount":2274,"url":"https:\/\/lruihao.cn\/posts\/dev-rules\/","datePublished":"2019-08-15T18:30:31+00:00","dateModified":"2021-09-30T19:29:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/dev-rules/><link rel=prev href=https://lruihao.cn/posts/phpform/><link rel=next href=https://lruihao.cn/posts/netbeans/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"web 开发规则，代码规范","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/dev-rules\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"PHP, JavaScript, Git, 总结, Fullstack","wordcount":2224,"url":"https:\/\/lruihao.cn\/posts\/dev-rules\/","datePublished":"2019-08-15T18:30:31+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -93,7 +93,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">web 开发规则，代码规范</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/fullstack/><i class="far fa-folder fa-fw"></i>Fullstack</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-08-15>2019-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 2274 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-08-15>2019-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 2224 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 5 分鐘&nbsp;<span id=/posts/dev-rules/ class=leancloud_visitors data-flag-title="web 开发规则，代码规范">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -173,37 +173,37 @@
 <h1 id=git>Git</h1>
 <ul>
 <li>Master 的 BUG 必須最少且趨近於零，为最稳定的版本</li>
-<li>每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复BUG、增加功能</li>
+<li>每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复 BUG、增加功能</li>
 <li>禁止 Commit IDE 的 project data</li>
 <li>禁止上傳垃圾程式碼</li>
-<li>Gitea編輯內容類似里程碑和版本描述時要使用Markdown格式</li>
+<li>Gitea 編輯內容類似里程碑和版本描述時要使用 Markdown 格式</li>
 </ul>
 <h2 id=分支branch>分支（Branch）</h2>
 <ul>
-<li>命名規則：應以此分支主要目的命名（修復什麼BUG，新增特定功能）<br>
-不可出現版本號，模組ID</li>
+<li>命名規則：應以此分支主要目的命名（修復什麼 BUG，新增特定功能）<br>
+不可出現版本號，模組 ID</li>
 <li>合併後的分支應刪除</li>
 </ul>
 <h2 id=commit>commit</h2>
 <ul>
-<li>遵循一個功能一個commit的原則</li>
+<li>遵循一個功能一個 commit 的原則</li>
 </ul>
 <h1 id=restful>Restful</h1>
 <ul>
-<li>資源名詞站在API的角度思考
+<li>資源名詞站在 API 的角度思考
 <ul>
-<li>複數名詞：可以複數筆資料，回傳結果為Array
+<li>複數名詞：可以複數筆資料，回傳結果為 Array
 舉例：GET/users 取得多筆使用者資料
 <ul>
-<li>刪除，放在複數名詞內，讓Router保持一致性</li>
-<li>增加，放在複數名詞內，讓Router保持一致性</li>
+<li>刪除，放在複數名詞內，讓 Router 保持一致性</li>
+<li>增加，放在複數名詞內，讓 Router 保持一致性</li>
 </ul>
 </li>
-<li>單數名詞：僅取得單筆資料，必須指定PK，兩兩一組，回傳結果為Object
-舉例：GET/user/{accont} 取得單筆使用者資料，必須指定PK</li>
+<li>單數名詞：僅取得單筆資料，必須指定 PK，兩兩一組，回傳結果為 Object
+舉例：GET/user/{accont} 取得單筆使用者資料，必須指定 PK</li>
 </ul>
 </li>
-<li>URL中一律不帶id參數</li>
+<li>URL 中一律不帶 id 參數</li>
 </ul>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -217,7 +217,7 @@
 </div>
 </div><h1 id=命名>命名</h1>
 <ul>
-<li>命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義!</li>
+<li>命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義！</li>
 <li>即使不會發生錯誤，程式碼英文大小寫也需明確區分。</li>
 </ul>
 <h2 id=語意>語意</h2>
@@ -243,12 +243,12 @@
 </tbody>
 </table>
 <h2 id=字母與分隔>字母與分隔</h2>
-<table style=background:#fff><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan=3></td></tr><tr><td>JavaScript</td><td><div style=color:#428bca;font-weight:700;text-align:center>駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan=2>全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan=2><div style=color:#428bca;font-weight:700;text-align:center>駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan=2><div style=color:#428bca;font-weight:700;text-align:center>駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan=2>-</td></tr></tbody></table>
+<table style=background:#fff><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan=3></td></tr><tr><td>JavaScript</td><td><div style=color:#428bca;font-weight:700;text-align:center>駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan=2>全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan=2><div style=color:#428bca;font-weight:700;text-align:center>駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan=2><div style=color:#428bca;font-weight:700;text-align:center>駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL 語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan=2>-</td></tr></tbody></table>
 <h1 id=通用>通用</h1>
 <ul>
 <li>程式碼撰寫</li>
 <li>每個函數應該註解，註解應包含函數工能說明、引數說明。</li>
-<li>不必要的代碼不要寫，也禁止放到註解裡面!</li>
+<li>不必要的代碼不要寫，也禁止放到註解裡面！</li>
 <li>if-else 的 {} 嚴禁省略。</li>
 <li>{} 起始一律跟在 前一個功能的尾巴，禁止分行</li>
 </ul>
@@ -302,7 +302,7 @@
 </li>
 <li>函數 (Function, Methd)
 <ul>
-<li>函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 (引數型態、引數英文名稱、引數說明)、 回傳值內容 (回傳值型態、回傳值說明)</li>
+<li>函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 （引數型態、引數英文名稱、引數說明）、 回傳值內容 （回傳值型態、回傳值說明）</li>
 </ul>
 </li>
 <li>類 (Class)
@@ -313,14 +313,14 @@
 </li>
 <li>其他
 <ul>
-<li>連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</li>
+<li>連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</li>
 </ul>
 </li>
 </ul>
 <h1 id=html>HTML</h1>
 <h2 id=程式碼撰寫>程式碼撰寫</h2>
 <ul>
-<li>禁止在 HTML 使用 <code>&lt;style></code>、<code>&lt;script></code>，一律使用外部檔案引用方式引用 CSS、JavaScript檔案。</li>
+<li>禁止在 HTML 使用 <code>&lt;style></code>、<code>&lt;script></code>，一律使用外部檔案引用方式引用 CSS、JavaScript 檔案。</li>
 <li>HTML 標籤需成雙成對，有頭有尾。</li>
 <li>區塊標籤：<code>&lt;tag>&lt;/tag></code></li>
 <li>單標籤：<code>&lt;tag /></code></li>
@@ -366,7 +366,7 @@ color
 </blockquote>
 <h2 id=其他>其他</h2>
 <blockquote>
-<p>連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</p>
+<p>連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</p>
 </blockquote>
 <h1 id=css>CSS</h1>
 <h2 id=程式碼撰寫-1>程式碼撰寫</h2>
@@ -392,7 +392,7 @@ color
 }
 </code></pre></td></tr></table>
 </div>
-</div><p>錯誤 (這是允許的，但造成程式碼閱讀困難，故禁止)</p>
+</div><p>錯誤 （這是允許的，但造成程式碼閱讀困難，故禁止）</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -438,7 +438,7 @@ color
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>/**
- * 使用者ID
+ * 使用者 ID
  * @type {String}
  */
 var userId = &#39;Hello&#39;;
@@ -483,7 +483,7 @@ var userId = &#39;Hello&#39;;
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>/**
  * 取得使用者
- * @param {Int} userId 使用者ID
+ * @param {Int} userId 使用者 ID
  * @param {Object} [options] 其他選項
  * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
  * @returns {Object} 使用者資料
@@ -528,7 +528,7 @@ var getUser = function(userId, options){
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>/**
- * 使用者ID
+ * 使用者 ID
  * @type {String}
  */
 $userId = &#39;Hello&#39;;
@@ -574,10 +574,10 @@ $userId = &#39;Hello&#39;;
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>/**
  * 取得使用者
- * @param int userId 使用者ID
+ * @param int userId 使用者 ID
  * @param object options 其他選項
  * @option string options[&#39;query&#39;] 查詢關鍵字
- * @uses $_POST[&#39;role_id&#39;] 從前端以POST取得角色ID
+ * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
  * @returns object 使用者資料
  */
 function getUser($userId, $options){
@@ -595,7 +595,7 @@ function getUser($userId, $options){
 <h2 id=sql-撰寫>SQL 撰寫</h2>
 <ul>
 <li>屬於 SQL 語法使用大寫 (SELECT, WHERE, INSERT etc..)</li>
-<li>屬於使用者自己定義的使用小寫 (表名 table name, 欄位名 column name etc..)</li>
+<li>屬於使用者自己定義的使用小寫 （表名 table name, 欄位名 column name etc..)</li>
 <li>表名、欄位名前後需加上 `</li>
 </ul>
 <p><strong>Example</strong></p>
@@ -640,8 +640,8 @@ function getUser($userId, $options){
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-09-30&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/21d1f053b5cccc6e6921d2e0dfaa4cf6eecc3c00 target=_blank title="commit by Cell(1024@lruihao.cn) 21d1f053b5cccc6e6921d2e0dfaa4cf6eecc3c00: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>21d1f05</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -660,7 +660,7 @@ function getUser($userId, $options){
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/phpform/ class=prev rel=prev title=简单评论模块--php表单练习><i class="fas fa-angle-left fa-fw"></i>简单评论模块--php表单练习</a>
+<div class=post-nav><a href=/posts/phpform/ class=prev rel=prev title="简单评论模块--php 表单练习"><i class="fas fa-angle-left fa-fw"></i>简单评论模块--php 表单练习</a>
 <a href=/posts/netbeans/ class=next rel=next title="netBeans IDE 开发设置">netBeans IDE 开发设置<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>

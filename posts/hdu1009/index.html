@@ -4,20 +4,20 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>HDU 1009 FatMouse' Trade(贪心) - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="HDU 1009 FatMouse' Trade(贪心)">
-<meta property="og:description" content="题目大意： 题目链接 老鼠有M磅猫食 ,有N个房间 ,每个房间前有一只猫 ,房间里有老鼠最喜欢的食品 J[i] ,若要得到房间的食物 ,必须付出相应的猫食F[i] ,当然这只老鼠没必要每次都付出所有的F[i]，若它付出F[i]的a%， 则得到J[i]的a%，求老鼠能吃到的最多的食物。 Sample Input 5 3 7 2 4 3 5 2 20 3 25 18 24 15 15 10 -1 -1 Sample">
+<title>HDU 1009 FatMouse' Trade（贪心） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="HDU 1009 FatMouse' Trade（贪心）">
+<meta property="og:description" content="题目大意： 题目链接 老鼠有 M 磅猫食 , 有 N 个房间 , 每个房间前有一只猫 , 房间里有老鼠最喜欢的食品 J[i] , 若要得到房间的食物 , 必须付出相应的猫食 F[i] , 当然这只老鼠没必要每次都付出所有的 F[i]，若它付出 F[i] 的 a%， 则得到 J[i] 的 a%，求老鼠能吃到的最多的食物。 Sample Input 5 3 7 2 4 3 5 2 20 3 25 18 24 15 15 10 -1 -1 Sample Output 13.333 31.500 分析 老鼠要用">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hdu1009/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-04-12T16:43:19+00:00">
-<meta property="article:modified_time" content="2021-10-01T15:02:15+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="HDU 1009 FatMouse' Trade(贪心)">
-<meta name=twitter:description content="题目大意： 题目链接 老鼠有M磅猫食 ,有N个房间 ,每个房间前有一只猫 ,房间里有老鼠最喜欢的食品 J[i] ,若要得到房间的食物 ,必须付出相应的猫食F[i] ,当然这只老鼠没必要每次都付出所有的F[i]，若它付出F[i]的a%， 则得到J[i]的a%，求老鼠能吃到的最多的食物。 Sample Input 5 3 7 2 4 3 5 2 20 3 25 18 24 15 15 10 -1 -1 Sample">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=twitter:title content="HDU 1009 FatMouse' Trade（贪心）">
+<meta name=twitter:description content="题目大意： 题目链接 老鼠有 M 磅猫食 , 有 N 个房间 , 每个房间前有一只猫 , 房间里有老鼠最喜欢的食品 J[i] , 若要得到房间的食物 , 必须付出相应的猫食 F[i] , 当然这只老鼠没必要每次都付出所有的 F[i]，若它付出 F[i] 的 a%， 则得到 J[i] 的 a%，求老鼠能吃到的最多的食物。 Sample Input 5 3 7 2 4 3 5 2 20 3 25 18 24 15 15 10 -1 -1 Sample Output 13.333 31.500 分析 老鼠要用">
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu1009/><link rel=prev href=https://lruihao.cn/posts/gitbookuse/><link rel=next href=https://lruihao.cn/posts/wex5/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"HDU 1009 FatMouse' Trade(贪心)","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu1009\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, 贪心, HDU","wordcount":337,"url":"https:\/\/lruihao.cn\/posts\/hdu1009\/","datePublished":"2019-04-12T16:43:19+00:00","dateModified":"2021-10-01T15:02:15+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu1009/><link rel=prev href=https://lruihao.cn/posts/gitbookuse/><link rel=next href=https://lruihao.cn/posts/wex5/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"HDU 1009 FatMouse' Trade（贪心）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu1009\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, 贪心, HDU","wordcount":312,"url":"https:\/\/lruihao.cn\/posts\/hdu1009\/","datePublished":"2019-04-12T16:43:19+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -83,10 +83,10 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">HDU 1009 FatMouse' Trade(贪心)</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animated flipInX">HDU 1009 FatMouse' Trade（贪心）</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-04-12>2019-04-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 337 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/hdu1009/ class=leancloud_visitors data-flag-title="HDU 1009 FatMouse' Trade(贪心)">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-04-12>2019-04-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 312 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/hdu1009/ class=leancloud_visitors data-flag-title="HDU 1009 FatMouse' Trade（贪心）">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -107,7 +107,7 @@
 </nav></div>
 </div><div class=content id=content><h1 id=题目大意>题目大意：</h1>
 <p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1009" target=_blank rel="noopener noreffer">题目链接</a><br>
-老鼠有M磅猫食 ,有N个房间 ,每个房间前有一只猫 ,房间里有老鼠最喜欢的食品 J[i] ,若要得到房间的食物 ,必须付出相应的猫食F[i] ,当然这只老鼠没必要每次都付出所有的F[i]，若它付出F[i]的a%， 则得到J[i]的a%，求老鼠能吃到的最多的食物。</p>
+老鼠有 M 磅猫食 , 有 N 个房间 , 每个房间前有一只猫 , 房间里有老鼠最喜欢的食品 J[i] , 若要得到房间的食物 , 必须付出相应的猫食 F[i] , 当然这只老鼠没必要每次都付出所有的 F[i]，若它付出 F[i] 的 a%， 则得到 J[i] 的 a%，求老鼠能吃到的最多的食物。</p>
 <h2 id=sample-input>Sample Input</h2>
 <pre><code>5 3
 7 2
@@ -124,7 +124,7 @@
 31.500
 </code></pre>
 <h1 id=分析>分析</h1>
-<p>老鼠要用最少的猫粮来换取最多的食物 ,也就是J[i]/F[i]越大越好 ,所以按照J[i]/F[i]进行降序排列 ,然后依次用猫粮来换取食物 ,当所剩下的猫粮不足以完全换取食物 ,能换多少是多少。</p>
+<p>老鼠要用最少的猫粮来换取最多的食物 , 也就是 J[i]/F[i] 越大越好 , 所以按照 J[i]/F[i] 进行降序排列 , 然后依次用猫粮来换取食物 , 当所剩下的猫粮不足以完全换取食物 , 能换多少是多少。</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -217,8 +217,8 @@
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-01&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1 target=_blank title="commit by Cell(1024@lruihao.cn) e372cc4ddbf66fd741e1e0b0e9becc797b3b6bb1: Feat: 恢復 2018、2019 年部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>e372cc4</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -227,7 +227,7 @@
 <a class=link-to-markdown href=/posts/hdu1009/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hdu1009/ data-title="HDU 1009 FatMouse' Trade(贪心)" data-hashtags=ACM,贪心,HDU><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hdu1009/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hdu1009/ data-title="HDU 1009 FatMouse' Trade(贪心)" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hdu1009/ data-title="HDU 1009 FatMouse' Trade(贪心)"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hdu1009/ data-title="HDU 1009 FatMouse' Trade（贪心）" data-hashtags=ACM,贪心,HDU><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hdu1009/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hdu1009/ data-title="HDU 1009 FatMouse' Trade（贪心）" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hdu1009/ data-title="HDU 1009 FatMouse' Trade（贪心）"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>
@@ -238,7 +238,7 @@
 </section>
 </div>
 <div class=post-nav><a href=/posts/gitbookuse/ class=prev rel=prev title="GitBook 使用教程"><i class="fas fa-angle-left fa-fw"></i>GitBook 使用教程</a>
-<a href=/posts/wex5/ class=next rel=next title=WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题<i class="fas fa-angle-right fa-fw"></i></a></div>
+<a href=/posts/wex5/ class=next rel=next title="WeX5 在 win8 或者 win10 操作系统 studio 中新建。w 向导或其他的编辑窗口显示不全问题">WeX5 在 win8 或者 win10 操作系统 studio 中新建。w 向导或其他的编辑窗口显示不全问题<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

@@ -6,7 +6,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
 <title>php 函数学习 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="php 函数学习">
 <meta property="og:description" content="
-练习php函数的基本使用。
+练习 php 函数的基本使用。
 注：
 必选参数在可选参数的前面。
 可在函数中定义函数，需要先调用外层函数才能调用内层函数。
@@ -14,20 +14,20 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/phpfunc/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-07-15T11:37:33+00:00">
-<meta property="article:modified_time" content="2021-10-02T19:01:49+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="php 函数学习">
 <meta name=twitter:description content="
-练习php函数的基本使用。
+练习 php 函数的基本使用。
 注：
 必选参数在可选参数的前面。
 可在函数中定义函数，需要先调用外层函数才能调用内层函数。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/phpfunc/><link rel=prev href=https://lruihao.cn/posts/wamproot/><link rel=next href=https://lruihao.cn/posts/phpform/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"php 函数学习","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/phpfunc\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"PHP, Backend","wordcount":108,"url":"https:\/\/lruihao.cn\/posts\/phpfunc\/","datePublished":"2019-07-15T11:37:33+00:00","dateModified":"2021-10-02T19:01:49+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/phpfunc/><link rel=prev href=https://lruihao.cn/posts/wamproot/><link rel=next href=https://lruihao.cn/posts/phpform/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"php 函数学习","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/phpfunc\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"PHP, Backend","wordcount":106,"url":"https:\/\/lruihao.cn\/posts\/phpfunc\/","datePublished":"2019-07-15T11:37:33+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -95,7 +95,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">php 函数学习</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/php/><i class="far fa-folder fa-fw"></i>PHP</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-07-15>2019-07-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 108 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-07-15>2019-07-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 106 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/phpfunc/ class=leancloud_visitors data-flag-title="php 函数学习">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -106,7 +106,7 @@
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div>
 </div><div class=content id=content><blockquote>
-<p>练习php函数的基本使用。<br>
+<p>练习 php 函数的基本使用。<br>
 注：<br>
 必选参数在可选参数的前面。<br>
 可在函数中定义函数，需要先调用外层函数才能调用内层函数。</p>
@@ -153,12 +153,12 @@
 <span class=cp>?&gt;</span><span class=err>
 </span></code></pre></td></tr></table>
 </div>
-</div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/table.png data-srcset="/posts/phpfunc/images/table.png, images/table.png 1.5x, /posts/phpfunc/images/table.png 2x" data-sizes=auto alt=/posts/phpfunc/images/table.png title=php创建表格></p></div><div class=post-footer id=post-footer>
+</div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/table.png data-srcset="/posts/phpfunc/images/table.png, images/table.png 1.5x, /posts/phpfunc/images/table.png 2x" data-sizes=auto alt=/posts/phpfunc/images/table.png title="php 创建表格"></p></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/d5a152d3502ffeceb83f55c643aa04aeeb03352f target=_blank title="commit by Cell(1024@lruihao.cn) d5a152d3502ffeceb83f55c643aa04aeeb03352f: Feat: 迁移 hexo 所有博客内容到 hugo">
-<i class="fas fa-hashtag fa-fw"></i>d5a152d</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -178,7 +178,7 @@
 </section>
 </div>
 <div class=post-nav><a href=/posts/wamproot/ class=prev rel=prev title="WAMPServer 自定义网站根目录等设置"><i class="fas fa-angle-left fa-fw"></i>WAMPServer 自定义网站根目录等设置</a>
-<a href=/posts/phpform/ class=next rel=next title=简单评论模块--php表单练习>简单评论模块--php表单练习<i class="fas fa-angle-right fa-fw"></i></a></div>
+<a href=/posts/phpform/ class=next rel=next title="简单评论模块--php 表单练习">简单评论模块--php 表单练习<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

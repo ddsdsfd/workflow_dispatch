@@ -35,7 +35,7 @@
 </tbody>
 </table>
 <h3 id="流水线加速比">流水线加速比</h3>
-<p>完成一批任务,不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p>
+<p>完成一批任务，不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p>
 <p>公式： S=不使用流水线执行时间/使用流水线执行时间</p>
 <p>流水线加速比越高越好，说明使用流水线的效果。</p>
 <h3 id="流水线的效率">流水线的效率</h3>
@@ -45,7 +45,7 @@
 <h3 id="其他">其他</h3>
 <h4 id="主机">主机</h4>
 <p></p>
-<h4 id="cisc和risc">CISC和RISC</h4>
+<h4 id="cisc-和-risc">CISC 和 RISC</h4>
 <table>
 <thead>
 <tr>
@@ -59,10 +59,10 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">CISC(复杂指令集)</td>
+<td style="text-align:center">CISC（复杂指令集）</td>
 <td style="text-align:center">数量多，使用频率差别大，可变长格式</td>
 <td style="text-align:center">支持多种</td>
-<td style="text-align:center">微程序控制技术(微码)</td>
+<td style="text-align:center">微程序控制技术（微码）</td>
 <td style="text-align:center">研制周期长</td>
 <td></td>
 </tr>
@@ -75,8 +75,8 @@
 <td></td>
 </tr>
 <tr>
-<td style="text-align:center">RISC(精简指令集)</td>
-<td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有Load/Store操作内存</td>
+<td style="text-align:center">RISC（精简指令集）</td>
+<td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有 Load/Store 操作内存</td>
 <td style="text-align:center">支持方式少</td>
 <td style="text-align:center">增加了通用寄存器；硬布线逻辑控制为主；适合采用流水线</td>
 <td style="text-align:center">优化编码，有效支持高级语言</td>

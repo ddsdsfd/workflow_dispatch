@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶">
+<title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶">
 <meta property="og:description" content="
         
             解決痛點
@@ -17,10 +17,10 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/github-actions/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-04T23:46:49+08:00">
-<meta property="article:modified_time" content="2021-10-05T01:54:30+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶">
+<meta name=twitter:title content="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶">
 <meta name=twitter:description content="
         
             解決痛點
@@ -30,10 +30,10 @@
 也就是説實現了在線寫靜態博客的需求。
         
     ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/github-actions/><link rel=prev href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=next href=https://lruihao.cn/posts/hugo-admin/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/github-actions\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, Github Actions, Git, 腾讯云cos桶","wordcount":589,"url":"https:\/\/lruihao.cn\/posts\/github-actions\/","datePublished":"2021-10-04T23:46:49+08:00","dateModified":"2021-10-05T01:54:30+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/github-actions/><link rel=prev href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=next href=https://lruihao.cn/posts/hugo-admin/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/github-actions\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, Github Actions, Git, 腾讯云 cos 桶","wordcount":589,"url":"https:\/\/lruihao.cn\/posts\/github-actions\/","datePublished":"2021-10-04T23:46:49+08:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -99,10 +99,10 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animated flipInX">Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a>&nbsp;<a href=/categories/git/><i class="far fa-folder fa-fw"></i>Git</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-04>2021-10-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 589 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/github-actions/ class=leancloud_visitors data-flag-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶">
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/github-actions/ class=leancloud_visitors data-flag-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -122,7 +122,7 @@
 <li><a href=#配置-cos-密鑰>配置 COS 密鑰</a></li>
 </ul>
 </li>
-<li><a href=#cos-自動同步-備用>COS 自動同步 (備用)</a></li>
+<li><a href=#cos-自動同步-備用>COS 自動同步 （備用）</a></li>
 </ul>
 </li>
 </ul>
@@ -259,7 +259,7 @@
 <p>至此，Github Pages 和 COS 都已經可以通過 Github Actions 自動部署了，有部署記錄后，<br>
 打開 Lruihao/hugo-blog -> Actions 可以看到構建過程和結果，構建失敗也會收到 Github 發給你的郵件。</p>
 </blockquote>
-<h2 id=cos-自動同步-備用>COS 自動同步 (備用)</h2>
+<h2 id=cos-自動同步-備用>COS 自動同步 （備用）</h2>
 <p>本小節內容和 Github Actions 無關，僅作為 COS 備用上傳方式。</p>
 <ul>
 <li>COSBrowser</li>
@@ -279,8 +279,8 @@
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-05&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/f325c5e72ef42acdfa803e117b3cfe97fcd43b42 target=_blank title="commit by Cell(1024@lruihao.cn) f325c5e72ef42acdfa803e117b3cfe97fcd43b42: Docs: 『菠菜眾長』内容更新 2021-10-05 Tue 01:54:29">
-<i class="fas fa-hashtag fa-fw"></i>f325c5e</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -289,12 +289,12 @@
 <a class=link-to-markdown href=/posts/github-actions/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶" data-hashtags="hugo,Github Actions,Git,腾讯云cos桶"><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/github-actions/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶" data-hashtags="hugo,Github Actions,Git,腾讯云 cos 桶"><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/github-actions/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hugo/>hugo</a>,&nbsp;<a href=/tags/github-actions/>Github Actions</a>,&nbsp;<a href=/tags/git/>Git</a>,&nbsp;<a href=/tags/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E6%A1%B6/>腾讯云cos桶</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hugo/>hugo</a>,&nbsp;<a href=/tags/github-actions/>Github Actions</a>,&nbsp;<a href=/tags/git/>Git</a>,&nbsp;<a href=/tags/%E8%85%BE%E8%AE%AF%E4%BA%91-cos-%E6%A1%B6/>腾讯云 cos 桶</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>

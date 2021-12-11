@@ -5,19 +5,19 @@
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
 <title>设置单篇文章不打赏、首页不显示文章 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="设置单篇文章不打赏、首页不显示文章">
-<meta property="og:description" content="不打赏 出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。 原理： 因为默认的变量值为false,!post.noreward就是true了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成true，取反后就是f">
+<meta property="og:description" content="不打赏 出于一些特殊的原因，可能会希望 hexo 博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。 原理： 因为默认的变量值为 false,!post.noreward 就是 true 了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成 true，取反后就是 false, 就不会显示了打赏模块了。 修改 post 模板 打开以下路径文件">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/noreward/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-11-06T13:06:29+00:00">
-<meta property="article:modified_time" content="2021-10-02T11:43:05+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="设置单篇文章不打赏、首页不显示文章">
-<meta name=twitter:description content="不打赏 出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。 原理： 因为默认的变量值为false,!post.noreward就是true了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成true，取反后就是f">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=twitter:description content="不打赏 出于一些特殊的原因，可能会希望 hexo 博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。 原理： 因为默认的变量值为 false,!post.noreward 就是 true 了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成 true，取反后就是 false, 就不会显示了打赏模块了。 修改 post 模板 打开以下路径文件">
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/noreward/><link rel=prev href=https://lruihao.cn/posts/js-device/><link rel=next href=https://lruihao.cn/posts/next-pdf/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"设置单篇文章不打赏、首页不显示文章","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/noreward\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hexo","wordcount":506,"url":"https:\/\/lruihao.cn\/posts\/noreward\/","datePublished":"2018-11-06T13:06:29+00:00","dateModified":"2021-10-02T11:43:05+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/noreward/><link rel=prev href=https://lruihao.cn/posts/js-device/><link rel=next href=https://lruihao.cn/posts/next-pdf/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"设置单篇文章不打赏、首页不显示文章","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/noreward\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hexo","wordcount":443,"url":"https:\/\/lruihao.cn\/posts\/noreward\/","datePublished":"2018-11-06T13:06:29+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -85,8 +85,8 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">设置单篇文章不打赏、首页不显示文章</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hexo/><i class="far fa-folder fa-fw"></i>hexo</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-11-06>2018-11-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 506 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/noreward/ class=leancloud_visitors data-flag-title=设置单篇文章不打赏、首页不显示文章>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-11-06>2018-11-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 443 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/noreward/ class=leancloud_visitors data-flag-title=设置单篇文章不打赏、首页不显示文章>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -100,7 +100,7 @@
 <ul>
 <li><a href=#不打赏>不打赏</a>
 <ul>
-<li><a href=#修改post模板>修改post模板</a></li>
+<li><a href=#修改-post-模板>修改 post 模板</a></li>
 <li><a href=#文章内使用>文章内使用</a></li>
 <li><a href=#其他>其他</a>
 <ul>
@@ -116,11 +116,11 @@
 </nav></div>
 </div><div class=content id=content><h2 id=不打赏>不打赏</h2>
 <blockquote>
-<p>出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。<br>
+<p>出于一些特殊的原因，可能会希望 hexo 博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。<br>
 <strong>原理：</strong><br>
-因为默认的变量值为false,!post.noreward就是true了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成true，取反后就是false,就不会显示了打赏模块了。</p>
+因为默认的变量值为 false,!post.noreward 就是 true 了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成 true，取反后就是 false, 就不会显示了打赏模块了。</p>
 </blockquote>
-<h3 id=修改post模板>修改post模板</h3>
+<h3 id=修改-post-模板>修改 post 模板</h3>
 <p>打开以下路径文件</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -130,7 +130,7 @@
 <pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig
 </code></pre></td></tr></table>
 </div>
-</div><p>查找reward关键词，大概在378行，并添加内容。</p>
+</div><p>查找 reward 关键词，大概在 378 行，并添加内容。</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=images/1.png data-srcset="/posts/noreward/images/1.png, images/1.png 1.5x, /posts/noreward/images/1.png 2x" data-sizes=auto alt=/posts/noreward/images/1.png title=/posts/noreward/images/1.png></p>
 <h3 id=文章内使用>文章内使用</h3>
 <p>在头部加上关键词<code>noreward: true</code>，比如本文头部。</p>
@@ -151,21 +151,21 @@
 title: 设置单篇文章不打赏
 date: 2018-11-06 13:06:29
 tags:
-- hexo博客
-categories: hexo博客
+- hexo 博客
+categories: hexo 博客
 noreward: true
 notshow: false
 ---
 </code></pre></td></tr></table>
 </div>
 </div><h3 id=其他>其他</h3>
-<p><strong>本地调试时修改完后记得重启hexo,只要是修改了布局文件就要重新<code>hexo s</code>,修改文章内容等就可以不需要重启，<del>效果如本文</del></strong>
-<del>ps: 小声bb,如果有打赏的冲动换一篇文章就是了，嘘！</del></p>
+<p><strong>本地调试时修改完后记得重启 hexo, 只要是修改了布局文件就要重新<code>hexo s</code>, 修改文章内容等就可以不需要重启，<del>效果如本文</del></strong>
+<del>ps: 小声 bb, 如果有打赏的冲动换一篇文章就是了，嘘！</del></p>
 <h4 id=其他-1>其他</h4>
-<p>顺手改了一下tags的位置，知道tags那一块移到喜欢的位置就好了。</p>
+<p>顺手改了一下 tags 的位置，知道 tags 那一块移到喜欢的位置就好了。</p>
 <h2 id=首页不显示文章>首页不显示文章</h2>
 <p>同理可得找到主题布局文件 <code>layout/index.swig</code></p>
-<p>找到一个for循环，在for循环里面加一个判断就行了。</p>
+<p>找到一个 for 循环，在 for 循环里面加一个判断就行了。</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -188,8 +188,8 @@ notshow: false
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/71ffa14a1f2bbbee488642a9117588f81b87e1f4 target=_blank title="commit by Cell(1024@lruihao.cn) 71ffa14a1f2bbbee488642a9117588f81b87e1f4: Feat: 恢復 2021 年之前部分博客內容">
-<i class="fas fa-hashtag fa-fw"></i>71ffa14</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -208,7 +208,7 @@ notshow: false
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/js-device/ class=prev rel=prev title=js判断用户设备类型及平台><i class="fas fa-angle-left fa-fw"></i>js判断用户设备类型及平台</a>
+<div class=post-nav><a href=/posts/js-device/ class=prev rel=prev title="js 判断用户设备类型及平台"><i class="fas fa-angle-left fa-fw"></i>js 判断用户设备类型及平台</a>
 <a href=/posts/next-pdf/ class=next rel=next title=next添加支持pdf>next添加支持pdf<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>

@@ -1,9 +1,9 @@
-# linux编程初体验
+# linux 编程初体验
 
 > 在 Linux 上编译 c 语言文件。
 
-### 打开vim编辑器
-(没有就用vi,或者先安装vim`sudo apt-get install vim`)
+### 打开 vim 编辑器
+（没有就用 vi, 或者先安装 vim`sudo apt-get install vim`)
 ```
 $ vim
 ```
@@ -14,7 +14,7 @@ $ vim
 ![](images/ubuntu.png)
 
 首先按`Esc`再`:`进入末行命令  
-再保存为hello.c文件后退出
+再保存为 hello.c 文件后退出
 ```
 : w hello.c
 : q

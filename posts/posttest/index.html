@@ -6,7 +6,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
 <title>python 发送 post 请求进行简单的接口测试 - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="python 发送 post 请求进行简单的接口测试">
 <meta property="og:description" content="
-通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：
+通过 requests 可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：
 
 
 requests.get()
@@ -16,22 +16,22 @@ requests.post()
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/posttest/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-05-07T18:17:05+00:00">
-<meta property="article:modified_time" content="2021-10-02T19:01:49+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="python 发送 post 请求进行简单的接口测试">
 <meta name=twitter:description content="
-通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：
+通过 requests 可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：
 
 
 requests.get()
 requests.post()
 最近帮朋友的项目做一个小需求，需要把后台数据定期打包发送到微信群，麻小科技涛哥给了我一个接口，post 访问。
 ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/posttest/><link rel=prev href=https://lruihao.cn/posts/urlreader/><link rel=next href=https://lruihao.cn/posts/jsoninfo/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"python 发送 post 请求进行简单的接口测试","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/posttest\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, HTTP, Backend","wordcount":244,"url":"https:\/\/lruihao.cn\/posts\/posttest\/","datePublished":"2019-05-07T18:17:05+00:00","dateModified":"2021-10-02T19:01:49+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/posttest/><link rel=prev href=https://lruihao.cn/posts/urlreader/><link rel=next href=https://lruihao.cn/posts/jsoninfo/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"python 发送 post 请求进行简单的接口测试","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/posttest\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, HTTP, Backend","wordcount":195,"url":"https:\/\/lruihao.cn\/posts\/posttest\/","datePublished":"2019-05-07T18:17:05+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -99,7 +99,7 @@ requests.post()
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">python 发送 post 请求进行简单的接口测试</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-05-07>2019-05-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 244 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-05-07>2019-05-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 195 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id=/posts/posttest/ class=leancloud_visitors data-flag-title="python 发送 post 请求进行简单的接口测试">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -110,7 +110,7 @@ requests.post()
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div>
 </div><div class=content id=content><blockquote>
-<p>通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
+<p>通过 requests 可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
 </blockquote>
 <ul>
 <li>requests.get()</li>
@@ -145,11 +145,11 @@ requests.post()
 <span class=kn>import</span> <span class=nn>requests</span>
 
 <span class=s2>&#34;&#34;&#34;
-</span><span class=s2>通过requests可以向某个地址发送请求requests.post(url,json date)
-</span><span class=s2>post方法还有其他参数，如header等
+</span><span class=s2>通过 requests 可以向某个地址发送请求 requests.post(url,json date)
+</span><span class=s2>post 方法还有其他参数，如 header 等
 </span><span class=s2>&#34;&#34;&#34;</span>
 
-<span class=c1># post发送的数据</span>
+<span class=c1># post 发送的数据</span>
 <span class=n>postData</span> <span class=o>=</span> <span class=p>{</span>
     <span class=c1># &#39;username&#39;:&#39;test&#39;,</span>
     <span class=c1># &#39;password&#39;:&#39;123456&#39;,</span>
@@ -163,13 +163,13 @@ requests.post()
 <span class=nb>print</span><span class=p>(</span><span class=n>response</span><span class=p>)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>运行后会在屏幕打印出返回的json数据
+</div><p>运行后会在屏幕打印出返回的 json 数据
 <img class=lazyload src=/svg/loading.min.svg data-src=images/1.png data-srcset="/posts/posttest/images/1.png, images/1.png 1.5x, /posts/posttest/images/1.png 2x" data-sizes=auto alt=/posts/posttest/images/1.png title=返回数据></p></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/d5a152d3502ffeceb83f55c643aa04aeeb03352f target=_blank title="commit by Cell(1024@lruihao.cn) d5a152d3502ffeceb83f55c643aa04aeeb03352f: Feat: 迁移 hexo 所有博客内容到 hugo">
-<i class="fas fa-hashtag fa-fw"></i>d5a152d</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>

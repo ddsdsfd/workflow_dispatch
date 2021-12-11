@@ -10,15 +10,15 @@
             信息
         
         
-            cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，
+            cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，
 功能虽好，但是还是先友情提示！
-开放API是一个很危险的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！
+开放 API 是一个很危险的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！
         
     ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/cos-album/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2019-11-24T10:52:34+00:00">
-<meta property="article:modified_time" content="2021-10-02T23:41:25+08:00">
+<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="利用腾讯云为静态页面添加“动态”相册">
@@ -27,15 +27,15 @@
             信息
         
         
-            cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，
+            cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，
 功能虽好，但是还是先友情提示！
-开放API是一个很危险的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！
+开放 API 是一个很危险的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！
         
     ">
-<meta name=application-name content="Lruihao's Note">
-<meta name=apple-mobile-web-app-title content="Lruihao's Note"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=application-name content="菠菜眾長">
+<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/cos-album/><link rel=prev href=https://lruihao.cn/posts/subl_imgpaste2/><link rel=next href=https://lruihao.cn/posts/cell-blog-install/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"利用腾讯云为静态页面添加“动态”相册","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/cos-album\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"CosAlbum, 腾讯云cos桶, Frontend, JavaScript","wordcount":797,"url":"https:\/\/lruihao.cn\/posts\/cos-album\/","datePublished":"2019-11-24T10:52:34+00:00","dateModified":"2021-10-02T23:41:25+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/cos-album/><link rel=prev href=https://lruihao.cn/posts/subl_imgpaste2/><link rel=next href=https://lruihao.cn/posts/cell-blog-install/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@latest/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"利用腾讯云为静态页面添加“动态”相册","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/cos-album\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"CosAlbum, 腾讯云 cos 桶, Frontend, JavaScript","wordcount":780,"url":"https:\/\/lruihao.cn\/posts\/cos-album\/","datePublished":"2019-11-24T10:52:34+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -103,7 +103,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">利用腾讯云为静态页面添加“动态”相册</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-11-24>2019-11-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 797 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-11-24>2019-11-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 780 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/cos-album/ class=leancloud_visitors data-flag-title=利用腾讯云为静态页面添加“动态”相册>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -136,9 +136,9 @@
 <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
 </div>
 <div class=details-content>
-<div class=admonition-content>cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，<br>
+<div class=admonition-content>cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，<br>
 <strong><span style=color:#428bca>功能虽好，但是还是先友情提示！</span></strong><br>
-开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
+开放 API 是一个<strong>很危险</strong>的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
 </div>
 </div>
 <h1 id=创建腾讯云-cos-存储桶>创建腾讯云 cos 存储桶</h1>
@@ -149,11 +149,11 @@
 <li>跨域访问 CORS 设置，自己随意</li>
 </ol>
 <h1 id=上传照片>上传照片</h1>
-<p>首先我这个 cos 相册，相册分类就是文件夹分类，所以cos桶里面先新建不同的文件夹，<strong>文件夹名称就是相册名称</strong>，
-每个相册里面需要放置一张名称为**“封面.jpg”**的图片作为该相册的封面。</p>
+<p>首先我这个 cos 相册，相册分类就是文件夹分类，所以 cos 桶里面先新建不同的文件夹，<strong>文件夹名称就是相册名称</strong>，
+每个相册里面需要放置一张名称为**“封面。jpg”**的图片作为该相册的封面。</p>
 <h2 id=上传工具>上传工具</h2>
 <ul>
-<li><strong>COSBrowser</strong> GUI工具,桌面/移动版 【官方、推荐】</li>
+<li><strong>COSBrowser</strong> GUI 工具，桌面/移动版 【官方、推荐】</li>
 <li><strong>COSCMD</strong> 命令行工具 【官方】</li>
 <li><strong>PicGo</strong> 图床上传工具 【第三方、推荐】</li>
 </ul>
@@ -176,7 +176,7 @@ http://github.com/Lruihao/cos-album
 </a>
 <ol>
 <li>首先，下载源码，引入 <code>cos-album.css</code> 和 <code>cos-album.js</code></li>
-<li>然后，在你的 js 中 new 一个 Cosalbum 对象( xmlLink 后不需要添加<code>/</code>)</li>
+<li>然后，在你的 js 中 new 一个 Cosalbum 对象 ( xmlLink 后不需要添加<code>/</code>)</li>
 </ol>
 <h2 id=step1>Step1</h2>
 <div class=highlight><div class=chroma>
@@ -227,7 +227,7 @@ http://github.com/Lruihao/cos-album
 <td style=text-align:left>xmlLink</td>
 <td style=text-align:left>String</td>
 <td style=text-align:left></td>
-<td style=text-align:left>需要解析的騰訊云COS桶XML鏈接</td>
+<td style=text-align:left>需要解析的騰訊云 COS 桶 XML 鏈接</td>
 </tr>
 <tr>
 <td style=text-align:left>prependTo</td>
@@ -245,7 +245,7 @@ http://github.com/Lruihao/cos-album
 <td style=text-align:left>copyUrl</td>
 <td style=text-align:left>String</td>
 <td style=text-align:left>href</td>
-<td style=text-align:left>CDN 链接,雙擊複製 URL Since: 1.1.6</td>
+<td style=text-align:left>CDN 链接，雙擊複製 URL Since: 1.1.6</td>
 </tr>
 <tr>
 <td style=text-align:left>imgType</td>
@@ -319,12 +319,12 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <ul>
 <li>2020-9-28 22:46
 <ol>
-<li>升級：相冊封裝成類，可以更方便new出來</li>
+<li>升級：相冊封裝成類，可以更方便 new 出來</li>
 <li>優化：相冊圖片樣式優化</li>
 </ol>
 </li>
 <li>2019-11-24 10:52:34
-修改整理了一下代码，分割功能为函数，并写了注释，更加方便<a href=https://github.com/Lruihao/cos-album target=_blank rel="noopener noreffer">伸手党</a>!</li>
+修改整理了一下代码，分割功能为函数，并写了注释，更加方便 <a href=https://github.com/Lruihao/cos-album target=_blank rel="noopener noreffer">伸手党</a>!</li>
 </ul>
 <h1 id=未实现>未实现</h1>
 <ul>
@@ -335,8 +335,8 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-10-02&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/ac454a6d2b2723bd5117840e90be3271742c4e27 target=_blank title="commit by Cell(1024@lruihao.cn) ac454a6d2b2723bd5117840e90be3271742c4e27: Style: 調整 CosAlbum 文章排版">
-<i class="fas fa-hashtag fa-fw"></i>ac454a6</a></span>
+<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -345,12 +345,12 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <a class=link-to-markdown href=/posts/cos-album/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/cos-album/ data-title=利用腾讯云为静态页面添加“动态”相册 data-hashtags=CosAlbum,腾讯云cos桶,Frontend,JavaScript><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/cos-album/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/cos-album/ data-title=利用腾讯云为静态页面添加“动态”相册 data-image=/posts/cos-album/images/view.png data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/cos-album/ data-title=利用腾讯云为静态页面添加“动态”相册><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/cos-album/ data-title=利用腾讯云为静态页面添加“动态”相册 data-hashtags="CosAlbum,腾讯云 cos 桶,Frontend,JavaScript"><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/cos-album/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/cos-album/ data-title=利用腾讯云为静态页面添加“动态”相册 data-image=/posts/cos-album/images/view.png data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/cos-album/ data-title=利用腾讯云为静态页面添加“动态”相册><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/baidu.svg></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/cosalbum/>CosAlbum</a>,&nbsp;<a href=/tags/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E6%A1%B6/>腾讯云cos桶</a>,&nbsp;<a href=/tags/frontend/>Frontend</a>,&nbsp;<a href=/tags/javascript/>JavaScript</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/cosalbum/>CosAlbum</a>,&nbsp;<a href=/tags/%E8%85%BE%E8%AE%AF%E4%BA%91-cos-%E6%A1%B6/>腾讯云 cos 桶</a>,&nbsp;<a href=/tags/frontend/>Frontend</a>,&nbsp;<a href=/tags/javascript/>JavaScript</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
 </section>

@@ -1,22 +1,22 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>HTTP - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/http/</link><description>HTTP - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Wed, 25 Mar 2020 08:22:42 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/http/" rel="self" type="application/rss+xml"/><item><title>新冠疫情未返校未返工第N天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>HTTP - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/http/</link><description>HTTP - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Wed, 25 Mar 2020 08:22:42 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/http/" rel="self" type="application/rss+xml"/><item><title>新冠疫情未返校未返工第 N 天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
             </div><div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起&hellip;<br>
-算了，昨天下午3点半，我还在王者峡谷Timing,突然潇X巴哥打了个电话给我说关于自动打卡的想法&hellip;<br>
-哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡&hellip;<br>
-我和潇X巴哥确定思路后兵分两路：</p>
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起。..<br>
+算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法。..<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡。..<br>
+我和潇 X 巴哥确定思路后兵分两路：</p>
 <ol>
-<li>他用java写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
+<li>他用 java 写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
 <li>我想的就很直接，只刷一个人的，python 模拟浏览器登录后打卡，再设置定时任务（多人则设定多个）；</li>
 </ol>
 </div>
         </div>
     </div>
-<h1 id="windows运行效果">Windows运行效果</h1>
+<h1 id="windows-运行效果">Windows 运行效果</h1>
 <p><br>
 <br>
 </p>
@@ -61,7 +61,7 @@
   <span class="k">if</span> <span class="n">r1</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y:%m:</span><span class="si">%d</span><span class="s2">:%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">login</span><span class="p">[</span><span class="s2">&#34;username&#34;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&#34; 登录成功！&#34;</span><span class="p">)</span>
-    <span class="c1"># 拿到登录后的cookie并添加到header中</span>
+    <span class="c1"># 拿到登录后的 cookie 并添加到 header 中</span>
     <span class="n">header1</span> <span class="o">=</span> <span class="n">r1</span><span class="o">.</span><span class="n">headers</span>
     <span class="n">headers</span><span class="p">[</span><span class="s2">&#34;Cookie&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">header1</span><span class="p">[</span><span class="s2">&#34;Set-Cookie&#34;</span><span class="p">]</span>
   <span class="k">else</span><span class="p">:</span>
@@ -84,7 +84,7 @@
 </div>
 </div><h1 id="自动运行">自动运行</h1>
 <h2 id="windows">Windows</h2>
-<p>适用python代码控制休眠时间</p>
+<p>适用 python 代码控制休眠时间</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -112,25 +112,25 @@
   <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
     <span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-    <span class="c1"># 设置每天8点发送</span>
+    <span class="c1"># 设置每天 8 点发送</span>
     <span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
       <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
       <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
       <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
       <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天8点发送数据！&#34;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
       <span class="n">lajaDaka</span><span class="p">()</span>
       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="linux云服务器">linux(云服务器)</h2>
-<p>搭建python环境下载依赖后，使用shell脚本定时执行。</p>
+</div><h2 id="linux云服务器">linux（云服务器）</h2>
+<p>搭建 python 环境下载依赖后，使用 shell 脚本定时执行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -139,19 +139,19 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON表达式的基本语法</a></p>
-<h1 id="潇x巴哥的java-web版本">潇x巴哥的java web版本</h1>
+</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+<h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
-<p>用python模拟post请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
-要求每天早上8点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
+</p>]]></description></item><item><title>python 实战：模拟 post 请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
+<p>用 python 模拟 post 请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
+要求每天早上 8 点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
 </blockquote>
 <h1 id="背景">背景</h1>
 <blockquote>
 <p>麻小科技：<br>
-麻小科技全名深圳市麻小科技有限公司，成立于2017年1月。是我高一的时候参加<code>Peer夏令营</code>带我们一个玩的“老师”和他的朋友的创业公司，说老师有点奇怪，我们都是直接叫名字的，比如大家都叫我瑞豪，我也就叫他文捷哥，简称捷哥吧。他们公司主要的开发模式是，小程序前端+php后端，然后做的是酒店小程序，为每个酒店定制小程序。这些小程序可以贴在客房中给访客提供一些服务，大大节省了成本也提高了效率。<br>
-然后每个酒店小程序都有独立的后台，后台会记录一些点击需求的数据。现在他们有一个需求需要把每个酒店小程序后台的数据在每天早上9点发送至对应酒店的微信群。</p>
+麻小科技全名深圳市麻小科技有限公司，成立于 2017 年 1 月。是我高一的时候参加<code>Peer 夏令营</code>带我们一个玩的“老师”和他的朋友的创业公司，说老师有点奇怪，我们都是直接叫名字的，比如大家都叫我瑞豪，我也就叫他文捷哥，简称捷哥吧。他们公司主要的开发模式是，小程序前端+php 后端，然后做的是酒店小程序，为每个酒店定制小程序。这些小程序可以贴在客房中给访客提供一些服务，大大节省了成本也提高了效率。<br>
+然后每个酒店小程序都有独立的后台，后台会记录一些点击需求的数据。现在他们有一个需求需要把每个酒店小程序后台的数据在每天早上 9 点发送至对应酒店的微信群。</p>
 </blockquote>
 <h1 id="实现代码">实现代码</h1>
 <blockquote>
@@ -241,13 +241,13 @@
 <span class="kn">from</span> <span class="nn">wxpy</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># 基本信息填写：</span>
-<span class="c1"># 酒店id，酒店名称及群名列表数据，格式：[&#34;xxx&#34;,&#34;xxx&#34;,&#34;xxx&#34;]</span>
+<span class="c1"># 酒店 id，酒店名称及群名列表数据，格式：[&#34;xxx&#34;,&#34;xxx&#34;,&#34;xxx&#34;]</span>
 <span class="c1"># 使用时请将以下三个列表一一对应</span>
 <span class="n">hotel</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;xxxx&#34;</span><span class="p">,</span><span class="s2">&#34;xxxx&#34;</span><span class="p">]</span> <span class="c1"># 酒店后台数据接口二级域名，已匿名</span>
 <span class="n">hotel_name</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;增城宾馆&#34;</span><span class="p">,</span><span class="s2">&#34;百丽酒店&#34;</span><span class="p">]</span>
 <span class="n">grouplist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;麻小&#34;</span><span class="p">,</span><span class="s2">&#34;富强民主文明和谐自由平等公正法治&#34;</span><span class="p">]</span>
 
-<span class="c1"># post请求发送的数据</span>
+<span class="c1"># post 请求发送的数据</span>
 <span class="n">postData</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># &#39;username&#39;:&#39;test&#39;,</span>
     <span class="c1"># &#39;password&#39;:&#39;123456&#39;,</span>
@@ -261,12 +261,12 @@
 		<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">postData</span><span class="p">)</span>
 		<span class="c1"># print(r.text)</span>
 
-		<span class="c1"># 把结果转化为json字符串</span>
+		<span class="c1"># 把结果转化为 json 字符串</span>
 		<span class="n">response</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span><span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#sort_keys=True </span>
 
-		<span class="c1"># 把json转换为dict字典作为中间结果，再取出昨日数据</span>
+		<span class="c1"># 把 json 转换为 dict 字典作为中间结果，再取出昨日数据</span>
 		<span class="n">midresult</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-		<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;早上好！&#34;</span><span class="o">+</span><span class="n">hotel_name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;小程序昨日数据如下：</span><span class="se">\n</span><span class="s2">访问数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type1&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">房间数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type2&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">需求量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type3&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">商品点击量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type4&#34;</span><span class="p">]))</span>
+		<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;早上好！&#34;</span><span class="o">+</span><span class="n">hotel_name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;小程序昨日数据如下：</span><span class="se">\n</span><span class="s2"> 访问数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type1&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 房间数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type2&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 需求量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type3&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 商品点击量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type4&#34;</span><span class="p">]))</span>
 		<span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
 	<span class="c1"># print(result)</span>
 	<span class="k">return</span> <span class="n">result</span>
@@ -287,19 +287,19 @@
 	<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 		<span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
 		<span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-		<span class="c1"># 设置每天8点发送</span>
+		<span class="c1"># 设置每天 8 点发送</span>
 		<span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
 			<span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
 			<span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
 		<span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
 			<span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
 			<span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
 		<span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天8点发送数据！&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
 			<span class="n">result</span><span class="o">=</span><span class="n">get_data</span><span class="p">()</span> <span class="c1"># 获取数据</span>
 			<span class="n">wechat_send</span><span class="p">(</span><span class="n">bot</span><span class="p">,</span><span class="n">result</span><span class="p">)</span> <span class="c1"># 发送数据</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">86400</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
@@ -312,28 +312,28 @@
 </div><h1 id="测试结果">测试结果</h1>
 <p>  </p>
 <h1 id="程序打包">程序打包</h1>
-<p>使用pyinstaller工具打包成可执行文件即可。（可执行文件不可跨平台运行，分平台打包）</p>
+<p>使用 pyinstaller 工具打包成可执行文件即可。（可执行文件不可跨平台运行，分平台打包）</p>
 <blockquote>
-<p>目前该程序已经上线测试中&hellip;暂未反馈问题</p>
+<p>目前该程序已经上线测试中。.. 暂未反馈问题</p>
 </blockquote>
 <h1 id="收获">收获</h1>
 <blockquote>
-<p>第一次参与实际公司的项目开发，虽然只是一个小的需求设计，但是我在这个过程中也学到了很多，比如通过实际一两周的编程对Python的熟悉度远远好过以前在实验室看的一个月视频。<br>
-还有就是在此次开发中，也感受到了实际项目开发的团队合作重要性，刚开始拿到这个需求，由于我对python和后台，以及数据接口这些基本的操作都不懂，就拿数据获取来说，我一开始一位要自己模拟登陆后台（已知密码），一顿操作、百度等等失败告终，后来涛哥给了一个数据接口，加上涛哥耐心指点，我才终于拿到了数据。<br>
+<p>第一次参与实际公司的项目开发，虽然只是一个小的需求设计，但是我在这个过程中也学到了很多，比如通过实际一两周的编程对 Python 的熟悉度远远好过以前在实验室看的一个月视频。<br>
+还有就是在此次开发中，也感受到了实际项目开发的团队合作重要性，刚开始拿到这个需求，由于我对 python 和后台，以及数据接口这些基本的操作都不懂，就拿数据获取来说，我一开始一位要自己模拟登陆后台（已知密码），一顿操作、百度等等失败告终，后来涛哥给了一个数据接口，加上涛哥耐心指点，我才终于拿到了数据。<br>
 还有在多人合作的项目中，为保持代码的可读性，要尽量的多些注释，还有函数方法的命名尽量具备可读性。比如我代码中的<code>wechat_send()</code>，一开始的命名是<code>wxfs()</code>，经捷哥指正我才改过来的。</p>
 </blockquote>]]></description></item><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/singlethreaddown/images/1.png" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。</p>
 </blockquote>
-<h1 id="gui设计基本流程">GUI设计基本流程</h1>
-<p>先记录一下GUI设计的基本流程：</p>
+<h1 id="gui-设计基本流程">GUI 设计基本流程</h1>
+<p>先记录一下 GUI 设计的基本流程：</p>
 <ol>
-<li>根据需要从相应的顶层容器继承（如果创建窗体就继承JFrame，对话框就继承JDialog），新建一个子类。</li>
+<li>根据需要从相应的顶层容器继承（如果创建窗体就继承 JFrame，对话框就继承 JDialog），新建一个子类。</li>
 <li>然后设置顶层容器的属性，包括大小、位置、标题和关闭事件等。</li>
-<li>设置界面上GUI组件的事件响应。 <code>public void actionPerformed(ActionEvent e) {}</code></li>
-<li>向顶层容器上添加GUI组件，并设置布局。（通常利用JPanel组件先作为微型容器）</li>
-<li>创建新建子类的实例，调用setVisible(true)方法显示页面。（也可以直接在子类中设置setVisible(true)）</li>
+<li>设置界面上 GUI 组件的事件响应。 <code>public void actionPerformed(ActionEvent e) {}</code></li>
+<li>向顶层容器上添加 GUI 组件，并设置布局。（通常利用 JPanel 组件先作为微型容器）</li>
+<li>创建新建子类的实例，调用 setVisible(true) 方法显示页面。（也可以直接在子类中设置 setVisible(true)）</li>
 </ol>
 <h1 id="实现代码">实现代码</h1>
 <div class="highlight"><div class="chroma">
@@ -431,8 +431,6 @@
 </span><span class="lnt">91
 </span><span class="lnt">92
 </span><span class="lnt">93
-</span><span class="lnt">94
-</span><span class="lnt">95
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">cn.lruihao.base</span><span class="o">;</span>
@@ -463,8 +461,6 @@
 	<span class="n">JButton</span> <span class="n">exitButton</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JButton</span><span class="o">(</span><span class="s">&#34;退出&#34;</span><span class="o">);</span>
 	<span class="n">JTextField</span> <span class="n">urlField</span>  <span class="o">=</span> <span class="k">new</span> <span class="n">JTextField</span><span class="o">(</span><span class="n">20</span><span class="o">);</span>
 	
-	
-	
 	<span class="kd">public</span> <span class="nf">SingleThreadDown</span><span class="o">()</span> <span class="o">{</span>
 		<span class="n">panel</span><span class="o">.</span><span class="na">setLayout</span><span class="o">(</span><span class="k">new</span> <span class="n">FlowLayout</span><span class="o">());</span> <span class="c1">//布局管理器
 </span><span class="c1"></span>		<span class="n">label1</span><span class="o">.</span><span class="na">setFont</span><span class="o">(</span><span class="k">new</span> <span class="n">Font</span><span class="o">(</span><span class="s">&#34;雅黑&#34;</span><span class="o">,</span><span class="n">Font</span><span class="o">.</span><span class="na">BOLD</span><span class="o">,</span><span class="n">15</span><span class="o">));</span>
@@ -477,9 +473,9 @@
 		<span class="n">setContentPane</span><span class="o">(</span><span class="n">panel</span><span class="o">);</span>
 		<span class="n">setSize</span><span class="o">(</span><span class="n">400</span><span class="o">,</span><span class="n">200</span><span class="o">);</span>
 		<span class="n">setLocation</span><span class="o">(</span><span class="n">400</span><span class="o">,</span><span class="n">400</span><span class="o">);</span>
-		<span class="n">setVisible</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span> <span class="c1">//面板可视化，也可以在main中通过JFrame子类对象调用方法设置
+		<span class="n">setVisible</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span> <span class="c1">//面板可视化，也可以在 main 中通过 JFrame 子类对象调用方法设置
 </span><span class="c1"></span>		<span class="n">setDefaultCloseOperation</span><span class="o">(</span><span class="n">JFrame</span><span class="o">.</span><span class="na">EXIT_ON_CLOSE</span><span class="o">);</span> <span class="c1">//默认关闭事件
-</span><span class="c1"></span>		<span class="n">StartButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span><span class="c1">//添加点击事件，传入ActionListener对象，由于子类继承了ActionListener接口，所以this
+</span><span class="c1"></span>		<span class="n">StartButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span><span class="c1">//添加点击事件，传入 ActionListener 对象，由于子类继承了 ActionListener 接口，所以 this
 </span><span class="c1"></span>		<span class="n">resetButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
 		<span class="n">exitButton</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
 	<span class="o">}</span>
@@ -492,7 +488,7 @@
 </span><span class="c1"></span>		<span class="n">String</span> <span class="n">filePath</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">getFile</span><span class="o">();</span>
 		<span class="kt">int</span> <span class="n">pos</span><span class="o">=</span><span class="n">filePath</span><span class="o">.</span><span class="na">lastIndexOf</span><span class="o">(</span><span class="s">&#34;/&#34;</span><span class="o">);</span> <span class="c1">//&#34;/&#34;分割的最后一个串的下标
 </span><span class="c1"></span>		<span class="n">String</span> <span class="n">fileName</span> <span class="o">=</span> <span class="n">filePath</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">pos</span><span class="o">+</span><span class="n">1</span><span class="o">);</span>
-		<span class="n">FileOutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="s">&#34;C:\\Users\\李瑞豪\\Desktop\\&#34;</span><span class="o">+</span><span class="n">fileName</span><span class="o">);</span>
+		<span class="n">FileOutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="s">&#34;C:\\Users\\李瑞豪、\Desktop\\&#34;</span><span class="o">+</span><span class="n">fileName</span><span class="o">);</span>
 		<span class="kt">byte</span><span class="o">[]</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">1024</span><span class="o">];</span>
 		<span class="kt">int</span> <span class="n">len</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
 		<span class="k">while</span><span class="o">((</span><span class="n">len</span><span class="o">=</span><span class="n">in</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">b</span><span class="o">,</span><span class="n">0</span><span class="o">,</span><span class="n">1024</span><span class="o">))!=-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
@@ -533,9 +529,9 @@
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="运行结果测试">运行结果测试</h1>
-<p>通过<code>https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf</code>下载沐目体ttf字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。</p>
+<p>通过<code>https://github.com/Lruihao/Grocery/raw/master/fonts/MMT_last.ttf</code>下载沐目体 ttf 字体文件，稍微等待一下弹出对话框“下载完毕”，经检查下载内容正常。</p>
 <p></p>]]></description></item><item><title>python 发送 post 请求进行简单的接口测试</title><link>https://lruihao.cn/posts/posttest/</link><pubDate>Tue, 07 May 2019 18:17:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/posttest/</guid><description><![CDATA[<blockquote>
-<p>通过requests可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
+<p>通过 requests 可以向某个地址发送请求，可以用来做一些接口的测试；主要有两个方法：</p>
 </blockquote>
 <ul>
 <li>requests.get()</li>
@@ -570,11 +566,11 @@
 <span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">通过requests可以向某个地址发送请求requests.post(url,json date)
-</span><span class="s2">post方法还有其他参数，如header等
+</span><span class="s2">通过 requests 可以向某个地址发送请求 requests.post(url,json date)
+</span><span class="s2">post 方法还有其他参数，如 header 等
 </span><span class="s2">&#34;&#34;&#34;</span>
 
-<span class="c1"># post发送的数据</span>
+<span class="c1"># post 发送的数据</span>
 <span class="n">postData</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># &#39;username&#39;:&#39;test&#39;,</span>
     <span class="c1"># &#39;password&#39;:&#39;123456&#39;,</span>
@@ -588,5 +584,5 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>运行后会在屏幕打印出返回的json数据
+</div><p>运行后会在屏幕打印出返回的 json 数据
 </p>]]></description></item></channel></rss>

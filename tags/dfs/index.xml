@@ -3,14 +3,14 @@ Memory Limit: 10000K<br>
 Total Submissions: 63659<br>
 Accepted: 30423</p>
 <h3 id="description">Description</h3>
-<p>在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放k个棋子的所有可行的摆放方案C。</p>
+<p>在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放 k 个棋子的所有可行的摆放方案 C。</p>
 <h3 id="input">Input</h3>
 <p>输入含有多组测试数据。<br>
-每组数据的第一行是两个正整数，n k，用一个空格隔开，表示了将在一个n * n的矩阵内描述棋盘，以及摆放棋子的数目。 n &lt;= 8 , k &lt;= n<br>
-当为-1 -1时表示输入结束。<br>
-随后的n行描述了棋盘的形状：每行有n个字符，其中 # 表示棋盘区域， . 表示空白区域（数据保证不出现多余的空白行或者空白列）。</p>
+每组数据的第一行是两个正整数，n k，用一个空格隔开，表示了将在一个 n * n 的矩阵内描述棋盘，以及摆放棋子的数目。 n &lt;= 8 , k &lt;= n<br>
+当为-1 -1 时表示输入结束。<br>
+随后的 n 行描述了棋盘的形状：每行有 n 个字符，其中 # 表示棋盘区域， . 表示空白区域（数据保证不出现多余的空白行或者空白列）。</p>
 <h3 id="output">Output</h3>
-<p>对于每一组数据，给出一行输出，输出摆放的方案数目C （数据保证C&lt;2^31）。</p>
+<p>对于每一组数据，给出一行输出，输出摆放的方案数目 C （数据保证 C&lt;2^31）。</p>
 <h3 id="sample-input">Sample Input</h3>
 <pre><code>2 1
 #.
@@ -30,7 +30,7 @@ Accepted: 30423</p>
 <p>蔡错@pku</p>
 <h3 id="思路">思路</h3>
 <ul>
-<li>下子方案数就相当于遍历图的不同遍历数，用dfs变形。</li>
+<li>下子方案数就相当于遍历图的不同遍历数，用 dfs 变形。</li>
 <li>理解以下数据还有样例应该差不多了</li>
 </ul>
 <p><code>3 2</code>
@@ -43,7 +43,7 @@ Accepted: 30423</p>
 <code>.##</code>
 <code>..#</code>
 <code>4</code></p>
-<h3 id="ac代码">AC代码</h3>
+<h3 id="ac-代码">AC 代码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -100,10 +100,10 @@ Accepted: 30423</p>
 </span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">char</span> <span class="n">mp</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">8</span><span class="p">];</span>
 <span class="kt">int</span> <span class="n">v</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
-<span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">r</span><span class="p">;</span><span class="c1">//状态计数器r
-</span><span class="c1"></span><span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span><span class="c1">//逐行深搜，x为当前搜索行
+<span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">r</span><span class="p">;</span><span class="c1">//状态计数器 r
+</span><span class="c1"></span><span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span><span class="c1">//逐行深搜，x 为当前搜索行
 </span><span class="c1"></span><span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">w</span><span class="o">==</span><span class="n">k</span><span class="p">)</span><span class="c1">//下子数w
+    <span class="k">if</span><span class="p">(</span><span class="n">w</span><span class="o">==</span><span class="n">k</span><span class="p">)</span><span class="c1">//下子数 w
 </span><span class="c1"></span>    <span class="p">{</span>
         <span class="n">r</span><span class="o">++</span><span class="p">;</span><span class="k">return</span><span class="p">;</span>
     <span class="p">}</span>
@@ -162,8 +162,8 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
 111111111111111111
 </code></pre>
 <hr>
-<p>给定一个正整数n，请编写一个程序来寻找n的一个非零的倍数m，这个m应当在十进制表示时每一位上只包含0或者1。你可以假定n不大于200且m不多于100位。<br>
-提示：本题采用Special Judge，你无需输出所有符合条件的m，你只需要输出任一符合条件的m即可。</p>
+<p>给定一个正整数 n，请编写一个程序来寻找 n 的一个非零的倍数 m，这个 m 应当在十进制表示时每一位上只包含 0 或者 1。你可以假定 n 不大于 200 且 m 不多于 100 位。<br>
+提示：本题采用 Special Judge，你无需输出所有符合条件的 m，你只需要输出任一符合条件的 m 即可。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -213,11 +213,11 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
         <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">x</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
         <span class="k">return</span> <span class="p">;</span>
     <span class="p">}</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">19</span><span class="p">)</span><span class="c1">//m最多200位
+    <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">19</span><span class="p">)</span><span class="c1">//m 最多 200 位
 </span><span class="c1"></span>        <span class="k">return</span> <span class="p">;</span>
     <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
     <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-    <span class="c1">//每两位数后两位有两种情况，10或11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
+    <span class="c1">//每两位数后两位有两种情况，10 或 11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
 </span><span class="c1"></span><span class="p">}</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
@@ -261,14 +261,13 @@ Total Submission(s): 41406    Accepted Submission(s): 23977</p>
 <pre><code>0
 1
 2
-2
 </code></pre>
 <h4 id="source">Source</h4>
 <p>Mid-Central USA 1997</p>
 <h4 id="recommend">Recommend</h4>
 <p>Eddy   |   We have carefully selected several similar problems for you:  1016 1010 1312 1242 1240</p>
 <h4 id="思路">思路</h4>
-<p>dfs模板题吧，八个方向搜索；（像i，j这样的计数器还是写在局部比较好，我尽然被定义域的问题搞了一晚上醉了醉了。。。）</p>
+<p>dfs 模板题吧，八个方向搜索；（像 i，j 这样的计数器还是写在局部比较好，我尽然被定义域的问题搞了一晚上醉了醉了。）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
