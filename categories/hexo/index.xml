@@ -6,9 +6,9 @@
         </div>
         <div class="details-content">
             <div class="admonition-content"><span style="color: #d9534f;font-size: 1.2em;"><strong>如无必要，不再更新！（2019.09.13）</strong></span><br>
-今晚我做出了一个慎重的决定，由于博主时间精力有限，需要更多的时间来工作和学习。所以我将<strong>放弃对 next 的主题的自定义修改</strong>，next 主题官方已经更新到了 7.0+的版本，喜欢 next 主题风格的朋友可以在 github 更新。<br>
+今晚我做出了一个慎重的决定，由于博主时间精力有限，需要更多的时间来工作和学习。所以我将<strong>放弃对next的主题的自定义修改</strong>，next主题官方已经更新到了7.0+的版本，喜欢next主题风格的朋友可以在github更新。<br>
 我这也算是上古版本了，版本差距实在过大，所以我也将放弃博客使用主题的更新。<br>
-以下仍为当前博客使用主题，lib 资源已打包 github。</div>
+以下仍为当前博客使用主题，lib资源已打包github。</div>
         </div>
     </div>
 <div class="details admonition success open">
@@ -16,10 +16,10 @@
             <i class="icon fas fa-check-circle fa-fw"></i>next<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">基于 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener noreffer">hexo-theme-next 6.0+</a> 的 Pisces 模板做的 DIY 扩展性设计（部分兼容 next 其他几种模板）。主要是一些 custom style 还有一些第三方的 js。修改的地方太多也有点小乱就不提 PR 了。<br>
-<a href="https://github.com/Lruihao/hexo-theme-next" target="_blank" rel="noopener noreffer">modified</a>  官方 Demo =&gt; <a href="https://theme-next.org" target="_blank" rel="noopener noreffer">https://theme-next.org</a><br>
-记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见 <a href="/categories/posts/" rel="">hexo 分类</a>。<br>
-<strong>主题中若有遗漏第三方插件或应用的 key 及 id 值等请修改为自己对应的值</strong></div>
+            <div class="admonition-content">基于<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener noreffer">hexo-theme-next 6.0+</a>的Pisces模板做的DIY扩展性设计（部分兼容next其他几种模板）。主要是一些custom style还有一些第三方的js。修改的地方太多也有点小乱就不提PR了。<br>
+<a href="https://github.com/Lruihao/hexo-theme-next" target="_blank" rel="noopener noreffer">modified</a> 官方Demo =&gt; <a href="https://theme-next.org" target="_blank" rel="noopener noreffer">https://theme-next.org</a><br>
+记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见<a href="/categories/posts/" rel="">hexo分类</a>。<br>
+<strong>主题中若有遗漏第三方插件或应用的key及id值等请修改为自己对应的值</strong></div>
         </div>
     </div>
 <p>主要的几个自定义文件</p>
@@ -51,18 +51,18 @@
 \layout\_macro\siderbar.swig                 #侧栏模板
 \layout\_third-party\copy-code.swig          #复制按钮
 \layout\_partials\comments.swig              #评论主模板
-\layout\_partials\footer.swig                #底部模板#该模块在 layout.swig 引入，用于在 body 自定义标签
-\layout\_partials\footer_custom.swig         #footer 自定义文件
-\layout\_third-party\custom.swig             #该模块在 layout.swig 引入用于在 body 自定义标签
+\layout\_partials\footer.swig                #底部模板#该模块在layout.swig引入，用于在body自定义标签
+\layout\_partials\footer_custom.swig         #footer自定义文件
+\layout\_third-party\custom.swig             #该模块在layout.swig引入用于在body自定义标签
 \source\css\_custom\customs.styl             #主要用户自定义样式表
 \source\fonts\                               #引入了一些我的手写体及外部字体
-\scripts\qcloudcdn.js                        #腾讯云 cos 桶刷新缓存的脚本，不需要可删掉 [^1]     
+\scripts\qcloudcdn.js                        #腾讯云cos桶刷新缓存的脚本，不需要可删掉[^1]     
 </code></pre></td></tr></table>
 </div>
 </div><p><a href="https://lruihao.cn/posts/cos-hexo.html#CDN%E5%88%B7%E6%96%B0" target="_blank" rel="noopener noreffer">^1</a></p>
 <h1 id="初步安装">初步安装</h1>
 <blockquote>
-<p>安装整个改过的主题，然后下载相应的 lib 资源解压放入 source 文件夹</p>
+<p>安装整个改过的主题,然后下载相应的lib资源解压放入source文件夹</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -74,7 +74,7 @@
 git clone https://github.com/Lruihao/hexo-theme-next themes/next
 </code></pre></td></tr></table>
 </div>
-</div><p>主题配置文件<code>_config.yml</code>, 选择主题</p>
+</div><p>主题配置文件<code>_config.yml</code>,选择主题</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -87,7 +87,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
-            <span class="card-link-title">lib 下载</span>
+            <span class="card-link-title">lib下载</span>
             <span class="card-link-meta">
                 <span class="card-link-url">
                     <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
@@ -107,7 +107,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
 <blockquote>
 <p>更多自定义详见源码</p>
 </blockquote>
-<h2 id="links-模板">links 模板</h2>
+<h2 id="links模板">links模板</h2>
 <blockquote>
 <p>自定义友链模板，打开<code>hexo\themes\next\layout\</code>新建<code>links.swig</code>文件，写下以下内容后保存。</p>
 </blockquote>
@@ -378,7 +378,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
 </div><ul>
 <li><strong>若未使用懒加载请将模板中的<code>data-original</code>属性改为<code>src</code></strong></li>
 <li><strong>若懒加载无法加载预览图请手动添加<code>src=&quot;/images/loading.gif&quot;</code></strong></li>
-<li><strong>若 fancybox 显示 alt 内容请更换 fancybox2 或者将 alt 属值删除</strong></li>
+<li><strong>若fancybox显示alt内容请更换fancybox2或者将alt属值删除</strong></li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -444,9 +444,9 @@ layout: links
 # -------------------------------------------------------------
 beian:
   enable: true
-  gov: 湘公网安备 43030402000254 号
+  gov: 湘公网安备 43030402000254号
   recordcode: 43030402000254
-  icp: 湘 ICP 备 18020535 号
+  icp: 湘ICP备18020535号
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="文字抖动特效">文字抖动特效</h2>
@@ -455,10 +455,10 @@ beian:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#34;shaky&#34;</span><span class="nt">&gt;</span>（づ●&#39;◡&#39;●) づ ❥内容区<span class="nt">&lt;/div&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#34;shaky&#34;</span><span class="nt">&gt;</span>(づ●&#39;◡&#39;●)づ ❥内容区<span class="nt">&lt;/div&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><div class="shaky">（づ●'◡'●) づ ❥内容区</div>
+</div><div class="shaky">(づ●'◡'●)づ ❥内容区</div>
 <h2 id="左下角微信公众号">左下角微信公众号</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -469,10 +469,10 @@ beian:
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="相关文章收纳">相关文章收纳</h2>
-<p>加入 H5 标签，实现可收纳功能，点击查看详情。</p>
+<p>加入H5标签，实现可收纳功能，点击查看详情。</p>
 <h2 id="chat-services">Chat Services</h2>
 <blockquote>
-<p>共 chatra,tidio,daovoice 三个选项，三选一</p>
+<p>共chatra,tidio,daovoice三个选项，三选一</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -518,8 +518,8 @@ daovoice: true
 daovoice_app_id: xxxx   # http://www.daovoice.io/
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="pdf-和-mermaid-解析模块">pdf 和 Mermaid 解析模块</h2>
-<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf 传送门</a></p>
+</div><h2 id="pdf和mermaid解析模块">pdf和Mermaid解析模块</h2>
+<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf传送门</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -556,7 +556,7 @@ mermaid:
   #cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="模仿-csdn-转发样式">模仿 csdn 转发样式</h2>
+</div><h2 id="模仿csdn转发样式">模仿csdn转发样式</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -628,7 +628,7 @@ repost: true
 </div><p><a href="https://lruihao.cn/tags/%e4%bb%96%e5%b1%b1%e4%b9%8b%e7%9f%b3/" target="_blank" rel="noopener noreffer">预览</a></p>
 <h2 id="热度页面">热度页面</h2>
 <blockquote>
-<p>打开<code>hexo\themes\next\layout</code>新建 top.swig 文件，写下如下内容保存：</p>
+<p>打开<code>hexo\themes\next\layout</code>新建top.swig文件，写下如下内容保存：</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -824,7 +824,7 @@ repost: true
               title=result.title;
               category=result.categories
               url=result.url;
-              var content=&#34;&lt;div&gt;&#34;+&#34;【文章热度：&#34;+time+&#34;℃】&#34;+&#34;&lt;a href=&#39;&#34;+&#34;{{ config.url }}&#34;+&#34;&#34;+url+&#34;&#39;&gt;&#34;+title+&#34;&lt;/a&gt;&#34;+&#34;&lt;/div&gt;&#34;;
+              var content=&#34;&lt;div&gt;&#34;+&#34;【文章热度:&#34;+time+&#34;℃】&#34;+&#34;&lt;a href=&#39;&#34;+&#34;{{ config.url }}&#34;+&#34;&#34;+url+&#34;&#39;&gt;&#34;+title+&#34;&lt;/a&gt;&#34;+&#34;&lt;/div&gt;&#34;;
               document.getElementById(&#34;top&#34;).innerHTML+=content;
             }
           }, function (error) {
@@ -854,8 +854,8 @@ repost: true
 {% endblock %}
 </code></pre></td></tr></table>
 </div>
-</div><p>其中第 36 行改成你自己的 leancloud 的 appid 和 appkey, 比如我的是在主题配置文件里面的 valine 配置下，所以我就写成<code>theme.valine.appid</code>。和我一样就不需要修改，其他自行配置。</p>
-<p>然后<code>hexo n page top</code>新建一个页面文章配置写下如下内容，limit 表示显示篇数：</p>
+</div><p>其中第36行改成你自己的leancloud的appid和appkey,比如我的是在主题配置文件里面的valine配置下，所以我就写成<code>theme.valine.appid</code>。和我一样就不需要修改，其他自行配置。</p>
+<p>然后<code>hexo n page top</code>新建一个页面文章配置写下如下内容，limit表示显示篇数：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -877,7 +877,7 @@ limit: 20
 
 </p>
 <blockquote>
-<p>本来只想简单美化一下变成 night 样式的，后来写完发现 3dbtn 也挺喜欢的。</p>
+<p>本来只想简单美化一下变成night样式的，后来写完发现3dbtn也挺喜欢的。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -915,15 +915,15 @@ limit: 20
 <p>打开腾讯云控制台&ndash;云产品&ndash;存储&ndash;对象存储，然后创建存储桶。<br>
 </p>
 <h3 id="开启静态网站设置">开启静态网站设置</h3>
-<p>在基础配置打开静态网站（关掉强制 https)<br>
+<p>在基础配置打开静态网站(关掉强制https)<br>
 </p>
 <h3 id="绑定域名">绑定域名</h3>
 <p></p>
-<p>SSL 设置<br>
+<p>SSL设置<br>
 </p>
 <h3 id="域名解析添加记录">域名解析，添加记录</h3>
-<p>去 dns 服务商添加域名解析记录 CNAME 指向上面的域名</p>
-<h3 id="hexo-设置">hexo 设置</h3>
+<p>去dns服务商添加域名解析记录CNAME指向上面的域名</p>
+<h3 id="hexo设置">hexo设置</h3>
 <ul>
 <li>安装插件</li>
 </ul>
@@ -951,10 +951,10 @@ limit: 20
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">deploy:
   type: cos
-  bucket: yourBucketName #cos 桶名称
-  appId: yourAppId #cos 桶名称后数字
-  secretId: yourSecretId  #云 API 密钥
-  secretKey: yourSecretKey #云 API 密钥
+  bucket: yourBucketName #cos桶名称
+  appId: yourAppId #cos桶名称后数字
+  secretId: yourSecretId  #云API密钥
+  secretKey: yourSecretKey #云API密钥
   region: yourRegion #所属地域
 </code></pre></td></tr></table>
 </div>
@@ -974,7 +974,7 @@ hexo g -d
 </div><p>结果类似于<br>
 </p>
 <h3 id="cdn-刷新">CDN 刷新</h3>
-<p>每次更新博客内容完后，都要登陆腾讯云 CDN&ndash;缓存刷新，手动刷新一下 CDN。</p>
+<p>每次更新博客内容完后，都要登陆腾讯云CDN&ndash;缓存刷新，手动刷新一下CDN。</p>
 <p>用脚本在每次更新后刷新</p>
 <ul>
 <li>安装</li>
@@ -1009,7 +1009,7 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">qcloudSDK</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;qcloud-cdn-node-sdk&#39;</span><span class="p">);</span>
 
 <span class="nx">qcloudSDK</span><span class="p">.</span><span class="nx">config</span><span class="p">({</span>
-    <span class="nx">secretId</span><span class="o">:</span> <span class="s1">&#39;你的 ID&#39;</span><span class="p">,</span>
+    <span class="nx">secretId</span><span class="o">:</span> <span class="s1">&#39;你的ID&#39;</span><span class="p">,</span>
     <span class="nx">secretKey</span><span class="o">:</span> <span class="s1">&#39;你的密钥&#39;</span>
 <span class="p">})</span>
 
@@ -1020,7 +1020,7 @@ hexo g -d
 <span class="p">})</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="自动-cdn-刷新配置-推荐">自动 CDN 刷新配置 （推荐）</h3>
+</div><h3 id="自动-cdn-刷新配置-推荐">自动 CDN 刷新配置 (推荐)</h3>
 <ol>
 <li>进入腾讯云，找到 函数计算 -&gt; CDN 缓存刷新函数 -&gt; 创建 CDN 缓存刷新函数</li>
 <li>修改 <code>index.js</code> 内容后重新部署</li>
@@ -1199,7 +1199,7 @@ hexo g -d
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>在搜索。文章底部。侧栏添加最近文章模块</title><link>https://lruihao.cn/posts/recent-posts/</link><pubDate>Wed, 16 Jan 2019 17:50:52 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/recent-posts/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>在搜索.文章底部.侧栏添加最近文章模块</title><link>https://lruihao.cn/posts/recent-posts/</link><pubDate>Wed, 16 Jan 2019 17:50:52 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/recent-posts/</guid><description><![CDATA[<blockquote>
 <p>首先在主题配置文件添加以下关键字</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -1266,7 +1266,7 @@ hexo g -d
 </div>
 </div><h3 id="搜索结果处添加">搜索结果处添加</h3>
 <p>找到路径<code>H:\hexo\themes\hexo-theme-next\layout\_partials\search</code>下<code>localsearch.swig</code>文件<br>
-把<code>&lt;div id=&quot;local-search-result&quot;&gt;&lt;/div&gt;</code>修改成以下内容（这里显示 15 篇）</p>
+把<code>&lt;div id=&quot;local-search-result&quot;&gt;&lt;/div&gt;</code>修改成以下内容（这里显示15篇）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1310,7 +1310,7 @@ hexo g -d
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="文章尾部添加">文章尾部添加</h3>
-<p>把代码加在<code>H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig</code>里的相应位置（我加在 tags 后）</p>
+<p>把代码加在<code>H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig</code>里的相应位置（我加在tags后）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1347,12 +1347,12 @@ hexo g -d
 </div>
 </div><h1 id="其他">其他</h1>
 <p>可尝试将<code>-date</code>改为<code>-update</code></p>
-]]></description></item><item><title>hexo 插件及 next 内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
+]]></description></item><item><title>hexo插件及next内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
 <p>2021/10/2 更新<br>
 博客已迁移至 Hugo, 插件演示不适用，已删除。<br>
-让文章写的好看又简洁又好用的插件！<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener noreffer">hexo 完整的标签列表</a>，<a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener noreffer">next 插件列表</a></p>
+让文章写的好看又简洁又好用的插件！<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener noreffer">hexo完整的标签列表</a>，<a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener noreffer">next插件列表</a></p>
 </blockquote>
-<h3 id="hexo-插件">hexo 插件</h3>
+<h3 id="hexo插件">hexo插件</h3>
 <h4 id="hexo-lazyload-imagehttpsgithubcomtroy-yanghexo-lazyload-image"><a href="https://github.com/Troy-Yang/hexo-lazyload-image" target="_blank" rel="noopener noreffer">hexo-lazyload-image</a></h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1417,7 +1417,7 @@ hexo g -d
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>You can configure this plugin in <code>_config.yml</code>.（配置完即可使用不许单独设置<code>manifest.json</code>文件及配置，插件生成）</p>
+<p>You can configure this plugin in <code>_config.yml</code>.(配置完即可使用不许单独设置<code>manifest.json</code>文件及配置，插件生成)</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1563,10 +1563,10 @@ other:
 <li><code>title</code> : 曲目标题</li>
 <li><code>author</code>: 曲目作者</li>
 <li><code>url</code>: 音乐文件 URL 地址</li>
-<li><code>picture_url</code>: （可选） 音乐对应的图片地址</li>
+<li><code>picture_url</code>: (可选) 音乐对应的图片地址</li>
 <li><code>narrow</code>: （可选）播放器袖珍风格</li>
-<li><code>autoplay</code>:  （可选） 自动播放，移动端浏览器暂时不支持此功能</li>
-<li><code>width:xxx</code>: （可选） 播放器宽度 （默认：100%)</li>
+<li><code>autoplay</code>:  (可选) 自动播放，移动端浏览器暂时不支持此功能</li>
+<li><code>width:xxx</code>: (可选) 播放器宽度 (默认: 100%)</li>
 <li><code>lrc:xxx</code>: （可选）歌词文件 URL 地址</li>
 </ul>
 <p>当开启 Hexo 的 <a href="https://hexo.io/zh-cn/docs/asset-folders.html#%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9" target="_blank" rel="noopener noreffer">文章资源文件夹</a> 功能时，可以将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用：</p>
@@ -1584,8 +1584,8 @@ other:
 </div>
 </div><meting-js url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" theme="#448aff"></meting-js>
 <h4 id="hexo-pdf">hexo-pdf</h4>
-<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf 传送门</a></p>
-<h4 id="hexo-filter-flowchart流程图">hexo-filter-flowchart（流程图）</h4>
+<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf传送门</a></p>
+<h4 id="hexo-filter-flowchart流程图">hexo-filter-flowchart(流程图)</h4>
 <p><a href="https://flowchart.js.org" target="_blank" rel="noopener noreffer">语法</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1689,8 +1689,8 @@ But you need to add <code>&lt;br&gt;</code> manually if you want line breaks aft
 </div><h3 id="宅音乐侧栏播放器插件">宅音乐侧栏播放器插件</h3>
 <p><a href="https://player.lruihao.cn" target="_blank" rel="noopener noreffer"><del>体验</del></a> <a href="https://github.com/Lruihao/zhai-music" target="_blank" rel="noopener noreffer">源码</a></p>
 <blockquote>
-<p>目前在 next 中可能引起部分 css 冲突，建议在 next 中使用在单个页面中。<br>
-依赖于 jQuery，一行 js 可以引入播放器插件。</p>
+<p>目前在next中可能引起部分css冲突，建议在next中使用在单个页面中。<br>
+依赖于jQuery，一行js可以引入播放器插件。</p>
 </blockquote>
 <h3 id="caniuse">caniuse</h3>
 <h4 id="使用">使用</h4>
@@ -1810,9 +1810,15 @@ icon    : FontAwesome icon name (without &#39;fa-&#39; at the begining). Require
           Optional parameter.
 </code></pre></td></tr></table>
 </div>
-</div><div class="text-center">{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}</div>
-```
-<h3 id="mermaid">Mermaid</h3>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div class=&#34;text-center&#34;&gt;{% btn #, Text &amp; Large Icon &amp; Title, home fa-fw fa-lg, Title %}&lt;/div&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="mermaid">Mermaid</h3>
 <p><a href="https://theme-next.org/docs/tag-plugins/mermaid" target="_blank" rel="noopener noreffer">more info</a></p>
 <p>example</p>
 <div class="highlight"><div class="chroma">
@@ -1832,6 +1838,8 @@ icon    : FontAwesome icon name (without &#39;fa-&#39; at the begining). Require
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% mermaid gitGraph: %}
@@ -1845,7 +1853,9 @@ commit
 branch newbranch
 checkout newbranch
 commit
+commit
 checkout master
+commit
 commit
 merge newbranch
 {% endmermaid %}
@@ -1872,9 +1882,9 @@ merge newbranch
 {% video /path/to/your/video.mp4 %}
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="tab-选项卡">tab 选项卡</h3>
+</div><h3 id="tab选项卡">tab选项卡</h3>
 <blockquote>
-<p>&ldquo;tab&quot;为选项卡的名称，可以自定义，数字是几表示从第几个选项卡开始。非必须，若数值为-1 则隐藏选项卡内容。
+<p>&ldquo;tab&quot;为选项卡的名称，可以自定义，数字是几表示从第几个选项卡开始。非必须，若数值为-1则隐藏选项卡内容。
 <a href="https://theme-next.org/docs/tag-plugins/tabs" target="_blank" rel="noopener noreffer">查看更多</a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -1925,168 +1935,232 @@ Unique name   : Unique name of tabs block tag without comma.
                 Optional parameter.
 </code></pre></td></tr></table>
 </div>
-</div><p>{% tabs tab,2 %}</p>
-<!-- tab -->
-<p>this is tab1</p>
-<!-- endtab -->
-<!-- tab -->
-<p>this is tab2</p>
-<!-- endtab -->
-<!-- tab -->
-<p>this is tab3</p>
-<!-- endtab -->
-<p>{% endtabs %}</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-&gt; 数值为-1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% tabs tab,2 %}
+&lt;!-- tab --&gt;
+this is tab1
+&lt;!-- endtab --&gt;
+&lt;!-- tab --&gt;
+this is tab2
+&lt;!-- endtab --&gt;
+&lt;!-- tab --&gt;
+this is tab3
+&lt;!-- endtab --&gt;
+{% endtabs %}
 </code></pre></td></tr></table>
 </div>
-</div><p>{% tabs 选项，-1 %}</p>
-<!-- tab -->
-<p><strong>选项 1</strong></p>
-<!-- endtab -->
-<!-- tab -->
-<p><strong>选项 2</strong></p>
-<!-- endtab -->
-<!-- tab -->
-<p><strong>选项 3</strong></p>
-<!-- endtab -->
-<p>{% endtabs %}</p>
+</div><blockquote>
+<p>数值为-1</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&gt; 名字写在选项里面
-
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% tabs 选项,-1 %}
+&lt;!-- tab --&gt;
+**选项1**
+&lt;!-- endtab --&gt;
+&lt;!-- tab --&gt;
+**选项2**
+&lt;!-- endtab --&gt;
+&lt;!-- tab --&gt;
+**选项3**
+&lt;!-- endtab --&gt;
+{% endtabs %}
 </code></pre></td></tr></table>
 </div>
-</div><p>{% tabs Fourth unique name %}</p>
-<!-- tab Solution 1 -->
-<p><strong>This is Tab 1.</strong></p>
-<!-- endtab -->
-<!-- tab Solution 2 -->
-<p><strong>This is Tab 2.</strong></p>
-<!-- endtab -->
-<!-- tab Solution 3 -->
-<p><strong>This is Tab 3.</strong></p>
-<!-- endtab -->
-<p>{% endtabs %}</p>
+</div><blockquote>
+<p>名字写在选项里面</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% tabs Fourth unique name %}
+&lt;!-- tab Solution 1 --&gt;
+**This is Tab 1.**
+&lt;!-- endtab --&gt;
+&lt;!-- tab Solution 2 --&gt;
+**This is Tab 2.**
+&lt;!-- endtab --&gt;
+&lt;!-- tab Solution 3 --&gt;
+**This is Tab 3.**
+&lt;!-- endtab --&gt;
+{% endtabs %}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="note便签">note便签</h3>
+<blockquote>
+<p>主题配置文件搜索note,可设置风格和图标是否显示。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Note tag (bs-callout).
+note:
+  # Note tag style values:
+  #  - simple    bs-callout old alert style. Default.
+  #  - modern    bs-callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: flat
+  icons: true
+  border_radius: 15
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: 0
+</code></pre></td></tr></table>
+</div>
+</div><p>写法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% note default %}
+#### default
+类型还有以下几种
+{% endnote %}
+{% note primary %}
+#### primary
+内容
+{% endnote %}
+{% note success %}
+#### success
+内容
+{% endnote %}
+{% note info %}
+#### info
+内容
+{% endnote %}
+{% note warning %}
+#### warning
+内容
+{% endnote %}
+{% note danger %}
+#### danger
+内容
+{% endnote %}
+{% note %}
+#### 不填
+内容
+{% endnote %}
+{% note danger no-icon %}
+#### danger no-icon
+内容
+{% endnote %}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="引用文本居中">引用(文本居中)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-### note 便签
-
-&gt; 主题配置文件搜索 note, 可设置风格和图标是否显示。
-
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% cq %}
+**there are test words**
+{% endcq %}
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="note-tag-bs-callout">Note tag (bs-callout).</h1>
-<p>note:</p>
-<h1 id="note-tag-style-values">Note tag style values:</h1>
-<h1 id="--simple----bs-callout-old-alert-style-default">- simple    bs-callout old alert style. Default.</h1>
-<h1 id="--modern----bs-callout-new-v2-v3-alert-style">- modern    bs-callout new (v2-v3) alert style.</h1>
-<h1 id="--flat------flat-callout-style-with-background-like-on-mozilla-or-stackoverflow">- flat      flat callout style with background, like on Mozilla or StackOverflow.</h1>
-<h1 id="--disabled--disable-all-css-styles-import-of-note-tag">- disabled  disable all CSS styles import of note tag.</h1>
-<p>style: flat
-icons: true
-border_radius: 15</p>
-<h1 id="offset-lighter-of-background-in--for-modern-and-flat-styles-modern--12--12-flat--18--6">Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</h1>
-<h1 id="offset-also-applied-to-label-tag-variables-this-option-can-work-with-disabled-note-tag">Offset also applied to label tag variables. This option can work with disabled note tag.</h1>
-<p>light_bg_offset: 0</p>
+</div><h3 id="font-awesome图标httpswwwrunoobcomfont-awesomefontawesome-tutorialhtml"><a href="https://www.runoob.com/font-awesome/fontawesome-tutorial.html" target="_blank" rel="noopener noreffer">Font Awesome图标</a></h3>
+<blockquote>
+<p>Font Awesome 是一套绝佳的图标字体库和CSS框架。<br>
+Font Awesome 字体为您提供可缩放矢量图标,它可以被定制大小、颜色、阴影以及任何可以用CSS的样式。<br>
+要使用Font Awesome图标，请在HTML页面的 部分中添加以下行：</p>
+</blockquote>
+<h4 id="1国内推荐-cdn">1、国内推荐 CDN</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">写法
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&#34;&gt;
 </code></pre></td></tr></table>
 </div>
-</div><p>{% note default %}</p>
-<h4 id="default">default</h4>
-<p>类型还有以下几种
-{% endnote %}
-{% note primary %}</p>
-<h4 id="primary">primary</h4>
-<p>内容
-{% endnote %}
-{% note success %}</p>
-<h4 id="success">success</h4>
-<p>内容
-{% endnote %}
-{% note info %}</p>
-<h4 id="info">info</h4>
-<p>内容
-{% endnote %}
-{% note warning %}</p>
-<h4 id="warning">warning</h4>
-<p>内容
-{% endnote %}
-{% note danger %}</p>
-<h4 id="danger">danger</h4>
-<p>内容
-{% endnote %}
-{% note %}</p>
-<h4 id="不填">不填</h4>
-<p>内容
-{% endnote %}
-{% note danger no-icon %}</p>
-<h4 id="danger-no-icon">danger no-icon</h4>
-<p>内容
-{% endnote %}</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-### 引用（文本居中）
-
-</code></pre></td></tr></table>
-</div>
-</div><p>{% cq %}
-<strong>there are test words</strong>
-{% endcq %}</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-### [Font Awesome 图标](https://www.runoob.com/font-awesome/fontawesome-tutorial.html)
-&gt; Font Awesome 是一套绝佳的图标字体库和 CSS 框架。  
-&gt; Font Awesome 字体为您提供可缩放矢量图标，它可以被定制大小、颜色、阴影以及任何可以用 CSS 的样式。  
-&gt; 要使用 Font Awesome 图标，请在 HTML 页面的 部分中添加以下行：  
-
-#### 1、国内推荐 CDN
-
-</code></pre></td></tr></table>
-</div>
-</div><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-```
-#### 2、海外推荐 CDN
+</div><h4 id="2海外推荐-cdn">2、海外推荐 CDN</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2095,7 +2169,7 @@ border_radius: 15</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&#34;&gt;
 </code></pre></td></tr></table>
 </div>
-</div><p>next 已经引用了，可以直接用，比如：</p>
+</div><p>next已经引用了，可以直接用，比如：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2213,7 +2287,7 @@ border_radius: 15</p>
 label: true
 </code></pre></td></tr></table>
 </div>
-</div><p><code>@</code>前面的是 label 的名字，后面的是要显示的文字</p>
+</div><p><code>@</code>前面的是label的名字，后面的是要显示的文字</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2300,11 +2374,11 @@ primary success info warning danger
 </div>
 </div><iframe src="/posts/next-pdf/1.pdf" style="width: 100%;height: 800px;"></iframe>]]></description></item><item><title>设置单篇文章不打赏、首页不显示文章</title><link>https://lruihao.cn/posts/noreward/</link><pubDate>Tue, 06 Nov 2018 13:06:29 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/noreward/</guid><description><![CDATA[<h2 id="不打赏">不打赏</h2>
 <blockquote>
-<p>出于一些特殊的原因，可能会希望 hexo 博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。<br>
+<p>出于一些特殊的原因，可能会希望hexo博客某篇单独的文章不打赏，其他文章还是可以打赏的。我是这样做的。<br>
 <strong>原理：</strong><br>
-因为默认的变量值为 false,!post.noreward 就是 true 了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成 true，取反后就是 false, 就不会显示了打赏模块了。</p>
+因为默认的变量值为false,!post.noreward就是true了，所以其他的已经写了的文章而仍然想保留打赏的，就不需要修改了，省去了麻烦，只需要把要改的改成true，取反后就是false,就不会显示了打赏模块了。</p>
 </blockquote>
-<h3 id="修改-post-模板">修改 post 模板</h3>
+<h3 id="修改post模板">修改post模板</h3>
 <p>打开以下路径文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2314,7 +2388,7 @@ primary success info warning danger
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig
 </code></pre></td></tr></table>
 </div>
-</div><p>查找 reward 关键词，大概在 378 行，并添加内容。</p>
+</div><p>查找reward关键词，大概在378行，并添加内容。</p>
 <p></p>
 <h3 id="文章内使用">文章内使用</h3>
 <p>在头部加上关键词<code>noreward: true</code>，比如本文头部。</p>
@@ -2335,21 +2409,21 @@ primary success info warning danger
 title: 设置单篇文章不打赏
 date: 2018-11-06 13:06:29
 tags:
-- hexo 博客
-categories: hexo 博客
+- hexo博客
+categories: hexo博客
 noreward: true
 notshow: false
 ---
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="其他">其他</h3>
-<p><strong>本地调试时修改完后记得重启 hexo, 只要是修改了布局文件就要重新<code>hexo s</code>, 修改文章内容等就可以不需要重启，<del>效果如本文</del></strong>
-<del>ps: 小声 bb, 如果有打赏的冲动换一篇文章就是了，嘘！</del></p>
+<p><strong>本地调试时修改完后记得重启hexo,只要是修改了布局文件就要重新<code>hexo s</code>,修改文章内容等就可以不需要重启，<del>效果如本文</del></strong>
+<del>ps: 小声bb,如果有打赏的冲动换一篇文章就是了，嘘！</del></p>
 <h4 id="其他-1">其他</h4>
-<p>顺手改了一下 tags 的位置，知道 tags 那一块移到喜欢的位置就好了。</p>
+<p>顺手改了一下tags的位置，知道tags那一块移到喜欢的位置就好了。</p>
 <h2 id="首页不显示文章">首页不显示文章</h2>
 <p>同理可得找到主题布局文件 <code>layout/index.swig</code></p>
-<p>找到一个 for 循环，在 for 循环里面加一个判断就行了。</p>
+<p>找到一个for循环，在for循环里面加一个判断就行了。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2370,7 +2444,7 @@ notshow: false
 在归档可以看到文章。</p>
 ]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
-            </div><h3 id="备份-hexo-博客">备份 hexo 博客</h3>
+            </div><h3 id="备份hexo博客">备份hexo博客</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2384,22 +2458,22 @@ notshow: false
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//如果themes/next(主题文件)下面有.git，请删除这个.git文件夹。
 cd hexo
 git init  //初始化本地仓库
 git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
 git commit -m &#34;blog hexo&#34;
-git branch hexo  //新建 hexo 分支
-git checkout hexo  //切换到 hexo 分支上
-git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
-git push origin hexo  //push 到 Github 项目的 hexo 分支上
+git branch hexo  //新建hexo分支
+git checkout hexo  //切换到hexo分支上
+git remote add origin git@github.com:username/username.github.io.git  //将本地与Github项目对接
+git push origin hexo  //push到Github项目的hexo分支上
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="在其他终端克隆和更新-hexo-博客">在其他终端克隆和更新 hexo 博客</h3>
+</div><h3 id="在其他终端克隆和更新hexo博客">在其他终端克隆和更新hexo博客</h3>
 <blockquote>
-<p>nodejs,git,hexo 已经安装好，即搭建完成</p>
+<p>nodejs,git,hexo已经安装好,即搭建完成</p>
 </blockquote>
-<h4 id="克隆-hexo-博客备份">克隆 hexo 博客备份</h4>
+<h4 id="克隆hexo博客备份">克隆hexo博客备份</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2407,9 +2481,9 @@ git push origin hexo  //push 到 Github 项目的 hexo 分支上
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone -b hexo git@github.com:username/username.github.io.git  //将Github中hexo分支clone到本地
 cd user.github.io
-npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
+npm install  //注意，这里一定要切换到刚刚clone的文件夹内执行，安装必要的所需组件，不用再init
 </code></pre></td></tr></table>
 </div>
 </div><p>这样我们的备份文件就会原封不动的拷贝到本地。</p>
@@ -2428,7 +2502,7 @@ npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执�
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//进入 username.github.io 文件夹，应是 hexo 分支
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//进入username.github.io文件夹,应是hexo分支
 git pull origin hexo //本地和远端的融合
 hexo new post &#34;new post name&#34;  //写新文章
 git add source
@@ -2438,14 +2512,14 @@ hexo d -g  //部署
 </code></pre></td></tr></table>
 </div>
 </div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
-]]></description></item><item><title>hexo next 主题添加字数统计（2018）</title><link>https://lruihao.cn/posts/hexo-wordcount/</link><pubDate>Thu, 30 Aug 2018 13:15:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-wordcount/</guid><description><![CDATA[<div class="details admonition warning open">
+]]></description></item><item><title>hexo next主题添加字数统计（2018）</title><link>https://lruihao.cn/posts/hexo-wordcount/</link><pubDate>Thu, 30 Aug 2018 13:15:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-wordcount/</guid><description><![CDATA[<div class="details admonition warning open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-exclamation-triangle fa-fw"></i>警告<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p><strong>2018/11/1 说明
-next 主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！</strong></p>
-<p>最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照 github 上 wordcount 的 readme 操作后，并没有什么用，我打开 post 相关配置文件并没有发现发现 wordcount 这个关键词，next 本身似乎也并没有在主题配置文件提供选项（或许是个人原因），所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是 RTFSC 大法好！(Read the fucking source code)</p>
+            <div class="admonition-content"><p><strong>2018/11/1说明
+next主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！</strong></p>
+<p>最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照github上wordcount的readme操作后，并没有什么用，我打开post相关配置文件并没有发现发现wordcount这个关键词，next本身似乎也并没有在主题配置文件提供选项(或许是个人原因)，所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是RTFSC大法好！(Read the fucking source code)</p>
 </div>
         </div>
     </div>
@@ -2462,12 +2536,12 @@ next 主题好像更新了，现在自带的可以用了，如果可以用了，
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">npm i --save hexo-wordcount
 
-# Node 版本 7.6.0 之前，请安装 2.x 版本 (Node.js v7.6.0 and previous)
+# Node 版本7.6.0之前,请安装 2.x 版本 (Node.js v7.6.0 and previous)
 npm install hexo-wordcount@2 --save
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="post-添加">post 添加</h2>
-<p>打开<code>hexo\themes\hexo-theme-next\layout\_macro</code>路径下的 post.swig 文件，既然没有字数统计那么我们就加一个，简单暴力地直接在阅读数后面加上一条就好了，在文件类搜索关键词<code>busuanzi</code>, 我用的是不蒜子，如果用的了 leancloud 的搜 leancloud 就好了，其他类似。找到这段代码后</p>
+</div><h2 id="post添加">post添加</h2>
+<p>打开<code>hexo\themes\hexo-theme-next\layout\_macro</code>路径下的post.swig文件，既然没有字数统计那么我们就加一个，简单暴力地直接在阅读数后面加上一条就好了，在文件类搜索关键词<code>busuanzi</code>,我用的是不蒜子,如果用的了leancloud的搜leancloud就好了，其他类似。找到这段代码后</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2506,7 +2580,7 @@ npm install hexo-wordcount@2 --save
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="全站添加">全站添加</h2>
-<p>打开<code>hexo\themes\hexo-theme-next\layout\_partials</code>路径下 footer.swig 文件，在你喜欢的位置添加以下代码</p>
+<p>打开<code>hexo\themes\hexo-theme-next\layout\_partials</code>路径下footer.swig文件，在你喜欢的位置添加以下代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2521,7 +2595,7 @@ npm install hexo-wordcount@2 --save
 &lt;/div&gt;
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>hexo d 出错</title><link>https://lruihao.cn/posts/hexo-d-error/</link><pubDate>Tue, 21 Aug 2018 22:15:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-d-error/</guid><description><![CDATA[<p>搭建这个博客以来，隔一段时间就出现一次部署失败的错误，每次都差不多，莫名其妙地出现的。前几次不知道怎么瞎搞就好了。<br>
+</div>]]></description></item><item><title>hexo d 出错</title><link>https://lruihao.cn/posts/hexo-d-error/</link><pubDate>Tue, 21 Aug 2018 22:15:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-d-error/</guid><description><![CDATA[<p>搭建这个博客以来，隔一段时间就出现一次部署失败的错误，每次都差不多，莫名其妙地出现的。。。前几次不知道怎么瞎搞就好了。<br>
 现在做一下记录，防止以后出错用。<br>
 错误如下</p>
 <div class="highlight"><div class="chroma">
@@ -2545,14 +2619,18 @@ npm install hexo-wordcount@2 --save
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">Connection reset by 13.229.188.59 port <span class="m">22</span>
 fatal: sha1 file <span class="s1">&#39;&lt;stdout&gt;&#39;</span> write error: Broken pipe
 fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
 FATAL Something<span class="s1">&#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html
 </span><span class="s1">Error: Connection reset by 13.229.188.59 port 22
 </span><span class="s1">fatal: sha1 file &#39;</span>&lt;stdout&gt;<span class="err">&#39;</span> write error: Broken pipe
+fatal: The remote end hung up unexpectedly
 fatal: The remote end hung up unexpectedly
 
 at ChildProcess.&lt;anonymous&gt; <span class="o">(</span>H:<span class="se">\H</span>exo<span class="se">\n</span>ode_modules<span class="se">\h</span>exo-util<span class="se">\l</span>ib<span class="se">\s</span>pawn.js:37:17<span class="o">)</span>
@@ -2568,27 +2646,27 @@ at ChildProcess.&lt;anonymous&gt; <span class="o">(</span>H:<span class="se">\H<
 ...
 </code></pre></td></tr></table>
 </div>
-</div><p>确保 ssh 正常，hexo-deploy-git 插件正常的情况下删除。deploy_git 文件夹就好了。
-最后吐槽一下，这个鬼错误，搞我一晚上醉了。我又打算重装了的。/吐血</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
+</div><p>确保ssh正常，hexo-deploy-git插件正常的情况下删除.deploy_git文件夹就好了。
+最后吐槽一下，这个鬼错误，搞我一晚上醉了。。。我又打算重装了的。。。。。/吐血</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
 <p>本文适合我这种纯小白。
-目前为止，全网也就只有一个博主写到过这样动态显示 subtitle 的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js, 后加载）<br>
-但是嘞，该博写的不怎么详细，17 年底写的。当然更大的可能是 next 更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
+目前为止，全网也就只有一个博主写到过这样动态显示subtitle的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js,后加载）<br>
+但是嘞，该博写的不怎么详细，17年底写的。当然更大的可能是next更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
 </blockquote>
-<h2 id="修改站点配置文件主要修改-subtitle">修改站点配置文件，主要修改 subtitle</h2>
+<h2 id="修改站点配置文件主要修改subtitle">修改站点配置文件，主要修改subtitle</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">subtitle: 不怕万人阻挡，只怕自己投降。W 你如何回忆，决定你是一个怎样的人！W 这是一个句子。W 这是另一个句子。W 这些句子你们不要搞一样的不然怎么叫个性签名-_-！。
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">subtitle: 不怕万人阻挡，只怕自己投降。W你如何回忆，决定你是一个怎样的人！W这是一个句子。W这是另一个句子。W这些句子你们不要搞一样的不然怎么叫个性签名-_-！。
 </code></pre></td></tr></table>
 </div>
-</div><p>句子与句子之间以 W 分割，后续需要根据该标志位去拆分句子组。<br>
+</div><p>句子与句子之间以W分割，后续需要根据该标志位去拆分句子组。<br>
 <strong>小伙伴们博主这里只是提供一个思路，不要和我用一模一样的啊，不然撞了多尴尬呀</strong></p>
 <h2 id="修改-headerindexswig">修改 header\index.swig</h2>
 <p>修改 <code>themes\next\layout_partials\header</code> 下面的 <code>index.swig</code> 文件<br>
 在最开头添加如下代码：<br>
-（这里用的原博的 js)</p>
+(这里用的原博的js)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2640,7 +2718,7 @@ at ChildProcess.&lt;anonymous&gt; <span class="o">(</span>H:<span class="se">\H<
      <span class="n">$</span><span class="o">(</span><span class="s">&#34;#helloTitle&#34;</span><span class="o">).</span><span class="na">html</span><span class="o">(</span><span class="n">text</span><span class="o">);</span>
      <span class="n">var</span> <span class="n">headOffset</span> <span class="o">=</span> <span class="n">getHeaderOffset</span><span class="o">();</span>
      <span class="n">setSidebarMarginTop</span><span class="o">(</span><span class="n">headOffset</span><span class="o">);</span>
-     <span class="c1">//动态 subtitle 设置
+     <span class="c1">//动态subtitle设置
 </span><span class="c1"></span>  <span class="o">}</span>
 <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
@@ -2698,19 +2776,19 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-XML" data-lang="XML"><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#34;jinrishici-sentence&#34;</span><span class="nt">&gt;</span>正在加载今日诗词。...<span class="nt">&lt;/span&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-XML" data-lang="XML"><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#34;jinrishici-sentence&#34;</span><span class="nt">&gt;</span>正在加载今日诗词....<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34;</span> <span class="na">charset=</span><span class="s">&#34;utf-8&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><hr>
-<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词。...</div>
+<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词....</div>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <hr>
 <h2 id="api-调用">api 调用</h2>
 <p>直接 js 调用 api 简单快速</p>
 <blockquote>
 <p>2021/9/30 更新<br>
-<a href="https://api.imjad.cn/hitokoto.md" target="_blank" rel="noopener noreffer">一言 api-参数详见</a> 已经挂了</p>
+<a href="https://api.imjad.cn/hitokoto.md" target="_blank" rel="noopener noreffer">一言api-参数详见</a> 已经挂了</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2730,15 +2808,15 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>hexo+github 搭建个人博客及美化</title><link>https://lruihao.cn/posts/hexobuild/</link><pubDate>Fri, 01 Jun 2018 14:34:23 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexobuild/</guid><description><![CDATA[<p><strong><a href="/categories/hexo/" rel="">更多关于 hexo</a></strong></p>
+</div>]]></description></item><item><title>hexo+github搭建个人博客及美化</title><link>https://lruihao.cn/posts/hexobuild/</link><pubDate>Fri, 01 Jun 2018 14:34:23 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexobuild/</guid><description><![CDATA[<p><strong><a href="/categories/hexo/" rel="">更多关于hexo</a></strong></p>
 <h1 id="首先">首先</h1>
-<p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener noreffer">官方文档</a> 是我们的第一手资料，也是最好的。
+<p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener noreffer">官方文档</a>是我们的第一手资料，也是最好的。
 安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
 <ul>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener noreffer">Node.js</a></li>
 <li><a href="https://git-scm.com/" target="_blank" rel="noopener noreffer">Git</a></li>
 </ul>
-<h1 id="hexo-安装">hexo 安装</h1>
+<h1 id="hexo安装">hexo安装</h1>
 <p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2786,8 +2864,8 @@ npm install
 └── themes
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="安装-hexo-插件">安装 hexo 插件</h1>
-<p>全装上吧，没事。</p>
+</div><h1 id="安装hexo插件">安装hexo插件</h1>
+<p>全装上吧，没事。。。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2821,7 +2899,7 @@ npm install hexo-generator-sitemap@1 --save
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="本地查看效果">本地查看效果</h1>
-<p>执行下面语句，执行完再登录 localhost:4000 查看效果（执行完不要按 Ctrl+C，不然就停止了）</p>
+<p>执行下面语句，执行完再登录localhost:4000查看效果（执行完不要按Ctrl+C，不然就停止了）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2832,8 +2910,8 @@ npm install hexo-generator-sitemap@1 --save
 hexo s
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>其他步骤在这里不赘述，参见 <a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener noreffer">超详细教程</a></strong>
-<strong><a href="https://lruihao.cn/posts/termux/" target="_blank" rel="noopener noreffer">安卓上搭建 hexo 博客</a></strong></p>
+</div><p><strong>其他步骤在这里不赘述，参见<a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener noreffer">超详细教程</a></strong>
+<strong><a href="https://lruihao.cn/posts/termux/" target="_blank" rel="noopener noreffer">安卓上搭建hexo博客</a></strong></p>
 <h1 id="部署">部署</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2843,16 +2921,16 @@ hexo s
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hexo g -d
 </code></pre></td></tr></table>
 </div>
-</div><p>部署后我们可以浏览器搜 username.github.io 查看自己的博客效果，比如我的 <a href="https://lruihao.github.io/" target="_blank" rel="noopener noreffer">lruihao.github.io</a></p>
+</div><p>部署后我们可以浏览器搜 username.github.io 查看自己的博客效果，，比如我的<a href="https://lruihao.github.io/" target="_blank" rel="noopener noreffer">lruihao.github.io</a></p>
 <h1 id="美化">美化</h1>
 <p><strong>这些美化都写的很详细，我建议你们自己好好看看吧，我也是在这里看到的，如果问我和这里说的是一样的。</strong></p>
 <ul>
-<li><a href="/categories/hexo/" rel="">hexo 个性化教程</a></li>
-<li><a href="http://www.zhaojun.im" target="_blank" rel="noopener noreffer">valine 特别鸣谢赵俊👍</a></li>
+<li><a href="/categories/hexo/" rel="">hexo个性化教程</a></li>
+<li><a href="http://www.zhaojun.im" target="_blank" rel="noopener noreffer">valine特别鸣谢赵俊👍</a></li>
 <li><a href="https://asdfv1929.github.io/tags/Hexo/" target="_blank" rel="noopener noreffer">asdfv1929</a></li>
-<li><a href="https://hexo.io/themes/" target="_blank" rel="noopener noreffer">hexo 官方主题集合</a>，<del>我用的是 aloha 主题</del>，该主题 <a href="https://github.com/henryhuang/hexo-theme-aloha/wiki/zh_CN" target="_blank" rel="noopener noreffer">官方文档</a>，<strong>后改用 next 主题 <a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener noreffer">next 主题</a></strong></li>
-<li><a href="https://hexo.io/plugins" target="_blank" rel="noopener noreffer">hexo 官方插件</a>
-<del>说说我的主题遇到的一些问题，由于这个主题用的人少，所以作者优化的不是很好（next 使用最多），当然也可以反过来说，所以自己美化了一点</del></li>
+<li><a href="https://hexo.io/themes/" target="_blank" rel="noopener noreffer">hexo官方主题集合</a>，<del>我用的是aloha主题</del>，该主题<a href="https://github.com/henryhuang/hexo-theme-aloha/wiki/zh_CN" target="_blank" rel="noopener noreffer">官方文档</a>，<strong>后改用next主题<a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener noreffer">next主题</a></strong></li>
+<li><a href="https://hexo.io/plugins" target="_blank" rel="noopener noreffer">hexo官方插件</a>
+<del>说说我的主题遇到的一些问题，由于这个主题用的人少，所以作者优化的不是很好（next使用最多），当然也可以反过来说，所以自己美化了一点</del></li>
 </ul>
 <h2 id="博文置顶">博文置顶</h2>
 <p>修改 <code>hero-generator-index</code> 插件，把文件：<code>node_modules/hexo-generator-index/lib/generator.js</code> 内的代码替换为：</p>
@@ -2894,11 +2972,11 @@ hexo s
   <span class="n">var</span> <span class="n">config</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">config</span><span class="o">;</span>
   <span class="n">var</span> <span class="n">posts</span> <span class="o">=</span> <span class="n">locals</span><span class="o">.</span><span class="na">posts</span><span class="o">;</span>
     <span class="n">posts</span><span class="o">.</span><span class="na">data</span> <span class="o">=</span> <span class="n">posts</span><span class="o">.</span><span class="na">data</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">function</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 两篇文章 top 都有定义
-</span><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">==</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">date</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">date</span><span class="o">;</span> <span class="c1">// 若 top 值一样则按照文章日期降序排
-</span><span class="c1"></span>            <span class="k">else</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">top</span><span class="o">;</span> <span class="c1">// 否则按照 top 值降序排
+        <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 两篇文章top都有定义
+</span><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">==</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">date</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">date</span><span class="o">;</span> <span class="c1">// 若top值一样则按照文章日期降序排
+</span><span class="c1"></span>            <span class="k">else</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">top</span><span class="o">;</span> <span class="c1">// 否则按照top值降序排
 </span><span class="c1"></span>        <span class="o">}</span>
-        <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 以下是只有一篇文章 top 有定义，那么将有 top 的排在前面（这里用异或操作居然不行 233）
+        <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）
 </span><span class="c1"></span>            <span class="k">return</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
         <span class="o">}</span>
         <span class="k">else</span> <span class="k">if</span><span class="o">(!</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span>
@@ -2918,8 +2996,8 @@ hexo s
 <span class="o">};</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="about-页面">about 页面</h2>
-<p>about 页面可以用 HTML 写，你想怎么写都行，我用的最简单的方法，直接<code>hexo n page &quot;about&quot;</code>后，会生成一个 md 文件，也就是后面说的文章，直接写文章就行了。</p>
+</div><h2 id="about页面">about页面</h2>
+<p>about页面可以用HTML写，你想怎么写都行，我用的最简单的方法，直接<code>hexo n page &quot;about&quot;</code>后，会生成一个md文件，也就是后面说的文章，直接写文章就行了。</p>
 <h2 id="添加搜索评论分享">添加搜索，评论，分享</h2>
 <p>搜索功能真心好用，当文章多起来的时候，标签提供的作用已经很少了，只能简单索引，搜索却能精确查找，这里我用的依旧是最简单的本地站内搜索。
 安装<code>hexo-generator-searchdb</code></p>
@@ -2963,15 +3041,15 @@ local_search:
   enable: true
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://blog.naaln.com/2016/07/hexo-with-algolia/" target="_blank" rel="noopener noreffer">algolia 参考文件</a><br>
-让搜索引擎找到你的博客，还是看到邱承佳学长博文有写到 <a href="https://blog.csdn.net/qq_26891045/article/details/51280470" target="_blank" rel="noopener noreffer">传送门</a></p>
+</div><p><a href="https://blog.naaln.com/2016/07/hexo-with-algolia/" target="_blank" rel="noopener noreffer">algolia参考文件</a><br>
+让搜索引擎找到你的博客，还是看到邱承佳学长博文有写到<a href="https://blog.csdn.net/qq_26891045/article/details/51280470" target="_blank" rel="noopener noreffer">传送门</a></p>
 <h2 id="添加访客数阅读量等">添加访客数，阅读量等</h2>
-<p>评论有多说（多说好像挂了），计数有不蒜，我用的不蒜子，还有其他的。</p>
+<p>评论有多说（多说好像挂了），计数有不蒜，我用的不蒜子，还有其他的。。。</p>
 <h3 id="文章阅读量">文章阅读量</h3>
 <blockquote>
-<p>以下适合非 next 主题的部分主题，next 主题已经自带，到主题配置文件修改就好了。</p>
+<p>以下适合非next主题的部分主题，next 主题已经自带，到主题配置文件修改就好了。</p>
 </blockquote>
-<p>打开以下路径在你喜欢的地方添加代码，<code>\blog\hexo\themes\主题名字、layout\_partial</code>，找到 <code>article.ejs</code>文件</p>
+<p>打开以下路径在你喜欢的地方添加代码，<code>\blog\hexo\themes\主题名字\layout\_partial</code>，找到 <code>article.ejs</code>文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2987,7 +3065,7 @@ local_search:
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="站点访问量访客数">站点访问量，访客数</h3>
-<p>打开以下路径在你喜欢的地方添加代码，<code>\blog\hexo\themes\主题名字、layout\_partial</code>，找到 <code>footer.ejs</code>文件</p>
+<p>打开以下路径在你喜欢的地方添加代码，<code>\blog\hexo\themes\主题名字\layout\_partial</code>，找到 <code>footer.ejs</code>文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3010,20 +3088,20 @@ local_search:
 <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>2018.10.08 更新
-不蒜子官网说七牛强制过期域名<del>dn-lbstatics.qbox.me</del>, 所以 js 文件位置发生改变，改为<code>busuanzi.ibruce.info</code></strong></p>
+</div><p><strong>2018.10.08更新
+不蒜子官网说七牛强制过期域名<del>dn-lbstatics.qbox.me</del>,所以js文件位置发生改变，改为<code>busuanzi.ibruce.info</code></strong></p>
 <h1 id="写文章">写文章</h1>
-<p>hexo 文章用轻量型标签语言 Markdown 编写</p>
+<p>hexo文章用轻量型标签语言Markdown编写</p>
 <ul>
-<li><a href="https://sspai.com/post/25137" target="_blank" rel="noopener noreffer">markdown 入门</a></li>
+<li><a href="https://sspai.com/post/25137" target="_blank" rel="noopener noreffer">markdown入门</a></li>
 <li><a href="https://markdown.tw/" target="_blank" rel="noopener noreffer">繁体原始文件</a></li>
-<li><a href="https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md" target="_blank" rel="noopener noreffer">繁体原始文件 github</a></li>
+<li><a href="https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md" target="_blank" rel="noopener noreffer">繁体原始文件github</a></li>
 </ul>
 ]]></description></item><item><title>hexo 添加图片，音乐，链接，视频</title><link>https://lruihao.cn/posts/hexowrite/</link><pubDate>Thu, 31 May 2018 23:19:22 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexowrite/</guid><description><![CDATA[<blockquote>
-<p><strong>如果实在搞得头晕直接去 <a href="https://www.jianshu.com/" target="_blank" rel="noopener noreffer">简书</a> 写文章，再把简书生成的 md 文章复制过来就好了（简书是个不错的 Markdown 在线编辑器），还可以去 <a href="https://maxiang.io/" target="_blank" rel="noopener noreffer">马克飞象，专为印象笔记打造的 Markdown 编辑器</a>，<a href="https://www.typora.io/#" target="_blank" rel="noopener noreffer">typora 也是不错的</a>，突然发现 <a href="https://www.csdn.net/" target="_blank" rel="noopener noreffer">csdn</a> 也支持 Markdown 编译器了</strong></p>
+<p><strong>如果实在搞得头晕直接去<a href="https://www.jianshu.com/" target="_blank" rel="noopener noreffer">简书</a>写文章，再把简书生成的md文章复制过来就好了（简书是个不错的Markdown在线编辑器），还可以去<a href="https://maxiang.io/" target="_blank" rel="noopener noreffer">马克飞象，专为印象笔记打造的 Markdown 编辑器</a>，<a href="https://www.typora.io/#" target="_blank" rel="noopener noreffer">typora 也是不错的</a>，突然发现<a href="https://www.csdn.net/" target="_blank" rel="noopener noreffer">csdn</a>也支持Markdown编译器了</strong></p>
 </blockquote>
-<h1 id="1-首先">1. 首先</h1>
-<p>刚刚搭博客，很多都不懂，就连插入图片的路径问题都把我整的要命。（我用的 Sublime Text 3 编译器）<br>
+<h1 id="1首先">1.首先</h1>
+<p>刚刚搭博客，很多都不懂，就连插入图片的路径问题都把我整的要命。。。（我用的Sublime Text 3编译器）<br>
 下面讲讲：</p>
 <h2 id="11-设置站点配置_configyml">1.1 设置站点配置_config.yml</h2>
 <div class="highlight"><div class="chroma">
@@ -3043,7 +3121,7 @@ local_search:
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install https://github.com/CodeFalling/hexo-asset-image -- save
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="13-下次再运行-hexo-n-xxxx来生成-md-博文时下路径">1.3 下次再运行 hexo n &ldquo;xxxx&quot;来生成 md 博文时，下路径</h2>
+</div><h2 id="13-下次再运行hexo-n-xxxx来生成md博文时下路径">1.3 下次再运行hexo n &ldquo;xxxx&quot;来生成md博文时，下路径</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3052,11 +3130,11 @@ local_search:
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/source/_posts
 </code></pre></td></tr></table>
 </div>
-</div><p>文件夹内除了 xxxx.md 文件还有一个同名的文件夹，在 xxxx.md 中想引入图片时，先把图片复制到 xxxx 这个文件夹中，然后只需要在 xxxx.md 中按照 markdown 的格式引入图片。</p>
-<h1 id="2-添加图片">2. 添加图片</h1>
-<p>首先大家可以查看 hexo 官方文档 <a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener noreffer">资源文件夹章节</a></p>
-<h2 id="21-markdown-添加">2.1 markdown 添加</h2>
-<p>相对路径添加（我被这个相对路径搞得要死，前面各种出错，大家可以对照我的来插入图片。..）</p>
+</div><p>文件夹内除了xxxx.md文件还有一个同名的文件夹，在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片。</p>
+<h1 id="2添加图片">2.添加图片</h1>
+<p>首先大家可以查看hexo官方文档<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener noreffer">资源文件夹章节</a></p>
+<h2 id="21-markdown添加">2.1 markdown添加</h2>
+<p>相对路径添加（我被这个相对路径搞得要死，前面各种出错，大家可以对照我的来插入图片&hellip;）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3072,7 +3150,7 @@ local_search:
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#直接写图片名就好了，图片实例见下
 ![kyrie irving](294136.jpg)
 
-#如果改了 Permalink 就要加上文章名，即同名文件夹名
+#如果改了Permalink就要加上文章名，即同名文件夹名
 ![kyrie irving](hexo-添加图片，音乐，链接，视频/294136.jpg)
 #代码压缩后前面还要加一个/
 ![kyrie irving](/hexo-添加图片，音乐，链接，视频/294136.jpg)
@@ -3093,8 +3171,8 @@ local_search:
 </code></pre></td></tr></table>
 </div>
 </div><p></p>
-<h1 id="3-音乐">3. 音乐</h1>
-<p>大家可以看 <a href="https://music.163.com" target="_blank" rel="noopener noreffer">网易云音乐</a> 的官网，播放音乐可以生成外链，直接拿来用就行了。iframe 插件可以在代码中设置宽高等参数，auto 为自动播放。flash 不可以自己设置参数。看喜好，随便你。
+<h1 id="3音乐">3.音乐</h1>
+<p>大家可以看<a href="https://music.163.com" target="_blank" rel="noopener noreffer">网易云音乐</a>的官网，播放音乐可以生成外链，直接拿来用就行了。iframe插件可以在代码中设置宽高等参数，auto为自动播放。flash不可以自己设置参数。看喜好，随便你。
 其他音乐，把插件中的链接替换成要播放的链接就可以了</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3104,7 +3182,7 @@ local_search:
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#iframe 插件
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#iframe插件
 
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=330 height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=66651&amp;auto=0&amp;height=66&#34;&gt;
 &lt;/iframe&gt;
@@ -3119,13 +3197,13 @@ local_search:
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#flash 插件
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#flash插件
 
 &lt;embed src=&#34;//music.163.com/style/swf/widget.swf?sid=40249713&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&#34; width=&#34;340&#34; height=&#34;86&#34;  allowNetworking=&#34;all&#34;&gt;
 &lt;/embed&gt;
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="4-添加链接">4. 添加链接</h1>
+</div><h1 id="4添加链接">4.添加链接</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3136,7 +3214,7 @@ local_search:
 {% link text url title %}
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="5-添加视频">5. 添加视频</h1>
+</div><h1 id="5添加视频">5.添加视频</h1>
 <blockquote>
 <p>视频链接最好是打开就是视频的链接（youku，YouTube，抖音等）
 可以把视频上传到优酷，抖音等生成外链再拿来用。（优酷上传需要注册和实名认证）
@@ -3170,4 +3248,4 @@ local_search:
 <h1 id="工具集合">工具集合</h1>
 <p><a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener noreffer">Picgo</a>
 <a href="https://maxiang.io/" target="_blank" rel="noopener noreffer">马克飞象</a>、CSDN、简书
-<a href="https://sm.ms/" target="_blank" rel="noopener noreffer">SM.MS 图床</a></p>]]></description></item></channel></rss>
+<a href="https://sm.ms/" target="_blank" rel="noopener noreffer">SM.MS图床</a></p>]]></description></item></channel></rss>

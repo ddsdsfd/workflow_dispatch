@@ -1,12 +1,12 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>JSON - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/json/</link><description>JSON - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 11 May 2019 17:02:31 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/json/" rel="self" type="application/rss+xml"/><item><title>python 实战：模拟 post 请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
-<p>用 python 模拟 post 请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
-要求每天早上 8 点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>JSON - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/json/</link><description>JSON - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 11 May 2019 17:02:31 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/json/" rel="self" type="application/rss+xml"/><item><title>python实战：模拟post请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
+<p>用python模拟post请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
+要求每天早上8点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
 </blockquote>
 <h1 id="背景">背景</h1>
 <blockquote>
 <p>麻小科技：<br>
-麻小科技全名深圳市麻小科技有限公司，成立于 2017 年 1 月。是我高一的时候参加<code>Peer 夏令营</code>带我们一个玩的“老师”和他的朋友的创业公司，说老师有点奇怪，我们都是直接叫名字的，比如大家都叫我瑞豪，我也就叫他文捷哥，简称捷哥吧。他们公司主要的开发模式是，小程序前端+php 后端，然后做的是酒店小程序，为每个酒店定制小程序。这些小程序可以贴在客房中给访客提供一些服务，大大节省了成本也提高了效率。<br>
-然后每个酒店小程序都有独立的后台，后台会记录一些点击需求的数据。现在他们有一个需求需要把每个酒店小程序后台的数据在每天早上 9 点发送至对应酒店的微信群。</p>
+麻小科技全名深圳市麻小科技有限公司，成立于2017年1月。是我高一的时候参加<code>Peer夏令营</code>带我们一个玩的“老师”和他的朋友的创业公司，说老师有点奇怪，我们都是直接叫名字的，比如大家都叫我瑞豪，我也就叫他文捷哥，简称捷哥吧。他们公司主要的开发模式是，小程序前端+php后端，然后做的是酒店小程序，为每个酒店定制小程序。这些小程序可以贴在客房中给访客提供一些服务，大大节省了成本也提高了效率。<br>
+然后每个酒店小程序都有独立的后台，后台会记录一些点击需求的数据。现在他们有一个需求需要把每个酒店小程序后台的数据在每天早上9点发送至对应酒店的微信群。</p>
 </blockquote>
 <h1 id="实现代码">实现代码</h1>
 <blockquote>
@@ -96,13 +96,13 @@
 <span class="kn">from</span> <span class="nn">wxpy</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="c1"># 基本信息填写：</span>
-<span class="c1"># 酒店 id，酒店名称及群名列表数据，格式：[&#34;xxx&#34;,&#34;xxx&#34;,&#34;xxx&#34;]</span>
+<span class="c1"># 酒店id，酒店名称及群名列表数据，格式：[&#34;xxx&#34;,&#34;xxx&#34;,&#34;xxx&#34;]</span>
 <span class="c1"># 使用时请将以下三个列表一一对应</span>
 <span class="n">hotel</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;xxxx&#34;</span><span class="p">,</span><span class="s2">&#34;xxxx&#34;</span><span class="p">]</span> <span class="c1"># 酒店后台数据接口二级域名，已匿名</span>
 <span class="n">hotel_name</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;增城宾馆&#34;</span><span class="p">,</span><span class="s2">&#34;百丽酒店&#34;</span><span class="p">]</span>
 <span class="n">grouplist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;麻小&#34;</span><span class="p">,</span><span class="s2">&#34;富强民主文明和谐自由平等公正法治&#34;</span><span class="p">]</span>
 
-<span class="c1"># post 请求发送的数据</span>
+<span class="c1"># post请求发送的数据</span>
 <span class="n">postData</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># &#39;username&#39;:&#39;test&#39;,</span>
     <span class="c1"># &#39;password&#39;:&#39;123456&#39;,</span>
@@ -116,12 +116,12 @@
 		<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">postData</span><span class="p">)</span>
 		<span class="c1"># print(r.text)</span>
 
-		<span class="c1"># 把结果转化为 json 字符串</span>
+		<span class="c1"># 把结果转化为json字符串</span>
 		<span class="n">response</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">(),</span><span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#sort_keys=True </span>
 
-		<span class="c1"># 把 json 转换为 dict 字典作为中间结果，再取出昨日数据</span>
+		<span class="c1"># 把json转换为dict字典作为中间结果，再取出昨日数据</span>
 		<span class="n">midresult</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-		<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;早上好！&#34;</span><span class="o">+</span><span class="n">hotel_name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;小程序昨日数据如下：</span><span class="se">\n</span><span class="s2"> 访问数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type1&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 房间数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type2&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 需求量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type3&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 商品点击量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type4&#34;</span><span class="p">]))</span>
+		<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;早上好！&#34;</span><span class="o">+</span><span class="n">hotel_name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34;小程序昨日数据如下：</span><span class="se">\n</span><span class="s2">访问数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type1&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">房间数：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type2&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">需求量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type3&#34;</span><span class="p">])</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">商品点击量：&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">midresult</span><span class="p">[</span><span class="s2">&#34;data&#34;</span><span class="p">][</span><span class="s2">&#34;yesterday_data&#34;</span><span class="p">][</span><span class="s2">&#34;type4&#34;</span><span class="p">]))</span>
 		<span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
 	<span class="c1"># print(result)</span>
 	<span class="k">return</span> <span class="n">result</span>
@@ -142,19 +142,19 @@
 	<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 		<span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
 		<span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-		<span class="c1"># 设置每天 8 点发送</span>
+		<span class="c1"># 设置每天8点发送</span>
 		<span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
 			<span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
 			<span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
 		<span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
 			<span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
 			<span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2">软件将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后发送数据&#34;</span><span class="p">)</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
 		<span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
+			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天8点发送数据！&#34;</span><span class="p">)</span>
 			<span class="n">result</span><span class="o">=</span><span class="n">get_data</span><span class="p">()</span> <span class="c1"># 获取数据</span>
 			<span class="n">wechat_send</span><span class="p">(</span><span class="n">bot</span><span class="p">,</span><span class="n">result</span><span class="p">)</span> <span class="c1"># 发送数据</span>
 			<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">86400</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
@@ -167,22 +167,22 @@
 </div><h1 id="测试结果">测试结果</h1>
 <p>  </p>
 <h1 id="程序打包">程序打包</h1>
-<p>使用 pyinstaller 工具打包成可执行文件即可。（可执行文件不可跨平台运行，分平台打包）</p>
+<p>使用pyinstaller工具打包成可执行文件即可。（可执行文件不可跨平台运行，分平台打包）</p>
 <blockquote>
-<p>目前该程序已经上线测试中。.. 暂未反馈问题</p>
+<p>目前该程序已经上线测试中&hellip;暂未反馈问题</p>
 </blockquote>
 <h1 id="收获">收获</h1>
 <blockquote>
-<p>第一次参与实际公司的项目开发，虽然只是一个小的需求设计，但是我在这个过程中也学到了很多，比如通过实际一两周的编程对 Python 的熟悉度远远好过以前在实验室看的一个月视频。<br>
-还有就是在此次开发中，也感受到了实际项目开发的团队合作重要性，刚开始拿到这个需求，由于我对 python 和后台，以及数据接口这些基本的操作都不懂，就拿数据获取来说，我一开始一位要自己模拟登陆后台（已知密码），一顿操作、百度等等失败告终，后来涛哥给了一个数据接口，加上涛哥耐心指点，我才终于拿到了数据。<br>
+<p>第一次参与实际公司的项目开发，虽然只是一个小的需求设计，但是我在这个过程中也学到了很多，比如通过实际一两周的编程对Python的熟悉度远远好过以前在实验室看的一个月视频。<br>
+还有就是在此次开发中，也感受到了实际项目开发的团队合作重要性，刚开始拿到这个需求，由于我对python和后台，以及数据接口这些基本的操作都不懂，就拿数据获取来说，我一开始一位要自己模拟登陆后台（已知密码），一顿操作、百度等等失败告终，后来涛哥给了一个数据接口，加上涛哥耐心指点，我才终于拿到了数据。<br>
 还有在多人合作的项目中，为保持代码的可读性，要尽量的多些注释，还有函数方法的命名尽量具备可读性。比如我代码中的<code>wechat_send()</code>，一开始的命名是<code>wxfs()</code>，经捷哥指正我才改过来的。</p>
 </blockquote>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
+<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于XML来说，更加的轻量级，更方便解析，因此许多开发者都遵循Json格式来进行数据的传输和交换。今天我们详细介绍一下Python在Json的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
 </blockquote>
-<h1 id="json-的数据格式">json 的数据格式</h1>
-<p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>
+<h1 id="json的数据格式">json的数据格式</h1>
+<p>在json中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”,就是一个json格式的数据，json的格式归纳下来，一般有以下几点：</p>
 <ul>
 <li>对象通过键值对表现；</li>
 <li>键通过双引号包裹，后面跟冒号“:”，然后跟该键的值；</li>
@@ -193,27 +193,27 @@
 </ul>
 <p>我们看一个略为复杂一点的例子：</p>
 <p></p>
-<p>上例则是一个典型的 json 格式的数据，强大的 Python 提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个 json 格式的数据，也可以将一个 json 格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p>
+<p>上例则是一个典型的json格式的数据，强大的Python提供了一个“json”模块，可以方便的将各种零散的数据通过模块的内置函数编码形成一个json格式的数据，也可以将一个json格式的数据解码形成自己需要的数据，非常好用，下面我们就来介绍一下。</p>
 <h1 id="jsondumps">json.dumps()</h1>
-<p>json 模块里的 dumps 函数是对数据进行编码，形成 json 格式的数据，我们看一下下面的例子：</p>
+<p>json模块里的dumps函数是对数据进行编码，形成json格式的数据，我们看一下下面的例子：</p>
 <p></p>
-<p>通过输出的结果很容易看出，通过 dumps 方法使字典转换成为了 json 格式，虽然它们非常相似。其中，在 dumps 里的参数“sort_keys=True”，使得输出 json 后对 key 和 value 进行 0~9、a~  z 的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较 json 中的数据，因此，适当的排序是很有必要的。</p>
-<p>此外，“Indent”参数表示缩进的意思，它可以使得输出的 Json 看起来更加整齐好看，可读性更强，例如：</p>
+<p>通过输出的结果很容易看出，通过dumps方法使字典转换成为了json格式，虽然它们非常相似。其中，在dumps里的参数“sort_keys=True”，使得输出json后对key和value进行0~9、a~  z的顺序排序，如果不填，则按照无序排列。有时候，通过排序可以方便地比较json中的数据，因此，适当的排序是很有必要的。</p>
+<p>此外，“Indent”参数表示缩进的意思，它可以使得输出的Json看起来更加整齐好看，可读性更强，例如：</p>
 <p></p>
-<p>下面列举一下 dumps（）的可填参数：</p>
+<p>下面列举一下dumps（）的可填参数：</p>
 <ul>
-<li>skipkey：默认为 False，当 dict 对象里的数据不是 Python 的基本数据类型；（str,unicode,int,long,float,bool,None）时，当 skipkey 为 False，就会报错，如果 skipkey 为 True，则可以跳过这类 key；</li>
-<li>indent：如果填 0 或者不填，则按照一行进行打印，否则按照 indent 的数值显示前面的空格（正整数形式）；</li>
-<li>separators：分隔符，默认为“(',',':')”，它表示 key 之间用“,”隔开，key 和 value 之间用“:”隔开；</li>
-<li>encoding：编码格式，默认值是 UTF-8；</li>
-<li>sort_keys：对 key、value 进行排序，默认值是 False，即不排序；</li>
-<li>ensure_ascii：默认为 True，如果 dict 对象里含有 none-ASCII 的字符，则显示、uXX 的格式，如果为 False，则能正常显示出来；</li>
+<li>skipkey：默认为False，当dict对象里的数据不是Python的基本数据类型；（str,unicode,int,long,float,bool,None）时，当skipkey为False，就会报错，如果skipkey为True，则可以跳过这类key；</li>
+<li>indent：如果填0或者不填，则按照一行进行打印，否则按照indent的数值显示前面的空格（正整数形式）；</li>
+<li>separators：分隔符，默认为“(',',':')”，它表示key之间用“,”隔开，key和value之间用“:”隔开；</li>
+<li>encoding：编码格式，默认值是UTF-8；</li>
+<li>sort_keys：对key、value进行排序，默认值是False，即不排序；</li>
+<li>ensure_ascii：默认为True，如果dict对象里含有none-ASCII的字符，则显示\uXX的格式，如果为False，则能正常显示出来；</li>
 </ul>
 <h1 id="jsonloads">json.loads()</h1>
-<p>和 dumps 相反，loads 函数则是将 json 格式的数据解码，转换为 Python 字典，我们看一下下面的例子：</p>
+<p>和dumps相反，loads函数则是将json格式的数据解码，转换为Python字典，我们看一下下面的例子：</p>
 <p></p>
-<p>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为 Unicode 的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=&lsquo;utf-8&rsquo;) 即可。</p>
+<p>有时候，输出结果遇到中文的时候，会出现编码格式不一样的情况，显示出为Unicode的编码格式，使得不易读懂，解决办法是添加参数“encoding”参数，即上面的改写成这样：d1 = json.loads(data1,encoding=&lsquo;utf-8&rsquo;)即可。</p>
 <h1 id="jsondump-和-jsonload">json.dump() 和 json.load()</h1>
-<p>相对于上面所讲的 dumps 和 loads 来说，dump 和 load 函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
+<p>相对于上面所讲的dumps和loads来说，dump和load函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
 <p></p>
-<p>上例列举出了 json 的四个方法：dumps（）和 dump（）、loads（）和 load（）的简单使用方法，可见，Python 对于 json 的处理相当方便，不像 c++那样（谁用谁知道）。</p>]]></description></item></channel></rss>
+<p>上例列举出了json的四个方法：dumps（）和dump（）、loads（）和load（）的简单使用方法，可见，Python对于json的处理相当方便，不像c++那样（谁用谁知道）。</p>]]></description></item></channel></rss>

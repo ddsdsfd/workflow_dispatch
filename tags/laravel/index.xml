@@ -1,11 +1,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Laravel - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/laravel/</link><description>Laravel - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/laravel/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
+<p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
-<li>支持 Markdown, 文章实时预览效果</li>
+<li>支持Markdown,文章实时预览效果</li>
 <li>支持多种编程语言代码高亮</li>
 <li>编辑器图片上传</li>
 <li>后台上传文件管理</li>
@@ -14,15 +14,15 @@
 <li>文章标签</li>
 <li>热门文章</li>
 <li>随机格言</li>
-<li>文章管理（发布，评论开关，排序）</li>
-<li>自定义导航（显示开关，排序）</li>
-<li>自定义页面（发布开关）</li>
-<li>友情链接（显示开关，排序）</li>
-<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS 桶相册</a></li>
-<li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
+<li>文章管理(发布，评论开关，排序)</li>
+<li>自定义导航(显示开关，排序)</li>
+<li>自定义页面(发布开关)</li>
+<li>友情链接(显示开关，排序)</li>
+<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS桶相册</a></li>
+<li>丰富的博客配置(方便扩展，支持自定义JS脚本)</li>
 <li>不蒜子计数</li>
-<li>Leancloud 计数</li>
-<li>Valine 评论插件</li>
+<li>Leancloud计数</li>
+<li>Valine评论插件</li>
 <li>文章分享插件</li>
 </ul>
 <h1 id="截图">截图</h1>
@@ -31,7 +31,7 @@
 </p>
 <h1 id="安装">安装</h1>
 <blockquote>
-<p>注意事项：PHP 取消禁用函数<code>putenv()</code>和<code>symlink()</code>，安装<code>fileinfo</code>扩展。</p>
+<p>注意事项：PHP取消禁用函数<code>putenv()</code>和<code>symlink()</code>，安装<code>fileinfo</code>扩展。</p>
 </blockquote>
 <p>下载</p>
 <div class="highlight"><div class="chroma">
@@ -51,7 +51,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cd cell-blog
 </code></pre></td></tr></table>
 </div>
-</div><p>生成。env</p>
+</div><p>生成.env</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -60,7 +60,7 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">cp .env.example .env
 </code></pre></td></tr></table>
 </div>
-</div><p>编辑。env 环境配置</p>
+</div><p>编辑.env环境配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -81,7 +81,7 @@
 <span class="nv">DB_PASSWORD</span><span class="o">=</span> <span class="c1">#数据库密码</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>打开<code>app\Providers\AppServiceProvider.php</code>, 注释<code>SystemController:load()</code> 防止后续步骤报错</p>
+</div><p>打开<code>app\Providers\AppServiceProvider.php</code>,注释<code>SystemController:load()</code> 防止后续步骤报错</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -107,7 +107,7 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">composer install
 </code></pre></td></tr></table>
 </div>
-</div><p>生成 key</p>
+</div><p>生成key</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -137,7 +137,7 @@ php artisan admin:import media-manager
 php artisan db:seed
 </code></pre></td></tr></table>
 </div>
-</div><p>默认下使用了本地文件系统，创建 storage 目录在 public 的软链接</p>
+</div><p>默认下使用了本地文件系统，创建storage目录在public的软链接</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -146,7 +146,7 @@ php artisan db:seed
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">php artisan storage:link
 </code></pre></td></tr></table>
 </div>
-</div><p>打开<code>app\Providers\AppServiceProvider.php</code>, 取消注释<code>SystemController:load()</code></p>
+</div><p>打开<code>app\Providers\AppServiceProvider.php</code>,取消注释<code>SystemController:load()</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -163,8 +163,8 @@ php artisan db:seed
     }
 </code></pre></td></tr></table>
 </div>
-</div><p>将博客网站根目录指向入口 public 目录</p>
-<p>如果使用 Nginx，要设置伪静态</p>
+</div><p>将博客网站根目录指向入口public目录</p>
+<p>如果使用Nginx，要设置伪静态</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -177,17 +177,17 @@ php artisan db:seed
 }
 </code></pre></td></tr></table>
 </div>
-</div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>, 使用用户名<code>admin</code>和密码<code>admin</code>登录。</p>
+</div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>,使用用户名<code>admin</code>和密码<code>admin</code>登录.</p>
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
 <p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>
-<h1 id="搭建-php-环境">搭建 php 环境</h1>
+<h1 id="搭建php环境">搭建php环境</h1>
 <ol>
-<li>安装 wampserver</li>
-<li>安装 composer</li>
-<li>更换 aliyun 源</li>
+<li>安装wampserver</li>
+<li>安装composer</li>
+<li>更换aliyun源</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -197,7 +197,7 @@ php artisan db:seed
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="新建-laravel-项目">新建 laravel 项目</h1>
+</div><h1 id="新建laravel项目">新建laravel项目</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -217,7 +217,7 @@ php artisan db:seed
 laravel new blog
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载-debugbar">下载 debugbar</h1>
+</div><h1 id="下载debugbar">下载debugbar</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -227,7 +227,7 @@ laravel new blog
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="修改语言时区">修改语言时区</h1>
-<p>修改 config/app.php，将 local 的值 en 改成 zh-CN(laravel-admin 自带 zh-CN)：</p>
+<p>修改config/app.php，将local的值 en 改成 zh-CN(laravel-admin自带zh-CN)：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -243,7 +243,7 @@ laravel new blog
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="配置数据库">配置数据库</h1>
-<p>首先确保安装好了 laravel，并且数据库连接设置正确。</p>
+<p>首先确保安装好了laravel，并且数据库连接设置正确。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -266,7 +266,7 @@ DB_USERNAME=root
 DB_PASSWORD=123456
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载-laravel-admin">下载 laravel-admin</h1>
+</div><h1 id="下载laravel-admin">下载laravel-admin</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -300,9 +300,9 @@ composer require encore/laravel-admin
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>运行这个命令的时候，如果遇到了下面的错误：
+<p>运行这个命令的时候，如果遇到了下面的错误:<br>
 <code>SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))</code><br>
-参考这个 issue 来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
+参考这个issue来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -369,13 +369,13 @@ composer require encore/laravel-admin
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>启动服务后，在浏览器打开 <code>http://localhost/admin/</code> , 使用用户名 <code>admin</code> 和密码 <code>admin</code> 登录。</p>
+</div><p>启动服务后，在浏览器打开 <code>http://localhost/admin/</code> ,使用用户名 <code>admin</code> 和密码 <code>admin</code> 登录.</p>
 <blockquote>
 <p>报错<code>Disk [admin] not configured, please add a disk config in config/filesystems.php</code></p>
 </blockquote>
-<p>在<code>config/filesystems.php</code>中 disks 处添加以下配置后执行<code>php artisan storage:link</code>来创建软链接（windows 和 linux 的软链接不一样不能直接复制！）</p>
+<p>在<code>config/filesystems.php</code>中disks处添加以下配置后执行<code>php artisan storage:link</code>来创建软链接（windows和linux的软链接不一样不能直接复制！）</p>
 <blockquote>
-<p>宝塔执行时删除禁用函数 putenv(),symlink()</p>
+<p>宝塔执行时删除禁用函数putenv(),symlink()</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -413,7 +413,7 @@ composer require encore/laravel-admin
 ],
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载-dcat-admin">下载 dcat-admin</h1>
+</div><h1 id="下载dcat-admin">下载dcat-admin</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -475,7 +475,7 @@ php artisan make:migration create_mottoes_table
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">php artisan migrate
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="创建模型-model">创建模型 model</h1>
+</div><h1 id="创建模型model">创建模型model</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -545,9 +545,9 @@ $router-&gt;resource(&#39;systems&#39;, SystemController::class);
 $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="editormd-安装">editormd 安装</h1>
+</div><h1 id="editormd安装">editormd安装</h1>
 <p><a href="https://github.com/ShareManT/laravel-admin-ext-editormd" target="_blank" rel="noopener noreffer">editormd</a>
-<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github 图像问题</a></p>
+<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github图像问题</a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -557,7 +557,7 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public\vendor\laravel-admin-ext\editormd\editormd-1.5.0\images\emojis
 </code></pre></td></tr></table>
 </div>
-</div><p>修改 editormd.js 及 editormd.min.js</p>
+</div><p>修改editormd.js及editormd.min.js</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -575,9 +575,9 @@ editormd.emoji     = {
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="图片上传">图片上传</h2>
-<h3 id="csrf-419-错误">csrf 419 错误</h3>
-<p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加 csrf 验证器：</p>
-<p>修改 image-dialog.js 的<code>var dialogContent</code><br>
+<h3 id="csrf-419错误">csrf 419错误</h3>
+<p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加csrf验证器：</p>
+<p>修改image-dialog.js的<code>var dialogContent</code><br>
 <a href="https://www.jianshu.com/p/8101f7bc80f6" target="_blank" rel="noopener noreffer">参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -597,7 +597,7 @@ editormd.emoji     = {
 {
     action += &#34;&amp;callback=&#34; + settings.uploadCallbackURL + &#34;&amp;dialog_id=editormd-image-dialog-&#34; + guid;
 }
-//添加 csrf 验证
+//添加csrf验证
 var csrfToken = $(&#39;meta[name=&#34;csrf-token&#34;]&#39;).attr(&#39;content&#39;);
 var csrfField = &#34;&#34;;
 if (csrfToken) {
@@ -607,7 +607,7 @@ if (csrfToken) {
 </div>
 </div><h1 id="markdown-转-html">markdown 转 HTML</h1>
 <p><a href="https://www.zhiqiexing.com/119.html" target="_blank" rel="noopener noreffer">https://www.zhiqiexing.com/119.html</a>
-<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown 安装</a></p>
+<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -644,7 +644,7 @@ php artisan vendor:publish
 <p>Eloquent 模型可以触发事件，允许你在模型生命周期中的多个时间点调用如下这些方法：retrieved, creating, created, updating, updated, saving, saved, deleting, deleted, restoring, restored。事件允许你在一个指定模型类每次保存或更新的时候执行代码。</p>
 <p>retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。</p>
 <h1 id="添加后台验证码">添加后台验证码</h1>
-<p>依赖 php 扩展<code>fileinfo</code><br>
+<p>依赖php扩展<code>fileinfo</code><br>
 <a href="https://learnku.com/articles/32842" target="_blank" rel="noopener noreffer">添加验证码</a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
@@ -657,24 +657,34 @@ php artisan vendor:publish
 php artisan admin:import media-manager
 </code></pre></td></tr></table>
 </div>
-</div><p>&lsquo;extensions&rsquo; =&gt; [
-&lsquo;media-manager&rsquo; =&gt; [
-// Select a local disk that you configured in <code>config/filesystem.php</code>
-&lsquo;disk&rsquo; =&gt; &lsquo;public&rsquo;
-],
-],</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-# 给 laravel-admin 增加锁屏功能
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&#39;extensions&#39; =&gt; [
+    &#39;media-manager&#39; =&gt; [
+        // Select a local disk that you configured in `config/filesystem.php`
+        &#39;disk&#39; =&gt; &#39;public&#39;
+    ],
+],
 </code></pre></td></tr></table>
 </div>
-</div><p>composer require laravel-admin-ext/lock-screen</p>
+</div><h1 id="给laravel-admin增加锁屏功能">给laravel-admin增加锁屏功能</h1>
 <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">composer require laravel-admin-ext/lock-screen
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -714,7 +724,7 @@ php artisan make:controller TagController
 php artisan make:controller PageController
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="后台-img-灯箱">后台 img 灯箱</h1>
+</div><h1 id="后台img灯箱">后台img灯箱</h1>
 <p><a href="https://github.com/laravel-admin-extensions/grid-lightbox" target="_blank" rel="noopener noreffer">https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

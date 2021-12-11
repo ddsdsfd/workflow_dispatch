@@ -1,19 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>vim - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/vim/</link><description>vim - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Fri, 31 Aug 2018 11:46:39 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/vim/" rel="self" type="application/rss+xml"/><item><title>linux 系统进入退出 vim 编辑器及 termux 修改问候语</title><link>https://lruihao.cn/posts/vim/</link><pubDate>Fri, 31 Aug 2018 11:46:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/vim/</guid><description><![CDATA[<blockquote>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>vim - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/vim/</link><description>vim - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Fri, 31 Aug 2018 11:46:39 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/vim/" rel="self" type="application/rss+xml"/><item><title>linux系统进入退出vim编辑器及termux修改问候语</title><link>https://lruihao.cn/posts/vim/</link><pubDate>Fri, 31 Aug 2018 11:46:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/vim/</guid><description><![CDATA[<blockquote>
 <p>vim 编辑器是 Linux 系统自带的文本编辑器</p>
 </blockquote>
-<h2 id="进入-vim-编辑器">进入 VIM 编辑器</h2>
+<h2 id="进入vim编辑器">进入VIM编辑器</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim /&lt;路径&gt;/文件名。后缀名
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim /&lt;路径&gt;/文件名.后缀名
 </code></pre></td></tr></table>
 </div>
 </div><p>如果这个文件，以前是没有的，则为新建，会有提示，否者则没有提示。</p>
-<p>进入编辑器后，按&quot;I”，即切换到“INSERT”状态。即插入状态，就可以通过上下左右移动光标，或空格、退格及回车等进行编辑内容了，和 WINDOWS 是一样的了。</p>
-<h2 id="退出-vim-编辑器的方法及区别">退出 vim 编辑器的方法及区别</h2>
-<p><strong>退出编辑器分为 4 种情况：</strong></p>
+<p>进入编辑器后，按&quot;I”，即切换到“INSERT”状态。即插入状态，就可以通过上下左右移动光标，或空格、退格及回车等进行编辑内容了，和WINDOWS是一样的了。</p>
+<h2 id="退出vim编辑器的方法及区别">退出vim编辑器的方法及区别</h2>
+<p><strong>退出编辑器分为4种情况：</strong></p>
 <ul>
 <li>保存退出</li>
 <li>正常退出</li>
@@ -21,13 +21,13 @@
 <li>强制退出</li>
 </ul>
 <h3 id="保存退出">保存退出</h3>
-<p>先按<code>Esc</code>退出插入状态，再输入英文<code>:</code>, 在下方会出现冒号，等待输入命令，再输入<code>WQ</code>回车就保存了，W,Q 分别对应功能，<br>
-W: write , 写入<br>
-Q: quit , 退出</p>
+<p>先按<code>Esc</code>退出插入状态，再输入英文<code>:</code>,在下方会出现冒号，等待输入命令,再输入<code>WQ</code>回车就保存了,W,Q分别对应功能，<br>
+W: write ,写入<br>
+Q: quit ,退出</p>
 <p>保存退出还有二个方法：</p>
 <ol>
-<li>在最后输入命令时，直接输入&quot;x&quot;，也是一样的，即 X=WQ。</li>
-<li>最快捷的方法：按了 ESC 后，直接按 shift+zz，或者切换到大写模式按 ZZ，就可以保存退出了，即是按两下大写的 Z。</li>
+<li>在最后输入命令时，直接输入&quot;x&quot;，也是一样的，即X=WQ。</li>
+<li>最快捷的方法：按了ESC后，直接按shift+zz，或者切换到大写模式按ZZ，就可以保存退出了，即是按两下大写的Z。</li>
 </ol>
 <p>查看命令</p>
 <div class="highlight"><div class="chroma">
@@ -35,7 +35,7 @@ Q: quit , 退出</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cat /&lt;路径&gt;/文件名。后缀名
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cat /&lt;路径&gt;/文件名.后缀名
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="正常退出">正常退出</h3>
@@ -47,8 +47,8 @@ Q: quit , 退出</p>
 <h3 id="强制退出">强制退出</h3>
 <p>强制退出。这个实在是不应该做的操作，因为很操蛋！<br>
 先按<code>ESC</code>，再按冒号<code>:</code>，在输入命令时，直接输入<code>!</code>，但退出后，会有提示修改内容尚未保存，是否继续！</p>
-<h2 id="termux-使用-vim-修改问候语">termux 使用 vim 修改问候语</h2>
-<p>没错又是 termux, 就是以前一篇文章提到的“安卓上的 Linux”。<br>
+<h2 id="termux使用vim修改问候语">termux使用vim修改问候语</h2>
+<p>没错又是termux,就是以前一篇文章提到的“安卓上的Linux”。<br>
 先</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -58,8 +58,8 @@ Q: quit , 退出</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
 </code></pre></td></tr></table>
 </div>
-</div><p>如果报错，好像是要安装 Python <code>pkg install python</code></p>
-<p>进入后先使用<code>dd</code>把以前的问候语一行一行删掉，再输入<code>i</code>，进入插入操作，修改你自定义的问候语。之后<code>ESC</code>, 再<code>:WQ</code>退出保存，重启 termux 就可以看到修改后的效果了。如图。</p>
+</div><p>如果报错，好像是要安装Python <code>pkg install python</code></p>
+<p>进入后先使用<code>dd</code>把以前的问候语一行一行删掉，再输入<code>i</code>，进入插入操作，修改你自定义的问候语。之后<code>ESC</code>,再<code>:WQ</code>退出保存，重启termux就可以看到修改后的效果了。如图。</p>
 <p></p>
-<p>termux 美化 <a href="https://github.com/Cabbagec/termux-ohmyzsh" target="_blank" rel="noopener noreffer">termux-ohmyzsh</a></p>
+<p>termux美化<a href="https://github.com/Cabbagec/termux-ohmyzsh" target="_blank" rel="noopener noreffer">termux-ohmyzsh</a></p>
 ]]></description></item></channel></rss>

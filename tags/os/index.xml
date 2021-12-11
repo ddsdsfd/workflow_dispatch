@@ -23,13 +23,13 @@
 <li>隐式链接</li>
 <li>显式链接</li>
 </ul>
-<h3 id="fat-技术">FAT 技术</h3>
+<h3 id="fat技术">FAT技术</h3>
 <ul>
 <li>
 <p>FAT12</p>
 <ul>
-<li>早期的 FAT12 文件系统</li>
-<li>以簇为单位的 FAT12 文件系统</li>
+<li>早期的FAT12文件系统</li>
+<li>以簇为单位的FAT12文件系统</li>
 </ul>
 </li>
 <li>
@@ -39,9 +39,9 @@
 <p>FAT32</p>
 </li>
 </ul>
-<h3 id="ntfs-的文件组织方式">NTFS 的文件组织方式</h3>
+<h3 id="ntfs的文件组织方式">NTFS的文件组织方式</h3>
 <ul>
-<li>NTFS 新特征</li>
+<li>NTFS新特征</li>
 <li>磁盘组织</li>
 <li>文件的组织</li>
 </ul>
@@ -60,7 +60,7 @@
 <p>增量式索引组织方式的基本思想</p>
 </li>
 <li>
-<p>UNIX System V 的组织方式</p>
+<p>UNIX System V的组织方式</p>
 <ul>
 <li>直接地址</li>
 <li>一次间接地址</li>
@@ -96,36 +96,16 @@
 <li>
 <p>盘块的分配（步骤）</p>
 <ul>
-<li>
-<ol>
-<li>顺序扫描示图</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>转换盘块号</li>
-</ol>
-</li>
-<li>
-<ol start="3">
-<li>修改位示图</li>
-</ol>
-</li>
+<li>1.顺序扫描示图</li>
+<li>2.转换盘块号</li>
+<li>3.修改位示图</li>
 </ul>
 </li>
 <li>
 <p>盘块的回收（步骤）</p>
 <ul>
-<li>
-<ol>
-<li>盘块号转换成行列号</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>修改位示图</li>
-</ol>
-</li>
+<li>1.盘块号转换成行列号</li>
+<li>2.修改位示图</li>
 </ul>
 </li>
 </ul>
@@ -134,7 +114,7 @@
 <li>空闲盘块的组织</li>
 <li>空闲盘块的分配与回收</li>
 </ul>
-<h2 id="提高磁盘-io-速度的途径">提高磁盘 I/O 速度的途径</h2>
+<h2 id="提高磁盘io速度的途径">提高磁盘I/O速度的途径</h2>
 <h3 id="磁盘高速缓存">磁盘高速缓存</h3>
 <ul>
 <li>
@@ -151,41 +131,41 @@
 <p>周期性地写回磁盘</p>
 </li>
 </ul>
-<h3 id="提高磁盘-io-速度的其他方法">提高磁盘 I/O 速度的其他方法</h3>
+<h3 id="提高磁盘io速度的其他方法">提高磁盘I/O速度的其他方法</h3>
 <ul>
 <li>提前读</li>
 <li>延迟写</li>
 <li>优化物理块的分布</li>
 <li>虚拟盘</li>
 </ul>
-<h3 id="廉价磁盘冗余阵列-raid">廉价磁盘冗余阵列 (RAID)</h3>
+<h3 id="廉价磁盘冗余阵列raid">廉价磁盘冗余阵列(RAID)</h3>
 <ul>
 <li>
 <p>并行交叉存取</p>
 </li>
 <li>
-<p>RAID 的分级</p>
+<p>RAID的分级</p>
 <ul>
-<li>RAID 0 级</li>
-<li>RAID 1 级</li>
-<li>RAID 2 级</li>
-<li>RAID 3 级</li>
-<li>RAID 4 级</li>
-<li>RAID 5 级</li>
-<li>RAID 6 级和 RAID 7 级</li>
+<li>RAID 0级</li>
+<li>RAID 1级</li>
+<li>RAID 2级</li>
+<li>RAID 3级</li>
+<li>RAID 4级</li>
+<li>RAID 5级</li>
+<li>RAID 6级和RAID 7级</li>
 </ul>
 </li>
 <li>
-<p>RAID 的优点</p>
+<p>RAID的优点</p>
 <ul>
 <li>可靠性高</li>
-<li>磁盘 I/O 速度高</li>
+<li>磁盘I/O速度高</li>
 <li>性价比高</li>
 </ul>
 </li>
 </ul>
 <h2 id="提高磁盘可靠性的技术">提高磁盘可靠性的技术</h2>
-<h3 id="第一级容错技术-sft-">第一级容错技术 SFT-Ⅰ</h3>
+<h3 id="第一级容错技术sft-">第一级容错技术SFT-Ⅰ</h3>
 <ul>
 <li>
 <p>双份目录和双份文件分配表</p>
@@ -198,7 +178,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="第二级容错技术-sft-">第二级容错技术 SFT-Ⅱ</h3>
+<h3 id="第二级容错技术sft-">第二级容错技术SFT-Ⅱ</h3>
 <ul>
 <li>磁盘镜像</li>
 <li>磁盘双工</li>

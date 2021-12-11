@@ -5,9 +5,9 @@
             <i class="icon fas fa-info-circle fa-fw"></i>信息<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，<br>
+            <div class="admonition-content">cos 桶相册，终于！！终于来了！！，idea 来自[兰州小红鸡-给hexo静态博客添加动态相册功能]，<br>
 <strong><span style="color: #428bca;">功能虽好，但是还是先友情提示！</span></strong><br>
-开放 API 是一个<strong>很危险</strong>的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
+开放API是一个<strong>很危险</strong>的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！</div>
         </div>
     </div>
 <h1 id="创建腾讯云-cos-存储桶">创建腾讯云 cos 存储桶</h1>
@@ -18,11 +18,11 @@
 <li>跨域访问 CORS 设置，自己随意</li>
 </ol>
 <h1 id="上传照片">上传照片</h1>
-<p>首先我这个 cos 相册，相册分类就是文件夹分类，所以 cos 桶里面先新建不同的文件夹，<strong>文件夹名称就是相册名称</strong>，
-每个相册里面需要放置一张名称为**“封面。jpg”**的图片作为该相册的封面。</p>
+<p>首先我这个 cos 相册，相册分类就是文件夹分类，所以cos桶里面先新建不同的文件夹，<strong>文件夹名称就是相册名称</strong>，
+每个相册里面需要放置一张名称为**“封面.jpg”**的图片作为该相册的封面。</p>
 <h2 id="上传工具">上传工具</h2>
 <ul>
-<li><strong>COSBrowser</strong> GUI 工具，桌面/移动版 【官方、推荐】</li>
+<li><strong>COSBrowser</strong> GUI工具,桌面/移动版 【官方、推荐】</li>
 <li><strong>COSCMD</strong> 命令行工具 【官方】</li>
 <li><strong>PicGo</strong> 图床上传工具 【第三方、推荐】</li>
 </ul>
@@ -48,7 +48,7 @@
 </a>
 <ol>
 <li>首先，下载源码，引入 <code>cos-album.css</code> 和 <code>cos-album.js</code></li>
-<li>然后，在你的 js 中 new 一个 Cosalbum 对象 ( xmlLink 后不需要添加<code>/</code>)</li>
+<li>然后，在你的 js 中 new 一个 Cosalbum 对象( xmlLink 后不需要添加<code>/</code>)</li>
 </ol>
 <h2 id="step1">Step1</h2>
 <div class="highlight"><div class="chroma">
@@ -99,7 +99,7 @@
 <td style="text-align:left">xmlLink</td>
 <td style="text-align:left">String</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">需要解析的騰訊云 COS 桶 XML 鏈接</td>
+<td style="text-align:left">需要解析的騰訊云COS桶XML鏈接</td>
 </tr>
 <tr>
 <td style="text-align:left">prependTo</td>
@@ -117,7 +117,7 @@
 <td style="text-align:left">copyUrl</td>
 <td style="text-align:left">String</td>
 <td style="text-align:left">href</td>
-<td style="text-align:left">CDN 链接，雙擊複製 URL Since: 1.1.6</td>
+<td style="text-align:left">CDN 链接,雙擊複製 URL Since: 1.1.6</td>
 </tr>
 <tr>
 <td style="text-align:left">imgType</td>
@@ -191,12 +191,12 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <ul>
 <li>2020-9-28 22:46
 <ol>
-<li>升級：相冊封裝成類，可以更方便 new 出來</li>
+<li>升級：相冊封裝成類，可以更方便new出來</li>
 <li>優化：相冊圖片樣式優化</li>
 </ol>
 </li>
 <li>2019-11-24 10:52:34
-修改整理了一下代码，分割功能为函数，并写了注释，更加方便 <a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">伸手党</a>!</li>
+修改整理了一下代码，分割功能为函数，并写了注释，更加方便<a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">伸手党</a>!</li>
 </ul>
 <h1 id="未实现">未实现</h1>
 <ul>
@@ -204,7 +204,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <li>加密功能</li>
 <li>分页显示</li>
 </ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
-<p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行 CSS 的編碼工作。<br>
+<p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行CSS的編碼工作。<br>
 轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
 </blockquote>
 <h1 id="為什麼什麼時候要使用-css-前置處理器-why-when">為什麼，什麼時候要使用 CSS 前置處理器？ (Why, When)</h1>
@@ -226,48 +226,48 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </ul>
 <p>所以我們在實際項目中衡量預編譯方案時，還是得想想，比起帶來的額外維護開銷，CSS 前置處理器有沒有解決更大的麻煩。</p>
 <ul>
-<li>系統級框架開發 （大型複雜的樣式設計）</li>
+<li>系統級框架開發 (大型複雜的樣式設計)</li>
 <li>持續維護</li>
 </ul>
 <h1 id="lesssassscss-是什麼-what">Less、Sass/Scss 是什麼？ (What)</h1>
 <h2 id="less">Less</h2>
-<p>是一種動態樣式語言。對 CSS 賦予了動態語言的特性，如變數、繼承、運算、函數。<br>
-Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可在服務端運行。</p>
+<p>是一種動態樣式語言. 對 CSS 賦予了動態語言的特性，如變數、繼承、運算、函數。<br>
+Less 既可以在用戶端上運行 (支援IE 6+, Webkit, Firefox)，也可在服務端運行。</p>
 <h2 id="sass">Sass</h2>
 <p>是一種動態樣式語言，Sass 語法屬於縮排語法，<br>
-比 CSS 比多出好些功能（如變數、嵌套、運算，混入 (Mixin)、繼承、顏色處理，函數等），更容易閱讀。</p>
+比 CSS 比多出好些功能(如變數、嵌套、運算,混入(Mixin)、繼承、顏色處理，函數等)，更容易閱讀。</p>
 <h2 id="sass-與-scss-的關係">Sass 與 Scss 的關係</h2>
 <p>Sass 的縮排語法，對於寫慣 CSS 的前端開發者來說很不直觀，也不能將 CSS 代碼加入到 Sass 裡面，因此 Sass 語法進行了改良，Sass 3 就變成了 Scss(Sassy CSS)。與原來的語法相容，只是用<code>{}</code>取代了原來的縮進。Sass 相當於 Scss 的嚴格模式。</p>
 <h1 id="sass-和-less-的比較">Sass 和 Less 的比較</h1>
 <h2 id="相同點">相同點</h2>
 <p>Less 和 Sass 在語法上有些共性，比如下面這些：</p>
 <ol>
-<li>混入 (Mixins)——class 中的 class</li>
-<li>參數混入——可以傳遞參數的 class，就像函數一樣</li>
-<li>嵌套規則——Class 中嵌套 class，從而減少重複的代碼</li>
-<li>運算——CSS 中用上數學</li>
+<li>混入(Mixins)——class中的class</li>
+<li>參數混入——可以傳遞參數的class，就像函數一樣</li>
+<li>嵌套規則——Class中嵌套class，從而減少重複的代碼</li>
+<li>運算——CSS中用上數學</li>
 <li>顏色功能——可以編輯顏色</li>
-<li>名字空間 (namespace)——分組樣式，從而可以被調用</li>
+<li>名字空間(namespace)——分組樣式，從而可以被調用</li>
 <li>作用域——局部修改樣式</li>
-<li>JavaScript 賦值——在 CSS 中使用 JavaScript 運算式賦值</li>
+<li>JavaScript 賦值——在CSS中使用JavaScript運算式賦值</li>
 </ol>
 <h2 id="不同點">不同點</h2>
 <ol>
 <li>實現方式</li>
 </ol>
 <ul>
-<li>Less 是基於 JavaScript，是在用戶端處理的</li>
-<li>Sass 是基於 Ruby 的，是在伺服器端處理的</li>
+<li>Less是基於JavaScript，是在用戶端處理的</li>
+<li>Sass是基於Ruby的，是在伺服器端處理的</li>
 </ul>
 <ol start="2">
-<li>關於變數在 Less 和 Sass 中的唯一區別就是 Less 用<code>@</code>，Sass 用<code>$</code></li>
+<li>關於變數在Less和Sass中的唯一區別就是Less用<code>@</code>，Sass用<code>$</code></li>
 <li>less 中的變量運算可帶、可不帶單位，Sass 需要帶單位元</li>
 <li>語法不同，請詳見 Less、Sass 官網</li>
 </ol>
 <h1 id="選用-less-還是-sass-">選用 Less 還是 Sass ?</h1>
 <p>無論是學習資料，討論情況，以及項目使用情況 Sass/Scss 都優於 Less，比如 Bootstrap 4 就使用的 Sass, 但是 Less 的使用更加簡單，使用門檻也較低，內網開發的情況，Less 則更加適合。</p>]]></description></item><item><title>Lightbox</title><link>https://lruihao.cn/posts/lightbox/</link><pubDate>Mon, 21 Jun 2021 16:18:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/lightbox/</guid><description><![CDATA[<h1 id="簡介">簡介</h1>
-<p>Lightbox （燈箱），用来放大显示图片覆盖于当前页面之上。其是用 CSS 来定义图片容器，用一幅半透明的 png 图片实现渐变阴暗的效果。</p>
-<p>一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘 Esc 键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。</p>
+<p>Lightbox (燈箱)，用来放大显示图片覆盖于当前页面之上。其是用CSS来定义图片容器，用一幅半透明的png图片实现渐变阴暗的效果。</p>
+<p>一般的網頁，圖片是使用 img 標籤寫在 HTML 頁面中，圖片點擊并不會放大，想放大看圖片要麼方法整個網頁，要麼複製圖片鏈接新開窗口，操作繁瑣，而使用 Lightbox 的網站可以点击缩略图浮层显示大图，放大後可点击键盘←、→键切换图片，也可以鼠标点击左右箭头切换。按下键盘Esc键或者点击关闭按钮可輕鬆關閉圖層，圖片流覽的體驗度是遠遠大於未使用的 Lightbox 的網站。</p>
 <h1 id="實現思路">實現思路</h1>
 <p>大概思路就在每个图片的点击事件中添加图层与图片副本。</p>
 <div class="highlight"><div class="chroma">
@@ -468,6 +468,7 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
 </span><span class="lnt">194
 </span><span class="lnt">195
 </span><span class="lnt">196
+</span><span class="lnt">197
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="cm">/**
@@ -486,7 +487,7 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span><span class="o">=</span><span class="nx">w</span><span class="o">+</span><span class="s2">&#34;px&#34;</span><span class="p">;</span>
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">left</span><span class="o">=</span><span class="nx">x</span><span class="o">+</span><span class="s2">&#34;px&#34;</span><span class="p">;</span>
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">top</span><span class="o">=</span><span class="p">(</span><span class="nx">y</span> <span class="o">-</span> <span class="nx">container</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;px&#34;</span><span class="p">;</span>
-    <span class="c1">// 延迟移除 dom
+    <span class="c1">// 延迟移除dom
 </span><span class="c1"></span>    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
         <span class="nx">div</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
         <span class="nx">img</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
@@ -502,7 +503,7 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
     <span class="p">}</span>
     <span class="nx">div</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">opacity</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
     <span class="nx">img</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">opacity</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-    <span class="c1">// 延迟移除 dom
+    <span class="c1">// 延迟移除dom
 </span><span class="c1"></span>    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
         <span class="nx">div</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
         <span class="nx">img</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
@@ -587,7 +588,7 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
           <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
               <span class="nx">div</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
           <span class="p">},</span><span class="mi">0</span><span class="p">);</span>
-          <span class="c1">// （此处可以加 loading)
+          <span class="c1">// (此处可以加loading)
 </span><span class="c1"></span>
           <span class="c1">// 创建副本
 </span><span class="c1"></span>          <span class="nx">img</span><span class="o">=</span><span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
@@ -595,6 +596,7 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
           <span class="nx">btnleft</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;button&#34;</span><span class="p">);</span>
           <span class="nx">img</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="nx">src</span><span class="p">;</span>
           <span class="nx">style</span><span class="p">();</span>
+
 
           <span class="nx">btnleft</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
             <span class="k">if</span><span class="p">(</span><span class="nx">id</span><span class="o">===</span><span class="mi">0</span><span class="p">){</span>
@@ -1171,7 +1173,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
     </div>
 <h1 id="經過">經過</h1>
 <p>作為一個程序猿，怎麼能接受這麼麻煩的記賬方式呢，拿起筆就開始畫，於是有了下面這張圖的公式。簡單說明一下就是：<br>
-設前面說的四種組合為：<code>X1, X2, X3, X4</code>，個人實際付款總額為：<code>Y1, Y2, Y3</code>，那麼帶入未知數，我們就可以算出每個人最後結算時的錢：<code>S1, S2, S3</code>，<br>
+設前面說的四種組合為: <code>X1, X2, X3, X4</code>，個人實際付款總額為: <code>Y1, Y2, Y3</code>，那麼帶入未知數，我們就可以算出每個人最後結算時的錢: <code>S1, S2, S3</code>，<br>
 綜上所述，很好理解，當 <code>S &gt;= 0</code> 時，收紅包，當 <code>S &lt; 0</code> 時，發紅包。</p>
 <p></p>
 <p>OK，一個簡單的初中方程式已經到位了，下一步，思考一下，用什麼來運作這個這個方程。來，先跑個題，春節期間，不是每天都要在騰訊文檔上填表記錄活動軌跡嗎？ 再回來，那不如就用 excel 實現吧，三個人都可以在手機上編輯。好的，說做就做。</p>
@@ -1182,7 +1184,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 別急，重新擼一擼需求先：</p>
 <ul>
 <li>存取消費數據</li>
-<li>計算每月，實付（總分），應付以及最後計算結算金額</li>
+<li>計算每月，實付(總分)，應付以及最後計算結算金額</li>
 <li>按月查詢，月結賬單</li>
 <li>三人皆可編輯</li>
 </ul>
@@ -1426,7 +1428,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <li>HTML,CSS,JS</li>
 </ul>
 <h1 id="總結">總結</h1>
-<p>簡單總結一下，登录功能不做，安不安全自己说了算。删除修改功能也不做，直接上 leancloud 操作，css 美化的样式也不写，干净又卫生！<br>
+<p>簡單總結一下，登录功能不做，安不安全自己说了算。删除修改功能也不做，直接上 leacloud 操作，css 美化的样式也不写，干净又卫生！<br>
 然后衍生一下，什么过年斗地主，天炸，麻将，字牌记账系统那不也是同理可得嘛！</p>
 <p>over!</p>
 <p></p>]]></description></item><item><title>设置网站运行时间</title><link>https://lruihao.cn/posts/site-time/</link><pubDate>Thu, 19 Sep 2019 22:03:29 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/site-time/</guid><description><![CDATA[<blockquote>
@@ -1476,6 +1478,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </span><span class="lnt">37
 </span><span class="lnt">38
 </span><span class="lnt">39
+</span><span class="lnt">40
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">createTime</span><span class="p">()</span> <span class="p">{</span>
@@ -1497,8 +1500,8 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
   <span class="k">if</span> <span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">seconds</span><span class="p">).</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">seconds</span> <span class="o">=</span> <span class="s2">&#34;0&#34;</span> <span class="o">+</span> <span class="nx">seconds</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="cm">/*document.querySelector(&#34;.run-times&#34;).innerHTML = days + &#34;&amp;thinsp; 天&amp;thinsp;&#34; + hours
-</span><span class="cm">          + &#34;&amp;thinsp; 时&amp;thinsp;&#34; + minutes + &#34;&amp;thinsp; 分&amp;thinsp;&#34; + seconds + &#34;&amp;thinsp; 秒&#34;;
+  <span class="cm">/*document.querySelector(&#34;.run-times&#34;).innerHTML = days + &#34;&amp;thinsp;天&amp;thinsp;&#34; + hours
+</span><span class="cm">          + &#34;&amp;thinsp;时&amp;thinsp;&#34; + minutes + &#34;&amp;thinsp;分&amp;thinsp;&#34; + seconds + &#34;&amp;thinsp;秒&#34;;
 </span><span class="cm">  */</span>
   <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;.run-times&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&#34;RunTime: &#34;</span> <span class="o">+</span> <span class="nx">days</span> <span class="o">+</span> <span class="s2">&#34;,&#34;</span> <span class="o">+</span> <span class="nx">hours</span>
           <span class="o">+</span> <span class="s2">&#34;:&#34;</span> <span class="o">+</span> <span class="nx">minutes</span> <span class="o">+</span> <span class="s2">&#34;:&#34;</span> <span class="o">+</span> <span class="nx">seconds</span> <span class="o">+</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
@@ -1512,9 +1515,10 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
   <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">siteTime</span><span class="p">);</span>
 <span class="p">}</span>
 
+
 <span class="cm">/**
-</span><span class="cm"> * HTML 写法
-</span><span class="cm">&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒。..&lt;/span&gt;
+</span><span class="cm"> * HTML写法
+</span><span class="cm">&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒...&lt;/span&gt;
 </span><span class="cm">&lt;p class=&#34;run-times&#34; title=&#34;主頁运行时间&#34;&gt;RunTime Loading...&lt;/p&gt;
 </span><span class="cm">*/</span>
 </code></pre></td></tr></table>
@@ -1526,15 +1530,15 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
             <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">JS 的加载分为两个部分：下载和执行。<br>
-浏览器在执行 HTML 的时候如果遇到<code>&lt;script&gt;</code>时会停止页面的渲染，去下载和执行 js 的文件直接遇见<code>&lt;/scirpt&gt;</code>会继续渲染页面。故浏览器在执行 js 文件的时候浏览器表现为一片空白，为了解决这个问题 ECMAScript 定义了 defer 和 async 两个属性用于控制 JS 的下载和执行。</div>
+            <div class="admonition-content">JS的加载分为两个部分：下载和执行。<br>
+浏览器在执行HTML的时候如果遇到<code>&lt;script&gt;</code>时会停止页面的渲染,去下载和执行js的文件直接遇见<code>&lt;/scirpt&gt;</code>会继续渲染页面。故浏览器在执行js文件的时候浏览器表现为一片空白,为了解决这个问题ECMAScript定义了defer和async两个属性用于控制JS的下载和执行。</div>
         </div>
     </div>
 <h1 id="不带任何属性">不带任何属性</h1>
 <blockquote>
 <p>同步模式，又称阻塞模式，我们平时使用的最多的一种方式。当浏览器解析到<code>&lt;script&gt;</code>标签时，浏览器会停止解析其后的内容，而优先下载脚本文件，并执行其中的代码，是个同步阻塞的过程。<br>
 一般建议把<code>&lt;script&gt;</code>标签放在<code>&lt;body&gt;</code>结尾处，这样尽可能减少页面阻塞。<br>
-而如果想要异步执行 script，则可以给其加上 async 或 defer 属性。</p>
+而如果想要异步执行script，则可以给其加上async或defer属性。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1546,7 +1550,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </div>
 </div><h1 id="defer">defer</h1>
 <blockquote>
-<p>defer 属性在 HTML 解析期间异步下载文件，并且只在 HTML 解析完成后才执行它。对于 defer，我们可以理解是将外链的 js 放在了页面底部。js 的加载不会阻塞页面的渲染和资源的加载。不过 defer 会按照原本的 js 的顺序执行，<strong>所以如果前后有依赖关系的 js 可以放心使用。</strong></p>
+<p>defer属性在HTML解析期间异步下载文件，并且只在HTML解析完成后才执行它。对于defer，我们可以理解是将外链的js放在了页面底部。js的加载不会阻塞页面的渲染和资源的加载。不过defer会按照原本的js的顺序执行，<strong>所以如果前后有依赖关系的js可以放心使用。</strong></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1558,7 +1562,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </div>
 </div><h1 id="async">async</h1>
 <blockquote>
-<p>async 属性会在 HTML 解析期间异步下载文件，并在完成下载后立即暂停 HTML 解析器去执行 script 中的代码。在执行过程中浏览器处于阻塞状态，响应不了任何需求。<strong>如果 js 前后有依赖性，用 async，就很有可能出错。</strong></p>
+<p>async属性会在HTML解析期间异步下载文件，并在完成下载后立即暂停HTML解析器去执行script中的代码。在执行过程中浏览器处于阻塞状态，响应不了任何需求。<strong>如果js前后有依赖性，用async，就很有可能出错。</strong></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1572,15 +1576,15 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <h2 id="相同点">相同点</h2>
 <ol>
 <li>加载文件时不阻塞页面渲染</li>
-<li>对于 inline 的 script 无效（只适用有<code>src</code>的外部 js）</li>
-<li>使用这两个属性的脚本中不能调用 document.write 方法</li>
-<li>有脚本的 onload 的事件回调</li>
+<li>对于inline的script无效（只适用有<code>src</code>的外部js）</li>
+<li>使用这两个属性的脚本中不能调用document.write方法</li>
+<li>有脚本的onload的事件回调</li>
 </ol>
 <h2 id="区别点">区别点</h2>
 <ol>
-<li>html4.0 中定义了 defer；html5.0 中定义了 async</li>
+<li>html4.0中定义了defer；html5.0中定义了async</li>
 <li>浏览器支持不同</li>
-<li>每一个 async 属性的脚本都在它下载结束之后立刻执行，同时会在 window 的 load 事件之前执行。所以就有可能出现脚本执行顺序被打乱的情况；每一个 defer 属性的脚本都是在页面解析完毕之后，按照原本的顺序执行，同时会在 document 的 DOMContentLoaded 之前执行。</li>
+<li>每一个async属性的脚本都在它下载结束之后立刻执行，同时会在window的load事件之前执行。所以就有可能出现脚本执行顺序被打乱的情况；每一个defer属性的脚本都是在页面解析完毕之后，按照原本的顺序执行，同时会在document的DOMContentLoaded之前执行。</li>
 </ol>
 <h1 id="那么这三种方式各在什么情况下使用呢">那么这三种方式各在什么情况下使用呢？</h1>
 <p>通常来说，尽可能使用<code>async</code>，然后是<code>defer</code>，最后不使用属性。
@@ -1593,16 +1597,16 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <h1 id="兼容性">兼容性</h1>
 <ol>
 <li>Internet Explorer 10、Firefox、Opera、Chrome 和 Safari 支持 async 属性。</li>
-<li>所有主流浏览器都支持 defer 属性。</li>
+<li>所有主流浏览器都支持defer属性。</li>
 </ol>
 <h1 id="参考">参考</h1>
 <ul>
 <li><a href="https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html" target="_blank" rel="noopener noreffer">https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html</a></li>
 <li><a href="https://www.jianshu.com/p/17dc82bf08f1" target="_blank" rel="noopener noreffer">https://www.jianshu.com/p/17dc82bf08f1</a></li>
 </ul>]]></description></item><item><title>条件注释判断浏览器版本&lt;!--[if lt IE 9]>;</title><link>https://lruihao.cn/posts/ifzhushi/</link><pubDate>Fri, 10 May 2019 13:08:27 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ifzhushi/</guid><description><![CDATA[<blockquote>
-<p><span>&lt;!--[if !IE]&gt;&lt;!--&gt; 除 IE 外都可识别 &lt;!--&lt;![endif]--&gt;</span><br><span>&lt;!--[if IE]&gt; 所有的 IE 可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 6]&gt; 仅 IE6 可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 6]&gt; IE6 以及 IE6 以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 6]&gt; IE6 以及 IE6 以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 7]&gt; 仅 IE7 可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 7]&gt; IE7 以及 IE7 以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 7]&gt; IE7 以及 IE7 以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 8]&gt; 仅 IE8 可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 9]&gt; 仅 IE9 可识别 &lt;![endif]--&gt;</span></p>
+<p><span>&lt;!--[if !IE]&gt;&lt;!--&gt; 除IE外都可识别 &lt;!--&lt;![endif]--&gt;</span><br><span>&lt;!--[if IE]&gt; 所有的IE可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 6]&gt; 仅IE6可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 6]&gt; IE6以及IE6以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 6]&gt; IE6以及IE6以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 7]&gt; 仅IE7可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if lt IE 7]&gt; IE7以及IE7以下版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if gte IE 7]&gt; IE7以及IE7以上版本可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 8]&gt; 仅IE8可识别 &lt;![endif]--&gt;</span><br><span>&lt;!--[if IE 9]&gt; 仅IE9可识别 &lt;![endif]--&gt;</span></p>
 </blockquote>
-<table align="center"> <tbody> <tr><th width="50">项目</th><th width="150">范例</th><th>说明</th></tr> <tr> <td align="middle">!</td><td>[if !IE]</td><td>The NOT operator. This is placed immediately in front of the&nbsp;<em>feature</em>,&nbsp;<em>operator</em>, or&nbsp;<em>subexpression</em>&nbsp;to reverse the Boolean meaning of the expression.<br />NOT 运算符。这是摆立即在前面的<em>功能</em>，<em>操作员</em>，或<em>子表达式</em>扭转布尔表达式的意义。</td></tr><tr><td align="middle">lt</td> <td>[if lt IE 5.5]</td> <td>The less-than operator. Returns true if the first argument is less than the second argument.<br />小于运算符。如果第一个参数小于第二个参数，则返回 true。</td> </tr><tr><td align="middle">lte</td><td>[if lte IE 6]</td><td>The less-than or equal operator. Returns true if the first argument is less than or equal to the second argument.<br />小于或等于运算。如果第一个参数是小于或等于第二个参数，则返回 true。</td> </tr><tr><td align="middle">gt</td><td>[if gt IE 5]</td><td>The greater-than operator. Returns true if the first argument is greater than the second argument.<br />大于运算符。如果第一个参数大于第二个参数，则返回 true。</td> </tr><tr><td align="middle">gte</td> <td>[if gte IE 7]</td><td>The greater-than or equal operator. Returns true if the first argument is greater than or equal to the second argument.<br />大于或等于运算。如果第一个参数是大于或等于第二个参数，则返回 true。</td> </tr><tr><td align="middle">( )</td><td>[if !(IE 7)]</td><td>Subexpression operators. Used in conjunction with boolean operators to create more complex expressions.<br />子表达式运营商。在与布尔运算符用于创建更复杂的表达式。</td></tr><tr><td align="middle">&amp;</td><td>[if (gt IE 5)&amp;(lt IE 7)]</td><td>The AND operator. Returns true if all subexpressions evaluate to true<br />AND 运算符。如果所有的子表达式计算结果为 true，返回 true</td></tr><tr><td align="middle">|</td><td>[if (IE 6)|(IE 7)]</td><td>The OR operator. Returns true if any of the subexpressions evaluates to true.<br />OR 运算符。返回 true，如果子表达式计算结果为 true。</td></tr></tbody></table>
+<table align="center"> <tbody> <tr><th width="50">项目</th><th width="150">范例</th><th>说明</th></tr> <tr> <td align="middle">!</td><td>[if !IE]</td><td>The NOT operator. This is placed immediately in front of the&nbsp;<em>feature</em>,&nbsp;<em>operator</em>, or&nbsp;<em>subexpression</em>&nbsp;to reverse the Boolean meaning of the expression.<br />NOT运算符。这是摆立即在前面的<em>功能</em>，<em>操作员</em>，或<em>子表达式</em>扭转布尔表达式的意义。</td></tr><tr><td align="middle">lt</td> <td>[if lt IE 5.5]</td> <td>The less-than operator. Returns true if the first argument is less than the second argument.<br />小于运算符。如果第一个参数小于第二个参数，则返回true。</td> </tr><tr><td align="middle">lte</td><td>[if lte IE 6]</td><td>The less-than or equal operator. Returns true if the first argument is less than or equal to the second argument.<br />小于或等于运算。如果第一个参数是小于或等于第二个参数，则返回true。</td> </tr><tr><td align="middle">gt</td><td>[if gt IE 5]</td><td>The greater-than operator. Returns true if the first argument is greater than the second argument.<br />大于运算符。如果第一个参数大于第二个参数，则返回true。</td> </tr><tr><td align="middle">gte</td> <td>[if gte IE 7]</td><td>The greater-than or equal operator. Returns true if the first argument is greater than or equal to the second argument.<br />大于或等于运算。如果第一个参数是大于或等于第二个参数，则返回true。</td> </tr><tr><td align="middle">( )</td><td>[if !(IE 7)]</td><td>Subexpression operators. Used in conjunction with boolean operators to create more complex expressions.<br />子表达式运营商。在与布尔运算符用于创建更复杂的表达式。</td></tr><tr><td align="middle">&amp;</td><td>[if (gt IE 5)&amp;(lt IE 7)]</td><td>The AND operator. Returns true if all subexpressions evaluate to true<br />AND运算符。如果所有的子表达式计算结果为true，返回true</td></tr><tr><td align="middle">|</td><td>[if (IE 6)|(IE 7)]</td><td>The OR operator. Returns true if any of the subexpressions evaluates to true.<br />OR运算符。返回true，如果子表达式计算结果为true。</td></tr></tbody></table>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1613,14 +1617,14 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--[if lt IE 9]&gt;
-</span><span class="c">加载 CSS1
+</span><span class="c">加载CSS1
 </span><span class="c">&lt;!--[else]&gt;
-</span><span class="c">加载 CSS2
+</span><span class="c">加载CSS2
 </span><span class="c">&lt;![endif]--&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>这样有效是有效，但是用 HTML VALIDATOR 里，报错，因为这个不符合 XHTML 1.1 的规范，
-如果把 ELSE 语句去掉，则正确。</p>
+</div><p>这样有效是有效,但是用HTML VALIDATOR里,报错,因为这个不符合XHTML 1.1的规范,<br>
+如果把ELSE语句去掉,则正确.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1629,71 +1633,71 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml">加载 CSS2
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml">加载CSS2
 <span class="c">&lt;!--[if lt IE 9]&gt;
-</span><span class="c">加载 CSS1（可以把要重写的写在这里）.
+</span><span class="c">加载CSS1(可以把要重写的写在这里).
 </span><span class="c">&lt;![endif]--&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>WeX5 在 win8 或者 win10 操作系统 studio 中新建。w 向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
-<p>win10 或者 win8 系统在使用起步科技 WeX5 这款 IDE 工具，在新建 w 文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法：</p>
+</div>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
+<p>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法：</p>
 </blockquote>
 <ol>
-<li>确认是否把操作系统的字体调整为非 100%了</li>
-<li>把<code>studio\dropins\studio-app2\plugins\plugin\lib\cef1\chromium.jar</code>这个 jar 包复制到<code>studio\dropins\studio-app2\plugins\plugin\lib</code>下，重启 studio</li>
+<li>确认是否把操作系统的字体调整为非100%了</li>
+<li>把<code>studio\dropins\studio-app2\plugins\plugin\lib\cef1\chromium.jar</code>这个jar包复制到<code>studio\dropins\studio-app2\plugins\plugin\lib</code>下，重启studio</li>
 </ol>
 ]]></description></item><item><title>前端面试题-HTML+CSS</title><link>https://lruihao.cn/posts/ms-html-css/</link><pubDate>Sat, 30 Mar 2019 22:58:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ms-html-css/</guid><description><![CDATA[<blockquote>
 <p><a href="https://github.com/ltadpoles/web-document/tree/master/Other" target="_blank" rel="noopener noreffer">原文链接</a><br>
-“卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学 java 和 web 相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
+“卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学java和web相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
 </blockquote>
 <p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>
 <h1 id="html">HTML</h1>
-<h2 id="1-doctype-作用html5-为什么只需要写-doctype-html">1. Doctype 作用，HTML5 为什么只需要写 <!DOCTYPE HTML></h2>
+<h2 id="1-doctype作用html5-为什么只需要写-doctype-html">1. Doctype作用，HTML5 为什么只需要写 <!DOCTYPE HTML></h2>
 <blockquote>
-<p>doctype 是一种标准通用标记语言的文档类型声明，目的是告诉标准通用标记语言解析器要使用什么样的文档类型定义（DTD）来解析文档。<code>&lt;!DOCTYPE&gt;</code>声明必须是 HTML 文档的第一行，位于 html 标签之前</p>
+<p>doctype是一种标准通用标记语言的文档类型声明，目的是告诉标准通用标记语言解析器要使用什么样的文档类型定义（DTD）来解析文档.<code>&lt;!DOCTYPE&gt;</code>声明必须是HTML文档的第一行，位于html标签之前</p>
 </blockquote>
 <blockquote>
-<p>HTML5 不基于 SGML，所以不需要引用 DTD。在 HTML5 中&lt;!DOCTYPE&gt;只有一种</p>
+<p>HTML5不基于SGML，所以不需要引用DTD。在HTML5中&lt;!DOCTYPE&gt;只有一种</p>
 </blockquote>
 <blockquote>
-<p>SGML: 标准通用标记语言，是现时常用的超文本格式的最高层次标准</p>
+<p>SGML: 标准通用标记语言,是现时常用的超文本格式的最高层次标准</p>
 </blockquote>
-<h2 id="2-行内元素有哪些块级元素有哪些空-void-元素有那些">2. 行内元素有哪些，块级元素有哪些，空 (void) 元素有那些</h2>
+<h2 id="2-行内元素有哪些块级元素有哪些空void元素有那些">2. 行内元素有哪些，块级元素有哪些，空(void)元素有那些</h2>
 <p>行内元素：<code>a</code> <code>span</code> <code>i</code> <code>img</code> <code>input</code> <code>select</code> <code>b</code> 等</p>
 <p>块级元素：<code>div</code> <code>ul</code> <code>ol</code> <code>li</code> <code>h1~h6</code> <code>p</code> <code>table</code> 等</p>
 <p>空元素：<code>br</code> <code>hr</code> <code>link</code> 等</p>
-<h2 id="3-简述一下你对-html-语义化的理解">3. 简述一下你对 HTML 语义化的理解</h2>
+<h2 id="3-简述一下你对html语义化的理解">3. 简述一下你对HTML语义化的理解</h2>
 <p>简单来说，就是合适的标签做合适的事情，这样具有以下好处：</p>
 <ul>
-<li>有助于构架良好的 HTML 结构，有利于搜索引擎的建立索引、抓取，利于 SEO</li>
+<li>有助于构架良好的HTML结构，有利于搜索引擎的建立索引、抓取，利于SEO</li>
 <li>有利于不同设备的解析</li>
 <li>有利于构建清晰的机构，有利于团队的开发、维护</li>
 </ul>
 <h2 id="4-常见的浏览器内核有哪些介绍一下你对浏览器内核的理解h5">4. 常见的浏览器内核有哪些，介绍一下你对浏览器内核的理解</h5></h2>
 <blockquote>
-<p>Trident 内核：IE</p>
+<p>Trident内核：IE</p>
 </blockquote>
 <blockquote>
-<p>Gecko 内核：NETSCAPE6 及以上版本，火狐</p>
+<p>Gecko内核：NETSCAPE6及以上版本，火狐</p>
 </blockquote>
 <blockquote>
-<p>Presto 内核：Opera7 及以上。[Opera 内核原为：Presto，现为：Blink;]</p>
+<p>Presto内核：Opera7及以上。[Opera内核原为：Presto，现为：Blink;]</p>
 </blockquote>
 <blockquote>
-<p>Webkit 内核：Safari，Chrome 等。[Chrome 的：Blink（WebKit 的分支）]</p>
+<p>Webkit内核：Safari，Chrome等。[Chrome的：Blink（WebKit的分支）]</p>
 </blockquote>
-<p>浏览器内核又可以分成两部分：<strong>渲染引擎和 JS 引擎。</strong> 渲染引擎主要负责取得网页的内容、整理讯息、计算网页的显示方式等，JS 引擎则是解析 Javascript 语言，执行 javascript 语言来实现网页的动态效果。</p>
-<h2 id="5-html5-有哪些新特性">5. html5 有哪些新特性</h2>
+<p>浏览器内核又可以分成两部分：<strong>渲染引擎和JS引擎。</strong> 渲染引擎主要负责取得网页的内容、整理讯息、计算网页的显示方式等，JS引擎则是解析Javascript语言，执行javascript语言来实现网页的动态效果。</p>
+<h2 id="5-html5有哪些新特性">5. html5有哪些新特性</h2>
 <ul>
-<li>语义化标签：<code>header</code> <code>footer</code> <code>nav</code> <code>section</code> <code>article</code> <code>aside</code> 等</li>
-<li>增强型表单：<code>date</code>（从一个日期选择器选择一个日期） <code>email</code>（包含 e-mail 地址的输入域） <code>number</code>（数值的输入域） <code>range</code>（一定范围内数字值的输入域） <code>search</code>（用于搜索域） <code>tel</code>（定义输入电话号码字段） 等</li>
+<li>语义化标签: <code>header</code> <code>footer</code> <code>nav</code> <code>section</code> <code>article</code> <code>aside</code> 等</li>
+<li>增强型表单：<code>date</code>(从一个日期选择器选择一个日期) <code>email</code>(包含 e-mail 地址的输入域) <code>number</code>(数值的输入域) <code>range</code>(一定范围内数字值的输入域) <code>search</code>(用于搜索域) <code>tel</code>(定义输入电话号码字段) 等</li>
 <li>视频和音频：<code>audio</code> <code>video</code></li>
-<li>Canvas 绘图 SVG 绘图</li>
+<li>Canvas绘图 SVG绘图</li>
 <li>地理定位：<code>Geolocation</code></li>
-<li>拖放 API：<code>drag</code></li>
+<li>拖放API：<code>drag</code></li>
 <li>web worker：是运行在后台的 JavaScript，独立于其他脚本，不会影响页面的性能</li>
 <li>web storage: <code>localStorage</code> <code>sessionStorage</code></li>
-<li>WebSocket: HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议</li>
+<li>WebSocket: HTML5开始提供的一种在单个 TCP 连接上进行全双工通讯的协议</li>
 </ul>
 <h2 id="6-描述一下-cookiesessionstorage-和-localstorage-的区别">6. 描述一下 cookie，sessionStorage 和 localStorage 的区别</h2>
 <table>
@@ -1714,13 +1718,13 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </tr>
 <tr>
 <td style="text-align:left">存放数据大小</td>
-<td style="text-align:left">4KB 左右</td>
-<td style="text-align:left">可以保存 5MB 的信息</td>
-<td style="text-align:left">可以保存 5MB 的信息</td>
+<td style="text-align:left">4KB左右</td>
+<td style="text-align:left">可以保存5MB的信息</td>
+<td style="text-align:left">可以保存5MB的信息</td>
 </tr>
 <tr>
-<td style="text-align:left">http 请求</td>
-<td style="text-align:left">每次都会携带在 HTTP 头中，如果使用 cookie 保存过多数据会带来性能问题</td>
+<td style="text-align:left">http请求</td>
+<td style="text-align:left">每次都会携带在HTTP头中，如果使用cookie保存过多数据会带来性能问题</td>
 <td style="text-align:left">仅在客户端（即浏览器）中保存，不参与和服务器的通信</td>
 <td style="text-align:left">仅在客户端（即浏览器）中保存，不参与和服务器的通信</td>
 </tr>
@@ -1728,29 +1732,29 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </table>
 <h2 id="7-如何实现浏览器内多个标签页之间的通信">7. 如何实现浏览器内多个标签页之间的通信</h2>
 <ul>
-<li>使用 localStorage: <code>localStorage.setItem(key,value)</code>、<code>localStorage.getItem(key)</code></li>
-<li>websocket 协议</li>
+<li>使用localStorage: <code>localStorage.setItem(key,value)</code>、<code>localStorage.getItem(key)</code></li>
+<li>websocket协议</li>
 <li>webworker</li>
 </ul>
 <p><a href="https://juejin.im/post/5acdba01f265da23826e5633" target="_blank" rel="noopener noreffer">多个标签页之间的通信</a></p>
-<h2 id="8-html5-的离线存储怎么使用解释一下工作原理">8. HTML5 的离线存储怎么使用，解释一下工作原理</h2>
-<p><a href="https://segmentfault.com/a/1190000006984353" target="_blank" rel="noopener noreffer">HTML5 的离线存储</a></p>
-<h2 id="9-src-与-href-的区别">9. src 与 href 的区别</h2>
-<p>区别：src 用于替代这个元素，而 href 用于建立这个标签与外部资源之间的关系</p>
-<p><code>&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code>浏览器加载到这里的时候，html 的渲染和解析不会暂停，css 文件的加载是同时进行的</p>
-<p><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code>当浏览器解析到这句代码时，页面的加载和解析都会暂停直到浏览器拿到并执行完这个 js 文件</p>
-<h2 id="10-表单提交中-get-和-post-方式的区别">10. 表单提交中 Get 和 Post 方式的区别</h2>
+<h2 id="8-html5的离线存储怎么使用解释一下工作原理">8. HTML5的离线存储怎么使用，解释一下工作原理</h2>
+<p><a href="https://segmentfault.com/a/1190000006984353" target="_blank" rel="noopener noreffer">HTML5的离线存储</a></p>
+<h2 id="9-src与href的区别">9. src与href的区别</h2>
+<p>区别：src用于替代这个元素，而href用于建立这个标签与外部资源之间的关系</p>
+<p><code>&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code>浏览器加载到这里的时候，html的渲染和解析不会暂停，css文件的加载是同时进行的</p>
+<p><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</code>当浏览器解析到这句代码时，页面的加载和解析都会暂停直到浏览器拿到并执行完这个js文件</p>
+<h2 id="10-表单提交中get和post方式的区别">10. 表单提交中Get和Post方式的区别</h2>
 <ul>
-<li>Get 一般用于从服务器上获取数据，Post 向服务器传送数据</li>
-<li>Get 传输的数据是拼接在 Url 之后的，对用户是可见的；Post 的传输数据对用户是不可见的</li>
-<li>Get 传送的数据量较小，不能大于 2KB。Post 传送的数据量较大，一般被默认为不受限制</li>
-<li>Get 安全性非常低，Post 安全性较高</li>
-<li>在 FORM 提交的时候，如果不指定 Method，则默认为 Get 请求</li>
+<li>Get一般用于从服务器上获取数据，Post向服务器传送数据</li>
+<li>Get传输的数据是拼接在Url之后的，对用户是可见的；Post的传输数据对用户是不可见的</li>
+<li>Get传送的数据量较小，不能大于2KB。Post传送的数据量较大，一般被默认为不受限制</li>
+<li>Get安全性非常低，Post安全性较高</li>
+<li>在FORM提交的时候，如果不指定Method，则默认为Get请求</li>
 </ul>
 <h1 id="css">CSS</h1>
-<h2 id="1-css-盒子模型box-sizing-属性的理解">1. css 盒子模型，box-sizing 属性的理解</h2>
-<p>css 的盒模型由 content（内容）、padding（内边距）、border（边框）、margin（外边距）组成。但盒子的大小由 content+padding+border 这几部分决定</p>
-<p>box-sizing 是一个 CSS3 属性，与盒子模型有着密切联系。即决定元素的宽高如何计算，box-sizing 有三个属性：</p>
+<h2 id="1-css盒子模型box-sizing属性的理解">1. css盒子模型，box-sizing属性的理解</h2>
+<p>css的盒模型由content(内容)、padding(内边距)、border(边框)、margin(外边距)组成。但盒子的大小由content+padding+border这几部分决定</p>
+<p>box-sizing是一个CSS3属性，与盒子模型有着密切联系。即决定元素的宽高如何计算，box-sizing有三个属性：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1760,9 +1764,9 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>content-box 使得元素的宽高即为内容区的宽高（默认模式）</li>
-<li>border-box: 计算方式 content + padding + border = 本身元素大小，即缩小了 content 大小</li>
-<li>inherit 指定 box-sizing 属性的值，应该从父元素继承</li>
+<li>content-box 使得元素的宽高即为内容区的宽高(默认模式)</li>
+<li>border-box: 计算方式content + padding + border = 本身元素大小，即缩小了content大小</li>
+<li>inherit 指定box-sizing属性的值，应该从父元素继承</li>
 </ul>
 <h2 id="2-清除浮动什么时候需要清除浮动清除浮动都有哪些方法">2. 清除浮动，什么时候需要清除浮动，清除浮动都有哪些方法</h2>
 <p>浮动的元素是脱离文档标准流的，如果我们不清楚浮动，那么就会造成<strong>父元素高度塌陷</strong>，影响页面布局。</p>
@@ -1788,9 +1792,9 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>使用伪元素的好处：不增加冗余的 DOM 节点，符合语义化</p>
+</div><p>使用伪元素的好处：不增加冗余的DOM节点，符合语义化</p>
 <blockquote>
-<p>overflow:hidden 可以触发 BFC 机制。BFC：块级格式化上下文，创建了 BFC 的元素就是一个独立的盒子，它规定了内部如何布局，并且与这个独立盒子里的布局不受外部影响，当然它也不会影响到外面的元素，<strong>计算 BFC 的高度时，浮动元素也参与计算</strong></p>
+<p>overflow:hidden可以触发BFC机制。BFC：块级格式化上下文，创建了 BFC的元素就是一个独立的盒子，它规定了内部如何布局，并且与这个独立盒子里的布局不受外部影响，当然它也不会影响到外面的元素，<strong>计算BFC的高度时，浮动元素也参与计算</strong></p>
 </blockquote>
 <h2 id="3-如何让一个不定宽高的盒子水平垂直居中">3. 如何让一个不定宽高的盒子水平垂直居中</h2>
 <blockquote>
@@ -1825,7 +1829,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>css3 属性</p>
+<p>css3属性</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1852,7 +1856,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>flex 布局</p>
+<p>flex布局</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1870,7 +1874,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="4-px-和-em-和-rem-的区别">4. px 和 em 和 rem 的区别</h2>
+</div><h2 id="4-px和em和rem的区别">4. px和em和rem的区别</h2>
 <blockquote>
 <p><code>px</code>: 像素，相对长度单位。像素<code>px</code>是相对于显示器屏幕分辨率而言的</p>
 </blockquote>
@@ -1880,26 +1884,26 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <blockquote>
 <p><code>rem</code>的值并不是固定的，始终是基于根元素 <code>&lt;html&gt;</code> 的，也代表倍数</p>
 </blockquote>
-<h2 id="5-position-的值有哪些">5. position 的值有哪些</h2>
+<h2 id="5-position的值有哪些">5. position的值有哪些</h2>
 <blockquote>
 <p>static： 默认值。没有定位，元素出现在正常的流中</p>
 </blockquote>
 <blockquote>
-<p>relative（相对定位）：生成相对定位的元素，相对于其正常（原先本身）位置进行定位</p>
+<p>relative（相对定位）：生成相对定位的元素,相对于其正常（原先本身）位置进行定位</p>
 </blockquote>
 <blockquote>
-<p>absolute（绝对定位）：生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位</p>
+<p>absolute（绝对定位）：生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位</p>
 </blockquote>
 <blockquote>
 <p>fixed（固定定位）：生成绝对定位的元素，相对于浏览器窗口进行定位</p>
 </blockquote>
-<h2 id="6-displaynone-与-visibilityhidden-的区别">6. display:none 与 visibility：hidden 的区别</h2>
+<h2 id="6-displaynone与visibilityhidden的区别">6. display:none与visibility：hidden的区别</h2>
 <table>
 <thead>
 <tr>
 <th>区别</th>
 <th>display:none</th>
-<th>visibility：hidden 的</th>
+<th>visibility：hidden的</th>
 </tr>
 </thead>
 <tbody>
@@ -1910,71 +1914,71 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 </tr>
 <tr>
 <td>是否渲染</td>
-<td>会触发 reflow（回流），进行渲染</td>
-<td>只会触发 repaint（重绘），因为没有发现位置变化，不进行渲染</td>
+<td>会触发reflow（回流），进行渲染</td>
+<td>只会触发repaint（重绘），因为没有发现位置变化，不进行渲染</td>
 </tr>
 <tr>
 <td>是否是继承属性</td>
 <td>不是继承属性，元素及其子元素都会消失</td>
-<td>是继承属性，若子元素使用了 visibility:visible，则不继承，这个子孙元素又会显现出</td>
+<td>是继承属性，若子元素使用了visibility:visible，则不继承，这个子孙元素又会显现出</td>
 </tr>
 </tbody>
 </table>
-<h2 id="7-css-中-link-和import-的区别">7. CSS 中 link 和@import 的区别</h2>
+<h2 id="7-css中link-和import的区别">7. CSS中link 和@import的区别</h2>
 <blockquote>
-<p>link 属于 XHTML 标签，@import 完全是 CSS 提供的一种方式，只能加载 CSS</p>
+<p>link属于XHTML标签，@import完全是CSS提供的一种方式,只能加载CSS</p>
 </blockquote>
 <blockquote>
-<p>加载顺序的差别，当一个页面被加载的时候，link 引用的 CSS 会同时被加载，而@import 引用的 CSS 会等到页面全部被下载完再被加载</p>
+<p>加载顺序的差别，当一个页面被加载的时候，link引用的CSS会同时被加载，而@import引用的CSS 会等到页面全部被下载完再被加载</p>
 </blockquote>
 <blockquote>
-<p>兼容性的差别。由于@import 是 CSS2.1 提出的所以老的浏览器不支持，而 link 标签无此问题</p>
+<p>兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，而link标签无此问题</p>
 </blockquote>
 <blockquote>
-<p>当使用 javascript 控制 dom 去改变样式的时候，只能使用 link 标签，因为@import 不是 dom 可以控制的</p>
+<p>当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的</p>
 </blockquote>
 <h2 id="8-什么是响应式设计响应式设计的基本原理是什么">8. 什么是响应式设计，响应式设计的基本原理是什么</h2>
 <blockquote>
 <p>响应式网站设计是一个网站能够兼容多个终端，而不是为每一个终端做一个特定的版本。基本原理是通过媒体查询检测不同的设备屏幕尺寸做处理</p>
 </blockquote>
-<h2 id="9-为什么要初始化-css-样式">9. 为什么要初始化 CSS 样式</h2>
+<h2 id="9-为什么要初始化css样式">9. 为什么要初始化CSS样式</h2>
 <blockquote>
 <p>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异</p>
 </blockquote>
 <blockquote>
 <p>初始化样式会对 SEO 有一定的影响</p>
 </blockquote>
-<h2 id="10-css3-有哪些新特性">10. CSS3 有哪些新特性</h2>
+<h2 id="10-css3有哪些新特性">10. CSS3有哪些新特性</h2>
 <ul>
 <li>实现圆角<code>border-radius</code>，阴影<code>box-shadow</code>，边框图片<code>border-image</code></li>
 <li>对文字加特效<code>text-shadow</code>，强制文本换行<code>word-wrap</code>，线性渐变<code>linear-gradient</code></li>
-<li>实现旋转<code>transform:rotate(90deg)</code>, 缩放<code>scale(0.85,0.90)</code>,<code>translate(0px,-30px)</code>定位，倾斜<code>skew(-9deg,0deg)</code>;</li>
-<li>增加了更多的 CSS 选择器、多背景、<code>rgba()</code></li>
+<li>实现旋转<code>transform:rotate(90deg)</code>,缩放<code>scale(0.85,0.90)</code>,<code>translate(0px,-30px)</code>定位,倾斜<code>skew(-9deg,0deg)</code>;</li>
+<li>增加了更多的CSS选择器、多背景、<code>rgba()</code></li>
 <li>唯一引入的伪元素是<code>::selection</code>；</li>
 <li>实现媒体查询<code>@media</code>，多栏布局<code>flex</code></li>
 <li>过渡<code>transition</code> 动画<code>animation</code></li>
 </ul>
-<h2 id="11-before-和-after-中双冒号和单冒号有什么区别解释一下这-2-个伪元素的作用">11. ::before 和 :after 中双冒号和单冒号有什么区别？解释一下这 2 个伪元素的作用</h2>
+<h2 id="11-before-和-after中双冒号和单冒号有什么区别解释一下这2个伪元素的作用">11. ::before 和 :after中双冒号和单冒号有什么区别？解释一下这2个伪元素的作用</h2>
 <blockquote>
-<p>单冒号 (:) 用于 CSS3 伪类，双冒号 (::) 用于 CSS3 伪元素。（伪元素由双冒号和伪元素名称组成）, 双冒号是在当前规范中引入的，用于区分伪类和伪元素</p>
+<p>单冒号(:)用于CSS3伪类，双冒号(::)用于CSS3伪元素。（伪元素由双冒号和伪元素名称组成）,双冒号是在当前规范中引入的，用于区分伪类和伪元素</p>
 </blockquote>
-<h2 id="12-css-优化提高性能的方法有哪些">12. CSS 优化、提高性能的方法有哪些</h2>
+<h2 id="12-css优化提高性能的方法有哪些">12. CSS优化、提高性能的方法有哪些</h2>
 <ul>
-<li>移除空的 css 规则（Remove empty rules）</li>
-<li>正确使用 display 的属性</li>
-<li>不滥用浮动、web 字体</li>
-<li>不声明过多的 font-size</li>
-<li>不在选择符中使用 ID 标识符</li>
+<li>移除空的css规则（Remove empty rules）</li>
+<li>正确使用display的属性</li>
+<li>不滥用浮动、web字体</li>
+<li>不声明过多的font-size</li>
+<li>不在选择符中使用ID标识符</li>
 <li>遵守盒模型规则</li>
 <li>尽量减少页面重排、重绘</li>
 <li>抽象提取公共样式，减少代码量</li>
 </ul>
 <h2 id="13-重绘和回流">13. 重绘和回流</h2>
 <p><a href="https://juejin.im/post/5a9923e9518825558251c96a" target="_blank" rel="noopener noreffer">重绘和回流</a></p>
-<h2 id="14-flex-布局">14. flex 布局</h2>
-<p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">flex 布局教程&ndash;阮一峰</a></p>
-<h2 id="15-css-预处理器">15. css 预处理器</h2>
-<p>提供了一种 css 的书写方式，常见的就是 <a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank" rel="noopener noreffer">SAAS 文档</a> 和 <a href="https://less.bootcss.com/" target="_blank" rel="noopener noreffer">LESS 文档</a></p>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
+<h2 id="14-flex布局">14. flex布局</h2>
+<p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">flex布局教程&ndash;阮一峰</a></p>
+<h2 id="15-css预处理器">15. css预处理器</h2>
+<p>提供了一种css的书写方式，常见的就是 <a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank" rel="noopener noreffer">SAAS文档</a> 和 <a href="https://less.bootcss.com/" target="_blank" rel="noopener noreffer">LESS文档</a></p>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
 <p>记录自己在配置vps及博客SSL证书时遇到的问题。</p>
 </blockquote>
 <h1 id="强制重定向https">强制重定向https</h1>
@@ -2016,9 +2020,9 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
         </div>
         <div class="details-content">
             <div class="admonition-content"><span style="color: #d9534f;font-size: 1.2em;"><strong>如无必要，不再更新！（2019.09.13）</strong></span><br>
-今晚我做出了一个慎重的决定，由于博主时间精力有限，需要更多的时间来工作和学习。所以我将<strong>放弃对 next 的主题的自定义修改</strong>，next 主题官方已经更新到了 7.0+的版本，喜欢 next 主题风格的朋友可以在 github 更新。<br>
+今晚我做出了一个慎重的决定，由于博主时间精力有限，需要更多的时间来工作和学习。所以我将<strong>放弃对next的主题的自定义修改</strong>，next主题官方已经更新到了7.0+的版本，喜欢next主题风格的朋友可以在github更新。<br>
 我这也算是上古版本了，版本差距实在过大，所以我也将放弃博客使用主题的更新。<br>
-以下仍为当前博客使用主题，lib 资源已打包 github。</div>
+以下仍为当前博客使用主题，lib资源已打包github。</div>
         </div>
     </div>
 <div class="details admonition success open">
@@ -2026,10 +2030,10 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
             <i class="icon fas fa-check-circle fa-fw"></i>next<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">基于 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener noreffer">hexo-theme-next 6.0+</a> 的 Pisces 模板做的 DIY 扩展性设计（部分兼容 next 其他几种模板）。主要是一些 custom style 还有一些第三方的 js。修改的地方太多也有点小乱就不提 PR 了。<br>
-<a href="https://github.com/Lruihao/hexo-theme-next" target="_blank" rel="noopener noreffer">modified</a>  官方 Demo =&gt; <a href="https://theme-next.org" target="_blank" rel="noopener noreffer">https://theme-next.org</a><br>
-记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见 <a href="/categories/posts/" rel="">hexo 分类</a>。<br>
-<strong>主题中若有遗漏第三方插件或应用的 key 及 id 值等请修改为自己对应的值</strong></div>
+            <div class="admonition-content">基于<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener noreffer">hexo-theme-next 6.0+</a>的Pisces模板做的DIY扩展性设计（部分兼容next其他几种模板）。主要是一些custom style还有一些第三方的js。修改的地方太多也有点小乱就不提PR了。<br>
+<a href="https://github.com/Lruihao/hexo-theme-next" target="_blank" rel="noopener noreffer">modified</a> 官方Demo =&gt; <a href="https://theme-next.org" target="_blank" rel="noopener noreffer">https://theme-next.org</a><br>
+记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见<a href="/categories/posts/" rel="">hexo分类</a>。<br>
+<strong>主题中若有遗漏第三方插件或应用的key及id值等请修改为自己对应的值</strong></div>
         </div>
     </div>
 <p>主要的几个自定义文件</p>
@@ -2061,18 +2065,18 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 \layout\_macro\siderbar.swig                 #侧栏模板
 \layout\_third-party\copy-code.swig          #复制按钮
 \layout\_partials\comments.swig              #评论主模板
-\layout\_partials\footer.swig                #底部模板#该模块在 layout.swig 引入，用于在 body 自定义标签
-\layout\_partials\footer_custom.swig         #footer 自定义文件
-\layout\_third-party\custom.swig             #该模块在 layout.swig 引入用于在 body 自定义标签
+\layout\_partials\footer.swig                #底部模板#该模块在layout.swig引入，用于在body自定义标签
+\layout\_partials\footer_custom.swig         #footer自定义文件
+\layout\_third-party\custom.swig             #该模块在layout.swig引入用于在body自定义标签
 \source\css\_custom\customs.styl             #主要用户自定义样式表
 \source\fonts\                               #引入了一些我的手写体及外部字体
-\scripts\qcloudcdn.js                        #腾讯云 cos 桶刷新缓存的脚本，不需要可删掉 [^1]     
+\scripts\qcloudcdn.js                        #腾讯云cos桶刷新缓存的脚本，不需要可删掉[^1]     
 </code></pre></td></tr></table>
 </div>
 </div><p><a href="https://lruihao.cn/posts/cos-hexo.html#CDN%E5%88%B7%E6%96%B0" target="_blank" rel="noopener noreffer">^1</a></p>
 <h1 id="初步安装">初步安装</h1>
 <blockquote>
-<p>安装整个改过的主题，然后下载相应的 lib 资源解压放入 source 文件夹</p>
+<p>安装整个改过的主题,然后下载相应的lib资源解压放入source文件夹</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2084,7 +2088,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 git clone https://github.com/Lruihao/hexo-theme-next themes/next
 </code></pre></td></tr></table>
 </div>
-</div><p>主题配置文件<code>_config.yml</code>, 选择主题</p>
+</div><p>主题配置文件<code>_config.yml</code>,选择主题</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2097,7 +2101,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
-            <span class="card-link-title">lib 下载</span>
+            <span class="card-link-title">lib下载</span>
             <span class="card-link-meta">
                 <span class="card-link-url">
                     <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
@@ -2117,7 +2121,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
 <blockquote>
 <p>更多自定义详见源码</p>
 </blockquote>
-<h2 id="links-模板">links 模板</h2>
+<h2 id="links模板">links模板</h2>
 <blockquote>
 <p>自定义友链模板，打开<code>hexo\themes\next\layout\</code>新建<code>links.swig</code>文件，写下以下内容后保存。</p>
 </blockquote>
@@ -2388,7 +2392,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
 </div><ul>
 <li><strong>若未使用懒加载请将模板中的<code>data-original</code>属性改为<code>src</code></strong></li>
 <li><strong>若懒加载无法加载预览图请手动添加<code>src=&quot;/images/loading.gif&quot;</code></strong></li>
-<li><strong>若 fancybox 显示 alt 内容请更换 fancybox2 或者将 alt 属值删除</strong></li>
+<li><strong>若fancybox显示alt内容请更换fancybox2或者将alt属值删除</strong></li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2454,9 +2458,9 @@ layout: links
 # -------------------------------------------------------------
 beian:
   enable: true
-  gov: 湘公网安备 43030402000254 号
+  gov: 湘公网安备 43030402000254号
   recordcode: 43030402000254
-  icp: 湘 ICP 备 18020535 号
+  icp: 湘ICP备18020535号
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="文字抖动特效">文字抖动特效</h2>
@@ -2465,10 +2469,10 @@ beian:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#34;shaky&#34;</span><span class="nt">&gt;</span>（づ●&#39;◡&#39;●) づ ❥内容区<span class="nt">&lt;/div&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#34;shaky&#34;</span><span class="nt">&gt;</span>(づ●&#39;◡&#39;●)づ ❥内容区<span class="nt">&lt;/div&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><div class="shaky">（づ●'◡'●) づ ❥内容区</div>
+</div><div class="shaky">(づ●'◡'●)づ ❥内容区</div>
 <h2 id="左下角微信公众号">左下角微信公众号</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2479,10 +2483,10 @@ beian:
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="相关文章收纳">相关文章收纳</h2>
-<p>加入 H5 标签，实现可收纳功能，点击查看详情。</p>
+<p>加入H5标签，实现可收纳功能，点击查看详情。</p>
 <h2 id="chat-services">Chat Services</h2>
 <blockquote>
-<p>共 chatra,tidio,daovoice 三个选项，三选一</p>
+<p>共chatra,tidio,daovoice三个选项，三选一</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2528,8 +2532,8 @@ daovoice: true
 daovoice_app_id: xxxx   # http://www.daovoice.io/
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="pdf-和-mermaid-解析模块">pdf 和 Mermaid 解析模块</h2>
-<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf 传送门</a></p>
+</div><h2 id="pdf和mermaid解析模块">pdf和Mermaid解析模块</h2>
+<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf传送门</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2566,7 +2570,7 @@ mermaid:
   #cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="模仿-csdn-转发样式">模仿 csdn 转发样式</h2>
+</div><h2 id="模仿csdn转发样式">模仿csdn转发样式</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2638,7 +2642,7 @@ repost: true
 </div><p><a href="https://lruihao.cn/tags/%e4%bb%96%e5%b1%b1%e4%b9%8b%e7%9f%b3/" target="_blank" rel="noopener noreffer">预览</a></p>
 <h2 id="热度页面">热度页面</h2>
 <blockquote>
-<p>打开<code>hexo\themes\next\layout</code>新建 top.swig 文件，写下如下内容保存：</p>
+<p>打开<code>hexo\themes\next\layout</code>新建top.swig文件，写下如下内容保存：</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2834,7 +2838,7 @@ repost: true
               title=result.title;
               category=result.categories
               url=result.url;
-              var content=&#34;&lt;div&gt;&#34;+&#34;【文章热度：&#34;+time+&#34;℃】&#34;+&#34;&lt;a href=&#39;&#34;+&#34;{{ config.url }}&#34;+&#34;&#34;+url+&#34;&#39;&gt;&#34;+title+&#34;&lt;/a&gt;&#34;+&#34;&lt;/div&gt;&#34;;
+              var content=&#34;&lt;div&gt;&#34;+&#34;【文章热度:&#34;+time+&#34;℃】&#34;+&#34;&lt;a href=&#39;&#34;+&#34;{{ config.url }}&#34;+&#34;&#34;+url+&#34;&#39;&gt;&#34;+title+&#34;&lt;/a&gt;&#34;+&#34;&lt;/div&gt;&#34;;
               document.getElementById(&#34;top&#34;).innerHTML+=content;
             }
           }, function (error) {
@@ -2864,8 +2868,8 @@ repost: true
 {% endblock %}
 </code></pre></td></tr></table>
 </div>
-</div><p>其中第 36 行改成你自己的 leancloud 的 appid 和 appkey, 比如我的是在主题配置文件里面的 valine 配置下，所以我就写成<code>theme.valine.appid</code>。和我一样就不需要修改，其他自行配置。</p>
-<p>然后<code>hexo n page top</code>新建一个页面文章配置写下如下内容，limit 表示显示篇数：</p>
+</div><p>其中第36行改成你自己的leancloud的appid和appkey,比如我的是在主题配置文件里面的valine配置下，所以我就写成<code>theme.valine.appid</code>。和我一样就不需要修改，其他自行配置。</p>
+<p>然后<code>hexo n page top</code>新建一个页面文章配置写下如下内容，limit表示显示篇数：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2887,7 +2891,7 @@ limit: 20
 
 </p>
 <blockquote>
-<p>本来只想简单美化一下变成 night 样式的，后来写完发现 3dbtn 也挺喜欢的。</p>
+<p>本来只想简单美化一下变成night样式的，后来写完发现3dbtn也挺喜欢的。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2917,8 +2921,8 @@ limit: 20
     <span class="n">style</span><span class="o">:</span> <span class="n">night</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>web 汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/webbiji/</guid><description><![CDATA[<blockquote>
-<p>下面一些 web 开发的一些总结，还有一些常用到的代码，脚本等！</p>
+</div>]]></description></item><item><title>web汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/webbiji/</guid><description><![CDATA[<blockquote>
+<p>下面一些web开发的一些总结，还有一些常用到的代码，脚本等！</p>
 </blockquote>
 <h1 id="front-end">front-end</h1>
 <h2 id="html">html</h2>
@@ -2927,30 +2931,30 @@ limit: 20
 <li><a href="https://lruihao.cn/posts/ms-html-css.html" target="_blank" rel="noopener noreffer">HTML+CSS</a></li>
 </ul>
 </blockquote>
-<h3 id="oblique-和-intalic-的区别">oblique 和 intalic 的区别</h3>
+<h3 id="oblique和intalic的区别">oblique和intalic的区别</h3>
 <p>这两个都是<code>font-style</code>属性的值，这两个值都能实现倾斜的效果，但是有区别的。</p>
 <ul>
 <li><code>intalic</code>: 这个是字体的倾斜，相当于<strong>斜体</strong>，字体必须有倾斜属性。</li>
 <li><code>oblique</code>: 这个准确地说是让文字倾斜。相当于<strong>斜字</strong>，字体不一定要有倾斜属性。</li>
 </ul>
-<h3 id="title-显示换行">title 显示换行</h3>
-<p><a href="#" title="第一行&#10; 第二行&#10; 第三行">使用<code>&amp;#10;</code></a>或<a href="#" title="第一排&#13; 第二排&#13; 第三排">使用<code>&amp;#13;</code></a></p>
+<h3 id="title显示换行">title显示换行</h3>
+<p><a href="#" title="第一行&#10;第二行&#10;第三行">使用<code>&amp;#10;</code></a>或<a href="#" title="第一排&#13;第二排&#13;第三排">使用<code>&amp;#13;</code></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10; 第二行&amp;#10; 第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
-&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13; 第二排&amp;#13; 第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10;第二行&amp;#10;第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
+&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13;第二排&amp;#13;第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="图片类型选择">图片类型选择</h3>
 <p></p>
 <h2 id="css">css</h2>
 <h3 id="flexbox">flexbox</h3>
-<p>Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 的版本就用 flex 替代了 float 来进行排版。<br>
-我在网上看到几个很好的教程，图文并茂，一目了然。</p>
+<p>Flex布局将成为未来布局的首选方案，比如说常见的bootstrap4的版本就用flex替代了float来进行排版。<br>
+我在网上看到几个很好的教程,图文并茂，一目了然。</p>
 <blockquote>
 <ul>
 <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreffer">A Complete Guide to Flexbox</a></li>
@@ -2959,26 +2963,26 @@ limit: 20
 <ul>
 <li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">Flex 布局教程：语法篇</a></li>
 </ul>
-<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a href="http://static.vgee.cn/static/index.html" target="_blank" rel="noopener noreffer">Demo</a> 也写了。</p>
+<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友<a href="http://static.vgee.cn/static/index.html" target="_blank" rel="noopener noreffer">Demo</a>也写了。</p>
 <h2 id="javascript">javascript</h2>
-<h3 id="keydown-和-keypress">keydown 和 keypress</h3>
+<h3 id="keydown和keypress">keydown和keypress</h3>
 <ul>
 <li><code>keydown</code>：按下键盘键</li>
 <li><code>keypress</code>：紧接着<code>keydown</code>事件触发（只有按下字符键时触发）</li>
 <li>如果用户按下了一个<strong>字符键</strong>不放，就会重复触发<code>keydown</code>和<code>keypress</code>事件，直到用户松开该键为止。</li>
 <li>如果用户按下了一个<strong>非字符键</strong>不放，就会重复触发<code>keydown</code>事件，直到用户松开该键为止。</li>
 </ul>
-<p><a href="https://www.jianshu.com/p/8f839f558319" target="_blank" rel="noopener noreffer">详解键盘事件 (keydown，keypress，keyup)</a></p>
-<h3 id="textcontentinnertext-和-innerhtml-的区别">textContent、innerText 和 innerHTML 的区别</h3>
+<p><a href="https://www.jianshu.com/p/8f839f558319" target="_blank" rel="noopener noreffer">详解键盘事件(keydown，keypress，keyup)</a></p>
+<h3 id="textcontentinnertext和innerhtml的区别">textContent、innerText和innerHTML的区别</h3>
 <blockquote>
 <ol>
-<li>设置标签中的文本内容，应该使用<code>textContent</code>或<code>innerText</code>（更老）属性，区别在于浏览器支援程度</li>
+<li>设置标签中的文本内容,应该使用<code>textContent</code>或<code>innerText</code>（更老）属性,区别在于浏览器支援程度</li>
 </ol>
 </blockquote>
 <ol start="2">
-<li><code>innerHTML</code>能够获得元素内的所有标签内容，也可以设置标签使之生效。（<strong>注意防止 XSS 注入</strong>）</li>
+<li><code>innerHTML</code>能够获得元素内的所有标签内容，也可以设置标签使之生效。（<strong>注意防止XSS注入</strong>）</li>
 </ol>
-<p>如果某个属性在浏览器中不支持，那么这个属性的类型是<code>undefined</code>，判断这个属性的类型是不是<code>undefined</code>，就知道浏览器是否支持。</p>
+<p>如果某个属性在浏览器中不支持,那么这个属性的类型是<code>undefined</code>，判断这个属性的类型是不是<code>undefined</code>，就知道浏览器是否支持。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3011,16 +3015,16 @@ limit: 20
 <blockquote>
 <ul>
 <li>自行搭建
-比如使用开源图床 ImgURL 搭建的<code>img.lruihao.cn</code>（<strong>需要服务器</strong>）<br>
-使用上传工具加第三方免费空间，比如<code>PicGo + 腾讯云 COS</code>（<strong>无需服务器</strong>）</li>
+比如使用开源图床ImgURL搭建的<code>img.lruihao.cn</code>（<strong>需要服务器</strong>）<br>
+使用上传工具加第三方免费空间，比如<code>PicGo + 腾讯云COS</code>（<strong>无需服务器</strong>）</li>
 </ul>
 </blockquote>
 <ul>
 <li>使用各大图床<br>
-诸如 sm.ms，腾讯云 COS，阿里云 OSS，七牛云，又拍云，Github，微博图床，ImgURL 图床等等</li>
+诸如sm.ms，腾讯云COS，阿里云OSS，七牛云，又拍云，Github，微博图床，ImgURL图床等等</li>
 </ul>
 <h2 id="font-awesome">font-awesome</h2>
-<p>现在使用 5 的版本，可以使用<code>webfont+css</code>或<code>svg+js</code></p>
+<p>现在使用5的版本，可以使用<code>webfont+css</code>或<code>svg+js</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3029,7 +3033,7 @@ limit: 20
 <pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&#34;</span><span class="nt">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>其他的图标 js</p>
+</div><p>其他的图标js</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3040,7 +3044,7 @@ limit: 20
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;script src=&#34;//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js&#34;&gt;&lt;/script&gt;
 &lt;svg class=&#34;card-avatar&#34; aria-hidden=&#34;true&#34;&gt;
-  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n 为一个数字--&gt;
+  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n为一个数字--&gt;
 &lt;/svg&gt;
 </code></pre></td></tr></table>
 </div>
@@ -3073,7 +3077,7 @@ limit: 20
 <li>.col-md- 中等屏幕  &gt;=992px</li>
 <li>.col-lg- 大屏幕  &gt;1200px</li>
 </ul>
-<p>css3 写法 @media （宽度具体调整）</p>
+<p>css3 写法 @media (宽度具体调整)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3093,18 +3097,18 @@ limit: 20
 <pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 手机等小屏幕手持设备 */</span>
 <span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
 
-	<span class="c">/*手机端 css 样式表*/</span>
+	<span class="c">/*手机端css样式表*/</span>
 
 <span class="p">}</span>
 <span class="c">/* 平板之类的宽度 1024 以下设备 */</span>
 <span class="p">@</span><span class="k">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">321px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
 
-	<span class="c">/*电脑端 css 样式表*/</span>
+	<span class="c">/*电脑端css样式表*/</span>
 
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>link 引入不同 css</p>
+</div><p>link引入不同css</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3139,12 +3143,12 @@ limit: 20
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-//还有其他的源。..
+//还有其他的源...
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="qq-推广链接">QQ 推广链接</h2>
+</div><h2 id="qq推广链接">QQ推广链接</h2>
 <blockquote>
-<p><a href="https://shang.qq.com/v3/widget.html" target="_blank" rel="noopener noreffer">QQ 推广</a> <a href="https://qun.qq.com/join.html" target="_blank" rel="noopener noreffer">QQ 群</a></p>
+<p><a href="https://shang.qq.com/v3/widget.html" target="_blank" rel="noopener noreffer">QQ推广</a> <a href="https://qun.qq.com/join.html" target="_blank" rel="noopener noreffer">QQ群</a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3165,13 +3169,13 @@ limit: 20
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">https://fonts.google.com/
-一般选用国内源镜像替代（待补充。..）
+一般选用国内源镜像替代（待补充...）
 <span class="gi">+ https://fonts.loli.net
 </span><span class="gi">+ //fonts.lug.ustc.edu.cn
 </span></code></pre></td></tr></table>
 </div>
 </div><h2 id="fancybox">fancybox</h2>
-<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">github 介绍</a> <a href="https://www.bootcdn.cn/fancybox/" target="_blank" rel="noopener noreffer">fancybox 源</a></p>
+<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">github介绍</a> <a href="https://www.bootcdn.cn/fancybox/" target="_blank" rel="noopener noreffer">fancybox源</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3184,10 +3188,10 @@ limit: 20
 </div>
 </div><h1 id="back-end">back-end</h1>
 <blockquote>
-<p>更多学习内容见 <a href="https://github.com/Lruihao/web-dev-data" target="_blank" rel="noopener noreffer">学习课件</a><br>
-练习作业 <a href="https://github.com/Lruihao/hw" target="_blank" rel="noopener noreffer">源码</a>+<a href="http://hw.lruihao.cn/" target="_blank" rel="noopener noreffer">Demo</a></p>
+<p>更多学习内容见<a href="https://github.com/Lruihao/web-dev-data" target="_blank" rel="noopener noreffer">学习课件</a><br>
+练习作业<a href="https://github.com/Lruihao/hw" target="_blank" rel="noopener noreffer">源码</a>+<a href="http://hw.lruihao.cn/" target="_blank" rel="noopener noreffer">Demo</a></p>
 </blockquote>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linkcard/</guid><description><![CDATA[<blockquote>
-<p>模仿知乎的卡片式链接，idea 来自 [兰州小红鸡]</p>
+<p>模仿知乎的卡片式链接，idea 来自[兰州小红鸡]</p>
 </blockquote>
 <h2 id="源码">源码</h2>
 <blockquote>
@@ -3245,13 +3249,13 @@ limit: 20
   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/src/card-link.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>html 链接写法，a 标签加上<code>class=&quot;card-link&quot;</code></p>
+</div><p>html链接写法,a标签加上<code>class=&quot;card-link&quot;</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;https://github.com/Lruihao/lruihao.github.io&#34; target=&#34;_blank&#34; class=&#34;card-link&#34;&gt;Lruihao 博客&lt;/a&gt;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;https://github.com/Lruihao/lruihao.github.io&#34; target=&#34;_blank&#34; class=&#34;card-link&#34;&gt;Lruihao博客&lt;/a&gt;
 </code></pre></td></tr></table>
 </div>
 </div><a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" rel="noopener noreffer"  class="card-link">
@@ -3272,9 +3276,9 @@ limit: 20
             
         </span>
     </span>
-</a>]]></description></item><item><title>QQ 强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
-<p>以前在 QQ 里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
-查了一下百度知道了大概就是 qq 没有抓取到你的网站的 xml。并在其他教程中得到了一个强制提交抓取的 url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
+</a>]]></description></item><item><title>QQ强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
+<p>以前在QQ里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
+查了一下百度知道了大概就是qq没有抓取到你的网站的xml。并在其他教程中得到了一个强制提交抓取的url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
 </blockquote>
 <h2 id="批量式刷新">批量式刷新</h2>
 <div class="highlight"><div class="chroma">
@@ -3325,7 +3329,7 @@ limit: 20
 </span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀url=首页地址（最好使用https）
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=https://lruihao.cn&#34;</span><span class="p">;</span>
 	<span class="c1">//用户地址
 </span><span class="c1"></span>	<span class="c1">//var custom_src = &#34;https://lruihao.cn&#34;;
@@ -3354,18 +3358,18 @@ limit: 20
 
 	<span class="p">}</span>
 	
-	<span class="c1">//负责打开窗口，并关闭
+	<span class="c1">//负责打开窗口,并关闭
 </span><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
 		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
 		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-			<span class="c1">//开启后 200ms（单页）关闭，速度自行把握数组越大时间越多
+			<span class="c1">//开启后200ms（单页）关闭，速度自行把握数组越大时间越多
 </span><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
 		<span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
 	<span class="p">}</span>
 
 	<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
 		 <span class="nx">createArrayAndOpenWindow</span><span class="p">();</span>
-		 <span class="c1">//设置定时函数，疯狂刷新直到 xml 出现内容
+		 <span class="c1">//设置定时函数，疯狂刷新直到xml出现内容
 </span><span class="c1"></span>		 <span class="kd">var</span> <span class="nx">timer</span> <span class="o">=</span>  <span class="nx">setInterval</span><span class="p">(</span><span class="s2">&#34;createArrayAndOpenWindow()&#34;</span><span class="p">,</span> <span class="mi">2000</span><span class="p">);</span>
 		 
 	<span class="p">}</span>
@@ -3418,18 +3422,18 @@ limit: 20
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）https://lruihao.cn
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀url=首页地址（最好使用https）https://lruihao.cn
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=&#34;</span><span class="p">;</span>
 	<span class="c1">//用户地址
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">custom_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
 	<span class="c1">//初始化工作地址
 </span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
 	
-	<span class="c1">//负责打开窗口，并关闭
+	<span class="c1">//负责打开窗口,并关闭
 </span><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
 		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
 		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-			<span class="c1">//开启后 200ms 关闭
+			<span class="c1">//开启后200ms关闭
 </span><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
 		<span class="p">},</span> <span class="mi">200</span><span class="p">);</span>
 	<span class="p">}</span>
@@ -3465,21 +3469,21 @@ limit: 20
 	//设置一个全局的变量，便于保存验证码
     var code;
     function createCode(){
-        //首先默认 code 为空字符串
+        //首先默认code为空字符串
         code = '';
-        //设置长度，这里看需求，我这里设置了 4
+        //设置长度，这里看需求，我这里设置了4
         var codeLength = 4;
         var codeV = document.getElementById('code');
         //设置随机字符
         var random = new Array('人','徒','知','枯','坐','息','思','为','进','德','之','功','殊','不','知','上','达','之', '士','圆','通','定','慧','体','用','双','修','即','动','而','静','虽','撄','而','宁');
-        //循环 codeLength 我设置的 4 就是循环 4 次
+        //循环codeLength 我设置的4就是循环4次
         for(var i = 0; i < codeLength; i++){
-            //设置随机数范围，这设置为 0 ~ 36
+            //设置随机数范围,这设置为0 ~ 36
              var index = Math.floor(Math.random()*35);
              //字符串拼接 将每次随机的字符 进行拼接
              code += random[index]; 
         }
-        //将拼接好的字符串赋值给展示的 Value
+        //将拼接好的字符串赋值给展示的Value
         codeV.value = code;
     }
 
@@ -3499,6 +3503,7 @@ limit: 20
         }
     }
 
+
     //设置此处的原因是每次进入界面展示一个随机的验证码，不设置则为空
     window.onload = function (){
 
@@ -3507,7 +3512,7 @@ limit: 20
 </script>
 <div align="center">  
     <input type = "text" id = "input" value="" /> <input type = "button" id="code" onclick="createCode()"/> <input class="btn" type = "button" value = "验证" onclick = "validate()"/> 
-    <br/>请点击验证码处：↑ 
+    <br/>请点击验证码处: ↑ 
 </div>
 <hr>
 <p>验证码 JS 来源互联网</p>
@@ -3557,31 +3562,32 @@ limit: 20
 </span><span class="lnt">42
 </span><span class="lnt">43
 </span><span class="lnt">44
+</span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
 	<span class="c1">//设置一个全局的变量，便于保存验证码
 </span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">code</span><span class="p">;</span>
     <span class="kd">function</span> <span class="nx">createCode</span><span class="p">(){</span>
-        <span class="c1">//首先默认 code 为空字符串
+        <span class="c1">//首先默认code为空字符串
 </span><span class="c1"></span>        <span class="nx">code</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-        <span class="c1">//设置长度，这里看需求，我这里设置了 4
+        <span class="c1">//设置长度，这里看需求，我这里设置了4
 </span><span class="c1"></span>        <span class="kd">var</span> <span class="nx">codeLength</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
         <span class="kd">var</span> <span class="nx">codeV</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">);</span>
         <span class="c1">//设置随机字符
 </span><span class="c1"></span>        <span class="kd">var</span> <span class="nx">random</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">,</span><span class="s1">&#39;D&#39;</span><span class="p">,</span><span class="s1">&#39;E&#39;</span><span class="p">,</span><span class="s1">&#39;F&#39;</span><span class="p">,</span><span class="s1">&#39;G&#39;</span><span class="p">,</span><span class="s1">&#39;H&#39;</span><span class="p">,</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="s1">&#39;J&#39;</span><span class="p">,</span><span class="s1">&#39;K&#39;</span><span class="p">,</span><span class="s1">&#39;L&#39;</span><span class="p">,</span><span class="s1">&#39;M&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;O&#39;</span><span class="p">,</span><span class="s1">&#39;P&#39;</span><span class="p">,</span><span class="s1">&#39;Q&#39;</span><span class="p">,</span><span class="s1">&#39;R&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">,</span><span class="s1">&#39;V&#39;</span><span class="p">,</span><span class="s1">&#39;W&#39;</span><span class="p">,</span><span class="s1">&#39;X&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span><span class="s1">&#39;Z&#39;</span><span class="p">);</span>
-        <span class="c1">//循环 codeLength 我设置的 4 就是循环 4 次
+        <span class="c1">//循环codeLength 我设置的4就是循环4次
 </span><span class="c1"></span>        <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">codeLength</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-            <span class="c1">//设置随机数范围，这设置为 0 ~ 36
+            <span class="c1">//设置随机数范围,这设置为0 ~ 36
 </span><span class="c1"></span>             <span class="kd">var</span> <span class="nx">index</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mi">36</span><span class="p">);</span>
              <span class="c1">//字符串拼接 将每次随机的字符 进行拼接
 </span><span class="c1"></span>             <span class="nx">code</span> <span class="o">+=</span> <span class="nx">random</span><span class="p">[</span><span class="nx">index</span><span class="p">];</span> 
         <span class="p">}</span>
-        <span class="c1">//将拼接好的字符串赋值给展示的 Value
+        <span class="c1">//将拼接好的字符串赋值给展示的Value
 </span><span class="c1"></span>        <span class="nx">codeV</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">code</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="c1">//下面就是判断是否== 的代码，无需解释，也可以结合 ajax 在后台做判断
+    <span class="c1">//下面就是判断是否== 的代码，无需解释,也可以结合ajax在后台做判断
 </span><span class="c1"></span>    <span class="kd">function</span> <span class="nx">validate</span><span class="p">(){</span>
         <span class="kd">var</span> <span class="nx">Input</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">);</span>
         <span class="kd">var</span> <span class="nx">oValue</span> <span class="o">=</span> <span class="nx">Input</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
@@ -3597,6 +3603,7 @@ limit: 20
 </span><span class="c1"></span>        <span class="p">}</span>
     <span class="p">}</span>
 
+
     <span class="c1">//设置此处的原因是每次进入界面展示一个随机的验证码，不设置则为空
 </span><span class="c1"></span>    <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(){</span>
 
@@ -3605,11 +3612,11 @@ limit: 20
 <span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>js 判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>js判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
 <p>转自 <a href="https://www.cnblogs.com/coober/p/6594379.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/coober/p/6594379.html</a></p>
 </blockquote>
-<p>前端开发经常遇到需要判断用户的浏览设备，是 pc 端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone 等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>
-<h3 id="首先判断-pc-端还是移动端">首先判断 pc 端还是移动端</h3>
+<p>前端开发经常遇到需要判断用户的浏览设备，是pc端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>
+<h3 id="首先判断pc端还是移动端">首先判断pc端还是移动端</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3663,7 +3670,7 @@ limit: 20
     } else if (u.indexOf(&#39;iPhone&#39;) &gt; -1) {
         //苹果手机
     } else if (u.indexOf(&#39;Windows Phone&#39;) &gt; -1) {
-        //winphone 手机
+        //winphone手机
     }
 </code></pre></td></tr></table>
 </div>
@@ -3691,7 +3698,7 @@ limit: 20
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="实际运用">实际运用</h3>
-<p>根据 pc 或者移动端控制飘花数目，降低 cpu 消耗，减少卡顿。<a href="https://www.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></p>
+<p>根据pc或者移动端控制飘花数目，降低cpu消耗，减少卡顿。<a href="https://www.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3754,11 +3761,11 @@ limit: 20
   &lt;/script&gt;
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>使用 js 准确获取当前页面 url 网址信息及 301 重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/href-301/</guid><description><![CDATA[<h3 id="获取链接转">获取链接（转）</h3>
+</div>]]></description></item><item><title>使用js准确获取当前页面url网址信息及301重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/href-301/</guid><description><![CDATA[<h3 id="获取链接转">获取链接（转）</h3>
 <p><a href="https://www.cnblogs.com/zhabayi/p/6419938.html" target="_blank" rel="noopener noreffer">传送门</a><br>
-在 WEB 开发中，时常会用到 javascript 来获取当前页面的 url 网址信息，在这里是我的一些获取 url 信息的小总结。</p>
-<p>下面我们举例一个 URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
-<h4 id="windowlocationhref设置或获取整个-url-为字符串">window.location.href（设置或获取整个 URL 为字符串）</h4>
+在WEB开发中，时常会用到javascript来获取当前页面的url网址信息，在这里是我的一些获取url信息的小总结。</p>
+<p>下面我们举例一个URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
+<h4 id="windowlocationhref设置或获取整个-url-为字符串">window.location.href(设置或获取整个 URL 为字符串)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3770,7 +3777,7 @@ alert(test);
 </code></pre></td></tr></table>
 </div>
 </div><p>返回：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
-<h4 id="windowlocationprotocol设置或获取-url-的协议部分">window.location.protocol（设置或获取 URL 的协议部分）</h4>
+<h4 id="windowlocationprotocol设置或获取-url-的协议部分">window.location.protocol(设置或获取 URL 的协议部分)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3782,7 +3789,7 @@ alert(test);
 </code></pre></td></tr></table>
 </div>
 </div><p>返回：<code>http:</code></p>
-<h4 id="windowlocationhost设置或获取-url-的主机部分">window.location.host（设置或获取 URL 的主机部分）</h4>
+<h4 id="windowlocationhost设置或获取-url-的主机部分">window.location.host(设置或获取 URL 的主机部分)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3794,7 +3801,7 @@ alert(test);
 </code></pre></td></tr></table>
 </div>
 </div><p>返回：<code>i.cnblogs.com</code></p>
-<h4 id="windowlocationport设置或获取与-url-关联的端口号码">window.location.port（设置或获取与 URL 关联的端口号码）</h4>
+<h4 id="windowlocationport设置或获取与-url-关联的端口号码">window.location.port(设置或获取与 URL 关联的端口号码)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3805,8 +3812,8 @@ alert(test);
 alert(test);
 </code></pre></td></tr></table>
 </div>
-</div><p>返回：空字符（如果采用默认的 80 端口 (update: 即使添加了：80)，那么返回值并不是默认的 80 而是空字符）</p>
-<h4 id="windowlocationpathname设置或获取与-url-的路径部分就是文件地址">window.location.pathname（设置或获取与 URL 的路径部分（就是文件地址）)</h4>
+</div><p>返回：空字符(如果采用默认的80端口(update:即使添加了:80)，那么返回值并不是默认的80而是空字符)</p>
+<h4 id="windowlocationpathname设置或获取与-url-的路径部分就是文件地址">window.location.pathname(设置或获取与 URL 的路径部分（就是文件地址）)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3818,7 +3825,7 @@ alert(test);
 </code></pre></td></tr></table>
 </div>
 </div><p>返回：<code>/EditPosts.aspx</code></p>
-<h4 id="windowlocationsearch设置或获取-href-属性中跟在问号后面的部分">window.location.search（设置或获取 href 属性中跟在问号后面的部分）</h4>
+<h4 id="windowlocationsearch设置或获取-href-属性中跟在问号后面的部分">window.location.search(设置或获取 href 属性中跟在问号后面的部分)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3830,8 +3837,8 @@ alert(test);
 </code></pre></td></tr></table>
 </div>
 </div><p>返回：<code>?opt=1</code></p>
-<p>PS：获得查询（参数）部分，除了给动态语言赋值以外，我们同样可以给静态页面，并使用 javascript 来获得相信应的参数值。</p>
-<h4 id="windowlocationhash设置或获取-href-属性中在井号后面的分段">window.location.hash（设置或获取 href 属性中在井号“#”后面的分段）</h4>
+<p>PS：获得查询（参数）部分，除了给动态语言赋值以外，我们同样可以给静态页面，并使用javascript来获得相信应的参数值。</p>
+<h4 id="windowlocationhash设置或获取-href-属性中在井号后面的分段">window.location.hash(设置或获取 href 属性中在井号“#”后面的分段)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3842,8 +3849,8 @@ alert(test);
 alert(test);
 </code></pre></td></tr></table>
 </div>
-</div><p>返回：空字符（因为 url 中没有）</p>
-<h4 id="js-获取-url-中的参数值">js 获取 url 中的参数值</h4>
+</div><p>返回：空字符(因为url中没有)</p>
+<h4 id="js获取url中的参数值">js获取url中的参数值</h4>
 <h5 id="正则法">正则法</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3872,14 +3879,14 @@ alert(test);
   <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
 <span class="o">}</span>
 <span class="c1">// 这样调用：
-</span><span class="c1"></span><span class="n">alert</span><span class="o">(</span><span class="n">GetQueryString</span><span class="o">(</span><span class="s">&#34;参数名 1&#34;</span><span class="o">));</span>
+</span><span class="c1"></span><span class="n">alert</span><span class="o">(</span><span class="n">GetQueryString</span><span class="o">(</span><span class="s">&#34;参数名1&#34;</span><span class="o">));</span>
   
-<span class="n">alert</span><span class="o">(</span><span class="n">GetQueryString</span><span class="o">(</span><span class="s">&#34;参数名 2&#34;</span><span class="o">));</span>
+<span class="n">alert</span><span class="o">(</span><span class="n">GetQueryString</span><span class="o">(</span><span class="s">&#34;参数名2&#34;</span><span class="o">));</span>
   
-<span class="n">alert</span><span class="o">(</span><span class="n">GetQueryString</span><span class="o">(</span><span class="s">&#34;参数名 3&#34;</span><span class="o">));</span>
+<span class="n">alert</span><span class="o">(</span><span class="n">GetQueryString</span><span class="o">(</span><span class="s">&#34;参数名3&#34;</span><span class="o">));</span>
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="split-拆分法">split 拆分法</h5>
+</div><h5 id="split拆分法">split拆分法</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3904,7 +3911,7 @@ alert(test);
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">function</span> <span class="nf">GetRequest</span><span class="o">()</span> <span class="o">{</span>
-  <span class="n">var</span> <span class="n">url</span> <span class="o">=</span> <span class="n">location</span><span class="o">.</span><span class="na">search</span><span class="o">;</span> <span class="c1">//获取 url 中&#34;?&#34;符后的字串
+  <span class="n">var</span> <span class="n">url</span> <span class="o">=</span> <span class="n">location</span><span class="o">.</span><span class="na">search</span><span class="o">;</span> <span class="c1">//获取url中&#34;?&#34;符后的字串
 </span><span class="c1"></span>  <span class="n">var</span> <span class="n">theRequest</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">();</span>
   <span class="k">if</span> <span class="o">(</span><span class="n">url</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">&#34;?&#34;</span><span class="o">)</span> <span class="o">!=</span> <span class="o">-</span><span class="n">1</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">var</span> <span class="n">str</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">substr</span><span class="o">(</span><span class="n">1</span><span class="o">);</span>
@@ -3917,15 +3924,15 @@ alert(test);
 <span class="o">}</span>
 <span class="n">var</span> <span class="n">Request</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">();</span>
 <span class="n">Request</span> <span class="o">=</span> <span class="n">GetRequest</span><span class="o">();&lt;</span><span class="n">br</span><span class="o">&gt;</span><span class="c1">// var id=Request[&#34;id&#34;]; 
-</span><span class="c1">// var 参数 1, 参数 2, 参数 3, 参数 N;
-</span><span class="c1">// 参数 1 = Request[&#39;参数 1&#39;];
-</span><span class="c1">// 参数 2 = Request[&#39;参数 2&#39;];
-</span><span class="c1">// 参数 3 = Request[&#39;参数 3&#39;];
-</span><span class="c1">// 参数 N = Request[&#39;参数 N&#39;];
+</span><span class="c1">// var 参数1,参数2,参数3,参数N;
+</span><span class="c1">// 参数1 = Request[&#39;参数1&#39;];
+</span><span class="c1">// 参数2 = Request[&#39;参数2&#39;];
+</span><span class="c1">// 参数3 = Request[&#39;参数3&#39;];
+</span><span class="c1">// 参数N = Request[&#39;参数N&#39;];
 </span></code></pre></td></tr></table>
 </div>
 </div><h5 id="指定取">指定取</h5>
-<p>比如说一个 url：<code>http://i.cnblogs.com/?j=js</code>, 我们想得到参数 j 的值，可以通过以下函数调用。</p>
+<p>比如说一个url：<code>http://i.cnblogs.com/?j=js</code>,我们想得到参数j的值，可以通过以下函数调用。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3943,7 +3950,7 @@ alert(test);
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">function</span> <span class="nf">GetQueryString</span><span class="o">(</span><span class="n">name</span><span class="o">)</span> <span class="o">{</span> 
   <span class="n">var</span> <span class="n">reg</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RegExp</span><span class="o">(</span><span class="s">&#34;(^|&amp;)&#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&#34;=([^&amp;]*)(&amp;|$)&#34;</span><span class="o">,</span> <span class="s">&#34;i&#34;</span><span class="o">);</span> 
-  <span class="n">var</span> <span class="n">r</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">search</span><span class="o">.</span><span class="na">substr</span><span class="o">(</span><span class="n">1</span><span class="o">).</span><span class="na">match</span><span class="o">(</span><span class="n">reg</span><span class="o">);</span> <span class="c1">//获取 url 中&#34;?&#34;符后的字符串并正则匹配
+  <span class="n">var</span> <span class="n">r</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">search</span><span class="o">.</span><span class="na">substr</span><span class="o">(</span><span class="n">1</span><span class="o">).</span><span class="na">match</span><span class="o">(</span><span class="n">reg</span><span class="o">);</span> <span class="c1">//获取url中&#34;?&#34;符后的字符串并正则匹配
 </span><span class="c1"></span>  <span class="n">var</span> <span class="n">context</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="o">;</span> 
   <span class="k">if</span> <span class="o">(</span><span class="n">r</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> 
      <span class="n">context</span> <span class="o">=</span> <span class="n">r</span><span class="o">[</span><span class="n">2</span><span class="o">];</span> 
@@ -3954,9 +3961,9 @@ alert(test);
 <span class="n">alert</span><span class="o">(</span><span class="n">GetQueryString</span><span class="o">(</span><span class="s">&#34;j&#34;</span><span class="o">));</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="301-重定向实践">301 重定向（实践）</h3>
-<p>由于之前把 blog 和网站主页分开在两个仓库所以要想在 blog 中 menu 里跳转到站外链接就要做一些处理。以前一直百度不到。
-其实想法早就有了，只要在 blog 首页或者网站首页检测到<code>https://lruihao.cn/home</code>这个链接，或者检测到 home 字段就自动跳转。想法很简单。可是对 js 真的一点都不了解，以前百度也找不到实际的效果案例。所以还是自己写吧！附上蹩脚代码。</p>
+</div><h3 id="301重定向实践">301重定向（实践）</h3>
+<p>由于之前把blog和网站主页分开在两个仓库所以要想在blog中menu里跳转到站外链接就要做一些处理。以前一直百度不到。
+其实想法早就有了，只要在blog首页或者网站首页检测到<code>https://lruihao.cn/home</code>这个链接，或者检测到home字段就自动跳转。想法很简单。可是对js真的一点都不了解，以前百度也找不到实际的效果案例。所以还是自己写吧！附上蹩脚代码。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3990,7 +3997,7 @@ alert(test);
     <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>http 强制重定向 https</p>
+</div><p>http强制重定向https</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -4005,7 +4012,7 @@ alert(test);
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
   <span class="n">var</span> <span class="n">targetProtocol</span> <span class="o">=</span> <span class="s">&#34;https:&#34;</span><span class="o">;</span>
-  <span class="n">var</span> <span class="n">host</span> <span class="o">=</span> <span class="s">&#34;lruihao.cn&#34;</span><span class="o">;</span> <span class="c1">//域名判断，因为 localhost 仅支持 http
+  <span class="n">var</span> <span class="n">host</span> <span class="o">=</span> <span class="s">&#34;lruihao.cn&#34;</span><span class="o">;</span> <span class="c1">//域名判断，因为localhost仅支持http
 </span><span class="c1"></span>  <span class="k">if</span> <span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">host</span> <span class="o">==</span> <span class="n">host</span> <span class="o">&amp;&amp;</span> <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span> <span class="o">!=</span> <span class="n">targetProtocol</span><span class="o">){</span>
     <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span> <span class="o">=</span> <span class="n">targetProtocol</span> <span class="o">+</span>
       <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
@@ -4028,7 +4035,7 @@ alert(test);
 </div><h3 id="运行">运行</h3>
 <p>安装成功之后就开始压缩了
 </p>
-<p>我的 css</p>
+<p>我的css</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -4053,7 +4060,7 @@ alert(test);
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">font-spider C:\Users\李瑞豪、Desktop\love\index.html
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">font-spider C:\Users\李瑞豪\Desktop\love\index.html
 </code></pre></td></tr></table>
 </div>
 </div><p></p>
@@ -4061,8 +4068,8 @@ alert(test);
 ]]></description></item><item><title>网页夜间效果</title><link>https://lruihao.cn/posts/night/</link><pubDate>Thu, 27 Sep 2018 13:13:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/night/</guid><description><![CDATA[<blockquote>
 <p>这几天看到别人的博客有开关灯效果，就想给自己的博客也加一个，其实以前就在想了。经过谷歌百度后这样实现了。<code>css+js</code></p>
 </blockquote>
-<p>如何给 Web 页面增加夜间模式功能？其实所谓的夜间模式就是在页面上增加一个透明的遮罩层，但是遮罩层会挡住页面元素， 解决方法是 添加 DIV，给 DIV 的 outline 属性一个很大的 outline-width 值，用 outline 的边框作为遮罩，这样既能正常点击页面元素，又能达到夜间模式的效果。</p>
-<h3 id="css-部分">css 部分</h3>
+<p>如何给Web页面增加夜间模式功能? 其实所谓的夜间模式就是在页面上增加一个透明的遮罩层，但是遮罩层会挡住页面元素， 解决方法是 添加DIV，给DIV的outline属性一个很大的outline-width值，用outline的边框作为遮罩，这样既能正常点击页面元素，又能达到夜间模式的效果。</p>
+<h3 id="css部分">css部分</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -4087,7 +4094,7 @@ alert(test);
 <span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="js-部分">js 部分</h3>
+</div><h3 id="js部分">js部分</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -4152,7 +4159,7 @@ alert(test);
 <span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="html-部分">html 部分</h3>
+</div><h3 id="html部分">html部分</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -4163,8 +4170,8 @@ alert(test);
 </div>
 </div><h3 id="使用">使用</h3>
 <ol>
-<li>Alt+Z: 打开夜间模式</li>
-<li>Alt+X: 关闭</li>
-<li>Alt+↑: 增加亮度</li>
-<li>Alt+↓: 降低亮度</li>
+<li>Alt+Z:打开夜间模式</li>
+<li>Alt+X:关闭</li>
+<li>Alt+↑:增加亮度</li>
+<li>Alt+↓:降低亮度</li>
 </ol>]]></description></item></channel></rss>

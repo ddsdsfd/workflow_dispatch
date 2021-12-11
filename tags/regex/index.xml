@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>regex - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/regex/</link><description>regex - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 18 Apr 2019 22:04:21 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/regex/" rel="self" type="application/rss+xml"/><item><title>java 正则表达式练习</title><link>https://lruihao.cn/posts/regexdemo/</link><pubDate>Thu, 18 Apr 2019 22:04:21 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/regexdemo/</guid><description><![CDATA[<h1 id="邮箱">邮箱</h1>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>regex - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/regex/</link><description>regex - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 18 Apr 2019 22:04:21 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/regex/" rel="self" type="application/rss+xml"/><item><title>java正则表达式练习</title><link>https://lruihao.cn/posts/regexdemo/</link><pubDate>Thu, 18 Apr 2019 22:04:21 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/regexdemo/</guid><description><![CDATA[<h1 id="邮箱">邮箱</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -24,12 +24,12 @@
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">RegexDemo</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-<span class="c1">//       Pattern 类 正则表达式的编译表示。
+<span class="c1">//       Pattern类 正则表达式的编译表示。
 </span><span class="c1"></span>        <span class="n">Pattern</span> <span class="n">pattern</span> <span class="o">=</span> <span class="n">Pattern</span><span class="o">.</span><span class="na">compile</span><span class="o">(</span><span class="s">&#34;^[a-zA-Z0-9_!#$%&amp;&#39;*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$&#34;</span><span class="o">);</span>
         <span class="n">String</span><span class="o">[]</span> <span class="n">emails</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;admin@lruihao.cn&#34;</span><span class="o">,</span> <span class="s">&#34;lruihao.cn&#34;</span><span class="o">};</span>
         <span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">email</span> <span class="o">:</span>
                 <span class="n">emails</span><span class="o">)</span> <span class="o">{</span>
-<span class="c1">//Matcher 通过解释 Pattern 对字符序列执行匹配操作的引擎
+<span class="c1">//Matcher 通过解释Pattern对字符序列执行匹配操作的引擎
 </span><span class="c1"></span>            <span class="n">Matcher</span> <span class="n">matcher</span> <span class="o">=</span> <span class="n">pattern</span><span class="o">.</span><span class="na">matcher</span><span class="o">(</span><span class="n">email</span><span class="o">);</span>
             <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">email</span> <span class="o">+</span> <span class="s">&#34;匹配结果：&#34;</span> <span class="o">+</span> <span class="n">matcher</span><span class="o">.</span><span class="na">matches</span><span class="o">());</span>
         <span class="o">}</span>
@@ -43,8 +43,8 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">admin</span><span class="nd">@lruihao.cn</span> <span class="n">匹配结果</span><span class="err">：</span><span class="kc">true</span>
-<span class="n">lruihao</span><span class="o">.</span><span class="na">cn</span> <span class="n">匹配结果</span><span class="err">：</span><span class="kc">false</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">admin</span><span class="nd">@lruihao.cn匹配结果</span><span class="err">：</span><span class="kc">true</span>
+<span class="n">lruihao</span><span class="o">.</span><span class="na">cn匹配结果</span><span class="err">：</span><span class="kc">false</span>
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="电话">电话</h1>
@@ -132,7 +132,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**
-</span><span class="cm"> * 获取当前的 httpSession
+</span><span class="cm"> * 获取当前的httpSession
 </span><span class="cm"> * @return
 </span><span class="cm"> */</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="n">HttpSession</span> <span class="nf">getSession</span><span class="o">()</span> <span class="o">{</span>
@@ -141,7 +141,7 @@
 <span class="cm">/**
 </span><span class="cm"> * 手机号验证
 </span><span class="cm"> * @param str
-</span><span class="cm"> * @return 验证通过返回 true
+</span><span class="cm"> * @return 验证通过返回true
 </span><span class="cm"> */</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isMobile</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
   <span class="n">Pattern</span> <span class="n">p</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
@@ -155,7 +155,7 @@
 <span class="cm">/**
 </span><span class="cm"> * 电话号码验证
 </span><span class="cm"> * @param str
-</span><span class="cm"> * @return 验证通过返回 true
+</span><span class="cm"> * @return 验证通过返回true
 </span><span class="cm"> */</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">isPhone</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">str</span><span class="o">)</span> <span class="o">{</span>
   <span class="n">Pattern</span> <span class="n">p1</span> <span class="o">=</span> <span class="kc">null</span><span class="o">,</span> <span class="n">p2</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
@@ -183,7 +183,7 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="cm">/* 身份证正则表达式 16 或 18 */</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="cm">/* 身份证正则表达式16或18 */</span>
    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">IDCARD</span><span class="o">=</span><span class="s">&#34;((11|12|13|14|15|21|22|23|31|32|33|34|35|36|37|41|42|43|44|45|46|50|51|52|53|54|61|62|63|64|65)[0-9]{4})&#34;</span> <span class="o">+</span>
            <span class="s">&#34;(([1|2][0-9]{3}[0|1][0-9][0-3][0-9][0-9]{3}&#34;</span> <span class="o">+</span>
            <span class="s">&#34;[Xx0-9])|([0-9]{2}[0|1][0-9][0-3][0-9][0-9]{3}))&#34;</span><span class="o">;</span>

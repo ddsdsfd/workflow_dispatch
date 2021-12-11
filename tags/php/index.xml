@@ -1,11 +1,11 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>PHP - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/php/</link><description>PHP - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/php/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
+<p>基于Laravel7开发，Markdown语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>,也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
-<li>支持 Markdown, 文章实时预览效果</li>
+<li>支持Markdown,文章实时预览效果</li>
 <li>支持多种编程语言代码高亮</li>
 <li>编辑器图片上传</li>
 <li>后台上传文件管理</li>
@@ -14,15 +14,15 @@
 <li>文章标签</li>
 <li>热门文章</li>
 <li>随机格言</li>
-<li>文章管理（发布，评论开关，排序）</li>
-<li>自定义导航（显示开关，排序）</li>
-<li>自定义页面（发布开关）</li>
-<li>友情链接（显示开关，排序）</li>
-<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS 桶相册</a></li>
-<li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
+<li>文章管理(发布，评论开关，排序)</li>
+<li>自定义导航(显示开关，排序)</li>
+<li>自定义页面(发布开关)</li>
+<li>友情链接(显示开关，排序)</li>
+<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS桶相册</a></li>
+<li>丰富的博客配置(方便扩展，支持自定义JS脚本)</li>
 <li>不蒜子计数</li>
-<li>Leancloud 计数</li>
-<li>Valine 评论插件</li>
+<li>Leancloud计数</li>
+<li>Valine评论插件</li>
 <li>文章分享插件</li>
 </ul>
 <h1 id="截图">截图</h1>
@@ -31,7 +31,7 @@
 </p>
 <h1 id="安装">安装</h1>
 <blockquote>
-<p>注意事项：PHP 取消禁用函数<code>putenv()</code>和<code>symlink()</code>，安装<code>fileinfo</code>扩展。</p>
+<p>注意事项：PHP取消禁用函数<code>putenv()</code>和<code>symlink()</code>，安装<code>fileinfo</code>扩展。</p>
 </blockquote>
 <p>下载</p>
 <div class="highlight"><div class="chroma">
@@ -51,7 +51,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cd cell-blog
 </code></pre></td></tr></table>
 </div>
-</div><p>生成。env</p>
+</div><p>生成.env</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -60,7 +60,7 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">cp .env.example .env
 </code></pre></td></tr></table>
 </div>
-</div><p>编辑。env 环境配置</p>
+</div><p>编辑.env环境配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -81,7 +81,7 @@
 <span class="nv">DB_PASSWORD</span><span class="o">=</span> <span class="c1">#数据库密码</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>打开<code>app\Providers\AppServiceProvider.php</code>, 注释<code>SystemController:load()</code> 防止后续步骤报错</p>
+</div><p>打开<code>app\Providers\AppServiceProvider.php</code>,注释<code>SystemController:load()</code> 防止后续步骤报错</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -107,7 +107,7 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">composer install
 </code></pre></td></tr></table>
 </div>
-</div><p>生成 key</p>
+</div><p>生成key</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -137,7 +137,7 @@ php artisan admin:import media-manager
 php artisan db:seed
 </code></pre></td></tr></table>
 </div>
-</div><p>默认下使用了本地文件系统，创建 storage 目录在 public 的软链接</p>
+</div><p>默认下使用了本地文件系统，创建storage目录在public的软链接</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -146,7 +146,7 @@ php artisan db:seed
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">php artisan storage:link
 </code></pre></td></tr></table>
 </div>
-</div><p>打开<code>app\Providers\AppServiceProvider.php</code>, 取消注释<code>SystemController:load()</code></p>
+</div><p>打开<code>app\Providers\AppServiceProvider.php</code>,取消注释<code>SystemController:load()</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -163,8 +163,8 @@ php artisan db:seed
     }
 </code></pre></td></tr></table>
 </div>
-</div><p>将博客网站根目录指向入口 public 目录</p>
-<p>如果使用 Nginx，要设置伪静态</p>
+</div><p>将博客网站根目录指向入口public目录</p>
+<p>如果使用Nginx，要设置伪静态</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -177,17 +177,17 @@ php artisan db:seed
 }
 </code></pre></td></tr></table>
 </div>
-</div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>, 使用用户名<code>admin</code>和密码<code>admin</code>登录。</p>
+</div><p>启动服务后，在浏览器打开<code>http://localhost/admin/</code>,使用用户名<code>admin</code>和密码<code>admin</code>登录.</p>
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
 <p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
 <p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
 </blockquote>
-<h1 id="搭建-php-环境">搭建 php 环境</h1>
+<h1 id="搭建php环境">搭建php环境</h1>
 <ol>
-<li>安装 wampserver</li>
-<li>安装 composer</li>
-<li>更换 aliyun 源</li>
+<li>安装wampserver</li>
+<li>安装composer</li>
+<li>更换aliyun源</li>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -197,7 +197,7 @@ php artisan db:seed
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="新建-laravel-项目">新建 laravel 项目</h1>
+</div><h1 id="新建laravel项目">新建laravel项目</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -217,7 +217,7 @@ php artisan db:seed
 laravel new blog
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载-debugbar">下载 debugbar</h1>
+</div><h1 id="下载debugbar">下载debugbar</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -227,7 +227,7 @@ laravel new blog
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="修改语言时区">修改语言时区</h1>
-<p>修改 config/app.php，将 local 的值 en 改成 zh-CN(laravel-admin 自带 zh-CN)：</p>
+<p>修改config/app.php，将local的值 en 改成 zh-CN(laravel-admin自带zh-CN)：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -243,7 +243,7 @@ laravel new blog
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="配置数据库">配置数据库</h1>
-<p>首先确保安装好了 laravel，并且数据库连接设置正确。</p>
+<p>首先确保安装好了laravel，并且数据库连接设置正确。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -266,7 +266,7 @@ DB_USERNAME=root
 DB_PASSWORD=123456
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载-laravel-admin">下载 laravel-admin</h1>
+</div><h1 id="下载laravel-admin">下载laravel-admin</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -300,9 +300,9 @@ composer require encore/laravel-admin
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>运行这个命令的时候，如果遇到了下面的错误：
+<p>运行这个命令的时候，如果遇到了下面的错误:<br>
 <code>SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))</code><br>
-参考这个 issue 来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
+参考这个issue来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -369,13 +369,13 @@ composer require encore/laravel-admin
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>启动服务后，在浏览器打开 <code>http://localhost/admin/</code> , 使用用户名 <code>admin</code> 和密码 <code>admin</code> 登录。</p>
+</div><p>启动服务后，在浏览器打开 <code>http://localhost/admin/</code> ,使用用户名 <code>admin</code> 和密码 <code>admin</code> 登录.</p>
 <blockquote>
 <p>报错<code>Disk [admin] not configured, please add a disk config in config/filesystems.php</code></p>
 </blockquote>
-<p>在<code>config/filesystems.php</code>中 disks 处添加以下配置后执行<code>php artisan storage:link</code>来创建软链接（windows 和 linux 的软链接不一样不能直接复制！）</p>
+<p>在<code>config/filesystems.php</code>中disks处添加以下配置后执行<code>php artisan storage:link</code>来创建软链接（windows和linux的软链接不一样不能直接复制！）</p>
 <blockquote>
-<p>宝塔执行时删除禁用函数 putenv(),symlink()</p>
+<p>宝塔执行时删除禁用函数putenv(),symlink()</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -413,7 +413,7 @@ composer require encore/laravel-admin
 ],
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="下载-dcat-admin">下载 dcat-admin</h1>
+</div><h1 id="下载dcat-admin">下载dcat-admin</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -475,7 +475,7 @@ php artisan make:migration create_mottoes_table
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">php artisan migrate
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="创建模型-model">创建模型 model</h1>
+</div><h1 id="创建模型model">创建模型model</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -545,9 +545,9 @@ $router-&gt;resource(&#39;systems&#39;, SystemController::class);
 $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="editormd-安装">editormd 安装</h1>
+</div><h1 id="editormd安装">editormd安装</h1>
 <p><a href="https://github.com/ShareManT/laravel-admin-ext-editormd" target="_blank" rel="noopener noreffer">editormd</a>
-<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github 图像问题</a></p>
+<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github图像问题</a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -557,7 +557,7 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public\vendor\laravel-admin-ext\editormd\editormd-1.5.0\images\emojis
 </code></pre></td></tr></table>
 </div>
-</div><p>修改 editormd.js 及 editormd.min.js</p>
+</div><p>修改editormd.js及editormd.min.js</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -575,9 +575,9 @@ editormd.emoji     = {
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="图片上传">图片上传</h2>
-<h3 id="csrf-419-错误">csrf 419 错误</h3>
-<p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加 csrf 验证器：</p>
-<p>修改 image-dialog.js 的<code>var dialogContent</code><br>
+<h3 id="csrf-419错误">csrf 419错误</h3>
+<p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加csrf验证器：</p>
+<p>修改image-dialog.js的<code>var dialogContent</code><br>
 <a href="https://www.jianshu.com/p/8101f7bc80f6" target="_blank" rel="noopener noreffer">参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -597,7 +597,7 @@ editormd.emoji     = {
 {
     action += &#34;&amp;callback=&#34; + settings.uploadCallbackURL + &#34;&amp;dialog_id=editormd-image-dialog-&#34; + guid;
 }
-//添加 csrf 验证
+//添加csrf验证
 var csrfToken = $(&#39;meta[name=&#34;csrf-token&#34;]&#39;).attr(&#39;content&#39;);
 var csrfField = &#34;&#34;;
 if (csrfToken) {
@@ -607,7 +607,7 @@ if (csrfToken) {
 </div>
 </div><h1 id="markdown-转-html">markdown 转 HTML</h1>
 <p><a href="https://www.zhiqiexing.com/119.html" target="_blank" rel="noopener noreffer">https://www.zhiqiexing.com/119.html</a>
-<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown 安装</a></p>
+<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -644,7 +644,7 @@ php artisan vendor:publish
 <p>Eloquent 模型可以触发事件，允许你在模型生命周期中的多个时间点调用如下这些方法：retrieved, creating, created, updating, updated, saving, saved, deleting, deleted, restoring, restored。事件允许你在一个指定模型类每次保存或更新的时候执行代码。</p>
 <p>retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。</p>
 <h1 id="添加后台验证码">添加后台验证码</h1>
-<p>依赖 php 扩展<code>fileinfo</code><br>
+<p>依赖php扩展<code>fileinfo</code><br>
 <a href="https://learnku.com/articles/32842" target="_blank" rel="noopener noreffer">添加验证码</a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
@@ -657,24 +657,34 @@ php artisan vendor:publish
 php artisan admin:import media-manager
 </code></pre></td></tr></table>
 </div>
-</div><p>&lsquo;extensions&rsquo; =&gt; [
-&lsquo;media-manager&rsquo; =&gt; [
-// Select a local disk that you configured in <code>config/filesystem.php</code>
-&lsquo;disk&rsquo; =&gt; &lsquo;public&rsquo;
-],
-],</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-# 给 laravel-admin 增加锁屏功能
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&#39;extensions&#39; =&gt; [
+    &#39;media-manager&#39; =&gt; [
+        // Select a local disk that you configured in `config/filesystem.php`
+        &#39;disk&#39; =&gt; &#39;public&#39;
+    ],
+],
 </code></pre></td></tr></table>
 </div>
-</div><p>composer require laravel-admin-ext/lock-screen</p>
+</div><h1 id="给laravel-admin增加锁屏功能">给laravel-admin增加锁屏功能</h1>
 <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">composer require laravel-admin-ext/lock-screen
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -714,7 +724,7 @@ php artisan make:controller TagController
 php artisan make:controller PageController
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="后台-img-灯箱">后台 img 灯箱</h1>
+</div><h1 id="后台img灯箱">后台img灯箱</h1>
 <p><a href="https://github.com/laravel-admin-extensions/grid-lightbox" target="_blank" rel="noopener noreffer">https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -728,11 +738,11 @@ php artisan make:controller PageController
 php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>php 同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>php同时主动推送链接到百度，神马等站长平台</title><link>https://lruihao.cn/posts/phppushurl/</link><pubDate>Sat, 28 Sep 2019 18:32:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phppushurl/</guid><description><![CDATA[<blockquote>
 <p>php 主动推送站点链接到百度站长，神马站长进行 SEO。</p>
 </blockquote>
 <h1 id="代码">代码</h1>
-<p>把需要提交的链接和各站长 api 分别放在两个 txt 文件里面，然后运行 php 文件进行提交，不同站长提交成功一般返回的都是 <code>200</code> 状态码。</p>
+<p>把需要提交的链接和各站长 api 分别放在两个 txt 文件里面, 然后运行 php 文件进行提交，不同站长提交成功一般返回的都是 <code>200</code> 状态码。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -764,7 +774,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
   
-  <span class="c1">//链接存放路径和站长 api 文件存放路径
+  <span class="c1">//链接存放路径和站长api文件存放路径
 </span><span class="c1"></span>  <span class="nv">$urls_path</span> <span class="o">=</span> <span class="s2">&#34;H:</span><span class="se">\\</span><span class="s2">lruihao.cn</span><span class="se">\\</span><span class="s2">public</span><span class="se">\\</span><span class="s2">baidu_urls.txt&#34;</span><span class="p">;</span>
   <span class="nv">$apis_path</span> <span class="o">=</span> <span class="s2">&#34;G:</span><span class="se">\\</span><span class="s2">Demo</span><span class="se">\\</span><span class="s2">lrh01</span><span class="se">\\</span><span class="s2">zhanzhang_api.txt&#34;</span><span class="p">;</span>
   <span class="c1">//将文件每一行读到一个数组里面去
@@ -790,8 +800,8 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="提交结果">提交结果</h1>
-<p></p>]]></description></item><item><title>php 按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
-<p>首先采用<code>fopen()</code>函数打开文件，得到返回值的就是资源类型。接着采用 while 循环一行行地读取文件，然后输出每行的文字。<code>feof()</code>判断是否到最后一行，<code>fgets()</code>读取一行文本。</p>
+<p></p>]]></description></item><item><title>php按行读取文件信息</title><link>https://lruihao.cn/posts/phpfile/</link><pubDate>Sat, 28 Sep 2019 17:11:17 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfile/</guid><description><![CDATA[<h1 id="普通方法">普通方法</h1>
+<p>首先采用<code>fopen()</code>函数打开文件，得到返回值的就是资源类型。接着采用while循环一行行地读取文件，然后输出每行的文字。<code>feof()</code>判断是否到最后一行,<code>fgets()</code>读取一行文本。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -814,9 +824,9 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
 
   <span class="c1">//首先采用“fopen”函数打开文件，得到返回值的就是资源类型。
-</span><span class="c1"></span>  <span class="nv">$file_handle</span> <span class="o">=</span> <span class="nx">fopen</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪、\Desktop</span><span class="se">\\</span><span class="s2">备忘录。txt&#34;</span><span class="p">,</span><span class="s2">&#34;r&#34;</span><span class="p">);</span>
+</span><span class="c1"></span>  <span class="nv">$file_handle</span> <span class="o">=</span> <span class="nx">fopen</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪</span><span class="se">\\</span><span class="s2">Desktop</span><span class="se">\\</span><span class="s2">备忘录.txt&#34;</span><span class="p">,</span><span class="s2">&#34;r&#34;</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="nv">$file_handle</span><span class="p">){</span>
-      <span class="c1">//接着采用 while 循环一行行地读取文件，然后输出每行的文字
+      <span class="c1">//接着采用while循环一行行地读取文件，然后输出每行的文字
 </span><span class="c1"></span>      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="nx">feof</span><span class="p">(</span><span class="nv">$file_handle</span><span class="p">))</span> <span class="p">{</span> <span class="c1">//判断是否到最后一行
 </span><span class="c1"></span>          <span class="nv">$line</span> <span class="o">=</span> <span class="nx">fgets</span><span class="p">(</span><span class="nv">$file_handle</span><span class="p">);</span> <span class="c1">//读取一行文本
 </span><span class="c1"></span>          <span class="k">echo</span> <span class="nv">$line</span><span class="p">;</span> <span class="c1">//输出一行文本
@@ -828,13 +838,13 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <span class="cp">?&gt;</span><span class="err">
 </span></code></pre></td></tr></table>
 </div>
-</div><p><code>readfile（）</code>函数，返回一整个 String</p>
+</div><p><code>readfile（）</code>函数，返回一整个String</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">echo</span> <span class="nx">readfile</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪、\Desktop</span><span class="se">\\</span><span class="s2">备忘录。txt&#34;</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="k">echo</span> <span class="nx">readfile</span><span class="p">(</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪</span><span class="se">\\</span><span class="s2">Desktop</span><span class="se">\\</span><span class="s2">备忘录.txt&#34;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="快速方法">快速方法</h1>
@@ -904,7 +914,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <li>下載擴充套件包
 <ul>
 <li><a href="http://plugins.netbeans.org/PluginPortal/" target="_blank" rel="noopener noreffer">官方套件庫</a></li>
-<li>或者在 netbenas IDE 裏面下載插件（方便）</li>
+<li>或者在netbenas IDE裏面下載插件（方便）</li>
 </ul>
 </li>
 <li>開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins</li>
@@ -927,11 +937,11 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <blockquote>
 <p>在程式開發中，程式碼排版很重要。一個好的排版利於開發人員程式閱讀，也便於後期維護人員閱讀。</p>
 </blockquote>
-<p>在 NetBeans 中設置程式碼排版</p>
+<p>在NetBeans中設置程式碼排版</p>
 <ol>
-<li>打開 NetBeans-&gt;Tools-&gt;Options-&gt;Editor-&gt;Formatting；</li>
-<li>Language 選擇 All Languages，勾選&quot;Expand Tabs to Spaces&quot;, 用兩個空格鍵代替 Tab 鍵，首行留兩個 Tab 鍵。</li>
-<li>點擊 Apply 或 Ok 完成設置。具體設置及效果如下圖所示：</li>
+<li>打開NetBeans-&gt;Tools-&gt;Options-&gt;Editor-&gt;Formatting；</li>
+<li>Language選擇 All Languages，勾選&quot;Expand Tabs to Spaces&quot;,用兩個空格鍵代替Tab鍵，首行留兩個Tab鍵。</li>
+<li>點擊Apply或Ok完成設置。具體設置及效果如下圖所示：</li>
 </ol>
 <p>
 
@@ -940,10 +950,10 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <blockquote>
 <p>　程式碼樣板可以幫助你快速書寫程序，不必繁瑣地聲明函數或其他代碼塊，更專注與邏輯的書寫。</p>
 </blockquote>
-<p>在 NetBeans 中設置程式碼樣板</p>
+<p>在NetBeans中設置程式碼樣板</p>
 <ol>
-<li>打開 NetBeans→Tools→Options→Editor→Code Templates；</li>
-<li>選擇你所用的語言（這裡以 JavaScript 為例）；</li>
+<li>打開NetBeans→Tools→Options→Editor→Code Templates；</li>
+<li>選擇你所用的語言（這裡以JavaScript為例）；</li>
 <li>點擊&quot;New&quot;新建屬於你的或修改原有的程式碼樣板（例子僅為演示）；</li>
 <li>在編程中應用它。</li>
 </ol>
@@ -956,7 +966,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <ol>
 <li>開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins</li>
 <li>選擇你下載的擴充套件開啟</li>
-<li>開啟 Netbeans→Tools→options</li>
+<li>開啟Netbeans→Tools→options</li>
 </ol>
 <p>
 </p>
@@ -987,7 +997,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">Ctrl+Shift+上下方向键</td>
-<td style="text-align:left">复制当前行（该操作并非复制到粘贴板）</td>
+<td style="text-align:left">复制当前行(该操作并非复制到粘贴板)</td>
 </tr>
 <tr>
 <td style="text-align:left">Shift+Alt+F</td>
@@ -1027,7 +1037,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">Ctrl+Alt+Space</td>
-<td style="text-align:left">代码输入提示，不习惯的可以设置为 (Alt+/)，超级好用！！！</td>
+<td style="text-align:left">代码输入提示,不习惯的可以设置为(Alt+/)，超级好用！！！</td>
 </tr>
 <tr>
 <td style="text-align:left">Ctrl+Shift+F5</td>
@@ -1043,21 +1053,21 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tr>
 <tr>
 <td style="text-align:left">Alt+Enter</td>
-<td style="text-align:left">显示程式 bug 建议或者警示等</td>
+<td style="text-align:left">显示程式bug建议或者警示等</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>NetBeans 中常用的快捷鍵↑：</li>
+<li>NetBeans中常用的快捷鍵↑：</li>
 <li>三種複製行方法</li>
 </ul>
 <ol>
-<li>复制一行：Ctrl + Shift + 上下方向键（该操作并非复制到粘贴板）；</li>
-<li>复制一行：在该行任何地方连续三击选中一样，然后 Ctrl + C 即可复制一行。；</li>
-<li>复制一行（使用宏）: 编辑-开始录制宏 (Home,Shift + End,Ctrl + C)-停止录制宏-设置宏名称（如 select-entire-line)-设置快捷键（如 Ctrl + Alt + C)；</li>
+<li>复制一行: Ctrl + Shift + 上下方向键(该操作并非复制到粘贴板)；</li>
+<li>复制一行: 在该行任何地方连续三击选中一样,然后Ctrl + C即可复制一行.；</li>
+<li>复制一行(使用宏): 编辑-开始录制宏(Home,Shift + End,Ctrl + C)-停止录制宏-设置宏名称(如select-entire-line)-设置快捷键(如Ctrl + Alt + C)；</li>
 </ol>
 <ul>
-<li>也可自己修改快捷鍵 (Tools→Options→Keympa), 如下圖</li>
+<li>也可自己修改快捷鍵(Tools→Options→Keympa),如下圖</li>
 </ul>
 <p>{% asset_img quickkey.png quickkey %}</p>
 <h2 id="遠程開發-ftp">遠程開發 (FTP)</h2>
@@ -1067,38 +1077,38 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <ol>
 <li>新建项目
 <ol>
-<li>打开软件，进入新建项目页面（File-New Project），新建 php 项目，选择第一个（PHP-PHP Application）</li>
+<li>打开软件，进入新建项目页面（File-New Project），新建php项目，选择第一个（PHP-PHP Application）</li>
 <li>项目名和地址自己选择（注意，选择地址后需在地址最后面加上&quot;/项目名&quot;）</li>
 </ol>
 </li>
-<li>FTP 设置
+<li>FTP设置
 <ol>
-<li>点击下一步，进入 FTP 设置，Run As 选择 Remote Web Site(FTP,SFTP)</li>
-<li>Project URL 填写<code>http://127.0.0.1/training/工号</code></li>
+<li>点击下一步，进入FTP设置，Run As选择Remote Web Site(FTP,SFTP)</li>
+<li>Project URL填写<code>http://127.0.0.1/training/工号</code></li>
 </ol>
 </li>
-<li>Manage 设置
+<li>Manage设置
 <ol>
-<li>点击 Manage, 进入页面。名字自取。Host Name 填写：127.0.0.1</li>
-<li>Encryption 选择 Pure FTP,User Name 和 Password（填写工号/课务系统登录密码）</li>
-<li>Initial Directory 填写_training</li>
-<li>点击 Test Connection 测试是否连接成功</li>
+<li>点击Manage,进入页面.名字自取.Host Name填写：127.0.0.1</li>
+<li>Encryption选择Pure FTP,User Name和Password（填写工号/课务系统登录密码）</li>
+<li>Initial Directory填写_training</li>
+<li>点击Test Connection测试是否连接成功</li>
 </ol>
 </li>
 <li>其他设置
 <ol>
-<li>Upload Directory, 上传目录不填，直接上传至个人根目录</li>
-<li>Upload File 改为保存时上传文件（On Save）</li>
+<li>Upload Directory,上传目录不填，直接上传至个人根目录</li>
+<li>Upload File改为保存时上传文件（On Save）</li>
 </ol>
 </li>
 </ol>
 <h2 id="chrome-with-netneans-connector">Chrome with NetNeans Connector</h2>
 <ol>
-<li>打開 chrome 中的應用程式商店（使用 chrome 瀏覽器點擊下方鏈接即可）<br>
-<a href="https://chrome.google.com/webstore/category/themes?hl=en-US/" target="_blank" rel="noopener noreffer">chrome 應用程式商店</a></li>
-<li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 Netbeans 圖標。</li>
-<li>開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector</li>
-<li>選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可</li>
+<li>打開chrome中的應用程式商店（使用chrome瀏覽器點擊下方鏈接即可）<br>
+<a href="https://chrome.google.com/webstore/category/themes?hl=en-US/" target="_blank" rel="noopener noreffer">chrome應用程式商店</a></li>
+<li>在搜索框中輸入NetNeans Connector后搜索，然後點擊右邊的加到Chrome即可，安裝成功后右上角會顯示Netbeans圖標。</li>
+<li>開啟netbeans 選擇Run→Set Project Browser→選中Chrome with NetBeans Connector</li>
+<li>選擇default下的Customize → 選擇Browser → 選擇Browser下 Chrome with NetBeans Connector即可</li>
 </ol>
 <p>
 
@@ -1111,37 +1121,37 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <h1 id="git">Git</h1>
 <ul>
 <li>Master 的 BUG 必須最少且趨近於零，为最稳定的版本</li>
-<li>每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复 BUG、增加功能</li>
+<li>每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复BUG、增加功能</li>
 <li>禁止 Commit IDE 的 project data</li>
 <li>禁止上傳垃圾程式碼</li>
-<li>Gitea 編輯內容類似里程碑和版本描述時要使用 Markdown 格式</li>
+<li>Gitea編輯內容類似里程碑和版本描述時要使用Markdown格式</li>
 </ul>
 <h2 id="分支branch">分支（Branch）</h2>
 <ul>
-<li>命名規則：應以此分支主要目的命名（修復什麼 BUG，新增特定功能）<br>
-不可出現版本號，模組 ID</li>
+<li>命名規則：應以此分支主要目的命名（修復什麼BUG，新增特定功能）<br>
+不可出現版本號，模組ID</li>
 <li>合併後的分支應刪除</li>
 </ul>
 <h2 id="commit">commit</h2>
 <ul>
-<li>遵循一個功能一個 commit 的原則</li>
+<li>遵循一個功能一個commit的原則</li>
 </ul>
 <h1 id="restful">Restful</h1>
 <ul>
-<li>資源名詞站在 API 的角度思考
+<li>資源名詞站在API的角度思考
 <ul>
-<li>複數名詞：可以複數筆資料，回傳結果為 Array
+<li>複數名詞：可以複數筆資料，回傳結果為Array
 舉例：GET/users 取得多筆使用者資料
 <ul>
-<li>刪除，放在複數名詞內，讓 Router 保持一致性</li>
-<li>增加，放在複數名詞內，讓 Router 保持一致性</li>
+<li>刪除，放在複數名詞內，讓Router保持一致性</li>
+<li>增加，放在複數名詞內，讓Router保持一致性</li>
 </ul>
 </li>
-<li>單數名詞：僅取得單筆資料，必須指定 PK，兩兩一組，回傳結果為 Object
-舉例：GET/user/{accont} 取得單筆使用者資料，必須指定 PK</li>
+<li>單數名詞：僅取得單筆資料，必須指定PK，兩兩一組，回傳結果為Object
+舉例：GET/user/{accont} 取得單筆使用者資料，必須指定PK</li>
 </ul>
 </li>
-<li>URL 中一律不帶 id 參數</li>
+<li>URL中一律不帶id參數</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1155,7 +1165,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </div>
 </div><h1 id="命名">命名</h1>
 <ul>
-<li>命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義！</li>
+<li>命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義!</li>
 <li>即使不會發生錯誤，程式碼英文大小寫也需明確區分。</li>
 </ul>
 <h2 id="語意">語意</h2>
@@ -1181,12 +1191,12 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </tbody>
 </table>
 <h2 id="字母與分隔">字母與分隔</h2>
-<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL 語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
+<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
 <h1 id="通用">通用</h1>
 <ul>
 <li>程式碼撰寫</li>
 <li>每個函數應該註解，註解應包含函數工能說明、引數說明。</li>
-<li>不必要的代碼不要寫，也禁止放到註解裡面！</li>
+<li>不必要的代碼不要寫，也禁止放到註解裡面!</li>
 <li>if-else 的 {} 嚴禁省略。</li>
 <li>{} 起始一律跟在 前一個功能的尾巴，禁止分行</li>
 </ul>
@@ -1240,7 +1250,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </li>
 <li>函數 (Function, Methd)
 <ul>
-<li>函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 （引數型態、引數英文名稱、引數說明）、 回傳值內容 （回傳值型態、回傳值說明）</li>
+<li>函數宣告時需在函數上方加上函數註解，註解應包含函數說明、引數內容 (引數型態、引數英文名稱、引數說明)、 回傳值內容 (回傳值型態、回傳值說明)</li>
 </ul>
 </li>
 <li>類 (Class)
@@ -1251,14 +1261,14 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </li>
 <li>其他
 <ul>
-<li>連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</li>
+<li>連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</li>
 </ul>
 </li>
 </ul>
 <h1 id="html">HTML</h1>
 <h2 id="程式碼撰寫">程式碼撰寫</h2>
 <ul>
-<li>禁止在 HTML 使用 <code>&lt;style&gt;</code>、<code>&lt;script&gt;</code>，一律使用外部檔案引用方式引用 CSS、JavaScript 檔案。</li>
+<li>禁止在 HTML 使用 <code>&lt;style&gt;</code>、<code>&lt;script&gt;</code>，一律使用外部檔案引用方式引用 CSS、JavaScript檔案。</li>
 <li>HTML 標籤需成雙成對，有頭有尾。</li>
 <li>區塊標籤：<code>&lt;tag&gt;&lt;/tag&gt;</code></li>
 <li>單標籤：<code>&lt;tag /&gt;</code></li>
@@ -1304,7 +1314,7 @@ color
 </blockquote>
 <h2 id="其他">其他</h2>
 <blockquote>
-<p>連結本地任何其他資源 （圖片、檔案、網站） 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</p>
+<p>連結本地任何其他資源 (圖片、檔案、網站) 皆使用相對路徑，禁止使用絕對路徑，非本地資源除外。</p>
 </blockquote>
 <h1 id="css">CSS</h1>
 <h2 id="程式碼撰寫-1">程式碼撰寫</h2>
@@ -1330,7 +1340,7 @@ color
 }
 </code></pre></td></tr></table>
 </div>
-</div><p>錯誤 （這是允許的，但造成程式碼閱讀困難，故禁止）</p>
+</div><p>錯誤 (這是允許的，但造成程式碼閱讀困難，故禁止)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1376,7 +1386,7 @@ color
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
+ * 使用者ID
  * @type {String}
  */
 var userId = &#39;Hello&#39;;
@@ -1421,7 +1431,7 @@ var userId = &#39;Hello&#39;;
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
  * 取得使用者
- * @param {Int} userId 使用者 ID
+ * @param {Int} userId 使用者ID
  * @param {Object} [options] 其他選項
  * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
  * @returns {Object} 使用者資料
@@ -1466,7 +1476,7 @@ var getUser = function(userId, options){
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
+ * 使用者ID
  * @type {String}
  */
 $userId = &#39;Hello&#39;;
@@ -1512,10 +1522,10 @@ $userId = &#39;Hello&#39;;
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
  * 取得使用者
- * @param int userId 使用者 ID
+ * @param int userId 使用者ID
  * @param object options 其他選項
  * @option string options[&#39;query&#39;] 查詢關鍵字
- * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
+ * @uses $_POST[&#39;role_id&#39;] 從前端以POST取得角色ID
  * @returns object 使用者資料
  */
 function getUser($userId, $options){
@@ -1533,7 +1543,7 @@ function getUser($userId, $options){
 <h2 id="sql-撰寫">SQL 撰寫</h2>
 <ul>
 <li>屬於 SQL 語法使用大寫 (SELECT, WHERE, INSERT etc..)</li>
-<li>屬於使用者自己定義的使用小寫 （表名 table name, 欄位名 column name etc..)</li>
+<li>屬於使用者自己定義的使用小寫 (表名 table name, 欄位名 column name etc..)</li>
 <li>表名、欄位名前後需加上 `</li>
 </ul>
 <p><strong>Example</strong></p>
@@ -1574,15 +1584,15 @@ function getUser($userId, $options){
 <td style="text-align:left">查詢</td>
 </tr>
 </tbody>
-</table>]]></description></item><item><title>简单评论模块--php 表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
-<p>简单模仿了一个评论模板，当然肯定是没有博客的 valine 这么强大的 hhhh，<br>
-<strong>PHP 表单安全性的重要提示</strong><br>
+</table>]]></description></item><item><title>简单评论模块--php表单练习</title><link>https://lruihao.cn/posts/phpform/</link><pubDate>Fri, 19 Jul 2019 11:38:59 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpform/</guid><description><![CDATA[<blockquote>
+<p>简单模仿了一个评论模板，当然肯定是没有博客的valine这么强大的hhhh，<br>
+<strong>PHP表单安全性的重要提示</strong><br>
 <code>$_SERVER[&quot;PHP_SELF&quot;]</code>变量能够被黑客利用！<br>
 如果页面中使用了<code>PHP_SELF</code>，用户能够输入下划线然后执行跨站点脚本（XSS）。<br>
-比如说注入 js 脚本等，valine 以前的版本也有过这样的漏洞。</p>
+比如说注入js脚本等，valine以前的版本也有过这样的漏洞。</p>
 <p><code>跨站点脚本（Cross-site scripting，XSS）</code>是一种计算机安全漏洞类型，常见于 Web 应用程序。XSS 能够使攻击者向其他用户浏览的网页中输入客户端脚本。</p>
 </blockquote>
-<p>可以像 valine 一样在用户输入完后保留输入，还有一些正则控制输入提示等简单功能。UI 就丑爆了算了。</p>
+<p>可以像valine一样在用户输入完后保留输入，还有一些正则控制输入提示等简单功能。UI就丑爆了算了。。。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -1772,7 +1782,7 @@ function getUser($userId, $options){
       姓名：<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#34;text&#34;</span> <span class="na">name=</span><span class="s">&#34;name&#34;</span> <span class="na">value=</span><span class="s">&#34;&lt;?php echo $name;?&gt;&#34;</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#34;error&#34;</span><span class="nt">&gt;</span>* <span class="cp">&lt;?php echo $nameErr;?&gt;</span><span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;br&gt;&lt;br&gt;</span>
-      性别：
+      性别:
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#34;radio&#34;</span> <span class="na">name=</span><span class="s">&#34;gender&#34;</span> <span class="err">&lt;?php</span> <span class="err">if</span> <span class="err">(isset($gender)</span> <span class="err">&amp;&amp;</span> <span class="err">$</span><span class="na">gender=</span><span class="s">=&#34;女性&#34;)</span> <span class="err">echo</span> <span class="err">&#34;checked&#34;;?</span><span class="nt">&gt;</span> value=&#34;女性&#34;&gt;女性
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&#34;radio&#34;</span> <span class="na">name=</span><span class="s">&#34;gender&#34;</span> <span class="err">&lt;?php</span> <span class="err">if</span> <span class="err">(isset($gender)</span> <span class="err">&amp;&amp;</span> <span class="err">$</span><span class="na">gender=</span><span class="s">=&#34;男性&#34;)</span> <span class="err">echo</span> <span class="err">&#34;checked&#34;;?</span><span class="nt">&gt;</span> value=&#34;男性&#34;&gt;男性
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#34;error&#34;</span><span class="nt">&gt;</span>* <span class="cp">&lt;?php echo $genderErr;?&gt;</span><span class="nt">&lt;/span&gt;</span>
@@ -1802,7 +1812,7 @@ function getUser($userId, $options){
 </code></pre></td></tr></table>
 </div>
 </div><p></p>]]></description></item><item><title>php 函数学习</title><link>https://lruihao.cn/posts/phpfunc/</link><pubDate>Mon, 15 Jul 2019 11:37:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/phpfunc/</guid><description><![CDATA[<blockquote>
-<p>练习 php 函数的基本使用。<br>
+<p>练习php函数的基本使用。<br>
 注：<br>
 必选参数在可选参数的前面。<br>
 可在函数中定义函数，需要先调用外层函数才能调用内层函数。</p>
@@ -1852,18 +1862,18 @@ function getUser($userId, $options){
 </div><p></p>]]></description></item><item><title>WAMPServer 自定义网站根目录等设置</title><link>https://lruihao.cn/posts/wamproot/</link><pubDate>Fri, 12 Jul 2019 18:44:36 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wamproot/</guid><description><![CDATA[<blockquote>
 <p>使用 WAMPServer 时自定义网站根目录。</p>
 </blockquote>
-<h1 id="wampserver-自定义网站根目录">WAMPServer 自定义网站根目录</h1>
-<h2 id="修改-apache-配置文件">修改 apache 配置文件</h2>
+<h1 id="wampserver自定义网站根目录">WAMPServer自定义网站根目录</h1>
+<h2 id="修改apache配置文件">修改apache配置文件</h2>
 <p>打开<code>httpd.conf</code>文件搜索<code>documentroot</code>后，找到路径修改为自定义的。<br>
 </p>
 <p>再打开<code>httpd-vhost.conf</code>文件修改对应的路径。<br>
 <code>修改完配置文件需要重启所有服务！</code></p>
-<h2 id="修改-wampmanager-文件">修改 wampmanager 文件</h2>
-<p>在 wampserver 安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>, 然后也修改为自定义的路径。
+<h2 id="修改wampmanager文件">修改wampmanager文件</h2>
+<p>在wampserver安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>,然后也修改为自定义的路径。
 <code>然后退出，重启软件！</code></p>
 <p><br>
 </p>
-<h2 id="编写-php-文件测试">编写 php 文件测试</h2>
+<h2 id="编写php文件测试">编写php文件测试</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1877,7 +1887,7 @@ function getUser($userId, $options){
 </span></code></pre></td></tr></table>
 </div>
 </div><p></p>
-<h1 id="wampserver-多站点配置">WAMPServer 多站点配置</h1>
+<h1 id="wampserver多站点配置">WAMPServer多站点配置</h1>
 <p>打开<code>httpd-vhost.conf</code>文件，复制原有的几行配置文件，粘贴修改路径和域名等配置。比如</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1929,7 +1939,7 @@ function getUser($userId, $options){
 &lt;/VirtualHost&gt;
 </code></pre></td></tr></table>
 </div>
-</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件，在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
+</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件,在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1966,10 +1976,10 @@ function getUser($userId, $options){
 127.0.0.1 test02.com
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="wampserver-自拟定端口">WAMPServer 自拟定端口</h1>
-<p>WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第一次装的时候发现 80 端口被占用了，因为以前玩了一下 Windows 的 IIS，暂停 IIS 的网站，再使用命令或者直接在控制面板关掉就好了。</p>
+</div><h1 id="wampserver自拟定端口">WAMPServer自拟定端口</h1>
+<p>WAMP服务我安装了好几次，每次因为修改配置文件搞崩了。。第一次装的时候发现80端口被占用了，因为以前玩了一下Windows的IIS，暂停IIS的网站，再使用命令或者直接在控制面板关掉就好了。</p>
 <ol>
-<li>如果不使用 80 多为默认端口，比如修改为 8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S 保存，重新启动 WampServer<br>
+<li>如果不使用80多为默认端口，比如修改为8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S保存，重新启动WampServer<br>
 在浏览器地址栏输入<code>localhost:8000</code></li>
 </ol>
 <div class="highlight"><div class="chroma">
@@ -1987,15 +1997,15 @@ ServerName localhost:8080
 </code></pre></td></tr></table>
 </div>
 </div><ol start="2">
-<li>使用 Notepad++打开 C:\wamp 目录下的 wampmanager.ini 和 wampmanager.tpl<br>
-Ctrl+F 查找 <code>localhost</code><br>
+<li>使用Notepad++打开 C:\wamp 目录下的wampmanager.ini和wampmanager.tpl<br>
+Ctrl+F查找 <code>localhost</code><br>
 将其全部替换为<code>localhost:8000</code><br>
-然后，Ctrl+S 保存，重新启动 WampServer</li>
+然后，Ctrl+S保存，重新启动WampServer</li>
 </ol>]]></description></item><item><title>宅音乐播放器</title><link>https://lruihao.cn/posts/player/</link><pubDate>Tue, 19 Mar 2019 23:32:56 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/player/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/player/images/index.png" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>宅音乐播放器，HTML5 网页播放器，集成后台管理及 API 调用，目前正在开发中，敬请关注~<br>
-<a href="https://github.com/lzx8589561/zhai-music" target="_blank" rel="noopener noreffer">原项目</a> 由 <a href="https://www.ilt.me" target="_blank" rel="noopener noreffer">IT 技术宅</a> 开源，使用 thinkPHP 开发后台。 <a href="https://github.com/Lruihao/zhai-music" target="_blank" rel="noopener noreffer">fork 地址</a> 是我个人学习模仿的库，也是相当于备份源码。<br>
+<p>宅音乐播放器，HTML5网页播放器，集成后台管理及API调用，目前正在开发中，敬请关注~<br>
+<a href="https://github.com/lzx8589561/zhai-music" target="_blank" rel="noopener noreffer">原项目</a>由<a href="https://www.ilt.me" target="_blank" rel="noopener noreffer">IT技术宅</a>开源，使用thinkPHP开发后台。 <a href="https://github.com/Lruihao/zhai-music" target="_blank" rel="noopener noreffer">fork地址</a>是我个人学习模仿的库，也是相当于备份源码。<br>
 <em>注： 插件修改于明月浩空免费版，仅用于学习交流，无商业价值，如发现商业传播，将禁止软件的免费使用。</em></p>
 </blockquote>
 <h2 id="技术栈">技术栈</h2>
@@ -2032,7 +2042,7 @@ test123
 <li>mysql 5.5+</li>
 </ul>
 <h3 id="步骤">步骤</h3>
-<p>安装 php 依赖包</p>
+<p>安装php依赖包</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2058,7 +2068,7 @@ test123
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">字符编码：utf8 -- UTF-8 Unicode
-导入数据库脚本，脚本位置 extend/database
+导入数据库脚本，脚本位置extend/database
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="伪静态配置">伪静态配置</h3>
@@ -2077,7 +2087,7 @@ test123
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">  location / {
       index  index.htm index.html index.php;
-      #访问路径的文件不存在则重写 URL 转交给 ThinkPHP 处理
+      #访问路径的文件不存在则重写URL转交给ThinkPHP处理
       if (!-e $request_filename) {
          rewrite  ^/(.*)$  /index.php?s=$1  last;
          break;
@@ -2086,11 +2096,11 @@ test123
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="apache">apache</h4>
-<p>项目自带 apache 静态化无需配置</p>
+<p>项目自带apache静态化无需配置</p>
 <h3 id="启动项目">启动项目</h3>
 <ul>
-<li>添加 public 为 web 根目录</li>
-<li>若为 apache 服务器则默认伪静态，nginx 可自行配置伪静态</li>
+<li>添加public为web根目录</li>
+<li>若为apache服务器则默认伪静态，nginx可自行配置伪静态</li>
 </ul>
 <h2 id="预览">预览</h2>
 <p></p>

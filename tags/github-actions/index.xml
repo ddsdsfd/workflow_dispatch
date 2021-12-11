@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Github Actions - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/github-actions/</link><description>Github Actions - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/github-actions/" rel="self" type="application/rss+xml"/><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Github Actions - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/github-actions/</link><description>Github Actions - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/github-actions/" rel="self" type="application/rss+xml"/><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云cos桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
@@ -130,7 +130,7 @@
 <p>至此，Github Pages 和 COS 都已經可以通過 Github Actions 自動部署了，有部署記錄后，<br>
 打開 Lruihao/hugo-blog -&gt; Actions 可以看到構建過程和結果，構建失敗也會收到 Github 發給你的郵件。</p>
 </blockquote>
-<h2 id="cos-自動同步-備用">COS 自動同步 （備用）</h2>
+<h2 id="cos-自動同步-備用">COS 自動同步 (備用)</h2>
 <p>本小節內容和 Github Actions 無關，僅作為 COS 備用上傳方式。</p>
 <ul>
 <li>COSBrowser</li>

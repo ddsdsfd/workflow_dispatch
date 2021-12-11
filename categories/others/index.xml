@@ -52,7 +52,7 @@
     </figure></li>
 </ol>
 <blockquote>
-<p>VScode 也有更好用的插件：Past Image</p>
+<p>VScode 也有更好用的插件: Past Image</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -153,7 +153,7 @@
     <span class="n">panduan</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">);</span>
     <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;是否要继续 y or n :&#34;</span><span class="p">);</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;是否要继续y or n :&#34;</span><span class="p">);</span>
         <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">se</span><span class="p">);</span>
         <span class="k">if</span><span class="p">(</span><span class="n">se</span><span class="o">==</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span> <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">se</span><span class="p">);</span>
         <span class="k">switch</span><span class="p">(</span><span class="n">se</span><span class="p">)</span>
@@ -173,20 +173,20 @@
     <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d,%d,%d,%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="o">&amp;</span><span class="n">d</span><span class="p">)){</span><span class="c1">//判断非数字字符
 </span><span class="c1"></span>        <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span><span class="c1">//清理缓存
 </span><span class="c1"></span>        <span class="n">a</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">b</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">c</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">d</span><span class="o">=</span><span class="n">N</span><span class="p">;</span>
-    	 <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误、n&#34;</span><span class="p">);</span>
+    	 <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
     <span class="p">}</span>
     <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
     <span class="k">while</span><span class="p">((</span><span class="n">a</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">||</span><span class="n">a</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">b</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">||</span><span class="n">b</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">c</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">||</span><span class="n">c</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">)</span><span class="o">||</span><span class="n">d</span><span class="o">!=</span><span class="n">N</span><span class="p">)</span>
     <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="o">==</span><span class="n">N</span><span class="o">||</span><span class="n">c</span><span class="o">==</span><span class="n">N</span><span class="o">||</span><span class="n">d</span><span class="o">!=</span><span class="n">N</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误、n&#34;</span><span class="p">);</span><span class="c1">//边数为 1、2、4 条
-</span><span class="c1"></span>        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">==</span><span class="mi">0</span><span class="o">||</span><span class="n">b</span><span class="o">==</span><span class="mi">0</span><span class="o">||</span><span class="n">c</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;边长不能为 0</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">||</span><span class="n">b</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">||</span><span class="n">c</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;边长不能为负、n&#34;</span><span class="p">);</span>
-        <span class="k">else</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Please enter 1-100 之间的整数、n&#34;</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="o">==</span><span class="n">N</span><span class="o">||</span><span class="n">c</span><span class="o">==</span><span class="n">N</span><span class="o">||</span><span class="n">d</span><span class="o">!=</span><span class="n">N</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span><span class="c1">//边数为1、2、4条
+</span><span class="c1"></span>        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">==</span><span class="mi">0</span><span class="o">||</span><span class="n">b</span><span class="o">==</span><span class="mi">0</span><span class="o">||</span><span class="n">c</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;边长不能为0</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">||</span><span class="n">b</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">||</span><span class="n">c</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;边长不能为负</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="k">else</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Please enter 1-100之间的整数</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
         <span class="n">a</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">b</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">c</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">d</span><span class="o">=</span><span class="n">N</span><span class="p">;</span>
         <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d,%d,%d,%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="o">&amp;</span><span class="n">b</span><span class="p">,</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span><span class="o">&amp;</span><span class="n">d</span><span class="p">)){</span><span class="c1">//判断非数字字符
 </span><span class="c1"></span>            <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span><span class="c1">//清理缓存
 </span><span class="c1"></span>            <span class="n">a</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">b</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">c</span><span class="o">=</span><span class="n">N</span><span class="p">;</span><span class="n">d</span><span class="o">=</span><span class="n">N</span><span class="p">;</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误、n&#34;</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;输入错误</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
         <span class="p">}</span>
         <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
     <span class="p">}</span>
@@ -196,26 +196,26 @@
     <span class="k">if</span><span class="p">(</span><span class="n">a1</span><span class="o">+</span><span class="n">b1</span><span class="o">&gt;</span><span class="n">c1</span><span class="o">&amp;&amp;</span><span class="n">b1</span><span class="o">+</span><span class="n">c1</span><span class="o">&gt;</span><span class="n">a1</span><span class="o">&amp;&amp;</span><span class="n">a1</span><span class="o">+</span><span class="n">c1</span><span class="o">&gt;</span><span class="n">b1</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">if</span><span class="p">(</span><span class="n">a1</span><span class="o">==</span><span class="n">b1</span><span class="o">&amp;&amp;</span><span class="n">a1</span><span class="o">==</span><span class="n">c1</span><span class="p">)</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;等边三角形、n&#34;</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;等边三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
         <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">a1</span><span class="o">==</span><span class="n">b1</span><span class="o">||</span><span class="n">a1</span><span class="o">==</span><span class="n">c1</span><span class="o">||</span><span class="n">b1</span><span class="o">==</span><span class="n">c1</span><span class="p">)</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;等腰三角形、n&#34;</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;等腰三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
         <span class="k">else</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;一般三角形、n&#34;</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;一般三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
     <span class="p">}</span>
     <span class="k">else</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;非三角形、n&#34;</span><span class="p">);</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;非三角形</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="测试">测试</h1>
 <p><br>
 <br>
-</p>]]></description></item><item><title>WeX5 在 win8 或者 win10 操作系统 studio 中新建。w 向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
-<p>win10 或者 win8 系统在使用起步科技 WeX5 这款 IDE 工具，在新建 w 文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法：</p>
+</p>]]></description></item><item><title>WeX5在win8或者win10操作系统studio中新建.w向导或其他的编辑窗口显示不全问题</title><link>https://lruihao.cn/posts/wex5/</link><pubDate>Sat, 13 Apr 2019 11:15:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wex5/</guid><description><![CDATA[<blockquote>
+<p>win10或者win8系统在使用起步科技WeX5这款IDE工具，在新建w文件或者新建本地应用等时候，会出现不能显示完全的问题，下面是解决办法：</p>
 </blockquote>
 <ol>
-<li>确认是否把操作系统的字体调整为非 100%了</li>
-<li>把<code>studio\dropins\studio-app2\plugins\plugin\lib\cef1\chromium.jar</code>这个 jar 包复制到<code>studio\dropins\studio-app2\plugins\plugin\lib</code>下，重启 studio</li>
+<li>确认是否把操作系统的字体调整为非100%了</li>
+<li>把<code>studio\dropins\studio-app2\plugins\plugin\lib\cef1\chromium.jar</code>这个jar包复制到<code>studio\dropins\studio-app2\plugins\plugin\lib</code>下，重启studio</li>
 </ol>
 ]]></description></item><item><title>磁盘存储器的管理</title><link>https://lruihao.cn/posts/cipanadmin/</link><pubDate>Mon, 04 Mar 2019 23:08:32 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cipanadmin/</guid><description><![CDATA[<h2 id="外存的组织方式">外存的组织方式</h2>
 <h3 id="连续组织方式">连续组织方式</h3>
@@ -242,13 +242,13 @@
 <li>隐式链接</li>
 <li>显式链接</li>
 </ul>
-<h3 id="fat-技术">FAT 技术</h3>
+<h3 id="fat技术">FAT技术</h3>
 <ul>
 <li>
 <p>FAT12</p>
 <ul>
-<li>早期的 FAT12 文件系统</li>
-<li>以簇为单位的 FAT12 文件系统</li>
+<li>早期的FAT12文件系统</li>
+<li>以簇为单位的FAT12文件系统</li>
 </ul>
 </li>
 <li>
@@ -258,9 +258,9 @@
 <p>FAT32</p>
 </li>
 </ul>
-<h3 id="ntfs-的文件组织方式">NTFS 的文件组织方式</h3>
+<h3 id="ntfs的文件组织方式">NTFS的文件组织方式</h3>
 <ul>
-<li>NTFS 新特征</li>
+<li>NTFS新特征</li>
 <li>磁盘组织</li>
 <li>文件的组织</li>
 </ul>
@@ -279,7 +279,7 @@
 <p>增量式索引组织方式的基本思想</p>
 </li>
 <li>
-<p>UNIX System V 的组织方式</p>
+<p>UNIX System V的组织方式</p>
 <ul>
 <li>直接地址</li>
 <li>一次间接地址</li>
@@ -315,36 +315,16 @@
 <li>
 <p>盘块的分配（步骤）</p>
 <ul>
-<li>
-<ol>
-<li>顺序扫描示图</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>转换盘块号</li>
-</ol>
-</li>
-<li>
-<ol start="3">
-<li>修改位示图</li>
-</ol>
-</li>
+<li>1.顺序扫描示图</li>
+<li>2.转换盘块号</li>
+<li>3.修改位示图</li>
 </ul>
 </li>
 <li>
 <p>盘块的回收（步骤）</p>
 <ul>
-<li>
-<ol>
-<li>盘块号转换成行列号</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>修改位示图</li>
-</ol>
-</li>
+<li>1.盘块号转换成行列号</li>
+<li>2.修改位示图</li>
 </ul>
 </li>
 </ul>
@@ -353,7 +333,7 @@
 <li>空闲盘块的组织</li>
 <li>空闲盘块的分配与回收</li>
 </ul>
-<h2 id="提高磁盘-io-速度的途径">提高磁盘 I/O 速度的途径</h2>
+<h2 id="提高磁盘io速度的途径">提高磁盘I/O速度的途径</h2>
 <h3 id="磁盘高速缓存">磁盘高速缓存</h3>
 <ul>
 <li>
@@ -370,41 +350,41 @@
 <p>周期性地写回磁盘</p>
 </li>
 </ul>
-<h3 id="提高磁盘-io-速度的其他方法">提高磁盘 I/O 速度的其他方法</h3>
+<h3 id="提高磁盘io速度的其他方法">提高磁盘I/O速度的其他方法</h3>
 <ul>
 <li>提前读</li>
 <li>延迟写</li>
 <li>优化物理块的分布</li>
 <li>虚拟盘</li>
 </ul>
-<h3 id="廉价磁盘冗余阵列-raid">廉价磁盘冗余阵列 (RAID)</h3>
+<h3 id="廉价磁盘冗余阵列raid">廉价磁盘冗余阵列(RAID)</h3>
 <ul>
 <li>
 <p>并行交叉存取</p>
 </li>
 <li>
-<p>RAID 的分级</p>
+<p>RAID的分级</p>
 <ul>
-<li>RAID 0 级</li>
-<li>RAID 1 级</li>
-<li>RAID 2 级</li>
-<li>RAID 3 级</li>
-<li>RAID 4 级</li>
-<li>RAID 5 级</li>
-<li>RAID 6 级和 RAID 7 级</li>
+<li>RAID 0级</li>
+<li>RAID 1级</li>
+<li>RAID 2级</li>
+<li>RAID 3级</li>
+<li>RAID 4级</li>
+<li>RAID 5级</li>
+<li>RAID 6级和RAID 7级</li>
 </ul>
 </li>
 <li>
-<p>RAID 的优点</p>
+<p>RAID的优点</p>
 <ul>
 <li>可靠性高</li>
-<li>磁盘 I/O 速度高</li>
+<li>磁盘I/O速度高</li>
 <li>性价比高</li>
 </ul>
 </li>
 </ul>
 <h2 id="提高磁盘可靠性的技术">提高磁盘可靠性的技术</h2>
-<h3 id="第一级容错技术-sft-">第一级容错技术 SFT-Ⅰ</h3>
+<h3 id="第一级容错技术sft-">第一级容错技术SFT-Ⅰ</h3>
 <ul>
 <li>
 <p>双份目录和双份文件分配表</p>
@@ -417,7 +397,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="第二级容错技术-sft-">第二级容错技术 SFT-Ⅱ</h3>
+<h3 id="第二级容错技术sft-">第二级容错技术SFT-Ⅱ</h3>
 <ul>
 <li>磁盘镜像</li>
 <li>磁盘双工</li>
@@ -480,15 +460,15 @@
 <li>重复文件的一致性</li>
 <li>链接数一致性检查</li>
 </ul>
-]]></description></item><item><title>通过 bat 批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
-<p>前面我有文章提到怎么提交本地文件到 github,coding 等远程仓库。每次可以分为三个步骤</p>
+]]></description></item><item><title>通过bat批处理文件自动提交博客代码</title><link>https://lruihao.cn/posts/commit-bat/</link><pubDate>Sat, 17 Nov 2018 14:25:49 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/commit-bat/</guid><description><![CDATA[<blockquote>
+<p>前面我有文章提到怎么提交本地文件到github,coding等远程仓库。每次可以分为三个步骤</p>
 <ul>
-<li>git add * （添加需要提交的文件，这里全选）</li>
+<li>git add * (添加需要提交的文件，这里全选)</li>
 <li>git commit -m &ldquo;提交信息&rdquo;</li>
 <li>git push</li>
 </ul>
 <p>但是这样感觉很麻烦每次都要重复输入提交命令和提示信息。
-这个时候可以用到 windows 批处理 bat 文件 (linux 的话可以用 shell 脚本）。用完发现好用到不行！</p>
+这个时候可以用到windows批处理bat文件(linux的话可以用shell脚本)。用完发现好用到不行!</p>
 </blockquote>
 <h3 id="新建文本文档">新建文本文档</h3>
 <div class="highlight"><div class="chroma">
@@ -512,8 +492,8 @@ git push
 </div><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p>
 <h3 id="使用">使用</h3>
 <p>把文件放到你原本需要提交代码的本地文件夹。双击运行，输入提交信息回车即可。</p>
-<h3 id="hexo-博客新姿势">hexo 博客新姿势</h3>
-<p>hexo 提交也很麻烦，当然也要批处理一下呀</p>
+<h3 id="hexo博客新姿势">hexo博客新姿势</h3>
+<p>hexo提交也很麻烦，当然也要批处理一下呀</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -533,7 +513,7 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">start</span> cmd ifconfig
 </code></pre></td></tr></table>
 </div>
-</div><p>另外也说一下 linux 死机命令。fork 炸弹。<br>
+</div><p>另外也说一下linux死机命令。fork炸弹。<br>
 死机无非是耗尽系统资源</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -553,11 +533,11 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
 </code></pre></td></tr></table>
 </div>
-</div><p>将需要统计的文件夹拖到 bat 文件上。</p>]]></description></item><item><title>博採眾長 app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" rel="noopener noreffer"  class="card-link">
+</div><p>将需要统计的文件夹拖到bat文件上。</p>]]></description></item><item><title>博採眾長app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" rel="noopener noreffer"  class="card-link">
     <span class="card-link-backdrop"></span>
     <span class="card-link-content">
         <span class="card-link-text">
-            <span class="card-link-title">博客 app 下载</span>
+            <span class="card-link-title">博客app下载</span>
             <span class="card-link-meta">
                 <span class="card-link-url">
                     <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
@@ -573,31 +553,31 @@ git push
     </span>
 </a>
 <h3 id="介绍">介绍</h3>
-<p>使用 fusion app 对网页进行的封装。<br>
+<p>使用fusion app对网页进行的封装。<br>
 功能：</p>
 <ul>
 <li>浏览本博客，主页</li>
 <li>私人网盘</li>
-<li>2048 等小游戏</li>
-<li>在线客服，QQ 等</li>
-<li>pc 与移动浏览器标识切换</li>
+<li>2048等小游戏</li>
+<li>在线客服，QQ等</li>
+<li>pc与移动浏览器标识切换</li>
 <li>留言，打赏，博主日志等</li>
-<li>分享功能，分享到 QQ，微信，浏览器打开等</li>
-<li>app 内添加书签，自动记录历史记录，刷新等</li>
+<li>分享功能，分享到QQ，微信，浏览器打开等</li>
+<li>app内添加书签，自动记录历史记录，刷新等</li>
 <li><strong>配合博客的<code>PWA + quicklink</code>功能可实现离线浏览</strong></li>
 </ul>
 <h3 id="下载">下载</h3>
 <blockquote>
-<p><del>app 内也可以更新，不过就我自己用，懒得更新。</del></p>
+<p><del>app内也可以更新，不过就我自己用，懒得更新。</del></p>
 </blockquote>
 <ul>
-<li><a href="https://pan.baidu.com/s/19jOvnNhssF302Mi1GRa2Sw" target="_blank" rel="noopener noreffer">百度云，密码：479l</a></li>
-<li><a href="https://github.com/Lruihao/Blog_fas_apk" target="_blank" rel="noopener noreffer">github 下载</a></li>
+<li><a href="https://pan.baidu.com/s/19jOvnNhssF302Mi1GRa2Sw" target="_blank" rel="noopener noreffer">百度云，密码:479l</a></li>
+<li><a href="https://github.com/Lruihao/Blog_fas_apk" target="_blank" rel="noopener noreffer">github下载</a></li>
 </ul>
-<p><strong>PWA 应用</strong></p>
+<p><strong>PWA应用</strong></p>
 <ol>
-<li>地址栏输入：Chrome://flags</li>
-<li>搜索并启用以下项目：Desktop PWAs（桌面 PWAs)、App Banners（应用横幅）、Experimental App Banners（实验性应用横幅）</li>
+<li>地址栏输入: Chrome://flags</li>
+<li>搜索并启用以下项目: Desktop PWAs(桌面PWAs)、App Banners(应用横幅)、Experimental App Banners(实验性应用横幅)</li>
 <li>重启浏览器使修改的设置生效</li>
 <li>点击地址栏最右边按钮</li>
 <li>安装“博採眾長”</li>
@@ -665,6 +645,7 @@ git push
 </span><span class="lnt">53
 </span><span class="lnt">54
 </span><span class="lnt">55
+</span><span class="lnt">56
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="c1">--检查测当前是否最新版本</span>
@@ -677,49 +658,50 @@ git push
 <span class="n">versioncode</span><span class="o">=</span><span class="n">tostring</span><span class="p">(</span><span class="n">packinfo.versionCode</span><span class="p">)</span>
 
 <span class="n">url</span><span class="o">=</span><span class="s2">&#34;https://share.weiyun.com/43fa66d8fc95db27141530ed2d006be2&#34;</span><span class="p">;</span>
-<span class="kr">function</span> <span class="nf">过滤</span> <span class="p">(</span><span class="n">content</span><span class="p">)</span>
+<span class="kr">function</span> <span class="nf">过滤</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
   <span class="err">版本名</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【版本名】(.-)【版本名】&#34;</span><span class="p">)</span>
   <span class="err">版本</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【版本】(.-)【版本】&#34;</span><span class="p">)</span>
   <span class="err">内容</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【内容】(.-)【内容】&#34;</span><span class="p">)</span>
   <span class="err">链接</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;【链接】(.-)【链接】&#34;</span><span class="p">)</span>
-<span class="kr">if</span><span class="err">（版本名</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">版本名</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
   <span class="err">版本名</span><span class="o">=</span><span class="s2">&#34;获取失败&#34;</span>
 <span class="kr">end</span>
-<span class="kr">if</span><span class="err">（版本</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">版本</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
   <span class="err">版本</span><span class="o">=</span><span class="s2">&#34;0&#34;</span>
 <span class="kr">end</span>
-<span class="kr">if</span><span class="err">（内容</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">内容</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
   <span class="err">内容</span><span class="o">=</span><span class="s2">&#34;获取失败&#34;</span>
 <span class="kr">end</span>
-<span class="kr">if</span><span class="err">（链接</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
-  <span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;服务器参数配置错误，请过段时间再次尝试&#34;</span><span class="p">)</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">链接</span><span class="o">==</span><span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+  <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;服务器参数配置错误，请过段时间再次尝试&#34;</span><span class="p">)</span>
 <span class="kr">end</span>
 
-<span class="kr">if</span><span class="err">（版本</span> <span class="o">&gt;</span> <span class="n">versioncode</span><span class="p">)</span> <span class="kr">then</span>
+<span class="kr">if</span><span class="p">(</span><span class="err">版本</span> <span class="o">&gt;</span> <span class="n">versioncode</span><span class="p">)</span> <span class="kr">then</span>
   <span class="n">dl.dismiss</span><span class="p">()</span>
     <span class="n">tt.stop</span><span class="p">()</span> 
-<span class="err">对话框</span> <span class="p">()</span>
-<span class="p">.</span> <span class="err">设置标题</span> <span class="p">(</span><span class="s2">&#34;检测到更新&#34;</span><span class="p">)</span>
-<span class="p">.</span> <span class="err">设置消息</span> <span class="p">(</span><span class="s2">&#34;版本：&#34;</span><span class="o">..</span><span class="n">version</span><span class="o">..</span><span class="s2">&#34;→&#34;</span><span class="o">..</span> <span class="err">版本名。</span><span class="p">.</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 更新内容：&#34;</span><span class="o">..</span> <span class="err">内容）</span>
-<span class="p">.</span> <span class="err">设置积极按钮</span> <span class="p">(</span><span class="s2">&#34;下载更新&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
-  <span class="err">下载文件（链接）</span>
-  <span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;下载更新中…&#34;</span><span class="p">)</span>
+<span class="err">对话框</span><span class="p">()</span>
+<span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="s2">&#34;检测到更新&#34;</span><span class="p">)</span>
+<span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;版本：&#34;</span><span class="o">..</span><span class="n">version</span><span class="o">..</span><span class="s2">&#34;→&#34;</span><span class="o">..</span><span class="err">版本名</span><span class="o">..</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">更新内容：&#34;</span><span class="o">..</span><span class="err">内容</span><span class="p">)</span>
+<span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;下载更新&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+  <span class="err">下载文件</span><span class="p">(</span><span class="err">链接</span><span class="p">)</span>
+  <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;下载更新中…&#34;</span><span class="p">)</span>
 <span class="kr">end</span><span class="p">)</span>
-<span class="p">.</span> <span class="err">设置消极按钮</span> <span class="p">(</span><span class="s2">&#34;取消更新&#34;</span><span class="p">)</span>
-<span class="p">.</span> <span class="err">显示</span> <span class="p">()</span>
+<span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消更新&#34;</span><span class="p">)</span>
+<span class="p">.</span><span class="err">显示</span><span class="p">()</span>
 <span class="kr">else</span>
 <span class="n">dl.dismiss</span><span class="p">()</span>
     <span class="n">tt.stop</span><span class="p">()</span>
-<span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;当前已是最新版本！&#34;</span><span class="p">)</span>
+<span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;当前已是最新版本！&#34;</span><span class="p">)</span>
+<span class="kr">end</span>
 <span class="kr">end</span>
 <span class="n">Http.get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="kc">nil</span><span class="p">,</span><span class="s2">&#34;UTF-8&#34;</span><span class="p">,</span><span class="kc">nil</span><span class="p">,</span><span class="kr">function</span><span class="p">(</span><span class="n">code</span><span class="p">,</span><span class="n">content</span><span class="p">,</span><span class="n">cookie</span><span class="p">,</span><span class="n">header</span><span class="p">)</span>
   <span class="kr">if</span><span class="p">(</span><span class="n">code</span><span class="o">==</span><span class="mi">200</span> <span class="ow">and</span> <span class="n">content</span><span class="p">)</span><span class="kr">then</span>
     <span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">:</span><span class="n">match</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\&#34;</span><span class="s2">html_content</span><span class="se">\&#34;</span><span class="s2">:(.-),&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">u003C/?.-%&gt;&#34;</span><span class="p">,</span><span class="s2">&#34;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\\\\</span><span class="s2">&#34;</span><span class="p">,</span><span class="s2">&#34;&amp;revs;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">n&#34;</span><span class="p">,</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;nbsp;&#34;</span><span class="p">,</span><span class="s2">&#34; &#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;lt;&#34;</span><span class="p">,</span><span class="s2">&#34;&lt;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;gt;&#34;</span><span class="p">,</span><span class="s2">&#34;&gt;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;quot;&#34;</span><span class="p">,</span><span class="s2">&#34;</span><span class="se">\&#34;</span><span class="s2">&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;apos;&#34;</span><span class="p">,</span><span class="s2">&#34;&#39;&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;revs;&#34;</span><span class="p">,</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">):</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&#34;&amp;amp;&#34;</span><span class="p">,</span><span class="s2">&#34;&amp;&#34;</span><span class="p">);</span>
-    <span class="err">过滤</span> <span class="p">(</span><span class="n">content</span><span class="p">)</span>
+    <span class="err">过滤</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
   <span class="kr">else</span>
   <span class="n">dl.dismiss</span><span class="p">()</span>
     <span class="n">tt.stop</span><span class="p">()</span> 
-     <span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;本地网络或服务器异常 &#34;</span><span class="o">..</span><span class="n">code</span><span class="p">)</span>
+     <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;本地网络或服务器异常 &#34;</span><span class="o">..</span><span class="n">code</span><span class="p">)</span>
   <span class="kr">end</span>
 <span class="kr">end</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -744,7 +726,7 @@ git push
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="c1">--flag 在程序启动事件声明的全局变量</span>
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="c1">--flag在程序启动事件声明的全局变量</span>
 <span class="kr">if</span> <span class="n">flag</span><span class="o">==</span><span class="mi">1</span> <span class="kr">then</span>
   <span class="n">activity.setRequestedOrientation</span><span class="p">(</span><span class="n">ActivityInfo.SCREEN_ORIENTATION_SENSOR</span><span class="p">);</span>
   <span class="n">SetHSP</span><span class="o">=</span><span class="s2">&#34;H&#34;</span>
@@ -1284,13 +1266,20 @@ git push
 </span><span class="lnt">518
 </span><span class="lnt">519
 </span><span class="lnt">520
+</span><span class="lnt">521
+</span><span class="lnt">522
+</span><span class="lnt">523
+</span><span class="lnt">524
+</span><span class="lnt">525
+</span><span class="lnt">526
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;©2018 李瑞豪&#34;</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;©2018 李瑞豪&#34;</span><span class="p">)</span>
 
 <span class="c1">--自动，由物理感应器决定</span>
 <span class="n">import</span> <span class="s2">&#34;android.content.pm.ActivityInfo&#34;</span>
 <span class="n">flag</span><span class="o">=</span><span class="mi">1</span>
+
 
 <span class="c1">--程序退出时执行对话框</span>
 <span class="kr">function</span> <span class="nf">onKeyDown</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">event</span><span class="p">)</span>
@@ -1300,42 +1289,43 @@ git push
     <span class="kr">else</span>
       <span class="n">appinfo</span><span class="o">=</span><span class="n">this.getPackageManager</span><span class="p">().</span><span class="n">getApplicationInfo</span><span class="p">(</span><span class="n">this.getPackageName</span><span class="p">(),</span><span class="mi">0</span><span class="p">)</span>
       <span class="n">applabel</span><span class="o">=</span><span class="n">this.getPackageManager</span><span class="p">().</span><span class="n">getApplicationLabel</span><span class="p">(</span><span class="n">appinfo</span><span class="p">)</span>
-      <span class="err">退出确认</span><span class="o">=</span><span class="err">对话框</span> <span class="p">()</span>
-      <span class="p">.</span> <span class="err">设置消息</span> <span class="p">(</span><span class="s2">&#34;您确定要退出 &#34;</span><span class="o">..</span><span class="n">applabel</span><span class="o">..</span><span class="s2">&#34; 吗？&#34;</span><span class="p">)</span>
+      <span class="err">退出确认</span><span class="o">=</span><span class="err">对话框</span><span class="p">()</span>
+      <span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;您确定要退出 &#34;</span><span class="o">..</span><span class="n">applabel</span><span class="o">..</span><span class="s2">&#34; 吗?&#34;</span><span class="p">)</span>
       <span class="err">退出按钮</span><span class="o">=</span><span class="p">{</span>
         <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="kr">function</span><span class="p">()</span>
           <span class="err">退出确认</span>
-          <span class="p">.</span> <span class="err">设置积极按钮</span> <span class="p">(</span><span class="s2">&#34;确认&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
-            <span class="err">退出程序</span> <span class="p">()</span>
+          <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;确认&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+            <span class="err">退出程序</span><span class="p">()</span>
             <span class="kr">end</span>
              <span class="p">)</span>
-             <span class="p">.</span> <span class="err">设置中立按钮</span> <span class="p">(</span><span class="s2">&#34;清除缓存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
-               <span class="err">对话框</span> <span class="p">()</span>
-               <span class="p">.</span> <span class="err">设置消息</span> <span class="p">(</span><span class="s2">&#34;清除缓存后再次运行程序将变得缓慢、n 您确定要清除 &#34;</span><span class="o">..</span><span class="n">applabel</span><span class="o">..</span><span class="s2">&#34; 的缓存吗？&#34;</span><span class="p">)</span>
-               <span class="p">.</span> <span class="err">设置积极按钮</span> <span class="p">(</span><span class="s2">&#34;确定&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+             <span class="p">.</span><span class="err">设置中立按钮</span><span class="p">(</span><span class="s2">&#34;清除缓存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+               <span class="err">对话框</span><span class="p">()</span>
+               <span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;清除缓存后再次运行程序将变得缓慢</span><span class="se">\n</span><span class="s2">您确定要清除 &#34;</span><span class="o">..</span><span class="n">applabel</span><span class="o">..</span><span class="s2">&#34; 的缓存吗?&#34;</span><span class="p">)</span>
+               <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;确定&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
                 <span class="n">os.execute</span><span class="p">(</span><span class="s2">&#34;pm clear &#34;</span><span class="o">..</span><span class="n">this.packageName</span><span class="p">)</span>
-                <span class="err">退出程序</span> <span class="p">()</span>
+                <span class="err">退出程序</span><span class="p">()</span>
                 <span class="kr">end</span><span class="p">)</span>
-               <span class="p">.</span> <span class="err">设置消极按钮</span> <span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+               <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
                 <span class="kr">end</span><span class="p">)</span>
-              <span class="p">.</span> <span class="err">显示</span> <span class="p">()</span>
+              <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
              <span class="kr">end</span>
            <span class="p">)</span>
-          <span class="p">.</span> <span class="err">设置消极按钮</span> <span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
+          <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
           <span class="kr">end</span>
         <span class="p">}</span>      
       <span class="n">math.randomseed</span><span class="p">(</span><span class="n">tonumber</span><span class="p">(</span><span class="n">tostring</span><span class="p">(</span><span class="n">os.time</span><span class="p">()):</span><span class="n">reverse</span><span class="p">():</span><span class="n">sub</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)))</span>
-      <span class="err">退出按钮</span> <span class="p">[</span><span class="n">math.random</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)]()</span>
-      <span class="err">退出确认。</span><span class="n">show</span><span class="p">()</span>
+      <span class="err">退出按钮</span><span class="p">[</span><span class="n">math.random</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)]()</span>
+      <span class="err">退出确认</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
     <span class="kr">end</span>
     <span class="kr">return</span> <span class="kc">true</span>
   <span class="kr">end</span>
 <span class="kr">end</span>
 
+
 <span class="c1">--历史记录</span>
 <span class="n">lstads</span><span class="o">=</span><span class="s2">&#34;/data/data/&#34;</span><span class="o">..</span><span class="n">activity.getPackageName</span><span class="p">()</span><span class="o">..</span><span class="s2">&#34;/lst.lua&#34;</span>
 <span class="n">lstwebads</span><span class="o">=</span><span class="s2">&#34;/data/data/&#34;</span><span class="o">..</span><span class="n">activity.getPackageName</span><span class="p">()</span><span class="o">..</span><span class="s2">&#34;/lstweb.lua&#34;</span>
-<span class="c1">--2. 序列化</span>
+<span class="c1">--2.序列化</span>
 <span class="kr">function</span> <span class="nf">slz</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> 
   <span class="kd">local</span> <span class="n">lua</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> 
   <span class="kd">local</span> <span class="n">t</span> <span class="o">=</span> <span class="n">type</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> 
@@ -1381,7 +1371,7 @@ git push
   <span class="kr">return</span> <span class="n">func</span><span class="p">()</span> 
 <span class="kr">end</span>
 
-<span class="c1">--3. 历史记录框布局</span>
+<span class="c1">--3.历史记录框布局</span>
 <span class="kr">function</span> <span class="nf">hstshow</span><span class="p">()</span>
   <span class="n">hstlayout</span><span class="o">=</span><span class="p">{</span>
     <span class="n">LinearLayout</span><span class="p">,</span>
@@ -1415,21 +1405,22 @@ git push
   <span class="p">}</span>
 <span class="kr">end</span>
 
+
 <span class="c1">--##功能函数##</span>
 
-<span class="c1">--1. 读取历史文件</span>
+<span class="c1">--1.读取历史文件</span>
 <span class="kr">function</span> <span class="nf">read_hst</span><span class="p">()</span>
   <span class="n">import</span> <span class="s2">&#34;java.io.File&#34;</span>
   <span class="n">File</span><span class="p">(</span><span class="n">lstads</span><span class="p">).</span><span class="n">createNewFile</span><span class="p">()</span>
   <span class="n">slst</span><span class="o">=</span><span class="n">io.open</span><span class="p">(</span><span class="n">lstads</span><span class="p">):</span><span class="n">read</span><span class="p">(</span><span class="s2">&#34;*a&#34;</span><span class="p">)</span>
   <span class="n">File</span><span class="p">(</span><span class="n">lstwebads</span><span class="p">).</span><span class="n">createNewFile</span><span class="p">()</span>
   <span class="n">slstweb</span><span class="o">=</span><span class="n">io.open</span><span class="p">(</span><span class="n">lstwebads</span><span class="p">):</span><span class="n">read</span><span class="p">(</span><span class="s2">&#34;*a&#34;</span><span class="p">)</span>
-  <span class="c1">--转换成 table</span>
+  <span class="c1">--转换成table</span>
   <span class="n">lst</span><span class="o">=</span><span class="n">rslz</span><span class="p">(</span><span class="n">slst</span><span class="p">)</span>
   <span class="n">lstweb</span><span class="o">=</span><span class="n">rslz</span><span class="p">(</span><span class="n">slstweb</span><span class="p">)</span>
 <span class="kr">end</span>
 
-<span class="c1">--2. 新网页加入历史记录</span>
+<span class="c1">--2.新网页加入历史记录</span>
 <span class="kr">function</span> <span class="nf">add_hst</span><span class="p">()</span>
   <span class="kr">if</span> <span class="n">string.len</span><span class="p">(</span><span class="n">webView.getTitle</span><span class="p">())</span><span class="o">&lt;=</span><span class="mi">300</span> <span class="kr">then</span><span class="c1">--粗略过掉无效标题</span>
     <span class="n">newtitle</span><span class="o">=</span><span class="n">webView.getTitle</span><span class="p">()</span>
@@ -1439,9 +1430,9 @@ git push
   <span class="kr">end</span>
 <span class="kr">end</span>
 
-<span class="c1">--3. 存储历史文件</span>
+<span class="c1">--3.存储历史文件</span>
 <span class="kr">function</span> <span class="nf">save_hst</span><span class="p">()</span>
-  <span class="c1">--转换成 string</span>
+  <span class="c1">--转换成string</span>
   <span class="n">slst</span><span class="o">=</span><span class="n">slz</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
   <span class="n">slstweb</span><span class="o">=</span><span class="n">slz</span><span class="p">(</span><span class="n">lstweb</span><span class="p">)</span>
   <span class="c1">--保存</span>
@@ -1457,7 +1448,7 @@ git push
   <span class="n">io.close</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
 <span class="kr">end</span>
 
-<span class="c1">--4. 显示历史记录框</span>
+<span class="c1">--4.显示历史记录框</span>
 <span class="kr">function</span> <span class="nf">show_hst</span><span class="p">()</span> 
   <span class="n">hstshow</span><span class="p">()</span>
   <span class="kd">local</span> <span class="n">hl</span><span class="o">=</span><span class="n">AlertDialog.Builder</span><span class="p">(</span><span class="n">activity</span><span class="p">)</span>
@@ -1469,29 +1460,29 @@ git push
   <span class="p">.</span><span class="n">create</span><span class="p">()</span>
   <span class="n">hl.show</span><span class="p">()</span>
   <span class="n">hlst.onItemClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-    <span class="err">加载网页</span> <span class="p">(</span><span class="n">lstweb</span><span class="p">[</span><span class="n">b</span><span class="p">])</span>
+    <span class="err">加载网页</span><span class="p">(</span><span class="n">lstweb</span><span class="p">[</span><span class="n">b</span><span class="p">])</span>
     <span class="n">hl.dismiss</span><span class="p">()</span>
   <span class="kr">end</span>
   <span class="n">hlst.onItemLongClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
     <span class="n">hl.dismiss</span><span class="p">()</span>
-    <span class="err">对话框</span> <span class="p">()</span>
-    <span class="p">.</span> <span class="err">设置消息</span> <span class="p">(</span><span class="s2">&#34;是否删除记录？&#34;</span><span class="p">)</span>
-    <span class="p">.</span> <span class="err">设置消极按钮</span> <span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+    <span class="err">对话框</span><span class="p">()</span>
+    <span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;是否删除记录？&#34;</span><span class="p">)</span>
+    <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
       <span class="n">show_hst</span><span class="p">()</span>
     <span class="kr">end</span><span class="p">)</span>
-    <span class="p">.</span> <span class="err">设置积极按钮</span> <span class="p">(</span><span class="s2">&#34;确定&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+    <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;确定&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
       <span class="n">table.remove</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
       <span class="n">table.remove</span><span class="p">(</span><span class="n">lstweb</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
       <span class="n">save_hst</span><span class="p">()</span>
       <span class="n">show_hst</span><span class="p">()</span>
     <span class="kr">end</span> <span class="p">)</span>
-    <span class="p">.</span> <span class="err">显示</span> <span class="p">()</span>
+    <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
     <span class="kr">return</span> <span class="kc">true</span>
   <span class="kr">end</span>
 <span class="kr">end</span>
-<span class="c1">--5. 清除缓存</span>
+<span class="c1">--5.清除缓存</span>
 <span class="kr">function</span> <span class="nf">clr</span><span class="p">()</span>
-  <span class="c1">--导入 File 类</span>
+  <span class="c1">--导入File类</span>
   <span class="n">import</span> <span class="s2">&#34;java.io.File&#34;</span>
   <span class="c1">--显示多选框</span>
   <span class="n">items</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;浏览记录&#34;</span><span class="p">,</span><span class="s2">&#34;缓存文件&#34;</span><span class="p">}</span>
@@ -1524,13 +1515,14 @@ git push
       <span class="kr">if</span> <span class="n">p</span><span class="o">==</span><span class="mi">1</span> <span class="kr">then</span> <span class="n">clearall</span><span class="o">=</span><span class="mi">1</span>
       <span class="kr">end</span>
     <span class="kr">end</span><span class="p">})</span>
-  <span class="err">多选对话框。</span><span class="n">show</span><span class="p">();</span>
+  <span class="err">多选对话框</span><span class="p">.</span><span class="n">show</span><span class="p">();</span>
   <span class="n">clearhistory</span><span class="o">=</span><span class="mi">0</span>
   <span class="n">clearall</span><span class="o">=</span><span class="mi">0</span>
 <span class="kr">end</span>
 
+
 <span class="n">activity.getWindow</span><span class="p">().</span><span class="n">setSoftInputMode</span><span class="p">(</span><span class="n">WindowManager.LayoutParams</span><span class="p">.</span><span class="n">SOFT_INPUT_ADJUST_RESIZE</span><span class="p">);</span>
-<span class="c1">--11. 长按弹窗</span>
+<span class="c1">--11.长按弹窗</span>
 <span class="kr">function</span> <span class="nf">popwin</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">win1</span><span class="o">=</span><span class="s2">&#34;向上移动&#34;</span>
   <span class="kd">local</span> <span class="n">win2</span><span class="o">=</span><span class="s2">&#34;编辑&#34;</span>
@@ -1584,6 +1576,8 @@ git push
   <span class="n">save_fav</span><span class="p">()</span>
   <span class="n">show_fav</span><span class="p">()</span>
 <span class="kr">end</span>
+
+
 
 <span class="c1">--加入收藏</span>
 <span class="kr">function</span> <span class="nf">getAllData</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
@@ -1722,8 +1716,8 @@ git push
   <span class="kd">local</span> <span class="n">adpd</span><span class="o">=</span><span class="n">adapterData</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">items</span><span class="o">=</span><span class="n">LuaAdapter</span><span class="p">(</span><span class="n">this</span><span class="p">,</span><span class="n">adpd</span><span class="p">,</span><span class="n">item</span><span class="p">)</span>
 
-  <span class="kd">local</span> <span class="n">dlb</span><span class="o">=</span><span class="err">对话框</span> <span class="p">()</span>
-  <span class="n">dlb</span><span class="p">.</span> <span class="err">设置标题</span> <span class="p">(</span><span class="n">title</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">dlb</span><span class="o">=</span><span class="err">对话框</span><span class="p">()</span>
+  <span class="n">dlb</span><span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">dl</span>
   <span class="kr">if</span> <span class="o">#</span><span class="n">keys</span><span class="o">&gt;</span><span class="mi">0</span> <span class="kr">then</span>
     <span class="n">dlb.setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">listlayout</span><span class="p">))</span>
@@ -1736,10 +1730,10 @@ git push
       <span class="kr">end</span>
     <span class="kr">end</span>
     <span class="n">list.onItemLongClick</span><span class="o">=</span><span class="kr">function</span><span class="p">(</span><span class="n">adp</span><span class="p">,</span><span class="n">view</span><span class="p">,</span><span class="n">pos</span><span class="p">,</span><span class="n">id</span><span class="p">)</span><span class="c1">--325 52732</span>
-      <span class="err">对话框</span> <span class="p">()</span>
-      <span class="p">.</span> <span class="err">设置标题</span> <span class="p">(</span><span class="n">title</span><span class="p">)</span>
+      <span class="err">对话框</span><span class="p">()</span>
+      <span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
       <span class="p">.</span><span class="n">setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">input2layout</span><span class="p">))</span>
-      <span class="p">.</span> <span class="err">设置积极按钮</span> <span class="p">(</span><span class="s2">&#34;保存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span><span class="c1">--32552732</span>
+      <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;保存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span><span class="c1">--32552732</span>
         <span class="kr">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit1.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit2.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">3255</span><span class="o">==</span><span class="mi">2732</span> <span class="kr">then</span>
           <span class="n">removeData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">keys</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
           <span class="n">putData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">)</span><span class="c1">--32552732</span>
@@ -1748,11 +1742,11 @@ git push
             <span class="n">showDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">)</span>
           <span class="kr">end</span>
         <span class="kr">else</span>
-          <span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;请填写所有字段&#34;</span><span class="p">)</span>
+          <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;请填写所有字段&#34;</span><span class="p">)</span>
         <span class="kr">end</span>
       <span class="kr">end</span><span class="p">)</span>
-      <span class="p">.</span> <span class="err">设置消极按钮</span> <span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
-      <span class="p">.</span> <span class="err">设置中立按钮</span> <span class="p">(</span><span class="s2">&#34;删除&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+      <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
+      <span class="p">.</span><span class="err">设置中立按钮</span><span class="p">(</span><span class="s2">&#34;删除&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
         <span class="n">removeData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">keys</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
         <span class="n">items.remove</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
         <span class="n">table.remove</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span><span class="n">id</span><span class="p">)</span>
@@ -1764,7 +1758,7 @@ git push
           <span class="kr">end</span>
         <span class="kr">end</span>
       <span class="kr">end</span><span class="p">)</span>
-      <span class="p">.</span> <span class="err">显示</span> <span class="p">()</span>
+      <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
       <span class="n">edit1.setHint</span><span class="p">(</span><span class="s2">&#34;标题&#34;</span><span class="p">)</span>
       <span class="n">edit2.setHint</span><span class="p">(</span><span class="s2">&#34;链接&#34;</span><span class="p">)</span>
       <span class="n">edit1.setText</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">id</span><span class="p">])</span>
@@ -1772,31 +1766,31 @@ git push
       <span class="kr">return</span> <span class="kc">true</span>
     <span class="kr">end</span>
   <span class="kr">else</span>
-    <span class="n">dlb</span><span class="p">.</span> <span class="err">设置消息</span> <span class="p">(</span><span class="s2">&#34;没有收藏&#34;</span><span class="p">)</span>
+    <span class="n">dlb</span><span class="p">.</span><span class="err">设置消息</span><span class="p">(</span><span class="s2">&#34;没有收藏&#34;</span><span class="p">)</span>
   <span class="kr">end</span>
-  <span class="n">dlb</span><span class="p">.</span> <span class="err">设置积极按钮</span> <span class="p">(</span><span class="s2">&#34;新建收藏&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span><span class="n">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s2">&#34;新建收藏&#34;</span><span class="p">)</span><span class="kr">end</span><span class="p">)</span>
+  <span class="n">dlb</span><span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;新建收藏&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span><span class="n">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s2">&#34;新建收藏&#34;</span><span class="p">)</span><span class="kr">end</span><span class="p">)</span>
   <span class="n">dl</span><span class="o">=</span><span class="n">dlb.show</span><span class="p">()</span>
 <span class="kr">end</span>
 
 <span class="kr">function</span> <span class="nf">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">value</span><span class="p">,</span><span class="n">key</span><span class="p">)</span><span class="c1">--32552732</span>
-  <span class="err">对话框</span> <span class="p">()</span>
-  <span class="p">.</span> <span class="err">设置标题</span> <span class="p">(</span><span class="n">title</span><span class="p">)</span>
+  <span class="err">对话框</span><span class="p">()</span>
+  <span class="p">.</span><span class="err">设置标题</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
   <span class="p">.</span><span class="n">setView</span><span class="p">(</span><span class="n">loadlayout</span><span class="p">(</span><span class="n">input2layout</span><span class="p">))</span>
-  <span class="p">.</span> <span class="err">设置积极按钮</span> <span class="p">(</span><span class="s2">&#34;保存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
+  <span class="p">.</span><span class="err">设置积极按钮</span><span class="p">(</span><span class="s2">&#34;保存&#34;</span><span class="p">,</span><span class="kr">function</span><span class="p">()</span>
     <span class="kr">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit1.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span><span class="p">(</span><span class="n">edit2.text</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">325</span><span class="o">==</span><span class="mi">52732</span> <span class="kr">then</span>
       <span class="kr">if</span> <span class="ow">not</span> <span class="n">getData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">)</span> <span class="kr">then</span>
         <span class="n">putData</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">)</span>
       <span class="kr">else</span>
-        <span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;该链接已存在&#34;</span><span class="p">)</span>
+        <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;该链接已存在&#34;</span><span class="p">)</span>
         <span class="n">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">)</span>
       <span class="kr">end</span>
     <span class="kr">else</span>
-      <span class="err">弹出消息</span> <span class="p">(</span><span class="s2">&#34;请填写所有字段&#34;</span><span class="p">)</span>
+      <span class="err">弹出消息</span><span class="p">(</span><span class="s2">&#34;请填写所有字段&#34;</span><span class="p">)</span>
       <span class="n">addDataDialog</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">edit1.text</span><span class="p">,</span><span class="n">edit2.text</span><span class="p">)</span>
     <span class="kr">end</span>
   <span class="kr">end</span><span class="p">)</span>
-  <span class="p">.</span> <span class="err">设置消极按钮</span> <span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
-  <span class="p">.</span> <span class="err">显示</span> <span class="p">()</span>
+  <span class="p">.</span><span class="err">设置消极按钮</span><span class="p">(</span><span class="s2">&#34;取消&#34;</span><span class="p">)</span>
+  <span class="p">.</span><span class="err">显示</span><span class="p">()</span>
   <span class="n">edit1.setHint</span><span class="p">(</span><span class="s2">&#34;标题&#34;</span><span class="p">)</span>
   <span class="n">edit2.setHint</span><span class="p">(</span><span class="s2">&#34;链接&#34;</span><span class="p">)</span>
   <span class="kr">if</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="kr">then</span>
@@ -1828,7 +1822,7 @@ curl https://getcaddy.com <span class="p">|</span> bash -s personal http.fileman
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim Caddyfile
 </code></pre></td></tr></table>
 </div>
-</div><p>内容如下：</p>
+</div><p>内容如下:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1845,8 +1839,8 @@ gzip
 }
 </code></pre></td></tr></table>
 </div>
-</div><p>这里的 8080 端口号可以随意指定，如果在手机 termux 等搭建，由于手机权限比较低，所以一般设置 1024 以上的端口。<code>80</code>端口可以直接通过 ip 访问。如<code>118.24.217.167</code></p>
-<p>如果用域名，先在域名服务商解析 ip, 再配置文件如下</p>
+</div><p>这里的8080端口号可以随意指定, 如果在手机termux等搭建，由于手机权限比较低, 所以一般设置1024以上的端口.<code>80</code>端口可以直接通过ip访问。如<code>118.24.217.167</code></p>
+<p>如果用域名，先在域名服务商解析ip,再配置文件如下</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1865,9 +1859,9 @@ gzip
 <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>指定邮箱是为了申请 ssl, 实现 https.</p>
+</div><p>指定邮箱是为了申请ssl,实现https.</p>
 <h3 id="demohttpspanlruihaocn"><a href="https://pan.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></h3>
-<p>启动 caddy</p>
+<p>启动caddy</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1878,8 +1872,8 @@ gzip
 </div>
 </div><p>账号密码默认<code>admin</code>
 </p>
-<h3 id="设置定时器启动-caddy好像没用我不会">设置定时器启动 caddy（好像没用，我不会）</h3>
-<p>为了断开 xshell 后 caddy 还在运行。</p>
+<h3 id="设置定时器启动caddy好像没用我不会">设置定时器启动caddy（好像没用,我不会）</h3>
+<p>为了断开xshell后caddy还在运行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1936,9 +1930,9 @@ gzip
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="heading">？？？</h3>
-<p>最后误打误撞开启了 caddy<br>
-昨晚双十一要抢裤子，加上湘潭天气太 tm 冷了，就上床了，接着用 termux 远程连接服务器继续搞。结果连接的时候命令输错了-_-!<br>
-本来是<code>ssh root@118.24.217.167</code>再输入密码就可以了。这次搞错了多写了个<code>-T</code>, 然后运行<code>caddy</code>,<code>ctrl+c</code>  再断开，意外地发现 filemanager 竟然可以访问了。</p>
+<p>最后误打误撞开启了caddy<br>
+昨晚双十一要抢裤子，加上湘潭天气太tm冷了，就上床了，接着用termux远程连接服务器继续搞。结果连接的时候命令输错了-_-!<br>
+本来是<code>ssh root@118.24.217.167</code>再输入密码就可以了。这次搞错了多写了个<code>-T</code>,然后运行<code>caddy</code>,<code>ctrl+c</code>  再断开，意外地发现filemanager竟然可以访问了。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1953,33 +1947,33 @@ caddy
 Ctrl+c
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>windows 上搭建 web 服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description><![CDATA[<blockquote>
+</div>]]></description></item><item><title>windows上搭建web服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description><![CDATA[<blockquote>
 <p>我用的 win10</p>
 </blockquote>
 <h3 id="打开控制面板">打开控制面板</h3>
-<p>选择并进入“程序”，双击“启用或关闭 Windows 服务”，在弹出的窗口中选择“Internet Information Services”下面所有地选项，点击确定后，开始更新服务。<br>
+<p>选择并进入“程序”，双击“启用或关闭Windows服务”，在弹出的窗口中选择“Internet Information Services”下面所有地选项，点击确定后，开始更新服务。<br>
 </p>
 <h3 id="查看">查看</h3>
-<p>更新完成后，打开浏览器，输入<code>http://localhost</code>或者<code>127.0.0.1</code>回车，如果此时出现 IIS7 欢迎界面，说明 Web 服务器已经搭建成功。<br>
+<p>更新完成后，打开浏览器，输入<code>http://localhost</code>或者<code>127.0.0.1</code>回车，如果此时出现IIS7欢迎界面，说明Web服务器已经搭建成功。<br>
 </p>
 <h3 id="网站设置">网站设置</h3>
-<p>当 web 服务器搭建成功后，我们下一步所要做的就是把我们开发的网站安装到 Web 服务器的目录中。一般情况下，当 Web 服务器安装完成后，会创建路径<code>%系统根目录%inetpub/wwwroot</code>，将我们开发的网站 COPY 到该路径下。即可实现本地访问该网站。<br>
+<p>当web服务器搭建成功后，我们下一步所要做的就是把我们开发的网站安装到Web服务器的目录中。一般情况下，当Web服务器安装完成后，会创建路径<code>%系统根目录%inetpub/wwwroot</code>，将我们开发的网站COPY到该路径下。即可实现本地访问该网站。<br>
 </p>
-<p>也可以更改根目录，搜索 IIS，点击网站，Default Web Site，基本设置修改物理路径（<strong>默认站点名称不要改</strong>）<br>
-我这里改到了 hexo 的 public 相当于 hexo 部署在本地服务器<code>58.45.227.225</code><br>
+<p>也可以更改根目录，搜索IIS，点击网站，Default Web Site，基本设置修改物理路径（<strong>默认站点名称不要改</strong>）<br>
+我这里改到了hexo的public相当于hexo部署在本地服务器<code>58.45.227.225</code><br>
 
 
 </p>
 <h3 id="设置防火墙">设置防火墙</h3>
-<p>让局域网当其它计算机也能访问本地网站资源。具体方法：打开控制面板，选择“系统和安全”，点击“允许程序通过 Windows 防火墙”，在弹出的对话框中勾选“万维网服务 HTTP”右侧的两个复选框，最后点击确定退出。<br>
+<p>让局域网当其它计算机也能访问本地网站资源。具体方法：打开控制面板，选择“系统和安全”，点击“允许程序通过Windows防火墙”，在弹出的对话框中勾选“万维网服务HTTP”右侧的两个复选框，最后点击确定退出。<br>
 </p>
-<p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的 ip 地址访问了（手机也可以）<br>
-本地 ip 可以通过 cmd 用 ipconfig 查看</p>
+<p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的ip地址访问了（手机也可以）<br>
+本地ip可以通过cmd用ipconfig查看</p>
 ]]></description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/posts/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/font-mmt/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/font-mmt/images/word1.png" referrerpolicy="no-referrer">
-            </div><div id="id-5"><p><span id="id-1"></span>
+            </div><div id="id-4"><span id="id-1"></span>
 <span id="id-2"></span>
-<span id="id-3"></span></p>
+<span id="id-3"></span></div>
 <hr>
 <h2 id="介绍">介绍</h2>
 <div class="details admonition success open">
@@ -1994,14 +1988,14 @@ Ctrl+c
 </li>
 <li>
 <p>笔头设置<br>
-狼毫笔型，粗细为 9，速度模式</p>
+狼毫笔型，粗细为9，速度模式</p>
 </li>
 <li>
 <p>屏写方式</p>
 </li>
 <li>
 <p><a href="https://github.com/Lruihao/MMT/raw/master/mmt@last.ttf" target="_blank" rel="noopener noreffer">最新版下载</a> · <a href="https://github.com/Lruihao/MMT/releases" target="_blank" rel="noopener noreffer">沐目体下载</a><br>
-使用手机造字 app 手写制作，写了大概 1 年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。</p>
+使用手机造字app手写制作，写了大概1年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。</p>
 </li>
 </ul>
 <p><em><strong>注：仅用于个人非商用！</strong></em></p>
@@ -2009,7 +2003,7 @@ Ctrl+c
         </div>
     </div>
 <h2 id="预览">预览</h2>
-<div id="id-4">前尘硬化像石头<br>
+<div id="id-5">前尘硬化像石头<br>
 随缘地抛下便逃走<br>
 我绝不罕有<br>
 往街里绕过一周<br>
@@ -2020,9 +2014,7 @@ Ctrl+c
 <hr>
 <h2 id="字稿">字稿</h2>
 <iframe height=800 width=100% src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-&share=1&from=singlemessage
-" frameborder=0 allowfullscreen></iframe>
-</div>
-]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
+" frameborder=0 allowfullscreen></iframe>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
 <p>流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度。</p>
 <table>
 <thead>
@@ -2059,7 +2051,7 @@ Ctrl+c
 </tbody>
 </table>
 <h3 id="流水线加速比">流水线加速比</h3>
-<p>完成一批任务，不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p>
+<p>完成一批任务,不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比。</p>
 <p>公式： S=不使用流水线执行时间/使用流水线执行时间</p>
 <p>流水线加速比越高越好，说明使用流水线的效果。</p>
 <h3 id="流水线的效率">流水线的效率</h3>
@@ -2069,7 +2061,7 @@ Ctrl+c
 <h3 id="其他">其他</h3>
 <h4 id="主机">主机</h4>
 <p></p>
-<h4 id="cisc-和-risc">CISC 和 RISC</h4>
+<h4 id="cisc和risc">CISC和RISC</h4>
 <table>
 <thead>
 <tr>
@@ -2083,10 +2075,10 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">CISC（复杂指令集）</td>
+<td style="text-align:center">CISC(复杂指令集)</td>
 <td style="text-align:center">数量多，使用频率差别大，可变长格式</td>
 <td style="text-align:center">支持多种</td>
-<td style="text-align:center">微程序控制技术（微码）</td>
+<td style="text-align:center">微程序控制技术(微码)</td>
 <td style="text-align:center">研制周期长</td>
 <td></td>
 </tr>
@@ -2099,8 +2091,8 @@ Ctrl+c
 <td></td>
 </tr>
 <tr>
-<td style="text-align:center">RISC（精简指令集）</td>
-<td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有 Load/Store 操作内存</td>
+<td style="text-align:center">RISC(精简指令集)</td>
+<td style="text-align:center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有Load/Store操作内存</td>
 <td style="text-align:center">支持方式少</td>
 <td style="text-align:center">增加了通用寄存器；硬布线逻辑控制为主；适合采用流水线</td>
 <td style="text-align:center">优化编码，有效支持高级语言</td>
@@ -2111,8 +2103,8 @@ Ctrl+c
 ]]></description></item><item><title>计算机数据</title><link>https://lruihao.cn/posts/data/</link><pubDate>Mon, 08 Oct 2018 23:01:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/data/</guid><description><![CDATA[<h3 id="数据的表示">数据的表示</h3>
 <p><strong>数据的表示可分为：原码，反码和补码。（二进制）</strong></p>
 <ul>
-<li>原码： 符号位 0 为正，1 为负。</li>
-<li>反码： 符号位 0 为正，1 为负。
+<li>原码： 符号位0为正，1为负。</li>
+<li>反码： 符号位0为正，1为负。
 <ul>
 <li>正数： 反码同原码。</li>
 <li>负数： 符号位除外其他位按位取反。</li>
@@ -2130,10 +2122,10 @@ Ctrl+c
 <ul>
 <li>原码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li>
 <li>反码： <code>-(z^n-1 - 1) ~ 2^n-1 - 1</code></li>
-<li>补码： <code>-z^n-1 ~ 2^n-1 - 1</code>  （补码正 0 和负 0 相同，少占一数位，就多一个范围）</li>
+<li>补码： <code>-z^n-1 ~ 2^n-1 - 1</code>  (补码正0和负0相同，少占一数位，就多一个范围)</li>
 </ul>
 <p>例：
-8 位二进制，除去符号位还有 7 位，7 个 1 为最大数，相当于 8 个 1 减 1，也就是 2^7-1, 所以范围就算出来了。</p>
+8位二进制，除去符号位还有7位，7个1为最大数，相当于8个1减1，也就是2^7-1,所以范围就算出来了。</p>
 <h3 id="浮点数运算">浮点数运算</h3>
 <p><strong>对阶（小阶对大阶）+ 尾数计算（科学计数法）+ 结果规格化（科学技术法）</strong></p>
 ]]></description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description><![CDATA[<h2 id="在线算法httpsbaikebaiducomiteme59ca8e7babfe7ae97e6b3954449947"><a href="https://baike.baidu.com/item/%E5%9C%A8%E7%BA%BF%E7%AE%97%E6%B3%95/4449947" target="_blank" rel="noopener noreffer">在线算法</a></h2>
@@ -2142,47 +2134,47 @@ Ctrl+c
 因为在线算法并不知道整个的输入，所以它被迫做出的选择最后可能会被证明不是最优的，对在线算法的研究主要集中在当前环境下怎么做出选择。对相同问题的在线算法和离线算法的对比分析形成了以上观点。如果想从其他角度了解在线算法可以看一下流算法（关注精确呈现过去的输入所使用的内存的量），动态算法（关注维护一个在线输入的结果所需要的时间复杂度）和在线机器学习。<br>
 一个很好的展示在线算法概念的例子是 加拿大旅行者问题，这个问题的目标是在一个有权图中以最小的代价到达一个目标节点，但这个有权图中有些边是不可靠的可能已经被剔除。然而一个旅行者只有到某个边的一个端点时才能确定该边是否已经被移除了。最坏情况下，该问题会变得简单了，即所有的不确定的边都被移除该问题将会变成通常的最短路径问题。</p>
 <h2 id="离线算法httpsbaikebaiducomiteme7a6bbe7babfe7ae97e6b395"><a href="https://baike.baidu.com/item/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95" target="_blank" rel="noopener noreffer">离线算法</a></h2>
-<p>离线算法 ( off line algorithms)，是指基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。</p>
+<p>离线算法( off line algorithms)，是指基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。</p>
 <p>设计策略  在执行算法前输入已知的基本假设<br>
 前提  具有问题完全信息<br>
-算法设计策略都是基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果，通常将这类具有问题完全信息前提下设计出的算法称为离线算法 ( off line algorithms)</p>
+算法设计策略都是基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果，通常将这类具有问题完全信息前提下设计出的算法称为离线算法( off line algorithms)</p>
 ]]></description></item><item><title>位运算</title><link>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</link><pubDate>Thu, 14 Jun 2018 20:22:21 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/%E4%BD%8D%E8%BF%90%E7%AE%97/</guid><description><![CDATA[<h2 id="1-运算">1. &amp;运算</h2>
-<p>&amp;运算通常用于二进制取位操作，例如一个数 &amp; 1 的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位为 0 表示该数为偶数，最末位为 1 表示该数为奇数。</p>
+<p>&amp;运算通常用于二进制取位操作，例如一个数 &amp; 1的结果就是取二进制的最末位。这可以用来判断一个整数的奇偶，二进制的最末位为0表示该数为偶数，最末位为1表示该数为奇数.</p>
 <h2 id="2-运算">2. |运算</h2>
-<p>|运算通常用于二进制特定位上的无条件赋值，例如一个数 or 1 的结果就是把二进制最末位强行变成 1。如果需要把二进制最末位变成 0，对这个数| 1 之后再减一就可以了，其实际意义就是把这个数强行变成最接近的偶数。</p>
+<p>|运算通常用于二进制特定位上的无条件赋值，例如一个数or 1的结果就是把二进制最末位强行变成1。如果需要把二进制最末位变成0，对这个数| 1之后再减一就可以了，其实际意义就是把这个数强行变成最接近的偶数。</p>
 <h2 id="3-运算">3. ^运算</h2>
-<p>^运算通常用于对二进制的特定一位进行取反操作，因为异或可以这样定义：异或 0 都不变，异或 1 则取反。 ^运算的逆运算是它本身，也就是说两次异或同一个数最后结果不变，即 a ^ b ^ b = a。^运算可以用于简单的加密，比如你想对你 MM 说 1314520，但怕别人知道，于是双方约定拿你的生日 19880516 作为密钥。1314520^19880516 = 20665500，你就把 20665500 告诉 MM。MM 再次计算 20665500 ^ 19880516 的值，得到 1314520，于是她就明白了你的企图。</p>
+<p>^运算通常用于对二进制的特定一位进行取反操作，因为异或可以这样定义：异或0都不变，异或1则取反。 ^运算的逆运算是它本身，也就是说两次异或同一个数最后结果不变，即a ^ b ^ b = a。^运算可以用于简单的加密，比如你想对你MM说1314520，但怕别人知道，于是双方约定拿你的生日19880516作为密钥。1314520^19880516 = 20665500，你就把20665500告诉MM。MM再次计算20665500 ^ 19880516的值，得到1314520，于是她就明白了你的企图。</p>
 <p>还可以用异或来进行快速地交换数据，</p>
 <p>a=2;b=3;//先转化成二进制</p>
 <p>a=a^b;</p>
 <p>b=a^b;</p>
 <p>a=a^b;</p>
-<p>操作后 a=3;b=2;</p>
+<p>操作后a=3;b=2;</p>
 <h2 id="4--运算">4. ~ 运算</h2>
-<p>~运算的定义是把内存中的 0 和 1 全部取反。使用~运算时要格外小心，你需要注意整数类型有没有符号。如果~的对象是无符号整数（不能表示负数），那么得到的值就是它与该类型上界的差，因为无符号类型的数是用$0000 到$FFFF 依次表示的。</p>
+<p>~运算的定义是把内存中的0和1全部取反。使用~运算时要格外小心，你需要注意整数类型有没有符号。如果~的对象是无符号整数（不能表示负数），那么得到的值就是它与该类型上界的差，因为无符号类型的数是用$0000到$FFFF依次表示的。</p>
 <h2 id="5-运算">5. &laquo;运算</h2>
-<p>a &laquo; b 就表示把 a 转为二进制后左移 b 位（在后面添 b 个 0）。例如 100 的二进制为 1100100，而 110010000 转成十进制是 400，那么 100 &laquo;2 = 400。可以看出，a &laquo; b 的值实际上就是 a 乘以 2 的 b 次方，因为在二进制数后添一个 0 就相当于该数乘以 2。</p>
-<p>通常认为 a &laquo; 1 比 a * 2 更快，因为前者是更底层一些的操作。因此程序中乘以 2 的操作请尽量用左移一位来代替。</p>
-<p>定义一些常量可能会用到&laquo;运算。你可以方便地用 1 &laquo;16 – 1 来表示 65535。很多算法和数据结构要求数据规模必须是 2 的幂，此时可以用&laquo;来定义 Max_N 等常量。</p>
+<p>a &laquo; b就表示把a转为二进制后左移b位（在后面添b个0）。例如100的二进制为1100100，而110010000转成十进制是400，那么100 &laquo;2 = 400。可以看出，a &laquo; b的值实际上就是a乘以2的b次方，因为在二进制数后添一个0就相当于该数乘以2。</p>
+<p>通常认为a &laquo; 1比a * 2更快，因为前者是更底层一些的操作。因此程序中乘以2的操作请尽量用左移一位来代替。</p>
+<p>定义一些常量可能会用到&laquo;运算。你可以方便地用1 &laquo;16 – 1来表示65535。很多算法和数据结构要求数据规模必须是2的幂，此时可以用&laquo;来定义Max_N等常量。</p>
 <h2 id="6-运算">6. &raquo;运算</h2>
-<p>和&laquo;相似，a &raquo; b 表示二进制右移 b 位（去掉末 b 位），相当于 a 除以 2 的 b 次方（取整）。我们也经常用&raquo; 1 来代替 div 2，比如二分查找、堆的插入操作等等。想办法用&raquo;代替除法运算可以使程序效率大大提高。最大公约数的二进制算法用除以 2 操作来代替慢得出奇的 mod 运算，效率可以提高 60%</p>
+<p>和&laquo;相似，a &raquo; b表示二进制右移b位（去掉末b位），相当于a除以2的b次方（取整）。我们也经常用&raquo; 1来代替div 2，比如二分查找、堆的插入操作等等。想办法用&raquo;代替除法运算可以使程序效率大大提高。最大公约数的二进制算法用除以2操作来代替慢得出奇的mod运算，效率可以提高60%</p>
 <p><a href="https://weibo.com/ttarticle/p/show?id=2309404238259097064884&amp;mod=zwenzhang" target="_blank" rel="noopener noreffer">传送门</a></p>
 <blockquote>
-<p>原文：<code>http://www.matrix67.com/blog/archives/263</code></p>
+<p>原文:<code>http://www.matrix67.com/blog/archives/263</code></p>
 </blockquote>
-]]></description></item><item><title>Markdown 基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
-<p>本文来自 kio 对 Markdown 的基础教程
+]]></description></item><item><title>Markdown基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
+<p>本文来自kio对Markdown的基础教程
 其他推荐参考：<a href="https://segmentfault.com/markdown" target="_blank" rel="noopener noreffer">https://segmentfault.com/markdown</a></p>
 </blockquote>
-<p>Markdown 主张使用最简单的符号来控制格式，兼顾易读易写特性，让你可以专注在文本创作上。</p>
-<p>这篇文章旨在让你通过大约三分钟来快速掌握 Markdown 的基本用法。</p>
+<p>Markdown主张使用最简单的符号来控制格式，兼顾易读易写特性，让你可以专注在文本创作上。</p>
+<p>这篇文章旨在让你通过大约三分钟来快速掌握Markdown的基本用法。</p>
 <h2 id="在开始之前需要特别注意的点">在开始之前，需要特别注意的点</h2>
 <ol>
 <li>通常，格式控制符号与文本内容需要<strong>保留一个空格</strong></li>
 <li>段落之间需要<strong>空格一行</strong></li>
 </ol>
 <h2 id="标题">标题</h2>
-<p>在书写中，标题是最常用的格式，Markdown 中，通过在文本前加上 # 即可，同时，根据#的数量可以可以划分为二级标题、三级标题、四级标题。.. 一共六级。</p>
+<p>在书写中，标题是最常用的格式，Markdown中，通过在文本前加上 # 即可，同时，根据#的数量可以可以划分为二级标题、三级标题、四级标题&hellip;一共六级。</p>
 <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
 <h3 id="三级标题">三级标题</h3>
@@ -2227,7 +2219,7 @@ Ctrl+c
 <hr>
 <h2 id="链接及图片">链接及图片</h2>
 <p><a href="https://lruihao.cn/posts/hexowrite/" target="_blank" rel="noopener noreffer">另外一篇博文</a>
-链接和图片可以为文章润色不少，通过 <code>[描述](地址)</code>既可以添加链接，而在其前面添加一个 <code>!</code> 号即为添加图片， 具体为：</p>
+链接和图片可以为文章润色不少，通过 <code>[描述](地址)</code>既可以添加链接，而在其前面添加一个 <code>!</code> 号即为添加图片， 具体为:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2285,7 +2277,7 @@ Ctrl+c
 </table>
 <p>这样即可自动生成表格，第二行为内容对准格式，第一格表示内容居中，第二格表示居左，第三格表示居右。</p>
 <h2 id="插入高亮代码">插入高亮代码</h2>
-<p>如果你需要插入一些代码，Markdown 也可以帮你自动高亮，包括行内高亮和代码块高亮，行内高亮仅需要使用 <code>内容</code> 包围起来即可。</p>
+<p>如果你需要插入一些代码，Markdown也可以帮你自动高亮，包括行内高亮和代码块高亮，行内高亮仅需要使用 <code>内容</code> 包围起来即可。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2295,20 +2287,20 @@ Ctrl+c
 </code></pre></td></tr></table>
 </div>
 </div><hr>
-<p>至此，写作中需要用到的控制符已经介绍完毕了，Kio 提供的所见即所得 Markdown 支持和便捷的输入辅助能帮助你快速掌握这一密术 :]</p>
+<p>至此，写作中需要用到的控制符已经介绍完毕了，Kio提供的所见即所得Markdown支持和便捷的输入辅助能帮助你快速掌握这一密术 :]</p>
 <h2 id="移动端写作工具">移动端写作工具</h2>
-<p><a href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w" target="_blank" rel="noopener noreffer">Kio：密码 99o4</a> 可以导出 PDF，md 文件
-<a href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw" target="_blank" rel="noopener noreffer">markdownx：密码 a5n4</a>
-<a href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg" target="_blank" rel="noopener noreffer">SM.MS 图床：密码 ch0v</a></p>
-<p>若链接失效还可以去酷安上下载。</p>]]></description></item><item><title>各种 Links 汇总与分享</title><link>https://lruihao.cn/posts/links/</link><pubDate>Thu, 07 Jun 2018 00:06:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/links/</guid><description><![CDATA[<blockquote>
+<p><a href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w" target="_blank" rel="noopener noreffer">Kio：密码99o4</a>可以导出PDF，md文件
+<a href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw" target="_blank" rel="noopener noreffer">markdownx：密码a5n4</a>
+<a href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg" target="_blank" rel="noopener noreffer">SM.MS图床：密码ch0v</a></p>
+<p>若链接失效还可以去酷安上下载。</p>]]></description></item><item><title>各种Links汇总与分享</title><link>https://lruihao.cn/posts/links/</link><pubDate>Thu, 07 Jun 2018 00:06:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/links/</guid><description><![CDATA[<blockquote>
 <p>2021/10/1 更新<br>
 使用 Chrome 等浏览器管理书签是更好更方便的方式，登陆 google 账号，或者导出 html 书签文件都挺方便。</p>
 </blockquote>
 <blockquote>
-<p>我们在平时学习生活总会遇到很多很多有用的网站，也许我们收藏在了浏览器书签里，可过久了，不做说明，这些链接的价值就被时间淹没了，我们自己都记不起来了，所以这篇文章因此而生。对自己收藏的链接做些简单的说明（第一次编写用了我一个下午）；也相当于我的链接收藏夹，分享一些有趣的网站，</p>
+<p>我们在平时学习生活总会遇到很多很多有用的网站，也许我们收藏在了浏览器书签里，可过久了，不做说明，这些链接的价值就被时间淹没了，我们自己都记不起来了，所以这篇文章因此而生。对自己收藏的链接做些简单的说明(第一次编写用了我一个下午)；也相当于我的链接收藏夹，分享一些有趣的网站，</p>
 </blockquote>
-<!-- tab ACM 相关 -->
-<h1 id="acm-相关">ACM 相关</h1>
+<!-- tab ACM相关 -->
+<h1 id="acm相关">ACM相关</h1>
 <table>
 <thead>
 <tr>
@@ -2318,16 +2310,16 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="http://www.pythontip.com/acm/problemCategory" target="_blank" rel="noopener noreffer">各大 OJ 题目分类</a></td>
-<td style="text-align:left">各种算法分类，对应 OJ 题号超链接</td>
+<td style="text-align:left"><a href="http://www.pythontip.com/acm/problemCategory" target="_blank" rel="noopener noreffer">各大OJ题目分类</a></td>
+<td style="text-align:left">各种算法分类，对应OJ题号超链接</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://blog.csdn.net/column/details/acm--acm-acm--1.html" target="_blank" rel="noopener noreffer">ACM 题目分类</a></td>
+<td style="text-align:left"><a href="https://blog.csdn.net/column/details/acm--acm-acm--1.html" target="_blank" rel="noopener noreffer">ACM题目分类</a></td>
 <td></td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://codeforces.com" target="_blank" rel="noopener noreffer">codeforces</a></td>
-<td style="text-align:left">俄国 CF 在线编程，一般比赛在晚上 9:30 和 11：00</td>
+<td style="text-align:left">俄国CF在线编程，一般比赛在晚上9:30和11：00</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.nowcoder.com" target="_blank" rel="noopener noreffer">牛客网</a></td>
@@ -2343,15 +2335,15 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://bailian.openjudge.cn" target="_blank" rel="noopener noreffer">百练</a></td>
-<td style="text-align:left">OpenJudge 的一个小组，很多题目来自 POJ；也是我 ACM 启蒙地</td>
+<td style="text-align:left">OpenJudge的一个小组，很多题目来自POJ；也是我ACM启蒙地</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://acm.hdu.edu.cn" target="_blank" rel="noopener noreffer">HDUOJ</a></td>
-<td style="text-align:left">杭州电子科技大学 OJ</td>
+<td style="text-align:left">杭州电子科技大学OJ</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://poj.org" target="_blank" rel="noopener noreffer">POJ</a></td>
-<td style="text-align:left">北京大学 OJ</td>
+<td style="text-align:left">北京大学OJ</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.luogu.org" target="_blank" rel="noopener noreffer">洛谷</a></td>
@@ -2370,14 +2362,14 @@ Ctrl+c
 <td style="text-align:left">国外</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://blog.csdn.net/tigerisland45/article/details/52134189" target="_blank" rel="noopener noreffer">更多 OJ，在线刷题网站。..</a></td>
+<td style="text-align:left"><a href="https://blog.csdn.net/tigerisland45/article/details/52134189" target="_blank" rel="noopener noreffer">更多OJ，在线刷题网站&hellip;</a></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <!-- endtab -->
-<!-- tab 编程，学习 -->
-<h1 id="编程学习">编程，学习</h1>
+<!-- tab 编程,学习 -->
+<h1 id="编程学习">编程,学习</h1>
 <table>
 <thead>
 <tr>
@@ -2395,12 +2387,12 @@ Ctrl+c
 <td style="text-align:left">很详细的知识讲解</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://archive.apache.org/dist/tomcat/" target="_blank" rel="noopener noreffer">Tomcat 下载</a></td>
-<td style="text-align:left">Tomcat 各版本下载，Tomcat 解压即安装；<code>\bin</code>下可以启动和关闭服务器；可手动在<code>\webapps</code>里创建 web 应用，也可以配合<code>Eclisp IDE for Java EE Developers</code>等 Java IDE 工具创建</td>
+<td style="text-align:left"><a href="https://archive.apache.org/dist/tomcat/" target="_blank" rel="noopener noreffer">Tomcat下载</a></td>
+<td style="text-align:left">Tomcat各版本下载，Tomcat解压即安装；<code>\bin</code>下可以启动和关闭服务器；可手动在<code>\webapps</code>里创建web应用，也可以配合<code>Eclisp IDE for Java EE Developers</code>等Java IDE工具创建</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.w3school.com.cn" target="_blank" rel="noopener noreffer">w3school</a></td>
-<td style="text-align:left">可在线测试，Web 技术教程，HTML, 浏览器脚本，服务器脚本，xml 教程等</td>
+<td style="text-align:left">可在线测试,Web技术教程,HTML,浏览器脚本,服务器脚本,xml教程等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.w3cschool.cn" target="_blank" rel="noopener noreffer">w3cschool</a></td>
@@ -2408,15 +2400,15 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.runoob.com" target="_blank" rel="noopener noreffer">菜鸟教程</a></td>
-<td style="text-align:left">和上面两个差不多，还有一些数据库、安卓的东西，git 学习</td>
+<td style="text-align:left">和上面两个差不多，还有一些数据库、安卓的东西，git学习</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.pythontip.com" target="_blank" rel="noopener noreffer">python 学习</a></td>
-<td style="text-align:left">Python 库安装包下载，python,Django,HTML,ACM 学习</td>
+<td style="text-align:left"><a href="http://www.pythontip.com" target="_blank" rel="noopener noreffer">python学习</a></td>
+<td style="text-align:left">Python库安装包下载,python,Django,HTML,ACM学习</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://python123.io" target="_blank" rel="noopener noreffer">python123</a></td>
-<td style="text-align:left">Python123 是专注于为中国高等院校教学 Python 语言的而开发的一款学习工具网站 <a href="https://python123.io/index/notebooks/python_programming_basic_v2/%E6%BA%90%E4%BB%A3%E7%A0%81/2-1%20%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F?from=Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%28%E7%AC%AC2%E7%89%88%29" target="_blank" rel="noopener noreffer">python 学习</a></td>
+<td style="text-align:left">Python123 是专注于为中国高等院校教学 Python 语言的而开发的一款学习工具网站<a href="https://python123.io/index/notebooks/python_programming_basic_v2/%E6%BA%90%E4%BB%A3%E7%A0%81/2-1%20%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F?from=Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%28%E7%AC%AC2%E7%89%88%29" target="_blank" rel="noopener noreffer">python学习</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://pypi.org/" target="_blank" rel="noopener noreffer">pypi</a></td>
@@ -2424,23 +2416,23 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://uqer.io" target="_blank" rel="noopener noreffer">优矿</a></td>
-<td style="text-align:left">python 在线测试，笔记</td>
+<td style="text-align:left">python在线测试，笔记</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener noreffer">阮一峰的网络日志</a></td>
-<td style="text-align:left">开发者手册，JavaScript 等等</td>
+<td style="text-align:left">开发者手册，JavaScript等等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.liaoxuefeng.com" target="_blank" rel="noopener noreffer">廖雪峰</a></td>
-<td style="text-align:left">git,python,javascript 学习</td>
+<td style="text-align:left">git,python,javascript学习</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.sioe.cn" target="_blank" rel="noopener noreffer">新晴网</a></td>
-<td style="text-align:left">PS 学习，摄影教程等</td>
+<td style="text-align:left">PS学习，摄影教程等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.shiyanlou.com" target="_blank" rel="noopener noreffer">实验楼</a></td>
-<td style="text-align:left">在线做实验，高效学编程</td>
+<td style="text-align:left">在线做实验,高效学编程</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.imooc.com" target="_blank" rel="noopener noreffer">慕课网</a></td>
@@ -2448,11 +2440,11 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://wxpy.readthedocs.io" target="_blank" rel="noopener noreffer">wxpy</a></td>
-<td style="text-align:left">一个 python 关于微信的库</td>
+<td style="text-align:left">一个python关于微信的库</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://so1n.me/links/" target="_blank" rel="noopener noreffer">So1n</a></td>
-<td style="text-align:left">python 学习</td>
+<td style="text-align:left">python学习</td>
 </tr>
 </tbody>
 </table>
@@ -2469,19 +2461,19 @@ Ctrl+c
 <tbody>
 <tr>
 <td style="text-align:left"><a href="https://console.cloud.tencent.com" target="_blank" rel="noopener noreffer">腾讯云</a></td>
-<td style="text-align:left">dnspod 解析新版入口，腾讯云控制台</td>
+<td style="text-align:left">dnspod解析新版入口，腾讯云控制台</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.dnspod.cn" target="_blank" rel="noopener noreffer">dnspod 解析</a></td>
+<td style="text-align:left"><a href="https://www.dnspod.cn" target="_blank" rel="noopener noreffer">dnspod解析</a></td>
 <td style="text-align:left">域名解析，其他：阿里云等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.cloudflare.com" target="_blank" rel="noopener noreffer">cloudflare 解析</a></td>
-<td style="text-align:left">域名解析，https 解析，[介绍](<a href="https://oliverqueen.cn/2018/01/25/" target="_blank" rel="noopener noreffer">https://oliverqueen.cn/2018/01/25/</a>可能是最全的使用 HEXO 搭建个人博客教程)</td>
+<td style="text-align:left"><a href="https://www.cloudflare.com" target="_blank" rel="noopener noreffer">cloudflare解析</a></td>
+<td style="text-align:left">域名解析，https解析，<a href="https://oliverqueen.cn/2018/01/25/%e5%8f%af%e8%83%bd%e6%98%af%e6%9c%80%e5%85%a8%e7%9a%84%e4%bd%bf%e7%94%a8HEXO%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%95%99%e7%a8%8b" target="_blank" rel="noopener noreffer">介绍</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://studio.dev.tencent.com/" target="_blank" rel="noopener noreffer">cloud studio</a></td>
-<td style="text-align:left">这是腾讯云和 coding 合作后的一个东西，简单来说就是云端开发环境。试了一下完全可以把 hexo 博客源码挂上面编辑。这也就不用只局限于一台电脑发布博客了。</td>
+<td style="text-align:left">这是腾讯云和coding合作后的一个东西，简单来说就是云端开发环境。试了一下完全可以把hexo博客源码挂上面编辑。这也就不用只局限于一台电脑发布博客了。</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://cloud.tencent.com/developer/labs" target="_blank" rel="noopener noreffer">腾讯云大学开放实验室</a></td>
@@ -2489,7 +2481,7 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔面板</a></td>
-<td style="text-align:left">宝塔面板是一款使用方便、功能强大且终身免费的服务器管理软件，支持 Linux 与 Windows 系统。一键配置：LAMP/LNMP、网站、数据库、FTP、SSL，通过 Web 端轻松管理服务器。</td>
+<td style="text-align:left">宝塔面板是一款使用方便、功能强大且终身免费的服务器管理软件，支持Linux与Windows系统。一键配置：LAMP/LNMP、网站、数据库、FTP、SSL，通过Web端轻松管理服务器。</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://leancloud.cn" target="_blank" rel="noopener noreffer">leancloud</a></td>
@@ -2501,7 +2493,7 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://ziyuan.baidu.com/linksubmit/url" target="_blank" rel="noopener noreffer">百度网站收录</a></td>
-<td style="text-align:left">网站 seo</td>
+<td style="text-align:left">网站seo</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.bing.com/toolbox/webmaster" target="_blank" rel="noopener noreffer">Bing 站长</a></td>
@@ -2509,11 +2501,11 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://tool.chinaz.com" target="_blank" rel="noopener noreffer">站长工具</a></td>
-<td style="text-align:left">网站信息查询，权重，seo，网站速度查询，ping 等</td>
+<td style="text-align:left">网站信息查询，权重，seo，网站速度查询，ping等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://tool.lusongsong.com" target="_blank" rel="noopener noreffer">站长工具大全</a></td>
-<td style="text-align:left">各种 seo 优化，工具等</td>
+<td style="text-align:left">各种seo优化，工具等</td>
 </tr>
 </tbody>
 </table>
@@ -2530,51 +2522,51 @@ Ctrl+c
 <tbody>
 <tr>
 <td style="text-align:left"><a href="http://www.jser.com/" target="_blank" rel="noopener noreffer">全栈开发者</a></td>
-<td style="text-align:left">顾名思义，有很多 web 开发的教程，也可以在线执行代码</td>
+<td style="text-align:left">顾名思义，有很多web开发的教程，也可以在线执行代码</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.jsfuck.com" target="_blank" rel="noopener noreffer">JSFuck</a></td>
-<td style="text-align:left">JSFuck 是一种基于 JavaScript 原子部分的深奥教育编程风格。它只使用六个不同的字符来编写和执行代码。（代码极丑化）</td>
+<td style="text-align:left">JSFuck是一种基于JavaScript原子部分的深奥教育编程风格。它只使用六个不同的字符来编写和执行代码。(代码极丑化)</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.bootcdn.cn/" target="_blank" rel="noopener noreffer">BootCDN</a></td>
-<td style="text-align:left">稳定、快速、免费的前端开源项目 CDN 加速服务，共收录了 3441 个前端开源项目。比如<code>vue</code>,<code>fancybox</code>等</td>
+<td style="text-align:left">稳定、快速、免费的前端开源项目CDN加速服务，共收录了 3441 个前端开源项目。比如<code>vue</code>,<code>fancybox</code>等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.bootcss.com" target="_blank" rel="noopener noreffer">bootstrap 中文网</a></td>
-<td style="text-align:left">简洁、直观、强悍的前端开发框架，让 web 开发更迅速、简单。还有一些基于 bootstrap 开发或扩充的项目的 cdn，<code>BootCDN</code>也是在该网站旗下</td>
+<td style="text-align:left"><a href="https://www.bootcss.com" target="_blank" rel="noopener noreffer">bootstrap中文网</a></td>
+<td style="text-align:left">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。还有一些基于bootstrap开发或扩充的项目的cdn，<code>BootCDN</code>也是在该网站旗下</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://fontawesome.com/icons?d=gallery" target="_blank" rel="noopener noreffer">Font Awesome 图标库</a></td>
-<td style="text-align:left">hexo 指定图标库</td>
+<td style="text-align:left"><a href="https://fontawesome.com/icons?d=gallery" target="_blank" rel="noopener noreffer">Font Awesome图标库</a></td>
+<td style="text-align:left">hexo指定图标库</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.iconfont.cn" target="_blank" rel="noopener noreffer">iconfont</a></td>
 <td style="text-align:left">阿里巴巴矢量图标库</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.easyicon.net" target="_blank" rel="noopener noreffer">easyicon 图标库</a></td>
+<td style="text-align:left"><a href="https://www.easyicon.net" target="_blank" rel="noopener noreffer">easyicon图标库</a></td>
 <td style="text-align:left">图标下载，格式转换，可外链</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://semantic-ui.com/elements/icon.html" target="_blank" rel="noopener noreffer">semantic-ui.com 图标库</a></td>
-<td style="text-align:left">semantic-ui.com 还有很多前端样式对应代码</td>
+<td style="text-align:left"><a href="https://semantic-ui.com/elements/icon.html" target="_blank" rel="noopener noreffer">semantic-ui.com图标库</a></td>
+<td style="text-align:left">semantic-ui.com还有很多前端样式对应代码</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://colorhunt.co/" target="_blank" rel="noopener noreffer">colorhunt</a></td>
 <td style="text-align:left">配色方案推荐，调试</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.grabient.com" target="_blank" rel="noopener noreffer">grabient 渐变色</a></td>
+<td style="text-align:left"><a href="https://www.grabient.com" target="_blank" rel="noopener noreffer">grabient渐变色</a></td>
 <td style="text-align:left">渐变色调色</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://gradient.awesomes.cn" target="_blank" rel="noopener noreffer">gradient 渐变色调色</a></td>
+<td style="text-align:left"><a href="http://gradient.awesomes.cn" target="_blank" rel="noopener noreffer">gradient渐变色调色</a></td>
 <td style="text-align:left">渐变色调色，获取代码</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://encycolorpedia.cn" target="_blank" rel="noopener noreffer">encycolorpedia</a></td>
-<td style="text-align:left">encycolorpedia 取色器</td>
+<td style="text-align:left">encycolorpedia取色器</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://sc.youku.com/" target="_blank" rel="noopener noreffer">优酷视频上传</a></td>
@@ -2586,47 +2578,47 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://imgurl.org/" target="_blank" rel="noopener noreffer">imgURL</a></td>
-<td style="text-align:left">一个开源的图床，很不错，有兴趣的可以自己尝试搭建，比如 <a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">img.lruihao.cn</a></td>
+<td style="text-align:left">一个开源的图床，很不错，有兴趣的可以自己尝试搭建,比如<a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">img.lruihao.cn</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://wl.uixsj.cn/index.php" target="_blank" rel="noopener noreffer">现实君外链</a></td>
-<td style="text-align:left">支持多种文件外链，唯一不好的是 http</td>
+<td style="text-align:left">支持多种文件外链，唯一不好的是http</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.pexels.com" target="_blank" rel="noopener noreffer">PEXELS 美图</a></td>
+<td style="text-align:left"><a href="https://www.pexels.com" target="_blank" rel="noopener noreffer">PEXELS美图</a></td>
 <td style="text-align:left">文章配图，无版权美图网，避免配图侵权</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://unsplash.com" target="_blank" rel="noopener noreffer">unsplash 美图</a></td>
-<td style="text-align:left"><a href="https://source.unsplash.com/" target="_blank" rel="noopener noreffer">API</a> 还可以获取 <a href="https://source.unsplash.com/random/800x600" target="_blank" rel="noopener noreffer">随机图</a></td>
+<td style="text-align:left"><a href="https://unsplash.com" target="_blank" rel="noopener noreffer">unsplash美图</a></td>
+<td style="text-align:left"><a href="https://source.unsplash.com/" target="_blank" rel="noopener noreffer">API</a>还可以获取<a href="https://source.unsplash.com/random/800x600" target="_blank" rel="noopener noreffer">随机图</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://icon.wuruihong.com" target="_blank" rel="noopener noreffer">图标工厂</a></td>
 <td style="text-align:left">移动应用图标生成工具，一键生成所有尺寸的应用图标</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.emojicopy.com" target="_blank" rel="noopener noreffer">emoji 在线复制</a></td>
+<td style="text-align:left"><a href="https://www.emojicopy.com" target="_blank" rel="noopener noreffer">emoji在线复制</a></td>
 <td style="text-align:left">Simple emoji copy and paste</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://blog.csdn.net/u013778905/article/details/53177042" target="_blank" rel="noopener noreffer">HTML 字符实体</a></td>
+<td style="text-align:left"><a href="https://blog.csdn.net/u013778905/article/details/53177042" target="_blank" rel="noopener noreffer">HTML字符实体</a></td>
 <td style="text-align:left">网页特殊符号大全</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.sioe.cn/yingyong" target="_blank" rel="noopener noreffer">特效字转换工具集</a></td>
-<td style="text-align:left">各种特效字转换工具，彩虹字生成器，RGB 转 16 进制颜色等</td>
+<td style="text-align:left">各种特效字转换工具,彩虹字生成器,RGB转16进制颜色等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.yasuotu.com/" target="_blank" rel="noopener noreffer">压缩图</a></td>
-<td style="text-align:left">在线 ps，图片去底，证件照换底等操作很方便的 web 图片处理工具</td>
+<td style="text-align:left">在线ps，图片去底，证件照换底等操作很方便的web图片处理工具</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.gaitubao.com" target="_blank" rel="noopener noreffer">改图宝</a></td>
 <td style="text-align:left">在线改图压缩，加水印，生成二维码，印章制作等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://tool.gifhome.com/" target="_blank" rel="noopener noreffer">GIF 之家</a></td>
-<td style="text-align:left">一个压缩效果很好且免费的 gif 压缩工具</td>
+<td style="text-align:left"><a href="https://tool.gifhome.com/" target="_blank" rel="noopener noreffer">GIF之家</a></td>
+<td style="text-align:left">一个压缩效果很好且免费的gif压缩工具</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://jiema.wwei.cn" target="_blank" rel="noopener noreffer">二维码解码器</a></td>
@@ -2663,11 +2655,11 @@ Ctrl+c
 <tbody>
 <tr>
 <td style="text-align:left"><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></td>
-<td style="text-align:left">通过游戏闯关的方式学习 git！</td>
+<td style="text-align:left">通过游戏闯关的方式学习git！</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener noreffer">PicGo</a></td>
-<td style="text-align:left">一个很好的开源的图床管理桌面程序，图床神器支持微博图床、七牛图床、腾讯云 COS、又拍云、GitHub 图床、阿里云 OSS、Imgur 图床等等</td>
+<td style="text-align:left">一个很好的开源的图床管理桌面程序，图床神器支持微博图床、七牛图床、腾讯云COS、又拍云、GitHub图床、阿里云OSS、Imgur图床等等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://github.com/proxyee-down-org/proxyee-down" target="_blank" rel="noopener noreffer">Proxyee Down</a></td>
@@ -2675,7 +2667,7 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.baiduwp.com/" target="_blank" rel="noopener noreffer">PanDownload</a></td>
-<td style="text-align:left">这是 pandownload 网页版，把需要下载的百度网盘链接<code>baidu</code>改成<code>baiduwp</code>即可加速，也有桌面版。</td>
+<td style="text-align:left">这是pandownload网页版，把需要下载的百度网盘链接<code>baidu</code>改成<code>baiduwp</code>即可加速，也有桌面版。</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://paste.ubuntu.com" target="_blank" rel="noopener noreffer">ubuntu pastebin</a></td>
@@ -2691,11 +2683,11 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://font-spider.org" target="_blank" rel="noopener noreffer">字蛛</a></td>
-<td style="text-align:left">font-spider 中文字库压缩</td>
+<td style="text-align:left">font-spider中文字库压缩</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.mdtr2pdf.com/index.html" target="_blank" rel="noopener noreffer">mdtr2pdf</a></td>
-<td style="text-align:left">markdown 转 pdf</td>
+<td style="text-align:left">markdown转pdf</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://api.imjad.cn" target="_blank" rel="noopener noreffer">AD&rsquo;s API</a></td>
@@ -2703,7 +2695,7 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://123.w3cschool.cn/webtools" target="_blank" rel="noopener noreffer">在线工具</a></td>
-<td style="text-align:left">w3cschool 的在线工具集合</td>
+<td style="text-align:left">w3cschool的在线工具集合</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://tool.oschina.net" target="_blank" rel="noopener noreffer">在线工具</a></td>
@@ -2711,15 +2703,15 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://c.runoob.com" target="_blank" rel="noopener noreffer">菜鸟工具</a></td>
-<td style="text-align:left"><a href="https://www.runoob.com" target="_blank" rel="noopener noreffer">菜鸟教程</a> 在线工具，编译，加密，压缩代码等</td>
+<td style="text-align:left"><a href="https://www.runoob.com" target="_blank" rel="noopener noreffer">菜鸟教程</a>在线工具，编译，加密，压缩代码等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://msdn.itellyou.cn/" target="_blank" rel="noopener noreffer">msdn</a></td>
-<td style="text-align:left">windows 系统上 office 等软件下载（备用）</td>
+<td style="text-align:left">windows系统上office等软件下载(备用)</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://www.laomoit.com/" target="_blank" rel="noopener noreffer">老殁科技</a></td>
-<td style="text-align:left">Adobe 等各种绿色破解软件</td>
+<td style="text-align:left">Adobe等各种绿色破解软件</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" target="_blank" rel="noopener noreffer">百度接口</a></td>
@@ -2731,11 +2723,11 @@ Ctrl+c
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.peiyinge.com/" target="_blank" rel="noopener noreffer">配音阁</a></td>
-<td style="text-align:left">文字转换语音/语音合成广告_叫卖录音_在线配音网络软件_促销宣传片配音-配音阁-配音阁，国内专业的广告配音平台</td>
+<td style="text-align:left">文字转换语音/语音合成广告_叫卖录音_在线配音网络软件_促销宣传片配音-配音阁-配音阁,国内专业的广告配音平台</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="https://hacknical.com" target="_blank" rel="noopener noreffer">hacknical</a></td>
-<td style="text-align:left">在线个性简历，个人 Github 总结分析</td>
+<td style="text-align:left">在线个性简历，个人Github总结分析</td>
 </tr>
 </tbody>
 </table>
@@ -2755,8 +2747,8 @@ Ctrl+c
 <td style="text-align:left">这是一个开源的游戏，小白的我看来简直牛逼爆了，好逼真，刷新都不会打断游戏进度！！</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://nazo.one-story.cn" target="_blank" rel="noopener noreffer">网址迷宫 nazo_game</a></td>
-<td style="text-align:left">一个程序员的网页游戏，我只玩到 12 关。</td>
+<td style="text-align:left"><a href="http://nazo.one-story.cn" target="_blank" rel="noopener noreffer">网址迷宫nazo_game</a></td>
+<td style="text-align:left">一个程序员的网页游戏，我只玩到12关。。。</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="http://www.51ape.com" target="_blank" rel="noopener noreffer">无损音乐下载</a></td>
@@ -2787,20 +2779,20 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="/posts/webbiji/" rel="">Web 笔记</a></td>
-<td style="text-align:left">记录一下自己 web 相关学习的笔记</td>
+<td style="text-align:left"><a href="/posts/webbiji/" rel="">Web笔记</a></td>
+<td style="text-align:left">记录一下自己web相关学习的笔记</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="/posts/git/" rel="">Git 常用指令汇总</a></td>
+<td style="text-align:left"><a href="/posts/git/" rel="">Git常用指令汇总</a></td>
 <td style="text-align:left">可能用到按需自查</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="/posts/nextplugin/" rel="">hexo 插件及 next 内置样式集</a></td>
-<td style="text-align:left">让文章写的好看又简洁又好用的插件！<a href="https://lruihao.cn/categories/hexo/" target="_blank" rel="noopener noreffer">hexo 更多请看分类</a></td>
+<td style="text-align:left">让文章写的好看又简洁又好用的插件！<a href="https://lruihao.cn/categories/hexo/" target="_blank" rel="noopener noreffer">hexo更多请看分类</a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="/posts/hexo-theme-next/" rel="">hexo-theme-next @modified LRH</a></td>
-<td style="text-align:left">对 next 主题的 DIY 设计记录日志</td>
+<td style="text-align:left">对next主题的DIY设计记录日志</td>
 </tr>
 <tr>
 <td style="text-align:left"><a href="/posts/font-mmt/" rel="">一款自己写的字体 - 沐目体</a></td>

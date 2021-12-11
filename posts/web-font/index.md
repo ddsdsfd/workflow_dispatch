@@ -11,7 +11,7 @@ npm install font-spider -g
 安装成功之后就开始压缩了
 ![文件结构](images/menu.png)
 
-我的 css
+我的css
 ```css
 <style type="text/css">
   @font-face {
@@ -22,7 +22,7 @@ npm install font-spider -g
 ```
 生成新的字体库，命令行输入
 ```
-font-spider C:\Users\李瑞豪、Desktop\love\index.html
+font-spider C:\Users\李瑞豪\Desktop\love\index.html
 ```
 ![执行结果](images/jieguo.png)
 

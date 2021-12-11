@@ -316,12 +316,12 @@ public Char toLowerCase(Char ch)</li>
 </ul>
 </li>
 </ul>
-]]></description></item><item><title>sort 排序</title><link>https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F/</link><pubDate>Thu, 14 Jun 2018 20:23:03 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F/</guid><description><![CDATA[<p>sort 使用<code>#include&lt;algorithm&gt;</code>头文件，</p>
-<p>sort（开始地址，结束地址，排序方式），其中第三参数可以没有，则默认为升序排序。</p>
+]]></description></item><item><title>sort排序</title><link>https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F/</link><pubDate>Thu, 14 Jun 2018 20:23:03 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sort%E6%8E%92%E5%BA%8F/</guid><description><![CDATA[<p>sort使用<code>#include&lt;algorithm&gt;</code>头文件，</p>
+<p>sort(开始地址，结束地址，排序方式)，其中第三参数可以没有，则默认为升序排序。</p>
 <p>或者简单的用
 <code>less&lt;参数类型&gt;()</code>表示升序</p>
 <p><code>greater&lt;参数类型&gt;()</code>表示降序</p>
-<p>也可以用一个 bool 型函数，比如：</p>
+<p>也可以用一个bool型函数，比如：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -338,7 +338,7 @@ public Char toLowerCase(Char ch)</li>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>假设自己定义了一个结构体 node</p>
+</div><p>假设自己定义了一个结构体node</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -367,7 +367,7 @@ public Char toLowerCase(Char ch)</li>
 <span class="p">}</span><span class="n">note</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>有一个 node 类型的数组 node arr[100]，想对它进行排序：先按 a 值升序排列，如果 a 值相同，再按 b 值降序排列，如果 b 还相同，就按 c 降序排列。就可以写这样一个比较函数：</p>
+</div><p>有一个node类型的数组node arr[100]，想对它进行排序：先按a值升序排列，如果a值相同，再按b值降序排列，如果b还相同，就按c降序排列。就可以写这样一个比较函数：</p>
 <p>以下是代码片段：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -397,8 +397,8 @@ public Char toLowerCase(Char ch)</li>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>sort() 函数是完全通用的，你可以用它来操作几乎任何数据集合，包括链表，容器和数组，数组类型可以是 int,char 等。</p>
-<p>实例：先降序再升序</p>
+</div><p>sort()函数是完全通用的，你可以用它来操作几乎任何数据集合，包括链表，容器和数组，数组类型可以是int,char等。</p>
+<p>实例:先降序再升序</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

@@ -1,11 +1,11 @@
-# 使用 Python 刷 csdn 访问量
+# 使用Python刷csdn访问量
 
 
-> 使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~
+> 使用python模拟浏览器行为刷csdn访问量，脚本仅做学习，请勿滥用~
 
 <!--more-->
-直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~  
-[打包 exe 参考](/posts/pyinstallererror/)
+直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到Windows桌面上随时使用~  
+[打包exe参考](/posts/pyinstallererror/)
 
 ```python 
 #!/usr/bin/python 
@@ -25,7 +25,7 @@ def get_article_url(page,name):
     print(name)
     p = re.compile(endurl)
     url = "http://blog.csdn.net/"+name+"/article/list/"+str(page)
-    # 使用 build_opener() 是为了让 python 程序模仿浏览器进行访问
+    # 使用build_opener()是为了让python程序模仿浏览器进行访问
     html = opener.open(url).read().decode('utf-8')
     allfinds = p.findall(html)
     return allfinds
@@ -33,7 +33,7 @@ def get_article_url(page,name):
 
 def start_do(allfinds):
     urlBase = "http://blog.csdn.net"  # 需要将网址合并的部分
-    # 页面中的网址有重复的，需要使用 set 进行去重复
+    # 页面中的网址有重复的，需要使用set进行去重复
     mypages = list(set(allfinds))
     for i in range(len(mypages)):
         mypages[i] = urlBase + mypages[i]
@@ -49,7 +49,7 @@ def start_do(allfinds):
         for j in range(brushNum):
             try:
                 pageContent = opener.open(page).read().decode('utf-8')
-                # 使用 BeautifulSoup 解析每篇博客的标题
+                # 使用BeautifulSoup解析每篇博客的标题
                 soup = BeautifulSoup(pageContent)
                 blogTitle = str(soup.title.string)
                 blogTitle = blogTitle[0:blogTitle.find('-')]
@@ -69,12 +69,12 @@ def main(name):
         start_do(endurl)
 
 if __name__ == '__main__':
-  name = input("输入你的 csdn 用户名：")
+  name = input("输入你的csdn用户名：")
   if name=="":
     name = "qq_39520417" #cheung99857
   while 1:
     main(name)
-        print("开始休息。..")
+        print("开始休息...")
         time.sleep(40)
 ```
 
@@ -86,7 +86,7 @@ if __name__ == '__main__':
     while 1:
         for name in names:
             main(name)
-            print("开始休息。..")
+            print("开始休息...")
             # 控制休眠时间相当于控制刷新的速度
             time.sleep(30)
 ```
