@@ -72,7 +72,7 @@ const CustomJS = new (function () {
   this.renderWatermark = () => {
     new Watermark({
       content: '@Lruihao',
-      opacity: 0.05
+      opacity: 0.02
     });
     return this;
   };
