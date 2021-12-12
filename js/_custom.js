@@ -76,6 +76,23 @@ const CustomJS = new (function () {
     });
     return this;
   };
+  /**
+   * Register the service worker.
+   * @returns {CustomJS}
+   */
+  this.registerServiceWorker = () => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('service-worker.js')
+        .then(function (reg) {
+          console.info('service worker registered');
+        })
+        .catch(function (error) {
+          console.error('error: ', error);
+        });
+    }
+    return this;
+  };
 
   /**
    * Initialize.
@@ -87,7 +104,7 @@ const CustomJS = new (function () {
     // Bug fixs.
     this.fixToc();
     // Custom infos.
-    this.consoleInfo().renderWatermark();
+    this.renderWatermark().registerServiceWorker().consoleInfo();
     return this;
   };
 })();
