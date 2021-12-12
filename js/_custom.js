@@ -104,7 +104,9 @@ const CustomJS = new (function () {
     // Bug fixs.
     this.fixToc();
     // Custom infos.
-    this.renderWatermark().registerServiceWorker().consoleInfo();
+    this.renderWatermark()
+      .registerServiceWorker()
+      .consoleInfo();
     return this;
   };
 })();
