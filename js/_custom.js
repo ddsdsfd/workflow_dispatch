@@ -83,7 +83,7 @@ const CustomJS = new (function () {
   this.registerServiceWorker = () => {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('service-worker.js')
+        .register('/service-worker.js')
         .then(function (reg) {
           console.info('service worker registered');
         })
