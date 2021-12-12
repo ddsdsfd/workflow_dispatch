@@ -83,12 +83,17 @@ const CustomJS = new (function () {
   this.registerServiceWorker = () => {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('/service-worker.js')
-        .then(function (reg) {
-          console.info('service worker registered');
+        .register('/service-worker.js', { scope: '/' })
+        .then(function (registration) {
+          // console.log('Service Worker Registered');
         })
         .catch(function (error) {
           console.error('error: ', error);
+        });
+      navigator.serviceWorker
+        .ready
+        .then(function (registration) {
+          //console.log('Service Worker Ready');
         });
     }
     return this;
@@ -104,9 +109,7 @@ const CustomJS = new (function () {
     // Bug fixs.
     this.fixToc();
     // Custom infos.
-    this.renderWatermark()
-      .registerServiceWorker()
-      .consoleInfo();
+    this.renderWatermark().registerServiceWorker().consoleInfo();
     return this;
   };
 })();
