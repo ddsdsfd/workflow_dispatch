@@ -11,6 +11,7 @@
 {{< style "display: inline-block;width: 30%;" span >}}
   ![](images/setting.png)
 {{< /style >}}
+{{< /style >}}
 
 ---
 ## 介绍
