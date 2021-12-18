@@ -1357,23 +1357,42 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
 <li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/4" target="_blank" rel="noopener noreffer">#4</a></li>
-<li><i class="far fa-check-square fa-fw"></i> ] 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
+<li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
 </ul>
 <h3 id="theme-loveit">Theme LoveIt</h3>
 <blockquote>
 <p>hugo LoveIt 主题整体优化，<del>必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多）<br>
 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，<br>
 唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。<br>
-之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</p>
+<del>之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</del> FixIt fork from LoveIt</p>
 </blockquote>
+<a href="https://github.com/Lruihao/FixIt" target="_blank" rel="noopener noreffer"  class="card-link">
+    <span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+        <span class="card-link-text">
+            <span class="card-link-title">FixIt</span>
+            <span class="card-link-meta">
+                <span class="card-link-url">
+                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+                https://github.com/Lruihao/FixIt
+            </span>
+        </span>
+        <span class="card-link-imageCell">
+            
+        </span>
+    </span>
+</a>
 <p>进度更新至 <a href="https://github.com/Lruihao/hugo-blog/issues/8" target="_blank" rel="noopener noreffer">#8</a></p>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
 <li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>
-<li><i class="far fa-square fa-fw"></i> <del>TOC 序号生成</del></li>
+<li><i class="far fa-square fa-fw"></i> TOC 序号生成</li>
 <li><i class="far fa-check-square fa-fw"></i> Fix: 无标题时也会生成目录的 BUG</li>
 <li><i class="far fa-check-square fa-fw"></i> subtitle 等细节优化</li>
-<li><i class="far fa-square fa-fw"></i> <del>Fix: typeit 打印代码时跑版的问题</del></li>
+<li><i class="far fa-square fa-fw"></i> Fix: typeit 打印代码时跑版的问题</li>
 <li><i class="far fa-check-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
 <li><i class="far fa-check-square fa-fw"></i> Code Review</li>
 </ul>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
