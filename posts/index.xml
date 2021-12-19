@@ -686,23 +686,23 @@ php artisan db:seed
 </ul>
 <h1 id="食用方式">食用方式</h1>
 <a href="http://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">下载地址，别忘点赞哈</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                http://github.com/Lruihao/cos-album
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">下载地址，别忘点赞哈</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          http://github.com/Lruihao/cos-album
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <ol>
 <li>首先，下载源码，引入 <code>cos-album.css</code> 和 <code>cos-album.js</code></li>
@@ -862,23 +862,23 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <li>加密功能</li>
 <li>分页显示</li>
 </ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">插件地址</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                https://github.com/robinchenyu/imagepaste
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">插件地址</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          https://github.com/robinchenyu/imagepaste
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <h2 id="功能">功能</h2>
 <p>支持 Windows/Linux 系统下，实现对剪切板图像的处理调用 (Ctrl+Shift+V)<br>
@@ -928,23 +928,23 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">知乎卡片式链接 Git 記錄</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">知乎卡片式链接 Git 記錄</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <div class="details admonition quote open">
         <div class="details-summary admonition-title">
@@ -1411,23 +1411,23 @@ static/images/card-link-bg.jpg
         </div>
     </div>
 <a href="https://lruihao.cn/friends/" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">友情鏈接範本</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                https://lruihao.cn/friends/
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">友情鏈接範本</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          https://lruihao.cn/friends/
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <h2 id="創建模板">創建模板</h2>
 <p>開始之前去看了 hugo 的官網，再看了一下 go 模板的語法。</p>
@@ -2205,23 +2205,23 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </ul>
 <h2 id="todo-list">Todo list</h2>
 <a href="https://github.com/Lruihao/hugo-blog" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">hugo-blog</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                https://github.com/Lruihao/hugo-blog
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">hugo-blog</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          https://github.com/Lruihao/hugo-blog
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <blockquote>
 <p>原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。</p>
@@ -2296,23 +2296,23 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <del>之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</del> FixIt fork from LoveIt</p>
 </blockquote>
 <a href="https://github.com/Lruihao/FixIt" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">FixIt</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                https://github.com/Lruihao/FixIt
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">FixIt</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          https://github.com/Lruihao/FixIt
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <p>进度更新至 <a href="https://github.com/Lruihao/hugo-blog/issues/8" target="_blank" rel="noopener noreffer">#8</a></p>
 <ul>
@@ -3349,23 +3349,23 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 <p>主要就是存取數據這點，沒有服務器，數據庫怎麼實現？<br>
 valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一波，然後“數據表”設計一下，其實是 leancloud-storage Object ，於是有了以下東西，源碼放在 Github</p>
 <a href="http://github.com/Lruihao/bill-note" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">bill-note</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                http://github.com/Lruihao/bill-note
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">bill-note</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          http://github.com/Lruihao/bill-note
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <h2 id="數據設計">數據設計</h2>
 <p>去 leancloud 创建一个应用，再新增一个 Bill Class, 补充一下字段：</p>

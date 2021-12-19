@@ -28,23 +28,23 @@
 </ul>
 <h1 id="食用方式">食用方式</h1>
 <a href="http://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">下载地址，别忘点赞哈</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                http://github.com/Lruihao/cos-album
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">下载地址，别忘点赞哈</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          http://github.com/Lruihao/cos-album
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <ol>
 <li>首先，下载源码，引入 <code>cos-album.css</code> 和 <code>cos-album.js</code></li>
@@ -1127,23 +1127,23 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 <p>主要就是存取數據這點，沒有服務器，數據庫怎麼實現？<br>
 valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一波，然後“數據表”設計一下，其實是 leancloud-storage Object ，於是有了以下東西，源碼放在 Github</p>
 <a href="http://github.com/Lruihao/bill-note" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">bill-note</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                http://github.com/Lruihao/bill-note
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">bill-note</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          http://github.com/Lruihao/bill-note
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>
 <h2 id="數據設計">數據設計</h2>
 <p>去 leancloud 创建一个应用，再新增一个 Bill Class, 补充一下字段：</p>
@@ -2380,23 +2380,23 @@ function getUser($userId, $options){
 </code></pre></td></tr></table>
 </div>
 </div><a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" rel="noopener noreffer"  class="card-link">
-    <span class="card-link-backdrop"></span>
-    <span class="card-link-content">
-        <span class="card-link-text">
-            <span class="card-link-title">Lruihao 博客</span>
-            <span class="card-link-meta">
-                <span class="card-link-url">
-                    <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                        <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-                    </svg>
-                </span>
-                https://github.com/Lruihao/lruihao.github.io
-            </span>
-        </span>
-        <span class="card-link-imageCell">
-            
-        </span>
+  <span class="card-link-backdrop"></span>
+  <span class="card-link-content">
+    <span class="card-link-text">
+      <span class="card-link-title">Lruihao 博客</span>
+      <span class="card-link-meta">
+          <span class="card-link-url">
+              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+              </svg>
+          </span>
+          https://github.com/Lruihao/lruihao.github.io
+      </span>
     </span>
+    <span class="card-link-imageCell">
+      
+    </span>
+  </span>
 </a>]]></description></item><item><title>QQ 强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
 <p>以前在 QQ 里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
 查了一下百度知道了大概就是 qq 没有抓取到你的网站的 xml。并在其他教程中得到了一个强制提交抓取的 url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
