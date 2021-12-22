@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on 菠菜眾長</title><link>https://lruihao.cn/projects/</link><description>Recent content in Projects on 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 24 Nov 2019 10:52:34 +0000</lastBuildDate><atom:link href="https://lruihao.cn/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/projects/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://lruihao.cn/projects/cos-album/</guid><description>&lt;div class="details admonition info open">
+&lt;div class="details-summary admonition-title">
+&lt;i class="icon fas fa-info-circle fa-fw">&lt;/i>Info&lt;i class="details-icon fas fa-angle-right fa-fw">&lt;/i>
+&lt;/div>
+&lt;div class="details-content">
+&lt;div class="admonition-content">cos 桶相册，终于！！终于来了！！，idea 来自 [兰州小红鸡 - 给 hexo 静态博客添加动态相册功能]，&lt;br>
+&lt;strong>&lt;span style="color: #428bca;">功能虽好，但是还是先友情提示！&lt;/span>&lt;/strong>&lt;br>
+开放 API 是一个&lt;strong>很危险&lt;/strong>的操作，意味着你的 cos 桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/projects/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://lruihao.cn/projects/font-mmt/</guid><description>&lt;div id="id-4">&lt;span id="id-1">&lt;img
+class="lazyload"
+src="https://lruihao.cn/svg/loading.min.svg"
+data-src="images/cell.jpg"
+data-srcset="https://lruihao.cn/projects/font-mmt/images/cell.jpg, images/cell.jpg 1.5x, https://lruihao.cn/projects/font-mmt/images/cell.jpg 2x"
+data-sizes="auto"
+alt="/projects/font-mmt/images/cell.jpg"
+title="/projects/font-mmt/images/cell.jpg" />&lt;/span>
+&lt;span id="id-2">&lt;img
+class="lazyload"
+src="https://lruihao.cn/svg/loading.min.svg"
+data-src="images/wechat.png"
+data-srcset="https://lruihao.cn/projects/font-mmt/images/wechat.png, images/wechat.png 1.5x, https://lruihao.cn/projects/font-mmt/images/wechat.png 2x"
+data-sizes="auto"
+alt="/projects/font-mmt/images/wechat.png"
+title="/projects/font-mmt/images/wechat.png" />&lt;/span>
+&lt;span id="id-3">&lt;img
+class="lazyload"
+src="https://lruihao.cn/svg/loading.min.svg"
+data-src="images/setting.png"
+data-srcset="https://lruihao.cn/projects/font-mmt/images/setting.png, images/setting.png 1.5x, https://lruihao.cn/projects/font-mmt/images/setting.png 2x"
+data-sizes="auto"
+alt="/projects/font-mmt/images/setting.png"
+title="/projects/font-mmt/images/setting.png" />&lt;/span>&lt;/div>
+&lt;hr>
+&lt;h2 id="介绍">介绍&lt;/h2>
+&lt;div class="details admonition success open">
+&lt;div class="details-summary admonition-title">
+&lt;i class="icon fas fa-check-circle fa-fw">&lt;/i>沐目体&lt;i class="details-icon fas fa-angle-right fa-fw">&lt;/i>
+&lt;/div>
+&lt;div class="details-content">
+&lt;div class="admonition-content">&lt;ul>
+&lt;li>
+&lt;p>字体简介&lt;br>
+#沐目体# 沐目之，湘也。（以&lt;del>女盆友名字命名的字体&lt;/del>）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>笔头设置&lt;br>
+狼毫笔型，粗细为 9，速度模式&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>屏写方式&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/Lruihao/MMT/raw/master/mmt@last.ttf" target="_blank" rel="noopener noreffer">最新版下载&lt;/a> · &lt;a href="https://github.com/Lruihao/MMT/releases" target="_blank" rel="noopener noreffer">沐目体下载&lt;/a>&lt;br>
+使用手机造字 app 手写制作，写了大概 1 年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>&lt;strong>注：仅用于个人非商用！&lt;/strong>&lt;/em>&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

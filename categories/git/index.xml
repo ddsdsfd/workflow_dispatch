@@ -1,4 +1,222 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Git - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/git/</link><description>Git - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/git/" rel="self" type="application/rss+xml"/><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Git - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/git/</link><description>Git - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/git/" rel="self" type="application/rss+xml"/><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。<br>
+也就是説實現了在線寫靜態博客的需求。</div>
+        </div>
+    </div>
+<h2 id="準備">準備</h2>
+<p>工作流程設計到兩個倉庫和一個 cos 桶，例如：</p>
+<blockquote>
+<ul>
+<li>Lruihao/hugo-blog          # Blog source repository</li>
+<li>Lruihao/lruihao.github.io  # Github pages repository</li>
+<li>blog-1256932288            # COS bucket</li>
+</ul>
+</blockquote>
+<h2 id="github-actions">Github Actions</h2>
+<h3 id="創建-workflows-任務">創建 workflows 任務</h3>
+<p>創建 <code>hugo-site/.github/workflows/deploy.yml</code>, 這個文件會寫一些命令告訴 Github 在我們提交源碼的時候，它要幫我們做哪些事情。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Auto Deploy hugo</span><span class="w">
+</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">push]</span><span class="w">
+</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">Explore-GitHub-Actions</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out repository code</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive </span><span class="w"> </span><span class="c"># Fetch Hugo themes (true OR recursive)</span><span class="w">
+</span><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">         </span><span class="c"># Fetch all history for .GitInfo and .Lastmod</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="l">latest</span><span class="w">
+</span><span class="w">          </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Hugo static files</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Github Pages</span><span class="w">
+</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
+</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">deploy_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GP_DEPLOY_KEY }}</span><span class="w">
+</span><span class="w">          </span><span class="nt">external_repository</span><span class="p">:</span><span class="w"> </span><span class="l">Lruihao/lruihao.github.io</span><span class="w">
+</span><span class="w">          </span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
+</span><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span><span class="w">          </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event.head_commit.message }}</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install coscmd</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo pip install coscmd</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure coscmd</span><span class="w">
+</span><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span><span class="w">          </span><span class="nt">COS_SECRET_ID</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_ID }}</span><span class="w">
+</span><span class="w">          </span><span class="nt">COS_SECRET_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_KEY }}</span><span class="w">
+</span><span class="w">          </span><span class="nt">COS_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">blog-1256932288 </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
+</span><span class="w">          </span><span class="nt">COS_BUCKET_REGION</span><span class="p">:</span><span class="w"> </span><span class="l">ap-chengdu    </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class="w">
+</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to COS Bucket</span><span class="w">
+</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd upload -r -s --delete -f public/ /</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><h3 id="配置-github-pages-密鑰">配置 Github Pages 密鑰</h3>
+<ol>
+<li>為了讓 Lruihao/hugo-blog 提交代碼后自動部署到 Lruihao/lruihao.github.io, 需要生成一對 ssh key.
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;</span><span class="k">$(</span>git config user.email<span class="k">)</span><span class="s2">&#34;</span> -f gh-pages -N <span class="s2">&#34;&#34;</span>
+<span class="c1"># You will get 2 files:</span>
+<span class="c1"># gh-pages.pub (public key)</span>
+<span class="c1"># gh-pages     (private key)</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 private key, name 为 <code>GP_DEPLOY_KEY</code></li>
+<li>打開 Lruihao/lruihao.github.io, 点击 Deploy keys, 添加 public key, name 隨意，<code>Allow write access</code> 一定要勾上，否則無法提交</li>
+</ol>
+<h3 id="配置-cos-密鑰">配置 COS 密鑰</h3>
+<p>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 COS 桶的 <code>secret_id</code> 和 <code>secret_key</code>:</p>
+<ul>
+<li>COS_SECRET_ID</li>
+<li>COS_SECRET_KEY</li>
+</ul>
+<blockquote>
+<p>至此，Github Pages 和 COS 都已經可以通過 Github Actions 自動部署了，有部署記錄后，<br>
+打開 Lruihao/hugo-blog -&gt; Actions 可以看到構建過程和結果，構建失敗也會收到 Github 發給你的郵件。</p>
+</blockquote>
+<h2 id="cos-自動同步-備用">COS 自動同步 （備用）</h2>
+<p>本小節內容和 Github Actions 無關，僅作為 COS 備用上傳方式。</p>
+<ul>
+<li>COSBrowser</li>
+</ul>
+<ol>
+<li>下載 COS 官方軟件 COSBrowser</li>
+<li>點開右上角 工具箱</li>
+<li>選擇 文件同步</li>
+<li>選擇 本地文件夹 eg. <code>hugo-site/public</code></li>
+<li>選擇 存储桶目录</li>
+<li>同步类型：單次同步、自動同步、定時同步</li>
+</ol>
+<blockquote>
+<p>同步前先執行 hugo 構建命令，eg. <code>hugo --minify</code><br>
+有 Github actions 選單次同步就好，在 Github 不好用時可用。</p>
+</blockquote>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
+            </div><h3 id="备份-hexo-博客">备份 hexo 博客</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
+cd hexo
+git init  //初始化本地仓库
+git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
+git commit -m &#34;blog hexo&#34;
+git branch hexo  //新建 hexo 分支
+git checkout hexo  //切换到 hexo 分支上
+git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
+git push origin hexo  //push 到 Github 项目的 hexo 分支上
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="在其他终端克隆和更新-hexo-博客">在其他终端克隆和更新 hexo 博客</h3>
+<blockquote>
+<p>nodejs,git,hexo 已经安装好，即搭建完成</p>
+</blockquote>
+<h4 id="克隆-hexo-博客备份">克隆 hexo 博客备份</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
+cd user.github.io
+npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
+</code></pre></td></tr></table>
+</div>
+</div><p>这样我们的备份文件就会原封不动的拷贝到本地。</p>
+<h4 id="写新文章并备份和部署备用操作">写新文章并备份和部署（备用操作）</h4>
+<blockquote>
+<p>其实源码拷下来了，这步不做我们也知道怎么做了，完全没必要按照教程死搬硬套。灵活一点就行了。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//进入 username.github.io 文件夹，应是 hexo 分支
+git pull origin hexo //本地和远端的融合
+hexo new post &#34;new post name&#34;  //写新文章
+git add source
+git commit -m &#34;xxx&#34;
+git push origin hexo  //备份
+hexo d -g  //部署
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
+]]></description></item><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
             </div><ul>
 <li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
@@ -474,225 +692,7 @@ gitk --all
 <li><a href="https://blog.csdn.net/qq1332479771/article/details/56087333" target="_blank" rel="noopener noreffer">github 上 fork 了别人的项目后，再同步更新别人的提交</a></li>
 <li><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener noreffer">常用 Git 命令清单</a></li>
 <li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></li>
-</ul>]]></description></item><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。<br>
-也就是説實現了在線寫靜態博客的需求。</div>
-        </div>
-    </div>
-<h2 id="準備">準備</h2>
-<p>工作流程設計到兩個倉庫和一個 cos 桶，例如：</p>
-<blockquote>
-<ul>
-<li>Lruihao/hugo-blog          # Blog source repository</li>
-<li>Lruihao/lruihao.github.io  # Github pages repository</li>
-<li>blog-1256932288            # COS bucket</li>
-</ul>
-</blockquote>
-<h2 id="github-actions">Github Actions</h2>
-<h3 id="創建-workflows-任務">創建 workflows 任務</h3>
-<p>創建 <code>hugo-site/.github/workflows/deploy.yml</code>, 這個文件會寫一些命令告訴 Github 在我們提交源碼的時候，它要幫我們做哪些事情。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Auto Deploy hugo</span><span class="w">
-</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">push]</span><span class="w">
-</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">Explore-GitHub-Actions</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
-</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out repository code</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive </span><span class="w"> </span><span class="c"># Fetch Hugo themes (true OR recursive)</span><span class="w">
-</span><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">         </span><span class="c"># Fetch all history for .GitInfo and .Lastmod</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="l">latest</span><span class="w">
-</span><span class="w">          </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Hugo static files</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Github Pages</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">deploy_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GP_DEPLOY_KEY }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">external_repository</span><span class="p">:</span><span class="w"> </span><span class="l">Lruihao/lruihao.github.io</span><span class="w">
-</span><span class="w">          </span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
-</span><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
-</span><span class="w">          </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event.head_commit.message }}</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install coscmd</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo pip install coscmd</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure coscmd</span><span class="w">
-</span><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_SECRET_ID</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_ID }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_SECRET_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_KEY }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">blog-1256932288 </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_BUCKET_REGION</span><span class="p">:</span><span class="w"> </span><span class="l">ap-chengdu    </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to COS Bucket</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd upload -r -s --delete -f public/ /</span><span class="w">
-</span></code></pre></td></tr></table>
-</div>
-</div><h3 id="配置-github-pages-密鑰">配置 Github Pages 密鑰</h3>
-<ol>
-<li>為了讓 Lruihao/hugo-blog 提交代碼后自動部署到 Lruihao/lruihao.github.io, 需要生成一對 ssh key.
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;</span><span class="k">$(</span>git config user.email<span class="k">)</span><span class="s2">&#34;</span> -f gh-pages -N <span class="s2">&#34;&#34;</span>
-<span class="c1"># You will get 2 files:</span>
-<span class="c1"># gh-pages.pub (public key)</span>
-<span class="c1"># gh-pages     (private key)</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 private key, name 为 <code>GP_DEPLOY_KEY</code></li>
-<li>打開 Lruihao/lruihao.github.io, 点击 Deploy keys, 添加 public key, name 隨意，<code>Allow write access</code> 一定要勾上，否則無法提交</li>
-</ol>
-<h3 id="配置-cos-密鑰">配置 COS 密鑰</h3>
-<p>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 COS 桶的 <code>secret_id</code> 和 <code>secret_key</code>:</p>
-<ul>
-<li>COS_SECRET_ID</li>
-<li>COS_SECRET_KEY</li>
-</ul>
-<blockquote>
-<p>至此，Github Pages 和 COS 都已經可以通過 Github Actions 自動部署了，有部署記錄后，<br>
-打開 Lruihao/hugo-blog -&gt; Actions 可以看到構建過程和結果，構建失敗也會收到 Github 發給你的郵件。</p>
-</blockquote>
-<h2 id="cos-自動同步-備用">COS 自動同步 （備用）</h2>
-<p>本小節內容和 Github Actions 無關，僅作為 COS 備用上傳方式。</p>
-<ul>
-<li>COSBrowser</li>
-</ul>
-<ol>
-<li>下載 COS 官方軟件 COSBrowser</li>
-<li>點開右上角 工具箱</li>
-<li>選擇 文件同步</li>
-<li>選擇 本地文件夹 eg. <code>hugo-site/public</code></li>
-<li>選擇 存储桶目录</li>
-<li>同步类型：單次同步、自動同步、定時同步</li>
-</ol>
-<blockquote>
-<p>同步前先執行 hugo 構建命令，eg. <code>hugo --minify</code><br>
-有 Github actions 選單次同步就好，在 Github 不好用時可用。</p>
-</blockquote>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
-            </div><h3 id="备份-hexo-博客">备份 hexo 博客</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
-cd hexo
-git init  //初始化本地仓库
-git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
-git commit -m &#34;blog hexo&#34;
-git branch hexo  //新建 hexo 分支
-git checkout hexo  //切换到 hexo 分支上
-git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
-git push origin hexo  //push 到 Github 项目的 hexo 分支上
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="在其他终端克隆和更新-hexo-博客">在其他终端克隆和更新 hexo 博客</h3>
-<blockquote>
-<p>nodejs,git,hexo 已经安装好，即搭建完成</p>
-</blockquote>
-<h4 id="克隆-hexo-博客备份">克隆 hexo 博客备份</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
-cd user.github.io
-npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
-</code></pre></td></tr></table>
-</div>
-</div><p>这样我们的备份文件就会原封不动的拷贝到本地。</p>
-<h4 id="写新文章并备份和部署备用操作">写新文章并备份和部署（备用操作）</h4>
-<blockquote>
-<p>其实源码拷下来了，这步不做我们也知道怎么做了，完全没必要按照教程死搬硬套。灵活一点就行了。</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//进入 username.github.io 文件夹，应是 hexo 分支
-git pull origin hexo //本地和远端的融合
-hexo new post &#34;new post name&#34;  //写新文章
-git add source
-git commit -m &#34;xxx&#34;
-git push origin hexo  //备份
-hexo d -g  //部署
-</code></pre></td></tr></table>
-</div>
-</div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
-]]></description></item><item><title>使用 Git 上传代码到 github, coding 等仓库</title><link>https://lruihao.cn/posts/gituse/</link><pubDate>Fri, 26 Oct 2018 21:11:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gituse/</guid><description><![CDATA[<h3 id="config">config</h3>
+</ul>]]></description></item><item><title>使用 Git 上传代码到 github, coding 等仓库</title><link>https://lruihao.cn/posts/gituse/</link><pubDate>Fri, 26 Oct 2018 21:11:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gituse/</guid><description><![CDATA[<h3 id="config">config</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
