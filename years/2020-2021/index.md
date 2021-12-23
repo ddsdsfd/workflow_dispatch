@@ -12,8 +12,8 @@
 
 ## 離
 
->{{< typeit group=lookback >}}
-  只希望 20 年和 zxm 更好，顺利毕业，活的更好。..
+> {{< typeit group=lookback >}}
+  只希望 20 年和 zxm 更好，顺利毕业，活的更好 ...
 {{< /typeit >}}
 {{< style "display: block;text-align: right;" small >}}
   {{< typeit group=lookback >}}
@@ -67,6 +67,6 @@
 生活，需要沉澱。  
 
 # 2021
-> 寫到這吧，要熱飯了，年底再來。..  
+> 寫到這吧，要熱飯了，年底再來 ...  
 
 又开始找回自己，和自己做朋友，让自己开心真是一件平凡的伟事。  
