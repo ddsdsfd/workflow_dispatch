@@ -212,7 +212,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
                 <img src="/posts/hexo-theme-next/images/next.png" referrerpolicy="no-referrer">
             </div><div class="details admonition danger open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-skull-crossbones fa-fw"></i>Danger<i class="details-icon fas fa-angle-right fa-fw"></i>
+            <i class="icon fas fa-skull-crossbones fa-fw"></i>危險<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
             <div class="admonition-content"><span style="color: #d9534f;font-size: 1.2em;"><strong>如无必要，不再更新！（2019.09.13）</strong></span><br>
@@ -2831,7 +2831,7 @@ hexo d -g  //部署
 </div>
 </div><p>重新部署博客就可以了。</p>]]></description></item><item><title>hexo next 主题添加字数统计（2018）</title><link>https://lruihao.cn/posts/hexo-wordcount/</link><pubDate>Thu, 30 Aug 2018 13:15:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-wordcount/</guid><description><![CDATA[<div class="details admonition warning open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>警告<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
             <div class="admonition-content"><p><strong>2018/11/1 说明
