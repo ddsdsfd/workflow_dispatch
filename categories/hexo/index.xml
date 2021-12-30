@@ -2698,12 +2698,12 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-XML" data-lang="XML"><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#34;jinrishici-sentence&#34;</span><span class="nt">&gt;</span>正在加载今日诗词。...<span class="nt">&lt;/span&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-XML" data-lang="XML"><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#34;jinrishici-sentence&#34;</span><span class="nt">&gt;</span>正在加载今日诗词 ....<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34;</span> <span class="na">charset=</span><span class="s">&#34;utf-8&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><hr>
-<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词。...</div>
+<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词 ....</div>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <hr>
 <h2 id="api-调用">api 调用</h2>
@@ -3056,7 +3056,7 @@ local_search:
 <h1 id="2-添加图片">2. 添加图片</h1>
 <p>首先大家可以查看 hexo 官方文档 <a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener noreffer">资源文件夹章节</a></p>
 <h2 id="21-markdown-添加">2.1 markdown 添加</h2>
-<p>相对路径添加（我被这个相对路径搞得要死，前面各种出错，大家可以对照我的来插入图片。..）</p>
+<p>相对路径添加（我被这个相对路径搞得要死，前面各种出错，大家可以对照我的来插入图片 &hellip;）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

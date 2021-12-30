@@ -329,7 +329,7 @@ static/images/card-link-bg.jpg
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索&#34;</span>
 
 <span class="p">[</span><span class="nx">searchPlaceholder</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容。..&#34;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容 ...&#34;</span>
 
 <span class="p">[</span><span class="nx">clear</span><span class="p">]</span>
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;清空&#34;</span>

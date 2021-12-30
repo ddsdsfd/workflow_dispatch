@@ -512,7 +512,7 @@ static/images/card-link-bg.jpg
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索&#34;</span>
 
 <span class="p">[</span><span class="nx">searchPlaceholder</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容。..&#34;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容 ...&#34;</span>
 
 <span class="p">[</span><span class="nx">clear</span><span class="p">]</span>
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;清空&#34;</span>
@@ -1580,7 +1580,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <li><i class="far fa-check-square fa-fw"></i> Code Review</li>
 </ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
 <p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行 CSS 的編碼工作。<br>
-轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
+轉化成通俗易懂的話來說就是 <strong>“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。</strong></p>
 </blockquote>
 <h1 id="為什麼什麼時候要使用-css-前置處理器-why-when">為什麼，什麼時候要使用 CSS 前置處理器？ (Why, When)</h1>
 <p><strong>CSS 有具體以下幾個缺點：</strong></p>
@@ -3766,7 +3766,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;qq_39520417&#34;</span> <span class="c1">#cheung99857</span>
   <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
     <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -3790,7 +3790,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
     <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
             <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
             <span class="c1"># 控制休眠时间相当于控制刷新的速度</span>
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -3809,9 +3809,9 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起。..<br>
-算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法。..<br>
-哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡。..<br>
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起 &hellip;<br>
+算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法 &hellip;<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡 &hellip;<br>
 我和潇 X 巴哥确定思路后兵分两路：</p>
 <ol>
 <li>他用 java 写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>

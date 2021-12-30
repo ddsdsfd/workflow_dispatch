@@ -512,7 +512,7 @@ static/images/card-link-bg.jpg
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索&#34;</span>
 
 <span class="p">[</span><span class="nx">searchPlaceholder</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容。..&#34;</span>
+<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容 ...&#34;</span>
 
 <span class="p">[</span><span class="nx">clear</span><span class="p">]</span>
 <span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;清空&#34;</span>
@@ -1580,7 +1580,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <li><i class="far fa-check-square fa-fw"></i> Code Review</li>
 </ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
 <p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行 CSS 的編碼工作。<br>
-轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
+轉化成通俗易懂的話來說就是 <strong>“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。</strong></p>
 </blockquote>
 <h1 id="為什麼什麼時候要使用-css-前置處理器-why-when">為什麼，什麼時候要使用 CSS 前置處理器？ (Why, When)</h1>
 <p><strong>CSS 有具體以下幾個缺點：</strong></p>
@@ -3716,7 +3716,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;qq_39520417&#34;</span> <span class="c1">#cheung99857</span>
   <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
     <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -3740,7 +3740,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
     <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
             <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
             <span class="c1"># 控制休眠时间相当于控制刷新的速度</span>
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -3759,9 +3759,9 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起。..<br>
-算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法。..<br>
-哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡。..<br>
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起 &hellip;<br>
+算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法 &hellip;<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡 &hellip;<br>
 我和潇 X 巴哥确定思路后兵分两路：</p>
 <ol>
 <li>他用 java 写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>
@@ -4339,7 +4339,7 @@ Data
 <p>在實際應用中，應據具體情景及需要進行選擇與調整。</p>
 <table><tbody><tr><th>方案</th><th colspan="2">優劣比較</th></tr><tr><td rowspan="2">方案一</td><td>優點</td><td>對服務端來說較為簡單方便</td></tr><tr><td>缺點</td><td>客戶端難以根據狀態碼處理複雜問題</td></tr><tr><td rowspan="2">方案二</td><td>優點</td><td>方便對返回資料進行統一處理和細細微性的控制</td></tr><tr><td>缺點</td><td>相當於放棄了 HTTP 狀態碼的語義</td></tr></tbody></table>
 <h3 id="常用-http-狀態碼">常用 HTTP 狀態碼</h3>
-<table><tbody><tr><th>Code</th><th>Message</th><th>用途</th></tr><tr><th>1XX</th><th>Informational response</th><th>此類狀態碼通常代表的響應都是信息性的，告訴客戶端可以進行下一步操作。</th></tr><tr><td>100</td><td>Continue</td><td>表示服務端已接收到請求頭，客戶端可以繼續發送請求體（如 POST 請求）。</td></tr><tr><td>101</td><td>Switching Protocols</td><td>表示服務端支持更優協議，讓客戶端在服務端更換協議後重新訪問。</td></tr><tr><th>2XX</th><th>Successful</th><th>此類狀態碼通常代表請求已成功被服務端接收、理解并接受。</th></tr><tr><td>200</td><td>OK</td><td>表示請求成功。</td></tr><tr><td>201</td><td>Created</td><td>表示請求已被實現，通常是在成功創建了某個資源。</td></tr><tr><td>202</td><td>Accepted</td><td>表示請求已被服務端接收，但尚未進行處理。</td></tr><tr><td>204</td><td>No Content</td><td>表示請求成功，但不會返回任何內容。</td></tr><tr><td>205</td><td>Reset Content</td><td>表示請求成功，但不會返回任何內容，並且要求客戶端重置表單。</td></tr><tr><th>3XX</th><th>Redirect</th><th>此類狀態碼通常代表本次請求需要客戶端採取進一步操作才能完成。通常用於重定向。</th></tr><tr><td>300</td><td>Multiple Choices</td><td>表示請求的資源有多個供可選擇，客戶端可自行選擇一個進行請求的重定向。</td></tr><tr><td>301</td><td>Moved Permanently</td><td>表示請求的資源已經永久地移動到了新位置，並且將在 Location 域中攜帶該資源新的 URI。</td></tr><tr><td>304</td><td>Not Modified</td><td>表示請求的資源無發生修改，將不會返回任何資源。</td></tr><tr><th>4XX</th><th>Client Error</th><th>此類狀態碼通常代表客戶端可能出現了錯誤。</th></tr><tr><td>400</td><td>Bad Request</td><td>表示客戶端發出的請求有誤（格式、大小、無效的。..)，服務端不能/不會處理該請求。</td></tr><tr><td>401</td><td>Unauthorized</td><td>表示客戶端未能提供必要的驗證，服務端拒絕提供資源。</td></tr><tr><td>403</td><td>Forbidden</td><td>表示服務端理解了該請求，但客戶端沒有足夠權限以訪問，遂拒絕提供該資源。</td></tr><tr><td>404</td><td>Not Found</td><td>表示服務端無法找到請求的資源，其可能已經暫時（永久）失效。</td></tr><tr><td>408</td><td>Request Timeout</td><td>表示請求超時。</td></tr><tr><td>409</td><td>Conflict</td><td>表示請求的資源發送了衝突，通常是 PUT 請求。</td></tr><tr><td>410</td><td>Gone</td><td>表示請求的資源已經永久失效，客戶端不應再次請求。</td></tr><tr><td>411</td><td>Length Required</td><td>表示服務端拒絕在沒有定義 Content-Length 頭的情況下接收該請求。</td></tr><tr><th>5XX</th><th>Server Error</th><th>此類狀態碼通常代表由於服務端的原因，導致無法完成請求。</th></tr><tr><td>500</td><td>Internal Server Error</td><td>表示由於服務端遇到意料之外的變故，導致無法完成請求。</td></tr><tr><td>501</td><td>Not Implemented</td><td>表示服務端不支持完成請求所需的功能，導致無法完成請求。</td></tr><tr><td>502</td><td>Bad Gateway</td><td>表示作為網関或代理的服務段在執行請求時，從上游服務器獲得了無效的響應。</td></tr><tr><td>503</td><td>Service Unavailable</td><td>表示由於某些原因（服務器超載或系統維護等），導致暫時無法完成請求。</td></tr><tr><td>504</td><td>Gatewy Timeout</td><td>表示作為網関或代理的服務段在執行請求時，未能及時從上游服務器獲得響應。</td></tr><tr><td>505</td><td>HTTP Version Not Supported</td><td>表示服務端不支持請求的 HTTP 協議版本，導致無法完成請求。</td></tr></tbody></table>
+<table><tbody><tr><th>Code</th><th>Message</th><th>用途</th></tr><tr><th>1XX</th><th>Informational response</th><th>此類狀態碼通常代表的響應都是信息性的，告訴客戶端可以進行下一步操作。</th></tr><tr><td>100</td><td>Continue</td><td>表示服務端已接收到請求頭，客戶端可以繼續發送請求體（如 POST 請求）。</td></tr><tr><td>101</td><td>Switching Protocols</td><td>表示服務端支持更優協議，讓客戶端在服務端更換協議後重新訪問。</td></tr><tr><th>2XX</th><th>Successful</th><th>此類狀態碼通常代表請求已成功被服務端接收、理解并接受。</th></tr><tr><td>200</td><td>OK</td><td>表示請求成功。</td></tr><tr><td>201</td><td>Created</td><td>表示請求已被實現，通常是在成功創建了某個資源。</td></tr><tr><td>202</td><td>Accepted</td><td>表示請求已被服務端接收，但尚未進行處理。</td></tr><tr><td>204</td><td>No Content</td><td>表示請求成功，但不會返回任何內容。</td></tr><tr><td>205</td><td>Reset Content</td><td>表示請求成功，但不會返回任何內容，並且要求客戶端重置表單。</td></tr><tr><th>3XX</th><th>Redirect</th><th>此類狀態碼通常代表本次請求需要客戶端採取進一步操作才能完成。通常用於重定向。</th></tr><tr><td>300</td><td>Multiple Choices</td><td>表示請求的資源有多個供可選擇，客戶端可自行選擇一個進行請求的重定向。</td></tr><tr><td>301</td><td>Moved Permanently</td><td>表示請求的資源已經永久地移動到了新位置，並且將在 Location 域中攜帶該資源新的 URI。</td></tr><tr><td>304</td><td>Not Modified</td><td>表示請求的資源無發生修改，將不會返回任何資源。</td></tr><tr><th>4XX</th><th>Client Error</th><th>此類狀態碼通常代表客戶端可能出現了錯誤。</th></tr><tr><td>400</td><td>Bad Request</td><td>表示客戶端發出的請求有誤（格式、大小、無效的 ...)，服務端不能/不會處理該請求。</td></tr><tr><td>401</td><td>Unauthorized</td><td>表示客戶端未能提供必要的驗證，服務端拒絕提供資源。</td></tr><tr><td>403</td><td>Forbidden</td><td>表示服務端理解了該請求，但客戶端沒有足夠權限以訪問，遂拒絕提供該資源。</td></tr><tr><td>404</td><td>Not Found</td><td>表示服務端無法找到請求的資源，其可能已經暫時（永久）失效。</td></tr><tr><td>408</td><td>Request Timeout</td><td>表示請求超時。</td></tr><tr><td>409</td><td>Conflict</td><td>表示請求的資源發送了衝突，通常是 PUT 請求。</td></tr><tr><td>410</td><td>Gone</td><td>表示請求的資源已經永久失效，客戶端不應再次請求。</td></tr><tr><td>411</td><td>Length Required</td><td>表示服務端拒絕在沒有定義 Content-Length 頭的情況下接收該請求。</td></tr><tr><th>5XX</th><th>Server Error</th><th>此類狀態碼通常代表由於服務端的原因，導致無法完成請求。</th></tr><tr><td>500</td><td>Internal Server Error</td><td>表示由於服務端遇到意料之外的變故，導致無法完成請求。</td></tr><tr><td>501</td><td>Not Implemented</td><td>表示服務端不支持完成請求所需的功能，導致無法完成請求。</td></tr><tr><td>502</td><td>Bad Gateway</td><td>表示作為網関或代理的服務段在執行請求時，從上游服務器獲得了無效的響應。</td></tr><tr><td>503</td><td>Service Unavailable</td><td>表示由於某些原因（服務器超載或系統維護等），導致暫時無法完成請求。</td></tr><tr><td>504</td><td>Gatewy Timeout</td><td>表示作為網関或代理的服務段在執行請求時，未能及時從上游服務器獲得響應。</td></tr><tr><td>505</td><td>HTTP Version Not Supported</td><td>表示服務端不支持請求的 HTTP 協議版本，導致無法完成請求。</td></tr></tbody></table>
 <blockquote>
 <p>以上內容參考自<a href="https://zh.wikipedia.org/zh-tw/HTTP%E7%8A%B6%E6%80%81%E7%A0%81" target="_blank" rel="noopener noreffer">https://zh.wikipedia.org/zh-tw/HTTP%E7%8A%B6%E6%80%81%E7%A0%81</a>，<br>
 需要查看完整 HTTP 狀態碼請點擊<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank" rel="noopener noreffer">https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></p>

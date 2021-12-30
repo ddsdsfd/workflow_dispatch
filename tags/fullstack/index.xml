@@ -657,13 +657,11 @@ function getUser($userId, $options){
 </div><blockquote>
 <ul>
 <li>.col-xs- 超小屏幕 手机 &lt;768px</li>
-</ul>
-</blockquote>
-<ul>
 <li>.col-sm- 小屏幕 平板  &gt;=768px</li>
 <li>.col-md- 中等屏幕  &gt;=992px</li>
 <li>.col-lg- 大屏幕  &gt;1200px</li>
 </ul>
+</blockquote>
 <p>css3 写法 @media （宽度具体调整）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -730,7 +728,7 @@ function getUser($userId, $options){
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-//还有其他的源。..
+//还有其他的源 ...
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="qq-推广链接">QQ 推广链接</h2>
@@ -756,7 +754,7 @@ function getUser($userId, $options){
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">https://fonts.google.com/
-一般选用国内源镜像替代（待补充。..）
+一般选用国内源镜像替代（待补充 ...）
 <span class="gi">+ https://fonts.loli.net
 </span><span class="gi">+ //fonts.lug.ustc.edu.cn
 </span></code></pre></td></tr></table>

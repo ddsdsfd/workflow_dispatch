@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Frontend - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/frontend/</link><description>Frontend - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 22 Jun 2021 16:39:47 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/frontend/" rel="self" type="application/rss+xml"/><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
 <p>Sass 和 Less 都屬於 <strong>CSS 前置處理器</strong>，CSS 前置處理器定義了一種新的語言，其基本思想是，用一種專門的程式設計語言，為 CSS 增加了一些程式設計的特性，將 CSS 作為目標生成檔，然後開發者就只要使用這種語言進行 CSS 的編碼工作。<br>
-轉化成通俗易懂的話來說就是**“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。**</p>
+轉化成通俗易懂的話來說就是 <strong>“用一種專門的程式設計語言，進行 Web 頁面樣式設計，再通過編譯器轉化為正常的 CSS 檔，以供專案使用”。</strong></p>
 </blockquote>
 <h1 id="為什麼什麼時候要使用-css-前置處理器-why-when">為什麼，什麼時候要使用 CSS 前置處理器？ (Why, When)</h1>
 <p><strong>CSS 有具體以下幾個缺點：</strong></p>
@@ -1514,7 +1514,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 
 <span class="cm">/**
 </span><span class="cm"> * HTML 写法
-</span><span class="cm">&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒。..&lt;/span&gt;
+</span><span class="cm">&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒 ...&lt;/span&gt;
 </span><span class="cm">&lt;p class=&#34;run-times&#34; title=&#34;主頁运行时间&#34;&gt;RunTime Loading...&lt;/p&gt;
 </span><span class="cm">*/</span>
 </code></pre></td></tr></table>
@@ -3066,13 +3066,11 @@ limit: 20
 </div><blockquote>
 <ul>
 <li>.col-xs- 超小屏幕 手机 &lt;768px</li>
-</ul>
-</blockquote>
-<ul>
 <li>.col-sm- 小屏幕 平板  &gt;=768px</li>
 <li>.col-md- 中等屏幕  &gt;=992px</li>
 <li>.col-lg- 大屏幕  &gt;1200px</li>
 </ul>
+</blockquote>
 <p>css3 写法 @media （宽度具体调整）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3139,7 +3137,7 @@ limit: 20
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-//还有其他的源。..
+//还有其他的源 ...
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="qq-推广链接">QQ 推广链接</h2>
@@ -3165,7 +3163,7 @@ limit: 20
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">https://fonts.google.com/
-一般选用国内源镜像替代（待补充。..）
+一般选用国内源镜像替代（待补充 ...）
 <span class="gi">+ https://fonts.loli.net
 </span><span class="gi">+ //fonts.lug.ustc.edu.cn
 </span></code></pre></td></tr></table>

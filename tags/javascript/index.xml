@@ -1452,7 +1452,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 
 <span class="cm">/**
 </span><span class="cm"> * HTML 写法
-</span><span class="cm">&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒。..&lt;/span&gt;
+</span><span class="cm">&lt;span class=&#34;run-times&#34; title=&#34;网站运行时间&#34;&gt;载入时分秒 ...&lt;/span&gt;
 </span><span class="cm">&lt;p class=&#34;run-times&#34; title=&#34;主頁运行时间&#34;&gt;RunTime Loading...&lt;/p&gt;
 </span><span class="cm">*/</span>
 </code></pre></td></tr></table>
@@ -2191,13 +2191,11 @@ function getUser($userId, $options){
 </div><blockquote>
 <ul>
 <li>.col-xs- 超小屏幕 手机 &lt;768px</li>
-</ul>
-</blockquote>
-<ul>
 <li>.col-sm- 小屏幕 平板  &gt;=768px</li>
 <li>.col-md- 中等屏幕  &gt;=992px</li>
 <li>.col-lg- 大屏幕  &gt;1200px</li>
 </ul>
+</blockquote>
 <p>css3 写法 @media （宽度具体调整）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2264,7 +2262,7 @@ function getUser($userId, $options){
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-//还有其他的源。..
+//还有其他的源 ...
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="qq-推广链接">QQ 推广链接</h2>
@@ -2290,7 +2288,7 @@ function getUser($userId, $options){
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">https://fonts.google.com/
-一般选用国内源镜像替代（待补充。..）
+一般选用国内源镜像替代（待补充 ...）
 <span class="gi">+ https://fonts.loli.net
 </span><span class="gi">+ //fonts.lug.ustc.edu.cn
 </span></code></pre></td></tr></table>
@@ -3471,12 +3469,12 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-XML" data-lang="XML"><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#34;jinrishici-sentence&#34;</span><span class="nt">&gt;</span>正在加载今日诗词。...<span class="nt">&lt;/span&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-XML" data-lang="XML"><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&#34;jinrishici-sentence&#34;</span><span class="nt">&gt;</span>正在加载今日诗词 ....<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://sdk.jinrishici.com/v2/browser/jinrishici.js&#34;</span> <span class="na">charset=</span><span class="s">&#34;utf-8&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><hr>
-<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词。...</div>
+<div id="jinrishici-sentence" style="text-align:center;">正在加载今日诗词 ....</div>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <hr>
 <h2 id="api-调用">api 调用</h2>

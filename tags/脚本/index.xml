@@ -141,7 +141,7 @@
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;qq_39520417&#34;</span> <span class="c1">#cheung99857</span>
   <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
     <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -165,7 +165,7 @@
     <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
             <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息。..&#34;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
             <span class="c1"># 控制休眠时间相当于控制刷新的速度</span>
             <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -177,9 +177,9 @@
             <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起。..<br>
-算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法。..<br>
-哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡。..<br>
+            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起 &hellip;<br>
+算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法 &hellip;<br>
+哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡 &hellip;<br>
 我和潇 X 巴哥确定思路后兵分两路：</p>
 <ol>
 <li>他用 java 写个后台自动刷多人的，再弄个网页给用户填写账号密码保存在数据库；</li>

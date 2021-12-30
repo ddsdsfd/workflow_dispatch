@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/csdnvisiter/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2020-03-26T11:08:38+00:00">
-<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
+<meta property="article:modified_time" content="2021-12-28T14:56:10+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="使用 Python 刷 csdn 访问量">
@@ -21,7 +21,7 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/csdnvisiter/><link rel=prev href=https://lruihao.cn/posts/cron/><link rel=next href=https://lruihao.cn/posts/cell-blog-dev/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"使用 Python 刷 csdn 访问量","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/csdnvisiter\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, Backend, 脚本","wordcount":693,"url":"https:\/\/lruihao.cn\/posts\/csdnvisiter\/","datePublished":"2020-03-26T11:08:38+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/csdnvisiter/><link rel=prev href=https://lruihao.cn/posts/cron/><link rel=next href=https://lruihao.cn/posts/cell-blog-dev/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"使用 Python 刷 csdn 访问量","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/csdnvisiter\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, Backend, 脚本","wordcount":677,"url":"https:\/\/lruihao.cn\/posts\/csdnvisiter\/","datePublished":"2020-03-26T11:08:38+00:00","dateModified":"2021-12-28T14:56:10+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -86,7 +86,7 @@
 <main class=main>
 <div class=container><article class="page single"><h1 class="single-title animated flipInX">使用 Python 刷 csdn 访问量</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-03-26>2020-03-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 693 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-03-26>2020-03-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 677 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/csdnvisiter/ class=leancloud_visitors data-flag-title="使用 Python 刷 csdn 访问量">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -233,7 +233,7 @@
     <span class=n>name</span> <span class=o>=</span> <span class=s2>&#34;qq_39520417&#34;</span> <span class=c1>#cheung99857</span>
   <span class=k>while</span> <span class=mi>1</span><span class=p>:</span>
     <span class=n>main</span><span class=p>(</span><span class=n>name</span><span class=p>)</span>
-        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;开始休息。..&#34;</span><span class=p>)</span>
+        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;开始休息 ...&#34;</span><span class=p>)</span>
         <span class=n>time</span><span class=o>.</span><span class=n>sleep</span><span class=p>(</span><span class=mi>40</span><span class=p>)</span>
 </code></pre></td></tr></table>
 </div>
@@ -257,7 +257,7 @@
     <span class=k>while</span> <span class=mi>1</span><span class=p>:</span>
         <span class=k>for</span> <span class=n>name</span> <span class=ow>in</span> <span class=n>names</span><span class=p>:</span>
             <span class=n>main</span><span class=p>(</span><span class=n>name</span><span class=p>)</span>
-            <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;开始休息。..&#34;</span><span class=p>)</span>
+            <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;开始休息 ...&#34;</span><span class=p>)</span>
             <span class=c1># 控制休眠时间相当于控制刷新的速度</span>
             <span class=n>time</span><span class=o>.</span><span class=n>sleep</span><span class=p>(</span><span class=mi>30</span><span class=p>)</span>
 </code></pre></td></tr></table>
@@ -266,8 +266,8 @@
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
-<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
+<span>更新於 2021-12-28&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/a304e217b8ebe4e4c989b6cf8ea6dc1e7c72f97e target=_blank title="commit by Cell(1024@lruihao.cn) a304e217b8ebe4e4c989b6cf8ea6dc1e7c72f97e: :pencil: Docs: typesetting">
+<i class="fas fa-hashtag fa-fw"></i>a304e21</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>

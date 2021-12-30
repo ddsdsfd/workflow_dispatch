@@ -2297,7 +2297,7 @@ Ctrl+c
 <li>段落之间需要<strong>空格一行</strong></li>
 </ol>
 <h2 id="标题">标题</h2>
-<p>在书写中，标题是最常用的格式，Markdown 中，通过在文本前加上 # 即可，同时，根据#的数量可以可以划分为二级标题、三级标题、四级标题。.. 一共六级。</p>
+<p>在书写中，标题是最常用的格式，Markdown 中，通过在文本前加上 # 即可，同时，根据#的数量可以可以划分为二级标题、三级标题、四级标题 &hellip; 一共六级。</p>
 <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
 <h3 id="三级标题">三级标题</h3>
@@ -2485,7 +2485,7 @@ Ctrl+c
 <td style="text-align:left">国外</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://blog.csdn.net/tigerisland45/article/details/52134189" target="_blank" rel="noopener noreffer">更多 OJ，在线刷题网站。..</a></td>
+<td style="text-align:left"><a href="https://blog.csdn.net/tigerisland45/article/details/52134189" target="_blank" rel="noopener noreffer">更多 OJ，在线刷题网站 &hellip;</a></td>
 <td></td>
 </tr>
 </tbody>
