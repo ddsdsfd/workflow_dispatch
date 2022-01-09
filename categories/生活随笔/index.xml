@@ -367,24 +367,4 @@
         
     </a><figcaption class="image-caption">逝者如斯乎，不舍昼夜</figcaption>
     </figure></p>
-<div class="site-data">
-  <span id="busuanzi_container_site_uv" title="總訪客量">
-    <i class="fas fa-user color-dark-gray"></i>
-    <span id="busuanzi_value_site_uv">
-      <i class="fa fa-spinner fa-spin"></i>
-    </span>
-  </span>
-  <span class="site-time" title="Site lruihao.cn running...">
-    <i class="fas fa-heartbeat animate-icon"></i>
-    <span class="run-times">Loading...</span>
-  </span>
-  <span id="busuanzi_container_site_pv" title="總訪問量">
-    <i class="fas fa-eye color-dark-gray"></i>
-    <span id="busuanzi_value_site_pv">
-      <i class="fa fa-spinner fa-spin"></i>
-    </span>
-  </span>
-</div>
-<link rel="stylesheet" href="css/index.css"/>
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script>
-<script src="js/site-time.js" defer></script>]]></description></item></channel></rss>
+]]></description></item></channel></rss>
