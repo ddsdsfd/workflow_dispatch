@@ -143,8 +143,8 @@ gitbook mobi ./ ./mybook.mobi
 <p>这个文件主要决定 GitBook 的章节目录，它通过 Markdown 中的列表语法来表示文件的父子关系。</p>
 <h2 id="更多">更多</h2>
 <p><a href="https://www.jianshu.com/p/421cc442f06c" target="_blank" rel="noopener noreffer">更多详情介绍</a></p>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
-            </div><h3 id="备份-hexo-博客">备份 hexo 博客</h3>
+        <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
+      </div><h3 id="备份-hexo-博客">备份 hexo 博客</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

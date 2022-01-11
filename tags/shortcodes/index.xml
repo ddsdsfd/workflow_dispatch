@@ -4,12 +4,12 @@
     <span class="card-link-text">
       <span class="card-link-title">知乎卡片式链接 Git 記錄</span>
       <span class="card-link-meta">
-          <span class="card-link-url">
-              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-              </svg>
-          </span>
-          https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b
+        <span class="card-link-url">
+          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+          </svg>
+        </span>
+        https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b
       </span>
     </span>
     <span class="card-link-imageCell">
@@ -18,15 +18,15 @@
   </span>
 </a>
 <div class="details admonition quote open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-quote-right fa-fw"></i>回顧<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">之前在使用 hexo 的時候也有用到，<a href="/posts/linkcard/" rel="">模仿知乎卡片式链接</a><br>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-quote-right fa-fw"></i>回顧<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">之前在使用 hexo 的時候也有用到，<a href="/posts/linkcard/" rel="">模仿知乎卡片式链接</a><br>
 和之前的相比，優化之前是后加載，由 JS 在 瀏覽器處理，<br>
 使用 shortcodes 方式后，則是在 GO 構建頁面的時候處理，效能上會好很多。</div>
-        </div>
     </div>
+  </div>
 <h2 id="源碼">源碼</h2>
 <p>基於 LoveIt 主題的 Link Shortcodes, 主要改到以下幾個文件，<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer">完整提交記錄</a></p>
 <pre><code>assets/css/custom.scss

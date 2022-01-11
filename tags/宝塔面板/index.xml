@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>宝塔面板 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/</link><description>宝塔面板 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 16 May 2019 20:31:33 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" rel="self" type="application/rss+xml"/><item><title>宝塔面板安装 ImgURL 图床</title><link>https://lruihao.cn/posts/imgurl/</link><pubDate>Thu, 16 May 2019 20:31:33 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/imgurl/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
-            </div><blockquote>
+        <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
+      </div><blockquote>
 <p>ImgURL 是一个开源、免费的图床程序，ImgURL 2.x 之后对环境要求更高，尤其是 ImageMagick 组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装 ImgURL 2.x 图床的过程（包括 ImgURL 2.x 需要的各种组件）
 <a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
 </blockquote>
@@ -63,8 +63,8 @@
 我们只要把网站的端口按第二步的在 ngrok 设置好就可以穿透了。</p>
 <h1 id="注意">注意</h1>
 <p>访问本地网站的必要条件是你的电脑得是开机状态而且有网络。</p>]]></description></item><item><title>宅音乐播放器</title><link>https://lruihao.cn/posts/player/</link><pubDate>Tue, 19 Mar 2019 23:32:56 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/player/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/player/images/index.png" referrerpolicy="no-referrer">
-            </div><blockquote>
+        <img src="/posts/player/images/index.png" referrerpolicy="no-referrer">
+      </div><blockquote>
 <p>宅音乐播放器，HTML5 网页播放器，集成后台管理及 API 调用，目前正在开发中，敬请关注~<br>
 <a href="https://github.com/lzx8589561/zhai-music" target="_blank" rel="noopener noreffer">原项目</a> 由 <a href="https://www.ilt.me" target="_blank" rel="noopener noreffer">IT 技术宅</a> 开源，使用 thinkPHP 开发后台。 <a href="https://github.com/Lruihao/zhai-music" target="_blank" rel="noopener noreffer">fork 地址</a> 是我个人学习模仿的库，也是相当于备份源码。<br>
 <em>注： 插件修改于明月浩空免费版，仅用于学习交流，无商业价值，如发现商业传播，将禁止软件的免费使用。</em></p>
@@ -175,8 +175,8 @@ test123
 <p></p>
 <h3 id="后台歌单管理页面">后台歌单管理页面</h3>
 <p></p>]]></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/bt/images/1.png" referrerpolicy="no-referrer">
-            </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过 Web 面板一键即可操作实现。可选择安装 lamp 或者 lnmp 环境，可创建及管理网站，可创建及管理数据库，可创建及管理 FTP 等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>
+        <img src="/posts/bt/images/1.png" referrerpolicy="no-referrer">
+      </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过 Web 面板一键即可操作实现。可选择安装 lamp 或者 lnmp 环境，可创建及管理网站，可创建及管理数据库，可创建及管理 FTP 等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>
 <h1 id="系统要求">系统要求</h1>
 <blockquote>
 <p>操作系统：全新系统（支持 CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>

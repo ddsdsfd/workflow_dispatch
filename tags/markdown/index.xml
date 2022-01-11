@@ -4,12 +4,12 @@
     <span class="card-link-text">
       <span class="card-link-title">插件地址</span>
       <span class="card-link-meta">
-          <span class="card-link-url">
-              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-              </svg>
-          </span>
-          https://github.com/robinchenyu/imagepaste
+        <span class="card-link-url">
+          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+          </svg>
+        </span>
+        https://github.com/robinchenyu/imagepaste
       </span>
     </span>
     <span class="card-link-imageCell">
@@ -47,9 +47,9 @@
 </div></li>
 <li>然后就可以愉快的使用截图，然后在 sublime 里使用 <code>ctrl+shift+v</code> 粘贴 Markdown 格式的图片。默认会自动根据 md 文件名在同级目录下新建文件夹，图片就默认保存在那。如图：<br>
 <figure><a class="lightgallery" href="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" title="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" data-thumbnail="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" data-sub-html="<h2>演示</h2>">
-        
-    </a><figcaption class="image-caption">演示</figcaption>
-    </figure></li>
+    
+  </a><figcaption class="image-caption">演示</figcaption>
+  </figure></li>
 </ol>
 <blockquote>
 <p>VScode 也有更好用的插件：Past Image</p>
@@ -65,8 +65,8 @@
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
-                <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
-            </div><blockquote>
+        <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
+      </div><blockquote>
 <p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>

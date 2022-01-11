@@ -1,18 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>others - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/others/</link><description>others - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Wed, 22 Dec 2021 20:17:42 +0800</lastBuildDate><atom:link href="https://lruihao.cn/categories/others/" rel="self" type="application/rss+xml"/><item><title>Getting Things Done for ios App Reminders and Github issues</title><link>https://lruihao.cn/posts/gtd/</link><pubDate>Wed, 22 Dec 2021 20:17:42 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gtd/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/gtd/images/reminders.png" referrerpolicy="no-referrer">
-            </div><div class="details admonition quote open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-quote-right fa-fw"></i>quote<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><strong>Getting Things Done (GTD)</strong> is a personal productivity system developed by David Allen and published in a book of the same name. GTD is described as a time management system. Allen states &ldquo;there is an inverse relationship between things on your mind and those things getting done&rdquo;.</p>
+        <img src="/posts/gtd/images/reminders.png" referrerpolicy="no-referrer">
+      </div><div class="details admonition quote open">
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-quote-right fa-fw"></i>quote<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><p><strong>Getting Things Done (GTD)</strong> is a personal productivity system developed by David Allen and published in a book of the same name. GTD is described as a time management system. Allen states &ldquo;there is an inverse relationship between things on your mind and those things getting done&rdquo;.</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Getting_Things_Done" target="_blank" rel="noopener noreffer">Reference</a></li>
 <li><a href="https://github.com/Lruihao/hugo-blog/issues/20" target="_blank" rel="noopener noreffer">#20</a></li>
 </ul>
 </div>
-        </div>
     </div>
+  </div>
 <h2 id="理解">理解</h2>
 <p>简而言之原则就是：</p>
 <ol>
@@ -121,12 +121,12 @@
     <span class="card-link-text">
       <span class="card-link-title">插件地址</span>
       <span class="card-link-meta">
-          <span class="card-link-url">
-              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-              </svg>
-          </span>
-          https://github.com/robinchenyu/imagepaste
+        <span class="card-link-url">
+          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+          </svg>
+        </span>
+        https://github.com/robinchenyu/imagepaste
       </span>
     </span>
     <span class="card-link-imageCell">
@@ -164,9 +164,9 @@
 </div></li>
 <li>然后就可以愉快的使用截图，然后在 sublime 里使用 <code>ctrl+shift+v</code> 粘贴 Markdown 格式的图片。默认会自动根据 md 文件名在同级目录下新建文件夹，图片就默认保存在那。如图：<br>
 <figure><a class="lightgallery" href="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" title="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" data-thumbnail="https://github.com/robinchenyu/imagepaste/raw/master/gif/imagepaste.gif" data-sub-html="<h2>演示</h2>">
-        
-    </a><figcaption class="image-caption">演示</figcaption>
-    </figure></li>
+    
+  </a><figcaption class="image-caption">演示</figcaption>
+  </figure></li>
 </ol>
 <blockquote>
 <p>VScode 也有更好用的插件：Past Image</p>
@@ -676,12 +676,12 @@ git push
     <span class="card-link-text">
       <span class="card-link-title">博客 app 下载</span>
       <span class="card-link-meta">
-          <span class="card-link-url">
-              <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-                  <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-              </svg>
-          </span>
-          https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk
+        <span class="card-link-url">
+          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+          </svg>
+        </span>
+        https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk
       </span>
     </span>
     <span class="card-link-imageCell">
@@ -2093,18 +2093,18 @@ Ctrl+c
 <p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的 ip 地址访问了（手机也可以）<br>
 本地 ip 可以通过 cmd 用 ipconfig 查看</p>
 ]]></description></item><item><title>一款自己写的字体-沐目体</title><link>https://lruihao.cn/projects/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/projects/font-mmt/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/projects/font-mmt/images/word1.png" referrerpolicy="no-referrer">
-            </div><div id="id-4"><span id="id-1"></span>
+        <img src="/projects/font-mmt/images/word1.png" referrerpolicy="no-referrer">
+      </div><div id="id-4"><span id="id-1"></span>
 <span id="id-2"></span>
 <span id="id-3"></span></div>
 <hr>
 <h2 id="介绍">介绍</h2>
 <div class="details admonition success open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw"></i>沐目体<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><ul>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-check-circle fa-fw"></i>沐目体<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><ul>
 <li>
 <p>字体简介<br>
 #沐目体# 沐目之，湘也。（以<del>女盆友名字命名的字体</del>）</p>
@@ -2123,8 +2123,8 @@ Ctrl+c
 </ul>
 <p><em><strong>注：仅用于个人非商用！</strong></em></p>
 </div>
-        </div>
     </div>
+  </div>
 <h2 id="预览">预览</h2>
 <div id="id-5">前尘硬化像石头<br>
 随缘地抛下便逃走<br>

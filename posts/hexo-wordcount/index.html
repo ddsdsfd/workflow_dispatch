@@ -6,16 +6,16 @@
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
 <title>hexo next 主题添加字数统计（2018） - 菠菜眾長</title><meta name=Description content="Lruihao's Note"><meta property="og:title" content="hexo next 主题添加字数统计（2018）">
 <meta property="og:description" content="
-        
-            Warning
-        
-        
-            2018/11/1 说明
+    
+      Warning
+    
+    
+      2018/11/1 说明
 next 主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！
 最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照 github 上 wordcount 的 readme 操作后，并没有什么用，我打开 post 相关配置文件并没有发现发现 wordcount 这个关键词，next 本身似乎也并没有在主题配置文件提供选项（或许是个人原因），所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是 RTFSC 大法好！(Read the fucking source code)
 
-        
-    ">
+    
+  ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hexo-wordcount/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-08-30T13:15:50+00:00">
@@ -24,16 +24,16 @@ next 主题好像更新了，现在自带的可以用了，如果可以用了，
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="hexo next 主题添加字数统计（2018）">
 <meta name=twitter:description content="
-        
-            Warning
-        
-        
-            2018/11/1 说明
+    
+      Warning
+    
+    
+      2018/11/1 说明
 next 主题好像更新了，现在自带的可以用了，如果可以用了，以下教程可以忽略！！！
 最近有几个小伙伴问我博客的字数统计怎么实现的，怎么网上的教程不管用啊？一开始我搭建博客的时候也遇到了类似的问题，按照 github 上 wordcount 的 readme 操作后，并没有什么用，我打开 post 相关配置文件并没有发现发现 wordcount 这个关键词，next 本身似乎也并没有在主题配置文件提供选项（或许是个人原因），所以只好自己动手加一个了。为了不重复回答问题，先做个原创记录。转载请注明出处。在此抛转引玉，如果有更好的方法请在留言区提出，我会及时更改。同时也希望小伙伴多发扬折腾精神，多专研，少提问，毕竟还是 RTFSC 大法好！(Read the fucking source code)
 
-        
-    ">
+    
+  ">
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
@@ -238,20 +238,12 @@ Please enable JavaScript to view the comments powered by <a href=https://valine.
 </noscript></div></article></div>
 </main><footer class=footer>
 <div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.12"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-bug fa-stack-1x"></i><i class="fas fa-ban fa-stack-2x"></i></i> FixIt</a>
-</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
-<div class=footer-line><span id=busuanzi_container_site_uv title=總訪客數>
-<i class="fas fa-user color-dark-gray"></i>
-<span id=busuanzi_value_site_uv>
-<i class="fa fa-spinner fa-spin"></i>
-</span></span><span class="site-time footer-divider" title="網站運行中 ...">
-<i class="fas fa-heartbeat animate-icon"></i>
-<span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量>
-<i class="fas fa-eye color-dark-gray"></i>
-<span id=busuanzi_value_site_pv>
-<i class="fa fa-spinner fa-spin"></i>
-</span></span></div>
-<div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class="icp footer-divider"><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div>
-</div>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
+<span id=busuanzi_container_site_uv title=總訪客數><i class="fas fa-user color-dark-gray"></i>
+<span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."></span><i class="fas fa-heartbeat animate-icon"></i>
+<span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="fas fa-eye color-dark-gray"></i>
+<span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span></span>
+</div><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class=footer-divider></span><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div></div>
 </footer></div>
 <div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
 <i class="fas fa-arrow-up fa-fw"></i>

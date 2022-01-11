@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Git - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/git/</link><description>Git - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 04 Oct 2021 23:46:49 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/git/" rel="self" type="application/rss+xml"/><item><title>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</title><link>https://lruihao.cn/posts/github-actions/</link><pubDate>Mon, 04 Oct 2021 23:46:49 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/github-actions/</guid><description><![CDATA[<div class="details admonition quote open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。<br>
-也就是説實現了在線寫靜態博客的需求。</div>
-        </div>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
     </div>
+    <div class="details-content">
+      <div class="admonition-content">Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。<br>
+也就是説實現了在線寫靜態博客的需求。</div>
+    </div>
+  </div>
 <h2 id="準備">準備</h2>
 <p>工作流程設計到兩個倉庫和一個 cos 桶，例如：</p>
 <blockquote>
@@ -618,8 +618,8 @@ function getUser($userId, $options){
 </tr>
 </tbody>
 </table>]]></description></item><item><title>hexo 博客源码备份</title><link>https://lruihao.cn/posts/blog-backup/</link><pubDate>Sat, 03 Nov 2018 12:49:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/blog-backup/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
-            </div><h3 id="备份-hexo-博客">备份 hexo 博客</h3>
+        <img src="/posts/blog-backup/images/1.png" referrerpolicy="no-referrer">
+      </div><h3 id="备份-hexo-博客">备份 hexo 博客</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -688,8 +688,8 @@ hexo d -g  //部署
 </div>
 </div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
 ]]></description></item><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
-            </div><ul>
+        <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
+      </div><ul>
 <li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
 <li><strong>暂存区</strong>：英文叫 stage, 或 index。一般存放在 &ldquo;.git 目录下&rdquo; 下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
 <li><strong>版本库</strong>：工作区有一个隐藏目录。git，这个不算工作区，而是 Git 的版本库。</li>
@@ -752,15 +752,15 @@ git push origin master      # Git 会把 master 分支推送到远程库对应�
 </code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw"></i>Tips<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><a href="https://github.com/Lruihao/hugo-blog/wiki/Commit-message" target="_blank" rel="noopener noreffer">Commit Message</a> 内容尽量规范！<br>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-lightbulb fa-fw"></i>Tips<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><a href="https://github.com/Lruihao/hugo-blog/wiki/Commit-message" target="_blank" rel="noopener noreffer">Commit Message</a> 内容尽量规范！<br>
 当某一次提交后，突然想起漏提交了文件，或不小心提交了不满意的代码时，<br>
 可以使用<code>git commit --amend -m &quot;message&quot;</code>指令。它可以在不增加一个新的 commit-id 的情况下将新修改的代码追加到前一次的 commit-id 中。提交之后 message 也将被本次的 message 覆盖，所以还需要再次添加上次的 message。</div>
-        </div>
     </div>
+  </div>
 <h2 id="push">push</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -889,19 +889,19 @@ git reflog            # 查看历史记录的 commit id
 </code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw"></i>Tips<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>想看到自己的操作记录，则可以使用 log 与 reflog，它两个的区别如下：</p>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-lightbulb fa-fw"></i>Tips<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><p>想看到自己的操作记录，则可以使用 log 与 reflog，它两个的区别如下：</p>
 <ol>
 <li><code>git log</code>命令可以显示所有提交过的版本信息；
 如果感觉太繁琐，可以加上参数<code>--pretty=oneline</code>，只会显示版本号和提交时的备注信息。</li>
 <li><code>git reflog</code>可以查看所有分支的所有操作记录。（包括已经被删除的 commit 记录和 reset 的操作）</li>
 </ol>
 </div>
-        </div>
     </div>
+  </div>
 <h2 id="reset">reset</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -926,11 +926,11 @@ git reset file                # 将本地仓库的当前版本退回至暂存区
 需要用<code>git push -f origin master</code>强制提交。</p>
 </blockquote>
 <div class="details admonition danger open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-skull-crossbones fa-fw"></i>特别提醒<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>如果你<code>git reset --hard HEAD^</code>+<code>git push -f origin master</code>执行完，github 中的记录和本地文件都会回到退回的状态。<strong>简单来说就是一修改了一天的 bug, 完工后，你这一套操作直接打回原形。别慌（实际内心慌的一麻皮。）</strong></p>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-skull-crossbones fa-fw"></i>特别提醒<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><p>如果你<code>git reset --hard HEAD^</code>+<code>git push -f origin master</code>执行完，github 中的记录和本地文件都会回到退回的状态。<strong>简单来说就是一修改了一天的 bug, 完工后，你这一套操作直接打回原形。别慌（实际内心慌的一麻皮。）</strong></p>
 <ol>
 <li>通过<code>git log -g</code>命令来找到需要恢复的信息对应的 commitid，可以通过提交的时间和记录来辨别，
 找到执行<code>reset --hard</code>之前的那个 commit 对应的 commit-id</li>
@@ -938,8 +938,8 @@ git reset file                # 将本地仓库的当前版本退回至暂存区
 </ol>
 <p><strong>这样，就把到 commitid 为止的代码、各种提交记录等信息都恢复到了 recover_branch 分支上了。</strong></p>
 </div>
-        </div>
     </div>
+  </div>
 <h2 id="status">status</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1051,15 +1051,15 @@ git submodule update      # 子模组更新
 </code></pre></td></tr></table>
 </div>
 </div><div class="details admonition Note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">当一个远程库有子模组时，直接 clone 子模组只是一个空文件夹，需要进入子模组的空文件夹<code>init</code>和<code>update</code>才行。
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">当一个远程库有子模组时，直接 clone 子模组只是一个空文件夹，需要进入子模组的空文件夹<code>init</code>和<code>update</code>才行。
 或者使用递归克隆<code>git clone --recursive 远程库</code><br>
 子模组更新后，父模组必须更新，因为需要更新 commit id。</div>
-        </div>
     </div>
+  </div>
 <h2 id="tag">tag</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1086,14 +1086,14 @@ $ git push [remote] --tags        # 提交所有 tag
 </code></pre></td></tr></table>
 </div>
 </div><p><div class="details admonition Success open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">当你执行<code>git tag -a</code>命令时，Git 会打开你的编辑器，让你写一句标签注解，就像你给提交写注解一样。
-如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。</div>
-        </div>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
     </div>
+    <div class="details-content">
+      <div class="admonition-content">当你执行<code>git tag -a</code>命令时，Git 会打开你的编辑器，让你写一句标签注解，就像你给提交写注解一样。
+如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。</div>
+    </div>
+  </div>
 例如，假设我们发布了提交 85fc7e7（最后一行），但是那时候忘了给它打标签。 我们现在也可以：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

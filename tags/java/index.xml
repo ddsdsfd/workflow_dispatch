@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Java - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/java/</link><description>Java - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Wed, 08 May 2019 20:55:02 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/java/" rel="self" type="application/rss+xml"/><item><title>java 实现一个单线程的资源下载器</title><link>https://lruihao.cn/posts/singlethreaddown/</link><pubDate>Wed, 08 May 2019 20:55:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/singlethreaddown/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/singlethreaddown/images/1.png" referrerpolicy="no-referrer">
-            </div><blockquote>
+        <img src="/posts/singlethreaddown/images/1.png" referrerpolicy="no-referrer">
+      </div><blockquote>
 <p>实现一个简单的基于单线程的资源下载器，如图所示，用户可以任意指定下载资源的链接地址，系统根据该地址判断资源是否存在，如果存在，则将该资源下载到本地。</p>
 </blockquote>
 <h1 id="gui-设计基本流程">GUI 设计基本流程</h1>
@@ -561,8 +561,8 @@
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>模拟借书系统（java 异常练习）</title><link>https://lruihao.cn/posts/javaexception/</link><pubDate>Wed, 01 May 2019 16:52:21 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/javaexception/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/javaexception/images/1.png" referrerpolicy="no-referrer">
-            </div><h1 id="实现代码">实现代码</h1>
+        <img src="/posts/javaexception/images/1.png" referrerpolicy="no-referrer">
+      </div><h1 id="实现代码">实现代码</h1>
 <blockquote>
 <p>这里的异常主要是<code>InputMismatchException</code>, 可以直接捕获该异常，我直接捕获了父类异常。</p>
 </blockquote>
@@ -1784,11 +1784,11 @@ B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
 <ul>
 <li><a href="https://www.cnblogs.com/fantasy01/p/3911488.html" target="_blank" rel="noopener noreffer">JOptionPane 的使用</a></li>
 </ul>]]></description></item><item><title>java 继承 test</title><link>https://lruihao.cn/posts/jicheng/</link><pubDate>Thu, 24 Jan 2019 15:07:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jicheng/</guid><description><![CDATA[<div class="details admonition quote open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-quote-right fa-fw"></i>Quote<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>继承的好处：</p>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-quote-right fa-fw"></i>Quote<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><p>继承的好处：</p>
 <ol>
 <li>提高了代码的复用性</li>
 <li>提高了代码的维护性</li>
@@ -1801,8 +1801,8 @@ B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
 <li>内聚：自己完成事情的能力。</li>
 </ul>
 </div>
-        </div>
     </div>
+  </div>
 <h3 id="java-中的继承特点">java 中的继承特点</h3>
 <blockquote>
 <p>Java 只支持单继承，不支持多继承。Java 支持多层继承（继承体系）</p>

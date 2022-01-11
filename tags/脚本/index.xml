@@ -171,13 +171,13 @@
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>新冠疫情未返校未返工第 N 天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
-            </div><div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>这件事还得从一只蝙蝠说起 &hellip;<br>
+        <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
+      </div><div class="details admonition info open">
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><p>这件事还得从一只蝙蝠说起 &hellip;<br>
 算了，昨天下午 3 点半，我还在王者峡谷 Timing, 突然潇 X 巴哥打了个电话给我说关于自动打卡的想法 &hellip;<br>
 哎，反正就是由于疫情需要每天健康打卡汇报给学校，然后每天提交一样的太麻烦了，就想写个程序自动打卡 &hellip;<br>
 我和潇 X 巴哥确定思路后兵分两路：</p>
@@ -186,8 +186,8 @@
 <li>我想的就很直接，只刷一个人的，python 模拟浏览器登录后打卡，再设置定时任务（多人则设定多个）；</li>
 </ol>
 </div>
-        </div>
     </div>
+  </div>
 <h1 id="windows-运行效果">Windows 运行效果</h1>
 <p><br>
 <br>
@@ -316,8 +316,8 @@
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
 </p>]]></description></item><item><title>安装 pyinstaller 出错的解决办法及 csdn 工具实例打包</title><link>https://lruihao.cn/posts/pyinstallererror/</link><pubDate>Thu, 09 May 2019 19:05:01 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pyinstallererror/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/pyinstallererror/images/1.png" referrerpolicy="no-referrer">
-            </div><blockquote>
+        <img src="/posts/pyinstallererror/images/1.png" referrerpolicy="no-referrer">
+      </div><blockquote>
 <p>用过命令<code>pip install pyinstaller</code>安装失败，此包依赖于 pywin32，安装前需要先<code>pip install pywin32</code>, 我安装了还是出错，稍微百度了一下也没有看到解决办法。
 这里通过手动下载安装解决的，记录一下。</p>
 </blockquote>
@@ -521,13 +521,13 @@
 </blockquote>
 <p></p>
 <div class="details admonition danger open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-skull-crossbones fa-fw"></i>Danger<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">说实话看着控制台不停地输出提示信息有没有很爽，对于强迫症来说真的是很治愈了！但是爬取第 6042 张图片的时候，我打开了一下目标网页发现无法加载图片了，就想这应该也算是一次 Dos 攻击了吧！打开控制台果然停了，相当于访问了近两万次！唉，还是太暴力了！！还差 800 多张，只好又重新接着写上次的位置爬！不慎造成目标网站服务器压力，实在对不起！</div>
-        </div>
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-skull-crossbones fa-fw"></i>Danger<i class="details-icon fas fa-angle-right fa-fw"></i>
     </div>
+    <div class="details-content">
+      <div class="admonition-content">说实话看着控制台不停地输出提示信息有没有很爽，对于强迫症来说真的是很治愈了！但是爬取第 6042 张图片的时候，我打开了一下目标网页发现无法加载图片了，就想这应该也算是一次 Dos 攻击了吧！打开控制台果然停了，相当于访问了近两万次！唉，还是太暴力了！！还差 800 多张，只好又重新接着写上次的位置爬！不慎造成目标网站服务器压力，实在对不起！</div>
+    </div>
+  </div>
 <p></p>
 <blockquote>
 <p>一个半小时左右后终于下载完了，一共是 6886 张；程序是同时下载了透明和白色背景的图片的！分别在 0,1 子文件夹！</p>

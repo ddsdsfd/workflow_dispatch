@@ -144,8 +144,8 @@
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
-            </div><blockquote>
+        <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
+      </div><blockquote>
 <p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
 </blockquote>
 <h1 id="json-的数据格式">json 的数据格式</h1>
@@ -184,8 +184,8 @@
 <p>相对于上面所讲的 dumps 和 loads 来说，dump 和 load 函数的功能类似，只不过前者是用来处理字符串类型的，而后者是用于处理文件类型的，如下所示：</p>
 <p></p>
 <p>上例列举出了 json 的四个方法：dumps（）和 dump（）、loads（）和 load（）的简单使用方法，可见，Python 对于 json 的处理相当方便，不像 c++那样（谁用谁知道）。</p>]]></description></item><item><title>python 玩微信：初探 wxpy</title><link>https://lruihao.cn/posts/wxpy1/</link><pubDate>Sat, 20 Apr 2019 15:44:57 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wxpy1/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/posts/wxpy1/images/1.png" referrerpolicy="no-referrer">
-            </div><blockquote>
+        <img src="/posts/wxpy1/images/1.png" referrerpolicy="no-referrer">
+      </div><blockquote>
 <p><em><strong>文中涉及的图片涉及个人隐私，仅做举例，请勿传播</strong></em></p>
 <ul>
 <li>查看微信好友男女比例</li>
