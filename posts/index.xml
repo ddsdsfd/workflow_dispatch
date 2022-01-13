@@ -1510,7 +1510,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <p><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）</p>
 </li>
 <li>
-<p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移</p>
+<p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移 <sup><a href="#seo-ref" rel="">baidu_urls.txt</a></sup><a id="seo"></a></p>
 </li>
 <li>
 <p><i class="far fa-check-square fa-fw"></i> <code>Github actions</code> 自动部署到 <strong>Github pages</strong> 和 <strong>COS</strong> 脚本编写</p>
@@ -1542,7 +1542,27 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/4" target="_blank" rel="noopener noreffer">#4</a></li>
 <li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
 </ul>
-<h3 id="theme-loveit">Theme LoveIt</h3>
+<hr>
+<p><a id="seo-ref"></a><code>[baidu_urls.txt]:</code><a href="#seo" rel="">↩︎</a></p>
+<p><em>生成百度链接集合小技巧，关掉归档分页，在归档页面控制台执行以下代码即可获得所有文章链接</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">urls</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">a</span> <span class="k">of</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.archive-item a&#39;</span><span class="p">)){</span>
+  <span class="nx">urls</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">urls</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;\n&#39;</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="theme-loveit-fixit">Theme <del>LoveIt</del> FixIt</h3>
 <blockquote>
 <p>hugo LoveIt 主题整体优化，<del>必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多）<br>
 先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，<br>
@@ -1575,7 +1595,7 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <li><i class="far fa-square fa-fw"></i> TOC 序号生成</li>
 <li><i class="far fa-check-square fa-fw"></i> Fix: 无标题时也会生成目录的 BUG</li>
 <li><i class="far fa-check-square fa-fw"></i> subtitle 等细节优化</li>
-<li><i class="far fa-square fa-fw"></i> Fix: typeit 打印代码时跑版的问题</li>
+<li><i class="far fa-check-square fa-fw"></i> Fix: typeit 打印代码时跑版的问题</li>
 <li><i class="far fa-check-square fa-fw"></i> Fix: 文章 <code>h1</code> 标题多行跑版</li>
 <li><i class="far fa-check-square fa-fw"></i> Code Review</li>
 </ul>]]></description></item><item><title>less&amp;sass&amp;scss</title><link>https://lruihao.cn/posts/less-sass-scss/</link><pubDate>Tue, 22 Jun 2021 16:39:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/less-sass-scss/</guid><description><![CDATA[<blockquote>
