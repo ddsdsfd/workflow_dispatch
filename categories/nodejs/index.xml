@@ -4,8 +4,34 @@
 </blockquote>
 <h1 id="gitbook-简介">GitBook 简介</h1>
 <ul>
-<li><a href="https://www.gitbook.com" target="_blank" rel="noopener noreffer">GitBook 官网</a></li>
-<li><a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="noopener noreffer">GitBook 文档</a></li>
+<li><a
+  href="https://www.gitbook.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>GitBook 官网</a></li>
+<li><a
+  href="https://github.com/GitbookIO/gitbook"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>GitBook 文档</a></li>
 </ul>
 <blockquote>
 <p>Gitbook 的作用和 Hexo 有点像，也是把 md 渲染成 html, 也见到有人用这个来写博客的。<br>
@@ -22,7 +48,20 @@ GitBook 支持输出多种文档格式：</p>
 </ul>
 <h1 id="gitbook-安装步骤">GitBook 安装步骤</h1>
 <h2 id="安装-nodejs">安装 node.js</h2>
-<p>GitBook 是一个基于 Node.js 的命令行工具，下载安装 <a href="https://nodejs.org" target="_blank" rel="noopener noreffer">Node.js</a>（我以前搭建 hexo 的文章里也有介绍），安装完成之后，你可以使用下面的命令来检验是否安装成功。</p>
+<p>GitBook 是一个基于 Node.js 的命令行工具，下载安装 <a
+  href="https://nodejs.org"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Node.js</a>（我以前搭建 hexo 的文章里也有介绍），安装完成之后，你可以使用下面的命令来检验是否安装成功。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -49,7 +88,20 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook -V
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md" target="_blank" rel="noopener noreffer">参照 GitBook 安装文档</a></p>
+</div><p><a
+  href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参照 GitBook 安装文档</a></p>
 <h2 id="gitbook-初始化">gitbook 初始化</h2>
 <p>和<code>hexo init</code>类似，GitBook 准备工作做好之后，我们进入一个你要写书的目录（比如新建 mybook 文件夹），输入如下命令初始化</p>
 <div class="highlight"><div class="chroma">
@@ -142,7 +194,20 @@ gitbook mobi ./ ./mybook.mobi
 <h2 id="summarymd">SUMMARY.md</h2>
 <p>这个文件主要决定 GitBook 的章节目录，它通过 Markdown 中的列表语法来表示文件的父子关系。</p>
 <h2 id="更多">更多</h2>
-<p><a href="https://www.jianshu.com/p/421cc442f06c" target="_blank" rel="noopener noreffer">更多详情介绍</a></p>]]></description></item><item><title>ttf 字体压缩</title><link>https://lruihao.cn/posts/web-font/</link><pubDate>Wed, 17 Oct 2018 21:38:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-font/</guid><description><![CDATA[<h3 id="安装-nodejs">安装 nodeJs</h3>
+<p><a
+  href="https://www.jianshu.com/p/421cc442f06c"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>更多详情介绍</a></p>]]></description></item><item><title>ttf 字体压缩</title><link>https://lruihao.cn/posts/web-font/</link><pubDate>Wed, 17 Oct 2018 21:38:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-font/</guid><description><![CDATA[<h3 id="安装-nodejs">安装 nodeJs</h3>
 <p>这个不多说，都有。</p>
 <h3 id="安装字蛛">安装字蛛</h3>
 <p>输入命令</p>
@@ -186,5 +251,18 @@ gitbook mobi ./ ./mybook.mobi
 </code></pre></td></tr></table>
 </div>
 </div><p></p>
-<p><a href="http://font-spider.org" target="_blank" rel="noopener noreffer">官网</a></p>
+<p><a
+  href="http://font-spider.org"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>官网</a></p>
 ]]></description></item></channel></rss>

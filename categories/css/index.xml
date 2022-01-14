@@ -61,7 +61,20 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
 </ol>
 <h1 id="選用-less-還是-sass-">選用 Less 還是 Sass ?</h1>
 <p>無論是學習資料，討論情況，以及項目使用情況 Sass/Scss 都優於 Less，比如 Bootstrap 4 就使用的 Sass, 但是 Less 的使用更加簡單，使用門檻也較低，內網開發的情況，Less 則更加適合。</p>]]></description></item><item><title>前端面试题-HTML+CSS</title><link>https://lruihao.cn/posts/ms-html-css/</link><pubDate>Sat, 30 Mar 2019 22:58:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ms-html-css/</guid><description><![CDATA[<blockquote>
-<p><a href="https://github.com/ltadpoles/web-document/tree/master/Other" target="_blank" rel="noopener noreffer">原文链接</a><br>
+<p><a
+  href="https://github.com/ltadpoles/web-document/tree/master/Other"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>原文链接</a><br>
 “卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学 java 和 web 相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
 </blockquote>
 <p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>
@@ -150,9 +163,35 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
 <li>websocket 协议</li>
 <li>webworker</li>
 </ul>
-<p><a href="https://juejin.im/post/5acdba01f265da23826e5633" target="_blank" rel="noopener noreffer">多个标签页之间的通信</a></p>
+<p><a
+  href="https://juejin.im/post/5acdba01f265da23826e5633"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>多个标签页之间的通信</a></p>
 <h2 id="8-html5-的离线存储怎么使用解释一下工作原理">8. HTML5 的离线存储怎么使用，解释一下工作原理</h2>
-<p><a href="https://segmentfault.com/a/1190000006984353" target="_blank" rel="noopener noreffer">HTML5 的离线存储</a></p>
+<p><a
+  href="https://segmentfault.com/a/1190000006984353"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>HTML5 的离线存储</a></p>
 <h2 id="9-src-与-href-的区别">9. src 与 href 的区别</h2>
 <p>区别：src 用于替代这个元素，而 href 用于建立这个标签与外部资源之间的关系</p>
 <p><code>&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code>浏览器加载到这里的时候，html 的渲染和解析不会暂停，css 文件的加载是同时进行的</p>
@@ -388,8 +427,60 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
 <li>抽象提取公共样式，减少代码量</li>
 </ul>
 <h2 id="13-重绘和回流">13. 重绘和回流</h2>
-<p><a href="https://juejin.im/post/5a9923e9518825558251c96a" target="_blank" rel="noopener noreffer">重绘和回流</a></p>
+<p><a
+  href="https://juejin.im/post/5a9923e9518825558251c96a"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>重绘和回流</a></p>
 <h2 id="14-flex-布局">14. flex 布局</h2>
-<p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">flex 布局教程&ndash;阮一峰</a></p>
+<p><a
+  href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>flex 布局教程&ndash;阮一峰</a></p>
 <h2 id="15-css-预处理器">15. css 预处理器</h2>
-<p>提供了一种 css 的书写方式，常见的就是 <a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank" rel="noopener noreffer">SAAS 文档</a> 和 <a href="https://less.bootcss.com/" target="_blank" rel="noopener noreffer">LESS 文档</a></p>]]></description></item></channel></rss>
+<p>提供了一种 css 的书写方式，常见的就是 <a
+  href="http://sass.bootcss.com/docs/sass-reference/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>SAAS 文档</a> 和 <a
+  href="https://less.bootcss.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LESS 文档</a></p>]]></description></item></channel></rss>

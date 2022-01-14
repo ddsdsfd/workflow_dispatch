@@ -7,8 +7,34 @@
     <div class="details-content">
       <div class="admonition-content"><p><strong>Getting Things Done (GTD)</strong> is a personal productivity system developed by David Allen and published in a book of the same name. GTD is described as a time management system. Allen states &ldquo;there is an inverse relationship between things on your mind and those things getting done&rdquo;.</p>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Getting_Things_Done" target="_blank" rel="noopener noreffer">Reference</a></li>
-<li><a href="https://github.com/Lruihao/hugo-blog/issues/20" target="_blank" rel="noopener noreffer">#20</a></li>
+<li><a
+  href="https://en.wikipedia.org/wiki/Getting_Things_Done"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Reference</a></li>
+<li><a
+  href="https://github.com/Lruihao/hugo-blog/issues/20"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#20</a></li>
 </ul>
 </div>
     </div>
@@ -115,25 +141,42 @@
 <li>Github (collection, backup), Blog (summarize)</li>
 </ul>
 </li>
-</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">插件地址</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a
+  href="https://github.com/robinchenyu/imagepaste"
+  
+    title="插件地址"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">插件地址</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/robinchenyu/imagepaste
         </span>
-        https://github.com/robinchenyu/imagepaste
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <h2 id="功能">功能</h2>
 <p>支持 Windows/Linux 系统下，实现对剪切板图像的处理调用 (Ctrl+Shift+V)<br>
 默认使用 JPG 的方式保存，可以显著减小图片的存储体积。</p>
@@ -670,26 +713,7 @@ git push
 <pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
 </code></pre></td></tr></table>
 </div>
-</div><p>将需要统计的文件夹拖到 bat 文件上。</p>]]></description></item><item><title>博採眾長 app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<a href="https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">博客 app 下载</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
-        </span>
-        https://ziyuan.lruihao.cn/app/bczc_2.6.2.apk
-      </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
-<h3 id="介绍">介绍</h3>
+</div><p>将需要统计的文件夹拖到 bat 文件上。</p>]]></description></item><item><title>博採眾長 app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<h3 id="介绍">介绍</h3>
 <p>使用 fusion app 对网页进行的封装。<br>
 功能：</p>
 <ul>
@@ -708,8 +732,34 @@ git push
 <p><del>app 内也可以更新，不过就我自己用，懒得更新。</del></p>
 </blockquote>
 <ul>
-<li><a href="https://pan.baidu.com/s/19jOvnNhssF302Mi1GRa2Sw" target="_blank" rel="noopener noreffer">百度云，密码：479l</a></li>
-<li><a href="https://github.com/Lruihao/Blog_fas_apk" target="_blank" rel="noopener noreffer">github 下载</a></li>
+<li><a
+  href="https://pan.baidu.com/s/19jOvnNhssF302Mi1GRa2Sw"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>百度云，密码：479l</a></li>
+<li><a
+  href="https://github.com/Lruihao/Blog_fas_apk"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 下载</a></li>
 </ul>
 <p><strong>PWA 应用</strong></p>
 <ol>
@@ -1983,7 +2033,20 @@ gzip
 </code></pre></td></tr></table>
 </div>
 </div><p>指定邮箱是为了申请 ssl, 实现 https.</p>
-<h3 id="demohttpspanlruihaocn"><a href="https://pan.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></h3>
+<h3 id="demohttpspanlruihaocn"><a
+  href="https://pan.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>demo</a></h3>
 <p>启动 caddy</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2026,7 +2089,20 @@ gzip
 </code></pre></td></tr></table>
 </div>
 </div><p>设置任务
-<a href="https://www.jianshu.com/p/95d1473859d1" target="_blank" rel="noopener noreffer">参考</a></p>
+<a
+  href="https://www.jianshu.com/p/95d1473859d1"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2117,7 +2193,33 @@ Ctrl+c
 <p>屏写方式</p>
 </li>
 <li>
-<p><a href="https://github.com/Lruihao/MMT/raw/master/mmt@last.ttf" target="_blank" rel="noopener noreffer">最新版下载</a> · <a href="https://github.com/Lruihao/MMT/releases" target="_blank" rel="noopener noreffer">沐目体下载</a><br>
+<p><a
+  href="https://github.com/Lruihao/MMT/raw/master/mmt@last.ttf"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>最新版下载</a> · <a
+  href="https://github.com/Lruihao/MMT/releases"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>沐目体下载</a><br>
 使用手机造字 app 手写制作，写了大概 1 年半吧，终于写完了，写完看效果发现粗细细了点，字型也小了点，只好以后有时间再改罗。基本上还是挺满意的，下面是效果图。</p>
 </li>
 </ul>
@@ -2251,12 +2353,38 @@ Ctrl+c
 8 位二进制，除去符号位还有 7 位，7 个 1 为最大数，相当于 8 个 1 减 1，也就是 2^7-1, 所以范围就算出来了。</p>
 <h3 id="浮点数运算">浮点数运算</h3>
 <p><strong>对阶（小阶对大阶）+ 尾数计算（科学计数法）+ 结果规格化（科学技术法）</strong></p>
-]]></description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description><![CDATA[<h2 id="在线算法httpsbaikebaiducomiteme59ca8e7babfe7ae97e6b3954449947"><a href="https://baike.baidu.com/item/%E5%9C%A8%E7%BA%BF%E7%AE%97%E6%B3%95/4449947" target="_blank" rel="noopener noreffer">在线算法</a></h2>
+]]></description></item><item><title>在线离线算法</title><link>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</link><pubDate>Thu, 26 Jul 2018 09:57:32 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/</guid><description><![CDATA[<h2 id="在线算法httpsbaikebaiducomiteme59ca8e7babfe7ae97e6b3954449947"><a
+  href="https://baike.baidu.com/item/%E5%9C%A8%E7%BA%BF%E7%AE%97%E6%B3%95/4449947"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>在线算法</a></h2>
 <p>在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。</p>
 <p>在计算机科学中，一个在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。相对的，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。例如，选择排序在排序前就需要知道所有待排序元素，然而插入排序就不必。<br>
 因为在线算法并不知道整个的输入，所以它被迫做出的选择最后可能会被证明不是最优的，对在线算法的研究主要集中在当前环境下怎么做出选择。对相同问题的在线算法和离线算法的对比分析形成了以上观点。如果想从其他角度了解在线算法可以看一下流算法（关注精确呈现过去的输入所使用的内存的量），动态算法（关注维护一个在线输入的结果所需要的时间复杂度）和在线机器学习。<br>
 一个很好的展示在线算法概念的例子是 加拿大旅行者问题，这个问题的目标是在一个有权图中以最小的代价到达一个目标节点，但这个有权图中有些边是不可靠的可能已经被剔除。然而一个旅行者只有到某个边的一个端点时才能确定该边是否已经被移除了。最坏情况下，该问题会变得简单了，即所有的不确定的边都被移除该问题将会变成通常的最短路径问题。</p>
-<h2 id="离线算法httpsbaikebaiducomiteme7a6bbe7babfe7ae97e6b395"><a href="https://baike.baidu.com/item/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95" target="_blank" rel="noopener noreffer">离线算法</a></h2>
+<h2 id="离线算法httpsbaikebaiducomiteme7a6bbe7babfe7ae97e6b395"><a
+  href="https://baike.baidu.com/item/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>离线算法</a></h2>
 <p>离线算法 ( off line algorithms)，是指基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。</p>
 <p>设计策略  在执行算法前输入已知的基本假设<br>
 前提  具有问题完全信息<br>
@@ -2281,13 +2409,39 @@ Ctrl+c
 <p>定义一些常量可能会用到&laquo;运算。你可以方便地用 1 &laquo;16 – 1 来表示 65535。很多算法和数据结构要求数据规模必须是 2 的幂，此时可以用&laquo;来定义 Max_N 等常量。</p>
 <h2 id="6-运算">6. &raquo;运算</h2>
 <p>和&laquo;相似，a &raquo; b 表示二进制右移 b 位（去掉末 b 位），相当于 a 除以 2 的 b 次方（取整）。我们也经常用&raquo; 1 来代替 div 2，比如二分查找、堆的插入操作等等。想办法用&raquo;代替除法运算可以使程序效率大大提高。最大公约数的二进制算法用除以 2 操作来代替慢得出奇的 mod 运算，效率可以提高 60%</p>
-<p><a href="https://weibo.com/ttarticle/p/show?id=2309404238259097064884&amp;mod=zwenzhang" target="_blank" rel="noopener noreffer">传送门</a></p>
+<p><a
+  href="https://weibo.com/ttarticle/p/show?id=2309404238259097064884&amp;mod=zwenzhang"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a></p>
 <blockquote>
 <p>原文：<code>http://www.matrix67.com/blog/archives/263</code></p>
 </blockquote>
 ]]></description></item><item><title>Markdown 基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
 <p>本文来自 kio 对 Markdown 的基础教程
-其他推荐参考：<a href="https://segmentfault.com/markdown" target="_blank" rel="noopener noreffer">https://segmentfault.com/markdown</a></p>
+其他推荐参考：<a
+  href="https://segmentfault.com/markdown"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://segmentfault.com/markdown</a></p>
 </blockquote>
 <p>Markdown 主张使用最简单的符号来控制格式，兼顾易读易写特性，让你可以专注在文本创作上。</p>
 <p>这篇文章旨在让你通过大约三分钟来快速掌握 Markdown 的基本用法。</p>
@@ -2341,7 +2495,20 @@ Ctrl+c
 <p>通过 <code>---</code> 即可以添加段落分割线：</p>
 <hr>
 <h2 id="链接及图片">链接及图片</h2>
-<p><a href="https://lruihao.cn/posts/hexowrite/" target="_blank" rel="noopener noreffer">另外一篇博文</a>
+<p><a
+  href="https://lruihao.cn/posts/hexowrite/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>另外一篇博文</a>
 链接和图片可以为文章润色不少，通过 <code>[描述](地址)</code>既可以添加链接，而在其前面添加一个 <code>!</code> 号即为添加图片， 具体为：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2412,9 +2579,48 @@ Ctrl+c
 </div><hr>
 <p>至此，写作中需要用到的控制符已经介绍完毕了，Kio 提供的所见即所得 Markdown 支持和便捷的输入辅助能帮助你快速掌握这一密术 :]</p>
 <h2 id="移动端写作工具">移动端写作工具</h2>
-<p><a href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w" target="_blank" rel="noopener noreffer">Kio：密码 99o4</a> 可以导出 PDF，md 文件
-<a href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw" target="_blank" rel="noopener noreffer">markdownx：密码 a5n4</a>
-<a href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg" target="_blank" rel="noopener noreffer">SM.MS 图床：密码 ch0v</a></p>
+<p><a
+  href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Kio：密码 99o4</a> 可以导出 PDF，md 文件
+<a
+  href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>markdownx：密码 a5n4</a>
+<a
+  href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>SM.MS 图床：密码 ch0v</a></p>
 <p>若链接失效还可以去酷安上下载。</p>]]></description></item><item><title>各种 Links 汇总与分享</title><link>https://lruihao.cn/posts/links/</link><pubDate>Thu, 07 Jun 2018 00:06:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/links/</guid><description><![CDATA[<blockquote>
 <p>2021/10/1 更新<br>
 使用 Chrome 等浏览器管理书签是更好更方便的方式，登陆 google 账号，或者导出 html 书签文件都挺方便。</p>
@@ -2433,59 +2639,241 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="http://www.pythontip.com/acm/problemCategory" target="_blank" rel="noopener noreffer">各大 OJ 题目分类</a></td>
+<td style="text-align:left"><a
+  href="http://www.pythontip.com/acm/problemCategory"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>各大 OJ 题目分类</a></td>
 <td style="text-align:left">各种算法分类，对应 OJ 题号超链接</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://blog.csdn.net/column/details/acm--acm-acm--1.html" target="_blank" rel="noopener noreffer">ACM 题目分类</a></td>
+<td style="text-align:left"><a
+  href="https://blog.csdn.net/column/details/acm--acm-acm--1.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>ACM 题目分类</a></td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://codeforces.com" target="_blank" rel="noopener noreffer">codeforces</a></td>
+<td style="text-align:left"><a
+  href="https://codeforces.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>codeforces</a></td>
 <td style="text-align:left">俄国 CF 在线编程，一般比赛在晚上 9:30 和 11：00</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.nowcoder.com" target="_blank" rel="noopener noreffer">牛客网</a></td>
+<td style="text-align:left"><a
+  href="https://www.nowcoder.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>牛客网</a></td>
 <td style="text-align:left">国内求职学习网，有很多程序设计比赛</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://vjudge.net" target="_blank" rel="noopener noreffer">vjudge</a></td>
+<td style="text-align:left"><a
+  href="https://vjudge.net"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>vjudge</a></td>
 <td style="text-align:left">这个不用说了吧</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://hihocoder.com" target="_blank" rel="noopener noreffer">hihocoder</a></td>
+<td style="text-align:left"><a
+  href="https://hihocoder.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hihocoder</a></td>
 <td style="text-align:left">打得少，感觉好多数据结构的题</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://bailian.openjudge.cn" target="_blank" rel="noopener noreffer">百练</a></td>
+<td style="text-align:left"><a
+  href="http://bailian.openjudge.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>百练</a></td>
 <td style="text-align:left">OpenJudge 的一个小组，很多题目来自 POJ；也是我 ACM 启蒙地</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://acm.hdu.edu.cn" target="_blank" rel="noopener noreffer">HDUOJ</a></td>
+<td style="text-align:left"><a
+  href="http://acm.hdu.edu.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>HDUOJ</a></td>
 <td style="text-align:left">杭州电子科技大学 OJ</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://poj.org" target="_blank" rel="noopener noreffer">POJ</a></td>
+<td style="text-align:left"><a
+  href="http://poj.org"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>POJ</a></td>
 <td style="text-align:left">北京大学 OJ</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.luogu.org" target="_blank" rel="noopener noreffer">洛谷</a></td>
+<td style="text-align:left"><a
+  href="https://www.luogu.org"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>洛谷</a></td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.lintcode.com/problem/" target="_blank" rel="noopener noreffer">lintcode</a></td>
+<td style="text-align:left"><a
+  href="https://www.lintcode.com/problem/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>lintcode</a></td>
 <td style="text-align:left">领扣（国外）</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://leetcode-cn.com/problemset/all/" target="_blank" rel="noopener noreffer">leedcode</a></td>
+<td style="text-align:left"><a
+  href="https://leetcode-cn.com/problemset/all/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>leedcode</a></td>
 <td style="text-align:left">力扣</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.codewars.com/kata/" target="_blank" rel="noopener noreffer">codewar</a></td>
+<td style="text-align:left"><a
+  href="https://www.codewars.com/kata/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>codewar</a></td>
 <td style="text-align:left">国外</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://blog.csdn.net/tigerisland45/article/details/52134189" target="_blank" rel="noopener noreffer">更多 OJ，在线刷题网站 &hellip;</a></td>
+<td style="text-align:left"><a
+  href="https://blog.csdn.net/tigerisland45/article/details/52134189"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>更多 OJ，在线刷题网站 &hellip;</a></td>
 <td></td>
 </tr>
 </tbody>
@@ -2502,71 +2890,305 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="https://visualgo.net" target="_blank" rel="noopener noreffer">visualgo</a></td>
+<td style="text-align:left"><a
+  href="https://visualgo.net"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>visualgo</a></td>
 <td style="text-align:left">算法学习，数据结构和算法动态可视化</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://zh.cppreference.com" target="_blank" rel="noopener noreffer">c,c++学习</a></td>
+<td style="text-align:left"><a
+  href="https://zh.cppreference.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>c,c++学习</a></td>
 <td style="text-align:left">很详细的知识讲解</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://archive.apache.org/dist/tomcat/" target="_blank" rel="noopener noreffer">Tomcat 下载</a></td>
+<td style="text-align:left"><a
+  href="https://archive.apache.org/dist/tomcat/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Tomcat 下载</a></td>
 <td style="text-align:left">Tomcat 各版本下载，Tomcat 解压即安装；<code>\bin</code>下可以启动和关闭服务器；可手动在<code>\webapps</code>里创建 web 应用，也可以配合<code>Eclisp IDE for Java EE Developers</code>等 Java IDE 工具创建</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.w3school.com.cn" target="_blank" rel="noopener noreffer">w3school</a></td>
+<td style="text-align:left"><a
+  href="http://www.w3school.com.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>w3school</a></td>
 <td style="text-align:left">可在线测试，Web 技术教程，HTML, 浏览器脚本，服务器脚本，xml 教程等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.w3cschool.cn" target="_blank" rel="noopener noreffer">w3cschool</a></td>
+<td style="text-align:left"><a
+  href="https://www.w3cschool.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>w3cschool</a></td>
 <td style="text-align:left">和上面不同哦，是不是和上面的很像哈哈哈！我估计是上一个网站的新版，功能更强大，内容更丰富，还有微信小程序教程等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.runoob.com" target="_blank" rel="noopener noreffer">菜鸟教程</a></td>
+<td style="text-align:left"><a
+  href="https://www.runoob.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>菜鸟教程</a></td>
 <td style="text-align:left">和上面两个差不多，还有一些数据库、安卓的东西，git 学习</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.pythontip.com" target="_blank" rel="noopener noreffer">python 学习</a></td>
+<td style="text-align:left"><a
+  href="http://www.pythontip.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>python 学习</a></td>
 <td style="text-align:left">Python 库安装包下载，python,Django,HTML,ACM 学习</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://python123.io" target="_blank" rel="noopener noreffer">python123</a></td>
-<td style="text-align:left">Python123 是专注于为中国高等院校教学 Python 语言的而开发的一款学习工具网站 <a href="https://python123.io/index/notebooks/python_programming_basic_v2/%E6%BA%90%E4%BB%A3%E7%A0%81/2-1%20%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F?from=Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%28%E7%AC%AC2%E7%89%88%29" target="_blank" rel="noopener noreffer">python 学习</a></td>
+<td style="text-align:left"><a
+  href="https://python123.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>python123</a></td>
+<td style="text-align:left">Python123 是专注于为中国高等院校教学 Python 语言的而开发的一款学习工具网站 <a
+  href="https://python123.io/index/notebooks/python_programming_basic_v2/%E6%BA%90%E4%BB%A3%E7%A0%81/2-1%20%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F?from=Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%28%E7%AC%AC2%E7%89%88%29"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>python 学习</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://pypi.org/" target="_blank" rel="noopener noreffer">pypi</a></td>
+<td style="text-align:left"><a
+  href="https://pypi.org/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>pypi</a></td>
 <td style="text-align:left">Find, install and publish Python packages with the Python Package Index</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://uqer.io" target="_blank" rel="noopener noreffer">优矿</a></td>
+<td style="text-align:left"><a
+  href="https://uqer.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>优矿</a></td>
 <td style="text-align:left">python 在线测试，笔记</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener noreffer">阮一峰的网络日志</a></td>
+<td style="text-align:left"><a
+  href="http://www.ruanyifeng.com/blog/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>阮一峰的网络日志</a></td>
 <td style="text-align:left">开发者手册，JavaScript 等等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.liaoxuefeng.com" target="_blank" rel="noopener noreffer">廖雪峰</a></td>
+<td style="text-align:left"><a
+  href="https://www.liaoxuefeng.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>廖雪峰</a></td>
 <td style="text-align:left">git,python,javascript 学习</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.sioe.cn" target="_blank" rel="noopener noreffer">新晴网</a></td>
+<td style="text-align:left"><a
+  href="http://www.sioe.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>新晴网</a></td>
 <td style="text-align:left">PS 学习，摄影教程等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.shiyanlou.com" target="_blank" rel="noopener noreffer">实验楼</a></td>
+<td style="text-align:left"><a
+  href="https://www.shiyanlou.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>实验楼</a></td>
 <td style="text-align:left">在线做实验，高效学编程</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.imooc.com" target="_blank" rel="noopener noreffer">慕课网</a></td>
+<td style="text-align:left"><a
+  href="https://www.imooc.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>慕课网</a></td>
 <td style="text-align:left">在线学习，免费，付费视频</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://wxpy.readthedocs.io" target="_blank" rel="noopener noreffer">wxpy</a></td>
+<td style="text-align:left"><a
+  href="https://wxpy.readthedocs.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>wxpy</a></td>
 <td style="text-align:left">一个 python 关于微信的库</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://so1n.me/links/" target="_blank" rel="noopener noreffer">So1n</a></td>
+<td style="text-align:left"><a
+  href="http://so1n.me/links/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>So1n</a></td>
 <td style="text-align:left">python 学习</td>
 </tr>
 </tbody>
@@ -2583,51 +3205,220 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="https://console.cloud.tencent.com" target="_blank" rel="noopener noreffer">腾讯云</a></td>
+<td style="text-align:left"><a
+  href="https://console.cloud.tencent.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>腾讯云</a></td>
 <td style="text-align:left">dnspod 解析新版入口，腾讯云控制台</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.dnspod.cn" target="_blank" rel="noopener noreffer">dnspod 解析</a></td>
+<td style="text-align:left"><a
+  href="https://www.dnspod.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>dnspod 解析</a></td>
 <td style="text-align:left">域名解析，其他：阿里云等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.cloudflare.com" target="_blank" rel="noopener noreffer">cloudflare 解析</a></td>
-<td style="text-align:left">域名解析，https 解析，[介绍](<a href="https://oliverqueen.cn/2018/01/25/" target="_blank" rel="noopener noreffer">https://oliverqueen.cn/2018/01/25/</a>可能是最全的使用 HEXO 搭建个人博客教程)</td>
+<td style="text-align:left"><a
+  href="https://www.cloudflare.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>cloudflare 解析</a></td>
+<td style="text-align:left">域名解析，https 解析，[介绍](<a
+  href="https://oliverqueen.cn/2018/01/25/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://oliverqueen.cn/2018/01/25/</a>可能是最全的使用 HEXO 搭建个人博客教程)</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://studio.dev.tencent.com/" target="_blank" rel="noopener noreffer">cloud studio</a></td>
+<td style="text-align:left"><a
+  href="https://studio.dev.tencent.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>cloud studio</a></td>
 <td style="text-align:left">这是腾讯云和 coding 合作后的一个东西，简单来说就是云端开发环境。试了一下完全可以把 hexo 博客源码挂上面编辑。这也就不用只局限于一台电脑发布博客了。</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://cloud.tencent.com/developer/labs" target="_blank" rel="noopener noreffer">腾讯云大学开放实验室</a></td>
+<td style="text-align:left"><a
+  href="https://cloud.tencent.com/developer/labs"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>腾讯云大学开放实验室</a></td>
 <td style="text-align:left">可以在线进行一些云服务应用搭建等的实验。与之对应的还有阿里云开放实验室</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔面板</a></td>
+<td style="text-align:left"><a
+  href="https://www.bt.cn/?invite_code=MV9sYXJnZHI="
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>宝塔面板</a></td>
 <td style="text-align:left">宝塔面板是一款使用方便、功能强大且终身免费的服务器管理软件，支持 Linux 与 Windows 系统。一键配置：LAMP/LNMP、网站、数据库、FTP、SSL，通过 Web 端轻松管理服务器。</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://leancloud.cn" target="_blank" rel="noopener noreffer">leancloud</a></td>
+<td style="text-align:left"><a
+  href="https://leancloud.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>leancloud</a></td>
 <td style="text-align:left">一站式后端云服务</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.daovoice.io" target="_blank" rel="noopener noreffer">daovoice</a></td>
+<td style="text-align:left"><a
+  href="http://www.daovoice.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>daovoice</a></td>
 <td style="text-align:left">网站在线客服</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://ziyuan.baidu.com/linksubmit/url" target="_blank" rel="noopener noreffer">百度网站收录</a></td>
+<td style="text-align:left"><a
+  href="https://ziyuan.baidu.com/linksubmit/url"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>百度网站收录</a></td>
 <td style="text-align:left">网站 seo</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.bing.com/toolbox/webmaster" target="_blank" rel="noopener noreffer">Bing 站长</a></td>
+<td style="text-align:left"><a
+  href="https://www.bing.com/toolbox/webmaster"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Bing 站长</a></td>
 <td style="text-align:left">Bing 网站管理员工具</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://tool.chinaz.com" target="_blank" rel="noopener noreffer">站长工具</a></td>
+<td style="text-align:left"><a
+  href="http://tool.chinaz.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>站长工具</a></td>
 <td style="text-align:left">网站信息查询，权重，seo，网站速度查询，ping 等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://tool.lusongsong.com" target="_blank" rel="noopener noreffer">站长工具大全</a></td>
+<td style="text-align:left"><a
+  href="http://tool.lusongsong.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>站长工具大全</a></td>
 <td style="text-align:left">各种 seo 优化，工具等</td>
 </tr>
 </tbody>
@@ -2644,123 +3435,565 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="http://www.jser.com/" target="_blank" rel="noopener noreffer">全栈开发者</a></td>
+<td style="text-align:left"><a
+  href="http://www.jser.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>全栈开发者</a></td>
 <td style="text-align:left">顾名思义，有很多 web 开发的教程，也可以在线执行代码</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.jsfuck.com" target="_blank" rel="noopener noreffer">JSFuck</a></td>
+<td style="text-align:left"><a
+  href="http://www.jsfuck.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>JSFuck</a></td>
 <td style="text-align:left">JSFuck 是一种基于 JavaScript 原子部分的深奥教育编程风格。它只使用六个不同的字符来编写和执行代码。（代码极丑化）</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.bootcdn.cn/" target="_blank" rel="noopener noreffer">BootCDN</a></td>
+<td style="text-align:left"><a
+  href="https://www.bootcdn.cn/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>BootCDN</a></td>
 <td style="text-align:left">稳定、快速、免费的前端开源项目 CDN 加速服务，共收录了 3441 个前端开源项目。比如<code>vue</code>,<code>fancybox</code>等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.bootcss.com" target="_blank" rel="noopener noreffer">bootstrap 中文网</a></td>
+<td style="text-align:left"><a
+  href="https://www.bootcss.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>bootstrap 中文网</a></td>
 <td style="text-align:left">简洁、直观、强悍的前端开发框架，让 web 开发更迅速、简单。还有一些基于 bootstrap 开发或扩充的项目的 cdn，<code>BootCDN</code>也是在该网站旗下</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://fontawesome.com/icons?d=gallery" target="_blank" rel="noopener noreffer">Font Awesome 图标库</a></td>
+<td style="text-align:left"><a
+  href="https://fontawesome.com/icons?d=gallery"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Font Awesome 图标库</a></td>
 <td style="text-align:left">hexo 指定图标库</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.iconfont.cn" target="_blank" rel="noopener noreffer">iconfont</a></td>
+<td style="text-align:left"><a
+  href="http://www.iconfont.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>iconfont</a></td>
 <td style="text-align:left">阿里巴巴矢量图标库</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.easyicon.net" target="_blank" rel="noopener noreffer">easyicon 图标库</a></td>
+<td style="text-align:left"><a
+  href="https://www.easyicon.net"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>easyicon 图标库</a></td>
 <td style="text-align:left">图标下载，格式转换，可外链</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://semantic-ui.com/elements/icon.html" target="_blank" rel="noopener noreffer">semantic-ui.com 图标库</a></td>
+<td style="text-align:left"><a
+  href="https://semantic-ui.com/elements/icon.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>semantic-ui.com 图标库</a></td>
 <td style="text-align:left">semantic-ui.com 还有很多前端样式对应代码</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://colorhunt.co/" target="_blank" rel="noopener noreffer">colorhunt</a></td>
+<td style="text-align:left"><a
+  href="https://colorhunt.co/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>colorhunt</a></td>
 <td style="text-align:left">配色方案推荐，调试</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.grabient.com" target="_blank" rel="noopener noreffer">grabient 渐变色</a></td>
+<td style="text-align:left"><a
+  href="https://www.grabient.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>grabient 渐变色</a></td>
 <td style="text-align:left">渐变色调色</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://gradient.awesomes.cn" target="_blank" rel="noopener noreffer">gradient 渐变色调色</a></td>
+<td style="text-align:left"><a
+  href="http://gradient.awesomes.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>gradient 渐变色调色</a></td>
 <td style="text-align:left">渐变色调色，获取代码</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://encycolorpedia.cn" target="_blank" rel="noopener noreffer">encycolorpedia</a></td>
+<td style="text-align:left"><a
+  href="https://encycolorpedia.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>encycolorpedia</a></td>
 <td style="text-align:left">encycolorpedia 取色器</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://sc.youku.com/" target="_blank" rel="noopener noreffer">优酷视频上传</a></td>
+<td style="text-align:left"><a
+  href="https://sc.youku.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>优酷视频上传</a></td>
 <td style="text-align:left">获取视频外链，其他：腾讯视频</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://sm.ms" target="_blank" rel="noopener noreffer">sm.ms</a></td>
+<td style="text-align:left"><a
+  href="https://sm.ms"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>sm.ms</a></td>
 <td style="text-align:left">非常好用的图床</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://imgurl.org/" target="_blank" rel="noopener noreffer">imgURL</a></td>
-<td style="text-align:left">一个开源的图床，很不错，有兴趣的可以自己尝试搭建，比如 <a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">img.lruihao.cn</a></td>
+<td style="text-align:left"><a
+  href="https://imgurl.org/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>imgURL</a></td>
+<td style="text-align:left">一个开源的图床，很不错，有兴趣的可以自己尝试搭建，比如 <a
+  href="https://img.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>img.lruihao.cn</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://wl.uixsj.cn/index.php" target="_blank" rel="noopener noreffer">现实君外链</a></td>
+<td style="text-align:left"><a
+  href="http://wl.uixsj.cn/index.php"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>现实君外链</a></td>
 <td style="text-align:left">支持多种文件外链，唯一不好的是 http</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.pexels.com" target="_blank" rel="noopener noreffer">PEXELS 美图</a></td>
+<td style="text-align:left"><a
+  href="https://www.pexels.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>PEXELS 美图</a></td>
 <td style="text-align:left">文章配图，无版权美图网，避免配图侵权</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://unsplash.com" target="_blank" rel="noopener noreffer">unsplash 美图</a></td>
-<td style="text-align:left"><a href="https://source.unsplash.com/" target="_blank" rel="noopener noreffer">API</a> 还可以获取 <a href="https://source.unsplash.com/random/800x600" target="_blank" rel="noopener noreffer">随机图</a></td>
+<td style="text-align:left"><a
+  href="https://unsplash.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>unsplash 美图</a></td>
+<td style="text-align:left"><a
+  href="https://source.unsplash.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>API</a> 还可以获取 <a
+  href="https://source.unsplash.com/random/800x600"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>随机图</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://icon.wuruihong.com" target="_blank" rel="noopener noreffer">图标工厂</a></td>
+<td style="text-align:left"><a
+  href="https://icon.wuruihong.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>图标工厂</a></td>
 <td style="text-align:left">移动应用图标生成工具，一键生成所有尺寸的应用图标</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.emojicopy.com" target="_blank" rel="noopener noreffer">emoji 在线复制</a></td>
+<td style="text-align:left"><a
+  href="https://www.emojicopy.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>emoji 在线复制</a></td>
 <td style="text-align:left">Simple emoji copy and paste</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://blog.csdn.net/u013778905/article/details/53177042" target="_blank" rel="noopener noreffer">HTML 字符实体</a></td>
+<td style="text-align:left"><a
+  href="https://blog.csdn.net/u013778905/article/details/53177042"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>HTML 字符实体</a></td>
 <td style="text-align:left">网页特殊符号大全</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.sioe.cn/yingyong" target="_blank" rel="noopener noreffer">特效字转换工具集</a></td>
+<td style="text-align:left"><a
+  href="http://www.sioe.cn/yingyong"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>特效字转换工具集</a></td>
 <td style="text-align:left">各种特效字转换工具，彩虹字生成器，RGB 转 16 进制颜色等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.yasuotu.com/" target="_blank" rel="noopener noreffer">压缩图</a></td>
+<td style="text-align:left"><a
+  href="https://www.yasuotu.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>压缩图</a></td>
 <td style="text-align:left">在线 ps，图片去底，证件照换底等操作很方便的 web 图片处理工具</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.gaitubao.com" target="_blank" rel="noopener noreffer">改图宝</a></td>
+<td style="text-align:left"><a
+  href="http://www.gaitubao.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>改图宝</a></td>
 <td style="text-align:left">在线改图压缩，加水印，生成二维码，印章制作等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://tool.gifhome.com/" target="_blank" rel="noopener noreffer">GIF 之家</a></td>
+<td style="text-align:left"><a
+  href="https://tool.gifhome.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>GIF 之家</a></td>
 <td style="text-align:left">一个压缩效果很好且免费的 gif 压缩工具</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://jiema.wwei.cn" target="_blank" rel="noopener noreffer">二维码解码器</a></td>
+<td style="text-align:left"><a
+  href="https://jiema.wwei.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>二维码解码器</a></td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://mh.cli.im" target="_blank" rel="noopener noreffer">草料二维码</a></td>
-<td style="text-align:left"><a href="https://cli.im" target="_blank" rel="noopener noreffer">https://cli.im</a></td>
+<td style="text-align:left"><a
+  href="https://mh.cli.im"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>草料二维码</a></td>
+<td style="text-align:left"><a
+  href="https://cli.im"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://cli.im</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.liantu.com/meihua" target="_blank" rel="noopener noreffer">联图二维码</a></td>
+<td style="text-align:left"><a
+  href="http://www.liantu.com/meihua"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>联图二维码</a></td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.9thws.com" target="_blank" rel="noopener noreffer">第九工厂</a></td>
+<td style="text-align:left"><a
+  href="https://www.9thws.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>第九工厂</a></td>
 <td style="text-align:left">死磕艺术二维码</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.mobanma.com" target="_blank" rel="noopener noreffer">模板码</a></td>
+<td style="text-align:left"><a
+  href="https://www.mobanma.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>模板码</a></td>
 <td style="text-align:left">动态二维码等</td>
 </tr>
 </tbody>
@@ -2777,79 +4010,339 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></td>
+<td style="text-align:left"><a
+  href="https://learngitbranching.js.org/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Gearn Git Branching</a></td>
 <td style="text-align:left">通过游戏闯关的方式学习 git！</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener noreffer">PicGo</a></td>
+<td style="text-align:left"><a
+  href="https://picgo.github.io/PicGo-Doc/zh/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>PicGo</a></td>
 <td style="text-align:left">一个很好的开源的图床管理桌面程序，图床神器支持微博图床、七牛图床、腾讯云 COS、又拍云、GitHub 图床、阿里云 OSS、Imgur 图床等等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://github.com/proxyee-down-org/proxyee-down" target="_blank" rel="noopener noreffer">Proxyee Down</a></td>
+<td style="text-align:left"><a
+  href="https://github.com/proxyee-down-org/proxyee-down"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Proxyee Down</a></td>
 <td style="text-align:left">百度云下载解决方案，满速下载，但不限于百度云的下载，感觉比迅雷还好用！</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.baiduwp.com/" target="_blank" rel="noopener noreffer">PanDownload</a></td>
+<td style="text-align:left"><a
+  href="https://www.baiduwp.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>PanDownload</a></td>
 <td style="text-align:left">这是 pandownload 网页版，把需要下载的百度网盘链接<code>baidu</code>改成<code>baiduwp</code>即可加速，也有桌面版。</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://paste.ubuntu.com" target="_blank" rel="noopener noreffer">ubuntu pastebin</a></td>
+<td style="text-align:left"><a
+  href="https://paste.ubuntu.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>ubuntu pastebin</a></td>
 <td style="text-align:left">代码展示托管，生成分享网址，防止代码直接分享缩进消失</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://picascii.com" target="_blank" rel="noopener noreffer">图片转字符工具</a></td>
+<td style="text-align:left"><a
+  href="https://picascii.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>图片转字符工具</a></td>
 <td style="text-align:left">Img&ndash;&gt;String</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://everyfont.enjoyfe.com" target="_blank" rel="noopener noreffer">everyfont</a></td>
+<td style="text-align:left"><a
+  href="http://everyfont.enjoyfe.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>everyfont</a></td>
 <td style="text-align:left">中文字库在线压缩</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://font-spider.org" target="_blank" rel="noopener noreffer">字蛛</a></td>
+<td style="text-align:left"><a
+  href="http://font-spider.org"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>字蛛</a></td>
 <td style="text-align:left">font-spider 中文字库压缩</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.mdtr2pdf.com/index.html" target="_blank" rel="noopener noreffer">mdtr2pdf</a></td>
+<td style="text-align:left"><a
+  href="http://www.mdtr2pdf.com/index.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>mdtr2pdf</a></td>
 <td style="text-align:left">markdown 转 pdf</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://api.imjad.cn" target="_blank" rel="noopener noreffer">AD&rsquo;s API</a></td>
+<td style="text-align:left"><a
+  href="https://api.imjad.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>AD&rsquo;s API</a></td>
 <td style="text-align:left">包括动态签名，网易音乐等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://123.w3cschool.cn/webtools" target="_blank" rel="noopener noreffer">在线工具</a></td>
+<td style="text-align:left"><a
+  href="https://123.w3cschool.cn/webtools"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>在线工具</a></td>
 <td style="text-align:left">w3cschool 的在线工具集合</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://tool.oschina.net" target="_blank" rel="noopener noreffer">在线工具</a></td>
+<td style="text-align:left"><a
+  href="https://tool.oschina.net"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>在线工具</a></td>
 <td style="text-align:left">开源中国社区</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://c.runoob.com" target="_blank" rel="noopener noreffer">菜鸟工具</a></td>
-<td style="text-align:left"><a href="https://www.runoob.com" target="_blank" rel="noopener noreffer">菜鸟教程</a> 在线工具，编译，加密，压缩代码等</td>
+<td style="text-align:left"><a
+  href="https://c.runoob.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>菜鸟工具</a></td>
+<td style="text-align:left"><a
+  href="https://www.runoob.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>菜鸟教程</a> 在线工具，编译，加密，压缩代码等</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://msdn.itellyou.cn/" target="_blank" rel="noopener noreffer">msdn</a></td>
+<td style="text-align:left"><a
+  href="http://msdn.itellyou.cn/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>msdn</a></td>
 <td style="text-align:left">windows 系统上 office 等软件下载（备用）</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.laomoit.com/" target="_blank" rel="noopener noreffer">老殁科技</a></td>
+<td style="text-align:left"><a
+  href="https://www.laomoit.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>老殁科技</a></td>
 <td style="text-align:left">Adobe 等各种绿色破解软件</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" target="_blank" rel="noopener noreffer">百度接口</a></td>
+<td style="text-align:left"><a
+  href="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>百度接口</a></td>
 <td style="text-align:left">百度搜索关键词接口</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.pdflibr.com/" target="_blank" rel="noopener noreffer">在线短信</a></td>
+<td style="text-align:left"><a
+  href="https://www.pdflibr.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>在线短信</a></td>
 <td style="text-align:left">不想泄露个人的电话号码，注册一些一次性网站可以用到</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.peiyinge.com/" target="_blank" rel="noopener noreffer">配音阁</a></td>
+<td style="text-align:left"><a
+  href="http://www.peiyinge.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>配音阁</a></td>
 <td style="text-align:left">文字转换语音/语音合成广告_叫卖录音_在线配音网络软件_促销宣传片配音-配音阁-配音阁，国内专业的广告配音平台</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://hacknical.com" target="_blank" rel="noopener noreffer">hacknical</a></td>
+<td style="text-align:left"><a
+  href="https://hacknical.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hacknical</a></td>
 <td style="text-align:left">在线个性简历，个人 Github 总结分析</td>
 </tr>
 </tbody>
@@ -2866,27 +4359,105 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="https://chvin.github.io/react-tetris/" target="_blank" rel="noopener noreffer">俄罗斯方块</a></td>
+<td style="text-align:left"><a
+  href="https://chvin.github.io/react-tetris/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>俄罗斯方块</a></td>
 <td style="text-align:left">这是一个开源的游戏，小白的我看来简直牛逼爆了，好逼真，刷新都不会打断游戏进度！！</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://nazo.one-story.cn" target="_blank" rel="noopener noreffer">网址迷宫 nazo_game</a></td>
+<td style="text-align:left"><a
+  href="http://nazo.one-story.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>网址迷宫 nazo_game</a></td>
 <td style="text-align:left">一个程序员的网页游戏，我只玩到 12 关。</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.51ape.com" target="_blank" rel="noopener noreffer">无损音乐下载</a></td>
+<td style="text-align:left"><a
+  href="http://www.51ape.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>无损音乐下载</a></td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.flexifont.com/flexifont-chn/login/" target="_blank" rel="noopener noreffer">手写体制作</a></td>
+<td style="text-align:left"><a
+  href="http://www.flexifont.com/flexifont-chn/login/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>手写体制作</a></td>
 <td style="text-align:left">北京大学计算机科学技术研究所的一个项目<code>59.108.48.27</code> <del>（我的字体至今还未完成）</del></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://www.daxiangdaili.com" target="_blank" rel="noopener noreffer">大象代理</a></td>
+<td style="text-align:left"><a
+  href="http://www.daxiangdaili.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>大象代理</a></td>
 <td style="text-align:left">收费，口碑不错</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="https://www.pgyer.com" target="_blank" rel="noopener noreffer">蒲公英</a></td>
+<td style="text-align:left"><a
+  href="https://www.pgyer.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>蒲公英</a></td>
 <td style="text-align:left">应用内测发布平台</td>
 </tr>
 </tbody>
@@ -2902,23 +4473,76 @@ Ctrl+c
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="/posts/webbiji/" rel="">Web 笔记</a></td>
+<td style="text-align:left"><a
+  href="/posts/webbiji/"
+  
+  
+  
+  
+  
+  
+>Web 笔记</a></td>
 <td style="text-align:left">记录一下自己 web 相关学习的笔记</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="/posts/git/" rel="">Git 常用指令汇总</a></td>
+<td style="text-align:left"><a
+  href="/posts/git/"
+  
+  
+  
+  
+  
+  
+>Git 常用指令汇总</a></td>
 <td style="text-align:left">可能用到按需自查</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="/posts/nextplugin/" rel="">hexo 插件及 next 内置样式集</a></td>
-<td style="text-align:left">让文章写的好看又简洁又好用的插件！<a href="https://lruihao.cn/categories/hexo/" target="_blank" rel="noopener noreffer">hexo 更多请看分类</a></td>
+<td style="text-align:left"><a
+  href="/posts/nextplugin/"
+  
+  
+  
+  
+  
+  
+>hexo 插件及 next 内置样式集</a></td>
+<td style="text-align:left">让文章写的好看又简洁又好用的插件！<a
+  href="https://lruihao.cn/categories/hexo/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo 更多请看分类</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="/posts/hexo-theme-next/" rel="">hexo-theme-next @modified LRH</a></td>
+<td style="text-align:left"><a
+  href="/posts/hexo-theme-next/"
+  
+  
+  
+  
+  
+  
+>hexo-theme-next @modified LRH</a></td>
 <td style="text-align:left">对 next 主题的 DIY 设计记录日志</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="/posts/font-mmt/" rel="">一款自己写的字体 - 沐目体</a></td>
+<td style="text-align:left"><a
+  href="/posts/font-mmt/"
+  
+  
+  
+  
+  
+  
+>一款自己写的字体 - 沐目体</a></td>
 <td style="text-align:left">沐目体&ndash;release</td>
 </tr>
 </tbody>

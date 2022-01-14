@@ -1,11 +1,37 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>netBeans - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/netbeans/</link><description>netBeans - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 15 Aug 2019 18:36:15 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/netbeans/" rel="self" type="application/rss+xml"/><item><title>netBeans IDE 开发设置</title><link>https://lruihao.cn/posts/netbeans/</link><pubDate>Thu, 15 Aug 2019 18:36:15 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/netbeans/</guid><description><![CDATA[<h1 id="安裝">安裝</h1>
-<p><a href="https://netbeans.org/" target="_blank" rel="noopener noreffer">官方下載點</a></p>
+<p><a
+  href="https://netbeans.org/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>官方下載點</a></p>
 <h1 id="擴充功能">擴充功能</h1>
 <h2 id="安裝擴充功能">安裝擴充功能</h2>
 <ol>
 <li>下載擴充套件包
 <ul>
-<li><a href="http://plugins.netbeans.org/PluginPortal/" target="_blank" rel="noopener noreffer">官方套件庫</a></li>
+<li><a
+  href="http://plugins.netbeans.org/PluginPortal/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>官方套件庫</a></li>
 <li>或者在 netbenas IDE 裏面下載插件（方便）</li>
 </ul>
 </li>
@@ -197,7 +223,20 @@
 <h2 id="chrome-with-netneans-connector">Chrome with NetNeans Connector</h2>
 <ol>
 <li>打開 chrome 中的應用程式商店（使用 chrome 瀏覽器點擊下方鏈接即可）<br>
-<a href="https://chrome.google.com/webstore/category/themes?hl=en-US/" target="_blank" rel="noopener noreffer">chrome 應用程式商店</a></li>
+<a
+  href="https://chrome.google.com/webstore/category/themes?hl=en-US/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>chrome 應用程式商店</a></li>
 <li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 Netbeans 圖標。</li>
 <li>開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector</li>
 <li>選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可</li>

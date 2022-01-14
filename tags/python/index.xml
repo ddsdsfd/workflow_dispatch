@@ -2,7 +2,15 @@
 <p>使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
 <p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~<br>
-<a href="/posts/pyinstallererror/" rel="">打包 exe 参考</a></p>
+<a
+  href="/posts/pyinstallererror/"
+  
+  
+  
+  
+  
+  
+>打包 exe 参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -197,7 +205,20 @@
 <p>适用湖南工程学院的打卡系统。<br>
 请勿滥用代码提交不实健康信息，隐瞒疫情将受到相关法律处理！</p>
 </blockquote>
-<p><a href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py" target="_blank" rel="noopener noreffer">完整代码</a></p>
+<p><a
+  href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>完整代码</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -311,7 +332,15 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+</div><p><a
+  href="/posts/cron/"
+  
+  
+  
+  
+  
+  
+>CRON 表达式的基本语法</a></p>
 <h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
@@ -323,7 +352,20 @@
 <p>这些知识点在课上都只是简单的提到了一下。<br>
 比如一些库的使用与安装都不会再课上详细讲解，需要课后再去研究。</p>
 </blockquote>
-<h2 id="切片操作httpswwwjianshucomp15715d6f4dad"><a href="https://www.jianshu.com/p/15715d6f4dad" target="_blank" rel="noopener noreffer">切片操作</a></h2>
+<h2 id="切片操作httpswwwjianshucomp15715d6f4dad"><a
+  href="https://www.jianshu.com/p/15715d6f4dad"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>切片操作</a></h2>
 <p>列表切片操作</p>
 <h2 id="字符串">字符串</h2>
 <h3 id="python-原始字符串">python 原始字符串</h3>
@@ -608,7 +650,20 @@
 <li><code>__</code>表示私有的</li>
 <li>class 的定义可以不加 (),() 内可写继承的父类</li>
 </ul>
-<h2 id="gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548">GUI 设计 <a href="https://blog.csdn.net/mist99/article/details/80742548" target="_blank" rel="noopener noreffer">wxPython</a></h2>
+<h2 id="gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548">GUI 设计 <a
+  href="https://blog.csdn.net/mist99/article/details/80742548"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>wxPython</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -729,7 +784,20 @@
 </div>
 </div><p></p>
 <h2 id="talib-库的安装">talib 库的安装</h2>
-<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib" target="_blank" rel="noopener noreffer">下载 whl 文件</a></p>
+<p><a
+  href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>下载 whl 文件</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2070,7 +2138,20 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 这里通过手动下载安装解决的，记录一下。</p>
 </blockquote>
 <h1 id="下载">下载</h1>
-<p>去官网下载 pyinstaller 安装包：<a href="https://pypi.org/project/PyInstaller/#files" target="_blank" rel="noopener noreffer">https://pypi.org/project/PyInstaller/#files</a></p>
+<p>去官网下载 pyinstaller 安装包：<a
+  href="https://pypi.org/project/PyInstaller/#files"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://pypi.org/project/PyInstaller/#files</a></p>
 <h1 id="解压">解压</h1>
 <p>我这里解压到<code>E:\应用、Python37\Lib\site-packages\PyInstaller-3.4</code></p>
 <h1 id="安装">安装</h1>
@@ -2098,7 +2179,15 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </blockquote>
 <p>如<code>pyinstaller --paths=&quot;D:\&quot; test.py</code></p>
 <h1 id="csdn-访问量脚本实例">CSDN 访问量脚本实例</h1>
-<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a href="/posts/csdnvisiter.html" rel="">代码详见</a></p>
+<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a
+  href="/posts/csdnvisiter.html"
+  
+  
+  
+  
+  
+  
+>代码详见</a></p>
 <p>在 cmd 进入桌面路径，输入如下命令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2113,7 +2202,20 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及 exe 可执行文件。</p>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
       </div><blockquote>
-<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
+<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a
+  href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>阅读原文</a></p>
 </blockquote>
 <h1 id="json-的数据格式">json 的数据格式</h1>
 <p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>
@@ -2206,7 +2308,33 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div>
 </div><p>运行后会在屏幕打印出返回的 json 数据
 </p>]]></description></item><item><title>用 MyQR 制作专属动态二维码 (py 和 exe 版本）</title><link>https://lruihao.cn/posts/qrcode/</link><pubDate>Sat, 27 Apr 2019 14:16:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qrcode/</guid><description><![CDATA[<blockquote>
-<p><strong>Python 二维码生成器</strong>是 github 上@sylnsfar 开源的一个 python 生成二维码工具。有 python, 网页及 exe 版本，详见 <a href="https://github.com/sylnsfar/qrcode/" target="_blank" rel="noopener noreffer">sylnsfar/qrcode</a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a href="https://github.com/sylnsfar/qrcode_win" target="_blank" rel="noopener noreffer">项目开源地址</a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
+<p><strong>Python 二维码生成器</strong>是 github 上@sylnsfar 开源的一个 python 生成二维码工具。有 python, 网页及 exe 版本，详见 <a
+  href="https://github.com/sylnsfar/qrcode/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>sylnsfar/qrcode</a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a
+  href="https://github.com/sylnsfar/qrcode_win"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>项目开源地址</a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
 </blockquote>
 <p>可生成<em>普通二维码</em>、<em>带图片的艺术二维码（黑白与彩色）</em>、<em>动态二维码（黑白与彩色）</em>。</p>
 <h2 id="示例">示例</h2>
@@ -2291,7 +2419,20 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div>
 </div><h2 id="使用方法">使用方法</h2>
 <h3 id="命令行方式">命令行方式</h3>
-<p><em>（<strong>提示</strong>：如果你尚未安装 <a href="https://pypi.python.org/pypi/MyQR" target="_blank" rel="noopener noreffer"><strong>MyQR</strong></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
+<p><em>（<strong>提示</strong>：如果你尚未安装 <a
+  href="https://pypi.python.org/pypi/MyQR"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+><strong>MyQR</strong></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2522,9 +2663,48 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </ul>
 <h2 id="依赖库">依赖库</h2>
 <ul>
-<li><a href="https://pypi.python.org/pypi/Pillow/3.3.1" target="_blank" rel="noopener noreffer">pillow</a></li>
-<li><a href="https://pypi.python.org/pypi/numpy" target="_blank" rel="noopener noreffer">numpy</a></li>
-<li><a href="https://pypi.python.org/pypi/imageio" target="_blank" rel="noopener noreffer">imageio</a></li>
+<li><a
+  href="https://pypi.python.org/pypi/Pillow/3.3.1"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>pillow</a></li>
+<li><a
+  href="https://pypi.python.org/pypi/numpy"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>numpy</a></li>
+<li><a
+  href="https://pypi.python.org/pypi/imageio"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>imageio</a></li>
 </ul>
 <h2 id="运行环境">运行环境</h2>
 <ul>
@@ -2532,7 +2712,33 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <li>Windows, Python 3</li>
 <li>Mac, Python 3</li>
 </ul>]]></description></item><item><title>python 爬取网站图片（图片链接相似）</title><link>https://lruihao.cn/posts/mmtimgpy/</link><pubDate>Mon, 22 Apr 2019 12:46:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mmtimgpy/</guid><description><![CDATA[<blockquote>
-<p>以下程序对 <a href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&amp;a=fontshowPics&amp;u=qbfRl8gPF2s-&amp;z=Kqz%2FRroVGYc-&amp;share=1&amp;from=singlemessage" target="_blank" rel="noopener noreffer">该网址</a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a href="https://lruihao.cn/posts/font-mmt/" target="_blank" rel="noopener noreffer">字体效果查看</a></p>
+<p>以下程序对 <a
+  href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&amp;a=fontshowPics&amp;u=qbfRl8gPF2s-&amp;z=Kqz%2FRroVGYc-&amp;share=1&amp;from=singlemessage"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>该网址</a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a
+  href="https://lruihao.cn/posts/font-mmt/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>字体效果查看</a></p>
 </blockquote>
 <h1 id="思路设计">思路设计</h1>
 <blockquote>
@@ -2715,8 +2921,34 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </blockquote>
 <h1 id="前期准备">前期准备</h1>
 <ul>
-<li><a href="https://github.com/youfou/wxpy" target="_blank" rel="noopener noreffer">wxpy</a></li>
-<li><a href="https://github.com/pyecharts/pyecharts" target="_blank" rel="noopener noreffer">pyecharts</a>（百度 echarts）</li>
+<li><a
+  href="https://github.com/youfou/wxpy"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>wxpy</a></li>
+<li><a
+  href="https://github.com/pyecharts/pyecharts"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>pyecharts</a>（百度 echarts）</li>
 </ul>
 <h1 id="查看微信好友男女比例">查看微信好友男女比例</h1>
 <div class="highlight"><div class="chroma">
@@ -2851,7 +3083,20 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </div>
 </div><p></p>
 <blockquote>
-<p><strong>以上参考简书 <a href="https://www.jianshu.com/p/c0baf3c6db15" target="_blank" rel="noopener noreffer">陈思煜</a></strong></p>
+<p><strong>以上参考简书 <a
+  href="https://www.jianshu.com/p/c0baf3c6db15"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>陈思煜</a></strong></p>
 </blockquote>
 <h1 id="统计所有群男女数目">统计所有群男女数目</h1>
 <blockquote>
@@ -2995,9 +3240,35 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <li>math（数学计算）</li>
 </ul>
 <blockquote>
-<p><a href="https://github.com/youfou/wxpy" target="_blank" rel="noopener noreffer">wxpy</a>:<br>
+<p><a
+  href="https://github.com/youfou/wxpy"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>wxpy</a>:<br>
   wxpy 在 itchat 的基础上，通过大量接口优化提升了模块的易用性，并进行丰富的功能扩展。<br>
-<a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000" target="_blank" rel="noopener noreffer">PIL</a>：<br>
+<a
+  href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>PIL</a>：<br>
   Python Imaging Library，已经是 Python 平台事实上的图像处理标准库了。PIL 功能非常强大，但 API 却非常简单易用。由于 PIL 仅支持到 Python 2.7，加上年久失修，于是一群志愿者在 PIL 的基础上创建了兼容的版本，名字叫 Pillow，支持最新 Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用 Pillow。</p>
 </blockquote>
 <h1 id="安装">安装</h1>

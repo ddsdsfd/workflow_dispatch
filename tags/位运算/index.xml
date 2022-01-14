@@ -18,7 +18,20 @@
 <p>定义一些常量可能会用到&laquo;运算。你可以方便地用 1 &laquo;16 – 1 来表示 65535。很多算法和数据结构要求数据规模必须是 2 的幂，此时可以用&laquo;来定义 Max_N 等常量。</p>
 <h2 id="6-运算">6. &raquo;运算</h2>
 <p>和&laquo;相似，a &raquo; b 表示二进制右移 b 位（去掉末 b 位），相当于 a 除以 2 的 b 次方（取整）。我们也经常用&raquo; 1 来代替 div 2，比如二分查找、堆的插入操作等等。想办法用&raquo;代替除法运算可以使程序效率大大提高。最大公约数的二进制算法用除以 2 操作来代替慢得出奇的 mod 运算，效率可以提高 60%</p>
-<p><a href="https://weibo.com/ttarticle/p/show?id=2309404238259097064884&amp;mod=zwenzhang" target="_blank" rel="noopener noreffer">传送门</a></p>
+<p><a
+  href="https://weibo.com/ttarticle/p/show?id=2309404238259097064884&amp;mod=zwenzhang"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a></p>
 <blockquote>
 <p>原文：<code>http://www.matrix67.com/blog/archives/263</code></p>
 </blockquote>

@@ -8,12 +8,38 @@
 </blockquote>
 <p>那 hugo 基于编译语言 GO 构建，对于静态页面的构建肯定是碾压 hexo 的存在，其官方标语也是很直白 <code>&quot;The world’s fastest framework for building websites&quot;</code>, 作为先后使用过 hexo 和 hugo 的我来说，这确实名副其实。</p>
 <ul>
-<li><a href="https://gohugo.io" target="_blank" rel="noopener noreffer">gohugo</a></li>
+<li><a
+  href="https://gohugo.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>gohugo</a></li>
 </ul>
 <h3 id="安装">安装</h3>
 <p>hugo 提供了很多种安装方式，Git, Docker, Binary.<br>
 个人电脑使用二进制安装是最方便快捷的，无需安装其他依赖。<br>
-到 <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">Hugo Releases</a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
+到 <a
+  href="https://github.com/gohugoio/hugo/releases"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Hugo Releases</a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
 <h3 id="生成站点">生成站点</h3>
 <p>使用 Hugo 快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
 <div class="highlight"><div class="chroma">
@@ -44,7 +70,33 @@
 </div>
 </div><h3 id="添加主题">添加主题</h3>
 <p>添加主题的方式选用 Git 子模组的形式，为了日后快速升级，避免在使用 hexo 中因大量魔改 next 主题而导致难以升级的困扰。<br>
-精挑细选最终选择了 <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer">LoveIt</a></p>
+精挑细选最终选择了 <del><a
+  href="https://github.com/dillonzq/LoveIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt</a></del> =&gt; <a
+  href="https://github.com/Lruihao/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>FixIt</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -52,11 +104,19 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git init
-git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 </code></pre></td></tr></table>
 </div>
-</div><p>在 <code>config.toml</code> 添加 <code>theme = &quot;LoveIt&quot;</code></p>
-<h3 id="在本地启动网站">在本地启动网站</h3>
+</div><p>在 <code>config.toml</code> 添加 <del>theme = &ldquo;LoveIt&rdquo;</del></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">theme = &#34;FixIt&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="在本地启动网站">在本地启动网站</h3>
 <p>使用以下命令启动网站：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -77,36 +137,100 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hugo --minify
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="hugoloveit-使用">Hugo&amp;LoveIt 使用</h2>
+</div><h2 id="写作指北">写作指北</h2>
 <ul>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-basics" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 基本概念</a></li>
-</ul>
-<p>写作指南</p>
-<ul>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-content/" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 内容</a></li>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 内置 Shortcodes</a></li>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 扩展 Shortcodes</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-basics"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 基本概念</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-content/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 内容</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 内置 Shortcodes</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 扩展 Shortcodes</a></li>
 </ul>
 <h2 id="todo-list">Todo list</h2>
-<a href="https://github.com/Lruihao/hugo-blog" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">hugo-blog</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="https://github.com/Lruihao/hugo-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">本站源码备份</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/hugo-blog
         </span>
-        https://github.com/Lruihao/hugo-blog
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <blockquote>
 <p>原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。</p>
 </blockquote>
@@ -131,7 +255,46 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </details>
 <ul>
 <li>
-<p><i class="far fa-square fa-fw"></i> <del><a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a href="https://github.com/Lruihao/hugo-blog/issues/7" target="_blank" rel="noopener noreffer">#7 (wontfix)</a></del></p>
+<p><i class="far fa-square fa-fw"></i> <del><a
+  href="https://img.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>cos-album</a> 和 <a
+  href="https://sz.journey.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a
+  href="https://github.com/Lruihao/hugo-blog/issues/7"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#7 (wontfix)</a></del></p>
 </li>
 <li>
 <p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> （保持原本博客的纯粹性）</p>
@@ -140,7 +303,15 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <p><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）</p>
 </li>
 <li>
-<p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移 <sup><a href="#seo-ref" rel="">baidu_urls.txt</a></sup><a id="seo"></a></p>
+<p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移 <sup><a
+  href="#seo-ref"
+  
+  
+  
+  
+  
+  
+>baidu_urls.txt</a></sup><a id="seo"></a></p>
 </li>
 <li>
 <p><i class="far fa-check-square fa-fw"></i> <code>Github actions</code> 自动部署到 <strong>Github pages</strong> 和 <strong>COS</strong> 脚本编写</p>
@@ -167,13 +338,60 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </ul>
 </details>
 <ul>
-<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
+<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/3"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#3</a></li>
 <li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
-<li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/4" target="_blank" rel="noopener noreffer">#4</a></li>
-<li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
+<li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/4"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#4</a></li>
+<li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/5"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#5</a></li>
 </ul>
 <hr>
-<p><a id="seo-ref"></a><code>[baidu_urls.txt]:</code><a href="#seo" rel="">↩︎</a></p>
+<p><a id="seo-ref"></a><code>[baidu_urls.txt]:</code><a
+  href="#seo"
+  
+  
+  
+  
+  
+  
+>↩︎</a></p>
 <p><em>生成百度链接集合小技巧，关掉归档分页，在归档页面控制台执行以下代码即可获得所有文章链接</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -192,33 +410,62 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </code></pre></td></tr></table>
 </div>
 </div><hr>
-<h3 id="theme-loveit-fixit">Theme <del>LoveIt</del> FixIt</h3>
+<h3 id="theme-fixit">Theme FixIt</h3>
 <blockquote>
-<p>hugo LoveIt 主题整体优化，<del>必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多）<br>
-先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，<br>
-唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。<br>
-<del>之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</del> FixIt fork from LoveIt</p>
+<p><del>hugo LoveIt 主题整体优化，必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多）<br>
+<del>先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，</del><br>
+<del>唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。</del><br>
+<del>之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</del>
+为了更好的完善博客功能以及修复 BUG 已创建新的主题 FixIt (fork from LoveIt)</p>
 </blockquote>
-<a href="https://github.com/Lruihao/FixIt" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">FixIt</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="https://github.com/Lruihao/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">Hugo theme FixIt</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/FixIt
         </span>
-        https://github.com/Lruihao/FixIt
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
-<p>进度更新至 <a href="https://github.com/Lruihao/hugo-blog/issues/8" target="_blank" rel="noopener noreffer">#8</a></p>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
+<p>进度更新至 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/8"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#8</a></p>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
 <li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>
@@ -246,9 +493,56 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
       <i class="icon fas fa-check-circle fa-fw"></i>next<i class="details-icon fas fa-angle-right fa-fw"></i>
     </div>
     <div class="details-content">
-      <div class="admonition-content">基于 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener noreffer">hexo-theme-next 6.0+</a> 的 Pisces 模板做的 DIY 扩展性设计（部分兼容 next 其他几种模板）。主要是一些 custom style 还有一些第三方的 js。修改的地方太多也有点小乱就不提 PR 了。<br>
-<a href="https://github.com/Lruihao/hexo-theme-next" target="_blank" rel="noopener noreffer">modified</a>  官方 Demo =&gt; <a href="https://theme-next.org" target="_blank" rel="noopener noreffer">https://theme-next.org</a><br>
-记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见 <a href="/categories/posts/" rel="">hexo 分类</a>。<br>
+      <div class="admonition-content">基于 <a
+  href="https://github.com/theme-next/hexo-theme-next"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo-theme-next 6.0+</a> 的 Pisces 模板做的 DIY 扩展性设计（部分兼容 next 其他几种模板）。主要是一些 custom style 还有一些第三方的 js。修改的地方太多也有点小乱就不提 PR 了。<br>
+<a
+  href="https://github.com/Lruihao/hexo-theme-next"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>modified</a>  官方 Demo =&gt; <a
+  href="https://theme-next.org"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://theme-next.org</a><br>
+记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见 <a
+  href="/categories/posts/"
+  
+  
+  
+  
+  
+  
+>hexo 分类</a>。<br>
 <strong>主题中若有遗漏第三方插件或应用的 key 及 id 值等请修改为自己对应的值</strong></div>
     </div>
   </div>
@@ -289,7 +583,20 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 \scripts\qcloudcdn.js                        #腾讯云 cos 桶刷新缓存的脚本，不需要可删掉 [^1]     
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://lruihao.cn/posts/cos-hexo.html#CDN%E5%88%B7%E6%96%B0" target="_blank" rel="noopener noreffer">^1</a></p>
+</div><p><a
+  href="https://lruihao.cn/posts/cos-hexo.html#CDN%E5%88%B7%E6%96%B0"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>^1</a></p>
 <h1 id="初步安装">初步安装</h1>
 <blockquote>
 <p>安装整个改过的主题，然后下载相应的 lib 资源解压放入 source 文件夹</p>
@@ -313,25 +620,40 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">theme: next
 </code></pre></td></tr></table>
 </div>
-</div><a href="http://github.com/Lruihao/hexo-theme-next/releases/tag/v6.9.1" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">lib 下载</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+</div><a
+  href="http://github.com/Lruihao/hexo-theme-next/releases/tag/v6.9.1"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">lib 下载</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          http://github.com/Lruihao/hexo-theme-next/releases/tag/v6.9.1
         </span>
-        http://github.com/Lruihao/hexo-theme-next/releases/tag/v6.9.1
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <p></p>
 <h1 id="更新内容">更新内容</h1>
 <blockquote>
@@ -749,7 +1071,20 @@ daovoice_app_id: xxxx   # http://www.daovoice.io/
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="pdf-和-mermaid-解析模块">pdf 和 Mermaid 解析模块</h2>
-<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf 传送门</a></p>
+<p><a
+  href="https://lruihao.cn/posts/next-pdf/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>pdf 传送门</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -855,7 +1190,20 @@ repost: true
 ---
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://lruihao.cn/tags/%e4%bb%96%e5%b1%b1%e4%b9%8b%e7%9f%b3/" target="_blank" rel="noopener noreffer">预览</a></p>
+</div><p><a
+  href="https://lruihao.cn/tags/%e4%bb%96%e5%b1%b1%e4%b9%8b%e7%9f%b3/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>预览</a></p>
 <h2 id="热度页面">热度页面</h2>
 <blockquote>
 <p>打开<code>hexo\themes\next\layout</code>新建 top.swig 文件，写下如下内容保存：</p>
@@ -1192,8 +1540,8 @@ limit: 20
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!--知乎卡片链接--&gt;</span>
-  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/src/card-link.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!--知乎卡片链接--&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/src/card-link.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>html 链接写法，a 标签加上<code>class=&quot;card-link&quot;</code></p>
@@ -1205,25 +1553,40 @@ limit: 20
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;https://github.com/Lruihao/lruihao.github.io&#34; target=&#34;_blank&#34; class=&#34;card-link&#34;&gt;Lruihao 博客&lt;/a&gt;
 </code></pre></td></tr></table>
 </div>
-</div><a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">Lruihao 博客</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+</div><a
+  href="https://github.com/Lruihao/lruihao.github.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">Lruihao 博客</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/lruihao.github.io
         </span>
-        https://github.com/Lruihao/lruihao.github.io
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
 <p>本以为 coding pages 与腾讯云合作后会更好，没想到正是这种初期 bug 不断，速度也是非常慢。比 gitee, 甚至 github 都要慢很多了。所以决定放弃 coding 了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的 cos 桶 xml 制作动态相册的文章，知道了对象存储这个玩意，腾讯云 COS 提供免费 50G 的存储空间，还有 CDN 加速服务，我觉得是个不错的选择，部署后发现速度还挺好。<br>
 适用于 hexo, hugo 等静态博客的部署。</p>
 </blockquote>
@@ -1666,10 +2029,49 @@ hexo g -d
 ]]></description></item><item><title>hexo 插件及 next 内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
 <p>2021/10/2 更新<br>
 博客已迁移至 Hugo, 插件演示不适用，已删除。<br>
-让文章写的好看又简洁又好用的插件！<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener noreffer">hexo 完整的标签列表</a>，<a href="https://theme-next.org/docs/tag-plugins/" target="_blank" rel="noopener noreffer">next 插件列表</a></p>
+让文章写的好看又简洁又好用的插件！<a
+  href="https://hexo.io/zh-cn/docs/tag-plugins.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo 完整的标签列表</a>，<a
+  href="https://theme-next.org/docs/tag-plugins/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>next 插件列表</a></p>
 </blockquote>
 <h3 id="hexo-插件">hexo 插件</h3>
-<h4 id="hexo-lazyload-imagehttpsgithubcomtroy-yanghexo-lazyload-image"><a href="https://github.com/Troy-Yang/hexo-lazyload-image" target="_blank" rel="noopener noreffer">hexo-lazyload-image</a></h4>
+<h4 id="hexo-lazyload-imagehttpsgithubcomtroy-yanghexo-lazyload-image"><a
+  href="https://github.com/Troy-Yang/hexo-lazyload-image"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo-lazyload-image</a></h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1723,7 +2125,20 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml">{% ruby _**base**_|_**top text**_ %}
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="hexo-pwahttpsgithubcomlavas-projecthexo-pwa"><a href="https://github.com/lavas-project/hexo-pwa" target="_blank" rel="noopener noreffer">hexo-pwa</a></h4>
+</div><h4 id="hexo-pwahttpsgithubcomlavas-projecthexo-pwa"><a
+  href="https://github.com/lavas-project/hexo-pwa"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo-pwa</a></h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1808,7 +2223,20 @@ hexo g -d
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="hexo-tag-dplayer">hexo-tag-dplayer</h4>
-<p><a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener noreffer">hexo-tag-dplayer</a></p>
+<p><a
+  href="https://github.com/MoePlayer/hexo-tag-dplayer"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo-tag-dplayer</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1857,7 +2285,20 @@ other:
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="hexo-tag-aplayer">hexo-tag-aplayer</h4>
-<p><a href="https://github.com/MoePlayer/hexo-tag-aplayer" target="_blank" rel="noopener noreffer">more</a></p>
+<p><a
+  href="https://github.com/MoePlayer/hexo-tag-aplayer"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>more</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1885,7 +2326,20 @@ other:
 <li><code>width:xxx</code>: （可选） 播放器宽度 （默认：100%)</li>
 <li><code>lrc:xxx</code>: （可选）歌词文件 URL 地址</li>
 </ul>
-<p>当开启 Hexo 的 <a href="https://hexo.io/zh-cn/docs/asset-folders.html#%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9" target="_blank" rel="noopener noreffer">文章资源文件夹</a> 功能时，可以将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用：</p>
+<p>当开启 Hexo 的 <a
+  href="https://hexo.io/zh-cn/docs/asset-folders.html#%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>文章资源文件夹</a> 功能时，可以将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1900,9 +2354,35 @@ other:
 </div>
 </div><meting-js url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" theme="#448aff"></meting-js>
 <h4 id="hexo-pdf">hexo-pdf</h4>
-<p><a href="https://lruihao.cn/posts/next-pdf/" target="_blank" rel="noopener noreffer">pdf 传送门</a></p>
+<p><a
+  href="https://lruihao.cn/posts/next-pdf/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>pdf 传送门</a></p>
 <h4 id="hexo-filter-flowchart流程图">hexo-filter-flowchart（流程图）</h4>
-<p><a href="https://flowchart.js.org" target="_blank" rel="noopener noreffer">语法</a></p>
+<p><a
+  href="https://flowchart.js.org"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>语法</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2003,7 +2483,33 @@ But you need to add <code>&lt;br&gt;</code> manually if you want line breaks aft
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="宅音乐侧栏播放器插件">宅音乐侧栏播放器插件</h3>
-<p><a href="https://player.lruihao.cn" target="_blank" rel="noopener noreffer"><del>体验</del></a> <a href="https://github.com/Lruihao/zhai-music" target="_blank" rel="noopener noreffer">源码</a></p>
+<p><a
+  href="https://player.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+><del>体验</del></a> <a
+  href="https://github.com/Lruihao/zhai-music"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>源码</a></p>
 <blockquote>
 <p>目前在 next 中可能引起部分 css 冲突，建议在 next 中使用在单个页面中。<br>
 依赖于 jQuery，一行 js 可以引入播放器插件。</p>
@@ -2097,7 +2603,20 @@ periods : Select the browser versions to display. Supported values: past_1, past
 </div>
 </div><p>Any <strong>raw content</strong> may be included with this tag.</p>
 <h3 id="button">button</h3>
-<p><a href="https://theme-next.org/docs/tag-plugins/button" target="_blank" rel="noopener noreffer">more info</a></p>
+<p><a
+  href="https://theme-next.org/docs/tag-plugins/button"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>more info</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2129,7 +2648,20 @@ icon    : FontAwesome icon name (without &#39;fa-&#39; at the begining). Require
 </div><div class="text-center">{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}</div>
 ```
 <h3 id="mermaid">Mermaid</h3>
-<p><a href="https://theme-next.org/docs/tag-plugins/mermaid" target="_blank" rel="noopener noreffer">more info</a></p>
+<p><a
+  href="https://theme-next.org/docs/tag-plugins/mermaid"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>more info</a></p>
 <p>example</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2191,7 +2723,20 @@ merge newbranch
 </div><h3 id="tab-选项卡">tab 选项卡</h3>
 <blockquote>
 <p>&ldquo;tab&quot;为选项卡的名称，可以自定义，数字是几表示从第几个选项卡开始。非必须，若数值为-1 则隐藏选项卡内容。
-<a href="https://theme-next.org/docs/tag-plugins/tabs" target="_blank" rel="noopener noreffer">查看更多</a></p>
+<a
+  href="https://theme-next.org/docs/tag-plugins/tabs"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>查看更多</a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2542,7 +3087,20 @@ label: true
 primary success info warning danger
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="其他httpwwwmykernelcnmy-hexo-next-1html"><a href="http://www.mykernel.cn/my-hexo-next-1.html" target="_blank" rel="noopener noreffer">其他</a></h3>
+</div><h3 id="其他httpwwwmykernelcnmy-hexo-next-1html"><a
+  href="http://www.mykernel.cn/my-hexo-next-1.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>其他</a></h3>
 <blockquote>
 <p>包括小色块、左侧色条、右侧色条、上方色条、数字色块（需要自定义样式）</p>
 </blockquote>]]></description></item><item><title>next添加支持pdf</title><link>https://lruihao.cn/posts/next-pdf/</link><pubDate>Fri, 09 Nov 2018 12:51:48 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/next-pdf/</guid><description><![CDATA[<blockquote>
@@ -2753,7 +3311,20 @@ git push origin hexo  //备份
 hexo d -g  //部署
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
+</div><p><a
+  href="https://blog.csdn.net/Monkey_LZL/article/details/60870891"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 ]]></description></item><item><title>网页离开时改变标题“崩溃欺骗”</title><link>https://lruihao.cn/posts/crash-cheat/</link><pubDate>Wed, 26 Sep 2018 16:36:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/crash-cheat/</guid><description><![CDATA[<blockquote>
 <p>从暑假到现在有好几个小伙伴问我博客的标题怎么变来变去的，不想再和每个人都说一遍了，耽误时间，索性写一下。</p>
 </blockquote>
@@ -2861,7 +3432,20 @@ next 主题好像更新了，现在自带的可以用了，如果可以用了，
     </div>
   </div>
 <h2 id="安装">安装</h2>
-<p><a href="https://github.com/willin/hexo-wordcount" target="_blank" rel="noopener noreffer">wordcount github</a>
+<p><a
+  href="https://github.com/willin/hexo-wordcount"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>wordcount github</a>
 如果没有安装 hexo-wordcount 插件，先安装该插件：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2982,7 +3566,20 @@ at ChildProcess.&lt;anonymous&gt; <span class="o">(</span>H:<span class="se">\H<
 </div><p>确保 ssh 正常，hexo-deploy-git 插件正常的情况下删除。deploy_git 文件夹就好了。
 最后吐槽一下，这个鬼错误，搞我一晚上醉了。我又打算重装了的。/吐血</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
 <p>本文适合我这种纯小白。
-目前为止，全网也就只有一个博主写到过这样动态显示 subtitle 的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js, 后加载）<br>
+目前为止，全网也就只有一个博主写到过这样动态显示 subtitle 的文章。<a
+  href="https://www.jianshu.com/p/df2c844eeabf"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a>（关键词：js, 后加载）<br>
 但是嘞，该博写的不怎么详细，17 年底写的。当然更大的可能是 next 更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
 </blockquote>
 <h2 id="修改站点配置文件主要修改-subtitle">修改站点配置文件，主要修改 subtitle</h2>
@@ -3102,7 +3699,20 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 </div>
 </div><p>之后部署后每次刷新就可以看到不同的 subtitle 了，开心😀</p>
 <h2 id="今日诗词">今日诗词</h2>
-<p><a href="https://www.jinrishici.com/" target="_blank" rel="noopener noreffer">今日诗词</a></p>
+<p><a
+  href="https://www.jinrishici.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>今日诗词</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3121,7 +3731,20 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 <p>直接 js 调用 api 简单快速</p>
 <blockquote>
 <p>2021/9/30 更新<br>
-<a href="https://api.imjad.cn/hitokoto.md" target="_blank" rel="noopener noreffer">一言 api-参数详见</a> 已经挂了</p>
+<a
+  href="https://api.imjad.cn/hitokoto.md"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>一言 api-参数详见</a> 已经挂了</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3142,7 +3765,20 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>在 Android 上搭建 hexo 博客</title><link>https://lruihao.cn/posts/termux/</link><pubDate>Sat, 11 Aug 2018 16:59:05 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/termux/</guid><description><![CDATA[<blockquote>
-<p>暑假刚开始的时候放假回家没带电脑，只能玩手机，想折腾一下博客都没有条件，在一个发现一个 app, 卧槽😱，termux 真的强大！（初始化需要科学上网）安卓手机上的 linux 简直了，在手机就可以搭了一个 hexo 博客，只要在 github 上实现分支管理就可以多终端同步更新了。恕我学疏才浅，还只想到这些！一开始想回校后，折腾一下 hexo-admin 实现类似动态博客一样的多终端管理（手动滑稽），现在发现 termux 这样子的操作也不错嘛，挺装哔 hhhhhh**<a href="https://lruihao.gitee.io" target="_blank" rel="noopener noreffer">部署后的效果</a>**</p>
+<p>暑假刚开始的时候放假回家没带电脑，只能玩手机，想折腾一下博客都没有条件，在一个发现一个 app, 卧槽😱，termux 真的强大！（初始化需要科学上网）安卓手机上的 linux 简直了，在手机就可以搭了一个 hexo 博客，只要在 github 上实现分支管理就可以多终端同步更新了。恕我学疏才浅，还只想到这些！一开始想回校后，折腾一下 hexo-admin 实现类似动态博客一样的多终端管理（手动滑稽），现在发现 termux 这样子的操作也不错嘛，挺装哔 hhhhhh**<a
+  href="https://lruihao.gitee.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>部署后的效果</a>**</p>
 </blockquote>
 <h2 id="准备">准备</h2>
 <ul>
@@ -3174,21 +3810,138 @@ hexo init blog
 没有 Root 的话可以使用 Vim，网上很多教程。但是这种方式相对来说更麻烦。</p>
 <h2 id="参考">参考</h2>
 <ul>
-<li><a href="https://www.sqlsec.com/2018/05/termux.html?yyue=a21bo.50862.201879" target="_blank" rel="noopener noreffer">termux 高级终端安装使用配置教程</a></li>
-<li><a href="https://www.oyohyee.com/post/Note/Termux" target="_blank" rel="noopener noreffer">使用 Termux 在手机上运行 linux 黑科技</a></li>
-<li><a href="https://lruihao.cn/hexo%20&#43;%20github%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html" target="_blank" rel="noopener noreffer">hexo 搭建过程</a></li>
-<li><a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener noreffer">超详细教程</a></li>
+<li><a
+  href="https://www.sqlsec.com/2018/05/termux.html?yyue=a21bo.50862.201879"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>termux 高级终端安装使用配置教程</a></li>
+<li><a
+  href="https://www.oyohyee.com/post/Note/Termux"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>使用 Termux 在手机上运行 linux 黑科技</a></li>
+<li><a
+  href="https://lruihao.cn/hexo%20&#43;%20github%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo 搭建过程</a></li>
+<li><a
+  href="https://my.oschina.net/ryaneLee/blog/638440"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>超详细教程</a></li>
 </ul>
 <h2 id="效果图未连接-githubcoding-等">效果图（未连接 github，coding 等）</h2>
-<p><a href="https://wx1.sinaimg.cn/mw690/006vSs63gy1ft2a0jo3hmj30u01hcguh.jpg" target="_blank" rel="noopener noreffer">效果图 1</a><br>
-<a href="https://wx4.sinaimg.cn/mw690/006vSs63gy1ft2a0kmm5xj30u01hcn2a.jpg" target="_blank" rel="noopener noreffer">效果图 2</a>
-<a href="https://wx3.sinaimg.cn/mw690/006vSs63gy1ft2a0lqt61j30u01hctla.jpg" target="_blank" rel="noopener noreffer">效果图 3</a><br>
-<a href="https://wx2.sinaimg.cn/mw690/006vSs63gy1ft2a0mgkm6j30u01hc78l.jpg" target="_blank" rel="noopener noreffer">效果图 4</a></p>]]></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面 F12 检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
+<p><a
+  href="https://wx1.sinaimg.cn/mw690/006vSs63gy1ft2a0jo3hmj30u01hcguh.jpg"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>效果图 1</a><br>
+<a
+  href="https://wx4.sinaimg.cn/mw690/006vSs63gy1ft2a0kmm5xj30u01hcn2a.jpg"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>效果图 2</a>
+<a
+  href="https://wx3.sinaimg.cn/mw690/006vSs63gy1ft2a0lqt61j30u01hctla.jpg"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>效果图 3</a><br>
+<a
+  href="https://wx2.sinaimg.cn/mw690/006vSs63gy1ft2a0mgkm6j30u01hc78l.jpg"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>效果图 4</a></p>]]></description></item><item><title>hexo 博客自定义 console log</title><link>https://lruihao.cn/posts/console-log/</link><pubDate>Sat, 04 Aug 2018 16:19:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/console-log/</guid><description><![CDATA[<p>看到知乎，百度的页面 F12 检查后都会有一些有趣的招聘信息。于是乎我也想给我的博客加一个。<br>
 我主要用到的工具：</p>
 <ul>
 <li>console.log()</li>
 <li>Notepad++</li>
-<li><a href="http://picascii.com" target="_blank" rel="noopener noreffer">在线图片转文字工具</a></li>
+<li><a
+  href="http://picascii.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>在线图片转文字工具</a></li>
 </ul>
 <h2 id="用法">用法</h2>
 <p>用 js 在<code>&lt;body&gt;&lt;/body&gt;</code>使用 console.log() 就行了，hexo 的主题文件在<code>_layout.swig</code>里，所以我们打开该文件，在该位置，添加 js 就行了；</p>
@@ -3206,7 +3959,20 @@ Ctrl+H 替换<br>
 最后就变成一个字符串了。</p>
 <h2 id="效果图">效果图</h2>
 <p>![](images/QQ 截图 7.png)<br>
-<a href="https://lruihao.cn" target="_blank" rel="noopener noreffer">线上 demo</a>, 按 F12 找到 console</p>
+<a
+  href="https://lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>线上 demo</a>, 按 F12 找到 console</p>
 <h2 id="我的-txt">我的 txt</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3216,13 +3982,60 @@ Ctrl+H 替换<br>
 <pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">\n`              @@#``@@@@@@@@@@@@@@@@@@##,`   \n`              @@#`;@@@@@@@@@@@@@@@@@@@&#39;:&#39;   \n`              @@#`@@@@@@@@@@@@@@@@@@@#+#;`  \n`              @@#`@@@@@@@@@@@@@@@@@@###@&#39;.  \n`              @@+.@@@@@@@@@@@@@@@@@@@@@##,  \n`              @@#,@@@@@@@@@@@@@@@@@@@@@@#,  \n`              #@#:@@@@@@@@@@@@@@@@@@@@@@@,  \n`              #@#&#39;@@@@@@@@@@@@@@@@@@@@@@@.  \n`              +@#;@@@@@@@@@@@@@@@@@@@@@@#   \n`          `;: ;@#&#39;@@@@@@@@@@@@@@@@@@+&#39;+@&#39;   \n`    `,,;&#39;;&#39;+&#39;;&#39;@@+:@@@@@@@@@@@@##@#&#39;,.:#;   \n,, ``    ``..,:;@@#&#39;@@@@@@@@#####@@@@#:`:.   \n`       `````:++@@@@@@@@@@@@@###@@@@#+,..    \n        ``````.#@@@@@@@@@@@@@@#@@@#++#&#39;``    \n`    ```.,,:,.`:@@@@@@@@@@@@@###@@@##&#39;.`     \n``..`````..,::;+@@@@@@@@@@@@#+`::+##&#39;`.      \n`      ````.```,@@@@@@@@@@@##;``.,&#39;;` `      \n``.;@@@@@@@@@@@@@@@@@@@@@@###;``..``````     \n#@@@@@@@@@@@@@@@@@@@@@@@@##@#;``,``,.``      \n@@@@@@@@@@@@@@@@@@@.`````..``.. +` `:`       \n@+&#39;&#39;++#####@@#`.@@@``````` ` `,```  ``       \n&#39;;;;;&#39;+##+&#39;+.`;+@@@,..```` `` :,.            \n;::,,:;+#++``,,#@@@&#39;..``````` ,`.``          \n;,,,,...&#39;#.,,..#@@@#,,.`````` .````          \n:,,,,....`,::;&#39;&#39;+#@#;,..`````````.``         \n:,,,.....&#39;##++&#39;&#39;&#39;;:+&#39;:,.`..,,...`            \n:,,,...#####+&#39;+#@@@&#39;.&#39;;+:.  ` ``             \n;,,.`&#39;####&#39;#,`.`+@@@+&#39;``` `.`                \n;,.`#@@@#+:&#39;+++##+@##@,,,,`                  \n&#39;,.#@@###&#39;&#39;&#39;&#39;;:,.```,+#.                     \n+,#@@@####;,,..```````````````         `.:,::\n+@@@@###+;,,..``````````````````          `.,\n#@@@##+&#39;,,,........``````````````            \n@@@@#+:,,,,`........``````````               \n@@@#+:,,,,.`````.....``````````           `` \n@@##&#39;:,......`````....```  `````          ```\n@@@#&#39;:,....,..``````..````    ```         ```\n@@@#&#39;,....,,,..```````````     ```         ..\n@@@#,.....,,,,.``  ````````   ``````         \n@@@+....,,,,,..`````````````   ``````````    \n@@@:....,,,,.LiRuihao````````  ```````````` \n#@@,....,,,,.Always Be Yourself !````````````\n,##,,...,::,.````````````..``````   `......``\n,&#39;#,,..,,:::.`````````........``````   `.,,..\n\n 你好！\n 欢迎进入什么都不会的李瑞豪的个人网站！\nhttps://lruihao.cn\nhttps://www.lruihao.cn\nhttps://lruihao.github.io\nhttps://liruihao.coding.me\n\n\n\n
 </code></pre></td></tr></table>
 </div>
-</div><p>其他个人网站，个人博客也是可以的。</p>]]></description></item><item><title>hexo+github 搭建个人博客及美化</title><link>https://lruihao.cn/posts/hexobuild/</link><pubDate>Fri, 01 Jun 2018 14:34:23 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexobuild/</guid><description><![CDATA[<p><strong><a href="/categories/hexo/" rel="">更多关于 hexo</a></strong></p>
+</div><p>其他个人网站，个人博客也是可以的。</p>]]></description></item><item><title>hexo+github 搭建个人博客及美化</title><link>https://lruihao.cn/posts/hexobuild/</link><pubDate>Fri, 01 Jun 2018 14:34:23 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexobuild/</guid><description><![CDATA[<p><strong><a
+  href="/categories/hexo/"
+  
+  
+  
+  
+  
+  
+>更多关于 hexo</a></strong></p>
 <h1 id="首先">首先</h1>
-<p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener noreffer">官方文档</a> 是我们的第一手资料，也是最好的。
+<p><a
+  href="https://hexo.io/zh-cn/docs/index.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>官方文档</a> 是我们的第一手资料，也是最好的。
 安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
 <ul>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener noreffer">Node.js</a></li>
-<li><a href="https://git-scm.com/" target="_blank" rel="noopener noreffer">Git</a></li>
+<li><a
+  href="https://nodejs.org/en/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Node.js</a></li>
+<li><a
+  href="https://git-scm.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Git</a></li>
 </ul>
 <h1 id="hexo-安装">hexo 安装</h1>
 <p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。</p>
@@ -3318,8 +4131,34 @@ npm install hexo-generator-sitemap@1 --save
 hexo s
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>其他步骤在这里不赘述，参见 <a href="https://my.oschina.net/ryaneLee/blog/638440" target="_blank" rel="noopener noreffer">超详细教程</a></strong>
-<strong><a href="https://lruihao.cn/posts/termux/" target="_blank" rel="noopener noreffer">安卓上搭建 hexo 博客</a></strong></p>
+</div><p><strong>其他步骤在这里不赘述，参见 <a
+  href="https://my.oschina.net/ryaneLee/blog/638440"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>超详细教程</a></strong>
+<strong><a
+  href="https://lruihao.cn/posts/termux/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>安卓上搭建 hexo 博客</a></strong></p>
 <h1 id="部署">部署</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3329,15 +4168,114 @@ hexo s
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hexo g -d
 </code></pre></td></tr></table>
 </div>
-</div><p>部署后我们可以浏览器搜 username.github.io 查看自己的博客效果，比如我的 <a href="https://lruihao.github.io/" target="_blank" rel="noopener noreffer">lruihao.github.io</a></p>
+</div><p>部署后我们可以浏览器搜 username.github.io 查看自己的博客效果，比如我的 <a
+  href="https://lruihao.github.io/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>lruihao.github.io</a></p>
 <h1 id="美化">美化</h1>
 <p><strong>这些美化都写的很详细，我建议你们自己好好看看吧，我也是在这里看到的，如果问我和这里说的是一样的。</strong></p>
 <ul>
-<li><a href="/categories/hexo/" rel="">hexo 个性化教程</a></li>
-<li><a href="http://www.zhaojun.im" target="_blank" rel="noopener noreffer">valine 特别鸣谢赵俊👍</a></li>
-<li><a href="https://asdfv1929.github.io/tags/Hexo/" target="_blank" rel="noopener noreffer">asdfv1929</a></li>
-<li><a href="https://hexo.io/themes/" target="_blank" rel="noopener noreffer">hexo 官方主题集合</a>，<del>我用的是 aloha 主题</del>，该主题 <a href="https://github.com/henryhuang/hexo-theme-aloha/wiki/zh_CN" target="_blank" rel="noopener noreffer">官方文档</a>，<strong>后改用 next 主题 <a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener noreffer">next 主题</a></strong></li>
-<li><a href="https://hexo.io/plugins" target="_blank" rel="noopener noreffer">hexo 官方插件</a>
+<li><a
+  href="/categories/hexo/"
+  
+  
+  
+  
+  
+  
+>hexo 个性化教程</a></li>
+<li><a
+  href="http://www.zhaojun.im"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>valine 特别鸣谢赵俊👍</a></li>
+<li><a
+  href="https://asdfv1929.github.io/tags/Hexo/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>asdfv1929</a></li>
+<li><a
+  href="https://hexo.io/themes/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo 官方主题集合</a>，<del>我用的是 aloha 主题</del>，该主题 <a
+  href="https://github.com/henryhuang/hexo-theme-aloha/wiki/zh_CN"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>官方文档</a>，<strong>后改用 next 主题 <a
+  href="https://theme-next.iissnan.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>next 主题</a></strong></li>
+<li><a
+  href="https://hexo.io/plugins"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>hexo 官方插件</a>
 <del>说说我的主题遇到的一些问题，由于这个主题用的人少，所以作者优化的不是很好（next 使用最多），当然也可以反过来说，所以自己美化了一点</del></li>
 </ul>
 <h2 id="博文置顶">博文置顶</h2>
@@ -3449,8 +4387,34 @@ local_search:
   enable: true
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://blog.naaln.com/2016/07/hexo-with-algolia/" target="_blank" rel="noopener noreffer">algolia 参考文件</a><br>
-让搜索引擎找到你的博客，还是看到邱承佳学长博文有写到 <a href="https://blog.csdn.net/qq_26891045/article/details/51280470" target="_blank" rel="noopener noreffer">传送门</a></p>
+</div><p><a
+  href="https://blog.naaln.com/2016/07/hexo-with-algolia/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>algolia 参考文件</a><br>
+让搜索引擎找到你的博客，还是看到邱承佳学长博文有写到 <a
+  href="https://blog.csdn.net/qq_26891045/article/details/51280470"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a></p>
 <h2 id="添加访客数阅读量等">添加访客数，阅读量等</h2>
 <p>评论有多说（多说好像挂了），计数有不蒜，我用的不蒜子，还有其他的。</p>
 <h3 id="文章阅读量">文章阅读量</h3>
@@ -3501,12 +4465,103 @@ local_search:
 <h1 id="写文章">写文章</h1>
 <p>hexo 文章用轻量型标签语言 Markdown 编写</p>
 <ul>
-<li><a href="https://sspai.com/post/25137" target="_blank" rel="noopener noreffer">markdown 入门</a></li>
-<li><a href="https://markdown.tw/" target="_blank" rel="noopener noreffer">繁体原始文件</a></li>
-<li><a href="https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md" target="_blank" rel="noopener noreffer">繁体原始文件 github</a></li>
+<li><a
+  href="https://sspai.com/post/25137"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>markdown 入门</a></li>
+<li><a
+  href="https://markdown.tw/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>繁体原始文件</a></li>
+<li><a
+  href="https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>繁体原始文件 github</a></li>
 </ul>
 ]]></description></item><item><title>hexo 添加图片，音乐，链接，视频</title><link>https://lruihao.cn/posts/hexowrite/</link><pubDate>Thu, 31 May 2018 23:19:22 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexowrite/</guid><description><![CDATA[<blockquote>
-<p><strong>如果实在搞得头晕直接去 <a href="https://www.jianshu.com/" target="_blank" rel="noopener noreffer">简书</a> 写文章，再把简书生成的 md 文章复制过来就好了（简书是个不错的 Markdown 在线编辑器），还可以去 <a href="https://maxiang.io/" target="_blank" rel="noopener noreffer">马克飞象，专为印象笔记打造的 Markdown 编辑器</a>，<a href="https://www.typora.io/#" target="_blank" rel="noopener noreffer">typora 也是不错的</a>，突然发现 <a href="https://www.csdn.net/" target="_blank" rel="noopener noreffer">csdn</a> 也支持 Markdown 编译器了</strong></p>
+<p><strong>如果实在搞得头晕直接去 <a
+  href="https://www.jianshu.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>简书</a> 写文章，再把简书生成的 md 文章复制过来就好了（简书是个不错的 Markdown 在线编辑器），还可以去 <a
+  href="https://maxiang.io/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>马克飞象，专为印象笔记打造的 Markdown 编辑器</a>，<a
+  href="https://www.typora.io/#"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>typora 也是不错的</a>，突然发现 <a
+  href="https://www.csdn.net/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>csdn</a> 也支持 Markdown 编译器了</strong></p>
 </blockquote>
 <h1 id="1-首先">1. 首先</h1>
 <p>刚刚搭博客，很多都不懂，就连插入图片的路径问题都把我整的要命。（我用的 Sublime Text 3 编译器）<br>
@@ -3540,7 +4595,20 @@ local_search:
 </div>
 </div><p>文件夹内除了 xxxx.md 文件还有一个同名的文件夹，在 xxxx.md 中想引入图片时，先把图片复制到 xxxx 这个文件夹中，然后只需要在 xxxx.md 中按照 markdown 的格式引入图片。</p>
 <h1 id="2-添加图片">2. 添加图片</h1>
-<p>首先大家可以查看 hexo 官方文档 <a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener noreffer">资源文件夹章节</a></p>
+<p>首先大家可以查看 hexo 官方文档 <a
+  href="https://hexo.io/zh-cn/docs/asset-folders.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>资源文件夹章节</a></p>
 <h2 id="21-markdown-添加">2.1 markdown 添加</h2>
 <p>相对路径添加（我被这个相对路径搞得要死，前面各种出错，大家可以对照我的来插入图片 &hellip;）</p>
 <div class="highlight"><div class="chroma">
@@ -3567,7 +4635,20 @@ local_search:
 </div>
 </div><p></p>
 <h2 id="22-插件添加">2.2 插件添加</h2>
-<p><a href="https://mr-houzi.github.io/2017/10/24/Hexo-asset-img/" target="_blank" rel="noopener noreffer">传送门</a><br>
+<p><a
+  href="https://mr-houzi.github.io/2017/10/24/Hexo-asset-img/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a><br>
 这种方式被很多人诟病，但有时候也不失一种好方式，简单快捷。<br>
 还有图片名字显示，不错的。</p>
 <div class="highlight"><div class="chroma">
@@ -3580,7 +4661,20 @@ local_search:
 </div>
 </div><p></p>
 <h1 id="3-音乐">3. 音乐</h1>
-<p>大家可以看 <a href="https://music.163.com" target="_blank" rel="noopener noreffer">网易云音乐</a> 的官网，播放音乐可以生成外链，直接拿来用就行了。iframe 插件可以在代码中设置宽高等参数，auto 为自动播放。flash 不可以自己设置参数。看喜好，随便你。
+<p>大家可以看 <a
+  href="https://music.163.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>网易云音乐</a> 的官网，播放音乐可以生成外链，直接拿来用就行了。iframe 插件可以在代码中设置宽高等参数，auto 为自动播放。flash 不可以自己设置参数。看喜好，随便你。
 其他音乐，把插件中的链接替换成要播放的链接就可以了</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3626,7 +4720,20 @@ local_search:
 <blockquote>
 <p>视频链接最好是打开就是视频的链接（youku，YouTube，抖音等）
 可以把视频上传到优酷，抖音等生成外链再拿来用。（优酷上传需要注册和实名认证）
-<a href="https://lruihao.cn/posts/nextplugin/" target="_blank" rel="noopener noreffer">插件参考资料</a></p>
+<a
+  href="https://lruihao.cn/posts/nextplugin/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>插件参考资料</a></p>
 </blockquote>
 <p>自拍手写视频（优酷）</p>
 <blockquote>
@@ -3654,6 +4761,45 @@ local_search:
 	frameborder=0 allowfullscreen>
 </iframe>
 <h1 id="工具集合">工具集合</h1>
-<p><a href="https://picgo.github.io/PicGo-Doc/zh/" target="_blank" rel="noopener noreffer">Picgo</a>
-<a href="https://maxiang.io/" target="_blank" rel="noopener noreffer">马克飞象</a>、CSDN、简书
-<a href="https://sm.ms/" target="_blank" rel="noopener noreffer">SM.MS 图床</a></p>]]></description></item></channel></rss>
+<p><a
+  href="https://picgo.github.io/PicGo-Doc/zh/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Picgo</a>
+<a
+  href="https://maxiang.io/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>马克飞象</a>、CSDN、简书
+<a
+  href="https://sm.ms/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>SM.MS 图床</a></p>]]></description></item></channel></rss>

@@ -1782,7 +1782,20 @@ B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
 <p></p>
 <h2 id="参考">参考</h2>
 <ul>
-<li><a href="https://www.cnblogs.com/fantasy01/p/3911488.html" target="_blank" rel="noopener noreffer">JOptionPane 的使用</a></li>
+<li><a
+  href="https://www.cnblogs.com/fantasy01/p/3911488.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>JOptionPane 的使用</a></li>
 </ul>]]></description></item><item><title>java 继承 test</title><link>https://lruihao.cn/posts/jicheng/</link><pubDate>Thu, 24 Jan 2019 15:07:50 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jicheng/</guid><description><![CDATA[<div class="details admonition quote open">
     <div class="details-summary admonition-title">
       <i class="icon fas fa-quote-right fa-fw"></i>Quote<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -2244,7 +2257,20 @@ fill() 后：-1 -1 -1 41 44 49 87 96 96
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>java 猜数字小游戏（Math 类）</title><link>https://lruihao.cn/posts/mathclass/</link><pubDate>Tue, 15 Jan 2019 17:33:28 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mathclass/</guid><description><![CDATA[<blockquote>
-<p>大一刚学 c 的时候以前写过 <a href="https://github.com/Lruihao/Grocery/tree/master/C%26C%2B%2B" target="_blank" rel="noopener noreffer">c 语言版</a> 的。</p>
+<p>大一刚学 c 的时候以前写过 <a
+  href="https://github.com/Lruihao/Grocery/tree/master/C%26C%2B%2B"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>c 语言版</a> 的。</p>
 </blockquote>
 <ol>
 <li>Math: 针对数学进行运算的类</li>

@@ -1,7 +1,20 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>PHP - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/php/</link><description>PHP - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/php/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
         <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
       </div><blockquote>
-<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
+<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
@@ -18,7 +31,20 @@
 <li>自定义导航（显示开关，排序）</li>
 <li>自定义页面（发布开关）</li>
 <li>友情链接（显示开关，排序）</li>
-<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS 桶相册</a></li>
+<li><a
+  href="https://github.com/Lruihao/cos-album"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>COS 桶相册</a></li>
 <li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
 <li>不蒜子计数</li>
 <li>Leancloud 计数</li>
@@ -181,7 +207,20 @@ php artisan db:seed
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
 <p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
-<p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
+<p>Cell Blog 开发记录，<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>项目地址</a></p>
 </blockquote>
 <h1 id="搭建-php-环境">搭建 php 环境</h1>
 <ol>
@@ -302,7 +341,20 @@ composer require encore/laravel-admin
 </div><blockquote>
 <p>运行这个命令的时候，如果遇到了下面的错误：
 <code>SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))</code><br>
-参考这个 issue 来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
+参考这个 issue 来解决 <a
+  href="https://github.com/z-song/laravel-admin/issues/1541"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/z-song/laravel-admin/issues/1541</a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -546,8 +598,34 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="editormd-安装">editormd 安装</h1>
-<p><a href="https://github.com/ShareManT/laravel-admin-ext-editormd" target="_blank" rel="noopener noreffer">editormd</a>
-<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github 图像问题</a></p>
+<p><a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>editormd</a>
+<a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 图像问题</a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -578,7 +656,20 @@ editormd.emoji     = {
 <h3 id="csrf-419-错误">csrf 419 错误</h3>
 <p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加 csrf 验证器：</p>
 <p>修改 image-dialog.js 的<code>var dialogContent</code><br>
-<a href="https://www.jianshu.com/p/8101f7bc80f6" target="_blank" rel="noopener noreffer">参考</a></p>
+<a
+  href="https://www.jianshu.com/p/8101f7bc80f6"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -606,8 +697,34 @@ if (csrfToken) {
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="markdown-转-html">markdown 转 HTML</h1>
-<p><a href="https://www.zhiqiexing.com/119.html" target="_blank" rel="noopener noreffer">https://www.zhiqiexing.com/119.html</a>
-<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown 安装</a></p>
+<p><a
+  href="https://www.zhiqiexing.com/119.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.zhiqiexing.com/119.html</a>
+<a
+  href="https://github.com/GrahamCampbell/Laravel-Markdown"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Laravel Markdown 安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -645,7 +762,20 @@ php artisan vendor:publish
 <p>retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。</p>
 <h1 id="添加后台验证码">添加后台验证码</h1>
 <p>依赖 php 扩展<code>fileinfo</code><br>
-<a href="https://learnku.com/articles/32842" target="_blank" rel="noopener noreffer">添加验证码</a></p>
+<a
+  href="https://learnku.com/articles/32842"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>添加验证码</a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -715,7 +845,20 @@ php artisan make:controller PageController
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="后台-img-灯箱">后台 img 灯箱</h1>
-<p><a href="https://github.com/laravel-admin-extensions/grid-lightbox" target="_blank" rel="noopener noreffer">https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
+<p><a
+  href="https://github.com/laravel-admin-extensions/grid-lightbox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1175,13 +1318,39 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
         <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
       </div><blockquote>
 <p>ImgURL 是一个开源、免费的图床程序，ImgURL 2.x 之后对环境要求更高，尤其是 ImageMagick 组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装 ImgURL 2.x 图床的过程（包括 ImgURL 2.x 需要的各种组件）
-<a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
+<a
+  href="https://www.xiaoz.me/archives/12081"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>阅读原文</a></p>
 </blockquote>
 <h1 id="准备工作">准备工作</h1>
 <ol>
 <li>已经安装宝塔面板</li>
 <li>在宝塔后台创建一个站点</li>
-<li>下载 <a href="https://github.com/helloxz/imgurl" target="_blank" rel="noopener noreffer">ImgURL 2.x</a> 上传到站点根目录并解压</li>
+<li>下载 <a
+  href="https://github.com/helloxz/imgurl"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>ImgURL 2.x</a> 上传到站点根目录并解压</li>
 </ol>
 <h1 id="设置伪静态">设置伪静态</h1>
 <p>如果您宝塔面板安装的 Apache 则不需要再设置伪静态，直接跳过这个步骤，如果使用的 Nginx 环境，请继续往下看。</p>
@@ -1220,13 +1389,78 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </p>
 <h1 id="其它说明">其它说明</h1>
 <ul>
-<li>如果安装遇到任何问题，请留言反馈或到 <a href="https://ttt.sh/category/6/imgurl%E5%9B%BE%E5%BA%8A" target="_blank" rel="noopener noreffer">3T 官方社区</a> 进行反馈</li>
-<li>ImgURL 更多使用说明请参考帮助文档：<a href="https://dwz.ovh/imgurldoc" target="_blank" rel="noopener noreffer">https://dwz.ovh/imgurldoc</a></li>
+<li>如果安装遇到任何问题，请留言反馈或到 <a
+  href="https://ttt.sh/category/6/imgurl%E5%9B%BE%E5%BA%8A"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>3T 官方社区</a> 进行反馈</li>
+<li>ImgURL 更多使用说明请参考帮助文档：<a
+  href="https://dwz.ovh/imgurldoc"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://dwz.ovh/imgurldoc</a></li>
 </ul>]]></description></item><item><title>宅音乐播放器</title><link>https://lruihao.cn/posts/player/</link><pubDate>Tue, 19 Mar 2019 23:32:56 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/player/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/player/images/index.png" referrerpolicy="no-referrer">
       </div><blockquote>
 <p>宅音乐播放器，HTML5 网页播放器，集成后台管理及 API 调用，目前正在开发中，敬请关注~<br>
-<a href="https://github.com/lzx8589561/zhai-music" target="_blank" rel="noopener noreffer">原项目</a> 由 <a href="https://www.ilt.me" target="_blank" rel="noopener noreffer">IT 技术宅</a> 开源，使用 thinkPHP 开发后台。 <a href="https://github.com/Lruihao/zhai-music" target="_blank" rel="noopener noreffer">fork 地址</a> 是我个人学习模仿的库，也是相当于备份源码。<br>
+<a
+  href="https://github.com/lzx8589561/zhai-music"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>原项目</a> 由 <a
+  href="https://www.ilt.me"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>IT 技术宅</a> 开源，使用 thinkPHP 开发后台。 <a
+  href="https://github.com/Lruihao/zhai-music"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>fork 地址</a> 是我个人学习模仿的库，也是相当于备份源码。<br>
 <em>注： 插件修改于明月浩空免费版，仅用于学习交流，无商业价值，如发现商业传播，将禁止软件的免费使用。</em></p>
 </blockquote>
 <h2 id="技术栈">技术栈</h2>
@@ -1250,12 +1484,51 @@ test123
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li><a href="https://player.ilt.me/" target="_blank" rel="noopener noreffer">https://player.ilt.me/</a></li>
-<li><a href="https://player.lruihao.cn/" target="_blank" rel="noopener noreffer">https://player.lruihao.cn/</a></li>
+<li><a
+  href="https://player.ilt.me/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://player.ilt.me/</a></li>
+<li><a
+  href="https://player.lruihao.cn/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://player.lruihao.cn/</a></li>
 </ul>
 <h2 id="安装">安装</h2>
 <h3 id="视频安装教程">视频安装教程</h3>
-<p><a href="https://www.bilibili.com/video/av46476706" target="_blank" rel="noopener noreffer">https://www.bilibili.com/video/av46476706</a></p>
+<p><a
+  href="https://www.bilibili.com/video/av46476706"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.bilibili.com/video/av46476706</a></p>
 <h3 id="依赖">依赖</h3>
 <ul>
 <li>composer</li>

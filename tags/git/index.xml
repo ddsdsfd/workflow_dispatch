@@ -686,7 +686,20 @@ git push origin hexo  //备份
 hexo d -g  //部署
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://blog.csdn.net/Monkey_LZL/article/details/60870891" target="_blank" rel="noopener noreffer">参考</a></p>
+</div><p><a
+  href="https://blog.csdn.net/Monkey_LZL/article/details/60870891"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 ]]></description></item><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
       </div><ul>
@@ -756,7 +769,20 @@ git push origin master      # Git 会把 master 分支推送到远程库对应�
       <i class="icon fas fa-lightbulb fa-fw"></i>Tips<i class="details-icon fas fa-angle-right fa-fw"></i>
     </div>
     <div class="details-content">
-      <div class="admonition-content"><a href="https://github.com/Lruihao/hugo-blog/wiki/Commit-message" target="_blank" rel="noopener noreffer">Commit Message</a> 内容尽量规范！<br>
+      <div class="admonition-content"><a
+  href="https://github.com/Lruihao/hugo-blog/wiki/Commit-message"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Commit Message</a> 内容尽量规范！<br>
 当某一次提交后，突然想起漏提交了文件，或不小心提交了不满意的代码时，<br>
 可以使用<code>git commit --amend -m &quot;message&quot;</code>指令。它可以在不增加一个新的 commit-id 的情况下将新修改的代码追加到前一次的 commit-id 中。提交之后 message 也将被本次的 message 覆盖，所以还需要再次添加上次的 message。</div>
     </div>
@@ -1154,15 +1180,67 @@ gitk --all
 <li><code>wontfix</code> 不会修复此问题</li>
 <li><code>help-wanted</code> 需要帮助</li>
 <li><code>good first issue</code> Good for newcomers</li>
-<li><a href="https://www.jianshu.com/p/48b935e36000" target="_blank" rel="noopener noreffer">更多标签</a></li>
+<li><a
+  href="https://www.jianshu.com/p/48b935e36000"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>更多标签</a></li>
 </ul>
 <h1 id="license">license</h1>
 <p></p>
 <h1 id="其他">其他</h1>
 <ul>
-<li><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener noreffer">常用 Git 命令清单</a></li>
-<li><a href="https://blog.csdn.net/qq1332479771/article/details/56087333" target="_blank" rel="noopener noreffer">github 上 fork 了别人的项目后，再同步更新别人的提交</a></li>
-<li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></li>
+<li><a
+  href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>常用 Git 命令清单</a></li>
+<li><a
+  href="https://blog.csdn.net/qq1332479771/article/details/56087333"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 上 fork 了别人的项目后，再同步更新别人的提交</a></li>
+<li><a
+  href="https://learngitbranching.js.org/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Gearn Git Branching</a></li>
 </ul>]]></description></item><item><title>使用 Git 上传代码到 github, coding 等仓库</title><link>https://lruihao.cn/posts/gituse/</link><pubDate>Fri, 26 Oct 2018 21:11:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gituse/</guid><description><![CDATA[<h3 id="config">config</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1230,7 +1308,20 @@ git push origin master
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer">Gearn Git Branching</a></li>
+<li><a
+  href="https://learngitbranching.js.org/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Gearn Git Branching</a></li>
 </ul>
 ]]></description></item><item><title>linux/centos 下的安装 git</title><link>https://lruihao.cn/posts/linux-git/</link><pubDate>Sat, 22 Sep 2018 22:28:45 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linux-git/</guid><description><![CDATA[<h3 id="下载-git">下载 git</h3>
 <div class="highlight"><div class="chroma">

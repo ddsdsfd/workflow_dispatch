@@ -402,7 +402,20 @@
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="fancybox">fancybox</h1>
-<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">fancybox</a> 是一個完善的 lightbox 插件<br>
+<p><a
+  href="https://github.com/fancyapps/fancybox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>fancybox</a> 是一個完善的 lightbox 插件<br>
 jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.</p>
 <h2 id="quick-start">Quick start</h2>
 <ol>
@@ -921,25 +934,40 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 </ul>
 <p>主要就是存取數據這點，沒有服務器，數據庫怎麼實現？<br>
 valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一波，然後“數據表”設計一下，其實是 leancloud-storage Object ，於是有了以下東西，源碼放在 Github</p>
-<a href="http://github.com/Lruihao/bill-note" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">bill-note</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="http://github.com/Lruihao/bill-note"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">bill-note</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          http://github.com/Lruihao/bill-note
         </span>
-        http://github.com/Lruihao/bill-note
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <h2 id="數據設計">數據設計</h2>
 <p>去 leancloud 创建一个应用，再新增一个 Bill Class, 补充一下字段：</p>
 <table>
@@ -1191,25 +1219,40 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <li><strong>PicGo</strong> 图床上传工具 【第三方、推荐】</li>
 </ul>
 <h1 id="食用方式">食用方式</h1>
-<a href="http://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">下载地址，别忘点赞哈</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="http://github.com/Lruihao/cos-album"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">cos album 相册源码下载地址，别忘点赞哈</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          http://github.com/Lruihao/cos-album
         </span>
-        http://github.com/Lruihao/cos-album
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <ol>
 <li>首先，下载源码，引入 <code>cos-album.css</code> 和 <code>cos-album.js</code></li>
 <li>然后，在你的 js 中 new 一个 Cosalbum 对象 ( xmlLink 后不需要添加<code>/</code>)</li>
@@ -1360,7 +1403,20 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </ol>
 </li>
 <li>2019-11-24 10:52:34
-修改整理了一下代码，分割功能为函数，并写了注释，更加方便 <a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">伸手党</a>!</li>
+修改整理了一下代码，分割功能为函数，并写了注释，更加方便 <a
+  href="https://github.com/Lruihao/cos-album"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>伸手党</a>!</li>
 </ul>
 <h1 id="未实现">未实现</h1>
 <ul>
@@ -1535,8 +1591,34 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </ol>
 <h1 id="参考">参考</h1>
 <ul>
-<li><a href="https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html" target="_blank" rel="noopener noreffer">https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html</a></li>
-<li><a href="https://www.jianshu.com/p/17dc82bf08f1" target="_blank" rel="noopener noreffer">https://www.jianshu.com/p/17dc82bf08f1</a></li>
+<li><a
+  href="https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html</a></li>
+<li><a
+  href="https://www.jianshu.com/p/17dc82bf08f1"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.jianshu.com/p/17dc82bf08f1</a></li>
 </ul>]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
 <ul>
 <li>絕對不寫死程式</li>
@@ -2049,7 +2131,20 @@ function getUser($userId, $options){
 <h2 id="html">html</h2>
 <blockquote>
 <ul>
-<li><a href="https://lruihao.cn/posts/ms-html-css.html" target="_blank" rel="noopener noreffer">HTML+CSS</a></li>
+<li><a
+  href="https://lruihao.cn/posts/ms-html-css.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>HTML+CSS</a></li>
 </ul>
 </blockquote>
 <h3 id="oblique-和-intalic-的区别">oblique 和 intalic 的区别</h3>
@@ -2078,13 +2173,52 @@ function getUser($userId, $options){
 我在网上看到几个很好的教程，图文并茂，一目了然。</p>
 <blockquote>
 <ul>
-<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreffer">A Complete Guide to Flexbox</a></li>
+<li><a
+  href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>A Complete Guide to Flexbox</a></li>
 </ul>
 </blockquote>
 <ul>
-<li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">Flex 布局教程：语法篇</a></li>
+<li><a
+  href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Flex 布局教程：语法篇</a></li>
 </ul>
-<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a href="http://static.vgee.cn/static/index.html" target="_blank" rel="noopener noreffer">Demo</a> 也写了。</p>
+<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a
+  href="http://static.vgee.cn/static/index.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Demo</a> 也写了。</p>
 <h2 id="javascript">javascript</h2>
 <h3 id="keydown-和-keypress">keydown 和 keypress</h3>
 <ul>
@@ -2093,7 +2227,20 @@ function getUser($userId, $options){
 <li>如果用户按下了一个<strong>字符键</strong>不放，就会重复触发<code>keydown</code>和<code>keypress</code>事件，直到用户松开该键为止。</li>
 <li>如果用户按下了一个<strong>非字符键</strong>不放，就会重复触发<code>keydown</code>事件，直到用户松开该键为止。</li>
 </ul>
-<p><a href="https://www.jianshu.com/p/8f839f558319" target="_blank" rel="noopener noreffer">详解键盘事件 (keydown，keypress，keyup)</a></p>
+<p><a
+  href="https://www.jianshu.com/p/8f839f558319"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>详解键盘事件 (keydown，keypress，keyup)</a></p>
 <h3 id="textcontentinnertext-和-innerhtml-的区别">textContent、innerText 和 innerHTML 的区别</h3>
 <blockquote>
 <ol>
@@ -2267,7 +2414,33 @@ function getUser($userId, $options){
 </div>
 </div><h2 id="qq-推广链接">QQ 推广链接</h2>
 <blockquote>
-<p><a href="https://shang.qq.com/v3/widget.html" target="_blank" rel="noopener noreffer">QQ 推广</a> <a href="https://qun.qq.com/join.html" target="_blank" rel="noopener noreffer">QQ 群</a></p>
+<p><a
+  href="https://shang.qq.com/v3/widget.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>QQ 推广</a> <a
+  href="https://qun.qq.com/join.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>QQ 群</a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2294,7 +2467,33 @@ function getUser($userId, $options){
 </span></code></pre></td></tr></table>
 </div>
 </div><h2 id="fancybox">fancybox</h2>
-<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">github 介绍</a> <a href="https://www.bootcdn.cn/fancybox/" target="_blank" rel="noopener noreffer">fancybox 源</a></p>
+<p><a
+  href="https://github.com/fancyapps/fancybox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 介绍</a> <a
+  href="https://www.bootcdn.cn/fancybox/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>fancybox 源</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2307,8 +2506,47 @@ function getUser($userId, $options){
 </div>
 </div><h1 id="back-end">back-end</h1>
 <blockquote>
-<p>更多学习内容见 <a href="https://github.com/Lruihao/web-dev-data" target="_blank" rel="noopener noreffer">学习课件</a><br>
-练习作业 <a href="https://github.com/Lruihao/hw" target="_blank" rel="noopener noreffer">源码</a>+<a href="http://hw.lruihao.cn/" target="_blank" rel="noopener noreffer">Demo</a></p>
+<p>更多学习内容见 <a
+  href="https://github.com/Lruihao/web-dev-data"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>学习课件</a><br>
+练习作业 <a
+  href="https://github.com/Lruihao/hw"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>源码</a>+<a
+  href="http://hw.lruihao.cn/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Demo</a></p>
 </blockquote>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linkcard/</guid><description><![CDATA[<blockquote>
 <p>模仿知乎的卡片式链接，idea 来自 [兰州小红鸡]</p>
 </blockquote>
@@ -2364,8 +2602,8 @@ function getUser($userId, $options){
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!--知乎卡片链接--&gt;</span>
-  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/src/card-link.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!--知乎卡片链接--&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/src/card-link.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>html 链接写法，a 标签加上<code>class=&quot;card-link&quot;</code></p>
@@ -2377,25 +2615,40 @@ function getUser($userId, $options){
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;https://github.com/Lruihao/lruihao.github.io&#34; target=&#34;_blank&#34; class=&#34;card-link&#34;&gt;Lruihao 博客&lt;/a&gt;
 </code></pre></td></tr></table>
 </div>
-</div><a href="https://github.com/Lruihao/lruihao.github.io" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">Lruihao 博客</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+</div><a
+  href="https://github.com/Lruihao/lruihao.github.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">Lruihao 博客</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/lruihao.github.io
         </span>
-        https://github.com/Lruihao/lruihao.github.io
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>]]></description></item><item><title>QQ 强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>]]></description></item><item><title>QQ 强制生成卡片式链接</title><link>https://lruihao.cn/posts/qqxml/</link><pubDate>Fri, 08 Mar 2019 16:52:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/qqxml/</guid><description><![CDATA[<blockquote>
 <p>以前在 QQ 里面聊天的时候发现，有些链接是卡片式的链接，像知乎里那些一样，就好奇为啥我的域名没有生成卡片。<br>
 查了一下百度知道了大概就是 qq 没有抓取到你的网站的 xml。并在其他教程中得到了一个强制提交抓取的 url <code>https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=</code>  于是就有了脚本刷新的想法。简陋的写了一下。</p>
 </blockquote>
@@ -2729,7 +2982,20 @@ function getUser($userId, $options){
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>js 判断用户设备类型及平台</title><link>https://lruihao.cn/posts/js-device/</link><pubDate>Sat, 03 Nov 2018 23:35:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/js-device/</guid><description><![CDATA[<blockquote>
-<p>转自 <a href="https://www.cnblogs.com/coober/p/6594379.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/coober/p/6594379.html</a></p>
+<p>转自 <a
+  href="https://www.cnblogs.com/coober/p/6594379.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.cnblogs.com/coober/p/6594379.html</a></p>
 </blockquote>
 <p>前端开发经常遇到需要判断用户的浏览设备，是 pc 端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone 等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>
 <h3 id="首先判断-pc-端还是移动端">首先判断 pc 端还是移动端</h3>
@@ -2814,7 +3080,20 @@ function getUser($userId, $options){
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="实际运用">实际运用</h3>
-<p>根据 pc 或者移动端控制飘花数目，降低 cpu 消耗，减少卡顿。<a href="https://www.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></p>
+<p>根据 pc 或者移动端控制飘花数目，降低 cpu 消耗，减少卡顿。<a
+  href="https://www.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>demo</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2878,7 +3157,20 @@ function getUser($userId, $options){
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>使用 js 准确获取当前页面 url 网址信息及 301 重定向实战</title><link>https://lruihao.cn/posts/href-301/</link><pubDate>Sun, 28 Oct 2018 14:22:00 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/href-301/</guid><description><![CDATA[<h3 id="获取链接转">获取链接（转）</h3>
-<p><a href="https://www.cnblogs.com/zhabayi/p/6419938.html" target="_blank" rel="noopener noreffer">传送门</a><br>
+<p><a
+  href="https://www.cnblogs.com/zhabayi/p/6419938.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a><br>
 在 WEB 开发中，时常会用到 javascript 来获取当前页面的 url 网址信息，在这里是我的一些获取 url 信息的小总结。</p>
 <p>下面我们举例一个 URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
 <h4 id="windowlocationhref设置或获取整个-url-为字符串">window.location.href（设置或获取整个 URL 为字符串）</h4>
@@ -3342,7 +3634,20 @@ alert(test);
 </div>
 </div><p>重新部署博客就可以了。</p>]]></description></item><item><title>hexo 个性化 - next 主题动态显示 subtitle</title><link>https://lruihao.cn/posts/dongtaisub/</link><pubDate>Mon, 20 Aug 2018 16:16:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dongtaisub/</guid><description><![CDATA[<blockquote>
 <p>本文适合我这种纯小白。
-目前为止，全网也就只有一个博主写到过这样动态显示 subtitle 的文章。<a href="https://www.jianshu.com/p/df2c844eeabf" target="_blank" rel="noopener noreffer">传送门</a>（关键词：js, 后加载）<br>
+目前为止，全网也就只有一个博主写到过这样动态显示 subtitle 的文章。<a
+  href="https://www.jianshu.com/p/df2c844eeabf"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a>（关键词：js, 后加载）<br>
 但是嘞，该博写的不怎么详细，17 年底写的。当然更大的可能是 next 更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
 </blockquote>
 <h2 id="修改站点配置文件主要修改-subtitle">修改站点配置文件，主要修改 subtitle</h2>
@@ -3462,7 +3767,20 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 </div>
 </div><p>之后部署后每次刷新就可以看到不同的 subtitle 了，开心😀</p>
 <h2 id="今日诗词">今日诗词</h2>
-<p><a href="https://www.jinrishici.com/" target="_blank" rel="noopener noreffer">今日诗词</a></p>
+<p><a
+  href="https://www.jinrishici.com/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>今日诗词</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3481,7 +3799,20 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 <p>直接 js 调用 api 简单快速</p>
 <blockquote>
 <p>2021/9/30 更新<br>
-<a href="https://api.imjad.cn/hitokoto.md" target="_blank" rel="noopener noreffer">一言 api-参数详见</a> 已经挂了</p>
+<a
+  href="https://api.imjad.cn/hitokoto.md"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>一言 api-参数详见</a> 已经挂了</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3506,7 +3837,20 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
 <ul>
 <li>console.log()</li>
 <li>Notepad++</li>
-<li><a href="http://picascii.com" target="_blank" rel="noopener noreffer">在线图片转文字工具</a></li>
+<li><a
+  href="http://picascii.com"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>在线图片转文字工具</a></li>
 </ul>
 <h2 id="用法">用法</h2>
 <p>用 js 在<code>&lt;body&gt;&lt;/body&gt;</code>使用 console.log() 就行了，hexo 的主题文件在<code>_layout.swig</code>里，所以我们打开该文件，在该位置，添加 js 就行了；</p>
@@ -3524,7 +3868,20 @@ Ctrl+H 替换<br>
 最后就变成一个字符串了。</p>
 <h2 id="效果图">效果图</h2>
 <p>![](images/QQ 截图 7.png)<br>
-<a href="https://lruihao.cn" target="_blank" rel="noopener noreffer">线上 demo</a>, 按 F12 找到 console</p>
+<a
+  href="https://lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>线上 demo</a>, 按 F12 找到 console</p>
 <h2 id="我的-txt">我的 txt</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

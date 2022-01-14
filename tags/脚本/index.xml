@@ -2,7 +2,15 @@
 <p>使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
 <p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~<br>
-<a href="/posts/pyinstallererror/" rel="">打包 exe 参考</a></p>
+<a
+  href="/posts/pyinstallererror/"
+  
+  
+  
+  
+  
+  
+>打包 exe 参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -197,7 +205,20 @@
 <p>适用湖南工程学院的打卡系统。<br>
 请勿滥用代码提交不实健康信息，隐瞒疫情将受到相关法律处理！</p>
 </blockquote>
-<p><a href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py" target="_blank" rel="noopener noreffer">完整代码</a></p>
+<p><a
+  href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>完整代码</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -311,7 +332,15 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+</div><p><a
+  href="/posts/cron/"
+  
+  
+  
+  
+  
+  
+>CRON 表达式的基本语法</a></p>
 <h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
@@ -322,7 +351,20 @@
 这里通过手动下载安装解决的，记录一下。</p>
 </blockquote>
 <h1 id="下载">下载</h1>
-<p>去官网下载 pyinstaller 安装包：<a href="https://pypi.org/project/PyInstaller/#files" target="_blank" rel="noopener noreffer">https://pypi.org/project/PyInstaller/#files</a></p>
+<p>去官网下载 pyinstaller 安装包：<a
+  href="https://pypi.org/project/PyInstaller/#files"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://pypi.org/project/PyInstaller/#files</a></p>
 <h1 id="解压">解压</h1>
 <p>我这里解压到<code>E:\应用、Python37\Lib\site-packages\PyInstaller-3.4</code></p>
 <h1 id="安装">安装</h1>
@@ -350,7 +392,15 @@
 </blockquote>
 <p>如<code>pyinstaller --paths=&quot;D:\&quot; test.py</code></p>
 <h1 id="csdn-访问量脚本实例">CSDN 访问量脚本实例</h1>
-<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a href="/posts/csdnvisiter.html" rel="">代码详见</a></p>
+<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a
+  href="/posts/csdnvisiter.html"
+  
+  
+  
+  
+  
+  
+>代码详见</a></p>
 <p>在 cmd 进入桌面路径，输入如下命令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -363,7 +413,33 @@
 </div><p>
 </p>
 <p>另外推广一下自己的微信公众号，欢迎关注公众号👇👇👇，后台回复关键词<code>csdn_visiter</code>获取源码及 exe 可执行文件。</p>]]></description></item><item><title>python 爬取网站图片（图片链接相似）</title><link>https://lruihao.cn/posts/mmtimgpy/</link><pubDate>Mon, 22 Apr 2019 12:46:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mmtimgpy/</guid><description><![CDATA[<blockquote>
-<p>以下程序对 <a href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&amp;a=fontshowPics&amp;u=qbfRl8gPF2s-&amp;z=Kqz%2FRroVGYc-&amp;share=1&amp;from=singlemessage" target="_blank" rel="noopener noreffer">该网址</a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a href="https://lruihao.cn/posts/font-mmt/" target="_blank" rel="noopener noreffer">字体效果查看</a></p>
+<p>以下程序对 <a
+  href="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&amp;a=fontshowPics&amp;u=qbfRl8gPF2s-&amp;z=Kqz%2FRroVGYc-&amp;share=1&amp;from=singlemessage"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>该网址</a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a
+  href="https://lruihao.cn/posts/font-mmt/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>字体效果查看</a></p>
 </blockquote>
 <h1 id="思路设计">思路设计</h1>
 <blockquote>

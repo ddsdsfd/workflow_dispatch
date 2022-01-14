@@ -189,7 +189,20 @@ Ctrl+F 查找 <code>localhost</code><br>
 <p></p>
 <p></p>]]></description></item><item><title>宝塔面板安装</title><link>https://lruihao.cn/posts/bt/</link><pubDate>Mon, 18 Mar 2019 21:31:43 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/bt/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/bt/images/1.png" referrerpolicy="no-referrer">
-      </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过 Web 面板一键即可操作实现。可选择安装 lamp 或者 lnmp 环境，可创建及管理网站，可创建及管理数据库，可创建及管理 FTP 等等。<a href="https://www.bt.cn/?invite_code=MV9sYXJnZHI=" target="_blank" rel="noopener noreffer">宝塔官网介绍</a></p>
+      </div><p>极速方便的一键配置与管理，免除繁琐的命令行操作，通过 Web 面板一键即可操作实现。可选择安装 lamp 或者 lnmp 环境，可创建及管理网站，可创建及管理数据库，可创建及管理 FTP 等等。<a
+  href="https://www.bt.cn/?invite_code=MV9sYXJnZHI="
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>宝塔官网介绍</a></p>
 <h1 id="系统要求">系统要求</h1>
 <blockquote>
 <p>操作系统：全新系统（支持 CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>
@@ -294,7 +307,20 @@ gzip
 </code></pre></td></tr></table>
 </div>
 </div><p>指定邮箱是为了申请 ssl, 实现 https.</p>
-<h3 id="demohttpspanlruihaocn"><a href="https://pan.lruihao.cn" target="_blank" rel="noopener noreffer">demo</a></h3>
+<h3 id="demohttpspanlruihaocn"><a
+  href="https://pan.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>demo</a></h3>
 <p>启动 caddy</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -337,7 +363,20 @@ gzip
 </code></pre></td></tr></table>
 </div>
 </div><p>设置任务
-<a href="https://www.jianshu.com/p/95d1473859d1" target="_blank" rel="noopener noreffer">参考</a></p>
+<a
+  href="https://www.jianshu.com/p/95d1473859d1"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

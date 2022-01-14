@@ -25,7 +25,20 @@
 <p>适用湖南工程学院的打卡系统。<br>
 请勿滥用代码提交不实健康信息，隐瞒疫情将受到相关法律处理！</p>
 </blockquote>
-<p><a href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py" target="_blank" rel="noopener noreffer">完整代码</a></p>
+<p><a
+  href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>完整代码</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -139,7 +152,15 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+</div><p><a
+  href="/posts/cron/"
+  
+  
+  
+  
+  
+  
+>CRON 表达式的基本语法</a></p>
 <h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>

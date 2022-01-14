@@ -515,7 +515,20 @@ function getUser($userId, $options){
 <h2 id="html">html</h2>
 <blockquote>
 <ul>
-<li><a href="https://lruihao.cn/posts/ms-html-css.html" target="_blank" rel="noopener noreffer">HTML+CSS</a></li>
+<li><a
+  href="https://lruihao.cn/posts/ms-html-css.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>HTML+CSS</a></li>
 </ul>
 </blockquote>
 <h3 id="oblique-和-intalic-的区别">oblique 和 intalic 的区别</h3>
@@ -544,13 +557,52 @@ function getUser($userId, $options){
 我在网上看到几个很好的教程，图文并茂，一目了然。</p>
 <blockquote>
 <ul>
-<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreffer">A Complete Guide to Flexbox</a></li>
+<li><a
+  href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>A Complete Guide to Flexbox</a></li>
 </ul>
 </blockquote>
 <ul>
-<li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener noreffer">Flex 布局教程：语法篇</a></li>
+<li><a
+  href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Flex 布局教程：语法篇</a></li>
 </ul>
-<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a href="http://static.vgee.cn/static/index.html" target="_blank" rel="noopener noreffer">Demo</a> 也写了。</p>
+<p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a
+  href="http://static.vgee.cn/static/index.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Demo</a> 也写了。</p>
 <h2 id="javascript">javascript</h2>
 <h3 id="keydown-和-keypress">keydown 和 keypress</h3>
 <ul>
@@ -559,7 +611,20 @@ function getUser($userId, $options){
 <li>如果用户按下了一个<strong>字符键</strong>不放，就会重复触发<code>keydown</code>和<code>keypress</code>事件，直到用户松开该键为止。</li>
 <li>如果用户按下了一个<strong>非字符键</strong>不放，就会重复触发<code>keydown</code>事件，直到用户松开该键为止。</li>
 </ul>
-<p><a href="https://www.jianshu.com/p/8f839f558319" target="_blank" rel="noopener noreffer">详解键盘事件 (keydown，keypress，keyup)</a></p>
+<p><a
+  href="https://www.jianshu.com/p/8f839f558319"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>详解键盘事件 (keydown，keypress，keyup)</a></p>
 <h3 id="textcontentinnertext-和-innerhtml-的区别">textContent、innerText 和 innerHTML 的区别</h3>
 <blockquote>
 <ol>
@@ -733,7 +798,33 @@ function getUser($userId, $options){
 </div>
 </div><h2 id="qq-推广链接">QQ 推广链接</h2>
 <blockquote>
-<p><a href="https://shang.qq.com/v3/widget.html" target="_blank" rel="noopener noreffer">QQ 推广</a> <a href="https://qun.qq.com/join.html" target="_blank" rel="noopener noreffer">QQ 群</a></p>
+<p><a
+  href="https://shang.qq.com/v3/widget.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>QQ 推广</a> <a
+  href="https://qun.qq.com/join.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>QQ 群</a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -760,7 +851,33 @@ function getUser($userId, $options){
 </span></code></pre></td></tr></table>
 </div>
 </div><h2 id="fancybox">fancybox</h2>
-<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">github 介绍</a> <a href="https://www.bootcdn.cn/fancybox/" target="_blank" rel="noopener noreffer">fancybox 源</a></p>
+<p><a
+  href="https://github.com/fancyapps/fancybox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 介绍</a> <a
+  href="https://www.bootcdn.cn/fancybox/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>fancybox 源</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -773,6 +890,45 @@ function getUser($userId, $options){
 </div>
 </div><h1 id="back-end">back-end</h1>
 <blockquote>
-<p>更多学习内容见 <a href="https://github.com/Lruihao/web-dev-data" target="_blank" rel="noopener noreffer">学习课件</a><br>
-练习作业 <a href="https://github.com/Lruihao/hw" target="_blank" rel="noopener noreffer">源码</a>+<a href="http://hw.lruihao.cn/" target="_blank" rel="noopener noreffer">Demo</a></p>
+<p>更多学习内容见 <a
+  href="https://github.com/Lruihao/web-dev-data"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>学习课件</a><br>
+练习作业 <a
+  href="https://github.com/Lruihao/hw"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>源码</a>+<a
+  href="http://hw.lruihao.cn/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Demo</a></p>
 </blockquote>]]></description></item></channel></rss>

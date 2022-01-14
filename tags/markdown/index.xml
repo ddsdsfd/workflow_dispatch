@@ -1,22 +1,39 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Markdown - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/markdown/</link><description>Markdown - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/markdown/" rel="self" type="application/rss+xml"/><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">插件地址</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Markdown - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/markdown/</link><description>Markdown - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 21:54:06 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/markdown/" rel="self" type="application/rss+xml"/><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a
+  href="https://github.com/robinchenyu/imagepaste"
+  
+    title="插件地址"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">插件地址</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/robinchenyu/imagepaste
         </span>
-        https://github.com/robinchenyu/imagepaste
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <h2 id="功能">功能</h2>
 <p>支持 Windows/Linux 系统下，实现对剪切板图像的处理调用 (Ctrl+Shift+V)<br>
 默认使用 JPG 的方式保存，可以显著减小图片的存储体积。</p>
@@ -67,7 +84,20 @@
 </div>]]></description></item><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
         <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
       </div><blockquote>
-<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
+<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
@@ -84,7 +114,20 @@
 <li>自定义导航（显示开关，排序）</li>
 <li>自定义页面（发布开关）</li>
 <li>友情链接（显示开关，排序）</li>
-<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS 桶相册</a></li>
+<li><a
+  href="https://github.com/Lruihao/cos-album"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>COS 桶相册</a></li>
 <li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
 <li>不蒜子计数</li>
 <li>Leancloud 计数</li>
@@ -247,7 +290,20 @@ php artisan db:seed
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
 <p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
-<p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
+<p>Cell Blog 开发记录，<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>项目地址</a></p>
 </blockquote>
 <h1 id="搭建-php-环境">搭建 php 环境</h1>
 <ol>
@@ -368,7 +424,20 @@ composer require encore/laravel-admin
 </div><blockquote>
 <p>运行这个命令的时候，如果遇到了下面的错误：
 <code>SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))</code><br>
-参考这个 issue 来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
+参考这个 issue 来解决 <a
+  href="https://github.com/z-song/laravel-admin/issues/1541"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/z-song/laravel-admin/issues/1541</a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -612,8 +681,34 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="editormd-安装">editormd 安装</h1>
-<p><a href="https://github.com/ShareManT/laravel-admin-ext-editormd" target="_blank" rel="noopener noreffer">editormd</a>
-<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github 图像问题</a></p>
+<p><a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>editormd</a>
+<a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 图像问题</a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -644,7 +739,20 @@ editormd.emoji     = {
 <h3 id="csrf-419-错误">csrf 419 错误</h3>
 <p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加 csrf 验证器：</p>
 <p>修改 image-dialog.js 的<code>var dialogContent</code><br>
-<a href="https://www.jianshu.com/p/8101f7bc80f6" target="_blank" rel="noopener noreffer">参考</a></p>
+<a
+  href="https://www.jianshu.com/p/8101f7bc80f6"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -672,8 +780,34 @@ if (csrfToken) {
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="markdown-转-html">markdown 转 HTML</h1>
-<p><a href="https://www.zhiqiexing.com/119.html" target="_blank" rel="noopener noreffer">https://www.zhiqiexing.com/119.html</a>
-<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown 安装</a></p>
+<p><a
+  href="https://www.zhiqiexing.com/119.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.zhiqiexing.com/119.html</a>
+<a
+  href="https://github.com/GrahamCampbell/Laravel-Markdown"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Laravel Markdown 安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -711,7 +845,20 @@ php artisan vendor:publish
 <p>retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。</p>
 <h1 id="添加后台验证码">添加后台验证码</h1>
 <p>依赖 php 扩展<code>fileinfo</code><br>
-<a href="https://learnku.com/articles/32842" target="_blank" rel="noopener noreffer">添加验证码</a></p>
+<a
+  href="https://learnku.com/articles/32842"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>添加验证码</a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -781,7 +928,20 @@ php artisan make:controller PageController
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="后台-img-灯箱">后台 img 灯箱</h1>
-<p><a href="https://github.com/laravel-admin-extensions/grid-lightbox" target="_blank" rel="noopener noreffer">https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
+<p><a
+  href="https://github.com/laravel-admin-extensions/grid-lightbox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -796,7 +956,20 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </div>
 </div>]]></description></item><item><title>Markdown 基础教程</title><link>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 10 Jun 2018 00:05:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/markdown%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid><description><![CDATA[<blockquote>
 <p>本文来自 kio 对 Markdown 的基础教程
-其他推荐参考：<a href="https://segmentfault.com/markdown" target="_blank" rel="noopener noreffer">https://segmentfault.com/markdown</a></p>
+其他推荐参考：<a
+  href="https://segmentfault.com/markdown"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://segmentfault.com/markdown</a></p>
 </blockquote>
 <p>Markdown 主张使用最简单的符号来控制格式，兼顾易读易写特性，让你可以专注在文本创作上。</p>
 <p>这篇文章旨在让你通过大约三分钟来快速掌握 Markdown 的基本用法。</p>
@@ -850,7 +1023,20 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>通过 <code>---</code> 即可以添加段落分割线：</p>
 <hr>
 <h2 id="链接及图片">链接及图片</h2>
-<p><a href="https://lruihao.cn/posts/hexowrite/" target="_blank" rel="noopener noreffer">另外一篇博文</a>
+<p><a
+  href="https://lruihao.cn/posts/hexowrite/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>另外一篇博文</a>
 链接和图片可以为文章润色不少，通过 <code>[描述](地址)</code>既可以添加链接，而在其前面添加一个 <code>!</code> 号即为添加图片， 具体为：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -921,7 +1107,46 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </div><hr>
 <p>至此，写作中需要用到的控制符已经介绍完毕了，Kio 提供的所见即所得 Markdown 支持和便捷的输入辅助能帮助你快速掌握这一密术 :]</p>
 <h2 id="移动端写作工具">移动端写作工具</h2>
-<p><a href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w" target="_blank" rel="noopener noreffer">Kio：密码 99o4</a> 可以导出 PDF，md 文件
-<a href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw" target="_blank" rel="noopener noreffer">markdownx：密码 a5n4</a>
-<a href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg" target="_blank" rel="noopener noreffer">SM.MS 图床：密码 ch0v</a></p>
+<p><a
+  href="https://pan.baidu.com/s/15a7yXCamGZzYlrfRhy_j6w"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Kio：密码 99o4</a> 可以导出 PDF，md 文件
+<a
+  href="https://pan.baidu.com/s/1-ImjJfOURod2nUpXAc_Ejw"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>markdownx：密码 a5n4</a>
+<a
+  href="https://pan.baidu.com/s/1-zAl54zLNekq4hLaDC-8Qg"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>SM.MS 图床：密码 ch0v</a></p>
 <p>若链接失效还可以去酷安上下载。</p>]]></description></item></channel></rss>

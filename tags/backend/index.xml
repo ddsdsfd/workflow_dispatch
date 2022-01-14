@@ -1,7 +1,20 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Backend - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/backend/</link><description>Backend - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sat, 25 Jul 2020 20:51:11 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/backend/" rel="self" type="application/rss+xml"/><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
         <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
       </div><blockquote>
-<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
+<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
@@ -18,7 +31,20 @@
 <li>自定义导航（显示开关，排序）</li>
 <li>自定义页面（发布开关）</li>
 <li>友情链接（显示开关，排序）</li>
-<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS 桶相册</a></li>
+<li><a
+  href="https://github.com/Lruihao/cos-album"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>COS 桶相册</a></li>
 <li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
 <li>不蒜子计数</li>
 <li>Leancloud 计数</li>
@@ -181,7 +207,20 @@ php artisan db:seed
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
 <p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
-<p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
+<p>Cell Blog 开发记录，<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>项目地址</a></p>
 </blockquote>
 <h1 id="搭建-php-环境">搭建 php 环境</h1>
 <ol>
@@ -302,7 +341,20 @@ composer require encore/laravel-admin
 </div><blockquote>
 <p>运行这个命令的时候，如果遇到了下面的错误：
 <code>SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))</code><br>
-参考这个 issue 来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
+参考这个 issue 来解决 <a
+  href="https://github.com/z-song/laravel-admin/issues/1541"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/z-song/laravel-admin/issues/1541</a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -546,8 +598,34 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="editormd-安装">editormd 安装</h1>
-<p><a href="https://github.com/ShareManT/laravel-admin-ext-editormd" target="_blank" rel="noopener noreffer">editormd</a>
-<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github 图像问题</a></p>
+<p><a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>editormd</a>
+<a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 图像问题</a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -578,7 +656,20 @@ editormd.emoji     = {
 <h3 id="csrf-419-错误">csrf 419 错误</h3>
 <p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加 csrf 验证器：</p>
 <p>修改 image-dialog.js 的<code>var dialogContent</code><br>
-<a href="https://www.jianshu.com/p/8101f7bc80f6" target="_blank" rel="noopener noreffer">参考</a></p>
+<a
+  href="https://www.jianshu.com/p/8101f7bc80f6"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -606,8 +697,34 @@ if (csrfToken) {
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="markdown-转-html">markdown 转 HTML</h1>
-<p><a href="https://www.zhiqiexing.com/119.html" target="_blank" rel="noopener noreffer">https://www.zhiqiexing.com/119.html</a>
-<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown 安装</a></p>
+<p><a
+  href="https://www.zhiqiexing.com/119.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.zhiqiexing.com/119.html</a>
+<a
+  href="https://github.com/GrahamCampbell/Laravel-Markdown"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Laravel Markdown 安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -645,7 +762,20 @@ php artisan vendor:publish
 <p>retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。</p>
 <h1 id="添加后台验证码">添加后台验证码</h1>
 <p>依赖 php 扩展<code>fileinfo</code><br>
-<a href="https://learnku.com/articles/32842" target="_blank" rel="noopener noreffer">添加验证码</a></p>
+<a
+  href="https://learnku.com/articles/32842"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>添加验证码</a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -715,7 +845,20 @@ php artisan make:controller PageController
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="后台-img-灯箱">后台 img 灯箱</h1>
-<p><a href="https://github.com/laravel-admin-extensions/grid-lightbox" target="_blank" rel="noopener noreffer">https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
+<p><a
+  href="https://github.com/laravel-admin-extensions/grid-lightbox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -732,7 +875,15 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
 <p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~<br>
-<a href="/posts/pyinstallererror/" rel="">打包 exe 参考</a></p>
+<a
+  href="/posts/pyinstallererror/"
+  
+  
+  
+  
+  
+  
+>打包 exe 参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -927,7 +1078,20 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>适用湖南工程学院的打卡系统。<br>
 请勿滥用代码提交不实健康信息，隐瞒疫情将受到相关法律处理！</p>
 </blockquote>
-<p><a href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py" target="_blank" rel="noopener noreffer">完整代码</a></p>
+<p><a
+  href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>完整代码</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1041,7 +1205,15 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+</div><p><a
+  href="/posts/cron/"
+  
+  
+  
+  
+  
+  
+>CRON 表达式的基本语法</a></p>
 <h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
@@ -1781,7 +1953,20 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>这些知识点在课上都只是简单的提到了一下。<br>
 比如一些库的使用与安装都不会再课上详细讲解，需要课后再去研究。</p>
 </blockquote>
-<h2 id="切片操作httpswwwjianshucomp15715d6f4dad"><a href="https://www.jianshu.com/p/15715d6f4dad" target="_blank" rel="noopener noreffer">切片操作</a></h2>
+<h2 id="切片操作httpswwwjianshucomp15715d6f4dad"><a
+  href="https://www.jianshu.com/p/15715d6f4dad"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>切片操作</a></h2>
 <p>列表切片操作</p>
 <h2 id="字符串">字符串</h2>
 <h3 id="python-原始字符串">python 原始字符串</h3>
@@ -2066,7 +2251,20 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <li><code>__</code>表示私有的</li>
 <li>class 的定义可以不加 (),() 内可写继承的父类</li>
 </ul>
-<h2 id="gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548">GUI 设计 <a href="https://blog.csdn.net/mist99/article/details/80742548" target="_blank" rel="noopener noreffer">wxPython</a></h2>
+<h2 id="gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548">GUI 设计 <a
+  href="https://blog.csdn.net/mist99/article/details/80742548"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>wxPython</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2187,7 +2385,20 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 </div>
 </div><p></p>
 <h2 id="talib-库的安装">talib 库的安装</h2>
-<p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib" target="_blank" rel="noopener noreffer">下载 whl 文件</a></p>
+<p><a
+  href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>下载 whl 文件</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3298,13 +3509,39 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
         <img src="/posts/imgurl/images/1.png" referrerpolicy="no-referrer">
       </div><blockquote>
 <p>ImgURL 是一个开源、免费的图床程序，ImgURL 2.x 之后对环境要求更高，尤其是 ImageMagick 组件的支持，很多朋友不清楚怎样安装这个组件，这篇文章分享宝塔面板安装 ImgURL 2.x 图床的过程（包括 ImgURL 2.x 需要的各种组件）
-<a href="https://www.xiaoz.me/archives/12081" target="_blank" rel="noopener noreffer">阅读原文</a></p>
+<a
+  href="https://www.xiaoz.me/archives/12081"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>阅读原文</a></p>
 </blockquote>
 <h1 id="准备工作">准备工作</h1>
 <ol>
 <li>已经安装宝塔面板</li>
 <li>在宝塔后台创建一个站点</li>
-<li>下载 <a href="https://github.com/helloxz/imgurl" target="_blank" rel="noopener noreffer">ImgURL 2.x</a> 上传到站点根目录并解压</li>
+<li>下载 <a
+  href="https://github.com/helloxz/imgurl"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>ImgURL 2.x</a> 上传到站点根目录并解压</li>
 </ol>
 <h1 id="设置伪静态">设置伪静态</h1>
 <p>如果您宝塔面板安装的 Apache 则不需要再设置伪静态，直接跳过这个步骤，如果使用的 Nginx 环境，请继续往下看。</p>
@@ -3343,8 +3580,34 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </p>
 <h1 id="其它说明">其它说明</h1>
 <ul>
-<li>如果安装遇到任何问题，请留言反馈或到 <a href="https://ttt.sh/category/6/imgurl%E5%9B%BE%E5%BA%8A" target="_blank" rel="noopener noreffer">3T 官方社区</a> 进行反馈</li>
-<li>ImgURL 更多使用说明请参考帮助文档：<a href="https://dwz.ovh/imgurldoc" target="_blank" rel="noopener noreffer">https://dwz.ovh/imgurldoc</a></li>
+<li>如果安装遇到任何问题，请留言反馈或到 <a
+  href="https://ttt.sh/category/6/imgurl%E5%9B%BE%E5%BA%8A"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>3T 官方社区</a> 进行反馈</li>
+<li>ImgURL 更多使用说明请参考帮助文档：<a
+  href="https://dwz.ovh/imgurldoc"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://dwz.ovh/imgurldoc</a></li>
 </ul>]]></description></item><item><title>python 设置程序每天 8 点定时执行任务</title><link>https://lruihao.cn/posts/pysettime/</link><pubDate>Thu, 09 May 2019 23:26:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysettime/</guid><description><![CDATA[<blockquote>
 <p>第一次运行根据程序执行时间，判断程序休眠的时间，尽最大可能休眠，节省系统资源。<br>
 第二次运行后直接休眠一天，到每天早上 8 点执行任务。<br>
@@ -3401,7 +3664,20 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 这里通过手动下载安装解决的，记录一下。</p>
 </blockquote>
 <h1 id="下载">下载</h1>
-<p>去官网下载 pyinstaller 安装包：<a href="https://pypi.org/project/PyInstaller/#files" target="_blank" rel="noopener noreffer">https://pypi.org/project/PyInstaller/#files</a></p>
+<p>去官网下载 pyinstaller 安装包：<a
+  href="https://pypi.org/project/PyInstaller/#files"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://pypi.org/project/PyInstaller/#files</a></p>
 <h1 id="解压">解压</h1>
 <p>我这里解压到<code>E:\应用、Python37\Lib\site-packages\PyInstaller-3.4</code></p>
 <h1 id="安装">安装</h1>
@@ -3429,7 +3705,15 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 </blockquote>
 <p>如<code>pyinstaller --paths=&quot;D:\&quot; test.py</code></p>
 <h1 id="csdn-访问量脚本实例">CSDN 访问量脚本实例</h1>
-<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a href="/posts/csdnvisiter.html" rel="">代码详见</a></p>
+<p>比如，拿以前写的一个刷 csdn 访问量工具 csdn.py（放在桌面上），<a
+  href="/posts/csdnvisiter.html"
+  
+  
+  
+  
+  
+  
+>代码详见</a></p>
 <p>在 cmd 进入桌面路径，输入如下命令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3653,7 +3937,20 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 <p></p>]]></description></item><item><title>Python 如何操作 Json？</title><link>https://lruihao.cn/posts/jsoninfo/</link><pubDate>Tue, 07 May 2019 18:42:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/jsoninfo/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/jsoninfo/images/1.jpg" referrerpolicy="no-referrer">
       </div><blockquote>
-<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreffer">阅读原文</a></p>
+<p>Json（JavaScript Object Notation）它是一种轻量级的数据交换格式，具有数据格式简单，读写方便易懂等很多优点。许多主流的编程语言都在用它来进行前后端的数据传输，大大的简化了服务器和客户端的开发工作量。相对于 XML 来说，更加的轻量级，更方便解析，因此许多开发者都遵循 Json 格式来进行数据的传输和交换。今天我们详细介绍一下 Python 在 Json 的编解码方面的知识。<a
+  href="https://baijiahao.baidu.com/s?id=1608659655547720220&amp;wfr=spider&amp;for=pc"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>阅读原文</a></p>
 </blockquote>
 <h1 id="json-的数据格式">json 的数据格式</h1>
 <p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>

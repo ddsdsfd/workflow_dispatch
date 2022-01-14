@@ -7,8 +7,34 @@
     <div class="details-content">
       <div class="admonition-content"><p><strong>Getting Things Done (GTD)</strong> is a personal productivity system developed by David Allen and published in a book of the same name. GTD is described as a time management system. Allen states &ldquo;there is an inverse relationship between things on your mind and those things getting done&rdquo;.</p>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Getting_Things_Done" target="_blank" rel="noopener noreffer">Reference</a></li>
-<li><a href="https://github.com/Lruihao/hugo-blog/issues/20" target="_blank" rel="noopener noreffer">#20</a></li>
+<li><a
+  href="https://en.wikipedia.org/wiki/Getting_Things_Done"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Reference</a></li>
+<li><a
+  href="https://github.com/Lruihao/hugo-blog/issues/20"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#20</a></li>
 </ul>
 </div>
     </div>
@@ -115,25 +141,42 @@
 <li>Github (collection, backup), Blog (summarize)</li>
 </ul>
 </li>
-</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a href="https://github.com/robinchenyu/imagepaste" title="插件地址" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">插件地址</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a
+  href="https://github.com/robinchenyu/imagepaste"
+  
+    title="插件地址"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">插件地址</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/robinchenyu/imagepaste
         </span>
-        https://github.com/robinchenyu/imagepaste
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <h2 id="功能">功能</h2>
 <p>支持 Windows/Linux 系统下，实现对剪切板图像的处理调用 (Ctrl+Shift+V)<br>
 默认使用 JPG 的方式保存，可以显著减小图片的存储体积。</p>
@@ -181,37 +224,73 @@
 &#34;pasteImage.path&#34;: &#34;${currentFileDir}/images/&#34;
 </code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">知乎卡片式链接 Git 記錄</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+</div>]]></description></item><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a
+  href="https://github.com/Lruihao/hugo-blog/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">卡片式链接已整合到 FixIt 主题</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/hugo-blog/FixIt
         </span>
-        https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <div class="details admonition quote open">
     <div class="details-summary admonition-title">
       <i class="icon fas fa-quote-right fa-fw"></i>回顧<i class="details-icon fas fa-angle-right fa-fw"></i>
     </div>
     <div class="details-content">
-      <div class="admonition-content">之前在使用 hexo 的時候也有用到，<a href="/posts/linkcard/" rel="">模仿知乎卡片式链接</a><br>
+      <div class="admonition-content">之前在使用 hexo 的時候也有用到，<a
+  href="/posts/linkcard/"
+  
+  
+  
+  
+  
+  
+>模仿知乎卡片式链接</a><br>
 和之前的相比，優化之前是后加載，由 JS 在 瀏覽器處理，<br>
 使用 shortcodes 方式后，則是在 GO 構建頁面的時候處理，效能上會好很多。</div>
     </div>
   </div>
 <h2 id="源碼">源碼</h2>
-<p>基於 LoveIt 主題的 Link Shortcodes, 主要改到以下幾個文件，<a href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b" target="_blank" rel="noopener noreffer">完整提交記錄</a></p>
+<p>基於 LoveIt 主題的 Link Shortcodes, 主要改到以下幾個文件，<a
+  href="https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>完整提交記錄</a></p>
 <pre><code>assets/css/custom.scss
 assets/css/partial/cardlink.scss          # 卡片式鏈接樣式
 layouts/partials/plugin/cardlink.html     # 卡片式鏈接模板
@@ -219,13 +298,37 @@ layouts/shortcodes/cardlink.html
 static/images/card-link-bg.jpg
 </code></pre>
 <h2 id="使用">使用</h2>
-<p>使用參數同 <a href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link" target="_blank" rel="noopener noreffer">LoveIt 擴展 Shortcodes - Link</a></p>
+<p>使用參數同 <a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/#2-link"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 擴展 Shortcodes - Link</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">cardlink</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://github.com/Lruihao/hugo-blog/commit/089c303693e806bff855ecf3fee110baa62b870b&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;知乎卡片式链接 Git 記錄&#34;</span> <span class="p">&gt;</span>}}
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>💡 注：FixIt <a href="https://github.com/Lruihao/FixIt/releases/tag/v0.2.12" rel="noopener noreffer" target="_blank"></a> 已合併 cardlink shortcode 到 link shortcode，只需添加 card=true</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; link href=&#34;https://github.com/Lruihao/hugo-blog/FixIt&#34; content=&#34;卡片式链接已整合到 FixIt 主题&#34; card=true &gt;}}
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
@@ -664,25 +767,74 @@ static/images/card-link-bg.jpg
       <div class="admonition-content">以前的 hexo 博客是自己寫的友鏈模板，換到 hugo 後想著在網上隨便找一個範本用著就好，然而並沒有自己想要的 layout, 幾乎都是使用 shortcodes 的，代碼風格有點問題且 shortcodes 作為友鏈添加的方式是真的麻煩。就只好自己寫羅。</div>
     </div>
   </div>
-<a href="https://lruihao.cn/friends/" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">友情鏈接範本</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="https://github.com/Lruihao/hugo-blog/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">友情鏈接模板已整合到 FixIt 主題</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/hugo-blog/FixIt
         </span>
-        https://lruihao.cn/friends/
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
+<a
+  href="https://lruihao.cn/friends/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">友情鏈接範本</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://lruihao.cn/friends/
+        </span>
+      </span>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <h2 id="創建模板">創建模板</h2>
 <p>開始之前去看了 hugo 的官網，再看了一下 go 模板的語法。</p>
 <p>新建 <code>layouts/friends/single.html</code></p>
@@ -1378,12 +1530,38 @@ sh hugo_main.sh
 </blockquote>
 <p>那 hugo 基于编译语言 GO 构建，对于静态页面的构建肯定是碾压 hexo 的存在，其官方标语也是很直白 <code>&quot;The world’s fastest framework for building websites&quot;</code>, 作为先后使用过 hexo 和 hugo 的我来说，这确实名副其实。</p>
 <ul>
-<li><a href="https://gohugo.io" target="_blank" rel="noopener noreffer">gohugo</a></li>
+<li><a
+  href="https://gohugo.io"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>gohugo</a></li>
 </ul>
 <h3 id="安装">安装</h3>
 <p>hugo 提供了很多种安装方式，Git, Docker, Binary.<br>
 个人电脑使用二进制安装是最方便快捷的，无需安装其他依赖。<br>
-到 <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">Hugo Releases</a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
+到 <a
+  href="https://github.com/gohugoio/hugo/releases"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Hugo Releases</a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
 <h3 id="生成站点">生成站点</h3>
 <p>使用 Hugo 快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
 <div class="highlight"><div class="chroma">
@@ -1414,7 +1592,33 @@ sh hugo_main.sh
 </div>
 </div><h3 id="添加主题">添加主题</h3>
 <p>添加主题的方式选用 Git 子模组的形式，为了日后快速升级，避免在使用 hexo 中因大量魔改 next 主题而导致难以升级的困扰。<br>
-精挑细选最终选择了 <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer">LoveIt</a></p>
+精挑细选最终选择了 <del><a
+  href="https://github.com/dillonzq/LoveIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt</a></del> =&gt; <a
+  href="https://github.com/Lruihao/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>FixIt</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1422,11 +1626,19 @@ sh hugo_main.sh
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git init
-git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 </code></pre></td></tr></table>
 </div>
-</div><p>在 <code>config.toml</code> 添加 <code>theme = &quot;LoveIt&quot;</code></p>
-<h3 id="在本地启动网站">在本地启动网站</h3>
+</div><p>在 <code>config.toml</code> 添加 <del>theme = &ldquo;LoveIt&rdquo;</del></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">theme = &#34;FixIt&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="在本地启动网站">在本地启动网站</h3>
 <p>使用以下命令启动网站：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1447,36 +1659,100 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hugo --minify
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="hugoloveit-使用">Hugo&amp;LoveIt 使用</h2>
+</div><h2 id="写作指北">写作指北</h2>
 <ul>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-basics" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 基本概念</a></li>
-</ul>
-<p>写作指南</p>
-<ul>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-content/" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 内容</a></li>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 内置 Shortcodes</a></li>
-<li><a href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/" target="_blank" rel="noopener noreffer">LoveIt 主题文档 - 扩展 Shortcodes</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-basics"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 基本概念</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-content/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 内容</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 内置 Shortcodes</a></li>
+<li><a
+  href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt 主题文档 - 扩展 Shortcodes</a></li>
 </ul>
 <h2 id="todo-list">Todo list</h2>
-<a href="https://github.com/Lruihao/hugo-blog" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">hugo-blog</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="https://github.com/Lruihao/hugo-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">本站源码备份</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/hugo-blog
         </span>
-        https://github.com/Lruihao/hugo-blog
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <blockquote>
 <p>原来 hexo 做了大量的美化和扩展功能，迁移到 hugo 想尽可能多的保留。取之精华，去其糟粕。</p>
 </blockquote>
@@ -1501,7 +1777,46 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </details>
 <ul>
 <li>
-<p><i class="far fa-square fa-fw"></i> <del><a href="https://img.lruihao.cn" target="_blank" rel="noopener noreffer">cos-album</a> 和 <a href="https://sz.journey.lruihao.cn" target="_blank" rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a href="https://github.com/Lruihao/hugo-blog/issues/7" target="_blank" rel="noopener noreffer">#7 (wontfix)</a></del></p>
+<p><i class="far fa-square fa-fw"></i> <del><a
+  href="https://img.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>cos-album</a> 和 <a
+  href="https://sz.journey.lruihao.cn"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a
+  href="https://github.com/Lruihao/hugo-blog/issues/7"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#7 (wontfix)</a></del></p>
 </li>
 <li>
 <p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> （保持原本博客的纯粹性）</p>
@@ -1510,7 +1825,15 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 <p><i class="far fa-check-square fa-fw"></i> 博客 valine 评论，阅读数迁移，可用 leancloud API 写代码转化（但似乎没必要）</p>
 </li>
 <li>
-<p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移 <sup><a href="#seo-ref" rel="">baidu_urls.txt</a></sup><a id="seo"></a></p>
+<p><i class="far fa-check-square fa-fw"></i> 博客 SEO 优化迁移 <sup><a
+  href="#seo-ref"
+  
+  
+  
+  
+  
+  
+>baidu_urls.txt</a></sup><a id="seo"></a></p>
 </li>
 <li>
 <p><i class="far fa-check-square fa-fw"></i> <code>Github actions</code> 自动部署到 <strong>Github pages</strong> 和 <strong>COS</strong> 脚本编写</p>
@@ -1537,13 +1860,60 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </ul>
 </details>
 <ul>
-<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href="https://github.com/Lruihao/hugo-blog/issues/3" target="_blank" rel="noopener noreffer">#3</a></li>
+<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/3"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#3</a></li>
 <li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
-<li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href="https://github.com/Lruihao/hugo-blog/issues/4" target="_blank" rel="noopener noreffer">#4</a></li>
-<li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href="https://github.com/Lruihao/hugo-blog/issues/5" target="_blank" rel="noopener noreffer">#5</a></li>
+<li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/4"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#4</a></li>
+<li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/5"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#5</a></li>
 </ul>
 <hr>
-<p><a id="seo-ref"></a><code>[baidu_urls.txt]:</code><a href="#seo" rel="">↩︎</a></p>
+<p><a id="seo-ref"></a><code>[baidu_urls.txt]:</code><a
+  href="#seo"
+  
+  
+  
+  
+  
+  
+>↩︎</a></p>
 <p><em>生成百度链接集合小技巧，关掉归档分页，在归档页面控制台执行以下代码即可获得所有文章链接</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1562,33 +1932,62 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 </code></pre></td></tr></table>
 </div>
 </div><hr>
-<h3 id="theme-loveit-fixit">Theme <del>LoveIt</del> FixIt</h3>
+<h3 id="theme-fixit">Theme FixIt</h3>
 <blockquote>
-<p>hugo LoveIt 主题整体优化，<del>必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多）<br>
-先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，<br>
-唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。<br>
-<del>之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</del> FixIt fork from LoveIt</p>
+<p><del>hugo LoveIt 主题整体优化，必要时建 PR 或 issue 到 LoveIt 仓库</del> (LoveIt 已停更一年多）<br>
+<del>先把自己发现和 LoveIt 原 repo 的 issue 尽可能的修复，修改的原则是：<strong>不改动原项目代码</strong>，</del><br>
+<del>唯一途径就是在站点相同的目录用<strong>新增</strong>的方式替代<strong>修改、删除</strong>操作。</del><br>
+<del>之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</del>
+为了更好的完善博客功能以及修复 BUG 已创建新的主题 FixIt (fork from LoveIt)</p>
 </blockquote>
-<a href="https://github.com/Lruihao/FixIt" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">FixIt</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="https://github.com/Lruihao/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">Hugo theme FixIt</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          https://github.com/Lruihao/FixIt
         </span>
-        https://github.com/Lruihao/FixIt
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
-<p>进度更新至 <a href="https://github.com/Lruihao/hugo-blog/issues/8" target="_blank" rel="noopener noreffer">#8</a></p>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
+<p>进度更新至 <a
+  href="https://github.com/Lruihao/hugo-blog/issues/8"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>#8</a></p>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
 <li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>
@@ -2064,7 +2463,20 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
 </span></code></pre></td></tr></table>
 </div>
 </div><h1 id="fancybox">fancybox</h1>
-<p><a href="https://github.com/fancyapps/fancybox" target="_blank" rel="noopener noreffer">fancybox</a> 是一個完善的 lightbox 插件<br>
+<p><a
+  href="https://github.com/fancyapps/fancybox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>fancybox</a> 是一個完善的 lightbox 插件<br>
 jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.</p>
 <h2 id="quick-start">Quick start</h2>
 <ol>
@@ -2697,25 +3109,40 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 </ul>
 <p>主要就是存取數據這點，沒有服務器，數據庫怎麼實現？<br>
 valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一波，然後“數據表”設計一下，其實是 leancloud-storage Object ，於是有了以下東西，源碼放在 Github</p>
-<a href="http://github.com/Lruihao/bill-note" target="_blank" rel="noopener noreffer"  class="card-link">
-  <span class="card-link-backdrop"></span>
-  <span class="card-link-content">
-    <span class="card-link-text">
-      <span class="card-link-title">bill-note</span>
-      <span class="card-link-meta">
-        <span class="card-link-url">
-          <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
-            <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
-          </svg>
+<a
+  href="http://github.com/Lruihao/bill-note"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+    
+  
+  
+    class="card-link"
+  
+  
+><span class="card-link-backdrop"></span>
+    <span class="card-link-content">
+      <span class="card-link-text">
+        <span class="card-link-title">bill-note</span>
+        <span class="card-link-meta">
+          <span class="card-link-url">
+            <svg class="Zi Zi--InsertLink" fill="currentColor" viewbox="0 0 24 24" width="17" height="17">
+              <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
+            </svg>
+          </span>
+          http://github.com/Lruihao/bill-note
         </span>
-        http://github.com/Lruihao/bill-note
       </span>
-    </span>
-    <span class="card-link-imageCell">
-      
-    </span>
-  </span>
-</a>
+      <span class="card-link-image-cell">
+        
+      </span>
+    </span></a>
 <h2 id="數據設計">數據設計</h2>
 <p>去 leancloud 创建一个应用，再新增一个 Bill Class, 补充一下字段：</p>
 <table>
@@ -2941,7 +3368,20 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p></p>]]></description></item><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
         <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
       </div><blockquote>
-<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
+<p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Cell Blog</a>, 也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
@@ -2958,7 +3398,20 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <li>自定义导航（显示开关，排序）</li>
 <li>自定义页面（发布开关）</li>
 <li>友情链接（显示开关，排序）</li>
-<li><a href="https://github.com/Lruihao/cos-album" target="_blank" rel="noopener noreffer">COS 桶相册</a></li>
+<li><a
+  href="https://github.com/Lruihao/cos-album"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>COS 桶相册</a></li>
 <li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
 <li>不蒜子计数</li>
 <li>Leancloud 计数</li>
@@ -3121,7 +3574,20 @@ php artisan db:seed
 <h1 id="license">License</h1>
 <p>Cell Blog is open-sourced software licensed under the MIT license.</p>
 <p></p>]]></description></item><item><title>cell-blog 开发记录</title><link>https://lruihao.cn/posts/cell-blog-dev/</link><pubDate>Sat, 25 Jul 2020 20:42:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-dev/</guid><description><![CDATA[<blockquote>
-<p>Cell Blog 开发记录，<a href="https://github.com/Lruihao/cell-blog" target="_blank" rel="noopener noreffer">项目地址</a></p>
+<p>Cell Blog 开发记录，<a
+  href="https://github.com/Lruihao/cell-blog"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>项目地址</a></p>
 </blockquote>
 <h1 id="搭建-php-环境">搭建 php 环境</h1>
 <ol>
@@ -3242,7 +3708,20 @@ composer require encore/laravel-admin
 </div><blockquote>
 <p>运行这个命令的时候，如果遇到了下面的错误：
 <code>SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 1000 bytes (SQL: alter tableusersadd uniqueusers_email_unique(email))</code><br>
-参考这个 issue 来解决 <a href="https://github.com/z-song/laravel-admin/issues/1541" target="_blank" rel="noopener noreffer">https://github.com/z-song/laravel-admin/issues/1541</a><br>
+参考这个 issue 来解决 <a
+  href="https://github.com/z-song/laravel-admin/issues/1541"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/z-song/laravel-admin/issues/1541</a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -3486,8 +3965,34 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="editormd-安装">editormd 安装</h1>
-<p><a href="https://github.com/ShareManT/laravel-admin-ext-editormd" target="_blank" rel="noopener noreffer">editormd</a>
-<a href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3" target="_blank" rel="noopener noreffer">github 图像问题</a></p>
+<p><a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>editormd</a>
+<a
+  href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>github 图像问题</a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3518,7 +4023,20 @@ editormd.emoji     = {
 <h3 id="csrf-419-错误">csrf 419 错误</h3>
 <p>可以在<code>VerifyCsrfToken.php</code>中添加白名单跳过验证，或者手动添加 csrf 验证器：</p>
 <p>修改 image-dialog.js 的<code>var dialogContent</code><br>
-<a href="https://www.jianshu.com/p/8101f7bc80f6" target="_blank" rel="noopener noreffer">参考</a></p>
+<a
+  href="https://www.jianshu.com/p/8101f7bc80f6"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3546,8 +4064,34 @@ if (csrfToken) {
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="markdown-转-html">markdown 转 HTML</h1>
-<p><a href="https://www.zhiqiexing.com/119.html" target="_blank" rel="noopener noreffer">https://www.zhiqiexing.com/119.html</a>
-<a href="https://github.com/GrahamCampbell/Laravel-Markdown" target="_blank" rel="noopener noreffer">Laravel Markdown 安装</a></p>
+<p><a
+  href="https://www.zhiqiexing.com/119.html"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://www.zhiqiexing.com/119.html</a>
+<a
+  href="https://github.com/GrahamCampbell/Laravel-Markdown"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>Laravel Markdown 安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3585,7 +4129,20 @@ php artisan vendor:publish
 <p>retrieved 事件会在从数据库中获取已存在模型时触发。当一个新模型被首次保存的时候，creating 和 created 事件会被触发。如果一个模型已经在数据库中存在并调用 save 方法，updating/updated 事件会被触发，无论是创建还是更新，saving/saved 事件都会被触发。</p>
 <h1 id="添加后台验证码">添加后台验证码</h1>
 <p>依赖 php 扩展<code>fileinfo</code><br>
-<a href="https://learnku.com/articles/32842" target="_blank" rel="noopener noreffer">添加验证码</a></p>
+<a
+  href="https://learnku.com/articles/32842"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>添加验证码</a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3655,7 +4212,20 @@ php artisan make:controller PageController
 </code></pre></td></tr></table>
 </div>
 </div><h1 id="后台-img-灯箱">后台 img 灯箱</h1>
-<p><a href="https://github.com/laravel-admin-extensions/grid-lightbox" target="_blank" rel="noopener noreffer">https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
+<p><a
+  href="https://github.com/laravel-admin-extensions/grid-lightbox"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>https://github.com/laravel-admin-extensions/grid-lightbox</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3672,7 +4242,15 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>使用 python 模拟浏览器行为刷 csdn 访问量，脚本仅做学习，请勿滥用~</p>
 </blockquote>
 <p>直接丢代码，把代码挂到服务器上可以策马奔腾~，也可以生成二进制文件放到 Windows 桌面上随时使用~<br>
-<a href="/posts/pyinstallererror/" rel="">打包 exe 参考</a></p>
+<a
+  href="/posts/pyinstallererror/"
+  
+  
+  
+  
+  
+  
+>打包 exe 参考</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3874,7 +4452,20 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <p>适用湖南工程学院的打卡系统。<br>
 请勿滥用代码提交不实健康信息，隐瞒疫情将受到相关法律处理！</p>
 </blockquote>
-<p><a href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py" target="_blank" rel="noopener noreffer">完整代码</a></p>
+<p><a
+  href="https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>完整代码</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3988,7 +4579,15 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="/posts/cron/" rel="">CRON 表达式的基本语法</a></p>
+</div><p><a
+  href="/posts/cron/"
+  
+  
+  
+  
+  
+  
+>CRON 表达式的基本语法</a></p>
 <h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>

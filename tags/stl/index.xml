@@ -161,7 +161,20 @@
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://weibo.com/ttarticle/p/show?id=2309404237869425234111&amp;mod=zwenzhang" target="_blank" rel="noopener noreffer">传送门</a></p>
+</div><p><a
+  href="https://weibo.com/ttarticle/p/show?id=2309404237869425234111&amp;mod=zwenzhang"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a></p>
 ]]></description></item><item><title>C++ with STL</title><link>https://lruihao.cn/posts/c-with-stl/</link><pubDate>Thu, 14 Jun 2018 20:22:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/c-with-stl/</guid><description><![CDATA[<h2 id="1swap交换两元素值在-algorithm-下用法swapab">1.swap（交换两元素值，在 algorithm 下，用法：swap(a,b);）</h2>
 <p>交换两元素的值在 C 语言课上作为指针讲解的典例。</p>
 <p>int a=1,b=2;</p>
@@ -421,5 +434,18 @@ TSL
 </code></pre></td></tr></table>
 </div>
 </div><p>输出结果为：1 2 3 5 7 9</p>
-<p><a href="https://weibo.com/ttarticle/p/show?id=2309404241150725776250&amp;mod=zwenzhang" target="_blank" rel="noopener noreffer">传送门</a></p>
+<p><a
+  href="https://weibo.com/ttarticle/p/show?id=2309404241150725776250&amp;mod=zwenzhang"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>传送门</a></p>
 ]]></description></item></channel></rss>
