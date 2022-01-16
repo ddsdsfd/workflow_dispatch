@@ -1,5 +1,5 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>hugo - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/hugo/</link><description>hugo - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Tue, 05 Oct 2021 19:33:13 +0800</lastBuildDate><atom:link href="https://lruihao.cn/tags/hugo/" rel="self" type="application/rss+xml"/><item><title>Hugo 添加知乎卡片式链接 Shortcodes</title><link>https://lruihao.cn/posts/hugo-cardlink/</link><pubDate>Tue, 05 Oct 2021 19:33:13 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-cardlink/</guid><description><![CDATA[<a
-  href="https://github.com/Lruihao/hugo-blog/FixIt"
+  href="https://github.com/Lruihao/FixIt"
   
   
     
@@ -25,7 +25,7 @@
               <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
             </svg>
           </span>
-          https://github.com/Lruihao/hugo-blog/FixIt
+          https://github.com/Lruihao/FixIt
         </span>
       </span>
       <span class="card-link-image-cell">
@@ -95,14 +95,14 @@ static/images/card-link-bg.jpg
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>💡 注：FixIt <a href="https://github.com/Lruihao/FixIt/releases/tag/v0.2.12" rel="noopener noreffer" target="_blank"></a> 已合併 cardlink shortcode 到 link shortcode，只需添加 card=true</p>
+<p>💡 注：FixIt <a href="https://github.com/Lruihao/FixIt/releases/tag/v0.2.12" rel="noopener noreffer" target="_blank"></a> 已合併 shortcode cardlink 到 shortcode link，只需添加 <code>card=true</code></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; link href=&#34;https://github.com/Lruihao/hugo-blog/FixIt&#34; content=&#34;卡片式链接已整合到 FixIt 主题&#34; card=true &gt;}}
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; link href=&#34;https://github.com/Lruihao/FixIt&#34; content=&#34;卡片式链接已整合到 FixIt 主题&#34; card=true &gt;}}
 </code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
@@ -542,7 +542,7 @@ static/images/card-link-bg.jpg
     </div>
   </div>
 <a
-  href="https://github.com/Lruihao/hugo-blog/FixIt"
+  href="https://github.com/Lruihao/FixIt"
   
   
     
@@ -568,7 +568,7 @@ static/images/card-link-bg.jpg
               <path d="M6.77 17.23c-.905-.904-.94-2.333-.08-3.193l3.059-3.06-1.192-1.19-3.059 3.058c-1.489 1.489-1.427 3.954.138 5.519s4.03 1.627 5.519.138l3.059-3.059-1.192-1.192-3.059 3.06c-.86.86-2.289.824-3.193-.08zm3.016-8.673l1.192 1.192 3.059-3.06c.86-.86 2.289-.824 3.193.08.905.905.94 2.334.08 3.194l-3.059 3.06 1.192 1.19 3.059-3.058c1.489-1.489 1.427-3.954-.138-5.519s-4.03-1.627-5.519-.138L9.786 8.557zm-1.023 6.68c.33.33.863.343 1.177.029l5.34-5.34c.314-.314.3-.846-.03-1.176-.33-.33-.862-.344-1.176-.03l-5.34 5.34c-.314.314-.3.846.03 1.177z" fill-rule="evenodd"></path>
             </svg>
           </span>
-          https://github.com/Lruihao/hugo-blog/FixIt
+          https://github.com/Lruihao/FixIt
         </span>
       </span>
       <span class="card-link-image-cell">
