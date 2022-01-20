@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>netBeans - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/netbeans/</link><description>netBeans - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 15 Aug 2019 18:36:15 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/netbeans/" rel="self" type="application/rss+xml"/><item><title>netBeans IDE 开发设置</title><link>https://lruihao.cn/posts/netbeans/</link><pubDate>Thu, 15 Aug 2019 18:36:15 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/netbeans/</guid><description><![CDATA[<h1 id="安裝">安裝</h1>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>NetBeans - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/netbeans/</link><description>NetBeans - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Thu, 15 Aug 2019 18:36:15 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/netbeans/" rel="self" type="application/rss+xml"/><item><title>NetBeans IDE 开发设置</title><link>https://lruihao.cn/posts/netbeans/</link><pubDate>Thu, 15 Aug 2019 18:36:15 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/netbeans/</guid><description><![CDATA[<h1 id="安裝">安裝</h1>
 <p><a
   href="https://netbeans.org/"
   
@@ -32,21 +32,21 @@
   
   
 >官方套件庫</a></li>
-<li>或者在 netbenas IDE 裏面下載插件（方便）</li>
+<li>或者在 NetBeans IDE 裏面下載插件（方便）</li>
 </ul>
 </li>
-<li>開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins</li>
+<li>開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins</li>
 <li>選擇要安裝的擴充套件包</li>
 </ol>
 <h2 id="啟用已安裝的擴充功能">啟用已安裝的擴充功能</h2>
 <ol>
-<li>開啟 Netbeans→Tools→Plugins→Installed</li>
+<li>開啟 NetBeans→Tools→Plugins→Installed</li>
 <li>選擇要啟用的套件 (*.npm)</li>
 <li>點擊 Activate</li>
 </ol>
 <h2 id="匯入設定">匯入設定</h2>
 <ol>
-<li>開啟 Netbeans→Tools→Options</li>
+<li>開啟 NetBeans→Tools→Options</li>
 <li>點擊 Import 匯入設定</li>
 <li>選擇要匯入的套件包 (*.zip)</li>
 </ol>
@@ -82,9 +82,9 @@
 <h2 id="前端壓縮">前端壓縮</h2>
 <p>下載擴充套件<code>netbeans minify</code> 或者 <code>minifierBeans</code></p>
 <ol>
-<li>開啟 Netbeans→Tools→Plugins→Downloaded→Add Plugins</li>
+<li>開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins</li>
 <li>選擇你下載的擴充套件開啟</li>
-<li>開啟 Netbeans→Tools→options</li>
+<li>開啟 NetBeans→Tools→options</li>
 </ol>
 <p>
 </p>
@@ -237,7 +237,7 @@
   
   
 >chrome 應用程式商店</a></li>
-<li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 Netbeans 圖標。</li>
+<li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 NetBeans 圖標。</li>
 <li>開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector</li>
 <li>選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可</li>
 </ol>
