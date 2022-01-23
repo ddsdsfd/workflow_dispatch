@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>总结 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/</link><description>总结 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 21 Jun 2021 10:17:38 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/" rel="self" type="application/rss+xml"/><item><title>和自己對話-2020&amp;2021 總結</title><link>https://lruihao.cn/years/2020-2021/</link><pubDate>Mon, 21 Jun 2021 10:17:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/years/2020-2021/</guid><description><![CDATA[<div class="details admonition quote open">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>总结 - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/</link><description>总结 - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 21 Jun 2021 10:17:38 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/%E6%80%BB%E7%BB%93/" rel="self" type="application/rss+xml"/><item><title>和自己對話</title><link>https://lruihao.cn/years/2020-2021/</link><pubDate>Mon, 21 Jun 2021 10:17:38 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/years/2020-2021/</guid><description><![CDATA[<div class="details admonition quote open">
     <div class="details-summary admonition-title">
       <i class="icon fas fa-quote-right fa-fw"></i>後知後覺<i class="details-icon fas fa-angle-right fa-fw"></i>
     </div>
@@ -62,18 +62,99 @@
 <p>終於在國慶過後，一個機會我跳槽了，離開了 Foxconn，有意思的事，上午我還在富士康面試別人，下午我就被別人面試，哈哈哈，人生有些事真的很奇妙。</p>
 <p>離開時，有很明顯感受到同事的不捨，記得一次在路上，有個學妹和我說了一句話，“學長，不希望你走”，說實話蠻感動的哈哈哈。另外，主管也是很不捨得讓我走，哎，在 Foxconn 工作兩年，慢慢成長起來，真的離不開慶哥的栽培，十分感謝他，最後和他的聊天他說了一句話，真的讓我破防，他説“我很開心你或者其他从這裡離職的都可以找到更好的工資，畢竟富士康就這樣~ 然後你表現真的很棒，到新公司也要繼續加油~以後落魄了沒有人要你，再跟我說 哈哈 隨時歡迎優秀的人回歸 :D” 真的超感動，我知道這兩年他對我都挺嚴格，當然我自己對自己也挺嚴格，才會有慶哥對我這麼的信任，什麼事都放心交給我。所以我應該繼續加油，成為更好的自己~</p>
 <p>來到新公司，沒做全棧了，想專門做前端開發，大學室友，華哥內推我的，所以面試之類都挺簡單，來這邊后，因為小公司開發規範啥的都沒有嚴格的要求，大家都挺隨意的，上級主管等都挺好的，也有雙休，總之這個階段挺滿意的，21 年 12 月 31 日，最後一天，主管突然發个表給我，説填一下，給你申請提前轉正，真不戳嘻嘻。</p>
-<p>來公司的第一天就開始拉代碼，配置環境，然後就開始開發？！驚了，不過還好，頭天晚上再 B 站上刷視頻刷到 3 點多，大概用了一個星期左右就可以跟這個項目了，22 年往後的話，大概會更加專注于前端開發，但是閑下來后，應該又會去看看後端的東西還有操作系統那幾大件。</p>
+<p>來公司的第一天就開始拉代碼，配置環境，然後就開始開發？！驚了，不過還好，頭天晚上在 B 站上刷視頻刷到 3 點多，大概用了一個星期左右就可以跟這個項目了，22 年往後的話，大概會更加專注于前端開發，但是閑下來后，應該又會去看看後端的東西還有操作系統那幾大件。</p>
+<p>除了工作之外的話，其實也有些自己的開源項目，這些項目的開源出發點都是出自自己的日常生活學習中或者興趣誕生的。目前興趣點還在的就是以下三個：</p>
+<ul>
+<li><a
+  href="https://github.com/Lruihao/cos-album"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>cos-album</a></li>
+<li><a
+  href="https://github.com/Lruihao/watermark"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>watermark</a></li>
+<li><a
+  href="https://github.com/Lruihao/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>FixIt</a></li>
+</ul>
+<p>值得一提的是最後一個項目 <a
+  href="https://github.com/Lruihao/FixIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>FixIt</a>，是 Hugo 的一個主題，也就是目前博客使用的主題，原項目是 <a
+  href="https://github.com/dillonzq/LoveIt"
+  
+  
+    
+    target="_blank"
+  
+  
+    rel="noopener noreffer"
+  
+  
+  
+  
+>LoveIt</a>，當時 Hexo 換到 Hugo 的時候，選的 LoveIt，用了一段時間後才發現這個項目 20 年中就已經挺更了，但是目前有很多的 issue 反饋了很多 BUG，包括我也在使用中發現一些 BUG 已經想加一些我想要的需求，思考了一下，決定把這個項目延續下去，獲取能幫助到部分還在使用 LoveIt 主題的 Hugo 用戶。堅持了改了一兩個月後，其實發現有時候寫代碼也能像打遊戲一樣快樂，倉庫上🌟比王者上🌟還快樂。修訂文檔的過程，也把英語又翻出來用了，我覺得這些都是正態的，挺好的，希望尽快在虎年前把 v0.2.12 發出來。</p>
+<blockquote>
 <p>簡單總結一下：</p>
 <ul>
-<li>心情有變好</li>
-<li>運動時間大有下滑</li>
-<li>熬夜時長大有增加</li>
-<li>編碼能力略有下降</li>
+<li>心情、心态有變好</li>
+<li>運動時間大幅下滑</li>
+<li>熬夜時長大幅增加</li>
+<li>工资略有增加，存款没变哈哈哈哈</li>
+<li>編碼效率略有下降</li>
 <li>編碼思維有增強</li>
 <li>編碼規範化有增強，熟悉編碼常見 SOP</li>
 </ul>
-<p>最後，戒煙！戒煙！戒煙！</p>
-<p>SO, SEE U #2020-2021</p>]]></description></item><item><title>2019 年度总结</title><link>https://lruihao.cn/years/2019/</link><pubDate>Thu, 16 Jan 2020 20:01:22 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/years/2019/</guid><description><![CDATA[<blockquote>
+</blockquote>
+<blockquote>
+<p>最後</p>
+<ul>
+<li>存钱！存钱！存钱！</li>
+<li>戒煙！戒煙！戒煙！</li>
+</ul>
+</blockquote>
+<div class="typeit"><div id="id-4" class=""></div></div>]]></description></item><item><title>2019 年度总结</title><link>https://lruihao.cn/years/2019/</link><pubDate>Thu, 16 Jan 2020 20:01:22 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/years/2019/</guid><description><![CDATA[<blockquote>
 <p>回顾 2019，是从“迷茫”到“忙”的一年，何为“迷茫”，何为“忙”。</p>
 </blockquote>
 <h2 id="上半年湘潭湖南工程学院-java">上半年·湘潭·湖南工程学院 java</h2>
