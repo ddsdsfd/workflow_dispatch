@@ -44,7 +44,7 @@
       
       
     "><meta itemprop=datePublished content="2021-10-05T14:14:10+08:00">
-<meta itemprop=dateModified content="2022-01-15T22:37:53+08:00">
+<meta itemprop=dateModified content="2022-02-04T00:56:14+08:00">
 <meta itemprop=wordCount content="879"><meta itemprop=image content="https://lruihao.cn/logo.png">
 <meta itemprop=keywords content="hugo,"><meta property="og:title" content="Hugo 友情連結模板">
 <meta property="og:description" content="
@@ -69,7 +69,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hugo-friends/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-05T14:14:10+08:00">
-<meta property="article:modified_time" content="2022-01-15T22:37:53+08:00">
+<meta property="article:modified_time" content="2022-02-04T00:56:14+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="Hugo 友情連結模板">
@@ -95,7 +95,7 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-friends/><link rel=prev href=https://lruihao.cn/posts/hugo-admin/><link rel=next href=https://lruihao.cn/posts/hugo-i18n-zh-tw/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 友情連結模板","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-friends\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo","wordcount":879,"url":"https:\/\/lruihao.cn\/posts\/hugo-friends\/","datePublished":"2021-10-05T14:14:10+08:00","dateModified":"2022-01-15T22:37:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-friends/><link rel=prev href=https://lruihao.cn/posts/hugo-admin/><link rel=next href=https://lruihao.cn/posts/hugo-i18n-zh-tw/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 友情連結模板","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-friends\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo","wordcount":879,"url":"https:\/\/lruihao.cn\/posts\/hugo-friends\/","datePublished":"2021-10-05T14:14:10+08:00","dateModified":"2022-02-04T00:56:14+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -293,7 +293,7 @@
             {{ range $index, $friend := .Site.Data.friends }}
                 <span class=p>&lt;</span><span class=nt>a</span>
                     <span class=na>class</span><span class=o>=</span><span class=s>&#34;friend-link&#34;</span>
-                    <span class=na>title</span><span class=o>=</span><span class=s>&#34;{{ $friend.discription }}&#34;</span>
+                    <span class=na>title</span><span class=o>=</span><span class=s>&#34;{{ $friend.description }}&#34;</span>
                     <span class=na>href</span><span class=o>=</span><span class=s>&#34;{{ $friend.url | safeURL }}&#34;</span>
                     <span class=na>rel</span><span class=o>=</span><span class=s>&#34;external nofollow noopener noreferrer&#34;</span>
                     <span class=na>target</span><span class=o>=</span><span class=s>&#34;_blank&#34;</span><span class=p>&gt;</span>
@@ -505,11 +505,11 @@ type: &#34;friends&#34;
 <pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=c># - nickname: 标题</span><span class=w>
 </span><span class=w></span><span class=c>#   avatar: 头像</span><span class=w>
 </span><span class=w></span><span class=c>#   url: 站点</span><span class=w>
-</span><span class=w></span><span class=c>#   discription: 描述</span><span class=w>
+</span><span class=w></span><span class=c>#   description: 描述</span><span class=w>
 </span><span class=w></span>- <span class=nt>nickname</span><span class=p>:</span><span class=w> </span><span class=l>Lruihao</span><span class=w>
 </span><span class=w>  </span><span class=nt>avatar</span><span class=p>:</span><span class=w> </span><span class=l>https://gravatar.loli.net/avatar/3f985efb5907ca52944a3cd7edd51606?d=wavatar&amp;v=1.3.10</span><span class=w>
 </span><span class=w>  </span><span class=nt>url</span><span class=p>:</span><span class=w> </span><span class=l>https://lruihao.cn</span><span class=w>
-</span><span class=w>  </span><span class=nt>discription</span><span class=p>:</span><span class=w> </span><span class=l>不怕萬人阻擋，只怕自己投降</span><span class=w>
+</span><span class=w>  </span><span class=nt>description</span><span class=p>:</span><span class=w> </span><span class=l>不怕萬人阻擋，只怕自己投降</span><span class=w>
 </span></code></pre></td></tr></table>
 </div>
 </div><h2 id=結語>結語</h2>
@@ -520,8 +520,8 @@ type: &#34;friends&#34;
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span title="2022-01-15 22:37:53">更新於 2022-01-15&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/02e2848e457acbc4e801e4468cc4d37dcdea63a9 target=_blank title="commit by Cell(1024@lruihao.cn) 02e2848e457acbc4e801e4468cc4d37dcdea63a9: :pencil: Docs: fix typos">
-<i class="fas fa-hashtag fa-fw"></i>02e2848</a></span>
+<span title="2022-02-04 00:56:14">更新於 2022-02-04&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/bbc77e1effebc85d2efb27517d71d2fe0e388616 rel="external nofollow noopener noreffer" target=_blank title="commit by Cell(1024@lruihao.cn) bbc77e1effebc85d2efb27517d71d2fe0e388616: :pencil2: Style: fix typo discription should be: description">
+<i class="fas fa-hashtag fa-fw"></i>bbc77e1</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -544,11 +544,12 @@ type: &#34;friends&#34;
 <a href=/posts/hugo-i18n-zh-tw/ class=next rel=next title="Hugo i18n 添加中文繁體翻譯">Hugo i18n 添加中文繁體翻譯<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
-Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="license external nofollow noopener noreffer">Valine</a>.
 </noscript></div></article></div>
 </main><footer class=footer>
 <div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.1">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-ban fa-stack-2x"></i><i class="fas fa-bug fa-stack-1x"></i></i> FixIt</a>
-</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/Lruihao target=_blank>Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
+<a href=https://github.com/Lruihao target=_blank rel="noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
 <span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."><i class="fas fa-heartbeat animate-icon"></i>
 <span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="far fa-eye"></i>
