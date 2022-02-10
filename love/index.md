@@ -105,5 +105,5 @@
 setTimeout(() => {
   document.querySelector('html').style.filter = 'grayscale(100%)';
   document.querySelector('.shaky').className = '';
-}, 287000);
+}, 287500);
 {{< /script >}}
