@@ -2213,7 +2213,7 @@ Ctrl+c
 </table>
 </div>
 <h3 id="网易云评论">网易云评论</h3>
-<div class="comment-163">
+<div class="comment-163" title="点击换一条评论">
   <span class="pic-backdrop"></span>
   <div class="commentator">
     
@@ -2228,7 +2228,7 @@ Ctrl+c
 <h3 id="实时预览">实时预览</h3>
 <div id="app-mmt" v-cloak>
   <textarea class="live-textarea" v-model="message" placeholder="请输入文字 ..."></textarea>
-  <p class="live-content">{{ message }}</p>
+  <p class="live-content">{{ message || '请输入文字 ...' }}</p>
 </div>
 <br/>
 <h2 id="下载">下载</h2>
