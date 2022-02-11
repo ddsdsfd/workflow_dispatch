@@ -30,6 +30,9 @@
   border: 1px solid #f5f5f5;
   padding: .75em;
   border-radius: .75rem;
+  color: #272626;
+}
+[theme='dark'] .comment-163 {
   color: #f5f5f5;
 }
 .pic-backdrop {
