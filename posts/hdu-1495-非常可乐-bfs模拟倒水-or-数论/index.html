@@ -8,14 +8,14 @@
 <meta name=description content="非常可乐 大家一定觉的运动以后喝可乐是一件很惬意的事情，但是 seeyou 却不这么认为。因为每次当 seeyou 买了可乐以后，阿牛就要求和 seeyou 一起分享这一瓶可乐，而且一定要喝的和 seeyou 一样多。但 seeyou 的手中只有两个杯子，它们的容量分别是 N 毫升和 M 毫升 可乐的体积为 S （S<101）毫升 （正好装满一瓶） ，它们三个之间可以相互倒可乐 （都">
 <meta name=keywords content="ACM,HDU,搜索,C++"><meta itemprop=name content="HDU-1495-非常可乐（bfs 模拟倒水 or 数论）">
 <meta itemprop=description content="非常可乐 大家一定觉的运动以后喝可乐是一件很惬意的事情，但是 seeyou 却不这么认为。因为每次当 seeyou 买了可乐以后，阿牛就要求和 seeyou 一起分享这一瓶可乐，而且一定要喝的和 seeyou 一样多。但 seeyou 的手中只有两个杯子，它们的容量分别是 N 毫升和 M 毫升 可乐的体积为 S （S<101）毫升 （正好装满一瓶） ，它们三个之间可以相互倒可乐 （都"><meta itemprop=datePublished content="2018-07-24T15:34:00+00:00">
-<meta itemprop=dateModified content="2022-02-11T02:02:40+00:00">
+<meta itemprop=dateModified content="2022-02-12T07:23:01+00:00">
 <meta itemprop=wordCount content="1071"><meta itemprop=image content="https://lruihao.cn/logo.png">
 <meta itemprop=keywords content="ACM,HDU,搜索,C++,"><meta property="og:title" content="HDU-1495-非常可乐（bfs 模拟倒水 or 数论）">
 <meta property="og:description" content="非常可乐 大家一定觉的运动以后喝可乐是一件很惬意的事情，但是 seeyou 却不这么认为。因为每次当 seeyou 买了可乐以后，阿牛就要求和 seeyou 一起分享这一瓶可乐，而且一定要喝的和 seeyou 一样多。但 seeyou 的手中只有两个杯子，它们的容量分别是 N 毫升和 M 毫升 可乐的体积为 S （S<101）毫升 （正好装满一瓶） ，它们三个之间可以相互倒可乐 （都">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-07-24T15:34:00+00:00">
-<meta property="article:modified_time" content="2022-02-11T02:02:40+00:00">
+<meta property="article:modified_time" content="2022-02-12T07:23:01+00:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="HDU-1495-非常可乐（bfs 模拟倒水 or 数论）">
@@ -23,7 +23,7 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/><link rel=prev href=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><link rel=next href=https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"HDU-1495-非常可乐（bfs 模拟倒水 or 数论）","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, HDU, 搜索, C\u002b\u002b","wordcount":1071,"url":"https:\/\/lruihao.cn\/posts\/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA\/","datePublished":"2018-07-24T15:34:00+00:00","dateModified":"2022-02-11T02:02:40+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/><link rel=prev href=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><link rel=next href=https://lruihao.cn/posts/%E5%9C%A8%E7%BA%BF%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"HDU-1495-非常可乐（bfs 模拟倒水 or 数论）","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, HDU, 搜索, C\u002b\u002b","wordcount":1071,"url":"https:\/\/lruihao.cn\/posts\/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA\/","datePublished":"2018-07-24T15:34:00+00:00","dateModified":"2022-02-12T07:23:01+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -88,7 +88,7 @@
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">HDU-1495-非常可乐（bfs 模拟倒水 or 数论）</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
 <div class=post-meta-line><span title="2018-07-24 15:34:00">
 <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-24>2018-07-24</time>
 </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1071 字&nbsp;
@@ -116,7 +116,7 @@
 </li>
 </ul>
 </nav></div>
-</div><div class=content id=content><p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1495" target=_blank rel="noopener noreffer">非常可乐</a></p>
+</div><div class=content id=content><p><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1495" target=_blank rel="external nofollow noopener noreffer">非常可乐</a></p>
 <p>大家一定觉的运动以后喝可乐是一件很惬意的事情，但是 seeyou 却不这么认为。因为每次当 seeyou 买了可乐以后，阿牛就要求和 seeyou 一起分享这一瓶可乐，而且一定要喝的和 seeyou 一样多。但 seeyou 的手中只有两个杯子，它们的容量分别是 N 毫升和 M 毫升 可乐的体积为 S （S&lt;101）毫升　（正好装满一瓶） ，它们三个之间可以相互倒可乐 （都是没有刻度的，且 S==N+M，101＞S＞0，N＞0，M＞0) 。聪明的 ACMER 你们说他们能平分吗？如果能请输出倒可乐的最少的次数，如果不能输出"NO"。</p>
 <h3 id=input>Input</h3>
 <p>三个整数 : S 可乐的体积 , N 和 M 是两个杯子的容量，以"0 0 0"结束。</p>
@@ -401,7 +401,7 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>然后杭电上讨论板子上提供一种数论题解，<del>但是数据存在一点问题，只不过有些数据好像不对；比如： 10 6 5 的结果应该是 1 而不是 9</del>， 也提示我们多维思考同一个问题！</p>
-<p><a href=https://blog.csdn.net/V5ZSQ/article/details/52097459 target=_blank rel="noopener noreffer">数论推导</a></p>
+<p><a href=https://blog.csdn.net/V5ZSQ/article/details/52097459 target=_blank rel="external nofollow noopener noreffer">数论推导</a></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -438,7 +438,7 @@ int main(){
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span title="2022-02-11 02:02:40">更新於 2022-02-11</span>
+<span title="2022-02-12 07:23:01">更新於 2022-02-12</span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -464,9 +464,9 @@ int main(){
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="license external nofollow noopener noreffer">Valine</a>.
 </noscript></div></article></div>
 </main><footer class=footer>
-<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.1">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-ban fa-stack-2x"></i><i class="fas fa-bug fa-stack-1x"></i></i> FixIt</a>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-ban fa-stack-2x"></i><i class="fas fa-bug fa-stack-1x"></i></i> FixIt</a>
 </div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
-<a href=https://github.com/Lruihao target=_blank rel="noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
+<a href=https://github.com/Lruihao target=_blank rel="external nofollow noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
 <span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."><i class="fas fa-heartbeat animate-icon"></i>
 <span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="far fa-eye"></i>

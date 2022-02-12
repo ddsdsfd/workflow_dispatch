@@ -16,7 +16,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -34,7 +34,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -78,7 +78,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -91,7 +91,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -140,61 +140,61 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 </div><h2 id="写作指北">写作指北</h2>
 <ul>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-basics"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-basics"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 基本概念</a></li>
+>FixIt 主题文档 - 基本概念</a></li>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-content/"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-content/"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 内容</a></li>
+>FixIt 主题文档 - 内容</a></li>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-built-in-shortcodes/"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 内置 Shortcodes</a></li>
+>FixIt 主题文档 - 内置 Shortcodes</a></li>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 扩展 Shortcodes</a></li>
+>FixIt 主题文档 - 扩展 Shortcodes</a></li>
 </ul>
 <h2 id="todo-list">Todo list</h2>
 <a
@@ -205,7 +205,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -257,7 +257,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -270,7 +270,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -283,7 +283,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -321,12 +321,12 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> 安装 沐目体</li>
-<li><i class="far fa-square fa-fw"></i> 压缩 沐目体 fontspider</li>
-<li><i class="far fa-square fa-fw"></i> 沐目体 post 修订</li>
-<li><i class="far fa-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
-<li><i class="far fa-square fa-fw"></i> 实时预览功能 base on Vuejs</li>
-<li><i class="far fa-square fa-fw"></i> [恋爱叙事体] <code>love</code> 归档</li>
-<li><i class="far fa-square fa-fw"></i> [光] 归档</li>
+<li><i class="far fa-check-square fa-fw"></i> 压缩 沐目体 fontspider</li>
+<li><i class="far fa-check-square fa-fw"></i> 沐目体 post 修订</li>
+<li><i class="far fa-check-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
+<li><i class="far fa-check-square fa-fw"></i> 实时预览功能 base on Vuejs</li>
+<li><i class="far fa-check-square fa-fw"></i> [恋爱叙事体] <code>love</code> 归档</li>
+<li><i class="far fa-check-square fa-fw"></i> [光] 归档</li>
 </ul>
 </li>
 </ul>
@@ -340,13 +340,13 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
 >#3</a></li>
-<li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
+<li><i class="far fa-check-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a
   href="https://github.com/Lruihao/hugo-blog/issues/4"
   
@@ -355,7 +355,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -369,7 +369,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -420,7 +420,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -448,7 +448,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -489,7 +489,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -503,7 +503,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -516,7 +516,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -579,7 +579,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -616,7 +616,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1061,7 +1061,7 @@ daovoice_app_id: xxxx   # http://www.daovoice.io/
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1180,7 +1180,7 @@ repost: true
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1543,7 +1543,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -2013,7 +2013,7 @@ hexo g -d
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2026,7 +2026,7 @@ hexo g -d
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2042,7 +2042,7 @@ hexo g -d
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2109,7 +2109,7 @@ hexo g -d
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2207,7 +2207,7 @@ hexo g -d
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2269,7 +2269,7 @@ other:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2310,7 +2310,7 @@ other:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2338,7 +2338,7 @@ other:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2353,7 +2353,7 @@ other:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2467,7 +2467,7 @@ But you need to add <code>&lt;br&gt;</code> manually if you want line breaks aft
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2480,7 +2480,7 @@ But you need to add <code>&lt;br&gt;</code> manually if you want line breaks aft
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2587,7 +2587,7 @@ periods : Select the browser versions to display. Supported values: past_1, past
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2632,7 +2632,7 @@ icon    : FontAwesome icon name (without &#39;fa-&#39; at the begining). Require
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2707,7 +2707,7 @@ merge newbranch
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3071,7 +3071,7 @@ primary success info warning danger
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3295,7 +3295,7 @@ hexo d -g  //部署
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3416,7 +3416,7 @@ next 主题好像更新了，现在自带的可以用了，如果可以用了，
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3550,7 +3550,7 @@ at ChildProcess.&lt;anonymous&gt; <span class="o">(</span>H:<span class="se">\H<
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3683,7 +3683,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3715,7 +3715,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3749,7 +3749,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3794,7 +3794,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3808,7 +3808,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3822,7 +3822,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3836,7 +3836,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3852,7 +3852,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3866,7 +3866,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3880,7 +3880,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3894,7 +3894,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3912,7 +3912,7 @@ hexo init blog
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3943,7 +3943,7 @@ Ctrl+H 替换<br>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3976,7 +3976,7 @@ Ctrl+H 替换<br>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3992,7 +3992,7 @@ Ctrl+H 替换<br>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4006,7 +4006,7 @@ Ctrl+H 替换<br>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4115,7 +4115,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4129,7 +4129,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4152,7 +4152,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4178,7 +4178,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4192,7 +4192,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4206,7 +4206,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4219,7 +4219,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4232,7 +4232,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4246,7 +4246,7 @@ hexo s
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4371,7 +4371,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4385,7 +4385,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4449,7 +4449,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4463,7 +4463,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4477,7 +4477,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4493,7 +4493,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4506,7 +4506,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4519,7 +4519,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4532,7 +4532,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4579,7 +4579,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4619,7 +4619,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4645,7 +4645,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4704,7 +4704,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4745,7 +4745,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4759,7 +4759,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4773,7 +4773,7 @@ local_search:
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   

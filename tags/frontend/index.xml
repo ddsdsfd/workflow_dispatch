@@ -472,7 +472,7 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1004,7 +1004,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1283,7 +1283,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1461,7 +1461,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1649,7 +1649,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1663,7 +1663,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1714,7 +1714,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1816,7 +1816,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1831,7 +1831,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2080,7 +2080,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2095,7 +2095,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2110,7 +2110,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2123,7 +2123,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2188,7 +2188,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2202,7 +2202,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2215,7 +2215,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2278,7 +2278,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2315,7 +2315,7 @@ git clone https://github.com/Lruihao/hexo-theme-next themes/next
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -2760,7 +2760,7 @@ daovoice_app_id: xxxx   # http://www.daovoice.io/
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2879,7 +2879,7 @@ repost: true
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3181,7 +3181,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3223,7 +3223,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3240,7 +3240,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3255,7 +3255,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3277,7 +3277,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3464,7 +3464,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3477,7 +3477,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3517,7 +3517,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3530,7 +3530,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3556,7 +3556,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3570,7 +3570,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3583,7 +3583,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3665,7 +3665,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -4026,7 +4026,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4124,7 +4124,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4201,7 +4201,7 @@ limit: 20
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4516,7 +4516,7 @@ alert(test);
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   

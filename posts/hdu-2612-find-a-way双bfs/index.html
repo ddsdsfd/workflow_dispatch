@@ -8,14 +8,14 @@
 <meta name=description content="Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;.. 这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人">
 <meta name=keywords content="ACM,HDU,搜索,C++"><meta itemprop=name content="hdu-2612-Find a way（双 bfs）">
 <meta itemprop=description content="Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;.. 这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人"><meta itemprop=datePublished content="2018-07-23T12:34:42+00:00">
-<meta itemprop=dateModified content="2022-02-11T02:02:40+00:00">
+<meta itemprop=dateModified content="2022-02-12T07:23:01+00:00">
 <meta itemprop=wordCount content="879"><meta itemprop=image content="https://lruihao.cn/logo.png">
 <meta itemprop=keywords content="ACM,HDU,搜索,C++,"><meta property="og:title" content="hdu-2612-Find a way（双 bfs）">
 <meta property="og:description" content="Find a way 圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;.. 这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-07-23T12:34:42+00:00">
-<meta property="article:modified_time" content="2022-02-11T02:02:40+00:00">
+<meta property="article:modified_time" content="2022-02-12T07:23:01+00:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="hdu-2612-Find a way（双 bfs）">
@@ -23,7 +23,7 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><link rel=prev href=https://lruihao.cn/posts/poj-3278-catch-that-cow-bfs/><link rel=next href=https://lruihao.cn/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"hdu-2612-Find a way（双 bfs）","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, HDU, 搜索, C\u002b\u002b","wordcount":879,"url":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/","datePublished":"2018-07-23T12:34:42+00:00","dateModified":"2022-02-11T02:02:40+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hdu-2612-find-a-way%E5%8F%8Cbfs/><link rel=prev href=https://lruihao.cn/posts/poj-3278-catch-that-cow-bfs/><link rel=next href=https://lruihao.cn/posts/hdu-1495-%E9%9D%9E%E5%B8%B8%E5%8F%AF%E4%B9%90-bfs%E6%A8%A1%E6%8B%9F%E5%80%92%E6%B0%B4-or-%E6%95%B0%E8%AE%BA/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"hdu-2612-Find a way（双 bfs）","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"ACM, HDU, 搜索, C\u002b\u002b","wordcount":879,"url":"https:\/\/lruihao.cn\/posts\/hdu-2612-find-a-way%E5%8F%8Cbfs\/","datePublished":"2018-07-23T12:34:42+00:00","dateModified":"2022-02-12T07:23:01+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -88,7 +88,7 @@
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">hdu-2612-Find a way（双 bfs）</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/acm/><i class="far fa-folder fa-fw"></i>ACM</a></span></div>
 <div class=post-meta-line><span title="2018-07-23 12:34:42">
 <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-07-23>2018-07-23</time>
 </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 879 字&nbsp;
@@ -118,7 +118,7 @@
 </li>
 </ul>
 </nav></div>
-</div><div class=content id=content><h3 id=find-a-wayhttpacmhdueducnshowproblemphppid2612><a href="http://acm.hdu.edu.cn/showproblem.php?pid=2612" target=_blank rel="noopener noreffer">Find a way</a></h3>
+</div><div class=content id=content><h3 id=find-a-wayhttpacmhdueducnshowproblemphppid2612><a href="http://acm.hdu.edu.cn/showproblem.php?pid=2612" target=_blank rel="external nofollow noopener noreffer">Find a way</a></h3>
 <p>圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &mldr;&mldr;.. 这对基佬闹矛盾了，开车有危险了！ 为了不让他们去召唤师大峡谷坑人，riot 决定让他们去 X 召唤师大峡谷，保证他俩所走的路程和最短。每走一个点需要花费 11 分钟，输出他们一共花费多少时间（最短时间噢）</p>
 <h3 id=input>Input</h3>
 <p>多组测试数据</p>
@@ -154,7 +154,7 @@ Y..@.
 66
 </code></pre>
 <h3 id=hint>Hint</h3>
-<p>对于第一组样例，坤神和瑞瑞去矩阵（4,1） 这个召唤师大峡谷，耗费的时间为 3 * 11 + 3 * 11 = 66， 去矩阵（1,4）这个召唤师大峡谷，耗费的时间为 5 * 11 + 3 * 11 = 88 。所以，最终答案：66。<a href=https://blog.csdn.net/ld_1090815922/article/details/72448569 target=_blank rel="noopener noreffer">思路参考</a></p>
+<p>对于第一组样例，坤神和瑞瑞去矩阵（4,1） 这个召唤师大峡谷，耗费的时间为 3 * 11 + 3 * 11 = 66， 去矩阵（1,4）这个召唤师大峡谷，耗费的时间为 5 * 11 + 3 * 11 = 88 。所以，最终答案：66。<a href=https://blog.csdn.net/ld_1090815922/article/details/72448569 target=_blank rel="external nofollow noopener noreffer">思路参考</a></p>
 <p><code>写代码总是好粗心！！</code></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -338,7 +338,7 @@ Y..@.
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span title="2022-02-11 02:02:40">更新於 2022-02-11</span>
+<span title="2022-02-12 07:23:01">更新於 2022-02-12</span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -364,9 +364,9 @@ Y..@.
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="license external nofollow noopener noreffer">Valine</a>.
 </noscript></div></article></div>
 </main><footer class=footer>
-<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.1">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-ban fa-stack-2x"></i><i class="fas fa-bug fa-stack-1x"></i></i> FixIt</a>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-ban fa-stack-2x"></i><i class="fas fa-bug fa-stack-1x"></i></i> FixIt</a>
 </div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
-<a href=https://github.com/Lruihao target=_blank rel="noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
+<a href=https://github.com/Lruihao target=_blank rel="external nofollow noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
 <span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."><i class="fas fa-heartbeat animate-icon"></i>
 <span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="far fa-eye"></i>

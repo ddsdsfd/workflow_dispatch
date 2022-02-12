@@ -15,7 +15,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -29,7 +29,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -151,7 +151,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -226,7 +226,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -273,7 +273,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -294,7 +294,7 @@ static/images/card-link-bg.jpg
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -763,7 +763,7 @@ static/images/card-link-bg.jpg
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -791,7 +791,7 @@ static/images/card-link-bg.jpg
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1514,7 +1514,7 @@ sh hugo_main.sh
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1532,7 +1532,7 @@ sh hugo_main.sh
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1576,7 +1576,7 @@ sh hugo_main.sh
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1589,7 +1589,7 @@ sh hugo_main.sh
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1638,61 +1638,61 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 </div><h2 id="写作指北">写作指北</h2>
 <ul>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-basics"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-basics"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 基本概念</a></li>
+>FixIt 主题文档 - 基本概念</a></li>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-content/"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-content/"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 内容</a></li>
+>FixIt 主题文档 - 内容</a></li>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-built-in-shortcodes/"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 内置 Shortcodes</a></li>
+>FixIt 主题文档 - 内置 Shortcodes</a></li>
 <li><a
-  href="https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/"
+  href="https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/"
   
   
     
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
->LoveIt 主题文档 - 扩展 Shortcodes</a></li>
+>FixIt 主题文档 - 扩展 Shortcodes</a></li>
 </ul>
 <h2 id="todo-list">Todo list</h2>
 <a
@@ -1703,7 +1703,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1755,7 +1755,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1768,7 +1768,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1781,7 +1781,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1819,12 +1819,12 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href="https://github.com/Lruihao/hugo-blog/issues/6" target="_blank" rel="noopener noreffer">#6</a></summary>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> 安装 沐目体</li>
-<li><i class="far fa-square fa-fw"></i> 压缩 沐目体 fontspider</li>
-<li><i class="far fa-square fa-fw"></i> 沐目体 post 修订</li>
-<li><i class="far fa-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
-<li><i class="far fa-square fa-fw"></i> 实时预览功能 base on Vuejs</li>
-<li><i class="far fa-square fa-fw"></i> [恋爱叙事体] <code>love</code> 归档</li>
-<li><i class="far fa-square fa-fw"></i> [光] 归档</li>
+<li><i class="far fa-check-square fa-fw"></i> 压缩 沐目体 fontspider</li>
+<li><i class="far fa-check-square fa-fw"></i> 沐目体 post 修订</li>
+<li><i class="far fa-check-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
+<li><i class="far fa-check-square fa-fw"></i> 实时预览功能 base on Vuejs</li>
+<li><i class="far fa-check-square fa-fw"></i> [恋爱叙事体] <code>love</code> 归档</li>
+<li><i class="far fa-check-square fa-fw"></i> [光] 归档</li>
 </ul>
 </li>
 </ul>
@@ -1838,13 +1838,13 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
   
 >#3</a></li>
-<li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
+<li><i class="far fa-check-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a
   href="https://github.com/Lruihao/hugo-blog/issues/4"
   
@@ -1853,7 +1853,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1867,7 +1867,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1918,7 +1918,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1946,7 +1946,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2435,7 +2435,7 @@ Less 既可以在用戶端上運行 （支援 IE 6+, Webkit, Firefox)，也可�
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2561,7 +2561,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2575,7 +2575,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2589,7 +2589,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2604,7 +2604,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2617,7 +2617,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3162,7 +3162,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -3415,7 +3415,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3445,7 +3445,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3621,7 +3621,7 @@ php artisan db:seed
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3755,7 +3755,7 @@ composer require encore/laravel-admin
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4012,7 +4012,7 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4026,7 +4026,7 @@ $router-&gt;resource(&#39;mottoes&#39;, MottoController::class);
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4070,7 +4070,7 @@ editormd.emoji     = {
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4111,7 +4111,7 @@ if (csrfToken) {
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4125,7 +4125,7 @@ if (csrfToken) {
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4176,7 +4176,7 @@ php artisan vendor:publish
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4259,7 +4259,7 @@ php artisan make:controller PageController
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -4499,7 +4499,7 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   

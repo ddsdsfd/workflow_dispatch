@@ -197,7 +197,7 @@ Ctrl+F 查找 <code>localhost</code><br>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -315,7 +315,7 @@ gzip
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -371,7 +371,7 @@ gzip
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   

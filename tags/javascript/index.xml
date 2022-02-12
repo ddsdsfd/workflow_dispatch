@@ -410,7 +410,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -942,7 +942,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1221,7 +1221,7 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -1399,7 +1399,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1587,7 +1587,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -1601,7 +1601,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2127,7 +2127,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2169,7 +2169,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2186,7 +2186,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2201,7 +2201,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2223,7 +2223,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2410,7 +2410,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2423,7 +2423,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2463,7 +2463,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2476,7 +2476,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2502,7 +2502,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2516,7 +2516,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2529,7 +2529,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2611,7 +2611,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -2972,7 +2972,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3070,7 +3070,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3147,7 +3147,7 @@ function getUser($userId, $options){
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3624,7 +3624,7 @@ alert(test);
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3757,7 +3757,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3789,7 +3789,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3827,7 +3827,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -3858,7 +3858,7 @@ Ctrl+H 替换<br>
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   

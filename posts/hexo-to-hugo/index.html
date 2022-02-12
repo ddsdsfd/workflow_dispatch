@@ -12,7 +12,7 @@
 <meta itemprop=description content="
 电脑升级 win 11 后，分盘操作存在 bug, 然后又不小心把装代码的盘格式化了，虽然都有备份到 github, 但是当时为了省事，hexo Node 安装的很多以来插件都没有备份，现在又下载不到了，所以 hexo 博客没办法完整复原，另外，早就觉得基于 Node 的 hexo 实在有些臃肿，且博客内容多了以后部署太慢，就干脆乘机换了好了，经过一段时间寻找，最终选择了基于 Go 的 hugo, 记录一下迁移过程及待办事项。
 "><meta itemprop=datePublished content="2021-10-03T15:27:58+08:00">
-<meta itemprop=dateModified content="2022-01-14T17:20:32+08:00">
+<meta itemprop=dateModified content="2022-02-12T15:19:43+08:00">
 <meta itemprop=wordCount content="1421"><meta itemprop=image content="https://lruihao.cn/logo.png">
 <meta itemprop=keywords content="hugo,hexo,"><meta property="og:title" content="个人博客从 Hexo 迁移至 Hugo">
 <meta property="og:description" content="
@@ -21,7 +21,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/hexo-to-hugo/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-03T15:27:58+08:00">
-<meta property="article:modified_time" content="2022-01-14T17:20:32+08:00">
+<meta property="article:modified_time" content="2022-02-12T15:19:43+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="个人博客从 Hexo 迁移至 Hugo">
@@ -31,7 +31,7 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=prev href=https://lruihao.cn/posts/less-sass-scss/><link rel=next href=https://lruihao.cn/posts/github-actions/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"个人博客从 Hexo 迁移至 Hugo","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, hexo","wordcount":1421,"url":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/","datePublished":"2021-10-03T15:27:58+08:00","dateModified":"2022-01-14T17:20:32+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=prev href=https://lruihao.cn/posts/less-sass-scss/><link rel=next href=https://lruihao.cn/posts/github-actions/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"个人博客从 Hexo 迁移至 Hugo","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, hexo","wordcount":1421,"url":"https:\/\/lruihao.cn\/posts\/hexo-to-hugo\/","datePublished":"2021-10-03T15:27:58+08:00","dateModified":"2022-02-12T15:19:43+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -96,7 +96,7 @@
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">个人博客从 Hexo 迁移至 Hugo</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div>
 <div class=post-meta-line><span title="2021-10-03 15:27:58">
 <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-03>2021-10-03</time>
 </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 1421 字&nbsp;
@@ -144,12 +144,12 @@
 </blockquote>
 <p>那 hugo 基于编译语言 GO 构建，对于静态页面的构建肯定是碾压 hexo 的存在，其官方标语也是很直白 <code>"The world’s fastest framework for building websites"</code>, 作为先后使用过 hexo 和 hugo 的我来说，这确实名副其实。</p>
 <ul>
-<li><a href=https://gohugo.io target=_blank rel="noopener noreffer">gohugo</a></li>
+<li><a href=https://gohugo.io target=_blank rel="external nofollow noopener noreffer">gohugo</a></li>
 </ul>
 <h3 id=安装>安装</h3>
 <p>hugo 提供了很多种安装方式，Git, Docker, Binary.<br>
 个人电脑使用二进制安装是最方便快捷的，无需安装其他依赖。<br>
-到 <a href=https://github.com/gohugoio/hugo/releases target=_blank rel="noopener noreffer">Hugo Releases</a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
+到 <a href=https://github.com/gohugoio/hugo/releases target=_blank rel="external nofollow noopener noreffer">Hugo Releases</a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
 <h3 id=生成站点>生成站点</h3>
 <p>使用 Hugo 快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
 <div class=highlight><div class=chroma>
@@ -180,7 +180,7 @@
 </div>
 </div><h3 id=添加主题>添加主题</h3>
 <p>添加主题的方式选用 Git 子模组的形式，为了日后快速升级，避免在使用 hexo 中因大量魔改 next 主题而导致难以升级的困扰。<br>
-精挑细选最终选择了 <del><a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer">LoveIt</a></del> => <a href=https://github.com/Lruihao/FixIt target=_blank rel="noopener noreffer">FixIt</a></p>
+精挑细选最终选择了 <del><a href=https://github.com/dillonzq/LoveIt target=_blank rel="external nofollow noopener noreffer">LoveIt</a></del> => <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer">FixIt</a></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -223,13 +223,13 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 </div>
 </div><h2 id=写作指北>写作指北</h2>
 <ul>
-<li><a href=https://hugoloveit.com/zh-cn/theme-documentation-basics target=_blank rel="noopener noreffer">LoveIt 主题文档 - 基本概念</a></li>
-<li><a href=https://hugoloveit.com/zh-cn/theme-documentation-content/ target=_blank rel="noopener noreffer">LoveIt 主题文档 - 内容</a></li>
-<li><a href=https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/ target=_blank rel="noopener noreffer">LoveIt 主题文档 - 内置 Shortcodes</a></li>
-<li><a href=https://hugoloveit.com/zh-cn/theme-documentation-extended-shortcodes/ target=_blank rel="noopener noreffer">LoveIt 主题文档 - 扩展 Shortcodes</a></li>
+<li><a href=https://fixit.lruihao.cn/zh-cn/theme-documentation-basics target=_blank rel="external nofollow noopener noreffer">FixIt 主题文档 - 基本概念</a></li>
+<li><a href=https://fixit.lruihao.cn/zh-cn/theme-documentation-content/ target=_blank rel="external nofollow noopener noreffer">FixIt 主题文档 - 内容</a></li>
+<li><a href=https://fixit.lruihao.cn/zh-cn/theme-documentation-built-in-shortcodes/ target=_blank rel="external nofollow noopener noreffer">FixIt 主题文档 - 内置 Shortcodes</a></li>
+<li><a href=https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/ target=_blank rel="external nofollow noopener noreffer">FixIt 主题文档 - 扩展 Shortcodes</a></li>
 </ul>
 <h2 id=todo-list>Todo list</h2>
-<a href=https://github.com/Lruihao/hugo-blog target=_blank rel="noopener noreffer" class=card-link><span class=cl-backdrop></span>
+<a href=https://github.com/Lruihao/hugo-blog target=_blank rel="external nofollow noopener noreffer" class=card-link><span class=cl-backdrop></span>
 <span class=cl-content>
 <span class=cl-text>
 <span class=cl-title>本站源码备份</span>
@@ -262,7 +262,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 </details>
 <ul>
 <li>
-<p><i class="far fa-square fa-fw"></i> <del><a href=https://img.lruihao.cn target=_blank rel="noopener noreffer">cos-album</a> 和 <a href=https://sz.journey.lruihao.cn target=_blank rel="noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a href=https://github.com/Lruihao/hugo-blog/issues/7 target=_blank rel="noopener noreffer">#7 (wontfix)</a></del></p>
+<p><i class="far fa-square fa-fw"></i> <del><a href=https://img.lruihao.cn target=_blank rel="external nofollow noopener noreffer">cos-album</a> 和 <a href=https://sz.journey.lruihao.cn target=_blank rel="external nofollow noopener noreffer">🍚饭醉团伙🍷</a> 整合到博客 cos-album/ <a href=https://github.com/Lruihao/hugo-blog/issues/7 target=_blank rel="external nofollow noopener noreffer">#7 (wontfix)</a></del></p>
 </li>
 <li>
 <p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> （保持原本博客的纯粹性）</p>
@@ -287,21 +287,21 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 <summary><i class="far fa-square fa-fw"></i>zxm/沐目体 归档 :( <a href=https://github.com/Lruihao/hugo-blog/issues/6 target=_blank rel="noopener noreffer">#6</a></summary>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> 安装 沐目体</li>
-<li><i class="far fa-square fa-fw"></i> 压缩 沐目体 fontspider</li>
-<li><i class="far fa-square fa-fw"></i> 沐目体 post 修订</li>
-<li><i class="far fa-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
-<li><i class="far fa-square fa-fw"></i> 实时预览功能 base on Vuejs</li>
-<li><i class="far fa-square fa-fw"></i> [恋爱叙事体] <code>love</code> 归档</li>
-<li><i class="far fa-square fa-fw"></i> [光] 归档</li>
+<li><i class="far fa-check-square fa-fw"></i> 压缩 沐目体 fontspider</li>
+<li><i class="far fa-check-square fa-fw"></i> 沐目体 post 修订</li>
+<li><i class="far fa-check-square fa-fw"></i> typyit 配合 随机诗词和网易云热评 API</li>
+<li><i class="far fa-check-square fa-fw"></i> 实时预览功能 base on Vuejs</li>
+<li><i class="far fa-check-square fa-fw"></i> [恋爱叙事体] <code>love</code> 归档</li>
+<li><i class="far fa-check-square fa-fw"></i> [光] 归档</li>
 </ul>
 </li>
 </ul>
 </details>
 <ul>
-<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href=https://github.com/Lruihao/hugo-blog/issues/3 target=_blank rel="noopener noreffer">#3</a></li>
-<li><i class="far fa-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
-<li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href=https://github.com/Lruihao/hugo-blog/issues/4 target=_blank rel="noopener noreffer">#4</a></li>
-<li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href=https://github.com/Lruihao/hugo-blog/issues/5 target=_blank rel="noopener noreffer">#5</a></li>
+<li><i class="far fa-square fa-fw"></i> hugo 内容加密研究 <a href=https://github.com/Lruihao/hugo-blog/issues/3 target=_blank rel="external nofollow noopener noreffer">#3</a></li>
+<li><i class="far fa-check-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
+<li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a href=https://github.com/Lruihao/hugo-blog/issues/4 target=_blank rel="external nofollow noopener noreffer">#4</a></li>
+<li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a href=https://github.com/Lruihao/hugo-blog/issues/5 target=_blank rel="external nofollow noopener noreffer">#5</a></li>
 </ul>
 <hr>
 <p><a id=seo-ref></a><code>[baidu_urls.txt]:</code><a href=#seo>↩︎</a></p>
@@ -331,7 +331,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 <del>之后再等等看作者是否还会更新，如已做大量的更改，再做考虑整合为一个新的主题。</del>
 为了更好的完善博客功能以及修复 BUG 已创建新的主题 FixIt (fork from LoveIt)</p>
 </blockquote>
-<a href=https://github.com/Lruihao/FixIt target=_blank rel="noopener noreffer" class=card-link><span class=cl-backdrop></span>
+<a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" class=card-link><span class=cl-backdrop></span>
 <span class=cl-content>
 <span class=cl-text>
 <span class=cl-title>Hugo theme FixIt</span>
@@ -340,7 +340,7 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 </span>
 </span><svg class="cl-icon-globe" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><path d="M960 512c0 249.408-203.2 448-448 448-244.778667.0-448-198.592-448-448S262.592 64 512 64s448 198.592 448 448" fill="#2196f3"/><path d="M507.52 718.08c0-8.96-4.48-13.44-13.44-17.92-26.88-8.96-53.76-8.96-76.16-31.381333-4.48-8.96-4.48-17.92-8.96-26.88-8.96-8.96-31.36-13.44-44.8-17.92h-89.6c-13.44-4.48-22.4-22.4-31.36-35.84.0-4.48.0-13.461333-8.96-13.461334-8.96-4.458667-17.92 4.501333-26.88.0-4.48-4.458667-4.48-8.96-4.48-13.418666.0-13.461333 8.96-26.901333 17.92-35.861334 13.44-8.96 26.88 4.48 40.32 4.48 4.48.0 4.48.0 8.96 4.48 13.44 4.48 17.92 22.4 17.92 35.861334v8.96c0 4.48 4.48 4.48 8.96 4.48 4.48-22.4 4.48-44.821333 8.96-67.2.0-26.88 26.88-53.781333 49.28-62.72 8.96-4.458667 13.44 4.501333 22.4.0 26.88-8.96 94.08-35.84 80.64-71.658667-8.96-31.381333-35.84-62.698667-71.68-58.24-8.96 4.501333-13.44 8.96-22.4 13.461333-13.44 8.96-40.32 35.84-53.76 35.84-22.4-4.48-22.4-35.84-17.92-49.301333 4.48-17.92 44.8-76.138667 71.68-67.178667l17.92 17.92c8.96 4.48 22.4 4.48 35.84 4.48 4.48.0 8.96.0 13.44-4.48s4.48-4.48 4.48-8.96c0-13.44-13.44-26.901333-22.4-35.861333s-22.4-17.92-35.84-22.378667c-44.8-13.461333-116.48 4.458667-152.32 35.84-35.84 31.36-62.72 85.12-80.64 129.92-8.96 26.88-17.92 62.698667-22.4 94.08-4.48 22.4-8.96 40.32 4.48 62.698667 13.44 26.88 40.32 53.781333 67.2 71.68 17.92 13.44 53.76 13.44 71.68 35.84 13.44 17.941333 8.96 40.32 8.96 62.72.0 26.88 17.92 49.28 26.88 71.658667C305.92 785.28 310.4 803.2 314.88 816.64c0 4.48 4.48 31.36 4.48 35.84 26.88 13.44 49.28 26.901333 80.64 35.861333 4.48.0 22.4-26.901333 22.4-31.381333 13.44-13.44 22.4-31.36 35.84-40.32 8.96-4.48 17.92-8.96 26.88-17.941333 8.96-8.96 13.44-26.88 17.92-40.32C507.52 749.44 512 731.52 507.52 718.08M516.48 305.92c4.48.0 8.96-4.48 17.92-8.96 13.44-8.96 26.901333-22.4 40.32-31.36 13.461333-8.96 26.901333-22.4 35.861333-31.36 13.44-8.96 22.4-26.88 26.88-40.341333 4.48-8.96 17.941333-26.88 13.44-40.32-4.48-8.96-26.88-13.44-35.84-17.92C579.2 126.698667 547.84 122.24 512 122.24c-13.44.0-31.36 4.458667-35.84 17.92-4.48 22.4 13.44 17.92 31.36 22.4.0.0 4.48 35.84 4.48 40.32 4.48 22.421333-8.96 35.84-8.96 58.24.0 13.44.0 35.84 8.96 44.8h4.48zM892.8 619.52c4.501333-8.96 4.501333-22.4 8.96-31.36 4.501333-22.421333 4.501333-44.8 4.501333-67.2.0-44.8-4.501333-89.578667-17.92-129.92-8.96-13.44-13.461333-26.88-17.941333-40.341333C861.44 328.32 848 305.898667 830.08 288c-17.92-22.4-40.341333-85.12-80.64-67.2-13.44 4.501333-22.4 22.421333-31.36 31.381333l-26.88 40.32c-4.501333 4.48-8.96 13.44-4.501333 17.92.0 4.48 4.501333 4.48 8.96 4.48 8.96 4.501333 13.461333 4.501333 22.421333 8.96 4.48.0 8.96 4.501333 4.48 8.96.0.0.0 4.501333-4.48 4.501334-22.421333 22.4-44.8 40.32-67.2 62.698666-4.48 4.48-8.96 13.44-8.96 17.92s4.48 4.48 4.48 8.96c0 4.501333-4.48 4.501333-8.96 8.96-8.96 4.501333-17.92 8.96-22.4 13.461334-4.48 8.96.0 22.4-4.48 31.36-4.48 22.4-17.941333 40.32-26.901333 62.72-8.96 13.418667-13.418667 26.88-22.378667 40.32.0 17.92-4.501333 31.36 4.458667 44.8 22.421333 31.36 62.72 13.44 94.08 26.901333 8.96 4.458667 17.92 4.458667 22.421333 13.418667C695.658667 682.304 695.658667 704.704 700.16 718.144c4.458667 17.92 8.96 35.84 17.92 53.76 4.48 22.421333 13.44 44.821333 17.92 62.72 40.341333-31.36 76.16-67.178667 103.04-112 26.88-31.424 40.341333-67.242667 53.76-103.104" fill="#cddc39"/></svg>
 </span></a>
-<p>进度更新至 <a href=https://github.com/Lruihao/hugo-blog/issues/8 target=_blank rel="noopener noreffer">#8</a></p>
+<p>进度更新至 <a href=https://github.com/Lruihao/hugo-blog/issues/8 target=_blank rel="external nofollow noopener noreffer">#8</a></p>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
 <li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>
@@ -354,8 +354,8 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span title="2022-01-14 17:20:32">更新於 2022-01-14&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/ba6f3996e622e2c277fd43de87f8410ad2a41824 rel="external nofollow noopener noreffer" target=_blank title="commit by Cell(1024@lruihao.cn) ba6f3996e622e2c277fd43de87f8410ad2a41824: :pencil: Docs: chang shortcode cardlink to shortcode link">
-<i class="fas fa-hashtag fa-fw"></i>ba6f399</a></span>
+<span title="2022-02-12 15:19:43">更新於 2022-02-12&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/f5bcc5bd2028ff176bf7599111739a8fcaaeb7da rel="external nofollow noopener noreffer" target=_blank title="commit by Cell(1024@lruihao.cn) f5bcc5bd2028ff176bf7599111739a8fcaaeb7da: :pencil: Docs: Lruihao's Note update 2022-02-12 Sat 15:19:43">
+<i class="fas fa-hashtag fa-fw"></i>f5bcc5b</a></span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
@@ -381,9 +381,9 @@ git submodule add https://github.com/Lruihao/FixIt.git themes/FixIt
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="license external nofollow noopener noreffer">Valine</a>.
 </noscript></div></article></div>
 </main><footer class=footer>
-<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.1">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-ban fa-stack-2x"></i><i class="fas fa-bug fa-stack-1x"></i></i> FixIt</a>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><i class="fa-stack fa-xs logo-icon"><i class="fas fa-ban fa-stack-2x"></i><i class="fas fa-bug fa-stack-1x"></i></i> FixIt</a>
 </div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
-<a href=https://github.com/Lruihao target=_blank rel="noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
+<a href=https://github.com/Lruihao target=_blank rel="external nofollow noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line>
 <span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."><i class="fas fa-heartbeat animate-icon"></i>
 <span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="far fa-eye"></i>

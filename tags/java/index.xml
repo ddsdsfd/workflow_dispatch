@@ -1790,7 +1790,7 @@ B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
@@ -2265,7 +2265,7 @@ fill() 后：-1 -1 -1 41 44 49 87 96 96
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   

@@ -183,7 +183,7 @@
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
     
@@ -361,7 +361,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
     target="_blank"
   
   
-    rel="noopener noreffer"
+    rel="external nofollow noopener noreffer"
   
   
   
