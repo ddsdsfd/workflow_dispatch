@@ -74,7 +74,7 @@ function getRandomComment() {
   fetch('https://api.uomg.com/api/comments.163?mid=2280569152')
   .then(response => response.json())
   .then((comment) => {
-    document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl})`;
+    document.querySelector('.pic-backdrop').style.backgroundImage = `url(${comment.data.picurl.slice(5)})`;
     document.querySelector('.comment-avatar').alt = `${comment.data.nickname}'s avatar`;
     document.querySelector('.comment-avatar').src = comment.data.avatarurl;
     document.querySelector('.comment-avatar').style = '';
