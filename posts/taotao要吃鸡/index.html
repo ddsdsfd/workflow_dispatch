@@ -8,14 +8,14 @@
 <meta name=description content="2018 年全国多校算法寒假训练营练习比赛（第二场）B(0 1 背包变化 特殊处理一个物品） 链接：https://www.nowcoder.com/acm/contest/74/B 来源：牛客网 题目描述 Taotao 的电脑带不动绝地求生，所以 taotao 只能去玩 pc 版的荒野行动了， 和绝地求生一样，游戏人物本身可以携带一定重量 m 的物品，装备">
 <meta name=keywords content="背包问题,Nowcoder,C++"><meta itemprop=name content="TaoTao 要吃鸡">
 <meta itemprop=description content="2018 年全国多校算法寒假训练营练习比赛（第二场）B(0 1 背包变化 特殊处理一个物品） 链接：https://www.nowcoder.com/acm/contest/74/B 来源：牛客网 题目描述 Taotao 的电脑带不动绝地求生，所以 taotao 只能去玩 pc 版的荒野行动了， 和绝地求生一样，游戏人物本身可以携带一定重量 m 的物品，装备"><meta itemprop=datePublished content="2018-07-22T10:55:21+00:00">
-<meta itemprop=dateModified content="2022-02-16T02:18:46+00:00">
+<meta itemprop=dateModified content="2022-02-17T08:12:37+00:00">
 <meta itemprop=wordCount content="755"><meta itemprop=image content="https://lruihao.cn/logo.png">
 <meta itemprop=keywords content="背包问题,Nowcoder,C++,"><meta property="og:title" content="TaoTao 要吃鸡">
 <meta property="og:description" content="2018 年全国多校算法寒假训练营练习比赛（第二场）B(0 1 背包变化 特殊处理一个物品） 链接：https://www.nowcoder.com/acm/contest/74/B 来源：牛客网 题目描述 Taotao 的电脑带不动绝地求生，所以 taotao 只能去玩 pc 版的荒野行动了， 和绝地求生一样，游戏人物本身可以携带一定重量 m 的物品，装备">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://lruihao.cn/posts/taotao%E8%A6%81%E5%90%83%E9%B8%A1/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-07-22T10:55:21+00:00">
-<meta property="article:modified_time" content="2022-02-16T02:18:46+00:00">
+<meta property="article:modified_time" content="2022-02-17T08:12:37+00:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://lruihao.cn/logo.png">
 <meta name=twitter:title content="TaoTao 要吃鸡">
@@ -23,7 +23,7 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/taotao%E8%A6%81%E5%90%83%E9%B8%A1/><link rel=prev href=https://lruihao.cn/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/><link rel=next href=https://lruihao.cn/posts/educational-codeforces-round-47-rated-for-div.-2/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"TaoTao 要吃鸡","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/taotao%E8%A6%81%E5%90%83%E9%B8%A1\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"背包问题, Nowcoder, C\u002b\u002b","wordcount":755,"url":"https:\/\/lruihao.cn\/posts\/taotao%E8%A6%81%E5%90%83%E9%B8%A1\/","datePublished":"2018-07-22T10:55:21+00:00","dateModified":"2022-02-16T02:18:46+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/taotao%E8%A6%81%E5%90%83%E9%B8%A1/><link rel=prev href=https://lruihao.cn/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/><link rel=next href=https://lruihao.cn/posts/educational-codeforces-round-47-rated-for-div.-2/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"TaoTao 要吃鸡","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/taotao%E8%A6%81%E5%90%83%E9%B8%A1\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"背包问题, Nowcoder, C\u002b\u002b","wordcount":755,"url":"https:\/\/lruihao.cn\/posts\/taotao%E8%A6%81%E5%90%83%E9%B8%A1\/","datePublished":"2018-07-22T10:55:21+00:00","dateModified":"2022-02-17T08:12:37+00:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -293,7 +293,7 @@ taotao 发现了一个 BUG，当装备背包之后，如果可携带重量没有
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span title="2022-02-16 02:18:46">更新於 2022-02-16</span>
+<span title="2022-02-17 08:12:37">更新於 2022-02-17</span>
 </div>
 <div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
 </div>
