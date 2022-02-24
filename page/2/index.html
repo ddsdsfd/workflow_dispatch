@@ -94,9 +94,14 @@
 <a href=/years/2020-2021/>閱讀全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E6%80%BB%E7%BB%93/>总结</a>,&nbsp;<a href=/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/>生活随笔</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/watermark-fixed/>watermark base on position fixed</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish title="2021-05-23 17:15:41">發佈於 <time datetime=2021-05-23>2021-05-23</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div><div class=content><p>just for backup of watermark.</p></div><div class=post-footer>
-<a href=/posts/watermark-fixed/>閱讀全文</a><div class=post-tags>
+<a href=/projects/cell-watermark/>Cell Watermark</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-publish title="2021-05-23 17:15:41">發佈於 <time datetime=2021-05-23>2021-05-23</time></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/javascript/><i class="far fa-folder fa-fw"></i>JavaScript</a></span></div><div class=content>Usage Browser Clone source
+1 git clone git@github.com:Lruihao/watermark.git Load Watermark
+1 2 3 4 5 &lt;script type="text/javascript" src="./src/watermark.js">&lt;/script> &lt;script type="text/javascript" src="./src/watermark.min.js">&lt;/script> &lt;!-- Or CDN --> &lt;script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cell-watermark@1.0.3/src/watermark.js">&lt;/script> &lt;script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cell-watermark@1.0.3/src/watermark.min.js">&lt;/script> Initialization
+1 2 3 4 5 document.addEventListener('DOMContentLoaded', function () { new Watermark({ content: "cell-watermark" }) }); NPM Install
+1 npm i cell-watermark Import
+1 2 3 import Watermark from 'cell-watermark' /* Or */ var Watermark = require("cell-watermark") Class: Watermark Watermark(options) new Watermark(options) Parameters: Name Type Description options Object The options of watermark（Properties） Properties: Name Type Attributes Default Description content String &lt;optional> watermark&rsquo;s text appendTo String &lt;optional> &lsquo;body&rsquo; parent of watermark&rsquo;s container width Number &lt;optional> 150 watermark&rsquo;s width.</div><div class=post-footer>
+<a href=/projects/cell-watermark/>閱讀全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/watermark/>watermark</a>,&nbsp;<a href=/tags/javascript/>JavaScript</a>,&nbsp;<a href=/tags/frontend/>Frontend</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/codereview/>Code Review 怎麼做？新手工程師如何提升「程式碼品質」</a>
