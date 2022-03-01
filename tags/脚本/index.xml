@@ -83,75 +83,75 @@
 </span><span class="lnt">68
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/python </span>
-<span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;lruihao.cn&#39;</span>
-<span class="kn">import</span> <span class="nn">urllib.request</span>
-<span class="kn">import</span> <span class="nn">re</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-
-<span class="n">opener</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">()</span>
-<span class="n">opener</span><span class="o">.</span><span class="n">addheaders</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;User-agent&#39;</span><span class="p">,</span>
-                      <span class="s1">&#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 UBrowser/4.0.3214.0 Safari/537.36&#39;</span><span class="p">)]</span>
-
-<span class="k">def</span> <span class="nf">get_article_url</span><span class="p">(</span><span class="n">page</span><span class="p">,</span><span class="n">name</span><span class="p">):</span>
-    <span class="n">endurl</span> <span class="o">=</span> <span class="s2">&#34;/&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s2">&#34;/article/details/........&#34;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net/&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s2">&#34;/article/list/&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
-    <span class="c1"># 使用 build_opener() 是为了让 python 程序模仿浏览器进行访问</span>
-    <span class="n">html</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
-    <span class="n">allfinds</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">allfinds</span>
-    <span class="c1">#print(&#39;allfinds&#39;,allfinds)</span>
-
-<span class="k">def</span> <span class="nf">start_do</span><span class="p">(</span><span class="n">allfinds</span><span class="p">):</span>
-    <span class="n">urlBase</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net&#34;</span>  <span class="c1"># 需要将网址合并的部分</span>
-    <span class="c1"># 页面中的网址有重复的，需要使用 set 进行去重复</span>
-    <span class="n">mypages</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">allfinds</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mypages</span><span class="p">)):</span>
-        <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">urlBase</span> <span class="o">+</span> <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;要刷的网页有：&#39;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mypages</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">index</span><span class="p">),</span> <span class="n">page</span><span class="p">)</span>
-    <span class="c1"># 设置每个网页要刷的次数</span>
-    <span class="n">brushNum</span> <span class="o">=</span> <span class="mi">1</span>
-
-    <span class="c1"># 所有的页面都刷</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;下面开始刷了哦：&#39;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mypages</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">brushNum</span><span class="p">):</span>
-            <span class="k">try</span><span class="p">:</span>
-                <span class="n">pageContent</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
-                <span class="c1"># 使用 BeautifulSoup 解析每篇博客的标题</span>
-                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">pageContent</span><span class="p">)</span>
-                <span class="n">blogTitle</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
-                <span class="n">blogTitle</span> <span class="o">=</span> <span class="n">blogTitle</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">blogTitle</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)]</span>
-                <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">),</span> <span class="n">blogTitle</span><span class="p">)</span>
-            <span class="k">except</span> <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">HTTPError</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;urllib.error.HTTPError&#39;</span><span class="p">)</span>
-                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># 出现错误，停几秒先</span>
-            <span class="k">except</span> <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">URLError</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;urllib.error.URLError&#39;</span><span class="p">)</span>
-                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># 出现错误，停几秒先</span>
-                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># 正常停顿，以免服务器拒绝访问</span>
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;************第&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;页*************&#34;</span><span class="p">)</span>
-        <span class="n">endurl</span> <span class="o">=</span> <span class="n">get_article_url</span><span class="p">(</span><span class="n">page</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
-        <span class="n">start_do</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;输入你的 csdn 用户名：&#34;</span><span class="p">)</span>
-  <span class="k">if</span> <span class="n">name</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;qq_39520417&#34;</span> <span class="c1">#cheung99857</span>
-  <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
-    <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/python </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl"><span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;lruihao.cn&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib.request</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">re</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">opener</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">opener</span><span class="o">.</span><span class="n">addheaders</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;User-agent&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                      <span class="s1">&#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 UBrowser/4.0.3214.0 Safari/537.36&#39;</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_article_url</span><span class="p">(</span><span class="n">page</span><span class="p">,</span><span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">endurl</span> <span class="o">=</span> <span class="s2">&#34;/&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s2">&#34;/article/details/........&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net/&#34;</span><span class="o">+</span><span class="n">name</span><span class="o">+</span><span class="s2">&#34;/article/list/&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 使用 build_opener() 是为了让 python 程序模仿浏览器进行访问</span>
+</span></span><span class="line"><span class="cl">    <span class="n">html</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">allfinds</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">allfinds</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#print(&#39;allfinds&#39;,allfinds)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">start_do</span><span class="p">(</span><span class="n">allfinds</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">urlBase</span> <span class="o">=</span> <span class="s2">&#34;http://blog.csdn.net&#34;</span>  <span class="c1"># 需要将网址合并的部分</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 页面中的网址有重复的，需要使用 set 进行去重复</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mypages</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">allfinds</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mypages</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">urlBase</span> <span class="o">+</span> <span class="n">mypages</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;要刷的网页有：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mypages</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">index</span><span class="p">),</span> <span class="n">page</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 设置每个网页要刷的次数</span>
+</span></span><span class="line"><span class="cl">    <span class="n">brushNum</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 所有的页面都刷</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;下面开始刷了哦：&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mypages</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">brushNum</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pageContent</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># 使用 BeautifulSoup 解析每篇博客的标题</span>
+</span></span><span class="line"><span class="cl">                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">pageContent</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">blogTitle</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">blogTitle</span> <span class="o">=</span> <span class="n">blogTitle</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">blogTitle</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">),</span> <span class="n">blogTitle</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span> <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">HTTPError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;urllib.error.HTTPError&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># 出现错误，停几秒先</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span> <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">URLError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;urllib.error.URLError&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># 出现错误，停几秒先</span>
+</span></span><span class="line"><span class="cl">                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># 正常停顿，以免服务器拒绝访问</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;************第&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;页*************&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">endurl</span> <span class="o">=</span> <span class="n">get_article_url</span><span class="p">(</span><span class="n">page</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">start_do</span><span class="p">(</span><span class="n">endurl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;输入你的 csdn 用户名：&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="n">name</span><span class="o">==</span><span class="s2">&#34;&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;qq_39520417&#34;</span> <span class="c1">#cheung99857</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>主函数也可以这样写实现同时刷多人的访问量，人多可以适当减少休眠时间，当然有兴趣的可以尝试一下多线程~</p>
 <div class="highlight"><div class="chroma">
@@ -167,16 +167,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="c1"># 多用户</span>
-    <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;qq_39520417&#34;</span><span class="p">,</span><span class="s2">&#34;cheung99857&#34;</span><span class="p">]</span>
-    <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
-            <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
-            <span class="c1"># 控制休眠时间相当于控制刷新的速度</span>
-            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 多用户</span>
+</span></span><span class="line"><span class="cl">    <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;qq_39520417&#34;</span><span class="p">,</span><span class="s2">&#34;cheung99857&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">main</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;开始休息 ...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># 控制休眠时间相当于控制刷新的速度</span>
+</span></span><span class="line"><span class="cl">            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>新冠疫情未返校未返工第 N 天之“自动打卡”</title><link>https://lruihao.cn/posts/daka/</link><pubDate>Wed, 25 Mar 2020 08:22:42 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/daka/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/daka/images/result.png" referrerpolicy="no-referrer">
@@ -248,32 +248,32 @@
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">lajaDaka</span><span class="p">():</span>
-  <span class="c1"># 登录</span>
-  <span class="n">r1</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">login_url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">login</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span><span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-  <span class="k">if</span> <span class="n">r1</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y:%m:</span><span class="si">%d</span><span class="s2">:%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">login</span><span class="p">[</span><span class="s2">&#34;username&#34;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&#34; 登录成功！&#34;</span><span class="p">)</span>
-    <span class="c1"># 拿到登录后的 cookie 并添加到 header 中</span>
-    <span class="n">header1</span> <span class="o">=</span> <span class="n">r1</span><span class="o">.</span><span class="n">headers</span>
-    <span class="n">headers</span><span class="p">[</span><span class="s2">&#34;Cookie&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">header1</span><span class="p">[</span><span class="s2">&#34;Set-Cookie&#34;</span><span class="p">]</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="k">return</span>
-
-  <span class="c1"># 打卡</span>
-  <span class="n">r2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">daka_url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">daka</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span><span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-  <span class="n">response2</span><span class="o">=</span><span class="n">r2</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-  <span class="k">if</span> <span class="n">r2</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;打卡失败！&#34;</span><span class="p">)</span>
-    <span class="k">return</span>
-  <span class="k">if</span> <span class="n">response2</span><span class="p">[</span><span class="s2">&#34;result&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;打卡成功！&#34;</span><span class="p">)</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">response2</span><span class="p">[</span><span class="s2">&#34;errorInfoList&#34;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;message&#34;</span><span class="p">])</span>
-
-<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-  <span class="n">lajaDaka</span><span class="p">()</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">lajaDaka</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># 登录</span>
+</span></span><span class="line"><span class="cl">  <span class="n">r1</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">login_url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">login</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span><span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="n">r1</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y:%m:</span><span class="si">%d</span><span class="s2">:%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">login</span><span class="p">[</span><span class="s2">&#34;username&#34;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&#34; 登录成功！&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 拿到登录后的 cookie 并添加到 header 中</span>
+</span></span><span class="line"><span class="cl">    <span class="n">header1</span> <span class="o">=</span> <span class="n">r1</span><span class="o">.</span><span class="n">headers</span>
+</span></span><span class="line"><span class="cl">    <span class="n">headers</span><span class="p">[</span><span class="s2">&#34;Cookie&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">header1</span><span class="p">[</span><span class="s2">&#34;Set-Cookie&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># 打卡</span>
+</span></span><span class="line"><span class="cl">  <span class="n">r2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">daka_url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">daka</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span><span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">response2</span><span class="o">=</span><span class="n">r2</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="n">r2</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;打卡失败！&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="n">response2</span><span class="p">[</span><span class="s2">&#34;result&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;打卡成功！&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">response2</span><span class="p">[</span><span class="s2">&#34;errorInfoList&#34;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;message&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lajaDaka</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="自动运行">自动运行</h1>
 <h2 id="windows">Windows</h2>
@@ -301,26 +301,26 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-    <span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
-    <span class="c1"># 设置每天 8 点发送</span>
-    <span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-      <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
-      <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
-      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-      <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
-      <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
-      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
-      <span class="n">lajaDaka</span><span class="p">()</span>
-      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">now_hour</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">now_min</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 设置每天 8 点发送</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">now_hour</span> <span class="o">&lt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">&gt;</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">rest</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">now_hour</span><span class="p">)</span> <span class="o">+</span> <span class="mi">24</span>
+</span></span><span class="line"><span class="cl">      <span class="n">sleeptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span> <span class="o">+</span> <span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">))</span><span class="o">*</span><span class="mi">60</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;启动时北京时间为：&#34;</span><span class="o">+</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%H:%M&#34;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">()),</span><span class="s2">&#34;</span><span class="se">\t</span><span class="s2"> 脚本将在&#34;</span><span class="p">,</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;小时&#34;</span><span class="p">,</span><span class="nb">int</span><span class="p">((</span><span class="n">sleeptime</span><span class="o">-</span><span class="p">(</span><span class="n">rest</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span><span class="s2">&#34;分钟后打卡&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleeptime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">now_hour</span> <span class="o">==</span> <span class="s2">&#34;08&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;软件明天开始将在每天 8 点发送数据！&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">lajaDaka</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">now_min</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="linux云服务器">linux（云服务器）</h2>
 <p>搭建 python 环境下载依赖后，使用 shell 脚本定时执行。</p>
@@ -329,8 +329,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">python /home/python/yiban_daka/daka.py
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python /home/python/yiban_daka/daka.py
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="/posts/cron/"
@@ -407,8 +407,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">pyinstaller --onefile --nowindowed csdn.py
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pyinstaller --onefile --nowindowed csdn.py
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>
 </p>
@@ -533,63 +533,63 @@
 </span><span class="lnt">56
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">path</span><span class="o">=</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪、\Desktop</span><span class="se">\\</span><span class="s2">MMT_images</span><span class="se">\\</span><span class="s2">&#34;</span> <span class="c1">#下载路径： 绝对或者相对路径比如。/image/</span>
-<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&#34;0</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 创建文件夹</span>
-<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&#34;1</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># 下载图片</span>
-<span class="k">def</span> <span class="nf">urllib_download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>  <span class="c1"># （下载链接，图片编号）</span>
-    <span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlretrieve</span>
-    <span class="n">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">path</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span><span class="p">)</span>     
-
-<span class="c1"># 判断状态码</span>
-<span class="k">def</span> <span class="nf">get_status</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>  
-    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>  
-    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-	<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&#34;https://image.xiezixiansheng.com/users/2010/700/unzip/579767/&#34;</span>
-	<span class="n">n</span><span class="o">=</span><span class="mi">33</span>
-	<span class="n">total</span><span class="o">=</span><span class="mi">0</span>
-	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第 1 张图片！&#34;</span><span class="p">)</span>
-
-	<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">65510</span><span class="p">:</span>
-		<span class="c1">#分段爬取，不然会超时！！！# 33 ~ 126 # 8212 ~ 8243 # 12289 ~ 12305 # 19968 ~ 40864 # 65281 ~ 65509</span>
-		<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">127</span><span class="p">:</span>
-			<span class="n">n</span> <span class="o">=</span> <span class="mi">8212</span>
-			<span class="k">continue</span>
-		<span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">8244</span><span class="p">:</span>
-			<span class="n">n</span> <span class="o">=</span> <span class="mi">12289</span>
-			<span class="k">continue</span>
-		<span class="k">elif</span> <span class="n">n</span> <span class="o">==</span><span class="mi">12306</span><span class="p">:</span>
-			<span class="n">n</span> <span class="o">=</span> <span class="mi">19968</span>
-			<span class="k">continue</span>
-		<span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">40865</span><span class="p">:</span>
-			<span class="n">n</span> <span class="o">=</span> <span class="mi">65281</span>
-			<span class="k">continue</span>
-
-	<span class="c1"># for n in range(37341,40865):</span>
-		<span class="n">num</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-		<span class="n">IMAGE_URL</span> <span class="o">=</span> <span class="n">BASE_URL</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span> <span class="c1"># xxx.png 是透明背景，xxx.png@50q 是白色背景，分别存放在 0，1 文件夹 p 是中小 w 是小图</span>
-		<span class="k">if</span><span class="p">(</span><span class="n">get_status</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">)</span><span class="o">==</span><span class="mi">200</span><span class="p">):</span> <span class="c1"># 同时下载透明和白色背景的图片</span>
-			<span class="n">total</span><span class="o">+=</span><span class="mi">1</span>
-			<span class="n">urllib_download</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">,</span><span class="s2">&#34;0</span><span class="se">\\</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">num</span><span class="p">)</span>
-			<span class="n">IMAGE_URL</span> <span class="o">+=</span> <span class="s2">&#34;@50q&#34;</span>
-			<span class="n">urllib_download</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">,</span><span class="s2">&#34;1</span><span class="se">\\</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">num</span><span class="p">)</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Downloaded &#34;</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span><span class="p">)</span>
-			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第&#34;</span><span class="p">,</span><span class="n">total</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;张图片！&#34;</span><span class="p">)</span>
-		<span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
-
-	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 爬取完毕！共爬取&#34;</span><span class="p">,</span><span class="n">total</span><span class="p">,</span><span class="s2">&#34;张图片！&#34;</span><span class="p">)</span>		
-	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;图片存放路径：&#34;</span><span class="o">+</span><span class="n">path</span><span class="p">)</span>
-	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;作者博客：lruihao.cn&#34;</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>  
-    <span class="n">main</span><span class="p">();</span> 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">path</span><span class="o">=</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Users</span><span class="se">\\</span><span class="s2">李瑞豪、\Desktop</span><span class="se">\\</span><span class="s2">MMT_images</span><span class="se">\\</span><span class="s2">&#34;</span> <span class="c1">#下载路径： 绝对或者相对路径比如。/image/</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&#34;0</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># 创建文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&#34;1</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 下载图片</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">urllib_download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>  <span class="c1"># （下载链接，图片编号）</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlretrieve</span>
+</span></span><span class="line"><span class="cl">    <span class="n">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">path</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span><span class="p">)</span>     
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 判断状态码</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_status</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">	<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&#34;https://image.xiezixiansheng.com/users/2010/700/unzip/579767/&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">n</span><span class="o">=</span><span class="mi">33</span>
+</span></span><span class="line"><span class="cl">	<span class="n">total</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第 1 张图片！&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">65510</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#分段爬取，不然会超时！！！# 33 ~ 126 # 8212 ~ 8243 # 12289 ~ 12305 # 19968 ~ 40864 # 65281 ~ 65509</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">127</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="n">n</span> <span class="o">=</span> <span class="mi">8212</span>
+</span></span><span class="line"><span class="cl">			<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">		<span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">8244</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="n">n</span> <span class="o">=</span> <span class="mi">12289</span>
+</span></span><span class="line"><span class="cl">			<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">		<span class="k">elif</span> <span class="n">n</span> <span class="o">==</span><span class="mi">12306</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="n">n</span> <span class="o">=</span> <span class="mi">19968</span>
+</span></span><span class="line"><span class="cl">			<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">		<span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">40865</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">			<span class="n">n</span> <span class="o">=</span> <span class="mi">65281</span>
+</span></span><span class="line"><span class="cl">			<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1"># for n in range(37341,40865):</span>
+</span></span><span class="line"><span class="cl">		<span class="n">num</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="n">IMAGE_URL</span> <span class="o">=</span> <span class="n">BASE_URL</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span> <span class="c1"># xxx.png 是透明背景，xxx.png@50q 是白色背景，分别存放在 0，1 文件夹 p 是中小 w 是小图</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span><span class="n">get_status</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">)</span><span class="o">==</span><span class="mi">200</span><span class="p">):</span> <span class="c1"># 同时下载透明和白色背景的图片</span>
+</span></span><span class="line"><span class="cl">			<span class="n">total</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">			<span class="n">urllib_download</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">,</span><span class="s2">&#34;0</span><span class="se">\\</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="n">IMAGE_URL</span> <span class="o">+=</span> <span class="s2">&#34;@50q&#34;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">urllib_download</span><span class="p">(</span><span class="n">IMAGE_URL</span><span class="p">,</span><span class="s2">&#34;1</span><span class="se">\\</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Downloaded &#34;</span><span class="o">+</span><span class="n">num</span><span class="o">+</span><span class="s2">&#34;.png&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;正在爬取第&#34;</span><span class="p">,</span><span class="n">total</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;张图片！&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2"> 爬取完毕！共爬取&#34;</span><span class="p">,</span><span class="n">total</span><span class="p">,</span><span class="s2">&#34;张图片！&#34;</span><span class="p">)</span>		
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;图片存放路径：&#34;</span><span class="o">+</span><span class="n">path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;作者博客：lruihao.cn&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">();</span> 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="爬取过程及结果">爬取过程及结果</h1>
 <blockquote>
@@ -663,51 +663,51 @@
 </span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）
-</span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=https://lruihao.cn&#34;</span><span class="p">;</span>
-	<span class="c1">//用户地址
-</span><span class="c1"></span>	<span class="c1">//var custom_src = &#34;https://lruihao.cn&#34;;
-</span><span class="c1"></span>	<span class="c1">//初始化工作地址
-</span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-	<span class="kd">function</span> <span class="nx">createArrayAndOpenWindow</span><span class="p">(){</span>
-		<span class="c1">//alert(&#34;number function&#34;);
-</span><span class="c1"></span>		<span class="c1">//定义数组存储后缀
-</span><span class="c1"></span>		<span class="kd">var</span> <span class="nx">numberArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
- 		<span class="c1">//存储后缀
-</span><span class="c1"></span> 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/about/&#34;</span><span class="p">;</span>
- 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/categories/&#34;</span><span class="p">;</span>
- 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/tags/&#34;</span><span class="p">;</span>
- 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/archives/&#34;</span><span class="p">;</span>
- 		<span class="c1">//numberArray[4] = &#34;/guestbook/&#34;;
-</span><span class="c1"></span> 
- 		
- 		<span class="c1">//遍历
-</span><span class="c1"></span> 		<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span><span class="nx">numberArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
- 			<span class="nx">new_src</span> <span class="o">=</span> <span class="nx">base_src</span> <span class="o">+</span> <span class="nx">numberArray</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
- 			<span class="c1">//打开该地址
-</span><span class="c1"></span> 			<span class="nx">open_new</span><span class="p">();</span>
- 			<span class="c1">//清空后缀
-</span><span class="c1"></span> 			<span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
- 		<span class="p">}</span>
-
-	<span class="p">}</span>
-	
-	<span class="c1">//负责打开窗口，并关闭
-</span><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
-		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
-		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-			<span class="c1">//开启后 200ms（单页）关闭，速度自行把握数组越大时间越多
-</span><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
-		<span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
-	<span class="p">}</span>
-
-	<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
-		 <span class="nx">createArrayAndOpenWindow</span><span class="p">();</span>
-		 <span class="c1">//设置定时函数，疯狂刷新直到 xml 出现内容
-</span><span class="c1"></span>		 <span class="kd">var</span> <span class="nx">timer</span> <span class="o">=</span>  <span class="nx">setInterval</span><span class="p">(</span><span class="s2">&#34;createArrayAndOpenWindow()&#34;</span><span class="p">,</span> <span class="mi">2000</span><span class="p">);</span>
-		 
-	<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=https://lruihao.cn&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">//用户地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">//var custom_src = &#34;https://lruihao.cn&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">//初始化工作地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">var</span> <span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">createArrayAndOpenWindow</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">//alert(&#34;number function&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="c1">//定义数组存储后缀
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="kd">var</span> <span class="nx">numberArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> 		<span class="c1">//存储后缀
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/about/&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/categories/&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/tags/&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> 		<span class="nx">numberArray</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;/archives/&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> 		<span class="c1">//numberArray[4] = &#34;/guestbook/&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl"> 		
+</span></span><span class="line"><span class="cl"> 		<span class="c1">//遍历
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 		<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span><span class="nx">numberArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"> 			<span class="nx">new_src</span> <span class="o">=</span> <span class="nx">base_src</span> <span class="o">+</span> <span class="nx">numberArray</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"> 			<span class="c1">//打开该地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 			<span class="nx">open_new</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"> 			<span class="c1">//清空后缀
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 			<span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> 		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	<span class="c1">//负责打开窗口，并关闭
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">//开启后 200ms（单页）关闭，速度自行把握数组越大时间越多
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">		<span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">		 <span class="nx">createArrayAndOpenWindow</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">		 <span class="c1">//设置定时函数，疯狂刷新直到 xml 出现内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		 <span class="kd">var</span> <span class="nx">timer</span> <span class="o">=</span>  <span class="nx">setInterval</span><span class="p">(</span><span class="s2">&#34;createArrayAndOpenWindow()&#34;</span><span class="p">,</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		 
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="单链接刷新">单链接刷新</h2>
 <div class="highlight"><div class="chroma">
@@ -718,11 +718,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center;&#34;</span><span class="p">&gt;</span>  
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type </span><span class="o">=</span> <span class="s">&#34;text&#34;</span> <span class="na">id </span><span class="o">=</span> <span class="s">&#34;input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/&gt;</span>   
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type </span><span class="o">=</span> <span class="s">&#34;button&#34;</span> <span class="na">value </span><span class="o">=</span> <span class="s">&#34;疯狂刷新&#34;</span> <span class="na">onclick </span><span class="o">=</span> <span class="s">&#34;yanzheng()&#34;</span> <span class="p">/&gt;</span>  
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center;&#34;</span><span class="p">&gt;</span>  
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type </span><span class="o">=</span> <span class="s">&#34;text&#34;</span> <span class="na">id </span><span class="o">=</span> <span class="s">&#34;input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/&gt;</span>   
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type </span><span class="o">=</span> <span class="s">&#34;button&#34;</span> <span class="na">value </span><span class="o">=</span> <span class="s">&#34;疯狂刷新&#34;</span> <span class="na">onclick </span><span class="o">=</span> <span class="s">&#34;yanzheng()&#34;</span> <span class="p">/&gt;</span>  
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -756,35 +756,35 @@
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）https://lruihao.cn
-</span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=&#34;</span><span class="p">;</span>
-	<span class="c1">//用户地址
-</span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">custom_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-	<span class="c1">//初始化工作地址
-</span><span class="c1"></span>	<span class="kd">var</span> <span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-	
-	<span class="c1">//负责打开窗口，并关闭
-</span><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
-		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
-		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-			<span class="c1">//开启后 200ms 关闭
-</span><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
-		<span class="p">},</span> <span class="mi">200</span><span class="p">);</span>
-	<span class="p">}</span>
-
-	<span class="c1">// 获取验证用户输入
-</span><span class="c1"></span>	<span class="kd">function</span> <span class="nx">yanzheng</span><span class="p">(){</span>
-    	<span class="kd">var</span> <span class="nx">Input</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">);</span>
-        <span class="kd">var</span> <span class="nx">oValue</span> <span class="o">=</span> <span class="nx">Input</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
-        <span class="nx">custom_src</span> <span class="o">=</span> <span class="nx">oValue</span><span class="p">;</span>
-        <span class="nx">new_src</span> <span class="o">=</span> <span class="nx">base_src</span> <span class="o">+</span> <span class="nx">custom_src</span>
-        <span class="k">if</span><span class="p">(</span><span class="nx">oValue</span> <span class="o">==</span><span class="mi">0</span><span class="p">){</span>
-            <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;请输入地址&#39;</span><span class="p">);</span>
-        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-        	<span class="kd">var</span> <span class="nx">timer</span> <span class="o">=</span>  <span class="nx">setInterval</span><span class="p">(</span><span class="s2">&#34;open_new()&#34;</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">//设置刷新前缀 url=首页地址（最好使用 https）https://lruihao.cn
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">var</span> <span class="nx">base_src</span> <span class="o">=</span> <span class="s2">&#34;https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshareget_urlinfo?url=&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">//用户地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">var</span> <span class="nx">custom_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">//初始化工作地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">var</span> <span class="nx">new_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	<span class="c1">//负责打开窗口，并关闭
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">function</span> <span class="nx">open_new</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">var</span> <span class="nx">new_window</span> <span class="o">=</span>  <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">new_src</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;width=400,height=200&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">//开启后 200ms 关闭
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="nx">new_window</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">		<span class="p">},</span> <span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// 获取验证用户输入
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">function</span> <span class="nx">yanzheng</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    	<span class="kd">var</span> <span class="nx">Input</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">oValue</span> <span class="o">=</span> <span class="nx">Input</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">custom_src</span> <span class="o">=</span> <span class="nx">oValue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">new_src</span> <span class="o">=</span> <span class="nx">base_src</span> <span class="o">+</span> <span class="nx">custom_src</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="nx">oValue</span> <span class="o">==</span><span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;请输入地址&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        	<span class="kd">var</span> <span class="nx">timer</span> <span class="o">=</span>  <span class="nx">setInterval</span><span class="p">(</span><span class="s2">&#34;open_new()&#34;</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="demo">demo</h2>
 <p><br>
@@ -809,13 +809,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="p">@</span><span class="k">echo</span> off
-<span class="k">title</span> Commit
-git add .
-<span class="k">set</span> <span class="k">/p</span> <span class="nv">m</span><span class="p">=</span>Message:
-git commit -m <span class="s2">&#34;</span><span class="nv">%m%</span><span class="s2">&#34;</span>
-git push
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="p">@</span><span class="k">echo</span> off
+</span></span><span class="line"><span class="cl"><span class="k">title</span> Commit
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl"><span class="k">set</span> <span class="k">/p</span> <span class="nv">m</span><span class="p">=</span>Message:
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;</span><span class="nv">%m%</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p>
 <h3 id="使用">使用</h3>
@@ -827,8 +827,8 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat">hexo clean<span class="p">&amp;&amp;</span>hexo g -d
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">hexo clean<span class="p">&amp;&amp;</span>hexo g -d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="其他">其他</h3>
 <h4 id="死机脚本">死机脚本</h4>
@@ -838,8 +838,8 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">start</span> cmd ifconfig
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="k">start</span> cmd ifconfig
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>另外也说一下 linux 死机命令。fork 炸弹。<br>
 死机无非是耗尽系统资源</p>
@@ -848,8 +848,8 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">_(){ _ | _ &amp; }; _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">_(){ _ | _ &amp; }; _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个&amp;指后台运行的意思。</p>
 <h4 id="统计文件名">统计文件名</h4>
@@ -858,8 +858,8 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>将需要统计的文件夹拖到 bat 文件上。</p>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
 <ul>
@@ -923,64 +923,62 @@ git push
 </span><span class="lnt">51
 </span><span class="lnt">52
 </span><span class="lnt">53
-</span><span class="lnt">54
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="c1">#liruihao</span>
-<span class="c1">#menu.sh</span>
-<span class="c1">#sudo apt curl install nyancat sl figlet toilet cowsay </span>
-<span class="nb">echo</span> <span class="s2">&#34;-------------菜-单--------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------1-打印二维码--------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------2-彩虹猫------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------3-小火切------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------4-打字机------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------5-小许牛------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c暂停程序--------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;请输入序号！&#34;</span>
-<span class="nb">read</span> i
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">1</span>
-<span class="k">then</span>
-	<span class="nb">echo</span> <span class="s2">&#34;请输入网址！&#34;</span>
-	<span class="nb">read</span> s1
-       	<span class="nb">echo</span> <span class="nv">$s1</span> <span class="p">|</span>curl -F-<span class="o">=</span><span class="se">\&lt;</span>- qrenco.de
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">2</span>
-<span class="k">then</span>
-	nyancat
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">3</span>
-<span class="k">then</span>
-	sl
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">4</span>
-<span class="k">then</span>
-	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
-	<span class="nb">read</span> s2
-	<span class="nb">echo</span> <span class="s2">&#34;选择样式：&#34;</span>
-	<span class="nb">echo</span> <span class="s2">&#34;------样式1-----&#34;</span>
-	<span class="nb">echo</span> <span class="s2">&#34;------样式2-----&#34;</span>
-	<span class="nb">read</span> j
-	<span class="k">if</span> <span class="nb">test</span> <span class="nv">$j</span> -eq <span class="m">1</span>
-	<span class="k">then</span>
-		figlet <span class="nv">$s2</span>
-	<span class="k">else</span>
-		toilet -f mono12 -F gay <span class="nv">$s2</span>
-	<span class="k">fi</span>
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">5</span>
-<span class="k">then</span>
-	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
-	<span class="nb">read</span> s3
-	cowsay <span class="nv">$s3</span>
-<span class="k">fi</span>
-<span class="nb">echo</span> <span class="s2">&#34;任意建继续！&#34;</span>
-<span class="nb">read</span> x
-clear
-./menu.sh
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">#liruihao</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#menu.sh</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#sudo apt curl install nyancat sl figlet toilet cowsay </span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;-------------菜-单--------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------1-打印二维码--------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------2-彩虹猫------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------3-小火切------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------4-打字机------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------5-小许牛------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c暂停程序--------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;请输入序号！&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> i
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;请输入网址！&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> s1
+</span></span><span class="line"><span class="cl">       	<span class="nb">echo</span> <span class="nv">$s1</span> <span class="p">|</span>curl -F-<span class="o">=</span><span class="se">\&lt;</span>- qrenco.de
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">2</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	nyancat
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">3</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	sl
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">4</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> s2
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;选择样式：&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式1-----&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式2-----&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> j
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="nb">test</span> <span class="nv">$j</span> -eq <span class="m">1</span>
+</span></span><span class="line"><span class="cl">	<span class="k">then</span>
+</span></span><span class="line"><span class="cl">		figlet <span class="nv">$s2</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span>
+</span></span><span class="line"><span class="cl">		toilet -f mono12 -F gay <span class="nv">$s2</span>
+</span></span><span class="line"><span class="cl">	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">5</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> s3
+</span></span><span class="line"><span class="cl">	cowsay <span class="nv">$s3</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;任意建继续！&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> x
+</span></span><span class="line"><span class="cl">clear
+</span></span><span class="line"><span class="cl">./menu.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>
 

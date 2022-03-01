@@ -52,16 +52,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
-<span class="nx">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri</span><span class="o">/</span> <span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">?</span><span class="nv">$query_string</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nx">location</span> <span class="o">~*</span> <span class="nx">\</span><span class="o">.</span><span class="p">(</span><span class="nx">db3</span><span class="o">|</span><span class="nx">json</span><span class="p">)</span><span class="err">$</span> <span class="p">{</span>
-  <span class="nx">deny</span> <span class="nx">all</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nx">location</span> <span class="o">~*</span> <span class="o">^/</span><span class="p">(</span><span class="nx">temp</span><span class="o">|</span><span class="nx">upload</span><span class="o">|</span><span class="nx">imgs</span><span class="o">|</span><span class="nx">data</span><span class="o">|</span><span class="nx">application</span><span class="o">|</span><span class="k">static</span><span class="o">|</span><span class="nx">system</span><span class="p">)</span><span class="o">/.*.</span><span class="p">(</span><span class="nx">php</span><span class="o">|</span><span class="nx">php5</span><span class="p">)</span><span class="err">$</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="mi">403</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nx">location</span> <span class="o">/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri</span><span class="o">/</span> <span class="o">/</span><span class="nx">index</span><span class="o">.</span><span class="nx">php</span><span class="o">?</span><span class="nv">$query_string</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">location</span> <span class="o">~*</span> <span class="nx">\</span><span class="o">.</span><span class="p">(</span><span class="nx">db3</span><span class="o">|</span><span class="nx">json</span><span class="p">)</span><span class="err">$</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">deny</span> <span class="nx">all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">location</span> <span class="o">~*</span> <span class="o">^/</span><span class="p">(</span><span class="nx">temp</span><span class="o">|</span><span class="nx">upload</span><span class="o">|</span><span class="nx">imgs</span><span class="o">|</span><span class="nx">data</span><span class="o">|</span><span class="nx">application</span><span class="o">|</span><span class="k">static</span><span class="o">|</span><span class="nx">system</span><span class="p">)</span><span class="o">/.*.</span><span class="p">(</span><span class="nx">php</span><span class="o">|</span><span class="nx">php5</span><span class="p">)</span><span class="err">$</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">403</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <h1 id="安装-fileinfo--imagemagick">安装 fileinfo &amp; imagemagick</h1>

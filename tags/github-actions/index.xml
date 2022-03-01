@@ -60,44 +60,44 @@
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Auto Deploy hugo</span><span class="w">
-</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">push]</span><span class="w">
-</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">Explore-GitHub-Actions</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
-</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out repository code</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive </span><span class="w"> </span><span class="c"># Fetch Hugo themes (true OR recursive)</span><span class="w">
-</span><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">         </span><span class="c"># Fetch all history for .GitInfo and .Lastmod</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="l">latest</span><span class="w">
-</span><span class="w">          </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Hugo static files</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Github Pages</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">deploy_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GP_DEPLOY_KEY }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">external_repository</span><span class="p">:</span><span class="w"> </span><span class="l">Lruihao/lruihao.github.io</span><span class="w">
-</span><span class="w">          </span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
-</span><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
-</span><span class="w">          </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event.head_commit.message }}</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install coscmd</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo pip install coscmd</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure coscmd</span><span class="w">
-</span><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_SECRET_ID</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_ID }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_SECRET_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_KEY }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">blog-1256932288 </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_BUCKET_REGION</span><span class="p">:</span><span class="w"> </span><span class="l">ap-chengdu    </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to COS Bucket</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd upload -r -s --delete -f public/ /</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Auto Deploy hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">push]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">Explore-GitHub-Actions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out repository code</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive </span><span class="w"> </span><span class="c"># Fetch Hugo themes (true OR recursive)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">         </span><span class="c"># Fetch all history for .GitInfo and .Lastmod</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="l">latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Hugo static files</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Github Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">deploy_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GP_DEPLOY_KEY }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">external_repository</span><span class="p">:</span><span class="w"> </span><span class="l">Lruihao/lruihao.github.io</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event.head_commit.message }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install coscmd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo pip install coscmd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure coscmd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_SECRET_ID</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_ID }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_SECRET_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_KEY }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">blog-1256932288 </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_BUCKET_REGION</span><span class="p">:</span><span class="w"> </span><span class="l">ap-chengdu    </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to COS Bucket</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd upload -r -s --delete -f public/ /</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="配置-github-pages-密鑰">配置 Github Pages 密鑰</h3>
 <ol>
@@ -110,11 +110,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;</span><span class="k">$(</span>git config user.email<span class="k">)</span><span class="s2">&#34;</span> -f gh-pages -N <span class="s2">&#34;&#34;</span>
-<span class="c1"># You will get 2 files:</span>
-<span class="c1"># gh-pages.pub (public key)</span>
-<span class="c1"># gh-pages     (private key)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;</span><span class="k">$(</span>git config user.email<span class="k">)</span><span class="s2">&#34;</span> -f gh-pages -N <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># You will get 2 files:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># gh-pages.pub (public key)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># gh-pages     (private key)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 private key, name 为 <code>GP_DEPLOY_KEY</code></li>

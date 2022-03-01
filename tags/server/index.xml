@@ -20,10 +20,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
-	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
-<span class="cp">?&gt;</span><span class="err">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <h1 id="wampserver-多站点配置">WAMPServer 多站点配置</h1>
@@ -54,29 +54,29 @@
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Virtual Hosts
-#
-&lt;VirtualHost *:80&gt;
-  ServerName localhost
-  ServerAlias localhost
-  DocumentRoot &#34;g:/Demo&#34;
-  &lt;Directory &#34;g:/Demo&#34;&gt;
-    Options +Indexes +Includes +FollowSymLinks +MultiViews
-    AllowOverride All
-    Require local
-  &lt;/Directory&gt;
-&lt;/VirtualHost&gt;
-
-&lt;VirtualHost *:80&gt;
-  ServerName test01.com
-  DocumentRoot &#34;g:/Demo/test01&#34;
-&lt;/VirtualHost&gt;
-
-&lt;VirtualHost *:80&gt;
-  ServerName test02.com
-  DocumentRoot &#34;g:/Demo/test02&#34;
-&lt;/VirtualHost&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Virtual Hosts
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName localhost
+</span></span><span class="line"><span class="cl">  ServerAlias localhost
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo&#34;
+</span></span><span class="line"><span class="cl">  &lt;Directory &#34;g:/Demo&#34;&gt;
+</span></span><span class="line"><span class="cl">    Options +Indexes +Includes +FollowSymLinks +MultiViews
+</span></span><span class="line"><span class="cl">    AllowOverride All
+</span></span><span class="line"><span class="cl">    Require local
+</span></span><span class="line"><span class="cl">  &lt;/Directory&gt;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test01.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test01&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test02.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test02&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件，在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
 <div class="highlight"><div class="chroma">
@@ -98,22 +98,22 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">...
-
-# For example:
-#
-# 102.54.94.97 rhino.acme.com # source server
-# 38.25.63.10 x.acme.com # x client host
-# localhost name resolution is handled within DNS itself.
-#	127.0.0.1 localhost
-#	::1 localhost
-127.0.0.1 steamcommunity.com
-192.168.28.1 windows10.microdone.cn
-127.0.0.1 localhost
-::1 localhost
-127.0.0.1 test01.com
-127.0.0.1 test02.com
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># For example:
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl"># 102.54.94.97 rhino.acme.com # source server
+</span></span><span class="line"><span class="cl"># 38.25.63.10 x.acme.com # x client host
+</span></span><span class="line"><span class="cl"># localhost name resolution is handled within DNS itself.
+</span></span><span class="line"><span class="cl">#	127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">#	::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 steamcommunity.com
+</span></span><span class="line"><span class="cl">192.168.28.1 windows10.microdone.cn
+</span></span><span class="line"><span class="cl">127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 test01.com
+</span></span><span class="line"><span class="cl">127.0.0.1 test02.com
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="wampserver-自拟定端口">WAMPServer 自拟定端口</h1>
 <p>WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第一次装的时候发现 80 端口被占用了，因为以前玩了一下 Windows 的 IIS，暂停 IIS 的网站，再使用命令或者直接在控制面板关掉就好了。</p>
@@ -129,11 +129,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#监听端口
-Listen 0.0.0.0:8080
-Listen [::0]:8080
-ServerName localhost:8080
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#监听端口
+</span></span><span class="line"><span class="cl">Listen 0.0.0.0:8080
+</span></span><span class="line"><span class="cl">Listen [::0]:8080
+</span></span><span class="line"><span class="cl">ServerName localhost:8080
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>使用 Notepad++打开 C:\wamp 目录下的 wampmanager.ini 和 wampmanager.tpl<br>
@@ -172,15 +172,15 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-	<span class="n">var</span> <span class="n">targetProtocol</span> <span class="o">=</span> <span class="s">&#34;https:&#34;</span><span class="o">;</span>
-	<span class="n">var</span> <span class="n">host</span> <span class="o">=</span> <span class="s">&#34;lruihao.cn&#34;</span><span class="o">;</span>
-	<span class="k">if</span> <span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">host</span> <span class="o">==</span> <span class="n">host</span> <span class="o">&amp;&amp;</span> <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span> <span class="o">!=</span> <span class="n">targetProtocol</span><span class="o">){</span>
- 		<span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span> <span class="o">=</span> <span class="n">targetProtocol</span> <span class="o">+</span>
-  		<span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">var</span> <span class="n">targetProtocol</span> <span class="o">=</span> <span class="s">&#34;https:&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">var</span> <span class="n">host</span> <span class="o">=</span> <span class="s">&#34;lruihao.cn&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">host</span> <span class="o">==</span> <span class="n">host</span> <span class="o">&amp;&amp;</span> <span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span> <span class="o">!=</span> <span class="n">targetProtocol</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl"> 		<span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span> <span class="o">=</span> <span class="n">targetProtocol</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  		<span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">href</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">window</span><span class="o">.</span><span class="na">location</span><span class="o">.</span><span class="na">protocol</span><span class="o">.</span><span class="na">length</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="腾讯云cdn配置">腾讯云CDN配置</h1>
 <blockquote>
@@ -220,32 +220,32 @@ Ctrl+F 查找 <code>localhost</code><br>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">yum install -y wget <span class="o">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> sh install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">yum install -y wget <span class="o">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> sh install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> sudo bash install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> sudo bash install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <h1 id="搭建-ftp-和云盘服务器">搭建 ftp 和云盘服务器</h1>
@@ -256,9 +256,9 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~
-curl https://getcaddy.com <span class="p">|</span> bash -s personal http.filemanager
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
+</span></span><span class="line"><span class="cl">curl https://getcaddy.com <span class="p">|</span> bash -s personal http.filemanager
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="编写配置文件">编写配置文件</h3>
 <div class="highlight"><div class="chroma">
@@ -266,8 +266,8 @@ curl https://getcaddy.com <span class="p">|</span> bash -s personal http.fileman
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim Caddyfile
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim Caddyfile
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>内容如下：</p>
 <div class="highlight"><div class="chroma">
@@ -279,12 +279,12 @@ curl https://getcaddy.com <span class="p">|</span> bash -s personal http.fileman
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">:80 {
-filemanager / /sdcard
-timeouts none
-gzip
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">:80 {
+</span></span><span class="line"><span class="cl">filemanager / /sdcard
+</span></span><span class="line"><span class="cl">timeouts none
+</span></span><span class="line"><span class="cl">gzip
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里的 8080 端口号可以随意指定，如果在手机 termux 等搭建，由于手机权限比较低，所以一般设置 1024 以上的端口。<code>80</code>端口可以直接通过 ip 访问。如<code>118.24.217.167</code></p>
 <p>如果用域名，先在域名服务商解析 ip, 再配置文件如下</p>
@@ -298,13 +298,13 @@ gzip
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">https://pan.lruihao.cn <span class="o">{</span>
-filemanager / /sdcard
-timeouts none
-tls admin@lruihao.cn
-gzip
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">https://pan.lruihao.cn <span class="o">{</span>
+</span></span><span class="line"><span class="cl">filemanager / /sdcard
+</span></span><span class="line"><span class="cl">timeouts none
+</span></span><span class="line"><span class="cl">tls admin@lruihao.cn
+</span></span><span class="line"><span class="cl">gzip
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>指定邮箱是为了申请 ssl, 实现 https.</p>
 <h3 id="demohttpspanlruihaocn"><a
@@ -327,8 +327,8 @@ gzip
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">caddy
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">caddy
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>账号密码默认<code>admin</code>
 </p>
@@ -339,8 +339,8 @@ gzip
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim run.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim run.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>编辑以下内容</p>
 <div class="highlight"><div class="chroma">
@@ -349,9 +349,9 @@ gzip
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span>caddy
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>caddy
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>加权</p>
 <div class="highlight"><div class="chroma">
@@ -359,8 +359,8 @@ gzip
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">chmod +x run.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">chmod +x run.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>设置任务
 <a
@@ -382,8 +382,8 @@ gzip
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">crontab -e
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">crontab -e
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>加入</p>
 <div class="highlight"><div class="chroma">
@@ -391,16 +391,16 @@ gzip
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">* * * * * /root/run.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">* * * * * /root/run.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">service crond start 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">service crond start 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="heading">？？？</h3>
 <p>最后误打误撞开启了 caddy<br>
@@ -414,11 +414,11 @@ gzip
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh -T root@118.24.217.167
-caddy
-
-Ctrl+c
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -T root@118.24.217.167
+</span></span><span class="line"><span class="cl">caddy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Ctrl+c
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>云服务器 CentOS 系统搭建 web 服务</title><link>https://lruihao.cn/posts/web-server-yun/</link><pubDate>Mon, 29 Oct 2018 09:15:58 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-server-yun/</guid><description><![CDATA[<h3 id="搭建-apache-web-服务">搭建 Apache web 服务</h3>
 <ol>
@@ -429,8 +429,8 @@ Ctrl+c
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum install -y httpd
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# yum install -y httpd
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意安装目录，可通过 cd 命令切换。</p>
 <ol start="2">
@@ -441,8 +441,8 @@ Ctrl+c
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# systemctl start httpd.service 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# systemctl start httpd.service 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果启动失败，可通过 systemctl status httpd.service 查看错误原因。<br>
 启动成功，证明 http 服务已经可以使用，发现还需要把本地文件传到服务器。<br>
@@ -458,8 +458,8 @@ Ctrl+c
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum -y install lrzsz
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# yum -y install lrzsz
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>步骤 2：输入命令<code>rz</code>打开上传窗口（可以选择多个文件。)<br>
 使用<code>sz</code>文件名命令可打开从服务器下载文件的保存窗口。</p>
@@ -470,8 +470,8 @@ Ctrl+c
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# vim /etc/httpd/conf/httpd.conf
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# vim /etc/httpd/conf/httpd.conf
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>
@@ -489,11 +489,11 @@ Ctrl+c
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ServerAdmin 管理员邮箱，用于浏览器请求报错时展示
-DocumentRoot 访问根目录（默认：/var/www/html），如项目存放在其他地方，可修改为项目存放位置
-&lt;Directory &#34;/var/www/html&#34;&gt; 同 DocumentRoot 配置
-ServerName 服务器 IP 或 域名 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ServerAdmin 管理员邮箱，用于浏览器请求报错时展示
+</span></span><span class="line"><span class="cl">DocumentRoot 访问根目录（默认：/var/www/html），如项目存放在其他地方，可修改为项目存放位置
+</span></span><span class="line"><span class="cl">&lt;Directory &#34;/var/www/html&#34;&gt; 同 DocumentRoot 配置
+</span></span><span class="line"><span class="cl">ServerName 服务器 IP 或 域名 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="4">
 <li>

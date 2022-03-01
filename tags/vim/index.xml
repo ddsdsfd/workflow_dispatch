@@ -7,8 +7,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim /&lt;路径&gt;/文件名。后缀名
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /&lt;路径&gt;/文件名。后缀名
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果这个文件，以前是没有的，则为新建，会有提示，否者则没有提示。</p>
 <p>进入编辑器后，按&quot;I”，即切换到“INSERT”状态。即插入状态，就可以通过上下左右移动光标，或空格、退格及回车等进行编辑内容了，和 WINDOWS 是一样的了。</p>
@@ -35,8 +35,8 @@ Q: quit , 退出</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cat /&lt;路径&gt;/文件名。后缀名
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cat /&lt;路径&gt;/文件名。后缀名
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="正常退出">正常退出</h3>
 <p>正常退出有个前提条件是：打开的文本文件在内容上没有被改动过。<br>
@@ -55,8 +55,8 @@ Q: quit , 退出</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果报错，好像是要安装 Python <code>pkg install python</code></p>
 <p>进入后先使用<code>dd</code>把以前的问候语一行一行删掉，再输入<code>i</code>，进入插入操作，修改你自定义的问候语。之后<code>ESC</code>, 再<code>:WQ</code>退出保存，重启 termux 就可以看到修改后的效果了。如图。</p>

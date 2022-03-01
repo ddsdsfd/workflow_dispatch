@@ -49,12 +49,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">POST /users
-Data:
-  {
-    &#34;name&#34;: &#34;帥小慶&#34;
-  }
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">POST /users
+</span></span><span class="line"><span class="cl">Data:
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    &#34;name&#34;: &#34;帥小慶&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Create：建立一個可以完全獨立存在的實體</li>
@@ -70,12 +70,12 @@ Data:
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">POST /users
-Data:
-  {
-    &#34;name&#34;: &#34;帥小慶&#34;
-  }
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">POST /users
+</span></span><span class="line"><span class="cl">Data:
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    &#34;name&#34;: &#34;帥小慶&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Add：增加一個必須依賴於某個實體的實體<br>
@@ -88,8 +88,8 @@ Data:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">POST ​/admin​/users​/{username}​/keys
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">POST ​/admin​/users​/{username}​/keys
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="put">PUT</h3>
 <ul>
@@ -110,12 +110,12 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">PUT user/{account}/roles
-Data
-  {
-    &#34;role_id&#34;: &#34;2&#34;
-  }
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PUT user/{account}/roles
+</span></span><span class="line"><span class="cl">Data
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    &#34;role_id&#34;: &#34;2&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>範例：Follow a user 關注一個使用者 (Gitea)<br>
@@ -126,8 +126,8 @@ Data
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">PUT  ​/user​/following​/{username}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PUT  ​/user​/following​/{username}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="patch">PATCH</h3>
 <ul>
@@ -141,8 +141,8 @@ Data
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">PATCH /users/{account}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PATCH /users/{account}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="delete">DELETE</h3>
 <ul>
@@ -155,8 +155,8 @@ Data
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">DELETE /users/{account}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DELETE /users/{account}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="http-status-code">HTTP Status Code</h2>
 <p>HTTP 状态码（HTTP Status Code）是用以表示网页服务器 HTTP 响应状态的 3 位数字代码。所有状态码的第一个数字代表了响应的五种状态之一。 除非另有说明，状态码是 HTTP / 1.1 标准（RFC 7231）的一部分。</p>

@@ -67,8 +67,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">node -v
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">node -v
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="安装-gitbook">安装 GitBook</h2>
 <div class="highlight"><div class="chroma">
@@ -76,8 +76,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install gitbook-cli -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install gitbook-cli -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>检验是否安装成功</p>
 <div class="highlight"><div class="chroma">
@@ -85,8 +85,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook -V
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook -V
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md"
@@ -109,8 +109,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook init
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook init
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>初始化后可以看到他会创建<code>README.md</code>和<code>SUMMARY.md</code>  这两个文件，README.md 应该不陌生，就是说明文档，而 SUMMARY.md 其实就是书的章节目录，其默认内容如下所示：</p>
 <div class="highlight"><div class="chroma">
@@ -120,10 +120,10 @@ GitBook 支持输出多种文档格式：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Summary
-
-* [Introduction](README.md)
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Summary
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">* [Introduction](README.md)
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="启动服务器">启动服务器</h2>
 <p>和<code>hexo serve</code>类似，我们使用<code>gitbook serve</code>命令，然后在浏览器地址栏中输入侧 http://localhost:4000 便可预览书籍。<br>
@@ -134,8 +134,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook serve --port <span class="m">5000</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook serve --port <span class="m">5000</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <p>我们可以使用<code>gitbook build</code>命令来生成网页而不开启服务器。这个类似于 hexo 的<code>hexo g</code>命令。<br>
@@ -145,8 +145,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook build <span class="o">[</span>书籍路径<span class="o">]</span> <span class="o">[</span>输出路径<span class="o">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook build <span class="o">[</span>书籍路径<span class="o">]</span> <span class="o">[</span>输出路径<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>你还可以生成 PDF,epub,mobi 格式的电子书：</p>
 <div class="highlight"><div class="chroma">
@@ -156,10 +156,10 @@ GitBook 支持输出多种文档格式：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook pdf ./ ./mybook.pdf
-gitbook epub ./ ./mybook.epub
-gitbook mobi ./ ./mybook.mobi
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook pdf ./ ./mybook.pdf
+</span></span><span class="line"><span class="cl">gitbook epub ./ ./mybook.epub
+</span></span><span class="line"><span class="cl">gitbook mobi ./ ./mybook.mobi
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果生成不了，你可能还需要安装一些工具，比如 ebook-convert。或者在 Typora 中安装 Pandoc 进行导出。</p>
 <h1 id="目录结构">目录结构</h1>
@@ -177,17 +177,17 @@ gitbook mobi ./ ./mybook.mobi
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">.
-├── book.json
-├── README.md
-├── SUMMARY.md
-├── chapter-1/
-|   ├── README.md
-|   └── something.md
-└── chapter-2/
-    ├── README.md
-    └── something.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── book.json
+</span></span><span class="line"><span class="cl">├── README.md
+</span></span><span class="line"><span class="cl">├── SUMMARY.md
+</span></span><span class="line"><span class="cl">├── chapter-1/
+</span></span><span class="line"><span class="cl">|   ├── README.md
+</span></span><span class="line"><span class="cl">|   └── something.md
+</span></span><span class="line"><span class="cl">└── chapter-2/
+</span></span><span class="line"><span class="cl">    ├── README.md
+</span></span><span class="line"><span class="cl">    └── something.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="bookjson">book.json</h2>
 <p>该文件主要用来存放配置信息。</p>
@@ -223,16 +223,16 @@ gitbook mobi ./ ./mybook.mobi
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
-cd hexo
-git init  //初始化本地仓库
-git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
-git commit -m &#34;blog hexo&#34;
-git branch hexo  //新建 hexo 分支
-git checkout hexo  //切换到 hexo 分支上
-git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
-git push origin hexo  //push 到 Github 项目的 hexo 分支上
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
+</span></span><span class="line"><span class="cl">cd hexo
+</span></span><span class="line"><span class="cl">git init  //初始化本地仓库
+</span></span><span class="line"><span class="cl">git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
+</span></span><span class="line"><span class="cl">git commit -m &#34;blog hexo&#34;
+</span></span><span class="line"><span class="cl">git branch hexo  //新建 hexo 分支
+</span></span><span class="line"><span class="cl">git checkout hexo  //切换到 hexo 分支上
+</span></span><span class="line"><span class="cl">git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
+</span></span><span class="line"><span class="cl">git push origin hexo  //push 到 Github 项目的 hexo 分支上
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="在其他终端克隆和更新-hexo-博客">在其他终端克隆和更新 hexo 博客</h3>
 <blockquote>
@@ -246,10 +246,10 @@ git push origin hexo  //push 到 Github 项目的 hexo 分支上
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
-cd user.github.io
-npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
+</span></span><span class="line"><span class="cl">cd user.github.io
+</span></span><span class="line"><span class="cl">npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这样我们的备份文件就会原封不动的拷贝到本地。</p>
 <h4 id="写新文章并备份和部署备用操作">写新文章并备份和部署（备用操作）</h4>
@@ -267,14 +267,14 @@ npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执�
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//进入 username.github.io 文件夹，应是 hexo 分支
-git pull origin hexo //本地和远端的融合
-hexo new post &#34;new post name&#34;  //写新文章
-git add source
-git commit -m &#34;xxx&#34;
-git push origin hexo  //备份
-hexo d -g  //部署
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//进入 username.github.io 文件夹，应是 hexo 分支
+</span></span><span class="line"><span class="cl">git pull origin hexo //本地和远端的融合
+</span></span><span class="line"><span class="cl">hexo new post &#34;new post name&#34;  //写新文章
+</span></span><span class="line"><span class="cl">git add source
+</span></span><span class="line"><span class="cl">git commit -m &#34;xxx&#34;
+</span></span><span class="line"><span class="cl">git push origin hexo  //备份
+</span></span><span class="line"><span class="cl">hexo d -g  //部署
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="https://blog.csdn.net/Monkey_LZL/article/details/60870891"
@@ -343,8 +343,8 @@ hexo d -g  //部署
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install vim
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install vim
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="解决中文乱码问题">解决中文乱码问题</h4>
 <p>在 home 目录下，新建。vimrc 文件</p>
@@ -353,8 +353,8 @@ hexo d -g  //部署
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim .vimrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim .vimrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>添加内容如下：</p>
 <div class="highlight"><div class="chroma">
@@ -364,10 +364,10 @@ hexo d -g  //部署
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
-set enc=utf8
-set fencs=utf8,gbk,gb2312,gb18030
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+</span></span><span class="line"><span class="cl">set enc=utf8
+</span></span><span class="line"><span class="cl">set fencs=utf8,gbk,gb2312,gb18030
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后 source 下变量：</p>
 <div class="highlight"><div class="chroma">
@@ -375,8 +375,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">source .vimrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">source .vimrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="修改启动问候语">修改启动问候语</h4>
 <div class="highlight"><div class="chroma">
@@ -384,8 +384,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>按 i 然后编辑，比如</p>
 <div class="highlight"><div class="chroma">
@@ -394,9 +394,9 @@ set fencs=utf8,gbk,gb2312,gb18030
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">		www.lruihao.cn
-		    李瑞豪
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">		www.lruihao.cn
+</span></span><span class="line"><span class="cl">		    李瑞豪
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Esc 然后：wq 退出</p>
 <h4 id="管理员权限">管理员权限</h4>
@@ -406,8 +406,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install tsu
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install tsu
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后终端下面输入：</p>
 <div class="highlight"><div class="chroma">
@@ -415,8 +415,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">tsu
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tsu
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>即可切换 root 用户，这个时候会弹出 root 授权提示。在管理员身份下，输入 exit 可回到普通用户身份。</p>
 <h3 id="美化">美化</h3>
@@ -441,8 +441,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sh -c &#34;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sh -c &#34;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="设置色彩样式">设置色彩样式：</h4>
 <p>运行 chcolor 更换色彩样式，或者：</p>
@@ -451,8 +451,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/colors.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~/.termux/colors.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="设置字体">设置字体</h4>
 <p>运行 chfont 更换字体，或者：</p>
@@ -461,8 +461,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/fonts.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~/.termux/fonts.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="需要软件包">需要软件包：</h4>
 <ul>
@@ -477,8 +477,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="创建-blog2-文件夹软连接备份文件">创建 blog2 文件夹软连接备份文件</h4>
 <div class="highlight"><div class="chroma">
@@ -486,8 +486,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="安装-hexo">安装 hexo</h3>
 <h4 id="安装准备">安装准备</h4>
@@ -500,12 +500,12 @@ set fencs=utf8,gbk,gb2312,gb18030
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nodejs
-pkg install git
-npm install hexo-cli -g
-npm install hexo-deployer-git --save
-pkg install openssh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install nodejs
+</span></span><span class="line"><span class="cl">pkg install git
+</span></span><span class="line"><span class="cl">npm install hexo-cli -g
+</span></span><span class="line"><span class="cl">npm install hexo-deployer-git --save
+</span></span><span class="line"><span class="cl">pkg install openssh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="初始化-hexo">初始化 hexo</h4>
 <div class="highlight"><div class="chroma">
@@ -516,11 +516,11 @@ pkg install openssh
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo init blog
-cd blog
-hexo g
-hexo s
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hexo init blog
+</span></span><span class="line"><span class="cl">cd blog
+</span></span><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl">hexo s
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>浏览器输入<code>127.0.0.1:4000</code>查看效果</p>
 <h4 id="链接-githubcodinggitee-等远程仓库">链接 github,coding,gitee 等远程仓库</h4>
@@ -530,9 +530,9 @@ hexo s
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh-keygen -t rsa -C &#34;your_email@example.com&#34;
-#这将按照你提供的邮箱地址，创建一对密钥（个人喜欢一路回车）
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -t rsa -C &#34;your_email@example.com&#34;
+</span></span><span class="line"><span class="cl">#这将按照你提供的邮箱地址，创建一对密钥（个人喜欢一路回车）
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>找到<code>~/.ssh/id_rsa.pub</code>这个文件复制里面的内容，到对应的平台生成 SSH 公钥</p>
 <h4 id="设置用户信息">设置用户信息</h4>
@@ -542,9 +542,9 @@ hexo s
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git config --global user.name &#34;lruihao&#34;
-git config --global user.email  &#34;1074627678@qq.com&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &#34;lruihao&#34;
+</span></span><span class="line"><span class="cl">git config --global user.email  &#34;1074627678@qq.com&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="测试链接">测试链接</h4>
 <div class="highlight"><div class="chroma">
@@ -554,10 +554,10 @@ git config --global user.email  &#34;1074627678@qq.com&#34;
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh -T git@github.com  #github
-ssh -T git@coding.net   #coding
-ssh -T git@gitee.com   #gitee
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -T git@github.com  #github
+</span></span><span class="line"><span class="cl">ssh -T git@coding.net   #coding
+</span></span><span class="line"><span class="cl">ssh -T git@gitee.com   #gitee
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>注意#注释部分不要的</strong></p>
 <h4 id="站点配置文件">站点配置文件</h4>
@@ -573,13 +573,13 @@ ssh -T git@gitee.com   #gitee
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">deploy:
-- type: git
-  repository:
-    github: git@github.com:Lruihao/Lruihao.github.io.git,master
-    coding: git@git.coding.net:liruihao/liruihao.git,master
-  #message: &#34;日常更新&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">deploy:
+</span></span><span class="line"><span class="cl">- type: git
+</span></span><span class="line"><span class="cl">  repository:
+</span></span><span class="line"><span class="cl">    github: git@github.com:Lruihao/Lruihao.github.io.git,master
+</span></span><span class="line"><span class="cl">    coding: git@git.coding.net:liruihao/liruihao.git,master
+</span></span><span class="line"><span class="cl">  #message: &#34;日常更新&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="部署">部署</h4>
 <div class="highlight"><div class="chroma">
@@ -588,9 +588,9 @@ ssh -T git@gitee.com   #gitee
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo clean
-hexo g -d
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl">hexo g -d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>没出错就可以正常通过相应域名访问了。
 <a
@@ -641,8 +641,8 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh root@118.24.217.167
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh root@118.24.217.167
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>会提示输入密码，linux 下输入密码是看不到的，大家都知道，小心点别输入错误。<br>
 之后就可以手机操作服务器了。</p>
@@ -652,8 +652,8 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>把里面的 length 改成 4，我默认的是 1。</p>
 <h3 id="nyancat-彩虹猫">nyancat 彩虹猫</h3>
@@ -664,9 +664,9 @@ hexo g -d
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nyancat
-nyancat
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install nyancat
+</span></span><span class="line"><span class="cl">nyancat
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>还有更多姿势这里就不写了，只写一下日常用到的，就这样 OK 睡觉！</p>
@@ -699,30 +699,30 @@ nyancat
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-chcolor
-chfont
-~/.termux/colors.sh
-~/.termux/fonts.sh
-
-echo &#34;https://www.lruihao.cn&#34; |curl -F-=\&lt;- qrenco.de
-
-pkg install nyancat
-nyancat
-pkg install sl
-sl
-pkg install figlet
-figlet hello
-pkg install toilet
-toilet hello
-toilet -f mono12 -F gay &#34;hello&#34;
-pkg cowsay
-cowsay &#34;hello&#34;
-pkg install cmatrix
-cmatrix
-pkg install w3m
-w3m www.lruihao.cn
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span><span class="line"><span class="cl">chcolor
+</span></span><span class="line"><span class="cl">chfont
+</span></span><span class="line"><span class="cl">~/.termux/colors.sh
+</span></span><span class="line"><span class="cl">~/.termux/fonts.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">echo &#34;https://www.lruihao.cn&#34; |curl -F-=\&lt;- qrenco.de
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pkg install nyancat
+</span></span><span class="line"><span class="cl">nyancat
+</span></span><span class="line"><span class="cl">pkg install sl
+</span></span><span class="line"><span class="cl">sl
+</span></span><span class="line"><span class="cl">pkg install figlet
+</span></span><span class="line"><span class="cl">figlet hello
+</span></span><span class="line"><span class="cl">pkg install toilet
+</span></span><span class="line"><span class="cl">toilet hello
+</span></span><span class="line"><span class="cl">toilet -f mono12 -F gay &#34;hello&#34;
+</span></span><span class="line"><span class="cl">pkg cowsay
+</span></span><span class="line"><span class="cl">cowsay &#34;hello&#34;
+</span></span><span class="line"><span class="cl">pkg install cmatrix
+</span></span><span class="line"><span class="cl">cmatrix
+</span></span><span class="line"><span class="cl">pkg install w3m
+</span></span><span class="line"><span class="cl">w3m www.lruihao.cn
+</span></span></code></pre></td></tr></table>
 </div>
 </div><pre><code>cmatrix 常用命令如下：
 cmatrix-a : 异步滚动（默认）
@@ -751,8 +751,8 @@ cmatrix -b -C blue
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">npm install font-spider -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install font-spider -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="运行">运行</h3>
 <p>安装成功之后就开始压缩了
@@ -768,13 +768,13 @@ cmatrix -b -C blue
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">style</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span><span class="o">&gt;</span>
-  <span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
-    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">MMT</span><span class="o">;</span>
-    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;font/MMT_579767_SOAJ0_0.ttf&#34;</span><span class="o">);</span>
-  <span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">style</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">MMT</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;font/MMT_579767_SOAJ0_0.ttf&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>生成新的字体库，命令行输入</p>
 <div class="highlight"><div class="chroma">
@@ -782,8 +782,8 @@ cmatrix -b -C blue
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">font-spider C:\Users\李瑞豪、Desktop\love\index.html
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">font-spider C:\Users\李瑞豪、Desktop\love\index.html
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <p><a
@@ -832,10 +832,10 @@ cmatrix -b -C blue
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install hexo-cli -g
-hexo init blog
-<span class="nb">cd</span> blog
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-cli -g
+</span></span><span class="line"><span class="cl">hexo init blog
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> blog
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>注意 ssh 配置先安装：</strong><code>pkg install openssh</code><br>
 然后按照基本操作配置 Hexo，GitHub 或者 gitee,coding 等连上，部署测试一次。<br>
@@ -1021,8 +1021,8 @@ hexo init blog
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install -g hexo-cli
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g hexo-cli
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="建站">建站</h1>
 <p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
@@ -1033,10 +1033,10 @@ hexo init blog
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hexo init &lt;folder&gt;
-<span class="nb">cd</span> &lt;folder&gt;
-npm install
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo init &lt;folder&gt;
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> &lt;folder&gt;
+</span></span><span class="line"><span class="cl">npm install
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><folder>为一个文件夹的名字
 新建完成后，指定文件夹的目录如下：</p>
@@ -1052,15 +1052,15 @@ npm install
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">.
-├── _config.yml
-├── package.json
-├── scaffolds
-├── source
-|   ├── _drafts
-|   └── _posts
-└── themes
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── _config.yml
+</span></span><span class="line"><span class="cl">├── package.json
+</span></span><span class="line"><span class="cl">├── scaffolds
+</span></span><span class="line"><span class="cl">├── source
+</span></span><span class="line"><span class="cl">|   ├── _drafts
+</span></span><span class="line"><span class="cl">|   └── _posts
+</span></span><span class="line"><span class="cl">└── themes
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="安装-hexo-插件">安装 hexo 插件</h1>
 <p>全装上吧，没事。</p>
@@ -1081,20 +1081,20 @@ npm install
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install hexo-generator-index --save
-npm install hexo-generator-archive --save
-npm install hexo-generator-category --save
-npm install hexo-generator-tag --save
-npm install hexo-server --save
-npm install hexo-deployer-git --save
-npm install hexo-deployer-heroku --save
-npm install hexo-deployer-rsync --save
-npm install hexo-deployer-openshift --save
-npm install hexo-renderer-marked@0.2 --save
-npm install hexo-renderer-stylus@0.2 --save
-npm install hexo-generator-feed@1 --save
-npm install hexo-generator-sitemap@1 --save
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-generator-index --save
+</span></span><span class="line"><span class="cl">npm install hexo-generator-archive --save
+</span></span><span class="line"><span class="cl">npm install hexo-generator-category --save
+</span></span><span class="line"><span class="cl">npm install hexo-generator-tag --save
+</span></span><span class="line"><span class="cl">npm install hexo-server --save
+</span></span><span class="line"><span class="cl">npm install hexo-deployer-git --save
+</span></span><span class="line"><span class="cl">npm install hexo-deployer-heroku --save
+</span></span><span class="line"><span class="cl">npm install hexo-deployer-rsync --save
+</span></span><span class="line"><span class="cl">npm install hexo-deployer-openshift --save
+</span></span><span class="line"><span class="cl">npm install hexo-renderer-marked@0.2 --save
+</span></span><span class="line"><span class="cl">npm install hexo-renderer-stylus@0.2 --save
+</span></span><span class="line"><span class="cl">npm install hexo-generator-feed@1 --save
+</span></span><span class="line"><span class="cl">npm install hexo-generator-sitemap@1 --save
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="本地查看效果">本地查看效果</h1>
 <p>执行下面语句，执行完再登录 localhost:4000 查看效果（执行完不要按 Ctrl+C，不然就停止了）</p>
@@ -1104,9 +1104,9 @@ npm install hexo-generator-sitemap@1 --save
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hexo g
-hexo s
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl">hexo s
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>其他步骤在这里不赘述，参见 <a
   href="https://my.oschina.net/ryaneLee/blog/638440"
@@ -1142,8 +1142,8 @@ hexo s
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hexo g -d
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo g -d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>部署后我们可以浏览器搜 username.github.io 查看自己的博客效果，比如我的 <a
   href="https://lruihao.github.io/"
@@ -1289,35 +1289,35 @@ hexo s
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="err">&#39;</span><span class="n">use</span> <span class="n">strict</span><span class="err">&#39;</span><span class="o">;</span>
-<span class="n">var</span> <span class="n">pagination</span> <span class="o">=</span> <span class="n">require</span><span class="o">(</span><span class="err">&#39;</span><span class="n">hexo</span><span class="o">-</span><span class="n">pagination</span><span class="err">&#39;</span><span class="o">);</span>
-<span class="n">module</span><span class="o">.</span><span class="na">exports</span> <span class="o">=</span> <span class="n">function</span><span class="o">(</span><span class="n">locals</span><span class="o">){</span>
-  <span class="n">var</span> <span class="n">config</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">config</span><span class="o">;</span>
-  <span class="n">var</span> <span class="n">posts</span> <span class="o">=</span> <span class="n">locals</span><span class="o">.</span><span class="na">posts</span><span class="o">;</span>
-    <span class="n">posts</span><span class="o">.</span><span class="na">data</span> <span class="o">=</span> <span class="n">posts</span><span class="o">.</span><span class="na">data</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">function</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 两篇文章 top 都有定义
-</span><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">==</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">date</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">date</span><span class="o">;</span> <span class="c1">// 若 top 值一样则按照文章日期降序排
-</span><span class="c1"></span>            <span class="k">else</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">top</span><span class="o">;</span> <span class="c1">// 否则按照 top 值降序排
-</span><span class="c1"></span>        <span class="o">}</span>
-        <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 以下是只有一篇文章 top 有定义，那么将有 top 的排在前面（这里用异或操作居然不行 233）
-</span><span class="c1"></span>            <span class="k">return</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
-        <span class="o">}</span>
-        <span class="k">else</span> <span class="k">if</span><span class="o">(!</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span>
-            <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
-        <span class="o">}</span>
-        <span class="k">else</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">date</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">date</span><span class="o">;</span> <span class="c1">// 都没定义按照文章日期降序排
-</span><span class="c1"></span>    <span class="o">});</span>
-  <span class="n">var</span> <span class="n">paginationDir</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="na">pagination_dir</span> <span class="o">||</span> <span class="err">&#39;</span><span class="n">page</span><span class="err">&#39;</span><span class="o">;</span>
-  <span class="k">return</span> <span class="n">pagination</span><span class="o">(</span><span class="err">&#39;&#39;</span><span class="o">,</span> <span class="n">posts</span><span class="o">,</span> <span class="o">{</span>
-    <span class="n">perPage</span><span class="o">:</span> <span class="n">config</span><span class="o">.</span><span class="na">index_generator</span><span class="o">.</span><span class="na">per_page</span><span class="o">,</span>
-    <span class="n">layout</span><span class="o">:</span> <span class="o">[</span><span class="err">&#39;</span><span class="n">index</span><span class="err">&#39;</span><span class="o">,</span> <span class="err">&#39;</span><span class="n">archive</span><span class="err">&#39;</span><span class="o">],</span>
-    <span class="n">format</span><span class="o">:</span> <span class="n">paginationDir</span> <span class="o">+</span> <span class="err">&#39;</span><span class="o">/%</span><span class="n">d</span><span class="o">/</span><span class="err">&#39;</span><span class="o">,</span>
-    <span class="n">data</span><span class="o">:</span> <span class="o">{</span>
-      <span class="n">__index</span><span class="o">:</span> <span class="kc">true</span>
-    <span class="o">}</span>
-  <span class="o">});</span>
-<span class="o">};</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="err">&#39;</span><span class="n">use</span> <span class="n">strict</span><span class="err">&#39;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">var</span> <span class="n">pagination</span> <span class="o">=</span> <span class="n">require</span><span class="o">(</span><span class="err">&#39;</span><span class="n">hexo</span><span class="o">-</span><span class="n">pagination</span><span class="err">&#39;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">module</span><span class="o">.</span><span class="na">exports</span> <span class="o">=</span> <span class="n">function</span><span class="o">(</span><span class="n">locals</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">  <span class="n">var</span> <span class="n">config</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">config</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">var</span> <span class="n">posts</span> <span class="o">=</span> <span class="n">locals</span><span class="o">.</span><span class="na">posts</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">posts</span><span class="o">.</span><span class="na">data</span> <span class="o">=</span> <span class="n">posts</span><span class="o">.</span><span class="na">data</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">function</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 两篇文章 top 都有定义
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">==</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">date</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">date</span><span class="o">;</span> <span class="c1">// 若 top 值一样则按照文章日期降序排
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">else</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">top</span><span class="o">;</span> <span class="c1">// 否则按照 top 值降序排
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// 以下是只有一篇文章 top 有定义，那么将有 top 的排在前面（这里用异或操作居然不行 233）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">return</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="k">if</span><span class="o">(!</span><span class="n">a</span><span class="o">.</span><span class="na">top</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="o">.</span><span class="na">top</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="k">return</span> <span class="n">b</span><span class="o">.</span><span class="na">date</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">date</span><span class="o">;</span> <span class="c1">// 都没定义按照文章日期降序排
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">});</span>
+</span></span><span class="line"><span class="cl">  <span class="n">var</span> <span class="n">paginationDir</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="na">pagination_dir</span> <span class="o">||</span> <span class="err">&#39;</span><span class="n">page</span><span class="err">&#39;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">pagination</span><span class="o">(</span><span class="err">&#39;&#39;</span><span class="o">,</span> <span class="n">posts</span><span class="o">,</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">perPage</span><span class="o">:</span> <span class="n">config</span><span class="o">.</span><span class="na">index_generator</span><span class="o">.</span><span class="na">per_page</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layout</span><span class="o">:</span> <span class="o">[</span><span class="err">&#39;</span><span class="n">index</span><span class="err">&#39;</span><span class="o">,</span> <span class="err">&#39;</span><span class="n">archive</span><span class="err">&#39;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="n">format</span><span class="o">:</span> <span class="n">paginationDir</span> <span class="o">+</span> <span class="err">&#39;</span><span class="o">/%</span><span class="n">d</span><span class="o">/</span><span class="err">&#39;</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span><span class="o">:</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">__index</span><span class="o">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="o">});</span>
+</span></span><span class="line"><span class="cl"><span class="o">};</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="about-页面">about 页面</h2>
 <p>about 页面可以用 HTML 写，你想怎么写都行，我用的最简单的方法，直接<code>hexo n page &quot;about&quot;</code>后，会生成一个 md 文件，也就是后面说的文章，直接写文章就行了。</p>
@@ -1330,8 +1330,8 @@ hexo s
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install hexo-generator-searchdb --save
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-generator-searchdb --save
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>配置站点配置文件
 新增以下内容到任意位置：</p>
@@ -1344,12 +1344,12 @@ hexo s
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">search:
+</span></span><span class="line"><span class="cl">  path: search.xml
+</span></span><span class="line"><span class="cl">  field: post
+</span></span><span class="line"><span class="cl">  format: html
+</span></span><span class="line"><span class="cl">  limit: 10000
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>配置主题配置文件</p>
 <div class="highlight"><div class="chroma">
@@ -1359,10 +1359,10 @@ hexo s
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Local search
-local_search:
-  enable: true
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Local search
+</span></span><span class="line"><span class="cl">local_search:
+</span></span><span class="line"><span class="cl">  enable: true
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="https://blog.naaln.com/2016/07/hexo-with-algolia/"
@@ -1407,11 +1407,11 @@ local_search:
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">align</span><span class="o">=</span><span class="s">&#34;left&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_page_pv&#34;</span><span class="p">&gt;</span>
-      本文总阅读量<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_page_pv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>次
-    <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">align</span><span class="o">=</span><span class="s">&#34;left&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_page_pv&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      本文总阅读量<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_page_pv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>次
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="站点访问量访客数">站点访问量，访客数</h3>
 <p>打开以下路径在你喜欢的地方添加代码，<code>\blog\hexo\themes\主题名字、layout\_partial</code>，找到 <code>footer.ejs</code>文件</p>
@@ -1427,15 +1427,15 @@ local_search:
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;</span> <span class="na">async</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_page_pv&#34;</span><span class="p">&gt;</span>
-    本站总访问量<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_pv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>次  |  
-<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_site_uv&#34;</span><span class="p">&gt;</span>
-	本站访客数<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_uv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>人次
-<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;</span> <span class="na">async</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_page_pv&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    本站总访问量<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_pv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>次  |  
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_container_site_uv&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	本站访客数<span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;busuanzi_value_site_uv&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>人次
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>2018.10.08 更新
 不蒜子官网说七牛强制过期域名<del>dn-lbstatics.qbox.me</del>, 所以 js 文件位置发生改变，改为<code>busuanzi.ibruce.info</code></strong></p>

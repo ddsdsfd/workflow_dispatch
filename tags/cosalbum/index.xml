@@ -66,9 +66,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;cos-album.min.css?v=1.1.2&#34;</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;cos-album.min.js?v=1.1.2&#34;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;cos-album.min.css?v=1.1.2&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;cos-album.min.js?v=1.1.2&#34;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="step2">Step2</h2>
 <div class="highlight"><div class="chroma">
@@ -83,15 +83,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
-  <span class="k">new</span> <span class="nx">Cosalbum</span><span class="p">({</span>
-    <span class="s1">&#39;xmlLink&#39;</span><span class="o">:</span> <span class="s1">&#39;https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;prependTo&#39;</span><span class="o">:</span> <span class="s1">&#39;.cos-album&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;viewNum&#39;</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
-    <span class="s1">&#39;imgUrl&#39;</span><span class="o">:</span> <span class="s1">&#39;//img.lruihao.cn&#39;</span>
-  <span class="p">});</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">new</span> <span class="nx">Cosalbum</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;xmlLink&#39;</span><span class="o">:</span> <span class="s1">&#39;https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;prependTo&#39;</span><span class="o">:</span> <span class="s1">&#39;.cos-album&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;viewNum&#39;</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;imgUrl&#39;</span><span class="o">:</span> <span class="s1">&#39;//img.lruihao.cn&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="params">Params</h2>
 <table>
@@ -170,28 +170,28 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>cos-album<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="c">&lt;!-- &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt; --&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;cos-album.css&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;cos-album.js&#34;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
-      <span class="k">new</span> <span class="nx">Cosalbum</span><span class="p">({</span>
-        <span class="s1">&#39;xmlLink&#39;</span><span class="o">:</span> <span class="s1">&#39;https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;prependTo&#39;</span><span class="o">:</span> <span class="s1">&#39;.cos-album&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;viewNum&#39;</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
-        <span class="s1">&#39;copyUrl&#39;</span><span class="o">:</span> <span class="s1">&#39;//img.lruihao.cn&#39;</span>
-      <span class="p">});</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="c">&lt;!-- 你的其他内容，如评论等 --&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>cos-album<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;cos-album.css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;cos-album.js&#34;</span> <span class="na">defer</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">new</span> <span class="nx">Cosalbum</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;xmlLink&#39;</span><span class="o">:</span> <span class="s1">&#39;https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;prependTo&#39;</span><span class="o">:</span> <span class="s1">&#39;.cos-album&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;viewNum&#39;</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;copyUrl&#39;</span><span class="o">:</span> <span class="s1">&#39;//img.lruihao.cn&#39;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 你的其他内容，如评论等 --&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a href="https://img.lruihao.cn" target="_blank" class="LinkCard">cos-album demo</a>
 

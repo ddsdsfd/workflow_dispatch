@@ -83,9 +83,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">正確範例： calendar_manager/calendar/29
-錯誤範例： calendar_manager/calendar/29?id=29
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">正確範例： calendar_manager/calendar/29
+</span></span><span class="line"><span class="cl">錯誤範例： calendar_manager/calendar/29?id=29
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="命名">命名</h1>
 <ul>
@@ -135,13 +135,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public function test(){
-  //do something
-  if($a === $b){
-    //do something
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public function test(){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  if($a === $b){
+</span></span><span class="line"><span class="cl">    //do something
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="錯誤寫法">錯誤寫法</h2>
 <div class="highlight"><div class="chroma">
@@ -156,15 +156,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public function test()
-{
-  //do something
-  if($a === $b)
-  {
-    //do something
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public function test()
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  if($a === $b)
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    //do something
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>程式碼排版
@@ -216,21 +216,21 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- html tag --&gt;</span>
-<span class="nt">&lt;center&gt;</span>
-<span class="nt">&lt;font&gt;</span>
-<span class="nt">&lt;basefont&gt;</span>
-<span class="nt">&lt;s&gt;</span>
-<span class="nt">&lt;strike&gt;</span>
-<span class="nt">&lt;u&gt;</span>
-<span class="nt">&lt;listing&gt;</span>
-<span class="nt">&lt;plaintext&gt;</span>
-<span class="nt">&lt;xmp&gt;</span>
-<span class="c">&lt;!-- html attribute --&gt;</span>
-align
-bgcolor
-color
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!-- html tag --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;center&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;font&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;basefont&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;s&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;strike&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;u&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;listing&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;plaintext&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;xmp&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- html attribute --&gt;</span>
+</span></span><span class="line"><span class="cl">align
+</span></span><span class="line"><span class="cl">bgcolor
+</span></span><span class="line"><span class="cl">color
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="資安禁止">資安禁止：</h2>
 <blockquote>
@@ -259,10 +259,10 @@ color
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">a = (a, b) =&gt; {
-  c;
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a = (a, b) =&gt; {
+</span></span><span class="line"><span class="cl">  c;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>錯誤 （這是允許的，但造成程式碼閱讀困難，故禁止）</p>
 <div class="highlight"><div class="chroma">
@@ -270,8 +270,8 @@ color
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">a  =&gt; c;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a  =&gt; c;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="註解">註解</h2>
 <p>JavaScript 註解應該遵循 JSDoc 的標準撰寫</p>
@@ -281,8 +281,8 @@ color
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/* global $t, Tiger */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/* global $t, Tiger */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="常數-constant">常數 (Constant)</h3>
 <div class="highlight"><div class="chroma">
@@ -293,11 +293,11 @@ color
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 常數說明
- * @type {常數型態}
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 常數說明
+</span></span><span class="line"><span class="cl"> * @type {常數型態}
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -309,12 +309,12 @@ color
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
- * @type {String}
- */
-var userId = &#39;Hello&#39;;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 使用者 ID
+</span></span><span class="line"><span class="cl"> * @type {String}
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">var userId = &#39;Hello&#39;;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="函數方法-function-method">函數、方法 (Function, Method)</h3>
 <div class="highlight"><div class="chroma">
@@ -328,14 +328,14 @@ var userId = &#39;Hello&#39;;
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 函數用途說明
- * @param {引數型態} 引數名稱 引數說明
- * @param {引數型態} [選擇性引數名稱] 引數說明
- * @param {引數型態} [選擇性引數名稱=引數預設值] 引數說明
- * @returns {回傳值型態} 回傳值說明
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 函數用途說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} 引數名稱 引數說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} [選擇性引數名稱] 引數說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} [選擇性引數名稱=引數預設值] 引數說明
+</span></span><span class="line"><span class="cl"> * @returns {回傳值型態} 回傳值說明
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -353,18 +353,18 @@ var userId = &#39;Hello&#39;;
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 取得使用者
- * @param {Int} userId 使用者 ID
- * @param {Object} [options] 其他選項
- * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
- * @returns {Object} 使用者資料
- */
-var getUser = function(userId, options){
-  //do something
-  return user;
-};
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 取得使用者
+</span></span><span class="line"><span class="cl"> * @param {Int} userId 使用者 ID
+</span></span><span class="line"><span class="cl"> * @param {Object} [options] 其他選項
+</span></span><span class="line"><span class="cl"> * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
+</span></span><span class="line"><span class="cl"> * @returns {Object} 使用者資料
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">var getUser = function(userId, options){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  return user;
+</span></span><span class="line"><span class="cl">};
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="php">PHP</h1>
 <h2 id="前端參數取得">前端參數取得</h2>
@@ -383,11 +383,11 @@ var getUser = function(userId, options){
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 成員變數說明
- * @type {型態}
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 成員變數說明
+</span></span><span class="line"><span class="cl"> * @type {型態}
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -399,12 +399,12 @@ var getUser = function(userId, options){
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
- * @type {String}
- */
-$userId = &#39;Hello&#39;;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 使用者 ID
+</span></span><span class="line"><span class="cl"> * @type {String}
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">$userId = &#39;Hello&#39;;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="函數方法-function-method-1">函數、方法 (Function, Method)</h2>
 <div class="highlight"><div class="chroma">
@@ -418,14 +418,14 @@ $userId = &#39;Hello&#39;;
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 函數用途說明
- * @param 引數型態 引數名稱 引數說明
- * @option 引數選項型態 引數選項名稱 引數選項說明
- * @uses 全域變數 全域變數說明
- * @returns 回傳值型態 回傳值說明
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 函數用途說明
+</span></span><span class="line"><span class="cl"> * @param 引數型態 引數名稱 引數說明
+</span></span><span class="line"><span class="cl"> * @option 引數選項型態 引數選項名稱 引數選項說明
+</span></span><span class="line"><span class="cl"> * @uses 全域變數 全域變數說明
+</span></span><span class="line"><span class="cl"> * @returns 回傳值型態 回傳值說明
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -444,19 +444,19 @@ $userId = &#39;Hello&#39;;
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 取得使用者
- * @param int userId 使用者 ID
- * @param object options 其他選項
- * @option string options[&#39;query&#39;] 查詢關鍵字
- * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
- * @returns object 使用者資料
- */
-function getUser($userId, $options){
-  //do something
-  return $user;
-};
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 取得使用者
+</span></span><span class="line"><span class="cl"> * @param int userId 使用者 ID
+</span></span><span class="line"><span class="cl"> * @param object options 其他選項
+</span></span><span class="line"><span class="cl"> * @option string options[&#39;query&#39;] 查詢關鍵字
+</span></span><span class="line"><span class="cl"> * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
+</span></span><span class="line"><span class="cl"> * @returns object 使用者資料
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">function getUser($userId, $options){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  return $user;
+</span></span><span class="line"><span class="cl">};
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="database">Database</h1>
 <ul>
@@ -476,8 +476,8 @@ function getUser($userId, $options){
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="k">user</span><span class="o">`</span><span class="w"> </span><span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">);</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="k">user</span><span class="o">`</span><span class="w"> </span><span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="統一用詞">統一用詞</h1>
 <blockquote>
@@ -545,9 +545,9 @@ function getUser($userId, $options){
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10; 第二行&amp;#10; 第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
-&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13; 第二排&amp;#13; 第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10; 第二行&amp;#10; 第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
+</span></span><span class="line"><span class="cl">&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13; 第二排&amp;#13; 第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="图片类型选择">图片类型选择</h3>
 <p></p>
@@ -650,18 +650,18 @@ function getUser($userId, $options){
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-  <span class="c1">// 设置任意的标签中间的任意文本内容
-</span><span class="c1"></span>  <span class="kd">function</span> <span class="nx">setInnerText</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">//判断浏览器是否支持这个属性
-</span><span class="c1"></span>      <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">==</span> <span class="s2">&#34;undefined&#34;</span><span class="p">)</span> <span class="p">{</span><span class="c1">//不支持
-</span><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span><span class="c1">//支持这个属性
-</span><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
-      <span class="p">}</span>
-  <span class="p">};</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 设置任意的标签中间的任意文本内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">function</span> <span class="nx">setInnerText</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">//判断浏览器是否支持这个属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">==</span> <span class="s2">&#34;undefined&#34;</span><span class="p">)</span> <span class="p">{</span><span class="c1">//不支持
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span><span class="c1">//支持这个属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="图床方案">图床方案</h2>
 <blockquote>
@@ -682,8 +682,8 @@ function getUser($userId, $options){
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&#34;</span><span class="nt">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>其他的图标 js</p>
 <div class="highlight"><div class="chroma">
@@ -694,11 +694,11 @@ function getUser($userId, $options){
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;script src=&#34;//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js&#34;&gt;&lt;/script&gt;
-&lt;svg class=&#34;card-avatar&#34; aria-hidden=&#34;true&#34;&gt;
-  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n 为一个数字--&gt;
-&lt;/svg&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;script src=&#34;//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js&#34;&gt;&lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;svg class=&#34;card-avatar&#34; aria-hidden=&#34;true&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n 为一个数字--&gt;
+</span></span><span class="line"><span class="cl">&lt;/svg&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="响应式自适应">响应式（自适应）</h2>
 <div class="highlight"><div class="chroma">
@@ -707,17 +707,17 @@ function getUser($userId, $options){
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js&#34;</span><span class="nt">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content=</span><span class="s">&#34;width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0&#34;</span><span class="nt">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content=</span><span class="s">&#34;width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <ul>
@@ -744,19 +744,19 @@ function getUser($userId, $options){
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 手机等小屏幕手持设备 */</span>
-<span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
-
-	<span class="c">/*手机端 css 样式表*/</span>
-
-<span class="p">}</span>
-<span class="c">/* 平板之类的宽度 1024 以下设备 */</span>
-<span class="p">@</span><span class="k">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">321px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
-
-	<span class="c">/*电脑端 css 样式表*/</span>
-
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 手机等小屏幕手持设备 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c">/*手机端 css 样式表*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 平板之类的宽度 1024 以下设备 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">321px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c">/*电脑端 css 样式表*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>link 引入不同 css</p>
 <div class="highlight"><div class="chroma">
@@ -767,11 +767,11 @@ function getUser($userId, $options){
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--手机端--&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_phone.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (max-width: 960px)&#34;</span><span class="nt">/&gt;</span>
-<span class="c">&lt;!--电脑端--&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_PC.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (min-width: 960px)&#34;</span><span class="nt">/&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!--手机端--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_phone.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (max-width: 960px)&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!--电脑端--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_PC.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (min-width: 960px)&#34;</span><span class="nt">/&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="jquery">jquery</h2>
 <div class="highlight"><div class="chroma">
@@ -786,15 +786,15 @@ function getUser($userId, $options){
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-//还有其他的源 ...
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">//还有其他的源 ...
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="qq-推广链接">QQ 推广链接</h2>
 <blockquote>
@@ -831,8 +831,8 @@ function getUser($userId, $options){
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a target=&#34;_blank&#34; href=&#34;https://wpa.qq.com/msgrd?v=3&amp;uin=1074627678&amp;site=qq&amp;menu=yes&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://wpa.qq.com/pa?p=2:1074627678:51&#34; alt=&#34;点击这里给我发消息&#34; title=&#34;点击这里给我发消息&#34;/&gt;&lt;/a&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;a target=&#34;_blank&#34; href=&#34;https://wpa.qq.com/msgrd?v=3&amp;uin=1074627678&amp;site=qq&amp;menu=yes&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://wpa.qq.com/pa?p=2:1074627678:51&#34; alt=&#34;点击这里给我发消息&#34; title=&#34;点击这里给我发消息&#34;/&gt;&lt;/a&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin=1074627678&site=qq&menu=yes"></a></p>
 <h2 id="google-fonts">Google fonts</h2>
@@ -844,11 +844,11 @@ function getUser($userId, $options){
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">https://fonts.google.com/
-一般选用国内源镜像替代（待补充 ...）
-<span class="gi">+ https://fonts.loli.net
-</span><span class="gi">+ //fonts.lug.ustc.edu.cn
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">https://fonts.google.com/
+</span></span><span class="line"><span class="cl">一般选用国内源镜像替代（待补充 ...）
+</span></span><span class="line"><span class="cl"><span class="gi">+ https://fonts.loli.net
+</span></span></span><span class="line"><span class="cl"><span class="gi">+ //fonts.lug.ustc.edu.cn
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="fancybox">fancybox</h2>
 <p><a
@@ -884,9 +884,9 @@ function getUser($userId, $options){
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css&#34;</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css&#34;</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="back-end">back-end</h1>
 <blockquote>

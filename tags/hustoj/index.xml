@@ -36,8 +36,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>安装</p>
 <div class="highlight"><div class="chroma">
@@ -45,8 +45,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo bash install-ubuntu16+.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo bash install-ubuntu16+.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>等待中一路回车，当提示 done！ 则表示安装成功：
 </p>
@@ -74,10 +74,10 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/home/judge/etc/judge.conf
-/home/judge/src/web/include/db_info.inc.php
-/etc/php5/fpm/php.ini 或 /etc/php7.0/fpm/php.ini
-/etc/nginx/sites-enabled/default
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/home/judge/etc/judge.conf
+</span></span><span class="line"><span class="cl">/home/judge/src/web/include/db_info.inc.php
+</span></span><span class="line"><span class="cl">/etc/php5/fpm/php.ini 或 /etc/php7.0/fpm/php.ini
+</span></span><span class="line"><span class="cl">/etc/nginx/sites-enabled/default
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item></channel></rss>

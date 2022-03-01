@@ -67,8 +67,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">node -v
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">node -v
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="安装-gitbook">安装 GitBook</h2>
 <div class="highlight"><div class="chroma">
@@ -76,8 +76,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install gitbook-cli -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install gitbook-cli -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>检验是否安装成功</p>
 <div class="highlight"><div class="chroma">
@@ -85,8 +85,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook -V
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook -V
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md"
@@ -109,8 +109,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook init
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook init
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>初始化后可以看到他会创建<code>README.md</code>和<code>SUMMARY.md</code>  这两个文件，README.md 应该不陌生，就是说明文档，而 SUMMARY.md 其实就是书的章节目录，其默认内容如下所示：</p>
 <div class="highlight"><div class="chroma">
@@ -120,10 +120,10 @@ GitBook 支持输出多种文档格式：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Summary
-
-* [Introduction](README.md)
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Summary
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">* [Introduction](README.md)
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="启动服务器">启动服务器</h2>
 <p>和<code>hexo serve</code>类似，我们使用<code>gitbook serve</code>命令，然后在浏览器地址栏中输入侧 http://localhost:4000 便可预览书籍。<br>
@@ -134,8 +134,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook serve --port <span class="m">5000</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook serve --port <span class="m">5000</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <p>我们可以使用<code>gitbook build</code>命令来生成网页而不开启服务器。这个类似于 hexo 的<code>hexo g</code>命令。<br>
@@ -145,8 +145,8 @@ GitBook 支持输出多种文档格式：</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook build <span class="o">[</span>书籍路径<span class="o">]</span> <span class="o">[</span>输出路径<span class="o">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook build <span class="o">[</span>书籍路径<span class="o">]</span> <span class="o">[</span>输出路径<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>你还可以生成 PDF,epub,mobi 格式的电子书：</p>
 <div class="highlight"><div class="chroma">
@@ -156,10 +156,10 @@ GitBook 支持输出多种文档格式：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">gitbook pdf ./ ./mybook.pdf
-gitbook epub ./ ./mybook.epub
-gitbook mobi ./ ./mybook.mobi
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gitbook pdf ./ ./mybook.pdf
+</span></span><span class="line"><span class="cl">gitbook epub ./ ./mybook.epub
+</span></span><span class="line"><span class="cl">gitbook mobi ./ ./mybook.mobi
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果生成不了，你可能还需要安装一些工具，比如 ebook-convert。或者在 Typora 中安装 Pandoc 进行导出。</p>
 <h1 id="目录结构">目录结构</h1>
@@ -177,17 +177,17 @@ gitbook mobi ./ ./mybook.mobi
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">.
-├── book.json
-├── README.md
-├── SUMMARY.md
-├── chapter-1/
-|   ├── README.md
-|   └── something.md
-└── chapter-2/
-    ├── README.md
-    └── something.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── book.json
+</span></span><span class="line"><span class="cl">├── README.md
+</span></span><span class="line"><span class="cl">├── SUMMARY.md
+</span></span><span class="line"><span class="cl">├── chapter-1/
+</span></span><span class="line"><span class="cl">|   ├── README.md
+</span></span><span class="line"><span class="cl">|   └── something.md
+</span></span><span class="line"><span class="cl">└── chapter-2/
+</span></span><span class="line"><span class="cl">    ├── README.md
+</span></span><span class="line"><span class="cl">    └── something.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="bookjson">book.json</h2>
 <p>该文件主要用来存放配置信息。</p>
@@ -216,8 +216,8 @@ gitbook mobi ./ ./mybook.mobi
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">npm install font-spider -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install font-spider -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="运行">运行</h3>
 <p>安装成功之后就开始压缩了
@@ -233,13 +233,13 @@ gitbook mobi ./ ./mybook.mobi
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">style</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span><span class="o">&gt;</span>
-  <span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
-    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">MMT</span><span class="o">;</span>
-    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;font/MMT_579767_SOAJ0_0.ttf&#34;</span><span class="o">);</span>
-  <span class="p">}</span>
-<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">style</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">@</span><span class="k">font-face</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">font-family</span><span class="o">:</span> <span class="nt">MMT</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&#34;font/MMT_579767_SOAJ0_0.ttf&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>生成新的字体库，命令行输入</p>
 <div class="highlight"><div class="chroma">
@@ -247,8 +247,8 @@ gitbook mobi ./ ./mybook.mobi
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">font-spider C:\Users\李瑞豪、Desktop\love\index.html
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">font-spider C:\Users\李瑞豪、Desktop\love\index.html
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <p><a

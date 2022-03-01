@@ -48,12 +48,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{
-  &#34;caption&#34;: &#34;ImagePaste: Paste Image From Clipboard&#34;,
-  &#34;command&#34;: &#34;image_paste&#34;,
-  &#34;image_dir_name&#34;: &#34;images/&#34; # 图片保存目录
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;caption&#34;: &#34;ImagePaste: Paste Image From Clipboard&#34;,
+</span></span><span class="line"><span class="cl">  &#34;command&#34;: &#34;image_paste&#34;,
+</span></span><span class="line"><span class="cl">  &#34;image_dir_name&#34;: &#34;images/&#34; # 图片保存目录
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>然后就可以愉快的使用截图，然后在 sublime 里使用 <code>ctrl+shift+v</code> 粘贴 Markdown 格式的图片。默认会自动根据 md 文件名在同级目录下新建文件夹，图片就默认保存在那。如图：<br>
@@ -71,9 +71,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&#34;pasteImage.defaultName&#34;: &#34;YY_X&#34;,
-&#34;pasteImage.path&#34;: &#34;${currentFileDir}/images/&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;pasteImage.defaultName&#34;: &#34;YY_X&#34;,
+</span></span><span class="line"><span class="cl">&#34;pasteImage.path&#34;: &#34;${currentFileDir}/images/&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>Sublime Text3 快捷键大全</title><link>https://lruihao.cn/posts/sublime-text3/</link><pubDate>Thu, 15 Aug 2019 20:59:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sublime-text3/</guid><description><![CDATA[<blockquote>
 <p><a
@@ -108,23 +108,21 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">{
-  &#34;color_scheme&#34;: &#34;Packages/Color Scheme - Default/Monokai.sublime-color-scheme&#34;,
-  &#34;font_size&#34;: 14,
-  &#34;ignored_packages&#34;:
-  [
-    &#34;Vintage&#34;
-  ],
-  &#34;theme&#34;: &#34;Adaptive.sublime-theme&#34;,
-<span class="gi">+  &#34;expand_tabs_on_save&#34;: true,
-</span><span class="gi">+  &#34;tab_size&#34;: 2,
-</span><span class="gi">+  &#34;translate_tabs_to_spaces&#34;: true
-</span><span class="gi"></span>}
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;color_scheme&#34;: &#34;Packages/Color Scheme - Default/Monokai.sublime-color-scheme&#34;,
+</span></span><span class="line"><span class="cl">  &#34;font_size&#34;: 14,
+</span></span><span class="line"><span class="cl">  &#34;ignored_packages&#34;:
+</span></span><span class="line"><span class="cl">  [
+</span></span><span class="line"><span class="cl">    &#34;Vintage&#34;
+</span></span><span class="line"><span class="cl">  ],
+</span></span><span class="line"><span class="cl">  &#34;theme&#34;: &#34;Adaptive.sublime-theme&#34;,
+</span></span><span class="line"><span class="cl"><span class="gi">+  &#34;expand_tabs_on_save&#34;: true,
+</span></span></span><span class="line"><span class="cl"><span class="gi">+  &#34;tab_size&#34;: 2,
+</span></span></span><span class="line"><span class="cl"><span class="gi">+  &#34;translate_tabs_to_spaces&#34;: true
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="选择类">选择类</h1>
 <ul>

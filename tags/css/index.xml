@@ -151,8 +151,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">box-sizing</span><span class="o">:</span> <span class="nt">content-box</span><span class="o">|</span><span class="nt">border-box</span><span class="o">|</span><span class="nt">inherit</span><span class="o">:</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">box-sizing</span><span class="o">:</span> <span class="nt">content-box</span><span class="o">|</span><span class="nt">border-box</span><span class="o">|</span><span class="nt">inherit</span><span class="o">:</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>content-box 使得元素的宽高即为内容区的宽高（默认模式）</li>
@@ -176,12 +176,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">fix</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span> 
-     <span class="k">content</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">;</span> 
-     <span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span> 
-     <span class="k">clear</span><span class="p">:</span><span class="kc">both</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">fix</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">     <span class="k">content</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">     <span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">     <span class="k">clear</span><span class="p">:</span><span class="kc">both</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用伪元素的好处：不增加冗余的 DOM 节点，符合语义化</p>
 <blockquote>
@@ -206,18 +206,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>css3 属性</p>
@@ -235,16 +235,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-    <span class="k">top</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mi">-50</span><span class="kt">%</span><span class="p">,</span> <span class="mi">-50</span><span class="kt">%</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mi">-50</span><span class="kt">%</span><span class="p">,</span> <span class="mi">-50</span><span class="kt">%</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>flex 布局</p>
@@ -258,12 +258,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-    <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-    <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="4-px-和-em-和-rem-的区别">4. px 和 em 和 rem 的区别</h2>
 <blockquote>

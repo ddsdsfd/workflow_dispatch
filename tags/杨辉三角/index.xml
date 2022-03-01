@@ -37,12 +37,12 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">(a+b)^1=a^1+b^1
-(a+b)^2=a^2+2ab+b^2
-(a+b)^3=a^3+3a^2b+3ab^2+b^3
-……
-(a+b)^6=a^6+6a^5b+15a^4b^2+20a^3b^3+15a^2b^4+6ab^5+b^6（注意发现规律）
-……
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(a+b)^1=a^1+b^1
+</span></span><span class="line"><span class="cl">(a+b)^2=a^2+2ab+b^2
+</span></span><span class="line"><span class="cl">(a+b)^3=a^3+3a^2b+3ab^2+b^3
+</span></span><span class="line"><span class="cl">……
+</span></span><span class="line"><span class="cl">(a+b)^6=a^6+6a^5b+15a^4b^2+20a^3b^3+15a^2b^4+6ab^5+b^6（注意发现规律）
+</span></span><span class="line"><span class="cl">……
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>二项式展开式：</p>]]></description></item></channel></rss>

@@ -56,18 +56,18 @@ public String substring(int start,int end):从指定索引开始到指定索引�
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java">	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">bubbleSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
-		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">x</span><span class="o">++)</span> <span class="o">{</span>
-			<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">-</span><span class="n">x</span><span class="o">;</span> <span class="n">y</span><span class="o">++)</span> <span class="o">{</span>
-				<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]&gt;</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">])</span> <span class="o">{</span>
-					<span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
-					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">];</span>
-					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
-				<span class="o">}</span>
-			<span class="o">}</span>
-		<span class="o">}</span>
-	<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl">	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">bubbleSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">x</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">-</span><span class="n">x</span><span class="o">;</span> <span class="n">y</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]&gt;</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">])</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">					<span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">				<span class="o">}</span>
+</span></span><span class="line"><span class="cl">			<span class="o">}</span>
+</span></span><span class="line"><span class="cl">		<span class="o">}</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>选择排序</li>
@@ -91,18 +91,18 @@ public String substring(int start,int end):从指定索引开始到指定索引�
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java">	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">selectSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
-		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">x</span><span class="o">++)</span> <span class="o">{</span>
-			<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">1</span><span class="o">;</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">y</span><span class="o">++)</span> <span class="o">{</span>
-				<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">])</span> <span class="o">{</span>
-					<span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">];</span>
-					<span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
-					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
-				<span class="o">}</span>
-			<span class="o">}</span>
-		<span class="o">}</span>
-	<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl">	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">selectSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">x</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">1</span><span class="o">;</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">y</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">])</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">					<span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">					<span class="n">arr</span><span class="o">[</span><span class="n">x</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">					<span class="n">arr</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">				<span class="o">}</span>
+</span></span><span class="line"><span class="cl">			<span class="o">}</span>
+</span></span><span class="line"><span class="cl">		<span class="o">}</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <div class="highlight"><div class="chroma">
@@ -132,30 +132,30 @@ public String substring(int start,int end):从指定索引开始到指定索引�
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">selectSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">)</span>
-<span class="o">{</span>
-    <span class="kt">int</span> <span class="n">min</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
-    <span class="kt">int</span> <span class="n">temp</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
-    <span class="k">if</span><span class="o">((</span><span class="n">a</span><span class="o">==</span><span class="kc">null</span><span class="o">)||(</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">==</span><span class="n">0</span><span class="o">))</span>
-        <span class="k">return</span><span class="o">;</span>
-    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span><span class="n">i</span><span class="o">++)</span>
-    <span class="o">{</span>
-        <span class="n">min</span><span class="o">=</span><span class="n">i</span><span class="o">;</span><span class="c1">//无序区的最小数据数组下标
-</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span>  <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="n">1</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">j</span><span class="o">++)</span>
-        <span class="o">{</span>
-            <span class="c1">//在无序区中找到最小数据并保存其数组下标
-</span><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">]&lt;</span><span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">])</span>
-            <span class="o">{</span>
-                <span class="n">min</span><span class="o">=</span><span class="n">j</span><span class="o">;</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
-        <span class="c1">//将最小元素放到本次循环的前端
-</span><span class="c1"></span>        <span class="n">temp</span><span class="o">=</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
-        <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">];</span>
-        <span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">]=</span><span class="n">temp</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">selectSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">min</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">temp</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="o">((</span><span class="n">a</span><span class="o">==</span><span class="kc">null</span><span class="o">)||(</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">==</span><span class="n">0</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span><span class="n">i</span><span class="o">++)</span>
+</span></span><span class="line"><span class="cl">    <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">min</span><span class="o">=</span><span class="n">i</span><span class="o">;</span><span class="c1">//无序区的最小数据数组下标
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span>  <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="n">1</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">j</span><span class="o">++)</span>
+</span></span><span class="line"><span class="cl">        <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//在无序区中找到最小数据并保存其数组下标
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">]&lt;</span><span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">])</span>
+</span></span><span class="line"><span class="cl">            <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">min</span><span class="o">=</span><span class="n">j</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//将最小元素放到本次循环的前端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">temp</span><span class="o">=</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="n">a</span><span class="o">[</span><span class="n">min</span><span class="o">]=</span><span class="n">temp</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="查找">查找</h2>
 <ul>
@@ -189,28 +189,28 @@ public String substring(int start,int end):从指定索引开始到指定索引�
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getIndex</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span><span class="kt">int</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
-	<span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span>
-	<span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
-	<span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">max</span><span class="o">+</span><span class="n">min</span><span class="o">)/</span><span class="n">2</span><span class="o">;</span>
-
-	<span class="k">while</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">!=</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
-		<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
-			<span class="n">max</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="n">1</span><span class="o">;</span>
-		<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
-			<span class="n">min</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="n">1</span><span class="o">;</span>
-		<span class="o">}</span>
-
-		<span class="k">if</span><span class="o">(</span><span class="n">max</span> <span class="o">&lt;</span> <span class="n">min</span><span class="o">)</span> <span class="o">{</span>
-			<span class="k">return</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
-		<span class="o">}</span>
-
-		<span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">max</span><span class="o">+</span><span class="n">min</span><span class="o">)/</span><span class="n">2</span><span class="o">;</span>
-	<span class="o">}</span>
-
-	<span class="k">return</span> <span class="n">mid</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getIndex</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">,</span><span class="kt">int</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">max</span><span class="o">+</span><span class="n">min</span><span class="o">)/</span><span class="n">2</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">while</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">!=</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">			<span class="n">max</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">		<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">			<span class="n">min</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">		<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="o">(</span><span class="n">max</span> <span class="o">&lt;</span> <span class="n">min</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">		<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">max</span><span class="o">+</span><span class="n">min</span><span class="o">)/</span><span class="n">2</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">mid</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="arrays工具类掌握">Arrays工具类(掌握)</h1>
 <h2 id="arrays是针对数组进行操作的工具类提供了排序和查找等功能">Arrays是针对数组进行操作的工具类，提供了排序和查找等功能</h2>
@@ -241,16 +241,16 @@ public static int binarySearch(int[] arr,int key)</li>
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">	byte		Byte
-	short		Short
-	int		Integer
-	long		Long
-	float		Float
-	double		Double
-	char		Character
-	boolean		Boolean
-特殊：  void		Void
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">	byte		Byte
+</span></span><span class="line"><span class="cl">	short		Short
+</span></span><span class="line"><span class="cl">	int		Integer
+</span></span><span class="line"><span class="cl">	long		Long
+</span></span><span class="line"><span class="cl">	float		Float
+</span></span><span class="line"><span class="cl">	double		Double
+</span></span><span class="line"><span class="cl">	char		Character
+</span></span><span class="line"><span class="cl">	boolean		Boolean
+</span></span><span class="line"><span class="cl">特殊：  void		Void
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="integer">Integer</h2>
 <ul>
@@ -282,16 +282,16 @@ int-&gt;String: String.valueOf()或Integer.toString()</li>
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">自动装箱：
-	int --&gt; Integer		//Integer.valueOf()
-自动拆箱：
-	Integer --&gt; int		//Integer.intValue()
-
-请解释：
-	Integer i = 100;
-	i+=200;
-	System.out.println(i);
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">自动装箱：
+</span></span><span class="line"><span class="cl">	int --&gt; Integer		//Integer.valueOf()
+</span></span><span class="line"><span class="cl">自动拆箱：
+</span></span><span class="line"><span class="cl">	Integer --&gt; int		//Integer.intValue()
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请解释：
+</span></span><span class="line"><span class="cl">	Integer i = 100;
+</span></span><span class="line"><span class="cl">	i+=200;
+</span></span><span class="line"><span class="cl">	System.out.println(i);
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>byte缓存池面试题<br>

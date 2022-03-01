@@ -60,44 +60,44 @@
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Auto Deploy hugo</span><span class="w">
-</span><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">push]</span><span class="w">
-</span><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">Explore-GitHub-Actions</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
-</span><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out repository code</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive </span><span class="w"> </span><span class="c"># Fetch Hugo themes (true OR recursive)</span><span class="w">
-</span><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">         </span><span class="c"># Fetch all history for .GitInfo and .Lastmod</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="l">latest</span><span class="w">
-</span><span class="w">          </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Hugo static files</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Github Pages</span><span class="w">
-</span><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
-</span><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">deploy_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GP_DEPLOY_KEY }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">external_repository</span><span class="p">:</span><span class="w"> </span><span class="l">Lruihao/lruihao.github.io</span><span class="w">
-</span><span class="w">          </span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
-</span><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
-</span><span class="w">          </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event.head_commit.message }}</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install coscmd</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo pip install coscmd</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure coscmd</span><span class="w">
-</span><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_SECRET_ID</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_ID }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_SECRET_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_KEY }}</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">blog-1256932288 </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
-</span><span class="w">          </span><span class="nt">COS_BUCKET_REGION</span><span class="p">:</span><span class="w"> </span><span class="l">ap-chengdu    </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to COS Bucket</span><span class="w">
-</span><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd upload -r -s --delete -f public/ /</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Auto Deploy hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">push]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">Explore-GitHub-Actions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Check out repository code</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive </span><span class="w"> </span><span class="c"># Fetch Hugo themes (true OR recursive)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">         </span><span class="c"># Fetch all history for .GitInfo and .Lastmod</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="l">latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">extended</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Hugo static files</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to Github Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">deploy_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GP_DEPLOY_KEY }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">external_repository</span><span class="p">:</span><span class="w"> </span><span class="l">Lruihao/lruihao.github.io</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event.head_commit.message }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install coscmd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo pip install coscmd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Configure coscmd</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_SECRET_ID</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_ID }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_SECRET_KEY</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.COS_SECRET_KEY }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_BUCKET_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">blog-1256932288 </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">COS_BUCKET_REGION</span><span class="p">:</span><span class="w"> </span><span class="l">ap-chengdu    </span><span class="w"> </span><span class="c"># Change for yourself</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to COS Bucket</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">coscmd upload -r -s --delete -f public/ /</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="配置-github-pages-密鑰">配置 Github Pages 密鑰</h3>
 <ol>
@@ -110,11 +110,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;</span><span class="k">$(</span>git config user.email<span class="k">)</span><span class="s2">&#34;</span> -f gh-pages -N <span class="s2">&#34;&#34;</span>
-<span class="c1"># You will get 2 files:</span>
-<span class="c1"># gh-pages.pub (public key)</span>
-<span class="c1"># gh-pages     (private key)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;</span><span class="k">$(</span>git config user.email<span class="k">)</span><span class="s2">&#34;</span> -f gh-pages -N <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># You will get 2 files:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># gh-pages.pub (public key)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># gh-pages     (private key)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 private key, name 为 <code>GP_DEPLOY_KEY</code></li>
@@ -162,16 +162,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
-cd hexo
-git init  //初始化本地仓库
-git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
-git commit -m &#34;blog hexo&#34;
-git branch hexo  //新建 hexo 分支
-git checkout hexo  //切换到 hexo 分支上
-git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
-git push origin hexo  //push 到 Github 项目的 hexo 分支上
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//如果 themes/next（主题文件）下面有。git，请删除这个。git 文件夹。
+</span></span><span class="line"><span class="cl">cd hexo
+</span></span><span class="line"><span class="cl">git init  //初始化本地仓库
+</span></span><span class="line"><span class="cl">git add source themes scaffolds _config.yml package.json package-lock.json  //将必要的文件依次添加
+</span></span><span class="line"><span class="cl">git commit -m &#34;blog hexo&#34;
+</span></span><span class="line"><span class="cl">git branch hexo  //新建 hexo 分支
+</span></span><span class="line"><span class="cl">git checkout hexo  //切换到 hexo 分支上
+</span></span><span class="line"><span class="cl">git remote add origin git@github.com:username/username.github.io.git  //将本地与 Github 项目对接
+</span></span><span class="line"><span class="cl">git push origin hexo  //push 到 Github 项目的 hexo 分支上
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="在其他终端克隆和更新-hexo-博客">在其他终端克隆和更新 hexo 博客</h3>
 <blockquote>
@@ -185,10 +185,10 @@ git push origin hexo  //push 到 Github 项目的 hexo 分支上
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
-cd user.github.io
-npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone -b hexo git@github.com:username/username.github.io.git  //将 Github 中 hexo 分支 clone 到本地
+</span></span><span class="line"><span class="cl">cd user.github.io
+</span></span><span class="line"><span class="cl">npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执行，安装必要的所需组件，不用再 init
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这样我们的备份文件就会原封不动的拷贝到本地。</p>
 <h4 id="写新文章并备份和部署备用操作">写新文章并备份和部署（备用操作）</h4>
@@ -206,14 +206,14 @@ npm install  //注意，这里一定要切换到刚刚 clone 的文件夹内执�
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">//进入 username.github.io 文件夹，应是 hexo 分支
-git pull origin hexo //本地和远端的融合
-hexo new post &#34;new post name&#34;  //写新文章
-git add source
-git commit -m &#34;xxx&#34;
-git push origin hexo  //备份
-hexo d -g  //部署
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//进入 username.github.io 文件夹，应是 hexo 分支
+</span></span><span class="line"><span class="cl">git pull origin hexo //本地和远端的融合
+</span></span><span class="line"><span class="cl">hexo new post &#34;new post name&#34;  //写新文章
+</span></span><span class="line"><span class="cl">git add source
+</span></span><span class="line"><span class="cl">git commit -m &#34;xxx&#34;
+</span></span><span class="line"><span class="cl">git push origin hexo  //备份
+</span></span><span class="line"><span class="cl">hexo d -g  //部署
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="https://blog.csdn.net/Monkey_LZL/article/details/60870891"
@@ -265,10 +265,10 @@ hexo d -g  //部署
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git config --global user.name &lt;git 用户名&gt;
-git config --global user.email &lt;邮箱地址&gt;
-git config --list                           # 查看当前用户信息
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &lt;git 用户名&gt;
+</span></span><span class="line"><span class="cl">git config --global user.email &lt;邮箱地址&gt;
+</span></span><span class="line"><span class="cl">git config --list                           # 查看当前用户信息
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="基本操作">基本操作</h2>
 <div class="highlight"><div class="chroma">
@@ -283,15 +283,15 @@ git config --list                           # 查看当前用户信息
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git init                    # 把当前的目录变成可以用 git 进行版本控制的 git 仓库，生成隐藏。git 文件。
-git add XX                  # 把 xx 文件添加到暂存区去。
-git add –A                  # git add --all 的缩写，添加全部到暂存区
-git add –u                  # 把文件的删除和修改添加到暂存区（不包括新增）
-git add .                   # 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区
-git commit -m &#34;message&#34;     # 从暂存区提交到本地仓库
-git commit -a -m &#34;message&#34;  # 相当于省略 git add，但是无法提交新增的文件
-git push origin master      # Git 会把 master 分支推送到远程库对应的远程分支上
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init                    # 把当前的目录变成可以用 git 进行版本控制的 git 仓库，生成隐藏。git 文件。
+</span></span><span class="line"><span class="cl">git add XX                  # 把 xx 文件添加到暂存区去。
+</span></span><span class="line"><span class="cl">git add –A                  # git add --all 的缩写，添加全部到暂存区
+</span></span><span class="line"><span class="cl">git add –u                  # 把文件的删除和修改添加到暂存区（不包括新增）
+</span></span><span class="line"><span class="cl">git add .                   # 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区
+</span></span><span class="line"><span class="cl">git commit -m &#34;message&#34;     # 从暂存区提交到本地仓库
+</span></span><span class="line"><span class="cl">git commit -a -m &#34;message&#34;  # 相当于省略 git add，但是无法提交新增的文件
+</span></span><span class="line"><span class="cl">git push origin master      # Git 会把 master 分支推送到远程库对应的远程分支上
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
     <div class="details-summary admonition-title">
@@ -324,10 +324,10 @@ git push origin master      # Git 会把 master 分支推送到远程库对应�
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git push origin branch-name
-git push –u origin master
-git push origin --delete branch-name     # 删除远程分支
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push origin branch-name
+</span></span><span class="line"><span class="cl">git push –u origin master
+</span></span><span class="line"><span class="cl">git push origin --delete branch-name     # 删除远程分支
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>把当前 master 分支推送到远程库；<code>-u</code>表示记住分支和地址，下次使用<code>git push</code>即可。</p>
@@ -340,10 +340,10 @@ git push origin --delete branch-name     # 删除远程分支
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git remote add origin reposityUrl     # 关联一个远程库
-git remote                            # 查看远程库的信息
-git remote –v                         # 查看远程库的详细信息
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git remote add origin reposityUrl     # 关联一个远程库
+</span></span><span class="line"><span class="cl">git remote                            # 查看远程库的信息
+</span></span><span class="line"><span class="cl">git remote –v                         # 查看远程库的详细信息
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="clone">clone</h2>
 <div class="highlight"><div class="chroma">
@@ -352,9 +352,9 @@ git remote –v                         # 查看远程库的详细信息
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone reposityUrl                   # 从远程库中克隆
-git clone -b branchName reposityUrl     # 克隆指定分支
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone reposityUrl                   # 从远程库中克隆
+</span></span><span class="line"><span class="cl">git clone -b branchName reposityUrl     # 克隆指定分支
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="pull">pull</h2>
 <div class="highlight"><div class="chroma">
@@ -362,8 +362,8 @@ git clone -b branchName reposityUrl     # 克隆指定分支
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git pull
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git pull
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>从远程仓库拉下来到本地库然后合并相当于<code>git fetch</code>+<code>git merge</code>。<br>
@@ -376,9 +376,9 @@ git clone -b branchName reposityUrl     # 克隆指定分支
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git pull 原链接
-git push origin master
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git pull 原链接
+</span></span><span class="line"><span class="cl">git push origin master
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="fetch">fetch</h2>
 <div class="highlight"><div class="chroma">
@@ -386,8 +386,8 @@ git push origin master
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git fetch               # 从远程库抓下最新版本，但是不合并
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git fetch               # 从远程库抓下最新版本，但是不合并
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>fetch 是从远程库到本地库，但是未在工作区，需要<code>git merge</code></p>
@@ -398,8 +398,8 @@ git push origin master
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git merge dev           # 在当前的分支上合并 dev 分支
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git merge dev           # 在当前的分支上合并 dev 分支
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>分支合并也是在本地完成 (<strong>从本地库到工作区</strong>)，新的分支只有在合并后才允许被删除。<br>
@@ -419,15 +419,15 @@ git push origin master
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git branch            # 查看当前所有的分支
-git branch name       # 创建分支
-git branch –r         # 看远程所有分支
-git branch –a         # 查看本地远程分支
-git branch –d name    # 删除分支
-git checkout name     # 切换分支
-git checkout –b name  # 创建并切换到 name 分支上
-git checkout -- file
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git branch            # 查看当前所有的分支
+</span></span><span class="line"><span class="cl">git branch name       # 创建分支
+</span></span><span class="line"><span class="cl">git branch –r         # 看远程所有分支
+</span></span><span class="line"><span class="cl">git branch –a         # 查看本地远程分支
+</span></span><span class="line"><span class="cl">git branch –d name    # 删除分支
+</span></span><span class="line"><span class="cl">git checkout name     # 切换分支
+</span></span><span class="line"><span class="cl">git checkout –b name  # 创建并切换到 name 分支上
+</span></span><span class="line"><span class="cl">git checkout -- file
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><code>git checkout -- file</code>相当于取消对文档的修改，将最新的本地版本库的本文件复制覆盖它。（比较危险！）</p>
@@ -439,9 +439,9 @@ git checkout -- file
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git log               # 显示所有提交过的版本信息：commit id，提交者，日期
-git reflog            # 查看历史记录的 commit id
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git log               # 显示所有提交过的版本信息：commit id，提交者，日期
+</span></span><span class="line"><span class="cl">git reflog            # 查看历史记录的 commit id
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
     <div class="details-summary admonition-title">
@@ -468,13 +468,13 @@ git reflog            # 查看历史记录的 commit id
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git reset --hard HEAD^        
-git reset --hard HEAD~        # 回退到上一个版本
-git reset --hard HEAD~100     # 回退到 100 个版本
-
-git reset head -- file        # 不加 file 则全部退回  
-git reset file                # 将本地仓库的当前版本退回至暂存区，相当于取消暂存
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git reset --hard HEAD^        
+</span></span><span class="line"><span class="cl">git reset --hard HEAD~        # 回退到上一个版本
+</span></span><span class="line"><span class="cl">git reset --hard HEAD~100     # 回退到 100 个版本
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git reset head -- file        # 不加 file 则全部退回  
+</span></span><span class="line"><span class="cl">git reset file                # 将本地仓库的当前版本退回至暂存区，相当于取消暂存
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>版本退回是从本地仓库到暂存区，如果已经提交远程库，此时的版本是低于最新的版本的会拒绝提交，
@@ -501,8 +501,8 @@ git reset file                # 将本地仓库的当前版本退回至暂存区
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git status
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git status
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>查看你的文件在暂存区和工作目录的状态，默认是较为详细的显示，并提示你可以用何种命令完成你接下来可能要做的事情。</p>
@@ -512,8 +512,8 @@ git reset file                # 将本地仓库的当前版本退回至暂存区
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git status -s
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git status -s
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>较为简单的输出当前的状态，如：</p>
 <div class="highlight"><div class="chroma">
@@ -524,11 +524,11 @@ git reset file                # 将本地仓库的当前版本退回至暂存区
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ git status -s
-M  README.md
- D hello.rb
-?? world.java
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ git status -s
+</span></span><span class="line"><span class="cl">M  README.md
+</span></span><span class="line"><span class="cl"> D hello.rb
+</span></span><span class="line"><span class="cl">?? world.java
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>你可以看到，在简短输出中，有两栏。第一栏是暂存区的，第二栏则是工作目录的。这里表示：</p>
@@ -549,13 +549,13 @@ M  README.md
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git diff XX         # 查看 XX 文件修改了哪些内容
-
-git diff            # 工作目录和暂存区
-git diff --cached   # 暂存区和本地仓库
-git diff HEAD 	    # 工作目录和本地仓库
-git diff --stat     # 显示信息摘要
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git diff XX         # 查看 XX 文件修改了哪些内容
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git diff            # 工作目录和暂存区
+</span></span><span class="line"><span class="cl">git diff --cached   # 暂存区和本地仓库
+</span></span><span class="line"><span class="cl">git diff HEAD 	    # 工作目录和本地仓库
+</span></span><span class="line"><span class="cl">git diff --stat     # 显示信息摘要
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="rm-mv">rm, mv</h2>
 <div class="highlight"><div class="chroma">
@@ -567,12 +567,12 @@ git diff --stat     # 显示信息摘要
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git rm                           # 将文件从暂存区和工作目录删除，-f 为强制删除
-git rm filename                  # 删除文件
-git rm –r dirname                # 删除文件夹 –r 表示递归所有子目录
-git rm --cached &lt;path&gt;           # 将文件从暂存区中删除
-git mv &lt;old_path&gt; &lt;new_path&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git rm                           # 将文件从暂存区和工作目录删除，-f 为强制删除
+</span></span><span class="line"><span class="cl">git rm filename                  # 删除文件
+</span></span><span class="line"><span class="cl">git rm –r dirname                # 删除文件夹 –r 表示递归所有子目录
+</span></span><span class="line"><span class="cl">git rm --cached &lt;path&gt;           # 将文件从暂存区中删除
+</span></span><span class="line"><span class="cl">git mv &lt;old_path&gt; &lt;new_path&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p><code>git rm</code>用来删除文件、目录。<code>git mv</code>命令用于移动或重命名一个文件、目录。</p>
@@ -585,10 +585,10 @@ git mv &lt;old_path&gt; &lt;new_path&gt;
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git rm -r photos
-git commit -m &#34;删除相册&#34;
-git push
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git rm -r photos
+</span></span><span class="line"><span class="cl">git commit -m &#34;删除相册&#34;
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="submodule">submodule</h2>
 <div class="highlight"><div class="chroma">
@@ -599,11 +599,11 @@ git push
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git submodule add         # 添加子模组
-
-git submodule init        # 子模组初始化
-git submodule update      # 子模组更新
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git submodule add         # 添加子模组
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git submodule init        # 子模组初始化
+</span></span><span class="line"><span class="cl">git submodule update      # 子模组更新
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition Note open">
     <div class="details-summary admonition-title">
@@ -629,16 +629,16 @@ git submodule update      # 子模组更新
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git tag v1.0
-git tag -a v1.0                   # 给最新一次提交打标签
-git tag -a &lt;tagname&gt; -m &#34;标签&#34;    # 指定标签信息命令
-git show &lt;tagname&gt;                # 显示标签信息
-git tag                           # 查看版本打的 Tag
-git tag -d v1.0                   # 删除本地标签
-git push origin :refs/tags/v1.0   # 删除远程标签
-$ git push [remote] [tag]         # 提交指定 tag
-$ git push [remote] --tags        # 提交所有 tag
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git tag v1.0
+</span></span><span class="line"><span class="cl">git tag -a v1.0                   # 给最新一次提交打标签
+</span></span><span class="line"><span class="cl">git tag -a &lt;tagname&gt; -m &#34;标签&#34;    # 指定标签信息命令
+</span></span><span class="line"><span class="cl">git show &lt;tagname&gt;                # 显示标签信息
+</span></span><span class="line"><span class="cl">git tag                           # 查看版本打的 Tag
+</span></span><span class="line"><span class="cl">git tag -d v1.0                   # 删除本地标签
+</span></span><span class="line"><span class="cl">git push origin :refs/tags/v1.0   # 删除远程标签
+</span></span><span class="line"><span class="cl">$ git push [remote] [tag]         # 提交指定 tag
+</span></span><span class="line"><span class="cl">$ git push [remote] --tags        # 提交所有 tag
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><div class="details admonition Success open">
     <div class="details-summary admonition-title">
@@ -664,17 +664,17 @@ $ git push [remote] --tags        # 提交所有 tag
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ git tag -a v0.9 85fc7e7
-$ git log --oneline --decorate --graph
-*   d5e9fc2 (HEAD -&gt; master) Merge branch &#39;change_site&#39;
-|\  
-| * 7774248 (change_site) changed the runoob.php
-* | c68142b 修改代码
-|/  
-* c1501a2 removed test.txt、add runoob.php
-* 3e92c19 add test.txt
-* 3b58100 (tag: v0.9) 第一次版本提交
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ git tag -a v0.9 85fc7e7
+</span></span><span class="line"><span class="cl">$ git log --oneline --decorate --graph
+</span></span><span class="line"><span class="cl">*   d5e9fc2 (HEAD -&gt; master) Merge branch &#39;change_site&#39;
+</span></span><span class="line"><span class="cl">|\  
+</span></span><span class="line"><span class="cl">| * 7774248 (change_site) changed the runoob.php
+</span></span><span class="line"><span class="cl">* | c68142b 修改代码
+</span></span><span class="line"><span class="cl">|/  
+</span></span><span class="line"><span class="cl">* c1501a2 removed test.txt、add runoob.php
+</span></span><span class="line"><span class="cl">* 3e92c19 add test.txt
+</span></span><span class="line"><span class="cl">* 3b58100 (tag: v0.9) 第一次版本提交
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="stash">stash</h2>
 <div class="highlight"><div class="chroma">
@@ -683,9 +683,9 @@ $ git log --oneline --decorate --graph
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git stash               # 把当前的工作隐藏起来，等以后恢复现场后继续工作
-git stash list          # 查看所有被隐藏的文件列表
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git stash               # 把当前的工作隐藏起来，等以后恢复现场后继续工作
+</span></span><span class="line"><span class="cl">git stash list          # 查看所有被隐藏的文件列表
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="gitk">gitk</h2>
 <div class="highlight"><div class="chroma">
@@ -694,9 +694,9 @@ git stash list          # 查看所有被隐藏的文件列表
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">gitk                    # git 自带 GUI
-gitk --all
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gitk                    # git 自带 GUI
+</span></span><span class="line"><span class="cl">gitk --all
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="githubgitea-等平台-issue-的常用标签">github,gitea 等平台 issue 的常用标签</h1>
 <ul>
@@ -777,9 +777,9 @@ gitk --all
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git config --global user.name <span class="s2">&#34;Your Name&#34;</span>
-git config --global user.email <span class="s2">&#34;email@example.com&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;Your Name&#34;</span>
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;email@example.com&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>第一次使用 git 的时候需要设置提交者信息。<br>
@@ -795,8 +795,8 @@ git config --global user.email <span class="s2">&#34;email@example.com&#34;</spa
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh-keygen -t rsa -C &#34;youremail@example.com&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -t rsa -C &#34;youremail@example.com&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>后面的 <code>your_email@youremail.com</code> 改为你在 Github 上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在 <code>C:\Users\用户名、</code>或者<code>~/</code> 下生成 <code>.ssh</code>文件夹，进去，打开 <code>id_rsa.pub</code>，复制里面的 key。去 github、coding 等平台配置 SSH 公钥（根据自己情况）</p>
@@ -808,8 +808,8 @@ git config --global user.email <span class="s2">&#34;email@example.com&#34;</spa
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git init
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>接下来进行远程代码库克隆（事先在 coding 等中建立一个项目，就是你需要链接的仓库）</p>
 <div class="highlight"><div class="chroma">
@@ -817,8 +817,8 @@ git config --global user.email <span class="s2">&#34;email@example.com&#34;</spa
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone https://github.com/Lruihao/Lruihao.github.io.git
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/Lruihao/Lruihao.github.io.git
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>克隆时会出现输入账号密码的环节正确输入即可。</p>
 <h3 id="代码推送重点">代码推送（重点）</h3>
@@ -830,11 +830,11 @@ git config --global user.email <span class="s2">&#34;email@example.com&#34;</spa
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git status
-git add *
-git commit -m &#34;代码备注随便写&#34;
-git push origin master
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git status
+</span></span><span class="line"><span class="cl">git add *
+</span></span><span class="line"><span class="cl">git commit -m &#34;代码备注随便写&#34;
+</span></span><span class="line"><span class="cl">git push origin master
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li><a
@@ -858,8 +858,8 @@ git push origin master
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">wget https://github.com/git/git/archive/v2.14.1.zip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wget https://github.com/git/git/archive/v2.14.1.zip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="安装依赖">安装依赖</h3>
 <div class="highlight"><div class="chroma">
@@ -867,8 +867,8 @@ git push origin master
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel curl-devel perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel curl-devel perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="解压-git">解压 git</h3>
 <div class="highlight"><div class="chroma">
@@ -876,8 +876,8 @@ git push origin master
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">unzip v2.14.1.zip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">unzip v2.14.1.zip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>注：
 unzip 命令用不了，具体步骤如下：</p>
@@ -888,10 +888,10 @@ unzip 命令用不了，具体步骤如下：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#yum list | grep zip/unzip 
-#yum install zip
-#yum install unzip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#yum list | grep zip/unzip 
+</span></span><span class="line"><span class="cl">#yum install zip
+</span></span><span class="line"><span class="cl">#yum install unzip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>基本完成，如果在编译的时候出现错误：<code>gcc : error trying to exec 'cc1plus': execvp : No sunch file or directory</code><br>
 可以用<code>gcc -v/g++ -v</code> 来查看 gcc 版本，会发现没有安装。安装如下：</p>
@@ -902,10 +902,10 @@ unzip 命令用不了，具体步骤如下：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#yum list | grep gcc
-#yum install gcc-c++
-#yum install unzip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#yum list | grep gcc
+</span></span><span class="line"><span class="cl">#yum install gcc-c++
+</span></span><span class="line"><span class="cl">#yum install unzip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="将-git-安装到usrlocal-上">将 git 安装到/usr/local 上</h3>
 <p>先进入 git 文件夹<br>
@@ -918,10 +918,10 @@ unzip 命令用不了，具体步骤如下：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cd git-2.14.1
-make prefix=/usr/local all
-make prefix=/usr/local install
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd git-2.14.1
+</span></span><span class="line"><span class="cl">make prefix=/usr/local all
+</span></span><span class="line"><span class="cl">make prefix=/usr/local install
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="验证是否安装完成">验证是否安装完成</h3>
 <div class="highlight"><div class="chroma">
@@ -929,8 +929,8 @@ make prefix=/usr/local install
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git --version
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git --version
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>&hellip;</p>
 ]]></description></item><item><title>git index.lock</title><link>https://lruihao.cn/posts/git-index-lock/</link><pubDate>Tue, 14 Aug 2018 19:21:23 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git-index-lock/</guid><description><![CDATA[<p>在 git 没有运行完成之前强制关闭，下次提交的时候会产以下生错误，或者类似的。</p>
@@ -943,12 +943,12 @@ make prefix=/usr/local install
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">fatal: Unable to create <span class="s1">&#39;/xxx/xx/.git/index.lock&#39;</span>: File exists.
-
-If no other git process is currently running, this probably means a
-git process crashed in this repository earlier. Make sure no other git
-process is running and remove the file manually to <span class="k">continue</span>.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">fatal: Unable to create <span class="s1">&#39;/xxx/xx/.git/index.lock&#39;</span>: File exists.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">If no other git process is currently running, this probably means a
+</span></span><span class="line"><span class="cl">git process crashed in this repository earlier. Make sure no other git
+</span></span><span class="line"><span class="cl">process is running and remove the file manually to <span class="k">continue</span>.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>原因是在你进行某些比较费时的 git 操作时自动生成，操作结束后自动删除，相当于一个锁定文件，目的在于防止对一个目录同时进行多个操作。</p>
 <p>有时强制关闭进行中的 git 操作，这个文件没有被自动删除，之后你就无法进行其他操作，必须手动删除，进入。git 文件中删除，打开显示隐藏文件。如果没有看见。git 文件夹，可以直接用命令<code> rm -f ./.git/index.lock</code>。之后就可以正常使用。</p>

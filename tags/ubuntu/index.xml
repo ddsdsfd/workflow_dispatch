@@ -36,8 +36,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>安装</p>
 <div class="highlight"><div class="chroma">
@@ -45,8 +45,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo bash install-ubuntu16+.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo bash install-ubuntu16+.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>等待中一路回车，当提示 done！ 则表示安装成功：
 </p>
@@ -74,11 +74,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/home/judge/etc/judge.conf
-/home/judge/src/web/include/db_info.inc.php
-/etc/php5/fpm/php.ini 或 /etc/php7.0/fpm/php.ini
-/etc/nginx/sites-enabled/default
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/home/judge/etc/judge.conf
+</span></span><span class="line"><span class="cl">/home/judge/src/web/include/db_info.inc.php
+</span></span><span class="line"><span class="cl">/etc/php5/fpm/php.ini 或 /etc/php7.0/fpm/php.ini
+</span></span><span class="line"><span class="cl">/etc/nginx/sites-enabled/default
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ngrok/</guid><description><![CDATA[<blockquote>
 <p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。</p>
@@ -127,8 +127,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重启看看时间发现 ok 了。</p>
 <h2 id="方法二">方法二</h2>
@@ -142,8 +142,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo timedatectl set-local-rtc 1
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo timedatectl set-local-rtc 1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>先在 ubuntu 下更新一下时间，确保时间无误：</p>
 <div class="highlight"><div class="chroma">
@@ -152,9 +152,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo apt-get install ntpdate
-$sudo ntpdate time.windows.com
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo apt-get install ntpdate
+</span></span><span class="line"><span class="cl">$sudo ntpdate time.windows.com
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后将时间更新到硬件上：</p>
 <div class="highlight"><div class="chroma">
@@ -162,7 +162,7 @@ $sudo ntpdate time.windows.com
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo hwclock --localtime --systohc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo hwclock --localtime --systohc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重新进入 windows10，发现时间恢复正常了！</p>]]></description></item></channel></rss>

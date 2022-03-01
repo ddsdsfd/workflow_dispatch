@@ -55,13 +55,11 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/github-actions/><link rel=prev href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=next href=https://lruihao.cn/posts/hugo-admin/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/github-actions\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, Github Actions, Git, 腾讯云 cos 桶","wordcount":589,"url":"https:\/\/lruihao.cn\/posts\/github-actions\/","datePublished":"2021-10-04T23:46:49+08:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head>
-<body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/github-actions/><link rel=prev href=https://lruihao.cn/posts/hexo-to-hugo/><link rel=next href=https://lruihao.cn/posts/hugo-admin/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/github-actions\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"hugo, Github Actions, Git, 腾讯云 cos 桶","wordcount":589,"url":"https:\/\/lruihao.cn\/posts\/github-actions\/","datePublished":"2021-10-04T23:46:49+08:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
 <div class=header-title>
-<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div>
-<div class=menu>
+<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu>
 <div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
 <input type=text placeholder=搜尋文章標題或內容... id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜尋>
@@ -76,19 +74,13 @@
 </span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
 <i class="fas fa-adjust fa-fw"></i>
 </a>
-</div>
-</div>
-</div>
-</header><header class=mobile id=header-mobile>
+</div></div></div></header><header class=mobile id=header-mobile>
 <div class=header-container>
 <div class=header-wrapper>
 <div class=header-title>
-<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div>
-<div class=menu-toggle id=menu-toggle-mobile>
+<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu-toggle id=menu-toggle-mobile>
 <span></span><span></span><span></span>
-</div>
-</div>
-<div class=menu id=menu-mobile><div class=search-wrapper>
+</div></div><div class=menu id=menu-mobile><div class=search-wrapper>
 <div class="search mobile" id=search-mobile>
 <input type=text placeholder=搜尋文章標題或內容... id=search-input-mobile>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜尋>
@@ -100,79 +92,40 @@
 <span class="search-button search-loading" id=search-loading-mobile>
 <i class="fas fa-spinner fa-fw fa-spin"></i>
 </span>
-</div>
-<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+</div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
 取消
 </a>
 </div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
 <i class="fas fa-adjust fa-fw"></i>
-</a></div>
-</div>
-</header>
-<div class="search-dropdown desktop">
-<div id=search-dropdown-desktop></div>
-</div>
-<div class="search-dropdown mobile">
-<div id=search-dropdown-mobile></div>
-</div>
-<main class=container page-style=normal><aside class=toc id=toc-auto><h2 class=toc-title>目錄</h2>
-<div class=toc-content id=toc-content-auto></div></aside>
-<aside class=aside-custom>
-</aside>
-<article class="page single"><h1 class="single-title animated flipInX">Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a>&nbsp;<a href=/categories/git/><i class="far fa-folder fa-fw"></i>Git</a></span></div>
-<div class=post-meta-line><span title="2021-10-04 23:46:49">
+</a></div></div></header><div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div></div><main class=container page-style=normal><aside class=toc id=toc-auto><h2 class=toc-title>目錄</h2><div class=toc-content id=toc-content-auto></div></aside><aside class=aside-custom>
+</aside><article class="page single"><h1 class="single-title animated flipInX">Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a>&nbsp;<a href=/categories/git/><i class="far fa-folder fa-fw"></i>Git</a></span></div><div class=post-meta-line><span title="2021-10-04 23:46:49">
 <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-04>2021-10-04</time>
 </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 589 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/github-actions/ class=leancloud_visitors data-flag-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count>-</span>&nbsp;次閱讀
 </span>&nbsp;<span class=comment-count data-flag-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶">
 <i class="far fa-comments fa-fw"></i>&nbsp;<span data-xid=/posts/github-actions/ class=valine-comment-count>-</span>&nbsp;條評論
-</span>&nbsp;</div>
-</div><div class="details toc" id=toc-static kept=false>
+</span>&nbsp;</div></div><div class="details toc" id=toc-static kept=false>
 <div class="details-summary toc-title">
 <span>目錄</span>
 <span><i class="details-icon fas fa-angle-right"></i></span>
-</div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+</div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
 <li>
 <ul>
-<li><a href=#準備>準備</a></li>
-<li><a href=#github-actions>Github Actions</a>
+<li><a href=#準備>準備</a></li><li><a href=#github-actions>Github Actions</a>
 <ul>
-<li><a href=#創建-workflows-任務>創建 workflows 任務</a></li>
-<li><a href=#配置-github-pages-密鑰>配置 Github Pages 密鑰</a></li>
-<li><a href=#配置-cos-密鑰>配置 COS 密鑰</a></li>
-</ul>
-</li>
-<li><a href=#cos-自動同步-備用>COS 自動同步 （備用）</a></li>
-</ul>
-</li>
-</ul>
-</nav></div>
-</div><div class=content id=content><div class="details admonition quote open">
+<li><a href=#創建-workflows-任務>創建 workflows 任務</a></li><li><a href=#配置-github-pages-密鑰>配置 Github Pages 密鑰</a></li><li><a href=#配置-cos-密鑰>配置 COS 密鑰</a></li></ul></li><li><a href=#cos-自動同步-備用>COS 自動同步 （備用）</a></li></ul></li></ul></nav></div></div><div class=content id=content><div class="details admonition quote open">
 <div class="details-summary admonition-title">
 <i class="icon fas fa-quote-right fa-fw"></i>解決痛點<i class="details-icon fas fa-angle-right fa-fw"></i>
-</div>
-<div class=details-content>
+</div><div class=details-content>
 <div class=admonition-content>Github Actions 真是靜態博客的福音，有了它 hugo, hexo 等博客構建過程可以丟給 Github 的服務器幫我們做了。<br>
-也就是説實現了在線寫靜態博客的需求。</div>
-</div>
-</div>
-<h2 id=準備>準備</h2>
-<p>工作流程設計到兩個倉庫和一個 cos 桶，例如：</p>
-<blockquote>
+也就是説實現了在線寫靜態博客的需求。</div></div></div><h2 id=準備>準備</h2><p>工作流程設計到兩個倉庫和一個 cos 桶，例如：</p><blockquote>
 <ul>
-<li>Lruihao/hugo-blog # Blog source repository</li>
-<li>Lruihao/lruihao.github.io # Github pages repository</li>
-<li>blog-1256932288 # COS bucket</li>
-</ul>
-</blockquote>
-<h2 id=github-actions>Github Actions</h2>
-<h3 id=創建-workflows-任務>創建 workflows 任務</h3>
-<p>創建 <code>hugo-site/.github/workflows/deploy.yml</code>, 這個文件會寫一些命令告訴 Github 在我們提交源碼的時候，它要幫我們做哪些事情。</p>
-<div class=highlight><div class=chroma>
+<li>Lruihao/hugo-blog # Blog source repository</li><li>Lruihao/lruihao.github.io # Github pages repository</li><li>blog-1256932288 # COS bucket</li></ul></blockquote><h2 id=github-actions>Github Actions</h2><h3 id=創建-workflows-任務>創建 workflows 任務</h3><p>創建 <code>hugo-site/.github/workflows/deploy.yml</code>, 這個文件會寫一些命令告訴 Github 在我們提交源碼的時候，它要幫我們做哪些事情。</p><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
@@ -211,49 +164,45 @@
 </span><span class=lnt>35
 </span><span class=lnt>36
 </span><span class=lnt>37
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Auto Deploy hugo</span><span class=w>
-</span><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w> </span><span class=p>[</span><span class=l>push]</span><span class=w>
-</span><span class=w></span><span class=nt>jobs</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=nt>Explore-GitHub-Actions</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=nt>runs-on</span><span class=p>:</span><span class=w> </span><span class=l>ubuntu-latest</span><span class=w>
-</span><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Check out repository code</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/checkout@v2</span><span class=w>
-</span><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span><span class=nt>submodules</span><span class=p>:</span><span class=w> </span><span class=l>recursive </span><span class=w> </span><span class=c># Fetch Hugo themes (true OR recursive)</span><span class=w>
-</span><span class=w>          </span><span class=nt>fetch-depth</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>         </span><span class=c># Fetch all history for .GitInfo and .Lastmod</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Setup Hugo</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-hugo@v2</span><span class=w>
-</span><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span><span class=nt>hugo-version</span><span class=p>:</span><span class=w> </span><span class=l>latest</span><span class=w>
-</span><span class=w>          </span><span class=nt>extended</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Build Hugo static files</span><span class=w>
-</span><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>hugo --minify</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy to Github Pages</span><span class=w>
-</span><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-gh-pages@v3</span><span class=w>
-</span><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span><span class=nt>deploy_key</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.GP_DEPLOY_KEY }}</span><span class=w>
-</span><span class=w>          </span><span class=nt>external_repository</span><span class=p>:</span><span class=w> </span><span class=l>Lruihao/lruihao.github.io</span><span class=w>
-</span><span class=w>          </span><span class=nt>publish_branch</span><span class=p>:</span><span class=w> </span><span class=l>main</span><span class=w>
-</span><span class=w>          </span><span class=nt>publish_dir</span><span class=p>:</span><span class=w> </span><span class=l>./public</span><span class=w>
-</span><span class=w>          </span><span class=nt>commit_message</span><span class=p>:</span><span class=w> </span><span class=l>${{ github.event.head_commit.message }}</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install coscmd</span><span class=w>
-</span><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>sudo pip install coscmd</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Configure coscmd</span><span class=w>
-</span><span class=w>        </span><span class=nt>env</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span><span class=nt>COS_SECRET_ID</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.COS_SECRET_ID }}</span><span class=w>
-</span><span class=w>          </span><span class=nt>COS_SECRET_KEY</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.COS_SECRET_KEY }}</span><span class=w>
-</span><span class=w>          </span><span class=nt>COS_BUCKET_NAME</span><span class=p>:</span><span class=w> </span><span class=l>blog-1256932288 </span><span class=w> </span><span class=c># Change for yourself</span><span class=w>
-</span><span class=w>          </span><span class=nt>COS_BUCKET_REGION</span><span class=p>:</span><span class=w> </span><span class=l>ap-chengdu    </span><span class=w> </span><span class=c># Change for yourself</span><span class=w>
-</span><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class=w>
-</span><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy to COS Bucket</span><span class=w>
-</span><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>coscmd upload -r -s --delete -f public/ /</span><span class=w>
-</span></code></pre></td></tr></table>
-</div>
-</div><h3 id=配置-github-pages-密鑰>配置 Github Pages 密鑰</h3>
-<ol>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Auto Deploy hugo</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w> </span><span class=p>[</span><span class=l>push]</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>jobs</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>Explore-GitHub-Actions</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>runs-on</span><span class=p>:</span><span class=w> </span><span class=l>ubuntu-latest</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>steps</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Check out repository code</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/checkout@v2</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>submodules</span><span class=p>:</span><span class=w> </span><span class=l>recursive </span><span class=w> </span><span class=c># Fetch Hugo themes (true OR recursive)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>fetch-depth</span><span class=p>:</span><span class=w> </span><span class=m>0</span><span class=w>         </span><span class=c># Fetch all history for .GitInfo and .Lastmod</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Setup Hugo</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-hugo@v2</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>hugo-version</span><span class=p>:</span><span class=w> </span><span class=l>latest</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>extended</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Build Hugo static files</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>hugo --minify</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy to Github Pages</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-gh-pages@v3</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>with</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>deploy_key</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.GP_DEPLOY_KEY }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>external_repository</span><span class=p>:</span><span class=w> </span><span class=l>Lruihao/lruihao.github.io</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_branch</span><span class=p>:</span><span class=w> </span><span class=l>main</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>publish_dir</span><span class=p>:</span><span class=w> </span><span class=l>./public</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>commit_message</span><span class=p>:</span><span class=w> </span><span class=l>${{ github.event.head_commit.message }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Install coscmd</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>sudo pip install coscmd</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Configure coscmd</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>env</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>COS_SECRET_ID</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.COS_SECRET_ID }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>COS_SECRET_KEY</span><span class=p>:</span><span class=w> </span><span class=l>${{ secrets.COS_SECRET_KEY }}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>COS_BUCKET_NAME</span><span class=p>:</span><span class=w> </span><span class=l>blog-1256932288 </span><span class=w> </span><span class=c># Change for yourself</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>          </span><span class=nt>COS_BUCKET_REGION</span><span class=p>:</span><span class=w> </span><span class=l>ap-chengdu    </span><span class=w> </span><span class=c># Change for yourself</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET_NAME -r $COS_BUCKET_REGION</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy to COS Bucket</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>coscmd upload -r -s --delete -f public/ /</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=配置-github-pages-密鑰>配置 Github Pages 密鑰</h3><ol>
 <li>為了讓 Lruihao/hugo-blog 提交代碼后自動部署到 Lruihao/lruihao.github.io, 需要生成一對 ssh key.
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -261,87 +210,46 @@
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>ssh-keygen -t rsa -b <span class=m>4096</span> -C <span class=s2>&#34;</span><span class=k>$(</span>git config user.email<span class=k>)</span><span class=s2>&#34;</span> -f gh-pages -N <span class=s2>&#34;&#34;</span>
-<span class=c1># You will get 2 files:</span>
-<span class=c1># gh-pages.pub (public key)</span>
-<span class=c1># gh-pages     (private key)</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 private key, name 为 <code>GP_DEPLOY_KEY</code></li>
-<li>打開 Lruihao/lruihao.github.io, 点击 Deploy keys, 添加 public key, name 隨意，<code>Allow write access</code> 一定要勾上，否則無法提交</li>
-</ol>
-<h3 id=配置-cos-密鑰>配置 COS 密鑰</h3>
-<p>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 COS 桶的 <code>secret_id</code> 和 <code>secret_key</code>:</p>
-<ul>
-<li>COS_SECRET_ID</li>
-<li>COS_SECRET_KEY</li>
-</ul>
-<blockquote>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ssh-keygen -t rsa -b <span class=m>4096</span> -C <span class=s2>&#34;</span><span class=k>$(</span>git config user.email<span class=k>)</span><span class=s2>&#34;</span> -f gh-pages -N <span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># You will get 2 files:</span>
+</span></span><span class=line><span class=cl><span class=c1># gh-pages.pub (public key)</span>
+</span></span><span class=line><span class=cl><span class=c1># gh-pages     (private key)</span>
+</span></span></code></pre></td></tr></table></div></div></li><li>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 private key, name 为 <code>GP_DEPLOY_KEY</code></li><li>打開 Lruihao/lruihao.github.io, 点击 Deploy keys, 添加 public key, name 隨意，<code>Allow write access</code> 一定要勾上，否則無法提交</li></ol><h3 id=配置-cos-密鑰>配置 COS 密鑰</h3><p>打開 Lruihao/hugo-blog 倉庫的 settings, 再点击 Secrets, 然後添加 COS 桶的 <code>secret_id</code> 和 <code>secret_key</code>:</p><ul>
+<li>COS_SECRET_ID</li><li>COS_SECRET_KEY</li></ul><blockquote>
 <p>至此，Github Pages 和 COS 都已經可以通過 Github Actions 自動部署了，有部署記錄后，<br>
-打開 Lruihao/hugo-blog -> Actions 可以看到構建過程和結果，構建失敗也會收到 Github 發給你的郵件。</p>
-</blockquote>
-<h2 id=cos-自動同步-備用>COS 自動同步 （備用）</h2>
-<p>本小節內容和 Github Actions 無關，僅作為 COS 備用上傳方式。</p>
-<ul>
-<li>COSBrowser</li>
-</ul>
-<ol>
-<li>下載 COS 官方軟件 COSBrowser</li>
-<li>點開右上角 工具箱</li>
-<li>選擇 文件同步</li>
-<li>選擇 本地文件夹 eg. <code>hugo-site/public</code></li>
-<li>選擇 存储桶目录</li>
-<li>同步类型：單次同步、自動同步、定時同步</li>
-</ol>
-<blockquote>
+打開 Lruihao/hugo-blog -> Actions 可以看到構建過程和結果，構建失敗也會收到 Github 發給你的郵件。</p></blockquote><h2 id=cos-自動同步-備用>COS 自動同步 （備用）</h2><p>本小節內容和 Github Actions 無關，僅作為 COS 備用上傳方式。</p><ul>
+<li>COSBrowser</li></ul><ol>
+<li>下載 COS 官方軟件 COSBrowser</li><li>點開右上角 工具箱</li><li>選擇 文件同步</li><li>選擇 本地文件夹 eg. <code>hugo-site/public</code></li><li>選擇 存储桶目录</li><li>同步类型：單次同步、自動同步、定時同步</li></ol><blockquote>
 <p>同步前先執行 hugo 構建命令，eg. <code>hugo --minify</code><br>
-有 Github actions 選單次同步就好，在 Github 不好用時可用。</p>
-</blockquote></div><div class=post-footer id=post-footer>
+有 Github actions 選單次同步就好，在 Github 不好用時可用。</p></blockquote></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
 <span title="2021-12-08 22:08:53">更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 rel="external nofollow noopener noreffer" target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
 <i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
-</div>
-<div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
-</div>
-<div class=post-info-line>
+</div><div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div><div class=post-info-line>
 <div class=post-info-md><span>
 <a class=link-to-markdown href=/posts/github-actions/index.md target=_blank>閱讀原始文檔</a>
-</span></div>
-<div class=post-info-share>
+</span></div><div class=post-info-share>
 <span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶" data-hashtags="hugo,Github Actions,Git,腾讯云 cos 桶"><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/github-actions/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/github-actions/ data-title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
-</div>
-</div>
-</div>
-<div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hugo/>hugo</a>,&nbsp;<a href=/tags/github-actions/>Github Actions</a>,&nbsp;<a href=/tags/git/>Git</a>,&nbsp;<a href=/tags/%E8%85%BE%E8%AE%AF%E4%BA%91-cos-%E6%A1%B6/>腾讯云 cos 桶</a></section>
-<section>
+</div></div></div><div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hugo/>hugo</a>,&nbsp;<a href=/tags/github-actions/>Github Actions</a>,&nbsp;<a href=/tags/git/>Git</a>,&nbsp;<a href=/tags/%E8%85%BE%E8%AE%AF%E4%BA%91-cos-%E6%A1%B6/>腾讯云 cos 桶</a></section><section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
-</section>
-</div>
-<div class=post-nav><a href=/posts/hexo-to-hugo/ class=prev rel=prev title="个人博客从 Hexo 迁移至 Hugo"><i class="fas fa-angle-left fa-fw"></i>个人博客从 Hexo 迁移至 Hugo</a>
-<a href=/posts/hugo-admin/ class=next rel=next title="Hugo 本地管理 Shell 腳本">Hugo 本地管理 Shell 腳本<i class="fas fa-angle-right fa-fw"></i></a></div>
-</div>
-<div id=comments><div id=valine class=comment></div><noscript>
+</section></div><div class=post-nav><a href=/posts/hexo-to-hugo/ class=prev rel=prev title="个人博客从 Hexo 迁移至 Hugo"><i class="fas fa-angle-left fa-fw"></i>个人博客从 Hexo 迁移至 Hugo</a>
+<a href=/posts/hugo-admin/ class=next rel=next title="Hugo 本地管理 Shell 腳本">Hugo 本地管理 Shell 腳本<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="external nofollow noopener noreffer">Valine</a>.
 </noscript></div></article></main><footer class=footer>
-<div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo"> FixIt</a>
+<div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.93.0">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo"> FixIt</a>
 </div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
 <a href=https://github.com/Lruihao target=_blank rel="external nofollow noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class="footer-line ibruce">
 <span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."><i class="fas fa-heartbeat animate-icon"></i>
 <span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="far fa-eye"></i>
 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span></span>
-</div><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class=footer-divider></span><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div></div>
-</footer></div>
-<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
+</div><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class=footer-divider></span><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
 <i class="fas fa-arrow-up fa-fw"></i>
 </a><a href=# id=view-comments class=fixed-button title=查看評論>
 <i class="fas fa-comment fa-fw"></i>
 </a>
-</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js defer></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js defer></script><script type=text/javascript src=/lib/sharer/sharer.min.js async defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript src=/lib/pangu/pangu.min.js defer></script><script type=text/javascript src=/lib/cell-watermark/watermark.min.js defer></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async defer></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:50},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!0,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"瞭解更多",message:"本網站使用 Cookies 來改善您的流覽體驗."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},enablePWA:!0,enablePangu:!0,ibruce:{enable:!0,siteTime:"2018-05-28T20:01:01+08:00"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{algoliaAppID:"MTJNHU0JVB",algoliaIndex:"index",algoliaSearchKey:"5486225134d99f43826da401ee9bad57",highlightTag:"em",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"algolia"},twemoji:!0,watermark:{appendto:".wrapper\u003e.main",colspacing:30,content:'\u003cimg style="height: 0.85rem;" src="/logo.png" alt="logo" /\u003e 李瑞豪',enable:!0,fontfamily:"MMT_LRH,沐目体",fontsize:1.1,height:20,opacity:.02,rotate:15,rowspacing:60,width:150}}</script><script type=text/javascript src=/js/theme.min.js defer></script><script type=text/javascript src=/js/_custom.min.js defer></script></body>
-</html>
+</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js defer></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js defer></script><script type=text/javascript src=/lib/sharer/sharer.min.js async defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript src=/lib/pangu/pangu.min.js defer></script><script type=text/javascript src=/lib/cell-watermark/watermark.min.js defer></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async defer></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:50},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!0,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"瞭解更多",message:"本網站使用 Cookies 來改善您的流覽體驗."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},enablePWA:!0,enablePangu:!0,ibruce:{enable:!0,siteTime:"2018-05-28T20:01:01+08:00"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{algoliaAppID:"MTJNHU0JVB",algoliaIndex:"index",algoliaSearchKey:"5486225134d99f43826da401ee9bad57",highlightTag:"em",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"algolia"},twemoji:!0,watermark:{appendto:".wrapper\u003e.main",colspacing:30,content:'\u003cimg style="height: 0.85rem;" src="/logo.png" alt="logo" /\u003e 李瑞豪',enable:!0,fontfamily:"MMT_LRH,沐目体",fontsize:1.1,height:20,opacity:.02,rotate:15,rowspacing:60,width:150}}</script><script type=text/javascript src=/js/theme.min.js defer></script><script type=text/javascript src=/js/_custom.min.js defer></script></body></html>

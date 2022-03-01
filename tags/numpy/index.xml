@@ -65,37 +65,37 @@
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">MyQR</span> <span class="kn">import</span> <span class="n">myqr</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="n">version</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">qr_name</span> <span class="o">=</span> <span class="n">myqr</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-    <span class="n">words</span><span class="o">=</span><span class="s1">&#39;https://lruihao.cn&#39;</span><span class="p">,</span>
-    <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">level</span><span class="o">=</span><span class="s1">&#39;H&#39;</span><span class="p">,</span>
-    <span class="n">picture</span><span class="o">=</span><span class="s1">&#39;2.jpg&#39;</span><span class="p">,</span>
-    <span class="n">colorized</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">contrast</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-    <span class="n">brightness</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-    <span class="n">save_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-    <span class="n">save_dir</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-<span class="p">)</span>
-
-<span class="c1"># help(myqr)</span>
-<span class="c1"># https://github.com/sylnsfar/qrcode/</span>
-<span class="s1">&#39;&#39;&#39;
-</span><span class="s1">Positional parameter
-</span><span class="s1">   words: str # 链接或者文字
-</span><span class="s1">
-</span><span class="s1">Optional parameters
-</span><span class="s1">   version: int, from 1 to 40  # 控制边长
-</span><span class="s1">   level: str, just one of (&#39;L&#39;,&#39;M&#39;,&#39;Q&#39;,&#39;H&#39;) # 控制纠错水平，从左到右依次升高。
-</span><span class="s1">   picutre: str, a filename of a image # 图片，需在同路径，默认 None
-</span><span class="s1">   colorized: bool  # 是否彩色 默认 False
-</span><span class="s1">   constrast: float # 对比度 默认 1.0
-</span><span class="s1">   brightness: float # 亮度 默认 1.0
-</span><span class="s1">   save_name: str, the output filename like &#39;example.png&#39; #控制文件名，默认 None,&#39;qrcode.png&#39;
-</span><span class="s1">   save_dir: str, the output directory # 储存路径
-</span><span class="s1">&#39;&#39;&#39;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">MyQR</span> <span class="kn">import</span> <span class="n">myqr</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="n">version</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">qr_name</span> <span class="o">=</span> <span class="n">myqr</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">words</span><span class="o">=</span><span class="s1">&#39;https://lruihao.cn&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">level</span><span class="o">=</span><span class="s1">&#39;H&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">picture</span><span class="o">=</span><span class="s1">&#39;2.jpg&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">colorized</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">contrast</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">brightness</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">save_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">save_dir</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># help(myqr)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># https://github.com/sylnsfar/qrcode/</span>
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">Positional parameter
+</span></span></span><span class="line"><span class="cl"><span class="s1">   words: str # 链接或者文字
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">Optional parameters
+</span></span></span><span class="line"><span class="cl"><span class="s1">   version: int, from 1 to 40  # 控制边长
+</span></span></span><span class="line"><span class="cl"><span class="s1">   level: str, just one of (&#39;L&#39;,&#39;M&#39;,&#39;Q&#39;,&#39;H&#39;) # 控制纠错水平，从左到右依次升高。
+</span></span></span><span class="line"><span class="cl"><span class="s1">   picutre: str, a filename of a image # 图片，需在同路径，默认 None
+</span></span></span><span class="line"><span class="cl"><span class="s1">   colorized: bool  # 是否彩色 默认 False
+</span></span></span><span class="line"><span class="cl"><span class="s1">   constrast: float # 对比度 默认 1.0
+</span></span></span><span class="line"><span class="cl"><span class="s1">   brightness: float # 亮度 默认 1.0
+</span></span></span><span class="line"><span class="cl"><span class="s1">   save_name: str, the output filename like &#39;example.png&#39; #控制文件名，默认 None,&#39;qrcode.png&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">   save_dir: str, the output directory # 储存路径
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="安装">安装</h2>
 <div class="highlight"><div class="chroma">
@@ -104,9 +104,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 通过 pip</span>
-<span class="n">pip</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="n">install</span> <span class="n">myqr</span><span class="p">(</span><span class="ow">or</span> <span class="n">MyQR</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 通过 pip</span>
+</span></span><span class="line"><span class="cl"><span class="n">pip</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="n">install</span> <span class="n">myqr</span><span class="p">(</span><span class="ow">or</span> <span class="n">MyQR</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="使用方法">使用方法</h2>
 <h3 id="命令行方式">命令行方式</h3>
@@ -138,17 +138,17 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 概括</span>
-<span class="n">myqr</span> 	<span class="n">Words</span>
-		<span class="p">[</span><span class="o">-</span><span class="n">v</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="o">...</span><span class="p">,</span><span class="mi">40</span><span class="p">}]</span>
-		<span class="p">[</span><span class="o">-</span><span class="n">l</span> <span class="p">{</span><span class="n">L</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">Q</span><span class="p">,</span><span class="n">H</span><span class="p">}]</span>
-        <span class="p">[</span><span class="o">-</span><span class="n">n</span> <span class="n">output</span><span class="o">-</span><span class="n">filename</span><span class="p">]</span>
-		<span class="p">[</span><span class="o">-</span><span class="n">d</span> <span class="n">output</span><span class="o">-</span><span class="n">directory</span><span class="p">]</span>
-		<span class="p">[</span><span class="o">-</span><span class="n">p</span> <span class="n">picture_file</span><span class="p">]</span>
-		<span class="p">[</span><span class="o">-</span><span class="n">c</span><span class="p">]</span>
-		<span class="p">[</span><span class="o">-</span><span class="n">con</span> <span class="n">contrast</span><span class="p">]</span>
-		<span class="p">[</span><span class="o">-</span><span class="n">bri</span> <span class="n">brightness</span><span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 概括</span>
+</span></span><span class="line"><span class="cl"><span class="n">myqr</span> 	<span class="n">Words</span>
+</span></span><span class="line"><span class="cl">		<span class="p">[</span><span class="o">-</span><span class="n">v</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="o">...</span><span class="p">,</span><span class="mi">40</span><span class="p">}]</span>
+</span></span><span class="line"><span class="cl">		<span class="p">[</span><span class="o">-</span><span class="n">l</span> <span class="p">{</span><span class="n">L</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">Q</span><span class="p">,</span><span class="n">H</span><span class="p">}]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="o">-</span><span class="n">n</span> <span class="n">output</span><span class="o">-</span><span class="n">filename</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">		<span class="p">[</span><span class="o">-</span><span class="n">d</span> <span class="n">output</span><span class="o">-</span><span class="n">directory</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">		<span class="p">[</span><span class="o">-</span><span class="n">p</span> <span class="n">picture_file</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">		<span class="p">[</span><span class="o">-</span><span class="n">c</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">		<span class="p">[</span><span class="o">-</span><span class="n">con</span> <span class="n">contrast</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">		<span class="p">[</span><span class="o">-</span><span class="n">bri</span> <span class="n">brightness</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>普通二维码 介绍了 <code>Words</code>, <code>-v</code>, <code>-l</code>, <code>-n</code>, <code>-d</code></li>
@@ -162,9 +162,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh">#1 Words
-</span><span class="gh"></span>myqr https://github.com
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh">#1 Words
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>myqr https://github.com
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>在命令后输入链接或者句子作为参数，然后在程序的当前目录中产生相应的二维码图片文件，默认命名为 “qrcode.png”。</li>
@@ -175,9 +175,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh">#2 -v, -l
-</span><span class="gh"></span>myqr https://github.com -v 10 -l Q
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh">#2 -v, -l
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>myqr https://github.com -v 10 -l Q
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>
@@ -196,9 +196,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh">#3 -n, -d
-</span><span class="gh"></span>myqr https://github.com -n github_qr.jpg  -d .../paths/
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh">#3 -n, -d
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>myqr https://github.com -n github_qr.jpg  -d .../paths/
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>
@@ -217,9 +217,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh">#1 -p
-</span><span class="gh"></span>myqr https://github.com -p github.jpg
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh">#1 -p
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>myqr https://github.com -p github.jpg
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>参数<code>-p</code> 用来将 QR 二维码图像与一张同目录下的图片相结合，产生一张<strong>黑白</strong>图片。</li>
@@ -230,9 +230,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh">#2 -c
-</span><span class="gh"></span>myqr https://github.com -p github.jpg -c
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh">#2 -c
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>myqr https://github.com -p github.jpg -c
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>加上参数 <code>-c</code> 可以使产生的图片由黑白变为<strong>彩色</strong>的。</li>
@@ -243,9 +243,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh">#3 -con, -bri
-</span><span class="gh"></span>myqr https://github.com -p github.jpg [-c] -con 1.5 -bri 1.6
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh">#3 -con, -bri
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>myqr https://github.com -p github.jpg [-c] -con 1.5 -bri 1.6
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>
@@ -275,20 +275,20 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 安装模块后</span>
-<span class="kn">from</span> <span class="nn">MyQR</span> <span class="kn">import</span> <span class="n">myqr</span>
-<span class="n">version</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">qr_name</span> <span class="o">=</span> <span class="n">myqr</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-	<span class="n">words</span><span class="p">,</span>
-    <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">level</span><span class="o">=</span><span class="s1">&#39;H&#39;</span><span class="p">,</span>
-    <span class="n">picture</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-    <span class="n">colorized</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-    <span class="n">contrast</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-    <span class="n">brightness</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-    <span class="n">save_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-    <span class="n">save_dir</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-	<span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 安装模块后</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">MyQR</span> <span class="kn">import</span> <span class="n">myqr</span>
+</span></span><span class="line"><span class="cl"><span class="n">version</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">qr_name</span> <span class="o">=</span> <span class="n">myqr</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="n">words</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">level</span><span class="o">=</span><span class="s1">&#39;H&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">picture</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">colorized</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">contrast</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">brightness</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">save_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">save_dir</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><em>以下各个参数已经在<strong>上文命令行方式</strong>有所介绍</em></p>
 <div class="highlight"><div class="chroma">
@@ -308,20 +308,20 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># help(myqr)</span>
-<span class="n">Positional</span> <span class="n">parameter</span>
-   <span class="n">words</span><span class="p">:</span> <span class="nb">str</span>
-
-<span class="n">Optional</span> <span class="n">parameters</span>
-   <span class="n">version</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="kn">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="mi">40</span>
-   <span class="n">level</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">just</span> <span class="n">one</span> <span class="n">of</span> <span class="p">(</span><span class="s1">&#39;L&#39;</span><span class="p">,</span><span class="s1">&#39;M&#39;</span><span class="p">,</span><span class="s1">&#39;Q&#39;</span><span class="p">,</span><span class="s1">&#39;H&#39;</span><span class="p">)</span>
-   <span class="n">picutre</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">a</span> <span class="n">filename</span> <span class="n">of</span> <span class="n">a</span> <span class="n">image</span>
-   <span class="n">colorized</span><span class="p">:</span> <span class="nb">bool</span>
-   <span class="n">constrast</span><span class="p">:</span> <span class="nb">float</span>
-   <span class="n">brightness</span><span class="p">:</span> <span class="nb">float</span>
-   <span class="n">save_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">the</span> <span class="n">output</span> <span class="n">filename</span> <span class="n">like</span> <span class="s1">&#39;example.png&#39;</span>
-   <span class="n">save_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">the</span> <span class="n">output</span> <span class="n">directory</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># help(myqr)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Positional</span> <span class="n">parameter</span>
+</span></span><span class="line"><span class="cl">   <span class="n">words</span><span class="p">:</span> <span class="nb">str</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Optional</span> <span class="n">parameters</span>
+</span></span><span class="line"><span class="cl">   <span class="n">version</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="kn">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="mi">40</span>
+</span></span><span class="line"><span class="cl">   <span class="n">level</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">just</span> <span class="n">one</span> <span class="n">of</span> <span class="p">(</span><span class="s1">&#39;L&#39;</span><span class="p">,</span><span class="s1">&#39;M&#39;</span><span class="p">,</span><span class="s1">&#39;Q&#39;</span><span class="p">,</span><span class="s1">&#39;H&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="n">picutre</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">a</span> <span class="n">filename</span> <span class="n">of</span> <span class="n">a</span> <span class="n">image</span>
+</span></span><span class="line"><span class="cl">   <span class="n">colorized</span><span class="p">:</span> <span class="nb">bool</span>
+</span></span><span class="line"><span class="cl">   <span class="n">constrast</span><span class="p">:</span> <span class="nb">float</span>
+</span></span><span class="line"><span class="cl">   <span class="n">brightness</span><span class="p">:</span> <span class="nb">float</span>
+</span></span><span class="line"><span class="cl">   <span class="n">save_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">the</span> <span class="n">output</span> <span class="n">filename</span> <span class="n">like</span> <span class="s1">&#39;example.png&#39;</span>
+</span></span><span class="line"><span class="cl">   <span class="n">save_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">the</span> <span class="n">output</span> <span class="n">directory</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="使用提示">使用提示</h2>
 <ul>
@@ -347,8 +347,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="go">· , . : ; + - * / \ ~ ! @ # $ % ^ &amp; ` &#39; = &lt; &gt; [ ] ( ) ? _ { } | and  (space)
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">· , . : ; + - * / \ ~ ! @ # $ % ^ &amp; ` &#39; = &lt; &gt; [ ] ( ) ? _ { } | and  (space)
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>

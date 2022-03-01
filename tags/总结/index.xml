@@ -238,23 +238,21 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">{
-  &#34;color_scheme&#34;: &#34;Packages/Color Scheme - Default/Monokai.sublime-color-scheme&#34;,
-  &#34;font_size&#34;: 14,
-  &#34;ignored_packages&#34;:
-  [
-    &#34;Vintage&#34;
-  ],
-  &#34;theme&#34;: &#34;Adaptive.sublime-theme&#34;,
-<span class="gi">+  &#34;expand_tabs_on_save&#34;: true,
-</span><span class="gi">+  &#34;tab_size&#34;: 2,
-</span><span class="gi">+  &#34;translate_tabs_to_spaces&#34;: true
-</span><span class="gi"></span>}
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;color_scheme&#34;: &#34;Packages/Color Scheme - Default/Monokai.sublime-color-scheme&#34;,
+</span></span><span class="line"><span class="cl">  &#34;font_size&#34;: 14,
+</span></span><span class="line"><span class="cl">  &#34;ignored_packages&#34;:
+</span></span><span class="line"><span class="cl">  [
+</span></span><span class="line"><span class="cl">    &#34;Vintage&#34;
+</span></span><span class="line"><span class="cl">  ],
+</span></span><span class="line"><span class="cl">  &#34;theme&#34;: &#34;Adaptive.sublime-theme&#34;,
+</span></span><span class="line"><span class="cl"><span class="gi">+  &#34;expand_tabs_on_save&#34;: true,
+</span></span></span><span class="line"><span class="cl"><span class="gi">+  &#34;tab_size&#34;: 2,
+</span></span></span><span class="line"><span class="cl"><span class="gi">+  &#34;translate_tabs_to_spaces&#34;: true
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="选择类">选择类</h1>
 <ul>
@@ -373,9 +371,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">正確範例： calendar_manager/calendar/29
-錯誤範例： calendar_manager/calendar/29?id=29
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">正確範例： calendar_manager/calendar/29
+</span></span><span class="line"><span class="cl">錯誤範例： calendar_manager/calendar/29?id=29
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="命名">命名</h1>
 <ul>
@@ -425,13 +423,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public function test(){
-  //do something
-  if($a === $b){
-    //do something
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public function test(){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  if($a === $b){
+</span></span><span class="line"><span class="cl">    //do something
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="錯誤寫法">錯誤寫法</h2>
 <div class="highlight"><div class="chroma">
@@ -446,15 +444,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public function test()
-{
-  //do something
-  if($a === $b)
-  {
-    //do something
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public function test()
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  if($a === $b)
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    //do something
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>程式碼排版
@@ -506,21 +504,21 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- html tag --&gt;</span>
-<span class="nt">&lt;center&gt;</span>
-<span class="nt">&lt;font&gt;</span>
-<span class="nt">&lt;basefont&gt;</span>
-<span class="nt">&lt;s&gt;</span>
-<span class="nt">&lt;strike&gt;</span>
-<span class="nt">&lt;u&gt;</span>
-<span class="nt">&lt;listing&gt;</span>
-<span class="nt">&lt;plaintext&gt;</span>
-<span class="nt">&lt;xmp&gt;</span>
-<span class="c">&lt;!-- html attribute --&gt;</span>
-align
-bgcolor
-color
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!-- html tag --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;center&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;font&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;basefont&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;s&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;strike&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;u&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;listing&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;plaintext&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;xmp&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- html attribute --&gt;</span>
+</span></span><span class="line"><span class="cl">align
+</span></span><span class="line"><span class="cl">bgcolor
+</span></span><span class="line"><span class="cl">color
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="資安禁止">資安禁止：</h2>
 <blockquote>
@@ -549,10 +547,10 @@ color
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">a = (a, b) =&gt; {
-  c;
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a = (a, b) =&gt; {
+</span></span><span class="line"><span class="cl">  c;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>錯誤 （這是允許的，但造成程式碼閱讀困難，故禁止）</p>
 <div class="highlight"><div class="chroma">
@@ -560,8 +558,8 @@ color
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">a  =&gt; c;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a  =&gt; c;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="註解">註解</h2>
 <p>JavaScript 註解應該遵循 JSDoc 的標準撰寫</p>
@@ -571,8 +569,8 @@ color
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/* global $t, Tiger */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/* global $t, Tiger */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="常數-constant">常數 (Constant)</h3>
 <div class="highlight"><div class="chroma">
@@ -583,11 +581,11 @@ color
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 常數說明
- * @type {常數型態}
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 常數說明
+</span></span><span class="line"><span class="cl"> * @type {常數型態}
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -599,12 +597,12 @@ color
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
- * @type {String}
- */
-var userId = &#39;Hello&#39;;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 使用者 ID
+</span></span><span class="line"><span class="cl"> * @type {String}
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">var userId = &#39;Hello&#39;;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="函數方法-function-method">函數、方法 (Function, Method)</h3>
 <div class="highlight"><div class="chroma">
@@ -618,14 +616,14 @@ var userId = &#39;Hello&#39;;
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 函數用途說明
- * @param {引數型態} 引數名稱 引數說明
- * @param {引數型態} [選擇性引數名稱] 引數說明
- * @param {引數型態} [選擇性引數名稱=引數預設值] 引數說明
- * @returns {回傳值型態} 回傳值說明
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 函數用途說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} 引數名稱 引數說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} [選擇性引數名稱] 引數說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} [選擇性引數名稱=引數預設值] 引數說明
+</span></span><span class="line"><span class="cl"> * @returns {回傳值型態} 回傳值說明
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -643,18 +641,18 @@ var userId = &#39;Hello&#39;;
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 取得使用者
- * @param {Int} userId 使用者 ID
- * @param {Object} [options] 其他選項
- * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
- * @returns {Object} 使用者資料
- */
-var getUser = function(userId, options){
-  //do something
-  return user;
-};
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 取得使用者
+</span></span><span class="line"><span class="cl"> * @param {Int} userId 使用者 ID
+</span></span><span class="line"><span class="cl"> * @param {Object} [options] 其他選項
+</span></span><span class="line"><span class="cl"> * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
+</span></span><span class="line"><span class="cl"> * @returns {Object} 使用者資料
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">var getUser = function(userId, options){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  return user;
+</span></span><span class="line"><span class="cl">};
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="php">PHP</h1>
 <h2 id="前端參數取得">前端參數取得</h2>
@@ -673,11 +671,11 @@ var getUser = function(userId, options){
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 成員變數說明
- * @type {型態}
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 成員變數說明
+</span></span><span class="line"><span class="cl"> * @type {型態}
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -689,12 +687,12 @@ var getUser = function(userId, options){
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
- * @type {String}
- */
-$userId = &#39;Hello&#39;;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 使用者 ID
+</span></span><span class="line"><span class="cl"> * @type {String}
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">$userId = &#39;Hello&#39;;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="函數方法-function-method-1">函數、方法 (Function, Method)</h2>
 <div class="highlight"><div class="chroma">
@@ -708,14 +706,14 @@ $userId = &#39;Hello&#39;;
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 函數用途說明
- * @param 引數型態 引數名稱 引數說明
- * @option 引數選項型態 引數選項名稱 引數選項說明
- * @uses 全域變數 全域變數說明
- * @returns 回傳值型態 回傳值說明
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 函數用途說明
+</span></span><span class="line"><span class="cl"> * @param 引數型態 引數名稱 引數說明
+</span></span><span class="line"><span class="cl"> * @option 引數選項型態 引數選項名稱 引數選項說明
+</span></span><span class="line"><span class="cl"> * @uses 全域變數 全域變數說明
+</span></span><span class="line"><span class="cl"> * @returns 回傳值型態 回傳值說明
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -734,19 +732,19 @@ $userId = &#39;Hello&#39;;
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 取得使用者
- * @param int userId 使用者 ID
- * @param object options 其他選項
- * @option string options[&#39;query&#39;] 查詢關鍵字
- * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
- * @returns object 使用者資料
- */
-function getUser($userId, $options){
-  //do something
-  return $user;
-};
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 取得使用者
+</span></span><span class="line"><span class="cl"> * @param int userId 使用者 ID
+</span></span><span class="line"><span class="cl"> * @param object options 其他選項
+</span></span><span class="line"><span class="cl"> * @option string options[&#39;query&#39;] 查詢關鍵字
+</span></span><span class="line"><span class="cl"> * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
+</span></span><span class="line"><span class="cl"> * @returns object 使用者資料
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">function getUser($userId, $options){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  return $user;
+</span></span><span class="line"><span class="cl">};
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="database">Database</h1>
 <ul>
@@ -766,8 +764,8 @@ function getUser($userId, $options){
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="k">user</span><span class="o">`</span><span class="w"> </span><span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">);</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="k">user</span><span class="o">`</span><span class="w"> </span><span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="統一用詞">統一用詞</h1>
 <blockquote>
@@ -964,8 +962,8 @@ function getUser($userId, $options){
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">box-sizing</span><span class="o">:</span> <span class="nt">content-box</span><span class="o">|</span><span class="nt">border-box</span><span class="o">|</span><span class="nt">inherit</span><span class="o">:</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">box-sizing</span><span class="o">:</span> <span class="nt">content-box</span><span class="o">|</span><span class="nt">border-box</span><span class="o">|</span><span class="nt">inherit</span><span class="o">:</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>content-box 使得元素的宽高即为内容区的宽高（默认模式）</li>
@@ -989,12 +987,12 @@ function getUser($userId, $options){
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">fix</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span> 
-     <span class="k">content</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">;</span> 
-     <span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span> 
-     <span class="k">clear</span><span class="p">:</span><span class="kc">both</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">fix</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">     <span class="k">content</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">     <span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">     <span class="k">clear</span><span class="p">:</span><span class="kc">both</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用伪元素的好处：不增加冗余的 DOM 节点，符合语义化</p>
 <blockquote>
@@ -1019,18 +1017,18 @@ function getUser($userId, $options){
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>css3 属性</p>
@@ -1048,16 +1046,16 @@ function getUser($userId, $options){
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-    <span class="k">top</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mi">-50</span><span class="kt">%</span><span class="p">,</span> <span class="mi">-50</span><span class="kt">%</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">son</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mi">-50</span><span class="kt">%</span><span class="p">,</span> <span class="mi">-50</span><span class="kt">%</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>flex 布局</p>
@@ -1071,12 +1069,12 @@ function getUser($userId, $options){
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-    <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-    <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">father</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="4-px-和-em-和-rem-的区别">4. px 和 em 和 rem 的区别</h2>
 <blockquote>

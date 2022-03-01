@@ -211,210 +211,210 @@
 </span><span class="lnt">203
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># Translations for Traditional Chinese</span>
-<span class="c"># 簡體中文的翻譯</span>
-<span class="c"># https://gohugo.io/content-management/multilingual/#translation-of-strings</span>
-
-<span class="c"># === baseof ==</span>
-<span class="p">[</span><span class="nx">backToTop</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;回到頂部&#34;</span>
-
-<span class="p">[</span><span class="nx">viewComments</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;查看評論&#34;</span>
-<span class="c"># === baseof ==</span>
-
-<span class="c"># === Post ===</span>
-<span class="p">[</span><span class="nx">posts</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;文章&#34;</span>
-<span class="c"># === Post ===</span>
-
-<span class="c"># === Taxonomy ===</span>
-<span class="p">[</span><span class="nx">allSome</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;所有{{ .Some }}&#34;</span>
-
-<span class="p">[</span><span class="nx">tag</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;標籤&#34;</span>
-
-<span class="p">[</span><span class="nx">tags</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;標籤&#34;</span>
-
-<span class="p">[</span><span class="nx">category</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;分類&#34;</span>
-
-<span class="p">[</span><span class="nx">categories</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;分類&#34;</span>
-
-<span class="p">[</span><span class="nx">years</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;年度總結&#34;</span>
-<span class="c"># === Taxonomy ===</span>
-
-<span class="c"># === Pagination ===</span>
-<span class="p">[</span><span class="nx">more</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;更多&#34;</span>
-<span class="c"># === Pagination ===</span>
-
-<span class="c"># === partials/header.html ===</span>
-<span class="p">[</span><span class="nx">selectLanguage</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;選擇語言&#34;</span>
-
-<span class="p">[</span><span class="nx">switchTheme</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;切換主題&#34;</span>
-<span class="c"># === partials/header.html ===</span>
-
-<span class="c"># === partials/footer.html ===</span>
-<span class="p">[</span><span class="nx">poweredBySome</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;由 {{ .Hugo }} 強力驅動 | 主題 - {{ .Theme }}&#34;</span>
-<span class="c"># === partials/footer.html ===</span>
-
-<span class="c"># === partials/comment.html ===</span>
-<span class="p">[</span><span class="nx">valineLang</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;zh-TW&#34;</span>
-
-<span class="p">[</span><span class="nx">valinePlaceholder</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;你的評論 ...&#34;</span>
-
-<span class="p">[</span><span class="nx">facebookLanguageCode</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;zh-TW&#34;</span>
-<span class="c"># === partials/comment.html ===</span>
-
-<span class="c"># === partials/assets.html ===</span>
-<span class="p">[</span><span class="nx">search</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索&#34;</span>
-
-<span class="p">[</span><span class="nx">searchPlaceholder</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容 ...&#34;</span>
-
-<span class="p">[</span><span class="nx">clear</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;清空&#34;</span>
-
-<span class="p">[</span><span class="nx">cancel</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;取消&#34;</span>
-
-<span class="p">[</span><span class="nx">noResultsFound</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;沒有找到結果&#34;</span>
-
-<span class="p">[</span><span class="nx">lunrLanguageCode</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;zh&#34;</span>
-
-<span class="p">[</span><span class="nx">lunrLanguageLib</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;lib/lunr/lunr.zh.js&#34;</span>
-
-<span class="p">[</span><span class="nx">lunrSegmentitLib</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;lib/lunr/lunr.segmentit.js&#34;</span>
-
-<span class="p">[</span><span class="nx">copyToClipboard</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;複製到剪貼板&#34;</span>
-
-<span class="p">[</span><span class="nx">cookieconsentMessage</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;本網站使用 Cookies 來改善您的流覽體驗。&#34;</span>
-
-<span class="p">[</span><span class="nx">cookieconsentDismiss</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;同意&#34;</span>
-
-<span class="p">[</span><span class="nx">cookieconsentLink</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;瞭解更多&#34;</span>
-<span class="c"># === partials/assets.html ===</span>
-
-<span class="c"># === partials/plugin/share.html ===</span>
-<span class="p">[</span><span class="nx">shareOn</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;分享到&#34;</span>
-<span class="c"># === partials/plugin/share.html ===</span>
-
-<span class="c"># === posts/single.html ===</span>
-<span class="p">[</span><span class="nx">contents</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;目錄&#34;</span>
-
-<span class="p">[</span><span class="nx">publishedOnDate</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;發佈於 {{ .Date }}&#34;</span>
-
-<span class="p">[</span><span class="nx">includedInCategories</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;收錄於 {{ .Categories }}&#34;</span>
-
-<span class="p">[</span><span class="nx">wordCount</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;約 {{ .Count }} 字&#34;</span>
-
-<span class="p">[</span><span class="nx">readingTime</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;預計閱讀 {{ .Count }} 分鐘&#34;</span>
-
-<span class="p">[</span><span class="nx">views</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;次閱讀&#34;</span>
-
-<span class="p">[</span><span class="nx">author</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;作者&#34;</span>
-
-<span class="p">[</span><span class="nx">updatedOnDate</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;更新於 {{ .Date }}&#34;</span>
-
-<span class="p">[</span><span class="nx">readMarkdown</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;閱讀原始文檔&#34;</span>
-
-<span class="p">[</span><span class="nx">back</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;返回&#34;</span>
-
-<span class="p">[</span><span class="nx">home</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;主頁&#34;</span>
-
-<span class="p">[</span><span class="nx">readMore</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;閱讀全文&#34;</span>
-<span class="c"># === posts/single.html ===</span>
-
-<span class="c"># === 404.html ===</span>
-<span class="p">[</span><span class="nx">pageNotFound</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;頁面沒找到&#34;</span>
-
-<span class="p">[</span><span class="nx">pageNotFoundText</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;抱歉，您要查找的頁面不存在。&#34;</span>
-<span class="c"># === 404.html ===</span>
-
-<span class="c"># === shortcodes/admonition.html ===</span>
-<span class="p">[</span><span class="nx">note</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;注意&#34;</span>
-
-<span class="p">[</span><span class="nx">abstract</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;摘要&#34;</span>
-
-<span class="p">[</span><span class="nx">info</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;信息&#34;</span>
-
-<span class="p">[</span><span class="nx">tip</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;技巧&#34;</span>
-
-<span class="p">[</span><span class="nx">success</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;成功&#34;</span>
-
-<span class="p">[</span><span class="nx">question</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;問題&#34;</span>
-
-<span class="p">[</span><span class="nx">warning</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;警告&#34;</span>
-
-<span class="p">[</span><span class="nx">failure</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;失敗&#34;</span>
-
-<span class="p">[</span><span class="nx">danger</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;危險&#34;</span>
-
-<span class="p">[</span><span class="nx">bug</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;Bug&#34;</span>
-
-<span class="p">[</span><span class="nx">example</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;示例&#34;</span>
-
-<span class="p">[</span><span class="nx">quote</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;引用&#34;</span>
-<span class="c"># === shortcodes/admonition.html ===</span>
-
-<span class="c"># === shortcodes/version.html ===</span>
-<span class="p">[</span><span class="nx">new</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;新增&#34;</span>
-
-<span class="p">[</span><span class="nx">changed</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;更改&#34;</span>
-
-<span class="p">[</span><span class="nx">deleted</span><span class="p">]</span>
-<span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;刪除&#34;</span>
-<span class="c"># === shortcodes/version.html ===</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># Translations for Traditional Chinese</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 簡體中文的翻譯</span>
+</span></span><span class="line"><span class="cl"><span class="c"># https://gohugo.io/content-management/multilingual/#translation-of-strings</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === baseof ==</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">backToTop</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;回到頂部&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">viewComments</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;查看評論&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === baseof ==</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === Post ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">posts</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;文章&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === Post ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === Taxonomy ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">allSome</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;所有{{ .Some }}&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tag</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;標籤&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tags</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;標籤&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">category</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;分類&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">categories</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;分類&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">years</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;年度總結&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === Taxonomy ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === Pagination ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">more</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;更多&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === Pagination ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/header.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">selectLanguage</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;選擇語言&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">switchTheme</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;切換主題&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/header.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/footer.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">poweredBySome</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;由 {{ .Hugo }} 強力驅動 | 主題 - {{ .Theme }}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/footer.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/comment.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">valineLang</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;zh-TW&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">valinePlaceholder</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;你的評論 ...&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">facebookLanguageCode</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;zh-TW&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/comment.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/assets.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">search</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">searchPlaceholder</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;搜索文章標題或內容 ...&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">clear</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;清空&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">cancel</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;取消&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">noResultsFound</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;沒有找到結果&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">lunrLanguageCode</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;zh&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">lunrLanguageLib</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;lib/lunr/lunr.zh.js&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">lunrSegmentitLib</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;lib/lunr/lunr.segmentit.js&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">copyToClipboard</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;複製到剪貼板&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">cookieconsentMessage</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;本網站使用 Cookies 來改善您的流覽體驗。&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">cookieconsentDismiss</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;同意&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">cookieconsentLink</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;瞭解更多&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/assets.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/plugin/share.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">shareOn</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;分享到&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === partials/plugin/share.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === posts/single.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">contents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;目錄&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">publishedOnDate</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;發佈於 {{ .Date }}&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">includedInCategories</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;收錄於 {{ .Categories }}&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">wordCount</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;約 {{ .Count }} 字&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">readingTime</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;預計閱讀 {{ .Count }} 分鐘&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">views</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;次閱讀&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">author</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;作者&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">updatedOnDate</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;更新於 {{ .Date }}&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">readMarkdown</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;閱讀原始文檔&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">back</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;返回&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">home</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;主頁&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">readMore</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;閱讀全文&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === posts/single.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === 404.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">pageNotFound</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;頁面沒找到&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">pageNotFoundText</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;抱歉，您要查找的頁面不存在。&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === 404.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === shortcodes/admonition.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">note</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;注意&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">abstract</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;摘要&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">info</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;信息&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tip</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;技巧&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">success</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;成功&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">question</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;問題&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">warning</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;警告&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">failure</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;失敗&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">danger</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;危險&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">bug</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;Bug&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">example</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;示例&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">quote</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;引用&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === shortcodes/admonition.html ===</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># === shortcodes/version.html ===</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">new</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;新增&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">changed</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;更改&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">deleted</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">other</span> <span class="p">=</span> <span class="s2">&#34;刪除&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># === shortcodes/version.html ===</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="配置">配置</h2>
 <p>打開 <code>config.toml</code></p>
@@ -423,7 +423,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-tw&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-tw&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item></channel></rss>

@@ -19,13 +19,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="p">@</span><span class="k">echo</span> off
-<span class="k">title</span> Commit
-git add .
-<span class="k">set</span> <span class="k">/p</span> <span class="nv">m</span><span class="p">=</span>Message:
-git commit -m <span class="s2">&#34;</span><span class="nv">%m%</span><span class="s2">&#34;</span>
-git push
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="p">@</span><span class="k">echo</span> off
+</span></span><span class="line"><span class="cl"><span class="k">title</span> Commit
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl"><span class="k">set</span> <span class="k">/p</span> <span class="nv">m</span><span class="p">=</span>Message:
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;</span><span class="nv">%m%</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后另存为<code>commit.bat</code>文件，只要后缀是<code>bat</code>就行了。</p>
 <h3 id="使用">使用</h3>
@@ -37,8 +37,8 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat">hexo clean<span class="p">&amp;&amp;</span>hexo g -d
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">hexo clean<span class="p">&amp;&amp;</span>hexo g -d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="其他">其他</h3>
 <h4 id="死机脚本">死机脚本</h4>
@@ -48,8 +48,8 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">start</span> cmd ifconfig
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="k">start</span> cmd ifconfig
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>另外也说一下 linux 死机命令。fork 炸弹。<br>
 死机无非是耗尽系统资源</p>
@@ -58,8 +58,8 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">_(){ _ | _ &amp; }; _
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">_(){ _ | _ &amp; }; _
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个&amp;指后台运行的意思。</p>
 <h4 id="统计文件名">统计文件名</h4>
@@ -68,7 +68,7 @@ git push
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="k">dir</span> \\?\<span class="nv">%1</span> /a:-d /b /o /p /w <span class="p">&gt;</span>Filelist.txt
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>将需要统计的文件夹拖到 bat 文件上。</p>]]></description></item></channel></rss>

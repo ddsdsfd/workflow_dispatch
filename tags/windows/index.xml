@@ -20,10 +20,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
-	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
-<span class="cp">?&gt;</span><span class="err">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <h1 id="wampserver-多站点配置">WAMPServer 多站点配置</h1>
@@ -54,29 +54,29 @@
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Virtual Hosts
-#
-&lt;VirtualHost *:80&gt;
-  ServerName localhost
-  ServerAlias localhost
-  DocumentRoot &#34;g:/Demo&#34;
-  &lt;Directory &#34;g:/Demo&#34;&gt;
-    Options +Indexes +Includes +FollowSymLinks +MultiViews
-    AllowOverride All
-    Require local
-  &lt;/Directory&gt;
-&lt;/VirtualHost&gt;
-
-&lt;VirtualHost *:80&gt;
-  ServerName test01.com
-  DocumentRoot &#34;g:/Demo/test01&#34;
-&lt;/VirtualHost&gt;
-
-&lt;VirtualHost *:80&gt;
-  ServerName test02.com
-  DocumentRoot &#34;g:/Demo/test02&#34;
-&lt;/VirtualHost&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Virtual Hosts
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName localhost
+</span></span><span class="line"><span class="cl">  ServerAlias localhost
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo&#34;
+</span></span><span class="line"><span class="cl">  &lt;Directory &#34;g:/Demo&#34;&gt;
+</span></span><span class="line"><span class="cl">    Options +Indexes +Includes +FollowSymLinks +MultiViews
+</span></span><span class="line"><span class="cl">    AllowOverride All
+</span></span><span class="line"><span class="cl">    Require local
+</span></span><span class="line"><span class="cl">  &lt;/Directory&gt;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test01.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test01&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test02.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test02&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件，在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
 <div class="highlight"><div class="chroma">
@@ -98,22 +98,22 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">...
-
-# For example:
-#
-# 102.54.94.97 rhino.acme.com # source server
-# 38.25.63.10 x.acme.com # x client host
-# localhost name resolution is handled within DNS itself.
-#	127.0.0.1 localhost
-#	::1 localhost
-127.0.0.1 steamcommunity.com
-192.168.28.1 windows10.microdone.cn
-127.0.0.1 localhost
-::1 localhost
-127.0.0.1 test01.com
-127.0.0.1 test02.com
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># For example:
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl"># 102.54.94.97 rhino.acme.com # source server
+</span></span><span class="line"><span class="cl"># 38.25.63.10 x.acme.com # x client host
+</span></span><span class="line"><span class="cl"># localhost name resolution is handled within DNS itself.
+</span></span><span class="line"><span class="cl">#	127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">#	::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 steamcommunity.com
+</span></span><span class="line"><span class="cl">192.168.28.1 windows10.microdone.cn
+</span></span><span class="line"><span class="cl">127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 test01.com
+</span></span><span class="line"><span class="cl">127.0.0.1 test02.com
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="wampserver-自拟定端口">WAMPServer 自拟定端口</h1>
 <p>WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第一次装的时候发现 80 端口被占用了，因为以前玩了一下 Windows 的 IIS，暂停 IIS 的网站，再使用命令或者直接在控制面板关掉就好了。</p>
@@ -129,11 +129,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#监听端口
-Listen 0.0.0.0:8080
-Listen [::0]:8080
-ServerName localhost:8080
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#监听端口
+</span></span><span class="line"><span class="cl">Listen 0.0.0.0:8080
+</span></span><span class="line"><span class="cl">Listen [::0]:8080
+</span></span><span class="line"><span class="cl">ServerName localhost:8080
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>使用 Notepad++打开 C:\wamp 目录下的 wampmanager.ini 和 wampmanager.tpl<br>
@@ -174,8 +174,8 @@ Ctrl+F 查找 <code>localhost</code><br>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重启看看时间发现 ok 了。</p>
 <h2 id="方法二">方法二</h2>
@@ -189,8 +189,8 @@ Ctrl+F 查找 <code>localhost</code><br>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo timedatectl set-local-rtc 1
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo timedatectl set-local-rtc 1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>先在 ubuntu 下更新一下时间，确保时间无误：</p>
 <div class="highlight"><div class="chroma">
@@ -199,9 +199,9 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo apt-get install ntpdate
-$sudo ntpdate time.windows.com
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo apt-get install ntpdate
+</span></span><span class="line"><span class="cl">$sudo ntpdate time.windows.com
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后将时间更新到硬件上：</p>
 <div class="highlight"><div class="chroma">
@@ -209,8 +209,8 @@ $sudo ntpdate time.windows.com
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo hwclock --localtime --systohc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo hwclock --localtime --systohc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重新进入 windows10，发现时间恢复正常了！</p>]]></description></item><item><title>windows 上搭建 web 服务器</title><link>https://lruihao.cn/posts/web-server-win/</link><pubDate>Fri, 26 Oct 2018 21:56:18 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/web-server-win/</guid><description><![CDATA[<blockquote>
 <p>我用的 win10</p>

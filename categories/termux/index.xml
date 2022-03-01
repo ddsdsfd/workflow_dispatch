@@ -51,8 +51,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install vim
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install vim
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="解决中文乱码问题">解决中文乱码问题</h4>
 <p>在 home 目录下，新建。vimrc 文件</p>
@@ -61,8 +61,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim .vimrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim .vimrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>添加内容如下：</p>
 <div class="highlight"><div class="chroma">
@@ -72,10 +72,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
-set enc=utf8
-set fencs=utf8,gbk,gb2312,gb18030
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+</span></span><span class="line"><span class="cl">set enc=utf8
+</span></span><span class="line"><span class="cl">set fencs=utf8,gbk,gb2312,gb18030
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后 source 下变量：</p>
 <div class="highlight"><div class="chroma">
@@ -83,8 +83,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">source .vimrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">source .vimrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="修改启动问候语">修改启动问候语</h4>
 <div class="highlight"><div class="chroma">
@@ -92,8 +92,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>按 i 然后编辑，比如</p>
 <div class="highlight"><div class="chroma">
@@ -102,9 +102,9 @@ set fencs=utf8,gbk,gb2312,gb18030
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">		www.lruihao.cn
-		    李瑞豪
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">		www.lruihao.cn
+</span></span><span class="line"><span class="cl">		    李瑞豪
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Esc 然后：wq 退出</p>
 <h4 id="管理员权限">管理员权限</h4>
@@ -114,8 +114,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install tsu
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install tsu
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后终端下面输入：</p>
 <div class="highlight"><div class="chroma">
@@ -123,8 +123,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">tsu
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tsu
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>即可切换 root 用户，这个时候会弹出 root 授权提示。在管理员身份下，输入 exit 可回到普通用户身份。</p>
 <h3 id="美化">美化</h3>
@@ -149,8 +149,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sh -c &#34;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sh -c &#34;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="设置色彩样式">设置色彩样式：</h4>
 <p>运行 chcolor 更换色彩样式，或者：</p>
@@ -159,8 +159,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/colors.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~/.termux/colors.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="设置字体">设置字体</h4>
 <p>运行 chfont 更换字体，或者：</p>
@@ -169,8 +169,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/fonts.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~/.termux/fonts.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="需要软件包">需要软件包：</h4>
 <ul>
@@ -185,8 +185,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="创建-blog2-文件夹软连接备份文件">创建 blog2 文件夹软连接备份文件</h4>
 <div class="highlight"><div class="chroma">
@@ -194,8 +194,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="安装-hexo">安装 hexo</h3>
 <h4 id="安装准备">安装准备</h4>
@@ -208,12 +208,12 @@ set fencs=utf8,gbk,gb2312,gb18030
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nodejs
-pkg install git
-npm install hexo-cli -g
-npm install hexo-deployer-git --save
-pkg install openssh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install nodejs
+</span></span><span class="line"><span class="cl">pkg install git
+</span></span><span class="line"><span class="cl">npm install hexo-cli -g
+</span></span><span class="line"><span class="cl">npm install hexo-deployer-git --save
+</span></span><span class="line"><span class="cl">pkg install openssh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="初始化-hexo">初始化 hexo</h4>
 <div class="highlight"><div class="chroma">
@@ -224,11 +224,11 @@ pkg install openssh
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo init blog
-cd blog
-hexo g
-hexo s
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hexo init blog
+</span></span><span class="line"><span class="cl">cd blog
+</span></span><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl">hexo s
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>浏览器输入<code>127.0.0.1:4000</code>查看效果</p>
 <h4 id="链接-githubcodinggitee-等远程仓库">链接 github,coding,gitee 等远程仓库</h4>
@@ -238,9 +238,9 @@ hexo s
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh-keygen -t rsa -C &#34;your_email@example.com&#34;
-#这将按照你提供的邮箱地址，创建一对密钥（个人喜欢一路回车）
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -t rsa -C &#34;your_email@example.com&#34;
+</span></span><span class="line"><span class="cl">#这将按照你提供的邮箱地址，创建一对密钥（个人喜欢一路回车）
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>找到<code>~/.ssh/id_rsa.pub</code>这个文件复制里面的内容，到对应的平台生成 SSH 公钥</p>
 <h4 id="设置用户信息">设置用户信息</h4>
@@ -250,9 +250,9 @@ hexo s
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git config --global user.name &#34;lruihao&#34;
-git config --global user.email  &#34;1074627678@qq.com&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &#34;lruihao&#34;
+</span></span><span class="line"><span class="cl">git config --global user.email  &#34;1074627678@qq.com&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="测试链接">测试链接</h4>
 <div class="highlight"><div class="chroma">
@@ -262,10 +262,10 @@ git config --global user.email  &#34;1074627678@qq.com&#34;
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh -T git@github.com  #github
-ssh -T git@coding.net   #coding
-ssh -T git@gitee.com   #gitee
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -T git@github.com  #github
+</span></span><span class="line"><span class="cl">ssh -T git@coding.net   #coding
+</span></span><span class="line"><span class="cl">ssh -T git@gitee.com   #gitee
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>注意#注释部分不要的</strong></p>
 <h4 id="站点配置文件">站点配置文件</h4>
@@ -281,13 +281,13 @@ ssh -T git@gitee.com   #gitee
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">deploy:
-- type: git
-  repository:
-    github: git@github.com:Lruihao/Lruihao.github.io.git,master
-    coding: git@git.coding.net:liruihao/liruihao.git,master
-  #message: &#34;日常更新&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">deploy:
+</span></span><span class="line"><span class="cl">- type: git
+</span></span><span class="line"><span class="cl">  repository:
+</span></span><span class="line"><span class="cl">    github: git@github.com:Lruihao/Lruihao.github.io.git,master
+</span></span><span class="line"><span class="cl">    coding: git@git.coding.net:liruihao/liruihao.git,master
+</span></span><span class="line"><span class="cl">  #message: &#34;日常更新&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="部署">部署</h4>
 <div class="highlight"><div class="chroma">
@@ -296,9 +296,9 @@ ssh -T git@gitee.com   #gitee
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo clean
-hexo g -d
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl">hexo g -d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>没出错就可以正常通过相应域名访问了。
 <a
@@ -349,8 +349,8 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh root@118.24.217.167
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh root@118.24.217.167
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>会提示输入密码，linux 下输入密码是看不到的，大家都知道，小心点别输入错误。<br>
 之后就可以手机操作服务器了。</p>
@@ -360,8 +360,8 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>把里面的 length 改成 4，我默认的是 1。</p>
 <h3 id="nyancat-彩虹猫">nyancat 彩虹猫</h3>
@@ -372,9 +372,9 @@ hexo g -d
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nyancat
-nyancat
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install nyancat
+</span></span><span class="line"><span class="cl">nyancat
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>还有更多姿势这里就不写了，只写一下日常用到的，就这样 OK 睡觉！</p>
@@ -407,30 +407,30 @@ nyancat
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-chcolor
-chfont
-~/.termux/colors.sh
-~/.termux/fonts.sh
-
-echo &#34;https://www.lruihao.cn&#34; |curl -F-=\&lt;- qrenco.de
-
-pkg install nyancat
-nyancat
-pkg install sl
-sl
-pkg install figlet
-figlet hello
-pkg install toilet
-toilet hello
-toilet -f mono12 -F gay &#34;hello&#34;
-pkg cowsay
-cowsay &#34;hello&#34;
-pkg install cmatrix
-cmatrix
-pkg install w3m
-w3m www.lruihao.cn
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span><span class="line"><span class="cl">chcolor
+</span></span><span class="line"><span class="cl">chfont
+</span></span><span class="line"><span class="cl">~/.termux/colors.sh
+</span></span><span class="line"><span class="cl">~/.termux/fonts.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">echo &#34;https://www.lruihao.cn&#34; |curl -F-=\&lt;- qrenco.de
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pkg install nyancat
+</span></span><span class="line"><span class="cl">nyancat
+</span></span><span class="line"><span class="cl">pkg install sl
+</span></span><span class="line"><span class="cl">sl
+</span></span><span class="line"><span class="cl">pkg install figlet
+</span></span><span class="line"><span class="cl">figlet hello
+</span></span><span class="line"><span class="cl">pkg install toilet
+</span></span><span class="line"><span class="cl">toilet hello
+</span></span><span class="line"><span class="cl">toilet -f mono12 -F gay &#34;hello&#34;
+</span></span><span class="line"><span class="cl">pkg cowsay
+</span></span><span class="line"><span class="cl">cowsay &#34;hello&#34;
+</span></span><span class="line"><span class="cl">pkg install cmatrix
+</span></span><span class="line"><span class="cl">cmatrix
+</span></span><span class="line"><span class="cl">pkg install w3m
+</span></span><span class="line"><span class="cl">w3m www.lruihao.cn
+</span></span></code></pre></td></tr></table>
 </div>
 </div><pre><code>cmatrix 常用命令如下：
 cmatrix-a : 异步滚动（默认）
@@ -482,10 +482,10 @@ cmatrix -b -C blue
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install hexo-cli -g
-hexo init blog
-<span class="nb">cd</span> blog
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-cli -g
+</span></span><span class="line"><span class="cl">hexo init blog
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> blog
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>注意 ssh 配置先安装：</strong><code>pkg install openssh</code><br>
 然后按照基本操作配置 Hexo，GitHub 或者 gitee,coding 等连上，部署测试一次。<br>

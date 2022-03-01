@@ -23,13 +23,11 @@
 <meta name=application-name content="菠菜眾長">
 <meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-admin/><link rel=prev href=https://lruihao.cn/posts/github-actions/><link rel=next href=https://lruihao.cn/posts/hugo-friends/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 本地管理 Shell 腳本","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-admin\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"shell, hugo","wordcount":762,"url":"https:\/\/lruihao.cn\/posts\/hugo-admin\/","datePublished":"2021-10-04T23:49:00+08:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":"使用 Shell 腳本管理 Hugo 本地博客"}</script></head>
-<body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/hugo-admin/><link rel=prev href=https://lruihao.cn/posts/github-actions/><link rel=next href=https://lruihao.cn/posts/hugo-friends/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo 本地管理 Shell 腳本","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/hugo-admin\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"shell, hugo","wordcount":762,"url":"https:\/\/lruihao.cn\/posts\/hugo-admin\/","datePublished":"2021-10-04T23:49:00+08:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":"使用 Shell 腳本管理 Hugo 本地博客"}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
 <div class=header-title>
-<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div>
-<div class=menu>
+<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu>
 <div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
 <input type=text placeholder=搜尋文章標題或內容... id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜尋>
@@ -44,19 +42,13 @@
 </span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
 <i class="fas fa-adjust fa-fw"></i>
 </a>
-</div>
-</div>
-</div>
-</header><header class=mobile id=header-mobile>
+</div></div></div></header><header class=mobile id=header-mobile>
 <div class=header-container>
 <div class=header-wrapper>
 <div class=header-title>
-<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div>
-<div class=menu-toggle id=menu-toggle-mobile>
+<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu-toggle id=menu-toggle-mobile>
 <span></span><span></span><span></span>
-</div>
-</div>
-<div class=menu id=menu-mobile><div class=search-wrapper>
+</div></div><div class=menu id=menu-mobile><div class=search-wrapper>
 <div class="search mobile" id=search-mobile>
 <input type=text placeholder=搜尋文章標題或內容... id=search-input-mobile>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜尋>
@@ -68,84 +60,46 @@
 <span class="search-button search-loading" id=search-loading-mobile>
 <i class="fas fa-spinner fa-fw fa-spin"></i>
 </span>
-</div>
-<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+</div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
 取消
 </a>
 </div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
 <i class="fas fa-adjust fa-fw"></i>
-</a></div>
-</div>
-</header>
-<div class="search-dropdown desktop">
-<div id=search-dropdown-desktop></div>
-</div>
-<div class="search-dropdown mobile">
-<div id=search-dropdown-mobile></div>
-</div>
-<main class=container page-style=normal><aside class=toc id=toc-auto><h2 class=toc-title>目錄</h2>
-<div class=toc-content id=toc-content-auto></div></aside>
-<aside class=aside-custom>
-</aside>
-<article class="page single"><h1 class="single-title animated flipInX">Hugo 本地管理 Shell 腳本</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div>
-<div class=post-meta-line><span title="2021-10-04 23:49:00">
+</a></div></div></header><div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div></div><main class=container page-style=normal><aside class=toc id=toc-auto><h2 class=toc-title>目錄</h2><div class=toc-content id=toc-content-auto></div></aside><aside class=aside-custom>
+</aside><article class="page single"><h1 class="single-title animated flipInX">Hugo 本地管理 Shell 腳本</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/hugo/><i class="far fa-folder fa-fw"></i>hugo</a></span></div><div class=post-meta-line><span title="2021-10-04 23:49:00">
 <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-10-04>2021-10-04</time>
 </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 762 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/posts/hugo-admin/ class=leancloud_visitors data-flag-title="Hugo 本地管理 Shell 腳本">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count>-</span>&nbsp;次閱讀
 </span>&nbsp;<span class=comment-count data-flag-title="Hugo 本地管理 Shell 腳本">
 <i class="far fa-comments fa-fw"></i>&nbsp;<span data-xid=/posts/hugo-admin/ class=valine-comment-count>-</span>&nbsp;條評論
-</span>&nbsp;</div>
-</div><div class="details toc" id=toc-static kept=false>
+</span>&nbsp;</div></div><div class="details toc" id=toc-static kept=false>
 <div class="details-summary toc-title">
 <span>目錄</span>
 <span><i class="details-icon fas fa-angle-right"></i></span>
-</div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+</div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
 <li>
 <ul>
 <li><a href=#實現>實現</a>
 <ul>
-<li><a href=#post_generatorsh>post_generator.sh</a></li>
-<li><a href=#hugo_serversh>hugo_server.sh</a></li>
-<li><a href=#hugo_buildersh>hugo_builder.sh</a></li>
-<li><a href=#public_asyncsh>public_async.sh</a></li>
-<li><a href=#auto_pushsh>auto_push.sh</a></li>
-<li><a href=#hugo_mainsh>hugo_main.sh</a></li>
-</ul>
-</li>
-<li><a href=#使用>使用</a></li>
-</ul>
-</li>
-</ul>
-</nav></div>
-</div><div class=content id=content><div class="details admonition abstract open">
+<li><a href=#post_generatorsh>post_generator.sh</a></li><li><a href=#hugo_serversh>hugo_server.sh</a></li><li><a href=#hugo_buildersh>hugo_builder.sh</a></li><li><a href=#public_asyncsh>public_async.sh</a></li><li><a href=#auto_pushsh>auto_push.sh</a></li><li><a href=#hugo_mainsh>hugo_main.sh</a></li></ul></li><li><a href=#使用>使用</a></li></ul></li></ul></nav></div></div><div class=content id=content><div class="details admonition abstract open">
 <div class="details-summary admonition-title">
 <i class="icon fas fa-list-ul fa-fw"></i>Abstract<i class="details-icon fas fa-angle-right fa-fw"></i>
-</div>
-<div class=details-content>
+</div><div class=details-content>
 <div class=admonition-content>在使用 hugo 寫博客的過程中會使用到一些命令，包括 Git 的使用也會用到 Git 命令，但是這些命令我感覺知道就好，沒必要因輸入命令儿增加寫博客和部署博客的額外工作。<br>
-自然要想辦法簡化這些過程，Git 還好有 SourceTree 等工具，Hugo 卻沒有，也懶得去網絡上找類似以前 hexo 有 hexo-admin 的插件可以讓大家在瀏覽器寫博客，因為我覺得這和靜態博客初衷背道而馳，於是我就折中方案，寫了一個滿足日常需求的 Shell 腳本，生成管理本地博客。</div>
-</div>
-</div>
-<h2 id=實現>實現</h2>
-<p>一共六個腳本，防止 <code>hugo-site/_localadmin/</code> 下</p>
-<pre><code>_localadmin/
+自然要想辦法簡化這些過程，Git 還好有 SourceTree 等工具，Hugo 卻沒有，也懶得去網絡上找類似以前 hexo 有 hexo-admin 的插件可以讓大家在瀏覽器寫博客，因為我覺得這和靜態博客初衷背道而馳，於是我就折中方案，寫了一個滿足日常需求的 Shell 腳本，生成管理本地博客。</div></div></div><h2 id=實現>實現</h2><p>一共六個腳本，防止 <code>hugo-site/_localadmin/</code> 下</p><pre><code>_localadmin/
   ├── auto_push.sh       # 自動化提交源碼
   ├── hugo_builder.sh    # 構建 hugo 命令
   ├── hugo_main.sh       # 主介面入口
   ├── hugo_server.sh     # 啟動本地服務
   ├── post_generator.sh  # 創建文章
   └── public_async.sh    # 同步 public 子模組
-</code></pre>
-<h3 id=post_generatorsh>post_generator.sh</h3>
-<ol>
-<li>輸入文章名稱 （建議使用英文）</li>
-<li>文章是否會插入圖片等資源 （默認：否）</li>
-</ol>
-<div class=highlight><div class=chroma>
+</code></pre><h3 id=post_generatorsh>post_generator.sh</h3><ol>
+<li>輸入文章名稱 （建議使用英文）</li><li>文章是否會插入圖片等資源 （默認：否）</li></ol><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
@@ -161,64 +115,47 @@
 </span><span class=lnt>12
 </span><span class=lnt>13
 </span><span class=lnt>14
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
-</span><span class=cp></span><span class=c1>#author: Lruihao</span>
-<span class=nb>cd</span> ..
-<span class=nb>read</span> -p <span class=s2>&#34;Please enter the article name: &#34;</span> postName
-<span class=k>if</span> <span class=o>[</span> -z <span class=nv>$postName</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
-  <span class=nb>echo</span> <span class=s2>&#34;The article name is required!&#34;</span>
-<span class=k>else</span>
-  <span class=nb>read</span> -p <span class=s2>&#34;Will there be pictures in this article? [y/n]...&#34;</span> choice
-  <span class=k>if</span> <span class=o>[</span> <span class=nv>$choice</span> <span class=o>=</span> <span class=s2>&#34;y&#34;</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
-    hugo new posts/<span class=nv>$postName</span>/index.md
-  <span class=k>else</span>
-    hugo new posts/<span class=nv>$postName</span>.md
-  <span class=k>fi</span>
-<span class=k>fi</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id=hugo_serversh>hugo_server.sh</h3>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1>#author: Lruihao</span>
+</span></span><span class=line><span class=cl><span class=nb>cd</span> ..
+</span></span><span class=line><span class=cl><span class=nb>read</span> -p <span class=s2>&#34;Please enter the article name: &#34;</span> postName
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> -z <span class=nv>$postName</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
+</span></span><span class=line><span class=cl>  <span class=nb>echo</span> <span class=s2>&#34;The article name is required!&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>else</span>
+</span></span><span class=line><span class=cl>  <span class=nb>read</span> -p <span class=s2>&#34;Will there be pictures in this article? [y/n]...&#34;</span> choice
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=o>[</span> <span class=nv>$choice</span> <span class=o>=</span> <span class=s2>&#34;y&#34;</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
+</span></span><span class=line><span class=cl>    hugo new posts/<span class=nv>$postName</span>/index.md
+</span></span><span class=line><span class=cl>  <span class=k>else</span>
+</span></span><span class=line><span class=cl>    hugo new posts/<span class=nv>$postName</span>.md
+</span></span><span class=line><span class=cl>  <span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=hugo_serversh>hugo_server.sh</h3><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>cd</span> ..
-hugo server --disableFastRender
-</code></pre></td></tr></table>
-</div>
-</div><h3 id=hugo_buildersh>hugo_builder.sh</h3>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>cd</span> ..
+</span></span><span class=line><span class=cl>hugo server --disableFastRender
+</span></span></code></pre></td></tr></table></div></div><h3 id=hugo_buildersh>hugo_builder.sh</h3><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>cd</span> ..
-hugo --minify
-</code></pre></td></tr></table>
-</div>
-</div><h3 id=public_asyncsh>public_async.sh</h3>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>cd</span> ..
+</span></span><span class=line><span class=cl>hugo --minify
+</span></span></code></pre></td></tr></table></div></div><h3 id=public_asyncsh>public_async.sh</h3><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>cd</span> ..
-git submodule update --remote 
-git add public
-git commit -m <span class=s2>&#34;Feat: Update public module commit id&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id=auto_pushsh>auto_push.sh</h3>
-<p>不輸入 Git 提交訊息會使用腳本中默認訊息 <code>Docs: 『菠菜眾長』内容更新 YYYY-MM-DD week hh:mm::ss</code></p>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>cd</span> ..
+</span></span><span class=line><span class=cl>git submodule update --remote 
+</span></span><span class=line><span class=cl>git add public
+</span></span><span class=line><span class=cl>git commit -m <span class=s2>&#34;Feat: Update public module commit id&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=auto_pushsh>auto_push.sh</h3><p>不輸入 Git 提交訊息會使用腳本中默認訊息 <code>Docs: 『菠菜眾長』内容更新 YYYY-MM-DD week hh:mm::ss</code></p><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
@@ -234,29 +171,23 @@ git commit -m <span class=s2>&#34;Feat: Update public module commit id&#34;</spa
 </span><span class=lnt>12
 </span><span class=lnt>13
 </span><span class=lnt>14
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
-</span><span class=cp></span><span class=c1>#author: Lruihao</span>
-<span class=nb>cd</span> ..
-<span class=c1># 是否需要每次提交自動更新子模組</span>
-<span class=c1># git submodule update --remote </span>
-<span class=c1># git add public</span>
-<span class=c1># git commit -m &#34;Feat: Update public module commit id&#34;</span>
-git add .
-<span class=nb>read</span> -p <span class=s2>&#34;Please enter commit message: &#34;</span> commitMsg
-<span class=k>if</span> <span class=o>[</span> -z <span class=nv>$commitMsg</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
-  <span class=nv>commitMsg</span><span class=o>=</span><span class=s2>&#34;Docs: 『菠菜眾長』内容更新 </span><span class=k>$(</span>date +<span class=s1>&#39;%F %a %T&#39;</span><span class=k>)</span><span class=s2>&#34;</span>
-<span class=k>fi</span>
-git commit -m <span class=s2>&#34;</span><span class=nv>$commitMsg</span><span class=s2>&#34;</span>
-git push
-</code></pre></td></tr></table>
-</div>
-</div><h3 id=hugo_mainsh>hugo_main.sh</h3>
-<blockquote>
-<p>可單獨執行子腳本也可以通過主介面來選擇序號執行</p>
-</blockquote>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1>#author: Lruihao</span>
+</span></span><span class=line><span class=cl><span class=nb>cd</span> ..
+</span></span><span class=line><span class=cl><span class=c1># 是否需要每次提交自動更新子模組</span>
+</span></span><span class=line><span class=cl><span class=c1># git submodule update --remote </span>
+</span></span><span class=line><span class=cl><span class=c1># git add public</span>
+</span></span><span class=line><span class=cl><span class=c1># git commit -m &#34;Feat: Update public module commit id&#34;</span>
+</span></span><span class=line><span class=cl>git add .
+</span></span><span class=line><span class=cl><span class=nb>read</span> -p <span class=s2>&#34;Please enter commit message: &#34;</span> commitMsg
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> -z <span class=nv>$commitMsg</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
+</span></span><span class=line><span class=cl>  <span class=nv>commitMsg</span><span class=o>=</span><span class=s2>&#34;Docs: 『菠菜眾長』内容更新 </span><span class=k>$(</span>date +<span class=s1>&#39;%F %a %T&#39;</span><span class=k>)</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl>git commit -m <span class=s2>&#34;</span><span class=nv>$commitMsg</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>git push
+</span></span></code></pre></td></tr></table></div></div><h3 id=hugo_mainsh>hugo_main.sh</h3><blockquote>
+<p>可單獨執行子腳本也可以通過主介面來選擇序號執行</p></blockquote><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
@@ -296,106 +227,78 @@ git push
 </span><span class=lnt>36
 </span><span class=lnt>37
 </span><span class=lnt>38
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/bash
-</span><span class=cp></span><span class=c1>#author: Lruihao</span>
-<span class=nb>echo</span> <span class=s2>&#34;Please enter the serial number to work&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;--------------------------------------&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;1. post generator&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;2. hugo server&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;3. hugo build&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;4. public async&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;5. auto push&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;--------------------------------------&#34;</span>
-<span class=nb>echo</span> <span class=s2>&#34;Press Ctrl+C to stop&#34;</span>
-
-<span class=nb>read</span> num
-<span class=k>case</span> <span class=nv>$num</span> in
-  1<span class=o>)</span> 
-    sh post_generator.sh
-    <span class=p>;;</span>
-  2<span class=o>)</span>
-    sh hugo_server.sh
-    <span class=p>;;</span>
-  3<span class=o>)</span>
-    sh hugo_builder.sh
-    <span class=p>;;</span>
-  4<span class=o>)</span>
-    sh public_async.sh
-    <span class=p>;;</span>
-  5<span class=o>)</span>
-    sh auto_push.sh
-    <span class=p>;;</span>
-  *<span class=o>)</span>
-    <span class=nb>echo</span> <span class=s2>&#34;There is no such serial number&#34;</span>
-    <span class=p>;;</span>
-<span class=k>esac</span>
-
-<span class=nb>echo</span> <span class=s2>&#34;Press any key to continue...&#34;</span>
-<span class=nb>read</span> x
-clear
-sh hugo_main.sh
-</code></pre></td></tr></table>
-</div>
-</div><h2 id=使用>使用</h2>
-<ol>
-<li>將 <code>hugo_main.sh</code> 建立桌面快捷鍵</li>
-<li>雙擊 <code>hugo_main.sh</code> 進入根據提示使用即可</li>
-</ol>
-<p>由於一般寫博客會便邊寫邊預覽，所以一般開兩個主介面窗口，如下圖：</p>
-<blockquote>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=c1>#author: Lruihao</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;Please enter the serial number to work&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;--------------------------------------&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;1. post generator&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;2. hugo server&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;3. hugo build&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;4. public async&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;5. auto push&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;--------------------------------------&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;Press Ctrl+C to stop&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>read</span> num
+</span></span><span class=line><span class=cl><span class=k>case</span> <span class=nv>$num</span> in
+</span></span><span class=line><span class=cl>  1<span class=o>)</span> 
+</span></span><span class=line><span class=cl>    sh post_generator.sh
+</span></span><span class=line><span class=cl>    <span class=p>;;</span>
+</span></span><span class=line><span class=cl>  2<span class=o>)</span>
+</span></span><span class=line><span class=cl>    sh hugo_server.sh
+</span></span><span class=line><span class=cl>    <span class=p>;;</span>
+</span></span><span class=line><span class=cl>  3<span class=o>)</span>
+</span></span><span class=line><span class=cl>    sh hugo_builder.sh
+</span></span><span class=line><span class=cl>    <span class=p>;;</span>
+</span></span><span class=line><span class=cl>  4<span class=o>)</span>
+</span></span><span class=line><span class=cl>    sh public_async.sh
+</span></span><span class=line><span class=cl>    <span class=p>;;</span>
+</span></span><span class=line><span class=cl>  5<span class=o>)</span>
+</span></span><span class=line><span class=cl>    sh auto_push.sh
+</span></span><span class=line><span class=cl>    <span class=p>;;</span>
+</span></span><span class=line><span class=cl>  *<span class=o>)</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;There is no such serial number&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>;;</span>
+</span></span><span class=line><span class=cl><span class=k>esac</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;Press any key to continue...&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>read</span> x
+</span></span><span class=line><span class=cl>clear
+</span></span><span class=line><span class=cl>sh hugo_main.sh
+</span></span></code></pre></td></tr></table></div></div><h2 id=使用>使用</h2><ol>
+<li>將 <code>hugo_main.sh</code> 建立桌面快捷鍵</li><li>雙擊 <code>hugo_main.sh</code> 進入根據提示使用即可</li></ol><p>由於一般寫博客會便邊寫邊預覽，所以一般開兩個主介面窗口，如下圖：</p><blockquote>
 <ul>
-<li>一個選擇 <code>2</code> 啟動本地服務</li>
-<li>一個用於生成文章，部署文章等</li>
-</ul>
-</blockquote>
-<p><figure><a class=lightgallery href=/posts/hugo-admin/images/hugo-admin1.png title="Hugo Admin" data-thumbnail=/posts/hugo-admin/images/hugo-admin1.png data-sub-html="<h2>Hugo Admin</h2><p>Hugo Admin</p>">
+<li>一個選擇 <code>2</code> 啟動本地服務</li><li>一個用於生成文章，部署文章等</li></ul></blockquote><p><figure><a class=lightgallery href=/posts/hugo-admin/images/hugo-admin1.png title="Hugo Admin" data-thumbnail=/posts/hugo-admin/images/hugo-admin1.png data-sub-html="<h2>Hugo Admin</h2><p>Hugo Admin</p>">
 <img class=lazyload src=/svg/loading.min.svg data-src=images/hugo-admin1.png data-srcset="/posts/hugo-admin/images/hugo-admin1.png, images/hugo-admin1.png 1.5x, /posts/hugo-admin/images/hugo-admin1.png 2x" data-sizes=auto alt=/posts/hugo-admin/images/hugo-admin1.png>
-</a><figcaption class=image-caption>Hugo Admin</figcaption>
-</figure></p></div><div class=post-footer id=post-footer>
+</a><figcaption class=image-caption>Hugo Admin</figcaption></figure></p></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
 <span title="2021-12-08 22:08:53">更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 rel="external nofollow noopener noreffer" target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
 <i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
-</div>
-<div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
-</div>
-<div class=post-info-line>
+</div><div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div><div class=post-info-line>
 <div class=post-info-md><span>
 <a class=link-to-markdown href=/posts/hugo-admin/index.md target=_blank>閱讀原始文檔</a>
-</span></div>
-<div class=post-info-share>
+</span></div><div class=post-info-share>
 <span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/hugo-admin/ data-title="Hugo 本地管理 Shell 腳本" data-hashtags=shell,hugo><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/hugo-admin/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/hugo-admin/ data-title="Hugo 本地管理 Shell 腳本" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/hugo-admin/ data-title="Hugo 本地管理 Shell 腳本"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
-</div>
-</div>
-</div>
-<div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/shell/>shell</a>,&nbsp;<a href=/tags/hugo/>hugo</a></section>
-<section>
+</div></div></div><div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/shell/>shell</a>,&nbsp;<a href=/tags/hugo/>hugo</a></section><section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
-</section>
-</div>
-<div class=post-nav><a href=/posts/github-actions/ class=prev rel=prev title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶"><i class="fas fa-angle-left fa-fw"></i>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</a>
-<a href=/posts/hugo-friends/ class=next rel=next title="Hugo 友情連結模板">Hugo 友情連結模板<i class="fas fa-angle-right fa-fw"></i></a></div>
-</div>
-<div id=comments><div id=valine class=comment></div><noscript>
+</section></div><div class=post-nav><a href=/posts/github-actions/ class=prev rel=prev title="Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶"><i class="fas fa-angle-left fa-fw"></i>Hugo 使用 Github Actions 部署到 Github Pages 和 腾讯云 cos 桶</a>
+<a href=/posts/hugo-friends/ class=next rel=next title="Hugo 友情連結模板">Hugo 友情連結模板<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="external nofollow noopener noreffer">Valine</a>.
 </noscript></div></article></main><footer class=footer>
-<div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo"> FixIt</a>
+<div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.93.0">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo"> FixIt</a>
 </div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
 <a href=https://github.com/Lruihao target=_blank rel="external nofollow noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class="footer-line ibruce">
 <span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."><i class="fas fa-heartbeat animate-icon"></i>
 <span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="far fa-eye"></i>
 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span></span>
-</div><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class=footer-divider></span><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div></div>
-</footer></div>
-<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
+</div><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class=footer-divider></span><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
 <i class="fas fa-arrow-up fa-fw"></i>
 </a><a href=# id=view-comments class=fixed-button title=查看評論>
 <i class="fas fa-comment fa-fw"></i>
 </a>
-</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js defer></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js defer></script><script type=text/javascript src=/lib/sharer/sharer.min.js async defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript src=/lib/pangu/pangu.min.js defer></script><script type=text/javascript src=/lib/cell-watermark/watermark.min.js defer></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async defer></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:50},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!0,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"瞭解更多",message:"本網站使用 Cookies 來改善您的流覽體驗."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},enablePWA:!0,enablePangu:!0,ibruce:{enable:!0,siteTime:"2018-05-28T20:01:01+08:00"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{algoliaAppID:"MTJNHU0JVB",algoliaIndex:"index",algoliaSearchKey:"5486225134d99f43826da401ee9bad57",highlightTag:"em",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"algolia"},twemoji:!0,watermark:{appendto:".wrapper\u003e.main",colspacing:30,content:'\u003cimg style="height: 0.85rem;" src="/logo.png" alt="logo" /\u003e 李瑞豪',enable:!0,fontfamily:"MMT_LRH,沐目体",fontsize:1.1,height:20,opacity:.02,rotate:15,rowspacing:60,width:150}}</script><script type=text/javascript src=/js/theme.min.js defer></script><script type=text/javascript src=/js/_custom.min.js defer></script></body>
-</html>
+</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js defer></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js defer></script><script type=text/javascript src=/lib/sharer/sharer.min.js async defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript src=/lib/pangu/pangu.min.js defer></script><script type=text/javascript src=/lib/cell-watermark/watermark.min.js defer></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async defer></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:50},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!0,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"瞭解更多",message:"本網站使用 Cookies 來改善您的流覽體驗."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},enablePWA:!0,enablePangu:!0,ibruce:{enable:!0,siteTime:"2018-05-28T20:01:01+08:00"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{algoliaAppID:"MTJNHU0JVB",algoliaIndex:"index",algoliaSearchKey:"5486225134d99f43826da401ee9bad57",highlightTag:"em",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"algolia"},twemoji:!0,watermark:{appendto:".wrapper\u003e.main",colspacing:30,content:'\u003cimg style="height: 0.85rem;" src="/logo.png" alt="logo" /\u003e 李瑞豪',enable:!0,fontfamily:"MMT_LRH,沐目体",fontsize:1.1,height:20,opacity:.02,rotate:15,rowspacing:60,width:150}}</script><script type=text/javascript src=/js/theme.min.js defer></script><script type=text/javascript src=/js/_custom.min.js defer></script></body></html>

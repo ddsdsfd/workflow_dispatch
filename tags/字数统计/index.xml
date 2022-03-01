@@ -33,11 +33,11 @@ next 主题好像更新了，现在自带的可以用了，如果可以用了，
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">npm i --save hexo-wordcount
-
-# Node 版本 7.6.0 之前，请安装 2.x 版本 (Node.js v7.6.0 and previous)
-npm install hexo-wordcount@2 --save
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm i --save hexo-wordcount
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Node 版本 7.6.0 之前，请安装 2.x 版本 (Node.js v7.6.0 and previous)
+</span></span><span class="line"><span class="cl">npm install hexo-wordcount@2 --save
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="post-添加">post 添加</h2>
 <p>打开<code>hexo\themes\hexo-theme-next\layout\_macro</code>路径下的 post.swig 文件，既然没有字数统计那么我们就加一个，简单暴力地直接在阅读数后面加上一条就好了，在文件类搜索关键词<code>busuanzi</code>, 我用的是不蒜子，如果用的了 leancloud 的搜 leancloud 就好了，其他类似。找到这段代码后</p>
@@ -55,17 +55,17 @@ npm install hexo-wordcount@2 --save
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">{% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.post_views %}
-    &lt;span class=&#34;post-meta-divider&#34;&gt;|&lt;/span&gt;
-    &lt;span class=&#34;post-meta-item-icon&#34;
-    {% if not theme.post_meta.item_text %} title=&#34;{{ __(&#39;post.views&#39;) }}&#34; {% endif %}&gt;
-    &lt;i class=&#34;fa fa-{{ theme.busuanzi_count.post_views_icon }}&#34;&gt;&lt;/i&gt;
-    {% if theme.post_meta.item_text %} {{__(&#39;post.views&#39;) + __(&#39;symbol.colon&#39;) }} {% endif %}
-    &lt;span class=&#34;busuanzi-value&#34; id=&#34;busuanzi_value_page_pv&#34; &gt;&lt;/span&gt;
-    &lt;/span&gt;
-            
-{% endif %}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.post_views %}
+</span></span><span class="line"><span class="cl">    &lt;span class=&#34;post-meta-divider&#34;&gt;|&lt;/span&gt;
+</span></span><span class="line"><span class="cl">    &lt;span class=&#34;post-meta-item-icon&#34;
+</span></span><span class="line"><span class="cl">    {% if not theme.post_meta.item_text %} title=&#34;{{ __(&#39;post.views&#39;) }}&#34; {% endif %}&gt;
+</span></span><span class="line"><span class="cl">    &lt;i class=&#34;fa fa-{{ theme.busuanzi_count.post_views_icon }}&#34;&gt;&lt;/i&gt;
+</span></span><span class="line"><span class="cl">    {% if theme.post_meta.item_text %} {{__(&#39;post.views&#39;) + __(&#39;symbol.colon&#39;) }} {% endif %}
+</span></span><span class="line"><span class="cl">    &lt;span class=&#34;busuanzi-value&#34; id=&#34;busuanzi_value_page_pv&#34; &gt;&lt;/span&gt;
+</span></span><span class="line"><span class="cl">    &lt;/span&gt;
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">{% endif %}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在<code>endif</code>上面，即本文代码块那个空行处添加以下代码</p>
 <div class="highlight"><div class="chroma">
@@ -74,9 +74,9 @@ npm install hexo-wordcount@2 --save
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;span class=&#34;post-meta-divider&#34;&gt;|&lt;/span&gt;
-&lt;span title=&#34;{{ __(&#39;post.wordcount&#39;) }}&#34;&gt;&lt;span class=&#34;post-meta-item-icon&#34;&gt;&lt;i class=&#34;fa fa-file-word-o&#34;&gt;&lt;/i&gt;&lt;/span&gt;字数： {{ wordcount(post.content) }}&lt;/span&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;span class=&#34;post-meta-divider&#34;&gt;|&lt;/span&gt;
+</span></span><span class="line"><span class="cl">&lt;span title=&#34;{{ __(&#39;post.wordcount&#39;) }}&#34;&gt;&lt;span class=&#34;post-meta-item-icon&#34;&gt;&lt;i class=&#34;fa fa-file-word-o&#34;&gt;&lt;/i&gt;&lt;/span&gt;字数： {{ wordcount(post.content) }}&lt;/span&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="全站添加">全站添加</h2>
 <p>打开<code>hexo\themes\hexo-theme-next\layout\_partials</code>路径下 footer.swig 文件，在你喜欢的位置添加以下代码</p>
@@ -88,10 +88,10 @@ npm install hexo-wordcount@2 --save
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div class=&#34;theme-info&#34;&gt;
-  &lt;div class=&#34;powered-by&#34;&gt;&lt;/div&gt;
-  &lt;span class=&#34;post-count&#34;&gt;全站共 {{ totalcount(site) }} 字&lt;/span&gt;
-&lt;/div&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;div class=&#34;theme-info&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;div class=&#34;powered-by&#34;&gt;&lt;/div&gt;
+</span></span><span class="line"><span class="cl">  &lt;span class=&#34;post-count&#34;&gt;全站共 {{ totalcount(site) }} 字&lt;/span&gt;
+</span></span><span class="line"><span class="cl">&lt;/div&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item></channel></rss>

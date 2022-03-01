@@ -43,8 +43,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-ubuntu16+.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>安装</p>
 <div class="highlight"><div class="chroma">
@@ -52,8 +52,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo bash install-ubuntu16+.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo bash install-ubuntu16+.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>等待中一路回车，当提示 done！ 则表示安装成功：
 </p>
@@ -81,11 +81,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/home/judge/etc/judge.conf
-/home/judge/src/web/include/db_info.inc.php
-/etc/php5/fpm/php.ini 或 /etc/php7.0/fpm/php.ini
-/etc/nginx/sites-enabled/default
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/home/judge/etc/judge.conf
+</span></span><span class="line"><span class="cl">/home/judge/src/web/include/db_info.inc.php
+</span></span><span class="line"><span class="cl">/etc/php5/fpm/php.ini 或 /etc/php7.0/fpm/php.ini
+</span></span><span class="line"><span class="cl">/etc/nginx/sites-enabled/default
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ngrok/</guid><description><![CDATA[<blockquote>
 <p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。</p>
@@ -154,32 +154,32 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">yum install -y wget <span class="o">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> sh install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">yum install -y wget <span class="o">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> sh install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> sudo bash install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> sudo bash install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell">wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span class="o">&amp;&amp;</span> bash install.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <h1 id="搭建-ftp-和云盘服务器">搭建 ftp 和云盘服务器</h1>
@@ -196,8 +196,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重启看看时间发现 ok 了。</p>
 <h2 id="方法二">方法二</h2>
@@ -211,8 +211,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo timedatectl set-local-rtc 1
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo timedatectl set-local-rtc 1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>先在 ubuntu 下更新一下时间，确保时间无误：</p>
 <div class="highlight"><div class="chroma">
@@ -221,9 +221,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo apt-get install ntpdate
-$sudo ntpdate time.windows.com
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo apt-get install ntpdate
+</span></span><span class="line"><span class="cl">$sudo ntpdate time.windows.com
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后将时间更新到硬件上：</p>
 <div class="highlight"><div class="chroma">
@@ -231,8 +231,8 @@ $sudo ntpdate time.windows.com
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$sudo hwclock --localtime --systohc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sudo hwclock --localtime --systohc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重新进入 windows10，发现时间恢复正常了！</p>]]></description></item><item><title>shell 脚本初体验</title><link>https://lruihao.cn/posts/shell/</link><pubDate>Mon, 29 Oct 2018 11:57:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/shell/</guid><description><![CDATA[<p>今天上机学了几个小命令</p>
 <ul>
@@ -296,64 +296,62 @@ $sudo ntpdate time.windows.com
 </span><span class="lnt">51
 </span><span class="lnt">52
 </span><span class="lnt">53
-</span><span class="lnt">54
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="c1">#liruihao</span>
-<span class="c1">#menu.sh</span>
-<span class="c1">#sudo apt curl install nyancat sl figlet toilet cowsay </span>
-<span class="nb">echo</span> <span class="s2">&#34;-------------菜-单--------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------1-打印二维码--------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------2-彩虹猫------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------3-小火切------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------4-打字机------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;------------5-小许牛------------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c暂停程序--------&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
-<span class="nb">echo</span> <span class="s2">&#34;请输入序号！&#34;</span>
-<span class="nb">read</span> i
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">1</span>
-<span class="k">then</span>
-	<span class="nb">echo</span> <span class="s2">&#34;请输入网址！&#34;</span>
-	<span class="nb">read</span> s1
-       	<span class="nb">echo</span> <span class="nv">$s1</span> <span class="p">|</span>curl -F-<span class="o">=</span><span class="se">\&lt;</span>- qrenco.de
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">2</span>
-<span class="k">then</span>
-	nyancat
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">3</span>
-<span class="k">then</span>
-	sl
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">4</span>
-<span class="k">then</span>
-	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
-	<span class="nb">read</span> s2
-	<span class="nb">echo</span> <span class="s2">&#34;选择样式：&#34;</span>
-	<span class="nb">echo</span> <span class="s2">&#34;------样式1-----&#34;</span>
-	<span class="nb">echo</span> <span class="s2">&#34;------样式2-----&#34;</span>
-	<span class="nb">read</span> j
-	<span class="k">if</span> <span class="nb">test</span> <span class="nv">$j</span> -eq <span class="m">1</span>
-	<span class="k">then</span>
-		figlet <span class="nv">$s2</span>
-	<span class="k">else</span>
-		toilet -f mono12 -F gay <span class="nv">$s2</span>
-	<span class="k">fi</span>
-<span class="k">fi</span>
-<span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">5</span>
-<span class="k">then</span>
-	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
-	<span class="nb">read</span> s3
-	cowsay <span class="nv">$s3</span>
-<span class="k">fi</span>
-<span class="nb">echo</span> <span class="s2">&#34;任意建继续！&#34;</span>
-<span class="nb">read</span> x
-clear
-./menu.sh
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">#liruihao</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#menu.sh</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#sudo apt curl install nyancat sl figlet toilet cowsay </span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;-------------菜-单--------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------1-打印二维码--------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------2-彩虹猫------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------3-小火切------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------4-打字机------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------5-小许牛------------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c暂停程序--------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;请输入序号！&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> i
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;请输入网址！&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> s1
+</span></span><span class="line"><span class="cl">       	<span class="nb">echo</span> <span class="nv">$s1</span> <span class="p">|</span>curl -F-<span class="o">=</span><span class="se">\&lt;</span>- qrenco.de
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">2</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	nyancat
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">3</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	sl
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">4</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> s2
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;选择样式：&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式1-----&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式2-----&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> j
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="nb">test</span> <span class="nv">$j</span> -eq <span class="m">1</span>
+</span></span><span class="line"><span class="cl">	<span class="k">then</span>
+</span></span><span class="line"><span class="cl">		figlet <span class="nv">$s2</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span>
+</span></span><span class="line"><span class="cl">		toilet -f mono12 -F gay <span class="nv">$s2</span>
+</span></span><span class="line"><span class="cl">	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">test</span> <span class="nv">$i</span> -eq <span class="m">5</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">read</span> s3
+</span></span><span class="line"><span class="cl">	cowsay <span class="nv">$s3</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;任意建继续！&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> x
+</span></span><span class="line"><span class="cl">clear
+</span></span><span class="line"><span class="cl">./menu.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>
 
@@ -369,8 +367,8 @@ clear
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum install -y httpd
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# yum install -y httpd
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意安装目录，可通过 cd 命令切换。</p>
 <ol start="2">
@@ -381,8 +379,8 @@ clear
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# systemctl start httpd.service 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# systemctl start httpd.service 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果启动失败，可通过 systemctl status httpd.service 查看错误原因。<br>
 启动成功，证明 http 服务已经可以使用，发现还需要把本地文件传到服务器。<br>
@@ -398,8 +396,8 @@ clear
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# yum -y install lrzsz
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# yum -y install lrzsz
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>步骤 2：输入命令<code>rz</code>打开上传窗口（可以选择多个文件。)<br>
 使用<code>sz</code>文件名命令可打开从服务器下载文件的保存窗口。</p>
@@ -410,8 +408,8 @@ clear
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[root@VM_0_6_centos /]# vim /etc/httpd/conf/httpd.conf
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[root@VM_0_6_centos /]# vim /etc/httpd/conf/httpd.conf
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>
@@ -429,11 +427,11 @@ clear
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ServerAdmin 管理员邮箱，用于浏览器请求报错时展示
-DocumentRoot 访问根目录（默认：/var/www/html），如项目存放在其他地方，可修改为项目存放位置
-&lt;Directory &#34;/var/www/html&#34;&gt; 同 DocumentRoot 配置
-ServerName 服务器 IP 或 域名 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ServerAdmin 管理员邮箱，用于浏览器请求报错时展示
+</span></span><span class="line"><span class="cl">DocumentRoot 访问根目录（默认：/var/www/html），如项目存放在其他地方，可修改为项目存放位置
+</span></span><span class="line"><span class="cl">&lt;Directory &#34;/var/www/html&#34;&gt; 同 DocumentRoot 配置
+</span></span><span class="line"><span class="cl">ServerName 服务器 IP 或 域名 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="4">
 <li>
@@ -506,8 +504,8 @@ ServerName 服务器 IP 或 域名
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install vim
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install vim
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="解决中文乱码问题">解决中文乱码问题</h4>
 <p>在 home 目录下，新建。vimrc 文件</p>
@@ -516,8 +514,8 @@ ServerName 服务器 IP 或 域名
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim .vimrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim .vimrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>添加内容如下：</p>
 <div class="highlight"><div class="chroma">
@@ -527,10 +525,10 @@ ServerName 服务器 IP 或 域名
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
-set enc=utf8
-set fencs=utf8,gbk,gb2312,gb18030
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+</span></span><span class="line"><span class="cl">set enc=utf8
+</span></span><span class="line"><span class="cl">set fencs=utf8,gbk,gb2312,gb18030
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后 source 下变量：</p>
 <div class="highlight"><div class="chroma">
@@ -538,8 +536,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">source .vimrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">source .vimrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="修改启动问候语">修改启动问候语</h4>
 <div class="highlight"><div class="chroma">
@@ -547,8 +545,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>按 i 然后编辑，比如</p>
 <div class="highlight"><div class="chroma">
@@ -557,9 +555,9 @@ set fencs=utf8,gbk,gb2312,gb18030
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">		www.lruihao.cn
-		    李瑞豪
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">		www.lruihao.cn
+</span></span><span class="line"><span class="cl">		    李瑞豪
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Esc 然后：wq 退出</p>
 <h4 id="管理员权限">管理员权限</h4>
@@ -569,8 +567,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install tsu
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install tsu
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后终端下面输入：</p>
 <div class="highlight"><div class="chroma">
@@ -578,8 +576,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">tsu
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tsu
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>即可切换 root 用户，这个时候会弹出 root 授权提示。在管理员身份下，输入 exit 可回到普通用户身份。</p>
 <h3 id="美化">美化</h3>
@@ -604,8 +602,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sh -c &#34;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sh -c &#34;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="设置色彩样式">设置色彩样式：</h4>
 <p>运行 chcolor 更换色彩样式，或者：</p>
@@ -614,8 +612,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/colors.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~/.termux/colors.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="设置字体">设置字体</h4>
 <p>运行 chfont 更换字体，或者：</p>
@@ -624,8 +622,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">~/.termux/fonts.sh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~/.termux/fonts.sh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="需要软件包">需要软件包：</h4>
 <ul>
@@ -640,8 +638,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /data/data/com.termux/files/home/storage/shared/tencent/QQfile_recv QQ
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="创建-blog2-文件夹软连接备份文件">创建 blog2 文件夹软连接备份文件</h4>
 <div class="highlight"><div class="chroma">
@@ -649,8 +647,8 @@ set fencs=utf8,gbk,gb2312,gb18030
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ln -s /data/data/com.termux/files/home/storage/shared/blog2 blog2
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="安装-hexo">安装 hexo</h3>
 <h4 id="安装准备">安装准备</h4>
@@ -663,12 +661,12 @@ set fencs=utf8,gbk,gb2312,gb18030
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nodejs
-pkg install git
-npm install hexo-cli -g
-npm install hexo-deployer-git --save
-pkg install openssh
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install nodejs
+</span></span><span class="line"><span class="cl">pkg install git
+</span></span><span class="line"><span class="cl">npm install hexo-cli -g
+</span></span><span class="line"><span class="cl">npm install hexo-deployer-git --save
+</span></span><span class="line"><span class="cl">pkg install openssh
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="初始化-hexo">初始化 hexo</h4>
 <div class="highlight"><div class="chroma">
@@ -679,11 +677,11 @@ pkg install openssh
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo init blog
-cd blog
-hexo g
-hexo s
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hexo init blog
+</span></span><span class="line"><span class="cl">cd blog
+</span></span><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl">hexo s
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>浏览器输入<code>127.0.0.1:4000</code>查看效果</p>
 <h4 id="链接-githubcodinggitee-等远程仓库">链接 github,coding,gitee 等远程仓库</h4>
@@ -693,9 +691,9 @@ hexo s
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh-keygen -t rsa -C &#34;your_email@example.com&#34;
-#这将按照你提供的邮箱地址，创建一对密钥（个人喜欢一路回车）
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -t rsa -C &#34;your_email@example.com&#34;
+</span></span><span class="line"><span class="cl">#这将按照你提供的邮箱地址，创建一对密钥（个人喜欢一路回车）
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>找到<code>~/.ssh/id_rsa.pub</code>这个文件复制里面的内容，到对应的平台生成 SSH 公钥</p>
 <h4 id="设置用户信息">设置用户信息</h4>
@@ -705,9 +703,9 @@ hexo s
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git config --global user.name &#34;lruihao&#34;
-git config --global user.email  &#34;1074627678@qq.com&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &#34;lruihao&#34;
+</span></span><span class="line"><span class="cl">git config --global user.email  &#34;1074627678@qq.com&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="测试链接">测试链接</h4>
 <div class="highlight"><div class="chroma">
@@ -717,10 +715,10 @@ git config --global user.email  &#34;1074627678@qq.com&#34;
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh -T git@github.com  #github
-ssh -T git@coding.net   #coding
-ssh -T git@gitee.com   #gitee
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -T git@github.com  #github
+</span></span><span class="line"><span class="cl">ssh -T git@coding.net   #coding
+</span></span><span class="line"><span class="cl">ssh -T git@gitee.com   #gitee
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>注意#注释部分不要的</strong></p>
 <h4 id="站点配置文件">站点配置文件</h4>
@@ -736,13 +734,13 @@ ssh -T git@gitee.com   #gitee
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">deploy:
-- type: git
-  repository:
-    github: git@github.com:Lruihao/Lruihao.github.io.git,master
-    coding: git@git.coding.net:liruihao/liruihao.git,master
-  #message: &#34;日常更新&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">deploy:
+</span></span><span class="line"><span class="cl">- type: git
+</span></span><span class="line"><span class="cl">  repository:
+</span></span><span class="line"><span class="cl">    github: git@github.com:Lruihao/Lruihao.github.io.git,master
+</span></span><span class="line"><span class="cl">    coding: git@git.coding.net:liruihao/liruihao.git,master
+</span></span><span class="line"><span class="cl">  #message: &#34;日常更新&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="部署">部署</h4>
 <div class="highlight"><div class="chroma">
@@ -751,9 +749,9 @@ ssh -T git@gitee.com   #gitee
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hexo clean
-hexo g -d
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl">hexo g -d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>没出错就可以正常通过相应域名访问了。
 <a
@@ -804,8 +802,8 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ssh root@118.24.217.167
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh root@118.24.217.167
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>会提示输入密码，linux 下输入密码是看不到的，大家都知道，小心点别输入错误。<br>
 之后就可以手机操作服务器了。</p>
@@ -815,8 +813,8 @@ hexo g -d
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/lib/node_modules/npm/node_modules/worker-farm/lib/farm.js
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>把里面的 length 改成 4，我默认的是 1。</p>
 <h3 id="nyancat-彩虹猫">nyancat 彩虹猫</h3>
@@ -827,9 +825,9 @@ hexo g -d
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">pkg install nyancat
-nyancat
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pkg install nyancat
+</span></span><span class="line"><span class="cl">nyancat
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>还有更多姿势这里就不写了，只写一下日常用到的，就这样 OK 睡觉！</p>
@@ -862,30 +860,30 @@ nyancat
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-chcolor
-chfont
-~/.termux/colors.sh
-~/.termux/fonts.sh
-
-echo &#34;https://www.lruihao.cn&#34; |curl -F-=\&lt;- qrenco.de
-
-pkg install nyancat
-nyancat
-pkg install sl
-sl
-pkg install figlet
-figlet hello
-pkg install toilet
-toilet hello
-toilet -f mono12 -F gay &#34;hello&#34;
-pkg cowsay
-cowsay &#34;hello&#34;
-pkg install cmatrix
-cmatrix
-pkg install w3m
-w3m www.lruihao.cn
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span><span class="line"><span class="cl">chcolor
+</span></span><span class="line"><span class="cl">chfont
+</span></span><span class="line"><span class="cl">~/.termux/colors.sh
+</span></span><span class="line"><span class="cl">~/.termux/fonts.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">echo &#34;https://www.lruihao.cn&#34; |curl -F-=\&lt;- qrenco.de
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pkg install nyancat
+</span></span><span class="line"><span class="cl">nyancat
+</span></span><span class="line"><span class="cl">pkg install sl
+</span></span><span class="line"><span class="cl">sl
+</span></span><span class="line"><span class="cl">pkg install figlet
+</span></span><span class="line"><span class="cl">figlet hello
+</span></span><span class="line"><span class="cl">pkg install toilet
+</span></span><span class="line"><span class="cl">toilet hello
+</span></span><span class="line"><span class="cl">toilet -f mono12 -F gay &#34;hello&#34;
+</span></span><span class="line"><span class="cl">pkg cowsay
+</span></span><span class="line"><span class="cl">cowsay &#34;hello&#34;
+</span></span><span class="line"><span class="cl">pkg install cmatrix
+</span></span><span class="line"><span class="cl">cmatrix
+</span></span><span class="line"><span class="cl">pkg install w3m
+</span></span><span class="line"><span class="cl">w3m www.lruihao.cn
+</span></span></code></pre></td></tr></table>
 </div>
 </div><pre><code>cmatrix 常用命令如下：
 cmatrix-a : 异步滚动（默认）
@@ -915,8 +913,8 @@ cmatrix -b -C blue
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ vim
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ vim
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="编辑文件">编辑文件</h3>
 <p>打开文件编辑器之后编辑文件
@@ -929,9 +927,9 @@ cmatrix -b -C blue
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">: w hello.c
-: q
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">: w hello.c
+</span></span><span class="line"><span class="cl">: q
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>打开目录看看生成的文件</p>
 <div class="highlight"><div class="chroma">
@@ -939,8 +937,8 @@ cmatrix -b -C blue
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ ls
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ ls
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="编译生成可执行文件并执行">编译生成可执行文件并执行</h3>
 <div class="highlight"><div class="chroma">
@@ -949,9 +947,9 @@ cmatrix -b -C blue
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">$ gcc hello.c -o hello
-$ ./hello
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ gcc hello.c -o hello
+</span></span><span class="line"><span class="cl">$ ./hello
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <p>若权限不够则加可执行权限<code>chmod +x hello</code></p>
@@ -961,8 +959,8 @@ $ ./hello
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">wget https://github.com/git/git/archive/v2.14.1.zip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wget https://github.com/git/git/archive/v2.14.1.zip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="安装依赖">安装依赖</h3>
 <div class="highlight"><div class="chroma">
@@ -970,8 +968,8 @@ $ ./hello
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel curl-devel perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel curl-devel perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="解压-git">解压 git</h3>
 <div class="highlight"><div class="chroma">
@@ -979,8 +977,8 @@ $ ./hello
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">unzip v2.14.1.zip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">unzip v2.14.1.zip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>注：
 unzip 命令用不了，具体步骤如下：</p>
@@ -991,10 +989,10 @@ unzip 命令用不了，具体步骤如下：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#yum list | grep zip/unzip 
-#yum install zip
-#yum install unzip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#yum list | grep zip/unzip 
+</span></span><span class="line"><span class="cl">#yum install zip
+</span></span><span class="line"><span class="cl">#yum install unzip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>基本完成，如果在编译的时候出现错误：<code>gcc : error trying to exec 'cc1plus': execvp : No sunch file or directory</code><br>
 可以用<code>gcc -v/g++ -v</code> 来查看 gcc 版本，会发现没有安装。安装如下：</p>
@@ -1005,10 +1003,10 @@ unzip 命令用不了，具体步骤如下：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#yum list | grep gcc
-#yum install gcc-c++
-#yum install unzip
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#yum list | grep gcc
+</span></span><span class="line"><span class="cl">#yum install gcc-c++
+</span></span><span class="line"><span class="cl">#yum install unzip
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="将-git-安装到usrlocal-上">将 git 安装到/usr/local 上</h3>
 <p>先进入 git 文件夹<br>
@@ -1021,10 +1019,10 @@ unzip 命令用不了，具体步骤如下：</p>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cd git-2.14.1
-make prefix=/usr/local all
-make prefix=/usr/local install
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd git-2.14.1
+</span></span><span class="line"><span class="cl">make prefix=/usr/local all
+</span></span><span class="line"><span class="cl">make prefix=/usr/local install
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="验证是否安装完成">验证是否安装完成</h3>
 <div class="highlight"><div class="chroma">
@@ -1032,8 +1030,8 @@ make prefix=/usr/local install
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git --version
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git --version
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>&hellip;</p>
 ]]></description></item><item><title>linux 系统进入退出 vim 编辑器及 termux 修改问候语</title><link>https://lruihao.cn/posts/vim/</link><pubDate>Fri, 31 Aug 2018 11:46:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/vim/</guid><description><![CDATA[<blockquote>
@@ -1045,8 +1043,8 @@ make prefix=/usr/local install
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim /&lt;路径&gt;/文件名。后缀名
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /&lt;路径&gt;/文件名。后缀名
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果这个文件，以前是没有的，则为新建，会有提示，否者则没有提示。</p>
 <p>进入编辑器后，按&quot;I”，即切换到“INSERT”状态。即插入状态，就可以通过上下左右移动光标，或空格、退格及回车等进行编辑内容了，和 WINDOWS 是一样的了。</p>
@@ -1073,8 +1071,8 @@ Q: quit , 退出</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cat /&lt;路径&gt;/文件名。后缀名
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cat /&lt;路径&gt;/文件名。后缀名
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="正常退出">正常退出</h3>
 <p>正常退出有个前提条件是：打开的文本文件在内容上没有被改动过。<br>
@@ -1093,8 +1091,8 @@ Q: quit , 退出</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">vim $PREFIX/etc/motd
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim $PREFIX/etc/motd
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果报错，好像是要安装 Python <code>pkg install python</code></p>
 <p>进入后先使用<code>dd</code>把以前的问候语一行一行删掉，再输入<code>i</code>，进入插入操作，修改你自定义的问候语。之后<code>ESC</code>, 再<code>:WQ</code>退出保存，重启 termux 就可以看到修改后的效果了。如图。</p>

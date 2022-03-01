@@ -95,12 +95,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">POST /users
-Data:
-  {
-    &#34;name&#34;: &#34;帥小慶&#34;
-  }
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">POST /users
+</span></span><span class="line"><span class="cl">Data:
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    &#34;name&#34;: &#34;帥小慶&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Create：建立一個可以完全獨立存在的實體</li>
@@ -116,12 +116,12 @@ Data:
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">POST /users
-Data:
-  {
-    &#34;name&#34;: &#34;帥小慶&#34;
-  }
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">POST /users
+</span></span><span class="line"><span class="cl">Data:
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    &#34;name&#34;: &#34;帥小慶&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Add：增加一個必須依賴於某個實體的實體<br>
@@ -134,8 +134,8 @@ Data:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">POST ​/admin​/users​/{username}​/keys
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">POST ​/admin​/users​/{username}​/keys
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="put">PUT</h3>
 <ul>
@@ -156,12 +156,12 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">PUT user/{account}/roles
-Data
-  {
-    &#34;role_id&#34;: &#34;2&#34;
-  }
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PUT user/{account}/roles
+</span></span><span class="line"><span class="cl">Data
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    &#34;role_id&#34;: &#34;2&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>範例：Follow a user 關注一個使用者 (Gitea)<br>
@@ -172,8 +172,8 @@ Data
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">PUT  ​/user​/following​/{username}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PUT  ​/user​/following​/{username}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="patch">PATCH</h3>
 <ul>
@@ -187,8 +187,8 @@ Data
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">PATCH /users/{account}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PATCH /users/{account}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="delete">DELETE</h3>
 <ul>
@@ -201,8 +201,8 @@ Data
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">DELETE /users/{account}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DELETE /users/{account}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="http-status-code">HTTP Status Code</h2>
 <p>HTTP 状态码（HTTP Status Code）是用以表示网页服务器 HTTP 响应状态的 3 位数字代码。所有状态码的第一个数字代表了响应的五种状态之一。 除非另有说明，状态码是 HTTP / 1.1 标准（RFC 7231）的一部分。</p>
@@ -278,23 +278,21 @@ Data
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">{
-  &#34;color_scheme&#34;: &#34;Packages/Color Scheme - Default/Monokai.sublime-color-scheme&#34;,
-  &#34;font_size&#34;: 14,
-  &#34;ignored_packages&#34;:
-  [
-    &#34;Vintage&#34;
-  ],
-  &#34;theme&#34;: &#34;Adaptive.sublime-theme&#34;,
-<span class="gi">+  &#34;expand_tabs_on_save&#34;: true,
-</span><span class="gi">+  &#34;tab_size&#34;: 2,
-</span><span class="gi">+  &#34;translate_tabs_to_spaces&#34;: true
-</span><span class="gi"></span>}
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;color_scheme&#34;: &#34;Packages/Color Scheme - Default/Monokai.sublime-color-scheme&#34;,
+</span></span><span class="line"><span class="cl">  &#34;font_size&#34;: 14,
+</span></span><span class="line"><span class="cl">  &#34;ignored_packages&#34;:
+</span></span><span class="line"><span class="cl">  [
+</span></span><span class="line"><span class="cl">    &#34;Vintage&#34;
+</span></span><span class="line"><span class="cl">  ],
+</span></span><span class="line"><span class="cl">  &#34;theme&#34;: &#34;Adaptive.sublime-theme&#34;,
+</span></span><span class="line"><span class="cl"><span class="gi">+  &#34;expand_tabs_on_save&#34;: true,
+</span></span></span><span class="line"><span class="cl"><span class="gi">+  &#34;tab_size&#34;: 2,
+</span></span></span><span class="line"><span class="cl"><span class="gi">+  &#34;translate_tabs_to_spaces&#34;: true
+</span></span></span><span class="line"><span class="cl"><span class="gi"></span>}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="选择类">选择类</h1>
 <ul>
@@ -659,9 +657,9 @@ Data
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">正確範例： calendar_manager/calendar/29
-錯誤範例： calendar_manager/calendar/29?id=29
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">正確範例： calendar_manager/calendar/29
+</span></span><span class="line"><span class="cl">錯誤範例： calendar_manager/calendar/29?id=29
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="命名">命名</h1>
 <ul>
@@ -711,13 +709,13 @@ Data
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public function test(){
-  //do something
-  if($a === $b){
-    //do something
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public function test(){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  if($a === $b){
+</span></span><span class="line"><span class="cl">    //do something
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="錯誤寫法">錯誤寫法</h2>
 <div class="highlight"><div class="chroma">
@@ -732,15 +730,15 @@ Data
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">public function test()
-{
-  //do something
-  if($a === $b)
-  {
-    //do something
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public function test()
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  if($a === $b)
+</span></span><span class="line"><span class="cl">  {
+</span></span><span class="line"><span class="cl">    //do something
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>程式碼排版
@@ -792,21 +790,21 @@ Data
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- html tag --&gt;</span>
-<span class="nt">&lt;center&gt;</span>
-<span class="nt">&lt;font&gt;</span>
-<span class="nt">&lt;basefont&gt;</span>
-<span class="nt">&lt;s&gt;</span>
-<span class="nt">&lt;strike&gt;</span>
-<span class="nt">&lt;u&gt;</span>
-<span class="nt">&lt;listing&gt;</span>
-<span class="nt">&lt;plaintext&gt;</span>
-<span class="nt">&lt;xmp&gt;</span>
-<span class="c">&lt;!-- html attribute --&gt;</span>
-align
-bgcolor
-color
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!-- html tag --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;center&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;font&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;basefont&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;s&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;strike&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;u&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;listing&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;plaintext&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;xmp&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- html attribute --&gt;</span>
+</span></span><span class="line"><span class="cl">align
+</span></span><span class="line"><span class="cl">bgcolor
+</span></span><span class="line"><span class="cl">color
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="資安禁止">資安禁止：</h2>
 <blockquote>
@@ -835,10 +833,10 @@ color
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">a = (a, b) =&gt; {
-  c;
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a = (a, b) =&gt; {
+</span></span><span class="line"><span class="cl">  c;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>錯誤 （這是允許的，但造成程式碼閱讀困難，故禁止）</p>
 <div class="highlight"><div class="chroma">
@@ -846,8 +844,8 @@ color
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">a  =&gt; c;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a  =&gt; c;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="註解">註解</h2>
 <p>JavaScript 註解應該遵循 JSDoc 的標準撰寫</p>
@@ -857,8 +855,8 @@ color
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/* global $t, Tiger */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/* global $t, Tiger */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="常數-constant">常數 (Constant)</h3>
 <div class="highlight"><div class="chroma">
@@ -869,11 +867,11 @@ color
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 常數說明
- * @type {常數型態}
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 常數說明
+</span></span><span class="line"><span class="cl"> * @type {常數型態}
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -885,12 +883,12 @@ color
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
- * @type {String}
- */
-var userId = &#39;Hello&#39;;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 使用者 ID
+</span></span><span class="line"><span class="cl"> * @type {String}
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">var userId = &#39;Hello&#39;;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="函數方法-function-method">函數、方法 (Function, Method)</h3>
 <div class="highlight"><div class="chroma">
@@ -904,14 +902,14 @@ var userId = &#39;Hello&#39;;
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 函數用途說明
- * @param {引數型態} 引數名稱 引數說明
- * @param {引數型態} [選擇性引數名稱] 引數說明
- * @param {引數型態} [選擇性引數名稱=引數預設值] 引數說明
- * @returns {回傳值型態} 回傳值說明
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 函數用途說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} 引數名稱 引數說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} [選擇性引數名稱] 引數說明
+</span></span><span class="line"><span class="cl"> * @param {引數型態} [選擇性引數名稱=引數預設值] 引數說明
+</span></span><span class="line"><span class="cl"> * @returns {回傳值型態} 回傳值說明
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -929,18 +927,18 @@ var userId = &#39;Hello&#39;;
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 取得使用者
- * @param {Int} userId 使用者 ID
- * @param {Object} [options] 其他選項
- * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
- * @returns {Object} 使用者資料
- */
-var getUser = function(userId, options){
-  //do something
-  return user;
-};
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 取得使用者
+</span></span><span class="line"><span class="cl"> * @param {Int} userId 使用者 ID
+</span></span><span class="line"><span class="cl"> * @param {Object} [options] 其他選項
+</span></span><span class="line"><span class="cl"> * @param {String} [options.query=&#39;a&#39;] 查詢關鍵字 預設為 a
+</span></span><span class="line"><span class="cl"> * @returns {Object} 使用者資料
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">var getUser = function(userId, options){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  return user;
+</span></span><span class="line"><span class="cl">};
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="php">PHP</h1>
 <h2 id="前端參數取得">前端參數取得</h2>
@@ -959,11 +957,11 @@ var getUser = function(userId, options){
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 成員變數說明
- * @type {型態}
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 成員變數說明
+</span></span><span class="line"><span class="cl"> * @type {型態}
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -975,12 +973,12 @@ var getUser = function(userId, options){
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 使用者 ID
- * @type {String}
- */
-$userId = &#39;Hello&#39;;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 使用者 ID
+</span></span><span class="line"><span class="cl"> * @type {String}
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">$userId = &#39;Hello&#39;;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="函數方法-function-method-1">函數、方法 (Function, Method)</h2>
 <div class="highlight"><div class="chroma">
@@ -994,14 +992,14 @@ $userId = &#39;Hello&#39;;
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 函數用途說明
- * @param 引數型態 引數名稱 引數說明
- * @option 引數選項型態 引數選項名稱 引數選項說明
- * @uses 全域變數 全域變數說明
- * @returns 回傳值型態 回傳值說明
- */
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 函數用途說明
+</span></span><span class="line"><span class="cl"> * @param 引數型態 引數名稱 引數說明
+</span></span><span class="line"><span class="cl"> * @option 引數選項型態 引數選項名稱 引數選項說明
+</span></span><span class="line"><span class="cl"> * @uses 全域變數 全域變數說明
+</span></span><span class="line"><span class="cl"> * @returns 回傳值型態 回傳值說明
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example</strong></p>
 <div class="highlight"><div class="chroma">
@@ -1020,19 +1018,19 @@ $userId = &#39;Hello&#39;;
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">/**
- * 取得使用者
- * @param int userId 使用者 ID
- * @param object options 其他選項
- * @option string options[&#39;query&#39;] 查詢關鍵字
- * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
- * @returns object 使用者資料
- */
-function getUser($userId, $options){
-  //do something
-  return $user;
-};
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * 取得使用者
+</span></span><span class="line"><span class="cl"> * @param int userId 使用者 ID
+</span></span><span class="line"><span class="cl"> * @param object options 其他選項
+</span></span><span class="line"><span class="cl"> * @option string options[&#39;query&#39;] 查詢關鍵字
+</span></span><span class="line"><span class="cl"> * @uses $_POST[&#39;role_id&#39;] 從前端以 POST 取得角色 ID
+</span></span><span class="line"><span class="cl"> * @returns object 使用者資料
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">function getUser($userId, $options){
+</span></span><span class="line"><span class="cl">  //do something
+</span></span><span class="line"><span class="cl">  return $user;
+</span></span><span class="line"><span class="cl">};
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="database">Database</h1>
 <ul>
@@ -1052,8 +1050,8 @@ function getUser($userId, $options){
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="k">user</span><span class="o">`</span><span class="w"> </span><span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">);</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="o">`</span><span class="k">user</span><span class="o">`</span><span class="w"> </span><span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="統一用詞">統一用詞</h1>
 <blockquote>
@@ -1106,10 +1104,10 @@ function getUser($userId, $options){
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
-	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
-<span class="cp">?&gt;</span><span class="err">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p></p>
 <h1 id="wampserver-多站点配置">WAMPServer 多站点配置</h1>
@@ -1140,29 +1138,29 @@ function getUser($userId, $options){
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"># Virtual Hosts
-#
-&lt;VirtualHost *:80&gt;
-  ServerName localhost
-  ServerAlias localhost
-  DocumentRoot &#34;g:/Demo&#34;
-  &lt;Directory &#34;g:/Demo&#34;&gt;
-    Options +Indexes +Includes +FollowSymLinks +MultiViews
-    AllowOverride All
-    Require local
-  &lt;/Directory&gt;
-&lt;/VirtualHost&gt;
-
-&lt;VirtualHost *:80&gt;
-  ServerName test01.com
-  DocumentRoot &#34;g:/Demo/test01&#34;
-&lt;/VirtualHost&gt;
-
-&lt;VirtualHost *:80&gt;
-  ServerName test02.com
-  DocumentRoot &#34;g:/Demo/test02&#34;
-&lt;/VirtualHost&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Virtual Hosts
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName localhost
+</span></span><span class="line"><span class="cl">  ServerAlias localhost
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo&#34;
+</span></span><span class="line"><span class="cl">  &lt;Directory &#34;g:/Demo&#34;&gt;
+</span></span><span class="line"><span class="cl">    Options +Indexes +Includes +FollowSymLinks +MultiViews
+</span></span><span class="line"><span class="cl">    AllowOverride All
+</span></span><span class="line"><span class="cl">    Require local
+</span></span><span class="line"><span class="cl">  &lt;/Directory&gt;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test01.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test01&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test02.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test02&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件，在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
 <div class="highlight"><div class="chroma">
@@ -1184,22 +1182,22 @@ function getUser($userId, $options){
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">...
-
-# For example:
-#
-# 102.54.94.97 rhino.acme.com # source server
-# 38.25.63.10 x.acme.com # x client host
-# localhost name resolution is handled within DNS itself.
-#	127.0.0.1 localhost
-#	::1 localhost
-127.0.0.1 steamcommunity.com
-192.168.28.1 windows10.microdone.cn
-127.0.0.1 localhost
-::1 localhost
-127.0.0.1 test01.com
-127.0.0.1 test02.com
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># For example:
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl"># 102.54.94.97 rhino.acme.com # source server
+</span></span><span class="line"><span class="cl"># 38.25.63.10 x.acme.com # x client host
+</span></span><span class="line"><span class="cl"># localhost name resolution is handled within DNS itself.
+</span></span><span class="line"><span class="cl">#	127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">#	::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 steamcommunity.com
+</span></span><span class="line"><span class="cl">192.168.28.1 windows10.microdone.cn
+</span></span><span class="line"><span class="cl">127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 test01.com
+</span></span><span class="line"><span class="cl">127.0.0.1 test02.com
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="wampserver-自拟定端口">WAMPServer 自拟定端口</h1>
 <p>WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第一次装的时候发现 80 端口被占用了，因为以前玩了一下 Windows 的 IIS，暂停 IIS 的网站，再使用命令或者直接在控制面板关掉就好了。</p>
@@ -1215,11 +1213,11 @@ function getUser($userId, $options){
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#监听端口
-Listen 0.0.0.0:8080
-Listen [::0]:8080
-ServerName localhost:8080
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#监听端口
+</span></span><span class="line"><span class="cl">Listen 0.0.0.0:8080
+</span></span><span class="line"><span class="cl">Listen [::0]:8080
+</span></span><span class="line"><span class="cl">ServerName localhost:8080
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>使用 Notepad++打开 C:\wamp 目录下的 wampmanager.ini 和 wampmanager.tpl<br>
@@ -1263,9 +1261,9 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10; 第二行&amp;#10; 第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
-&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13; 第二排&amp;#13; 第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;a href=&#34;#&#34; title=&#34;第一行&amp;#10; 第二行&amp;#10; 第三行&#34;&gt;使用`&amp;#10;`&lt;/a&gt;
+</span></span><span class="line"><span class="cl">&lt;a href=&#34;#&#34; title=&#34;第一排&amp;#13; 第二排&amp;#13; 第三排&#34;&gt;使用`&amp;#13;`&lt;/a&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="图片类型选择">图片类型选择</h3>
 <p></p>
@@ -1368,18 +1366,18 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
-  <span class="c1">// 设置任意的标签中间的任意文本内容
-</span><span class="c1"></span>  <span class="kd">function</span> <span class="nx">setInnerText</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">//判断浏览器是否支持这个属性
-</span><span class="c1"></span>      <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">==</span> <span class="s2">&#34;undefined&#34;</span><span class="p">)</span> <span class="p">{</span><span class="c1">//不支持
-</span><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span><span class="c1">//支持这个属性
-</span><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
-      <span class="p">}</span>
-  <span class="p">};</span>
-<span class="o">&lt;</span><span class="err">/script&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 设置任意的标签中间的任意文本内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">function</span> <span class="nx">setInnerText</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">//判断浏览器是否支持这个属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">==</span> <span class="s2">&#34;undefined&#34;</span><span class="p">)</span> <span class="p">{</span><span class="c1">//不支持
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span><span class="c1">//支持这个属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>          <span class="nx">element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="图床方案">图床方案</h2>
 <blockquote>
@@ -1400,8 +1398,8 @@ Ctrl+F 查找 <code>localhost</code><br>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&#34;</span><span class="nt">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>其他的图标 js</p>
 <div class="highlight"><div class="chroma">
@@ -1412,11 +1410,11 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;script src=&#34;//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js&#34;&gt;&lt;/script&gt;
-&lt;svg class=&#34;card-avatar&#34; aria-hidden=&#34;true&#34;&gt;
-  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n 为一个数字--&gt;
-&lt;/svg&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;script src=&#34;//at.alicdn.com/t/font_578712_g26jo2kbzd5qm2t9.js&#34;&gt;&lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;svg class=&#34;card-avatar&#34; aria-hidden=&#34;true&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;use xlink:href=&#34;#icon-{{n+1}}&#34;&gt;&lt;/use&gt;                &lt;!--n 为一个数字--&gt;
+</span></span><span class="line"><span class="cl">&lt;/svg&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="响应式自适应">响应式（自适应）</h2>
 <div class="highlight"><div class="chroma">
@@ -1425,17 +1423,17 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js&#34;</span><span class="nt">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content=</span><span class="s">&#34;width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0&#34;</span><span class="nt">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content=</span><span class="s">&#34;width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <ul>
@@ -1462,19 +1460,19 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 手机等小屏幕手持设备 */</span>
-<span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
-
-	<span class="c">/*手机端 css 样式表*/</span>
-
-<span class="p">}</span>
-<span class="c">/* 平板之类的宽度 1024 以下设备 */</span>
-<span class="p">@</span><span class="k">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">321px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
-
-	<span class="c">/*电脑端 css 样式表*/</span>
-
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 手机等小屏幕手持设备 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c">/*手机端 css 样式表*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 平板之类的宽度 1024 以下设备 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">321px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c">/*电脑端 css 样式表*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>link 引入不同 css</p>
 <div class="highlight"><div class="chroma">
@@ -1485,11 +1483,11 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--手机端--&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_phone.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (max-width: 960px)&#34;</span><span class="nt">/&gt;</span>
-<span class="c">&lt;!--电脑端--&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_PC.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (min-width: 960px)&#34;</span><span class="nt">/&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!--手机端--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_phone.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (max-width: 960px)&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!--电脑端--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href=</span><span class="s">&#34;style_PC.css&#34;</span> <span class="na">media=</span><span class="s">&#34;screen and (min-width: 960px)&#34;</span><span class="nt">/&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="jquery">jquery</h2>
 <div class="highlight"><div class="chroma">
@@ -1504,15 +1502,15 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-//还有其他的源 ...
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span><span class="line"><span class="cl">//还有其他的源 ...
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="qq-推广链接">QQ 推广链接</h2>
 <blockquote>
@@ -1549,8 +1547,8 @@ Ctrl+F 查找 <code>localhost</code><br>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;a target=&#34;_blank&#34; href=&#34;https://wpa.qq.com/msgrd?v=3&amp;uin=1074627678&amp;site=qq&amp;menu=yes&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://wpa.qq.com/pa?p=2:1074627678:51&#34; alt=&#34;点击这里给我发消息&#34; title=&#34;点击这里给我发消息&#34;/&gt;&lt;/a&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;a target=&#34;_blank&#34; href=&#34;https://wpa.qq.com/msgrd?v=3&amp;uin=1074627678&amp;site=qq&amp;menu=yes&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://wpa.qq.com/pa?p=2:1074627678:51&#34; alt=&#34;点击这里给我发消息&#34; title=&#34;点击这里给我发消息&#34;/&gt;&lt;/a&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin=1074627678&site=qq&menu=yes"></a></p>
 <h2 id="google-fonts">Google fonts</h2>
@@ -1562,11 +1560,11 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">https://fonts.google.com/
-一般选用国内源镜像替代（待补充 ...）
-<span class="gi">+ https://fonts.loli.net
-</span><span class="gi">+ //fonts.lug.ustc.edu.cn
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">https://fonts.google.com/
+</span></span><span class="line"><span class="cl">一般选用国内源镜像替代（待补充 ...）
+</span></span><span class="line"><span class="cl"><span class="gi">+ https://fonts.loli.net
+</span></span></span><span class="line"><span class="cl"><span class="gi">+ //fonts.lug.ustc.edu.cn
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="fancybox">fancybox</h2>
 <p><a
@@ -1602,9 +1600,9 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css&#34;</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css&#34;</span> <span class="na">rel=</span><span class="s">&#34;stylesheet&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">&#34;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js&#34;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="back-end">back-end</h1>
 <blockquote>
@@ -1677,30 +1675,30 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff">A: 选择一个工作空间
-	D:\develop\eclipse-SDK-3.7.2-win64\workspace
-B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
-	a: 创建项目（工程）
-		*File -- New -- Java Project
-		*在左边空白处，直接右键 -- New -- Java Project
-
-		键入项目名称后直接 Finish。
-	b: 所有的 java 文件必须写到 src 下面才有效
-	c: 创建一个包
-		cn.lruihao   
-	d: 在包下创建一个类
-		HelloWorld
-
-		同时让它帮我们写好了 main 方法。
-	e: 在 main 方法中写内容即可
-	f: 编译程序
-		自动编译，在保存的那一刻帮你做好了
-	g: 运行程序
-		选择要运行的文件或者在要运行的文件内容中
-		右键 -- Run as - Java Application 即可
-	h: 内容显示
-		在 Console 控制台显示内容
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">A: 选择一个工作空间
+</span></span><span class="line"><span class="cl">	D:\develop\eclipse-SDK-3.7.2-win64\workspace
+</span></span><span class="line"><span class="cl">B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
+</span></span><span class="line"><span class="cl">	a: 创建项目（工程）
+</span></span><span class="line"><span class="cl">		*File -- New -- Java Project
+</span></span><span class="line"><span class="cl">		*在左边空白处，直接右键 -- New -- Java Project
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		键入项目名称后直接 Finish。
+</span></span><span class="line"><span class="cl">	b: 所有的 java 文件必须写到 src 下面才有效
+</span></span><span class="line"><span class="cl">	c: 创建一个包
+</span></span><span class="line"><span class="cl">		cn.lruihao   
+</span></span><span class="line"><span class="cl">	d: 在包下创建一个类
+</span></span><span class="line"><span class="cl">		HelloWorld
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		同时让它帮我们写好了 main 方法。
+</span></span><span class="line"><span class="cl">	e: 在 main 方法中写内容即可
+</span></span><span class="line"><span class="cl">	f: 编译程序
+</span></span><span class="line"><span class="cl">		自动编译，在保存的那一刻帮你做好了
+</span></span><span class="line"><span class="cl">	g: 运行程序
+</span></span><span class="line"><span class="cl">		选择要运行的文件或者在要运行的文件内容中
+</span></span><span class="line"><span class="cl">		右键 -- Run as - Java Application 即可
+</span></span><span class="line"><span class="cl">	h: 内容显示
+</span></span><span class="line"><span class="cl">		在 Console 控制台显示内容
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="eclipse-的基本设置">Eclipse 的基本设置</h1>
 <div class="highlight"><div class="chroma">
@@ -1723,23 +1721,23 @@ B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span> <span class="n">程序的编译和运行的环境配置</span><span class="err">（</span><span class="n">如果你的</span> <span class="n">Eclipse</span> <span class="n">启动没有问题</span><span class="err">，</span><span class="n">就不要配置了</span><span class="err">）</span>
-<span class="nl">B:</span> <span class="n">去掉默认注释</span><span class="err">（</span><span class="n">可以不用改</span><span class="err">）</span>
-<span class="nl">C:</span> <span class="n">行号的显示和隐藏</span>
-	<span class="n">显示</span><span class="err">：</span><span class="n">在代码区域的最左边的空白区域</span><span class="err">，</span><span class="n">右键</span> <span class="o">--</span> <span class="n">Show</span> <span class="n">Line</span> <span class="n">Numbers</span> <span class="n">即可</span><span class="err">。</span>
-	<span class="n">隐藏</span><span class="err">：</span><span class="n">把上面的动作再做一次</span><span class="err">。</span>
-<span class="nl">D:</span> <span class="n">字体大小及颜色</span>
-	<span class="n">a</span><span class="o">:</span><span class="n">Java</span> <span class="n">代码区域的字体大小和颜色</span><span class="err">：</span>
-		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">修改</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">Edit</span> <span class="n">Text</span> <span class="n">Font</span>
-	<span class="n">b</span><span class="o">:</span> <span class="n">控制台</span>
-		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Debug</span> <span class="o">--</span> <span class="n">Console</span> <span class="n">font</span>
-	<span class="n">c</span><span class="o">:</span> <span class="n">其他文件</span>
-		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Basic</span> <span class="o">--</span> <span class="n">Text</span> <span class="n">Font</span>
-<span class="nl">E:</span> <span class="n">窗体给弄乱了</span><span class="err">，</span><span class="n">怎么办</span>
-	<span class="n">window</span> <span class="o">--</span> <span class="n">Reset</span> <span class="n">Perspective</span>
-<span class="nl">F:</span> <span class="n">控制台找不到了</span>
-	<span class="n">Window</span><span class="o">--</span><span class="n">Show</span> <span class="n">View</span><span class="err">—</span><span class="n">Console</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nl">A:</span> <span class="n">程序的编译和运行的环境配置</span><span class="err">（</span><span class="n">如果你的</span> <span class="n">Eclipse</span> <span class="n">启动没有问题</span><span class="err">，</span><span class="n">就不要配置了</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl"><span class="nl">B:</span> <span class="n">去掉默认注释</span><span class="err">（</span><span class="n">可以不用改</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl"><span class="nl">C:</span> <span class="n">行号的显示和隐藏</span>
+</span></span><span class="line"><span class="cl">	<span class="n">显示</span><span class="err">：</span><span class="n">在代码区域的最左边的空白区域</span><span class="err">，</span><span class="n">右键</span> <span class="o">--</span> <span class="n">Show</span> <span class="n">Line</span> <span class="n">Numbers</span> <span class="n">即可</span><span class="err">。</span>
+</span></span><span class="line"><span class="cl">	<span class="n">隐藏</span><span class="err">：</span><span class="n">把上面的动作再做一次</span><span class="err">。</span>
+</span></span><span class="line"><span class="cl"><span class="nl">D:</span> <span class="n">字体大小及颜色</span>
+</span></span><span class="line"><span class="cl">	<span class="n">a</span><span class="o">:</span><span class="n">Java</span> <span class="n">代码区域的字体大小和颜色</span><span class="err">：</span>
+</span></span><span class="line"><span class="cl">		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">修改</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">Edit</span> <span class="n">Text</span> <span class="n">Font</span>
+</span></span><span class="line"><span class="cl">	<span class="n">b</span><span class="o">:</span> <span class="n">控制台</span>
+</span></span><span class="line"><span class="cl">		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Debug</span> <span class="o">--</span> <span class="n">Console</span> <span class="n">font</span>
+</span></span><span class="line"><span class="cl">	<span class="n">c</span><span class="o">:</span> <span class="n">其他文件</span>
+</span></span><span class="line"><span class="cl">		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Basic</span> <span class="o">--</span> <span class="n">Text</span> <span class="n">Font</span>
+</span></span><span class="line"><span class="cl"><span class="nl">E:</span> <span class="n">窗体给弄乱了</span><span class="err">，</span><span class="n">怎么办</span>
+</span></span><span class="line"><span class="cl">	<span class="n">window</span> <span class="o">--</span> <span class="n">Reset</span> <span class="n">Perspective</span>
+</span></span><span class="line"><span class="cl"><span class="nl">F:</span> <span class="n">控制台找不到了</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Window</span><span class="o">--</span><span class="n">Show</span> <span class="n">View</span><span class="err">—</span><span class="n">Console</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="快捷键的使用">快捷键的使用</h1>
 <div class="highlight"><div class="chroma">
@@ -1756,17 +1754,17 @@ B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span> <span class="n">内容辅助键</span>
-	<span class="n">Alt</span><span class="o">+/</span> <span class="n">起提示作用</span>
-	<span class="n">main</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span><span class="n">syso</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span> <span class="n">给出其他提示</span>
-<span class="nl">B:</span> <span class="n">快捷键</span>
-	<span class="n">格式化</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">f</span>
-	<span class="n">导入包</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">o</span>
-	<span class="n">注释</span>	<span class="n">ctrl</span><span class="o">+/</span>
-		<span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+/,</span><span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="err">\</span>
-	<span class="n">代码上下移动</span> <span class="n">选中代码</span> <span class="n">alt</span><span class="o">+</span><span class="n">上</span><span class="o">/</span><span class="n">下箭头</span>
-	<span class="n">查看源码</span>  <span class="nf">选中类名</span> <span class="o">(</span><span class="n">F3</span> <span class="n">或者</span> <span class="n">Ctrl</span><span class="o">+</span><span class="n">鼠标点击</span><span class="err">）</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nl">A:</span> <span class="n">内容辅助键</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Alt</span><span class="o">+/</span> <span class="n">起提示作用</span>
+</span></span><span class="line"><span class="cl">	<span class="n">main</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span><span class="n">syso</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span> <span class="n">给出其他提示</span>
+</span></span><span class="line"><span class="cl"><span class="nl">B:</span> <span class="n">快捷键</span>
+</span></span><span class="line"><span class="cl">	<span class="n">格式化</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">f</span>
+</span></span><span class="line"><span class="cl">	<span class="n">导入包</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">o</span>
+</span></span><span class="line"><span class="cl">	<span class="n">注释</span>	<span class="n">ctrl</span><span class="o">+/</span>
+</span></span><span class="line"><span class="cl">		<span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+/,</span><span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="err">\</span>
+</span></span><span class="line"><span class="cl">	<span class="n">代码上下移动</span> <span class="n">选中代码</span> <span class="n">alt</span><span class="o">+</span><span class="n">上</span><span class="o">/</span><span class="n">下箭头</span>
+</span></span><span class="line"><span class="cl">	<span class="n">查看源码</span>  <span class="nf">选中类名</span> <span class="o">(</span><span class="n">F3</span> <span class="n">或者</span> <span class="n">Ctrl</span><span class="o">+</span><span class="n">鼠标点击</span><span class="err">）</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="eclipse-中如何提高开发效率">Eclipse 中如何提高开发效率</h1>
 <div class="highlight"><div class="chroma">
@@ -1778,11 +1776,11 @@ B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nl">A:</span> <span class="n">自动生成构造方法</span>
-	<span class="n">a</span><span class="o">:</span> <span class="n">无参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">from</span> <span class="n">Superclass</span>
-	<span class="n">b</span><span class="o">:</span> <span class="n">带参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">using</span> <span class="n">fields</span><span class="o">..</span> <span class="o">--</span> <span class="n">finish</span>
-<span class="nl">B:</span> <span class="n">自动生成</span> <span class="n">get</span><span class="o">/</span><span class="n">set</span> <span class="n">方法</span>
-	<span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Getters</span> <span class="n">and</span> <span class="n">Setters</span><span class="o">...</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nl">A:</span> <span class="n">自动生成构造方法</span>
+</span></span><span class="line"><span class="cl">	<span class="n">a</span><span class="o">:</span> <span class="n">无参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">from</span> <span class="n">Superclass</span>
+</span></span><span class="line"><span class="cl">	<span class="n">b</span><span class="o">:</span> <span class="n">带参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">using</span> <span class="n">fields</span><span class="o">..</span> <span class="o">--</span> <span class="n">finish</span>
+</span></span><span class="line"><span class="cl"><span class="nl">B:</span> <span class="n">自动生成</span> <span class="n">get</span><span class="o">/</span><span class="n">set</span> <span class="n">方法</span>
+</span></span><span class="line"><span class="cl">	<span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Getters</span> <span class="n">and</span> <span class="n">Setters</span><span class="o">...</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item></channel></rss>

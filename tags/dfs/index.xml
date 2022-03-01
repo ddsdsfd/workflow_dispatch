@@ -90,55 +90,53 @@ Accepted: 30423</p>
 </span><span class="lnt">42
 </span><span class="lnt">43
 </span><span class="lnt">44
-</span><span class="lnt">45
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="cp">#include</span><span class="cpf">&lt;cstdio&gt;</span><span class="cp">
-</span><span class="cp">#include</span><span class="cpf">&lt;cstring&gt;</span><span class="cp">
-</span><span class="cp">#include</span><span class="cpf">&lt;algorithm&gt;</span><span class="cp">
-</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">char</span> <span class="n">mp</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">8</span><span class="p">];</span>
-<span class="kt">int</span> <span class="n">v</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
-<span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">r</span><span class="p">;</span><span class="c1">//状态计数器 r
-</span><span class="c1"></span><span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span><span class="c1">//逐行深搜，x 为当前搜索行
-</span><span class="c1"></span><span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">w</span><span class="o">==</span><span class="n">k</span><span class="p">)</span><span class="c1">//下子数 w
-</span><span class="c1"></span>    <span class="p">{</span>
-        <span class="n">r</span><span class="o">++</span><span class="p">;</span><span class="k">return</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="n">n</span><span class="p">)</span><span class="k">return</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">!=</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="n">mp</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;#&#39;</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-            <span class="n">w</span><span class="o">++</span><span class="p">;</span>
-            <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-            <span class="n">w</span><span class="o">--</span><span class="p">;</span>
-            <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span><span class="c1">//搜索下一行
-</span><span class="c1"></span><span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">k</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==-</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="n">k</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span>
-            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">mp</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">mp</span><span class="p">));</span>
-        <span class="n">memset</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v</span><span class="p">));</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">mp</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="n">w</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-        <span class="n">dfs</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">r</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;cstdio&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;cstring&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">mp</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">8</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">v</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">r</span><span class="p">;</span><span class="c1">//状态计数器 r
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span><span class="c1">//逐行深搜，x 为当前搜索行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">w</span><span class="o">==</span><span class="n">k</span><span class="p">)</span><span class="c1">//下子数 w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">r</span><span class="o">++</span><span class="p">;</span><span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="n">n</span><span class="p">)</span><span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">!=</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="n">mp</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;#&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">w</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">w</span><span class="o">--</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span><span class="c1">//搜索下一行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==-</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="n">k</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">memset</span><span class="p">(</span><span class="n">mp</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">mp</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="n">memset</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">mp</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="n">w</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dfs</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">r</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="https://blog.csdn.net/hurmishine/article/details/49835913"
@@ -211,37 +209,37 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&#34;iostream&#34;</span><span class="cp">
-</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-<span class="kt">bool</span> <span class="n">sign</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">ll</span> <span class="n">x</span><span class="p">,</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">sign</span><span class="p">)</span>
-        <span class="k">return</span> <span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
-        <span class="n">sign</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">x</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-        <span class="k">return</span> <span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">19</span><span class="p">)</span><span class="c1">//m 最多 200 位
-</span><span class="c1"></span>        <span class="k">return</span> <span class="p">;</span>
-    <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-    <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-    <span class="c1">//每两位数后两位有两种情况，10 或 11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
-</span><span class="c1"></span><span class="p">}</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&amp;&amp;</span><span class="n">n</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">sign</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-        <span class="n">dfs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&#34;iostream&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">sign</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">ll</span> <span class="n">x</span><span class="p">,</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">sign</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sign</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">x</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">19</span><span class="p">)</span><span class="c1">//m 最多 200 位
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">return</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dfs</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//每两位数后两位有两种情况，10 或 11，深搜所有情况，找到一种就返回，找不到找另外一颗子树
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&amp;&amp;</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sign</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dfs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>hud-1241-Oil Deposits (dfs)</title><link>https://lruihao.cn/posts/hud-1241-oil-deposits-dfs/</link><pubDate>Sun, 22 Jul 2018 11:37:20 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hud-1241-oil-deposits-dfs/</guid><description><![CDATA[<h2 id="oil-depositshttpacmhdueducnshowproblemphppid1241"><a
   href="http://acm.hdu.edu.cn/showproblem.php?pid=1241"
@@ -276,7 +274,7 @@ Total Submission(s): 41406    Accepted Submission(s): 23977</p>
 <h4 id="problem-description">Problem Description</h4>
 <p>The GeoSurvComp geologic survey company is responsible for detecting underground oil deposits. GeoSurvComp works with one large rectangular region of land at a time, and creates a grid that divides the land into numerous square plots. It then analyzes each plot separately, using sensing equipment to determine whether or not the plot contains oil. A plot containing oil is called a pocket. If two pockets are adjacent, then they are part of the same oil deposit. Oil deposits can be quite large and may contain numerous pockets. Your job is to determine how many different oil deposits are contained in a grid.</p>
 <h4 id="input">Input</h4>
-<p>The input file contains one or more grids. Each grid begins with a line containing m and n, the number of rows and columns in the grid, separated by a single space. If m = 0 it signals the end of the input; otherwise 1 &lt;= m &lt;= 100 and 1 &lt;= n &lt;= 100. Following this are m lines of n characters each (not counting the end-of-line characters). Each character corresponds to one plot, and is either ' * &lsquo;, representing the absence of oil, or &lsquo;@&rsquo;, representing an oil pocket.</p>
+<p>The input file contains one or more grids. Each grid begins with a line containing m and n, the number of rows and columns in the grid, separated by a single space. If m = 0 it signals the end of the input; otherwise 1 &lt;= m &lt;= 100 and 1 &lt;= n &lt;= 100. Following this are m lines of n characters each (not counting the end-of-line characters). Each character corresponds to one plot, and is either &rsquo; * &lsquo;, representing the absence of oil, or &lsquo;@&rsquo;, representing an oil pocket.</p>
 <h4 id="output">Output</h4>
 <p>For each grid, output the number of distinct oil deposits. Two different pockets are part of the same oil deposit if they are adjacent horizontally, vertically, or diagonally. An oil deposit will not contain more than 100 pockets.</p>
 <h4 id="sample-input">Sample Input</h4>
@@ -347,43 +345,43 @@ Total Submission(s): 41406    Accepted Submission(s): 23977</p>
 </span><span class="lnt">36
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
-</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">s</span><span class="p">;</span>
-<span class="kt">char</span> <span class="n">maze</span><span class="p">[</span><span class="mi">107</span><span class="p">][</span><span class="mi">107</span><span class="p">];</span>
-<span class="kt">int</span> <span class="n">vx</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
-<span class="kt">int</span> <span class="n">vy</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">};</span>
-
-<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="kt">int</span> <span class="n">y</span><span class="p">){</span>
-    <span class="n">maze</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span><span class="o">=</span><span class="sc">&#39;*&#39;</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="kt">int</span> <span class="n">tx</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="kt">int</span> <span class="n">ty</span><span class="o">=</span><span class="n">y</span><span class="o">+</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">tx</span><span class="o">&gt;=</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">tx</span><span class="o">&lt;</span><span class="n">m</span><span class="o">&amp;&amp;</span><span class="n">ty</span><span class="o">&gt;=</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">ty</span><span class="o">&lt;</span><span class="n">n</span><span class="o">&amp;&amp;</span><span class="n">maze</span><span class="p">[</span><span class="n">tx</span><span class="p">][</span><span class="n">ty</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;@&#39;</span><span class="p">)</span>
-            <span class="n">dfs</span><span class="p">(</span><span class="n">tx</span><span class="p">,</span><span class="n">ty</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&amp;&amp;</span><span class="n">m</span><span class="p">){</span>
-        <span class="n">s</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-        <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">maze</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="c1">//相当于不连通的情况
-</span><span class="c1"></span>            <span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
-                <span class="k">if</span><span class="p">(</span><span class="n">maze</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;@&#39;</span><span class="p">){</span>
-                    <span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
-                    <span class="n">s</span><span class="o">++</span><span class="p">;</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">s</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">s</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">maze</span><span class="p">[</span><span class="mi">107</span><span class="p">][</span><span class="mi">107</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">vx</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">vy</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="kt">int</span> <span class="n">y</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">maze</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span><span class="o">=</span><span class="sc">&#39;*&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">8</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">tx</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">ty</span><span class="o">=</span><span class="n">y</span><span class="o">+</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">tx</span><span class="o">&gt;=</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">tx</span><span class="o">&lt;</span><span class="n">m</span><span class="o">&amp;&amp;</span><span class="n">ty</span><span class="o">&gt;=</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">ty</span><span class="o">&lt;</span><span class="n">n</span><span class="o">&amp;&amp;</span><span class="n">maze</span><span class="p">[</span><span class="n">tx</span><span class="p">][</span><span class="n">ty</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;@&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dfs</span><span class="p">(</span><span class="n">tx</span><span class="p">,</span><span class="n">ty</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&amp;&amp;</span><span class="n">m</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">maze</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="c1">//相当于不连通的情况
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">maze</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;@&#39;</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">s</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">s</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description></item><item><title>深搜广搜</title><link>https://lruihao.cn/posts/dfs_bfs/</link><pubDate>Sun, 22 Jul 2018 11:25:14 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dfs_bfs/</guid><description><![CDATA[<h3 id="广度优先搜索bfs">广度优先搜索（BFS）</h3>
 <p>广度优先搜索在进一步遍历图中顶点之前，先访问当前顶点的所有邻接结点。访问了就入队。</p>
@@ -453,67 +451,67 @@ Total Submission(s): 41406    Accepted Submission(s): 23977</p>
 </span><span class="lnt">60
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
-</span><span class="cp">#define N 5
-</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">maze</span><span class="p">[</span><span class="n">N</span><span class="p">][</span><span class="n">N</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="c1">//无权有向图邻接矩阵
-</span><span class="c1"></span>     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="p">},</span>
-     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">},</span>
-     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="p">},</span>
-     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">},</span>
-     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">}</span>
- <span class="p">};</span>
- <span class="kt">int</span> <span class="n">visited</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
- <span class="kt">void</span> <span class="nf">DFS</span><span class="p">(</span><span class="kt">int</span> <span class="n">start</span><span class="p">)</span>
- <span class="p">{</span>
-     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">start</span><span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
-     <span class="n">visited</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-     <span class="p">{</span>
-         <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">maze</span><span class="p">[</span><span class="n">start</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="c1">//没访问过且为邻居节点
-</span><span class="c1"></span>             <span class="n">DFS</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-     <span class="p">}</span>
- <span class="p">}</span>
- <span class="kt">void</span> <span class="nf">BFS</span><span class="p">(</span><span class="kt">int</span> <span class="n">start</span><span class="p">){</span>
-     <span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">Q</span><span class="p">;</span><span class="c1">//队列
-</span><span class="c1"></span>     <span class="n">Q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">start</span><span class="p">);</span>
-     <span class="n">visited</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-     <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
-     <span class="p">{</span>
-         <span class="kt">int</span> <span class="n">front</span> <span class="o">=</span> <span class="n">Q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="c1">//头
-</span><span class="c1"></span>         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">front</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
-         <span class="n">Q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span><span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-         <span class="p">{</span>
-             <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">maze</span><span class="p">[</span><span class="n">front</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
-             <span class="p">{</span>
-                 <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-                 <span class="n">Q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-             <span class="p">}</span>
-         <span class="p">}</span>
-     <span class="p">}</span>
- <span class="p">}</span>
-
- <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
- <span class="p">{</span>
-     <span class="n">memset</span><span class="p">(</span><span class="n">visited</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">visited</span><span class="p">));</span>
-     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//不连通的情况
-</span><span class="c1"></span>     <span class="p">{</span>
-         <span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="c1">//访问过
-</span><span class="c1"></span>             <span class="k">continue</span><span class="p">;</span>
-         <span class="n">DFS</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-     <span class="p">}</span>
-     <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-     <span class="n">memset</span><span class="p">(</span><span class="n">visited</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">visited</span><span class="p">));</span>
-     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//不连通的情况
-</span><span class="c1"></span>     <span class="p">{</span>
-         <span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="c1">//访问过
-</span><span class="c1"></span>             <span class="k">continue</span><span class="p">;</span>
-         <span class="n">BFS</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-     <span class="p">}</span>
-     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
- <span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define N 5
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">maze</span><span class="p">[</span><span class="n">N</span><span class="p">][</span><span class="n">N</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="c1">//无权有向图邻接矩阵
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"> <span class="kt">int</span> <span class="n">visited</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"> <span class="kt">void</span> <span class="nf">DFS</span><span class="p">(</span><span class="kt">int</span> <span class="n">start</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">start</span><span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="n">visited</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">maze</span><span class="p">[</span><span class="n">start</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="c1">//没访问过且为邻居节点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">DFS</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="kt">void</span> <span class="nf">BFS</span><span class="p">(</span><span class="kt">int</span> <span class="n">start</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">     <span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">Q</span><span class="p">;</span><span class="c1">//队列
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="n">Q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">start</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="n">visited</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="kt">int</span> <span class="n">front</span> <span class="o">=</span> <span class="n">Q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="c1">//头
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">front</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="n">Q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span><span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">maze</span><span class="p">[</span><span class="n">front</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">             <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">Q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">             <span class="p">}</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="n">memset</span><span class="p">(</span><span class="n">visited</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">visited</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//不连通的情况
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="c1">//访问过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="n">DFS</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="n">memset</span><span class="p">(</span><span class="n">visited</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">visited</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="c1">//不连通的情况
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="c1">//访问过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="n">BFS</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a
   href="https://blog.csdn.net/wumingkeqi/article/details/70940978"

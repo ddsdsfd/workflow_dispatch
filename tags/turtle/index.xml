@@ -9,8 +9,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>讲了一下变量和 python 的特色什么的。<br>
@@ -30,25 +30,25 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">zxm</span><span class="p">():</span>
-	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span>
-
-	<span class="k">def</span> <span class="nf">move_up</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+=</span><span class="mi">1</span>
-
-<span class="n">my_zxm</span><span class="o">=</span><span class="n">zxm</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_zxm</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">zxm</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">def</span> <span class="nf">move_up</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">my_zxm</span><span class="o">=</span><span class="n">zxm</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">my_zxm</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;__main__.zxm object at 0x000001D99CFEF668&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;__main__.zxm object at 0x000001D99CFEF668&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="618">6.18</h2>
 <h3 id="输入输出">输入输出</h3>
@@ -65,11 +65,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">x</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入 x 的值：&#34;</span><span class="p">))</span>
-<span class="n">y</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入 y 的值：&#34;</span><span class="p">))</span>
-<span class="n">z</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入 x 的值：&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span><span class="o">=</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入 y 的值：&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">z</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -81,13 +81,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 导入复数数学模块</span>
-<span class="kn">import</span> <span class="nn">cmath</span>
- 
-<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个数字：&#34;</span><span class="p">))</span>
-<span class="n">num_sqrt</span> <span class="o">=</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> 的平方根为 </span><span class="si">{1:0.3f}</span><span class="s1">+</span><span class="si">{2:0.3f}</span><span class="s1">j&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span> <span class="p">,</span><span class="n">num_sqrt</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">num_sqrt</span><span class="o">.</span><span class="n">imag</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 导入复数数学模块</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">cmath</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入一个数字：&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">num_sqrt</span> <span class="o">=</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> 的平方根为 </span><span class="si">{1:0.3f}</span><span class="s1">+</span><span class="si">{2:0.3f}</span><span class="s1">j&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span> <span class="p">,</span><span class="n">num_sqrt</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">num_sqrt</span><span class="o">.</span><span class="n">imag</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="数据类型">数据类型</h3>
 <blockquote>
@@ -106,17 +106,17 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="c1">#判断元素类型</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="c1">#判断元素类型</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">list
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">list
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="循环判断">循环判断</h3>
 <div class="highlight"><div class="chroma">
@@ -125,9 +125,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># (start,stop,step)</span>
-    <span class="k">pass</span> <span class="c1"># pass 不做任何事情，一般用做占位语句</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># (start,stop,step)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span> <span class="c1"># pass 不做任何事情，一般用做占位语句</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -140,14 +140,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s1">&#39;Python&#39;</span><span class="p">:</span>
-   <span class="k">if</span> <span class="n">letter</span> <span class="o">==</span> <span class="s1">&#39;h&#39;</span><span class="p">:</span>
-      <span class="k">pass</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;这是 pass 块&#39;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;当前字母 :&#39;</span><span class="o">+</span> <span class="n">letter</span><span class="p">)</span>
- 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Good bye!&#34;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s1">&#39;Python&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">   <span class="k">if</span> <span class="n">letter</span> <span class="o">==</span> <span class="s1">&#39;h&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;这是 pass 块&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;当前字母 :&#39;</span><span class="o">+</span> <span class="n">letter</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Good bye!&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -161,15 +161,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">当前字母 :P
-当前字母 :y
-当前字母 :t
-这是 pass 块
-当前字母 :h
-当前字母 :o
-当前字母 :n
-Good bye!
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">当前字母 :P
+</span></span><span class="line"><span class="cl">当前字母 :y
+</span></span><span class="line"><span class="cl">当前字母 :t
+</span></span><span class="line"><span class="cl">这是 pass 块
+</span></span><span class="line"><span class="cl">当前字母 :h
+</span></span><span class="line"><span class="cl">当前字母 :o
+</span></span><span class="line"><span class="cl">当前字母 :n
+</span></span><span class="line"><span class="cl">Good bye!
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="str--import-导库">str() 、 import 导库</h3>
 <div class="highlight"><div class="chroma">
@@ -178,17 +178,17 @@ Good bye!
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">x</span><span class="o">=</span><span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;整数转字符串&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span><span class="o">=</span><span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;整数转字符串&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">this</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">this</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -215,28 +215,28 @@ Good bye!
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren&#39;t special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you&#39;re Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it&#39;s a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let&#39;s do more of those!
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">The Zen of Python, by Tim Peters
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Beautiful is better than ugly.
+</span></span><span class="line"><span class="cl">Explicit is better than implicit.
+</span></span><span class="line"><span class="cl">Simple is better than complex.
+</span></span><span class="line"><span class="cl">Complex is better than complicated.
+</span></span><span class="line"><span class="cl">Flat is better than nested.
+</span></span><span class="line"><span class="cl">Sparse is better than dense.
+</span></span><span class="line"><span class="cl">Readability counts.
+</span></span><span class="line"><span class="cl">Special cases aren&#39;t special enough to break the rules.
+</span></span><span class="line"><span class="cl">Although practicality beats purity.
+</span></span><span class="line"><span class="cl">Errors should never pass silently.
+</span></span><span class="line"><span class="cl">Unless explicitly silenced.
+</span></span><span class="line"><span class="cl">In the face of ambiguity, refuse the temptation to guess.
+</span></span><span class="line"><span class="cl">There should be one-- and preferably only one --obvious way to do it.
+</span></span><span class="line"><span class="cl">Although that way may not be obvious at first unless you&#39;re Dutch.
+</span></span><span class="line"><span class="cl">Now is better than never.
+</span></span><span class="line"><span class="cl">Although never is often better than *right* now.
+</span></span><span class="line"><span class="cl">If the implementation is hard to explain, it&#39;s a bad idea.
+</span></span><span class="line"><span class="cl">If the implementation is easy to explain, it may be a good idea.
+</span></span><span class="line"><span class="cl">Namespaces are one honking great idea -- let&#39;s do more of those!
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>Google 翻译意思是：
