@@ -1546,7 +1546,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <p>doctype 是一种标准通用标记语言的文档类型声明，目的是告诉标准通用标记语言解析器要使用什么样的文档类型定义（DTD）来解析文档。<code>&lt;!DOCTYPE&gt;</code>声明必须是 HTML 文档的第一行，位于 html 标签之前</p>
 </blockquote>
 <blockquote>
-<p>HTML5 不基于 SGML，所以不需要引用 DTD。在 HTML5 中&lt;!DOCTYPE&gt;只有一种</p>
+<p>HTML5 不基于 SGML，所以不需要引用 DTD。在 HTML5 中<!DOCTYPE>只有一种</p>
 </blockquote>
 <blockquote>
 <p>SGML: 标准通用标记语言，是现时常用的超文本格式的最高层次标准</p>

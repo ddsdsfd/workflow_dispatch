@@ -1,114 +1,30 @@
-<!doctype html><html lang=zh-tw>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=robots content="noodp">
-<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>python 实训总结Ⅱ - 菠菜眾長</title><meta name=author content="Lruihao: https://github.com/Lruihao">
-<meta name=description content="
+<!doctype html><html lang=zh-tw><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>python 实训总结Ⅱ - 菠菜眾長</title><meta name=author content="Lruihao: https://github.com/Lruihao"><meta name=description content="
 后面几天讲的有点杂，简单记录一下知识点。
-">
-<meta name=keywords content="Python,Backend"><meta itemprop=name content="python 实训总结Ⅱ">
-<meta itemprop=description content="
+"><meta name=keywords content="Python,Backend"><meta itemprop=name content="python 实训总结Ⅱ"><meta itemprop=description content="
 后面几天讲的有点杂，简单记录一下知识点。
-"><meta itemprop=datePublished content="2019-06-21T18:46:41+00:00">
-<meta itemprop=dateModified content="2021-12-08T22:08:53+08:00">
-<meta itemprop=wordCount content="5652"><meta itemprop=image content="https://lruihao.cn/logo.png">
-<meta itemprop=keywords content="Python,Backend,"><meta property="og:title" content="python 实训总结Ⅱ">
-<meta property="og:description" content="
+"><meta itemprop=datePublished content="2019-06-21T18:46:41+00:00"><meta itemprop=dateModified content="2021-12-08T22:08:53+08:00"><meta itemprop=wordCount content="5652"><meta itemprop=image content="https://lruihao.cn/logo.png"><meta itemprop=keywords content="Python,Backend,"><meta property="og:title" content="python 实训总结Ⅱ"><meta property="og:description" content="
 后面几天讲的有点杂，简单记录一下知识点。
-">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://lruihao.cn/posts/pysx2/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2019-06-21T18:46:41+00:00">
-<meta property="article:modified_time" content="2021-12-08T22:08:53+08:00">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://lruihao.cn/logo.png">
-<meta name=twitter:title content="python 实训总结Ⅱ">
-<meta name=twitter:description content="
+"><meta property="og:type" content="article"><meta property="og:url" content="https://lruihao.cn/posts/pysx2/"><meta property="og:image" content="https://lruihao.cn/logo.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-06-21T18:46:41+00:00"><meta property="article:modified_time" content="2021-12-08T22:08:53+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://lruihao.cn/logo.png"><meta name=twitter:title content="python 实训总结Ⅱ"><meta name=twitter:description content="
 后面几天讲的有点杂，简单记录一下知识点。
-">
-<meta name=application-name content="菠菜眾長">
-<meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/pysx2/><link rel=prev href=https://lruihao.cn/posts/pysx1/><link rel=next href=https://lruihao.cn/posts/wamproot/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"python 实训总结Ⅱ","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/pysx2\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, Backend","wordcount":5652,"url":"https:\/\/lruihao.cn\/posts\/pysx2\/","datePublished":"2019-06-21T18:46:41+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script>
-<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
-<div class=header-wrapper>
-<div class=header-title>
-<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu>
-<div class=menu-inner><a class=menu-item href=/posts/> 文章 </a><a class=menu-item href=/tags/> 標籤 </a><a class=menu-item href=/categories/> 分類 </a><a class=menu-item href=/friends/ title=友情链接> 友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank> 相冊 </a><a class=menu-item href=/guestbook/> 留言 </a><a class=menu-item href=/about/> 關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+"><meta name=application-name content="菠菜眾長"><meta name=apple-mobile-web-app-title content="菠菜眾長"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#252627"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://lruihao.cn/posts/pysx2/><link rel=prev href=https://lruihao.cn/posts/pysx1/><link rel=next href=https://lruihao.cn/posts/wamproot/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"python 实训总结Ⅱ","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/lruihao.cn\/posts\/pysx2\/"},"image":["https:\/\/lruihao.cn\/site-meta.jpg"],"genre":"posts","keywords":"Python, Backend","wordcount":5652,"url":"https:\/\/lruihao.cn\/posts\/pysx2\/","datePublished":"2019-06-21T18:46:41+00:00","dateModified":"2021-12-08T22:08:53+08:00","publisher":{"@type":"Organization","name":"Lruihao","logo":"https:\/\/lruihao.cn\/images\/avatar.jpg"},"author":{"@type":"Person","name":"Lruihao"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>標籤 </a><a class=menu-item href=/categories/>分類 </a><a class=menu-item href=/friends/ title=友情链接>友鏈 </a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊 </a><a class=menu-item href=/guestbook/>留言 </a><a class=menu-item href=/about/>關於 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
 <input type=text placeholder=搜尋文章標題或內容... id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜尋>
-<i class="fas fa-search fa-fw"></i>
-</a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
-<i class="fas fa-times-circle fa-fw"></i>
-</a>
-<span class="search-button search-loading" id=search-loading-desktop>
-<i class="fas fa-spinner fa-fw fa-spin"></i>
-</span>
-</span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
-<i class="fas fa-adjust fa-fw"></i>
-</a>
-</div></div></div></header><header class=mobile id=header-mobile>
-<div class=header-container>
-<div class=header-wrapper>
-<div class=header-title>
-<a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu-toggle id=menu-toggle-mobile>
-<span></span><span></span><span></span>
-</div></div><div class=menu id=menu-mobile><div class=search-wrapper>
-<div class="search mobile" id=search-mobile>
-<input type=text placeholder=搜尋文章標題或內容... id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜尋>
-<i class="fas fa-search fa-fw"></i>
-</a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
-<i class="fas fa-times-circle fa-fw"></i>
-</a>
-<span class="search-button search-loading" id=search-loading-mobile>
-<i class="fas fa-spinner fa-fw fa-spin"></i>
-</span>
-</div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
-取消
-</a>
-</div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
-<i class="fas fa-adjust fa-fw"></i>
-</a></div></div></header><div class="search-dropdown desktop">
-<div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile">
-<div id=search-dropdown-mobile></div></div><main class=container page-style=normal><aside class=toc id=toc-auto><h2 class=toc-title>目錄</h2><div class=toc-content id=toc-content-auto></div></aside><aside class=aside-custom>
-</aside><article class="page single"><h1 class="single-title animate__animated animate__flipInX">python 实训总结Ⅱ</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a></span></div><div class=post-meta-line><span title="2019-06-21 18:46:41">
-<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-06-21>2019-06-21</time>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜尋><i class="fas fa-search fa-fw"></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw"></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=菠菜眾長><img class="lazyload logo" src=/svg/loading.min.svg data-src=/logo.png data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x" data-sizes=auto alt=/logo.png title=/logo.png><span class=header-title-text>菠菜众长</span></a><span class=header-subtitle>李瑞豪的博客</span></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜尋文章標題或內容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜尋><i class="fas fa-search fa-fw"></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw"></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>標籤</a><a class=menu-item href=/categories/ title>分類</a><a class=menu-item href=/friends/ title=友情链接>友鏈</a><a class=menu-item href=https://img.lruihao.cn title="COS Album" rel="noopener noreffer" target=_blank>相冊</a><a class=menu-item href=/guestbook/ title>留言</a><a class=menu-item href=/about/ title>關於</a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=container page-style=normal><aside class=toc id=toc-auto><h2 class=toc-title>目錄</h2><div class=toc-content id=toc-content-auto></div></aside><aside class=aside-custom></aside><article class="page single"><h1 class="single-title animate__animated animate__flipInX">python 实训总结Ⅱ</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=https://github.com/Lruihao title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Lruihao</a></span>&nbsp;<span class=post-category>收錄於 <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a></span></div><div class=post-meta-line><span title="2019-06-21 18:46:41"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2019-06-21>2019-06-21</time>
 </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 5652 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 12 分鐘&nbsp;<span id=/posts/pysx2/ class=leancloud_visitors data-flag-title="python 实训总结Ⅱ">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count>-</span>&nbsp;次閱讀
 </span>&nbsp;<span class=comment-count data-flag-title="python 实训总结Ⅱ">
 <i class="far fa-comments fa-fw"></i>&nbsp;<span data-xid=/posts/pysx2/ class=valine-comment-count>-</span>&nbsp;條評論
-</span>&nbsp;</div></div><div class="details toc" id=toc-static kept=false>
-<div class="details-summary toc-title">
-<span>目錄</span>
-<span><i class="details-icon fas fa-angle-right"></i></span>
-</div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
-<ul>
-<li><a href=#619>6.19</a>
-<ul>
-<li><a href=#切片操作httpswwwjianshucomp15715d6f4dad><a href=https://www.jianshu.com/p/15715d6f4dad>切片操作</a></a></li><li><a href=#字符串>字符串</a>
-<ul>
-<li><a href=#python-原始字符串>python 原始字符串</a></li><li><a href=#长字符串>长字符串</a></li><li><a href=#用换行字符表示字符未结束>用、换行字符表示字符未结束</a></li></ul></li><li><a href=#格式化输出-format>格式化输出 format</a></li><li><a href=#多变量赋值与交换斐波那契数列>多变量赋值与交换（斐波那契数列）</a></li><li><a href=#笑傲江湖统计字符-dict-文件流>笑傲江湖统计字符 (dict, 文件流）</a></li><li><a href=#numpy-模块>numpy 模块</a></li><li><a href=#pandas-模块>pandas 模块</a></li></ul></li><li><a href=#620>6.20</a>
-<ul>
-<li><a href=#matplotlib-绘图>matplotlib 绘图</a></li><li><a href=#爬虫>爬虫</a></li></ul></li><li><a href=#621>6.21</a>
-<ul>
-<li><a href=#类>类</a></li><li><a href=#gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548>GUI 设计 <a href=https://blog.csdn.net/mist99/article/details/80742548>wxPython</a></a></li><li><a href=#talib-库的安装>talib 库的安装</a></li><li><a href=#选择排序递归版>选择排序递归版</a></li><li><a href=#机房上机系统自我实践>机房上机系统（自我实践）</a></li><li><a href=#量化交易代码分析与调试>量化交易代码分析与调试</a></li></ul></li></ul></nav></div></div><div class=content id=content><blockquote>
-<p>后面几天讲的有点杂，简单记录一下知识点。</p></blockquote><h1 id=619>6.19</h1><blockquote>
-<p>这些知识点在课上都只是简单的提到了一下。<br>
-比如一些库的使用与安装都不会再课上详细讲解，需要课后再去研究。</p></blockquote><h2 id=切片操作httpswwwjianshucomp15715d6f4dad><a href=https://www.jianshu.com/p/15715d6f4dad target=_blank rel="external nofollow noopener noreffer">切片操作</a></h2><p>列表切片操作</p><h2 id=字符串>字符串</h2><h3 id=python-原始字符串>python 原始字符串</h3><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>print(r&#34;D:\three\two&#34;)
-</span></span></code></pre></td></tr></table></div></div><h3 id=长字符串>长字符串</h3><p>用三个单引号或者双引号包裹，前后呼应，成双成对。</p><h3 id=用换行字符表示字符未结束>用、换行字符表示字符未结束</h3><h2 id=格式化输出-format>格式化输出 format</h2><p><code>"=={}=="</code>，<code>{}</code>表示占位符，其前后字符保持原样输出。</p><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span>&nbsp;</div></div><div class="details toc" id=toc-static kept=false><div class="details-summary toc-title"><span>目錄</span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#619>6.19</a><ul><li><a href=#切片操作httpswwwjianshucomp15715d6f4dad><a href=https://www.jianshu.com/p/15715d6f4dad>切片操作</a></a></li><li><a href=#字符串>字符串</a><ul><li><a href=#python-原始字符串>python 原始字符串</a></li><li><a href=#长字符串>长字符串</a></li><li><a href=#用换行字符表示字符未结束>用、换行字符表示字符未结束</a></li></ul></li><li><a href=#格式化输出-format>格式化输出 format</a></li><li><a href=#多变量赋值与交换斐波那契数列>多变量赋值与交换（斐波那契数列）</a></li><li><a href=#笑傲江湖统计字符-dict-文件流>笑傲江湖统计字符 (dict, 文件流）</a></li><li><a href=#numpy-模块>numpy 模块</a></li><li><a href=#pandas-模块>pandas 模块</a></li></ul></li><li><a href=#620>6.20</a><ul><li><a href=#matplotlib-绘图>matplotlib 绘图</a></li><li><a href=#爬虫>爬虫</a></li></ul></li><li><a href=#621>6.21</a><ul><li><a href=#类>类</a></li><li><a href=#gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548>GUI 设计 <a href=https://blog.csdn.net/mist99/article/details/80742548>wxPython</a></a></li><li><a href=#talib-库的安装>talib 库的安装</a></li><li><a href=#选择排序递归版>选择排序递归版</a></li><li><a href=#机房上机系统自我实践>机房上机系统（自我实践）</a></li><li><a href=#量化交易代码分析与调试>量化交易代码分析与调试</a></li></ul></li></ul></nav></div></div><div class=content id=content><blockquote><p>后面几天讲的有点杂，简单记录一下知识点。</p></blockquote><h1 id=619>6.19</h1><blockquote><p>这些知识点在课上都只是简单的提到了一下。<br>比如一些库的使用与安装都不会再课上详细讲解，需要课后再去研究。</p></blockquote><h2 id=切片操作httpswwwjianshucomp15715d6f4dad><a href=https://www.jianshu.com/p/15715d6f4dad target=_blank rel="external nofollow noopener noreffer">切片操作</a></h2><p>列表切片操作</p><h2 id=字符串>字符串</h2><h3 id=python-原始字符串>python 原始字符串</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>print(r&#34;D:\three\two&#34;)
+</span></span></code></pre></td></tr></table></div></div><h3 id=长字符串>长字符串</h3><p>用三个单引号或者双引号包裹，前后呼应，成双成对。</p><h3 id=用换行字符表示字符未结束>用、换行字符表示字符未结束</h3><h2 id=格式化输出-format>格式化输出 format</h2><p><code>"=={}=="</code>，<code>{}</code>表示占位符，其前后字符保持原样输出。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -118,8 +34,7 @@
 </span><span class=lnt> 8
 </span><span class=lnt> 9
 </span><span class=lnt>10
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1>#TempConvert.py</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1>#TempConvert.py</span>
 </span></span><span class=line><span class=cl><span class=n>TempStr</span> <span class=o>=</span> <span class=nb>input</span><span class=p>(</span><span class=s2>&#34;请输入带有符号的温度值：&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=n>TempStr</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=ow>in</span> <span class=p>[</span><span class=s1>&#39;F&#39;</span><span class=p>,</span><span class=s1>&#39;f&#39;</span><span class=p>]:</span>
 </span></span><span class=line><span class=cl>    <span class=n>C</span> <span class=o>=</span> <span class=p>(</span><span class=nb>eval</span><span class=p>(</span><span class=n>TempStr</span><span class=p>[</span><span class=mi>0</span><span class=p>:</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span> <span class=o>-</span> <span class=mi>32</span><span class=p>)</span><span class=o>/</span><span class=mf>1.8</span>
@@ -129,29 +44,19 @@
 </span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;转换后的温度是</span><span class=si>{:.2f}</span><span class=s2>F&#34;</span><span class=o>.</span><span class=n>format</span><span class=p>(</span><span class=n>F</span><span class=p>))</span>
 </span></span><span class=line><span class=cl><span class=k>else</span><span class=p>:</span>
 </span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;输入格式错误&#34;</span><span class=p>)</span>
-</span></span></code></pre></td></tr></table></div></div><h2 id=多变量赋值与交换斐波那契数列>多变量赋值与交换（斐波那契数列）</h2><p>python 3.x 版本 <code>end=""</code> 可使输出不换行</p><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>end</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>)</span>
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></span></code></pre></td></tr></table></div></div><h2 id=多变量赋值与交换斐波那契数列>多变量赋值与交换（斐波那契数列）</h2><p>python 3.x 版本 <code>end=""</code> 可使输出不换行</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>end</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
 </span><span class=lnt>5
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1>#斐波那契数列</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1>#斐波那契数列</span>
 </span></span><span class=line><span class=cl><span class=n>a</span><span class=p>,</span> <span class=n>b</span> <span class=o>=</span> <span class=mi>1</span><span class=p>,</span><span class=mi>1</span>
 </span></span><span class=line><span class=cl><span class=k>while</span> <span class=n>a</span> <span class=o>&lt;</span> <span class=mi>500</span><span class=p>:</span> <span class=c1># 输出不大于 500 的序列</span>
 </span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=n>a</span><span class=p>,</span><span class=n>end</span><span class=o>=</span><span class=s2>&#34;,&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=n>a</span><span class=p>,</span><span class=n>b</span> <span class=o>=</span> <span class=n>b</span><span class=p>,</span><span class=n>a</span> <span class=o>+</span> <span class=n>b</span> <span class=c1>#交换变量</span>
-</span></span></code></pre></td></tr></table></div></div><h2 id=笑傲江湖统计字符-dict-文件流>笑傲江湖统计字符 (dict, 文件流）</h2><blockquote>
-<p>统计《笑傲江湖》小说中出现的所有中文字符及标点符号的数量，每个字符及数目间用冒号<code>:</code>隔开，例如"笑：1024"，将所有字符及数量的对应采用逗号分隔，以 CSV 文件格式保存到<code>“笑傲江湖--字符统计。txt”</code>文件中。注意，统计字符不包括空格和回车。</p></blockquote><blockquote>
-<p>csv 文件格式： ‘,’逗号连接元素</p></blockquote><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><h2 id=笑傲江湖统计字符-dict-文件流>笑傲江湖统计字符 (dict, 文件流）</h2><blockquote><p>统计《笑傲江湖》小说中出现的所有中文字符及标点符号的数量，每个字符及数目间用冒号<code>:</code>隔开，例如"笑：1024"，将所有字符及数量的对应采用逗号分隔，以 CSV 文件格式保存到<code>“笑傲江湖--字符统计。txt”</code>文件中。注意，统计字符不包括空格和回车。</p></blockquote><blockquote><p>csv 文件格式： ‘,’逗号连接元素</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -172,8 +77,7 @@
 </span><span class=lnt>19
 </span><span class=lnt>20
 </span><span class=lnt>21
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>fi</span> <span class=o>=</span> <span class=nb>open</span><span class=p>(</span><span class=s2>&#34;data/笑傲江湖-网络版。txt&#34;</span><span class=p>,</span><span class=s2>&#34;r&#34;</span><span class=p>,</span><span class=n>encoding</span><span class=o>=</span><span class=s2>&#34;utf-8&#34;</span><span class=p>)</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>fi</span> <span class=o>=</span> <span class=nb>open</span><span class=p>(</span><span class=s2>&#34;data/笑傲江湖-网络版。txt&#34;</span><span class=p>,</span><span class=s2>&#34;r&#34;</span><span class=p>,</span><span class=n>encoding</span><span class=o>=</span><span class=s2>&#34;utf-8&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>fo</span> <span class=o>=</span> <span class=nb>open</span><span class=p>(</span><span class=s2>&#34;data/笑傲江湖-字符统计。txt&#34;</span><span class=p>,</span><span class=s2>&#34;w&#34;</span><span class=p>,</span><span class=n>encoding</span><span class=o>=</span><span class=s2>&#34;utf-8&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>txt</span> <span class=o>=</span> <span class=n>fi</span><span class=o>.</span><span class=n>read</span><span class=p>()</span> <span class=c1>#打开文件</span>
@@ -194,9 +98,7 @@
 </span></span><span class=line><span class=cl><span class=n>fo</span><span class=o>.</span><span class=n>write</span><span class=p>(</span><span class=s2>&#34;,&#34;</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>ls</span><span class=p>))</span> 
 </span></span><span class=line><span class=cl><span class=n>fi</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
 </span></span><span class=line><span class=cl><span class=n>fo</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
-</span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/tj.png data-srcset="/posts/pysx2/images/tj.png, images/tj.png 1.5x, /posts/pysx2/images/tj.png 2x" data-sizes=auto alt=/posts/pysx2/images/tj.png title=文件读取及字符统计结果></p><h2 id=numpy-模块>numpy 模块</h2><p><strong>&mldr;</strong></p><h2 id=pandas-模块>pandas 模块</h2><p><strong>&mldr;</strong></p><h1 id=620>6.20</h1><h2 id=matplotlib-绘图>matplotlib 绘图</h2><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/tj.png data-srcset="/posts/pysx2/images/tj.png, images/tj.png 1.5x, /posts/pysx2/images/tj.png 2x" data-sizes=auto alt=/posts/pysx2/images/tj.png title=文件读取及字符统计结果></p><h2 id=numpy-模块>numpy 模块</h2><p><strong>&mldr;</strong></p><h2 id=pandas-模块>pandas 模块</h2><p><strong>&mldr;</strong></p><h1 id=620>6.20</h1><h2 id=matplotlib-绘图>matplotlib 绘图</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -206,8 +108,7 @@
 </span><span class=lnt> 8
 </span><span class=lnt> 9
 </span><span class=lnt>10
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>matplotlib.pyplot</span> <span class=k>as</span> <span class=nn>plt</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>matplotlib.pyplot</span> <span class=k>as</span> <span class=nn>plt</span>
 </span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>numpy</span> <span class=k>as</span> <span class=nn>np</span>
 </span></span><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>arange</span><span class=p>(</span><span class=o>-</span><span class=mi>5</span><span class=p>,</span><span class=mi>5</span><span class=p>,</span><span class=mf>0.01</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>y</span> <span class=o>=</span> <span class=mi>2</span><span class=o>**</span><span class=n>x</span><span class=o>+</span><span class=mi>1</span>
@@ -218,9 +119,7 @@
 </span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>tick_params</span><span class=p>(</span><span class=n>axis</span><span class=o>=</span><span class=s2>&#34;both&#34;</span><span class=p>,</span><span class=n>labelsize</span><span class=o>=</span><span class=mi>14</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
 </span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/zhishu.png data-srcset="/posts/pysx2/images/zhishu.png, images/zhishu.png 1.5x, /posts/pysx2/images/zhishu.png 2x" data-sizes=auto alt=/posts/pysx2/images/zhishu.png title="Y=2<sup>X</sup>+1"></p><h2 id=爬虫>爬虫</h2><p>举了一个金融界，炒股，获取数据的爬虫
-（今天没仔细听课，这数据爬过什么意思，咱不懂，咱也不敢问！）</p><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+（今天没仔细听课，这数据爬过什么意思，咱不懂，咱也不敢问！）</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -243,8 +142,7 @@
 </span><span class=lnt>21
 </span><span class=lnt>22
 </span><span class=lnt>23
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=ch>#! /usr/bin/env python </span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=ch>#! /usr/bin/env python </span>
 </span></span><span class=line><span class=cl><span class=c1>#-*- encoding: utf-8 -*- </span>
 </span></span><span class=line><span class=cl><span class=c1>#author pythontab.com </span>
 </span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>numpy</span> <span class=k>as</span> <span class=nn>np</span>
@@ -267,9 +165,7 @@
 </span></span><span class=line><span class=cl><span class=n>df_stockload</span><span class=o>.</span><span class=n>Close</span><span class=o>.</span><span class=n>rolling</span><span class=p>(</span><span class=n>window</span><span class=o>=</span><span class=mi>60</span><span class=p>)</span><span class=o>.</span><span class=n>mean</span><span class=p>()</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>c</span><span class=o>=</span><span class=s1>&#39;g&#39;</span><span class=p>)</span> <span class=c1>#pd.rolling_mean(df_stockload.Close,window=60).plot(c=&#39;g&#39;)</span>
 </span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>legend</span><span class=p>([</span><span class=s1>&#39;Close&#39;</span><span class=p>,</span><span class=s1>&#39;30ave&#39;</span><span class=p>,</span><span class=s1>&#39;60ave&#39;</span><span class=p>],</span><span class=n>loc</span><span class=o>=</span><span class=s1>&#39;best&#39;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -297,8 +193,7 @@
 </span><span class=lnt>26
 </span><span class=lnt>27
 </span><span class=lnt>28
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>Index</span><span class=p>([</span><span class=s1>&#39;High&#39;</span><span class=p>,</span> <span class=s1>&#39;Low&#39;</span><span class=p>,</span> <span class=s1>&#39;Open&#39;</span><span class=p>,</span> <span class=s1>&#39;Close&#39;</span><span class=p>,</span> <span class=s1>&#39;Volume&#39;</span><span class=p>,</span> <span class=s1>&#39;Adj Close&#39;</span><span class=p>],</span> <span class=n>dtype</span><span class=o>=</span><span class=s1>&#39;object&#39;</span><span class=p>)</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>Index</span><span class=p>([</span><span class=s1>&#39;High&#39;</span><span class=p>,</span> <span class=s1>&#39;Low&#39;</span><span class=p>,</span> <span class=s1>&#39;Open&#39;</span><span class=p>,</span> <span class=s1>&#39;Close&#39;</span><span class=p>,</span> <span class=s1>&#39;Volume&#39;</span><span class=p>,</span> <span class=s1>&#39;Adj Close&#39;</span><span class=p>],</span> <span class=n>dtype</span><span class=o>=</span><span class=s1>&#39;object&#39;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>DatetimeIndex</span><span class=p>([</span><span class=s1>&#39;2017-01-03&#39;</span><span class=p>,</span> <span class=s1>&#39;2017-01-04&#39;</span><span class=p>,</span> <span class=s1>&#39;2017-01-05&#39;</span><span class=p>,</span> <span class=s1>&#39;2017-01-06&#39;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>               <span class=s1>&#39;2017-01-09&#39;</span><span class=p>,</span> <span class=s1>&#39;2017-01-10&#39;</span><span class=p>,</span> <span class=s1>&#39;2017-01-11&#39;</span><span class=p>,</span> <span class=s1>&#39;2017-01-12&#39;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>               <span class=s1>&#39;2017-01-13&#39;</span><span class=p>,</span> <span class=s1>&#39;2017-01-16&#39;</span><span class=p>,</span>
@@ -326,20 +221,11 @@
 </span></span><span class=line><span class=cl><span class=mi>50</span><span class=o>%</span>    <span class=mf>3139.085449</span>  
 </span></span><span class=line><span class=cl><span class=mi>75</span><span class=o>%</span>    <span class=mf>3268.600342</span>  
 </span></span><span class=line><span class=cl><span class=nb>max</span>    <span class=mf>3559.465088</span> 
-</span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/stock15.png data-srcset="/posts/pysx2/images/stock15.png, images/stock15.png 1.5x, /posts/pysx2/images/stock15.png 2x" data-sizes=auto alt=/posts/pysx2/images/stock15.png title=生成的图></p><h1 id=621>6.21</h1><h2 id=类>类</h2><p>比第一天稍微仔细一点讲了一下类，有点需要注意：</p><ul>
-<li><code>self</code>相当于<code>this</code>表示当前对象</li><li>python 类的所有函数的第一个参数都要写<code>self</code>参数，self 也可以是其他的比如<code>lrh</code>等字符替代，但是必须保持一致。</li><li><code>__</code>表示私有的</li><li>class 的定义可以不加 (),() 内可写继承的父类</li></ul><h2 id=gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548>GUI 设计 <a href=https://blog.csdn.net/mist99/article/details/80742548 target=_blank rel="external nofollow noopener noreffer">wxPython</a></h2><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>pip install wxPython
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>wx</span>
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/stock15.png data-srcset="/posts/pysx2/images/stock15.png, images/stock15.png 1.5x, /posts/pysx2/images/stock15.png 2x" data-sizes=auto alt=/posts/pysx2/images/stock15.png title=生成的图></p><h1 id=621>6.21</h1><h2 id=类>类</h2><p>比第一天稍微仔细一点讲了一下类，有点需要注意：</p><ul><li><code>self</code>相当于<code>this</code>表示当前对象</li><li>python 类的所有函数的第一个参数都要写<code>self</code>参数，self 也可以是其他的比如<code>lrh</code>等字符替代，但是必须保持一致。</li><li><code>__</code>表示私有的</li><li>class 的定义可以不加 (),() 内可写继承的父类</li></ul><h2 id=gui-设计-wxpythonhttpsblogcsdnnetmist99articledetails80742548>GUI 设计 <a href=https://blog.csdn.net/mist99/article/details/80742548 target=_blank rel="external nofollow noopener noreffer">wxPython</a></h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>pip install wxPython
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>wx</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -376,8 +262,7 @@
 </span><span class=lnt>35
 </span><span class=lnt>36
 </span><span class=lnt>37
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>wx</span> <span class=c1>#导入 wxPython 库</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>wx</span> <span class=c1>#导入 wxPython 库</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>Panel</span><span class=p>(</span><span class=n>wx</span><span class=o>.</span><span class=n>Panel</span><span class=p>):</span>  
 </span></span><span class=line><span class=cl>
@@ -414,9 +299,7 @@
 </span></span><span class=line><span class=cl>    <span class=n>app</span> <span class=o>=</span> <span class=n>App</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=n>app</span><span class=o>.</span><span class=n>MainLoop</span><span class=p>()</span>
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4
@@ -424,8 +307,7 @@
 </span><span class=lnt>6
 </span><span class=lnt>7
 </span><span class=lnt>8
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>wx</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>wx</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>app</span> <span class=o>=</span> <span class=n>wx</span><span class=o>.</span><span class=n>App</span><span class=p>()</span>
 </span></span><span class=line><span class=cl><span class=n>window</span> <span class=o>=</span> <span class=n>wx</span><span class=o>.</span><span class=n>Frame</span><span class=p>(</span><span class=kc>None</span><span class=p>,</span> <span class=n>title</span><span class=o>=</span><span class=s2>&#34;wxPython 你好！&#34;</span><span class=p>,</span> <span class=n>size</span><span class=o>=</span><span class=p>(</span><span class=mi>400</span><span class=p>,</span> <span class=mi>300</span><span class=p>))</span>
@@ -433,16 +315,11 @@
 </span></span><span class=line><span class=cl><span class=n>label</span> <span class=o>=</span> <span class=n>wx</span><span class=o>.</span><span class=n>StaticText</span><span class=p>(</span><span class=n>panel</span><span class=p>,</span> <span class=n>label</span><span class=o>=</span><span class=s2>&#34;Hello World&#34;</span><span class=p>,</span> <span class=n>pos</span><span class=o>=</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=mi>100</span><span class=p>))</span>
 </span></span><span class=line><span class=cl><span class=n>window</span><span class=o>.</span><span class=n>Show</span><span class=p>(</span><span class=kc>True</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>app</span><span class=o>.</span><span class=n>MainLoop</span><span class=p>()</span>
-</span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/wxpython.png data-srcset="/posts/pysx2/images/wxpython.png, images/wxpython.png 1.5x, /posts/pysx2/images/wxpython.png 2x" data-sizes=auto alt=/posts/pysx2/images/wxpython.png title=运行结果></p><h2 id=talib-库的安装>talib 库的安装</h2><p><a href=https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib target=_blank rel="external nofollow noopener noreffer">下载 whl 文件</a></p><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=images/wxpython.png data-srcset="/posts/pysx2/images/wxpython.png, images/wxpython.png 1.5x, /posts/pysx2/images/wxpython.png 2x" data-sizes=auto alt=/posts/pysx2/images/wxpython.png title=运行结果></p><h2 id=talib-库的安装>talib 库的安装</h2><p><a href=https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib target=_blank rel="external nofollow noopener noreffer">下载 whl 文件</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>pip install TA_Lib-0.4.17-cp37-cp37m-win_amd64.whl
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>pip install TA_Lib-0.4.17-cp37-cp37m-win_amd64.whl
 </span></span><span class=line><span class=cl>pip install TA-Lib
-</span></span></code></pre></td></tr></table></div></div><h2 id=选择排序递归版>选择排序递归版</h2><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><h2 id=选择排序递归版>选择排序递归版</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -455,8 +332,7 @@
 </span><span class=lnt>11
 </span><span class=lnt>12
 </span><span class=lnt>13
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>SelectSort</span><span class=p>(</span><span class=n>L</span><span class=p>):</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>SelectSort</span><span class=p>(</span><span class=n>L</span><span class=p>):</span>
 </span></span><span class=line><span class=cl>    <span class=n>L</span><span class=o>=</span><span class=n>L</span><span class=p>[:]</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=n>L</span><span class=p>)</span><span class=o>&lt;=</span><span class=mi>1</span><span class=p>:</span>
 </span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>L</span>
@@ -469,14 +345,9 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>L</span> <span class=o>=</span> <span class=p>[</span><span class=mi>5</span><span class=p>,</span><span class=mi>2</span><span class=p>,</span><span class=mi>3</span><span class=p>,</span><span class=mi>6</span><span class=p>,</span><span class=mi>1</span><span class=p>,</span><span class=mi>9</span><span class=p>,</span><span class=mi>8</span><span class=p>,</span><span class=mi>10</span><span class=p>,</span><span class=mi>0</span><span class=p>]</span>
 </span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>SelectSort</span><span class=p>(</span><span class=n>L</span><span class=p>))</span>
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=p>[</span><span class=mi>0</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>6</span><span class=p>,</span> <span class=mi>8</span><span class=p>,</span> <span class=mi>9</span><span class=p>,</span> <span class=mi>10</span><span class=p>]</span>
-</span></span></code></pre></td></tr></table></div></div><h2 id=机房上机系统自我实践>机房上机系统（自我实践）</h2><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=p>[</span><span class=mi>0</span><span class=p>,</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>5</span><span class=p>,</span> <span class=mi>6</span><span class=p>,</span> <span class=mi>8</span><span class=p>,</span> <span class=mi>9</span><span class=p>,</span> <span class=mi>10</span><span class=p>]</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=机房上机系统自我实践>机房上机系统（自我实践）</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
 </span><span class=lnt>  2
 </span><span class=lnt>  3
 </span><span class=lnt>  4
@@ -602,8 +473,7 @@
 </span><span class=lnt>124
 </span><span class=lnt>125
 </span><span class=lnt>126
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>time</span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>time</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>student</span><span class=p>():</span>
 </span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span><span class=n>stu_no</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>,</span><span class=n>stu_name</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>,</span><span class=n>stu_xi</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>,</span><span class=n>stu_time</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>):</span>
@@ -729,9 +599,7 @@
 </span></span><span class=line><span class=cl>    
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=vm>__name__</span><span class=o>==</span><span class=s2>&#34;__main__&#34;</span><span class=p>:</span>
 </span></span><span class=line><span class=cl>    <span class=n>main</span><span class=p>()</span>
-</span></span></code></pre></td></tr></table></div></div><h2 id=量化交易代码分析与调试>量化交易代码分析与调试</h2><p>由于 python 的版本问题和一些库的导入问题所以还未调试成功，先挂上代码。以后改篇再论。</p><div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span></span></code></pre></td></tr></table></div></div><h2 id=量化交易代码分析与调试>量化交易代码分析与调试</h2><p>由于 python 的版本问题和一些库的导入问题所以还未调试成功，先挂上代码。以后改篇再论。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
 </span><span class=lnt>  2
 </span><span class=lnt>  3
 </span><span class=lnt>  4
@@ -1003,8 +871,7 @@
 </span><span class=lnt>270
 </span><span class=lnt>271
 </span><span class=lnt>272
-</span></code></pre></td><td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=ch>#! /usr/bin/env python </span>
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=ch>#! /usr/bin/env python </span>
 </span></span><span class=line><span class=cl><span class=c1>#-*- encoding: utf-8 -*- </span>
 </span></span><span class=line><span class=cl><span class=c1>#author pythontab.com </span>
 </span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>wx</span>
@@ -1276,34 +1143,11 @@
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s1>&#39;__main__&#39;</span><span class=p>:</span>   
 </span></span><span class=line><span class=cl>    <span class=n>app</span> <span class=o>=</span> <span class=n>App</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>    <span class=n>app</span><span class=o>.</span><span class=n>MainLoop</span><span class=p>()</span> 
-</span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer>
-<div class=post-info>
-<div class=post-info-line>
-<div class=post-info-mod>
-<span title="2021-12-08 22:08:53">更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 rel="external nofollow noopener noreffer" target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
-<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span>
-</div><div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div><div class=post-info-line>
-<div class=post-info-md><span>
-<a class=link-to-markdown href=/posts/pysx2/index.md target=_blank>閱讀原始文檔</a>
-</span></div><div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/pysx2/ data-title="python 实训总结Ⅱ" data-hashtags=Python,Backend><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/pysx2/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/pysx2/ data-title="python 实训总结Ⅱ" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/pysx2/ data-title="python 实训总结Ⅱ"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span>
-</div></div></div><div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/python/>Python</a>,&nbsp;<a href=/tags/backend/>Backend</a></section><section>
-<span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span>
-</section></div><div class=post-nav><a href=/posts/pysx1/ class=prev rel=prev title="python 实训总结Ⅰ"><i class="fas fa-angle-left fa-fw"></i>python 实训总结Ⅰ</a>
-<a href=/posts/wamproot/ class=next rel=next title="WAMPServer 自定义网站根目录等设置">WAMPServer 自定义网站根目录等设置<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=valine class=comment></div><noscript>
-Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="external nofollow noopener noreffer">Valine</a>.
-</noscript></div></article></main><footer class=footer>
-<div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.93.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo"> FixIt</a>
-</div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
-<a href=https://github.com/Lruihao target=_blank rel="external nofollow noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class="footer-line ibruce">
-<span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
+</span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span title="2021-12-08 22:08:53">更新於 2021-12-08&nbsp;<a class=git-hash href=https://github.com/Lruihao/hugo-blog/commit/36cdd3fbb16130a4f4da422f7634eefd10e5ca60 rel="external nofollow noopener noreffer" target=_blank title="commit by Cell(1024@lruihao.cn) 36cdd3fbb16130a4f4da422f7634eefd10e5ca60: :pencil: Docs: pangu white">
+<i class="fas fa-hashtag fa-fw"></i>36cdd3f</a></span></div><div class=post-info-license><span><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/posts/pysx2/index.md target=_blank>閱讀原始文檔</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://lruihao.cn/posts/pysx2/ data-title="python 实训总结Ⅱ" data-hashtags=Python,Backend><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Linkedin" data-sharer=linkedin data-url=https://lruihao.cn/posts/pysx2/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://lruihao.cn/posts/pysx2/ data-title="python 实训总结Ⅱ" data-ralateuid=liahao><i class="fab fa-weibo fa-fw"></i></a><a href=javascript:void(0); title="分享到 百度" data-sharer=baidu data-url=https://lruihao.cn/posts/pysx2/ data-title="python 实训总结Ⅱ"><i data-svg-src=/lib/simple-icons/icons/baidu.min.svg></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/python/>Python</a>,&nbsp;<a href=/tags/backend/>Backend</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主頁</a></span></section></div><div class=post-nav><a href=/posts/pysx1/ class=prev rel=prev title="python 实训总结Ⅰ"><i class="fas fa-angle-left fa-fw"></i>python 实训总结Ⅰ</a>
+<a href=/posts/wamproot/ class=next rel=next title="WAMPServer 自定义网站根目录等设置">WAMPServer 自定义网站根目录等设置<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=valine class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="external nofollow noopener noreffer">Valine</a>.</noscript></div></article></main><footer class=footer><div class=footer-container><div class="footer-line powered">Powered by <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.94.2">Hugo</a> | Theme - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.13"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo"> FixIt</a></div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2018 - 2022</span><span class=author itemprop=copyrightHolder>
+<a href=https://github.com/Lruihao target=_blank rel="external nofollow noopener noreffer">Lruihao</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class="footer-line ibruce"><span id=busuanzi_container_site_uv title=總訪客數><i class="far fa-user"></i>
 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span></span><span class="site-time footer-divider" title="網站運行中 ..."><i class="fas fa-heartbeat animate-icon"></i>
 <span class=run-times>Loading...</span></span><span id=busuanzi_container_site_pv class=footer-divider title=總訪問量><i class="far fa-eye"></i>
-<span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span></span>
-</div><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class=footer-divider></span><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
-<i class="fas fa-arrow-up fa-fw"></i>
-</a><a href=# id=view-comments class=fixed-button title=查看評論>
-<i class="fas fa-comment fa-fw"></i>
-</a>
-</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js defer></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js defer></script><script type=text/javascript src=/lib/sharer/sharer.min.js async defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript src=/lib/pangu/pangu.min.js defer></script><script type=text/javascript src=/lib/cell-watermark/watermark.min.js defer></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async defer></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",editLockTitle:"鎖定可編輯代碼塊",editUnLockTitle:"解鎖可編輯代碼塊",editable:!0,maxShownLines:50},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!0,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"瞭解更多",message:"本網站使用 Cookies 來改善您的流覽體驗."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},enablePWA:!0,enablePangu:!0,ibruce:{enable:!0,siteTime:"2018-05-28T20:01:01+08:00"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{algoliaAppID:"MTJNHU0JVB",algoliaIndex:"index",algoliaSearchKey:"5486225134d99f43826da401ee9bad57",highlightTag:"em",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"algolia"},twemoji:!0,watermark:{appendto:".wrapper\u003e.main",colspacing:30,content:'\u003cimg style="height: 0.85rem;" src="/logo.png" alt="logo" /\u003e 李瑞豪',enable:!0,fontfamily:"MMT_LRH,沐目体",fontsize:1.1,height:20,opacity:.02,rotate:15,rowspacing:60,width:150}}</script><script type=text/javascript src=/js/theme.min.js defer></script><script type=text/javascript src=/js/_custom.min.js defer></script></body></html>
+<span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span></span></div><div class=footer-line><span class=gov><a rel="external nofollow noopener noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43030402000254" target=_blank>湘公网安备 43030402000254 号</a></span><span class=footer-divider></span><span class=icp><a rel="external nofollow noopener noreffer" href=https://beian.miit.gov.cn target=_blank>湘 ICP 备18020535 号</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看評論><i class="fas fa-comment fa-fw"></i></a></div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js defer></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js defer></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js defer></script><script type=text/javascript src=/lib/sharer/sharer.min.js async defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript src=/lib/pangu/pangu.min.js defer></script><script type=text/javascript src=/lib/cell-watermark/watermark.min.js defer></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async defer></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",editLockTitle:"鎖定可編輯代碼塊",editUnLockTitle:"解鎖可編輯代碼塊",editable:!0,maxShownLines:50},comment:{valine:{appId:"7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz",appKey:"mhTY1kuUmviCtQwkwOASfsfD",avatar:"wavatar",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!0,highlight:!0,lang:"zh-TW",meta:["nick","mail","link"],pageSize:10,placeholder:"ヾﾉ≧∀≦)o~ 有事請留言！\n評論功能以郵件作為通知方式！\n如有必要請填寫正確郵箱哦！",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",link:"瞭解更多",message:"本網站使用 Cookies 來改善您的流覽體驗."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},enablePWA:!0,enablePangu:!0,ibruce:{enable:!0,siteTime:"2018-05-28T20:01:01+08:00"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{algoliaAppID:"MTJNHU0JVB",algoliaIndex:"index",algoliaSearchKey:"5486225134d99f43826da401ee9bad57",highlightTag:"em",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"algolia"},twemoji:!0,watermark:{appendto:".wrapper\u003e.main",colspacing:30,content:'\u003cimg style="height: 0.85rem;" src="/logo.png" alt="logo" /\u003e 李瑞豪',enable:!0,fontfamily:"MMT_LRH,沐目体",fontsize:1.1,height:20,opacity:.0125,rotate:15,rowspacing:60,width:150}}</script><script type=text/javascript src=/js/theme.min.js defer></script><script type=text/javascript src=/js/_custom.min.js defer></script></body></html>
