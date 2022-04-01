@@ -720,7 +720,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 </table>
 <h4 id="destroy">destroy()</h4>
 <p>Force destroy watermark</p>
-]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/projects/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/projects/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
     <div class="details-summary admonition-title">
       <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -1001,7 +1001,10 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p>簡單總結一下，登录功能不做，安不安全自己说了算。删除修改功能也不做，直接上 leancloud 操作，css 美化的样式也不写，干净又卫生！<br>
 然后衍生一下，什么过年斗地主，天炸，麻将，字牌记账系统那不也是同理可得嘛！</p>
 <p>over!</p>
-<p></p>]]></description></item><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/projects/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/projects/cos-album/</guid><description><![CDATA[<div class="featured-image">
+<p><figure><a class="lightgallery" href="/projects/bill-note/images/demo.jpg" title="效果" data-thumbnail="/projects/bill-note/images/demo.jpg" data-sub-html="<h2>Demo</h2><p>效果</p>">
+    
+  </a><figcaption class="image-caption">Demo</figcaption>
+  </figure></p>]]></description></item><item><title>利用腾讯云为静态页面添加“动态”相册</title><link>https://lruihao.cn/projects/cos-album/</link><pubDate>Sun, 24 Nov 2019 10:52:34 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/projects/cos-album/</guid><description><![CDATA[<div class="featured-image">
         <img src="/projects/cos-album/images/view.png" referrerpolicy="no-referrer">
       </div><div class="details admonition info open">
     <div class="details-summary admonition-title">
@@ -1895,12 +1898,12 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 <td style="text-align:left">查詢</td>
 </tr>
 </tbody>
-</table>]]></description></item><item><title>vps配置ssl及https重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
-<p>记录自己在配置vps及博客SSL证书时遇到的问题。</p>
+</table>]]></description></item><item><title>vps 配置 ssl 及 https 重定向</title><link>https://lruihao.cn/posts/http2https/</link><pubDate>Thu, 28 Mar 2019 19:40:54 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/http2https/</guid><description><![CDATA[<blockquote>
+<p>记录自己在配置 vps 及博客 SSL 证书时遇到的问题。</p>
 </blockquote>
-<h1 id="强制重定向https">强制重定向https</h1>
+<h1 id="强制重定向-https">强制重定向 https</h1>
 <blockquote>
-<p>有一种情况相信很多人都遇到过，就是虽然我们配置了ssl证书，但是https和http地址都是各自都可以单独访问。我们应该也见过类似于github的代码托管网站有强制https的开关。如果是这种情况我们还可以通过js进行301定向。</p>
+<p>有一种情况相信很多人都遇到过，就是虽然我们配置了 ssl 证书，但是 https 和 http 地址都是各自都可以单独访问。我们应该也见过类似于 github 的代码托管网站有强制 https 的开关。如果是这种情况我们还可以通过 js 进行 301 定向。</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1924,9 +1927,9 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="腾讯云cdn配置">腾讯云CDN配置</h1>
+</div><h1 id="腾讯云-cdn-配置">腾讯云 CDN 配置</h1>
 <blockquote>
-<p>这个博客后来是转到了腾讯云的cos桶存储。当时在桶内静态网站设置的时候，设置强制https发现会出错。而且还接入了CDN，所以今天在CDN设置那里也看到了https的设置，打开强制https就OK了。这天在三丰云撸了一个免费的主机，搭了一个WordPress（想试试wp的感觉），然后vps的SSL问题现在也很简单了，第一步，到腾讯云申请免费证书；第二步，配置CDN，按步骤来，其中接入方式选择自有源站；第三步，强制https(可选)。</p>
+<p>这个博客后来是转到了腾讯云的 cos 桶存储。当时在桶内静态网站设置的时候，设置强制 https 发现会出错。而且还接入了 CDN，所以今天在 CDN 设置那里也看到了 https 的设置，打开强制 https 就 OK 了。这天在三丰云撸了一个免费的主机，搭了一个 WordPress（想试试 wp 的感觉），然后 vps 的 SSL 问题现在也很简单了，第一步，到腾讯云申请免费证书；第二步，配置 CDN，按步骤来，其中接入方式选择自有源站；第三步，强制 https（可选）。</p>
 </blockquote>
 <p></p>
 <p></p>]]></description></item><item><title>web 汇总</title><link>https://lruihao.cn/posts/webbiji/</link><pubDate>Mon, 18 Mar 2019 20:40:55 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/webbiji/</guid><description><![CDATA[<blockquote>

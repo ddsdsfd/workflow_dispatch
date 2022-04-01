@@ -311,7 +311,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------3-小火切------------&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------4-打字机------------&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;------------5-小许牛------------&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c暂停程序--------&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;----------Ctrl+c 暂停程序--------&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;请输入序号！&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">read</span> i
@@ -334,8 +334,8 @@
 </span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;请输入字符串！&#34;</span>
 </span></span><span class="line"><span class="cl">	<span class="nb">read</span> s2
 </span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;选择样式：&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式1-----&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式2-----&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式 1-----&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;------样式 2-----&#34;</span>
 </span></span><span class="line"><span class="cl">	<span class="nb">read</span> j
 </span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="nb">test</span> <span class="nv">$j</span> -eq <span class="m">1</span>
 </span></span><span class="line"><span class="cl">	<span class="k">then</span>

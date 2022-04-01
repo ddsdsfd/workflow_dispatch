@@ -141,7 +141,7 @@
 <li>Github (collection, backup), Blog (summarize)</li>
 </ul>
 </li>
-</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件——Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a
+</ul>]]></description></item><item><title>Sublime 剪贴板图片粘贴插件 —— Markdown 必备</title><link>https://lruihao.cn/posts/subl_imgpaste2/</link><pubDate>Tue, 05 Oct 2021 21:54:06 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/subl_imgpaste2/</guid><description><![CDATA[<a
   href="https://github.com/robinchenyu/imagepaste"
   
     title="插件地址"
@@ -2962,7 +2962,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 <li>停留在做出成果的喜悅，而停滯了優化的步調。</li>
 </ol>
 <p>因此，會建議在開發當下就「多想」兩秒鐘，感覺可優化但來不及的部分先在旁邊加個註解提醒自己。另外也養成一段時間回頭看之前的程式碼的習慣，試著刻意找出可以優化改進的部分。專案的提交可能會有期限，但程式碼的優化沒有盡頭。面對相同的專案與程式碼，唯有透過不停的迭代優化才能打造更好的程式，同時也見證了你和程式一起變得更好的過程。所以建立逐步優化的空間，養成持續提升程式碼品質的習慣，才是一個新手工程師需要修煉的心法。</p>
-]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/posts/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
+]]></description></item><item><title>基于 leancloud-storage 实现的无后端记账本</title><link>https://lruihao.cn/projects/bill-note/</link><pubDate>Tue, 02 Mar 2021 21:46:40 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/projects/bill-note/</guid><description><![CDATA[<h1 id="起因">起因</h1>
 <div class="details admonition info open">
     <div class="details-summary admonition-title">
       <i class="icon fas fa-info-circle fa-fw"></i>起因<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -3243,7 +3243,10 @@ valine 可以實現無後端，那我是不是也可以，leancloud 文檔走一
 <p>簡單總結一下，登录功能不做，安不安全自己说了算。删除修改功能也不做，直接上 leancloud 操作，css 美化的样式也不写，干净又卫生！<br>
 然后衍生一下，什么过年斗地主，天炸，麻将，字牌记账系统那不也是同理可得嘛！</p>
 <p>over!</p>
-<p></p>]]></description></item><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/posts/cell-blog-install/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cell-blog-install/</guid><description><![CDATA[<div class="featured-image">
+<p><figure><a class="lightgallery" href="/projects/bill-note/images/demo.jpg" title="效果" data-thumbnail="/projects/bill-note/images/demo.jpg" data-sub-html="<h2>Demo</h2><p>效果</p>">
+    
+  </a><figcaption class="image-caption">Demo</figcaption>
+  </figure></p>]]></description></item><item><title>cell-blog 功能介绍与安装</title><link>https://lruihao.cn/projects/cell-blog/</link><pubDate>Sat, 25 Jul 2020 20:51:11 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/projects/cell-blog/</guid><description><![CDATA[<div class="featured-image">
         <img src="https://i.loli.net/2020/05/11/vHeNRG4Qi7ljrM8.png" referrerpolicy="no-referrer">
       </div><blockquote>
 <p>基于 Laravel7 开发，Markdown 语法的个人独立博客。<a

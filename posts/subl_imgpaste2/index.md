@@ -1,4 +1,4 @@
-# Sublime 剪贴板图片粘贴插件——Markdown 必备
+# Sublime 剪贴板图片粘贴插件 —— Markdown 必备
 
 
 {{< link href="https://github.com/robinchenyu/imagepaste" content="插件地址" title="插件地址" card=true >}}
