@@ -28,7 +28,7 @@
 ---
 
 ## About me
-~~在校大學生~~，~~Web 開發實習生~~，社畜。
+~~在校大學生~~，~~Web 開發實習生~~，社畜 ...
 
 在職：~~Web 全棧開發~~，Web 前端開發
 
@@ -48,9 +48,4 @@
   - [x] 減脂到 <60kg
 
 </details>
-
-## orther
-
-{{< link card=true href="/projects/" content="My Projects" title="我的項目" >}}
-{{< link card=true href="/years/" content="My summary" title="我的年度總結" >}}
 
