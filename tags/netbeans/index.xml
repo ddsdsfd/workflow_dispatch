@@ -4,6 +4,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -12,7 +13,8 @@
   
   
   
->官方下載點</a></p>
+>官方下載點
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h1 id="擴充功能">擴充功能</h1>
 <h2 id="安裝擴充功能">安裝擴充功能</h2>
 <ol>
@@ -23,6 +25,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -31,7 +34,8 @@
   
   
   
->官方套件庫</a></li>
+>官方套件庫
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 <li>或者在 NetBeans IDE 裏面下載插件（方便）</li>
 </ul>
 </li>
@@ -228,6 +232,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -236,7 +241,8 @@
   
   
   
->chrome 應用程式商店</a></li>
+>chrome 應用程式商店
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 <li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 NetBeans 圖標。</li>
 <li>開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector</li>
 <li>選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可</li>

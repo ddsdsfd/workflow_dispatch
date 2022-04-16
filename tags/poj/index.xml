@@ -3,6 +3,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -11,7 +12,8 @@
   
   
   
->http://poj.org/problem?id=1797</a>)<br>
+>http://poj.org/problem?id=1797
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>)<br>
 大意：<br>
 要从城市 1 到城市 N 运送货物，有 M 条道路，每条道路都有它的最大载重量，问从城市 1 到城市 N 运送最多的重量是多少。<br>
 其实题意很简单，就是找一条 1&ndash;&gt;N 的路径，在不超过每条路径的最大载重量的情况下，使得运送的货物最多。一条路径上的最大载重量为这个路径上权值最小的边；
@@ -123,6 +125,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -131,24 +134,13 @@
   
   
   
->题目链接</a><br>
+>题目链接
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
 <a
   href="https://blog.csdn.net/freezhanacmore/article/details/8767413"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->思路参考 1</a>,<a
-  href="https://blog.csdn.net/niushuai666/article/details/6981689"
-  
-  
     
     target="_blank"
   
@@ -158,7 +150,23 @@
   
   
   
->思路参考 2</a>（没看懂）</p>
+>思路参考 1
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>,<a
+  href="https://blog.csdn.net/niushuai666/article/details/6981689"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>思路参考 2
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（没看懂）</p>
 <p><del>先占坑，有时间再理理思路。</del></p>
 <blockquote>
 <p>同一棵树中</p>
@@ -305,6 +313,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
     
+    
     target="_blank"
   
   
@@ -313,7 +322,8 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->The-suspects</a></h2>
+>The-suspects
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>警察抓贩毒集团。有不同类型的犯罪集团，人员可能重复，集团内的人会相互接触。现在警察在其中一人（0 号）身上搜出毒品，认为与这个人直接接触或通过其他人有间接接触的人都是嫌疑犯。问包括 0 号犯人共有多少嫌疑犯？</p>
 <h3 id="input">Input</h3>
@@ -441,6 +451,7 @@ n = 0 且 m = 0 时输入结束。</p>
   
   
     
+    
     target="_blank"
   
   
@@ -449,7 +460,8 @@ n = 0 且 m = 0 时输入结束。</p>
   
   
   
->wireless network</a></h2>
+>wireless network
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>南亚发生了一次地震。ACM (Asia Cooperated Medical 亚洲联合医疗队） 已经为膝上型电脑搭建了一个无线网络，但受到了一次不可预知的余震攻击，因此网络中的所有电脑都被破坏了。电脑被逐台修复，网络逐步恢复了工作。由于受到硬件的约束，每台电脑只能与距离它不超过 d 米的其它电脑直接通信。但每台电脑可被看作其它两台电脑的通信中转点，也就是说，如果电脑 A 和电脑 B 可以直接通信，或存在一台电脑 C 既可与 A 也可与 B 通信，那么电脑 A 和电脑 B 之间就能够通信。</p>
 <p>在处理网络修复的过程中，工作人员们在任何一个时刻，可以执行两种操作：维修一台电脑，或测试两台电脑是否能够通信。请您找出全部的测试操作。</p>
@@ -781,6 +793,7 @@ SUCCESS
   
   
     
+    
     target="_blank"
   
   
@@ -789,7 +802,8 @@ SUCCESS
   
   
   
->英文原题链接</a></p>
+>英文原题链接
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h3 id="description---题目描述">Description - 题目描述</h3>
 <p>你被困在一个三维的空间中，现在要寻找最短路径逃生！<br>
 空间由立方体单位构成<br>
@@ -1174,6 +1188,7 @@ Accepted: 30423</p>
   
   
     
+    
     target="_blank"
   
   
@@ -1182,7 +1197,8 @@ Accepted: 30423</p>
   
   
   
->传送门</a></p>
+>传送门
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 ]]></description></item><item><title>poj-1426-Find The Multiple(dfs)</title><link>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</link><pubDate>Sun, 22 Jul 2018 11:57:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</guid><description><![CDATA[<h2 id="find-the-multiple">Find The Multiple</h2>
 <p>Time Limit: 1000MS		Memory Limit: 10000K<br>
 Total Submissions: 40713		Accepted: 17088		Special Judge</p>
@@ -1277,6 +1293,7 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
   
   
     
+    
     target="_blank"
   
   
@@ -1285,7 +1302,8 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
   
   
   
->迷宫问题</a></h3>
+>迷宫问题
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
 <p>Time Limit: 1000MS		Memory Limit: 65536K<br>
 Total Submissions: 32323		Accepted: 18471</p>
 <h3 id="description">Description</h3>

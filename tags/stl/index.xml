@@ -166,6 +166,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -174,7 +175,8 @@
   
   
   
->传送门</a></p>
+>传送门
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 ]]></description></item><item><title>C++ with STL</title><link>https://lruihao.cn/posts/c-with-stl/</link><pubDate>Thu, 14 Jun 2018 20:22:06 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/c-with-stl/</guid><description><![CDATA[<h2 id="1swap交换两元素值在-algorithm-下用法swapab">1.swap（交换两元素值，在 algorithm 下，用法：swap(a,b);）</h2>
 <p>交换两元素的值在 C 语言课上作为指针讲解的典例。</p>
 <p>int a=1,b=2;</p>
@@ -439,6 +441,7 @@ TSL
   
   
     
+    
     target="_blank"
   
   
@@ -447,5 +450,6 @@ TSL
   
   
   
->传送门</a></p>
+>传送门
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 ]]></description></item></channel></rss>

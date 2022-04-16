@@ -46,6 +46,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -54,7 +55,8 @@
   
   
   
->宝塔官网介绍</a></p>
+>宝塔官网介绍
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h1 id="系统要求">系统要求</h1>
 <blockquote>
 <p>操作系统：全新系统（支持 CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>
@@ -904,6 +906,7 @@ Q: quit , 退出</p>
   
   
     
+    
     target="_blank"
   
   
@@ -912,5 +915,6 @@ Q: quit , 退出</p>
   
   
   
->termux-ohmyzsh</a></p>
+>termux-ohmyzsh
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 ]]></description></item></channel></rss>

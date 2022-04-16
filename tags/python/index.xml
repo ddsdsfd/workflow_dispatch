@@ -197,9 +197,18 @@
     </div>
   </div>
 <h1 id="windows-运行效果">Windows 运行效果</h1>
-<p><br>
-<br>
-</p>
+<p><figure><a class="lightgallery" href="/posts/daka/images/result1.png" title="打卡成功" data-thumbnail="/posts/daka/images/result1.png" data-sub-html="<h2>打卡成功</h2><p>打卡成功</p>">
+    
+  </a><figcaption class="image-caption">打卡成功</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/daka/images/result.png" title="重复打卡" data-thumbnail="/posts/daka/images/result.png" data-sub-html="<h2>重复打卡</h2><p>重复打卡</p>">
+    
+  </a><figcaption class="image-caption">重复打卡</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/daka/images/result2.png" title="定时任务日志" data-thumbnail="/posts/daka/images/result2.png" data-sub-html="<h2>定时任务日志</h2><p>定时任务日志</p>">
+    
+  </a><figcaption class="image-caption">定时任务日志</figcaption>
+  </figure></p>
 <h1 id="核心代码">核心代码</h1>
 <blockquote>
 <p>适用湖南工程学院的打卡系统。<br>
@@ -210,6 +219,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -218,7 +228,8 @@
   
   
   
->完整代码</a></p>
+>完整代码
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -344,7 +355,10 @@
 <h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>python 实训总结Ⅱ</title><link>https://lruihao.cn/posts/pysx2/</link><pubDate>Fri, 21 Jun 2019 18:46:41 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysx2/</guid><description><![CDATA[<blockquote>
+<figure><a class="lightgallery" href="/posts/daka/images/javaweb.png" title="java web 版" data-thumbnail="/posts/daka/images/javaweb.png" data-sub-html="<h2>java web 版</h2><p>java web 版</p>">
+    
+  </a><figcaption class="image-caption">java web 版</figcaption>
+  </figure></p>]]></description></item><item><title>python 实训总结Ⅱ</title><link>https://lruihao.cn/posts/pysx2/</link><pubDate>Fri, 21 Jun 2019 18:46:41 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/pysx2/</guid><description><![CDATA[<blockquote>
 <p>后面几天讲的有点杂，简单记录一下知识点。</p>
 </blockquote>
 <h1 id="619">6.19</h1>
@@ -357,6 +371,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -365,7 +380,8 @@
   
   
   
->切片操作</a></h2>
+>切片操作
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
 <p>列表切片操作</p>
 <h2 id="字符串">字符串</h2>
 <h3 id="python-原始字符串">python 原始字符串</h3>
@@ -655,6 +671,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -663,7 +680,8 @@
   
   
   
->wxPython</a></h2>
+>wxPython
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -789,6 +807,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -797,7 +816,8 @@
   
   
   
->下载 whl 文件</a></p>
+>下载 whl 文件
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2143,6 +2163,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2151,7 +2172,8 @@
   
   
   
->https://pypi.org/project/PyInstaller/#files</a></p>
+>https://pypi.org/project/PyInstaller/#files
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h1 id="解压">解压</h1>
 <p>我这里解压到<code>E:\应用、Python37\Lib\site-packages\PyInstaller-3.4</code></p>
 <h1 id="安装">安装</h1>
@@ -2207,6 +2229,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2215,7 +2238,8 @@
   
   
   
->阅读原文</a></p>
+>阅读原文
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 </blockquote>
 <h1 id="json-的数据格式">json 的数据格式</h1>
 <p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>
@@ -2313,18 +2337,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->sylnsfar/qrcode</a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a
-  href="https://github.com/sylnsfar/qrcode_win"
-  
-  
     
     target="_blank"
   
@@ -2334,12 +2346,30 @@
   
   
   
->项目开源地址</a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
+>sylnsfar/qrcode
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a
+  href="https://github.com/sylnsfar/qrcode_win"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>项目开源地址
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
 </blockquote>
 <p>可生成<em>普通二维码</em>、<em>带图片的艺术二维码（黑白与彩色）</em>、<em>动态二维码（黑白与彩色）</em>。</p>
 <h2 id="示例">示例</h2>
+<div class="text-center">
 <p>
 </p>
+</div>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2424,6 +2454,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2432,7 +2463,8 @@
   
   
   
-><strong>MyQR</strong></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
+><strong>MyQR</strong>
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2668,6 +2700,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2676,25 +2709,13 @@
   
   
   
->pillow</a></li>
+>pillow
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 <li><a
   href="https://pypi.python.org/pypi/numpy"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->numpy</a></li>
-<li><a
-  href="https://pypi.python.org/pypi/imageio"
-  
-  
     
     target="_blank"
   
@@ -2704,7 +2725,24 @@
   
   
   
->imageio</a></li>
+>numpy
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+<li><a
+  href="https://pypi.python.org/pypi/imageio"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>imageio
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 </ul>
 <h2 id="运行环境">运行环境</h2>
 <ul>
@@ -2717,18 +2755,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->该网址</a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a
-  href="https://lruihao.cn/posts/font-mmt/"
-  
-  
     
     target="_blank"
   
@@ -2738,7 +2764,23 @@
   
   
   
->字体效果查看</a></p>
+>该网址
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a
+  href="https://lruihao.cn/posts/font-mmt/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>字体效果查看
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 </blockquote>
 <h1 id="思路设计">思路设计</h1>
 <blockquote>
@@ -2926,19 +2968,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->wxpy</a></li>
-<li><a
-  href="https://github.com/pyecharts/pyecharts"
-  
-  
     
     target="_blank"
   
@@ -2948,7 +2977,24 @@
   
   
   
->pyecharts</a>（百度 echarts）</li>
+>wxpy
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+<li><a
+  href="https://github.com/pyecharts/pyecharts"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>pyecharts
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（百度 echarts）</li>
 </ul>
 <h1 id="查看微信好友男女比例">查看微信好友男女比例</h1>
 <div class="highlight"><div class="chroma">
@@ -3088,6 +3134,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -3096,7 +3143,8 @@
   
   
   
->陈思煜</a></strong></p>
+>陈思煜
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
 </blockquote>
 <h1 id="统计所有群男女数目">统计所有群男女数目</h1>
 <blockquote>
@@ -3245,20 +3293,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->wxpy</a>:<br>
-  wxpy 在 itchat 的基础上，通过大量接口优化提升了模块的易用性，并进行丰富的功能扩展。<br>
-<a
-  href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000"
-  
-  
     
     target="_blank"
   
@@ -3268,7 +3302,25 @@
   
   
   
->PIL</a>：<br>
+>wxpy
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>:<br>
+  wxpy 在 itchat 的基础上，通过大量接口优化提升了模块的易用性，并进行丰富的功能扩展。<br>
+<a
+  href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>PIL
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>：<br>
   Python Imaging Library，已经是 Python 平台事实上的图像处理标准库了。PIL 功能非常强大，但 API 却非常简单易用。由于 PIL 仅支持到 Python 2.7，加上年久失修，于是一群志愿者在 PIL 的基础上创建了兼容的版本，名字叫 Pillow，支持最新 Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用 Pillow。</p>
 </blockquote>
 <h1 id="安装">安装</h1>

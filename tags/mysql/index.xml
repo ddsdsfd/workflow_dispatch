@@ -292,6 +292,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -300,23 +301,12 @@
   
   
   
->原项目</a> 由 <a
+>原项目
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 由 <a
   href="https://www.ilt.me"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->IT 技术宅</a> 开源，使用 thinkPHP 开发后台。 <a
-  href="https://github.com/Lruihao/zhai-music"
-  
-  
     
     target="_blank"
   
@@ -326,7 +316,23 @@
   
   
   
->fork 地址</a> 是我个人学习模仿的库，也是相当于备份源码。<br>
+>IT 技术宅
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 开源，使用 thinkPHP 开发后台。 <a
+  href="https://github.com/Lruihao/zhai-music"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>fork 地址
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 是我个人学习模仿的库，也是相当于备份源码。<br>
 <em>注： 插件修改于明月浩空免费版，仅用于学习交流，无商业价值，如发现商业传播，将禁止软件的免费使用。</em></p>
 </blockquote>
 <h2 id="技术栈">技术栈</h2>
@@ -355,19 +361,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->https://player.ilt.me/</a></li>
-<li><a
-  href="https://player.lruihao.cn/"
-  
-  
     
     target="_blank"
   
@@ -377,7 +370,24 @@
   
   
   
->https://player.lruihao.cn/</a></li>
+>https://player.ilt.me/
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+<li><a
+  href="https://player.lruihao.cn/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://player.lruihao.cn/
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 </ul>
 <h2 id="安装">安装</h2>
 <h3 id="视频安装教程">视频安装教程</h3>
@@ -386,6 +396,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -394,7 +405,8 @@
   
   
   
->https://www.bilibili.com/video/av46476706</a></p>
+>https://www.bilibili.com/video/av46476706
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h3 id="依赖">依赖</h3>
 <ul>
 <li>composer</li>

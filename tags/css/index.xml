@@ -4,6 +4,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -12,7 +13,8 @@
   
   
   
->原文链接</a><br>
+>原文链接
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
 “卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学 java 和 web 相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
 </blockquote>
 <p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>
@@ -106,20 +108,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->多个标签页之间的通信</a></p>
-<h2 id="8-html5-的离线存储怎么使用解释一下工作原理">8. HTML5 的离线存储怎么使用，解释一下工作原理</h2>
-<p><a
-  href="https://segmentfault.com/a/1190000006984353"
-  
-  
     
     target="_blank"
   
@@ -129,7 +117,25 @@
   
   
   
->HTML5 的离线存储</a></p>
+>多个标签页之间的通信
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+<h2 id="8-html5-的离线存储怎么使用解释一下工作原理">8. HTML5 的离线存储怎么使用，解释一下工作原理</h2>
+<p><a
+  href="https://segmentfault.com/a/1190000006984353"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>HTML5 的离线存储
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h2 id="9-src-与-href-的区别">9. src 与 href 的区别</h2>
 <p>区别：src 用于替代这个元素，而 href 用于建立这个标签与外部资源之间的关系</p>
 <p><code>&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code>浏览器加载到这里的时候，html 的渲染和解析不会暂停，css 文件的加载是同时进行的</p>
@@ -370,6 +376,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -378,13 +385,15 @@
   
   
   
->重绘和回流</a></p>
+>重绘和回流
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h2 id="14-flex-布局">14. flex 布局</h2>
 <p><a
   href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"
   
   
     
+    
     target="_blank"
   
   
@@ -393,25 +402,14 @@
   
   
   
->flex 布局教程&ndash;阮一峰</a></p>
+>flex 布局教程&ndash;阮一峰
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h2 id="15-css-预处理器">15. css 预处理器</h2>
 <p>提供了一种 css 的书写方式，常见的就是 <a
   href="http://sass.bootcss.com/docs/sass-reference/"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->SAAS 文档</a> 和 <a
-  href="https://less.bootcss.com/"
-  
-  
     
     target="_blank"
   
@@ -421,4 +419,20 @@
   
   
   
->LESS 文档</a></p>]]></description></item></channel></rss>
+>SAAS 文档
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 和 <a
+  href="https://less.bootcss.com/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>LESS 文档
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>]]></description></item></channel></rss>

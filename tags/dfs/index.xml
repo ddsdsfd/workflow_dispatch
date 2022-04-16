@@ -143,6 +143,7 @@ Accepted: 30423</p>
   
   
     
+    
     target="_blank"
   
   
@@ -151,7 +152,8 @@ Accepted: 30423</p>
   
   
   
->传送门</a></p>
+>传送门
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 ]]></description></item><item><title>poj-1426-Find The Multiple(dfs)</title><link>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</link><pubDate>Sun, 22 Jul 2018 11:57:13 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/poj-1426-find-the-multipledfs/</guid><description><![CDATA[<h2 id="find-the-multiple">Find The Multiple</h2>
 <p>Time Limit: 1000MS		Memory Limit: 10000K<br>
 Total Submissions: 40713		Accepted: 17088		Special Judge</p>
@@ -246,19 +248,6 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->Oil Deposits</a></h2>
-<p><a
-  href="https://vjudge.net/contest/238973#problem/L"
-  
-  
     
     target="_blank"
   
@@ -268,7 +257,24 @@ Total Submissions: 40713		Accepted: 17088		Special Judge</p>
   
   
   
->翻译</a><br>
+>Oil Deposits
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+<p><a
+  href="https://vjudge.net/contest/238973#problem/L"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>翻译
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
 Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)<br>
 Total Submission(s): 41406    Accepted Submission(s): 23977</p>
 <h4 id="problem-description">Problem Description</h4>
@@ -518,6 +524,7 @@ Total Submission(s): 41406    Accepted Submission(s): 23977</p>
   
   
     
+    
     target="_blank"
   
   
@@ -526,5 +533,6 @@ Total Submission(s): 41406    Accepted Submission(s): 23977</p>
   
   
   
->传送门</a></p>
+>传送门
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 ]]></description></item></channel></rss>

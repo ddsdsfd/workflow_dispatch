@@ -70,6 +70,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -78,25 +79,13 @@
   
   
   
->cos-album</a></li>
+>cos-album
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 <li><a
   href="https://github.com/Lruihao/watermark"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->watermark</a></li>
-<li><a
-  href="https://github.com/Lruihao/FixIt"
-  
-  
     
     target="_blank"
   
@@ -106,25 +95,30 @@
   
   
   
->FixIt</a></li>
+>watermark
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+<li><a
+  href="https://github.com/Lruihao/FixIt"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>FixIt
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 </ul>
 <p>值得一提的是最後一個項目 <a
   href="https://github.com/Lruihao/FixIt"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->FixIt</a>，是 Hugo 的一個主題，也就是目前博客使用的主題，原項目是 <a
-  href="https://github.com/dillonzq/LoveIt"
-  
-  
     
     target="_blank"
   
@@ -134,7 +128,23 @@
   
   
   
->LoveIt</a>，當時 Hexo 換到 Hugo 的時候，選的 LoveIt，用了一段時間後才發現這個項目 20 年中就已經停更了，但是目前有很多的 issue 反饋了很多 BUG，包括我也在使用中發現一些 BUG 以及想加一些我想要的需求，思考了一下，決定把這個項目延續下去，或许能幫助到部分還在使用 LoveIt 主題的 Hugo 用戶。堅持了改了一兩個月後，其實發現有時候寫代碼也能像打遊戲一樣快樂，倉庫上🌟比王者上🌟還快樂。修訂文檔的過程，也把英語又翻出來用了，我覺得這些都是正態的，挺好的，希望尽快在虎年前把 v0.2.12 發出來。</p>
+>FixIt
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>，是 Hugo 的一個主題，也就是目前博客使用的主題，原項目是 <a
+  href="https://github.com/dillonzq/LoveIt"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>LoveIt
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>，當時 Hexo 換到 Hugo 的時候，選的 LoveIt，用了一段時間後才發現這個項目 20 年中就已經停更了，但是目前有很多的 issue 反饋了很多 BUG，包括我也在使用中發現一些 BUG 以及想加一些我想要的需求，思考了一下，決定把這個項目延續下去，或许能幫助到部分還在使用 LoveIt 主題的 Hugo 用戶。堅持了改了一兩個月後，其實發現有時候寫代碼也能像打遊戲一樣快樂，倉庫上🌟比王者上🌟還快樂。修訂文檔的過程，也把英語又翻出來用了，我覺得這些都是正態的，挺好的，希望尽快在虎年前把 v0.2.12 發出來。</p>
 <blockquote>
 <p>簡單總結一下：</p>
 <ul>
@@ -211,6 +221,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -219,7 +230,8 @@
   
   
   
->转自、--入冬</a><br>
+>转自、--入冬
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
 补充 tab 转 space 设置</p>
 </blockquote>
 <h1 id="tab-转-space">tab 转 space</h1>
@@ -815,6 +827,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -823,7 +836,8 @@
   
   
   
->原文链接</a><br>
+>原文链接
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
 “卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学 java 和 web 相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
 </blockquote>
 <p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>
@@ -917,20 +931,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->多个标签页之间的通信</a></p>
-<h2 id="8-html5-的离线存储怎么使用解释一下工作原理">8. HTML5 的离线存储怎么使用，解释一下工作原理</h2>
-<p><a
-  href="https://segmentfault.com/a/1190000006984353"
-  
-  
     
     target="_blank"
   
@@ -940,7 +940,25 @@
   
   
   
->HTML5 的离线存储</a></p>
+>多个标签页之间的通信
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+<h2 id="8-html5-的离线存储怎么使用解释一下工作原理">8. HTML5 的离线存储怎么使用，解释一下工作原理</h2>
+<p><a
+  href="https://segmentfault.com/a/1190000006984353"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>HTML5 的离线存储
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h2 id="9-src-与-href-的区别">9. src 与 href 的区别</h2>
 <p>区别：src 用于替代这个元素，而 href 用于建立这个标签与外部资源之间的关系</p>
 <p><code>&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code>浏览器加载到这里的时候，html 的渲染和解析不会暂停，css 文件的加载是同时进行的</p>
@@ -1181,6 +1199,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1189,13 +1208,15 @@
   
   
   
->重绘和回流</a></p>
+>重绘和回流
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h2 id="14-flex-布局">14. flex 布局</h2>
 <p><a
   href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"
   
   
     
+    
     target="_blank"
   
   
@@ -1204,25 +1225,14 @@
   
   
   
->flex 布局教程&ndash;阮一峰</a></p>
+>flex 布局教程&ndash;阮一峰
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <h2 id="15-css-预处理器">15. css 预处理器</h2>
 <p>提供了一种 css 的书写方式，常见的就是 <a
   href="http://sass.bootcss.com/docs/sass-reference/"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->SAAS 文档</a> 和 <a
-  href="https://less.bootcss.com/"
-  
-  
     
     target="_blank"
   
@@ -1232,7 +1242,23 @@
   
   
   
->LESS 文档</a></p>]]></description></item><item><title>2018 年度总结</title><link>https://lruihao.cn/years/2018/</link><pubDate>Sat, 12 Jan 2019 11:09:52 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/years/2018/</guid><description><![CDATA[<blockquote>
+>SAAS 文档
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 和 <a
+  href="https://less.bootcss.com/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>LESS 文档
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>]]></description></item><item><title>2018 年度总结</title><link>https://lruihao.cn/years/2018/</link><pubDate>Sat, 12 Jan 2019 11:09:52 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/years/2018/</guid><description><![CDATA[<blockquote>
 <p>以前每年都会在 QQ 空间写每年的总结，可是现在已经过了肆意在空间写说说的年纪了。所幸还有博客这一席之地。</p>
 </blockquote>
 <p>18 年主要的收获，经历大概就在下面了，可还是没有学到什么硬本事，寒假还是要学习一下 java 和 jsp。</p>
@@ -1245,23 +1271,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
-><del>网盘</del></a>, 还搭了一个 ss 梯子供自己翻墙使用。</li>
-<li>参加了 2018 年 ACM 的湘潭全国邀请赛，在湘大，虽然很遗憾没有拿奖，但就当走过这步吧，略过。</li>
-<li>暑假结束，退出了 E313ACM 实验室，也就没有刷题打比赛了。</li>
-<li>大二获得了个国家励志，还不错。hhhh 有奖金！</li>
-<li>真的很菜但是退实验之前，学院的编程比赛还是运气好拿了个三等奖。</li>
-</ul>]]></description></item><item><title>18 湘潭邀请赛总结</title><link>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93/</link><pubDate>Thu, 14 Jun 2018 23:32:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93/</guid><description><![CDATA[<p><a
-  href="http://acm.hdu.edu.cn/downloads/2018ccpc_hn.pdf"
-  
-  
     
     target="_blank"
   
@@ -1271,7 +1280,28 @@
   
   
   
->题目链接</a>（hdu 复赛）</p>
+><del>网盘</del>
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>, 还搭了一个 ss 梯子供自己翻墙使用。</li>
+<li>参加了 2018 年 ACM 的湘潭全国邀请赛，在湘大，虽然很遗憾没有拿奖，但就当走过这步吧，略过。</li>
+<li>暑假结束，退出了 E313ACM 实验室，也就没有刷题打比赛了。</li>
+<li>大二获得了个国家励志，还不错。hhhh 有奖金！</li>
+<li>真的很菜但是退实验之前，学院的编程比赛还是运气好拿了个三等奖。</li>
+</ul>]]></description></item><item><title>18 湘潭邀请赛总结</title><link>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93/</link><pubDate>Thu, 14 Jun 2018 23:32:47 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/18%E6%B9%98%E6%BD%AD%E9%82%80%E8%AF%B7%E8%B5%9B%E6%80%BB%E7%BB%93/</guid><description><![CDATA[<p><a
+  href="http://acm.hdu.edu.cn/downloads/2018ccpc_hn.pdf"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>题目链接
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（hdu 复赛）</p>
 <p>2018 年湘潭邀请赛，在湘大举行，当时一起打的过去的，因为没出市就方便点。第一次参加现场赛，首先反省一下自己，比赛前算法先不说（没有好好搞过），就连普通的题，数学性质的题都很少刷，什么都不会，然后英语不说四六级的东西，很多专业英语词汇都没有好好了解过，主要的原因还是刷题刷少了，英文题刷少了。理所当然，成功拿下一铁，湘潭赛打铁告终。</p>
 <p>比赛开始，这次是三个人没人一份纸质题目，拿到题目，看最后一题，k.2018 发现可以做，（事实证明确实是一道水题），我就在做这题，他们看了 a 题，好像是 k 题一顿操作后提交，错了，一直到比赛结束都没做出来，后来回去看别人的题解，发现自己情况没有分析全面，其实是完全可以解出来的，真的做的太少太少了。a 题最后也是没过，还有一个 f 题，sort，我最初的想法是用 stl 里的那个 sort 排序，只要对 sort 的 compare 函数做处理应该可以完成排序，比赛之前我看过，但是不熟悉，zxm 她也看了我就交给她了，最后好像因为爆 long double 的问题也没做出来。<br>
 哎，菜还是菜，很多算法都不懂，数据结构也没学好，很有一段时间我都特别头疼算法，不想学，费劲，觉得自己不适合学计算机，更不适合 ACM。有时候又想，不适合好像总是 loser 的借口！总是在后悔和偷懒的矛盾中！<br>
@@ -1300,6 +1330,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1308,7 +1339,8 @@
   
   
   
->各大 OJ 题目分类</a></td>
+>各大 OJ 题目分类
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">各种算法分类，对应 OJ 题号超链接</td>
 </tr>
 <tr>
@@ -1317,6 +1349,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1325,7 +1358,8 @@
   
   
   
->ACM 题目分类</a></td>
+>ACM 题目分类
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td></td>
 </tr>
 <tr>
@@ -1334,6 +1368,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1342,7 +1377,8 @@
   
   
   
->codeforces</a></td>
+>codeforces
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">俄国 CF 在线编程，一般比赛在晚上 9:30 和 11：00</td>
 </tr>
 <tr>
@@ -1351,6 +1387,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1359,7 +1396,8 @@
   
   
   
->牛客网</a></td>
+>牛客网
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">国内求职学习网，有很多程序设计比赛</td>
 </tr>
 <tr>
@@ -1368,6 +1406,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1376,7 +1415,8 @@
   
   
   
->vjudge</a></td>
+>vjudge
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">这个不用说了吧</td>
 </tr>
 <tr>
@@ -1385,6 +1425,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1393,7 +1434,8 @@
   
   
   
->hihocoder</a></td>
+>hihocoder
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">打得少，感觉好多数据结构的题</td>
 </tr>
 <tr>
@@ -1402,6 +1444,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1410,7 +1453,8 @@
   
   
   
->百练</a></td>
+>百练
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">OpenJudge 的一个小组，很多题目来自 POJ；也是我 ACM 启蒙地</td>
 </tr>
 <tr>
@@ -1419,6 +1463,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1427,7 +1472,8 @@
   
   
   
->HDUOJ</a></td>
+>HDUOJ
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">杭州电子科技大学 OJ</td>
 </tr>
 <tr>
@@ -1436,6 +1482,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1444,7 +1491,8 @@
   
   
   
->POJ</a></td>
+>POJ
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">北京大学 OJ</td>
 </tr>
 <tr>
@@ -1453,6 +1501,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1461,7 +1510,8 @@
   
   
   
->洛谷</a></td>
+>洛谷
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td></td>
 </tr>
 <tr>
@@ -1470,6 +1520,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1478,7 +1529,8 @@
   
   
   
->lintcode</a></td>
+>lintcode
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">领扣（国外）</td>
 </tr>
 <tr>
@@ -1487,6 +1539,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1495,7 +1548,8 @@
   
   
   
->leedcode</a></td>
+>leedcode
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">力扣</td>
 </tr>
 <tr>
@@ -1504,22 +1558,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->codewar</a></td>
-<td style="text-align:left">国外</td>
-</tr>
-<tr>
-<td style="text-align:left"><a
-  href="https://blog.csdn.net/tigerisland45/article/details/52134189"
-  
-  
     
     target="_blank"
   
@@ -1529,7 +1567,27 @@
   
   
   
->更多 OJ，在线刷题网站 &hellip;</a></td>
+>codewar
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">国外</td>
+</tr>
+<tr>
+<td style="text-align:left"><a
+  href="https://blog.csdn.net/tigerisland45/article/details/52134189"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>更多 OJ，在线刷题网站 &hellip;
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td></td>
 </tr>
 </tbody>
@@ -1551,6 +1609,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1559,7 +1618,8 @@
   
   
   
->visualgo</a></td>
+>visualgo
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">算法学习，数据结构和算法动态可视化</td>
 </tr>
 <tr>
@@ -1568,6 +1628,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1576,7 +1637,8 @@
   
   
   
->c,c++学习</a></td>
+>c,c++学习
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">很详细的知识讲解</td>
 </tr>
 <tr>
@@ -1585,6 +1647,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1593,7 +1656,8 @@
   
   
   
->Tomcat 下载</a></td>
+>Tomcat 下载
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">Tomcat 各版本下载，Tomcat 解压即安装；<code>\bin</code>下可以启动和关闭服务器；可手动在<code>\webapps</code>里创建 web 应用，也可以配合<code>Eclisp IDE for Java EE Developers</code>等 Java IDE 工具创建</td>
 </tr>
 <tr>
@@ -1602,6 +1666,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1610,7 +1675,8 @@
   
   
   
->w3school</a></td>
+>w3school
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">可在线测试，Web 技术教程，HTML, 浏览器脚本，服务器脚本，xml 教程等</td>
 </tr>
 <tr>
@@ -1619,6 +1685,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1627,7 +1694,8 @@
   
   
   
->w3cschool</a></td>
+>w3cschool
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">和上面不同哦，是不是和上面的很像哈哈哈！我估计是上一个网站的新版，功能更强大，内容更丰富，还有微信小程序教程等</td>
 </tr>
 <tr>
@@ -1636,6 +1704,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1644,7 +1713,8 @@
   
   
   
->菜鸟教程</a></td>
+>菜鸟教程
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">和上面两个差不多，还有一些数据库、安卓的东西，git 学习</td>
 </tr>
 <tr>
@@ -1653,6 +1723,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1661,7 +1732,8 @@
   
   
   
->python 学习</a></td>
+>python 学习
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">Python 库安装包下载，python,Django,HTML,ACM 学习</td>
 </tr>
 <tr>
@@ -1670,19 +1742,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->python123</a></td>
-<td style="text-align:left">Python123 是专注于为中国高等院校教学 Python 语言的而开发的一款学习工具网站 <a
-  href="https://python123.io/index/notebooks/python_programming_basic_v2/%E6%BA%90%E4%BB%A3%E7%A0%81/2-1%20%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F?from=Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%28%E7%AC%AC2%E7%89%88%29"
-  
-  
     
     target="_blank"
   
@@ -1692,7 +1751,24 @@
   
   
   
->python 学习</a></td>
+>python123
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">Python123 是专注于为中国高等院校教学 Python 语言的而开发的一款学习工具网站 <a
+  href="https://python123.io/index/notebooks/python_programming_basic_v2/%E6%BA%90%E4%BB%A3%E7%A0%81/2-1%20%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E7%A8%8B%E5%BA%8F?from=Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80%28%E7%AC%AC2%E7%89%88%29"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>python 学习
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a
@@ -1700,6 +1776,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1708,7 +1785,8 @@
   
   
   
->pypi</a></td>
+>pypi
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">Find, install and publish Python packages with the Python Package Index</td>
 </tr>
 <tr>
@@ -1717,6 +1795,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1725,7 +1804,8 @@
   
   
   
->优矿</a></td>
+>优矿
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">python 在线测试，笔记</td>
 </tr>
 <tr>
@@ -1734,6 +1814,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1742,7 +1823,8 @@
   
   
   
->阮一峰的网络日志</a></td>
+>阮一峰的网络日志
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">开发者手册，JavaScript 等等</td>
 </tr>
 <tr>
@@ -1751,6 +1833,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1759,7 +1842,8 @@
   
   
   
->廖雪峰</a></td>
+>廖雪峰
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">git,python,javascript 学习</td>
 </tr>
 <tr>
@@ -1768,6 +1852,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1776,7 +1861,8 @@
   
   
   
->新晴网</a></td>
+>新晴网
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">PS 学习，摄影教程等</td>
 </tr>
 <tr>
@@ -1785,6 +1871,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1793,7 +1880,8 @@
   
   
   
->实验楼</a></td>
+>实验楼
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">在线做实验，高效学编程</td>
 </tr>
 <tr>
@@ -1802,6 +1890,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1810,7 +1899,8 @@
   
   
   
->慕课网</a></td>
+>慕课网
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">在线学习，免费，付费视频</td>
 </tr>
 <tr>
@@ -1819,22 +1909,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->wxpy</a></td>
-<td style="text-align:left">一个 python 关于微信的库</td>
-</tr>
-<tr>
-<td style="text-align:left"><a
-  href="http://so1n.me/links/"
-  
-  
     
     target="_blank"
   
@@ -1844,7 +1918,27 @@
   
   
   
->So1n</a></td>
+>wxpy
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">一个 python 关于微信的库</td>
+</tr>
+<tr>
+<td style="text-align:left"><a
+  href="http://so1n.me/links/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>So1n
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">python 学习</td>
 </tr>
 </tbody>
@@ -1866,6 +1960,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1874,7 +1969,8 @@
   
   
   
->腾讯云</a></td>
+>腾讯云
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">dnspod 解析新版入口，腾讯云控制台</td>
 </tr>
 <tr>
@@ -1883,6 +1979,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1891,7 +1988,8 @@
   
   
   
->dnspod 解析</a></td>
+>dnspod 解析
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">域名解析，其他：阿里云等</td>
 </tr>
 <tr>
@@ -1900,19 +1998,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->cloudflare 解析</a></td>
-<td style="text-align:left">域名解析，https 解析，[介绍](<a
-  href="https://oliverqueen.cn/2018/01/25/"
-  
-  
     
     target="_blank"
   
@@ -1922,7 +2007,24 @@
   
   
   
->https://oliverqueen.cn/2018/01/25/</a>可能是最全的使用 HEXO 搭建个人博客教程)</td>
+>cloudflare 解析
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">域名解析，https 解析，[介绍](<a
+  href="https://oliverqueen.cn/2018/01/25/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://oliverqueen.cn/2018/01/25/
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>可能是最全的使用 HEXO 搭建个人博客教程)</td>
 </tr>
 <tr>
 <td style="text-align:left"><a
@@ -1930,6 +2032,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1938,7 +2041,8 @@
   
   
   
->cloud studio</a></td>
+>cloud studio
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">这是腾讯云和 coding 合作后的一个东西，简单来说就是云端开发环境。试了一下完全可以把 hexo 博客源码挂上面编辑。这也就不用只局限于一台电脑发布博客了。</td>
 </tr>
 <tr>
@@ -1947,6 +2051,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1955,7 +2060,8 @@
   
   
   
->腾讯云大学开放实验室</a></td>
+>腾讯云大学开放实验室
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">可以在线进行一些云服务应用搭建等的实验。与之对应的还有阿里云开放实验室</td>
 </tr>
 <tr>
@@ -1964,6 +2070,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1972,7 +2079,8 @@
   
   
   
->宝塔面板</a></td>
+>宝塔面板
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">宝塔面板是一款使用方便、功能强大且终身免费的服务器管理软件，支持 Linux 与 Windows 系统。一键配置：LAMP/LNMP、网站、数据库、FTP、SSL，通过 Web 端轻松管理服务器。</td>
 </tr>
 <tr>
@@ -1981,6 +2089,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1989,7 +2098,8 @@
   
   
   
->leancloud</a></td>
+>leancloud
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">一站式后端云服务</td>
 </tr>
 <tr>
@@ -1998,6 +2108,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2006,7 +2117,8 @@
   
   
   
->daovoice</a></td>
+>daovoice
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">网站在线客服</td>
 </tr>
 <tr>
@@ -2015,6 +2127,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2023,7 +2136,8 @@
   
   
   
->百度网站收录</a></td>
+>百度网站收录
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">网站 seo</td>
 </tr>
 <tr>
@@ -2032,6 +2146,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2040,7 +2155,8 @@
   
   
   
->Bing 站长</a></td>
+>Bing 站长
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">Bing 网站管理员工具</td>
 </tr>
 <tr>
@@ -2049,22 +2165,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->站长工具</a></td>
-<td style="text-align:left">网站信息查询，权重，seo，网站速度查询，ping 等</td>
-</tr>
-<tr>
-<td style="text-align:left"><a
-  href="http://tool.lusongsong.com"
-  
-  
     
     target="_blank"
   
@@ -2074,7 +2174,27 @@
   
   
   
->站长工具大全</a></td>
+>站长工具
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">网站信息查询，权重，seo，网站速度查询，ping 等</td>
+</tr>
+<tr>
+<td style="text-align:left"><a
+  href="http://tool.lusongsong.com"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>站长工具大全
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">各种 seo 优化，工具等</td>
 </tr>
 </tbody>
@@ -2096,6 +2216,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2104,7 +2225,8 @@
   
   
   
->全栈开发者</a></td>
+>全栈开发者
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">顾名思义，有很多 web 开发的教程，也可以在线执行代码</td>
 </tr>
 <tr>
@@ -2113,6 +2235,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2121,7 +2244,8 @@
   
   
   
->JSFuck</a></td>
+>JSFuck
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">JSFuck 是一种基于 JavaScript 原子部分的深奥教育编程风格。它只使用六个不同的字符来编写和执行代码。（代码极丑化）</td>
 </tr>
 <tr>
@@ -2130,6 +2254,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2138,7 +2263,8 @@
   
   
   
->BootCDN</a></td>
+>BootCDN
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">稳定、快速、免费的前端开源项目 CDN 加速服务，共收录了 3441 个前端开源项目。比如<code>vue</code>,<code>fancybox</code>等</td>
 </tr>
 <tr>
@@ -2147,6 +2273,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2155,7 +2282,8 @@
   
   
   
->bootstrap 中文网</a></td>
+>bootstrap 中文网
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">简洁、直观、强悍的前端开发框架，让 web 开发更迅速、简单。还有一些基于 bootstrap 开发或扩充的项目的 cdn，<code>BootCDN</code>也是在该网站旗下</td>
 </tr>
 <tr>
@@ -2164,6 +2292,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2172,7 +2301,8 @@
   
   
   
->Font Awesome 图标库</a></td>
+>Font Awesome 图标库
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">hexo 指定图标库</td>
 </tr>
 <tr>
@@ -2181,6 +2311,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2189,7 +2320,8 @@
   
   
   
->iconfont</a></td>
+>iconfont
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">阿里巴巴矢量图标库</td>
 </tr>
 <tr>
@@ -2198,6 +2330,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2206,7 +2339,8 @@
   
   
   
->easyicon 图标库</a></td>
+>easyicon 图标库
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">图标下载，格式转换，可外链</td>
 </tr>
 <tr>
@@ -2215,6 +2349,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2223,7 +2358,8 @@
   
   
   
->semantic-ui.com 图标库</a></td>
+>semantic-ui.com 图标库
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">semantic-ui.com 还有很多前端样式对应代码</td>
 </tr>
 <tr>
@@ -2232,6 +2368,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2240,7 +2377,8 @@
   
   
   
->colorhunt</a></td>
+>colorhunt
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">配色方案推荐，调试</td>
 </tr>
 <tr>
@@ -2249,6 +2387,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2257,7 +2396,8 @@
   
   
   
->grabient 渐变色</a></td>
+>grabient 渐变色
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">渐变色调色</td>
 </tr>
 <tr>
@@ -2266,6 +2406,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2274,7 +2415,8 @@
   
   
   
->gradient 渐变色调色</a></td>
+>gradient 渐变色调色
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">渐变色调色，获取代码</td>
 </tr>
 <tr>
@@ -2283,6 +2425,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2291,7 +2434,8 @@
   
   
   
->encycolorpedia</a></td>
+>encycolorpedia
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">encycolorpedia 取色器</td>
 </tr>
 <tr>
@@ -2300,6 +2444,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2308,7 +2453,8 @@
   
   
   
->优酷视频上传</a></td>
+>优酷视频上传
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">获取视频外链，其他：腾讯视频</td>
 </tr>
 <tr>
@@ -2317,6 +2463,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2325,7 +2472,8 @@
   
   
   
->sm.ms</a></td>
+>sm.ms
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">非常好用的图床</td>
 </tr>
 <tr>
@@ -2334,19 +2482,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->imgURL</a></td>
-<td style="text-align:left">一个开源的图床，很不错，有兴趣的可以自己尝试搭建，比如 <a
-  href="https://img.lruihao.cn"
-  
-  
     
     target="_blank"
   
@@ -2356,7 +2491,24 @@
   
   
   
->img.lruihao.cn</a></td>
+>imgURL
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">一个开源的图床，很不错，有兴趣的可以自己尝试搭建，比如 <a
+  href="https://img.lruihao.cn"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>img.lruihao.cn
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a
@@ -2364,6 +2516,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2372,7 +2525,8 @@
   
   
   
->现实君外链</a></td>
+>现实君外链
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">支持多种文件外链，唯一不好的是 http</td>
 </tr>
 <tr>
@@ -2381,6 +2535,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2389,7 +2544,8 @@
   
   
   
->PEXELS 美图</a></td>
+>PEXELS 美图
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">文章配图，无版权美图网，避免配图侵权</td>
 </tr>
 <tr>
@@ -2398,6 +2554,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2406,24 +2563,13 @@
   
   
   
->unsplash 美图</a></td>
+>unsplash 美图
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left"><a
   href="https://source.unsplash.com/"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->API</a> 还可以获取 <a
-  href="https://source.unsplash.com/random/800x600"
-  
-  
     
     target="_blank"
   
@@ -2433,7 +2579,23 @@
   
   
   
->随机图</a></td>
+>API
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 还可以获取 <a
+  href="https://source.unsplash.com/random/800x600"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>随机图
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a
@@ -2441,6 +2603,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2449,7 +2612,8 @@
   
   
   
->图标工厂</a></td>
+>图标工厂
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">移动应用图标生成工具，一键生成所有尺寸的应用图标</td>
 </tr>
 <tr>
@@ -2458,6 +2622,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2466,7 +2631,8 @@
   
   
   
->emoji 在线复制</a></td>
+>emoji 在线复制
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">Simple emoji copy and paste</td>
 </tr>
 <tr>
@@ -2475,6 +2641,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2483,7 +2650,8 @@
   
   
   
->HTML 字符实体</a></td>
+>HTML 字符实体
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">网页特殊符号大全</td>
 </tr>
 <tr>
@@ -2492,6 +2660,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2500,7 +2669,8 @@
   
   
   
->特效字转换工具集</a></td>
+>特效字转换工具集
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">各种特效字转换工具，彩虹字生成器，RGB 转 16 进制颜色等</td>
 </tr>
 <tr>
@@ -2509,6 +2679,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2517,7 +2688,8 @@
   
   
   
->压缩图</a></td>
+>压缩图
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">在线 ps，图片去底，证件照换底等操作很方便的 web 图片处理工具</td>
 </tr>
 <tr>
@@ -2526,6 +2698,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2534,7 +2707,8 @@
   
   
   
->改图宝</a></td>
+>改图宝
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">在线改图压缩，加水印，生成二维码，印章制作等</td>
 </tr>
 <tr>
@@ -2543,6 +2717,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2551,7 +2726,8 @@
   
   
   
->GIF 之家</a></td>
+>GIF 之家
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">一个压缩效果很好且免费的 gif 压缩工具</td>
 </tr>
 <tr>
@@ -2560,6 +2736,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2568,7 +2745,8 @@
   
   
   
->二维码解码器</a></td>
+>二维码解码器
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td></td>
 </tr>
 <tr>
@@ -2577,19 +2755,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->草料二维码</a></td>
-<td style="text-align:left"><a
-  href="https://cli.im"
-  
-  
     
     target="_blank"
   
@@ -2599,7 +2764,24 @@
   
   
   
->https://cli.im</a></td>
+>草料二维码
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left"><a
+  href="https://cli.im"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://cli.im
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a
@@ -2607,6 +2789,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2615,7 +2798,8 @@
   
   
   
->联图二维码</a></td>
+>联图二维码
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td></td>
 </tr>
 <tr>
@@ -2624,22 +2808,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->第九工厂</a></td>
-<td style="text-align:left">死磕艺术二维码</td>
-</tr>
-<tr>
-<td style="text-align:left"><a
-  href="https://www.mobanma.com"
-  
-  
     
     target="_blank"
   
@@ -2649,7 +2817,27 @@
   
   
   
->模板码</a></td>
+>第九工厂
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">死磕艺术二维码</td>
+</tr>
+<tr>
+<td style="text-align:left"><a
+  href="https://www.mobanma.com"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>模板码
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">动态二维码等</td>
 </tr>
 </tbody>
@@ -2671,6 +2859,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2679,7 +2868,8 @@
   
   
   
->Gearn Git Branching</a></td>
+>Gearn Git Branching
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">通过游戏闯关的方式学习 git！</td>
 </tr>
 <tr>
@@ -2688,6 +2878,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2696,7 +2887,8 @@
   
   
   
->PicGo</a></td>
+>PicGo
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">一个很好的开源的图床管理桌面程序，图床神器支持微博图床、七牛图床、腾讯云 COS、又拍云、GitHub 图床、阿里云 OSS、Imgur 图床等等</td>
 </tr>
 <tr>
@@ -2705,6 +2897,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2713,7 +2906,8 @@
   
   
   
->Proxyee Down</a></td>
+>Proxyee Down
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">百度云下载解决方案，满速下载，但不限于百度云的下载，感觉比迅雷还好用！</td>
 </tr>
 <tr>
@@ -2722,6 +2916,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2730,7 +2925,8 @@
   
   
   
->PanDownload</a></td>
+>PanDownload
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">这是 pandownload 网页版，把需要下载的百度网盘链接<code>baidu</code>改成<code>baiduwp</code>即可加速，也有桌面版。</td>
 </tr>
 <tr>
@@ -2739,6 +2935,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2747,7 +2944,8 @@
   
   
   
->ubuntu pastebin</a></td>
+>ubuntu pastebin
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">代码展示托管，生成分享网址，防止代码直接分享缩进消失</td>
 </tr>
 <tr>
@@ -2756,6 +2954,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2764,7 +2963,8 @@
   
   
   
->图片转字符工具</a></td>
+>图片转字符工具
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">Img&ndash;&gt;String</td>
 </tr>
 <tr>
@@ -2773,6 +2973,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2781,7 +2982,8 @@
   
   
   
->everyfont</a></td>
+>everyfont
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">中文字库在线压缩</td>
 </tr>
 <tr>
@@ -2790,6 +2992,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2798,7 +3001,8 @@
   
   
   
->字蛛</a></td>
+>字蛛
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">font-spider 中文字库压缩</td>
 </tr>
 <tr>
@@ -2807,6 +3011,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2815,7 +3020,8 @@
   
   
   
->mdtr2pdf</a></td>
+>mdtr2pdf
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">markdown 转 pdf</td>
 </tr>
 <tr>
@@ -2824,6 +3030,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2832,7 +3039,8 @@
   
   
   
->AD&rsquo;s API</a></td>
+>AD&rsquo;s API
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">包括动态签名，网易音乐等</td>
 </tr>
 <tr>
@@ -2841,6 +3049,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2849,7 +3058,8 @@
   
   
   
->在线工具</a></td>
+>在线工具
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">w3cschool 的在线工具集合</td>
 </tr>
 <tr>
@@ -2858,6 +3068,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2866,7 +3077,8 @@
   
   
   
->在线工具</a></td>
+>在线工具
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">开源中国社区</td>
 </tr>
 <tr>
@@ -2875,19 +3087,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->菜鸟工具</a></td>
-<td style="text-align:left"><a
-  href="https://www.runoob.com"
-  
-  
     
     target="_blank"
   
@@ -2897,7 +3096,24 @@
   
   
   
->菜鸟教程</a> 在线工具，编译，加密，压缩代码等</td>
+>菜鸟工具
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left"><a
+  href="https://www.runoob.com"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>菜鸟教程
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 在线工具，编译，加密，压缩代码等</td>
 </tr>
 <tr>
 <td style="text-align:left"><a
@@ -2905,6 +3121,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2913,7 +3130,8 @@
   
   
   
->msdn</a></td>
+>msdn
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">windows 系统上 office 等软件下载（备用）</td>
 </tr>
 <tr>
@@ -2922,6 +3140,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2930,7 +3149,8 @@
   
   
   
->老殁科技</a></td>
+>老殁科技
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">Adobe 等各种绿色破解软件</td>
 </tr>
 <tr>
@@ -2939,6 +3159,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2947,7 +3168,8 @@
   
   
   
->百度接口</a></td>
+>百度接口
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">百度搜索关键词接口</td>
 </tr>
 <tr>
@@ -2956,6 +3178,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -2964,7 +3187,8 @@
   
   
   
->在线短信</a></td>
+>在线短信
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">不想泄露个人的电话号码，注册一些一次性网站可以用到</td>
 </tr>
 <tr>
@@ -2973,22 +3197,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->配音阁</a></td>
-<td style="text-align:left">文字转换语音/语音合成广告_叫卖录音_在线配音网络软件_促销宣传片配音-配音阁-配音阁，国内专业的广告配音平台</td>
-</tr>
-<tr>
-<td style="text-align:left"><a
-  href="https://hacknical.com"
-  
-  
     
     target="_blank"
   
@@ -2998,7 +3206,27 @@
   
   
   
->hacknical</a></td>
+>配音阁
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">文字转换语音/语音合成广告_叫卖录音_在线配音网络软件_促销宣传片配音-配音阁-配音阁，国内专业的广告配音平台</td>
+</tr>
+<tr>
+<td style="text-align:left"><a
+  href="https://hacknical.com"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>hacknical
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">在线个性简历，个人 Github 总结分析</td>
 </tr>
 </tbody>
@@ -3020,6 +3248,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -3028,7 +3257,8 @@
   
   
   
->俄罗斯方块</a></td>
+>俄罗斯方块
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">这是一个开源的游戏，小白的我看来简直牛逼爆了，好逼真，刷新都不会打断游戏进度！！</td>
 </tr>
 <tr>
@@ -3037,6 +3267,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -3045,7 +3276,8 @@
   
   
   
->网址迷宫 nazo_game</a></td>
+>网址迷宫 nazo_game
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">一个程序员的网页游戏，我只玩到 12 关。</td>
 </tr>
 <tr>
@@ -3054,6 +3286,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -3062,7 +3295,8 @@
   
   
   
->无损音乐下载</a></td>
+>无损音乐下载
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td></td>
 </tr>
 <tr>
@@ -3071,6 +3305,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -3079,7 +3314,8 @@
   
   
   
->手写体制作</a></td>
+>手写体制作
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">北京大学计算机科学技术研究所的一个项目<code>59.108.48.27</code> <del>（我的字体至今还未完成）</del></td>
 </tr>
 <tr>
@@ -3088,22 +3324,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->大象代理</a></td>
-<td style="text-align:left">收费，口碑不错</td>
-</tr>
-<tr>
-<td style="text-align:left"><a
-  href="https://www.pgyer.com"
-  
-  
     
     target="_blank"
   
@@ -3113,7 +3333,27 @@
   
   
   
->蒲公英</a></td>
+>大象代理
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
+<td style="text-align:left">收费，口碑不错</td>
+</tr>
+<tr>
+<td style="text-align:left"><a
+  href="https://www.pgyer.com"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>蒲公英
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 <td style="text-align:left">应用内测发布平台</td>
 </tr>
 </tbody>
@@ -3167,6 +3407,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -3175,7 +3416,8 @@
   
   
   
->hexo 更多请看分类</a></td>
+>hexo 更多请看分类
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></td>
 </tr>
 <tr>
 <td style="text-align:left"><a

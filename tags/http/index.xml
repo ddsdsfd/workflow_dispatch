@@ -17,9 +17,18 @@
     </div>
   </div>
 <h1 id="windows-运行效果">Windows 运行效果</h1>
-<p><br>
-<br>
-</p>
+<p><figure><a class="lightgallery" href="/posts/daka/images/result1.png" title="打卡成功" data-thumbnail="/posts/daka/images/result1.png" data-sub-html="<h2>打卡成功</h2><p>打卡成功</p>">
+    
+  </a><figcaption class="image-caption">打卡成功</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/daka/images/result.png" title="重复打卡" data-thumbnail="/posts/daka/images/result.png" data-sub-html="<h2>重复打卡</h2><p>重复打卡</p>">
+    
+  </a><figcaption class="image-caption">重复打卡</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/daka/images/result2.png" title="定时任务日志" data-thumbnail="/posts/daka/images/result2.png" data-sub-html="<h2>定时任务日志</h2><p>定时任务日志</p>">
+    
+  </a><figcaption class="image-caption">定时任务日志</figcaption>
+  </figure></p>
 <h1 id="核心代码">核心代码</h1>
 <blockquote>
 <p>适用湖南工程学院的打卡系统。<br>
@@ -30,6 +39,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -38,7 +48,8 @@
   
   
   
->完整代码</a></p>
+>完整代码
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -164,7 +175,10 @@
 <h1 id="潇-x-巴哥的-java-web-版本">潇 x 巴哥的 java web 版本</h1>
 <p>符合程序员的应该有的简洁和方便，干净又卫生！
 <code>http://39.105.174.214/index.html</code><br>
-</p>]]></description></item><item><title>python 实战：模拟 post 请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
+<figure><a class="lightgallery" href="/posts/daka/images/javaweb.png" title="java web 版" data-thumbnail="/posts/daka/images/javaweb.png" data-sub-html="<h2>java web 版</h2><p>java web 版</p>">
+    
+  </a><figcaption class="image-caption">java web 版</figcaption>
+  </figure></p>]]></description></item><item><title>python 实战：模拟 post 请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
 <p>用 python 模拟 post 请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
 要求每天早上 8 点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
 </blockquote>

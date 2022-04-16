@@ -15,6 +15,7 @@ next 主题好像更新了，现在自带的可以用了，如果可以用了，
   
   
     
+    
     target="_blank"
   
   
@@ -23,7 +24,8 @@ next 主题好像更新了，现在自带的可以用了，如果可以用了，
   
   
   
->wordcount github</a>
+>wordcount github
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
 如果没有安装 hexo-wordcount 插件，先安装该插件：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

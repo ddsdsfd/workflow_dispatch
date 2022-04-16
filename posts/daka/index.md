@@ -12,9 +12,9 @@
 
 <!--more-->
 # Windows 运行效果
-![打卡成功](images/result1.png)  
-![重复打卡](images/result.png)  
-![定时任务日志](images/result2.png)  
+![打卡成功](images/result1.png "打卡成功")  
+![重复打卡](images/result.png "重复打卡")  
+![定时任务日志](images/result2.png "定时任务日志")  
 
 # 核心代码
 > 适用湖南工程学院的打卡系统。  
@@ -84,5 +84,5 @@ python /home/python/yiban_daka/daka.py
 # 潇 x 巴哥的 java web 版本
 符合程序员的应该有的简洁和方便，干净又卫生！
 `http://39.105.174.214/index.html`  
-![java web 版](images/javaweb.png)  
+![java web 版](images/javaweb.png "java web 版")  
 

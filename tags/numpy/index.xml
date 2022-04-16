@@ -4,18 +4,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->sylnsfar/qrcode</a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a
-  href="https://github.com/sylnsfar/qrcode_win"
-  
-  
     
     target="_blank"
   
@@ -25,12 +13,30 @@
   
   
   
->项目开源地址</a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
+>sylnsfar/qrcode
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a
+  href="https://github.com/sylnsfar/qrcode_win"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>项目开源地址
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
 </blockquote>
 <p>可生成<em>普通二维码</em>、<em>带图片的艺术二维码（黑白与彩色）</em>、<em>动态二维码（黑白与彩色）</em>。</p>
 <h2 id="示例">示例</h2>
+<div class="text-center">
 <p>
 </p>
+</div>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -115,6 +121,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -123,7 +130,8 @@
   
   
   
-><strong>MyQR</strong></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
+><strong>MyQR</strong>
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -359,6 +367,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -367,25 +376,13 @@
   
   
   
->pillow</a></li>
+>pillow
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 <li><a
   href="https://pypi.python.org/pypi/numpy"
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->numpy</a></li>
-<li><a
-  href="https://pypi.python.org/pypi/imageio"
-  
-  
     
     target="_blank"
   
@@ -395,7 +392,24 @@
   
   
   
->imageio</a></li>
+>numpy
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+<li><a
+  href="https://pypi.python.org/pypi/imageio"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>imageio
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 </ul>
 <h2 id="运行环境">运行环境</h2>
 <ul>

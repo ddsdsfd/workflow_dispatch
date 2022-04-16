@@ -168,19 +168,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->百度云，密码：479l</a></li>
-<li><a
-  href="https://github.com/Lruihao/Blog_fas_apk"
-  
-  
     
     target="_blank"
   
@@ -190,7 +177,24 @@
   
   
   
->github 下载</a></li>
+>百度云，密码：479l
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+<li><a
+  href="https://github.com/Lruihao/Blog_fas_apk"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>github 下载
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
 </ul>
 <p><strong>PWA 应用</strong></p>
 <ol>
@@ -1469,6 +1473,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1477,7 +1482,8 @@
   
   
   
->demo</a></h3>
+>demo
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
 <p>启动 caddy</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1525,6 +1531,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1533,7 +1540,8 @@
   
   
   
->参考</a></p>
+>参考
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1685,6 +1693,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1693,7 +1702,8 @@
   
   
   
->沐目体</a> <em>仅用于个人非商用！</em></div>
+>沐目体
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <em>仅用于个人非商用！</em></div>
     </div>
   </div>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
 <p>流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度。</p>
@@ -1814,23 +1824,6 @@
   
   
     
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->在线算法</a></h2>
-<p>在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。</p>
-<p>在计算机科学中，一个在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。相对的，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。例如，选择排序在排序前就需要知道所有待排序元素，然而插入排序就不必。<br>
-因为在线算法并不知道整个的输入，所以它被迫做出的选择最后可能会被证明不是最优的，对在线算法的研究主要集中在当前环境下怎么做出选择。对相同问题的在线算法和离线算法的对比分析形成了以上观点。如果想从其他角度了解在线算法可以看一下流算法（关注精确呈现过去的输入所使用的内存的量），动态算法（关注维护一个在线输入的结果所需要的时间复杂度）和在线机器学习。<br>
-一个很好的展示在线算法概念的例子是 加拿大旅行者问题，这个问题的目标是在一个有权图中以最小的代价到达一个目标节点，但这个有权图中有些边是不可靠的可能已经被剔除。然而一个旅行者只有到某个边的一个端点时才能确定该边是否已经被移除了。最坏情况下，该问题会变得简单了，即所有的不确定的边都被移除该问题将会变成通常的最短路径问题。</p>
-<h2 id="离线算法httpsbaikebaiducomiteme7a6bbe7babfe7ae97e6b395"><a
-  href="https://baike.baidu.com/item/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95"
-  
-  
     
     target="_blank"
   
@@ -1840,7 +1833,28 @@
   
   
   
->离线算法</a></h2>
+>在线算法
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+<p>在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。</p>
+<p>在计算机科学中，一个在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。相对的，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。例如，选择排序在排序前就需要知道所有待排序元素，然而插入排序就不必。<br>
+因为在线算法并不知道整个的输入，所以它被迫做出的选择最后可能会被证明不是最优的，对在线算法的研究主要集中在当前环境下怎么做出选择。对相同问题的在线算法和离线算法的对比分析形成了以上观点。如果想从其他角度了解在线算法可以看一下流算法（关注精确呈现过去的输入所使用的内存的量），动态算法（关注维护一个在线输入的结果所需要的时间复杂度）和在线机器学习。<br>
+一个很好的展示在线算法概念的例子是 加拿大旅行者问题，这个问题的目标是在一个有权图中以最小的代价到达一个目标节点，但这个有权图中有些边是不可靠的可能已经被剔除。然而一个旅行者只有到某个边的一个端点时才能确定该边是否已经被移除了。最坏情况下，该问题会变得简单了，即所有的不确定的边都被移除该问题将会变成通常的最短路径问题。</p>
+<h2 id="离线算法httpsbaikebaiducomiteme7a6bbe7babfe7ae97e6b395"><a
+  href="https://baike.baidu.com/item/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>离线算法
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
 <p>离线算法 ( off line algorithms)，是指基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。</p>
 <p>设计策略  在执行算法前输入已知的基本假设<br>
 前提  具有问题完全信息<br>
@@ -1870,6 +1884,7 @@
   
   
     
+    
     target="_blank"
   
   
@@ -1878,7 +1893,8 @@
   
   
   
->传送门</a></p>
+>传送门
+      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
 <blockquote>
 <p>原文：<code>http://www.matrix67.com/blog/archives/263</code></p>
 </blockquote>

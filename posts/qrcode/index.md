@@ -7,8 +7,13 @@
 
 <!--more-->
 ## 示例
+
+<div class="text-center">
+
 ![](images/1.gif)
 ![](images/2.png)
+
+</div>
 
 ```python
 from MyQR import myqr
