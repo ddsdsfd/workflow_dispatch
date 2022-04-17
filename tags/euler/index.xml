@@ -12,8 +12,7 @@
   
   
   
->互质
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 的数的个数</strong></em></h3>
+>互质<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 的数的个数</strong></em></h3>
 <p>通式：φ(x)=x(1-1/p1)(1-1/p2)(1-1/p3)(1-1/p4)…..(1-1/pn)<br>
 <strong>其中 p1, p2……pn 为 x 的所有质因数，x 是不为 0 的整数</strong><br>
 φ(1)=1（唯一和 1 互质的数就是 1 本身）【注意：每种质因数只一个。比如 12=2<em>2</em>3】</p>
@@ -82,8 +81,7 @@
   
   
   
->以上转载注明
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>以上转载注明<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>//素数筛选法，先素数筛选，再求欧拉</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -193,8 +191,7 @@
   
   
   
->Bi-shoe and Phi-shoe
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> LightOJ - 1370</p>
+>Bi-shoe and Phi-shoe<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> LightOJ - 1370</p>
 <blockquote>
 <p>题意：<br>
 给一些数 Ai（第 i 个数），Ai 这些数代表的是某个数欧拉函数的值，我们要求出数 Ni 的欧拉函数值不小于 Ai。而我们要求的就是这些 Ni 这些数字的和 sum，而且我们想要 sum 最小，求出 sum 最小多少。</p>

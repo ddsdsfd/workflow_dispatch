@@ -416,8 +416,7 @@
   
   
   
->fancybox
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 是一個完善的 lightbox 插件<br>
+>fancybox<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 是一個完善的 lightbox 插件<br>
 jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.</p>
 <h2 id="quick-start">Quick start</h2>
 <ol>

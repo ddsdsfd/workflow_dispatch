@@ -76,8 +76,7 @@
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <h3 id="题目大意">题目大意</h3>
 <p>就是给定两个字符串，第一个字符串由&quot;+&quot;,&quot;-&ldquo;组成，第二个字符串由&rdquo;+&quot;,&quot;-&quot;,&quot;?&ldquo;组成，“+”代表加 1，&rdquo;-&ldquo;代表减一，“?&ldquo;代表可取正也可取负，问第二个字符串的位置和第一个字符串相等的概率是多少。</p>
 <p>我一开始的想法是把（+1，-1）^n 看成和二项式定理一样的展开始式，只不过把乘法改为加法，然后得到公式<br>
@@ -299,8 +298,7 @@
   
   
   
->A. The Rank
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>A. The Rank<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <p>题目大意：<br>
 给出 n 个学生的成绩，Thomas Smith 的成绩是第一行，然后要按总成绩进行排序，总分相同的按编号从小到大排；<br>
 开始看还以为要写 sort 的 cmp 函数进行多条件排序，敲完才发现其实只要按总分就可以了，因为托马斯的 id 是一，必然会排在前面。</p>
@@ -376,8 +374,7 @@
   
   
   
->B. The Bits
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>B. The Bits<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <p>题目大意：<br>
 先给出二进制数的长度，然后输入两个二进制数 a,b，问交换 a 中的某些位数的数，使得 a|b（按位或）的结果不同，求有多少种不同的或值。</p>
 <table>

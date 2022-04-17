@@ -228,8 +228,7 @@
   
   
   
->完整代码
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>完整代码<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1108,8 +1107,7 @@
   
   
   
->切片操作
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>切片操作<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <p>列表切片操作</p>
 <h2 id="字符串">字符串</h2>
 <h3 id="python-原始字符串">python 原始字符串</h3>
@@ -1408,8 +1406,7 @@
   
   
   
->wxPython
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>wxPython<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1544,8 +1541,7 @@
   
   
   
->下载 whl 文件
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>下载 whl 文件<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2670,8 +2666,7 @@
   
   
   
->阅读原文
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>阅读原文<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="准备工作">准备工作</h1>
 <ol>
@@ -2691,8 +2686,7 @@
   
   
   
->ImgURL 2.x
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 上传到站点根目录并解压</li>
+>ImgURL 2.x<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 上传到站点根目录并解压</li>
 </ol>
 <h1 id="设置伪静态">设置伪静态</h1>
 <p>如果您宝塔面板安装的 Apache 则不需要再设置伪静态，直接跳过这个步骤，如果使用的 Nginx 环境，请继续往下看。</p>
@@ -2745,8 +2739,7 @@
   
   
   
->3T 官方社区
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 进行反馈</li>
+>3T 官方社区<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 进行反馈</li>
 <li>ImgURL 更多使用说明请参考帮助文档：<a
   href="https://dwz.ovh/imgurldoc"
   
@@ -2761,8 +2754,7 @@
   
   
   
->https://dwz.ovh/imgurldoc
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>https://dwz.ovh/imgurldoc<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>]]></description></item><item><title>python 实战：模拟 post 请求定时获取后台数据并打包发送至微信</title><link>https://lruihao.cn/posts/mx2wx/</link><pubDate>Sat, 11 May 2019 17:02:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/mx2wx/</guid><description><![CDATA[<blockquote>
 <p>用 python 模拟 post 请求获取“麻小科技”示例酒店后台的数据，再打包发送至指定的微信群或者好友。<br>
 要求每天早上 8 点定时把每个酒店的数据发送至每个酒店的微信工作群。</p>
@@ -3011,8 +3003,7 @@
   
   
   
->https://pypi.org/project/PyInstaller/#files
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://pypi.org/project/PyInstaller/#files<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h1 id="解压">解压</h1>
 <p>我这里解压到<code>E:\应用、Python37\Lib\site-packages\PyInstaller-3.4</code></p>
 <h1 id="安装">安装</h1>
@@ -3286,8 +3277,7 @@
   
   
   
->阅读原文
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>阅读原文<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="json-的数据格式">json 的数据格式</h1>
 <p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>
@@ -3996,8 +3986,7 @@
   
   
   
->sylnsfar/qrcode
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a
+>sylnsfar/qrcode<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>，本文主要介绍记录一下 python 版本使用。exe 可以去 <a
   href="https://github.com/sylnsfar/qrcode_win"
   
   
@@ -4011,8 +4000,7 @@
   
   
   
->项目开源地址
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
+>项目开源地址<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 下载，公众号文章后台回复关键词“qrcode”获取链接。</p>
 </blockquote>
 <p>可生成<em>普通二维码</em>、<em>带图片的艺术二维码（黑白与彩色）</em>、<em>动态二维码（黑白与彩色）</em>。</p>
 <h2 id="示例">示例</h2>
@@ -4113,8 +4101,7 @@
   
   
   
-><strong>MyQR</strong>
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
+><strong>MyQR</strong><i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> ，以下内容请使用<code>python(3) myqr.py</code> 而非<code>myqr</code> 。）</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -4359,8 +4346,7 @@
   
   
   
->pillow
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>pillow<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://pypi.python.org/pypi/numpy"
   
@@ -4375,8 +4361,7 @@
   
   
   
->numpy
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>numpy<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://pypi.python.org/pypi/imageio"
   
@@ -4391,8 +4376,7 @@
   
   
   
->imageio
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>imageio<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h2 id="运行环境">运行环境</h2>
 <ul>

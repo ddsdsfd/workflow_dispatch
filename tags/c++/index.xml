@@ -76,8 +76,7 @@
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <p>Dreamoon wants to climb up a stair of n steps. He can climb 1 or 2 steps at each move. Dreamoon wants the number of moves to be a multiple of an integer m.</p>
 <p>What is the minimal number of moves making him climb to the top of the stairs that satisfies his condition?</p>
 <h3 id="input">Input</h3>
@@ -173,8 +172,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <h3 id="题目大意">题目大意</h3>
 <p>就是给定两个字符串，第一个字符串由&quot;+&quot;,&quot;-&ldquo;组成，第二个字符串由&rdquo;+&quot;,&quot;-&quot;,&quot;?&ldquo;组成，“+”代表加 1，&rdquo;-&ldquo;代表减一，“?&ldquo;代表可取正也可取负，问第二个字符串的位置和第一个字符串相等的概率是多少。</p>
 <p>我一开始的想法是把（+1，-1）^n 看成和二项式定理一样的展开始式，只不过把乘法改为加法，然后得到公式<br>
@@ -396,8 +394,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->转载注明，侵删
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>转载注明，侵删<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <h3 id="题意">题意：</h3>
 <p>给出 a,b,c,x1,x2,y1,y2，求满足 ax+by+c=0，且 x∈[x1,x2],y∈[y1,y2] 的整数解个数。</p>
 <h3 id="分析">分析：</h3>
@@ -775,8 +772,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->A. The Rank
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>A. The Rank<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <p>题目大意：<br>
 给出 n 个学生的成绩，Thomas Smith 的成绩是第一行，然后要按总成绩进行排序，总分相同的按编号从小到大排；<br>
 开始看还以为要写 sort 的 cmp 函数进行多条件排序，敲完才发现其实只要按总分就可以了，因为托马斯的 id 是一，必然会排在前面。</p>
@@ -852,8 +848,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->B. The Bits
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>B. The Bits<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <p>题目大意：<br>
 先给出二进制数的长度，然后输入两个二进制数 a,b，问交换 a 中的某些位数的数，使得 a|b（按位或）的结果不同，求有多少种不同的或值。</p>
 <table>
@@ -948,8 +943,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->http://poj.org/problem?id=1797
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>)<br>
+>http://poj.org/problem?id=1797<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>)<br>
 大意：<br>
 要从城市 1 到城市 N 运送货物，有 M 条道路，每条道路都有它的最大载重量，问从城市 1 到城市 N 运送最多的重量是多少。<br>
 其实题意很简单，就是找一条 1&ndash;&gt;N 的路径，在不超过每条路径的最大载重量的情况下，使得运送的货物最多。一条路径上的最大载重量为这个路径上权值最小的边；
@@ -1070,8 +1064,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>题目大意：<br>
 说的是，一只奶牛位于 N 号节点，输入 N 个节点和 T 对双向的边，求出由 N 到 1 的最短的距离，其实就是问的单源最短路问题。</p>
 <p>两个点可能有多条路，选择最短的。</p>
@@ -1203,8 +1196,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->题目链接 密码：l9sn
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>题目链接 密码：l9sn<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 终于不爆零了，但是还是 wa 了无数次，有时候代码感觉都差不多</p>
 <h2 id="g-max">G-max</h2>
 <div class="highlight"><div class="chroma">
@@ -1348,8 +1340,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 <a
   href="https://blog.csdn.net/freezhanacmore/article/details/8767413"
   
@@ -1364,8 +1355,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->思路参考 1
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>,<a
+>思路参考 1<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>,<a
   href="https://blog.csdn.net/niushuai666/article/details/6981689"
   
   
@@ -1379,8 +1369,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->思路参考 2
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（没看懂）</p>
+>思路参考 2<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>（没看懂）</p>
 <p><del>先占坑，有时间再理理思路。</del></p>
 <blockquote>
 <p>同一棵树中</p>
@@ -1536,8 +1525,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->小希的迷宫
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>小希的迷宫<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="并查集">并查集：</h2>
 <ul>
 <li>无回路</li>
@@ -1738,8 +1726,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->How Many Answers Are Wrong
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>How Many Answers Are Wrong<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 思路参考：<a
   href="https://blog.csdn.net/duan_1998/article/details/70196576"
   
@@ -1754,8 +1741,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->本题直接参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>,<a
+>本题直接参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>,<a
   href="https://blog.csdn.net/dextrad_ihacker/article/details/51016017"
   
   
@@ -1769,8 +1755,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->图文解释
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>图文解释<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1881,8 +1866,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->Bear and Finding Criminals
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Bear and Finding Criminals<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>大致题意就是小熊警察住在某个城市，他要抓各个城市的罪犯，现在用一个 BCD 可以知道那个城市里<strong>一定</strong>有罪犯。</p>
 <p>一定能确定该城市有小偷的几种情况：</p>
 <ol>
@@ -1978,8 +1962,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->Bear and Five Cards
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Bear and Five Cards<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>大致题意就是小熊有 5 张卡片，每张卡片有对应的分数，他可以选择丢弃 2 张相同的或者 3 张相同的卡片，没有相同的就无法丢弃，问小熊剩下的分数最少是多少。</p>
 <p>没有想得那么复杂，由于分数最大才 100，所以直接暴力就好了。</p>
 <div class="highlight"><div class="chroma">
@@ -2045,8 +2028,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->how many tables
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>how many tables<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2145,8 +2127,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->The-suspects
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>The-suspects<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>警察抓贩毒集团。有不同类型的犯罪集团，人员可能重复，集团内的人会相互接触。现在警察在其中一人（0 号）身上搜出毒品，认为与这个人直接接触或通过其他人有间接接触的人都是嫌疑犯。问包括 0 号犯人共有多少嫌疑犯？</p>
 <h3 id="input">Input</h3>
@@ -2283,8 +2264,7 @@ n = 0 且 m = 0 时输入结束。</p>
   
   
   
->wireless network
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>wireless network<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>南亚发生了一次地震。ACM (Asia Cooperated Medical 亚洲联合医疗队） 已经为膝上型电脑搭建了一个无线网络，但受到了一次不可预知的余震攻击，因此网络中的所有电脑都被破坏了。电脑被逐台修复，网络逐步恢复了工作。由于受到硬件的约束，每台电脑只能与距离它不超过 d 米的其它电脑直接通信。但每台电脑可被看作其它两台电脑的通信中转点，也就是说，如果电脑 A 和电脑 B 可以直接通信，或存在一台电脑 C 既可与 A 也可与 B 通信，那么电脑 A 和电脑 B 之间就能够通信。</p>
 <p>在处理网络修复的过程中，工作人员们在任何一个时刻，可以执行两种操作：维修一台电脑，或测试两台电脑是否能够通信。请您找出全部的测试操作。</p>
@@ -2462,8 +2442,7 @@ SUCCESS
   
   
   
->Piles With Stones
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Piles With Stones<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>大致题意就是有 n 堆石头，第一天每堆有一定数目的石头，第二天石头可能被小朋友移动或者带走，求满足题意的两天的石碓；<br>
 所以第二天的石头总数不会大于第一天的，所以是 sum1-sum2&gt;=0 即可。<br>
 //又只打了一道题，扣了 80 多分。</p>
@@ -2527,8 +2506,7 @@ SUCCESS
   
   
   
->超有爱的并查集~
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>超有爱的并查集~<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题目链接畅通工程httpacmhdueducnshowproblemphppid1232">题目链接：<a
   href="http://acm.hdu.edu.cn/showproblem.php?pid=1232"
   
@@ -2543,8 +2521,7 @@ SUCCESS
   
   
   
->畅通工程
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>畅通工程<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题意分析">题意分析：</h4>
 <p>首先在地图上给你若干个城镇，这些城镇都可以看作点，然后告诉你哪些对城镇之间是有道路直接相连的。最后要解决的是整幅图的连通性问题。比如随意给你两个点，让你判断它们是否连通，或者问你整幅图一共有几个连通分支，也就是被分成了几个互相独立的块。像畅通工程这题，问还需要修几条路，实质就是求有几个连通分支。</p>
 <div class="highlight"><div class="chroma">
@@ -2715,8 +2692,7 @@ SUCCESS
   
   
   
->托米的赌球
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>托米的赌球<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="托米的划分httpswwwnowcodercomacmcontest156b"><a
   href="https://www.nowcoder.com/acm/contest/156/B"
   
@@ -2731,8 +2707,7 @@ SUCCESS
   
   
   
->托米的划分
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>托米的划分<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="a">a</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2864,8 +2839,7 @@ SUCCESS
   
   
   
->非常可乐
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>非常可乐<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>大家一定觉的运动以后喝可乐是一件很惬意的事情，但是 seeyou 却不这么认为。因为每次当 seeyou 买了可乐以后，阿牛就要求和 seeyou 一起分享这一瓶可乐，而且一定要喝的和 seeyou 一样多。但 seeyou 的手中只有两个杯子，它们的容量分别是 N 毫升和 M 毫升 可乐的体积为 S （S&lt;101）毫升　（正好装满一瓶） ，它们三个之间可以相互倒可乐 （都是没有刻度的，且 S==N+M，101＞S＞0，N＞0，M＞0) 。聪明的 ACMER 你们说他们能平分吗？如果能请输出倒可乐的最少的次数，如果不能输出&quot;NO&quot;。</p>
 <h3 id="input">Input</h3>
 <p>三个整数 : S 可乐的体积 , N 和 M 是两个杯子的容量，以&quot;0 0 0&quot;结束。</p>
@@ -3164,8 +3138,7 @@ SUCCESS
   
   
   
->数论推导
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>数论推导<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

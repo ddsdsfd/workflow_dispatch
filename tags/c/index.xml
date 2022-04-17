@@ -142,9 +142,18 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="测试">测试</h1>
-<p><br>
-<br>
-</p>]]></description></item><item><title>最大公约数（二进制算法）</title><link>https://lruihao.cn/posts/gcd-bit/</link><pubDate>Fri, 17 May 2019 09:14:16 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gcd-bit/</guid><description><![CDATA[<blockquote>
+<p><figure><a class="lightgallery" href="/posts/judgetriangle/images/1.png" title="测试 1" data-thumbnail="/posts/judgetriangle/images/1.png" data-sub-html="<h2>测试 1</h2><p>测试 1</p>">
+    
+  </a><figcaption class="image-caption">测试 1</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/judgetriangle/images/2.png" title="测试 2" data-thumbnail="/posts/judgetriangle/images/2.png" data-sub-html="<h2>测试 2</h2><p>测试 2</p>">
+    
+  </a><figcaption class="image-caption">测试 2</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/judgetriangle/images/3.png" title="测试 3" data-thumbnail="/posts/judgetriangle/images/3.png" data-sub-html="<h2>测试 3</h2><p>测试 3</p>">
+    
+  </a><figcaption class="image-caption">测试 3</figcaption>
+  </figure></p>]]></description></item><item><title>最大公约数（二进制算法）</title><link>https://lruihao.cn/posts/gcd-bit/</link><pubDate>Fri, 17 May 2019 09:14:16 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gcd-bit/</guid><description><![CDATA[<blockquote>
 <p>二进制最大公约数算法避免了欧几里得算法（辗转相除法）的大量取模操作，有效减少了时间消耗，且更为方便。</p>
 </blockquote>
 <h1 id="原理">原理</h1>
@@ -566,8 +575,7 @@ m 奇 n 奇时，gcd(m, n)=gcd(n, m-n)</p>
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <p>Dreamoon wants to climb up a stair of n steps. He can climb 1 or 2 steps at each move. Dreamoon wants the number of moves to be a multiple of an integer m.</p>
 <p>What is the minimal number of moves making him climb to the top of the stairs that satisfies his condition?</p>
 <h3 id="input">Input</h3>
@@ -663,8 +671,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <h3 id="题目大意">题目大意</h3>
 <p>就是给定两个字符串，第一个字符串由&quot;+&quot;,&quot;-&ldquo;组成，第二个字符串由&rdquo;+&quot;,&quot;-&quot;,&quot;?&ldquo;组成，“+”代表加 1，&rdquo;-&ldquo;代表减一，“?&ldquo;代表可取正也可取负，问第二个字符串的位置和第一个字符串相等的概率是多少。</p>
 <p>我一开始的想法是把（+1，-1）^n 看成和二项式定理一样的展开始式，只不过把乘法改为加法，然后得到公式<br>
@@ -886,8 +893,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->转载注明，侵删
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>转载注明，侵删<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <h3 id="题意">题意：</h3>
 <p>给出 a,b,c,x1,x2,y1,y2，求满足 ax+by+c=0，且 x∈[x1,x2],y∈[y1,y2] 的整数解个数。</p>
 <h3 id="分析">分析：</h3>
@@ -1265,8 +1271,7 @@ For the second sample, there are only three valid sequence of steps {2, 1}, {1, 
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <h3 id="题目大意">题目大意：</h3>
 <p>给定两个数 n,k 求 n^k 的前三位和最后三位。</p>
 <h3 id="分析">分析</h3>
@@ -1413,8 +1418,7 @@ C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
   
   
   
->互质
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 的数的个数</strong></em></h3>
+>互质<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 的数的个数</strong></em></h3>
 <p>通式：φ(x)=x(1-1/p1)(1-1/p2)(1-1/p3)(1-1/p4)…..(1-1/pn)<br>
 <strong>其中 p1, p2……pn 为 x 的所有质因数，x 是不为 0 的整数</strong><br>
 φ(1)=1（唯一和 1 互质的数就是 1 本身）【注意：每种质因数只一个。比如 12=2<em>2</em>3】</p>
@@ -1483,8 +1487,7 @@ C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
   
   
   
->以上转载注明
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>以上转载注明<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>//素数筛选法，先素数筛选，再求欧拉</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1594,8 +1597,7 @@ C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
   
   
   
->Bi-shoe and Phi-shoe
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> LightOJ - 1370</p>
+>Bi-shoe and Phi-shoe<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> LightOJ - 1370</p>
 <blockquote>
 <p>题意：<br>
 给一些数 Ai（第 i 个数），Ai 这些数代表的是某个数欧拉函数的值，我们要求出数 Ni 的欧拉函数值不小于 Ai。而我们要求的就是这些 Ni 这些数字的和 sum，而且我们想要 sum 最小，求出 sum 最小多少。</p>
@@ -1723,8 +1725,7 @@ C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>题目大意：<br>
 说的是，一只奶牛位于 N 号节点，输入 N 个节点和 T 对双向的边，求出由 N 到 1 的最短的距离，其实就是问的单源最短路问题。</p>
 <p>两个点可能有多条路，选择最短的。</p>
@@ -1856,8 +1857,7 @@ C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 <a
   href="https://blog.csdn.net/freezhanacmore/article/details/8767413"
   
@@ -1872,8 +1872,7 @@ C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
   
   
   
->思路参考 1
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>,<a
+>思路参考 1<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>,<a
   href="https://blog.csdn.net/niushuai666/article/details/6981689"
   
   
@@ -1887,8 +1886,7 @@ C 库函数 double fmod(double x, double y) 返回 x 除以 y 的余数。</p>
   
   
   
->思路参考 2
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（没看懂）</p>
+>思路参考 2<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>（没看懂）</p>
 <p><del>先占坑，有时间再理理思路。</del></p>
 <blockquote>
 <p>同一棵树中</p>
@@ -2044,8 +2042,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->小希的迷宫
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>小希的迷宫<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="并查集">并查集：</h2>
 <ul>
 <li>无回路</li>
@@ -2246,8 +2243,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->The-suspects
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>The-suspects<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>警察抓贩毒集团。有不同类型的犯罪集团，人员可能重复，集团内的人会相互接触。现在警察在其中一人（0 号）身上搜出毒品，认为与这个人直接接触或通过其他人有间接接触的人都是嫌疑犯。问包括 0 号犯人共有多少嫌疑犯？</p>
 <h3 id="input">Input</h3>
@@ -2384,8 +2380,7 @@ n = 0 且 m = 0 时输入结束。</p>
   
   
   
->wireless network
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>wireless network<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>南亚发生了一次地震。ACM (Asia Cooperated Medical 亚洲联合医疗队） 已经为膝上型电脑搭建了一个无线网络，但受到了一次不可预知的余震攻击，因此网络中的所有电脑都被破坏了。电脑被逐台修复，网络逐步恢复了工作。由于受到硬件的约束，每台电脑只能与距离它不超过 d 米的其它电脑直接通信。但每台电脑可被看作其它两台电脑的通信中转点，也就是说，如果电脑 A 和电脑 B 可以直接通信，或存在一台电脑 C 既可与 A 也可与 B 通信，那么电脑 A 和电脑 B 之间就能够通信。</p>
 <p>在处理网络修复的过程中，工作人员们在任何一个时刻，可以执行两种操作：维修一台电脑，或测试两台电脑是否能够通信。请您找出全部的测试操作。</p>
@@ -2562,8 +2557,7 @@ SUCCESS
   
   
   
->超有爱的并查集~
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>超有爱的并查集~<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题目链接畅通工程httpacmhdueducnshowproblemphppid1232">题目链接：<a
   href="http://acm.hdu.edu.cn/showproblem.php?pid=1232"
   
@@ -2578,8 +2572,7 @@ SUCCESS
   
   
   
->畅通工程
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>畅通工程<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题意分析">题意分析：</h4>
 <p>首先在地图上给你若干个城镇，这些城镇都可以看作点，然后告诉你哪些对城镇之间是有道路直接相连的。最后要解决的是整幅图的连通性问题。比如随意给你两个点，让你判断它们是否连通，或者问你整幅图一共有几个连通分支，也就是被分成了几个互相独立的块。像畅通工程这题，问还需要修几条路，实质就是求有几个连通分支。</p>
 <div class="highlight"><div class="chroma">
@@ -2750,8 +2743,7 @@ SUCCESS
   
   
   
->托米的赌球
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>托米的赌球<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="托米的划分httpswwwnowcodercomacmcontest156b"><a
   href="https://www.nowcoder.com/acm/contest/156/B"
   
@@ -2766,8 +2758,7 @@ SUCCESS
   
   
   
->托米的划分
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>托米的划分<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="a">a</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2899,8 +2890,7 @@ SUCCESS
   
   
   
->英文原题链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>英文原题链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h3 id="description---题目描述">Description - 题目描述</h3>
 <p>你被困在一个三维的空间中，现在要寻找最短路径逃生！<br>
 空间由立方体单位构成<br>
@@ -3154,8 +3144,7 @@ Trapped!
   
   
   
->迷宫问题
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>迷宫问题<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <p>Time Limit: 1000MS		Memory Limit: 65536K<br>
 Total Submissions: 32323		Accepted: 18471</p>
 <h3 id="description">Description</h3>

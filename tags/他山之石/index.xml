@@ -13,8 +13,7 @@
   
   
   
->转自、--入冬
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>转自、--入冬<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 补充 tab 转 space 设置</p>
 </blockquote>
 <h1 id="tab-转-space">tab 转 space</h1>
@@ -173,8 +172,7 @@
   
   
   
->阅读原文
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>阅读原文<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="json-的数据格式">json 的数据格式</h1>
 <p>在 json 中，遵循“键值对”的这样一种方式，比如：“{&ldquo;name&rdquo;:&ldquo;tom&rdquo;}”, 就是一个 json 格式的数据，json 的格式归纳下来，一般有以下几点：</p>
@@ -237,8 +235,7 @@
   
   
   
->wxpy
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>wxpy<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://github.com/pyecharts/pyecharts"
   
@@ -253,8 +250,7 @@
   
   
   
->pyecharts
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（百度 echarts）</li>
+>pyecharts<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>（百度 echarts）</li>
 </ul>
 <h1 id="查看微信好友男女比例">查看微信好友男女比例</h1>
 <div class="highlight"><div class="chroma">
@@ -403,8 +399,7 @@
   
   
   
->陈思煜
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>陈思煜<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 </blockquote>
 <h1 id="统计所有群男女数目">统计所有群男女数目</h1>
 <blockquote>
@@ -562,8 +557,7 @@
   
   
   
->https://www.cnblogs.com/coober/p/6594379.html
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://www.cnblogs.com/coober/p/6594379.html<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <p>前端开发经常遇到需要判断用户的浏览设备，是 pc 端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone 等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>
 <h3 id="首先判断-pc-端还是移动端">首先判断 pc 端还是移动端</h3>
@@ -662,8 +656,7 @@
   
   
   
->demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -834,8 +827,7 @@
   
   
   
->传送门
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>传送门<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 在 WEB 开发中，时常会用到 javascript 来获取当前页面的 url 网址信息，在这里是我的一些获取 url 信息的小总结。</p>
 <p>下面我们举例一个 URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
 <h4 id="windowlocationhref设置或获取整个-url-为字符串">window.location.href（设置或获取整个 URL 为字符串）</h4>
@@ -1107,8 +1099,7 @@
   
   
   
->转载注明，侵删
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>转载注明，侵删<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <h3 id="题意">题意：</h3>
 <p>给出 a,b,c,x1,x2,y1,y2，求满足 ax+by+c=0，且 x∈[x1,x2],y∈[y1,y2] 的整数解个数。</p>
 <h3 id="分析">分析：</h3>

@@ -20,8 +20,7 @@
   
   
   
->https://github.com/zhblue/hustoj
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>https://github.com/zhblue/hustoj<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 <strong>安装时注意 ubuntu 版本</strong>，没条件的可以在自己 ubuntu 上尝试，或者虚拟机上（关注公众号回复<code>ubuntu16.04</code>获取 iso 镜像文件），也可以在云实验室的云服务器上做做实验。<br>
 更多说明及 ACM/NOIP 题库下载见官网博客 <a
   href="http://www.hustoj.com/"
@@ -37,8 +36,7 @@
   
   
   
->代码的那些事|程序员回忆录
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>代码的那些事|程序员回忆录<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="快速安装-oj">快速安装 OJ</h1>
 <p>下载</p>
@@ -141,8 +139,7 @@
   
   
   
->宝塔官网介绍
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>宝塔官网介绍<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h1 id="系统要求">系统要求</h1>
 <blockquote>
 <p>操作系统：全新系统（支持 CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>
@@ -472,8 +469,7 @@
   
   
   
->在 Android 上搭建 hexo 博客
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
+>在 Android 上搭建 hexo 博客<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>
 <strong>本文当初摘要自 <a
   href="https://www.sqlsec.com/2018/05/termux.html?yyue=a21bo.50862.201879"
   
@@ -488,8 +484,7 @@
   
   
   
->国光个人博客
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong>
+>国光个人博客<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong>
 如若作者博客 IP 被墙，可前往国光第三方博客诸如 csdn 等。<a
   href="https://www.freebuf.com/geek/170510.html"
   
@@ -504,8 +499,7 @@
   
   
   
->备用
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>备用<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h3 id="初始化">初始化</h3>
 <p>下载并初始化 termux</p>
@@ -607,8 +601,7 @@
   
   
   
->Termux-ohmyzsh
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Termux-ohmyzsh<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>作用 ： 美化之外，主要使用了 zsh 来替代 bash 作为默认 shell。使用一键安装脚本来安装，一步到位，顺便启动了外置存储，可以直接访问 SD 卡下的目录，创建软文件夹。</p>
 <h4 id="使用">使用</h4>
 <div class="highlight"><div class="chroma">
@@ -782,8 +775,7 @@
   
   
   
->https://lruihao.github.io
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
+>https://lruihao.github.io<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>
 <a
   href="https://liruihao.coding.me"
   
@@ -798,8 +790,7 @@
   
   
   
->https://liruihao.coding.me
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
+>https://liruihao.coding.me<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>
 <a
   href="https://lruihao.gitee.io"
   
@@ -814,8 +805,7 @@
   
   
   
->https://lruihao.gitee.io
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <strong>//手机 hexo 效果展示</strong></p>
+>https://lruihao.gitee.io<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> <strong>//手机 hexo 效果展示</strong></p>
 <h3 id="ssh-连接电脑或者服务器">ssh 连接电脑或者服务器</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1131,6 +1121,5 @@ Q: quit , 退出</p>
   
   
   
->termux-ohmyzsh
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>termux-ohmyzsh<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 ]]></description></item></channel></rss>

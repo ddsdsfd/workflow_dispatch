@@ -15,8 +15,7 @@
   
   
   
->Cell Blog
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>, 也是我的毕业设计作品，目前已開源。</p>
+>Cell Blog<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>, 也是我的毕业设计作品，目前已開源。</p>
 </blockquote>
 <h1 id="功能">功能</h1>
 <ul>
@@ -47,8 +46,7 @@
   
   
   
->COS 桶相册
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>COS 桶相册<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li>丰富的博客配置（方便扩展，支持自定义 JS 脚本）</li>
 <li>不蒜子计数</li>
 <li>Leancloud 计数</li>
@@ -225,8 +223,7 @@
   
   
   
->项目地址
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>项目地址<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="搭建-php-环境">搭建 php 环境</h1>
 <ol>
@@ -361,8 +358,7 @@
   
   
   
->https://github.com/z-song/laravel-admin/issues/1541
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>https://github.com/z-song/laravel-admin/issues/1541<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -620,8 +616,7 @@
   
   
   
->editormd
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
+>editormd<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>
 <a
   href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3"
   
@@ -636,8 +631,7 @@
   
   
   
->github 图像问题
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>github 图像问题<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -682,8 +676,7 @@
   
   
   
->参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -725,8 +718,7 @@
   
   
   
->https://www.zhiqiexing.com/119.html
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
+>https://www.zhiqiexing.com/119.html<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>
 <a
   href="https://github.com/GrahamCampbell/Laravel-Markdown"
   
@@ -741,8 +733,7 @@
   
   
   
->Laravel Markdown 安装
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Laravel Markdown 安装<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -794,8 +785,7 @@
   
   
   
->添加验证码
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>添加验证码<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -879,8 +869,7 @@
   
   
   
->https://github.com/laravel-admin-extensions/grid-lightbox
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://github.com/laravel-admin-extensions/grid-lightbox<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1076,8 +1065,7 @@
   
   
   
->官方下載點
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>官方下載點<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h1 id="擴充功能">擴充功能</h1>
 <h2 id="安裝擴充功能">安裝擴充功能</h2>
 <ol>
@@ -1097,8 +1085,7 @@
   
   
   
->官方套件庫
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>官方套件庫<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li>或者在 NetBeans IDE 裏面下載插件（方便）</li>
 </ul>
 </li>
@@ -1304,8 +1291,7 @@
   
   
   
->chrome 應用程式商店
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>chrome 應用程式商店<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 NetBeans 圖標。</li>
 <li>開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector</li>
 <li>選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可</li>
@@ -2219,8 +2205,7 @@ Ctrl+F 查找 <code>localhost</code><br>
   
   
   
->原项目
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 由 <a
+>原项目<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 由 <a
   href="https://www.ilt.me"
   
   
@@ -2234,8 +2219,7 @@ Ctrl+F 查找 <code>localhost</code><br>
   
   
   
->IT 技术宅
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 开源，使用 thinkPHP 开发后台。 <a
+>IT 技术宅<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 开源，使用 thinkPHP 开发后台。 <a
   href="https://github.com/Lruihao/zhai-music"
   
   
@@ -2249,8 +2233,7 @@ Ctrl+F 查找 <code>localhost</code><br>
   
   
   
->fork 地址
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 是我个人学习模仿的库，也是相当于备份源码。<br>
+>fork 地址<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 是我个人学习模仿的库，也是相当于备份源码。<br>
 <em>注： 插件修改于明月浩空免费版，仅用于学习交流，无商业价值，如发现商业传播，将禁止软件的免费使用。</em></p>
 </blockquote>
 <h2 id="技术栈">技术栈</h2>
@@ -2288,8 +2271,7 @@ Ctrl+F 查找 <code>localhost</code><br>
   
   
   
->https://player.ilt.me/
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>https://player.ilt.me/<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://player.lruihao.cn/"
   
@@ -2304,8 +2286,7 @@ Ctrl+F 查找 <code>localhost</code><br>
   
   
   
->https://player.lruihao.cn/
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>https://player.lruihao.cn/<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h2 id="安装">安装</h2>
 <h3 id="视频安装教程">视频安装教程</h3>
@@ -2323,8 +2304,7 @@ Ctrl+F 查找 <code>localhost</code><br>
   
   
   
->https://www.bilibili.com/video/av46476706
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://www.bilibili.com/video/av46476706<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h3 id="依赖">依赖</h3>
 <ul>
 <li>composer</li>

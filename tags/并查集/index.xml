@@ -12,8 +12,7 @@
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 <a
   href="https://blog.csdn.net/freezhanacmore/article/details/8767413"
   
@@ -28,8 +27,7 @@
   
   
   
->思路参考 1
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>,<a
+>思路参考 1<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>,<a
   href="https://blog.csdn.net/niushuai666/article/details/6981689"
   
   
@@ -43,8 +41,7 @@
   
   
   
->思路参考 2
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（没看懂）</p>
+>思路参考 2<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>（没看懂）</p>
 <p><del>先占坑，有时间再理理思路。</del></p>
 <blockquote>
 <p>同一棵树中</p>
@@ -200,8 +197,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->小希的迷宫
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>小希的迷宫<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="并查集">并查集：</h2>
 <ul>
 <li>无回路</li>
@@ -402,8 +398,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->How Many Answers Are Wrong
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>How Many Answers Are Wrong<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 思路参考：<a
   href="https://blog.csdn.net/duan_1998/article/details/70196576"
   
@@ -418,8 +413,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->本题直接参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>,<a
+>本题直接参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>,<a
   href="https://blog.csdn.net/dextrad_ihacker/article/details/51016017"
   
   
@@ -433,8 +427,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->图文解释
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>图文解释<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -546,8 +539,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->how many tables
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>how many tables<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -646,8 +638,7 @@ x 对 fx 的关系为 r[x]<br>
   
   
   
->The-suspects
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>The-suspects<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>警察抓贩毒集团。有不同类型的犯罪集团，人员可能重复，集团内的人会相互接触。现在警察在其中一人（0 号）身上搜出毒品，认为与这个人直接接触或通过其他人有间接接触的人都是嫌疑犯。问包括 0 号犯人共有多少嫌疑犯？</p>
 <h3 id="input">Input</h3>
@@ -784,8 +775,7 @@ n = 0 且 m = 0 时输入结束。</p>
   
   
   
->wireless network
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>wireless network<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="翻译">翻译：</h2>
 <p>南亚发生了一次地震。ACM (Asia Cooperated Medical 亚洲联合医疗队） 已经为膝上型电脑搭建了一个无线网络，但受到了一次不可预知的余震攻击，因此网络中的所有电脑都被破坏了。电脑被逐台修复，网络逐步恢复了工作。由于受到硬件的约束，每台电脑只能与距离它不超过 d 米的其它电脑直接通信。但每台电脑可被看作其它两台电脑的通信中转点，也就是说，如果电脑 A 和电脑 B 可以直接通信，或存在一台电脑 C 既可与 A 也可与 B 通信，那么电脑 A 和电脑 B 之间就能够通信。</p>
 <p>在处理网络修复的过程中，工作人员们在任何一个时刻，可以执行两种操作：维修一台电脑，或测试两台电脑是否能够通信。请您找出全部的测试操作。</p>
@@ -962,8 +952,7 @@ SUCCESS
   
   
   
->超有爱的并查集~
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>超有爱的并查集~<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题目链接畅通工程httpacmhdueducnshowproblemphppid1232">题目链接：<a
   href="http://acm.hdu.edu.cn/showproblem.php?pid=1232"
   
@@ -978,8 +967,7 @@ SUCCESS
   
   
   
->畅通工程
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>畅通工程<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题意分析">题意分析：</h4>
 <p>首先在地图上给你若干个城镇，这些城镇都可以看作点，然后告诉你哪些对城镇之间是有道路直接相连的。最后要解决的是整幅图的连通性问题。比如随意给你两个点，让你判断它们是否连通，或者问你整幅图一共有几个连通分支，也就是被分成了几个互相独立的块。像畅通工程这题，问还需要修几条路，实质就是求有几个连通分支。</p>
 <div class="highlight"><div class="chroma">

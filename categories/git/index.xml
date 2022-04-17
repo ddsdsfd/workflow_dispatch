@@ -229,8 +229,7 @@
   
   
   
->参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 ]]></description></item><item><title>Git 常用指令汇总</title><link>https://lruihao.cn/posts/git/</link><pubDate>Tue, 30 Oct 2018 08:59:56 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/git/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/git/images/relation-1.png" referrerpolicy="no-referrer">
       </div><ul>
@@ -314,8 +313,7 @@
   
   
   
->Commit Message
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 内容尽量规范！<br>
+>Commit Message<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 内容尽量规范！<br>
 当某一次提交后，突然想起漏提交了文件，或不小心提交了不满意的代码时，<br>
 可以使用<code>git commit --amend -m &quot;message&quot;</code>指令。它可以在不增加一个新的 commit-id 的情况下将新修改的代码追加到前一次的 commit-id 中。提交之后 message 也将被本次的 message 覆盖，所以还需要再次添加上次的 message。</div>
     </div>
@@ -727,8 +725,7 @@
   
   
   
->更多标签
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>更多标签<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h1 id="license">license</h1>
 <p></p>
@@ -748,8 +745,7 @@
   
   
   
->常用 Git 命令清单
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>常用 Git 命令清单<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://blog.csdn.net/qq1332479771/article/details/56087333"
   
@@ -764,8 +760,7 @@
   
   
   
->github 上 fork 了别人的项目后，再同步更新别人的提交
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>github 上 fork 了别人的项目后，再同步更新别人的提交<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://learngitbranching.js.org/"
   
@@ -780,8 +775,7 @@
   
   
   
->Gearn Git Branching
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>Gearn Git Branching<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>]]></description></item><item><title>使用 Git 上传代码到 github, coding 等仓库</title><link>https://lruihao.cn/posts/gituse/</link><pubDate>Fri, 26 Oct 2018 21:11:02 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/gituse/</guid><description><![CDATA[<h3 id="config">config</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -863,8 +857,7 @@
   
   
   
->Gearn Git Branching
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>Gearn Git Branching<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 ]]></description></item><item><title>linux/centos 下的安装 git</title><link>https://lruihao.cn/posts/linux-git/</link><pubDate>Sat, 22 Sep 2018 22:28:45 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linux-git/</guid><description><![CDATA[<h3 id="下载-git">下载 git</h3>
 <div class="highlight"><div class="chroma">

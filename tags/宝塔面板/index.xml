@@ -16,8 +16,7 @@
   
   
   
->阅读原文
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>阅读原文<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="准备工作">准备工作</h1>
 <ol>
@@ -37,8 +36,7 @@
   
   
   
->ImgURL 2.x
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 上传到站点根目录并解压</li>
+>ImgURL 2.x<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 上传到站点根目录并解压</li>
 </ol>
 <h1 id="设置伪静态">设置伪静态</h1>
 <p>如果您宝塔面板安装的 Apache 则不需要再设置伪静态，直接跳过这个步骤，如果使用的 Nginx 环境，请继续往下看。</p>
@@ -91,8 +89,7 @@
   
   
   
->3T 官方社区
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 进行反馈</li>
+>3T 官方社区<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 进行反馈</li>
 <li>ImgURL 更多使用说明请参考帮助文档：<a
   href="https://dwz.ovh/imgurldoc"
   
@@ -107,8 +104,7 @@
   
   
   
->https://dwz.ovh/imgurldoc
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>https://dwz.ovh/imgurldoc<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>]]></description></item><item><title>本地搭建网站服务器并穿透内网</title><link>https://lruihao.cn/posts/ngrok/</link><pubDate>Wed, 03 Apr 2019 19:29:43 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/ngrok/</guid><description><![CDATA[<blockquote>
 <p>一直都想在自己电脑上搭建一个网站或者把自己的电脑做成服务器，今天终于简单实现了。还有很多知识需要学习，简单记录一下。</p>
 </blockquote>
@@ -138,8 +134,7 @@
   
   
   
->宝塔官网介绍
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>宝塔官网介绍<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h1 id="系统要求">系统要求</h1>
 <blockquote>
 <p>操作系统：全新系统（支持 CentOS、Ubuntu、Debian、Fedora、Deepin)，<br>

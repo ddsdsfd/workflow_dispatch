@@ -13,8 +13,7 @@
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 老鼠有 M 磅猫食 , 有 N 个房间  , 每个房间前有一只猫  , 房间里有老鼠最喜欢的食品 J[i] , 若要得到房间的食物 , 必须付出相应的猫食 F[i]  , 当然这只老鼠没必要每次都付出所有的 F[i]，若它付出 F[i] 的 a%， 则得到 J[i] 的 a%，求老鼠能吃到的最多的食物。</p>
 <h2 id="sample-input">Sample Input</h2>
 <pre><code>5 3
@@ -135,8 +134,7 @@
   
   
   
->小希的迷宫
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>小希的迷宫<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <h2 id="并查集">并查集：</h2>
 <ul>
 <li>无回路</li>
@@ -337,8 +335,7 @@
   
   
   
->How Many Answers Are Wrong
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>How Many Answers Are Wrong<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 思路参考：<a
   href="https://blog.csdn.net/duan_1998/article/details/70196576"
   
@@ -353,8 +350,7 @@
   
   
   
->本题直接参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>,<a
+>本题直接参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>,<a
   href="https://blog.csdn.net/dextrad_ihacker/article/details/51016017"
   
   
@@ -368,8 +364,7 @@
   
   
   
->图文解释
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>图文解释<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -481,8 +476,7 @@
   
   
   
->how many tables
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>how many tables<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -581,8 +575,7 @@
   
   
   
->超有爱的并查集~
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>超有爱的并查集~<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题目链接畅通工程httpacmhdueducnshowproblemphppid1232">题目链接：<a
   href="http://acm.hdu.edu.cn/showproblem.php?pid=1232"
   
@@ -597,8 +590,7 @@
   
   
   
->畅通工程
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
+>畅通工程<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h4>
 <h4 id="题意分析">题意分析：</h4>
 <p>首先在地图上给你若干个城镇，这些城镇都可以看作点，然后告诉你哪些对城镇之间是有道路直接相连的。最后要解决的是整幅图的连通性问题。比如随意给你两个点，让你判断它们是否连通，或者问你整幅图一共有几个连通分支，也就是被分成了几个互相独立的块。像畅通工程这题，问还需要修几条路，实质就是求有几个连通分支。</p>
 <div class="highlight"><div class="chroma">
@@ -768,8 +760,7 @@
   
   
   
->非常可乐
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>非常可乐<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p>大家一定觉的运动以后喝可乐是一件很惬意的事情，但是 seeyou 却不这么认为。因为每次当 seeyou 买了可乐以后，阿牛就要求和 seeyou 一起分享这一瓶可乐，而且一定要喝的和 seeyou 一样多。但 seeyou 的手中只有两个杯子，它们的容量分别是 N 毫升和 M 毫升 可乐的体积为 S （S&lt;101）毫升　（正好装满一瓶） ，它们三个之间可以相互倒可乐 （都是没有刻度的，且 S==N+M，101＞S＞0，N＞0，M＞0) 。聪明的 ACMER 你们说他们能平分吗？如果能请输出倒可乐的最少的次数，如果不能输出&quot;NO&quot;。</p>
 <h3 id="input">Input</h3>
 <p>三个整数 : S 可乐的体积 , N 和 M 是两个杯子的容量，以&quot;0 0 0&quot;结束。</p>
@@ -1068,8 +1059,7 @@
   
   
   
->数论推导
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>数论推导<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1116,8 +1106,7 @@
   
   
   
->Find a way
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>Find a way<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <p>圣诞节要到了，坤神和瑞瑞这对基佬想一起去召唤师大峡谷开开车。百度地图一下，发现周围的召唤师大峡谷还不少，这对基佬纠结着，该去哪一个。坤神：我要去左边的这个（因为离自己比较近 哈哈~）。瑞瑞：我要去右边的这个（因为离自己比较近 嘿嘿~） &hellip;&hellip;.. 这对基佬闹矛盾了，开车有危险了！  为了不让他们去召唤师大峡谷坑人，riot 决定让他们去 X 召唤师大峡谷，保证他俩所走的路程和最短。每走一个点需要花费 11 分钟，输出他们一共花费多少时间（最短时间噢）</p>
 <h3 id="input">Input</h3>
 <p>多组测试数据</p>
@@ -1167,8 +1156,7 @@ Y..@.
   
   
   
->思路参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>思路参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <p><code>写代码总是好粗心！！</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1360,8 +1348,7 @@ Y..@.
   
   
   
->Oil Deposits
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>Oil Deposits<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <p><a
   href="https://vjudge.net/contest/238973#problem/L"
   
@@ -1376,8 +1363,7 @@ Y..@.
   
   
   
->翻译
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>翻译<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)<br>
 Total Submission(s): 41406    Accepted Submission(s): 23977</p>
 <h4 id="problem-description">Problem Description</h4>

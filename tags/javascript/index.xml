@@ -416,8 +416,7 @@
   
   
   
->fancybox
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 是一個完善的 lightbox 插件<br>
+>fancybox<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 是一個完善的 lightbox 插件<br>
 jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.</p>
 <h2 id="quick-start">Quick start</h2>
 <ol>
@@ -672,8 +671,7 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
   
   
   
->Lruihao
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Lruihao<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h3 id="methods">Methods</h3>
 <h4 id="uploadcontent">upload(content)</h4>
@@ -1227,8 +1225,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->伸手党
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>!</li>
+>伸手党<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>!</li>
 </ul>
 <h1 id="未实现">未实现</h1>
 <ul>
@@ -1417,8 +1414,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://www.jianshu.com/p/17dc82bf08f1"
   
@@ -1433,8 +1429,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->https://www.jianshu.com/p/17dc82bf08f1
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>https://www.jianshu.com/p/17dc82bf08f1<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
 <ul>
 <li>絕對不寫死程式</li>
@@ -1961,8 +1956,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->HTML+CSS
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>HTML+CSS<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 </blockquote>
 <h3 id="oblique-和-intalic-的区别">oblique 和 intalic 的区别</h3>
@@ -2005,8 +1999,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->A Complete Guide to Flexbox
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>A Complete Guide to Flexbox<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 </blockquote>
 <ul>
@@ -2024,8 +2017,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->Flex 布局教程：语法篇
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>Flex 布局教程：语法篇<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a
   href="http://static.vgee.cn/static/index.html"
@@ -2041,8 +2033,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->Demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 也写了。</p>
+>Demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 也写了。</p>
 <h2 id="javascript">javascript</h2>
 <h3 id="keydown-和-keypress">keydown 和 keypress</h3>
 <ul>
@@ -2065,8 +2056,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->详解键盘事件 (keydown，keypress，keyup)
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>详解键盘事件 (keydown，keypress，keyup)<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h3 id="textcontentinnertext-和-innerhtml-的区别">textContent、innerText 和 innerHTML 的区别</h3>
 <blockquote>
 <ol>
@@ -2254,8 +2244,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->QQ 推广
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <a
+>QQ 推广<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> <a
   href="https://qun.qq.com/join.html"
   
   
@@ -2269,8 +2258,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->QQ 群
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>QQ 群<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2311,8 +2299,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->github 介绍
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <a
+>github 介绍<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> <a
   href="https://www.bootcdn.cn/fancybox/"
   
   
@@ -2326,8 +2313,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->fancybox 源
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>fancybox 源<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2354,8 +2340,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->学习课件
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>学习课件<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 练习作业 <a
   href="https://github.com/Lruihao/hw"
   
@@ -2370,8 +2355,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->源码
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>+<a
+>源码<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>+<a
   href="http://hw.lruihao.cn/"
   
   
@@ -2385,8 +2369,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->Demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>]]></description></item><item><title>模仿知乎卡片式链接</title><link>https://lruihao.cn/posts/linkcard/</link><pubDate>Fri, 15 Mar 2019 15:21:39 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/linkcard/</guid><description><![CDATA[<blockquote>
 <p>模仿知乎的卡片式链接，idea 来自 [兰州小红鸡]</p>
 </blockquote>
@@ -2829,8 +2812,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->https://www.cnblogs.com/coober/p/6594379.html
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://www.cnblogs.com/coober/p/6594379.html<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <p>前端开发经常遇到需要判断用户的浏览设备，是 pc 端还是移动端，移动端使用的是什么手机系统？android、ios、ipad、windows phone 等等，有时候还需要知道用户浏览页面是在微信中打开还是在移动端浏览器中打开，等等一系列判断做一些相应的处理。</p>
 <h3 id="首先判断-pc-端还是移动端">首先判断 pc 端还是移动端</h3>
@@ -2929,8 +2911,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -3008,8 +2989,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->传送门
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>传送门<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 在 WEB 开发中，时常会用到 javascript 来获取当前页面的 url 网址信息，在这里是我的一些获取 url 信息的小总结。</p>
 <p>下面我们举例一个 URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
 <h4 id="windowlocationhref设置或获取整个-url-为字符串">window.location.href（设置或获取整个 URL 为字符串）</h4>
@@ -3487,8 +3467,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->传送门
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（关键词：js, 后加载）<br>
+>传送门<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>（关键词：js, 后加载）<br>
 但是嘞，该博写的不怎么详细，17 年底写的。当然更大的可能是 next 更新了一些文件结构，所以不适合现在使用了。以前我按原博的流程配置了一下没成功就搁在那里了，今天突然心血来潮。翻了翻原博主博客的源码，再与自己的对比了一下，发现了一些端倪。稍作调整后如下：</p>
 </blockquote>
 <h2 id="修改站点配置文件主要修改-subtitle">修改站点配置文件，主要修改 subtitle</h2>
@@ -3622,8 +3601,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
   
   
   
->今日诗词
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>今日诗词<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3656,8 +3634,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
   
   
   
->一言 api-参数详见
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 已经挂了</p>
+>一言 api-参数详见<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 已经挂了</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3696,8 +3673,7 @@ ps: <code>title</code>和<code>subtitle</code>的<code>字体</code>还有<code>
   
   
   
->在线图片转文字工具
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>在线图片转文字工具<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h2 id="用法">用法</h2>
 <p>用 js 在<code>&lt;body&gt;&lt;/body&gt;</code>使用 console.log() 就行了，hexo 的主题文件在<code>_layout.swig</code>里，所以我们打开该文件，在该位置，添加 js 就行了；</p>
@@ -3729,8 +3705,7 @@ Ctrl+H 替换<br>
   
   
   
->线上 demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>, 按 F12 找到 console</p>
+>线上 demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>, 按 F12 找到 console</p>
 <h2 id="我的-txt">我的 txt</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

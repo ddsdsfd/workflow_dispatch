@@ -47,8 +47,7 @@
   
   
   
->传送门
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>传送门<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 在 WEB 开发中，时常会用到 javascript 来获取当前页面的 url 网址信息，在这里是我的一些获取 url 信息的小总结。</p>
 <p>下面我们举例一个 URL，然后获得它的各个组成部分：<code>http://i.cnblogs.com/EditPosts.aspx?opt=1</code></p>
 <h4 id="windowlocationhref设置或获取整个-url-为字符串">window.location.href（设置或获取整个 URL 为字符串）</h4>

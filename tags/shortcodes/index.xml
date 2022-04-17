@@ -58,8 +58,7 @@
   
   
   
->完整提交記錄
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>完整提交記錄<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <pre><code>assets/css/custom.scss
 assets/css/partial/cardlink.scss          # 卡片式鏈接樣式
 layouts/partials/plugin/cardlink.html     # 卡片式鏈接模板
@@ -81,8 +80,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 擴展 Shortcodes - Link
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>FixIt 擴展 Shortcodes - Link<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -123,7 +121,6 @@ static/images/card-link-bg.jpg
   
   
   
->https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></div>
+>https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></div>
     </div>
   </div>]]></description></item></channel></rss>

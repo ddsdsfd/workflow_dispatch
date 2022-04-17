@@ -76,6 +76,6 @@ void panduan(int a1,int b1,int c1)
 ```
 
 # 测试
-![](images/1.png)  
-![](images/2.png)  
-![](images/3.png)  
+![测试 1](images/1.png "测试 1")  
+![测试 2](images/2.png "测试 2")  
+![测试 3](images/3.png "测试 3")  

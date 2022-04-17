@@ -12,8 +12,7 @@
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <h3 id="题目大意">题目大意：</h3>
 <p>给定两个数 n,k 求 n^k 的前三位和最后三位。</p>
 <h3 id="分析">分析</h3>

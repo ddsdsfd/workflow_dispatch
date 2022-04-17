@@ -58,8 +58,7 @@
   
   
   
->完整提交記錄
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>完整提交記錄<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <pre><code>assets/css/custom.scss
 assets/css/partial/cardlink.scss          # 卡片式鏈接樣式
 layouts/partials/plugin/cardlink.html     # 卡片式鏈接模板
@@ -81,8 +80,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 擴展 Shortcodes - Link
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>FixIt 擴展 Shortcodes - Link<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -123,8 +121,7 @@ static/images/card-link-bg.jpg
   
   
   
->https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></div>
+>https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></div>
     </div>
   </div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
 <p>工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。</p>
@@ -1325,8 +1322,7 @@ static/images/card-link-bg.jpg
   
   
   
->gohugo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>gohugo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h3 id="安装">安装</h3>
 <p>hugo 提供了很多种安装方式，Git, Docker, Binary.<br>
@@ -1345,8 +1341,7 @@ static/images/card-link-bg.jpg
   
   
   
->Hugo Releases
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
+>Hugo Releases<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
 <h3 id="生成站点">生成站点</h3>
 <p>使用 Hugo 快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
 <div class="highlight"><div class="chroma">
@@ -1391,8 +1386,7 @@ static/images/card-link-bg.jpg
   
   
   
->LoveIt
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></del> =&gt; <a
+>LoveIt<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></del> =&gt; <a
   href="https://github.com/Lruihao/FixIt"
   
   
@@ -1406,8 +1400,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>FixIt<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1464,8 +1457,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 基本概念
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 基本概念<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://fixit.lruihao.cn/zh-cn/theme-documentation-content/"
   
@@ -1480,8 +1472,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 内容
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 内容<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://fixit.lruihao.cn/zh-cn/theme-documentation-built-in-shortcodes/"
   
@@ -1496,8 +1487,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 内置 Shortcodes
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 内置 Shortcodes<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/"
   
@@ -1512,8 +1502,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 扩展 Shortcodes
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 扩展 Shortcodes<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h2 id="todo-list">Todo list</h2>
 <a
@@ -1581,8 +1570,7 @@ static/images/card-link-bg.jpg
   
   
   
->cos-album
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 和 <a
+>cos-album<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 和 <a
   href="https://sz.journey.lruihao.cn"
   
   
@@ -1596,8 +1584,7 @@ static/images/card-link-bg.jpg
   
   
   
->🍚饭醉团伙🍷
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 整合到博客 cos-album/ <a
+>🍚饭醉团伙🍷<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 整合到博客 cos-album/ <a
   href="https://github.com/Lruihao/hugo-blog/issues/7"
   
   
@@ -1611,8 +1598,7 @@ static/images/card-link-bg.jpg
   
   
   
->#7 (wontfix)
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></del></p>
+>#7 (wontfix)<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></del></p>
 </li>
 <li>
 <p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> （保持原本博客的纯粹性）</p>
@@ -1670,8 +1656,7 @@ static/images/card-link-bg.jpg
   
   
   
->#3
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>#3<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><i class="far fa-check-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a
   href="https://github.com/Lruihao/hugo-blog/issues/4"
@@ -1687,8 +1672,7 @@ static/images/card-link-bg.jpg
   
   
   
->#4
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>#4<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a
   href="https://github.com/Lruihao/hugo-blog/issues/5"
   
@@ -1703,8 +1687,7 @@ static/images/card-link-bg.jpg
   
   
   
->#5
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>#5<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <hr>
 <p><a id="seo-ref"></a><code>[baidu_urls.txt]:</code><a
@@ -1783,8 +1766,7 @@ static/images/card-link-bg.jpg
   
   
   
->#8
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>#8<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
 <li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>

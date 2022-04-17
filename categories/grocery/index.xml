@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Others - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/others/</link><description>Others - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 26 May 2019 18:50:53 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/others/" rel="self" type="application/rss+xml"/><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Grocery - 分類 - 菠菜眾長</title><link>https://lruihao.cn/categories/grocery/</link><description>Grocery - 分類 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 26 May 2019 18:50:53 +0000</lastBuildDate><atom:link href="https://lruihao.cn/categories/grocery/" rel="self" type="application/rss+xml"/><item><title>判断三角形的黑盒测试</title><link>https://lruihao.cn/posts/judgetriangle/</link><pubDate>Sun, 26 May 2019 18:50:53 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/judgetriangle/</guid><description><![CDATA[<blockquote>
 <p>黑盒测试着重测试软件功能，它并不涉及程序的内部结构和内容特性，主要根据规格说明，只依靠被测试程序的输入和输出之间关系或程序的功能来设计测试用例。<br>
 白盒测试则清楚程序内部的结构以及是如何运作的，因此白盒测试需要对系统内部的结构和工作原理有一个清楚的了解。</p>
 </blockquote>
@@ -142,9 +142,18 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="测试">测试</h1>
-<p><br>
-<br>
-</p>]]></description></item><item><title>博採眾長 app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<h3 id="介绍">介绍</h3>
+<p><figure><a class="lightgallery" href="/posts/judgetriangle/images/1.png" title="测试 1" data-thumbnail="/posts/judgetriangle/images/1.png" data-sub-html="<h2>测试 1</h2><p>测试 1</p>">
+    
+  </a><figcaption class="image-caption">测试 1</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/judgetriangle/images/2.png" title="测试 2" data-thumbnail="/posts/judgetriangle/images/2.png" data-sub-html="<h2>测试 2</h2><p>测试 2</p>">
+    
+  </a><figcaption class="image-caption">测试 2</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/judgetriangle/images/3.png" title="测试 3" data-thumbnail="/posts/judgetriangle/images/3.png" data-sub-html="<h2>测试 3</h2><p>测试 3</p>">
+    
+  </a><figcaption class="image-caption">测试 3</figcaption>
+  </figure></p>]]></description></item><item><title>博採眾長 app</title><link>https://lruihao.cn/posts/fas-app/</link><pubDate>Mon, 12 Nov 2018 16:04:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/fas-app/</guid><description><![CDATA[<h3 id="介绍">介绍</h3>
 <p>使用 fusion app 对网页进行的封装。<br>
 功能：</p>
 <ul>
@@ -177,8 +186,7 @@
   
   
   
->百度云，密码：479l
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>百度云，密码：479l<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://github.com/Lruihao/Blog_fas_apk"
   
@@ -193,8 +201,7 @@
   
   
   
->github 下载
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>github 下载<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <p><strong>PWA 应用</strong></p>
 <ol>
@@ -1482,8 +1489,7 @@
   
   
   
->demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
+>demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h3>
 <p>启动 caddy</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1540,8 +1546,7 @@
   
   
   
->参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1590,122 +1595,42 @@
 </blockquote>
 <h3 id="打开控制面板">打开控制面板</h3>
 <p>选择并进入“程序”，双击“启用或关闭 Windows 服务”，在弹出的窗口中选择“Internet Information Services”下面所有地选项，点击确定后，开始更新服务。<br>
-</p>
+<figure><a class="lightgallery" href="/posts/web-server-win/images/1.png" title="打开控制面板" data-thumbnail="/posts/web-server-win/images/1.png" data-sub-html="<h2>打开控制面板</h2><p>打开控制面板</p>">
+    
+  </a><figcaption class="image-caption">打开控制面板</figcaption>
+  </figure></p>
 <h3 id="查看">查看</h3>
 <p>更新完成后，打开浏览器，输入<code>http://localhost</code>或者<code>127.0.0.1</code>回车，如果此时出现 IIS7 欢迎界面，说明 Web 服务器已经搭建成功。<br>
-</p>
+<figure><a class="lightgallery" href="/posts/web-server-win/images/2.png" title="查看" data-thumbnail="/posts/web-server-win/images/2.png" data-sub-html="<h2>查看</h2><p>查看</p>">
+    
+  </a><figcaption class="image-caption">查看</figcaption>
+  </figure></p>
 <h3 id="网站设置">网站设置</h3>
 <p>当 web 服务器搭建成功后，我们下一步所要做的就是把我们开发的网站安装到 Web 服务器的目录中。一般情况下，当 Web 服务器安装完成后，会创建路径<code>%系统根目录%inetpub/wwwroot</code>，将我们开发的网站 COPY 到该路径下。即可实现本地访问该网站。<br>
 </p>
 <p>也可以更改根目录，搜索 IIS，点击网站，Default Web Site，基本设置修改物理路径（<strong>默认站点名称不要改</strong>）<br>
 我这里改到了 hexo 的 public 相当于 hexo 部署在本地服务器<code>58.45.227.225</code><br>
-
-
-</p>
+<figure><a class="lightgallery" href="/posts/web-server-win/images/5.png" title="/posts/web-server-win/images/5.png" data-thumbnail="/posts/web-server-win/images/5.png" data-sub-html="<h2>网站设置 1</h2>">
+    
+  </a><figcaption class="image-caption">网站设置 1</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/web-server-win/images/6.png" title="/posts/web-server-win/images/6.png" data-thumbnail="/posts/web-server-win/images/6.png" data-sub-html="<h2>网站设置 2</h2>">
+    
+  </a><figcaption class="image-caption">网站设置 2</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/web-server-win/images/7.png" title="/posts/web-server-win/images/7.png" data-thumbnail="/posts/web-server-win/images/7.png" data-sub-html="<h2>网站设置 3</h2>">
+    
+  </a><figcaption class="image-caption">网站设置 3</figcaption>
+  </figure></p>
 <h3 id="设置防火墙">设置防火墙</h3>
 <p>让局域网当其它计算机也能访问本地网站资源。具体方法：打开控制面板，选择“系统和安全”，点击“允许程序通过 Windows 防火墙”，在弹出的对话框中勾选“万维网服务 HTTP”右侧的两个复选框，最后点击确定退出。<br>
-</p>
+<figure><a class="lightgallery" href="/posts/web-server-win/images/4.png" title="/posts/web-server-win/images/4.png" data-thumbnail="/posts/web-server-win/images/4.png" data-sub-html="<h2>设置防火墙</h2>">
+    
+  </a><figcaption class="image-caption">设置防火墙</figcaption>
+  </figure></p>
 <p>在局域网中其它计算机上，打开浏览器就可以通过你电脑的 ip 地址访问了（手机也可以）<br>
 本地 ip 可以通过 cmd 用 ipconfig 查看</p>
-]]></description></item><item><title>沐目体</title><link>https://lruihao.cn/projects/font-mmt/</link><pubDate>Fri, 12 Oct 2018 19:39:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/projects/font-mmt/</guid><description><![CDATA[<iframe class="manuscript" src="https://hw.xiezixiansheng.com/mobile.php?c=Grzkreader&a=fontshowPics&u=qbfRl8gPF2s-&z=Kqz%2FRroVGYc-" frameborder="0" allowfullscreen></iframe>
-<h2 id="预览">预览</h2>
-<div id="app-mmt" v-cloak>
-  <p class="live-content">{{ message || '“沐目之，湘也”，取她之名，写给她的字体。\n 从下笔到停笔，从恋爱开始到结束，沐目体见证了我们稚嫩到成熟。故事的开头往往极具温柔啊，但故事总会有结局，这个故事的结局就是分开画上了最后的句号。' }}</p>
-  <textarea class="live-textarea" v-model="message" placeholder="请输入文字 ..."></textarea>
-</div>
-<hr>
-<div class="netease-music"></div>
-<div class="comment-163" title="随机下一条">
-  <span class="pic-backdrop"></span>
-  <div class="commentator">
-    
-    <span class="comment-nickname"></span>
-  </div>
-  <div class="comment-content"></div>
-  <div class="music-info">
-    <span class="artists-name"></span>
-    <span class="music-name"></span>
-  </div>
-</div>
-<hr>
-<details close>
-  <summary>点击展开更多</summary>
-<meting-js server="tencent" type="playlist" id="8305844774" theme="#448aff" loop="all" list-folded="true"></meting-js>
-<div class="preview-lyric">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">《富士山下》</th>
-<th style="text-align:center">《爱情转移》</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">前尘硬化像石头</td>
-<td style="text-align:center">阳光在身上流转</td>
-</tr>
-<tr>
-<td style="text-align:center">随缘地抛下便逃走</td>
-<td style="text-align:center">等所有业障被原谅</td>
-</tr>
-<tr>
-<td style="text-align:center">我绝不罕有</td>
-<td style="text-align:center">爱情不停站</td>
-</tr>
-<tr>
-<td style="text-align:center">往街里绕过一周</td>
-<td style="text-align:center">想开往地老天荒</td>
-</tr>
-<tr>
-<td style="text-align:center">我便化乌有</td>
-<td style="text-align:center">需要多勇敢</td>
-</tr>
-<tr>
-<td style="text-align:center">你还嫌不够</td>
-<td style="text-align:center">你不要失望</td>
-</tr>
-<tr>
-<td style="text-align:center">我把这陈年风褛</td>
-<td style="text-align:center">荡气回肠是为了</td>
-</tr>
-<tr>
-<td style="text-align:center">送赠你解咒</td>
-<td style="text-align:center">最美的平凡</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p></p>
-<div class="preview-images">
-<p>
-
-</p>
-</div>
-</details>
-<h2 id="下载">下载</h2>
-<div class="details admonition warning open">
-    <div class="details-summary admonition-title">
-      <i class="icon fas fa-exclamation-triangle fa-fw"></i>警告<i class="details-icon fas fa-angle-right fa-fw"></i>
-    </div>
-    <div class="details-content">
-      <div class="admonition-content"><a
-  href="https://github.com/Lruihao/MMT/releases"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->沐目体
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <em>仅用于个人非商用！</em></div>
-    </div>
-  </div>]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
+]]></description></item><item><title>流水线</title><link>https://lruihao.cn/posts/liushuixian/</link><pubDate>Tue, 09 Oct 2018 16:21:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/liushuixian/</guid><description><![CDATA[<h3 id="概念">概念</h3>
 <p>流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度。</p>
 <table>
 <thead>
@@ -1833,8 +1758,7 @@
   
   
   
->在线算法
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>在线算法<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <p>在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。</p>
 <p>在计算机科学中，一个在线算法是指它可以以序列化的方式一个个的处理输入，也就是说在开始时并不需要已经知道所有的输入。相对的，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。例如，选择排序在排序前就需要知道所有待排序元素，然而插入排序就不必。<br>
 因为在线算法并不知道整个的输入，所以它被迫做出的选择最后可能会被证明不是最优的，对在线算法的研究主要集中在当前环境下怎么做出选择。对相同问题的在线算法和离线算法的对比分析形成了以上观点。如果想从其他角度了解在线算法可以看一下流算法（关注精确呈现过去的输入所使用的内存的量），动态算法（关注维护一个在线输入的结果所需要的时间复杂度）和在线机器学习。<br>
@@ -1853,8 +1777,7 @@
   
   
   
->离线算法
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h2>
+>离线算法<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></h2>
 <p>离线算法 ( off line algorithms)，是指基于在执行算法前输入数据已知的基本假设，也就是说，对于一个离线算法，在开始时就需要知道问题的所有输入数据，而且在解决一个问题后就要立即输出结果。</p>
 <p>设计策略  在执行算法前输入已知的基本假设<br>
 前提  具有问题完全信息<br>
@@ -1893,8 +1816,7 @@
   
   
   
->传送门
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>传送门<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <blockquote>
 <p>原文：<code>http://www.matrix67.com/blog/archives/263</code></p>
 </blockquote>

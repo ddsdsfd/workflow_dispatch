@@ -13,8 +13,7 @@
   
   
   
->题目链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>题目链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 老鼠有 M 磅猫食 , 有 N 个房间  , 每个房间前有一只猫  , 房间里有老鼠最喜欢的食品 J[i] , 若要得到房间的食物 , 必须付出相应的猫食 F[i]  , 当然这只老鼠没必要每次都付出所有的 F[i]，若它付出 F[i] 的 a%， 则得到 J[i] 的 a%，求老鼠能吃到的最多的食物。</p>
 <h2 id="sample-input">Sample Input</h2>
 <pre><code>5 3

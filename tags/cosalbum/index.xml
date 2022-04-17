@@ -218,8 +218,7 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
   
   
   
->伸手党
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>!</li>
+>伸手党<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>!</li>
 </ul>
 <h1 id="未实现">未实现</h1>
 <ul>

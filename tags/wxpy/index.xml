@@ -202,8 +202,7 @@
   
   
   
->wxpy
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>wxpy<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://github.com/pyecharts/pyecharts"
   
@@ -218,8 +217,7 @@
   
   
   
->pyecharts
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>（百度 echarts）</li>
+>pyecharts<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>（百度 echarts）</li>
 </ul>
 <h1 id="查看微信好友男女比例">查看微信好友男女比例</h1>
 <div class="highlight"><div class="chroma">
@@ -368,8 +366,7 @@
   
   
   
->陈思煜
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>陈思煜<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 </blockquote>
 <h1 id="统计所有群男女数目">统计所有群男女数目</h1>
 <blockquote>
@@ -525,8 +522,7 @@
   
   
   
->wxpy
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>:<br>
+>wxpy<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>:<br>
   wxpy 在 itchat 的基础上，通过大量接口优化提升了模块的易用性，并进行丰富的功能扩展。<br>
 <a
   href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8deeb55141d60c5000"
@@ -542,8 +538,7 @@
   
   
   
->PIL
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>：<br>
+>PIL<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>：<br>
   Python Imaging Library，已经是 Python 平台事实上的图像处理标准库了。PIL 功能非常强大，但 API 却非常简单易用。由于 PIL 仅支持到 Python 2.7，加上年久失修，于是一群志愿者在 PIL 的基础上创建了兼容的版本，名字叫 Pillow，支持最新 Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用 Pillow。</p>
 </blockquote>
 <h1 id="安装">安装</h1>

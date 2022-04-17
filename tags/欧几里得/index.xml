@@ -91,8 +91,7 @@ m 奇 n 奇时，gcd(m, n)=gcd(n, m-n)</p>
   
   
   
->转载注明，侵删
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></strong></p>
+>转载注明，侵删<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong></p>
 <h3 id="题意">题意：</h3>
 <p>给出 a,b,c,x1,x2,y1,y2，求满足 ax+by+c=0，且 x∈[x1,x2],y∈[y1,y2] 的整数解个数。</p>
 <h3 id="分析">分析：</h3>

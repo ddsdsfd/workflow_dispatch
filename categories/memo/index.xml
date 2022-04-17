@@ -134,8 +134,7 @@
   
   
   
->完整提交記錄
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>完整提交記錄<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <pre><code>assets/css/custom.scss
 assets/css/partial/cardlink.scss          # 卡片式鏈接樣式
 layouts/partials/plugin/cardlink.html     # 卡片式鏈接模板
@@ -157,8 +156,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 擴展 Shortcodes - Link
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>FixIt 擴展 Shortcodes - Link<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -199,8 +197,7 @@ static/images/card-link-bg.jpg
   
   
   
->https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></div>
+>https://cloud.tencent.com/developer/support-plan?invite_code=3o5dmfzf0xkwk<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></div>
     </div>
   </div>]]></description></item><item><title>Hugo i18n 添加中文繁體翻譯</title><link>https://lruihao.cn/posts/hugo-i18n-zh-tw/</link><pubDate>Tue, 05 Oct 2021 19:14:45 +0800</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hugo-i18n-zh-tw/</guid><description><![CDATA[<blockquote>
 <p>工作上一直常用繁體，最近臨帖也都寫的繁體，所以博客的語言也想換成繁體，但是 LoveIt 主題沒有支持中文繁體。就只好自己添加了。</p>
@@ -1401,8 +1398,7 @@ static/images/card-link-bg.jpg
   
   
   
->gohugo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>gohugo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h3 id="安装">安装</h3>
 <p>hugo 提供了很多种安装方式，Git, Docker, Binary.<br>
@@ -1421,8 +1417,7 @@ static/images/card-link-bg.jpg
   
   
   
->Hugo Releases
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
+>Hugo Releases<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 下载对应的 windows 操作系统版本的 Hugo 二进制文件，玩就要玩全的，所以我就选择了扩展版本，此次选择的最新版为 <code>hugo_extended_0.88.1_Windows-64bit.zip</code>, 然后自行解压安装即可。</p>
 <h3 id="生成站点">生成站点</h3>
 <p>使用 Hugo 快速生成站点，比如希望生成到 <code>/path/to/site</code> 路径：</p>
 <div class="highlight"><div class="chroma">
@@ -1467,8 +1462,7 @@ static/images/card-link-bg.jpg
   
   
   
->LoveIt
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></del> =&gt; <a
+>LoveIt<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></del> =&gt; <a
   href="https://github.com/Lruihao/FixIt"
   
   
@@ -1482,8 +1476,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>FixIt<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1540,8 +1533,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 基本概念
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 基本概念<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://fixit.lruihao.cn/zh-cn/theme-documentation-content/"
   
@@ -1556,8 +1548,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 内容
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 内容<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://fixit.lruihao.cn/zh-cn/theme-documentation-built-in-shortcodes/"
   
@@ -1572,8 +1563,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 内置 Shortcodes
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 内置 Shortcodes<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><a
   href="https://fixit.lruihao.cn/zh-cn/theme-documentation-extended-shortcodes/"
   
@@ -1588,8 +1578,7 @@ static/images/card-link-bg.jpg
   
   
   
->FixIt 主题文档 - 扩展 Shortcodes
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>FixIt 主题文档 - 扩展 Shortcodes<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <h2 id="todo-list">Todo list</h2>
 <a
@@ -1657,8 +1646,7 @@ static/images/card-link-bg.jpg
   
   
   
->cos-album
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 和 <a
+>cos-album<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 和 <a
   href="https://sz.journey.lruihao.cn"
   
   
@@ -1672,8 +1660,7 @@ static/images/card-link-bg.jpg
   
   
   
->🍚饭醉团伙🍷
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 整合到博客 cos-album/ <a
+>🍚饭醉团伙🍷<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 整合到博客 cos-album/ <a
   href="https://github.com/Lruihao/hugo-blog/issues/7"
   
   
@@ -1687,8 +1674,7 @@ static/images/card-link-bg.jpg
   
   
   
->#7 (wontfix)
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></del></p>
+>#7 (wontfix)<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></del></p>
 </li>
 <li>
 <p><i class="far fa-square fa-fw"></i> <del>新增 demo/, 以子模组的形式存放前端 demo, serverless 记账本等</del> （保持原本博客的纯粹性）</p>
@@ -1746,8 +1732,7 @@ static/images/card-link-bg.jpg
   
   
   
->#3
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>#3<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><i class="far fa-check-square fa-fw"></i> <code>Lruihao/hugo-blog/README.md</code> 撰写，MIT, 发布 1.0.0 版本做完整备份，base on theme version</li>
 <li><i class="far fa-check-square fa-fw"></i> 更换 gravatar 头像 <a
   href="https://github.com/Lruihao/hugo-blog/issues/4"
@@ -1763,8 +1748,7 @@ static/images/card-link-bg.jpg
   
   
   
->#4
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>#4<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 <li><i class="far fa-check-square fa-fw"></i> 博客在线编辑器研究 github1s 等 <a
   href="https://github.com/Lruihao/hugo-blog/issues/5"
   
@@ -1779,8 +1763,7 @@ static/images/card-link-bg.jpg
   
   
   
->#5
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>#5<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <hr>
 <p><a id="seo-ref"></a><code>[baidu_urls.txt]:</code><a
@@ -1859,8 +1842,7 @@ static/images/card-link-bg.jpg
   
   
   
->#8
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>#8<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <ul>
 <li><i class="far fa-check-square fa-fw"></i> CSS 优化，背景，元素圆角化，外圆内方，居中对齐等</li>
 <li><i class="far fa-check-square fa-fw"></i> 沐目体引入</li>
@@ -1924,8 +1906,7 @@ static/images/card-link-bg.jpg
   
   
   
->项目地址
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>项目地址<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="搭建-php-环境">搭建 php 环境</h1>
 <ol>
@@ -2060,8 +2041,7 @@ static/images/card-link-bg.jpg
   
   
   
->https://github.com/z-song/laravel-admin/issues/1541
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>https://github.com/z-song/laravel-admin/issues/1541<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 在<code>app\Providers\AppServiceProvider.php</code>添加默认值</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -2319,8 +2299,7 @@ static/images/card-link-bg.jpg
   
   
   
->editormd
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
+>editormd<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>
 <a
   href="https://github.com/ShareManT/laravel-admin-ext-editormd/issues/3"
   
@@ -2335,8 +2314,7 @@ static/images/card-link-bg.jpg
   
   
   
->github 图像问题
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>github 图像问题<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h2 id="存放本地表情">存放本地表情</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2381,8 +2359,7 @@ static/images/card-link-bg.jpg
   
   
   
->参考
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>参考<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2424,8 +2401,7 @@ static/images/card-link-bg.jpg
   
   
   
->https://www.zhiqiexing.com/119.html
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>
+>https://www.zhiqiexing.com/119.html<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>
 <a
   href="https://github.com/GrahamCampbell/Laravel-Markdown"
   
@@ -2440,8 +2416,7 @@ static/images/card-link-bg.jpg
   
   
   
->Laravel Markdown 安装
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>Laravel Markdown 安装<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2493,8 +2468,7 @@ static/images/card-link-bg.jpg
   
   
   
->添加验证码
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>添加验证码<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h1 id="media-manager">Media manager</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2578,8 +2552,7 @@ static/images/card-link-bg.jpg
   
   
   
->https://github.com/laravel-admin-extensions/grid-lightbox
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://github.com/laravel-admin-extensions/grid-lightbox<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2607,8 +2580,7 @@ static/images/card-link-bg.jpg
   
   
   
->https://tools.ietf.org/html/rfc5789
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://tools.ietf.org/html/rfc5789<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h2 id="noun">Noun</h2>
 <ul>
@@ -2780,8 +2752,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->https://zh.wikipedia.org/zh-tw/HTTP%E7%8A%B6%E6%80%81%E7%A0%81
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>，<br>
+>https://zh.wikipedia.org/zh-tw/HTTP%E7%8A%B6%E6%80%81%E7%A0%81<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>，<br>
 需要查看完整 HTTP 狀態碼請點擊<a
   href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html"
   
@@ -2796,8 +2767,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 ]]></description></item><item><title>Sublime Text3 快捷键大全</title><link>https://lruihao.cn/posts/sublime-text3/</link><pubDate>Thu, 15 Aug 2019 20:59:10 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/sublime-text3/</guid><description><![CDATA[<blockquote>
 <p><a
@@ -2814,8 +2784,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->转自、--入冬
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>转自、--入冬<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 补充 tab 转 space 设置</p>
 </blockquote>
 <h1 id="tab-转-space">tab 转 space</h1>
@@ -2921,7 +2890,256 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
 <li>Ctrl+K+B 开启/关闭侧边栏。</li>
 <li>F11 全屏模式</li>
 <li>Shift+F11 免打扰模式</li>
-</ul>]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
+</ul>]]></description></item><item><title>NetBeans IDE 开发设置</title><link>https://lruihao.cn/posts/netbeans/</link><pubDate>Thu, 15 Aug 2019 18:36:15 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/netbeans/</guid><description><![CDATA[<h1 id="安裝">安裝</h1>
+<p><a
+  href="https://netbeans.org/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>官方下載點<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
+<h1 id="擴充功能">擴充功能</h1>
+<h2 id="安裝擴充功能">安裝擴充功能</h2>
+<ol>
+<li>下載擴充套件包
+<ul>
+<li><a
+  href="http://plugins.netbeans.org/PluginPortal/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>官方套件庫<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
+<li>或者在 NetBeans IDE 裏面下載插件（方便）</li>
+</ul>
+</li>
+<li>開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins</li>
+<li>選擇要安裝的擴充套件包</li>
+</ol>
+<h2 id="啟用已安裝的擴充功能">啟用已安裝的擴充功能</h2>
+<ol>
+<li>開啟 NetBeans→Tools→Plugins→Installed</li>
+<li>選擇要啟用的套件 (*.npm)</li>
+<li>點擊 Activate</li>
+</ol>
+<h2 id="匯入設定">匯入設定</h2>
+<ol>
+<li>開啟 NetBeans→Tools→Options</li>
+<li>點擊 Import 匯入設定</li>
+<li>選擇要匯入的套件包 (*.zip)</li>
+</ol>
+<h1 id="常用設定">常用設定</h1>
+<h2 id="程式碼排版">程式碼排版</h2>
+<blockquote>
+<p>在程式開發中，程式碼排版很重要。一個好的排版利於開發人員程式閱讀，也便於後期維護人員閱讀。</p>
+</blockquote>
+<p>在 NetBeans 中設置程式碼排版</p>
+<ol>
+<li>打開 NetBeans-&gt;Tools-&gt;Options-&gt;Editor-&gt;Formatting；</li>
+<li>Language 選擇 All Languages，勾選&quot;Expand Tabs to Spaces&quot;, 用兩個空格鍵代替 Tab 鍵，首行留兩個 Tab 鍵。</li>
+<li>點擊 Apply 或 Ok 完成設置。具體設置及效果如下圖所示：</li>
+</ol>
+<p>
+
+</p>
+<h2 id="程式碼樣板">程式碼樣板</h2>
+<blockquote>
+<p>　程式碼樣板可以幫助你快速書寫程序，不必繁瑣地聲明函數或其他代碼塊，更專注與邏輯的書寫。</p>
+</blockquote>
+<p>在 NetBeans 中設置程式碼樣板</p>
+<ol>
+<li>打開 NetBeans→Tools→Options→Editor→Code Templates；</li>
+<li>選擇你所用的語言（這裡以 JavaScript 為例）；</li>
+<li>點擊&quot;New&quot;新建屬於你的或修改原有的程式碼樣板（例子僅為演示）；</li>
+<li>在編程中應用它。</li>
+</ol>
+<p>
+
+
+</p>
+<h2 id="前端壓縮">前端壓縮</h2>
+<p>下載擴充套件<code>netbeans minify</code> 或者 <code>minifierBeans</code></p>
+<ol>
+<li>開啟 NetBeans→Tools→Plugins→Downloaded→Add Plugins</li>
+<li>選擇你下載的擴充套件開啟</li>
+<li>開啟 NetBeans→Tools→options</li>
+</ol>
+<p>
+</p>
+<h2 id="快捷鍵">快捷鍵</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">键位</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Ctrl+/</td>
+<td style="text-align:left">注释一行（或选中部分）</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+X</td>
+<td style="text-align:left">剪切一行（或选中部分）</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+E</td>
+<td style="text-align:left">删除一行（或选中部分）</td>
+</tr>
+<tr>
+<td style="text-align:left">Shift+Alt+上下方向键</td>
+<td style="text-align:left">移动当前行</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+Shift+上下方向键</td>
+<td style="text-align:left">复制当前行（该操作并非复制到粘贴板）</td>
+</tr>
+<tr>
+<td style="text-align:left">Shift+Alt+F</td>
+<td style="text-align:left">整理代码</td>
+</tr>
+<tr>
+<td style="text-align:left">TAB</td>
+<td style="text-align:left">代碼自動補全/缩进/選中文字同時缩进</td>
+</tr>
+<tr>
+<td style="text-align:left">Shift+TAB</td>
+<td style="text-align:left">選中文字同時取消缩进</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+F</td>
+<td style="text-align:left">查找某个字</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+Shift+F</td>
+<td style="text-align:left">整个项目中查找某个字</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+H</td>
+<td style="text-align:left">替换某个字</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+Enter</td>
+<td style="text-align:left">增加空白行，光标不动。</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+(0~7)</td>
+<td style="text-align:left">打开各种小窗口</td>
+</tr>
+<tr>
+<td style="text-align:left">Shift+方向键</td>
+<td style="text-align:left">選中文字</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+Alt+Space</td>
+<td style="text-align:left">代码输入提示，不习惯的可以设置为 (Alt+/)，超级好用！！！</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl+Shift+F5</td>
+<td style="text-align:left">调试当前程序</td>
+</tr>
+<tr>
+<td style="text-align:left">Shift+F6</td>
+<td style="text-align:left">运行当前程序</td>
+</tr>
+<tr>
+<td style="text-align:left">F6</td>
+<td style="text-align:left">运行主程序</td>
+</tr>
+<tr>
+<td style="text-align:left">Alt+Enter</td>
+<td style="text-align:left">显示程式 bug 建议或者警示等</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>NetBeans 中常用的快捷鍵↑：</li>
+<li>三種複製行方法</li>
+</ul>
+<ol>
+<li>复制一行：Ctrl + Shift + 上下方向键（该操作并非复制到粘贴板）；</li>
+<li>复制一行：在该行任何地方连续三击选中一样，然后 Ctrl + C 即可复制一行。；</li>
+<li>复制一行（使用宏）: 编辑-开始录制宏 (Home,Shift + End,Ctrl + C)-停止录制宏-设置宏名称（如 select-entire-line)-设置快捷键（如 Ctrl + Alt + C)；</li>
+</ol>
+<ul>
+<li>也可自己修改快捷鍵 (Tools→Options→Keympa), 如下圖</li>
+</ul>
+<p>{% asset_img quickkey.png quickkey %}</p>
+<h2 id="遠程開發-ftp">遠程開發 (FTP)</h2>
+<blockquote>
+<p>工作为例</p>
+</blockquote>
+<ol>
+<li>新建项目
+<ol>
+<li>打开软件，进入新建项目页面（File-New Project），新建 php 项目，选择第一个（PHP-PHP Application）</li>
+<li>项目名和地址自己选择（注意，选择地址后需在地址最后面加上&quot;/项目名&quot;）</li>
+</ol>
+</li>
+<li>FTP 设置
+<ol>
+<li>点击下一步，进入 FTP 设置，Run As 选择 Remote Web Site(FTP,SFTP)</li>
+<li>Project URL 填写<code>http://127.0.0.1/training/工号</code></li>
+</ol>
+</li>
+<li>Manage 设置
+<ol>
+<li>点击 Manage, 进入页面。名字自取。Host Name 填写：127.0.0.1</li>
+<li>Encryption 选择 Pure FTP,User Name 和 Password（填写工号/课务系统登录密码）</li>
+<li>Initial Directory 填写_training</li>
+<li>点击 Test Connection 测试是否连接成功</li>
+</ol>
+</li>
+<li>其他设置
+<ol>
+<li>Upload Directory, 上传目录不填，直接上传至个人根目录</li>
+<li>Upload File 改为保存时上传文件（On Save）</li>
+</ol>
+</li>
+</ol>
+<h2 id="chrome-with-netneans-connector">Chrome with NetNeans Connector</h2>
+<ol>
+<li>打開 chrome 中的應用程式商店（使用 chrome 瀏覽器點擊下方鏈接即可）<br>
+<a
+  href="https://chrome.google.com/webstore/category/themes?hl=en-US/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>chrome 應用程式商店<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
+<li>在搜索框中輸入 NetNeans Connector 后搜索，然後點擊右邊的加到 Chrome 即可，安裝成功后右上角會顯示 NetBeans 圖標。</li>
+<li>開啟 netbeans 選擇 Run→Set Project Browser→選中 Chrome with NetBeans Connector</li>
+<li>選擇 default 下的 Customize → 選擇 Browser → 選擇 Browser 下 Chrome with NetBeans Connector 即可</li>
+</ol>
+<p>
+
+</p>
+]]></description></item><item><title>web 开发规则，代码规范</title><link>https://lruihao.cn/posts/dev-rules/</link><pubDate>Thu, 15 Aug 2019 18:30:31 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/dev-rules/</guid><description><![CDATA[<h1 id="精神">精神</h1>
 <ul>
 <li>絕對不寫死程式</li>
 <li>不留不要用的、垃圾程式碼</li>
@@ -3392,7 +3610,149 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
 <td style="text-align:left">查詢</td>
 </tr>
 </tbody>
-</table>]]></description></item><item><title>HustOJ 基础搭建教程</title><link>https://lruihao.cn/posts/hustoj/</link><pubDate>Fri, 17 May 2019 23:08:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hustoj/</guid><description><![CDATA[<blockquote>
+</table>]]></description></item><item><title>WAMPServer 自定义网站根目录等设置</title><link>https://lruihao.cn/posts/wamproot/</link><pubDate>Fri, 12 Jul 2019 18:44:36 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wamproot/</guid><description><![CDATA[<blockquote>
+<p>使用 WAMPServer 时自定义网站根目录。</p>
+</blockquote>
+<h1 id="wampserver-自定义网站根目录">WAMPServer 自定义网站根目录</h1>
+<h2 id="修改-apache-配置文件">修改 apache 配置文件</h2>
+<p>打开<code>httpd.conf</code>文件搜索<code>documentroot</code>后，找到路径修改为自定义的。<br>
+</p>
+<p>再打开<code>httpd-vhost.conf</code>文件修改对应的路径。<br>
+<code>修改完配置文件需要重启所有服务！</code></p>
+<h2 id="修改-wampmanager-文件">修改 wampmanager 文件</h2>
+<p>在 wampserver 安装路径根目录知道<code>wampmanager.ini</code>和<code>wampmanager.tpl</code>两个文件。搜索<code>menu.left</code>, 然后也修改为自定义的路径。
+<code>然后退出，重启软件！</code></p>
+<p><br>
+</p>
+<h2 id="编写-php-文件测试">编写 php 文件测试</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">	<span class="k">echo</span> <span class="s2">&#34;hello world&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p></p>
+<h1 id="wampserver-多站点配置">WAMPServer 多站点配置</h1>
+<p>打开<code>httpd-vhost.conf</code>文件，复制原有的几行配置文件，粘贴修改路径和域名等配置。比如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Virtual Hosts
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName localhost
+</span></span><span class="line"><span class="cl">  ServerAlias localhost
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo&#34;
+</span></span><span class="line"><span class="cl">  &lt;Directory &#34;g:/Demo&#34;&gt;
+</span></span><span class="line"><span class="cl">    Options +Indexes +Includes +FollowSymLinks +MultiViews
+</span></span><span class="line"><span class="cl">    AllowOverride All
+</span></span><span class="line"><span class="cl">    Require local
+</span></span><span class="line"><span class="cl">  &lt;/Directory&gt;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test01.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test01&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;VirtualHost *:80&gt;
+</span></span><span class="line"><span class="cl">  ServerName test02.com
+</span></span><span class="line"><span class="cl">  DocumentRoot &#34;g:/Demo/test02&#34;
+</span></span><span class="line"><span class="cl">&lt;/VirtualHost&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>再打开<code>C:\Windows\System32\drivers\etc\hosts</code>文件，在文件最后添加类似于云服务器的域名解析，进行本地域名解析，当输入域名时优先从本地申请资源。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># For example:
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl"># 102.54.94.97 rhino.acme.com # source server
+</span></span><span class="line"><span class="cl"># 38.25.63.10 x.acme.com # x client host
+</span></span><span class="line"><span class="cl"># localhost name resolution is handled within DNS itself.
+</span></span><span class="line"><span class="cl">#	127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">#	::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 steamcommunity.com
+</span></span><span class="line"><span class="cl">192.168.28.1 windows10.microdone.cn
+</span></span><span class="line"><span class="cl">127.0.0.1 localhost
+</span></span><span class="line"><span class="cl">::1 localhost
+</span></span><span class="line"><span class="cl">127.0.0.1 test01.com
+</span></span><span class="line"><span class="cl">127.0.0.1 test02.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="wampserver-自拟定端口">WAMPServer 自拟定端口</h1>
+<p>WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第一次装的时候发现 80 端口被占用了，因为以前玩了一下 Windows 的 IIS，暂停 IIS 的网站，再使用命令或者直接在控制面板关掉就好了。</p>
+<ol>
+<li>如果不使用 80 多为默认端口，比如修改为 8080，还是在<code>httpd.conf</code>文件里修改。搜索<code>80</code>都改成<code>8080</code>然后，Ctrl+S 保存，重新启动 WampServer<br>
+在浏览器地址栏输入<code>localhost:8000</code></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#监听端口
+</span></span><span class="line"><span class="cl">Listen 0.0.0.0:8080
+</span></span><span class="line"><span class="cl">Listen [::0]:8080
+</span></span><span class="line"><span class="cl">ServerName localhost:8080
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>使用 Notepad++打开 C:\wamp 目录下的 wampmanager.ini 和 wampmanager.tpl<br>
+Ctrl+F 查找 <code>localhost</code><br>
+将其全部替换为<code>localhost:8000</code><br>
+然后，Ctrl+S 保存，重新启动 WampServer</li>
+</ol>]]></description></item><item><title>HustOJ 基础搭建教程</title><link>https://lruihao.cn/posts/hustoj/</link><pubDate>Fri, 17 May 2019 23:08:04 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hustoj/</guid><description><![CDATA[<blockquote>
 <p>目前 HustOj 在 GitHUb 地址是：<a
   href="https://github.com/zhblue/hustoj"
   
@@ -3407,8 +3767,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->https://github.com/zhblue/hustoj
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>https://github.com/zhblue/hustoj<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 <strong>安装时注意 ubuntu 版本</strong>，没条件的可以在自己 ubuntu 上尝试，或者虚拟机上（关注公众号回复<code>ubuntu16.04</code>获取 iso 镜像文件），也可以在云实验室的云服务器上做做实验。<br>
 更多说明及 ACM/NOIP 题库下载见官网博客 <a
   href="http://www.hustoj.com/"
@@ -3424,8 +3783,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->代码的那些事|程序员回忆录
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>代码的那些事|程序员回忆录<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <h1 id="快速安装-oj">快速安装 OJ</h1>
 <p>下载</p>
@@ -3493,8 +3851,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->原文链接
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>原文链接<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 “卓越班”到了大三突然掀起一股毕业慌，一部分人投身于考研的热潮中，一部分人选择了培训机构学习技术。而我出于种种原因既不考研也不培训，选择自学 java 和 web 相关的知识，也希望因此能在以后谋得一份心仪的工作。</p>
 </blockquote>
 <p>如果文章中有出现纰漏、错误之处，还请看到的小伙伴多多指教，先行谢过</p>
@@ -3597,8 +3954,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->多个标签页之间的通信
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>多个标签页之间的通信<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h2 id="8-html5-的离线存储怎么使用解释一下工作原理">8. HTML5 的离线存储怎么使用，解释一下工作原理</h2>
 <p><a
   href="https://segmentfault.com/a/1190000006984353"
@@ -3614,8 +3970,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->HTML5 的离线存储
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>HTML5 的离线存储<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h2 id="9-src-与-href-的区别">9. src 与 href 的区别</h2>
 <p>区别：src 用于替代这个元素，而 href 用于建立这个标签与外部资源之间的关系</p>
 <p><code>&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;</code>浏览器加载到这里的时候，html 的渲染和解析不会暂停，css 文件的加载是同时进行的</p>
@@ -3865,8 +4220,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->重绘和回流
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>重绘和回流<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h2 id="14-flex-布局">14. flex 布局</h2>
 <p><a
   href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"
@@ -3882,8 +4236,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->flex 布局教程&ndash;阮一峰
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>flex 布局教程&ndash;阮一峰<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h2 id="15-css-预处理器">15. css 预处理器</h2>
 <p>提供了一种 css 的书写方式，常见的就是 <a
   href="http://sass.bootcss.com/docs/sass-reference/"
@@ -3899,8 +4252,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->SAAS 文档
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 和 <a
+>SAAS 文档<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 和 <a
   href="https://less.bootcss.com/"
   
   
@@ -3914,8 +4266,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->LESS 文档
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>]]></description></item><item><title>hexo-theme-next @modified LRH</title><link>https://lruihao.cn/posts/hexo-theme-next/</link><pubDate>Thu, 21 Mar 2019 16:43:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-theme-next/</guid><description><![CDATA[<div class="featured-image">
+>LESS 文档<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>]]></description></item><item><title>hexo-theme-next @modified LRH</title><link>https://lruihao.cn/posts/hexo-theme-next/</link><pubDate>Thu, 21 Mar 2019 16:43:19 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/hexo-theme-next/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/hexo-theme-next/images/next.png" referrerpolicy="no-referrer">
       </div><div class="details admonition danger open">
     <div class="details-summary admonition-title">
@@ -3947,8 +4298,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->hexo-theme-next 6.0+
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 的 Pisces 模板做的 DIY 扩展性设计（部分兼容 next 其他几种模板）。主要是一些 custom style 还有一些第三方的 js。修改的地方太多也有点小乱就不提 PR 了。<br>
+>hexo-theme-next 6.0+<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 的 Pisces 模板做的 DIY 扩展性设计（部分兼容 next 其他几种模板）。主要是一些 custom style 还有一些第三方的 js。修改的地方太多也有点小乱就不提 PR 了。<br>
 <a
   href="https://github.com/Lruihao/hexo-theme-next"
   
@@ -3963,8 +4313,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->modified
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>  官方 Demo =&gt; <a
+>modified<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>  官方 Demo =&gt; <a
   href="https://theme-next.org"
   
   
@@ -3978,8 +4327,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->https://theme-next.org
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>https://theme-next.org<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 记录一下折腾过程，以后备份恢复博客也好方便自己。本文之前的美化修改请见 <a
   href="/tags/hexo/"
   
@@ -4043,8 +4391,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->^1
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>^1<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h1 id="初步安装">初步安装</h1>
 <blockquote>
 <p>安装整个改过的主题，然后下载相应的 lib 资源解压放入 source 文件夹</p>
@@ -4526,8 +4873,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->pdf 传送门
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>pdf 传送门<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -4647,8 +4993,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->预览
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>预览<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h2 id="热度页面">热度页面</h2>
 <blockquote>
 <p>打开<code>hexo\themes\next\layout</code>新建 top.swig 文件，写下如下内容保存：</p>
@@ -4951,8 +5296,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->HTML+CSS
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>HTML+CSS<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 </blockquote>
 <h3 id="oblique-和-intalic-的区别">oblique 和 intalic 的区别</h3>
@@ -4995,8 +5339,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->A Complete Guide to Flexbox
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>A Complete Guide to Flexbox<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 </blockquote>
 <ul>
@@ -5014,8 +5357,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->Flex 布局教程：语法篇
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></li>
+>Flex 布局教程：语法篇<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></li>
 </ul>
 <p>实在懒癌发作，笔记本上手抄了笔记我就不写学习总结了，还有网友 <a
   href="http://static.vgee.cn/static/index.html"
@@ -5031,8 +5373,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->Demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 也写了。</p>
+>Demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 也写了。</p>
 <h2 id="javascript">javascript</h2>
 <h3 id="keydown-和-keypress">keydown 和 keypress</h3>
 <ul>
@@ -5055,8 +5396,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->详解键盘事件 (keydown，keypress，keyup)
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>详解键盘事件 (keydown，keypress，keyup)<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <h3 id="textcontentinnertext-和-innerhtml-的区别">textContent、innerText 和 innerHTML 的区别</h3>
 <blockquote>
 <ol>
@@ -5244,8 +5584,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->QQ 推广
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <a
+>QQ 推广<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> <a
   href="https://qun.qq.com/join.html"
   
   
@@ -5259,8 +5598,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->QQ 群
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>QQ 群<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -5301,8 +5639,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->github 介绍
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <a
+>github 介绍<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> <a
   href="https://www.bootcdn.cn/fancybox/"
   
   
@@ -5316,8 +5653,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->fancybox 源
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+>fancybox 源<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -5344,8 +5680,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->学习课件
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a><br>
+>学习课件<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a><br>
 练习作业 <a
   href="https://github.com/Lruihao/hw"
   
@@ -5360,8 +5695,7 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->源码
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>+<a
+>源码<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>+<a
   href="http://hw.lruihao.cn/"
   
   
@@ -5375,9 +5709,144 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
   
   
   
->Demo
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-</blockquote>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
+>Demo<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></p>
+</blockquote>]]></description></item><item><title>eclipse 的基本使用</title><link>https://lruihao.cn/posts/eclipseuse/</link><pubDate>Fri, 15 Mar 2019 23:47:24 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/eclipseuse/</guid><description><![CDATA[<h1 id="基本使用">基本使用</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">A: 选择一个工作空间
+</span></span><span class="line"><span class="cl">	D:\develop\eclipse-SDK-3.7.2-win64\workspace
+</span></span><span class="line"><span class="cl">B: 如何写一个 HelloWorld 案例（代码以项目为基本单位）
+</span></span><span class="line"><span class="cl">	a: 创建项目（工程）
+</span></span><span class="line"><span class="cl">		*File -- New -- Java Project
+</span></span><span class="line"><span class="cl">		*在左边空白处，直接右键 -- New -- Java Project
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		键入项目名称后直接 Finish。
+</span></span><span class="line"><span class="cl">	b: 所有的 java 文件必须写到 src 下面才有效
+</span></span><span class="line"><span class="cl">	c: 创建一个包
+</span></span><span class="line"><span class="cl">		cn.lruihao   
+</span></span><span class="line"><span class="cl">	d: 在包下创建一个类
+</span></span><span class="line"><span class="cl">		HelloWorld
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		同时让它帮我们写好了 main 方法。
+</span></span><span class="line"><span class="cl">	e: 在 main 方法中写内容即可
+</span></span><span class="line"><span class="cl">	f: 编译程序
+</span></span><span class="line"><span class="cl">		自动编译，在保存的那一刻帮你做好了
+</span></span><span class="line"><span class="cl">	g: 运行程序
+</span></span><span class="line"><span class="cl">		选择要运行的文件或者在要运行的文件内容中
+</span></span><span class="line"><span class="cl">		右键 -- Run as - Java Application 即可
+</span></span><span class="line"><span class="cl">	h: 内容显示
+</span></span><span class="line"><span class="cl">		在 Console 控制台显示内容
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="eclipse-的基本设置">Eclipse 的基本设置</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nl">A:</span> <span class="n">程序的编译和运行的环境配置</span><span class="err">（</span><span class="n">如果你的</span> <span class="n">Eclipse</span> <span class="n">启动没有问题</span><span class="err">，</span><span class="n">就不要配置了</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl"><span class="nl">B:</span> <span class="n">去掉默认注释</span><span class="err">（</span><span class="n">可以不用改</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl"><span class="nl">C:</span> <span class="n">行号的显示和隐藏</span>
+</span></span><span class="line"><span class="cl">	<span class="n">显示</span><span class="err">：</span><span class="n">在代码区域的最左边的空白区域</span><span class="err">，</span><span class="n">右键</span> <span class="o">--</span> <span class="n">Show</span> <span class="n">Line</span> <span class="n">Numbers</span> <span class="n">即可</span><span class="err">。</span>
+</span></span><span class="line"><span class="cl">	<span class="n">隐藏</span><span class="err">：</span><span class="n">把上面的动作再做一次</span><span class="err">。</span>
+</span></span><span class="line"><span class="cl"><span class="nl">D:</span> <span class="n">字体大小及颜色</span>
+</span></span><span class="line"><span class="cl">	<span class="n">a</span><span class="o">:</span><span class="n">Java</span> <span class="n">代码区域的字体大小和颜色</span><span class="err">：</span>
+</span></span><span class="line"><span class="cl">		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">修改</span> <span class="o">--</span> <span class="n">Java</span> <span class="n">Edit</span> <span class="n">Text</span> <span class="n">Font</span>
+</span></span><span class="line"><span class="cl">	<span class="n">b</span><span class="o">:</span> <span class="n">控制台</span>
+</span></span><span class="line"><span class="cl">		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Debug</span> <span class="o">--</span> <span class="n">Console</span> <span class="n">font</span>
+</span></span><span class="line"><span class="cl">	<span class="n">c</span><span class="o">:</span> <span class="n">其他文件</span>
+</span></span><span class="line"><span class="cl">		<span class="n">window</span> <span class="o">--</span> <span class="n">Preferences</span> <span class="o">--</span> <span class="n">General</span> <span class="o">--</span> <span class="n">Appearance</span> <span class="o">--</span> <span class="n">Colors</span> <span class="n">And</span> <span class="n">Fonts</span> <span class="o">--</span> <span class="n">Basic</span> <span class="o">--</span> <span class="n">Text</span> <span class="n">Font</span>
+</span></span><span class="line"><span class="cl"><span class="nl">E:</span> <span class="n">窗体给弄乱了</span><span class="err">，</span><span class="n">怎么办</span>
+</span></span><span class="line"><span class="cl">	<span class="n">window</span> <span class="o">--</span> <span class="n">Reset</span> <span class="n">Perspective</span>
+</span></span><span class="line"><span class="cl"><span class="nl">F:</span> <span class="n">控制台找不到了</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Window</span><span class="o">--</span><span class="n">Show</span> <span class="n">View</span><span class="err">—</span><span class="n">Console</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="快捷键的使用">快捷键的使用</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nl">A:</span> <span class="n">内容辅助键</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Alt</span><span class="o">+/</span> <span class="n">起提示作用</span>
+</span></span><span class="line"><span class="cl">	<span class="n">main</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span><span class="n">syso</span><span class="o">+</span><span class="n">alt</span><span class="o">+/,</span> <span class="n">给出其他提示</span>
+</span></span><span class="line"><span class="cl"><span class="nl">B:</span> <span class="n">快捷键</span>
+</span></span><span class="line"><span class="cl">	<span class="n">格式化</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">f</span>
+</span></span><span class="line"><span class="cl">	<span class="n">导入包</span>  <span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="n">o</span>
+</span></span><span class="line"><span class="cl">	<span class="n">注释</span>	<span class="n">ctrl</span><span class="o">+/</span>
+</span></span><span class="line"><span class="cl">		<span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+/,</span><span class="n">ctrl</span><span class="o">+</span><span class="n">shift</span><span class="o">+</span><span class="err">\</span>
+</span></span><span class="line"><span class="cl">	<span class="n">代码上下移动</span> <span class="n">选中代码</span> <span class="n">alt</span><span class="o">+</span><span class="n">上</span><span class="o">/</span><span class="n">下箭头</span>
+</span></span><span class="line"><span class="cl">	<span class="n">查看源码</span>  <span class="nf">选中类名</span> <span class="o">(</span><span class="n">F3</span> <span class="n">或者</span> <span class="n">Ctrl</span><span class="o">+</span><span class="n">鼠标点击</span><span class="err">）</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="eclipse-中如何提高开发效率">Eclipse 中如何提高开发效率</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nl">A:</span> <span class="n">自动生成构造方法</span>
+</span></span><span class="line"><span class="cl">	<span class="n">a</span><span class="o">:</span> <span class="n">无参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">from</span> <span class="n">Superclass</span>
+</span></span><span class="line"><span class="cl">	<span class="n">b</span><span class="o">:</span> <span class="n">带参构造方法</span> <span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Constructors</span> <span class="n">using</span> <span class="n">fields</span><span class="o">..</span> <span class="o">--</span> <span class="n">finish</span>
+</span></span><span class="line"><span class="cl"><span class="nl">B:</span> <span class="n">自动生成</span> <span class="n">get</span><span class="o">/</span><span class="n">set</span> <span class="n">方法</span>
+</span></span><span class="line"><span class="cl">	<span class="n">在代码区域右键</span><span class="o">--</span><span class="n">source</span><span class="o">--</span><span class="n">Generate</span> <span class="n">Getters</span> <span class="n">and</span> <span class="n">Setters</span><span class="o">...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description></item><item><title>利用腾讯云对象存储 COS 桶托管 hexo 博客</title><link>https://lruihao.cn/posts/cos-hexo/</link><pubDate>Tue, 22 Jan 2019 14:57:08 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/cos-hexo/</guid><description><![CDATA[<blockquote>
 <p>本以为 coding pages 与腾讯云合作后会更好，没想到正是这种初期 bug 不断，速度也是非常慢。比 gitee, 甚至 github 都要慢很多了。所以决定放弃 coding 了，本想挂到云服务器上，但是这个云服务器只续费了半年，可能不会再续费，前几天看到用腾讯云的 cos 桶 xml 制作动态相册的文章，知道了对象存储这个玩意，腾讯云 COS 提供免费 50G 的存储空间，还有 CDN 加速服务，我觉得是个不错的选择，部署后发现速度还挺好。<br>
 适用于 hexo, hugo 等静态博客的部署。</p>
 </blockquote>
@@ -5669,1316 +6138,4 @@ Resource 已存在時，或許不理會、或許先刪除後建立 （取代）R
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div>]]></description></item><item><title>在搜索。文章底部。侧栏添加最近文章模块</title><link>https://lruihao.cn/posts/recent-posts/</link><pubDate>Wed, 16 Jan 2019 17:50:52 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/recent-posts/</guid><description><![CDATA[<blockquote>
-<p>首先在主题配置文件添加以下关键字</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">recent_posts:
-</span></span><span class="line"><span class="cl">  enable: true
-</span></span><span class="line"><span class="cl">  search: true
-</span></span><span class="line"><span class="cl">  post: false
-</span></span><span class="line"><span class="cl">  sidebar: false
-</span></span><span class="line"><span class="cl">  icon: history
-</span></span><span class="line"><span class="cl">  title: 近期文章
-</span></span><span class="line"><span class="cl">  layout: block
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="侧栏">侧栏</h3>
-<p>在 <code>next/layout/_macro/sidebar.swig</code> 中的 <code>if theme.links</code> 对应的 <code>endif</code> 后面。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% if theme.recent_posts.enable and theme.recent_posts.sidebar %}
-</span></span><span class="line"><span class="cl">  &lt;div class=&#34;links-of-blogroll motion-element {{ &#34;links-of-blogroll-&#34; + theme.recent_posts.layout  }}&#34;&gt;
-</span></span><span class="line"><span class="cl">   &lt;div class=&#34;links-of-blogroll-title&#34;&gt;
-</span></span><span class="line"><span class="cl">     &lt;i class=&#34;fa fa-history fa-{{ theme.recent_posts.icon | lower }}&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">     {{ theme.recent_posts.title }}
-</span></span><span class="line"><span class="cl">   &lt;/div&gt;
-</span></span><span class="line"><span class="cl">   &lt;ul class=&#34;links-of-blogroll-list&#34;&gt;
-</span></span><span class="line"><span class="cl">     {% set posts = site.posts.sort(&#39;-date&#39;) %}
-</span></span><span class="line"><span class="cl">     {% for post in posts.slice(&#39;0&#39;, &#39;3&#39;) %}
-</span></span><span class="line"><span class="cl">       &lt;li&gt;
-</span></span><span class="line"><span class="cl">         &lt;a href=&#34;{{ url_for(post.path) }}&#34; title=&#34;{{ post.title }}&#34; target=&#34;_blank&#34;&gt;{{ post.title }}&lt;/a&gt;
-</span></span><span class="line"><span class="cl">       &lt;/li&gt;
-</span></span><span class="line"><span class="cl">     {% endfor %}
-</span></span><span class="line"><span class="cl">   &lt;/ul&gt;
-</span></span><span class="line"><span class="cl"> &lt;/div&gt;
-</span></span><span class="line"><span class="cl">{% endif %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="搜索结果处添加">搜索结果处添加</h3>
-<p>找到路径<code>H:\hexo\themes\hexo-theme-next\layout\_partials\search</code>下<code>localsearch.swig</code>文件<br>
-把<code>&lt;div id=&quot;local-search-result&quot;&gt;&lt;/div&gt;</code>修改成以下内容（这里显示 15 篇）</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#34;local-search-result&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="cl">  {% if theme.recent_posts.enable and theme.recent_posts.search %}
-</span></span><span class="line"><span class="cl">    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&#34;text-align: center;padding: 3px 0 0;&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&#34;margin-top: 20px;font-size: 18px;font-weight: 600;border-bottom: 1px solid #ccc;&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&#34;fa fa-{{ theme.recent_posts.icon }}&#34;</span> <span class="na">aria-hidden=</span><span class="s">&#34;true&#34;</span><span class="nt">&gt;&lt;/i&gt;</span>
-</span></span><span class="line"><span class="cl">       {{ theme.recent_posts.title }}
-</span></span><span class="line"><span class="cl">     <span class="nt">&lt;/div&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="nt">&lt;ul</span> <span class="na">style=</span><span class="s">&#34;margin: 0;padding: 0;list-style: none;&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="cl">       {% set posts = site.posts.sort(&#39;-date&#39;) %}
-</span></span><span class="line"><span class="cl">       {% for post in posts.slice(&#39;0&#39;, &#39;15&#39;) %}
-</span></span><span class="line"><span class="cl">         <span class="nt">&lt;li&gt;</span>
-</span></span><span class="line"><span class="cl">           <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#34;{{ url_for(post.path) }}&#34;</span> <span class="na">title=</span><span class="s">&#34;{{ post.title }}&#34;</span> <span class="na">target=</span><span class="s">&#34;_blank&#34;</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;</span>
-</span></span><span class="line"><span class="cl">         <span class="nt">&lt;/li&gt;</span>
-</span></span><span class="line"><span class="cl">       {% endfor %}
-</span></span><span class="line"><span class="cl">     <span class="nt">&lt;/ul&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/div&gt;</span>
-</span></span><span class="line"><span class="cl">  {% endif %}
-</span></span><span class="line"><span class="cl"><span class="nt">&lt;/div&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="文章尾部添加">文章尾部添加</h3>
-<p>把代码加在<code>H:\hexo\themes\hexo-theme-next\layout\_macro\post.swig</code>里的相应位置（我加在 tags 后）</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">{% if not is_index and theme.recent_posts.enable and theme.recent_posts.post %}
-</span></span><span class="line"><span class="cl">  <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&#34;text-align: center;padding: 10px 0 0;&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&#34;margin: 60px 0px 10px;font-size: 18px;border-bottom: 1px solid #eee;&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&#34;fa fa-{{ theme.recent_posts.icon }}&#34;</span> <span class="na">aria-hidden=</span><span class="s">&#34;true&#34;</span><span class="nt">&gt;&lt;/i&gt;</span>
-</span></span><span class="line"><span class="cl">     {{ theme.recent_posts.title }}
-</span></span><span class="line"><span class="cl">   <span class="nt">&lt;/div&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="nt">&lt;ul</span> <span class="na">style=</span><span class="s">&#34;margin: 0;padding: 0;list-style: none;font-size: 11px;&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="cl">     {% set posts = site.posts.sort(&#39;-date&#39;) %}
-</span></span><span class="line"><span class="cl">     {% for post in posts.slice(&#39;0&#39;, &#39;5&#39;) %}
-</span></span><span class="line"><span class="cl">         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#34;{{ url_for(post.path) }}&#34;</span> <span class="na">title=</span><span class="s">&#34;{{ post.title }}&#34;</span> <span class="na">target=</span><span class="s">&#34;_blank&#34;</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;</span><span class="ni">&amp;emsp;</span>
-</span></span><span class="line"><span class="cl">     {% endfor %}
-</span></span><span class="line"><span class="cl">   <span class="nt">&lt;/ul&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/div&gt;</span>
-</span></span><span class="line"><span class="cl">{% endif %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="其他">其他</h1>
-<p>可尝试将<code>-date</code>改为<code>-update</code></p>
-]]></description></item><item><title>hexo 插件及 next 内置样式集</title><link>https://lruihao.cn/posts/nextplugin/</link><pubDate>Sat, 24 Nov 2018 16:54:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/nextplugin/</guid><description><![CDATA[<blockquote>
-<p>2021/10/2 更新<br>
-博客已迁移至 Hugo, 插件演示不适用，已删除。<br>
-让文章写的好看又简洁又好用的插件！<a
-  href="https://hexo.io/zh-cn/docs/tag-plugins.html"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->hexo 完整的标签列表
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a>，<a
-  href="https://theme-next.org/docs/tag-plugins/"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->next 插件列表
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-</blockquote>
-<h3 id="hexo-插件">hexo 插件</h3>
-<h4 id="hexo-lazyload-imagehttpsgithubcomtroy-yanghexo-lazyload-image"><a
-  href="https://github.com/Troy-Yang/hexo-lazyload-image"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->hexo-lazyload-image
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-lazyload-image --save
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>First add configuration in <code>_config.yml</code> from your hexo project.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">lazyload:
-</span></span><span class="line"><span class="cl">  enable: true 
-</span></span><span class="line"><span class="cl">  onlypost: false
-</span></span><span class="line"><span class="cl">  loadingImg: # eg ./images/loading.gif
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="hexo-ruby-marks">hexo-ruby-marks</h4>
-<blockquote>
-<p>不支持<code>ruby</code>新标签的浏览器将显示<code>rp</code>中的内容。</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;ruby&gt;</span>博採眾長<span class="nt">&lt;rp&gt;</span>（<span class="nt">&lt;/rp&gt;</span> <span class="nt">&lt;rt&gt;</span>lruihao.cn<span class="nt">&lt;/rt&gt;&lt;rp&gt;</span>）<span class="nt">&lt;/rp&gt;&lt;/ruby&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><ruby>博採眾長<rp>（</rp> <rt>lruihao.cn</rt><rp>）</rp></ruby></p>
-<p><strong>插件使用</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm i hexo-ruby-marks
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">{% ruby _**base**_|_**top text**_ %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="hexo-pwahttpsgithubcomlavas-projecthexo-pwa"><a
-  href="https://github.com/lavas-project/hexo-pwa"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->hexo-pwa
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm install --save hexo-pwa
-</span></span></code></pre></td></tr></table>
-</div>
-</div><blockquote>
-<p>You can configure this plugin in <code>_config.yml</code>.（配置完即可使用不许单独设置<code>manifest.json</code>文件及配置，插件生成）</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pwa:
-</span></span><span class="line"><span class="cl">  manifest:
-</span></span><span class="line"><span class="cl">    path: /manifest.json
-</span></span><span class="line"><span class="cl">    body:
-</span></span><span class="line"><span class="cl">      name: hexo
-</span></span><span class="line"><span class="cl">      short_name: hexo
-</span></span><span class="line"><span class="cl">      icons:
-</span></span><span class="line"><span class="cl">        - src: /images/android-chrome-192x192.png
-</span></span><span class="line"><span class="cl">          sizes: 192x192
-</span></span><span class="line"><span class="cl">          type: image/png
-</span></span><span class="line"><span class="cl">        - src: /images/android-chrome-512x512.png
-</span></span><span class="line"><span class="cl">          sizes: 512x512
-</span></span><span class="line"><span class="cl">          type: image/png
-</span></span><span class="line"><span class="cl">      start_url: /index.html
-</span></span><span class="line"><span class="cl">      theme_color: &#39;#ffffff&#39;
-</span></span><span class="line"><span class="cl">      background_color: &#39;#ffffff&#39;
-</span></span><span class="line"><span class="cl">      display: standalone
-</span></span><span class="line"><span class="cl">  serviceWorker:
-</span></span><span class="line"><span class="cl">    path: /sw.js
-</span></span><span class="line"><span class="cl">    preload:
-</span></span><span class="line"><span class="cl">      urls:
-</span></span><span class="line"><span class="cl">        - /
-</span></span><span class="line"><span class="cl">      posts: 5
-</span></span><span class="line"><span class="cl">    opts:
-</span></span><span class="line"><span class="cl">      networkTimeoutSeconds: 5
-</span></span><span class="line"><span class="cl">    routes:
-</span></span><span class="line"><span class="cl">      - pattern: !!js/regexp /hm.baidu.com/
-</span></span><span class="line"><span class="cl">        strategy: networkOnly
-</span></span><span class="line"><span class="cl">      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
-</span></span><span class="line"><span class="cl">        strategy: cacheFirst
-</span></span><span class="line"><span class="cl">      - pattern: !!js/regexp /\//
-</span></span><span class="line"><span class="cl">        strategy: networkFirst
-</span></span><span class="line"><span class="cl">  priority: 5
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="hexo-tag-dplayer">hexo-tag-dplayer</h4>
-<p><a
-  href="https://github.com/MoePlayer/hexo-tag-dplayer"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->hexo-tag-dplayer
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-tag-dplayer --save
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">{% dplayer key=value ... %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>key can be</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dplayer options:
-</span></span><span class="line"><span class="cl">    &#39;autoplay&#39;, &#39;loop&#39;, &#39;screenshot&#39;, &#39;hotkey&#39;, &#39;mutex&#39;, &#39;dmunlimited&#39; : bool options, use &#34;yes&#34; &#34;y&#34; &#34;true&#34; &#34;1&#34; &#34;on&#34; or just without value to enable
-</span></span><span class="line"><span class="cl">    &#39;preload&#39;, &#39;theme&#39;, &#39;lang&#39;, &#39;logo&#39;, &#39;url&#39;, &#39;pic&#39;, &#39;thumbnails&#39;, &#39;vidtype&#39;, &#39;suburl&#39;, &#39;subtype&#39;, &#39;subbottom&#39;, &#39;subcolor&#39;, &#39;subcolor&#39;, &#39;id&#39;, &#39;api&#39;, &#39;token&#39;, &#39;addition&#39;, &#39;dmuser&#39; : string arguments
-</span></span><span class="line"><span class="cl">    &#39;volume&#39;, &#39;maximum&#39; : number arguments
-</span></span><span class="line"><span class="cl">container options:
-</span></span><span class="line"><span class="cl">    &#39;width&#39;, &#39;height&#39; : string, used in container element style
-</span></span><span class="line"><span class="cl">other:
-</span></span><span class="line"><span class="cl">    &#39;code&#39; : value of this key will be append to script tag
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">{% dplayer &#34;url=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4&#34; &#34;addition=https://dplayer.daoapp.io/bilibili?aid=4157142&#34; &#34;api=https://api.prprpr.me/dplayer/&#34; &#34;pic=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg&#34; &#34;id=9E2E3368B56CDBB4&#34; &#34;loop=yes&#34; &#34;theme=#FADFA3&#34; &#34;autoplay=false&#34; &#34;token=tokendemo&#34; %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="hexo-tag-aplayer">hexo-tag-aplayer</h4>
-<p><a
-  href="https://github.com/MoePlayer/hexo-tag-aplayer"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->more
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install --save hexo-tag-aplayer
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">{% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>标签参数</strong></p>
-<ul>
-<li><code>title</code> : 曲目标题</li>
-<li><code>author</code>: 曲目作者</li>
-<li><code>url</code>: 音乐文件 URL 地址</li>
-<li><code>picture_url</code>: （可选） 音乐对应的图片地址</li>
-<li><code>narrow</code>: （可选）播放器袖珍风格</li>
-<li><code>autoplay</code>:  （可选） 自动播放，移动端浏览器暂时不支持此功能</li>
-<li><code>width:xxx</code>: （可选） 播放器宽度 （默认：100%)</li>
-<li><code>lrc:xxx</code>: （可选）歌词文件 URL 地址</li>
-</ul>
-<p>当开启 Hexo 的 <a
-  href="https://hexo.io/zh-cn/docs/asset-folders.html#%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->文章资源文件夹
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 功能时，可以将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% aplayer &#34;Caffeine&#34; &#34;Jeff Williams&#34; &#34;caffeine.mp3&#34; &#34;picture.jpg&#34; &#34;lrc:caffeine.txt&#34; %}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">{% aplayer &#34;你离开了南京，从此没人和我说话&#34; &#34;李志&#34; &#34;https://cdn.lruihao.cn/files/nanjing.mp3&#34; &#34;https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300&#34; %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><meting-js url="https://cdn.lruihao.cn/files/nanjing.mp3" name="李志" artist="你离开了南京，从此没人和我说话" cover="https://p2.music.126.net/UuSe-Vc6rS7JtRJSQgDU2g==/2323268069553116.jpg?param=300x300" theme="#448aff"></meting-js>
-<h4 id="hexo-pdf">hexo-pdf</h4>
-<p><a
-  href="https://lruihao.cn/posts/next-pdf/"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->pdf 传送门
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-<h4 id="hexo-filter-flowchart流程图">hexo-filter-flowchart（流程图）</h4>
-<p><a
-  href="https://flowchart.js.org"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->语法
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install --save hexo-filter-flowchart
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">```%flow #去掉%号
-</span></span><span class="line"><span class="cl">st=&gt;start: Start|past:&gt;https://lruihao.cn[blank]
-</span></span><span class="line"><span class="cl">e=&gt;end: End:&gt;https://www.lruihao.cn[blank]
-</span></span><span class="line"><span class="cl">op1=&gt;operation: My Operation|past
-</span></span><span class="line"><span class="cl">op2=&gt;operation: Stuff|current
-</span></span><span class="line"><span class="cl">sub1=&gt;subroutine: My Subroutine|invalid
-</span></span><span class="line"><span class="cl">cond=&gt;condition: Yes
-</span></span><span class="line"><span class="cl">or No?|approved:&gt;/hexo/nextplugin.html
-</span></span><span class="line"><span class="cl">c2=&gt;condition: Good idea|rejected
-</span></span><span class="line"><span class="cl">io=&gt;inputoutput: catch something...|request
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">st-&gt;op1(right)-&gt;cond
-</span></span><span class="line"><span class="cl">cond(yes, right)-&gt;c2
-</span></span><span class="line"><span class="cl">cond(no)-&gt;sub1(left)-&gt;op1
-</span></span><span class="line"><span class="cl">c2(yes)-&gt;io-&gt;e
-</span></span><span class="line"><span class="cl">c2(no)-&gt;op2-&gt;e
-</span></span><span class="line"><span class="cl">```
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="hexo-spoiler">hexo-spoiler</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-spoiler --save
-</span></span></code></pre></td></tr></table>
-</div>
-</div><blockquote>
-<p>If hexo can&rsquo;t detect this plugin automatically, you need to modify the <code>plugins</code> section of <code>[path_to_your_site]/_config.yml</code> manually, like:</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">plugins</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"> </span>- <span class="l">hexo-spoiler</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-plain" data-lang="plain"><span class="line"><span class="cl">{% spoiler [text] %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><blockquote>
-<p>It will pixelate your text, and click to reveal. Click again to hide your text again.
-But you need to add <code>&lt;br&gt;</code> manually if you want line breaks after/before it.</p>
-</blockquote>
-<p>When you writes:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-plain" data-lang="plain"><span class="line"><span class="cl">{% spoiler text %}
-</span></span><span class="line"><span class="cl">{% spoiler ~~text~~ %}
-</span></span><span class="line"><span class="cl">{% spoiler *text* %}
-</span></span><span class="line"><span class="cl">{% spoiler **text** %}&lt;br&gt;
-</span></span><span class="line"><span class="cl">{% spoiler **hello welcome to 博採眾長！** %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="宅音乐侧栏播放器插件">宅音乐侧栏播放器插件</h3>
-<p><a
-  href="https://player.lruihao.cn"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
-><del>体验</del>
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> <a
-  href="https://github.com/Lruihao/zhai-music"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->源码
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-<blockquote>
-<p>目前在 next 中可能引起部分 css 冲突，建议在 next 中使用在单个页面中。<br>
-依赖于 jQuery，一行 js 可以引入播放器插件。</p>
-</blockquote>
-<h3 id="caniuse">caniuse</h3>
-<h4 id="使用">使用</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% caniuse feature @ periods %}
-</span></span><span class="line"><span class="cl">&lt;!-- Tag Alias --&gt;
-</span></span><span class="line"><span class="cl">{% can feature @ periods %}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">feature : Search for the feature you want on https://caniuse.com, then click on the hash sign to the left of the search result heading and you will get the unique name of this feature.
-</span></span><span class="line"><span class="cl">periods : Select the browser versions to display. Supported values: past_1, past_2, past_3, past_4, past_5, current, future_3, future_2, future_1. If this value is empty, the default value &#39;current&#39; will be used.
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="栗子">栗子</h4>
-<p><strong>Caniuse without periods</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% caniuse fetch %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Caniuse with current period</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% can sharedarraybuffer @ current %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Caniuse with future periods</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% caniuse loading-lazy-attr @ future_3,future_2,future_1 %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Caniuse with past periods</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% caniuse link-rel-modulepreload @ past_1,past_2,past_3,past_4,past_5 %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="include-raw">Include Raw</h3>
-<p>This tag include any raw content into your posts. Path is relative to your site source directory.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% include_raw &#39;_data/path/to/file.html&#39; %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Let&rsquo;s create include-raw.html file in <code>_data</code> directory under site root directory with following content:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Any &lt;strong&gt;raw content&lt;/strong&gt; may be included with this tag.
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Then in any post we can use this content with include_raw tag:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% include_raw &#39;_data/path/to/include-raw.html&#39; %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Any <strong>raw content</strong> may be included with this tag.</p>
-<h3 id="button">button</h3>
-<p><a
-  href="https://theme-next.org/docs/tag-plugins/button"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->more info
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% button url, text, icon [class], [title] %}
-</span></span><span class="line"><span class="cl">&lt;!-- Tag Alias --&gt;
-</span></span><span class="line"><span class="cl">{% btn url, text, icon [class], [title] %}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">url     : Absolute or relative path to URL.
-</span></span><span class="line"><span class="cl">text    : Button text. Required if no icon specified.
-</span></span><span class="line"><span class="cl">icon    : FontAwesome icon name (without &#39;fa-&#39; at the begining). Required if no text specified.
-</span></span><span class="line"><span class="cl">[class] : FontAwesome class(es): fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x
-</span></span><span class="line"><span class="cl">          Optional parameter.
-</span></span><span class="line"><span class="cl">[title] : Tooltip at mouseover.
-</span></span><span class="line"><span class="cl">          Optional parameter.
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="text-center">{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}</div>
-```
-<h3 id="mermaid">Mermaid</h3>
-<p><a
-  href="https://theme-next.org/docs/tag-plugins/mermaid"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->more info
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-<p>example</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% mermaid gitGraph: %}
-</span></span><span class="line"><span class="cl">options
-</span></span><span class="line"><span class="cl">{
-</span></span><span class="line"><span class="cl">    &#34;nodeSpacing&#34;: 150,
-</span></span><span class="line"><span class="cl">    &#34;nodeRadius&#34;: 10
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">end
-</span></span><span class="line"><span class="cl">commit
-</span></span><span class="line"><span class="cl">branch newbranch
-</span></span><span class="line"><span class="cl">checkout newbranch
-</span></span><span class="line"><span class="cl">commit
-</span></span><span class="line"><span class="cl">checkout master
-</span></span><span class="line"><span class="cl">commit
-</span></span><span class="line"><span class="cl">merge newbranch
-</span></span><span class="line"><span class="cl">{% endmermaid %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="video">video</h3>
-<h4 id="usage">Usage</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">{% video url %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="examples">Examples</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% video https://example.com/sample.mp4 %}
-</span></span><span class="line"><span class="cl">{% video /path/to/your/video.mp4 %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="tab-选项卡">tab 选项卡</h3>
-<blockquote>
-<p>&ldquo;tab&quot;为选项卡的名称，可以自定义，数字是几表示从第几个选项卡开始。非必须，若数值为-1 则隐藏选项卡内容。
-<a
-  href="https://theme-next.org/docs/tag-plugins/tabs"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->查看更多
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% tabs Unique name, [index] %}
-</span></span><span class="line"><span class="cl">&lt;!-- tab [Tab caption] [@icon] --&gt;
-</span></span><span class="line"><span class="cl">Any content (support inline tags too).
-</span></span><span class="line"><span class="cl">&lt;!-- endtab --&gt;
-</span></span><span class="line"><span class="cl">{% endtabs %}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Unique name   : Unique name of tabs block tag without comma.
-</span></span><span class="line"><span class="cl">                Will be used in #id&#39;s as prefix for each tab with their index numbers.
-</span></span><span class="line"><span class="cl">                If there are whitespaces in name, for generate #id all whitespaces will replaced by dashes.
-</span></span><span class="line"><span class="cl">                Only for current url of post/page must be unique!
-</span></span><span class="line"><span class="cl">[index]       : Index number of active tab.
-</span></span><span class="line"><span class="cl">                If not specified, first tab (1) will be selected.
-</span></span><span class="line"><span class="cl">                If index is -1, no tab will be selected. It&#39;s will be something like spoiler.
-</span></span><span class="line"><span class="cl">                Optional parameter.
-</span></span><span class="line"><span class="cl">[Tab caption] : Caption of current tab.
-</span></span><span class="line"><span class="cl">                If not caption specified, unique name with tab index suffix will be used as caption of tab.
-</span></span><span class="line"><span class="cl">                If not caption specified, but specified icon, caption will empty.
-</span></span><span class="line"><span class="cl">                Optional parameter.
-</span></span><span class="line"><span class="cl">[@icon]       : FontAwesome icon name (without &#39;fa-&#39; at the begining).
-</span></span><span class="line"><span class="cl">                Can be specified with or without space; e.g. &#39;Tab caption @icon&#39; similar to &#39;Tab caption@icon&#39;.
-</span></span><span class="line"><span class="cl">                Optional parameter.
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>{% tabs tab,2 %}</p>
-<!-- tab -->
-<p>this is tab1</p>
-<!-- endtab -->
-<!-- tab -->
-<p>this is tab2</p>
-<!-- endtab -->
-<!-- tab -->
-<p>this is tab3</p>
-<!-- endtab -->
-<p>{% endtabs %}</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&gt; 数值为-1
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>{% tabs 选项，-1 %}</p>
-<!-- tab -->
-<p><strong>选项 1</strong></p>
-<!-- endtab -->
-<!-- tab -->
-<p><strong>选项 2</strong></p>
-<!-- endtab -->
-<!-- tab -->
-<p><strong>选项 3</strong></p>
-<!-- endtab -->
-<p>{% endtabs %}</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; 名字写在选项里面
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>{% tabs Fourth unique name %}</p>
-<!-- tab Solution 1 -->
-<p><strong>This is Tab 1.</strong></p>
-<!-- endtab -->
-<!-- tab Solution 2 -->
-<p><strong>This is Tab 2.</strong></p>
-<!-- endtab -->
-<!-- tab Solution 3 -->
-<p><strong>This is Tab 3.</strong></p>
-<!-- endtab -->
-<p>{% endtabs %}</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">### note 便签
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&gt; 主题配置文件搜索 note, 可设置风格和图标是否显示。
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="note-tag-bs-callout">Note tag (bs-callout).</h1>
-<p>note:</p>
-<h1 id="note-tag-style-values">Note tag style values:</h1>
-<h1 id="--simple----bs-callout-old-alert-style-default">- simple    bs-callout old alert style. Default.</h1>
-<h1 id="--modern----bs-callout-new-v2-v3-alert-style">- modern    bs-callout new (v2-v3) alert style.</h1>
-<h1 id="--flat------flat-callout-style-with-background-like-on-mozilla-or-stackoverflow">- flat      flat callout style with background, like on Mozilla or StackOverflow.</h1>
-<h1 id="--disabled--disable-all-css-styles-import-of-note-tag">- disabled  disable all CSS styles import of note tag.</h1>
-<p>style: flat
-icons: true
-border_radius: 15</p>
-<h1 id="offset-lighter-of-background-in--for-modern-and-flat-styles-modern--12--12-flat--18--6">Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</h1>
-<h1 id="offset-also-applied-to-label-tag-variables-this-option-can-work-with-disabled-note-tag">Offset also applied to label tag variables. This option can work with disabled note tag.</h1>
-<p>light_bg_offset: 0</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">写法
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>{% note default %}</p>
-<h4 id="default">default</h4>
-<p>类型还有以下几种
-{% endnote %}
-{% note primary %}</p>
-<h4 id="primary">primary</h4>
-<p>内容
-{% endnote %}
-{% note success %}</p>
-<h4 id="success">success</h4>
-<p>内容
-{% endnote %}
-{% note info %}</p>
-<h4 id="info">info</h4>
-<p>内容
-{% endnote %}
-{% note warning %}</p>
-<h4 id="warning">warning</h4>
-<p>内容
-{% endnote %}
-{% note danger %}</p>
-<h4 id="danger">danger</h4>
-<p>内容
-{% endnote %}
-{% note %}</p>
-<h4 id="不填">不填</h4>
-<p>内容
-{% endnote %}
-{% note danger no-icon %}</p>
-<h4 id="danger-no-icon">danger no-icon</h4>
-<p>内容
-{% endnote %}</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">### 引用（文本居中）
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>{% cq %}
-<strong>there are test words</strong>
-{% endcq %}</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">### [Font Awesome 图标](https://www.runoob.com/font-awesome/fontawesome-tutorial.html)
-</span></span><span class="line"><span class="cl">&gt; Font Awesome 是一套绝佳的图标字体库和 CSS 框架。  
-</span></span><span class="line"><span class="cl">&gt; Font Awesome 字体为您提供可缩放矢量图标，它可以被定制大小、颜色、阴影以及任何可以用 CSS 的样式。  
-</span></span><span class="line"><span class="cl">&gt; 要使用 Font Awesome 图标，请在 HTML 页面的 部分中添加以下行：  
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#### 1、国内推荐 CDN
-</span></span></code></pre></td></tr></table>
-</div>
-</div><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-```
-#### 2、海外推荐 CDN
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&#34;&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>next 已经引用了，可以直接用，比如：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car&#34; style=&#34;font-size:48px;&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car&#34; style=&#34;font-size:60px;color:red;&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car fa-lg&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car fa-2x&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car fa-3x&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car fa-4x&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-car fa-5x&#34;&gt;&lt;/i&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><i class="fa fa-car"></i> <i class="fa fa-car" style="font-size:48px;"></i> <i class="fa fa-car" style="font-size:60px;color:red;"></i> <i class="fa fa-car fa-lg"></i> <i class="fa fa-car fa-2x"></i> <i class="fa fa-car fa-3x"></i> <i class="fa fa-car fa-4x"></i> <i class="fa fa-car fa-5x"></i></p>
-<p>动态图标</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;i class=&#34;fa fa-spinner fa-spin&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-circle-o-notch fa-spin&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-refresh fa-spin&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-cog fa-spin&#34;&gt;&lt;/i&gt;
-</span></span><span class="line"><span class="cl">&lt;i class=&#34;fa fa-spinner fa-pulse&#34;&gt;&lt;/i&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><i class="fa fa-spinner fa-spin"></i> <i class="fa fa-circle-o-notch fa-spin"></i> <i class="fa fa-refresh fa-spin"></i> <i class="fa fa-cog fa-spin"></i> <i class="fa fa-spinner fa-pulse"></i></p>
-<h3 id="代码块等">代码块等</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="p">[</span><span class="n">language</span><span class="p">]</span> <span class="p">[</span><span class="n">title</span><span class="p">]</span> <span class="p">[</span><span class="n">url</span><span class="p">]</span> <span class="p">[</span><span class="n">link</span> <span class="n">text</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">code</span> <span class="n">snippet</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl"><span class="gd">-  printf(&#34;Hello World!&#34;);
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+  printf(&#34;Hello_World!&#34;);
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>iframe</strong>
-在文章中插入 iframe。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% iframe url [width] [height] %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="todo-list">Todo list</h3>
-<ul>
-<li><i class="fa fa-check-square"></i> 已完成</li>
-<li><i class="fa fa-square"></i> 未完成</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">&lt;ul&gt;
-</span></span></span><span class="line"><span class="cl"><span class="err">&lt;li&gt;&lt;i class=&#34;fa fa-check-square&#34;&gt;&lt;/i&gt; 已完成&lt;/li&gt;
-</span></span></span><span class="line"><span class="cl"><span class="err">&lt;li&gt;&lt;i class=&#34;fa fa-square&#34;&gt;&lt;/i&gt; 未完成&lt;/li&gt;
-</span></span></span><span class="line"><span class="cl"><span class="err">&lt;/ul&gt;
-</span></span></span><span class="line"><span class="cl"><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">&lt;!--或者--&gt;
-</span></span></span><span class="line"><span class="cl"><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">- &lt;i class=&#34;fa fa-check-square&#34;&gt;&lt;/i&gt; 已完成
-</span></span></span><span class="line"><span class="cl"><span class="err">- &lt;i class=&#34;fa fa-square&#34;&gt;&lt;/i&gt; 未完成
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="label">Label</h3>
-<p>主题配置文件中打开</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Label tag.
-</span></span><span class="line"><span class="cl">label: true
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><code>@</code>前面的是 label 的名字，后面的是要显示的文字</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% label default@default %}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">primary success info warning danger
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="其他httpwwwmykernelcnmy-hexo-next-1html"><a
-  href="http://www.mykernel.cn/my-hexo-next-1.html"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
-  
-  
-  
-  
->其他
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></h3>
-<blockquote>
-<p>包括小色块、左侧色条、右侧色条、上方色条、数字色块（需要自定义样式）</p>
-</blockquote>]]></description></item><item><title>next添加支持pdf</title><link>https://lruihao.cn/posts/next-pdf/</link><pubDate>Fri, 09 Nov 2018 12:51:48 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/next-pdf/</guid><description><![CDATA[<blockquote>
-<p>最新的next主题已经更新了支持PDF功能，<del>写法也和链接写法一样</del>，可是我没有更新，我按github上那个readme试了一下好像不可以，所以用了另外一种插件的方法。</p>
-</blockquote>
-<h2 id="iframe推荐">iframe(推荐)</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">&#34;/posts/next-pdf/1.pdf&#34;</span> <span class="na">style=</span><span class="s">&#34;width: 100%;height: 800px;&#34;</span><span class="nt">&gt;&lt;/iframe&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="模板自带">模板自带</h2>
-<blockquote>
-<p>今天（2019.4.3）又看了一下，改了写法，写法和插件一样，我在我的模板里也更新了。（插件模板二选一即可,个人更喜欢插件）
-但是如果安装插件后，也是优先模板的pdf脚本解析pdf,所以在我的模板中把模板的pdf脚本先注释了。要启用去掉注释即可。</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*
-</span></span></span><span class="line"><span class="cl"><span class="cm">&#39;use strict&#39;;
-</span></span></span><span class="line"><span class="cl"><span class="cm">
-</span></span></span><span class="line"><span class="cl"><span class="cm">function pdf(args) {
-</span></span></span><span class="line"><span class="cl"><span class="cm">  return `&lt;div class=&#34;pdf&#34; target=&#34;${args[0]}&#34; height=&#34;${args[1] || &#39;&#39;}&#34;&gt;&lt;/div&gt;`;
-</span></span></span><span class="line"><span class="cl"><span class="cm">}
-</span></span></span><span class="line"><span class="cl"><span class="cm">
-</span></span></span><span class="line"><span class="cl"><span class="cm">hexo.extend.tag.register(&#39;pdf&#39;, pdf, {ends: false});
-</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="pdf插件推荐">pdf插件(推荐)</h2>
-<h3 id="安装">安装</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install --save hexo-pdf
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="使用">使用</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% pdf url %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>比如本文</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% pdf /posts/next-pdf/1.pdf %}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><iframe src="/posts/next-pdf/1.pdf" style="width: 100%;height: 800px;"></iframe>]]></description></item></channel></rss>
+</div>]]></description></item></channel></rss>
