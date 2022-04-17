@@ -2766,21 +2766,14 @@
   
 >该网址
       <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a> 内的手写体图片进行爬取！这个手写体是我在手机上通过《手迹造字》app 书写的，大概 6886 个字符，历时两年多，目前仍在修改中。<a
-  href="https://lruihao.cn/posts/font-mmt/"
-  
-  
-    
-    
-    target="_blank"
-  
-  
-    rel="external nofollow noopener noreffer"
+  href="/projects/font-mmt/"
   
   
   
   
->字体效果查看
-      <i class="fas fa-external-link-alt fa-fw fa-xs"></i></a></p>
+  
+  
+>字体效果查看</a></p>
 </blockquote>
 <h1 id="思路设计">思路设计</h1>
 <blockquote>
@@ -2936,7 +2929,10 @@
 <blockquote>
 <p>文件夹左下角数目变化</p>
 </blockquote>
-<p></p>
+<p><figure><a class="lightgallery" href="/posts/mmtimgpy/images/mmtpy.gif" title="爬取过程" data-thumbnail="/posts/mmtimgpy/images/mmtpy.gif" data-sub-html="<h2>爬取过程</h2><p>爬取过程</p>">
+    
+  </a><figcaption class="image-caption">爬取过程</figcaption>
+  </figure></p>
 <div class="details admonition danger open">
     <div class="details-summary admonition-title">
       <i class="icon fas fa-skull-crossbones fa-fw"></i>Danger<i class="details-icon fas fa-angle-right fa-fw"></i>
@@ -2945,11 +2941,17 @@
       <div class="admonition-content">说实话看着控制台不停地输出提示信息有没有很爽，对于强迫症来说真的是很治愈了！但是爬取第 6042 张图片的时候，我打开了一下目标网页发现无法加载图片了，就想这应该也算是一次 Dos 攻击了吧！打开控制台果然停了，相当于访问了近两万次！唉，还是太暴力了！！还差 800 多张，只好又重新接着写上次的位置爬！不慎造成目标网站服务器压力，实在对不起！</div>
     </div>
   </div>
-<p></p>
+<p><figure><a class="lightgallery" href="/posts/mmtimgpy/images/error.png" title="错误提示" data-thumbnail="/posts/mmtimgpy/images/error.png" data-sub-html="<h2>错误提示</h2><p>错误提示</p>">
+    
+  </a><figcaption class="image-caption">错误提示</figcaption>
+  </figure></p>
 <blockquote>
 <p>一个半小时左右后终于下载完了，一共是 6886 张；程序是同时下载了透明和白色背景的图片的！分别在 0,1 子文件夹！</p>
 </blockquote>
-<p></p>
+<p><figure><a class="lightgallery" href="/posts/mmtimgpy/images/jieguo.png" title="爬取完毕" data-thumbnail="/posts/mmtimgpy/images/jieguo.png" data-sub-html="<h2>爬取完毕</h2><p>爬取完毕</p>">
+    
+  </a><figcaption class="image-caption">爬取完毕</figcaption>
+  </figure></p>
 <h1 id="其他思路">其他思路</h1>
 <p>模拟浏览器载入 html 文件，获取源码，查找到所有<code>&lt;img&gt;</code>标签内链接，必要时配合正则表达式，然后下载图片。</p>]]></description></item><item><title>python 玩微信：初探 wxpy</title><link>https://lruihao.cn/posts/wxpy1/</link><pubDate>Sat, 20 Apr 2019 15:44:57 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/wxpy1/</guid><description><![CDATA[<div class="featured-image">
         <img src="/posts/wxpy1/images/1.png" referrerpolicy="no-referrer">
@@ -3278,8 +3280,6 @@
 <em><strong>文中涉及的图片涉及个人隐私，仅做举例，请勿传播</strong></em><br>
 <strong>文中编码由 Sunbelife 提供，来自他的同名微信公众号，本博仅用于学习，侵删</strong></p>
 </blockquote>
-<h1 id="预览">预览</h1>
-<p></p>
 <h1 id="依赖">依赖</h1>
 <ul>
 <li>wxpy（Pythone 登录微信）</li>
@@ -3628,7 +3628,10 @@
 </span></span><span class="line"><span class="cl"><span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="s2">&#34;./group-images&#34;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p></p>
+</div><p><figure><a class="lightgallery" href="/posts/wximgpy/images/2.png" title="绥宁一中高 396 班" data-thumbnail="/posts/wximgpy/images/2.png" data-sub-html="<h2>绥宁一中高 396 班</h2><p>绥宁一中高 396 班</p>">
+    
+  </a><figcaption class="image-caption">绥宁一中高 396 班</figcaption>
+  </figure></p>
 <blockquote>
 <p>加个列表，加个循环实现自动爬取所有群聊头像并发送</p>
 </blockquote>
