@@ -5318,7 +5318,10 @@ Ctrl+F 查找 <code>localhost</code><br>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="图片类型选择">图片类型选择</h3>
-<p></p>
+<p><figure><a class="lightgallery" href="/posts/webbiji/images/imgType.jpg" title="图片类型选择" data-thumbnail="/posts/webbiji/images/imgType.jpg" data-sub-html="<h2>图片类型选择</h2><p>图片类型选择</p>">
+    
+  </a><figcaption class="image-caption">图片类型选择</figcaption>
+  </figure></p>
 <h2 id="css">css</h2>
 <h3 id="flexbox">flexbox</h3>
 <p>Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 的版本就用 flex 替代了 float 来进行排版。<br>

@@ -1978,7 +1978,10 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="图片类型选择">图片类型选择</h3>
-<p></p>
+<p><figure><a class="lightgallery" href="/posts/webbiji/images/imgType.jpg" title="图片类型选择" data-thumbnail="/posts/webbiji/images/imgType.jpg" data-sub-html="<h2>图片类型选择</h2><p>图片类型选择</p>">
+    
+  </a><figcaption class="image-caption">图片类型选择</figcaption>
+  </figure></p>
 <h2 id="css">css</h2>
 <h3 id="flexbox">flexbox</h3>
 <p>Flex 布局将成为未来布局的首选方案，比如说常见的 bootstrap4 的版本就用 flex 替代了 float 来进行排版。<br>
@@ -2641,8 +2644,14 @@ hexo 中使用时 css 和 js 都需要做适当调整，配合加密功能使用
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="demo">demo</h2>
-<p><br>
-</p>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
+<p><figure><a class="lightgallery" href="/posts/qqxml/images/1.png" title="线上 demo 仅做参考请自行下载" data-thumbnail="/posts/qqxml/images/1.png" data-sub-html="<h2>线上 demo 仅做参考请自行下载</h2><p>线上 demo 仅做参考请自行下载</p>">
+    
+  </a><figcaption class="image-caption">线上 demo 仅做参考请自行下载</figcaption>
+  </figure><br>
+<figure><a class="lightgallery" href="/posts/qqxml/images/2.png" title="效果" data-thumbnail="/posts/qqxml/images/2.png" data-sub-html="<h2>效果</h2><p>效果</p>">
+    
+  </a><figcaption class="image-caption">效果</figcaption>
+  </figure></p>]]></description></item><item><title>JS 验证码</title><link>https://lruihao.cn/posts/vcode/</link><pubDate>Mon, 04 Mar 2019 20:53:09 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/vcode/</guid><description><![CDATA[<style type="text/css">
 	#code{  
         font-family:Arial;  
         font-style:italic;  

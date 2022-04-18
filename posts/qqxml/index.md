@@ -96,5 +96,5 @@
 ```
 
 ## demo
-![线上 demo 仅做参考请自行下载](images/1.png)  
-![效果](images/2.png)
+![线上 demo 仅做参考请自行下载](images/1.png "线上 demo 仅做参考请自行下载")  
+![效果](images/2.png "效果")

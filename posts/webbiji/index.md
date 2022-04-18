@@ -20,7 +20,7 @@
 <a href="#" title="第一排&#13; 第二排&#13; 第三排">使用`&#13;`</a>
 ```
 ### 图片类型选择
-![图片类型选择](images/imgType.jpg)
+![图片类型选择](images/imgType.jpg "图片类型选择")
 
 ## css
 ### flexbox

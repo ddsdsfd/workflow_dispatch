@@ -1,37 +1,37 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sort - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/sort/</link><description>sort - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 14 Apr 2019 10:12:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/sort/" rel="self" type="application/rss+xml"/><item><title>java 常用类</title><link>https://lruihao.cn/posts/stringbuffer/</link><pubDate>Sun, 14 Apr 2019 10:12:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/stringbuffer/</guid><description><![CDATA[<h1 id="stringbufferstringbuilder掌握">StringBuffer/StringBuilder(掌握)</h1>
-<h2 id="stringbuffer是线程安全的可变字符串">StringBuffer是线程安全的可变字符串。</h2>
-<p>StringBuilder是线程不安全的可变字符串。<br>
-和StringBuffer的功能一样。就是效率高一些，但是不安全。</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>sort - 標籤 - 菠菜眾長</title><link>https://lruihao.cn/tags/sort/</link><description>sort - 標籤 - 菠菜眾長</description><generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Sun, 14 Apr 2019 10:12:44 +0000</lastBuildDate><atom:link href="https://lruihao.cn/tags/sort/" rel="self" type="application/rss+xml"/><item><title>java 常用类</title><link>https://lruihao.cn/posts/stringbuffer/</link><pubDate>Sun, 14 Apr 2019 10:12:44 +0000</pubDate><author>Lruihao</author><guid>https://lruihao.cn/posts/stringbuffer/</guid><description><![CDATA[<h1 id="stringbufferstringbuilder掌握">StringBuffer/StringBuilder（掌握）</h1>
+<h2 id="stringbuffer-是线程安全的可变字符串">StringBuffer 是线程安全的可变字符串。</h2>
+<p>StringBuilder 是线程不安全的可变字符串。<br>
+和 StringBuffer 的功能一样。就是效率高一些，但是不安全。</p>
 <h2 id="构造方法">构造方法：</h2>
 <ul>
 <li>StringBuffer sb = new StringBuffer();</li>
 <li>StringBuffer sb = new StringBuffer(50);</li>
 <li>StringBuffer sb = new StringBuffer(&ldquo;hello&rdquo;);</li>
 </ul>
-<h2 id="成员方法自己补齐方法和意思">成员方法：(自己补齐方法和意思)</h2>
+<h2 id="成员方法自己补齐方法和意思">成员方法：（自己补齐方法和意思）</h2>
 <ul>
 <li>添加功能<br>
-public StringBuffer append(String str):追加字符串<br>
-public StringBuffer insert(int offset,String str):在指定位置插入字符串</li>
+public StringBuffer append(String str): 追加字符串<br>
+public StringBuffer insert(int offset,String str): 在指定位置插入字符串</li>
 <li>删除功能<br>
-public StringBuffer deleteCharAt(int index):删除指定位置字符<br>
-public StringBuffer delete(int start,int end):删除从指定开始到结束的字符，左闭右开</li>
+public StringBuffer deleteCharAt(int index): 删除指定位置字符<br>
+public StringBuffer delete(int start,int end): 删除从指定开始到结束的字符，左闭右开</li>
 <li>替换功能<br>
-public StringBuffer replace(int start,int end,String str):以字符串替代从指定开始到结束的字符</li>
+public StringBuffer replace(int start,int end,String str): 以字符串替代从指定开始到结束的字符</li>
 <li>反转功能<br>
-public StringBuffer reverse():反转</li>
+public StringBuffer reverse(): 反转</li>
 <li>截取功能<br>
-public String substring(int start):从指定索引到末尾的字符串<br>
-public String substring(int start,int end):从指定索引开始到指定索引结束的字符串</li>
+public String substring(int start): 从指定索引到末尾的字符串<br>
+public String substring(int start,int end): 从指定索引开始到指定索引结束的字符串</li>
 </ul>
 <h2 id="案例">案例：</h2>
 <ul>
-<li>String和StringBuffer的相互转换,通过构造即可。</li>
+<li>String 和 StringBuffer 的相互转换，通过构造即可。</li>
 <li>把数组转成指定的字符串格式</li>
 <li>把字符串反转</li>
 <li>判断一个字符串是否是对称字符串</li>
 </ul>
-<h1 id="数组高级部分理解">数组高级部分(理解)</h1>
+<h1 id="数组高级部分理解">数组高级部分（理解）</h1>
 <h2 id="排序">排序</h2>
 <ul>
 <li>冒泡排序</li>
@@ -73,7 +73,7 @@ public String substring(int start,int end):从指定索引开始到指定索引�
 <li>选择排序</li>
 </ul>
 <blockquote>
-<p>从0开始，依次和后面的比较，小的往前放。</p>
+<p>从 0 开始，依次和后面的比较，小的往前放。</p>
 </blockquote>
 <p></p>
 <div class="highlight"><div class="chroma">
@@ -212,12 +212,12 @@ public String substring(int start,int end):从指定索引开始到指定索引�
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="arrays工具类掌握">Arrays工具类(掌握)</h1>
-<h2 id="arrays是针对数组进行操作的工具类提供了排序和查找等功能">Arrays是针对数组进行操作的工具类，提供了排序和查找等功能</h2>
-<h2 id="成员方法自己补齐方法和意思-1">成员方法：(自己补齐方法和意思)</h2>
+</div><h1 id="arrays-工具类掌握">Arrays 工具类（掌握）</h1>
+<h2 id="arrays-是针对数组进行操作的工具类提供了排序和查找等功能">Arrays 是针对数组进行操作的工具类，提供了排序和查找等功能</h2>
+<h2 id="成员方法自己补齐方法和意思-1">成员方法：（自己补齐方法和意思）</h2>
 <ul>
 <li>把数组转成字符串
-public static String toString():将任意类型数据转换成字符串</li>
+public static String toString(): 将任意类型数据转换成字符串</li>
 <li>排序
 public static void sort()：</li>
 <li>二分查找
@@ -225,9 +225,9 @@ public static int binarySearch(int[] arr,int key)</li>
 </ul>
 <h2 id="案例-1">案例：</h2>
 <p>把字符串中的字符进行排序</p>
-<h1 id="基本类型包装类掌握">基本类型包装类(掌握)</h1>
-<h2 id="为了让我们对基本类型进行更多的操作java针对每种基本类型提供了对应的包装类类型">为了让我们对基本类型进行更多的操作，java针对每种基本类型提供了对应的包装类类型。</h2>
-<h2 id="分别是哪些呢">分别是哪些呢?</h2>
+<h1 id="基本类型包装类掌握">基本类型包装类（掌握）</h1>
+<h2 id="为了让我们对基本类型进行更多的操作java-针对每种基本类型提供了对应的包装类类型">为了让我们对基本类型进行更多的操作，java 针对每种基本类型提供了对应的包装类类型。</h2>
+<h2 id="分别是哪些呢">分别是哪些呢？</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -260,14 +260,14 @@ public static int binarySearch(int[] arr,int key)</li>
 <li>Integer i = new Integer(&ldquo;100&rdquo;);</li>
 </ul>
 </li>
-<li>成员方法(自己补齐方法和意思)
+<li>成员方法（自己补齐方法和意思）
 <ul>
-<li>把字符串转成int类型<br>
+<li>把字符串转成 int 类型<br>
 String-&gt;int: Integer.parseInt()<br>
-int-&gt;String: String.valueOf()或Integer.toString()</li>
+int-&gt;String: String.valueOf() 或 Integer.toString()</li>
 </ul>
 </li>
-<li>JDK5的新特性</li>
+<li>JDK5 的新特性</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -294,14 +294,14 @@ int-&gt;String: String.valueOf()或Integer.toString()</li>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>byte缓存池面试题<br>
-byte,short,char&mdash;&gt;小于127，否则报-6的错误(查看JDK)</li>
+<li>byte 缓存池面试题<br>
+byte,short,char&mdash;&gt;小于 127，否则报-6 的错误（查看 JDK)</li>
 </ul>
 <h2 id="character">Character</h2>
 <ul>
 <li>构造方法<br>
 Character ch = new Character(&lsquo;a&rsquo;);</li>
-<li>成员方法(自己补齐方法和意思)
+<li>成员方法（自己补齐方法和意思）
 <ul>
 <li>判断字符是否是大写字母
 public boolean isUpperCase(char ch)</li>
